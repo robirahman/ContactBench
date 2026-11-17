@@ -6,10 +6,468 @@
  "initial_prefix": "",
  "turn_limit": 30,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
- "public_history": [],
- "score": null,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that barks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A colorless gas with atomic number eight, essential to aerobic respiration",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A soft rolling sound made by a pleased house pet",
+   "blocklist": [
+    "purr",
+    "purring",
+    "purrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A hinged kitchen utensil with two arms, used to grip and lift food.",
+   "blocklist": [
+    "tong",
+    "tongs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A shorebird distinguished by its long, upcurved bill and webbed feet.",
+   "blocklist": [
+    "avocet",
+    "avocets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A traditional domed shelter built from blocks of snow in Arctic regions.",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A slope of loose broken rock fragments at the base of a cliff or mountain.",
+   "blocklist": [
+    "scree",
+    "screes",
+    "talus",
+    "taluses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A mnemonic: Zebras Always Run Fast. Take the initial of each word.",
+   "blocklist": [
+    "zarf",
+    "zarfs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Many owls travel eastward during migration.",
+   "blocklist": [
+    "mote",
+    "motes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Quietly under old ice, narwhals.",
+   "blocklist": [
+    "quoin",
+    "quoins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Ferns emerge yearly.",
+   "blocklist": [
+    "fey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Clouds obscure blue.",
+   "blocklist": [
+    "cob",
+    "cobs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A curious eagle circles.",
+   "blocklist": [
+    "ace",
+    "aces",
+    "eyrie",
+    "soar",
+    "soars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Xenial youths love yellow lemons; take the initials.",
+   "blocklist": [
+    "xylyl",
+    "xylyls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Read the last letter of each word: panda wood buzz apple.",
+   "blocklist": [
+    "adze",
+    "adzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Quiet ants travel.",
+   "blocklist": [
+    "qat",
+    "qats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Early messages obscure distant information nightly.",
+   "blocklist": [
+    "emodin",
+    "emodins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Visitors usually gasp.",
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "The penultimate letters are key: banana, media, comma.",
+   "blocklist": [
+    "nim",
+    "nims"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Keep exploring xenoliths.",
+   "blocklist": [
+    "kex",
+    "kexes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Convert the alphabet positions 15-1-11 into letters.",
+   "blocklist": [
+    "oak",
+    "oaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Map 19-21-14 to letters using A1Z26.",
+   "blocklist": [
+    "sun",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A male sheep, or the short-term working memory a computer uses.",
+   "blocklist": [
+    "ram",
+    "rams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Decode 01100011 01100001 01110100 as 8-bit ASCII.",
+   "blocklist": [
+    "cat",
+    "cats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Read the last letters: slow, amber, cloudy.",
+   "blocklist": [
+    "wry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Decode these Morse letters: . / .-.. / --.",
+   "blocklist": [
+    "elm",
+    "elms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "A balanced triad, with each word's heart held fast: whisk, dinky, askew.",
+   "blocklist": [
+    "ink",
+    "inks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Eagles rarely attack.",
+   "blocklist": [
+    "era",
+    "eras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Use the initials of every second word: A silent owl often waits watchfully.",
+   "blocklist": [
+    "sow",
+    "sows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "water",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6977.23353527565,
+  "cost_numerator": 44411375263,
+  "cost_denominator": 6365184,
+  "cost_exact": false,
+  "cost_mcse": 1.5526407776296933,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 44220419743,
+   "denominator": 6365184,
+   "value": 6947.23353527565,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:940,4:3846,5:8588,6:15195,7:23087,8:28409,9:24864,10:20301,11:15500,12:11358,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.5526407776296933,
+   "rollouts": 256,
+   "rank_total": 44220419743,
+   "rank_denominator": 6365184,
+   "cache_key": "5c2ad3f0968fa19da315d7e602b1c078"
+  }
+ },
  "seat_private_histories": {
   "guesser1": [
    {
@@ -18,10 +476,2370 @@
     "committed_word": "dog",
     "clue": "A common household pet that barks",
     "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "oxygen",
+    "clue": "A colorless gas with atomic number eight, essential to aerobic respiration",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "purr",
+    "clue": "A soft rolling sound made by a pleased house pet",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "tongs",
+    "clue": "A hinged kitchen utensil with two arms, used to grip and lift food.",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "avocet",
+    "clue": "A shorebird distinguished by its long, upcurved bill and webbed feet.",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "igloo",
+    "clue": "A traditional domed shelter built from blocks of snow in Arctic regions.",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "scree",
+    "clue": "A slope of loose broken rock fragments at the base of a cliff or mountain.",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "zarf",
+    "clue": "A mnemonic: Zebras Always Run Fast. Take the initial of each word.",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "mote",
+    "clue": "Many owls travel eastward during migration.",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "quoin",
+    "clue": "Quietly under old ice, narwhals.",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "fey",
+    "clue": "Ferns emerge yearly.",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "cob",
+    "clue": "Clouds obscure blue.",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "ace",
+    "clue": "A curious eagle circles.",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "xylyl",
+    "clue": "Xenial youths love yellow lemons; take the initials.",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "adze",
+    "clue": "Read the last letter of each word: panda wood buzz apple.",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "qat",
+    "clue": "Quiet ants travel.",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "emodin",
+    "clue": "Early messages obscure distant information nightly.",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "vug",
+    "clue": "Visitors usually gasp.",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "nim",
+    "clue": "The penultimate letters are key: banana, media, comma.",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "kex",
+    "clue": "Keep exploring xenoliths.",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "oak",
+    "clue": "Convert the alphabet positions 15-1-11 into letters.",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "clue",
+    "committed_word": "sun",
+    "clue": "Map 19-21-14 to letters using A1Z26.",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "ram",
+    "clue": "A male sheep, or the short-term working memory a computer uses.",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "Decode 01100011 01100001 01110100 as 8-bit ASCII.",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "wry",
+    "clue": "Read the last letters: slow, amber, cloudy.",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "clue",
+    "committed_word": "elm",
+    "clue": "Decode these Morse letters: . / .-.. / --.",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "clue",
+    "committed_word": "ink",
+    "clue": "A balanced triad, with each word's heart held fast: whisk, dinky, askew.",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "clue",
+    "committed_word": "era",
+    "clue": "Eagles rarely attack.",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "clue",
+    "committed_word": "sow",
+    "clue": "Use the initials of every second word: A silent owl often waits watchfully.",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "direct",
+    "word": "water",
+    "validity": "valid"
    }
   ],
-  "guesser2": [],
-  "defender": []
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "oxygen",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "purr",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "tongs",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "avocet",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "igloo",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "talus",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "zarf",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "owl",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "cancel",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "quoin",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "fey",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "cob",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "ace",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "xylyl",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "adze",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "qat",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "emodin",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "vug",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "nim",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "kex",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "oak",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "guess",
+    "committed_word": "sun",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "ram",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "wry",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "guess",
+    "committed_word": "elm",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "guess",
+    "committed_word": "ink",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "guess",
+    "committed_word": "era",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "guess",
+    "committed_word": "sow",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "canine",
+     "dog",
+     "dogs",
+     "hound",
+     "puppy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "oxygen"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "purr",
+     "purring",
+     "purrs"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "tong",
+     "tongs"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "avocet",
+     "avocets"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "igloo",
+     "igloos"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "scree",
+     "screes",
+     "talus",
+     "taluses"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "zarf",
+     "zarfs"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "mote",
+     "motes"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quoin",
+     "quoins"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "fey"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cob",
+     "cobs"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ace",
+     "aces",
+     "eyrie",
+     "soar",
+     "soars"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "xylyl",
+     "xylyls"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "adze",
+     "adzes"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "qat",
+     "qats"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "emodin",
+     "emodins"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "vug",
+     "vugs"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "nim",
+     "nims"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kex",
+     "kexes"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "oak",
+     "oaks"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 22,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sun",
+     "suns"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ram",
+     "rams"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat",
+     "cats"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wry"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 26,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "elm",
+     "elms"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 27,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ink",
+     "inks"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 28,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "era",
+     "eras"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 29,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sow",
+     "sows"
+    ],
+    "canonical_ranges": []
+   }
+  ]
  },
- "referee_audit": []
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "dog",
+   "w2": "dog",
+   "clue": "A common household pet that barks",
+   "mentions": [
+    "barks",
+    "common",
+    "household",
+    "pet",
+    "that"
+   ],
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "barks",
+    "canine",
+    "common",
+    "dog",
+    "dogs",
+    "hound",
+    "household",
+    "pet",
+    "puppy",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172598,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "oxygen",
+   "w2": "oxygen",
+   "clue": "A colorless gas with atomic number eight, essential to aerobic respiration",
+   "mentions": [
+    "aerobic",
+    "atomic",
+    "colorless",
+    "eight",
+    "essential",
+    "gas",
+    "number",
+    "respiration",
+    "with"
+   ],
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aerobic",
+    "atomic",
+    "colorless",
+    "eight",
+    "essential",
+    "gas",
+    "number",
+    "oxygen",
+    "respiration",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172598,
+   "secret_candidates_after": 172588,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "purr",
+   "w2": "purr",
+   "clue": "A soft rolling sound made by a pleased house pet",
+   "mentions": [
+    "house",
+    "made",
+    "pet",
+    "pleased",
+    "rolling",
+    "soft",
+    "sound"
+   ],
+   "blocklist": [
+    "purr",
+    "purring",
+    "purrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "house",
+    "made",
+    "pet",
+    "pleased",
+    "purr",
+    "purring",
+    "purrs",
+    "rolling",
+    "soft",
+    "sound"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172588,
+   "secret_candidates_after": 172579,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "tongs",
+   "w2": "tongs",
+   "clue": "A hinged kitchen utensil with two arms, used to grip and lift food.",
+   "mentions": [
+    "and",
+    "arms",
+    "food",
+    "grip",
+    "hinged",
+    "kitchen",
+    "lift",
+    "two",
+    "used",
+    "utensil",
+    "with"
+   ],
+   "blocklist": [
+    "tong",
+    "tongs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "arms",
+    "food",
+    "grip",
+    "hinged",
+    "kitchen",
+    "lift",
+    "tong",
+    "tongs",
+    "two",
+    "used",
+    "utensil",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172579,
+   "secret_candidates_after": 172567,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "avocet",
+   "w2": "avocet",
+   "clue": "A shorebird distinguished by its long, upcurved bill and webbed feet.",
+   "mentions": [
+    "and",
+    "bill",
+    "distinguished",
+    "feet",
+    "its",
+    "long",
+    "shorebird",
+    "upcurved",
+    "webbed"
+   ],
+   "blocklist": [
+    "avocet",
+    "avocets"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "avocet",
+    "avocets",
+    "bill",
+    "distinguished",
+    "feet",
+    "its",
+    "long",
+    "shorebird",
+    "upcurved",
+    "webbed"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172567,
+   "secret_candidates_after": 172557,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "igloo",
+   "w2": "igloo",
+   "clue": "A traditional domed shelter built from blocks of snow in Arctic regions.",
+   "mentions": [
+    "arctic",
+    "blocks",
+    "built",
+    "domed",
+    "from",
+    "regions",
+    "shelter",
+    "snow",
+    "traditional"
+   ],
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "arctic",
+    "blocks",
+    "built",
+    "domed",
+    "from",
+    "igloo",
+    "igloos",
+    "regions",
+    "shelter",
+    "snow",
+    "traditional"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172557,
+   "secret_candidates_after": 172546,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "scree",
+   "w2": "talus",
+   "clue": "A slope of loose broken rock fragments at the base of a cliff or mountain.",
+   "mentions": [
+    "base",
+    "broken",
+    "cliff",
+    "fragments",
+    "loose",
+    "mountain",
+    "rock",
+    "slope",
+    "the"
+   ],
+   "blocklist": [
+    "scree",
+    "screes",
+    "talus",
+    "taluses"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "base",
+    "broken",
+    "cliff",
+    "fragments",
+    "loose",
+    "mountain",
+    "rock",
+    "scree",
+    "screes",
+    "slope",
+    "talus",
+    "taluses",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172546,
+   "secret_candidates_after": 172533,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zarf",
+   "w2": "zarf",
+   "clue": "A mnemonic: Zebras Always Run Fast. Take the initial of each word.",
+   "mentions": [
+    "always",
+    "each",
+    "fast",
+    "initial",
+    "mnemonic",
+    "run",
+    "take",
+    "the",
+    "word",
+    "zebras"
+   ],
+   "blocklist": [
+    "zarf",
+    "zarfs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "always",
+    "each",
+    "fast",
+    "initial",
+    "mnemonic",
+    "run",
+    "take",
+    "the",
+    "word",
+    "zarf",
+    "zarfs",
+    "zebras"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172533,
+   "secret_candidates_after": 172522,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "mote",
+   "w2": "owl",
+   "clue": "Many owls travel eastward during migration.",
+   "mentions": [
+    "during",
+    "eastward",
+    "many",
+    "migration",
+    "owls",
+    "travel"
+   ],
+   "blocklist": [
+    "mote",
+    "motes"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": false,
+   "choice_actor": "guesser2",
+   "choice": "cancel",
+   "choice_valid": true,
+   "opened": [],
+   "emissions": [
+    "during",
+    "eastward",
+    "many",
+    "migration",
+    "mote",
+    "motes",
+    "owls",
+    "travel"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172522,
+   "secret_candidates_after": 172514,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "quoin",
+   "w2": "quoin",
+   "clue": "Quietly under old ice, narwhals.",
+   "mentions": [
+    "ice",
+    "narwhals",
+    "old",
+    "quietly",
+    "under"
+   ],
+   "blocklist": [
+    "quoin",
+    "quoins"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ice",
+    "narwhals",
+    "old",
+    "quietly",
+    "quoin",
+    "quoins",
+    "under"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172514,
+   "secret_candidates_after": 172507,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "fey",
+   "w2": "fey",
+   "clue": "Ferns emerge yearly.",
+   "mentions": [
+    "emerge",
+    "ferns",
+    "yearly"
+   ],
+   "blocklist": [
+    "fey"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "emerge",
+    "ferns",
+    "fey",
+    "yearly"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172507,
+   "secret_candidates_after": 172503,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cob",
+   "w2": "cob",
+   "clue": "Clouds obscure blue.",
+   "mentions": [
+    "blue",
+    "clouds",
+    "obscure"
+   ],
+   "blocklist": [
+    "cob",
+    "cobs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blue",
+    "clouds",
+    "cob",
+    "cobs",
+    "obscure"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172503,
+   "secret_candidates_after": 172498,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ace",
+   "w2": "ace",
+   "clue": "A curious eagle circles.",
+   "mentions": [
+    "circles",
+    "curious",
+    "eagle"
+   ],
+   "blocklist": [
+    "ace",
+    "aces",
+    "eyrie",
+    "soar",
+    "soars"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ace",
+    "aces",
+    "circles",
+    "curious",
+    "eagle",
+    "eyrie",
+    "soar",
+    "soars"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172498,
+   "secret_candidates_after": 172490,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "xylyl",
+   "w2": "xylyl",
+   "clue": "Xenial youths love yellow lemons; take the initials.",
+   "mentions": [
+    "initials",
+    "lemons",
+    "love",
+    "take",
+    "the",
+    "xenial",
+    "yellow",
+    "youths"
+   ],
+   "blocklist": [
+    "xylyl",
+    "xylyls"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "initials",
+    "lemons",
+    "love",
+    "take",
+    "the",
+    "xenial",
+    "xylyl",
+    "xylyls",
+    "yellow",
+    "youths"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172490,
+   "secret_candidates_after": 172482,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "adze",
+   "w2": "adze",
+   "clue": "Read the last letter of each word: panda wood buzz apple.",
+   "mentions": [
+    "apple",
+    "buzz",
+    "each",
+    "last",
+    "letter",
+    "panda",
+    "read",
+    "the",
+    "wood",
+    "word"
+   ],
+   "blocklist": [
+    "adze",
+    "adzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "adze",
+    "adzes",
+    "apple",
+    "buzz",
+    "each",
+    "last",
+    "letter",
+    "panda",
+    "read",
+    "the",
+    "wood",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172482,
+   "secret_candidates_after": 172473,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "qat",
+   "w2": "qat",
+   "clue": "Quiet ants travel.",
+   "mentions": [
+    "ants",
+    "quiet",
+    "travel"
+   ],
+   "blocklist": [
+    "qat",
+    "qats"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ants",
+    "qat",
+    "qats",
+    "quiet",
+    "travel"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172473,
+   "secret_candidates_after": 172469,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "emodin",
+   "w2": "emodin",
+   "clue": "Early messages obscure distant information nightly.",
+   "mentions": [
+    "distant",
+    "early",
+    "information",
+    "messages",
+    "nightly",
+    "obscure"
+   ],
+   "blocklist": [
+    "emodin",
+    "emodins"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "distant",
+    "early",
+    "emodin",
+    "emodins",
+    "information",
+    "messages",
+    "nightly",
+    "obscure"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172469,
+   "secret_candidates_after": 172462,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "vug",
+   "w2": "vug",
+   "clue": "Visitors usually gasp.",
+   "mentions": [
+    "gasp",
+    "usually",
+    "visitors"
+   ],
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "gasp",
+    "usually",
+    "visitors",
+    "vug",
+    "vugs"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172462,
+   "secret_candidates_after": 172457,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "nim",
+   "w2": "nim",
+   "clue": "The penultimate letters are key: banana, media, comma.",
+   "mentions": [
+    "are",
+    "banana",
+    "comma",
+    "key",
+    "letters",
+    "media",
+    "penultimate",
+    "the"
+   ],
+   "blocklist": [
+    "nim",
+    "nims"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "are",
+    "banana",
+    "comma",
+    "key",
+    "letters",
+    "media",
+    "nim",
+    "nims",
+    "penultimate",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172457,
+   "secret_candidates_after": 172448,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "kex",
+   "w2": "kex",
+   "clue": "Keep exploring xenoliths.",
+   "mentions": [
+    "exploring",
+    "keep",
+    "xenoliths"
+   ],
+   "blocklist": [
+    "kex",
+    "kexes"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "exploring",
+    "keep",
+    "kex",
+    "kexes",
+    "xenoliths"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172448,
+   "secret_candidates_after": 172443,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "oak",
+   "w2": "oak",
+   "clue": "Convert the alphabet positions 15-1-11 into letters.",
+   "mentions": [
+    "alphabet",
+    "convert",
+    "into",
+    "letters",
+    "positions",
+    "the"
+   ],
+   "blocklist": [
+    "oak",
+    "oaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "alphabet",
+    "convert",
+    "into",
+    "letters",
+    "oak",
+    "oaks",
+    "positions",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172443,
+   "secret_candidates_after": 172437,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sun",
+   "w2": "sun",
+   "clue": "Map 19-21-14 to letters using A1Z26.",
+   "mentions": [
+    "letters",
+    "map",
+    "using"
+   ],
+   "blocklist": [
+    "sun",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "letters",
+    "map",
+    "sun",
+    "suns",
+    "using"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172437,
+   "secret_candidates_after": 172433,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ram",
+   "w2": "ram",
+   "clue": "A male sheep, or the short-term working memory a computer uses.",
+   "mentions": [
+    "computer",
+    "male",
+    "memory",
+    "sheep",
+    "short",
+    "term",
+    "the",
+    "uses",
+    "working"
+   ],
+   "blocklist": [
+    "ram",
+    "rams"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "computer",
+    "male",
+    "memory",
+    "ram",
+    "rams",
+    "sheep",
+    "short",
+    "term",
+    "the",
+    "uses",
+    "working"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172433,
+   "secret_candidates_after": 172423,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "Decode 01100011 01100001 01110100 as 8-bit ASCII.",
+   "mentions": [
+    "bit",
+    "decode"
+   ],
+   "blocklist": [
+    "cat",
+    "cats"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bit",
+    "cat",
+    "cats",
+    "decode"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172423,
+   "secret_candidates_after": 172419,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "wry",
+   "w2": "wry",
+   "clue": "Read the last letters: slow, amber, cloudy.",
+   "mentions": [
+    "amber",
+    "cloudy",
+    "last",
+    "letters",
+    "read",
+    "slow",
+    "the"
+   ],
+   "blocklist": [
+    "wry"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "amber",
+    "cloudy",
+    "last",
+    "letters",
+    "read",
+    "slow",
+    "the",
+    "wry"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172419,
+   "secret_candidates_after": 172415,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 26,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "elm",
+   "w2": "elm",
+   "clue": "Decode these Morse letters: . / .-.. / --.",
+   "mentions": [
+    "decode",
+    "letters",
+    "morse",
+    "these"
+   ],
+   "blocklist": [
+    "elm",
+    "elms"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "decode",
+    "elm",
+    "elms",
+    "letters",
+    "morse",
+    "these"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172415,
+   "secret_candidates_after": 172411,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 27,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ink",
+   "w2": "ink",
+   "clue": "A balanced triad, with each word's heart held fast: whisk, dinky, askew.",
+   "mentions": [
+    "askew",
+    "balanced",
+    "dinky",
+    "each",
+    "fast",
+    "heart",
+    "held",
+    "triad",
+    "whisk",
+    "with",
+    "word"
+   ],
+   "blocklist": [
+    "ink",
+    "inks"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "askew",
+    "balanced",
+    "dinky",
+    "each",
+    "fast",
+    "heart",
+    "held",
+    "ink",
+    "inks",
+    "triad",
+    "whisk",
+    "with",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172411,
+   "secret_candidates_after": 172402,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 28,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "era",
+   "w2": "era",
+   "clue": "Eagles rarely attack.",
+   "mentions": [
+    "attack",
+    "eagles",
+    "rarely"
+   ],
+   "blocklist": [
+    "era",
+    "eras"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "attack",
+    "eagles",
+    "era",
+    "eras",
+    "rarely"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172402,
+   "secret_candidates_after": 172397,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 29,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sow",
+   "w2": "sow",
+   "clue": "Use the initials of every second word: A silent owl often waits watchfully.",
+   "mentions": [
+    "every",
+    "initials",
+    "often",
+    "owl",
+    "second",
+    "silent",
+    "the",
+    "use",
+    "waits",
+    "watchfully",
+    "word"
+   ],
+   "blocklist": [
+    "sow",
+    "sows"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "every",
+    "initials",
+    "often",
+    "owl",
+    "second",
+    "silent",
+    "sow",
+    "sows",
+    "the",
+    "use",
+    "waits",
+    "watchfully",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172397,
+   "secret_candidates_after": 172387,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 30,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "water"
+    }
+   ],
+   "emissions": [
+    "water"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172387,
+   "secret_candidates_after": 172386,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
 }

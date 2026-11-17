@@ -12,6 +12,9 @@
   "scored_games": 18,
   "planned_fixtures": 9,
   "complete_fixtures": 9,
+  "rematch_fixtures": 0,
+  "no_progress_draw_rule": true,
+  "no_progress_draws": 1,
   "balanced_complete": true,
   "game_status_counts": {
     "capped/complete": 12,
@@ -26,19 +29,19 @@
       "gemini_3_8_flash"
     ],
     "strengths_logit": {
-      "claude_haiku_5_5": 0.695263565261436,
-      "claude_haiku_4_5": -1.9566981367106417,
-      "gemini_3_8_flash": 1.261434571449206
+      "claude_haiku_5_5": 0.3975991463555458,
+      "claude_haiku_4_5": -2.0179154500864436,
+      "gemini_3_8_flash": 1.6203163037308976
     },
     "elo": {
-      "claude_haiku_5_5": 1620.7796519445692,
-      "claude_haiku_4_5": 1160.0867185904774,
-      "gemini_3_8_flash": 1719.1336294649534
+      "claude_haiku_5_5": 1569.0700461086628,
+      "claude_haiku_4_5": 1149.4521820320563,
+      "gemini_3_8_flash": 1781.477771859281
     },
     "converged": true,
     "iterations": 7,
-    "gradient_norm": 3.242773118236043e-16,
-    "loss": 2.7094133716033078,
+    "gradient_norm": 9.664760850780579e-17,
+    "loss": 2.268548685339491,
     "penalty_scale": 2.5,
     "connected_components": [
       [
@@ -50,23 +53,23 @@
   },
   "rating_penalty_sensitivity": {
     "1.0": {
-      "claude_haiku_5_5": 1560.9138061720798,
-      "claude_haiku_4_5": 1318.5650488373544,
-      "gemini_3_8_flash": 1620.5211449905655
+      "claude_haiku_5_5": 1531.1016537822122,
+      "claude_haiku_4_5": 1316.6197649793733,
+      "gemini_3_8_flash": 1652.2785812384145
     },
     "2.5": {
-      "claude_haiku_5_5": 1620.7796519445692,
-      "claude_haiku_4_5": 1160.0867185904774,
-      "gemini_3_8_flash": 1719.1336294649534
+      "claude_haiku_5_5": 1569.0700461086628,
+      "claude_haiku_4_5": 1149.4521820320563,
+      "gemini_3_8_flash": 1781.477771859281
     },
     "5.0": {
-      "claude_haiku_5_5": 1678.1092730839669,
-      "claude_haiku_4_5": 1031.0361096850886,
-      "gemini_3_8_flash": 1790.8546172309445
+      "claude_haiku_5_5": 1616.165603587974,
+      "claude_haiku_4_5": 1013.4433160376971,
+      "gemini_3_8_flash": 1870.391080374329
     }
   },
   "bootstrap": {
-    "resamples": 500,
+    "resamples": 1000,
     "seed": 12345,
     "cluster": "task (secret) \u2014 both directions and all pairings kept together",
     "task_clusters": 3,
@@ -75,127 +78,127 @@
       "claude_haiku_5_5": {
         "elo": {
           "lo": 1500.0,
-          "hi": 1876.5735796367392,
-          "n": 500
+          "hi": 1668.4439282983453,
+          "n": 1000
         },
         "rank": {
           "lo": 1.0,
           "hi": 2.0,
-          "n": 500
+          "n": 1000
         },
         "offense_aggregate_speedup": {
           "lo": 1.9952554285075008,
           "hi": 85.1166362306265,
-          "n": 500
+          "n": 1000
         },
         "mean_paired_cost_advantage": {
           "lo": 9.950083744931371,
           "hi": 3452.400608976338,
-          "n": 500
+          "n": 1000
         },
         "defensive_cost_ratio": {
           "lo": 0.013210680457857914,
           "hi": 1.001956834695285,
-          "n": 500
+          "n": 1000
         },
         "offense_median_effective_cost": {
           "lo": 79.9533069681677,
           "hi": 3455.3037083121044,
-          "n": 500
+          "n": 1000
         },
         "offense_geometric_mean_cost": {
           "lo": 32.7161473519476,
           "hi": 234.99118990505514,
-          "n": 500
+          "n": 1000
         },
         "defense_median_cost_imposed": {
           "lo": 89.90339071309907,
           "hi": 6907.704317288442,
-          "n": 500
+          "n": 1000
         }
       },
       "claude_haiku_4_5": {
         "elo": {
           "lo": 1123.4264203632606,
-          "hi": 1160.0867185904774,
-          "n": 500
+          "hi": 1163.1121434033093,
+          "n": 1000
         },
         "rank": {
           "lo": 3.0,
           "hi": 3.0,
-          "n": 500
+          "n": 1000
         },
         "offense_aggregate_speedup": {
           "lo": 0.9979699355137548,
           "hi": 1.9524091566204076,
-          "n": 500
+          "n": 1000
         },
         "mean_paired_cost_advantage": {
           "lo": -6900.737649065734,
           "hi": -3479.6200717810193,
-          "n": 500
+          "n": 1000
         },
         "defensive_cost_ratio": {
           "lo": 0.0008816584348870234,
           "hi": 0.0010910355897732235,
-          "n": 500
+          "n": 1000
         },
         "offense_median_effective_cost": {
           "lo": 3485.6200717810193,
           "hi": 6908.237649065734,
-          "n": 500
+          "n": 1000
         },
         "offense_geometric_mean_cost": {
           "lo": 986.7390366445986,
           "hi": 6908.237593566374,
-          "n": 500
+          "n": 1000
         },
         "defense_median_cost_imposed": {
           "lo": 6.0,
           "hi": 7.5,
-          "n": 500
+          "n": 1000
         }
       },
       "gemini_3_8_flash": {
         "elo": {
-          "lo": 1500.0,
+          "lo": 1668.4439282983453,
           "hi": 1876.5735796367392,
-          "n": 500
+          "n": 1000
         },
         "rank": {
           "lo": 1.0,
           "hi": 2.0,
-          "n": 500
+          "n": 1000
         },
         "offense_aggregate_speedup": {
           "lo": 1.9939745370685293,
           "hi": 322.35109245837276,
-          "n": 500
+          "n": 1000
         },
         "mean_paired_cost_advantage": {
           "lo": 3448.337040089396,
           "hi": 3651.7705376758922,
-          "n": 500
+          "n": 1000
         },
         "defensive_cost_ratio": {
           "lo": 0.5129461761101423,
           "hi": 1.001689371655642,
-          "n": 500
+          "n": 1000
         },
         "offense_median_effective_cost": {
           "lo": 21.11162860576923,
           "hi": 3457.523329905432,
-          "n": 500
+          "n": 1000
         },
         "offense_geometric_mean_cost": {
           "lo": 13.642444284573504,
           "hi": 219.90071991395578,
-          "n": 500
+          "n": 1000
         },
         "defense_median_cost_imposed": {
           "lo": 3490.7816166418575,
           "hi": 6905.860369994828,
-          "n": 500
+          "n": 1000
         }
       }
     }
@@ -240,10 +243,10 @@
         "gemini_3_8_flash"
       ],
       "fixtures": 6,
-      "match_points": 4.0,
-      "match_point_share": 0.6666666666666666,
-      "wins": 4,
-      "draws": 0,
+      "match_points": 3.5,
+      "match_point_share": 0.5833333333333334,
+      "wins": 3,
+      "draws": 1,
       "losses": 2
     },
     "claude_haiku_4_5": {
@@ -330,11 +333,11 @@
         "claude_haiku_5_5"
       ],
       "fixtures": 6,
-      "match_points": 5.0,
-      "match_point_share": 0.8333333333333334,
+      "match_points": 5.5,
+      "match_point_share": 0.9166666666666666,
       "wins": 5,
-      "draws": 0,
-      "losses": 1
+      "draws": 1,
+      "losses": 0
     }
   },
   "role_diagnostics": {
@@ -471,7 +474,7 @@
         "fixtures": 3
       },
       "gemini_3_8_flash": {
-        "mean_points": 0.3333333333333333,
+        "mean_points": 0.16666666666666666,
         "fixtures": 3
       }
     },
@@ -487,7 +490,7 @@
     },
     "gemini_3_8_flash": {
       "claude_haiku_5_5": {
-        "mean_points": 0.6666666666666666,
+        "mean_points": 0.8333333333333334,
         "fixtures": 3
       },
       "claude_haiku_4_5": {
@@ -744,7 +747,7 @@
         "reasoning_tokens": 77675.0,
         "cached_input_tokens": 830874.0,
         "latency_s": 2184.470373747996,
-        "transport_attempts": 594.0,
+        "transport_attempts": 597.0,
         "cost_estimate": 2.1136492499999995,
         "errors": 3.0
       },
@@ -755,10 +758,11 @@
         "reasoning_tokens": 5836.0,
         "cached_input_tokens": 49363.0,
         "latency_s": 551.5647413809938,
-        "transport_attempts": 242.0,
+        "transport_attempts": 249.0,
         "cost_estimate": 0.5395124999999998,
         "errors": 7.0
       }
     }
-  }
+  },
+  "forecast_calibration": {}
 }

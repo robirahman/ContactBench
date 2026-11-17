@@ -6,10 +6,118 @@
  "initial_prefix": "",
  "turn_limit": 30,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
- "public_history": [],
- "score": null,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "extremely luminous active galactic nucleus",
+   "blocklist": [
+    "quasar",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "dark volcanic glass formed from cooled lava",
+   "blocklist": [
+    "basalt",
+    "obsidian",
+    "obsidians",
+    "pumice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill and beaver tail",
+   "blocklist": [
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "word or phrase that reads the same backward as forward",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "effectuate"
+    ],
+    [
+     "effectuates",
+     "zyzzyva"
+    ],
+    [
+     "effectuating",
+     "effectuation"
+    ]
+   ],
+   "blocked_word_count": 172606,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "effectuated",
+   "prefix_after": "",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 5.0,
+  "cost_numerator": 5,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
  "seat_private_histories": {
   "guesser1": [
    {
@@ -18,10 +126,385 @@
     "committed_word": "quasar",
     "clue": "extremely luminous active galactic nucleus",
     "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "obsidian",
+    "clue": "dark volcanic glass formed from cooled lava",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "platypus",
+    "clue": "egg laying mammal with duck bill and beaver tail",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "palindrome",
+    "clue": "word or phrase that reads the same backward as forward",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "direct",
+    "word": "effectuated",
+    "validity": "valid"
    }
   ],
-  "guesser2": [],
-  "defender": []
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "quasar",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "obsidian",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "platypus",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "palindrome",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quasar",
+     "quasars"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "basalt",
+     "obsidian",
+     "obsidians",
+     "pumice"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "echidna",
+     "echidnas",
+     "monotreme",
+     "monotremes",
+     "platypus",
+     "platypuses"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "aah",
+      "effectuate"
+     ],
+     [
+      "effectuates",
+      "zyzzyva"
+     ],
+     [
+      "effectuating",
+      "effectuation"
+     ]
+    ]
+   }
+  ]
  },
- "referee_audit": []
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "quasar",
+   "w2": "quasar",
+   "clue": "extremely luminous active galactic nucleus",
+   "mentions": [
+    "active",
+    "extremely",
+    "galactic",
+    "luminous",
+    "nucleus"
+   ],
+   "blocklist": [
+    "quasar",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "active",
+    "extremely",
+    "galactic",
+    "luminous",
+    "nucleus",
+    "quasar",
+    "quasars"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172601,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "obsidian",
+   "w2": "obsidian",
+   "clue": "dark volcanic glass formed from cooled lava",
+   "mentions": [
+    "cooled",
+    "dark",
+    "formed",
+    "from",
+    "glass",
+    "lava",
+    "volcanic"
+   ],
+   "blocklist": [
+    "basalt",
+    "obsidian",
+    "obsidians",
+    "pumice"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "basalt",
+    "cooled",
+    "dark",
+    "formed",
+    "from",
+    "glass",
+    "lava",
+    "obsidian",
+    "obsidians",
+    "pumice",
+    "volcanic"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172601,
+   "secret_candidates_after": 172590,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "platypus",
+   "w2": "platypus",
+   "clue": "egg laying mammal with duck bill and beaver tail",
+   "mentions": [
+    "and",
+    "beaver",
+    "bill",
+    "duck",
+    "egg",
+    "laying",
+    "mammal",
+    "tail",
+    "with"
+   ],
+   "blocklist": [
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "beaver",
+    "bill",
+    "duck",
+    "echidna",
+    "echidnas",
+    "egg",
+    "laying",
+    "mammal",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses",
+    "tail",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172590,
+   "secret_candidates_after": 172575,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "palindrome",
+   "w2": "palindrome",
+   "clue": "word or phrase that reads the same backward as forward",
+   "mentions": [
+    "backward",
+    "forward",
+    "phrase",
+    "reads",
+    "same",
+    "that",
+    "the",
+    "word"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "effectuate"
+    ],
+    [
+     "effectuates",
+     "zyzzyva"
+    ],
+    [
+     "effectuating",
+     "effectuation"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172575,
+   "secret_candidates_after": 2,
+   "block_size": 172606,
+   "block_fresh_secret_candidates": 172573,
+   "block_overlap_with_clue": 8,
+   "emission_count": 172606,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "effectuated"
+    }
+   ],
+   "emissions": [
+    "effectuated"
+   ],
+   "result": "won",
+   "secret_candidates_before": 2,
+   "secret_candidates_after": 2,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
 }

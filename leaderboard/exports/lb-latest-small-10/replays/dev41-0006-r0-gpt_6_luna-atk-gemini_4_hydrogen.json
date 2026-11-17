@@ -6,8 +6,8 @@
  "initial_prefix": "",
  "turn_limit": 30,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
  "public_history": [
   {
    "turn": 1,
@@ -368,9 +368,124 @@
    "opened_guesses": [],
    "prefix_after": "",
    "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Our adventurous team sails.",
+   "blocklist": [
+    "oat",
+    "oats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "A very long geological age, longer than an era.",
+   "blocklist": [
+    "aeon",
+    "aeons",
+    "eon",
+    "eons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A=1, B=2, and so on. Convert these numbers to letters: 3-23-13.",
+   "blocklist": [
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Initials: Iguanas Visit Yaks. act, add, air, all, amp, ant, any, apt, arc, are, ark, arm, art, ash.",
+   "blocklist": [
+    "ivies",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ace, ado, ago, aha, aid, ail, aim, ale, ape, ask, ate, awe, axe, bad, bag, ban, bar, bat, bay, bed",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "alphabet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
   }
  ],
- "score": null,
+ "score": {
+  "status": "scored",
+  "cost": 7026.722292889627,
+  "cost_numerator": 6971407935,
+  "cost_denominator": 992128,
+  "cost_exact": false,
+  "cost_mcse": 1.8089997457007259,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 6941644095,
+   "denominator": 992128,
+   "value": 6996.722292889627,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:909,4:3838,5:8575,6:15183,7:23076,8:28400,9:24865,10:20296,11:15502,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.8089997457007259,
+   "rollouts": 256,
+   "rank_total": 27766576380,
+   "rank_denominator": 3968512,
+   "cache_key": "bf7f883206d2fba1846318cd45959253"
+  }
+ },
  "seat_private_histories": {
   "guesser1": [
    {
@@ -551,6 +666,34 @@
     "committed_word": "oats",
     "clue": "Our adventurous team sails.",
     "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "clue",
+    "committed_word": "eon",
+    "clue": "A very long geological age, longer than an era.",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "clue",
+    "committed_word": "cwm",
+    "clue": "A=1, B=2, and so on. Convert these numbers to letters: 3-23-13.",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "clue",
+    "committed_word": "ivy",
+    "clue": "Initials: Iguanas Visit Yaks. act, add, air, all, amp, ant, any, apt, arc, are, ark, arm, art, ash.",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "clue",
+    "committed_word": "zoo",
+    "clue": "ace, ado, ago, aha, aid, ail, aim, ale, ape, ask, ate, awe, axe, bad, bag, ban, bar, bat, bay, bed",
+    "validity": "valid"
    }
   ],
   "guesser2": [
@@ -696,6 +839,36 @@
     "turn": 25,
     "action": "guess",
     "committed_word": "vug",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "guess",
+    "committed_word": "oats",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "guess",
+    "committed_word": "eon",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "guess",
+    "committed_word": "cwm",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "guess",
+    "committed_word": "ivy",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "guess",
+    "committed_word": "alphabet",
     "validity": "valid"
    }
   ],
@@ -928,6 +1101,50 @@
      "vug",
      "vugs"
     ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 26,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "oat",
+     "oats"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 27,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aeon",
+     "aeons",
+     "eon",
+     "eons"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 28,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cwm",
+     "cwms"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 29,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ivies",
+     "ivy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 30,
+    "validity": "valid",
+    "canonical_blocklist": [],
     "canonical_ranges": []
    }
   ]
@@ -2415,6 +2632,349 @@
    "secret_candidates_after": 172362,
    "block_size": 2,
    "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 26,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "oats",
+   "w2": "oats",
+   "clue": "Our adventurous team sails.",
+   "mentions": [
+    "adventurous",
+    "our",
+    "sails",
+    "team"
+   ],
+   "blocklist": [
+    "oat",
+    "oats"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "adventurous",
+    "oat",
+    "oats",
+    "our",
+    "sails",
+    "team"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172362,
+   "secret_candidates_after": 172356,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 27,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "eon",
+   "w2": "eon",
+   "clue": "A very long geological age, longer than an era.",
+   "mentions": [
+    "age",
+    "era",
+    "geological",
+    "long",
+    "longer",
+    "than",
+    "very"
+   ],
+   "blocklist": [
+    "aeon",
+    "aeons",
+    "eon",
+    "eons"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aeon",
+    "aeons",
+    "age",
+    "eon",
+    "eons",
+    "era",
+    "geological",
+    "long",
+    "longer",
+    "than",
+    "very"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172356,
+   "secret_candidates_after": 172347,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 28,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cwm",
+   "w2": "cwm",
+   "clue": "A=1, B=2, and so on. Convert these numbers to letters: 3-23-13.",
+   "mentions": [
+    "and",
+    "convert",
+    "letters",
+    "numbers",
+    "these"
+   ],
+   "blocklist": [
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "convert",
+    "cwm",
+    "cwms",
+    "letters",
+    "numbers",
+    "these"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172347,
+   "secret_candidates_after": 172342,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 29,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ivy",
+   "w2": "ivy",
+   "clue": "Initials: Iguanas Visit Yaks. act, add, air, all, amp, ant, any, apt, arc, are, ark, arm, art, ash.",
+   "mentions": [
+    "act",
+    "add",
+    "air",
+    "all",
+    "amp",
+    "ant",
+    "any",
+    "apt",
+    "arc",
+    "are",
+    "ark",
+    "arm",
+    "art",
+    "ash",
+    "iguanas",
+    "initials",
+    "visit",
+    "yaks"
+   ],
+   "blocklist": [
+    "ivies",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "act",
+    "add",
+    "air",
+    "all",
+    "amp",
+    "ant",
+    "any",
+    "apt",
+    "arc",
+    "are",
+    "ark",
+    "arm",
+    "art",
+    "ash",
+    "iguanas",
+    "initials",
+    "ivies",
+    "ivy",
+    "visit",
+    "yaks"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172342,
+   "secret_candidates_after": 172323,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 30,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zoo",
+   "w2": "alphabet",
+   "clue": "ace, ado, ago, aha, aid, ail, aim, ale, ape, ask, ate, awe, axe, bad, bag, ban, bar, bat, bay, bed",
+   "mentions": [
+    "ace",
+    "ado",
+    "ago",
+    "aha",
+    "aid",
+    "ail",
+    "aim",
+    "ale",
+    "ape",
+    "ask",
+    "ate",
+    "awe",
+    "axe",
+    "bad",
+    "bag",
+    "ban",
+    "bar",
+    "bat",
+    "bay",
+    "bed"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "zoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "alphabet"
+    }
+   ],
+   "emissions": [
+    "ace",
+    "ado",
+    "ago",
+    "aha",
+    "aid",
+    "ail",
+    "aim",
+    "ale",
+    "alphabet",
+    "ape",
+    "ask",
+    "ate",
+    "awe",
+    "axe",
+    "bad",
+    "bag",
+    "ban",
+    "bar",
+    "bat",
+    "bay",
+    "bed",
+    "zoo"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172323,
+   "secret_candidates_after": 172301,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
    "block_overlap_with_clue": 0,
    "guesser1_valid": true,
    "guesser1_action": "clue",
