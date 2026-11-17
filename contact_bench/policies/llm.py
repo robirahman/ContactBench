@@ -160,7 +160,13 @@ class LLMAgent:
                     f"{self.model.id}: forked transcript needs ~{need} tokens > context window "
                     f"{self.model.context_window_tokens}")
         gate = BudgetGate(self.budget, self.model, est) if self.budget is not None else None
-        async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
-            resp = await self.adapter.fork(req, conversation, gate=gate)
+        try:
+            async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
+                resp = await self.adapter.fork(req, conversation, gate=gate)
+        except Exception as e:
+            # Keep what was actually sent and charged for failure accounting.
+            e.fork_requests_sent = gate.calls if gate else len(getattr(e, "attempts", []) or [])  # type: ignore[attr-defined]
+            e.fork_cost = gate.cost if gate else None  # type: ignore[attr-defined]
+            raise
         return AgentOutput(raw=resp.output_text, response=resp.to_json(), model_id=self.model.id,
                            estimated_input_tokens=est, cost_estimate=gate.cost if gate else None)

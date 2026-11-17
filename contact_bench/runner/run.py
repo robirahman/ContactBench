@@ -402,13 +402,19 @@ class Runner:
                 fo = await agent.fork(spec, fork_id, out.conversation, kind=kind, prompt=prompt)
                 rec = {**base, "status": "ok", "raw_output": fo.raw, "response": fo.response,
                        "cost_estimate": fo.cost_estimate}
-            except BudgetExhausted:
+            except BudgetExhausted as e:
                 self.budget_stopped = True
-                rec = {**base, "status": "unavailable", "error": "budget"}
+                rec = {**base, "status": "unavailable", "error": "budget",
+                       "requests_sent": getattr(e, "fork_requests_sent", 0),
+                       "cost_estimate": getattr(e, "fork_cost", None)}
             except InfrastructureError as e:
-                rec = {**base, "status": "unavailable", "error": f"{e.category}: {sanitize(str(e))}"}
+                rec = {**base, "status": "unavailable", "error": f"{e.category}: {sanitize(str(e))}",
+                       "attempts": [asdict(a) for a in getattr(e, "attempts", []) or []],
+                       "requests_sent": getattr(e, "fork_requests_sent", len(getattr(e, "attempts", []) or [])),
+                       "cost_estimate": getattr(e, "fork_cost", None)}
             except ContextOverflowError as e:
-                rec = {**base, "status": "unavailable", "error": f"context_overflow: {e}"}
+                # Rejected before sending: no provider call was made.
+                rec = {**base, "status": "unavailable", "error": f"context_overflow: {e}", "requests_sent": 0}
             self.store.append_forecast(rec)
 
         self._fork_tasks.setdefault(g.game_id, []).append(asyncio.ensure_future(run()))

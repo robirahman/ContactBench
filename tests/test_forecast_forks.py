@@ -271,3 +271,35 @@ def test_resources_include_fork_calls(tmp_path):
     assert n_forks and fork_reqs == n_forks
     assert all(v.get("input_tokens", 0) > 0 for m in res["resources"].values() for s, v in m.items()
                if s.endswith("/fork"))
+
+
+def test_failed_fork_accounting(tmp_path, monkeypatch):
+    from contact_bench.policies.llm import ContextOverflowError, LLMAgent
+    from contact_bench.providers.base import InfrastructureError, TransportAttempt
+
+    calls = {"n": 0}
+
+    async def flaky(self, *a, **k):
+        calls["n"] += 1
+        if calls["n"] % 2:
+            raise ContextOverflowError("too big")       # never sent
+        e = InfrastructureError("503", category="server")
+        e.attempts = [TransportAttempt(i, 0.0, 0.1, "error", "server") for i in (1, 2, 3)]
+        e.fork_requests_sent, e.fork_cost = 3, 0.03     # three sends, charged
+        raise e
+
+    monkeypatch.setattr(LLMAgent, "fork", flaky)
+    asyncio.run(Runner(_cfg("fork"), tmp_path / "r").run())
+    rr = Runner(_cfg("fork"), tmp_path / "r", replay_only=True)
+    rr.prepare()
+    res = analyze(tmp_path / "r", [asyncio.run(rr.play(g)) for g in rr.games], resamples=0, seed=1,
+                  penalty_scale=2.5, elo_center=1500)
+    forks = RunStore(tmp_path / "r").forecasts()
+    sent = [f for f in forks if f.get("requests_sent")]
+    unsent = [f for f in forks if not f.get("requests_sent")]
+    assert sent and unsent
+    roles = [v for m in res["resources"].values() for s, v in m.items() if s.endswith("/fork")]
+    assert sum(v.get("requests", 0) for v in roles) == len(sent)
+    assert sum(v.get("transport_attempts", 0) for v in roles) == 3 * len(sent)
+    assert sum(v.get("cost_estimate", 0) for v in roles) == pytest.approx(0.03 * len(sent))
+    assert sum(v.get("forks_not_sent", 0) for v in roles) == len(unsent)

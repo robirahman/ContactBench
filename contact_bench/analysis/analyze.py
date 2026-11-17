@@ -291,6 +291,10 @@ def _resources(requests: list[dict]) -> dict:
         a["requests"] += 1
         if q.get("status") != "ok":
             a["errors"] += 1
+            # Failed calls can still have been sent (retries) and charged.
+            a["transport_attempts"] += len(q.get("attempts") or [])
+            if q.get("cost_estimate") is not None:
+                a["cost_estimate"] += q["cost_estimate"]
             continue
         resp = q.get("response") or {}
         u = resp.get("usage") or {}
@@ -482,16 +486,33 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rp = run_dir / "requests.jsonl"
     if rp.exists():
         reqs = [json.loads(l) for l in rp.read_text().splitlines() if l.strip()]
+    unsent: dict[str, dict[str, dict[str, int]]] = {}
     # Forecast-fork calls are billed and budgeted like gameplay calls; account
     # for them under a separate role key ("<seat>/fork").
     if (run_dir / "forecasts.jsonl").exists():
         from ..runner.store import RunStore
 
         for f in RunStore(run_dir).forecasts():
-            reqs.append({"model_id": f["model_id"], "seat": f"{f['seat']}/fork",
-                         "status": "ok" if f["status"] == "ok" else "error",
-                         "response": f.get("response"), "cost_estimate": f.get("cost_estimate")})
+            role = f"{f['seat']}/fork"
+            if f["status"] == "ok":
+                reqs.append({"model_id": f["model_id"], "seat": role, "status": "ok",
+                             "response": f.get("response"), "cost_estimate": f.get("cost_estimate")})
+            elif f.get("requests_sent"):
+                # Sent (possibly retried) but failed: keep attempts and charged cost.
+                attempts = f.get("attempts") or [{} for _ in range(f["requests_sent"])]
+                reqs.append({"model_id": f["model_id"], "seat": role, "status": "error",
+                             "attempts": attempts, "cost_estimate": f.get("cost_estimate")})
+            else:
+                # Never sent (context overflow, pre-send budget stop) or
+                # interrupted with unknown sending: not a request.
+                key = "interrupted" if f.get("error") == "interrupted" else "not_sent"
+                unsent.setdefault(f["model_id"], {}).setdefault(role, {}).setdefault(key, 0)
+                unsent[f["model_id"]][role][key] += 1
     result["resources"] = _resources(reqs)
+    for m, roles in unsent.items():
+        for role, counts in roles.items():
+            for k, v in counts.items():
+                result["resources"].setdefault(m, {}).setdefault(role, {})[f"forks_{k}"] = v
     from .calibration import forecast_calibration
 
     result["forecast_calibration"] = forecast_calibration(records)
