@@ -156,8 +156,14 @@ def cmd_replay(args) -> int:
 
 
 async def _replayed_records(run_dir: Path) -> list[dict]:
+    from ..analysis.combined import is_combined, source_run_dirs
     from ..runner.run import Runner
 
+    if is_combined(run_dir):
+        recs: list[dict] = []
+        for d in source_run_dirs(run_dir):
+            recs.extend(await _replayed_records(d))
+        return recs
     cfg = _config_from_run(run_dir)
     runner = Runner(cfg, run_dir, replay_only=True)
     runner.prepare()
@@ -180,6 +186,16 @@ def cmd_analyze(args) -> int:
     print((run_dir / "analysis" / "report.md").read_text())
     print(f"analysis written to {run_dir / 'analysis'}")
     return 0
+
+
+def cmd_analyze_combined(args) -> int:
+    from ..analysis.combined import combine
+
+    runs = [_runs_dir(args) / r for r in args.run_ids]
+    out = combine(args.name, runs, _runs_dir(args))
+    print(f"combined run directory: {out}")
+    args.run_id = out.name
+    return cmd_analyze(args)
 
 
 def cmd_export(args) -> int:
@@ -358,6 +374,9 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
     s.set_defaults(fn=cmd_analyze)
+    s = sub.add_parser("analyze-combined", help="pool runs with an identical condition into one rating")
+    s.add_argument("name"); s.add_argument("run_ids", nargs="+"); s.add_argument("--bootstrap", type=int)
+    s.set_defaults(fn=cmd_analyze_combined)
     s = sub.add_parser("export"); s.add_argument("run_id"); s.add_argument("--public", action="store_true")
     s.add_argument("--out"); s.add_argument("--include-audit", action="store_true")
     s.add_argument("--max-replays", type=int)

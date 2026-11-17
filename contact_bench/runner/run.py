@@ -621,15 +621,21 @@ class Runner:
 
         await asyncio.gather(*(one(g) for g in todo))
         if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
-            self.schedule_rematches()
-            finished = {r["game_id"] for r in self.store.game_rows()
-                        if r["status"] == "complete" and r["collection_status"] == "complete"}
-            pending_rm = [g for g in self.games if g.rematch_of and g.game_id not in finished]
-            # Shuffle deterministically (independent of outcomes) so a budget
-            # stop does not systematically favour earlier model pairs.
-            pending_rm.sort(key=lambda g: hashlib.sha256(
-                f"rematch-order|{self.cfg.tournament.order_seed}|{g.game_id}".encode()).hexdigest())
-            await asyncio.gather(*(one(g) for g in pending_rm))
+            attempted: set[str] = set()
+            while not (self.halted or self.budget_stopped):
+                self.schedule_rematches()
+                finished = {r["game_id"] for r in self.store.game_rows()
+                            if r["status"] == "complete" and r["collection_status"] == "complete"}
+                pending_rm = [g for g in self.games
+                              if g.rematch_of and g.game_id not in finished and g.game_id not in attempted]
+                if not pending_rm:
+                    break
+                attempted.update(g.game_id for g in pending_rm)
+                # Shuffle deterministically (independent of outcomes) so a budget
+                # stop does not systematically favour earlier model pairs.
+                pending_rm.sort(key=lambda g: hashlib.sha256(
+                    f"rematch-order|{self.cfg.tournament.order_seed}|{g.game_id}".encode()).hexdigest())
+                await asyncio.gather(*(one(g) for g in pending_rm))
         status = self.status()
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
@@ -670,7 +676,9 @@ class Runner:
         """Append one rematch fixture per completed no-progress draw (idempotent).
 
         A rematch starts from the same secret with rematch_extra_letters more
-        letters revealed.  Rematch fixtures never trigger further rematches.
+        letters revealed than the drawn fixture.  With rematch_recursive, a
+        drawn rematch triggers the next one, until the revealed prefix would
+        reach the secret's length.
         The schedule file is extended append-only and logged as an event.
         """
         from .schedule import is_no_progress_capped, rematch_fixture
@@ -678,7 +686,9 @@ class Runner:
         existing = {f.rematch_of for f in self.fixtures if f.rematch_of}
         added: list[Fixture] = []
         for f in list(self.fixtures):
-            if f.rematch_of or f.fixture_id in existing:
+            if f.fixture_id in existing:
+                continue
+            if f.rematch_of and not self.cfg.tournament.rematch_recursive:
                 continue
             ab, ba = self.store.read_game(f.game_ab), self.store.read_game(f.game_ba)
             if not ab or not ba or ab.get("run_status") != "complete" or ba.get("run_status") != "complete":

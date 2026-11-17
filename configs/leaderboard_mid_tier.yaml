@@ -1,9 +1,7 @@
-# Mid-tier round robin: Claude Sonnet 5.5, GPT-6.1 Terra, Gemini 4 Argon. Same condition as
-# leaderboard_latest_small_10.yaml (dictionary-assisted, empty prefix, cap 30, 10 secrets, draws+rematches).
-# Gemini uses the generate_content API family: Gemini 4 models do not support explicit context caching
-# (no createCachedContent action), and generateContent's implicit cache reused ~50% of the prompt in a
-# live test versus ~16% through Interactions. Inference profiles use low effort/reasoning/thinking.
-name: leaderboard-mid-tier
+# Mid-tier round robin: Claude Sonnet 5.5, GPT-6.1 Terra, Gemini 4 Argon (generateContent for better
+# implicit prompt caching). Same condition and secrets as leaderboard_latest_small_10.yaml, so runs can be
+# combined with `contact-bench analyze-combined` for overall ratings.
+name: leaderboard-mid-tier-10
 fixture_data: false
 protocol:
   version: contact-v0.5

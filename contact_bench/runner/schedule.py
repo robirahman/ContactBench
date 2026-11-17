@@ -71,8 +71,10 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     games: list[GameSpec] = []
     sched = cfg.tournament.schedule
     reps = cfg.tournament.repetitions
-    if sched in ("balanced_round_robin", "round_robin_plus_self_play"):
-        for a, b in itertools.combinations(ids, 2):
+    if sched in ("balanced_round_robin", "round_robin_plus_self_play", "pairs"):
+        pair_list = ([tuple(p) for p in cfg.tournament.pairs] if sched == "pairs"
+                     else list(itertools.combinations(ids, 2)))
+        for a, b in pair_list:
             for t in tasks:
                 for r in range(reps):
                     fid = f"{t.task_id}-r{r}-{a}~{b}"
