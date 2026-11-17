@@ -88,9 +88,11 @@ The authoritative rules are in `CONTACT_BENCHMARK_SPEC.md`. This page describes 
   probability `sigmoid(strength(L1) − strength(L2))`, with half-point draws as before. Each component has prior
   `N(0, s²/3)`, so the composite `g1 + g2 + d` has the same `N(0, s²)` prior as the homogeneous rating, and on
   homogeneous fixtures (A+A vs D=B against B+B vs D=A) the composite reproduces the homogeneous Elo exactly.
-  Role fixtures identify clue-giver vs receiver contrasts; self-play fixtures identify `g1 + g2` differences;
-  defender components are identified only by fixtures whose legs face different defenders (homogeneous runs, which
-  `teams.prior_runs` can include for defender selection). Components are centred within each role.
+  Role fixtures identify differences in `g1 − g2`; self-play fixtures identify differences in `g1 + g2`;
+  homogeneous fixtures (from `teams.prior_runs`, also used for defender selection after a condition check)
+  identify composite differences, and with the self-play data, defender differences. Components are centred over
+  the team models, and the analysis publishes a value (point estimate and bootstrap interval) only when an exact
+  design-matrix check shows the fixtures identify it; other values are shown as "—".
 - **Adaptive defender selection** (`defender_selection: adaptive_uncertainty`). Tasks are split into `rounds`;
   before each round the role model is refitted on all completed data (this run plus `prior_runs`) and each
   (pair, task) block gets the defender that (1) fills the most missing (model, defender) matchups, then (2) has

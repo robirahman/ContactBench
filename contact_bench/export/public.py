@@ -136,7 +136,9 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
     _rm_flags = schedule_rematch_flags(json.loads((run_dir / "schedule.json").read_text()).get("fixtures", []))
     condition = {
         "protocol_version": cfg["protocol"]["version"],
-        "protocol": cfg["protocol"],
+        # partner_disclosure is part of the condition only for mixed teams (below);
+        # keep homogeneous keys identical to runs that predate the field.
+        "protocol": {k: v for k, v in cfg["protocol"].items() if k != "partner_disclosure"},
         "dictionary_access": cfg["protocol"].get("dictionary_access", "full_candidate_lists"),
         "blocklist_encoding": cfg["protocol"].get("blocklist_encoding", "words"),
         "initial_prefix_length": cfg["protocol"].get("initial_prefix_length", 1),

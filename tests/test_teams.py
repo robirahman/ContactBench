@@ -111,8 +111,8 @@ def test_offline_team_run_routes_seats_and_analyzes(tmp_path):
     # team legs count in the efficiency statistics (L1/L2 labels)
     assert res["model_stats"]["x+y"]["offense_games"] >= 2  # plus any rematch legs
     # no fixture faces different defenders: defender components are not identified
-    assert t["defender_components_identified"] is False
     assert all(v is None for v in t["role_rating"]["elo"].values())
+    assert all(c["d"] is None for c in t["role_rating"]["components_elo_points"].values())
     out = export_public(tmp_path / "run", tmp_path / "exp", res, recs)
     assert not scan_for_secrets(out)
     rep = asyncio.run(Runner(c, tmp_path / "run", replay_only=True).replay())
@@ -203,18 +203,6 @@ def test_match_points_symmetry_for_role_fixture():
     assert match_points(3, 5) == 1.0 and match_points(5, 3) == 0.0
 
 
-def test_defender_identified_only_with_different_defenders():
-    from contact_bench.analysis.analyze import defender_identified
-    assert not defender_identified([(("a", "b", "d"), ("b", "a", "d"), 1.0)])
-    assert defender_identified([(("a", "a", "b"), ("b", "b", "a"), 1.0)])
-
-
-def test_identified_defenders_per_model():
-    from contact_bench.analysis.analyze import identified_defenders
-    legs = [(("a", "a", "b"), ("b", "b", "a"), 1.0), (("a", "c", "d"), ("c", "a", "d"), 0.0)]
-    assert identified_defenders(legs) == {"a", "b"}
-
-
 def test_team_models_must_share_offense_mode():
     c = team_cfg().model_dump(mode="json")
     c["models"][0]["offense_mode"] = "direct_only"
@@ -237,3 +225,20 @@ def test_prior_runs_must_match_condition(tmp_path):
     asyncio.run(Runner(other, tmp_path / "prior5", adapters=_adapters(other, seen)).run())
     with pytest.raises(PriorRunError):
         check_prior_run(tmp_path / "team", tmp_path / "prior5")
+
+
+def test_role_estimability_from_design():
+    from contact_bench.analysis.rating import role_estimability
+    hom = [(("a", "a", "b"), ("b", "b", "a"), 1), (("b", "b", "c"), ("c", "c", "b"), 1), (("a", "a", "x"), ("x", "x", "a"), 1)]
+    team = [(("a", "b", "c"), ("b", "a", "c"), 1), (("a", "a", "c"), ("b", "b", "c"), 1),
+            (("b", "c", "a"), ("c", "b", "a"), 1), (("b", "b", "a"), ("c", "c", "a"), 1)]
+    # homogeneous fixtures alone identify only composites
+    e = role_estimability("abcx", hom)
+    assert e["a"]["composite"] and not e["a"]["g1"] and not e["a"]["d"]
+    # adding role and self-play fixtures identifies components among team models only
+    e = role_estimability("abcx", hom + team, reference="abc")
+    assert all(e[m][r] for m in "abc" for r in ("g1", "g2", "d"))
+    assert e["x"]["composite"] and not e["x"]["g1"]
+    # team fixtures alone never identify defender components
+    e = role_estimability("abc", team, reference="abc")
+    assert not any(e[m]["d"] for m in "abc") and all(e[m]["g1"] for m in "abc")

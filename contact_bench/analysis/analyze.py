@@ -547,18 +547,18 @@ def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool
     return out
 
 
-def identified_defenders(legs: list[tuple]) -> set[str]:
-    """Models whose defender component enters the likelihood: only fixtures
-    whose legs face different defenders carry d terms."""
-    return {m for l1, l2, _ in legs if l1[2] != l2[2] for m in (l1[2], l2[2])}
+def centred_components(fit, reference: list[str]) -> dict[str, dict[str, float]]:
+    """Role components in Elo points, each role centred over ``reference``."""
+    from .rating import ROLES
 
-
-def defender_identified(legs: list[tuple]) -> bool:
-    return bool(identified_defenders(legs))
+    scale = 400.0 / math.log(10)
+    mean = {r: sum(fit.theta[k][r] for k in reference) / len(reference) for r in ROLES}
+    return {m: {r: scale * (fit.theta[m][r] - mean[r]) for r in ROLES} for m in fit.models}
 
 
 def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resamples: int, seed: int,
-                   penalty_scale: float, elo_center: float, drop_for: dict | None = None) -> dict:
+                   penalty_scale: float, elo_center: float, drop_for: dict | None = None,
+                   reference: list[str] | None = None) -> dict:
     from .rating import ROLES, fit_role_ratings
 
     tasks = sorted(legs_by_task)
@@ -570,11 +570,11 @@ def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resample
         fit = fit_role_ratings(models, [x for t in pick for x in legs_by_task[t]],
                                penalty_scale=penalty_scale, elo_center=elo_center)
         failures += not fit.converged
-        scale = 400.0 / math.log(10)
+        comp = centred_components(fit, reference or models)
         for m in models:
             samples[m]["elo"].append(fit.elo[m])
             for r in ROLES:
-                samples[m][r].append(scale * fit.theta[m][r])
+                samples[m][r].append(comp[m][r])
     return {"resamples": resamples, "seed": seed, "task_clusters": len(tasks), "fit_failures": failures,
             "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()
                                  if k not in (drop_for or {}).get(m, ())} for m, d in samples.items()}}
@@ -666,29 +666,39 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         fit_models = sorted(set(model_ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
         rfit = fit_role_ratings(fit_models, legs, penalty_scale=penalty_scale, elo_center=elo_center)
         rjson = rfit.to_json()
-        known_d = identified_defenders(legs)
-        ident = bool(known_d)
-        # A model whose defender component never enters the likelihood (it only
-        # defended fixtures with the same defender in both legs) has d = prior:
-        # omit its defender component and composite.
-        unknown = [m for m in fit_models if m not in known_d]
-        for m in unknown:
-            rjson["components_elo_points"][m] = {**rjson["components_elo_points"][m], "d": None}
-            rjson["elo"][m] = None
-            rjson["composite_logit"][m] = None
+        from .rating import ROLES, role_estimability
+
+        # Components are reported centred over the team models (the models that
+        # played guesser seats in team fixtures); every value is published only
+        # if the fixture design identifies it exactly (design-matrix row space).
+        reference = sorted({m for l1, l2, _ in legs for leg in (l1, l2) if leg[0] != leg[1] for m in leg[:2]}
+                           ) or fit_models
+        est = role_estimability(fit_models, legs, reference=reference)
+        comp = centred_components(rfit, reference)
+        drop_for = {}
+        for m in fit_models:
+            rjson["components_elo_points"][m] = {r: (comp[m][r] if est[m][r] else None) for r in ROLES}
+            if not est[m]["composite"]:
+                rjson["elo"][m] = None
+                rjson["composite_logit"][m] = None
+            drop_for[m] = tuple(r for r in ROLES if not est[m][r]) + (() if est[m]["composite"] else ("elo",))
+        rjson["components_centred_over"] = reference
+        omitted = {m: list(v) for m, v in drop_for.items() if v}
         team_result = {
             "role_rating": rjson,
-            "defender_components_identified": ident,
-            "defender_components_omitted": unknown,
+            "estimable": est,
+            "omitted_unidentified": omitted,
             "prior_runs_in_role_fit": prior,
             "role_bootstrap": role_bootstrap(fit_models, by_task, resamples=resamples, seed=seed,
                                              penalty_scale=penalty_scale, elo_center=elo_center,
-                                             drop_for={m: ("elo", "d") for m in unknown}) if legs else None,
+                                             drop_for=drop_for, reference=reference) if legs else None,
             **team_diagnostics(rows),
             "partner_disclosure": manifest["config"]["protocol"].get("partner_disclosure", "blind"),
-            "identifiability_note": "Role fixtures (A+B vs B+A against one defender) identify clue-giver vs "
-                                    "receiver contrasts; defender components are informed only by fixtures whose "
-                                    "legs face different defenders (homogeneous model-pair fixtures).",
+            "identifiability_note": "Role fixtures (A+B vs B+A, one defender) identify differences in "
+                                    "clue-giver minus receiver skill; self-play fixtures (A+A vs B+B) identify "
+                                    "differences in g1+g2; homogeneous fixtures identify composite differences. "
+                                    "Components are centred over the team models and a value is shown only when "
+                                    "the fixture design identifies it exactly.",
         }
     result = {
         "run_id": manifest["run_id"],
@@ -907,10 +917,9 @@ def render_teams(t: dict) -> str:
         elo = "—" if rr["elo"][m] is None else f"{rr['elo'][m]:.0f}"
         L.append(f"| {m} | {elo} | {ci(m, 'elo')} | {sg(th['g1'])} {ci(m, 'g1')} | "
                  f"{sg(th['g2'])} {ci(m, 'g2')} | {sg(th['d'])} {ci(m, 'd')} |")
-    if t.get("defender_components_omitted"):
-        L.append("\nDefender components and composites are omitted for " + ", ".join(t["defender_components_omitted"])
-                 + ": no fixture in the fit had those models defending only one of its two legs, so their defender "
-                 "component would be the prior.")
+    if t.get("omitted_unidentified"):
+        L.append("\nNot identified by the design (shown as —): " + "; ".join(
+            f"{m}: {', '.join(v)}" for m, v in sorted(t["omitted_unidentified"].items())) + ".")
     L.append("\n" + t["identifiability_note"] + "\n")
     L.append("### Cross-play matrix (median cost, turns; rows = Guesser 1, columns = Guesser 2)\n")
     mat = t["cross_play_matrix"]

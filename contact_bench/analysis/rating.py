@@ -285,3 +285,72 @@ def fit_role_ratings(
     scale = 400.0 / math.log(10)
     return RoleFit(models, theta, comp, {m: elo_center + scale * v for m, v in comp.items()}, cov,
                    converged, it, penalty_scale, len(fixtures))
+
+
+def _rref_basis(rows: list[list[Fraction]]) -> list[tuple[int, list[Fraction]]]:
+    """Reduced row-echelon basis of the row space: [(pivot column, row)]."""
+    basis: list[tuple[int, list[Fraction]]] = []
+    for row in rows:
+        v = list(row)
+        for p, b in basis:
+            if v[p]:
+                f = v[p]
+                v = [x - f * y for x, y in zip(v, b)]
+        piv = next((i for i, x in enumerate(v) if x), None)
+        if piv is None:
+            continue
+        v = [x / v[piv] for x in v]
+        basis = [(p, [x - b[piv] * y for x, y in zip(b, v)]) for p, b in basis]
+        basis.append((piv, v))
+    return basis
+
+
+def _in_row_space(basis, c: list[Fraction]) -> bool:
+    v = list(c)
+    for p, b in basis:
+        if v[p]:
+            f = v[p]
+            v = [x - f * y for x, y in zip(v, b)]
+    return not any(v)
+
+
+def role_estimability(models: Sequence[str], fixtures: Sequence[tuple[Leg, Leg, float]],
+                      reference: Sequence[str] | None = None) -> dict[str, dict[str, bool]]:
+    """Which reported quantities the fixture design identifies (exactly).
+
+    Each fixture's likelihood depends on theta only through x = f(leg1) - f(leg2).
+    A reported value c.theta is identified iff c lies in the row space of the
+    design.  Components are centred within each role, so the reported g1 of
+    model m is theta[m,g1] - mean_{k in reference} theta[k,g1] (reference
+    defaults to all models); the composite is centred over all models.
+    """
+    ref = [models.index(k) for k in (reference or models)]
+    n = len(models)
+    rows = []
+    seen = set()
+    for l1, l2, _ in fixtures:
+        x = [Fraction(0)] * (3 * n)
+        for k, v in leg_features(models, l1, 1.0).items():
+            x[k] += Fraction(v)
+        for k, v in leg_features(models, l2, -1.0).items():
+            x[k] += Fraction(v)
+        key = tuple(x)
+        if key not in seen and any(x):
+            seen.add(key)
+            rows.append(x)
+    basis = _rref_basis(rows)
+
+    def centred(m: int, roles: Sequence[int], over: Sequence[int]) -> list[Fraction]:
+        c = [Fraction(0)] * (3 * n)
+        for r in roles:
+            for k in over:
+                c[3 * k + r] -= Fraction(1, len(over))
+            c[3 * m + r] += 1
+        return c
+
+    out = {}
+    for i, m in enumerate(models):
+        est = {role: _in_row_space(basis, centred(i, [j], ref)) for j, role in enumerate(ROLES)}
+        est["composite"] = _in_row_space(basis, centred(i, [0, 1, 2], range(n)))
+        out[m] = est
+    return out
