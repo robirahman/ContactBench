@@ -1,0 +1,117 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "african equine with black and white stripes",
+   "blocklist": [
+    "quagga",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "zebra",
+    "clue": "african equine with black and white stripes",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "zebra",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quagga",
+     "zebra"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zebra",
+   "w2": "zebra",
+   "clue": "african equine with black and white stripes",
+   "mentions": [
+    "and",
+    "black",
+    "equine",
+    "stripes",
+    "white",
+    "with"
+   ],
+   "blocklist": [
+    "quagga",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "black",
+    "equine",
+    "quagga",
+    "stripes",
+    "white",
+    "with",
+    "zebra"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172600,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

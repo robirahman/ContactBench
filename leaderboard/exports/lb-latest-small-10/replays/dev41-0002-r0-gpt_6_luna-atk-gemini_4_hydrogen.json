@@ -1,0 +1,537 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "An Australian marsupial often photographed smiling.",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Archimedes' legendary exclamation on discovering buoyancy.",
+   "blocklist": [
+    "eureka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A small household pet that purrs and meows.",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kittens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "An ancient writing style in which each line alternates direction, like an ox plowing a field.",
+   "blocklist": [
+    "boustrophedon",
+    "boustrophedonic",
+    "boustrophedons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The solid phase of H2O, commonly found in cubes in a drink.",
+   "blocklist": [
+    "ice",
+    "ices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "quokka",
+    "clue": "An Australian marsupial often photographed smiling.",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "eureka",
+    "clue": "Archimedes' legendary exclamation on discovering buoyancy.",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "A small household pet that purrs and meows.",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "boustrophedon",
+    "clue": "An ancient writing style in which each line alternates direction, like an ox plowing a field.",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "ice",
+    "clue": "The solid phase of H2O, commonly found in cubes in a drink.",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "badger",
+    "clue": "Read the initials: Bright autumn days gently end remarkably.",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "quokka",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "eureka",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "boustrophedon",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "ice",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quokka",
+     "quokkas"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "eureka"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat",
+     "cats",
+     "feline",
+     "kitten",
+     "kittens"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "boustrophedon",
+     "boustrophedonic",
+     "boustrophedons"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ice",
+     "ices"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "quokka",
+   "w2": "quokka",
+   "clue": "An Australian marsupial often photographed smiling.",
+   "mentions": [
+    "marsupial",
+    "often",
+    "photographed",
+    "smiling"
+   ],
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "marsupial",
+    "often",
+    "photographed",
+    "quokka",
+    "quokkas",
+    "smiling"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172602,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "eureka",
+   "w2": "eureka",
+   "clue": "Archimedes' legendary exclamation on discovering buoyancy.",
+   "mentions": [
+    "buoyancy",
+    "discovering",
+    "exclamation",
+    "legendary"
+   ],
+   "blocklist": [
+    "eureka"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "buoyancy",
+    "discovering",
+    "eureka",
+    "exclamation",
+    "legendary"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172602,
+   "secret_candidates_after": 172597,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172597,
+   "secret_candidates_after": 172597,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "A small household pet that purrs and meows.",
+   "mentions": [
+    "and",
+    "household",
+    "meows",
+    "pet",
+    "purrs",
+    "small",
+    "that"
+   ],
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kittens"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "cat",
+    "cats",
+    "feline",
+    "household",
+    "kitten",
+    "kittens",
+    "meows",
+    "pet",
+    "purrs",
+    "small",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172597,
+   "secret_candidates_after": 172585,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "boustrophedon",
+   "w2": "boustrophedon",
+   "clue": "An ancient writing style in which each line alternates direction, like an ox plowing a field.",
+   "mentions": [
+    "alternates",
+    "ancient",
+    "direction",
+    "each",
+    "field",
+    "like",
+    "line",
+    "plowing",
+    "style",
+    "which",
+    "writing"
+   ],
+   "blocklist": [
+    "boustrophedon",
+    "boustrophedonic",
+    "boustrophedons"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "alternates",
+    "ancient",
+    "boustrophedon",
+    "boustrophedonic",
+    "boustrophedons",
+    "direction",
+    "each",
+    "field",
+    "like",
+    "line",
+    "plowing",
+    "style",
+    "which",
+    "writing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172585,
+   "secret_candidates_after": 172571,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ice",
+   "w2": "ice",
+   "clue": "The solid phase of H2O, commonly found in cubes in a drink.",
+   "mentions": [
+    "commonly",
+    "cubes",
+    "drink",
+    "found",
+    "phase",
+    "solid",
+    "the"
+   ],
+   "blocklist": [
+    "ice",
+    "ices"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "commonly",
+    "cubes",
+    "drink",
+    "found",
+    "ice",
+    "ices",
+    "phase",
+    "solid",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172571,
+   "secret_candidates_after": 172562,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

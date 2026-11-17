@@ -6,8 +6,8 @@
  "initial_prefix": "",
  "turn_limit": 20,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
  "public_history": [
   {
    "turn": 1,
@@ -191,9 +191,167 @@
    "opened_guesses": [],
    "prefix_after": "su",
    "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "underground electric railway system in an urban metropolitan city",
+   "blocklist": [
+    "subway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "medical doctor who performs specialized operations in an operating theater",
+   "blocklist": [
+    "surgeon",
+    "surgery",
+    "surgical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "large retail self-service grocery store selling food and household goods",
+   "blocklist": [
+    "supermarket"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+   "blocklist": [
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+   "blocklist": [
+    "sudden",
+    "surprise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "the outermost layer or uppermost boundary of an object or body of water",
+   "blocklist": [
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "daily disappearance of the sun below the western horizon at dusk",
+   "blocklist": [
+    "sunset",
+    "supply",
+    "suspect"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+   "blocklist": [
+    "minus"
+   ],
+   "blocked_ranges": [
+    [
+     "subtract",
+     "subtrahend"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
   }
  ],
- "score": null,
+ "score": {
+  "status": "scored",
+  "cost": 145.00330528846155,
+  "cost_numerator": 482571,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.464774844203489,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 416011,
+   "denominator": 3328,
+   "value": 125.00330528846153,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:27,5:47,6:104,7:233,8:383,9:407,10:424,11:354,12:274,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.464774844203489,
+   "rollouts": 256,
+   "rank_total": 3328088,
+   "rank_denominator": 26624,
+   "cache_key": "c549f0d2b9093eaadcd51cc51fe3d3ee"
+  }
+ },
  "seat_private_histories": {
   "guesser1": [
    {
@@ -286,6 +444,55 @@
     "committed_word": "subway",
     "clue": "underground electric railway system in an urban metropolitan city",
     "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "surgeon",
+    "clue": "medical doctor who performs specialized operations in an operating theater",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "supermarket",
+    "clue": "large retail self-service grocery store selling food and household goods",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "surrender",
+    "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "surprise",
+    "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "surface",
+    "clue": "the outermost layer or uppermost boundary of an object or body of water",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "sunset",
+    "clue": "daily disappearance of the sun below the western horizon at dusk",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "subtraction",
+    "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+    "validity": "valid"
    }
   ],
   "guesser2": [
@@ -359,6 +566,54 @@
     "turn": 12,
     "action": "guess",
     "committed_word": "suitcase",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "subway",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "surgeon",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "supermarket",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "surrender",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "surprise",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "surface",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "sunset",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "subtraction",
     "validity": "valid"
    }
   ],
@@ -469,6 +724,87 @@
      "sure"
     ],
     "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "subway"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "surgeon",
+     "surgery",
+     "surgical"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supermarket"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "surrender",
+     "surrendered",
+     "surrendering",
+     "surrenders"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sudden",
+     "surprise"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "superficial",
+     "supplies",
+     "support",
+     "supreme",
+     "surface"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sunset",
+     "supply",
+     "suspect"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "minus"
+    ],
+    "canonical_ranges": [
+     [
+      "subtract",
+      "subtrahend"
+     ]
+    ]
    }
   ]
  },
@@ -1222,6 +1558,526 @@
    "block_size": 8,
    "block_fresh_secret_candidates": 8,
    "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "subway",
+   "w2": "subway",
+   "clue": "underground electric railway system in an urban metropolitan city",
+   "mentions": [
+    "city",
+    "electric",
+    "metropolitan",
+    "railway",
+    "system",
+    "underground",
+    "urban"
+   ],
+   "blocklist": [
+    "subway"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "city",
+    "electric",
+    "metropolitan",
+    "railway",
+    "subway",
+    "system",
+    "underground",
+    "urban"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2865,
+   "secret_candidates_after": 2864,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surgeon",
+   "w2": "surgeon",
+   "clue": "medical doctor who performs specialized operations in an operating theater",
+   "mentions": [
+    "doctor",
+    "medical",
+    "operating",
+    "operations",
+    "performs",
+    "specialized",
+    "theater",
+    "who"
+   ],
+   "blocklist": [
+    "surgeon",
+    "surgery",
+    "surgical"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "doctor",
+    "medical",
+    "operating",
+    "operations",
+    "performs",
+    "specialized",
+    "surgeon",
+    "surgery",
+    "surgical",
+    "theater",
+    "who"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2864,
+   "secret_candidates_after": 2861,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "supermarket",
+   "w2": "supermarket",
+   "clue": "large retail self-service grocery store selling food and household goods",
+   "mentions": [
+    "and",
+    "food",
+    "goods",
+    "grocery",
+    "household",
+    "large",
+    "retail",
+    "self",
+    "selling",
+    "service",
+    "store"
+   ],
+   "blocklist": [
+    "supermarket"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "food",
+    "goods",
+    "grocery",
+    "household",
+    "large",
+    "retail",
+    "self",
+    "selling",
+    "service",
+    "store",
+    "supermarket"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2861,
+   "secret_candidates_after": 2860,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surrender",
+   "w2": "surrender",
+   "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+   "mentions": [
+    "admit",
+    "and",
+    "battle",
+    "defeat",
+    "fighting",
+    "flag",
+    "raising",
+    "stop",
+    "white"
+   ],
+   "blocklist": [
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "admit",
+    "and",
+    "battle",
+    "defeat",
+    "fighting",
+    "flag",
+    "raising",
+    "stop",
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders",
+    "white"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2860,
+   "secret_candidates_after": 2856,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surprise",
+   "w2": "surprise",
+   "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+   "mentions": [
+    "astonishment",
+    "caused",
+    "event",
+    "feeling",
+    "something",
+    "unanticipated",
+    "unexpected"
+   ],
+   "blocklist": [
+    "sudden",
+    "surprise"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "astonishment",
+    "caused",
+    "event",
+    "feeling",
+    "something",
+    "sudden",
+    "surprise",
+    "unanticipated",
+    "unexpected"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2856,
+   "secret_candidates_after": 2854,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surface",
+   "w2": "surface",
+   "clue": "the outermost layer or uppermost boundary of an object or body of water",
+   "mentions": [
+    "body",
+    "boundary",
+    "layer",
+    "object",
+    "outermost",
+    "the",
+    "uppermost",
+    "water"
+   ],
+   "blocklist": [
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "body",
+    "boundary",
+    "layer",
+    "object",
+    "outermost",
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface",
+    "the",
+    "uppermost",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2854,
+   "secret_candidates_after": 2849,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "sunset",
+   "w2": "sunset",
+   "clue": "daily disappearance of the sun below the western horizon at dusk",
+   "mentions": [
+    "below",
+    "daily",
+    "disappearance",
+    "dusk",
+    "horizon",
+    "sun",
+    "the",
+    "western"
+   ],
+   "blocklist": [
+    "sunset",
+    "supply",
+    "suspect"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "below",
+    "daily",
+    "disappearance",
+    "dusk",
+    "horizon",
+    "sun",
+    "sunset",
+    "supply",
+    "suspect",
+    "the",
+    "western"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2849,
+   "secret_candidates_after": 2846,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "subtraction",
+   "w2": "subtraction",
+   "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+   "mentions": [
+    "another",
+    "arithmetic",
+    "away",
+    "from",
+    "minus",
+    "number",
+    "one",
+    "operation",
+    "sign",
+    "symbolized",
+    "taking"
+   ],
+   "blocklist": [
+    "minus"
+   ],
+   "blocked_ranges": [
+    [
+     "subtract",
+     "subtrahend"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "another",
+    "arithmetic",
+    "away",
+    "from",
+    "minus",
+    "number",
+    "one",
+    "operation",
+    "sign",
+    "subtract",
+    "subtracted",
+    "subtracter",
+    "subtracters",
+    "subtracting",
+    "subtraction",
+    "subtractions",
+    "subtractive",
+    "subtracts",
+    "subtrahend",
+    "symbolized",
+    "taking"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2846,
+   "secret_candidates_after": 2836,
+   "block_size": 11,
+   "block_fresh_secret_candidates": 10,
+   "block_overlap_with_clue": 1,
    "guesser1_valid": true,
    "guesser1_action": "clue",
    "guesser2_valid": true,

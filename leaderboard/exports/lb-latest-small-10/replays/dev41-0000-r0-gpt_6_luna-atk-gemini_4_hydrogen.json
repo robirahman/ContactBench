@@ -1,0 +1,742 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A five-letter young dog",
+   "blocklist": [
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A young kangaroo",
+   "blocklist": [
+    "joey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A curved, single-reed woodwind invented in Belgium and named for its inventor.",
+   "blocklist": [
+    "sax",
+    "saxophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "On a recorder, what is the block in the mouthpiece that channels air against the sharp edge?",
+   "blocklist": [
+    "fipple",
+    "windway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A swan's baby, not a gosling, duckling, eaglet, chick, foal, calf, lamb, cub, kitten, fawn.",
+   "blocklist": [
+    "cygnet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A mild, gentle breeze, especially one from the west.",
+   "blocklist": [
+    "zephyr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "What is the tiny mark above a lowercase i or j called?",
+   "blocklist": [
+    "dot",
+    "tittle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "puppy",
+    "clue": "A five-letter young dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "joey",
+    "clue": "A young kangaroo",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "saxophone",
+    "clue": "A curved, single-reed woodwind invented in Belgium and named for its inventor.",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "fipple",
+    "clue": "On a recorder, what is the block in the mouthpiece that channels air against the sharp edge?",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "cygnet",
+    "clue": "A swan's baby, not a gosling, duckling, eaglet, chick, foal, calf, lamb, cub, kitten, fawn.",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 7,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue must be printable ASCII"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "zephyr",
+    "clue": "A mild, gentle breeze, especially one from the west.",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "tittle",
+    "clue": "What is the tiny mark above a lowercase i or j called?",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "emu",
+    "clue": "A large Australian ratite, unlike the ostrich or kiwi.",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "puppy",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "joey",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "saxophone",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "fipple",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "cygnet",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "zephyr",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "tittle",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "puppy",
+     "whelp"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "joey"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sax",
+     "saxophone"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "fipple",
+     "windway"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cygnet"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "zephyr"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "dot",
+     "tittle"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "puppy",
+   "w2": "puppy",
+   "clue": "A five-letter young dog",
+   "mentions": [
+    "dog",
+    "five",
+    "letter",
+    "young"
+   ],
+   "blocklist": [
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "dog",
+    "five",
+    "letter",
+    "puppy",
+    "whelp",
+    "young"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172602,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "joey",
+   "w2": "joey",
+   "clue": "A young kangaroo",
+   "mentions": [
+    "kangaroo",
+    "young"
+   ],
+   "blocklist": [
+    "joey"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "joey",
+    "kangaroo",
+    "young"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172602,
+   "secret_candidates_after": 172600,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "saxophone",
+   "w2": "saxophone",
+   "clue": "A curved, single-reed woodwind invented in Belgium and named for its inventor.",
+   "mentions": [
+    "and",
+    "curved",
+    "for",
+    "invented",
+    "inventor",
+    "its",
+    "named",
+    "reed",
+    "single",
+    "woodwind"
+   ],
+   "blocklist": [
+    "sax",
+    "saxophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "curved",
+    "for",
+    "invented",
+    "inventor",
+    "its",
+    "named",
+    "reed",
+    "sax",
+    "saxophone",
+    "single",
+    "woodwind"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172600,
+   "secret_candidates_after": 172588,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "fipple",
+   "w2": "fipple",
+   "clue": "On a recorder, what is the block in the mouthpiece that channels air against the sharp edge?",
+   "mentions": [
+    "against",
+    "air",
+    "block",
+    "channels",
+    "edge",
+    "mouthpiece",
+    "recorder",
+    "sharp",
+    "that",
+    "the",
+    "what"
+   ],
+   "blocklist": [
+    "fipple",
+    "windway"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "against",
+    "air",
+    "block",
+    "channels",
+    "edge",
+    "fipple",
+    "mouthpiece",
+    "recorder",
+    "sharp",
+    "that",
+    "the",
+    "what",
+    "windway"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172588,
+   "secret_candidates_after": 172575,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cygnet",
+   "w2": "cygnet",
+   "clue": "A swan's baby, not a gosling, duckling, eaglet, chick, foal, calf, lamb, cub, kitten, fawn.",
+   "mentions": [
+    "baby",
+    "calf",
+    "chick",
+    "cub",
+    "duckling",
+    "eaglet",
+    "fawn",
+    "foal",
+    "gosling",
+    "kitten",
+    "lamb",
+    "not",
+    "swan"
+   ],
+   "blocklist": [
+    "cygnet"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "baby",
+    "calf",
+    "chick",
+    "cub",
+    "cygnet",
+    "duckling",
+    "eaglet",
+    "fawn",
+    "foal",
+    "gosling",
+    "kitten",
+    "lamb",
+    "not",
+    "swan"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172575,
+   "secret_candidates_after": 172561,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172561,
+   "secret_candidates_after": 172561,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172561,
+   "secret_candidates_after": 172561,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zephyr",
+   "w2": "zephyr",
+   "clue": "A mild, gentle breeze, especially one from the west.",
+   "mentions": [
+    "breeze",
+    "especially",
+    "from",
+    "gentle",
+    "mild",
+    "one",
+    "the",
+    "west"
+   ],
+   "blocklist": [
+    "zephyr"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "breeze",
+    "especially",
+    "from",
+    "gentle",
+    "mild",
+    "one",
+    "the",
+    "west",
+    "zephyr"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172561,
+   "secret_candidates_after": 172553,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "tittle",
+   "w2": "tittle",
+   "clue": "What is the tiny mark above a lowercase i or j called?",
+   "mentions": [
+    "above",
+    "called",
+    "lowercase",
+    "mark",
+    "the",
+    "tiny",
+    "what"
+   ],
+   "blocklist": [
+    "dot",
+    "tittle"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "above",
+    "called",
+    "dot",
+    "lowercase",
+    "mark",
+    "the",
+    "tiny",
+    "tittle",
+    "what"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172553,
+   "secret_candidates_after": 172546,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

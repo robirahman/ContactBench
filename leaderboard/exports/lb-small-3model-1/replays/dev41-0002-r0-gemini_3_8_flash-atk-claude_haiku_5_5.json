@@ -6,8 +6,8 @@
  "initial_prefix": "",
  "turn_limit": 20,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
  "public_history": [
   {
    "turn": 1,
@@ -114,9 +114,252 @@
    "opened_guesses": [],
    "prefix_after": "",
    "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Writing implement with a graphite core encased in wood",
+   "blocklist": [
+    "crayon",
+    "marker",
+    "pen",
+    "pencil"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Wax cylinder with an embedded wick that provides light when burned",
+   "blocklist": [
+    "candle",
+    "lamp",
+    "taper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Muscular organ that pumps blood through the body",
+   "blocklist": [
+    "heart",
+    "kidney",
+    "liver",
+    "lung"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Six-stringed acoustic musical instrument played by strumming or picking",
+   "blocklist": [
+    "banjo",
+    "bouzouki",
+    "cittern",
+    "dulcimer",
+    "guitar",
+    "harp",
+    "lute",
+    "mandolin",
+    "sitar",
+    "ukulele"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Dome-shaped dwelling built from blocks of packed snow by Inuits",
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Canopy device designed to protect against rain",
+   "blocklist": [
+    "awning",
+    "parasol",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Monumental ancient Egyptian stone structure with triangular sides",
+   "blocklist": [
+    "obelisk",
+    "pyramid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Curved wooden throwing tool designed to return to the thrower",
+   "blocklist": [
+    "arugula",
+    "boomerang",
+    "broccoli",
+    "cabbage",
+    "chard",
+    "cress",
+    "endive",
+    "lettuce",
+    "sorrel",
+    "spinach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Watercraft capable of independent operation underwater",
+   "blocklist": [
+    "submarine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Optical instrument using lenses or mirrors to observe distant stars",
+   "blocklist": [
+    "binoculars",
+    "microscope",
+    "periscope",
+    "spyglass",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Cloth canopy device that slows a descent from an aircraft",
+   "blocklist": [
+    "parachute"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Aircraft that obtains lift from horizontally rotating overhead blades",
+   "blocklist": [
+    "chicory",
+    "fennel",
+    "helicopter",
+    "kohlrabi",
+    "mustard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A medical acoustic instrument used to listen to internal sounds",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
   }
  ],
- "score": null,
+ "score": {
+  "status": "scored",
+  "cost": 6908.046659810864,
+  "cost_numerator": 40801907849,
+  "cost_denominator": 5906432,
+  "cost_exact": false,
+  "cost_mcse": 1.5412124210986284,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40683779209,
+   "denominator": 5906432,
+   "value": 6888.046659810864,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:965,4:3876,5:8603,6:15195,7:23072,8:28393,9:24862,10:20292,11:15502,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.5412124210986284,
+   "rollouts": 256,
+   "rank_total": 40683779209,
+   "rank_denominator": 5906432,
+   "cache_key": "d542ce8437f33ecbfbb76e058dd5234a"
+  }
+ },
  "seat_private_histories": {
   "guesser1": [
    {
@@ -174,6 +417,90 @@
     "committed_word": "pencil",
     "clue": "Writing implement with a graphite core encased in wood",
     "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "candle",
+    "clue": "Wax cylinder with an embedded wick that provides light when burned",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "heart",
+    "clue": "Muscular organ that pumps blood through the body",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "guitar",
+    "clue": "Six-stringed acoustic musical instrument played by strumming or picking",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "igloo",
+    "clue": "Dome-shaped dwelling built from blocks of packed snow by Inuits",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "umbrella",
+    "clue": "Canopy device designed to protect against rain",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "pyramid",
+    "clue": "Monumental ancient Egyptian stone structure with triangular sides",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "boomerang",
+    "clue": "Curved wooden throwing tool designed to return to the thrower",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "submarine",
+    "clue": "Watercraft capable of independent operation underwater",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "telescope",
+    "clue": "Optical instrument using lenses or mirrors to observe distant stars",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "parachute",
+    "clue": "Cloth canopy device that slows a descent from an aircraft",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "helicopter",
+    "clue": "Aircraft that obtains lift from horizontally rotating overhead blades",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "stethoscope",
+    "clue": "A medical acoustic instrument used to listen to internal sounds",
+    "validity": "valid"
    }
   ],
   "guesser2": [
@@ -217,6 +544,84 @@
     "turn": 7,
     "action": "guess",
     "committed_word": "penguin",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "pencil",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "candle",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "heart",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "guitar",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "igloo",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "umbrella",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "pyramid",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "boomerang",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "submarine",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "telescope",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "parachute",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "helicopter",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "stethoscope",
     "validity": "valid"
    }
   ],
@@ -289,6 +694,147 @@
      "kiwi",
      "ostrich",
      "penguin"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "crayon",
+     "marker",
+     "pen",
+     "pencil"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "candle",
+     "lamp",
+     "taper"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "heart",
+     "kidney",
+     "liver",
+     "lung"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "banjo",
+     "bouzouki",
+     "cittern",
+     "dulcimer",
+     "guitar",
+     "harp",
+     "lute",
+     "mandolin",
+     "sitar",
+     "ukulele"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "igloo"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "awning",
+     "parasol",
+     "umbrella"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "obelisk",
+     "pyramid"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "arugula",
+     "boomerang",
+     "broccoli",
+     "cabbage",
+     "chard",
+     "cress",
+     "endive",
+     "lettuce",
+     "sorrel",
+     "spinach"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "submarine"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "binoculars",
+     "microscope",
+     "periscope",
+     "spyglass",
+     "telescope"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "parachute"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "chicory",
+     "fennel",
+     "helicopter",
+     "kohlrabi",
+     "mustard"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "stethoscope"
     ],
     "canonical_ranges": []
    }
@@ -710,6 +1256,839 @@
    "secret_candidates_after": 172546,
    "block_size": 4,
    "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "pencil",
+   "w2": "pencil",
+   "clue": "Writing implement with a graphite core encased in wood",
+   "mentions": [
+    "core",
+    "encased",
+    "graphite",
+    "implement",
+    "with",
+    "wood",
+    "writing"
+   ],
+   "blocklist": [
+    "crayon",
+    "marker",
+    "pen",
+    "pencil"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "core",
+    "crayon",
+    "encased",
+    "graphite",
+    "implement",
+    "marker",
+    "pen",
+    "pencil",
+    "with",
+    "wood",
+    "writing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172546,
+   "secret_candidates_after": 172536,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "candle",
+   "w2": "candle",
+   "clue": "Wax cylinder with an embedded wick that provides light when burned",
+   "mentions": [
+    "burned",
+    "cylinder",
+    "embedded",
+    "light",
+    "provides",
+    "that",
+    "wax",
+    "when",
+    "wick",
+    "with"
+   ],
+   "blocklist": [
+    "candle",
+    "lamp",
+    "taper"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "burned",
+    "candle",
+    "cylinder",
+    "embedded",
+    "lamp",
+    "light",
+    "provides",
+    "taper",
+    "that",
+    "wax",
+    "when",
+    "wick",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172536,
+   "secret_candidates_after": 172525,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "heart",
+   "w2": "heart",
+   "clue": "Muscular organ that pumps blood through the body",
+   "mentions": [
+    "blood",
+    "body",
+    "muscular",
+    "organ",
+    "pumps",
+    "that",
+    "the",
+    "through"
+   ],
+   "blocklist": [
+    "heart",
+    "kidney",
+    "liver",
+    "lung"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blood",
+    "body",
+    "heart",
+    "kidney",
+    "liver",
+    "lung",
+    "muscular",
+    "organ",
+    "pumps",
+    "that",
+    "the",
+    "through"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172525,
+   "secret_candidates_after": 172515,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "guitar",
+   "w2": "guitar",
+   "clue": "Six-stringed acoustic musical instrument played by strumming or picking",
+   "mentions": [
+    "acoustic",
+    "instrument",
+    "musical",
+    "picking",
+    "played",
+    "six",
+    "stringed",
+    "strumming"
+   ],
+   "blocklist": [
+    "banjo",
+    "bouzouki",
+    "cittern",
+    "dulcimer",
+    "guitar",
+    "harp",
+    "lute",
+    "mandolin",
+    "sitar",
+    "ukulele"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "acoustic",
+    "banjo",
+    "bouzouki",
+    "cittern",
+    "dulcimer",
+    "guitar",
+    "harp",
+    "instrument",
+    "lute",
+    "mandolin",
+    "musical",
+    "picking",
+    "played",
+    "sitar",
+    "six",
+    "stringed",
+    "strumming",
+    "ukulele"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172515,
+   "secret_candidates_after": 172497,
+   "block_size": 10,
+   "block_fresh_secret_candidates": 10,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "igloo",
+   "w2": "igloo",
+   "clue": "Dome-shaped dwelling built from blocks of packed snow by Inuits",
+   "mentions": [
+    "blocks",
+    "built",
+    "dome",
+    "dwelling",
+    "from",
+    "packed",
+    "shaped",
+    "snow"
+   ],
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blocks",
+    "built",
+    "dome",
+    "dwelling",
+    "from",
+    "igloo",
+    "packed",
+    "shaped",
+    "snow"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172497,
+   "secret_candidates_after": 172488,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "umbrella",
+   "w2": "umbrella",
+   "clue": "Canopy device designed to protect against rain",
+   "mentions": [
+    "against",
+    "canopy",
+    "designed",
+    "device",
+    "protect",
+    "rain"
+   ],
+   "blocklist": [
+    "awning",
+    "parasol",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "against",
+    "awning",
+    "canopy",
+    "designed",
+    "device",
+    "parasol",
+    "protect",
+    "rain",
+    "umbrella"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172488,
+   "secret_candidates_after": 172479,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "pyramid",
+   "w2": "pyramid",
+   "clue": "Monumental ancient Egyptian stone structure with triangular sides",
+   "mentions": [
+    "ancient",
+    "egyptian",
+    "monumental",
+    "sides",
+    "stone",
+    "structure",
+    "triangular",
+    "with"
+   ],
+   "blocklist": [
+    "obelisk",
+    "pyramid"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ancient",
+    "egyptian",
+    "monumental",
+    "obelisk",
+    "pyramid",
+    "sides",
+    "stone",
+    "structure",
+    "triangular",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172479,
+   "secret_candidates_after": 172470,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "boomerang",
+   "w2": "boomerang",
+   "clue": "Curved wooden throwing tool designed to return to the thrower",
+   "mentions": [
+    "curved",
+    "designed",
+    "return",
+    "the",
+    "thrower",
+    "throwing",
+    "tool",
+    "wooden"
+   ],
+   "blocklist": [
+    "arugula",
+    "boomerang",
+    "broccoli",
+    "cabbage",
+    "chard",
+    "cress",
+    "endive",
+    "lettuce",
+    "sorrel",
+    "spinach"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "arugula",
+    "boomerang",
+    "broccoli",
+    "cabbage",
+    "chard",
+    "cress",
+    "curved",
+    "designed",
+    "endive",
+    "lettuce",
+    "return",
+    "sorrel",
+    "spinach",
+    "the",
+    "thrower",
+    "throwing",
+    "tool",
+    "wooden"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172470,
+   "secret_candidates_after": 172455,
+   "block_size": 10,
+   "block_fresh_secret_candidates": 10,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "submarine",
+   "w2": "submarine",
+   "clue": "Watercraft capable of independent operation underwater",
+   "mentions": [
+    "capable",
+    "independent",
+    "operation",
+    "underwater",
+    "watercraft"
+   ],
+   "blocklist": [
+    "submarine"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "capable",
+    "independent",
+    "operation",
+    "submarine",
+    "underwater",
+    "watercraft"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172455,
+   "secret_candidates_after": 172449,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "telescope",
+   "w2": "telescope",
+   "clue": "Optical instrument using lenses or mirrors to observe distant stars",
+   "mentions": [
+    "distant",
+    "instrument",
+    "lenses",
+    "mirrors",
+    "observe",
+    "optical",
+    "stars",
+    "using"
+   ],
+   "blocklist": [
+    "binoculars",
+    "microscope",
+    "periscope",
+    "spyglass",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "binoculars",
+    "distant",
+    "instrument",
+    "lenses",
+    "microscope",
+    "mirrors",
+    "observe",
+    "optical",
+    "periscope",
+    "spyglass",
+    "stars",
+    "telescope",
+    "using"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172449,
+   "secret_candidates_after": 172437,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "parachute",
+   "w2": "parachute",
+   "clue": "Cloth canopy device that slows a descent from an aircraft",
+   "mentions": [
+    "aircraft",
+    "canopy",
+    "cloth",
+    "descent",
+    "device",
+    "from",
+    "slows",
+    "that"
+   ],
+   "blocklist": [
+    "parachute"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aircraft",
+    "canopy",
+    "cloth",
+    "descent",
+    "device",
+    "from",
+    "parachute",
+    "slows",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172437,
+   "secret_candidates_after": 172432,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "helicopter",
+   "w2": "helicopter",
+   "clue": "Aircraft that obtains lift from horizontally rotating overhead blades",
+   "mentions": [
+    "aircraft",
+    "blades",
+    "from",
+    "horizontally",
+    "lift",
+    "obtains",
+    "overhead",
+    "rotating",
+    "that"
+   ],
+   "blocklist": [
+    "chicory",
+    "fennel",
+    "helicopter",
+    "kohlrabi",
+    "mustard"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aircraft",
+    "blades",
+    "chicory",
+    "fennel",
+    "from",
+    "helicopter",
+    "horizontally",
+    "kohlrabi",
+    "lift",
+    "mustard",
+    "obtains",
+    "overhead",
+    "rotating",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172432,
+   "secret_candidates_after": 172421,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "stethoscope",
+   "w2": "stethoscope",
+   "clue": "A medical acoustic instrument used to listen to internal sounds",
+   "mentions": [
+    "acoustic",
+    "instrument",
+    "internal",
+    "listen",
+    "medical",
+    "sounds",
+    "used"
+   ],
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "acoustic",
+    "instrument",
+    "internal",
+    "listen",
+    "medical",
+    "sounds",
+    "stethoscope",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172421,
+   "secret_candidates_after": 172416,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
    "block_overlap_with_clue": 0,
    "guesser1_valid": true,
    "guesser1_action": "clue",

@@ -91,7 +91,7 @@ def _run(cfg: BenchConfig, run_dir: Path, *, live: bool, max_requests, max_usd, 
 
 
 def cmd_run(args) -> int:
-    cfg = load_config(args.config)
+    cfg = _with_concurrency(load_config(args.config), args)
     if args.live == args.offline:
         print("error: choose exactly one of --offline or --live", file=sys.stderr)
         return 2
@@ -107,9 +107,22 @@ def cmd_run(args) -> int:
     return 0 if not status.get("halted") else 3
 
 
+def _with_concurrency(cfg: BenchConfig, args) -> BenchConfig:
+    """Operational overrides (never scored; execution settings are not frozen)."""
+    upd = {}
+    if getattr(args, "game_concurrency", None):
+        upd["game_concurrency"] = args.game_concurrency
+    if getattr(args, "provider_concurrency", None):
+        upd["per_provider_concurrency"] = args.provider_concurrency
+        upd["global_concurrency"] = max(cfg.execution.global_concurrency, 3 * args.provider_concurrency)
+    if not upd:
+        return cfg
+    return cfg.model_copy(update={"execution": cfg.execution.model_copy(update=upd)})
+
+
 def cmd_resume(args) -> int:
     run_dir = _runs_dir(args) / args.run_id
-    cfg = _config_from_run(run_dir)
+    cfg = _with_concurrency(_config_from_run(run_dir), args)
     if args.live == args.offline:
         print("error: choose exactly one of --offline or --live", file=sys.stderr)
         return 2
@@ -320,6 +333,8 @@ def build_parser() -> argparse.ArgumentParser:
         s.add_argument("--run-id")
         s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD",
                        help="per-provider dollar cap, e.g. --max-usd-provider google=4.5 (repeatable)")
+        s.add_argument("--game-concurrency", type=int)
+        s.add_argument("--provider-concurrency", type=int)
         s.set_defaults(fn=fn)
     s = sub.add_parser("smoke"); s.add_argument("config"); s.add_argument("--provider", required=True,
                                                                          choices=["openai", "anthropic", "google"])
@@ -328,7 +343,9 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("resume"); s.add_argument("run_id")
     s.add_argument("--offline", action="store_true"); s.add_argument("--live", action="store_true")
     s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float)
-    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD"); s.set_defaults(fn=cmd_resume)
+    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD")
+    s.add_argument("--game-concurrency", type=int); s.add_argument("--provider-concurrency", type=int)
+    s.set_defaults(fn=cmd_resume)
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
     s.set_defaults(fn=cmd_analyze)

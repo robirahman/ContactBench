@@ -1,0 +1,2757 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "medical instrument for listening to heartbeat",
+   "blocklist": [
+    "heartbeat",
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "large seabird and a golf score of three under par",
+   "blocklist": [
+    "albatross",
+    "birdie",
+    "condor",
+    "eagle",
+    "gannet",
+    "petrel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "optical tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "microscope",
+    "periscope",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "scaly anteater mammal that rolls into a ball",
+   "blocklist": [
+    "anteater",
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "act of throwing someone out a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "ejection",
+    "window"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "words that imitate sounds like buzz or meow",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "onomatopoeia"
+    },
+    {
+     "seat": "guesser2",
+     "word": "onomatopoeia"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "color changing lizard",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "crescent shaped flaky french pastry",
+   "blocklist": [
+    "crepe",
+    "crescent",
+    "croissant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "green pigment in plants used for photosynthesis",
+   "blocklist": [
+    "collar"
+   ],
+   "blocked_ranges": [
+    [
+     "cabbage",
+     "collapse"
+    ]
+   ],
+   "blocked_word_count": 8290,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "brass percussion instrument clashed together in pairs",
+   "blocklist": [
+    "carillon",
+    "castanet",
+    "castanets",
+    "chime",
+    "chimes",
+    "cowbell",
+    "cymbal",
+    "cymbals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "group of stars forming a recognizable pattern in the night sky",
+   "blocklist": [
+    "cluster",
+    "constellation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "large aquatic reptile with long snout and sharp teeth",
+   "blocklist": [
+    "collards"
+   ],
+   "blocked_ranges": [
+    [
+     "collapsed",
+     "collapsing"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "crocodile"
+    },
+    {
+     "seat": "guesser2",
+     "word": "crocodile"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "horn of plenty overflowing with fruit and vegetables",
+   "blocklist": [
+    "cornucopia",
+    "cornucopias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "ancient roman amphitheater where gladiators fought",
+   "blocklist": [
+    "coliseum",
+    "colosseum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "magnetic navigation device with a needle pointing north",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "small pieces of colored paper thrown at celebrations",
+   "blocklist": [
+    "cola",
+    "cole",
+    "collie",
+    "confetti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "spiral metal tool for pulling corks from wine bottles",
+   "blocklist": [
+    "collage",
+    "collate",
+    "collect",
+    "collector",
+    "college"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "corkscrew"
+    },
+    {
+     "seat": "guesser2",
+     "word": "corkscrew"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "military officer rank pronounced like kernel",
+   "blocklist": [
+    "colonel",
+    "colonels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "fragrant liquid perfume worn by men",
+   "blocklist": [
+    "cologne",
+    "colon",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "vertical architectural pillar supporting a roof or table of numbers",
+   "blocklist": [
+    "column",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "violent impact when two moving vehicles crash into each other",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "colcannon",
+    "colchicum",
+    "cold",
+    "colder",
+    "coldest",
+    "colds",
+    "coleslaw",
+    "colic",
+    "colitis",
+    "collaborate",
+    "collaboration",
+    "collaborative",
+    "collagen",
+    "collateral",
+    "collation",
+    "colleague",
+    "collected",
+    "collective",
+    "collector",
+    "collide",
+    "collie",
+    "collier",
+    "colloid",
+    "collude",
+    "colon",
+    "colony",
+    "colt",
+    "colts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collision"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collision"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "secret agreement or cooperation for an illegal or deceitful purpose",
+   "blocklist": [
+    "collaborated",
+    "collaborates",
+    "collaborating",
+    "collaborator",
+    "collaborators",
+    "collage",
+    "collagen",
+    "collages",
+    "collapses",
+    "collapsible",
+    "collar",
+    "collarbone",
+    "collarbones",
+    "collared",
+    "collaret",
+    "collarets",
+    "collaring",
+    "collars",
+    "collating",
+    "collator",
+    "collators",
+    "collectible",
+    "collectibles",
+    "collecting",
+    "collection",
+    "collections",
+    "collectives",
+    "collectivism",
+    "collectivist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 29,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collusion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collusion"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "collard collarless collated collates collations collapsibility collapsibilities",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 25.0,
+  "cost_numerator": 25,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "platypus",
+    "clue": "egg laying mammal with duck bill",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "stethoscope",
+    "clue": "medical instrument for listening to heartbeat",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "albatross",
+    "clue": "large seabird and a golf score of three under par",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "kaleidoscope",
+    "clue": "optical tube with mirrors and colored glass",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "pangolin",
+    "clue": "scaly anteater mammal that rolls into a ball",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "defenestration",
+    "clue": "act of throwing someone out a window",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "onomatopoeia",
+    "clue": "words that imitate sounds like buzz or meow",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "chameleon",
+    "clue": "color changing lizard",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "croissant",
+    "clue": "crescent shaped flaky french pastry",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "chlorophyll",
+    "clue": "green pigment in plants used for photosynthesis",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "cymbal",
+    "clue": "brass percussion instrument clashed together in pairs",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "constellation",
+    "clue": "group of stars forming a recognizable pattern in the night sky",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "crocodile",
+    "clue": "large aquatic reptile with long snout and sharp teeth",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "cornucopia",
+    "clue": "horn of plenty overflowing with fruit and vegetables",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "colosseum",
+    "clue": "ancient roman amphitheater where gladiators fought",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "compass",
+    "clue": "magnetic navigation device with a needle pointing north",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "confetti",
+    "clue": "small pieces of colored paper thrown at celebrations",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "corkscrew",
+    "clue": "spiral metal tool for pulling corks from wine bottles",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "colonel",
+    "clue": "military officer rank pronounced like kernel",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "cologne",
+    "clue": "fragrant liquid perfume worn by men",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "clue",
+    "committed_word": "column",
+    "clue": "vertical architectural pillar supporting a roof or table of numbers",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "collision",
+    "clue": "violent impact when two moving vehicles crash into each other",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "collusion",
+    "clue": "secret agreement or cooperation for an illegal or deceitful purpose",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "collateralize",
+    "clue": "collard collarless collated collates collations collapsibility collapsibilities",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "platypus",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "stethoscope",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "albatross",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "kaleidoscope",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "pangolin",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "defenestration",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "onomatopoeia",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "chameleon",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "croissant",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "chlorophyll",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "cymbal",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "constellation",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "crocodile",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "cornucopia",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "colosseum",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "compass",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "confetti",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "corkscrew",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "colonel",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "cologne",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "guess",
+    "committed_word": "column",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "collision",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "collusion",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "collateralize",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "echidna",
+     "monotreme",
+     "platypus"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "heartbeat",
+     "stethoscope",
+     "stethoscopes"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "albatross",
+     "birdie",
+     "condor",
+     "eagle",
+     "gannet",
+     "petrel"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kaleidoscope",
+     "microscope",
+     "periscope",
+     "telescope"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "anteater",
+     "armadillo",
+     "pangolin"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "defenestrate",
+     "defenestrated",
+     "defenestrates",
+     "defenestrating",
+     "defenestration",
+     "ejection",
+     "window"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "invalid",
+    "reason": "blocklist entry is not a dictionary word",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "chameleon",
+     "chameleons"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "crepe",
+     "crescent",
+     "croissant"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "collar"
+    ],
+    "canonical_ranges": [
+     [
+      "cabbage",
+      "collapse"
+     ]
+    ]
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "carillon",
+     "castanet",
+     "castanets",
+     "chime",
+     "chimes",
+     "cowbell",
+     "cymbal",
+     "cymbals"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cluster",
+     "constellation"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "collards"
+    ],
+    "canonical_ranges": [
+     [
+      "collapsed",
+      "collapsing"
+     ]
+    ]
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cornucopia",
+     "cornucopias"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "coliseum",
+     "colosseum"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "compass",
+     "compasses"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cola",
+     "cole",
+     "collie",
+     "confetti"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "collage",
+     "collate",
+     "collect",
+     "collector",
+     "college"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "colonel",
+     "colonels"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cologne",
+     "colon",
+     "colony"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 22,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "column",
+     "columns"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "colander",
+     "colanders",
+     "colcannon",
+     "colchicum",
+     "cold",
+     "colder",
+     "coldest",
+     "colds",
+     "coleslaw",
+     "colic",
+     "colitis",
+     "collaborate",
+     "collaboration",
+     "collaborative",
+     "collagen",
+     "collateral",
+     "collation",
+     "colleague",
+     "collected",
+     "collective",
+     "collector",
+     "collide",
+     "collie",
+     "collier",
+     "colloid",
+     "collude",
+     "colon",
+     "colony",
+     "colt",
+     "colts"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "collaborated",
+     "collaborates",
+     "collaborating",
+     "collaborator",
+     "collaborators",
+     "collage",
+     "collagen",
+     "collages",
+     "collapses",
+     "collapsible",
+     "collar",
+     "collarbone",
+     "collarbones",
+     "collared",
+     "collaret",
+     "collarets",
+     "collaring",
+     "collars",
+     "collating",
+     "collator",
+     "collators",
+     "collectible",
+     "collectibles",
+     "collecting",
+     "collection",
+     "collections",
+     "collectives",
+     "collectivism",
+     "collectivist"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "platypus",
+   "w2": "platypus",
+   "clue": "egg laying mammal with duck bill",
+   "mentions": [
+    "bill",
+    "duck",
+    "egg",
+    "laying",
+    "mammal",
+    "with"
+   ],
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bill",
+    "duck",
+    "echidna",
+    "egg",
+    "laying",
+    "mammal",
+    "monotreme",
+    "platypus",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172599,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "stethoscope",
+   "w2": "stethoscope",
+   "clue": "medical instrument for listening to heartbeat",
+   "mentions": [
+    "for",
+    "heartbeat",
+    "instrument",
+    "listening",
+    "medical"
+   ],
+   "blocklist": [
+    "heartbeat",
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "for",
+    "heartbeat",
+    "instrument",
+    "listening",
+    "medical",
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172599,
+   "secret_candidates_after": 172592,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "albatross",
+   "w2": "albatross",
+   "clue": "large seabird and a golf score of three under par",
+   "mentions": [
+    "and",
+    "golf",
+    "large",
+    "par",
+    "score",
+    "seabird",
+    "three",
+    "under"
+   ],
+   "blocklist": [
+    "albatross",
+    "birdie",
+    "condor",
+    "eagle",
+    "gannet",
+    "petrel"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "albatross",
+    "and",
+    "birdie",
+    "condor",
+    "eagle",
+    "gannet",
+    "golf",
+    "large",
+    "par",
+    "petrel",
+    "score",
+    "seabird",
+    "three",
+    "under"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172592,
+   "secret_candidates_after": 172578,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "kaleidoscope",
+   "w2": "kaleidoscope",
+   "clue": "optical tube with mirrors and colored glass",
+   "mentions": [
+    "and",
+    "colored",
+    "glass",
+    "mirrors",
+    "optical",
+    "tube",
+    "with"
+   ],
+   "blocklist": [
+    "kaleidoscope",
+    "microscope",
+    "periscope",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "colored",
+    "glass",
+    "kaleidoscope",
+    "microscope",
+    "mirrors",
+    "optical",
+    "periscope",
+    "telescope",
+    "tube",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172578,
+   "secret_candidates_after": 172569,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "pangolin",
+   "w2": "pangolin",
+   "clue": "scaly anteater mammal that rolls into a ball",
+   "mentions": [
+    "anteater",
+    "ball",
+    "into",
+    "mammal",
+    "rolls",
+    "scaly",
+    "that"
+   ],
+   "blocklist": [
+    "anteater",
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "anteater",
+    "armadillo",
+    "ball",
+    "into",
+    "mammal",
+    "pangolin",
+    "rolls",
+    "scaly",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172569,
+   "secret_candidates_after": 172561,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "defenestration",
+   "w2": "defenestration",
+   "clue": "act of throwing someone out a window",
+   "mentions": [
+    "act",
+    "out",
+    "someone",
+    "throwing",
+    "window"
+   ],
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "ejection",
+    "window"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "act",
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "ejection",
+    "out",
+    "someone",
+    "throwing",
+    "window"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172561,
+   "secret_candidates_after": 172550,
+   "block_size": 7,
+   "block_fresh_secret_candidates": 7,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "c",
+   "w1": "onomatopoeia",
+   "w2": "onomatopoeia",
+   "clue": "words that imitate sounds like buzz or meow",
+   "mentions": [
+    "buzz",
+    "imitate",
+    "like",
+    "meow",
+    "sounds",
+    "that",
+    "words"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "onomatopoeia"
+    },
+    {
+     "seat": "guesser2",
+     "word": "onomatopoeia"
+    }
+   ],
+   "emissions": [
+    "buzz",
+    "imitate",
+    "like",
+    "meow",
+    "onomatopoeia",
+    "sounds",
+    "that",
+    "words"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172550,
+   "secret_candidates_after": 16214,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "c",
+   "prefix_after": "c",
+   "w1": "chameleon",
+   "w2": "chameleon",
+   "clue": "color changing lizard",
+   "mentions": [
+    "changing",
+    "color",
+    "lizard"
+   ],
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "chameleon",
+    "chameleons",
+    "changing",
+    "color",
+    "lizard"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 16214,
+   "secret_candidates_after": 16210,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "c",
+   "prefix_after": "c",
+   "w1": "croissant",
+   "w2": "croissant",
+   "clue": "crescent shaped flaky french pastry",
+   "mentions": [
+    "crescent",
+    "flaky",
+    "french",
+    "pastry",
+    "shaped"
+   ],
+   "blocklist": [
+    "crepe",
+    "crescent",
+    "croissant"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "crepe",
+    "crescent",
+    "croissant",
+    "flaky",
+    "french",
+    "pastry",
+    "shaped"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 16210,
+   "secret_candidates_after": 16207,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "c",
+   "prefix_after": "c",
+   "w1": "chlorophyll",
+   "w2": "chlorophyll",
+   "clue": "green pigment in plants used for photosynthesis",
+   "mentions": [
+    "for",
+    "green",
+    "photosynthesis",
+    "pigment",
+    "plants",
+    "used"
+   ],
+   "blocklist": [
+    "collar"
+   ],
+   "blocked_ranges": [
+    [
+     "cabbage",
+     "collapse"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 16207,
+   "secret_candidates_after": 7920,
+   "block_size": 8290,
+   "block_fresh_secret_candidates": 8287,
+   "block_overlap_with_clue": 0,
+   "emission_count": 8296,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "c",
+   "prefix_after": "c",
+   "w1": "cymbal",
+   "w2": "cymbal",
+   "clue": "brass percussion instrument clashed together in pairs",
+   "mentions": [
+    "brass",
+    "clashed",
+    "instrument",
+    "pairs",
+    "percussion",
+    "together"
+   ],
+   "blocklist": [
+    "carillon",
+    "castanet",
+    "castanets",
+    "chime",
+    "chimes",
+    "cowbell",
+    "cymbal",
+    "cymbals"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "brass",
+    "carillon",
+    "castanet",
+    "castanets",
+    "chime",
+    "chimes",
+    "clashed",
+    "cowbell",
+    "cymbal",
+    "cymbals",
+    "instrument",
+    "pairs",
+    "percussion",
+    "together"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 7920,
+   "secret_candidates_after": 7917,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "c",
+   "prefix_after": "c",
+   "w1": "constellation",
+   "w2": "constellation",
+   "clue": "group of stars forming a recognizable pattern in the night sky",
+   "mentions": [
+    "forming",
+    "group",
+    "night",
+    "pattern",
+    "recognizable",
+    "sky",
+    "stars",
+    "the"
+   ],
+   "blocklist": [
+    "cluster",
+    "constellation"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cluster",
+    "constellation",
+    "forming",
+    "group",
+    "night",
+    "pattern",
+    "recognizable",
+    "sky",
+    "stars",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 7917,
+   "secret_candidates_after": 7916,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "c",
+   "prefix_after": "co",
+   "w1": "crocodile",
+   "w2": "crocodile",
+   "clue": "large aquatic reptile with long snout and sharp teeth",
+   "mentions": [
+    "and",
+    "aquatic",
+    "large",
+    "long",
+    "reptile",
+    "sharp",
+    "snout",
+    "teeth",
+    "with"
+   ],
+   "blocklist": [
+    "collards"
+   ],
+   "blocked_ranges": [
+    [
+     "collapsed",
+     "collapsing"
+    ]
+   ],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "crocodile"
+    },
+    {
+     "seat": "guesser2",
+     "word": "crocodile"
+    }
+   ],
+   "emissions": [
+    "and",
+    "aquatic",
+    "collapsed",
+    "collapses",
+    "collapsibilities",
+    "collapsibility",
+    "collapsible",
+    "collapsing",
+    "collards",
+    "crocodile",
+    "large",
+    "long",
+    "reptile",
+    "sharp",
+    "snout",
+    "teeth",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 7916,
+   "secret_candidates_after": 5289,
+   "block_size": 7,
+   "block_fresh_secret_candidates": 7,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "co",
+   "prefix_after": "co",
+   "w1": "cornucopia",
+   "w2": "cornucopia",
+   "clue": "horn of plenty overflowing with fruit and vegetables",
+   "mentions": [
+    "and",
+    "fruit",
+    "horn",
+    "overflowing",
+    "plenty",
+    "vegetables",
+    "with"
+   ],
+   "blocklist": [
+    "cornucopia",
+    "cornucopias"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "cornucopia",
+    "cornucopias",
+    "fruit",
+    "horn",
+    "overflowing",
+    "plenty",
+    "vegetables",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 5289,
+   "secret_candidates_after": 5287,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "co",
+   "prefix_after": "co",
+   "w1": "colosseum",
+   "w2": "colosseum",
+   "clue": "ancient roman amphitheater where gladiators fought",
+   "mentions": [
+    "amphitheater",
+    "ancient",
+    "fought",
+    "gladiators",
+    "roman",
+    "where"
+   ],
+   "blocklist": [
+    "coliseum",
+    "colosseum"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "amphitheater",
+    "ancient",
+    "coliseum",
+    "colosseum",
+    "fought",
+    "gladiators",
+    "roman",
+    "where"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 5287,
+   "secret_candidates_after": 5286,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "co",
+   "prefix_after": "co",
+   "w1": "compass",
+   "w2": "compass",
+   "clue": "magnetic navigation device with a needle pointing north",
+   "mentions": [
+    "device",
+    "magnetic",
+    "navigation",
+    "needle",
+    "north",
+    "pointing",
+    "with"
+   ],
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "compass",
+    "compasses",
+    "device",
+    "magnetic",
+    "navigation",
+    "needle",
+    "north",
+    "pointing",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 5286,
+   "secret_candidates_after": 5284,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "co",
+   "prefix_after": "co",
+   "w1": "confetti",
+   "w2": "confetti",
+   "clue": "small pieces of colored paper thrown at celebrations",
+   "mentions": [
+    "celebrations",
+    "colored",
+    "paper",
+    "pieces",
+    "small",
+    "thrown"
+   ],
+   "blocklist": [
+    "cola",
+    "cole",
+    "collie",
+    "confetti"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "celebrations",
+    "cola",
+    "cole",
+    "collie",
+    "colored",
+    "confetti",
+    "paper",
+    "pieces",
+    "small",
+    "thrown"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 5284,
+   "secret_candidates_after": 5282,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "co",
+   "prefix_after": "col",
+   "w1": "corkscrew",
+   "w2": "corkscrew",
+   "clue": "spiral metal tool for pulling corks from wine bottles",
+   "mentions": [
+    "bottles",
+    "corks",
+    "for",
+    "from",
+    "metal",
+    "pulling",
+    "spiral",
+    "tool",
+    "wine"
+   ],
+   "blocklist": [
+    "collage",
+    "collate",
+    "collect",
+    "collector",
+    "college"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "corkscrew"
+    },
+    {
+     "seat": "guesser2",
+     "word": "corkscrew"
+    }
+   ],
+   "emissions": [
+    "bottles",
+    "collage",
+    "collate",
+    "collect",
+    "collector",
+    "college",
+    "corks",
+    "corkscrew",
+    "for",
+    "from",
+    "metal",
+    "pulling",
+    "spiral",
+    "tool",
+    "wine"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 5282,
+   "secret_candidates_after": 380,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "col",
+   "prefix_after": "col",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 380,
+   "secret_candidates_after": 380,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "col",
+   "prefix_after": "col",
+   "w1": "colonel",
+   "w2": "colonel",
+   "clue": "military officer rank pronounced like kernel",
+   "mentions": [
+    "kernel",
+    "like",
+    "military",
+    "officer",
+    "pronounced",
+    "rank"
+   ],
+   "blocklist": [
+    "colonel",
+    "colonels"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "colonel",
+    "colonels",
+    "kernel",
+    "like",
+    "military",
+    "officer",
+    "pronounced",
+    "rank"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 380,
+   "secret_candidates_after": 378,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "col",
+   "prefix_after": "col",
+   "w1": "cologne",
+   "w2": "cologne",
+   "clue": "fragrant liquid perfume worn by men",
+   "mentions": [
+    "fragrant",
+    "liquid",
+    "men",
+    "perfume",
+    "worn"
+   ],
+   "blocklist": [
+    "cologne",
+    "colon",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cologne",
+    "colon",
+    "colony",
+    "fragrant",
+    "liquid",
+    "men",
+    "perfume",
+    "worn"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 378,
+   "secret_candidates_after": 375,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "col",
+   "prefix_after": "col",
+   "w1": "column",
+   "w2": "column",
+   "clue": "vertical architectural pillar supporting a roof or table of numbers",
+   "mentions": [
+    "architectural",
+    "numbers",
+    "pillar",
+    "roof",
+    "supporting",
+    "table",
+    "vertical"
+   ],
+   "blocklist": [
+    "column",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "architectural",
+    "column",
+    "columns",
+    "numbers",
+    "pillar",
+    "roof",
+    "supporting",
+    "table",
+    "vertical"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 375,
+   "secret_candidates_after": 373,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "col",
+   "prefix_after": "coll",
+   "w1": "collision",
+   "w2": "collision",
+   "clue": "violent impact when two moving vehicles crash into each other",
+   "mentions": [
+    "crash",
+    "each",
+    "impact",
+    "into",
+    "moving",
+    "other",
+    "two",
+    "vehicles",
+    "violent",
+    "when"
+   ],
+   "blocklist": [
+    "colander",
+    "colanders",
+    "colcannon",
+    "colchicum",
+    "cold",
+    "colder",
+    "coldest",
+    "colds",
+    "coleslaw",
+    "colic",
+    "colitis",
+    "collaborate",
+    "collaboration",
+    "collaborative",
+    "collagen",
+    "collateral",
+    "collation",
+    "colleague",
+    "collected",
+    "collective",
+    "collector",
+    "collide",
+    "collie",
+    "collier",
+    "colloid",
+    "collude",
+    "colon",
+    "colony",
+    "colt",
+    "colts"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "collision"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collision"
+    }
+   ],
+   "emissions": [
+    "colander",
+    "colanders",
+    "colcannon",
+    "colchicum",
+    "cold",
+    "colder",
+    "coldest",
+    "colds",
+    "coleslaw",
+    "colic",
+    "colitis",
+    "collaborate",
+    "collaboration",
+    "collaborative",
+    "collagen",
+    "collateral",
+    "collation",
+    "colleague",
+    "collected",
+    "collective",
+    "collector",
+    "collide",
+    "collie",
+    "collier",
+    "collision",
+    "colloid",
+    "collude",
+    "colon",
+    "colony",
+    "colt",
+    "colts",
+    "crash",
+    "each",
+    "impact",
+    "into",
+    "moving",
+    "other",
+    "two",
+    "vehicles",
+    "violent",
+    "when"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 373,
+   "secret_candidates_after": 176,
+   "block_size": 30,
+   "block_fresh_secret_candidates": 11,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "coll",
+   "prefix_after": "colla",
+   "w1": "collusion",
+   "w2": "collusion",
+   "clue": "secret agreement or cooperation for an illegal or deceitful purpose",
+   "mentions": [
+    "agreement",
+    "cooperation",
+    "deceitful",
+    "for",
+    "illegal",
+    "purpose",
+    "secret"
+   ],
+   "blocklist": [
+    "collaborated",
+    "collaborates",
+    "collaborating",
+    "collaborator",
+    "collaborators",
+    "collage",
+    "collagen",
+    "collages",
+    "collapses",
+    "collapsible",
+    "collar",
+    "collarbone",
+    "collarbones",
+    "collared",
+    "collaret",
+    "collarets",
+    "collaring",
+    "collars",
+    "collating",
+    "collator",
+    "collators",
+    "collectible",
+    "collectibles",
+    "collecting",
+    "collection",
+    "collections",
+    "collectives",
+    "collectivism",
+    "collectivist"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "collusion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collusion"
+    }
+   ],
+   "emissions": [
+    "agreement",
+    "collaborated",
+    "collaborates",
+    "collaborating",
+    "collaborator",
+    "collaborators",
+    "collage",
+    "collagen",
+    "collages",
+    "collapses",
+    "collapsible",
+    "collar",
+    "collarbone",
+    "collarbones",
+    "collared",
+    "collaret",
+    "collarets",
+    "collaring",
+    "collars",
+    "collating",
+    "collator",
+    "collators",
+    "collectible",
+    "collectibles",
+    "collecting",
+    "collection",
+    "collections",
+    "collectives",
+    "collectivism",
+    "collectivist",
+    "collusion",
+    "cooperation",
+    "deceitful",
+    "for",
+    "illegal",
+    "purpose",
+    "secret"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 176,
+   "secret_candidates_after": 13,
+   "block_size": 29,
+   "block_fresh_secret_candidates": 18,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "colla",
+   "prefix_after": "colla",
+   "w1": "collateralize",
+   "w2": "collateralize",
+   "clue": "collard collarless collated collates collations collapsibility collapsibilities",
+   "mentions": [
+    "collapsibilities",
+    "collapsibility",
+    "collard",
+    "collarless",
+    "collated",
+    "collates",
+    "collations"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "collapsibilities",
+    "collapsibility",
+    "collard",
+    "collarless",
+    "collated",
+    "collates",
+    "collations"
+   ],
+   "target_hit": true,
+   "hit_sources": [
+    "clue"
+   ],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "won",
+   "secret_candidates_before": 13,
+   "secret_candidates_after": null,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

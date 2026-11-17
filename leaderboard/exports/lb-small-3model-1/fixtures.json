@@ -71,17 +71,21 @@
   "repetition": 0,
   "model_a": "claude_haiku_5_5",
   "model_b": "gemini_3_8_flash",
-  "complete": false,
+  "complete": true,
   "cost_ab": {
    "numerator": 6302199,
    "denominator": 41216,
    "value": 152.9066139363354
   },
-  "cost_ba": null,
-  "points_a": null,
-  "points_b": null,
-  "cost_difference_mcse": null,
-  "numerically_close": null
+  "cost_ba": {
+   "numerator": 123879,
+   "denominator": 3328,
+   "value": 37.22325721153846
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.42255347530968684,
+  "numerically_close": false
  },
  {
   "fixture_id": "dev41-0001-r0-claude_haiku_5_5~gemini_3_8_flash",
@@ -89,17 +93,21 @@
   "repetition": 0,
   "model_a": "claude_haiku_5_5",
   "model_b": "gemini_3_8_flash",
-  "complete": false,
+  "complete": true,
   "cost_ab": {
    "numerator": 349501051,
    "denominator": 458752,
    "value": 761.8518306187221
   },
-  "cost_ba": null,
-  "points_a": null,
-  "points_b": null,
-  "cost_difference_mcse": null,
-  "numerically_close": null
+  "cost_ba": {
+   "numerator": 482571,
+   "denominator": 3328,
+   "value": 145.00330528846155
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.7580241473575049,
+  "numerically_close": false
  },
  {
   "fixture_id": "dev41-0002-r0-claude_haiku_5_5~gemini_3_8_flash",
@@ -107,13 +115,21 @@
   "repetition": 0,
   "model_a": "claude_haiku_5_5",
   "model_b": "gemini_3_8_flash",
-  "complete": false,
-  "cost_ab": null,
-  "cost_ba": null,
-  "points_a": null,
-  "points_b": null,
-  "cost_difference_mcse": null,
-  "numerically_close": null
+  "complete": true,
+  "cost_ab": {
+   "numerator": 20376055327,
+   "denominator": 2951936,
+   "value": 6902.607416624209
+  },
+  "cost_ba": {
+   "numerator": 40801907849,
+   "denominator": 5906432,
+   "value": 6908.046659810864
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 2.131939613079704,
+  "numerically_close": false
  },
  {
   "fixture_id": "dev41-0000-r0-claude_haiku_4_5~gemini_3_8_flash",
@@ -143,17 +159,21 @@
   "repetition": 0,
   "model_a": "claude_haiku_4_5",
   "model_b": "gemini_3_8_flash",
-  "complete": false,
+  "complete": true,
   "cost_ab": {
    "numerator": 26745628057,
    "denominator": 3888128,
    "value": 6878.793099661328
   },
-  "cost_ba": null,
-  "points_a": null,
-  "points_b": null,
-  "cost_difference_mcse": null,
-  "numerically_close": null
+  "cost_ba": {
+   "numerator": 10,
+   "denominator": 1,
+   "value": 10.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 2.072142906968967,
+  "numerically_close": false
  },
  {
   "fixture_id": "dev41-0002-r0-claude_haiku_4_5~gemini_3_8_flash",
@@ -161,16 +181,20 @@
   "repetition": 0,
   "model_a": "claude_haiku_4_5",
   "model_b": "gemini_3_8_flash",
-  "complete": false,
+  "complete": true,
   "cost_ab": {
    "numerator": 10212222221,
    "denominator": 1478080,
    "value": 6909.113323365447
   },
-  "cost_ba": null,
-  "points_a": null,
-  "points_b": null,
-  "cost_difference_mcse": null,
-  "numerically_close": null
+  "cost_ba": {
+   "numerator": 7,
+   "denominator": 1,
+   "value": 7.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 1.5331609682379075,
+  "numerically_close": false
  }
 ]

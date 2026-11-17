@@ -1,0 +1,2427 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird that waddles",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Toothed cetacean famous for a long spiral tusk",
+   "blocklist": [
+    "narwhal",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "To become less intense, as a storm",
+   "blocklist": [
+    "abate",
+    "diminish",
+    "moderate",
+    "slacken",
+    "subside",
+    "wane"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Lunar phase when more than half the visible disk is illuminated, but it is not yet full",
+   "blocklist": [
+    "gibbous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A young swan, especially one still covered in gray down",
+   "blocklist": [
+    "cygnet",
+    "cygnets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Mexican salamander that keeps its external feathery gills into adulthood",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A poetic or archaic noun for a layer of mist or fog",
+   "blocklist": [
+    "brume",
+    "haar",
+    "mirk",
+    "murk",
+    "pall",
+    "shroud"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "rack"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fine rain that falls from a clear sky just after sunset",
+   "blocklist": [
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Night bird; forest, river, mountain, garden, window, candle, silver, mirror, orange, velvet, copper.",
+   "blocklist": [
+    "nighthawk",
+    "nightjar",
+    "owl",
+    "owlet",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A verb for the soft rushing sound of wind moving through trees, often used in poetry.",
+   "blocklist": [
+    "murmur",
+    "rustle",
+    "sough",
+    "soughs",
+    "whisper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Burrowing mammal; apple, table, chair, water, light, stone, music, green, bread, horse, cloud, cat",
+   "blocklist": [
+    "badger",
+    "gopher",
+    "groundhog",
+    "marmot",
+    "mole",
+    "rabbit",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Distant galactic core; people, time, way, day, man, world, life, hand, part, child, eye, place, work",
+   "blocklist": [
+    "quasar",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A grasslike plant common in marshes and wetlands",
+   "blocklist": [
+    "bulrush",
+    "cattail",
+    "reed",
+    "reeds",
+    "rush",
+    "rushes",
+    "sedge",
+    "sedges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "The first appearance of daylight in the morning, before the sun rises",
+   "blocklist": [
+    "aurora",
+    "cockcrow",
+    "dawn",
+    "dawning",
+    "daybreak",
+    "sunrise",
+    "sunup",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A small mountain lake, especially one formed in a cirque",
+   "blocklist": [
+    "tarn",
+    "tarns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A pile of stones built as a landmark or trail marker, often on a hill",
+   "blocklist": [
+    "barrow",
+    "cairn",
+    "cairns",
+    "mound",
+    "tumulus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The fixed plug inside a recorder's mouthpiece that forms its windway",
+   "blocklist": [
+    "fipple",
+    "fipples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Three initials, read in order: green needles unfurl.",
+   "blocklist": [
+    "gnu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Take the first letter of each word, in order: Yonder Apples Wait Lazily.",
+   "blocklist": [
+    "yawl",
+    "yawls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Read the final letters, in order: bravE darK bravE.",
+   "blocklist": [
+    "eke"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "First letters, read in order: Zany Elk Bring Umbrellas.",
+   "blocklist": [
+    "zebu",
+    "zebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Initials, in order: Vivid Umbrellas Glow.",
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "penguin",
+    "clue": "Flightless Antarctic bird that waddles",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "narwhal",
+    "clue": "Toothed cetacean famous for a long spiral tusk",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "abate",
+    "clue": "To become less intense, as a storm",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "gibbous",
+    "clue": "Lunar phase when more than half the visible disk is illuminated, but it is not yet full",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "cygnet",
+    "clue": "A young swan, especially one still covered in gray down",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue must be printable ASCII"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "axolotl",
+    "clue": "Mexican salamander that keeps its external feathery gills into adulthood",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "brume",
+    "clue": "A poetic or archaic noun for a layer of mist or fog",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "serein",
+    "clue": "Fine rain that falls from a clear sky just after sunset",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "owl",
+    "clue": "Night bird; forest, river, mountain, garden, window, candle, silver, mirror, orange, velvet, copper.",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "sough",
+    "clue": "A verb for the soft rushing sound of wind moving through trees, often used in poetry.",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "mole",
+    "clue": "Burrowing mammal; apple, table, chair, water, light, stone, music, green, bread, horse, cloud, cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "quasar",
+    "clue": "Distant galactic core; people, time, way, day, man, world, life, hand, part, child, eye, place, work",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "sedge",
+    "clue": "A grasslike plant common in marshes and wetlands",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "dawn",
+    "clue": "The first appearance of daylight in the morning, before the sun rises",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "tarn",
+    "clue": "A small mountain lake, especially one formed in a cirque",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "cairn",
+    "clue": "A pile of stones built as a landmark or trail marker, often on a hill",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "fipple",
+    "clue": "The fixed plug inside a recorder's mouthpiece that forms its windway",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "gnu",
+    "clue": "Three initials, read in order: green needles unfurl.",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "yawl",
+    "clue": "Take the first letter of each word, in order: Yonder Apples Wait Lazily.",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "eke",
+    "clue": "Read the final letters, in order: bravE darK bravE.",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "zebu",
+    "clue": "First letters, read in order: Zany Elk Bring Umbrellas.",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "vug",
+    "clue": "Initials, in order: Vivid Umbrellas Glow.",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "clue",
+    "committed_word": "oats",
+    "clue": "Our adventurous team sails.",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "penguin",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "narwhal",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "abate",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "gibbous",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "cygnet",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "axolotl",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "rack",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "dew",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "cancel",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "owl",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "sough",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "mole",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "quasar",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "sedge",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "dawn",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "tarn",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "cairn",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "fipple",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "gnu",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "yawl",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "eke",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "zebu",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "vug",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "penguin",
+     "penguins"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "narwhal",
+     "narwhals"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abate",
+     "diminish",
+     "moderate",
+     "slacken",
+     "subside",
+     "wane"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "gibbous"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cygnet",
+     "cygnets"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "axolotl",
+     "axolotls"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "brume",
+     "haar",
+     "mirk",
+     "murk",
+     "pall",
+     "shroud"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "serein",
+     "sereins"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "nighthawk",
+     "nightjar",
+     "owl",
+     "owlet",
+     "owls"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "murmur",
+     "rustle",
+     "sough",
+     "soughs",
+     "whisper"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "badger",
+     "gopher",
+     "groundhog",
+     "marmot",
+     "mole",
+     "rabbit",
+     "wombat",
+     "woodchuck"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quasar",
+     "quasars"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bulrush",
+     "cattail",
+     "reed",
+     "reeds",
+     "rush",
+     "rushes",
+     "sedge",
+     "sedges"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aurora",
+     "cockcrow",
+     "dawn",
+     "dawning",
+     "daybreak",
+     "sunrise",
+     "sunup",
+     "twilight"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "tarn",
+     "tarns"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "barrow",
+     "cairn",
+     "cairns",
+     "mound",
+     "tumulus"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "fipple",
+     "fipples"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "gnu"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "yawl",
+     "yawls"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "eke"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "zebu",
+     "zebus"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "vug",
+     "vugs"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "penguin",
+   "w2": "penguin",
+   "clue": "Flightless Antarctic bird that waddles",
+   "mentions": [
+    "antarctic",
+    "bird",
+    "flightless",
+    "that",
+    "waddles"
+   ],
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "antarctic",
+    "bird",
+    "flightless",
+    "penguin",
+    "penguins",
+    "that",
+    "waddles"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172601,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "narwhal",
+   "w2": "narwhal",
+   "clue": "Toothed cetacean famous for a long spiral tusk",
+   "mentions": [
+    "cetacean",
+    "famous",
+    "for",
+    "long",
+    "spiral",
+    "toothed",
+    "tusk"
+   ],
+   "blocklist": [
+    "narwhal",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cetacean",
+    "famous",
+    "for",
+    "long",
+    "narwhal",
+    "narwhals",
+    "spiral",
+    "toothed",
+    "tusk"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172601,
+   "secret_candidates_after": 172592,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "abate",
+   "w2": "abate",
+   "clue": "To become less intense, as a storm",
+   "mentions": [
+    "become",
+    "intense",
+    "less",
+    "storm"
+   ],
+   "blocklist": [
+    "abate",
+    "diminish",
+    "moderate",
+    "slacken",
+    "subside",
+    "wane"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abate",
+    "become",
+    "diminish",
+    "intense",
+    "less",
+    "moderate",
+    "slacken",
+    "storm",
+    "subside",
+    "wane"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172592,
+   "secret_candidates_after": 172582,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "gibbous",
+   "w2": "gibbous",
+   "clue": "Lunar phase when more than half the visible disk is illuminated, but it is not yet full",
+   "mentions": [
+    "but",
+    "disk",
+    "full",
+    "half",
+    "illuminated",
+    "lunar",
+    "more",
+    "not",
+    "phase",
+    "than",
+    "the",
+    "visible",
+    "when",
+    "yet"
+   ],
+   "blocklist": [
+    "gibbous"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "but",
+    "disk",
+    "full",
+    "gibbous",
+    "half",
+    "illuminated",
+    "lunar",
+    "more",
+    "not",
+    "phase",
+    "than",
+    "the",
+    "visible",
+    "when",
+    "yet"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172582,
+   "secret_candidates_after": 172567,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cygnet",
+   "w2": "cygnet",
+   "clue": "A young swan, especially one still covered in gray down",
+   "mentions": [
+    "covered",
+    "down",
+    "especially",
+    "gray",
+    "one",
+    "still",
+    "swan",
+    "young"
+   ],
+   "blocklist": [
+    "cygnet",
+    "cygnets"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "covered",
+    "cygnet",
+    "cygnets",
+    "down",
+    "especially",
+    "gray",
+    "one",
+    "still",
+    "swan",
+    "young"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172567,
+   "secret_candidates_after": 172557,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172557,
+   "secret_candidates_after": 172557,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "axolotl",
+   "w2": "axolotl",
+   "clue": "Mexican salamander that keeps its external feathery gills into adulthood",
+   "mentions": [
+    "adulthood",
+    "external",
+    "feathery",
+    "gills",
+    "into",
+    "its",
+    "keeps",
+    "salamander",
+    "that"
+   ],
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "adulthood",
+    "axolotl",
+    "axolotls",
+    "external",
+    "feathery",
+    "gills",
+    "into",
+    "its",
+    "keeps",
+    "salamander",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172557,
+   "secret_candidates_after": 172547,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "brume",
+   "w2": "rack",
+   "clue": "A poetic or archaic noun for a layer of mist or fog",
+   "mentions": [
+    "archaic",
+    "fog",
+    "for",
+    "layer",
+    "mist",
+    "noun",
+    "poetic"
+   ],
+   "blocklist": [
+    "brume",
+    "haar",
+    "mirk",
+    "murk",
+    "pall",
+    "shroud"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": false,
+   "choice_actor": "guesser2",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser2",
+     "word": "rack"
+    }
+   ],
+   "emissions": [
+    "archaic",
+    "brume",
+    "fog",
+    "for",
+    "haar",
+    "layer",
+    "mirk",
+    "mist",
+    "murk",
+    "noun",
+    "pall",
+    "poetic",
+    "rack",
+    "shroud"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172547,
+   "secret_candidates_after": 172534,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "serein",
+   "w2": "dew",
+   "clue": "Fine rain that falls from a clear sky just after sunset",
+   "mentions": [
+    "after",
+    "clear",
+    "falls",
+    "fine",
+    "from",
+    "just",
+    "rain",
+    "sky",
+    "sunset",
+    "that"
+   ],
+   "blocklist": [
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": false,
+   "choice_actor": "guesser2",
+   "choice": "cancel",
+   "choice_valid": true,
+   "opened": [],
+   "emissions": [
+    "after",
+    "clear",
+    "falls",
+    "fine",
+    "from",
+    "just",
+    "rain",
+    "serein",
+    "sereins",
+    "sky",
+    "sunset",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172534,
+   "secret_candidates_after": 172523,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "owl",
+   "w2": "owl",
+   "clue": "Night bird; forest, river, mountain, garden, window, candle, silver, mirror, orange, velvet, copper.",
+   "mentions": [
+    "bird",
+    "candle",
+    "copper",
+    "forest",
+    "garden",
+    "mirror",
+    "mountain",
+    "night",
+    "orange",
+    "river",
+    "silver",
+    "velvet",
+    "window"
+   ],
+   "blocklist": [
+    "nighthawk",
+    "nightjar",
+    "owl",
+    "owlet",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bird",
+    "candle",
+    "copper",
+    "forest",
+    "garden",
+    "mirror",
+    "mountain",
+    "night",
+    "nighthawk",
+    "nightjar",
+    "orange",
+    "owl",
+    "owlet",
+    "owls",
+    "river",
+    "silver",
+    "velvet",
+    "window"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172523,
+   "secret_candidates_after": 172506,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sough",
+   "w2": "sough",
+   "clue": "A verb for the soft rushing sound of wind moving through trees, often used in poetry.",
+   "mentions": [
+    "for",
+    "moving",
+    "often",
+    "poetry",
+    "rushing",
+    "soft",
+    "sound",
+    "the",
+    "through",
+    "trees",
+    "used",
+    "verb",
+    "wind"
+   ],
+   "blocklist": [
+    "murmur",
+    "rustle",
+    "sough",
+    "soughs",
+    "whisper"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "for",
+    "moving",
+    "murmur",
+    "often",
+    "poetry",
+    "rushing",
+    "rustle",
+    "soft",
+    "sough",
+    "soughs",
+    "sound",
+    "the",
+    "through",
+    "trees",
+    "used",
+    "verb",
+    "whisper",
+    "wind"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172506,
+   "secret_candidates_after": 172490,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "mole",
+   "w2": "mole",
+   "clue": "Burrowing mammal; apple, table, chair, water, light, stone, music, green, bread, horse, cloud, cat",
+   "mentions": [
+    "apple",
+    "bread",
+    "burrowing",
+    "cat",
+    "chair",
+    "cloud",
+    "green",
+    "horse",
+    "light",
+    "mammal",
+    "music",
+    "stone",
+    "table",
+    "water"
+   ],
+   "blocklist": [
+    "badger",
+    "gopher",
+    "groundhog",
+    "marmot",
+    "mole",
+    "rabbit",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "apple",
+    "badger",
+    "bread",
+    "burrowing",
+    "cat",
+    "chair",
+    "cloud",
+    "gopher",
+    "green",
+    "groundhog",
+    "horse",
+    "light",
+    "mammal",
+    "marmot",
+    "mole",
+    "music",
+    "rabbit",
+    "stone",
+    "table",
+    "water",
+    "wombat",
+    "woodchuck"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172490,
+   "secret_candidates_after": 172468,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "quasar",
+   "w2": "quasar",
+   "clue": "Distant galactic core; people, time, way, day, man, world, life, hand, part, child, eye, place, work",
+   "mentions": [
+    "child",
+    "core",
+    "day",
+    "distant",
+    "eye",
+    "galactic",
+    "hand",
+    "life",
+    "man",
+    "part",
+    "people",
+    "place",
+    "time",
+    "way",
+    "work",
+    "world"
+   ],
+   "blocklist": [
+    "quasar",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "child",
+    "core",
+    "day",
+    "distant",
+    "eye",
+    "galactic",
+    "hand",
+    "life",
+    "man",
+    "part",
+    "people",
+    "place",
+    "quasar",
+    "quasars",
+    "time",
+    "way",
+    "work",
+    "world"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172468,
+   "secret_candidates_after": 172450,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sedge",
+   "w2": "sedge",
+   "clue": "A grasslike plant common in marshes and wetlands",
+   "mentions": [
+    "and",
+    "common",
+    "grasslike",
+    "marshes",
+    "plant",
+    "wetlands"
+   ],
+   "blocklist": [
+    "bulrush",
+    "cattail",
+    "reed",
+    "reeds",
+    "rush",
+    "rushes",
+    "sedge",
+    "sedges"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "bulrush",
+    "cattail",
+    "common",
+    "grasslike",
+    "marshes",
+    "plant",
+    "reed",
+    "reeds",
+    "rush",
+    "rushes",
+    "sedge",
+    "sedges",
+    "wetlands"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172450,
+   "secret_candidates_after": 172436,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "dawn",
+   "w2": "dawn",
+   "clue": "The first appearance of daylight in the morning, before the sun rises",
+   "mentions": [
+    "appearance",
+    "before",
+    "daylight",
+    "first",
+    "morning",
+    "rises",
+    "sun",
+    "the"
+   ],
+   "blocklist": [
+    "aurora",
+    "cockcrow",
+    "dawn",
+    "dawning",
+    "daybreak",
+    "sunrise",
+    "sunup",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "appearance",
+    "aurora",
+    "before",
+    "cockcrow",
+    "dawn",
+    "dawning",
+    "daybreak",
+    "daylight",
+    "first",
+    "morning",
+    "rises",
+    "sun",
+    "sunrise",
+    "sunup",
+    "the",
+    "twilight"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172436,
+   "secret_candidates_after": 172421,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "tarn",
+   "w2": "tarn",
+   "clue": "A small mountain lake, especially one formed in a cirque",
+   "mentions": [
+    "cirque",
+    "especially",
+    "formed",
+    "lake",
+    "mountain",
+    "one",
+    "small"
+   ],
+   "blocklist": [
+    "tarn",
+    "tarns"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cirque",
+    "especially",
+    "formed",
+    "lake",
+    "mountain",
+    "one",
+    "small",
+    "tarn",
+    "tarns"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172421,
+   "secret_candidates_after": 172415,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cairn",
+   "w2": "cairn",
+   "clue": "A pile of stones built as a landmark or trail marker, often on a hill",
+   "mentions": [
+    "built",
+    "hill",
+    "landmark",
+    "marker",
+    "often",
+    "pile",
+    "stones",
+    "trail"
+   ],
+   "blocklist": [
+    "barrow",
+    "cairn",
+    "cairns",
+    "mound",
+    "tumulus"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "barrow",
+    "built",
+    "cairn",
+    "cairns",
+    "hill",
+    "landmark",
+    "marker",
+    "mound",
+    "often",
+    "pile",
+    "stones",
+    "trail",
+    "tumulus"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172415,
+   "secret_candidates_after": 172403,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "fipple",
+   "w2": "fipple",
+   "clue": "The fixed plug inside a recorder's mouthpiece that forms its windway",
+   "mentions": [
+    "fixed",
+    "forms",
+    "inside",
+    "its",
+    "mouthpiece",
+    "plug",
+    "recorder",
+    "that",
+    "the",
+    "windway"
+   ],
+   "blocklist": [
+    "fipple",
+    "fipples"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "fipple",
+    "fipples",
+    "fixed",
+    "forms",
+    "inside",
+    "its",
+    "mouthpiece",
+    "plug",
+    "recorder",
+    "that",
+    "the",
+    "windway"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172403,
+   "secret_candidates_after": 172394,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172394,
+   "secret_candidates_after": 172394,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "gnu",
+   "w2": "gnu",
+   "clue": "Three initials, read in order: green needles unfurl.",
+   "mentions": [
+    "green",
+    "initials",
+    "needles",
+    "order",
+    "read",
+    "three",
+    "unfurl"
+   ],
+   "blocklist": [
+    "gnu"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "gnu",
+    "green",
+    "initials",
+    "needles",
+    "order",
+    "read",
+    "three",
+    "unfurl"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172394,
+   "secret_candidates_after": 172387,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "yawl",
+   "w2": "yawl",
+   "clue": "Take the first letter of each word, in order: Yonder Apples Wait Lazily.",
+   "mentions": [
+    "apples",
+    "each",
+    "first",
+    "lazily",
+    "letter",
+    "order",
+    "take",
+    "the",
+    "wait",
+    "word",
+    "yonder"
+   ],
+   "blocklist": [
+    "yawl",
+    "yawls"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "apples",
+    "each",
+    "first",
+    "lazily",
+    "letter",
+    "order",
+    "take",
+    "the",
+    "wait",
+    "word",
+    "yawl",
+    "yawls",
+    "yonder"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172387,
+   "secret_candidates_after": 172377,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172377,
+   "secret_candidates_after": 172377,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "eke",
+   "w2": "eke",
+   "clue": "Read the final letters, in order: bravE darK bravE.",
+   "mentions": [
+    "brave",
+    "dark",
+    "final",
+    "letters",
+    "order",
+    "read",
+    "the"
+   ],
+   "blocklist": [
+    "eke"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "brave",
+    "dark",
+    "eke",
+    "final",
+    "letters",
+    "order",
+    "read",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172377,
+   "secret_candidates_after": 172372,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zebu",
+   "w2": "zebu",
+   "clue": "First letters, read in order: Zany Elk Bring Umbrellas.",
+   "mentions": [
+    "bring",
+    "elk",
+    "first",
+    "letters",
+    "order",
+    "read",
+    "umbrellas",
+    "zany"
+   ],
+   "blocklist": [
+    "zebu",
+    "zebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bring",
+    "elk",
+    "first",
+    "letters",
+    "order",
+    "read",
+    "umbrellas",
+    "zany",
+    "zebu",
+    "zebus"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172372,
+   "secret_candidates_after": 172366,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "vug",
+   "w2": "vug",
+   "clue": "Initials, in order: Vivid Umbrellas Glow.",
+   "mentions": [
+    "glow",
+    "initials",
+    "order",
+    "umbrellas",
+    "vivid"
+   ],
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "glow",
+    "initials",
+    "order",
+    "umbrellas",
+    "vivid",
+    "vug",
+    "vugs"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172366,
+   "secret_candidates_after": 172362,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

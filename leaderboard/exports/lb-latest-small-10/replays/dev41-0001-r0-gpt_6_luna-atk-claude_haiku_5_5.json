@@ -1,0 +1,1929 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Canine companion: cat rat bat bee ant ape arm art ash ask ate bad bag ban bar bed beg bet big bit",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dog"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Saltwater body, smaller than an ocean",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "sumo"
+    ]
+   ],
+   "blocked_word_count": 16571,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Bright orb above us",
+   "blocklist": [
+    "sun",
+    "sup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Elegant long-necked waterbird often shown in pairs",
+   "blocklist": [
+    "crane",
+    "egret",
+    "heron",
+    "ibis",
+    "stork",
+    "swan",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Ice cream dessert often served with syrup, nuts, or fruit",
+   "blocklist": [
+    "summer",
+    "super",
+    "supper",
+    "supply"
+   ],
+   "blocked_ranges": [
+    [
+     "sumac",
+     "supe"
+    ]
+   ],
+   "blocked_word_count": 233,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Japanese dish of vinegared rice, often served with fish or vegetables.",
+   "blocklist": [
+    "sunny",
+    "sunset",
+    "superb",
+    "supervise",
+    "supplement",
+    "supplies",
+    "support",
+    "suppose",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sushi"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sushi"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Remain alive through a dangerous ordeal",
+   "blocklist": [
+    "sudden",
+    "sugar",
+    "suit",
+    "sulk",
+    "summit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "survive"
+    },
+    {
+     "seat": "guesser2",
+     "word": "survive"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "An exploding star that can briefly outshine an entire galaxy",
+   "blocklist": [
+    "supernova"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Large self-service store selling groceries and household goods",
+   "blocklist": [
+    "supermarket",
+    "suppress",
+    "supremacy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A nation's global dominance, or an extraordinary ability beyond ordinary human limits",
+   "blocklist": [
+    "superhuman",
+    "supernal",
+    "superpower",
+    "supinate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Better than others in quality, rank, or status",
+   "blocklist": [
+    "superior",
+    "superlative",
+    "supervene",
+    "supplant",
+    "supple",
+    "suppliant",
+    "suppurate",
+    "supremo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A performer whose fame puts them at the very top of the entertainment world",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superstar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superstar"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Anatomical rotation that turns the palm to face upward",
+   "blocklist": [
+    "supinely",
+    "supineness",
+    "supinenesses",
+    "supines"
+   ],
+   "blocked_ranges": [
+    [
+     "supinated",
+     "supinators"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "supi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Lying on the back with the face turned upward",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "supine"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 17.0,
+  "cost_numerator": 17,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "dog",
+    "clue": "Canine companion: cat rat bat bee ant ape arm art ash ask ate bad bag ban bar bed beg bet big bit",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "sea",
+    "clue": "Saltwater body, smaller than an ocean",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "sun",
+    "clue": "Bright orb above us",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "swan",
+    "clue": "Elegant long-necked waterbird often shown in pairs",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "sundae",
+    "clue": "Ice cream dessert often served with syrup, nuts, or fruit",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "sushi",
+    "clue": "Japanese dish of vinegared rice, often served with fish or vegetables.",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 8,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 9,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "survive",
+    "clue": "Remain alive through a dangerous ordeal",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "supernova",
+    "clue": "An exploding star that can briefly outshine an entire galaxy",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "supermarket",
+    "clue": "Large self-service store selling groceries and household goods",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "superpower",
+    "clue": "A nation's global dominance, or an extraordinary ability beyond ordinary human limits",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "superior",
+    "clue": "Better than others in quality, rank, or status",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "superstar",
+    "clue": "A performer whose fame puts them at the very top of the entertainment world",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "supination",
+    "clue": "Anatomical rotation that turns the palm to face upward",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "supine",
+    "clue": "Lying on the back with the face turned upward",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "sea",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "sun",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "swan",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "sundae",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "sushi",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "survive",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "supernova",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "supermarket",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "superpower",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "superior",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "superstar",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "supination",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "supine",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "sab",
+      "sumo"
+     ]
+    ]
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sun",
+     "sup"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "crane",
+     "egret",
+     "heron",
+     "ibis",
+     "stork",
+     "swan",
+     "swans"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "summer",
+     "super",
+     "supper",
+     "supply"
+    ],
+    "canonical_ranges": [
+     [
+      "sumac",
+      "supe"
+     ]
+    ]
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sunny",
+     "sunset",
+     "superb",
+     "supervise",
+     "supplement",
+     "supplies",
+     "support",
+     "suppose",
+     "supreme",
+     "surface"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sudden",
+     "sugar",
+     "suit",
+     "sulk",
+     "summit"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supernova"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supermarket",
+     "suppress",
+     "supremacy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "superhuman",
+     "supernal",
+     "superpower",
+     "supinate"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "superior",
+     "superlative",
+     "supervene",
+     "supplant",
+     "supple",
+     "suppliant",
+     "suppurate",
+     "supremo"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supinely",
+     "supineness",
+     "supinenesses",
+     "supines"
+    ],
+    "canonical_ranges": [
+     [
+      "supinated",
+      "supinators"
+     ]
+    ]
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "s",
+   "w1": "dog",
+   "w2": "dog",
+   "clue": "Canine companion: cat rat bat bee ant ape arm art ash ask ate bad bag ban bar bed beg bet big bit",
+   "mentions": [
+    "ant",
+    "ape",
+    "arm",
+    "art",
+    "ash",
+    "ask",
+    "ate",
+    "bad",
+    "bag",
+    "ban",
+    "bar",
+    "bat",
+    "bed",
+    "bee",
+    "beg",
+    "bet",
+    "big",
+    "bit",
+    "canine",
+    "cat",
+    "companion",
+    "rat"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "dog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dog"
+    }
+   ],
+   "emissions": [
+    "ant",
+    "ape",
+    "arm",
+    "art",
+    "ash",
+    "ask",
+    "ate",
+    "bad",
+    "bag",
+    "ban",
+    "bar",
+    "bat",
+    "bed",
+    "bee",
+    "beg",
+    "bet",
+    "big",
+    "bit",
+    "canine",
+    "cat",
+    "companion",
+    "dog",
+    "rat"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 18982,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "sea",
+   "w2": "sea",
+   "clue": "Saltwater body, smaller than an ocean",
+   "mentions": [
+    "body",
+    "ocean",
+    "saltwater",
+    "smaller",
+    "than"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "sumo"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 18982,
+   "secret_candidates_after": 2411,
+   "block_size": 16571,
+   "block_fresh_secret_candidates": 16571,
+   "block_overlap_with_clue": 2,
+   "emission_count": 16574,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "sun",
+   "w2": "sun",
+   "clue": "Bright orb above us",
+   "mentions": [
+    "above",
+    "bright",
+    "orb"
+   ],
+   "blocklist": [
+    "sun",
+    "sup"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "above",
+    "bright",
+    "orb",
+    "sun",
+    "sup"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2411,
+   "secret_candidates_after": 2409,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "swan",
+   "w2": "swan",
+   "clue": "Elegant long-necked waterbird often shown in pairs",
+   "mentions": [
+    "elegant",
+    "long",
+    "necked",
+    "often",
+    "pairs",
+    "shown",
+    "waterbird"
+   ],
+   "blocklist": [
+    "crane",
+    "egret",
+    "heron",
+    "ibis",
+    "stork",
+    "swan",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "crane",
+    "egret",
+    "elegant",
+    "heron",
+    "ibis",
+    "long",
+    "necked",
+    "often",
+    "pairs",
+    "shown",
+    "stork",
+    "swan",
+    "swans",
+    "waterbird"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2409,
+   "secret_candidates_after": 2407,
+   "block_size": 7,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "sundae",
+   "w2": "sundae",
+   "clue": "Ice cream dessert often served with syrup, nuts, or fruit",
+   "mentions": [
+    "cream",
+    "dessert",
+    "fruit",
+    "ice",
+    "nuts",
+    "often",
+    "served",
+    "syrup",
+    "with"
+   ],
+   "blocklist": [
+    "summer",
+    "super",
+    "supper",
+    "supply"
+   ],
+   "blocked_ranges": [
+    [
+     "sumac",
+     "supe"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cream",
+    "dessert",
+    "fruit",
+    "ice",
+    "nuts",
+    "often",
+    "served",
+    "sumac",
+    "sumach",
+    "sumachs",
+    "sumacs",
+    "sumless",
+    "summa",
+    "summabilities",
+    "summability",
+    "summable",
+    "summae",
+    "summand",
+    "summands",
+    "summaries",
+    "summarily",
+    "summarise",
+    "summarised",
+    "summarises",
+    "summarising",
+    "summarizable",
+    "summarization",
+    "summarizations",
+    "summarize",
+    "summarized",
+    "summarizer",
+    "summarizers",
+    "summarizes",
+    "summarizing",
+    "summary",
+    "summas",
+    "summate",
+    "summated",
+    "summates",
+    "summating",
+    "summation",
+    "summational",
+    "summations",
+    "summative",
+    "summed",
+    "summer",
+    "summered",
+    "summerhouse",
+    "summerhouses",
+    "summerier",
+    "summeriest",
+    "summering",
+    "summerlike",
+    "summerlong",
+    "summerly",
+    "summers",
+    "summersault",
+    "summersaulted",
+    "summersaulting",
+    "summersaults",
+    "summertime",
+    "summertimes",
+    "summerwood",
+    "summerwoods",
+    "summery",
+    "summing",
+    "summit",
+    "summital",
+    "summited",
+    "summiteer",
+    "summiteers",
+    "summiting",
+    "summitries",
+    "summitry",
+    "summits",
+    "summon",
+    "summonable",
+    "summoned",
+    "summoner",
+    "summoners",
+    "summoning",
+    "summons",
+    "summonsed",
+    "summonses",
+    "summonsing",
+    "sumo",
+    "sumos",
+    "sump",
+    "sumps",
+    "sumpter",
+    "sumpters",
+    "sumptuary",
+    "sumptuous",
+    "sumptuously",
+    "sumptuousness",
+    "sumptuousnesses",
+    "sumpweed",
+    "sumpweeds",
+    "sums",
+    "sun",
+    "sunback",
+    "sunbaked",
+    "sunbath",
+    "sunbathe",
+    "sunbathed",
+    "sunbather",
+    "sunbathers",
+    "sunbathes",
+    "sunbathing",
+    "sunbaths",
+    "sunbeam",
+    "sunbeams",
+    "sunbeamy",
+    "sunbelt",
+    "sunbelts",
+    "sunbird",
+    "sunbirds",
+    "sunblock",
+    "sunblocks",
+    "sunbonnet",
+    "sunbonnets",
+    "sunbow",
+    "sunbows",
+    "sunburn",
+    "sunburned",
+    "sunburning",
+    "sunburns",
+    "sunburnt",
+    "sunburst",
+    "sunbursts",
+    "sunchoke",
+    "sunchokes",
+    "sundae",
+    "sundaes",
+    "sundeck",
+    "sundecks",
+    "sunder",
+    "sundered",
+    "sunderer",
+    "sunderers",
+    "sundering",
+    "sunders",
+    "sundew",
+    "sundews",
+    "sundial",
+    "sundials",
+    "sundog",
+    "sundogs",
+    "sundown",
+    "sundowner",
+    "sundowners",
+    "sundowns",
+    "sundress",
+    "sundresses",
+    "sundries",
+    "sundrops",
+    "sundry",
+    "sunfast",
+    "sunfish",
+    "sunfishes",
+    "sunflower",
+    "sunflowers",
+    "sung",
+    "sunglass",
+    "sunglasses",
+    "sunglow",
+    "sunglows",
+    "sunk",
+    "sunken",
+    "sunket",
+    "sunkets",
+    "sunlamp",
+    "sunlamps",
+    "sunland",
+    "sunlands",
+    "sunless",
+    "sunlight",
+    "sunlights",
+    "sunlike",
+    "sunlit",
+    "sunn",
+    "sunna",
+    "sunnah",
+    "sunnahs",
+    "sunnas",
+    "sunned",
+    "sunnier",
+    "sunniest",
+    "sunnily",
+    "sunniness",
+    "sunninesses",
+    "sunning",
+    "sunns",
+    "sunny",
+    "sunporch",
+    "sunporches",
+    "sunproof",
+    "sunrise",
+    "sunrises",
+    "sunroof",
+    "sunroofs",
+    "sunroom",
+    "sunrooms",
+    "suns",
+    "sunscald",
+    "sunscalds",
+    "sunscreen",
+    "sunscreening",
+    "sunscreens",
+    "sunseeker",
+    "sunseekers",
+    "sunset",
+    "sunsets",
+    "sunshade",
+    "sunshades",
+    "sunshine",
+    "sunshines",
+    "sunshiny",
+    "sunspot",
+    "sunspots",
+    "sunstone",
+    "sunstones",
+    "sunstroke",
+    "sunstrokes",
+    "sunstruck",
+    "sunsuit",
+    "sunsuits",
+    "suntan",
+    "suntanned",
+    "suntans",
+    "sunup",
+    "sunups",
+    "sunward",
+    "sunwards",
+    "sunwise",
+    "sup",
+    "supe",
+    "super",
+    "supper",
+    "supply",
+    "syrup",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2407,
+   "secret_candidates_after": 2254,
+   "block_size": 233,
+   "block_fresh_secret_candidates": 152,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "s",
+   "prefix_after": "su",
+   "w1": "sushi",
+   "w2": "sushi",
+   "clue": "Japanese dish of vinegared rice, often served with fish or vegetables.",
+   "mentions": [
+    "dish",
+    "fish",
+    "often",
+    "rice",
+    "served",
+    "vegetables",
+    "vinegared",
+    "with"
+   ],
+   "blocklist": [
+    "sunny",
+    "sunset",
+    "superb",
+    "supervise",
+    "supplement",
+    "supplies",
+    "support",
+    "suppose",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "sushi"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sushi"
+    }
+   ],
+   "emissions": [
+    "dish",
+    "fish",
+    "often",
+    "rice",
+    "served",
+    "sunny",
+    "sunset",
+    "superb",
+    "supervise",
+    "supplement",
+    "supplies",
+    "support",
+    "suppose",
+    "supreme",
+    "surface",
+    "sushi",
+    "vegetables",
+    "vinegared",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 2254,
+   "secret_candidates_after": 1149,
+   "block_size": 10,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 1149,
+   "secret_candidates_after": 1149,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 1149,
+   "secret_candidates_after": 1149,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 1149,
+   "secret_candidates_after": 1149,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "su",
+   "prefix_after": "sup",
+   "w1": "survive",
+   "w2": "survive",
+   "clue": "Remain alive through a dangerous ordeal",
+   "mentions": [
+    "alive",
+    "dangerous",
+    "ordeal",
+    "remain",
+    "through"
+   ],
+   "blocklist": [
+    "sudden",
+    "sugar",
+    "suit",
+    "sulk",
+    "summit"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "survive"
+    },
+    {
+     "seat": "guesser2",
+     "word": "survive"
+    }
+   ],
+   "emissions": [
+    "alive",
+    "dangerous",
+    "ordeal",
+    "remain",
+    "sudden",
+    "sugar",
+    "suit",
+    "sulk",
+    "summit",
+    "survive",
+    "through"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 1149,
+   "secret_candidates_after": 822,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "sup",
+   "prefix_after": "sup",
+   "w1": "supernova",
+   "w2": "supernova",
+   "clue": "An exploding star that can briefly outshine an entire galaxy",
+   "mentions": [
+    "briefly",
+    "can",
+    "entire",
+    "exploding",
+    "galaxy",
+    "outshine",
+    "star",
+    "that"
+   ],
+   "blocklist": [
+    "supernova"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "briefly",
+    "can",
+    "entire",
+    "exploding",
+    "galaxy",
+    "outshine",
+    "star",
+    "supernova",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 822,
+   "secret_candidates_after": 821,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "sup",
+   "prefix_after": "sup",
+   "w1": "supermarket",
+   "w2": "supermarket",
+   "clue": "Large self-service store selling groceries and household goods",
+   "mentions": [
+    "and",
+    "goods",
+    "groceries",
+    "household",
+    "large",
+    "self",
+    "selling",
+    "service",
+    "store"
+   ],
+   "blocklist": [
+    "supermarket",
+    "suppress",
+    "supremacy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "goods",
+    "groceries",
+    "household",
+    "large",
+    "self",
+    "selling",
+    "service",
+    "store",
+    "supermarket",
+    "suppress",
+    "supremacy"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 821,
+   "secret_candidates_after": 818,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "sup",
+   "prefix_after": "sup",
+   "w1": "superpower",
+   "w2": "superpower",
+   "clue": "A nation's global dominance, or an extraordinary ability beyond ordinary human limits",
+   "mentions": [
+    "ability",
+    "beyond",
+    "dominance",
+    "extraordinary",
+    "global",
+    "human",
+    "limits",
+    "nation",
+    "ordinary"
+   ],
+   "blocklist": [
+    "superhuman",
+    "supernal",
+    "superpower",
+    "supinate"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ability",
+    "beyond",
+    "dominance",
+    "extraordinary",
+    "global",
+    "human",
+    "limits",
+    "nation",
+    "ordinary",
+    "superhuman",
+    "supernal",
+    "superpower",
+    "supinate"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 818,
+   "secret_candidates_after": 814,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "sup",
+   "prefix_after": "sup",
+   "w1": "superior",
+   "w2": "superior",
+   "clue": "Better than others in quality, rank, or status",
+   "mentions": [
+    "better",
+    "others",
+    "quality",
+    "rank",
+    "status",
+    "than"
+   ],
+   "blocklist": [
+    "superior",
+    "superlative",
+    "supervene",
+    "supplant",
+    "supple",
+    "suppliant",
+    "suppurate",
+    "supremo"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "better",
+    "others",
+    "quality",
+    "rank",
+    "status",
+    "superior",
+    "superlative",
+    "supervene",
+    "supplant",
+    "supple",
+    "suppliant",
+    "suppurate",
+    "supremo",
+    "than"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 814,
+   "secret_candidates_after": 806,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "sup",
+   "prefix_after": "supi",
+   "w1": "superstar",
+   "w2": "superstar",
+   "clue": "A performer whose fame puts them at the very top of the entertainment world",
+   "mentions": [
+    "entertainment",
+    "fame",
+    "performer",
+    "puts",
+    "the",
+    "them",
+    "top",
+    "very",
+    "whose",
+    "world"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "superstar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superstar"
+    }
+   ],
+   "emissions": [
+    "entertainment",
+    "fame",
+    "performer",
+    "puts",
+    "superstar",
+    "the",
+    "them",
+    "top",
+    "very",
+    "whose",
+    "world"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 806,
+   "secret_candidates_after": 12,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "supi",
+   "prefix_after": "supi",
+   "w1": "supination",
+   "w2": "supination",
+   "clue": "Anatomical rotation that turns the palm to face upward",
+   "mentions": [
+    "anatomical",
+    "face",
+    "palm",
+    "rotation",
+    "that",
+    "the",
+    "turns",
+    "upward"
+   ],
+   "blocklist": [
+    "supinely",
+    "supineness",
+    "supinenesses",
+    "supines"
+   ],
+   "blocked_ranges": [
+    [
+     "supinated",
+     "supinators"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "anatomical",
+    "face",
+    "palm",
+    "rotation",
+    "supinated",
+    "supinates",
+    "supinating",
+    "supination",
+    "supinations",
+    "supinator",
+    "supinators",
+    "supinely",
+    "supineness",
+    "supinenesses",
+    "supines",
+    "that",
+    "the",
+    "turns",
+    "upward"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 12,
+   "secret_candidates_after": 1,
+   "block_size": 11,
+   "block_fresh_secret_candidates": 11,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "supi",
+   "prefix_after": "supi",
+   "w1": "supine",
+   "w2": "supine",
+   "clue": "Lying on the back with the face turned upward",
+   "mentions": [
+    "back",
+    "face",
+    "lying",
+    "the",
+    "turned",
+    "upward",
+    "with"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "supine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "supine"
+    }
+   ],
+   "emissions": [
+    "back",
+    "face",
+    "lying",
+    "supine",
+    "the",
+    "turned",
+    "upward",
+    "with"
+   ],
+   "target_hit": true,
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "won",
+   "secret_candidates_before": 1,
+   "secret_candidates_after": null,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

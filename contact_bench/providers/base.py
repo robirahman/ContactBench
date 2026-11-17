@@ -218,6 +218,9 @@ class RetryPolicy:
     base_seconds: float = 1.0
     max_seconds: float = 60.0
     deadline_seconds: float = 300.0
+    # Rate limits (HTTP 429) are expected under concurrency and clear with
+    # time, so they get a larger attempt budget within the same deadline.
+    rate_limit_attempts: int = 8
 
 
 class CredentialSource:
@@ -343,7 +346,10 @@ class ProviderAdapter(ABC):
         attempts: list[TransportAttempt] = []
         start = self._clock()
         last: InfrastructureError | None = None
-        for i in range(1, self.retry.max_attempts + 1):
+        limit = self.retry.max_attempts
+        i = 0
+        while i < max(limit, self.retry.rate_limit_attempts):
+            i += 1
             token = await gate.before() if gate is not None else None
             t0 = self._clock()
             try:
@@ -359,7 +365,9 @@ class ProviderAdapter(ABC):
                     )
                 )
                 last = e
-                if e.fatal or not e.retryable or i == self.retry.max_attempts:
+                if e.category == "rate_limit":
+                    limit = max(limit, self.retry.rate_limit_attempts)
+                if e.fatal or not e.retryable or i >= limit:
                     break
                 delay = e.retry_after
                 if delay is None:

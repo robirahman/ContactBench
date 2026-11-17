@@ -1,0 +1,322 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A small domesticated feline that often purrs",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kit",
+    "kitten",
+    "kittens",
+    "kitty",
+    "pet",
+    "puss",
+    "pussy",
+    "tabby",
+    "tom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A specialist who writes and edits reference works explaining words",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "collar"
+    ],
+    [
+     "collards",
+     "zyzzyva"
+    ]
+   ],
+   "blocked_word_count": 172604,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collard",
+   "prefix_after": "",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 3.0,
+  "cost_numerator": 3,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "A small domesticated feline that often purrs",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "lexicographer",
+    "clue": "A specialist who writes and edits reference works explaining words",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "direct",
+    "word": "collard",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "lexicographer",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat",
+     "cats",
+     "feline",
+     "kit",
+     "kitten",
+     "kittens",
+     "kitty",
+     "pet",
+     "puss",
+     "pussy",
+     "tabby",
+     "tom"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "aah",
+      "collar"
+     ],
+     [
+      "collards",
+      "zyzzyva"
+     ]
+    ]
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "A small domesticated feline that often purrs",
+   "mentions": [
+    "domesticated",
+    "feline",
+    "often",
+    "purrs",
+    "small",
+    "that"
+   ],
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kit",
+    "kitten",
+    "kittens",
+    "kitty",
+    "pet",
+    "puss",
+    "pussy",
+    "tabby",
+    "tom"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cat",
+    "cats",
+    "domesticated",
+    "feline",
+    "kit",
+    "kitten",
+    "kittens",
+    "kitty",
+    "often",
+    "pet",
+    "purrs",
+    "puss",
+    "pussy",
+    "small",
+    "tabby",
+    "that",
+    "tom"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172591,
+   "block_size": 12,
+   "block_fresh_secret_candidates": 12,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "lexicographer",
+   "w2": "lexicographer",
+   "clue": "A specialist who writes and edits reference works explaining words",
+   "mentions": [
+    "and",
+    "edits",
+    "explaining",
+    "reference",
+    "specialist",
+    "who",
+    "words",
+    "works",
+    "writes"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "collar"
+    ],
+    [
+     "collards",
+     "zyzzyva"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172591,
+   "secret_candidates_after": 4,
+   "block_size": 172604,
+   "block_fresh_secret_candidates": 172587,
+   "block_overlap_with_clue": 9,
+   "emission_count": 172604,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "collard"
+    }
+   ],
+   "emissions": [
+    "collard"
+   ],
+   "result": "won",
+   "secret_candidates_before": 4,
+   "secret_candidates_after": 4,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
+}

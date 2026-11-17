@@ -1,0 +1,1418 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "common household feline",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "pet",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "fear of confined spaces",
+   "blocklist": [
+    "claustrophobia",
+    "claustrophobic",
+    "confine",
+    "confined",
+    "fear",
+    "fears",
+    "phobia",
+    "phobias",
+    "shift",
+    "shifter",
+    "shifts",
+    "space",
+    "spaces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Nocturnal bird often portrayed as wise",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A Clever Enigma: beginnings matter.",
+   "blocklist": [
+    "ace",
+    "clever",
+    "enigma",
+    "riddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A mythical guardian famous for posing a riddle near the pyramids.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sphinx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sphinx"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Read the first letters: Sly unicorns gather around rivers.",
+   "blocklist": [
+    "sly",
+    "slyer",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Adolphe Sax's single-reed jazz instrument",
+   "blocklist": [
+    "sax",
+    "sousaphone",
+    "sousaphones"
+   ],
+   "blocked_ranges": [
+    [
+     "sax",
+     "saxophonist"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Silent artists remember distant islands; nightfall echoes.",
+   "blocklist": [
+    "shafts",
+    "sift",
+    "sifter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sardine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sardine"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Sailors honor ancient reefs daily.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shard"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Shy hikers inspect valleys, exploring ravines.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shifty",
+     "shiny"
+    ]
+   ],
+   "blocked_word_count": 95,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shiver"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiver"
+    }
+   ],
+   "prefix_after": "shif",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Silent hikers inspect forests; travelers leave every stream silently.",
+   "blocklist": [
+    "shift",
+    "shiftable",
+    "shifted",
+    "shiftier",
+    "shiftiest",
+    "shiftily",
+    "shiftiness",
+    "shiftinesses",
+    "shifting",
+    "shiftless",
+    "shiftlessly",
+    "shiftlessness",
+    "shiftlessnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "shif",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "shifters",
+   "prefix_after": "shif",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "common household feline",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "claustrophobia",
+    "clue": "fear of confined spaces",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "owl",
+    "clue": "Nocturnal bird often portrayed as wise",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "ace",
+    "clue": "A Clever Enigma: beginnings matter.",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "sphinx",
+    "clue": "A mythical guardian famous for posing a riddle near the pyramids.",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "sugar",
+    "clue": "Read the first letters: Sly unicorns gather around rivers.",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "saxophone",
+    "clue": "Adolphe Sax's single-reed jazz instrument",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "sardine",
+    "clue": "Silent artists remember distant islands; nightfall echoes.",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "shard",
+    "clue": "Sailors honor ancient reefs daily.",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "shiver",
+    "clue": "Shy hikers inspect valleys, exploring ravines.",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "shiftless",
+    "clue": "Silent hikers inspect forests; travelers leave every stream silently.",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "direct",
+    "word": "shifters",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "claustrophobia",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "owl",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "ace",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "sphinx",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "sugar",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "saxophone",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "sardine",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "shard",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "shiver",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "shiftless",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat",
+     "cats",
+     "kitten",
+     "kitty",
+     "pet",
+     "tabby"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "claustrophobia",
+     "claustrophobic",
+     "confine",
+     "confined",
+     "fear",
+     "fears",
+     "phobia",
+     "phobias",
+     "shift",
+     "shifter",
+     "shifts",
+     "space",
+     "spaces"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "owl",
+     "owlet",
+     "owlets",
+     "owls"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ace",
+     "clever",
+     "enigma",
+     "riddle"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "invalid",
+    "reason": "blocklist entry is not a dictionary word",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sly",
+     "slyer",
+     "sugar",
+     "sugars"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sax",
+     "sousaphone",
+     "sousaphones"
+    ],
+    "canonical_ranges": [
+     [
+      "sax",
+      "saxophonist"
+     ]
+    ]
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "shafts",
+     "sift",
+     "sifter"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "shifty",
+      "shiny"
+     ]
+    ]
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "shift",
+     "shiftable",
+     "shifted",
+     "shiftier",
+     "shiftiest",
+     "shiftily",
+     "shiftiness",
+     "shiftinesses",
+     "shifting",
+     "shiftless",
+     "shiftlessly",
+     "shiftlessness",
+     "shiftlessnesses"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "common household feline",
+   "mentions": [
+    "common",
+    "feline",
+    "household"
+   ],
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "pet",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cat",
+    "cats",
+    "common",
+    "feline",
+    "household",
+    "kitten",
+    "kitty",
+    "pet",
+    "tabby"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172599,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "claustrophobia",
+   "w2": "claustrophobia",
+   "clue": "fear of confined spaces",
+   "mentions": [
+    "confined",
+    "fear",
+    "spaces"
+   ],
+   "blocklist": [
+    "claustrophobia",
+    "claustrophobic",
+    "confine",
+    "confined",
+    "fear",
+    "fears",
+    "phobia",
+    "phobias",
+    "shift",
+    "shifter",
+    "shifts",
+    "space",
+    "spaces"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "claustrophobia",
+    "claustrophobic",
+    "confine",
+    "confined",
+    "fear",
+    "fears",
+    "phobia",
+    "phobias",
+    "shift",
+    "shifter",
+    "shifts",
+    "space",
+    "spaces"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172599,
+   "secret_candidates_after": 172586,
+   "block_size": 13,
+   "block_fresh_secret_candidates": 13,
+   "block_overlap_with_clue": 3,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "owl",
+   "w2": "owl",
+   "clue": "Nocturnal bird often portrayed as wise",
+   "mentions": [
+    "bird",
+    "nocturnal",
+    "often",
+    "portrayed",
+    "wise"
+   ],
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bird",
+    "nocturnal",
+    "often",
+    "owl",
+    "owlet",
+    "owlets",
+    "owls",
+    "portrayed",
+    "wise"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172586,
+   "secret_candidates_after": 172577,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ace",
+   "w2": "ace",
+   "clue": "A Clever Enigma: beginnings matter.",
+   "mentions": [
+    "beginnings",
+    "clever",
+    "enigma",
+    "matter"
+   ],
+   "blocklist": [
+    "ace",
+    "clever",
+    "enigma",
+    "riddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ace",
+    "beginnings",
+    "clever",
+    "enigma",
+    "matter",
+    "riddle"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172577,
+   "secret_candidates_after": 172571,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 2,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "s",
+   "w1": "sphinx",
+   "w2": "sphinx",
+   "clue": "A mythical guardian famous for posing a riddle near the pyramids.",
+   "mentions": [
+    "famous",
+    "for",
+    "guardian",
+    "mythical",
+    "near",
+    "posing",
+    "pyramids",
+    "riddle",
+    "the"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "sphinx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sphinx"
+    }
+   ],
+   "emissions": [
+    "famous",
+    "for",
+    "guardian",
+    "mythical",
+    "near",
+    "posing",
+    "pyramids",
+    "riddle",
+    "sphinx",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172571,
+   "secret_candidates_after": 18976,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "sugar",
+   "w2": "sugar",
+   "clue": "Read the first letters: Sly unicorns gather around rivers.",
+   "mentions": [
+    "around",
+    "first",
+    "gather",
+    "letters",
+    "read",
+    "rivers",
+    "sly",
+    "the",
+    "unicorns"
+   ],
+   "blocklist": [
+    "sly",
+    "slyer",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "around",
+    "first",
+    "gather",
+    "letters",
+    "read",
+    "rivers",
+    "sly",
+    "slyer",
+    "sugar",
+    "sugars",
+    "the",
+    "unicorns"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 18976,
+   "secret_candidates_after": 18972,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "saxophone",
+   "w2": "saxophone",
+   "clue": "Adolphe Sax's single-reed jazz instrument",
+   "mentions": [
+    "instrument",
+    "jazz",
+    "reed",
+    "sax",
+    "single"
+   ],
+   "blocklist": [
+    "sax",
+    "sousaphone",
+    "sousaphones"
+   ],
+   "blocked_ranges": [
+    [
+     "sax",
+     "saxophonist"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "instrument",
+    "jazz",
+    "reed",
+    "sax",
+    "saxatile",
+    "saxes",
+    "saxhorn",
+    "saxhorns",
+    "saxicolous",
+    "saxifrage",
+    "saxifrages",
+    "saxitoxin",
+    "saxitoxins",
+    "saxonies",
+    "saxony",
+    "saxophone",
+    "saxophones",
+    "saxophonic",
+    "saxophonist",
+    "single",
+    "sousaphone",
+    "sousaphones"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 18972,
+   "secret_candidates_after": 18953,
+   "block_size": 18,
+   "block_fresh_secret_candidates": 18,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "s",
+   "prefix_after": "sh",
+   "w1": "sardine",
+   "w2": "sardine",
+   "clue": "Silent artists remember distant islands; nightfall echoes.",
+   "mentions": [
+    "artists",
+    "distant",
+    "echoes",
+    "islands",
+    "nightfall",
+    "remember",
+    "silent"
+   ],
+   "blocklist": [
+    "shafts",
+    "sift",
+    "sifter"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "sardine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sardine"
+    }
+   ],
+   "emissions": [
+    "artists",
+    "distant",
+    "echoes",
+    "islands",
+    "nightfall",
+    "remember",
+    "sardine",
+    "shafts",
+    "sift",
+    "sifter",
+    "silent"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 18953,
+   "secret_candidates_after": 1454,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "sh",
+   "prefix_after": "shi",
+   "w1": "shard",
+   "w2": "shard",
+   "clue": "Sailors honor ancient reefs daily.",
+   "mentions": [
+    "ancient",
+    "daily",
+    "honor",
+    "reefs",
+    "sailors"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "shard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shard"
+    }
+   ],
+   "emissions": [
+    "ancient",
+    "daily",
+    "honor",
+    "reefs",
+    "sailors",
+    "shard"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 1454,
+   "secret_candidates_after": 257,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "shi",
+   "prefix_after": "shif",
+   "w1": "shiver",
+   "w2": "shiver",
+   "clue": "Shy hikers inspect valleys, exploring ravines.",
+   "mentions": [
+    "exploring",
+    "hikers",
+    "inspect",
+    "ravines",
+    "shy",
+    "valleys"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shifty",
+     "shiny"
+    ]
+   ],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "shiver"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiver"
+    }
+   ],
+   "emissions": [
+    "exploring",
+    "hikers",
+    "inspect",
+    "ravines",
+    "shifty",
+    "shigella",
+    "shigellae",
+    "shigellas",
+    "shigelloses",
+    "shigellosis",
+    "shiitake",
+    "shiitakes",
+    "shikar",
+    "shikaree",
+    "shikarees",
+    "shikari",
+    "shikaris",
+    "shikarred",
+    "shikarring",
+    "shikars",
+    "shikker",
+    "shikkers",
+    "shiksa",
+    "shiksas",
+    "shikse",
+    "shikses",
+    "shilingi",
+    "shill",
+    "shillala",
+    "shillalah",
+    "shillalahs",
+    "shillalas",
+    "shilled",
+    "shillelagh",
+    "shillelaghs",
+    "shilling",
+    "shillings",
+    "shills",
+    "shilpit",
+    "shily",
+    "shim",
+    "shimmed",
+    "shimmer",
+    "shimmered",
+    "shimmering",
+    "shimmers",
+    "shimmery",
+    "shimmied",
+    "shimmies",
+    "shimming",
+    "shimmy",
+    "shimmying",
+    "shims",
+    "shin",
+    "shinbone",
+    "shinbones",
+    "shindies",
+    "shindig",
+    "shindigs",
+    "shindy",
+    "shindys",
+    "shine",
+    "shined",
+    "shiner",
+    "shiners",
+    "shines",
+    "shingle",
+    "shingled",
+    "shingler",
+    "shinglers",
+    "shingles",
+    "shingling",
+    "shingly",
+    "shinier",
+    "shiniest",
+    "shinily",
+    "shininess",
+    "shininesses",
+    "shining",
+    "shinleaf",
+    "shinleafs",
+    "shinleaves",
+    "shinned",
+    "shinneries",
+    "shinnery",
+    "shinney",
+    "shinneyed",
+    "shinneying",
+    "shinneys",
+    "shinnied",
+    "shinnies",
+    "shinning",
+    "shinny",
+    "shinnying",
+    "shinplaster",
+    "shinplasters",
+    "shins",
+    "shinsplints",
+    "shiny",
+    "shiver",
+    "shy",
+    "valleys"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 257,
+   "secret_candidates_after": 13,
+   "block_size": 95,
+   "block_fresh_secret_candidates": 95,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "shif",
+   "prefix_after": "shif",
+   "w1": "shiftless",
+   "w2": "shiftless",
+   "clue": "Silent hikers inspect forests; travelers leave every stream silently.",
+   "mentions": [
+    "every",
+    "forests",
+    "hikers",
+    "inspect",
+    "leave",
+    "silent",
+    "silently",
+    "stream",
+    "travelers"
+   ],
+   "blocklist": [
+    "shift",
+    "shiftable",
+    "shifted",
+    "shiftier",
+    "shiftiest",
+    "shiftily",
+    "shiftiness",
+    "shiftinesses",
+    "shifting",
+    "shiftless",
+    "shiftlessly",
+    "shiftlessness",
+    "shiftlessnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "every",
+    "forests",
+    "hikers",
+    "inspect",
+    "leave",
+    "shift",
+    "shiftable",
+    "shifted",
+    "shiftier",
+    "shiftiest",
+    "shiftily",
+    "shiftiness",
+    "shiftinesses",
+    "shifting",
+    "shiftless",
+    "shiftlessly",
+    "shiftlessness",
+    "shiftlessnesses",
+    "silent",
+    "silently",
+    "stream",
+    "travelers"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 13,
+   "secret_candidates_after": 1,
+   "block_size": 13,
+   "block_fresh_secret_candidates": 12,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "shif",
+   "prefix_after": "shif",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "shifters"
+    }
+   ],
+   "emissions": [
+    "shifters"
+   ],
+   "result": "won",
+   "secret_candidates_before": 1,
+   "secret_candidates_after": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
+}

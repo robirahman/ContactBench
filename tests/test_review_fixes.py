@@ -168,3 +168,11 @@ def test_anthropic_midstream_network_error_is_retryable():
     with pytest.raises(InfrastructureError) as ei:
         asyncio.run(ad._call({"max_tokens": 32000}))
     assert ei.value.retryable and ei.value.possibly_billed and ei.value.category == "transient"
+
+
+def test_non_rate_limit_errors_keep_the_normal_bound():
+    a = Flaky(fails=100)  # "server" errors
+    a.retry = RetryPolicy(max_attempts=3, rate_limit_attempts=8, base_seconds=0, deadline_seconds=5)
+    with pytest.raises(InfrastructureError):
+        asyncio.run(a.decide(_req()))
+    assert a.sent == 3
