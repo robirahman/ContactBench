@@ -24,13 +24,14 @@ from ..engine.game import (
 )
 from ..lexicon import Lexicon, load_lexicon_manifest
 from ..policies.llm import AgentOutput, ContextOverflowError, Limiters, LLMAgent
+from ..human.agent import HumanStopped
 from ..policies.scripted import ScriptedAgent
 from ..prompts.templates import PROMPT_VERSION, prompt_hash
 from ..providers.base import AdapterConfigError, InfrastructureError, RetryPolicy, sanitize
 from ..scoring.cost import GameScore, score_game
 from ..scoring.reference import ReferenceScorer
 from .budget import Budget, BudgetExhausted
-from .schedule import Fixture, GameSpec, build_schedule, game_models, run_plan, team_block
+from .schedule import Fixture, GameSpec, build_schedule, game_models, human_challenge_task_count, run_plan, team_block
 from .schedule import seat_model as _seat_model
 from .store import RunStore, atomic_write_json
 from .tasks import Task, generate_tasks, load_tasks, save_tasks
@@ -82,6 +83,33 @@ def load_lexicons(cfg: BenchConfig) -> tuple[Lexicon, Lexicon]:
     if vs.max_word_length > cfg.lexicon.maximum_secret_word_length:
         raise ValueError("secret lexicon has words longer than maximum_secret_word_length")
     return vs, vc
+
+
+def make_tasks(cfg: BenchConfig, v_secret: Lexicon, v_contact: Lexicon) -> list[Task]:
+    """Generated tasks for a configuration (the planner uses the same draws)."""
+    need = human_challenge_task_count(cfg)
+    count = need
+    while True:
+        tasks = generate_tasks(
+            v_secret=v_secret,
+            v_contact=v_contact,
+            count=count,
+            seed=cfg.tasks.generation_seed,
+            split=cfg.tasks.split,
+            initial_prefix_length=cfg.protocol.initial_prefix_length,
+            turn_limit=cfg.protocol.turn_limit,
+            clue_max_characters=cfg.protocol.clue_max_characters,
+        )
+        if cfg.tournament.schedule != "human_challenge":
+            return tasks
+        # Human challenges never repeat a secret (sampling is with
+        # replacement): keep the first ``need`` distinct secrets.  Draws are
+        # prefix-stable, so oversampling keeps the earlier tasks.
+        seen: set[str] = set()
+        distinct = [t for t in tasks if not (t.secret in seen or seen.add(t.secret))][:need]
+        if len(distinct) == need or count >= 64 * need:
+            return distinct
+        count *= 2
 
 
 def make_scorer(cfg: BenchConfig) -> ReferenceScorer:
@@ -184,6 +212,7 @@ class Runner:
         adapters: dict[str, Any] | None = None,
         progress: bool = False,
         max_usd_by_provider: dict[str, float] | None = None,
+        human_session: Any = None,
     ):
         self.cfg = cfg
         self.run_dir = Path(run_dir)
@@ -218,6 +247,9 @@ class Runner:
         self.halted_models: dict[str, str] = {}
         self._fork_tasks: dict[str, list] = {}
         self.budget_stopped = False
+        # Local play mode: the bridge to the human player's browser.  Without
+        # one, human decisions are unavailable and their games stay pending.
+        self.human_session = human_session
 
         paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
         if paid and not live and not replay_only:
@@ -239,16 +271,7 @@ class Runner:
         if cfg.tasks.manifest:
             tasks = load_tasks(cfg.resolve(cfg.tasks.manifest))
         else:
-            tasks = generate_tasks(
-                v_secret=self.v_secret,
-                v_contact=self.v_contact,
-                count=cfg.tasks.tasks_per_pair,
-                seed=cfg.tasks.generation_seed,
-                split=cfg.tasks.split,
-                initial_prefix_length=cfg.protocol.initial_prefix_length,
-                turn_limit=cfg.protocol.turn_limit,
-                clue_max_characters=cfg.protocol.clue_max_characters,
-            )
+            tasks = make_tasks(cfg, self.v_secret, self.v_contact)
         expected = {
             "secret_lexicon_sha256": self.v_secret.sha256,
             "contact_lexicon_sha256": self.v_contact.sha256,
@@ -340,6 +363,12 @@ class Runner:
         return self._adapters[m.id]
 
     def _agent(self, m: ModelConfig, seat: str, g: GameSpec):
+        if m.provider == "human":
+            from ..human.agent import HumanAgent
+
+            return HumanAgent(m, seat, g, self.human_session, self.contact_dictionary,
+                              max_lookups=self.cfg.protocol.max_tool_calls_per_decision,
+                              dictionary_access=self.cfg.protocol.dictionary_access)
         if m.provider == "scripted":
             return ScriptedAgent(
                 seat=seat,
@@ -468,6 +497,9 @@ class Runner:
                     raise EngineInvariantError(f"replay divergence at {did}: observation hash mismatch")
                 return rec["raw_output"]
             seat_model = _seat_model(g, spec.seat)
+            if self.models[seat_model].provider == "human" and self.human_session is None \
+                    and not self.replay_only:
+                return Unavailable("human_not_connected")
             if self.replay_only or self.halted or self.budget_stopped:
                 return Unavailable("not_recorded")
             if self._credential_key(seat_model) in self.halted_credentials:
@@ -478,9 +510,12 @@ class Runner:
                 return Unavailable("model_halted")
             agent = agent_for(spec.seat)
             meta: dict | None = None
+            human_meta: dict | None = None
             try:
                 if isinstance(agent, ScriptedAgent):
                     raw = await agent.decide(spec)
+                elif self.models[seat_model].provider == "human":
+                    raw, human_meta = await agent.decide(spec, did)
                 else:
                     out: AgentOutput = await agent.decide(spec, did)
                     raw, meta = out.raw, out.response
@@ -496,6 +531,8 @@ class Runner:
             except BudgetExhausted as e:
                 self._on_budget_exhausted(e, did)
                 return Unavailable("budget")
+            except HumanStopped:
+                return Unavailable("human_stopped")
             except InfrastructureError as e:
                 self.store.append_request({
                     "decision_id": did, "game_id": g.game_id, "turn": spec.turn, "seat": spec.seat,
@@ -528,6 +565,8 @@ class Runner:
                 "observation_sha256": oh,
                 "schema_name": spec.schema_name,
                 "raw_output": raw,
+                # Unscored play metadata (think time, lookups); never in observations.
+                **({"human": human_meta} if human_meta is not None else {}),
             })
             return raw
 
@@ -565,6 +604,8 @@ class Runner:
 
     async def play(self, g: GameSpec) -> dict:
         game = self.new_game(g)
+        if self.human_session is not None and not self.replay_only:
+            self.human_session.game_started(g)
         try:
             await game.play(self._decide_fn(g, game))
         finally:
@@ -583,6 +624,8 @@ class Runner:
                 max_entries=fc.sparse_max_entries, tolerance=fc.mass_tolerance,
                 invalid_score=fc.invalid_audit_score)
         rec["run_status"] = status
+        if self.human_session is not None and not self.replay_only:
+            self.human_session.game_finished(g, rec)
         if not self.replay_only:
             self.store.write_game(g.game_id, rec)
             self.store.update_game({
@@ -614,7 +657,8 @@ class Runner:
                 creds = {self._credential_key(m) for m in ms}
                 return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
                             or creds & set(self.halted_credentials)
-                            or ms & set(self.halted_models))
+                            or ms & set(self.halted_models)
+                            or (self.human_session is not None and self.human_session.stopped))
 
             if blocked():
                 return
@@ -628,7 +672,19 @@ class Runner:
                     print(f"  {g.game_id}: {s['outcome_status']} turns={s['turns_used']}"
                           + (f" cost={rec['score']['cost']:.3f}" if rec.get("score") and rec["score"]["cost"] is not None else ""))
 
-        await asyncio.gather(*(one(g) for g in todo))
+        if self.cfg.tournament.schedule == "human_challenge":
+            # One game at a time, in schedule order.  A defend leg never starts
+            # before the same secret's attack leg is complete: defending shows
+            # the human the secret.
+            fx_ab = {f.fixture_id: f.game_ab for f in self.fixtures}
+            for g in todo:
+                if g.leg == "BA":
+                    row = {r["game_id"]: r for r in self.store.game_rows()}.get(fx_ab[g.fixture_id], {})
+                    if not (row.get("status") == "complete" and row.get("collection_status") == "complete"):
+                        continue
+                await one(g)
+        else:
+            await asyncio.gather(*(one(g) for g in todo))
         if self.cfg.tournament.schedule == "teams":
             await self._run_team_rounds(one)
         if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
@@ -669,7 +725,7 @@ class Runner:
 
     def _credential_key(self, model_id: str) -> str:
         m = self.models[model_id]
-        if m.provider in ("scripted", "fake"):
+        if m.provider in ("scripted", "fake", "human"):
             return f"{m.provider}:{m.id}"
         return f"{m.provider}:{m.credential_env or self.DEFAULT_CREDENTIAL_ENV.get(m.provider, '')}"
 

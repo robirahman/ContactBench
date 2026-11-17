@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>ContactBench Play</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="play.css">
+</head>
+<body>
+<header>
+  <h1>Play ContactBench</h1>
+  <p class="sub" id="who">Connecting…</p>
+</header>
+<main>
+  <p id="error" class="error" hidden></p>
+  <section id="status-box" class="status"><p id="status">Loading…</p></section>
+
+  <div class="layout">
+    <div class="col-main">
+      <section id="decision" hidden>
+        <div class="board">
+          <div><span class="label">Prefix</span><span id="prefix" class="prefix"></span></div>
+          <div><span class="label">Turn</span><span id="turn"></span></div>
+          <div id="secret-wrap" hidden><span class="label">Secret (you defend it)</span><span id="secret" class="prefix"></span></div>
+        </div>
+        <div id="context"></div>
+        <form id="action-form" autocomplete="off"></form>
+        <p id="check" class="note"></p>
+      </section>
+
+      <section id="history-box" hidden>
+        <h2>This game</h2>
+        <div class="scroll"><table id="history"></table></div>
+        <details id="used-box"><summary id="used-summary">Used words</summary><p id="used" class="words"></p></details>
+        <div id="private-box"></div>
+      </section>
+    </div>
+
+    <aside class="col-side">
+      <section id="lookup-box" hidden>
+        <h2>Dictionary lookup</h2>
+        <p class="note">The same lookup functions the models get, with the same per-decision limit. <span id="lookups-left"></span></p>
+        <form id="lookup-form" autocomplete="off">
+          <select id="lookup-fn">
+            <option value="is_legal_word">is_legal_word(word)</option>
+            <option value="count_words">count_words(prefix)</option>
+            <option value="list_words">list_words(prefix, offset)</option>
+          </select>
+          <input id="lookup-arg" placeholder="word or prefix" spellcheck="false">
+          <input id="lookup-offset" type="number" min="0" value="0" title="offset (list_words)">
+          <button type="submit">Look up</button>
+        </form>
+        <div id="lookup-results"></div>
+      </section>
+
+      <section>
+        <h2>Your results</h2>
+        <p id="score" class="note"></p>
+        <div class="scroll"><table id="results"></table></div>
+      </section>
+
+      <section>
+        <details>
+          <summary>Rules in brief</summary>
+          <ul class="rules">
+            <li>Two guessers try to reach a secret word that the Defender knows. Words are from the ENABLE dictionary (lowercase a–z).</li>
+            <li><b>Guesser 1</b> gives a public clue (printable ASCII, at most the shown number of characters) and privately registers an intended word that starts with the prefix and is not used, or makes a direct guess of the secret.</li>
+            <li><b>Guesser 2</b> privately registers a word for the clue; at the same time the <b>Defender</b> publishes a blocklist (words and alphabetical ranges).</li>
+            <li>If both guessers registered the same unused word, it is not blocked and is not in the clue, the next letter of the secret is revealed.</li>
+            <li>If exactly one guesser's word is blocked, the other chooses to reveal or cancel theirs.</li>
+            <li>Saying the secret anywhere in public wins, including in a clue or on the Defender's blocklist. Every public word becomes used.</li>
+            <li>Cost is the winning turn, or the turn cap plus a reference estimate of the turns still needed. In each fixture you win if your attacking cost is lower than the model's.</li>
+          </ul>
+        </details>
+        <button id="stop" type="button">Pause and save</button>
+        <p class="note">Pausing keeps every recorded move; resume with <code>contact-bench play --resume RUN_ID</code>.</p>
+      </section>
+    </aside>
+  </div>
+</main>
+<script src="play.js"></script>
+</body>
+</html>

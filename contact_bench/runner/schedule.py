@@ -25,26 +25,36 @@ class GameSpec:
     # Rematch games override the starting prefix length.
     initial_prefix_length: int | None = None
     rematch_of: str = ""
-    # Mixed-team games name each guesser seat's model ("" = the attacker
-    # model, i.e. a homogeneous team).  ``attacker`` then holds the team id.
+    # Mixed attacking team (human challenge): Guesser 2's model when it differs
+    # from Guesser 1's (``attacker``).  Empty means a homogeneous team.
+    attacker_g2: str = ""
+    # Mixed-model teams (schedule "teams"): each guesser seat's model; then
+    # ``attacker`` holds the team id "G1+G2".  "" = not a model-team game.
     guesser1_model: str = ""
     guesser2_model: str = ""
     round: int = 0
 
+    def seat_model(self, seat: str) -> str:
+        if seat == "defender":
+            return self.defender
+        if seat == "guesser1":
+            return self.guesser1_model or self.attacker
+        if seat == "guesser2":
+            return self.guesser2_model or self.attacker_g2 or self.attacker
+        raise ValueError(seat)
+
+    @property
+    def models(self) -> set[str]:
+        return {self.seat_model(s) for s in ("guesser1", "guesser2", "defender")}
+
 
 def seat_model(g: "GameSpec", seat: str) -> str:
     """Model id playing ``seat`` in game ``g``."""
-    if seat == "defender":
-        return g.defender
-    if seat == "guesser1":
-        return g.guesser1_model or g.attacker
-    if seat == "guesser2":
-        return g.guesser2_model or g.attacker
-    raise ValueError(seat)
+    return g.seat_model(seat)
 
 
 def game_models(g: "GameSpec") -> set[str]:
-    return {seat_model(g, s) for s in ("guesser1", "guesser2", "defender")}
+    return g.models
 
 
 def team_id(g1: str, g2: str) -> str:
@@ -105,6 +115,8 @@ def rematch_fixture(f: Fixture, initial_prefix_length: int, spec_ab: "GameSpec |
         GameSpec(gba, fid, f.task_id, f.repetition, f.model_b, f.model_a, "BA", _seed("policy", gba),
                  initial_prefix_length, f.fixture_id),
     ]
+    if any(g.attacker_g2 for g in games):  # pragma: no cover - defensive
+        raise ValueError("mixed-team fixtures are never rematched")
     return fx, games
 
 
@@ -146,6 +158,8 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     games: list[GameSpec] = []
     sched = cfg.tournament.schedule
     reps = cfg.tournament.repetitions
+    if sched == "human_challenge":
+        return _human_challenge_schedule(cfg, tasks)
     if sched in ("balanced_round_robin", "round_robin_plus_self_play", "pairs"):
         pair_list = ([tuple(p) for p in cfg.tournament.pairs] if sched == "pairs"
                      else list(itertools.combinations(ids, 2)))
@@ -171,6 +185,44 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     order = list(games)
     rng.shuffle(order)
     return fixtures, order
+
+
+def human_challenge_task_count(cfg: BenchConfig) -> int:
+    """Each secret is used in exactly one fixture (a human remembers secrets)."""
+    hc = cfg.tournament.human_challenge
+    return cfg.tasks.tasks_per_pair * len(hc.opponents) if hc else cfg.tasks.tasks_per_pair
+
+
+def _human_challenge_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], list[GameSpec]]:
+    """Fixtures human-vs-opponent on disjoint secrets, attack leg first.
+
+    Leg AB: human (Guesser 1) + opponent (Guesser 2) attack, opponent defends.
+    Leg BA: opponent + opponent attack, human defends (the human now knows the
+    secret, so this leg always comes second and the secret is never reused).
+    The fixture order is shuffled by order_seed, independently of secrets.
+    """
+    hc = cfg.tournament.human_challenge
+    h = hc.player
+    k = cfg.tasks.tasks_per_pair
+    need = human_challenge_task_count(cfg)
+    if len(tasks) < need:
+        raise ValueError(f"human_challenge needs {need} tasks (tasks_per_pair x opponents), got {len(tasks)}")
+    if len({t.secret for t in tasks[:need]}) < need:
+        # A repeated secret would be defended (seen) before it is attacked again.
+        raise ValueError("human_challenge needs distinct secrets in every fixture")
+    fixtures: list[Fixture] = []
+    legs: list[tuple[GameSpec, GameSpec]] = []
+    for i, o in enumerate(hc.opponents):
+        for t in tasks[i * k:(i + 1) * k]:
+            fid = f"{t.task_id}-r0-{h}~{o}"
+            gab = f"{t.task_id}-r0-{h}-atk-{o}"  # Guesser 2 is {o}: see attacker_g2
+            gba = f"{t.task_id}-r0-{o}-atk-{h}"
+            fixtures.append(Fixture(fid, t.task_id, 0, h, o, gab, gba))
+            legs.append((GameSpec(gab, fid, t.task_id, 0, h, o, "AB", _seed("policy", gab), attacker_g2=o),
+                         GameSpec(gba, fid, t.task_id, 0, o, h, "BA", _seed("policy", gba))))
+    rng = random.Random(_seed("order", cfg.tournament.order_seed, len(legs)))
+    rng.shuffle(legs)
+    return fixtures, [g for pair in legs for g in pair]
 
 
 def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict:
@@ -221,7 +273,7 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
             per_model_calls[model] = per_model_calls.get(model, 0) + n
 
     for g in max_games:
-        if g.guesser1_model:
+        if g.guesser1_model or g.attacker_g2:
             # Mixed team: each guesser may also make the conditional choice.
             g1, g2 = seat_model(g, "guesser1"), seat_model(g, "guesser2")
             if g1 == g2:

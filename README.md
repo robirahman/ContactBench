@@ -41,6 +41,7 @@ contact-bench analyze RUN_ID [--bootstrap N]     # ratings, efficiency, bootstra
 contact-bench export RUN_ID --public [--include-audit] [--out DIR]
 contact-bench build-site EXPORT_DIR [...] [--out site_build]
 contact-bench show RUN_ID GAME_ID --view {public,guesser1,guesser2,defender,audit}
+contact-bench play configs/human_challenge.yaml --player NAME --live --max-usd-provider P=USD   # play yourself (localhost)
 contact-bench audit RUN_ID [--model ID] [--rate R] [--max-items N]   # frozen clue bank + shadow forecast audit
 contact-bench reference --hist 3:2,8:3 --C 8     # R_C(h, ell) for a length histogram
 contact-bench build-lexicon SOURCE --name ... --license ... --source-description ... --source-revision ...
@@ -104,5 +105,6 @@ a provider.
 - [docs/reproducibility.md](docs/reproducibility.md): seeds, caches, replay, release procedure
 - [docs/providers.md](docs/providers.md): adapters, SDK versions, accounting conventions
 - [docs/website.md](docs/website.md): static site preview and deployment
+- [docs/human_play.md](docs/human_play.md): play the benchmark yourself and get an anchored rating
 - [docs/licenses.md](docs/licenses.md): source and license inventory
 - [docs/dataset_card.md](docs/dataset_card.md): dataset card template for released transcripts

@@ -51,6 +51,10 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             raise CombineError(f"{d.name}: mixed-team runs are a separate condition and are not combined "
                                "(use tournament.teams.prior_runs to inform defender selection)")
     ref, ref_m = cfgs[0], manifests[0]
+    for d, c in zip(run_dirs, cfgs):
+        if any(mc["provider"] == "human" for mc in c["models"]):
+            # Human results are rated against fixed model ratings, never pooled.
+            raise CombineError(f"{d.name}: human-challenge runs are never pooled with model runs")
     for d, c, m in zip(run_dirs[1:], cfgs[1:], manifests[1:]):
         for sec in CONDITION_SECTIONS:
             if c[sec] != ref[sec]:

@@ -457,7 +457,8 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
 
 
 def _seats(game: dict) -> tuple[str, str, str]:
-    return (game.get("guesser1_model") or game["attacker"], game.get("guesser2_model") or game["attacker"],
+    return (game.get("guesser1_model") or game["attacker"],
+            game.get("guesser2_model") or game.get("attacker_g2") or game["attacker"],
             game["defender"])
 
 
@@ -607,7 +608,8 @@ def team_diagnostics(rows: list[GameRow]) -> dict:
 
 
 def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
-            penalty_scale: float, elo_center: float, write: bool = True) -> dict:
+            penalty_scale: float, elo_center: float, write: bool = True,
+            anchor: dict | None = None) -> dict:
     run_dir = Path(run_dir)
     manifest = json.loads((run_dir / "run.json").read_text())
     sched = json.loads((run_dir / "schedule.json").read_text())
@@ -775,6 +777,45 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     from .calibration import forecast_calibration
 
     result["forecast_calibration"] = forecast_calibration(records)
+    humans = [m["id"] for m in manifest["config"]["models"] if m.get("provider") == "human"]
+    if humans:
+        result["human_challenge"] = {
+            "players": humans,
+            "display_names": {m["id"]: m.get("display_name") or m["id"]
+                              for m in manifest["config"]["models"] if m.get("provider") == "human"},
+            "note": "Human vs model fixtures; never pooled with model-only ratings.",
+        }
+        # The joint fit above moves the opponents' Elo with the human's games,
+        # so it is never the headline rating of a human-challenge run.
+        result["rating_joint_unanchored"] = result["rating"]
+        for iv in ((boot or {}).get("intervals_95") or {}).values():
+            iv.pop("elo", None)
+            iv.pop("rank", None)
+        result["rating_penalty_sensitivity"] = None
+    if anchor is not None:
+        from .rating import fit_anchored
+
+        res = [(f["model_a"], f["model_b"], f["points_a"]) for f in complete]
+        free = humans or [m for m in models if m not in anchor["elo"]]
+        missing = sorted(set(models) - set(free) - set(anchor["elo"]))
+        if missing:
+            raise ValueError(f"anchor ratings lack {missing}")
+        ar = {**fit_anchored(anchor["elo"], res, free, penalty_scale=penalty_scale, elo_center=elo_center),
+              "anchor_run_id": anchor.get("run_id")}
+        result["anchored_rating"] = ar
+        if humans:
+            result["rating"] = {
+                "method": ar["method"], "models": models,
+                "elo": {m: ar["elo"][m] if m in ar["elo"] else anchor["elo"][m] for m in models},
+                "fixed": sorted(m for m in models if m not in ar["elo"]),
+                "anchor_run_id": ar["anchor_run_id"], "converged": ar["converged"],
+                "iterations": ar["iterations"], "gradient_norm": ar["gradient_norm"], "loss": ar["loss"],
+                "penalty_scale": penalty_scale, "connected_components": result["rating"]["connected_components"],
+            }
+    elif humans:
+        result["rating"] = {**result["rating"], "unanchored": True,
+                            "note": "Unanchored joint fit of this run only; opponents' Elo is not their "
+                                    "leaderboard rating. Analyze with --anchor to rate the player on the model scale."}
     if write:
         write_outputs(run_dir / "analysis", result, rows)
     return result
@@ -873,6 +914,15 @@ def render_report(res: dict) -> str:
     L.append(f"Rating fit converged: {res['rating']['converged']} "
              f"(iterations {res['rating']['iterations']}, penalty scale {res['rating']['penalty_scale']}). "
              f"Connected components: {res['rating']['connected_components']}.")
+    if res.get("anchored_rating"):
+        ar = res["anchored_rating"]
+        names = (res.get("human_challenge") or {}).get("display_names", {})
+        L.append("\n### Anchored rating (opponents fixed at the anchor run's Elo)\n")
+        for m in ar["free"]:
+            se = ar["elo_se_approx"].get(m)
+            L.append(f"- {names.get(m, m)}: Elo {ar['elo'][m]:.0f}" + (f" (± {se:.0f} approx. s.e.)" if se else "")
+                     + f" from {ar['results']} fixtures; anchor run {ar.get('anchor_run_id')}.")
+        L.append("- Fixed opponents: " + ", ".join(f"{m} {v:.0f}" for m, v in ar["fixed_elo"].items()))
     if res.get("bootstrap"):
         b = res["bootstrap"]
         L.append(f"Bootstrap: {b['resamples']} resamples of {b['task_clusters']} task clusters, seed {b['seed']}, "

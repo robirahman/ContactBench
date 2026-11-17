@@ -90,7 +90,7 @@ def build_site(export_dirs: list[Path], out_dir: Path, highlights: Path | None =
                 "clue_max_characters", "turn_limit", "lexicon_name", "lexicon_sha256", "resolver",
                 "packing_version", "rng_version", "numerical_rollouts", "forecast_mode", "timing",
                 "reveal_policy", "target_hit_scope", "count_cap", "dictionary_access",
-                "blocklist_encoding", "initial_prefix_length")},
+                "blocklist_encoding", "initial_prefix_length", "human_challenge")},
         })
     (out_dir / "data" / "index.json").write_text(json.dumps({"conditions": entries}, indent=2) + "\n")
     shutil.copy(STATIC_DIR / "index.html", out_dir / "index.html")
