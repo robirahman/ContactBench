@@ -391,6 +391,12 @@ class Runner:
                 "context": {"clue": clue, **({"w1": w1} if w1 else {})},
                 "prompt_version": "forecast-fork-v1"}
 
+        # Persist a "scheduled" marker synchronously, before the gameplay
+        # decision itself is recorded, so a crash can never make a scheduled
+        # fork vanish from the calibration denominator.  If no final record
+        # follows, the fork is reported as unavailable ("interrupted").
+        self.store.append_forecast({**base, "status": "scheduled"})
+
         async def run():
             try:
                 fo = await agent.fork(spec, fork_id, out.conversation, kind=kind, prompt=prompt)
@@ -401,6 +407,8 @@ class Runner:
                 rec = {**base, "status": "unavailable", "error": "budget"}
             except InfrastructureError as e:
                 rec = {**base, "status": "unavailable", "error": f"{e.category}: {sanitize(str(e))}"}
+            except ContextOverflowError as e:
+                rec = {**base, "status": "unavailable", "error": f"context_overflow: {e}"}
             self.store.append_forecast(rec)
 
         self._fork_tasks.setdefault(g.game_id, []).append(asyncio.ensure_future(run()))

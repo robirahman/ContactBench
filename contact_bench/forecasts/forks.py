@@ -162,9 +162,15 @@ def score_fork(record: dict, audit_turn: dict | None, lexicon: Lexicon, *, max_e
     blocked = t.get("blocked_guesser1") if t.get("defender") is not None else None
     out["answer"] = {"receiver_word": recv_truth, "intended_blocked": blocked}
     if not isinstance(obj, dict) or set(obj) != {"receiver_word_forecast", "block_probability"}:
-        bad = {"valid": False, "error": "report must have receiver_word_forecast and block_probability",
-               "brier": invalid_score}
-        out["scores"] = {"receiver_word": dict(bad), "block_probability": dict(bad)}
+        err = "report must have receiver_word_forecast and block_probability"
+        # A target whose outcome is unknown (e.g. sealed responses never
+        # collected) has no answer key, so it gets no score either way.
+        out["scores"] = {
+            "receiver_word": {"valid": False, "error": err,
+                              "brier": invalid_score if recv_truth is not None else None},
+            "block_probability": {"valid": False, "error": err,
+                                  "brier": invalid_score if blocked is not None else None},
+        }
         return out
     sup = build_support(record["support"], lexicon, special=(PASS,))
     out["scores"] = {

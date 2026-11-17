@@ -156,3 +156,87 @@ def test_anthropic_fork_replays_own_answer_then_asks():
     assert msgs[1]["content"][0]["signature"] == "sig" and msgs[2]["content"] == "FORECAST?"
     assert c.messages.calls[1]["output_config"]["format"]["schema"] == {"type": "object"}
     assert json.dumps(r.conversation) == before  # original transcript untouched
+
+
+# ---- Codex review fixes on PR #2 -------------------------------------------------
+
+def test_scheduled_fork_without_result_reported_as_interrupted(tmp_path):
+    from contact_bench.runner.store import RunStore
+
+    s = RunStore(tmp_path)
+    lx, d = _support(["cable", "candle"])
+    base = {"fork_id": "g/t001/guesser2/respond/fork", "game_id": "g", "turn": 1, "seat": "guesser2",
+            "kind": "intended_word", "model_id": "m", "support": d}
+    s.append_forecast({**base, "status": "scheduled"})          # crash before the fork result
+    s.append_forecast({**base, "fork_id": "other", "status": "scheduled"})
+    s.append_forecast({**base, "fork_id": "other", "status": "ok",
+                       "raw_output": '{"entries": [], "other_mass": 1.0}'})
+    recs = {r["fork_id"]: r for r in RunStore(tmp_path).forecasts("g")}
+    assert recs["g/t001/guesser2/respond/fork"]["status"] == "unavailable"
+    assert recs["g/t001/guesser2/respond/fork"]["error"] == "interrupted"
+    assert recs["other"]["status"] == "ok"
+    cal = forecast_calibration([{"forecasts": [dict(score_fork(r, {"turn": 1, "w1": "candle"}, lx), seat="guesser2")
+                                               for r in recs.values()]}])
+    assert cal["m"]["intended_word@guesser2"]["scheduled"] == 2
+    assert cal["m"]["intended_word@guesser2"]["unavailable"] == 1
+
+
+def test_markers_written_before_decisions(tmp_path):
+    r = Runner(_cfg("fork"), tmp_path / "r")
+    asyncio.run(r.run())
+    lines = [json.loads(l) for l in (tmp_path / "r" / "forecasts.jsonl").read_text().splitlines()]
+    sched = {l["fork_id"] for l in lines if l["status"] == "scheduled"}
+    final = {l["fork_id"] for l in lines if l["status"] != "scheduled"}
+    assert sched == final and sched
+
+
+def test_malformed_report_without_outcomes_is_not_scored():
+    lx, d = _support(["cable", "candle"])
+    rec = {"fork_id": "x", "status": "ok", "kind": "guesser1", "turn": 1, "support": d, "raw_output": "nonsense"}
+    # sealed responses never collected (e.g. early stop on a public clue hit)
+    out = score_fork(rec, {"turn": 1, "w1": "candle"}, lx)
+    assert out["answer"] == {"receiver_word": None, "intended_blocked": None}
+    assert out["scores"]["receiver_word"]["brier"] is None
+    assert out["scores"]["block_probability"]["brier"] is None
+    s = forecast_calibration([{"forecasts": [dict(out, model_id="m", seat="guesser1")]}])["m"]
+    assert s["receiver_word@guesser1"]["observed_with_answer"] == 0
+    assert s["receiver_word@guesser1"]["mean_brier_invalid_as_minus_one"] is None
+
+
+def test_fork_context_overflow_raised_before_sending():
+    from contact_bench.engine.game import DecisionSpec
+    from contact_bench.policies.llm import ContextOverflowError, Limiters, LLMAgent
+    from contact_bench.providers.fake import FakeAdapter
+
+    m = ModelConfig(id="f", provider="fake", model="f", max_output_tokens=1000, context_window_tokens=6000)
+    ad = FakeAdapter(m)
+    sent = []
+    orig = ad.fork
+
+    async def spy(*a, **k):
+        sent.append(1)
+        return await orig(*a, **k)
+
+    ad.fork = spy
+    agent = LLMAgent(model=m, adapter=ad, seat="guesser2", clue_max_characters=100, turn_limit=5,
+                     limiters=Limiters(1, 1))
+    spec = DecisionSpec("g", 1, "guesser2", "respond",
+                        {"role": "guesser2", "phase": "respond", "prefix": "", "used_words": []}, "s", {})
+    huge = {"obs": {}, "history": "x" * 30000}  # retained transcript far beyond the window
+    with pytest.raises(ContextOverflowError):
+        asyncio.run(agent.fork(spec, "g/fork", huge, kind="intended_word", prompt="Q"))
+    assert not sent
+
+
+def test_fork_context_overflow_recorded_unavailable(tmp_path, monkeypatch):
+    from contact_bench.policies.llm import ContextOverflowError, LLMAgent
+    from contact_bench.runner.store import RunStore
+
+    async def boom(self, *a, **k):
+        raise ContextOverflowError("too big")
+
+    monkeypatch.setattr(LLMAgent, "fork", boom)
+    st = asyncio.run(Runner(_cfg("fork"), tmp_path / "r").run())
+    assert not st["halted"] and st["complete_games"] == st["planned_games"]
+    forks = RunStore(tmp_path / "r").forecasts()
+    assert forks and all(f["status"] == "unavailable" and f["error"].startswith("context_overflow") for f in forks)

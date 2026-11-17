@@ -146,7 +146,19 @@ class LLMAgent:
             tool_executor=base.tool_executor,
             max_tool_calls=base.max_tool_calls,
         )
-        est = estimate_tokens(base.system_prompt) + estimate_tokens(base.user_prompt) + estimate_tokens(prompt)
+        # The fork resends the whole retained transcript (gameplay prompt, any
+        # tool turns, the model's answer) plus the forecast prompt; check it
+        # all fits with the fork's output allowance before sending.
+        import json as _json
+
+        transcript = _json.dumps(conversation, default=str)
+        est = estimate_tokens(base.system_prompt) + estimate_tokens(transcript) + estimate_tokens(prompt)
+        if self.model.context_window_tokens is not None:
+            need = est + (self.model.max_output_tokens or 0)
+            if need > self.model.context_window_tokens:
+                raise ContextOverflowError(
+                    f"{self.model.id}: forked transcript needs ~{need} tokens > context window "
+                    f"{self.model.context_window_tokens}")
         gate = BudgetGate(self.budget, self.model, est) if self.budget is not None else None
         async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
             resp = await self.adapter.fork(req, conversation, gate=gate)

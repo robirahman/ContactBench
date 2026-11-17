@@ -148,14 +148,23 @@ class RunStore:
         self._append(self.FORECASTS, {"recorded_at": time.time(), **record})
 
     def forecasts(self, game_id: str | None = None) -> list[dict]:
-        seen: set[str] = set()
-        out = []
+        """One record per fork: the first final (ok/unavailable) record, else
+        the scheduled marker reported as unavailable ("interrupted")."""
+        final: dict[str, dict] = {}
+        marker: dict[str, dict] = {}
+        order: list[str] = []
         for rec in read_jsonl(self.dir / self.FORECASTS):
-            if rec["fork_id"] in seen or (game_id is not None and rec.get("game_id") != game_id):
+            if game_id is not None and rec.get("game_id") != game_id:
                 continue
-            seen.add(rec["fork_id"])
-            out.append(rec)
-        return out
+            fid = rec["fork_id"]
+            if fid not in final and fid not in marker:
+                order.append(fid)
+            if rec.get("status") == "scheduled":
+                marker.setdefault(fid, rec)
+            else:
+                final.setdefault(fid, rec)
+        return [final[f] if f in final else {**marker[f], "status": "unavailable", "error": "interrupted"}
+                for f in order]
 
     def events(self) -> list[dict]:
         return list(read_jsonl(self.dir / self.EVENTS))
