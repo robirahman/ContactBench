@@ -43,6 +43,7 @@ def build_observation(
     protocol_version: str = "contact-v0.5",
     dictionary_access: str = "full_candidate_lists",
     dictionary_identity: dict | None = None,
+    partner_model: str | None = None,
     **extras: Any,
 ) -> dict:
     if seat not in ALLOWED_EXTRAS or phase not in ALLOWED_EXTRAS[seat]:
@@ -79,6 +80,10 @@ def build_observation(
         # Closed-book and lookup-tool conditions: identity only, no lists or counts.
         obs["dictionary_access"] = dictionary_access
         obs["dictionary"] = dict(dictionary_identity or {})
+    if partner_model is not None:
+        if seat == "defender":
+            raise ObservationError("the defender is never told the attackers' models")
+        obs["partner_model"] = partner_model
     if seat == "defender":
         obs["secret"] = secret
     for k in sorted(allowed):

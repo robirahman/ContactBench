@@ -31,7 +31,8 @@ from ..providers.base import AdapterConfigError, InfrastructureError, RetryPolic
 from ..scoring.cost import GameScore, score_game
 from ..scoring.reference import ReferenceScorer
 from .budget import Budget, BudgetExhausted
-from .schedule import Fixture, GameSpec, build_schedule, human_challenge_task_count, run_plan
+from .schedule import Fixture, GameSpec, build_schedule, game_models, human_challenge_task_count, run_plan, team_block
+from .schedule import seat_model as _seat_model
 from .store import RunStore, atomic_write_json
 from .tasks import Task, generate_tasks, load_tasks, save_tasks
 
@@ -297,7 +298,7 @@ class Runner:
             "packing_version": PACKING_VERSION,
             "rng_version": RNG_VERSION,
             "prompt_version": PROMPT_VERSION,
-            "prompt_hash": prompt_hash(),
+            "prompt_hash": prompt_hash(cfg.protocol.partner_disclosure),
             "code_revision": code_revision(root),
             "dependency_lock_sha256": file_sha256(root / "requirements.lock"),
             "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
@@ -340,7 +341,7 @@ class Runner:
                 if key == "scoring" and self.replay_only:
                     continue
                 raise ValueError(f"configuration section '{key}' differs from the run's frozen snapshot")
-        if manifest.get("prompt_hash") != prompt_hash() and not self.replay_only:
+        if manifest.get("prompt_hash") != prompt_hash(self.cfg.protocol.partner_disclosure) and not self.replay_only:
             raise ValueError("prompt templates changed since this run was created")
 
     # --------------------------------------------------------------- agents
@@ -398,8 +399,12 @@ class Runner:
     # ----------------------------------------------------------------- game
     def new_game(self, g: GameSpec) -> Game:
         t = self.tasks[g.task_id]
-        atk = self.models[g.attacker]
+        atk = self.models[_seat_model(g, "guesser1")]
         protocol = self.cfg.protocol
+        partner = None
+        if protocol.partner_disclosure == "disclosed":
+            g1, g2 = self.models[_seat_model(g, "guesser1")], self.models[_seat_model(g, "guesser2")]
+            partner = {"guesser1": g2.model or g2.id, "guesser2": g1.model or g1.id}
         if g.initial_prefix_length is not None:
             protocol = protocol.model_copy(update={"initial_prefix_length": g.initial_prefix_length})
         return Game(
@@ -410,6 +415,7 @@ class Runner:
             protocol=protocol,
             offense_condition=atk.offense_mode if atk.provider != "scripted" else "full",
             joint_live=self.cfg.forecasts.mode == "joint_live",
+            partner_models=partner,
         )
 
     def _schedule_fork(self, g: GameSpec, game: Game, spec: DecisionSpec, did: str, agent: Any,
@@ -478,7 +484,8 @@ class Runner:
 
         def agent_for(seat: str):
             if seat not in agents:
-                agents[seat] = self._agent(self.models[g.seat_model(seat)], seat, g)
+                mid = _seat_model(g, seat)
+                agents[seat] = self._agent(self.models[mid], seat, g)
             return agents[seat]
 
         async def decide(spec: DecisionSpec):
@@ -489,7 +496,7 @@ class Runner:
                 if rec.get("observation_sha256") != oh:
                     raise EngineInvariantError(f"replay divergence at {did}: observation hash mismatch")
                 return rec["raw_output"]
-            seat_model = g.seat_model(spec.seat)
+            seat_model = _seat_model(g, spec.seat)
             if self.models[seat_model].provider == "human" and self.human_session is None \
                     and not self.replay_only:
                 return Unavailable("human_not_connected")
@@ -645,11 +652,12 @@ class Runner:
 
         async def one(g: GameSpec):
             def blocked() -> bool:
-                provs = {self.models[m].provider for m in g.models}
-                creds = {self._credential_key(m) for m in g.models}
+                ms = game_models(g)
+                provs = {self.models[m].provider for m in ms}
+                creds = {self._credential_key(m) for m in ms}
                 return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
                             or creds & set(self.halted_credentials)
-                            or g.models & set(self.halted_models)
+                            or ms & set(self.halted_models)
                             or (self.human_session is not None and self.human_session.stopped))
 
             if blocked():
@@ -677,6 +685,8 @@ class Runner:
                 await one(g)
         else:
             await asyncio.gather(*(one(g) for g in todo))
+        if self.cfg.tournament.schedule == "teams":
+            await self._run_team_rounds(one)
         if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
             attempted: set[str] = set()
             while not (self.halted or self.budget_stopped):
@@ -729,6 +739,82 @@ class Runner:
             self.budget_stopped = True
             self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": decision_id})
 
+    # ----------------------------------------------------------- mixed teams
+    def _finished_ids(self) -> set[str]:
+        return {r["game_id"] for r in self.store.game_rows()
+                if r["status"] == "complete" and r["collection_status"] == "complete"}
+
+    def _team_selection_data(self):
+        """Role fit and matchup counts from this run plus configured prior runs."""
+        from ..analysis.analyze import compact_record, fixture_results, load_rows, prior_run_legs, role_fixture_data
+        from ..analysis.rating import fit_role_ratings
+        from collections import Counter
+
+        t = self.cfg.tournament.teams
+        draws = self.cfg.tournament.no_progress_draws
+        recs = []
+        for g in self.games:
+            r = self.store.read_game(g.game_id)
+            if r and r.get("run_status") == "complete":
+                recs.append(compact_record(r))
+        rows = load_rows(recs)
+        legs = role_fixture_data(rows, fixture_results(rows, [asdict(f) for f in self.fixtures],
+                                                       no_progress_draws=draws))
+        legs += [leg for _, leg in prior_run_legs(self.run_dir.parent, t.prior_runs, no_progress_draws=draws,
+                                                          current_run_dir=self.run_dir)]
+        faced: Counter = Counter()
+        games = [asdict(g) for g in self.games]
+        for name in t.prior_runs:
+            games += json.loads((self.run_dir.parent / name / "schedule.json").read_text())["games"]
+        for g in games:  # every scheduled leg counts as a faced matchup
+            g1 = g.get("guesser1_model") or g["attacker"]
+            g2 = g.get("guesser2_model") or g["attacker"]
+            for m in {g1, g2}:
+                faced[(m, g["defender"])] += 1
+        ids = [m.id for m in self.cfg.models]
+        known = sorted(set(ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
+        fit = fit_role_ratings(known, legs, penalty_scale=self.cfg.analysis.logit_penalty_scale) if legs else None
+        return fit, faced
+
+    async def _run_team_rounds(self, one) -> None:
+        from .teams import Block, round_slices, select_defenders
+
+        t = self.cfg.tournament.teams
+        ids = [m.id for m in self.cfg.models]
+        pool = t.defender_pool if t.defender_pool is not None else ids
+        task_ids = [tk.task_id for tk in sorted(self.tasks.values(), key=lambda x: x.index)]
+        for rno, slice_ids in enumerate(round_slices(task_ids, t.rounds), start=1):
+            if self.halted or self.budget_stopped:
+                return
+            if not any(f.round == rno for f in self.fixtures):
+                finished = self._finished_ids()
+                if any(g.round and g.round < rno and not g.rematch_of and g.game_id not in finished
+                       for g in self.games):
+                    # Earlier rounds are incomplete; selecting now would use a
+                    # different information set than the declared design.
+                    return
+                fit, faced = self._team_selection_data()
+                blocks = [Block(tid, r, a, b) for a, b in t.pairs for tid in slice_ids
+                          for r in range(self.cfg.tournament.repetitions)]
+                chosen = select_defenders(blocks, pool=pool, faced=faced, fit=fit, round_no=rno,
+                                          seed=t.selection_seed,
+                                          legs_per_model=3 if t.include_self_play else 2)
+                for blk, d, _ in chosen:
+                    fxs, gs = team_block(blk.task_id, blk.repetition, blk.a, blk.b, d,
+                                         include_self_play=t.include_self_play, round_no=rno)
+                    self.fixtures.extend(fxs)
+                    self.games.extend(gs)
+                self.store.write_json("schedule.json", {
+                    "fixtures": [asdict(x) for x in self.fixtures],
+                    "games": [asdict(x) for x in self.games],
+                })
+                self.store.append_event({"type": "defenders_selected", "round": rno, "selections": [
+                    {"task_id": b.task_id, "repetition": b.repetition, "pair": [b.a, b.b], "defender": d, **info}
+                    for b, d, info in chosen]})
+            finished = self._finished_ids()
+            todo = [g for g in self.games if g.round == rno and not g.rematch_of and g.game_id not in finished]
+            await asyncio.gather(*(one(g) for g in todo))
+
     def schedule_rematches(self) -> list[Fixture]:
         """Append one rematch fixture per completed no-progress draw (idempotent).
 
@@ -756,7 +842,8 @@ class Runner:
             plen = base + self.cfg.tournament.rematch_extra_letters
             if len(self.tasks[f.task_id].secret) <= plen:
                 continue
-            fx, games = rematch_fixture(f, plen)
+            specs = {g.game_id: g for g in self.games}
+            fx, games = rematch_fixture(f, plen, specs.get(f.game_ab), specs.get(f.game_ba))
             taken = {g.game_id for g in self.games}
             if any(g.game_id in taken for g in games):
                 raise EngineInvariantError(f"rematch game id collision for fixture {f.fixture_id}")

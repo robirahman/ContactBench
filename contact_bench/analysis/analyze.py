@@ -92,6 +92,10 @@ class GameRow:
         return self.cost is not None and self.baseline is not None
 
 
+# Leg labels of scored paired games: AB/BA (homogeneous) and L1/L2 (team fixtures).
+PAIRED_LEGS = ("AB", "BA", "L1", "L2")
+
+
 def load_rows(records: list[dict]) -> list[GameRow]:
     return [GameRow(r) for r in records]
 
@@ -117,6 +121,10 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_dr
             "cost_ab": _fj(ab.cost) if ab else None,
             "cost_ba": _fj(ba.cost) if ba else None,
             "rematch_of": f.get("rematch_of", ""),
+            "kind": f.get("kind", "model_pair"),
+            "defender_model": f.get("defender_model", ""),
+            "game_ab": f["game_ab"],
+            "game_ba": f["game_ba"],
             "initial_prefix_length": f.get("initial_prefix_length"),
         }
         if complete:
@@ -142,7 +150,7 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_dr
 
 
 def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict[str, dict]:
-    cross = [r for r in rows if r.leg in ("AB", "BA") and r.scored]
+    cross = [r for r in rows if r.leg in PAIRED_LEGS and r.scored]
     stats: dict[str, dict] = {}
     for m in models:
         off = [r for r in cross if r.attacker == m]
@@ -403,7 +411,7 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
         by_task[f["task_id"]].append(f)
     rows_by_task: dict[str, list[GameRow]] = defaultdict(list)
     for r in rows:
-        if r.scored and r.leg in ("AB", "BA"):
+        if r.scored and r.leg in PAIRED_LEGS:
             rows_by_task[r.task_id].append(r)
     rng = random.Random(seed)
     samples: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in models}
@@ -448,6 +456,165 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
     }
 
 
+def _seats(game: dict) -> tuple[str, str, str]:
+    return (game.get("guesser1_model") or game["attacker"],
+            game.get("guesser2_model") or game.get("attacker_g2") or game["attacker"],
+            game["defender"])
+
+
+def role_fixture_data(rows: list[GameRow], fx: list[dict], *, with_task: bool = False) -> list:
+    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture.
+
+    With ``with_task`` each item is prefixed by its bootstrap cluster key: the
+    secret, so the same secret played in several (compatible) runs forms one
+    cluster, as do a fixture and its rematches."""
+    by_id = {r.game_id: r for r in rows}
+    out = []
+    for f in fx:
+        if not f.get("complete"):
+            continue
+        ab, ba = by_id.get(f.get("game_ab", "")), by_id.get(f.get("game_ba", ""))
+        if ab is None or ba is None:
+            continue
+        item = (_seats(ab.rec["game"]), _seats(ba.rec["game"]), f["points_a"])
+        out.append((ab.summary["secret"], item) if with_task else item)
+    return out
+
+
+def compact_record(rec: dict) -> dict:
+    """The fields rating fits need (full game records can be large)."""
+    return {k: rec.get(k) for k in ("game", "summary", "score", "run_status")}
+
+
+class PriorRunError(ValueError):
+    pass
+
+
+def check_prior_run(current_run_dir: Path, prior_dir: Path, profiles: dict | None = None) -> None:
+    """Reject a prior run whose condition differs from the team run's
+    (protocol apart from partner disclosure, lexicons, scoring, draw rules,
+    base prompts, and the profile of every shared model id)."""
+    from ..prompts.templates import prompt_hash
+    from .combined import CONDITION_SECTIONS, TOURNAMENT_RULES, _normalized_config
+
+    cur, pri = _normalized_config(Path(current_run_dir)), _normalized_config(Path(prior_dir))
+    cm = json.loads((Path(current_run_dir) / "run.json").read_text())
+    pm = json.loads((Path(prior_dir) / "run.json").read_text())
+    name = Path(prior_dir).name
+    for sec in CONDITION_SECTIONS:
+        a, b = dict(cur[sec]), dict(pri[sec])
+        if sec == "protocol":
+            a.pop("partner_disclosure", None), b.pop("partner_disclosure", None)
+        if a != b:
+            raise PriorRunError(f"prior run {name}: section '{sec}' differs from the team run")
+    for k in TOURNAMENT_RULES:
+        if cur["tournament"][k] != pri["tournament"][k]:
+            raise PriorRunError(f"prior run {name}: tournament rule '{k}' differs")
+    for k in ("engine_version", "packing_version", "rng_version", "protocol_version"):
+        if cm.get(k) != pm.get(k):
+            raise PriorRunError(f"prior run {name}: {k} differs")
+    if not pri["tournament"].get("homogeneous_attackers", True):
+        # A mixed-team prior run must be the same disclosure condition.
+        if (pri["protocol"].get("partner_disclosure", "blind") != cur["protocol"].get("partner_disclosure", "blind")
+                or pm.get("prompt_hash") != cm.get("prompt_hash")):
+            raise PriorRunError(f"prior run {name}: a mixed-team run from another disclosure condition")
+    elif pm.get("prompt_hash") != prompt_hash("blind"):
+        raise PriorRunError(f"prior run {name}: prompt templates differ")
+    for key in ("secret_lexicon", "contact_lexicon"):
+        if (cm.get(key) or {}).get("sha256") != (pm.get(key) or {}).get("sha256"):
+            raise PriorRunError(f"prior run {name}: {key} differs")
+    # Profiles seen so far (the team run's, then earlier prior runs'), so one
+    # model id always means one inference profile in the pooled fit.
+    mine = profiles if profiles is not None else {}
+    for m in cur["models"]:
+        mine.setdefault(m["id"], m)
+    for m in pri["models"]:
+        if mine.setdefault(m["id"], m) != m:
+            raise PriorRunError(f"prior run {name}: model '{m['id']}' is configured differently")
+
+
+def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool,
+                   current_run_dir: Path | None = None) -> list[tuple[str, tuple]]:
+    """(secret cluster, role-fit fixture) for every complete fixture of earlier runs."""
+    from ..runner.store import RunStore
+
+    out = []
+    profiles: dict = {}
+    for name in names:
+        d = Path(runs_root) / name
+        if current_run_dir is not None:
+            check_prior_run(current_run_dir, d, profiles)
+        sched = json.loads((d / "schedule.json").read_text())
+        store = RunStore(d)
+        recs = []
+        for g in sched["games"]:
+            r = store.read_game(g["game_id"])
+            if r and r.get("run_status") == "complete":
+                recs.append(compact_record(r))
+        fx = fixture_results(load_rows(recs), sched["fixtures"], no_progress_draws=no_progress_draws)
+        out.extend(role_fixture_data(load_rows(recs), fx, with_task=True))
+    return out
+
+
+def centred_components(fit, reference: list[str]) -> dict[str, dict[str, float]]:
+    """Role components in Elo points, each role centred over ``reference``."""
+    from .rating import ROLES
+
+    scale = 400.0 / math.log(10)
+    mean = {r: sum(fit.theta[k][r] for k in reference) / len(reference) for r in ROLES}
+    return {m: {r: scale * (fit.theta[m][r] - mean[r]) for r in ROLES} for m in fit.models}
+
+
+def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resamples: int, seed: int,
+                   penalty_scale: float, elo_center: float, drop_for: dict | None = None,
+                   reference: list[str] | None = None) -> dict:
+    from .rating import ROLES, fit_role_ratings
+
+    tasks = sorted(legs_by_task)
+    rng = random.Random(seed)
+    samples: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in models}
+    failures = 0
+    for _ in range(resamples):
+        pick = [tasks[rng.randrange(len(tasks))] for _ in tasks] if tasks else []
+        fit = fit_role_ratings(models, [x for t in pick for x in legs_by_task[t]],
+                               penalty_scale=penalty_scale, elo_center=elo_center)
+        failures += not fit.converged
+        comp = centred_components(fit, reference or models)
+        for m in models:
+            samples[m]["elo"].append(fit.elo[m])
+            for r in ROLES:
+                samples[m][r].append(comp[m][r])
+    return {"resamples": resamples, "seed": seed, "task_clusters": len(tasks), "fit_failures": failures,
+            "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()
+                                 if k not in (drop_for or {}).get(m, ())} for m, d in samples.items()}}
+
+
+def team_diagnostics(rows: list[GameRow]) -> dict:
+    """Cross-play matrix (Guesser 1 model x Guesser 2 model) and self-play gaps."""
+    cells: dict[str, dict[str, list[GameRow]]] = defaultdict(lambda: defaultdict(list))
+    for r in rows:
+        if r.scored and r.rec["game"].get("guesser1_model"):
+            g1, g2, _ = _seats(r.rec["game"])
+            cells[g1][g2].append(r)
+
+    def contact_rate(rs):
+        clue = sum(1 for r in rs for t in r.rec.get("referee_audit", []) if t.get("clue") is not None)
+        con = sum(1 for r in rs for t in r.rec.get("referee_audit", []) if t.get("contact"))
+        return con / clue if clue else None
+
+    matrix = {g1: {g2: {"games": len(rs), "median_cost": _median([float(r.cost) for r in rs]),
+                        "contacts_per_clue_turn": contact_rate(rs)} for g2, rs in d.items()}
+              for g1, d in cells.items()}
+    gaps = {}
+    for m in sorted(set(cells) | {g2 for d in cells.values() for g2 in d}):
+        selfp = [float(r.cost) for r in cells.get(m, {}).get(m, [])]
+        mixed = [float(r.cost) for g1, d in cells.items() for g2, rs in d.items() if g1 != g2 and m in (g1, g2)
+                 for r in rs]
+        gaps[m] = {"self_play_median_cost": _median(selfp), "cross_play_median_cost": _median(mixed),
+                   "self_play_games": len(selfp), "cross_play_games": len(mixed)}
+    return {"cross_play_matrix": matrix, "self_vs_cross_play": gaps}
+
+
 def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
             penalty_scale: float, elo_center: float, write: bool = True,
             anchor: dict | None = None) -> dict:
@@ -458,6 +625,11 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rows = load_rows(records)
     draw_rule = manifest["config"].get("tournament", {}).get("no_progress_draws", True)
     fx = fixture_results(rows, sched["fixtures"], no_progress_draws=draw_rule)
+    team_mode = any(f.get("kind") in ("role", "self_play") for f in sched["fixtures"])
+    model_ids = models
+    if team_mode:
+        # Rating entities are teams ("G1+G2"); per-model role ratings below.
+        models = sorted({f["model_a"] for f in sched["fixtures"]} | {f["model_b"] for f in sched["fixtures"]})
     complete = [f for f in fx if f["complete"]]
     fit = fit_ratings(models, [(f["model_a"], f["model_b"], f["points_a"]) for f in complete],
                       penalty_scale=penalty_scale, elo_center=elo_center)
@@ -466,7 +638,7 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                             penalty_scale=s, elo_center=elo_center).elo
         for s in (1.0, 2.5, 5.0)
     }
-    stats = _model_stats(models, rows, fx)
+    stats = _model_stats(models + ([m for m in model_ids if m not in models] if team_mode else []), rows, fx)
     boot = bootstrap(models, fx, rows, resamples=resamples, seed=seed,
                      penalty_scale=penalty_scale, elo_center=elo_center) if complete else None
     # pairwise matrices
@@ -485,8 +657,66 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     for r in rows:
         status_counts[f"{r.summary['outcome_status']}/{r.summary['collection_status']}"] += 1
     capped = [r for r in rows if r.capped]
+    team_result = None
+    if team_mode or any(r.rec["game"].get("guesser1_model") for r in rows):
+        from .rating import fit_role_ratings
+
+        tagged = role_fixture_data(rows, fx, with_task=True)
+        tcfg = manifest["config"].get("tournament", {}).get("teams") or {}
+        prior = tcfg.get("prior_runs") or []
+        if prior:
+            # The homogeneous fixtures used for defender selection also identify
+            # defender components; include them (as separate task clusters).
+            tagged += prior_run_legs(Path(run_dir).parent, prior, no_progress_draws=draw_rule,
+                                     current_run_dir=Path(run_dir))
+        legs = [leg for _, leg in tagged]
+        by_task: dict[str, list] = defaultdict(list)
+        for t, leg in tagged:
+            by_task[t].append(leg)
+        fit_models = sorted(set(model_ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
+        rfit = fit_role_ratings(fit_models, legs, penalty_scale=penalty_scale, elo_center=elo_center)
+        rjson = rfit.to_json()
+        from .rating import ROLES, role_estimability
+
+        # Components are reported centred over the team models (the models that
+        # played guesser seats in team fixtures); every value is published only
+        # if the fixture design identifies it exactly (design-matrix row space).
+        reference = sorted({m for l1, l2, _ in legs for leg in (l1, l2) if leg[0] != leg[1] for m in leg[:2]}
+                           ) or fit_models
+        est = role_estimability(fit_models, legs, reference=reference)
+        comp = centred_components(rfit, reference)
+        drop_for = {}
+        for m in fit_models:
+            rjson["components_elo_points"][m] = {r: (comp[m][r] if est[m][r] else None) for r in ROLES}
+            # Same centring and gating for the logit-scale components.
+            rjson["components_logit"][m] = {r: (comp[m][r] * math.log(10) / 400.0 if est[m][r] else None)
+                                            for r in ROLES}
+            if not est[m]["composite"]:
+                rjson["elo"][m] = None
+                rjson["composite_logit"][m] = None
+            drop_for[m] = tuple(r for r in ROLES if not est[m][r]) + (() if est[m]["composite"] else ("elo",))
+        rjson["components_centred_over"] = reference
+        omitted = {m: list(v) for m, v in drop_for.items() if v}
+        team_result = {
+            "role_rating": rjson,
+            "estimable": est,
+            "omitted_unidentified": omitted,
+            "prior_runs_in_role_fit": prior,
+            "role_bootstrap": role_bootstrap(fit_models, by_task, resamples=resamples, seed=seed,
+                                             penalty_scale=penalty_scale, elo_center=elo_center,
+                                             drop_for=drop_for, reference=reference) if legs else None,
+            **team_diagnostics(rows),
+            "partner_disclosure": manifest["config"]["protocol"].get("partner_disclosure", "blind"),
+            "identifiability_note": "Role fixtures (A+B vs B+A, one defender) identify differences in "
+                                    "clue-giver minus receiver skill; self-play fixtures (A+A vs B+B) identify "
+                                    "differences in g1+g2; homogeneous fixtures identify composite differences. "
+                                    "Components are centred over the team models and a value is shown only when "
+                                    "the fixture design identifies it exactly.",
+        }
     result = {
         "run_id": manifest["run_id"],
+        "teams": team_result,
+        "model_ids": model_ids,
         "protocol_version": manifest["protocol_version"],
         "fixture_data": manifest.get("fixture_data", True),
         "condition": manifest["config"]["protocol"],
@@ -653,7 +883,7 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
 
     costs: dict[str, list[float]] = {}
     for r in rows:
-        if r.scored and r.leg in ("AB", "BA"):
+        if r.scored and r.leg in PAIRED_LEGS:
             costs.setdefault(r.attacker, []).append(float(r.cost))
     write_figures(out / "figures", result, costs)
 
@@ -721,6 +951,54 @@ def render_report(res: dict) -> str:
     L.append(render_calibration(res.get("forecast_calibration") or {}))
     if res["missing_model_pairs"]:
         L.append(f"Missing pairs: {res['missing_model_pairs']}\n")
+    if res.get("teams"):
+        L.append(render_teams(res["teams"]))
+    return "\n".join(L) + "\n"
+
+
+def render_teams(t: dict) -> str:
+    L = [f"## Mixed-model attacking teams (partner disclosure: {t['partner_disclosure']})\n",
+         "The table above rates teams (\"Guesser 1+Guesser 2\"). Role ratings per model (Elo-scale components; "
+         "composite = clue-giver + receiver + defender):\n",
+         "| Model | Composite Elo | 95% CI | Clue-giver (G1) | Receiver (G2) | Defender |",
+         "|---|---:|---|---:|---:|---:|"]
+    rr = t["role_rating"]
+    boot = ((t.get("role_bootstrap") or {}).get("intervals_95") or {})
+    scale = 400.0 / math.log(10)
+
+    def ci(m, k):
+        c = boot.get(m, {}).get(k) or {}
+        return f"[{c['lo']:.0f}, {c['hi']:.0f}]" if c.get("lo") is not None else "—"
+
+    def sg(x):
+        return "—" if x is None else f"{x:+.0f}"
+
+    for m in sorted(rr["elo"], key=lambda m: -(rr["elo"][m] or 0)):
+        th = rr["components_elo_points"][m]
+        elo = "—" if rr["elo"][m] is None else f"{rr['elo'][m]:.0f}"
+        L.append(f"| {m} | {elo} | {ci(m, 'elo')} | {sg(th['g1'])} {ci(m, 'g1')} | "
+                 f"{sg(th['g2'])} {ci(m, 'g2')} | {sg(th['d'])} {ci(m, 'd')} |")
+    if t.get("omitted_unidentified"):
+        L.append("\nNot identified by the design (shown as —): " + "; ".join(
+            f"{m}: {', '.join(v)}" for m, v in sorted(t["omitted_unidentified"].items())) + ".")
+    L.append("\n" + t["identifiability_note"] + "\n")
+    L.append("### Cross-play matrix (median cost, turns; rows = Guesser 1, columns = Guesser 2)\n")
+    mat = t["cross_play_matrix"]
+    cols = sorted({g2 for d in mat.values() for g2 in d})
+    L.append("| G1 \\ G2 | " + " | ".join(cols) + " |")
+    L.append("|---|" + "---:|" * len(cols))
+    for g1 in sorted(mat):
+        cells = []
+        for g2 in cols:
+            c = mat[g1].get(g2)
+            cells.append(f"{_fmt(c['median_cost'])} (n={c['games']})" if c else "—")
+        L.append(f"| {g1} | " + " | ".join(cells) + " |")
+    L.append("\n### Self-play vs cross-play (median cost)\n")
+    L.append("| Model | Self-play | n | With other partner | n |")
+    L.append("|---|---:|---:|---:|---:|")
+    for m, g in sorted(t["self_vs_cross_play"].items()):
+        L.append(f"| {m} | {_fmt(g['self_play_median_cost'])} | {g['self_play_games']} | "
+                 f"{_fmt(g['cross_play_median_cost'])} | {g['cross_play_games']} |")
     return "\n".join(L) + "\n"
 
 

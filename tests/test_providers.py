@@ -285,6 +285,8 @@ def _openai_err(cls, status, body=None, headers=None):
     [
         (lambda: _openai_err(openai.RateLimitError, 429, headers={"retry-after": "7"}), "rate_limit", True, False),
         (lambda: _openai_err(openai.RateLimitError, 429, body={"error": {"code": "insufficient_quota"}}), "quota_exhausted", False, True),
+        (lambda: openai.RateLimitError("Error code: 429 - You have no credits remaining. Add credits to continue.",
+                                       response=http_response(429, None), body=None), "quota_exhausted", False, True),
         (lambda: openai.APITimeoutError(request=httpx2.Request("POST", "https://x.invalid")), "timeout", True, False),
         (lambda: openai.APIConnectionError(request=httpx2.Request("POST", "https://x.invalid")), "transient", True, False),
         (lambda: _openai_err(openai.InternalServerError, 500), "server", True, False),

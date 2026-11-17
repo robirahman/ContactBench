@@ -136,7 +136,9 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
     _rm_flags = schedule_rematch_flags(json.loads((run_dir / "schedule.json").read_text()).get("fixtures", []))
     condition = {
         "protocol_version": cfg["protocol"]["version"],
-        "protocol": cfg["protocol"],
+        # partner_disclosure is part of the condition only for mixed teams (below);
+        # keep homogeneous keys identical to runs that predate the field.
+        "protocol": {k: v for k, v in cfg["protocol"].items() if k != "partner_disclosure"},
         "dictionary_access": cfg["protocol"].get("dictionary_access", "full_candidate_lists"),
         "blocklist_encoding": cfg["protocol"].get("blocklist_encoding", "words"),
         "initial_prefix_length": cfg["protocol"].get("initial_prefix_length", 1),
@@ -173,6 +175,14 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "leg_order": hc.get("leg_order", "attack_first"),
             "team_composition": "human Guesser 1 + model Guesser 2 (attack); human Defender (defense)",
         }
+    tcfg = cfg.get("tournament", {})
+    if not tcfg.get("homogeneous_attackers", True):
+        # Mixed-team condition (added only here so homogeneous keys are unchanged).
+        teams = dict(tcfg.get("teams") or {})
+        condition["homogeneous_attackers"] = False
+        condition["partner_disclosure"] = cfg["protocol"].get("partner_disclosure", "blind")
+        condition["team_design"] = {k: teams.get(k) for k in ("defender_selection", "include_self_play", "rounds",
+                                                              "defender_pool", "selection_seed")}
     ckey = hashlib.sha256(json.dumps(condition, sort_keys=True).encode()).hexdigest()[:16]
     pub_manifest = {
         "schema_version": SCHEMA_VERSION,
@@ -205,11 +215,11 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "role_diagnostics", "pairwise_match_points", "pairwise_mean_cost", "capped_games",
             "capped_fraction_of_scored_games", "residual_candidate_counts_capped", "strata",
             "numerical_reference", "numerically_close_fixtures", "resources", "forecast_calibration",
-            "human_challenge", "anchored_rating", "rating_joint_unanchored"]
+            "human_challenge", "anchored_rating", "rating_joint_unanchored", "teams", "model_ids"]
     leaderboard = {k: analysis.get(k) for k in keep}
     fixtures = [_pick(f, ["fixture_id", "task_id", "repetition", "model_a", "model_b", "complete", "cost_ab",
                           "cost_ba", "points_a", "points_b", "cost_difference_mcse", "numerically_close",
-                          "no_progress_draw", "rematch_of", "initial_prefix_length"])
+                          "no_progress_draw", "rematch_of", "initial_prefix_length", "kind", "defender_model"])
                 for f in analysis.get("fixtures", [])]
     games = []
     for i, r in enumerate(sorted(records, key=lambda r: r["game"]["game_id"])):
@@ -225,10 +235,14 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "final_secret_candidate_count": s["final_secret_candidate_count"],
             "score": _score(r.get("score")),
             **({"attacker_g2": g["attacker_g2"]} if g.get("attacker_g2") else {}),
+            **({"guesser1_model": g["guesser1_model"], "guesser2_model": g["guesser2_model"]}
+               if g.get("guesser1_model") else {}),
         })
         if max_replays is None or i < max_replays:
             rep = {
                 "game_id": g["game_id"], "attacker": g["attacker"], "defender": g["defender"],
+                **({"guesser1_model": g["guesser1_model"], "guesser2_model": g["guesser2_model"]}
+                   if g.get("guesser1_model") else {}),
                 "secret": s["secret"], "initial_prefix": s["initial_prefix"], "turn_limit": s["turn_limit"],
                 # Large initial sets (e.g. a whole dictionary at prefix length 0)
                 # are recomputable from the public lexicon and prefix; export the count.

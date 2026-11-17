@@ -133,6 +133,22 @@ How forks work:
   0.83 and 1.31, so they were invalid at the spec tolerance. Whether to declare a looser tolerance (for example
   0.02, followed by renormalization) is a research decision.
 
+## Mixed-model attacking teams (2026-11-17, researcher decision)
+
+- Spec §11 lists mixed-model teammates as an optional, separately labelled condition. Implemented as schedule
+  `teams` with `homogeneous_attackers: false`; game ids `<task>-r<rep>-<A>~<B>@<G1>+<G2>-atk-<D>`.
+- Per block: role fixture (A+B vs B+A) and self-play fixture (A+A vs B+B) against one defender, so both fixtures
+  compare legs that face the same defender on the same secret. No-progress draws and recursive rematches apply
+  unchanged; a rematch copies both legs' seat assignments.
+- Defender choice (researcher): missing matchups first, then the most uncertain role-rating differences, then a
+  seeded tie-break; chosen round by round from completed data (spec §9.5 requires adaptive scheduling to declare
+  its design, which `teams.rounds`, `defender_pool`, `prior_runs` and `selection_seed` do).
+- Partner disclosure (researcher): both `blind` and `disclosed`, as two conditions. Disclosure is a protocol v0.5
+  field; the blind prompt hash is unchanged so blind team prompts match the homogeneous track.
+- Rating: additive role model (clue-giver + receiver − defender), which reduces to the existing Elo on homogeneous
+  data. Team runs are rated per team id in the main table plus per-model role components; they are not pooled with
+  homogeneous leaderboards.
+
 ## Review fixes (Codex review of PR #1)
 
 1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes

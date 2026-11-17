@@ -123,7 +123,7 @@ class LLMAgent:
             resp = await self.adapter.decide(req, gate=gate)
         meta = resp.to_json()
         meta["prompt_version"] = PROMPT_VERSION
-        meta["prompt_hash"] = prompt_hash()
+        meta["prompt_hash"] = prompt_hash("disclosed" if spec.observation.get("partner_model") else "blind")
         return AgentOutput(raw=resp.output_text, response=meta, model_id=self.model.id,
                            estimated_input_tokens=est, cost_estimate=gate.cost if gate else None,
                            conversation=resp.conversation)

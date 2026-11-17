@@ -143,6 +143,7 @@
     note.textContent = label ? String(label) : "";  // text only, never HTML
     renderCondition();
     renderRating();
+    renderTeams();
     renderEfficiency();
     renderPairwise();
     renderSettings();
@@ -176,6 +177,11 @@
     row("Reveal policy", c.reveal_policy);
     row("Target-hit scope", c.target_hit_scope);
     row("Forecast mode", c.forecast_mode);
+    if (c.homogeneous_attackers === false) {
+      row("Attacking teams", "mixed models (Guesser 1 and Guesser 2 may differ)");
+      row("Partner disclosure", c.partner_disclosure);
+      row("Defender selection", (c.team_design || {}).defender_selection);
+    }
     row("Prompt version", m.prompt_version);
     row("Code revision", m.code_revision);
     row("Condition key", m.condition_key);
@@ -247,6 +253,56 @@
       " complete fixtures; opponents' Elo held fixed, same penalty as the model fit." }));
   }
 
+  // ---------------------------------------------------------------- teams
+  function renderTeams() {
+    var t = current.lb.teams;
+    $("teams").hidden = !t;
+    $("teams-nav").hidden = !t;
+    if (!t) return;
+    var rr = t.role_rating || {}, comp = rr.components_elo_points || {};
+    var boot = (t.role_bootstrap && t.role_bootstrap.intervals_95) || {};
+    var rows = Object.keys(rr.elo || {}).map(function (m) {
+      var c = comp[m] || {}, b = boot[m] || {};
+      return { m: m, elo: rr.elo[m], eloCI: b.elo, g1: c.g1, g1CI: b.g1, g2: c.g2, g2CI: b.g2, d: c.d, dCI: b.d };
+    });
+    function sgn(x) { x = fval(x); return x == null ? "—" : (x >= 0 ? "+" : "") + Number(x).toFixed(0); }
+    function col(label, k) {
+      return { label: label, get: function (r) { return r[k]; },
+        fmt: function (r) { return sgn(r[k]) + " " + ci(r[k + "CI"], 0); } };
+    }
+    renderTable($("role-table"), [
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Composite Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0) + " " + ci(r.eloCI, 0); } },
+      col("Clue-giver (G1)", "g1"), col("Receiver (G2)", "g2"), col("Defender", "d")
+    ], rows, { sortCol: 1 });
+    var mat = t.cross_play_matrix || {}, table = clear($("crossplay-matrix"));
+    var rowsK = Object.keys(mat).sort(), colsK = {};
+    rowsK.forEach(function (g1) { Object.keys(mat[g1]).forEach(function (g2) { colsK[g2] = 1; }); });
+    colsK = Object.keys(colsK).sort();
+    var head = el("tr");
+    head.appendChild(el("th", { text: "G1 \\ G2" }));
+    colsK.forEach(function (g2) { head.appendChild(el("th", { text: g2 })); });
+    table.appendChild(head);
+    rowsK.forEach(function (g1) {
+      var tr = el("tr");
+      tr.appendChild(el("th", { text: g1 }));
+      colsK.forEach(function (g2) {
+        var c = mat[g1][g2];
+        tr.appendChild(el("td", { text: c ? num(c.median_cost, 1) + " (n=" + c.games + ")" : "—" }));
+      });
+      table.appendChild(tr);
+    });
+    var gaps = t.self_vs_cross_play || {}, parts = ["Partner disclosure: " + t.partner_disclosure + "."];
+    var om = t.omitted_unidentified || {};
+    if (Object.keys(om).length) parts.push("Not identified by the fixture design (shown as —): " + Object.keys(om).sort().map(function (m) { return m + ": " + om[m].join(", "); }).join("; ") + ".");
+    Object.keys(gaps).sort().forEach(function (m) {
+      var g = gaps[m];
+      parts.push(m + ": median cost " + num(g.self_play_median_cost, 1) + " with itself (n=" + g.self_play_games +
+        ") vs " + num(g.cross_play_median_cost, 1) + " with another partner (n=" + g.cross_play_games + ").");
+    });
+    $("teams-notes").textContent = parts.join(" ");
+  }
+
   // ----------------------------------------------------------- efficiency
   function renderEfficiency() {
     var lb = current.lb, stats = lb.model_stats || {}, boot = (lb.bootstrap && lb.bootstrap.intervals_95) || {};
@@ -281,16 +337,17 @@
   }
 
   // ------------------------------------------------------------- pairwise
-  function matrix(table, data, field, d) {
+  function matrix(table, data, field, d, cols) {
     clear(table);
     var ms = models();
+    cols = cols || ms;
     var head = el("tr", null, el("th", { text: "row \\ column" }));
-    ms.forEach(function (m) { head.appendChild(el("th", { text: m })); });
+    cols.forEach(function (m) { head.appendChild(el("th", { text: m })); });
     table.appendChild(el("thead", null, head));
     var body = el("tbody");
     ms.forEach(function (a) {
       var tr = el("tr", null, el("th", { text: a }));
-      ms.forEach(function (b) {
+      cols.forEach(function (b) {
         var cell = data && data[a] && data[a][b];
         var n = cell ? (cell.fixtures != null ? cell.fixtures : cell.games) : null;
         tr.appendChild(el("td", { title: n != null ? "n = " + n : null }, cell ? num(cell[field], d) + " (n=" + n + ")" : "—"));
@@ -303,7 +360,13 @@
   function renderPairwise() {
     var lb = current.lb;
     matrix($("points-matrix"), lb.pairwise_match_points, "mean_points", 3);
-    matrix($("cost-matrix"), lb.pairwise_mean_cost, "mean_cost", 3);
+    // Columns are defenders: individual models, also when rows are teams.
+    var defs = {};
+    Object.keys(lb.pairwise_mean_cost || {}).forEach(function (a) {
+      Object.keys(lb.pairwise_mean_cost[a]).forEach(function (b) { defs[b] = 1; });
+    });
+    var defCols = lb.teams ? Object.keys(defs).sort() : null;
+    matrix($("cost-matrix"), lb.pairwise_mean_cost, "mean_cost", 3, defCols);
     var notes = clear($("pairwise-notes"));
     var comps = (lb.rating && lb.rating.connected_components) || [];
     notes.appendChild(el("p", null, "Schedule connectivity: " + comps.length + " component(s): " +
