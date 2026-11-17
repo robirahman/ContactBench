@@ -1,47 +1,26 @@
 # Contact Benchmark Implementation Specification
 
-Version: 0.4 proposed implementation protocol  
-Revised: 16 November 2026  
+Protocol version: 0.4  
+Date: 16 November 2026  
 Audience: Codex implementing the benchmark and the researcher running the study
 
 ## 1 Purpose and implementation mandate
 
 Build a reproducible Contact benchmark with two cooperating guessers and one defender. Guesser 1 gives a public clue and privately commits an intended word. Guesser 2 privately commits one answer. The defender submits a public blocklist of any finite size, including zero. Guess commitments are opened selectively after the blocklist: neither is opened when both are blocked; when exactly one is blocked, the unblocked player may reveal its guess or cancel and keep it hidden.
 
-This draft incorporates the researcher's confirmed mechanics: private registration is analogous to silently thinking a word and never tests the target. A public target utterance wins, and a successful contact that earns the final actual letter also wins immediately. The previous drafts' private-registration interpretation and extra END-symbol step were assistant mistakes and are removed.
+Private registration never tests the target. A public target utterance wins, and a successful contact that earns the final actual letter also wins immediately. No additional guess or END symbol is required.
 
-Blocked words are already public through the blocklist, even when the defender is not told which words the guessers selected. A canceled unblocked word is preserved if not independently emitted. Primary clue legality now uses a character limit without the assistant-proposed four-word cap. The new enumeration reference packs literal candidate words into that character budget and also uses both guess slots; it does not try to convey semantic clues.
+Blocked words are already public through the blocklist, even when the defender is not told which words the guessers selected. A canceled unblocked word is preserved if not independently emitted. The primary profile limits clue length by character count, with no separate limit on the number of dictionary words mentioned. The enumeration reference packs literal candidate words into that character budget and uses both guess slots.
 
 The engine must grade outcomes, candidate sets, completion costs and prediction scores in ordinary code. No LLM judge or privileged reference model is needed. Other evaluated models provide opponents and teammates, not correctness judgments.
 
 Deliver a deterministic engine, baselines, OpenAI/Anthropic/Google adapters, resumable tournament runner, reproducible scorer with exact arithmetic for recorded finite estimates, optional probability diagnostics, analysis scripts, tests, reproducible exports and a static leaderboard. The researcher supplies credentials, chooses the production lexicon and model configurations, runs paid experiments, writes the paper and publishes results.
 
-### Changes from version 0.3
-
-| Area | Version 0.4 draft |
-|---|---|
-| Private commitments | Registration is separate from public revelation |
-| Both guesses blocked | Neither commitment is opened; their words are already emitted through the blocklist |
-| Exactly one guess blocked | Unblocked seat privately chooses reveal or cancel; no possible contact on this branch |
-| Neither guess blocked | Both commitments are opened simultaneously |
-| Target hit | Confirmed: public clue, public blocklist, direct guess or actually opened guess; silent registration never wins |
-| Last letter | A successful contact revealing the final letter wins immediately; no END step |
-| Word preservation | A canceled word stays available only if it has not appeared in any counted channel, including as a complete displayed prefix |
-| Defender feedback | No hidden guess identities, match flags, blocked-seat flags or cancellation details in live history |
-| Clue bandwidth | Character limit only in the primary profile; no separate literal-candidate count cap |
-| Baselines | First/last, clue-only dictionary listing, and clue-plus-two-guess packing; enumeration always reveals |
-| Scoring | Expected completion of a declared random character-packing policy; word lengths matter |
-| Numerical evaluation | Exact special cases/tiny fixtures; reproducible length-class-averaged Monte Carlo otherwise |
-| Resources | Up to four model decisions per clue turn, including one conditional reveal/cancel decision |
-| Forecast labels | Private referee commitments remain scoreable even when never publicly opened |
-
-The first/last formula remains valid for that baseline. A fixed-b count-only formula is no longer the general character-budget scorer; it remains an exact equal-word-length special case. No implementation, model measurements or benchmark headroom is claimed by this document.
-
 ### Instructions to Codex
 
 Implement in milestones: engine/scorer and offline tests; baselines/replay; adapters/runner; statistics and optional forecast audits; static leaderboard/release documentation. Complete an executable offline demonstration at each relevant milestone.
 
-MUST denotes a requirement within the specified profile. User-supplied rules and additional proposed choices are separated in Section 3. Public-utterance target hits and final-letter contact wins are confirmed. Implement the remaining proposed bandwidth, reference-policy, numerical and operational choices as a configurable draft, and reject unsupported settings rather than approximating a different game.
+MUST denotes a requirement within the specified profile. Section 3 defines the game rules and configurable benchmark defaults. Implement the defaults for development and freeze the choices listed in Section 20 before a main run. Reject unsupported settings rather than approximating a different game.
 
 Use fixtures for development. Paid execution must be an explicit, budgeted command. Record rule or score departures in a decision log and change the protocol version. Do not fabricate benchmark results or publish as part of implementation. See CONTACT_PROJECT_CHECKLIST.md for research and publication tasks.
 
@@ -53,13 +32,13 @@ The competitive endpoint is a batch Elo-style rating of paired cost comparisons:
 
 Optional role diagnostics measure receiver decoding, defender decoding and commitment-match prediction on objectively labeled tasks. These are distinct from overall game strategy and from game Elo. Hidden commitments are available to the referee as answer keys without becoming player-visible information.
 
-A public finite dictionary permits eventual enumeration. The benchmark must show improvements beyond straightforward legal enumeration, including the researcher's first/last two-guess policy and any additional guesses permitted by the clue channel. It must also test simple blocklist policies, reveal/cancel behavior and encoding strategies.
+A public finite dictionary permits eventual enumeration. The benchmark must show improvements beyond straightforward legal enumeration, including the first/last two-guess policy and any additional guesses permitted by the clue channel. It must also test simple blocklist policies, reveal/cancel behavior and encoding strategies.
 
 Headroom among current models remains an empirical question. Development pilots must investigate saturation, cheap solutions, invalid-output effects, vocabulary effects and inference expenditure before confirmatory claims.
 
-## 3 Rules supplied by the researcher and proposed benchmark choices
+## 3 Game rules and benchmark configuration
 
-### 3.1 Clarified game rules
+### 3.1 Core game rules
 
 - The defender knows a secret word from a public dictionary. Guessers know a growing prefix.
 - Guesser 1 and Guesser 2 are separate model instances with fixed roles.
@@ -71,17 +50,17 @@ Headroom among current models remains an empirical question. Development pilots 
 - Only publicly saying the target wins through a guess: private registrations, canceled guesses and silent thoughts do not test it.
 - A matching unblocked pair earns the next actual prefix letter, unless a public target emission already ends the game. Earning the final letter wins immediately on that turn.
 - Every publicly emitted dictionary word becomes ineligible for future contacts.
-- A direct guess is also legal, as established earlier; a correct direct guess wins.
+- A direct guess is legal; a correct direct guess wins.
 - Model play has a fixed turn cap.
 - The first/last enumeration policy is a required baseline: Guesser 1 chooses the first remaining completion, Guesser 2 the last, and the policy always reveals when allowed. It guarantees a win within ceil(n/2) turns without useful clues or contacts.
 
-Literal dictionary enumeration through the clue channel is legal within the character limit and must be implemented as another baseline. The researcher's illustrative budget is 100 characters; the exact production budget remains configurable.
+Literal dictionary enumeration through the clue channel is legal within the character limit and must be implemented as a baseline. Use a configurable initial budget of 100 characters and freeze the production budget before a main run.
 
-### 3.2 Additional proposed defaults
+### 3.2 Configurable benchmark defaults
 
-These complete the implementation and remain reviewable design choices.
+Implement the following defaults as configurable settings. Finalize the parameter values and edge-case policies listed in Section 20 before a main run.
 
-| Issue | Proposed default |
+| Issue | Default |
 |---|---|
 | Initial prefix | First character |
 | Vocabularies | Same frozen list for secrets and contact words |
@@ -99,7 +78,7 @@ These complete the implementation and remain reviewable design choices.
 | Private history | Each seat retains only its own permitted commitments and decisions, plus public events |
 | Used words | Publicly emitted dictionary words and any complete displayed prefix that is itself a dictionary word |
 | Invalid reveal/cancel output | Cancel; record a model-invalid choice privately and charge the existing turn |
-| Clue text | Printable ASCII, 1 to C characters after trimming; proposed initial C=100 |
+| Clue text | Printable ASCII, 1 to C characters after trimming; initial C=100 |
 | Literal-candidate count limit | None in the primary profile; a separate count-capped condition may be an ablation |
 | Matched reference | Maximal feasible random-order batches using the C-character clue plus two distinct guesses; always reveal |
 | Reference ordering | Fresh uniform word ordering on every reference turn; empty defender; no semantic contact |
@@ -108,18 +87,18 @@ These complete the implementation and remain reviewable design choices.
 | Probability reports during main games | Off; implement a separate frozen-clue audit first |
 | Optional joint reporting | Separate versioned condition, private and exempt from gameplay emissions |
 | Singleton candidates | No automatic win; an explicit winning action remains necessary |
-| Word endings | Confirmed final-letter contact victory; no END symbol |
+| Word endings | Final-letter contact victory; no END symbol |
 | Tools | No web, code execution, or private shared scratchpad during play |
 
-The former k=4 count cap was an assistant proposal and is removed from the primary profile. The default C=100 is a proposed starting point, using the researcher's example; compare C=100 and C=240 on development data if useful, then freeze the production choice. Section 7 specifies a character-aware reference without requiring a count cap for convenient algebra.
+Use C=100 as the initial development setting. Compare C=100 and C=240 on development data if useful, then freeze the production choice. Section 7 defines the reference policy for the selected character budget; the primary profile has no separate word-count cap.
 
-The pass branch and private-feedback policy make unspecified edge cases executable. Freeze them explicitly before a main run. Do not grant a cancellation choice merely because a single registered word is blocked when the receiver passed; the exactly-one-blocked rule applies to two valid word commitments.
+Freeze the receiver-pass and private-feedback policies explicitly before a main run. Do not grant a cancellation choice merely because a single registered word is blocked when the receiver passed; the exactly-one-blocked rule applies to two valid word commitments.
 
-### 3.3 Confirmed public-utterance rule
+### 3.3 Public-utterance rule
 
 A canceled, unrevealed registration of the actual target does not win and does not produce private evidence that the word is wrong. Registration is a commitment about what the player intends to say if the reveal rules permit it. Private records remain useful for enforcing consistency and scoring optional prediction tasks, but cannot trigger gameplay target hits or hidden target elimination.
 
-Public target utterances and successful final-letter contacts are the two terminal routes. A complete displayed prefix that is a dictionary word also counts as an appeared/used word. If the game continues after displaying art, art is neither a possible target nor an eligible future contact. Completing the target prefix wins through the contact-completion rule. Do not restore the earlier mistaken private-hit, END or prefix-exemption interpretations.
+Public target utterances and successful final-letter contacts are the two terminal routes. A complete displayed prefix that is a dictionary word also counts as an appeared/used word. If the game continues after displaying art, art is neither a possible target nor an eligible future contact. Completing the target prefix wins through the contact-completion rule.
 
 ## 4 Vocabulary, public emissions and admission
 
@@ -129,7 +108,7 @@ Maintain V_secret and V_contact as separate concepts, with identical files in th
 
 The production dictionary is a versioned researcher-selected input. Include a small explicitly licensed fixture list in the repository. Do not redistribute a source with unknown rights.
 
-Record source/provenance, license, source revision/date, all preprocessing, exclusions, word count and SHA-256. Store sorted unique normalized words. The proposed production profile uses alphabetic English words of 3 to 20 characters; fixture lists may include shorter words. Legal membership is determined by the frozen list, not an LLM's opinion.
+Record source/provenance, license, source revision/date, all preprocessing, exclusions, word count and SHA-256. Store sorted unique normalized words. The default production profile uses alphabetic English words of 3 to 20 characters; fixture lists may include shorter words. Legal membership is determined by the frozen list, not an LLM's opinion.
 
 ### 4.2 Word normalization and literal mentions
 
@@ -171,7 +150,7 @@ The intended word may appear in the clue and is then publicly emitted regardless
 
 Reject the entire invalid gameplay action without emitting its text. An overlong dictionary dump must not win first and incur a penalty afterward. Publish only a generic invalid_action marker for an invalid Guesser 1 action, not the attempted words or raw diagnostics.
 
-For a clue-only enumeration baseline covering every target, validate maximum_secret_word_length <= C. A word longer than C cannot be fully spoken through that clue channel, although the combined reference can still use a registered-guess slot. The proposed 3-to-20-character lexicon and C=100 satisfy this requirement. A separately count-capped ablation must enforce its own literal-mention rule and use a matching scorer; never silently carry its fixed-b formula into the character-only condition.
+For a clue-only enumeration baseline covering every target, validate maximum_secret_word_length <= C. A word longer than C cannot be fully spoken through that clue channel, although the combined reference can still use a registered-guess slot. The default 3-to-20-character lexicon and C=100 satisfy this requirement. A separately count-capped ablation must enforce its own literal-mention rule and use a matching scorer; never silently carry its fixed-b formula into the character-only condition.
 
 A blocklist is an explicit array of vocabulary words. Empty is allowed. Normalize and deduplicate it; do not add, delete or correct choices based on the secret. A blocklist containing the secret is admissible and loses. No wildcard, complement or "all except" action is supported.
 
@@ -249,7 +228,7 @@ Construct observations from explicit allowed fields, not a complete referee stat
 
 After a valid clue action, collect Guesser 2's word/pass and the defender's blocklist independently from the same pre-resolution public state and clue. Neither sees the other's response, stream, timing or validation feedback. The defender does not receive w1, w2 or a marked intended-word identity.
 
-The proposed collection policy issues both initial responder decisions even when a public clue mention already proves a target hit. This preserves the complete initial response cohort; record the extra resource cost. This is a collection choice, not permission to treat the private commitment as a hit. A separately specified early public-hit stop can save calls but changes which diagnostic responses exist.
+The default collection policy issues both initial responder decisions even when a public clue mention already proves a target hit. This preserves the complete initial response cohort; record the extra resource cost. This is a collection choice, not permission to treat the private commitment as a hit. A separately specified early public-hit stop can save calls but changes which diagnostic responses exist.
 
 Persist commitments and both initial responses. Publish the full admitted blocklist. A public hit in clue or blocklist ends the round before any optional reveal decision. Otherwise select the reveal branch from the commitments' membership in the blocklist. At most one additional decision is needed, by the sole unblocked seat when both valid word commitments exist and exactly one is blocked.
 
@@ -289,7 +268,7 @@ or:
 {"action": "pass", "word": null}
 ~~~
 
-A word belongs to pre-turn C_contact. It may be a strategic secret guess rather than the most probable intended word. Do not force it to match a separately elicited forecast's argmax. This permits the researcher's first/last baseline. The word remains private until the reveal rules open it.
+A word belongs to pre-turn C_contact. It may be a strategic secret guess rather than the most probable intended word. Do not force it to match a separately elicited forecast's argmax. This permits the first/last baseline. The word remains private until the reveal rules open it.
 
 Defender:
 
@@ -396,7 +375,7 @@ Use the ten-word fixture cable, camera, candle, candy, canoe, carrot, castle, co
 
 The public first-turn transcript contains the clue, H={camera,carrot}, no opened guesses and a no-prefix outcome. It does not identify the committed carrot or castle, the blocked seat or the cancellation actor. The referee audit and each seat's own permitted history retain the appropriate details.
 
-With proposed C=100, all ten fixture words fit in one combined enumeration turn: reserve two as guesses and put the other eight in the clue. Its reference cost is therefore exactly 1 and its realized model cost is 3. It illustrates mechanics, not an efficiency gain. A production difficulty profile should not consist entirely of such one-turn enumeration tasks.
+With C=100, all ten fixture words fit in one combined enumeration turn: reserve two as guesses and put the other eight in the clue. Its reference cost is therefore exactly 1 and its realized model cost is 3. It illustrates mechanics, not an efficiency gain. A production difficulty profile should not consist entirely of such one-turn enumeration tasks.
 
 Separate regression: w1=candle, w2=carrot, H={carrot}, clue="Wax surrounding a wick", and Guesser 1 cancels. This does not win: candle was not publicly said and remains a candidate at prefix c. Revealing instead wins. Another case with both guesses in H must keep both identities hidden while retiring all of H. Include the art/artist final-letter examples as separate boundary fixtures.
 
@@ -427,7 +406,7 @@ Let D=sum(word lengths)+(n-1) be the size of a space-separated dictionary. D/C i
 
 The primary reference uses both legal channels: a literal word list in the clue and up to two additional revealed guesses. It has no semantic communication, prefix-seeking strategy or model calls.
 
-For a proposed batch G, assign its two longest words to the two guess slots and put the rest in the clue separated by one space. Any deterministic tie-break among equal lengths gives the same tested set and clue length. Define a(w)=len(w)+1 and Q=C+1. For |G|>=3, feasibility is exactly:
+For a candidate batch G, assign its two longest words to the two guess slots and put the rest in the clue separated by one space. Any deterministic tie-break among equal lengths gives the same tested set and clue length. Define a(w)=len(w)+1 and Q=C+1. For |G|>=3, feasibility is exactly:
 
 ~~~text
 sum(a(w) for w in G) - largest_weight(G) - second_largest_weight(G) <= Q
@@ -451,7 +430,7 @@ worst_case_turns <= min(ceil(n/2), ceil(A/(C+1)))
                  <= ceil(D/C)
 ~~~
 
-This last bound uses a dictionary length D that includes one separator between words. With D=1,000,000 and C=100, the combined bound is at most 9,901 turns, hence certainly within the researcher's 10,000-turn illustration. The two guess slots compensate for the boundary waste that invalidates the same general claim for clue-only output. If the quoted dictionary size counts letters alone, add separator overhead before applying the formula.
+This last bound uses a dictionary length D that includes one separator between words. With D=1,000,000 and C=100, the combined bound is at most 9,901 turns. The two guess slots compensate for the boundary waste that invalidates the same general claim for clue-only output. If the quoted dictionary size counts letters alone, add separator overhead before applying the formula.
 
 These are worst-case bounds, not expected completion times or the primary score. Always enumerate only public remaining target candidates; searching the entire unfiltered lexicon is an unnecessarily weak reference after prefix progress.
 
@@ -496,7 +475,7 @@ Writing n=b*q+m, 0<=m<b:
 F_b(n) = [b*q*(q+1)/2 + m*(q+1)] / n
 ~~~
 
-This recovers the former count-based formula as a special case rather than imposing an extra word-count cap on the game. For C=100 and ell=20, b=6 and F_6(100)=221/25=8.84. With ell=5, b=18 and F_18(100)=33/10=3.3. Character capacity changes the appropriate baseline substantially.
+This count-based formula applies to the equal-word-length special case; it does not impose a word-count cap on the game. For C=100 and ell=20, b=6 and F_6(100)=221/25=8.84. With ell=5, b=18 and F_18(100)=33/10=3.3. Character capacity changes the appropriate baseline substantially.
 
 An optional additional exact shortcut applies when floor((C+1)/(ell_min+1)) and floor((C+1)/(ell_max+1)) are equal: every ordering then has the same full-batch cardinality, even if lengths differ.
 
@@ -532,7 +511,7 @@ MCSE(R_hat) = sqrt(sum_r (Z[r,ell]-R_hat)^2 / (K*(K-1)))
 
 The independent units are complete rollouts, not words within a rollout. Store sufficient rollout-level statistics to audit standard errors and paired differences. With equal lengths, every rollout's class mean already equals F_b(n), so the variance is zero.
 
-Proposed starting configurations are K=2,048 for development and K=4,096 for a final run, subject to development precision checks. These numbers do not guarantee a particular error bound. Freeze the estimator, seeds, exact-state threshold, sample count and any predeclared refinement rule before examining final model rankings. Increase numerical effort where uncertainty can change substantive comparisons, using the frozen rule and shared cache rather than selectively favorable reruns. Do not silently clip or round inconvenient estimates.
+Use K=2,048 for development and K=4,096 as an initial final-run setting, subject to development precision checks. These numbers do not guarantee a particular error bound. Freeze the estimator, seeds, exact-state threshold, sample count and any predeclared refinement rule before examining final model rankings. Increase numerical effort where uncertainty can change substantive comparisons, using the frozen rule and shared cache rather than selectively favorable reruns. Do not silently clip or round inconvenient estimates.
 
 Cache the whole vector R_hat(h,ell) by canonical length histogram, C, packing/RNG versions, seed-ensemble identity and K. Reuse identical states across targets and models. Seed generation must not depend on the target identity, target length label, model identity or observed model score. Derive reproducible rollout seeds from a referee-held root seed and public-state histogram plus rollout index; the root is independent of target generation. Publish the seeds, RNG specification and cache provenance with released scores. Withhold scoring seeds from live players so numerical sampling artifacts are not an extra optimization target.
 
@@ -573,13 +552,13 @@ Do not average per-game ratios. Larger reference search costs contribute more to
 
 Retain model mistakes. Infrastructure-incomplete unknown outcomes have no score and cannot become capped losses. A completed game may have a separate pending numerical-scoring status while its known gameplay outcome is preserved.
 
-### 7.8 Why forward/reverse packing is not the primary scorer
+### 7.8 Ordering and batching safeguards
 
 Reversing word order and repacking does not generally cancel target ranks. With ant, bee and carrot, C=10, clue-only forward chunks are [ant bee], [carrot]; reverse chunks are [carrot bee], [ant]. The three target averages are 1.5, 1 and 1.5.
 
 Reversing the order of the same fixed chunks without repacking would yield exactly (number_of_chunks+1)/2 for every target. That is a valid different reference, but randomizing unequal fixed groups can be substantially weaker than randomizing words and filling the budget. With a legal constant capacity of 100 and 101 targets, fixed groups of 100 and 1 in random order cost 1.5 on average, while random-word enumeration costs 102/101. Do not introduce an apparent model gain merely by substituting the weaker fixed-group reference without saying so.
 
-The primary policy therefore randomizes words afresh and accounts for their lengths. The former fixed-b forward/reverse counterexample for n=5,b=2, with target averages [2,1.5,2,1.5,2], remains a useful legacy fixture; its uniform-word reference is F_2(5)=1.8.
+The primary policy randomizes words afresh and accounts for their lengths. Include a fixed-b forward/reverse regression fixture with n=5,b=2: the target averages are [2,1.5,2,1.5,2], while the uniform-word reference is F_2(5)=1.8.
 
 ### 7.9 Required numerical fixtures
 
@@ -668,7 +647,7 @@ q(w) = listed probability             if explicitly listed
 q(w) = a / (M-h)                      otherwise
 ~~~
 
-If h=M, require a=0. Validate unique support entries, finite probabilities in [0,1], and total mass one. Permit only a predeclared small floating tolerance, proposed 1e-6, followed by deterministic renormalization; do not invent missing probabilities or repair substantial errors.
+If h=M, require a=0. Validate unique support entries, finite probabilities in [0,1], and total mass one. Permit only a predeclared small floating tolerance, with default 1e-6, followed by deterministic renormalization; do not invent missing probabilities or repair substantial errors.
 
 For M>h:
 
@@ -751,11 +730,11 @@ Report:
 
 A clue-giver score based only on receiver understanding is easily improved by spelling the intended word in the clue; that word is then already used and cannot earn a contact letter, and the defender can also read it. A contrast such as log q_receiver(W) minus log q_defender(W) can favor clues both understand poorly. Keep it exploratory and accompany it with absolute receiver decoding. No single clarity statistic is a complete measure of strategic clue-giving.
 
-### 8.7 Why multiple blocks remain strategically meaningful
+### 8.7 Blocklist strategy and information costs
 
 On a surviving round, every admitted block entry is publicly eliminated even if no guess identity is opened. An unopened canceled word absent from the clue and blocklist is not eliminated. Distinguish that preserved word from a blocked commitment whose word was already publicly named by the defender.
 
-A correct block can prevent a matching prefix award. Wrong extra blocks can remove fresh possible secrets and help offense. A blocklist can also cause the exactly-one-blocked branch, letting the other guesser preserve its unspoken word. Therefore do not carry over version 0.2's claim that both registered words are always eliminated, or count every block outside the intended word as a causal information cost without considering actual public emissions.
+A correct block can prevent a matching prefix award. Wrong extra blocks can remove fresh possible secrets and help offense. A blocklist can also cause the exactly-one-blocked branch, letting the other guesser preserve its unspoken word. Do not eliminate an unspoken commitment solely because it was registered. Account for actual public emissions when attributing candidate eliminations to a blocklist. A block outside the intended word is not necessarily an additional or causal information cost: account for overlap with other public emissions and for preserved hidden words.
 
 In the primary equal-vocabulary condition, blocking every live target candidate except s prevents ordinary contacts but leaves a singleton if the round has not already ended through a public target emission. An unblocked secret commitment may be revealed and win that same turn; otherwise offense can win on its next direct guess, or incurs one fallback turn at the cap. If a separate condition allows additional contact-only words, blocking target candidates alone need not cover those words. Arbitrary-size blocklists have a natural information cost; the primary protocol adds no artificial per-block penalty.
 
@@ -813,7 +792,7 @@ loss = -sum[y_ij*log(p_ij) + (1-y_ij)*log(1-p_ij)]
        + sum[r_i*r_i] / (2 * 2.5 * 2.5)
 ~~~
 
-Constrain or recenter strengths so their sum is zero. The proposed penalty scale 2.5 is in natural-logit units and must be recorded. It prevents unbounded ratings for undefeated entries. Record optimization convergence and perform a declared sensitivity check before freezing publication settings.
+Constrain or recenter strengths so their sum is zero. Use a configurable penalty scale of 2.5 in natural-logit units and record the selected value. It prevents unbounded ratings for undefeated entries. Record optimization convergence and perform a declared sensitivity check before freezing publication settings.
 
 Display:
 
@@ -825,7 +804,7 @@ With draws as half-points this is an expected-match-score fit, not a full three-
 
 Do not compare disconnected schedule components using arbitrary penalty-centered ratings. Report missing matches and connectivity. Preserve the raw pairwise result matrix, counts, costs, and draws.
 
-Do not reuse a role-specific logistic model of deadline wins as if it were this paired cost model. Version 0.2 reports role cost statistics rather than invented offense and defense Elo columns.
+Do not reuse a role-specific logistic model of deadline wins as if it were this paired cost model. Report offensive and defensive cost statistics separately; do not label them as offense and defense Elo ratings.
 
 ### 9.4 Efficiency and rating are different
 
@@ -860,13 +839,13 @@ Higher is better; it captures magnitude as well as frequency of success. Its fie
 
 Offensive speedup uses i's offensive legs. Defensive cost ratio is sum(C_ji)/sum(B) across its defensive legs, with higher meaning more delay imposed. Neither is independent of the opponent population.
 
-For official version 0.4 summaries, require the same K scheduled tasks and the same R repetitions for every unordered model pair. These schedule parameters are distinct from the numerical resolver's rollout count. Compute headline scores only from a complete frozen balanced run with its frozen numerical-scoring configuration. Extra repetitions on selected tasks are a separately labeled diagnostic dataset; do not let them reweight the main score. An incomplete run may have provisional statistics with explicit coverage and the predeclared missing-data policy, but must not be presented as the complete balanced result.
+For official summaries, require the same K scheduled tasks and the same R repetitions for every unordered model pair. These schedule parameters are distinct from the numerical resolver's rollout count. Compute headline scores only from a complete frozen balanced run with its frozen numerical-scoring configuration. Extra repetitions on selected tasks are a separately labeled diagnostic dataset; do not let them reweight the main score. An incomplete run may have provisional statistics with explicit coverage and the predeclared missing-data policy, but must not be presented as the complete balanced result.
 
 In a cross-model round robin, i faces the field excluding itself, so each row has a slightly different opponent set. List that membership and describe these as field-conditional role statistics. An optional controlled common-panel condition must evaluate every entrant against every member of one fixed panel, including self-play when the entrant belongs to that panel. Do not call the ordinary cross-model rows a literally identical-panel comparison. The paired rating continues to use only the cross-model fixtures.
 
 ### 9.5 Uncertainty
 
-Use a target-cluster bootstrap, proposed default 2,000 resamples for final analysis and a smaller configurable count for development. Resample complete secret/task clusters, retaining both directions and all model pairings for each cluster. If a secret is repeated, keep its repeats together, or implement a documented hierarchical bootstrap. Do not treat individual turns as independent samples.
+Use a target-cluster bootstrap, with a configurable default of 2,000 resamples for final analysis and a smaller configurable count for development. Resample complete secret/task clusters, retaining both directions and all model pairings for each cluster. If a secret is repeated, keep its repeats together, or implement a documented hierarchical bootstrap. Do not treat individual turns as independent samples.
 
 Report 95% intervals for aggregate speedup, mean cost advantage, ratings, and ranks. Refit ratings inside every bootstrap sample. Record bootstrap seed, fit failures, and effective sample counts. Do not silently discard failed fits.
 
@@ -874,7 +853,7 @@ Publish the pairwise matrix and inspect nontransitive patterns and model-fit res
 
 Monte Carlo uncertainty in mixed-length fallback estimates is a separate source of uncertainty. Record cost-difference MCSEs or reproducible numerical sensitivity results for comparisons that use estimated fallbacks. Verify rating/rank stability under the frozen numerical refinement rule before claiming small differences. Exact fraction comparison of estimated means makes the published calculation reproducible, but does not prove the ideal expected costs are ordered the same way. Do not invent an interval-overlap draw rule or selectively refine only favorable comparisons; any practical tie tolerance is a separate predeclared competitive definition. If resampling numerical rollouts, reuse a cache draw consistently wherever that cached state occurs, rather than treating identical scores as independent noise.
 
-For a balanced initial release, use the same number of tasks per unordered pair. Avoid adaptive scheduling in version 0.4. Later adaptive schedules need an explicit weighting and inference design.
+Use the same number of tasks per unordered pair in the primary release. Adaptive scheduling requires a separately specified weighting and inference design.
 
 ## 10 Task generation and experiment conditions
 
@@ -884,13 +863,13 @@ The default manifests are independent draws from the same declared target distri
 
 Default target sampling is uniform over V_secret, initially revealing the first character. The conditional target distribution within an initial prefix group is consequently uniform. A deliberately stratified sample must record inclusion probabilities and either report strata separately or apply predeclared weights.
 
-Validate initial_prefix_length < len(secret) for every admissible sampled target. A fixture or alternative profile that excludes too-short targets must expose that filtered target support and use it for both sampling and scoring. Do not silently keep impossible initial targets in a baseline denominator. Mark a dictionary-valued initial prefix as appeared/used before constructing both candidate lists. With the proposed minimum target length three and initial prefix length one, the strict-length condition holds automatically.
+Validate initial_prefix_length < len(secret) for every admissible sampled target. A fixture or alternative profile that excludes too-short targets must expose that filtered target support and use it for both sampling and scoring. Do not silently keep impossible initial targets in a baseline denominator. Mark a dictionary-valued initial prefix as appeared/used before constructing both candidate lists. With the default minimum target length three and initial prefix length one, the strict-length condition holds automatically.
 
 The task manifest includes secret, lexicon hashes, prefix rule, cap, repetition index, split, condition, and task-generation seed in a referee-only file. A released frozen manifest may contain secrets after the study; never feed that file or its seed to players.
 
 Use the same held-out task manifest across all model pairings for the main release. Retain target identity so uncertainty can reflect its reuse. Keep repetitions balanced in the main run. Additional repeated sampling on selected tasks can separate target difficulty from response variability in a separately labeled diagnostic condition.
 
-Proposed development conditions are caps 5, 10, 20, and 40, and a small set of declared inference profiles. The main published condition must be chosen before inspecting held-out results. If several caps remain primary conditions, show separate leaderboards and a predeclared aggregation, if any. Do not choose each model's most favorable cap retrospectively.
+The development defaults are caps 5, 10, 20, and 40 and a small set of declared inference profiles. The main published condition must be chosen before inspecting held-out results. If several caps remain primary conditions, show separate leaderboards and a predeclared aggregation, if any. Do not choose each model's most favorable cap retrospectively.
 
 The default resource comparison is equal per-seat profiles within a declared condition. Because offense has two seats, equal per-seat budgets do not mean equal team compute. Report actual calls, tokens and cost by role. A separately labeled equal-total-team-budget condition is useful but optional for the first release.
 
@@ -902,9 +881,9 @@ Implement these policies with explicit identifiers. Scripted policies require no
 
 | Policy or condition | Purpose |
 |---|---|
-| Single-word alphabetical and reverse direct search | Weaker reference and legacy comparison |
-| First/last two-guess search | Researcher's required legal floor; no contact required |
-| Clue-only alphabetical and reverse listing | Researcher's requested dictionary-output baseline; whole-word character packing |
+| Single-word alphabetical and reverse direct search | One-word search reference for comparison with full legal guessing capacity |
+| First/last two-guess search | Required two-guess floor; no contact required |
+| Clue-only alphabetical and reverse listing | Required dictionary-output baseline; whole-word character packing |
 | Combined alphabetical and reverse packing | Use the character budget and two extra guesses with transparent fixed orders |
 | Combined one-fixed-shuffle packing | Separate randomized baseline; its continuation differs from fresh reshuffling |
 | Combined fresh-shuffle-each-turn packing | Primary reference policy; cap-consistent expected continuation |
@@ -929,7 +908,7 @@ Evaluate every live policy with the same character-aware R_C fallback and numeri
 
 In model direct-only play, Guesser 1 acts every turn and the other seats make no decisions. In the no-contact batching ablation, choose actions that use the literal and opened-word channels without seeking prefix awards. Cancellation ablations change only the conditional policy, not eligibility or target-hit scope. Do not pretend these conditions spend the same number of API calls; report their resources.
 
-Under arbitrary-size blocklists, the old single-defender-guess ambiguity calculation p(1-p) is not a general prediction. A defender can block several plausible intended words at the cost of disclosing additional negatives. Re-evaluate the ambiguity baseline in the new rules rather than carrying over old success rates.
+The single-guess ambiguity calculation p(1-p) is not a general prediction under arbitrary-size blocklists. A defender can block several plausible intended words at the cost of disclosing additional negatives. Evaluate ambiguity baselines using the actual blocklist and reveal rules.
 
 Use the same task manifests and equal declared repetition counts. Optional follow-ups include mixed-model teammates, controlled common opponent panels, semantic clue audits, different dictionaries, frequency priors, reasoning budgets, and early-stop timing. Keep conditions separate. A finite baseline ratio above one by sampling alone is not evidence of semantic skill.
 
@@ -1000,7 +979,7 @@ Record whether reasoning tokens are a subset of reported output or an additional
 
 Track observed cost using a dated, user-supplied price table, currency, token categories, cache rules, and model ID. Label estimates as estimates. Do not hardcode today's prices or assert a dollar budget from model-turn count alone.
 
-Each model needs a validated output/reasoning configuration. In version 0.4 the output allowance must also fit the full admitted blocklist representation for the selected lexicon; a universal 4,096-token ceiling cannot be assumed adequate. Equal numeric token caps across providers do not establish equal compute. Publish actual settings and consumption, and budget optional forecasts separately.
+Each model needs a validated output/reasoning configuration. The output allowance must fit the full admitted blocklist representation for the selected lexicon; a universal 4,096-token ceiling cannot be assumed adequate. Equal numeric token caps across providers do not establish equal compute. Publish actual settings and consumption, and budget optional forecasts separately.
 
 Provide offline fake adapters, canned refusal/truncation/error fixtures, and an opt-in live smoke command for each provider. Default tests must run without keys or internet access.
 
@@ -1027,7 +1006,7 @@ Require explicit live mode and at least a request-count or monetary stopping bud
 
 ### 14.2 Retry and failure policy
 
-Proposed retry default: at most three transport attempts per decision, respecting Retry-After where supplied, otherwise exponential backoff with jitter, with a configurable overall request deadline. Account for SDK retry behavior so nested retries do not multiply unexpectedly.
+Configurable retry default: at most three transport attempts per decision, respecting Retry-After where supplied, otherwise exponential backoff with jitter, with a configurable overall request deadline. Account for SDK retry behavior so nested retries do not multiply unexpectedly.
 
 Retry only eligible infrastructure errors with the same observation, schema, and settings. Authentication, invalid model ID, unsupported fields, and exhausted billing quota should halt or pause the affected run, not loop.
 
@@ -1307,7 +1286,7 @@ Provide local preview and deployment instructions for a conventional static host
 - Every dictionary-valued complete prefix, including the initial one, enters used_words. Ordinary dictionary inputs, prompt copies and arbitrary substrings do not create extra appeared words.
 - Scored initialization rejects a prefix already equal to the secret and accounts consistently for excluded too-short targets.
 - Artist does not literally mention art within a clue under whole-word tokenization; a separately displayed prefix art is an explicit appearance event.
-- Overlong dictionary dumps are rejected before target detection or publication; no over-k rejection exists in the primary character-only track.
+- Overlong dictionary dumps are rejected before target detection or publication; otherwise-legal clues are not rejected for the number of dictionary words they contain in the primary character-only track.
 - Malformed/refusal text cannot become a covert public clue through error messages or history.
 - Invalid Guesser 1 actions consume a turn; invalid receiver/blocker actions become pass/empty list; an invalid conditional choice becomes cancel. Per-responder hidden validity labels are not public.
 - Roles remain fixed throughout the game, including after direct actions, cancellation and invalid outputs.
@@ -1344,7 +1323,7 @@ For noninterference tests, hold public state and clue fixed while changing hidde
 - Use exact rational comparisons and exact ties for recorded point estimates, while separately preserving their exact/estimated status and numerical uncertainty.
 - Paired match points complement to one.
 - All-tied fixtures give equal ratings under the symmetric penalty.
-- Retain the revised 24-target equal-efficiency/different-Elo counterexample.
+- Verify the 24-target equal-efficiency/different-Elo counterexample.
 - Bootstrap full target clusters and preserve both directions.
 - Detect disconnected schedules, incomplete runs and fit failures.
 - Recompute results from immutable logs without providers.
@@ -1416,19 +1395,19 @@ Implementation is complete when the offline end-to-end demo, replay, analysis an
 ## 20 Research decisions to freeze before a main run
 
 1. Production lexicon, rights, normalization and target distribution.
-2. Primary clue character budget, proposed C=100, with no separate count cap; any count-capped or alternate-budget ablation remains separate.
+2. Primary clue character budget, initially C=100, with no separate count cap; any count-capped or alternate-budget ablation remains separate.
 3. Character-packing reference details, exact-state limits, rollout estimator, sample count/precision, seed provenance, cache version and numerical-refinement/competitive-comparison policy.
 4. Main cap, inference profiles and full-blocklist output feasibility.
 5. Model configurations, opponent population and task/repetition counts.
 6. Whether to collect probability reports only in a shadow audit or additionally in a joint-live condition.
 7. Forecast format, scoring, item-bank construction and invalid-report policy.
 8. Mechanical clues versus a separately audited semantic condition.
-9. Singleton handling, receiver pass, reveal/cancel admission/defaults and exact public versus private feedback. Decide initial-response collection versus early public-hit stopping as a separate timing condition. Spoken-only wins, last-letter victory and retirement of displayed dictionary prefixes are confirmed mechanics.
+9. Singleton handling, receiver pass, reveal/cancel admission/defaults and exact public versus private feedback. Decide initial-response collection versus early public-hit stopping as a separate timing condition. Public-utterance wins, last-letter victory and retirement of displayed dictionary prefixes are required mechanics.
 10. Headline presentation of efficiency, mean cost advantage, Elo and role diagnostics.
 11. Data, transcript and model-output release permissions.
 12. Paper claims, prior-art comparison and evidence of headroom.
 
-The researcher's latest clarifications settle the target-hit and ending rules. The remaining numerical, bandwidth and operational defaults are explicit proposals to freeze before a main study. The implementation should make those choices concrete and reviewable without reopening confirmed mechanics. Never pool versions 0.1, 0.2, 0.3 and 0.4 into one leaderboard condition.
+Freeze the numerical, bandwidth and operational configuration before a main study. The implementation must expose these choices for review while enforcing the core game rules in Section 3.1. Do not pool incompatible protocol versions into one leaderboard condition.
 
 Treat saturation, dominance by simple batching/encoding, and unstable rankings as results. Revise on development data if needed; do not retune against held-out leaderboard outcomes.
 
