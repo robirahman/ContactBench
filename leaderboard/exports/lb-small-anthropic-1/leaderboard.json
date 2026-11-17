@@ -1,0 +1,504 @@
+{
+  "run_id": "lb-small-anthropic-1",
+  "protocol_version": "contact-v0.5",
+  "fixture_data": false,
+  "models": [
+    "claude_haiku_5_5",
+    "claude_haiku_4_5"
+  ],
+  "planned_games": 10,
+  "recorded_games": 10,
+  "scored_games": 10,
+  "planned_fixtures": 5,
+  "complete_fixtures": 5,
+  "balanced_complete": true,
+  "game_status_counts": {
+    "solved/complete": 6,
+    "capped/complete": 4
+  },
+  "missing_model_pairs": [],
+  "rating": {
+    "method": "batch Elo-style rating with half-point draws",
+    "models": [
+      "claude_haiku_5_5",
+      "claude_haiku_4_5"
+    ],
+    "strengths_logit": {
+      "claude_haiku_5_5": 1.495322294210028,
+      "claude_haiku_4_5": -1.495322294210028
+    },
+    "elo": {
+      "claude_haiku_5_5": 1759.7640884169305,
+      "claude_haiku_4_5": 1240.2359115830695
+    },
+    "converged": true,
+    "iterations": 7,
+    "gradient_norm": 8.242985408089819e-16,
+    "loss": 0.6029233158830726,
+    "penalty_scale": 2.5,
+    "connected_components": [
+      [
+        "claude_haiku_4_5",
+        "claude_haiku_5_5"
+      ]
+    ]
+  },
+  "rating_penalty_sensitivity": {
+    "1.0": {
+      "claude_haiku_5_5": 1641.8845431684026,
+      "claude_haiku_4_5": 1358.1154568315974
+    },
+    "2.5": {
+      "claude_haiku_5_5": 1759.7640884169305,
+      "claude_haiku_4_5": 1240.2359115830695
+    },
+    "5.0": {
+      "claude_haiku_5_5": 1855.6996059284713,
+      "claude_haiku_4_5": 1144.3003940715287
+    }
+  },
+  "bootstrap": {
+    "resamples": 500,
+    "seed": 12345,
+    "cluster": "task (secret) \u2014 both directions and all pairings kept together",
+    "task_clusters": 5,
+    "fit_failures": 0,
+    "intervals_95": {
+      "claude_haiku_5_5": {
+        "elo": {
+          "lo": 1759.7640884169305,
+          "hi": 1759.7640884169305,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 1.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 763.6989361246234,
+          "hi": 955.8053308034473,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": 11.2,
+          "hi": 4202.759198436554,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.002723721121856259,
+          "hi": 0.6077669129653124,
+          "n": 500
+        }
+      },
+      "claude_haiku_4_5": {
+        "elo": {
+          "lo": 1240.2359115830695,
+          "hi": 1240.2359115830695,
+          "n": 500
+        },
+        "rank": {
+          "lo": 2.0,
+          "hi": 2.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.6453676214800357,
+          "hi": 367.14478291319494,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -4202.759198436554,
+          "hi": -11.2,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.001046238148891054,
+          "hi": 0.0013094167648043259,
+          "n": 500
+        }
+      }
+    }
+  },
+  "model_stats": {
+    "claude_haiku_5_5": {
+      "offense_games": 5,
+      "offense_aggregate_speedup": {
+        "numerator": 33446224996613988876617,
+        "denominator": 38879641519863889920,
+        "value": 860.2503441171409
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 8,
+        "denominator": 1,
+        "value": 8.0
+      },
+      "offense_mean_baseline": {
+        "numerator": 33446224996613988876617,
+        "denominator": 4859955189982986240,
+        "value": 6882.002752937127
+      },
+      "offense_capped_fraction_of_offense_games": 0.0,
+      "defense_games": 5,
+      "defensive_cost_ratio": {
+        "numerator": 257438907320570320895520,
+        "denominator": 1237510324874717588434829,
+        "value": 0.2080297045979255
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8,
+      "mean_paired_cost_advantage": {
+        "numerator": 6418820487,
+        "denominator": 4508672,
+        "value": 1423.6609997356206
+      },
+      "opponents": [
+        "claude_haiku_4_5"
+      ],
+      "fixtures": 5,
+      "match_points": 5.0,
+      "match_point_share": 1.0,
+      "wins": 5,
+      "draws": 0,
+      "losses": 0
+    },
+    "claude_haiku_4_5": {
+      "offense_games": 5,
+      "offense_aggregate_speedup": {
+        "numerator": 1237510324874717588434829,
+        "denominator": 257438907320570320895520,
+        "value": 4.8070058164663285
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 6454889863,
+        "denominator": 4508672,
+        "value": 1431.6609997356206
+      },
+      "offense_mean_baseline": {
+        "numerator": 33446224996613988876617,
+        "denominator": 4859955189982986240,
+        "value": 6882.002752937127
+      },
+      "offense_capped_fraction_of_offense_games": 0.8,
+      "defense_games": 5,
+      "defensive_cost_ratio": {
+        "numerator": 38879641519863889920,
+        "denominator": 33446224996613988876617,
+        "value": 0.0011624523103519145
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.0,
+      "mean_paired_cost_advantage": {
+        "numerator": -6418820487,
+        "denominator": 4508672,
+        "value": -1423.6609997356206
+      },
+      "opponents": [
+        "claude_haiku_5_5"
+      ],
+      "fixtures": 5,
+      "match_points": 0.0,
+      "match_point_share": 0.0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 5
+    }
+  },
+  "role_diagnostics": {
+    "claude_haiku_4_5": {
+      "offense": {
+        "games": 5.0,
+        "wins": 1.0,
+        "hit_source_direct": 1.0,
+        "turns": 97.0,
+        "guesser1_decisions": 97.0,
+        "clue_turns": 21.0,
+        "guesser2_decisions": 21.0,
+        "registered_matches": 12.0,
+        "contacts_awarded": 6.0,
+        "intended_word_covered": 12.0,
+        "contacts_prevented": 6.0,
+        "direct_turns": 28.0,
+        "guesser2_pass": 3.0,
+        "guesser1_invalid": 48.0,
+        "choice_opportunities": 3.0,
+        "choice_reveal": 3.0,
+        "guesser2_invalid": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.4948453608247423,
+          "direct_share_per_valid_turn": 0.5714285714285714,
+          "registered_match_per_clue_turn": 0.5714285714285714,
+          "contact_per_clue_turn": 0.2857142857142857,
+          "contact_per_registered_match": 0.5,
+          "guesser2_invalid_per_guesser2_decision": 0.047619047619047616,
+          "reveal_per_choice_opportunity": 1.0
+        }
+      },
+      "defense": {
+        "games": 5.0,
+        "block_decisions": 35.0,
+        "empty_blocklists": 17.0,
+        "fresh_secret_candidates_blocked": 558.0,
+        "blocks_overlapping_clue": 14.0,
+        "intended_word_covered": 10.0,
+        "contacts_prevented": 8.0,
+        "block_invalid": 2.0,
+        "mean_blocklist_size_per_block_decision": 16.942857142857143,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.4857142857142857,
+          "block_invalid_per_block_decision": 0.05714285714285714
+        }
+      }
+    },
+    "claude_haiku_5_5": {
+      "offense": {
+        "games": 5.0,
+        "wins": 5.0,
+        "hit_source_direct": 2.0,
+        "turns": 40.0,
+        "guesser1_decisions": 40.0,
+        "clue_turns": 35.0,
+        "guesser2_decisions": 35.0,
+        "registered_matches": 30.0,
+        "contacts_awarded": 21.0,
+        "intended_word_covered": 10.0,
+        "contacts_prevented": 8.0,
+        "direct_turns": 3.0,
+        "hit_source_clue": 1.0,
+        "guesser2_pass": 3.0,
+        "hit_source_blocklist": 2.0,
+        "choice_opportunities": 1.0,
+        "choice_cancel": 1.0,
+        "guesser2_invalid": 1.0,
+        "preserved_words_later_reused": 1.0,
+        "guesser1_invalid": 2.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.05,
+          "direct_share_per_valid_turn": 0.07894736842105263,
+          "registered_match_per_clue_turn": 0.8571428571428571,
+          "contact_per_clue_turn": 0.6,
+          "contact_per_registered_match": 0.7,
+          "guesser2_invalid_per_guesser2_decision": 0.02857142857142857,
+          "reveal_per_choice_opportunity": 0.0
+        }
+      },
+      "defense": {
+        "games": 5.0,
+        "block_decisions": 21.0,
+        "empty_blocklists": 4.0,
+        "fresh_secret_candidates_blocked": 196568.0,
+        "blocks_overlapping_clue": 4.0,
+        "block_invalid": 2.0,
+        "intended_word_covered": 12.0,
+        "contacts_prevented": 6.0,
+        "mean_blocklist_size_per_block_decision": 9575.47619047619,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.19047619047619047,
+          "block_invalid_per_block_decision": 0.09523809523809523
+        }
+      }
+    }
+  },
+  "pairwise_match_points": {
+    "claude_haiku_5_5": {
+      "claude_haiku_4_5": {
+        "mean_points": 1.0,
+        "fixtures": 5
+      }
+    },
+    "claude_haiku_4_5": {
+      "claude_haiku_5_5": {
+        "mean_points": 0.0,
+        "fixtures": 5
+      }
+    }
+  },
+  "pairwise_mean_cost": {
+    "claude_haiku_4_5": {
+      "claude_haiku_5_5": {
+        "mean_cost": 1431.6609997356206,
+        "games": 5
+      }
+    },
+    "claude_haiku_5_5": {
+      "claude_haiku_4_5": {
+        "mean_cost": 8.0,
+        "games": 5
+      }
+    }
+  },
+  "capped_games": 4,
+  "capped_fraction_of_scored_games": 0.4,
+  "residual_candidate_counts_capped": [
+    7,
+    10,
+    2798,
+    172524
+  ],
+  "strata": {
+    "by_target_length": [
+      {
+        "model": "claude_haiku_4_5",
+        "target_length": 4,
+        "games": 1,
+        "aggregate_speedup": 400.3150908614791,
+        "mean_cost": 17.0,
+        "mean_baseline": 6805.356544645145
+      },
+      {
+        "model": "claude_haiku_4_5",
+        "target_length": 6,
+        "games": 1,
+        "aggregate_speedup": 326.8665518331356,
+        "mean_cost": 21.0,
+        "mean_baseline": 6864.197588495847
+      },
+      {
+        "model": "claude_haiku_4_5",
+        "target_length": 7,
+        "games": 2,
+        "aggregate_speedup": 90.38065009554485,
+        "mean_cost": 76.27975096288516,
+        "mean_baseline": 6894.2134811518235
+      },
+      {
+        "model": "claude_haiku_4_5",
+        "target_length": 9,
+        "games": 1,
+        "aggregate_speedup": 0.9977449194264254,
+        "mean_cost": 6967.745496752333,
+        "mean_baseline": 6952.032669240994
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 4,
+        "games": 1,
+        "aggregate_speedup": 972.1937920921636,
+        "mean_cost": 7.0,
+        "mean_baseline": 6805.356544645145
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 6,
+        "games": 1,
+        "aggregate_speedup": 858.0246985619809,
+        "mean_cost": 8.0,
+        "mean_baseline": 6864.197588495847
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 7,
+        "games": 2,
+        "aggregate_speedup": 766.0237201279805,
+        "mean_cost": 9.0,
+        "mean_baseline": 6894.2134811518235
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 9,
+        "games": 1,
+        "aggregate_speedup": 993.1475241772849,
+        "mean_cost": 7.0,
+        "mean_baseline": 6952.032669240994
+      }
+    ],
+    "by_initial_candidate_count": [
+      {
+        "model": "claude_haiku_4_5",
+        "bin": ">100",
+        "games": 5,
+        "aggregate_speedup": 4.8070058164663285,
+        "mean_cost": 1431.6609997356206,
+        "mean_baseline": 6882.002752937127
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "bin": ">100",
+        "games": 5,
+        "aggregate_speedup": 860.2503441171409,
+        "mean_cost": 8.0,
+        "mean_baseline": 6882.002752937127
+      }
+    ]
+  },
+  "numerical_reference": {
+    "baselines_exact": 0,
+    "baselines_estimated": 10,
+    "fallbacks_exact": 2,
+    "fallbacks_estimated": 2,
+    "max_mcse": 4.168994479155132,
+    "mean_mcse_of_estimates": 1.926324321974341,
+    "methods": {
+      "baseline:length_class_monte_carlo": 10,
+      "fallback:all_fit": 2,
+      "fallback:length_class_monte_carlo": 2
+    },
+    "fallback_cache_entries_used": 2,
+    "fallback_cache_reuse": 0
+  },
+  "numerically_close_fixtures": 0,
+  "resources": {
+    "claude_haiku_5_5": {
+      "guesser1": {
+        "requests": 40.0,
+        "input_tokens": 294902.0,
+        "output_tokens": 18516.0,
+        "reasoning_tokens": 14844.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 229.27263687300092,
+        "transport_attempts": 62.0,
+        "cost_estimate": 0.0387482
+      },
+      "guesser2": {
+        "requests": 36.0,
+        "input_tokens": 172439.0,
+        "output_tokens": 10495.0,
+        "reasoning_tokens": 9456.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 134.22026173399627,
+        "transport_attempts": 41.0,
+        "cost_estimate": 0.0224914
+      },
+      "defender": {
+        "requests": 21.0,
+        "input_tokens": 86290.0,
+        "output_tokens": 15626.0,
+        "reasoning_tokens": 14432.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 119.70027449699683,
+        "transport_attempts": 22.0,
+        "cost_estimate": 0.016442000000000002
+      }
+    },
+    "claude_haiku_4_5": {
+      "guesser1": {
+        "requests": 98.0,
+        "input_tokens": 1201967.0,
+        "output_tokens": 25614.0,
+        "reasoning_tokens_unknown": 98.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 602.6284444559951,
+        "transport_attempts": 310.0,
+        "cost_estimate": 1.3300370000000001
+      },
+      "defender": {
+        "requests": 35.0,
+        "input_tokens": 556028.0,
+        "output_tokens": 12975.0,
+        "reasoning_tokens_unknown": 35.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 282.1220921140002,
+        "transport_attempts": 133.0,
+        "cost_estimate": 0.6209030000000001
+      },
+      "guesser2": {
+        "requests": 23.0,
+        "input_tokens": 245885.0,
+        "output_tokens": 6333.0,
+        "reasoning_tokens_unknown": 23.0,
+        "cached_input_tokens": 0.0,
+        "latency_s": 149.96618210299948,
+        "transport_attempts": 71.0,
+        "cost_estimate": 0.27754999999999996
+      }
+    }
+  }
+}

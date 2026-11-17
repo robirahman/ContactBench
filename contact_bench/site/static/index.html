@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+<title>ContactBench Leaderboard</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="fixture-banner" class="banner" hidden>
+  FIXTURE / DEMO DATA — this condition was produced by an offline synthetic run. It is not a benchmark result.
+</div>
+<div id="release-note" class="banner note" hidden></div>
+<header>
+  <h1>ContactBench</h1>
+  <p class="sub">A benchmark of AI models on the word game <em>Contact</em>.</p>
+  <nav>
+    <a href="#rating">Rating</a>
+    <a href="#efficiency">Efficiency</a>
+    <a href="#pairwise">Pairwise</a>
+    <a href="#settings">Models &amp; resources</a>
+    <a href="#games">Games &amp; replays</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#methodology">Methodology</a>
+  </nav>
+</header>
+<main>
+  <section id="condition">
+    <h2>Condition</h2>
+    <label for="condition-select">Showing one condition at a time (results are never pooled across conditions or runs):</label>
+    <select id="condition-select"></select>
+    <dl id="condition-details" class="details"></dl>
+    <p id="load-error" class="error" hidden></p>
+  </section>
+
+  <section id="rating">
+    <h2>Competitive rating</h2>
+    <p class="note">Batch Elo-style rating with half-point draws, fitted to paired cost comparisons (A+A attacking B vs. B+B attacking A on the same secret). 95% intervals from a task-cluster bootstrap. Click a column header to sort.</p>
+    <div class="scroll"><table id="rating-table" class="sortable"></table></div>
+    <p id="rating-notes" class="note"></p>
+  </section>
+
+  <section id="efficiency">
+    <h2>Efficiency</h2>
+    <p class="note">Offensive aggregate speedup is ΣB / ΣC over a model's offensive legs (ratio of totals, never a mean of per-game ratios). These statistics depend on the opponent field.</p>
+    <div class="scroll"><table id="efficiency-table" class="sortable"></table></div>
+  </section>
+
+  <section id="pairwise">
+    <h2>Pairwise matrix</h2>
+    <p class="note">Rows: model; columns: opponent. Mean match points earned by the row model per paired fixture, and the row model's mean attacking cost against the column defender.</p>
+    <h3>Mean match points</h3>
+    <div class="scroll"><table id="points-matrix"></table></div>
+    <h3>Mean attacking cost</h3>
+    <div class="scroll"><table id="cost-matrix"></table></div>
+    <div id="pairwise-notes" class="note"></div>
+  </section>
+
+  <section id="settings">
+    <h2>Model settings and resources</h2>
+    <h3>Inference profiles</h3>
+    <div class="scroll"><table id="profiles-table"></table></div>
+    <h3>Resources by role</h3>
+    <div class="scroll"><table id="resources-table"></table></div>
+    <h3>Role diagnostics <span class="tag">referee-audit diagnostics</span></h3>
+    <p class="note">Computed after the games from private referee records. These quantities were not visible to players during play.</p>
+    <div class="scroll"><table id="roles-table"></table></div>
+    <h3>Numerical reference</h3>
+    <dl id="numerical" class="details"></dl>
+  </section>
+
+  <section id="games">
+    <h2>Games and replays</h2>
+    <div class="filters">
+      <label>Attacker <select id="f-attacker"></select></label>
+      <label>Defender <select id="f-defender"></select></label>
+      <label>Outcome <select id="f-outcome"></select></label>
+    </div>
+    <div class="scroll short"><table id="games-table"></table></div>
+    <div id="replay" hidden>
+      <h3 id="replay-title"></h3>
+      <div class="viewbar">
+        <label>View <select id="replay-view"></select></label>
+        <button id="reveal-secret" type="button">Reveal secret</button>
+        <span id="secret-box" class="secret" hidden></span>
+      </div>
+      <p id="view-explainer" class="note"></p>
+      <ol id="replay-turns" class="turns"></ol>
+    </div>
+  </section>
+
+  <section id="downloads">
+    <h2>Downloads</h2>
+    <ul id="download-list"></ul>
+  </section>
+
+  <section id="methodology">
+    <h2>Methodology</h2>
+    <h3>The game</h3>
+    <p>A defender knows a secret word from a public dictionary; two guessers know a growing prefix. Each turn Guesser 1 either makes a direct guess or gives a public clue (at most C characters) while privately registering an intended word. Guesser 2 privately registers a word and, sealed and independently, the defender publishes a blocklist of any size. Unblocked registrations open; when exactly one is blocked, the unblocked guesser may reveal its word or cancel and keep it unsaid.</p>
+    <h3>Public-utterance rule</h3>
+    <p>The offense wins as soon as the secret is publicly said through any gameplay channel: clue text (whole-word mentions), an opened guess, a direct guess, or the defender's own blocklist. A private registration that is never opened does not test the secret. Every publicly emitted word, and every displayed prefix that is itself a dictionary word, is used up.</p>
+    <h3>Final-letter contact victory</h3>
+    <p>When both registered words open, are equal, and the word is fresh (not previously used and not named in the current clue), the next actual letter of the secret is revealed. If that completes the secret, the offense wins immediately; no extra guess or END symbol is needed.</p>
+    <h3>Cost score</h3>
+    <p>The reference policy repeatedly draws a fresh uniform ordering of the remaining public candidates and tests the longest feasible batch using the C-character clue plus two revealed guesses. Its expected turns to reach target s from candidate set S is R<sub>C</sub>(S, s). For each game, B = R<sub>C</sub>(S<sub>0</sub>, s). The effective cost is C = t if the offense won on turn t, or C = L + R<sub>C</sub>(S<sub>L</sub>, s) if unsolved after the cap L. Aggregate speedup is ΣB / ΣC — never a mean of per-game ratios. Mixed-length R values are Monte Carlo estimates stored as exact fractions of the simulated sample, with reported numerical standard errors.</p>
+    <h3>Paired rating</h3>
+    <p>Each fixture compares A's attacking cost against B's defender with B's attacking cost against A's defender on the same secret: 1, ½ or 0 match points. Ratings are a batch Elo-style rating with half-point draws (penalized logistic fit, Elo = 1500 + 400/ln 10 · r).</p>
+    <h3>Why rating is not efficiency</h3>
+    <p>Two policies with identical mean cost can earn different match points because the rating rewards how often one cost beats the other, not by how much. Read the rating alongside offensive speedup and mean paired cost advantage.</p>
+    <h3>Limitations</h3>
+    <ul>
+      <li>Results are conditional on the lexicon, character budget, turn cap, prompts, inference profiles and opponent field.</li>
+      <li>A speedup above one is not by itself evidence of semantic contact skill; literal enumeration is legal.</li>
+      <li>Differences smaller than their uncertainty intervals are not established rank differences.</li>
+      <li>Referee-audit diagnostics are post-game quantities and were never shown to players.</li>
+    </ul>
+    <h3>Changelog</h3>
+    <ul><li>Protocol contact-v0.4 — initial site release.</li></ul>
+    <h3>Links</h3>
+    <ul>
+      <li>Code: <span class="placeholder">repository link to be added by the researcher</span></li>
+      <li>Paper: <span class="placeholder">to be added</span></li>
+      <li>Release data: <span class="placeholder">to be added</span></li>
+    </ul>
+  </section>
+</main>
+<footer><p>Static site; no backend. Visitors cannot trigger benchmark runs.</p></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

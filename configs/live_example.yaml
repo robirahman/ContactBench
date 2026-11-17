@@ -1,0 +1,48 @@
+# Live example (schema illustration).  Validation REJECTS the placeholders
+# below until you replace them with verified model identifiers and settings.
+# Paid execution requires:  contact-bench run configs/live_example.yaml --live --max-requests N
+name: live-example
+fixture_data: false
+protocol: {version: contact-v0.4, turn_limit: 20, clue_max_characters: 100}
+lexicon: {manifest: lexicons/dev_fixture_manifest.json}
+scoring: {development_rollouts: 2048, proposed_final_rollouts: 4096}
+tasks: {split: development, tasks_per_pair: 10, generation_seed: 1}
+tournament: {schedule: balanced_round_robin, repetitions: 1}
+forecasts: {mode: off}
+models:
+  - id: fixture_policy
+    provider: scripted
+    policy: first_last_two_guess
+  - id: example_openai
+    provider: openai
+    api_family: responses
+    model: REPLACE_WITH_VERIFIED_MODEL_ID
+    parameters: {}
+    credential_env: OPENAI_API_KEY
+    max_output_tokens: 16000
+    context_window_tokens: 200000
+    # prices: {as_of: "YYYY-MM-DD", source: "...", input_per_mtok: 0.0, output_per_mtok: 0.0}
+  - id: example_anthropic
+    provider: anthropic
+    api_family: messages
+    model: REPLACE_WITH_VERIFIED_MODEL_ID
+    parameters: {}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 16000
+    context_window_tokens: 200000
+  - id: example_gemini
+    provider: google
+    api_family: interactions
+    model: REPLACE_WITH_VERIFIED_MODEL_ID
+    parameters: {}
+    credential_env: GEMINI_API_KEY
+    max_output_tokens: 16000
+    context_window_tokens: 1000000
+execution:
+  live: true
+  max_requests: 0
+  max_usd: null
+  global_concurrency: 4
+  per_provider_concurrency: 2
+  max_transport_attempts: 3
+analysis: {bootstrap_resamples: 2000, use_development_bootstrap: false, logit_penalty_scale: 2.5}

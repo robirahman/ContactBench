@@ -1,0 +1,47 @@
+# Small-tier leaderboard (Haiku / Flash / Luna), dictionary-assisted, empty initial prefix.
+# Flash and Luna model IDs and prices come from third-party trackers (2026-11-17) and are NOT yet
+# verified against the providers; confirm with each provider's models list before a live run.
+name: leaderboard-small-tier
+fixture_data: false
+protocol: {version: contact-v0.5, dictionary_access: lookup_tools, blocklist_encoding: words_and_ranges, initial_prefix_length: 0, max_tool_calls_per_decision: 12, turn_limit: 20, clue_max_characters: 100}
+lexicon: {manifest: lexicons/enable_manifest.json}
+scoring: {development_rollouts: 256}
+tasks: {tasks_per_pair: 5, generation_seed: 41}
+tournament: {schedule: balanced_round_robin}
+models:
+  - id: claude_haiku_5_5
+    provider: anthropic
+    model: claude-haiku-5-5
+    parameters: {effort: low}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 1000000
+    prices: {as_of: "2026-11-03", source: "Anthropic model table (claude-api skill)", input_per_mtok: 0.10, output_per_mtok: 0.50}
+  - id: claude_haiku_4_5
+    provider: anthropic
+    model: claude-haiku-4-5
+    parameters: {}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 200000
+    prices: {as_of: "2026-11-03", source: "Anthropic model table (claude-api skill)", input_per_mtok: 1.00, output_per_mtok: 5.00}
+  - id: gemini_3_8_flash
+    provider: google
+    api_family: interactions
+    model: gemini-3.8-flash
+    parameters: {}
+    credential_env: GEMINI_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 1000000
+    prices: {as_of: "2026-11-17", source: "third-party tracker; verify on ai.google.dev", input_per_mtok: 0.75, output_per_mtok: 3.75}
+  - id: gpt_6_luna
+    provider: openai
+    api_family: responses
+    model: gpt-6-luna
+    parameters: {}
+    credential_env: OPENAI_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 1050000
+    prices: {as_of: "2026-11-17", source: "third-party tracker; verify on openai.com", input_per_mtok: 0.10, output_per_mtok: 0.50}
+execution: {global_concurrency: 8, per_provider_concurrency: 6, game_concurrency: 6}
+analysis: {bootstrap_resamples: 2000, development_bootstrap_resamples: 500}

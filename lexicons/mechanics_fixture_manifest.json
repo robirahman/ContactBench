@@ -1,0 +1,19 @@
+{
+  "name": "mechanics_fixture",
+  "words_file": "mechanics_fixture.txt",
+  "sha256": "1668e95388f9cc0b6bdcc217b63f0551696f6a03654eb7506c9e6a7ca378cdea",
+  "word_count": 10,
+  "source": "Ten-word worked mechanics fixture from spec Section 6.6; authored for ContactBench",
+  "license": "CC0-1.0 (public domain dedication by the ContactBench authors)",
+  "source_revision": "2026-11-17",
+  "preprocessing": [
+    "hand-written",
+    "lowercase a-z",
+    "lengths 3..20",
+    "sorted unique"
+  ],
+  "exclusions": "",
+  "min_length": 3,
+  "max_length": 20,
+  "fixture": true
+}

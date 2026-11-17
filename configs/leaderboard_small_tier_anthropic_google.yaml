@@ -1,0 +1,68 @@
+# Runnable 3-model subset (Haiku 5.5, Haiku 4.5, Gemini 3.8 Flash); no OpenAI key available yet.
+name: leaderboard-small-tier-anthropic-google
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 12
+  turn_limit: 20
+  clue_max_characters: 100
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 3
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 32000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+- id: claude_haiku_4_5
+  provider: anthropic
+  model: claude-haiku-4-5
+  parameters: {}
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 32000
+  context_window_tokens: 200000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+- id: gemini_3_8_flash
+  provider: google
+  api_family: interactions
+  model: gemini-3.8-flash
+  parameters:
+    thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 32000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: third-party trackers (introductory rate to 2026-12-31); model ID verified
+      via Gemini models.list 2026-11-17
+    input_per_mtok: 0.75
+    output_per_mtok: 3.75
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

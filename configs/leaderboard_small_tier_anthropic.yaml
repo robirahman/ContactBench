@@ -1,0 +1,53 @@
+# Runnable subset of leaderboard_small_tier.yaml with only Anthropic models (only ANTHROPIC_API_KEY available).
+name: leaderboard-small-tier-anthropic
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 12
+  turn_limit: 20
+  clue_max_characters: 100
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 5
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 32000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+- id: claude_haiku_4_5
+  provider: anthropic
+  model: claude-haiku-4-5
+  parameters: {}
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 32000
+  context_window_tokens: 200000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

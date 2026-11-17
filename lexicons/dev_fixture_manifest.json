@@ -1,0 +1,19 @@
+{
+  "name": "dev_fixture",
+  "words_file": "dev_fixture.txt",
+  "sha256": "5f286aeee03919e61b6c6592069924573d2cd1c9372813f87daad8fa94e96326",
+  "word_count": 747,
+  "source": "Small hand-written development fixture of common English nouns and verbs; authored for ContactBench",
+  "license": "CC0-1.0 (public domain dedication by the ContactBench authors)",
+  "source_revision": "2026-11-17",
+  "preprocessing": [
+    "hand-written",
+    "lowercase a-z",
+    "lengths 3..20",
+    "sorted unique"
+  ],
+  "exclusions": "",
+  "min_length": 3,
+  "max_length": 20,
+  "fixture": true
+}
