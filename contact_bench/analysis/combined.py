@@ -56,6 +56,9 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
                 raise CombineError(f"{d.name}: tournament rule '{k}' differs")
         if m.get("prompt_hash") != ref_m.get("prompt_hash"):
             raise CombineError(f"{d.name}: prompt templates differ")
+        for k in ("engine_version", "packing_version", "rng_version", "protocol_version"):
+            if m.get(k) != ref_m.get(k):
+                raise CombineError(f"{d.name}: {k} differs ({m.get(k)} vs {ref_m.get(k)})")
         if m["secret_lexicon"]["sha256"] != ref_m["secret_lexicon"]["sha256"]:
             raise CombineError(f"{d.name}: secret lexicon differs")
         if (m.get("contact_lexicon") or {}).get("sha256") != (ref_m.get("contact_lexicon") or {}).get("sha256"):
@@ -81,6 +84,10 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             games.append(g)
         fixtures.extend(sched["fixtures"])
     out = Path(out_root) / f"combined-{name}"
+    if any(d.resolve() == out.resolve() for d in run_dirs):
+        raise CombineError(f"output {out.name} is also a source; choose a new combined name")
+    if any(is_combined(d) for d in run_dirs):
+        raise CombineError("combine source runs directly, not an existing combined run")
     if out.exists():
         shutil.rmtree(out)
     (out / "private").mkdir(parents=True)

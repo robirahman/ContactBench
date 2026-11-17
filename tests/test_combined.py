@@ -54,3 +54,19 @@ def test_combine_rejects_mismatched_conditions(tmp_path):
     asyncio.run(Runner(cfg2, tmp_path / "rr2").run())
     with pytest.raises(CombineError):
         combine("bad2", [tmp_path / "rr", tmp_path / "rr2"], tmp_path)
+
+
+def test_combine_rejects_version_mismatch_and_self_overwrite(tmp_path):
+    asyncio.run(Runner(_cfg("rr", "ab", {"schedule": "balanced_round_robin"}), tmp_path / "r1").run())
+    asyncio.run(Runner(_cfg("rr2", "ac", {"schedule": "balanced_round_robin"}), tmp_path / "r2").run())
+    m = json.loads((tmp_path / "r2" / "run.json").read_text())
+    m["packing_version"] = "something-else"
+    (tmp_path / "r2" / "run.json").write_text(json.dumps(m))
+    with pytest.raises(CombineError, match="packing_version"):
+        combine("v", [tmp_path / "r1", tmp_path / "r2"], tmp_path)
+    m["packing_version"] = json.loads((tmp_path / "r1" / "run.json").read_text())["packing_version"]
+    (tmp_path / "r2" / "run.json").write_text(json.dumps(m))
+    out = combine("all", [tmp_path / "r1", tmp_path / "r2"], tmp_path)
+    with pytest.raises(CombineError):
+        combine("all", [out, tmp_path / "r1"], tmp_path)
+    assert (out / "run.json").exists()  # not deleted
