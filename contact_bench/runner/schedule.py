@@ -71,8 +71,10 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     games: list[GameSpec] = []
     sched = cfg.tournament.schedule
     reps = cfg.tournament.repetitions
-    if sched in ("balanced_round_robin", "round_robin_plus_self_play"):
-        for a, b in itertools.combinations(ids, 2):
+    if sched in ("balanced_round_robin", "round_robin_plus_self_play", "pairs"):
+        pair_list = ([tuple(p) for p in cfg.tournament.pairs] if sched == "pairs"
+                     else list(itertools.combinations(ids, 2)))
+        for a, b in pair_list:
             for t in tasks:
                 for r in range(reps):
                     fid = f"{t.task_id}-r{r}-{a}~{b}"
@@ -110,7 +112,18 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
     # A cross-model game can be followed by one rematch game (no-progress draw
     # rule), so the advertised maxima include that possibility.
     rematch = cfg.tournament.rematch_on_no_progress_draw
-    max_games = list(games) + ([g for g in games if g.leg in ("AB", "BA")] if rematch else [])
+    secret_len = {t.task_id: len(t.secret) for t in tasks}
+    base_prefix = cfg.protocol.initial_prefix_length
+    step = cfg.tournament.rematch_extra_letters
+    max_games = list(games)
+    if rematch:
+        for g in games:
+            if g.leg not in ("AB", "BA"):
+                continue
+            # Recursive chains can continue until len(secret) - 1 letters are revealed.
+            levels = ((secret_len[g.task_id] - 1 - base_prefix) // step if cfg.tournament.rematch_recursive
+                      else 1)
+            max_games.extend([g] * max(0, levels))
     for g in max_games:
         if g.attacker in llm_models:
             per_model_calls[g.attacker] = per_model_calls.get(g.attacker, 0) + att_calls

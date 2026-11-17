@@ -138,9 +138,12 @@ class TasksConfig(_Strict):
 
 
 class TournamentConfig(_Strict):
-    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play"] = (
+    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play", "pairs"] = (
         "balanced_round_robin"
     )
+    # schedule "pairs": play only these unordered model pairs (e.g. cross-tier
+    # matchups), each on the same tasks_per_pair tasks and both legs.
+    pairs: list[list[str]] | None = None
     same_secret_both_legs: Literal[True] = True
     homogeneous_attackers: Literal[True] = True
     repetitions: int = Field(1, ge=1)
@@ -154,6 +157,10 @@ class TournamentConfig(_Strict):
     # rematch is an additional result.  Rematches never trigger rematches.
     rematch_on_no_progress_draw: bool = True
     rematch_extra_letters: int = Field(1, ge=1)
+    # A rematch that is itself a no-progress draw triggers another rematch with
+    # rematch_extra_letters more letters, until the revealed prefix would
+    # reach the secret's length (at most len(secret) - 1 letters revealed).
+    rematch_recursive: bool = True
 
 
 class ForecastConfig(_Strict):
@@ -343,6 +350,20 @@ class BenchConfig(_Strict):
             raise ValueError("model ids must be unique")
         if self.tournament.schedule != "self_play" and len(self.models) < 2:
             raise ValueError("a round robin needs at least two models")
+        if self.tournament.schedule == "pairs":
+            pairs = self.tournament.pairs or []
+            if not pairs:
+                raise ValueError("schedule 'pairs' requires tournament.pairs")
+            seen = set()
+            for p in pairs:
+                if len(p) != 2 or p[0] == p[1] or not set(p) <= set(ids):
+                    raise ValueError(f"invalid pair {p}: need two distinct configured model ids")
+                key = frozenset(p)
+                if key in seen:
+                    raise ValueError(f"duplicate pair {p}")
+                seen.add(key)
+        elif self.tournament.pairs:
+            raise ValueError("tournament.pairs is only valid with schedule 'pairs'")
         return self
 
     def resolve(self, p: str) -> Path:
@@ -350,7 +371,8 @@ class BenchConfig(_Strict):
         return path if path.is_absolute() else Path(self.base_dir) / path
 
 
-def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = False) -> dict:
+def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = False,
+                                  schedule_has_nested_rematches: bool = False) -> dict:
     """Frozen run snapshots written before a setting existed must describe the
     games actually collected.  Rematches add games, so a run whose snapshot
     predates ``rematch_on_no_progress_draw`` had them disabled.  (The draw
@@ -358,8 +380,18 @@ def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = F
     data = dict(config)
     tour = dict(data.get("tournament") or {})
     tour.setdefault("rematch_on_no_progress_draw", bool(schedule_has_rematches))
+    # Likewise recursion: on only if a rematch of a rematch was actually scheduled.
+    tour.setdefault("rematch_recursive", bool(schedule_has_nested_rematches))
     data["tournament"] = tour
     return data
+
+
+def schedule_rematch_flags(fixtures: list[dict]) -> tuple[bool, bool]:
+    """(has rematches, has nested rematches) from recorded schedule fixtures."""
+    by_id = {f["fixture_id"]: f for f in fixtures}
+    rm = [f for f in fixtures if f.get("rematch_of")]
+    nested = any(by_id.get(f["rematch_of"], {}).get("rematch_of") for f in rm)
+    return bool(rm), nested
 
 
 def load_config(path: str | Path) -> BenchConfig:
