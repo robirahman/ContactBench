@@ -68,3 +68,19 @@ def test_plan_maxima_include_possible_rematches():
         plan = run_plan(c, tasks, games)
         assert plan["maximum_game_decisions_total"] == 4 * 2 * len(games) * factor
         assert plan["maximum_rematch_games"] == len(games) * (factor - 1)
+
+
+def test_draw_rule_is_part_of_condition_key(tmp_path):
+    from contact_bench.export.public import export_public
+    keys = []
+    for i, rule in enumerate((True, False)):
+        c = _cfg(no_progress_draws=rule, rematch_on_no_progress_draw=False)
+        d = tmp_path / f"r{i}"
+        asyncio.run(Runner(c, d).run())
+        rr = Runner(c, d, replay_only=True)
+        rr.prepare()
+        recs = [asyncio.run(rr.play(x)) for x in rr.games]
+        res = analyze(d, recs, resamples=0, seed=1, penalty_scale=2.5, elo_center=1500)
+        out = export_public(d, tmp_path / f"e{i}", res, recs)
+        keys.append(json.loads((out / "manifest.json").read_text())["condition_key"])
+    assert keys[0] != keys[1]

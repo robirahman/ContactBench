@@ -151,6 +151,11 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "rng_version": RNG_VERSION,
         "numerical_rollouts": cfg["scoring"]["proposed_final_rollouts"] if cfg["scoring"]["use_final_rollouts"] else cfg["scoring"]["development_rollouts"],
         "forecast_mode": cfg["forecasts"]["mode"],
+        # Scoring rules that change fixture points (and hence ratings) are part
+        # of the condition identity; older snapshots take the current defaults.
+        "no_progress_draws": cfg.get("tournament", {}).get("no_progress_draws", True),
+        "rematch_on_no_progress_draw": cfg.get("tournament", {}).get("rematch_on_no_progress_draw", True),
+        "rematch_extra_letters": cfg.get("tournament", {}).get("rematch_extra_letters", 1),
         "inference_profiles": {m["id"]: _pick(m, ["provider", "api_family", "model", "parameters", "max_output_tokens"]) for m in cfg["models"]},
     }
     ckey = hashlib.sha256(json.dumps(condition, sort_keys=True).encode()).hexdigest()[:16]

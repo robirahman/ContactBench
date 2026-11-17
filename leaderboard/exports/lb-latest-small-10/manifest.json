@@ -3,7 +3,7 @@
   "protocol_version": "contact-v0.5",
   "run_id": "lb-latest-small-10",
   "run_created_at": "2026-11-17T06:09:51Z",
-  "exported_at": "2026-11-17T14:46:40Z",
+  "exported_at": "2026-11-17T14:55:02Z",
   "code_revision": "e12cbc7154b3c3b5c6fe29e6f775505170381e0d+dirty",
   "prompt_version": "prompts-v4",
   "prompt_hash": "f0221ebd26fe57d96d5243c8444ce370ab76bf82e84a16d5d589f55a2a055afa",
@@ -59,6 +59,9 @@
     "rng_version": "python-mt19937-sha256-seed-v1",
     "numerical_rollouts": 256,
     "forecast_mode": "off",
+    "no_progress_draws": true,
+    "rematch_on_no_progress_draw": true,
+    "rematch_extra_letters": 1,
     "inference_profiles": {
       "claude_haiku_5_5": {
         "provider": "anthropic",
@@ -87,7 +90,7 @@
       }
     }
   },
-  "condition_key": "d047c5959c52d142",
+  "condition_key": "66b62fe2936d661c",
   "lexicon": {
     "name": "enable",
     "word_count": 172608,
