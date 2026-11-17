@@ -365,3 +365,19 @@ def test_play_command_end_to_end(tmp_path, monkeypatch):
     # resuming a finished run plays nothing new
     assert cli.main(["--runs-dir", str(tmp_path / "runs"), "play", "--resume", "h1", "--no-browser",
                      "--no-wait"]) == 0
+
+
+def test_human_challenge_never_repeats_a_secret(tmp_path):
+    from dataclasses import replace
+
+    # 80 draws with replacement from a 747-word fixture almost surely collide
+    d = _data()
+    d["tasks"]["tasks_per_pair"] = 40
+    r = Runner(BenchConfig.model_validate(d), tmp_path / "r")
+    r.prepare()
+    secrets = [t.secret for t in r.tasks.values()]
+    assert len(secrets) == 80 and len(set(secrets)) == 80
+    tasks = list(r.tasks.values())
+    dup = [tasks[0], replace(tasks[1], secret=tasks[0].secret)] + tasks[2:]
+    with pytest.raises(ValueError, match="distinct"):
+        build_schedule(BenchConfig.model_validate(d), dup)

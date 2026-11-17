@@ -134,6 +134,9 @@ def _human_challenge_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list
     need = human_challenge_task_count(cfg)
     if len(tasks) < need:
         raise ValueError(f"human_challenge needs {need} tasks (tasks_per_pair x opponents), got {len(tasks)}")
+    if len({t.secret for t in tasks[:need]}) < need:
+        # A repeated secret would be defended (seen) before it is attacked again.
+        raise ValueError("human_challenge needs distinct secrets in every fixture")
     fixtures: list[Fixture] = []
     legs: list[tuple[GameSpec, GameSpec]] = []
     for i, o in enumerate(hc.opponents):

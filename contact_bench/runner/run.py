@@ -243,16 +243,28 @@ class Runner:
         if cfg.tasks.manifest:
             tasks = load_tasks(cfg.resolve(cfg.tasks.manifest))
         else:
-            tasks = generate_tasks(
-                v_secret=self.v_secret,
-                v_contact=self.v_contact,
-                count=human_challenge_task_count(cfg),
-                seed=cfg.tasks.generation_seed,
-                split=cfg.tasks.split,
-                initial_prefix_length=cfg.protocol.initial_prefix_length,
-                turn_limit=cfg.protocol.turn_limit,
-                clue_max_characters=cfg.protocol.clue_max_characters,
-            )
+            need = human_challenge_task_count(cfg)
+            count = need
+            while True:
+                tasks = generate_tasks(
+                    v_secret=self.v_secret,
+                    v_contact=self.v_contact,
+                    count=count,
+                    seed=cfg.tasks.generation_seed,
+                    split=cfg.tasks.split,
+                    initial_prefix_length=cfg.protocol.initial_prefix_length,
+                    turn_limit=cfg.protocol.turn_limit,
+                    clue_max_characters=cfg.protocol.clue_max_characters,
+                )
+                if cfg.tournament.schedule != "human_challenge":
+                    break
+                # Human challenges never repeat a secret (sampling is with
+                # replacement): keep the first ``need`` distinct secrets.
+                seen: set[str] = set()
+                tasks = [t for t in tasks if not (t.secret in seen or seen.add(t.secret))][:need]
+                if len(tasks) == need or count >= 64 * need:
+                    break
+                count *= 2
         expected = {
             "secret_lexicon_sha256": self.v_secret.sha256,
             "contact_lexicon_sha256": self.v_contact.sha256,
