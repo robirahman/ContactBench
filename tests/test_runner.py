@@ -195,7 +195,7 @@ def test_fatal_error_halts_provider_and_retries_bounded(tmp_path):
     r = Runner(c, tmp_path / "run", adapters={"atk": Programmable(c.models[0], boom),
                                               "def": Programmable(c.models[1], boom)})
     st = asyncio.run(r.run())
-    assert st["halted_providers"] and calls["n"] <= 2  # fatal: not retried, provider paused
+    assert st["halted_credentials"] and calls["n"] <= 2  # fatal: not retried, credential paused
     assert st["pending_games"] == st["planned_games"]
 
 
@@ -206,7 +206,7 @@ def test_fatal_billing_error_pauses_only_that_providers_games(tmp_path):
     bad = Programmable(c.models[2], lambda req: InfrastructureError("402 credits depleted",
                                                                     category="quota_exhausted", fatal=True))
     st = asyncio.run(Runner(c, tmp_path / "run", adapters={"broke": bad}).run())
-    assert "fake" in st["halted_providers"]
+    assert "fake:broke" in st["halted_credentials"] and st["fatal_failures"] == ["credential:fake:broke"]
     rows = {r["game_id"]: r for r in RunStore(tmp_path / "run").game_rows()}
     for gid, r in rows.items():
         if "broke" not in gid:
@@ -316,3 +316,18 @@ def test_cli_exit_code_reflects_fatal_failures(tmp_path, monkeypatch):
     assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 3
     monkeypatch.setattr(cli, "_run", lambda *a, **k: {"halted": None, "fatal_failures": []})
     assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 0
+
+
+def test_auth_failure_is_scoped_to_the_failing_credential(tmp_path):
+    c = cfg(SCRIPTED + [{"id": "key_a", "provider": "openai", "model": "m", "max_output_tokens": 9000,
+                         "credential_env": "KEY_A"},
+                        {"id": "key_b", "provider": "openai", "model": "m", "max_output_tokens": 9000,
+                         "credential_env": "KEY_B"}], tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    from contact_bench.providers.fake import legal_action, parse_observation
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("401", category="auth", fatal=True))
+    good = Programmable(c.models[3], lambda req: legal_action(parse_observation(req.user_prompt)))
+    st = asyncio.run(Runner(c, tmp_path / "run", live=True, max_requests=1000,
+                            adapters={"key_a": bad, "key_b": good}).run())
+    assert list(st["halted_credentials"]) == ["openai:KEY_A"]
+    rows = RunStore(tmp_path / "run").game_rows()
+    assert any(r["status"] == "complete" and "key_b" in r["game_id"] and "key_a" not in r["game_id"] for r in rows)

@@ -207,7 +207,11 @@ class Runner:
         self.halted: str | None = None
         # Fatal provider errors (billing, auth, invalid model) pause only the
         # games that need that provider; other games keep running.
+        # Per-provider budget-cap pauses (caps are configured per provider).
         self.halted_providers: dict[str, str] = {}
+        # Auth/billing failures pause every model that shares the failing
+        # credential, keyed by "provider:credential_env".
+        self.halted_credentials: dict[str, str] = {}
         # Model-specific configuration failures (invalid model id, unsupported
         # parameter, bad request) pause only that model's games.
         self.halted_models: dict[str, str] = {}
@@ -458,6 +462,8 @@ class Runner:
             seat_model = g.defender if spec.seat == "defender" else g.attacker
             if self.replay_only or self.halted or self.budget_stopped:
                 return Unavailable("not_recorded")
+            if self._credential_key(seat_model) in self.halted_credentials:
+                return Unavailable("credential_halted")
             if self.models[seat_model].provider in self.halted_providers:
                 return Unavailable("provider_halted")
             if seat_model in self.halted_models:
@@ -492,9 +498,10 @@ class Runner:
                 if e.fatal:
                     reason = f"{e.category}: {sanitize(str(e))}"
                     if e.category in PROVIDER_WIDE_FATAL:
-                        prov = self.models[seat_model].provider
-                        self.halted_providers.setdefault(prov, reason)
-                        self.store.append_event({"type": "provider_halted", "provider": prov, "reason": reason})
+                        cred = self._credential_key(seat_model)
+                        self.halted_credentials.setdefault(cred, reason)
+                        self.store.append_event({"type": "credential_halted", "credential": cred,
+                                                 "provider": self.models[seat_model].provider, "reason": reason})
                     else:
                         self.halted_models.setdefault(seat_model, reason)
                         self.store.append_event({"type": "model_halted", "model_id": seat_model, "reason": reason})
@@ -595,7 +602,9 @@ class Runner:
         async def one(g: GameSpec):
             def blocked() -> bool:
                 provs = {self.models[g.attacker].provider, self.models[g.defender].provider}
+                creds = {self._credential_key(g.attacker), self._credential_key(g.defender)}
                 return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
+                            or creds & set(self.halted_credentials)
                             or {g.attacker, g.defender} & set(self.halted_models))
 
             if blocked():
@@ -621,17 +630,27 @@ class Runner:
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
         status["halted_providers"] = dict(self.halted_providers)
+        status["halted_credentials"] = dict(self.halted_credentials)
         status["halted_models"] = dict(self.halted_models)
         # Fatal provider/model failures are failures of the command even though
         # unaffected games kept running (budget pauses are not failures).
         status["fatal_failures"] = sorted(
-            [f"provider:{p}" for p, r in self.halted_providers.items() if not r.startswith("budget:")]
+            [f"credential:{c}" for c in self.halted_credentials]
             + [f"model:{m}" for m in self.halted_models])
         status["budget_stopped"] = self.budget_stopped
         status["duplicate_decisions_ignored"] = len(self.store.duplicate_decisions)
         status["reference_scorer_stats"] = dict(self.scorer.stats)
         self.store.write_json("status.json", status)
         return status
+
+    DEFAULT_CREDENTIAL_ENV = {"openai": "OPENAI_API_KEY", "anthropic": "ANTHROPIC_API_KEY",
+                              "google": "GEMINI_API_KEY"}
+
+    def _credential_key(self, model_id: str) -> str:
+        m = self.models[model_id]
+        if m.provider in ("scripted", "fake"):
+            return f"{m.provider}:{m.id}"
+        return f"{m.provider}:{m.credential_env or self.DEFAULT_CREDENTIAL_ENV.get(m.provider, '')}"
 
     def _on_budget_exhausted(self, e: BudgetExhausted, decision_id: str) -> None:
         """A per-key cap pauses only that provider's games; a global cap stops scheduling."""
