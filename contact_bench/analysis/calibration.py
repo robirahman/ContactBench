@@ -21,7 +21,8 @@ from typing import Any
 BINS = 10
 
 
-def _reliability(pairs: list[tuple[float, bool]]) -> tuple[list[dict], float | None]:
+def _reliability(pairs: list[tuple[float, float]]) -> tuple[list[dict], float | None]:
+    """pairs: (confidence, correctness in [0, 1]; fractional for tied modes)."""
     if not pairs:
         return [], None
     bins: dict[int, list[tuple[float, bool]]] = defaultdict(list)
@@ -32,7 +33,7 @@ def _reliability(pairs: list[tuple[float, bool]]) -> tuple[list[dict], float | N
     for b in sorted(bins):
         xs = bins[b]
         conf = mean(p for p, _ in xs)
-        freq = mean(1.0 if y else 0.0 for _, y in xs)
+        freq = mean(float(y) for _, y in xs)
         ece += len(xs) / len(pairs) * abs(conf - freq)
         table.append({"bin": f"{b / BINS:.1f}-{(b + 1) / BINS:.1f}", "n": len(xs),
                       "mean_confidence": conf, "observed_frequency": freq})
@@ -65,10 +66,12 @@ def _summarize(items: list[dict], binary: bool) -> dict:
                    base_rate=mean(1.0 if y else 0.0 for _, y in pairs) if pairs else None,
                    ece=ece, reliability=table)
     else:
-        pairs = [(s["top_probability"], bool(s["top_correct"])) for s in valid if s.get("top_probability") is not None]
+        # Every valid report has a top-1 confidence (ties included), so top-1
+        # accuracy and ECE are computed over the same reports.
+        pairs = [(s["top_probability"], float(s["top_correct"])) for s in valid]
         table, ece = _reliability(pairs)
         out.update(mean_q_truth=mean(s["q_truth"] for s in valid) if valid else None,
-                   top1_accuracy=mean(1.0 if s["top_correct"] else 0.0 for s in valid) if valid else None,
+                   top1_accuracy=mean(float(s["top_correct"]) for s in valid) if valid else None,
                    mean_top1_confidence=mean(p for p, _ in pairs) if pairs else None,
                    top1_ece=ece, reliability=table)
     return out

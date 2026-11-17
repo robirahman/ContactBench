@@ -109,18 +109,26 @@ def _dist_scores(report: Any, support: Support, truth: str | None, *, max_entrie
     except ForecastError as e:
         out.update(valid=False, error=str(e), brier=invalid_score if truth is not None else None)
         return out
-    top = max(fc.listed, key=fc.listed.get) if fc.listed else None
-    top_p = fc.listed[top] if top else None
-    # If the residual share per unlisted word exceeds the top listed word, the
-    # report's mode is an unlisted word; record top as None in that case.
+    # Top-1 with ties: the mode set holds every word at the maximum
+    # probability, possibly including all unlisted words (when the residual
+    # share per unlisted word is the maximum).  Correctness is the expected
+    # accuracy of a uniformly random tie-break, so tied reports (e.g. an empty
+    # uniform report) are scored consistently in top-1 accuracy and in ECE.
     rest = len(support) - len(fc.listed)
-    if top is not None and rest > 0 and fc.other_mass / rest > top_p:
-        top, top_p = None, fc.other_mass / rest
-    out.update(valid=True, listed=len(fc.listed), other_mass=fc.other_mass, top=top, top_probability=top_p)
+    residual = fc.other_mass / rest if rest > 0 else None
+    top_p = max([*fc.listed.values(), *([residual] if residual is not None else [])])
+    eps = 1e-12
+    modes_listed = sorted(w for w, p in fc.listed.items() if abs(p - top_p) <= eps)
+    unlisted_tied = residual is not None and abs(residual - top_p) <= eps
+    n_modes = len(modes_listed) + (rest if unlisted_tied else 0)
+    top = modes_listed[0] if len(modes_listed) == 1 and not unlisted_tied else None
+    out.update(valid=True, listed=len(fc.listed), other_mass=fc.other_mass, top=top, top_probability=top_p,
+               n_modes=n_modes)
     if truth is not None:
         ls, zero = log_score(fc, truth)
+        in_modes = truth in modes_listed or (unlisted_tied and truth not in fc.listed)
         out.update(brier=brier(fc, truth), log=None if zero else ls, zero_probability=zero,
-                   q_truth=fc.prob(truth), top_correct=(top == truth))
+                   q_truth=fc.prob(truth), top_correct=(1.0 / n_modes) if in_modes else 0.0)
     return out
 
 

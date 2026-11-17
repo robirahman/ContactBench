@@ -305,3 +305,26 @@ def test_failed_fork_accounting(tmp_path, monkeypatch):
     assert sum(v.get("transport_attempts", 0) for v in roles) == 5 * len(sent)
     assert sum(v.get("cost_estimate", 0) for v in roles) == pytest.approx(0.03 * len(sent))
     assert sum(v.get("forks_not_sent", 0) for v in roles) == len(unsent)
+
+
+def test_tied_modes_scored_consistently():
+    lx, d = _support(["cable", "candle", "candy", "canoe"])  # support size 4
+    def sc(report, truth):
+        r = {"fork_id": "x", "status": "ok", "kind": "intended_word", "turn": 1, "support": d,
+             "raw_output": json.dumps(report)}
+        return score_fork(r, {"turn": 1, "w1": truth}, lx)["scores"]["intended_word"]
+    u = sc({"entries": [], "other_mass": 1.0}, "candle")          # uniform: 4-way tie
+    assert u["top"] is None and u["n_modes"] == 4 and u["top_correct"] == pytest.approx(0.25)
+    assert u["top_probability"] == pytest.approx(0.25)
+    t = sc({"entries": [{"word": "candle", "probability": 0.4}, {"word": "candy", "probability": 0.4}],
+            "other_mass": 0.2}, "candy")                         # two listed tie
+    assert t["n_modes"] == 2 and t["top_correct"] == pytest.approx(0.5)
+    r = sc({"entries": [{"word": "candle", "probability": 0.1}], "other_mass": 0.9}, "canoe")  # residual mode
+    assert r["n_modes"] == 3 and r["top_correct"] == pytest.approx(1 / 3)
+    clear = sc({"entries": [{"word": "candle", "probability": 0.7}], "other_mass": 0.3}, "candle")
+    assert clear["top"] == "candle" and clear["top_correct"] == 1.0
+    recs = [{"forecasts": [{"model_id": "m", "seat": "defender", "kind": "intended_word",
+                            "scores": {"intended_word": s}} for s in (u, t, r, clear)]}]
+    s = forecast_calibration(recs)["m"]["intended_word@defender"]
+    assert s["top1_accuracy"] == pytest.approx((0.25 + 0.5 + 1 / 3 + 1.0) / 4)
+    assert sum(b["n"] for b in s["reliability"]) == 4  # ties included in calibration too
