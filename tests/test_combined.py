@@ -70,3 +70,11 @@ def test_combine_rejects_version_mismatch_and_self_overwrite(tmp_path):
     with pytest.raises(CombineError):
         combine("all", [out, tmp_path / "r1"], tmp_path)
     assert (out / "run.json").exists()  # not deleted
+
+
+def test_combine_rejects_nested_source(tmp_path):
+    asyncio.run(Runner(_cfg("rr", "ab", {"schedule": "balanced_round_robin"}), tmp_path / "combined-n" / "src").run())
+    asyncio.run(Runner(_cfg("rr2", "ac", {"schedule": "balanced_round_robin"}), tmp_path / "other").run())
+    with pytest.raises(CombineError, match="overlaps"):
+        combine("n", [tmp_path / "combined-n" / "src", tmp_path / "other"], tmp_path)
+    assert (tmp_path / "combined-n" / "src" / "run.json").exists()

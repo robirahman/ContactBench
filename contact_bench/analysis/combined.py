@@ -84,8 +84,11 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             games.append(g)
         fixtures.extend(sched["fixtures"])
     out = Path(out_root) / f"combined-{name}"
-    if any(d.resolve() == out.resolve() for d in run_dirs):
-        raise CombineError(f"output {out.name} is also a source; choose a new combined name")
+    o = out.resolve()
+    for d in run_dirs:
+        r = d.resolve()
+        if r == o or o in r.parents or r in o.parents:
+            raise CombineError(f"output {out.name} overlaps source {d.name}; choose a new combined name")
     if any(is_combined(d) for d in run_dirs):
         raise CombineError("combine source runs directly, not an existing combined run")
     if out.exists():
@@ -111,11 +114,12 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     }
     atomic_write_json(out / "run.json", manifest)
     atomic_write_json(out / "schedule.json", {"fixtures": fixtures, "games": games})
-    with (out / "requests.jsonl").open("w") as f:
-        for d in run_dirs:
-            p = d / "requests.jsonl"
-            if p.exists():
-                f.write(p.read_text())
+    for log in ("requests.jsonl", "forecasts.jsonl"):  # resource accounting reads both
+        with (out / log).open("w") as f:
+            for d in run_dirs:
+                p = d / log
+                if p.exists():
+                    f.write(p.read_text())
     with (out / "private" / "tasks_private.jsonl").open("w") as f:
         for d in run_dirs:
             for line in (d / "private" / "tasks_private.jsonl").read_text().splitlines():
