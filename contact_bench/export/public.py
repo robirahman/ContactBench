@@ -154,7 +154,10 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         # Scoring rules that change fixture points (and hence ratings) are part
         # of the condition identity; older snapshots take the current defaults.
         "no_progress_draws": cfg.get("tournament", {}).get("no_progress_draws", True),
-        "rematch_on_no_progress_draw": cfg.get("tournament", {}).get("rematch_on_no_progress_draw", True),
+        # Legacy snapshots predate rematches: no rematch games were collected.
+        "rematch_on_no_progress_draw": cfg.get("tournament", {}).get(
+            "rematch_on_no_progress_draw",
+            any(f.get("rematch_of") for f in json.loads((run_dir / "schedule.json").read_text()).get("fixtures", []))),
         "rematch_extra_letters": cfg.get("tournament", {}).get("rematch_extra_letters", 1),
         "inference_profiles": {m["id"]: _pick(m, ["provider", "api_family", "model", "parameters", "max_output_tokens"]) for m in cfg["models"]},
     }

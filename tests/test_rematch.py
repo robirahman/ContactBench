@@ -84,3 +84,13 @@ def test_draw_rule_is_part_of_condition_key(tmp_path):
         out = export_public(d, tmp_path / f"e{i}", res, recs)
         keys.append(json.loads((out / "manifest.json").read_text())["condition_key"])
     assert keys[0] != keys[1]
+
+
+def test_legacy_snapshots_have_rematches_disabled():
+    from contact_bench.config import snapshot_with_legacy_defaults
+    legacy = {"tournament": {"schedule": "balanced_round_robin"}}
+    assert snapshot_with_legacy_defaults(legacy)["tournament"]["rematch_on_no_progress_draw"] is False
+    # a legacy run whose recorded schedule contains rematch fixtures had them enabled
+    assert snapshot_with_legacy_defaults(legacy, True)["tournament"]["rematch_on_no_progress_draw"] is True
+    new = {"tournament": {"rematch_on_no_progress_draw": True}}
+    assert snapshot_with_legacy_defaults(new)["tournament"]["rematch_on_no_progress_draw"] is True

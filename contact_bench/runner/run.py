@@ -298,7 +298,11 @@ class Runner:
         manifest = self.store.read_json("run.json")
         # Re-validate the snapshot so fields added by later code versions take
         # their (behaviour-preserving) defaults before comparison.
-        snap = BenchConfig.model_validate({**manifest["config"], "base_dir": self.cfg.base_dir}).model_dump(
+        from ..config import snapshot_with_legacy_defaults
+
+        has_rm = any(f.rematch_of for f in self.fixtures)
+        snap = BenchConfig.model_validate({**snapshot_with_legacy_defaults(manifest["config"], has_rm),
+                                           "base_dir": self.cfg.base_dir}).model_dump(
             mode="json", exclude={"base_dir"})
         current = self.cfg.model_dump(mode="json", exclude={"base_dir"})
         # Never silently replace a model, prompt, cap or provider setting mid-run.

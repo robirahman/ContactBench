@@ -350,6 +350,18 @@ class BenchConfig(_Strict):
         return path if path.is_absolute() else Path(self.base_dir) / path
 
 
+def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = False) -> dict:
+    """Frozen run snapshots written before a setting existed must describe the
+    games actually collected.  Rematches add games, so a run whose snapshot
+    predates ``rematch_on_no_progress_draw`` had them disabled.  (The draw
+    rule only changes scoring and keeps its current default.)"""
+    data = dict(config)
+    tour = dict(data.get("tournament") or {})
+    tour.setdefault("rematch_on_no_progress_draw", bool(schedule_has_rematches))
+    data["tournament"] = tour
+    return data
+
+
 def load_config(path: str | Path) -> BenchConfig:
     path = Path(path)
     data = yaml.safe_load(path.read_text())
