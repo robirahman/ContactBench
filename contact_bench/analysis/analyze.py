@@ -513,7 +513,12 @@ def check_prior_run(current_run_dir: Path, prior_dir: Path, profiles: dict | Non
     for k in ("engine_version", "packing_version", "rng_version", "protocol_version"):
         if cm.get(k) != pm.get(k):
             raise PriorRunError(f"prior run {name}: {k} differs")
-    if pm.get("prompt_hash") != prompt_hash("blind"):
+    if not pri["tournament"].get("homogeneous_attackers", True):
+        # A mixed-team prior run must be the same disclosure condition.
+        if (pri["protocol"].get("partner_disclosure", "blind") != cur["protocol"].get("partner_disclosure", "blind")
+                or pm.get("prompt_hash") != cm.get("prompt_hash")):
+            raise PriorRunError(f"prior run {name}: a mixed-team run from another disclosure condition")
+    elif pm.get("prompt_hash") != prompt_hash("blind"):
         raise PriorRunError(f"prior run {name}: prompt templates differ")
     for key in ("secret_lexicon", "contact_lexicon"):
         if (cm.get(key) or {}).get("sha256") != (pm.get(key) or {}).get("sha256"):

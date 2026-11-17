@@ -226,6 +226,10 @@ def test_prior_runs_must_match_condition(tmp_path):
     asyncio.run(Runner(other, tmp_path / "prior5", adapters=_adapters(other, seen)).run())
     with pytest.raises(PriorRunError):
         check_prior_run(tmp_path / "team", tmp_path / "prior5")
+    d = team_cfg(disclosure="disclosed", tasks=1, rounds=1, pairs=(("x", "y"),))
+    asyncio.run(Runner(d, tmp_path / "disc", adapters=_adapters(d, seen)).run())
+    with pytest.raises(PriorRunError):  # blind team run cannot inform a disclosed one
+        check_prior_run(tmp_path / "disc", tmp_path / "team")
 
 
 def test_role_estimability_from_design():
