@@ -52,3 +52,19 @@ def test_rule_can_be_disabled(tmp_path):
     c = _cfg(no_progress_draws=False, rematch_on_no_progress_draw=False)
     st = asyncio.run(Runner(c, tmp_path / "r").run())
     assert st["planned_games"] == 4
+
+
+def test_plan_maxima_include_possible_rematches():
+    from contact_bench.runner.run import load_lexicons
+    from contact_bench.runner.schedule import build_schedule, run_plan
+    from contact_bench.runner.tasks import generate_tasks
+
+    for rematch, factor in ((True, 2), (False, 1)):
+        c = _cfg(rematch_on_no_progress_draw=rematch)
+        vs, vc = load_lexicons(c)
+        tasks = generate_tasks(v_secret=vs, v_contact=vc, count=2, seed=1, split="development",
+                               initial_prefix_length=0, turn_limit=2, clue_max_characters=100)
+        _, games = build_schedule(c, tasks)
+        plan = run_plan(c, tasks, games)
+        assert plan["maximum_game_decisions_total"] == 4 * 2 * len(games) * factor
+        assert plan["maximum_rematch_games"] == len(games) * (factor - 1)

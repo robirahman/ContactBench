@@ -47,6 +47,9 @@ def map_stainless_error(e: BaseException, sdk: ModuleType, secrets: tuple[str, .
         if "credit" in low or "quota" in low or "billing" in low:
             return mk("quota_exhausted", fatal=True)
         return mk("bad_request", fatal=True)
+    if isinstance(status, int) and status == 402:
+        # Payment required / credits depleted: a billing failure of the shared key.
+        return mk("quota_exhausted", fatal=True)
     if isinstance(e, sdk.InternalServerError) or (isinstance(status, int) and status >= 500):
         return mk("server", retryable=True)
     if isinstance(status, int) and status in (408, 409):

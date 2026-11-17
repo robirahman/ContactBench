@@ -176,3 +176,18 @@ def test_non_rate_limit_errors_keep_the_normal_bound():
     with pytest.raises(InfrastructureError):
         asyncio.run(a.decide(_req()))
     assert a.sent == 3
+
+
+def test_stainless_402_is_provider_wide_quota_failure():
+    import anthropic
+    import httpx2
+    from contact_bench.providers._stainless import map_stainless_error
+
+    resp = httpx2.Response(402, request=httpx2.Request("POST", "https://api.example.com/v1/messages"),
+                           json={"error": {"message": "credit balance too low"}})
+    err = anthropic.APIStatusError("payment required", response=resp, body=None)
+    mapped = map_stainless_error(err, anthropic, ())
+    assert mapped.category == "quota_exhausted" and mapped.fatal
+
+    from contact_bench.runner.run import PROVIDER_WIDE_FATAL
+    assert mapped.category in PROVIDER_WIDE_FATAL
