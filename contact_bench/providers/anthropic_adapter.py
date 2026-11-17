@@ -84,10 +84,11 @@ class AnthropicMessagesAdapter(ProviderAdapter):
     async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
         kwargs = self.build_request(request)
         kwargs["messages"] = list(state)
-        kwargs["tools"] = [
-            {"name": t.name, "description": t.description, "input_schema": t.parameters} for t in request.tools
-        ]
-        kwargs["tool_choice"] = {"type": "auto"} if allow_tools else {"type": "none"}
+        if request.tools:
+            kwargs["tools"] = [
+                {"name": t.name, "description": t.description, "input_schema": t.parameters} for t in request.tools
+            ]
+            kwargs["tool_choice"] = {"type": "auto"} if allow_tools else {"type": "none"}
         msg = await self._call(kwargs)
         resp = self.parse_response(msg, kwargs)
         blocks = get(msg, "content", None) or []
@@ -102,6 +103,9 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         if calls:
             resp.output_text = None  # an intermediate turn is not a final answer
         return resp, calls, new_state
+
+    def conversation_append_user(self, state: Any, text: str) -> Any:
+        return list(state) + [{"role": "user", "content": text}]
 
     def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
         content = [

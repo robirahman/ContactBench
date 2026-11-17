@@ -291,6 +291,10 @@ def _resources(requests: list[dict]) -> dict:
         a["requests"] += 1
         if q.get("status") != "ok":
             a["errors"] += 1
+            # Failed calls can still have been sent (retries) and charged.
+            a["transport_attempts"] += len(q.get("attempts") or [])
+            if q.get("cost_estimate") is not None:
+                a["cost_estimate"] += q["cost_estimate"]
             continue
         resp = q.get("response") or {}
         u = resp.get("usage") or {}
@@ -482,7 +486,39 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rp = run_dir / "requests.jsonl"
     if rp.exists():
         reqs = [json.loads(l) for l in rp.read_text().splitlines() if l.strip()]
+    unsent: dict[str, dict[str, dict[str, int]]] = {}
+    # Forecast-fork calls are billed and budgeted like gameplay calls; account
+    # for them under a separate role key ("<seat>/fork").
+    if (run_dir / "forecasts.jsonl").exists():
+        from ..runner.store import RunStore
+
+        for f in RunStore(run_dir).forecasts():
+            role = f"{f['seat']}/fork"
+            if f["status"] == "ok":
+                reqs.append({"model_id": f["model_id"], "seat": role, "status": "ok",
+                             "response": f.get("response"), "cost_estimate": f.get("cost_estimate")})
+            elif f.get("requests_sent"):
+                # Sent (possibly retried) but failed: keep attempts and charged cost.
+                # requests_sent (BudgetGate calls) covers every model/tool turn;
+                # the error's attempts list covers only the final failed turn.
+                attempts = list(f.get("attempts") or [])
+                attempts += [{} for _ in range(max(0, f["requests_sent"] - len(attempts)))]
+                reqs.append({"model_id": f["model_id"], "seat": role, "status": "error",
+                             "attempts": attempts, "cost_estimate": f.get("cost_estimate")})
+            else:
+                # Never sent (context overflow, pre-send budget stop) or
+                # interrupted with unknown sending: not a request.
+                key = "interrupted" if f.get("error") == "interrupted" else "not_sent"
+                unsent.setdefault(f["model_id"], {}).setdefault(role, {}).setdefault(key, 0)
+                unsent[f["model_id"]][role][key] += 1
     result["resources"] = _resources(reqs)
+    for m, roles in unsent.items():
+        for role, counts in roles.items():
+            for k, v in counts.items():
+                result["resources"].setdefault(m, {}).setdefault(role, {})[f"forks_{k}"] = v
+    from .calibration import forecast_calibration
+
+    result["forecast_calibration"] = forecast_calibration(records)
     if write:
         write_outputs(run_dir / "analysis", result, rows)
     return result
@@ -587,6 +623,9 @@ def render_report(res: dict) -> str:
              f"fallbacks exact/estimated: {n['fallbacks_exact']}/{n['fallbacks_estimated']}; "
              f"max MCSE {n['max_mcse']:.4g}; numerically close fixtures: {res['numerically_close_fixtures']}.\n")
     L.append(f"Capped games: {res['capped_games']} ({res['capped_fraction_of_scored_games']:.1%} of scored games).\n")
+    from .calibration import render_calibration
+
+    L.append(render_calibration(res.get("forecast_calibration") or {}))
     if res["missing_model_pairs"]:
         L.append(f"Missing pairs: {res['missing_model_pairs']}\n")
     return "\n".join(L) + "\n"

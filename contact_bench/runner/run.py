@@ -200,6 +200,7 @@ class Runner:
         self.models: dict[str, ModelConfig] = {m.id: m for m in cfg.models}
         self._adapters = adapters or {}
         self.halted: str | None = None
+        self._fork_tasks: dict[str, list] = {}
         self.budget_stopped = False
 
         paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
@@ -341,6 +342,7 @@ class Runner:
             max_tool_calls=self.cfg.protocol.max_tool_calls_per_decision,
             block_ranges=self.cfg.protocol.blocklist_encoding == "words_and_ranges",
             empty_prefix=self.cfg.protocol.initial_prefix_length == 0,
+            keep_conversation=self.cfg.forecasts.mode == "fork",
         )
 
     # ----------------------------------------------------------------- game
@@ -356,6 +358,66 @@ class Runner:
             offense_condition=atk.offense_mode if atk.provider != "scripted" else "full",
             joint_live=self.cfg.forecasts.mode == "joint_live",
         )
+
+    def _schedule_fork(self, g: GameSpec, game: Game, spec: DecisionSpec, did: str, agent: Any,
+                       out: AgentOutput, raw: Any) -> None:
+        """Branch the deciding seat's transcript for a private forecast query.
+
+        Runs concurrently; its result goes only to forecasts.jsonl and is never
+        part of any observation, public history or gameplay state."""
+        from ..engine import actions as A
+        from ..forecasts.forks import fork_prompt, support_descriptor
+
+        if out.conversation is None or spec.phase not in ("act", "respond", "block"):
+            return
+        prefix = game.prefix
+        contact = game.contact_candidates()
+        k = self.cfg.forecasts.sparse_max_entries
+        if spec.phase == "act":
+            adm = A.admit_guesser1(raw, pre_secret=frozenset(game.secret_candidates()),
+                                   pre_contact=frozenset(contact), max_chars=game.clue_max,
+                                   clue_allowed=game.offense_condition != "direct_only")
+            if not adm.valid or adm.canonical["action"] != "clue":
+                return
+            kind, clue, w1 = "guesser1", adm.canonical["clue"], adm.canonical["word"]
+            prompt = fork_prompt(kind, prefix=prefix, clue=clue, w1=w1, k=k, pass_label=True)
+        else:
+            kind, clue, w1 = "intended_word", spec.observation.get("current_clue", ""), None
+            prompt = fork_prompt(kind, prefix=prefix, clue=clue, k=k)
+        support = support_descriptor(prefix, game._used_view(), len(contact))
+        fork_id = f"{did}/fork"
+        base = {"fork_id": fork_id, "game_id": g.game_id, "turn": spec.turn, "seat": spec.seat,
+                "phase": spec.phase, "kind": kind, "model_id": out.model_id, "support": support,
+                "context": {"clue": clue, **({"w1": w1} if w1 else {})},
+                "prompt_version": "forecast-fork-v1"}
+
+        # Persist a "scheduled" marker synchronously, before the gameplay
+        # decision itself is recorded, so a crash can never make a scheduled
+        # fork vanish from the calibration denominator.  If no final record
+        # follows, the fork is reported as unavailable ("interrupted").
+        self.store.append_forecast({**base, "status": "scheduled"})
+
+        async def run():
+            try:
+                fo = await agent.fork(spec, fork_id, out.conversation, kind=kind, prompt=prompt)
+                rec = {**base, "status": "ok", "raw_output": fo.raw, "response": fo.response,
+                       "cost_estimate": fo.cost_estimate}
+            except BudgetExhausted as e:
+                self.budget_stopped = True
+                rec = {**base, "status": "unavailable", "error": "budget",
+                       "requests_sent": getattr(e, "fork_requests_sent", 0),
+                       "cost_estimate": getattr(e, "fork_cost", None)}
+            except InfrastructureError as e:
+                rec = {**base, "status": "unavailable", "error": f"{e.category}: {sanitize(str(e))}",
+                       "attempts": [asdict(a) for a in getattr(e, "attempts", []) or []],
+                       "requests_sent": getattr(e, "fork_requests_sent", len(getattr(e, "attempts", []) or [])),
+                       "cost_estimate": getattr(e, "fork_cost", None)}
+            except ContextOverflowError as e:
+                # Rejected before sending: no provider call was made.
+                rec = {**base, "status": "unavailable", "error": f"context_overflow: {e}", "requests_sent": 0}
+            self.store.append_forecast(rec)
+
+        self._fork_tasks.setdefault(g.game_id, []).append(asyncio.ensure_future(run()))
 
     def _decide_fn(self, g: GameSpec, game: Game):
         decisions = self.store.decisions()
@@ -386,6 +448,8 @@ class Runner:
                 else:
                     out: AgentOutput = await agent.decide(spec, did)
                     raw, meta = out.raw, out.response
+                    if self.cfg.forecasts.mode == "fork":
+                        self._schedule_fork(g, game, spec, did, agent, out, raw)
                     self.store.append_request({
                         "decision_id": did, "game_id": g.game_id, "turn": spec.turn, "seat": spec.seat,
                         "phase": spec.phase, "model_id": seat_model, "status": "ok",
@@ -460,11 +524,21 @@ class Runner:
         game = self.new_game(g)
         try:
             await game.play(self._decide_fn(g, game))
-        except EngineInvariantError:
-            raise
+        finally:
+            tasks = self._fork_tasks.pop(g.game_id, [])
+            if tasks:
+                await asyncio.gather(*tasks)
         status = "complete" if game.terminal else "pending"
         sc = self.score(game) if game.outcome_status in (OUTCOME_SOLVED, OUTCOME_CAPPED) else None
         rec = self.game_record(g, game, sc)
+        if self.cfg.forecasts.mode == "fork":
+            from ..forecasts.forks import label_game_forks
+
+            fc = self.cfg.forecasts
+            rec["forecasts"] = label_game_forks(
+                self.store.forecasts(g.game_id), game.audit, self.v_contact,
+                max_entries=fc.sparse_max_entries, tolerance=fc.mass_tolerance,
+                invalid_score=fc.invalid_audit_score)
         rec["run_status"] = status
         if not self.replay_only:
             self.store.write_game(g.game_id, rec)
