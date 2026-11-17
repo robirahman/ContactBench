@@ -1,0 +1,2134 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "The small, famously smiling Australian marsupial often called the world's happiest animal.",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The direction opposite east.",
+   "blocklist": [
+    "west"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A ballroom dance with a characteristic one-two-three rhythm.",
+   "blocklist": [
+    "waltz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The involuntary facial reaction to a sudden sharp pain.",
+   "blocklist": [
+    "wince"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The spiral pattern found in fingerprints, shells, or tree trunks.",
+   "blocklist": [
+    "whorl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "An old adverb meaning counterclockwise, especially in folklore about witches' unlucky circles.",
+   "blocklist": [
+    "widdershins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The medical term for a raised, itchy patch of skin, as in urticaria.",
+   "blocklist": [
+    "wale",
+    "weal",
+    "welt",
+    "wheal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "The clear liquid with the formula H2O, essential for life.",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A tiny brown songbird, renowned for its surprisingly loud song.",
+   "blocklist": [
+    "wagtail",
+    "warbler",
+    "wheatear",
+    "whinchat",
+    "wigeon",
+    "wren"
+   ],
+   "blocked_ranges": [
+    [
+     "wren",
+     "wryneck"
+    ]
+   ],
+   "blocked_word_count": 129,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A bird named for the bright red, waxlike tips on its wing feathers.",
+   "blocklist": [
+    "waxwing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "An adult human female.",
+   "blocklist": [
+    "wife",
+    "woman",
+    "women"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "This huge ocean-dwelling mammal surfaces to breathe through blowholes and sings.",
+   "blocklist": [
+    "whale",
+    "whales",
+    "whelk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "wab wabble wabbled wabbler wabblers wabbles wabblier wabbling wabbly wabs wack wacke wackes wackier",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wackiest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wackiest"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "web wed weed week weep weevil weird welcome weight wet; Small mustelid that hunts mice.",
+   "blocklist": [
+    "wear",
+    "weary",
+    "weasel",
+    "weave",
+    "wee",
+    "weft",
+    "weigh",
+    "weir",
+    "weld",
+    "well",
+    "wen",
+    "wench",
+    "wend",
+    "went",
+    "wept",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A person regarded as lacking physical strength or courage.",
+   "blocklist": [
+    "weak",
+    "weaken",
+    "weaker",
+    "weakest",
+    "weakling",
+    "weakly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Across the cloth, from selvage to selvage, rather than lengthwise.",
+   "blocklist": [
+    "wefts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "weftwise"
+    },
+    {
+     "seat": "guesser2",
+     "word": "weftwise"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A legendary human who transforms into a wolf, especially at the full moon.",
+   "blocklist": [
+    "weregild",
+    "weregilds",
+    "werewolf",
+    "werewolves",
+    "wergeld",
+    "wergelds",
+    "wergelt",
+    "wergelts",
+    "wergild",
+    "wergilds",
+    "werwolf",
+    "werwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "wer",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wert",
+   "prefix_after": "wer",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 21.0,
+  "cost_numerator": 21,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "quokka",
+    "clue": "The small, famously smiling Australian marsupial often called the world's happiest animal.",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "west",
+    "clue": "The direction opposite east.",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "waltz",
+    "clue": "A ballroom dance with a characteristic one-two-three rhythm.",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "wince",
+    "clue": "The involuntary facial reaction to a sudden sharp pain.",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "whorl",
+    "clue": "The spiral pattern found in fingerprints, shells, or tree trunks.",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "widdershins",
+    "clue": "An old adverb meaning counterclockwise, especially in folklore about witches' unlucky circles.",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "wheal",
+    "clue": "The medical term for a raised, itchy patch of skin, as in urticaria.",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "water",
+    "clue": "The clear liquid with the formula H2O, essential for life.",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "wren",
+    "clue": "A tiny brown songbird, renowned for its surprisingly loud song.",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "waxwing",
+    "clue": "A bird named for the bright red, waxlike tips on its wing feathers.",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "woman",
+    "clue": "An adult human female.",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "whale",
+    "clue": "This huge ocean-dwelling mammal surfaces to breathe through blowholes and sings.",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "wackiest",
+    "clue": "wab wabble wabbled wabbler wabblers wabbles wabblier wabbling wabbly wabs wack wacke wackes wackier",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "weasel",
+    "clue": "web wed weed week weep weevil weird welcome weight wet; Small mustelid that hunts mice.",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue exceeds 100 characters"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "weakling",
+    "clue": "A person regarded as lacking physical strength or courage.",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "weftwise",
+    "clue": "Across the cloth, from selvage to selvage, rather than lengthwise.",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "werewolf",
+    "clue": "A legendary human who transforms into a wolf, especially at the full moon.",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "direct",
+    "word": "wert",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "quokka",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "west",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "waltz",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "wince",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "whorl",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "widdershins",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "welt",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "water",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "wren",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "waxwing",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "woman",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "whale",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "wackiest",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "weasel",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "weakling",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "weftwise",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "werewolf",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kangaroo",
+     "koala",
+     "wallaby",
+     "wombat"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "west"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "waltz"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wince"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "whorl"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "widdershins"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wale",
+     "weal",
+     "welt",
+     "wheal"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "water"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wagtail",
+     "warbler",
+     "wheatear",
+     "whinchat",
+     "wigeon",
+     "wren"
+    ],
+    "canonical_ranges": [
+     [
+      "wren",
+      "wryneck"
+     ]
+    ]
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "waxwing"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wife",
+     "woman",
+     "women"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "whale",
+     "whales",
+     "whelk"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wear",
+     "weary",
+     "weasel",
+     "weave",
+     "wee",
+     "weft",
+     "weigh",
+     "weir",
+     "weld",
+     "well",
+     "wen",
+     "wench",
+     "wend",
+     "went",
+     "wept",
+     "were"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "weak",
+     "weaken",
+     "weaker",
+     "weakest",
+     "weakling",
+     "weakly"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "wefts"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "weregild",
+     "weregilds",
+     "werewolf",
+     "werewolves",
+     "wergeld",
+     "wergelds",
+     "wergelt",
+     "wergelts",
+     "wergild",
+     "wergilds",
+     "werwolf",
+     "werwolves"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "w",
+   "w1": "quokka",
+   "w2": "quokka",
+   "clue": "The small, famously smiling Australian marsupial often called the world's happiest animal.",
+   "mentions": [
+    "animal",
+    "called",
+    "famously",
+    "happiest",
+    "marsupial",
+    "often",
+    "small",
+    "smiling",
+    "the",
+    "world"
+   ],
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "emissions": [
+    "animal",
+    "called",
+    "famously",
+    "happiest",
+    "kangaroo",
+    "koala",
+    "marsupial",
+    "often",
+    "quokka",
+    "small",
+    "smiling",
+    "the",
+    "wallaby",
+    "wombat",
+    "world"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 3689,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "west",
+   "w2": "west",
+   "clue": "The direction opposite east.",
+   "mentions": [
+    "direction",
+    "east",
+    "opposite",
+    "the"
+   ],
+   "blocklist": [
+    "west"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "direction",
+    "east",
+    "opposite",
+    "the",
+    "west"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3689,
+   "secret_candidates_after": 3688,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "waltz",
+   "w2": "waltz",
+   "clue": "A ballroom dance with a characteristic one-two-three rhythm.",
+   "mentions": [
+    "ballroom",
+    "characteristic",
+    "dance",
+    "one",
+    "rhythm",
+    "three",
+    "two",
+    "with"
+   ],
+   "blocklist": [
+    "waltz"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ballroom",
+    "characteristic",
+    "dance",
+    "one",
+    "rhythm",
+    "three",
+    "two",
+    "waltz",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3688,
+   "secret_candidates_after": 3686,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 3686,
+   "secret_candidates_after": 3686,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "wince",
+   "w2": "wince",
+   "clue": "The involuntary facial reaction to a sudden sharp pain.",
+   "mentions": [
+    "facial",
+    "involuntary",
+    "pain",
+    "reaction",
+    "sharp",
+    "sudden",
+    "the"
+   ],
+   "blocklist": [
+    "wince"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "facial",
+    "involuntary",
+    "pain",
+    "reaction",
+    "sharp",
+    "sudden",
+    "the",
+    "wince"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3686,
+   "secret_candidates_after": 3685,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "whorl",
+   "w2": "whorl",
+   "clue": "The spiral pattern found in fingerprints, shells, or tree trunks.",
+   "mentions": [
+    "fingerprints",
+    "found",
+    "pattern",
+    "shells",
+    "spiral",
+    "the",
+    "tree",
+    "trunks"
+   ],
+   "blocklist": [
+    "whorl"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "fingerprints",
+    "found",
+    "pattern",
+    "shells",
+    "spiral",
+    "the",
+    "tree",
+    "trunks",
+    "whorl"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3685,
+   "secret_candidates_after": 3684,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 3684,
+   "secret_candidates_after": 3684,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "widdershins",
+   "w2": "widdershins",
+   "clue": "An old adverb meaning counterclockwise, especially in folklore about witches' unlucky circles.",
+   "mentions": [
+    "about",
+    "adverb",
+    "circles",
+    "counterclockwise",
+    "especially",
+    "folklore",
+    "meaning",
+    "old",
+    "unlucky",
+    "witches"
+   ],
+   "blocklist": [
+    "widdershins"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "about",
+    "adverb",
+    "circles",
+    "counterclockwise",
+    "especially",
+    "folklore",
+    "meaning",
+    "old",
+    "unlucky",
+    "widdershins",
+    "witches"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3684,
+   "secret_candidates_after": 3682,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "wheal",
+   "w2": "welt",
+   "clue": "The medical term for a raised, itchy patch of skin, as in urticaria.",
+   "mentions": [
+    "for",
+    "itchy",
+    "medical",
+    "patch",
+    "raised",
+    "skin",
+    "term",
+    "the",
+    "urticaria"
+   ],
+   "blocklist": [
+    "wale",
+    "weal",
+    "welt",
+    "wheal"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "for",
+    "itchy",
+    "medical",
+    "patch",
+    "raised",
+    "skin",
+    "term",
+    "the",
+    "urticaria",
+    "wale",
+    "weal",
+    "welt",
+    "wheal"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 3682,
+   "secret_candidates_after": 3678,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "water",
+   "w2": "water",
+   "clue": "The clear liquid with the formula H2O, essential for life.",
+   "mentions": [
+    "clear",
+    "essential",
+    "for",
+    "formula",
+    "life",
+    "liquid",
+    "the",
+    "with"
+   ],
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "clear",
+    "essential",
+    "for",
+    "formula",
+    "life",
+    "liquid",
+    "the",
+    "water",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3678,
+   "secret_candidates_after": 3677,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "wren",
+   "w2": "wren",
+   "clue": "A tiny brown songbird, renowned for its surprisingly loud song.",
+   "mentions": [
+    "brown",
+    "for",
+    "its",
+    "loud",
+    "renowned",
+    "song",
+    "songbird",
+    "surprisingly",
+    "tiny"
+   ],
+   "blocklist": [
+    "wagtail",
+    "warbler",
+    "wheatear",
+    "whinchat",
+    "wigeon",
+    "wren"
+   ],
+   "blocked_ranges": [
+    [
+     "wren",
+     "wryneck"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "brown",
+    "for",
+    "its",
+    "loud",
+    "renowned",
+    "song",
+    "songbird",
+    "surprisingly",
+    "tiny",
+    "wagtail",
+    "warbler",
+    "wheatear",
+    "whinchat",
+    "wigeon",
+    "wren",
+    "wrench",
+    "wrenched",
+    "wrenches",
+    "wrenching",
+    "wrenchingly",
+    "wrens",
+    "wrest",
+    "wrested",
+    "wrester",
+    "wresters",
+    "wresting",
+    "wrestle",
+    "wrestled",
+    "wrestler",
+    "wrestlers",
+    "wrestles",
+    "wrestling",
+    "wrestlings",
+    "wrests",
+    "wretch",
+    "wretched",
+    "wretcheder",
+    "wretchedest",
+    "wretchedly",
+    "wretchedness",
+    "wretchednesses",
+    "wretches",
+    "wrick",
+    "wricked",
+    "wricking",
+    "wricks",
+    "wried",
+    "wrier",
+    "wries",
+    "wriest",
+    "wriggle",
+    "wriggled",
+    "wriggler",
+    "wrigglers",
+    "wriggles",
+    "wrigglier",
+    "wriggliest",
+    "wriggling",
+    "wriggly",
+    "wright",
+    "wrights",
+    "wring",
+    "wringed",
+    "wringer",
+    "wringers",
+    "wringing",
+    "wrings",
+    "wrinkle",
+    "wrinkled",
+    "wrinkles",
+    "wrinklier",
+    "wrinkliest",
+    "wrinkling",
+    "wrinkly",
+    "wrist",
+    "wristband",
+    "wristbands",
+    "wristier",
+    "wristiest",
+    "wristlet",
+    "wristlets",
+    "wristlock",
+    "wristlocks",
+    "wrists",
+    "wristwatch",
+    "wristwatches",
+    "wristy",
+    "writ",
+    "writable",
+    "write",
+    "writer",
+    "writerly",
+    "writers",
+    "writes",
+    "writhe",
+    "writhed",
+    "writhen",
+    "writher",
+    "writhers",
+    "writhes",
+    "writhing",
+    "writing",
+    "writings",
+    "writs",
+    "written",
+    "wrong",
+    "wrongdoer",
+    "wrongdoers",
+    "wrongdoing",
+    "wrongdoings",
+    "wronged",
+    "wronger",
+    "wrongers",
+    "wrongest",
+    "wrongful",
+    "wrongfully",
+    "wrongfulness",
+    "wrongfulnesses",
+    "wrongheaded",
+    "wrongheadedly",
+    "wrongheadedness",
+    "wrongheadednesses",
+    "wronging",
+    "wrongly",
+    "wrongness",
+    "wrongnesses",
+    "wrongs",
+    "wrote",
+    "wroth",
+    "wrothful",
+    "wrought",
+    "wrung",
+    "wry",
+    "wryer",
+    "wryest",
+    "wrying",
+    "wryly",
+    "wryneck"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3677,
+   "secret_candidates_after": 3548,
+   "block_size": 129,
+   "block_fresh_secret_candidates": 129,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "waxwing",
+   "w2": "waxwing",
+   "clue": "A bird named for the bright red, waxlike tips on its wing feathers.",
+   "mentions": [
+    "bird",
+    "bright",
+    "feathers",
+    "for",
+    "its",
+    "named",
+    "red",
+    "the",
+    "tips",
+    "waxlike",
+    "wing"
+   ],
+   "blocklist": [
+    "waxwing"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bird",
+    "bright",
+    "feathers",
+    "for",
+    "its",
+    "named",
+    "red",
+    "the",
+    "tips",
+    "waxlike",
+    "waxwing",
+    "wing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3548,
+   "secret_candidates_after": 3545,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "woman",
+   "w2": "woman",
+   "clue": "An adult human female.",
+   "mentions": [
+    "adult",
+    "female",
+    "human"
+   ],
+   "blocklist": [
+    "wife",
+    "woman",
+    "women"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "adult",
+    "female",
+    "human",
+    "wife",
+    "woman",
+    "women"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3545,
+   "secret_candidates_after": 3542,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "w",
+   "prefix_after": "w",
+   "w1": "whale",
+   "w2": "whale",
+   "clue": "This huge ocean-dwelling mammal surfaces to breathe through blowholes and sings.",
+   "mentions": [
+    "and",
+    "blowholes",
+    "breathe",
+    "dwelling",
+    "huge",
+    "mammal",
+    "ocean",
+    "sings",
+    "surfaces",
+    "this",
+    "through"
+   ],
+   "blocklist": [
+    "whale",
+    "whales",
+    "whelk"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "blowholes",
+    "breathe",
+    "dwelling",
+    "huge",
+    "mammal",
+    "ocean",
+    "sings",
+    "surfaces",
+    "this",
+    "through",
+    "whale",
+    "whales",
+    "whelk"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 3542,
+   "secret_candidates_after": 3539,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "w",
+   "prefix_after": "we",
+   "w1": "wackiest",
+   "w2": "wackiest",
+   "clue": "wab wabble wabbled wabbler wabblers wabbles wabblier wabbling wabbly wabs wack wacke wackes wackier",
+   "mentions": [
+    "wab",
+    "wabble",
+    "wabbled",
+    "wabbler",
+    "wabblers",
+    "wabbles",
+    "wabblier",
+    "wabbling",
+    "wabbly",
+    "wabs",
+    "wack",
+    "wacke",
+    "wackes",
+    "wackier"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "wackiest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wackiest"
+    }
+   ],
+   "emissions": [
+    "wab",
+    "wabble",
+    "wabbled",
+    "wabbler",
+    "wabblers",
+    "wabbles",
+    "wabblier",
+    "wabbling",
+    "wabbly",
+    "wabs",
+    "wack",
+    "wacke",
+    "wackes",
+    "wackier",
+    "wackiest"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 3539,
+   "secret_candidates_after": 492,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "we",
+   "prefix_after": "we",
+   "w1": "weasel",
+   "w2": "weasel",
+   "clue": "web wed weed week weep weevil weird welcome weight wet; Small mustelid that hunts mice.",
+   "mentions": [
+    "hunts",
+    "mice",
+    "small",
+    "that",
+    "web",
+    "wed",
+    "weed",
+    "week",
+    "weep",
+    "weevil",
+    "weight",
+    "weird",
+    "welcome",
+    "wet"
+   ],
+   "blocklist": [
+    "wear",
+    "weary",
+    "weasel",
+    "weave",
+    "wee",
+    "weft",
+    "weigh",
+    "weir",
+    "weld",
+    "well",
+    "wen",
+    "wench",
+    "wend",
+    "went",
+    "wept",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "hunts",
+    "mice",
+    "small",
+    "that",
+    "wear",
+    "weary",
+    "weasel",
+    "weave",
+    "web",
+    "wed",
+    "wee",
+    "weed",
+    "week",
+    "weep",
+    "weevil",
+    "weft",
+    "weigh",
+    "weight",
+    "weir",
+    "weird",
+    "welcome",
+    "weld",
+    "well",
+    "wen",
+    "wench",
+    "wend",
+    "went",
+    "wept",
+    "were",
+    "wet"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 492,
+   "secret_candidates_after": 466,
+   "block_size": 16,
+   "block_fresh_secret_candidates": 16,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "we",
+   "prefix_after": "we",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 466,
+   "secret_candidates_after": 466,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "we",
+   "prefix_after": "we",
+   "w1": "weakling",
+   "w2": "weakling",
+   "clue": "A person regarded as lacking physical strength or courage.",
+   "mentions": [
+    "courage",
+    "lacking",
+    "person",
+    "physical",
+    "regarded",
+    "strength"
+   ],
+   "blocklist": [
+    "weak",
+    "weaken",
+    "weaker",
+    "weakest",
+    "weakling",
+    "weakly"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "courage",
+    "lacking",
+    "person",
+    "physical",
+    "regarded",
+    "strength",
+    "weak",
+    "weaken",
+    "weaker",
+    "weakest",
+    "weakling",
+    "weakly"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 466,
+   "secret_candidates_after": 460,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "we",
+   "prefix_after": "wer",
+   "w1": "weftwise",
+   "w2": "weftwise",
+   "clue": "Across the cloth, from selvage to selvage, rather than lengthwise.",
+   "mentions": [
+    "across",
+    "cloth",
+    "from",
+    "lengthwise",
+    "rather",
+    "selvage",
+    "than",
+    "the"
+   ],
+   "blocklist": [
+    "wefts"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "weftwise"
+    },
+    {
+     "seat": "guesser2",
+     "word": "weftwise"
+    }
+   ],
+   "emissions": [
+    "across",
+    "cloth",
+    "from",
+    "lengthwise",
+    "rather",
+    "selvage",
+    "than",
+    "the",
+    "wefts",
+    "weftwise"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 460,
+   "secret_candidates_after": 13,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "wer",
+   "prefix_after": "wer",
+   "w1": "werewolf",
+   "w2": "werewolf",
+   "clue": "A legendary human who transforms into a wolf, especially at the full moon.",
+   "mentions": [
+    "especially",
+    "full",
+    "human",
+    "into",
+    "legendary",
+    "moon",
+    "the",
+    "transforms",
+    "who",
+    "wolf"
+   ],
+   "blocklist": [
+    "weregild",
+    "weregilds",
+    "werewolf",
+    "werewolves",
+    "wergeld",
+    "wergelds",
+    "wergelt",
+    "wergelts",
+    "wergild",
+    "wergilds",
+    "werwolf",
+    "werwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "especially",
+    "full",
+    "human",
+    "into",
+    "legendary",
+    "moon",
+    "the",
+    "transforms",
+    "weregild",
+    "weregilds",
+    "werewolf",
+    "werewolves",
+    "wergeld",
+    "wergelds",
+    "wergelt",
+    "wergelts",
+    "wergild",
+    "wergilds",
+    "werwolf",
+    "werwolves",
+    "who",
+    "wolf"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 13,
+   "secret_candidates_after": 1,
+   "block_size": 12,
+   "block_fresh_secret_candidates": 12,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "wer",
+   "prefix_after": "wer",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "wert"
+    }
+   ],
+   "emissions": [
+    "wert"
+   ],
+   "result": "won",
+   "secret_candidates_before": 1,
+   "secret_candidates_after": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
+}

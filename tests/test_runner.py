@@ -184,7 +184,7 @@ def test_budget_stop_then_resume(tmp_path):
     assert st2["pending_games"] == 0
 
 
-def test_fatal_error_halts_and_retries_bounded(tmp_path):
+def test_fatal_error_halts_provider_and_retries_bounded(tmp_path):
     c = _two_model_cfg()
     calls = {"n": 0}
 
@@ -195,7 +195,25 @@ def test_fatal_error_halts_and_retries_bounded(tmp_path):
     r = Runner(c, tmp_path / "run", adapters={"atk": Programmable(c.models[0], boom),
                                               "def": Programmable(c.models[1], boom)})
     st = asyncio.run(r.run())
-    assert st["halted"] and calls["n"] <= 2  # fatal: not retried
+    assert st["halted_credentials"] and calls["n"] <= 2  # fatal: not retried, credential paused
+    assert st["pending_games"] == st["planned_games"]
+
+
+def test_fatal_billing_error_pauses_only_that_providers_games(tmp_path):
+    # three models: two scripted (always available) and one failing LLM
+    c = cfg(SCRIPTED + [{"id": "broke", "provider": "fake", "model": "f", "max_output_tokens": 9000}],
+            tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("402 credits depleted",
+                                                                    category="quota_exhausted", fatal=True))
+    st = asyncio.run(Runner(c, tmp_path / "run", adapters={"broke": bad}).run())
+    assert "fake:broke" in st["halted_credentials"] and st["fatal_failures"] == ["credential:fake:broke"]
+    rows = {r["game_id"]: r for r in RunStore(tmp_path / "run").game_rows()}
+    for gid, r in rows.items():
+        if "broke" not in gid:
+            assert r["status"] == "complete" and r["collection_status"] == "complete"  # unaffected
+        elif r["status"] == "complete":
+            # only a publicly proven win may complete without the paused provider
+            assert r["outcome_status"] == "solved" and r["collection_status"] == "incomplete"
 
 
 def test_duplicate_decision_ignored(tmp_path):
@@ -268,3 +286,48 @@ def test_rating_properties():
     assert connected_components(["a", "b", "c", "d"], [("a", "b"), ("c", "d")]) == [["a", "b"], ["c", "d"]]
     from fractions import Fraction
     assert match_points(Fraction(3), Fraction(4)) + match_points(Fraction(4), Fraction(3)) == 1
+
+
+def test_median_and_geometric_mean_costs():
+    from contact_bench.analysis.analyze import _geomean, _median
+    assert _median([1.0, 3.0, 100.0]) == 3.0 and _median([1.0, 3.0, 5.0, 7000.0]) == 4.0
+    assert _median([]) is None
+    assert abs(_geomean([1.0, 100.0]) - 10.0) < 1e-9
+
+
+def test_model_specific_fatal_error_pauses_only_that_model(tmp_path):
+    c = cfg(SCRIPTED + [{"id": "badmodel", "provider": "fake", "model": "f", "max_output_tokens": 9000},
+                        {"id": "goodmodel", "provider": "fake", "model": "g", "max_output_tokens": 9000}],
+            tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("404 no such model",
+                                                                   category="invalid_model", fatal=True))
+    st = asyncio.run(Runner(c, tmp_path / "run", adapters={"badmodel": bad}).run())
+    assert "badmodel" in st["halted_models"] and not st["halted_providers"]
+    assert st["fatal_failures"] == ["model:badmodel"]
+    rows = RunStore(tmp_path / "run").game_rows()
+    # the other model of the same provider kept playing
+    assert any(r["status"] == "complete" and "goodmodel" in r["game_id"] for r in rows)
+
+
+def test_cli_exit_code_reflects_fatal_failures(tmp_path, monkeypatch):
+    from contact_bench.cli import main as cli
+    monkeypatch.setattr(cli, "_run", lambda *a, **k: {"halted": None, "fatal_failures": ["provider:google"]})
+    monkeypatch.setattr(cli, "load_config", lambda p: cfg(SCRIPTED))
+    assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 3
+    monkeypatch.setattr(cli, "_run", lambda *a, **k: {"halted": None, "fatal_failures": []})
+    assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 0
+
+
+def test_auth_failure_is_scoped_to_the_failing_credential(tmp_path):
+    c = cfg(SCRIPTED + [{"id": "key_a", "provider": "openai", "model": "m", "max_output_tokens": 9000,
+                         "credential_env": "KEY_A"},
+                        {"id": "key_b", "provider": "openai", "model": "m", "max_output_tokens": 9000,
+                         "credential_env": "KEY_B"}], tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    from contact_bench.providers.fake import legal_action, parse_observation
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("401", category="auth", fatal=True))
+    good = Programmable(c.models[3], lambda req: legal_action(parse_observation(req.user_prompt)))
+    st = asyncio.run(Runner(c, tmp_path / "run", live=True, max_requests=1000,
+                            adapters={"key_a": bad, "key_b": good}).run())
+    assert list(st["halted_credentials"]) == ["openai:KEY_A"]
+    rows = RunStore(tmp_path / "run").game_rows()
+    assert any(r["status"] == "complete" and "key_b" in r["game_id"] and "key_a" not in r["game_id"] for r in rows)

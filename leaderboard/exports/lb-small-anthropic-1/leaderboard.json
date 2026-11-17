@@ -11,6 +11,9 @@
   "scored_games": 10,
   "planned_fixtures": 5,
   "complete_fixtures": 5,
+  "rematch_fixtures": 0,
+  "no_progress_draw_rule": true,
+  "no_progress_draws": 0,
   "balanced_complete": true,
   "game_status_counts": {
     "solved/complete": 6,
@@ -58,7 +61,7 @@
     }
   },
   "bootstrap": {
-    "resamples": 500,
+    "resamples": 1000,
     "seed": 12345,
     "cluster": "task (secret) \u2014 both directions and all pairings kept together",
     "task_clusters": 5,
@@ -68,54 +71,84 @@
         "elo": {
           "lo": 1759.7640884169305,
           "hi": 1759.7640884169305,
-          "n": 500
+          "n": 1000
         },
         "rank": {
           "lo": 1.0,
           "hi": 1.0,
-          "n": 500
+          "n": 1000
         },
         "offense_aggregate_speedup": {
-          "lo": 763.6989361246234,
+          "lo": 764.0491215389432,
           "hi": 955.8053308034473,
-          "n": 500
+          "n": 1000
         },
         "mean_paired_cost_advantage": {
-          "lo": 11.2,
+          "lo": 11.8,
           "hi": 4202.759198436554,
-          "n": 500
+          "n": 1000
         },
         "defensive_cost_ratio": {
-          "lo": 0.002723721121856259,
+          "lo": 0.002828536436583183,
           "hi": 0.6077669129653124,
-          "n": 500
+          "n": 1000
+        },
+        "offense_median_effective_cost": {
+          "lo": 7.0,
+          "hi": 10.0,
+          "n": 1000
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 7.18946260962546,
+          "hi": 8.905075489802286,
+          "n": 1000
+        },
+        "defense_median_cost_imposed": {
+          "lo": 17.0,
+          "hi": 6967.745496752333,
+          "n": 1000
         }
       },
       "claude_haiku_4_5": {
         "elo": {
           "lo": 1240.2359115830695,
           "hi": 1240.2359115830695,
-          "n": 500
+          "n": 1000
         },
         "rank": {
           "lo": 2.0,
           "hi": 2.0,
-          "n": 500
+          "n": 1000
         },
         "offense_aggregate_speedup": {
           "lo": 1.6453676214800357,
-          "hi": 367.14478291319494,
-          "n": 500
+          "hi": 353.5397271417089,
+          "n": 1000
         },
         "mean_paired_cost_advantage": {
           "lo": -4202.759198436554,
-          "hi": -11.2,
-          "n": 500
+          "hi": -11.8,
+          "n": 1000
         },
         "defensive_cost_ratio": {
           "lo": 0.001046238148891054,
-          "hi": 0.0013094167648043259,
-          "n": 500
+          "hi": 0.0013088163729392242,
+          "n": 1000
+        },
+        "offense_median_effective_cost": {
+          "lo": 17.0,
+          "hi": 6967.745496752333,
+          "n": 1000
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 19.297948602901247,
+          "hi": 945.7352921436271,
+          "n": 1000
+        },
+        "defense_median_cost_imposed": {
+          "lo": 7.0,
+          "hi": 10.0,
+          "n": 1000
         }
       }
     }
@@ -123,6 +156,10 @@
   "model_stats": {
     "claude_haiku_5_5": {
       "offense_games": 5,
+      "offense_median_effective_cost": 8.0,
+      "offense_geometric_mean_cost": 7.930036947907744,
+      "defense_median_cost_imposed": 21.0,
+      "defense_geometric_mean_cost_imposed": 92.7727439892385,
       "offense_aggregate_speedup": {
         "numerator": 33446224996613988876617,
         "denominator": 38879641519863889920,
@@ -163,6 +200,10 @@
     },
     "claude_haiku_4_5": {
       "offense_games": 5,
+      "offense_median_effective_cost": 21.0,
+      "offense_geometric_mean_cost": 92.7727439892385,
+      "defense_median_cost_imposed": 8.0,
+      "defense_geometric_mean_cost_imposed": 7.930036947907744,
       "offense_aggregate_speedup": {
         "numerator": 1237510324874717588434829,
         "denominator": 257438907320570320895520,
@@ -500,5 +541,6 @@
         "cost_estimate": 0.27754999999999996
       }
     }
-  }
+  },
+  "forecast_calibration": {}
 }

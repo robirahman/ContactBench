@@ -182,12 +182,14 @@ def test_registry_selects_google_family():
 
 def test_retry_bounded_and_respects_retry_after():
     sleep, clock = NoSleep(), FakeClock()
-    a = FakeAdapter(mc("fake", fake_behavior="always_transient"), retry=RetryPolicy(max_attempts=3), sleep=sleep, clock=clock)
+    # The fake's transient error is a rate limit, which gets its own (larger) bound.
+    a = FakeAdapter(mc("fake", fake_behavior="always_transient"),
+                    retry=RetryPolicy(max_attempts=3, rate_limit_attempts=5), sleep=sleep, clock=clock)
     with pytest.raises(InfrastructureError) as ei:
         run(a.decide(req()))
-    assert a.calls == 3
-    assert sleep.delays == [0.0, 0.0]  # Retry-After=0 honored instead of backoff
-    assert len(ei.value.attempts) == 3 and not ei.value.retryable
+    assert a.calls == 5
+    assert sleep.delays == [0.0] * 4  # Retry-After=0 honored instead of backoff
+    assert len(ei.value.attempts) == 5 and not ei.value.retryable
 
 
 def test_retry_then_success_and_no_semantic_retry():

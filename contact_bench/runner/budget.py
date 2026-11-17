@@ -10,7 +10,9 @@ from ..providers.base import AttemptGate, NormalizedUsage
 
 
 class BudgetExhausted(RuntimeError):
-    pass
+    def __init__(self, msg: str, provider: str | None = None):
+        super().__init__(msg)
+        self.provider = provider  # set when only one provider's cap is reached
 
 
 def estimate_cost(prices: PriceTable, usage: NormalizedUsage) -> float | None:
@@ -66,13 +68,14 @@ class Budget:
                 p = model.provider
                 if pcap is not None and (self.usd_spent_by_provider.get(p, 0.0)
                                          + self.usd_reserved_by_provider.get(p, 0.0) + res) > pcap:
-                    raise BudgetExhausted(f"{p} monetary budget would be exceeded by in-flight reservation")
+                    raise BudgetExhausted(f"{p} monetary budget would be exceeded by in-flight reservation", provider=p)
                 self.usd_reserved_by_provider[p] = self.usd_reserved_by_provider.get(p, 0.0) + res
             self.requests_reserved += 1
             self.usd_reserved += res
             return res
 
-    async def commit(self, model: ModelConfig, reservation: float, usage: NormalizedUsage | None, attempts: int) -> float | None:
+    async def commit(self, model: ModelConfig, reservation: float, usage: NormalizedUsage | None, attempts: int,
+                     possibly_billed: bool = True) -> float | None:
         async with self._lock:
             self.requests_reserved -= 1
             self.usd_reserved -= reservation
@@ -84,7 +87,7 @@ class Budget:
             cost = None
             if model.prices is not None and usage is not None:
                 cost = estimate_cost(model.prices, usage)
-            if cost is None and reservation:
+            if cost is None and reservation and possibly_billed:
                 # Unknown usage: conservatively charge the reservation.
                 self.usd_uncertain += 1
                 cost = reservation
@@ -120,8 +123,8 @@ class BudgetGate(AttemptGate):
     async def before(self):
         return await self.budget.reserve(self.model, self.est)
 
-    async def after(self, token, usage, ok):
+    async def after(self, token, usage, ok, possibly_billed=True):
         self.calls += 1
-        c = await self.budget.commit(self.model, token, usage, 1)
+        c = await self.budget.commit(self.model, token, usage, 1, possibly_billed=ok or possibly_billed)
         if c:
             self.cost += c

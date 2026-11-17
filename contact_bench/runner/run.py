@@ -35,6 +35,11 @@ from .store import RunStore, atomic_write_json
 from .tasks import Task, generate_tasks, load_tasks, save_tasks
 
 
+# Fatal categories that affect every model of a provider (shared credentials
+# or billing); other fatal categories are scoped to the failing model.
+PROVIDER_WIDE_FATAL = {"auth", "quota_exhausted"}
+
+
 class RunHalted(RuntimeError):
     """Fatal infrastructure condition (auth, invalid model, exhausted quota...)."""
 
@@ -200,6 +205,16 @@ class Runner:
         self.models: dict[str, ModelConfig] = {m.id: m for m in cfg.models}
         self._adapters = adapters or {}
         self.halted: str | None = None
+        # Fatal provider errors (billing, auth, invalid model) pause only the
+        # games that need that provider; other games keep running.
+        # Per-provider budget-cap pauses (caps are configured per provider).
+        self.halted_providers: dict[str, str] = {}
+        # Auth/billing failures pause every model that shares the failing
+        # credential, keyed by "provider:credential_env".
+        self.halted_credentials: dict[str, str] = {}
+        # Model-specific configuration failures (invalid model id, unsupported
+        # parameter, bad request) pause only that model's games.
+        self.halted_models: dict[str, str] = {}
         self._fork_tasks: dict[str, list] = {}
         self.budget_stopped = False
 
@@ -287,7 +302,11 @@ class Runner:
         manifest = self.store.read_json("run.json")
         # Re-validate the snapshot so fields added by later code versions take
         # their (behaviour-preserving) defaults before comparison.
-        snap = BenchConfig.model_validate({**manifest["config"], "base_dir": self.cfg.base_dir}).model_dump(
+        from ..config import snapshot_with_legacy_defaults
+
+        has_rm = any(f.rematch_of for f in self.fixtures)
+        snap = BenchConfig.model_validate({**snapshot_with_legacy_defaults(manifest["config"], has_rm),
+                                           "base_dir": self.cfg.base_dir}).model_dump(
             mode="json", exclude={"base_dir"})
         current = self.cfg.model_dump(mode="json", exclude={"base_dir"})
         # Never silently replace a model, prompt, cap or provider setting mid-run.
@@ -349,12 +368,15 @@ class Runner:
     def new_game(self, g: GameSpec) -> Game:
         t = self.tasks[g.task_id]
         atk = self.models[g.attacker]
+        protocol = self.cfg.protocol
+        if g.initial_prefix_length is not None:
+            protocol = protocol.model_copy(update={"initial_prefix_length": g.initial_prefix_length})
         return Game(
             game_id=g.game_id,
             secret=t.secret,
             v_secret=self.v_secret,
             v_contact=self.v_contact,
-            protocol=self.cfg.protocol,
+            protocol=protocol,
             offense_condition=atk.offense_mode if atk.provider != "scripted" else "full",
             joint_live=self.cfg.forecasts.mode == "joint_live",
         )
@@ -403,7 +425,7 @@ class Runner:
                 rec = {**base, "status": "ok", "raw_output": fo.raw, "response": fo.response,
                        "cost_estimate": fo.cost_estimate}
             except BudgetExhausted as e:
-                self.budget_stopped = True
+                self._on_budget_exhausted(e, fork_id)
                 rec = {**base, "status": "unavailable", "error": "budget",
                        "requests_sent": getattr(e, "fork_requests_sent", 0),
                        "cost_estimate": getattr(e, "fork_cost", None)}
@@ -437,9 +459,15 @@ class Runner:
                 if rec.get("observation_sha256") != oh:
                     raise EngineInvariantError(f"replay divergence at {did}: observation hash mismatch")
                 return rec["raw_output"]
+            seat_model = g.defender if spec.seat == "defender" else g.attacker
             if self.replay_only or self.halted or self.budget_stopped:
                 return Unavailable("not_recorded")
-            seat_model = g.defender if spec.seat == "defender" else g.attacker
+            if self._credential_key(seat_model) in self.halted_credentials:
+                return Unavailable("credential_halted")
+            if self.models[seat_model].provider in self.halted_providers:
+                return Unavailable("provider_halted")
+            if seat_model in self.halted_models:
+                return Unavailable("model_halted")
             agent = agent_for(spec.seat)
             meta: dict | None = None
             try:
@@ -458,8 +486,7 @@ class Runner:
                         "cost_estimate": out.cost_estimate, "response": meta,
                     })
             except BudgetExhausted as e:
-                self.budget_stopped = True
-                self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": did})
+                self._on_budget_exhausted(e, did)
                 return Unavailable("budget")
             except InfrastructureError as e:
                 self.store.append_request({
@@ -469,7 +496,15 @@ class Runner:
                     "attempts": [asdict(a) for a in getattr(e, "attempts", [])],
                 })
                 if e.fatal:
-                    self.halted = f"{e.category}: {sanitize(str(e))}"
+                    reason = f"{e.category}: {sanitize(str(e))}"
+                    if e.category in PROVIDER_WIDE_FATAL:
+                        cred = self._credential_key(seat_model)
+                        self.halted_credentials.setdefault(cred, reason)
+                        self.store.append_event({"type": "credential_halted", "credential": cred,
+                                                 "provider": self.models[seat_model].provider, "reason": reason})
+                    else:
+                        self.halted_models.setdefault(seat_model, reason)
+                        self.store.append_event({"type": "model_halted", "model_id": seat_model, "reason": reason})
                 return Unavailable(e.category)
             except ContextOverflowError as e:
                 self.halted = str(e)
@@ -565,10 +600,17 @@ class Runner:
         results: list[dict] = []
 
         async def one(g: GameSpec):
-            if self.halted or self.budget_stopped:
+            def blocked() -> bool:
+                provs = {self.models[g.attacker].provider, self.models[g.defender].provider}
+                creds = {self._credential_key(g.attacker), self._credential_key(g.defender)}
+                return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
+                            or creds & set(self.halted_credentials)
+                            or {g.attacker, g.defender} & set(self.halted_models))
+
+            if blocked():
                 return
             async with sem:
-                if self.halted or self.budget_stopped:
+                if blocked():
                     return
                 rec = await self.play(g)
                 results.append(rec)
@@ -578,14 +620,90 @@ class Runner:
                           + (f" cost={rec['score']['cost']:.3f}" if rec.get("score") and rec["score"]["cost"] is not None else ""))
 
         await asyncio.gather(*(one(g) for g in todo))
+        if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
+            self.schedule_rematches()
+            finished = {r["game_id"] for r in self.store.game_rows()
+                        if r["status"] == "complete" and r["collection_status"] == "complete"}
+            pending_rm = [g for g in self.games if g.rematch_of and g.game_id not in finished]
+            # Shuffle deterministically (independent of outcomes) so a budget
+            # stop does not systematically favour earlier model pairs.
+            pending_rm.sort(key=lambda g: hashlib.sha256(
+                f"rematch-order|{self.cfg.tournament.order_seed}|{g.game_id}".encode()).hexdigest())
+            await asyncio.gather(*(one(g) for g in pending_rm))
         status = self.status()
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
+        status["halted_providers"] = dict(self.halted_providers)
+        status["halted_credentials"] = dict(self.halted_credentials)
+        status["halted_models"] = dict(self.halted_models)
+        # Fatal provider/model failures are failures of the command even though
+        # unaffected games kept running (budget pauses are not failures).
+        status["fatal_failures"] = sorted(
+            [f"credential:{c}" for c in self.halted_credentials]
+            + [f"model:{m}" for m in self.halted_models])
         status["budget_stopped"] = self.budget_stopped
         status["duplicate_decisions_ignored"] = len(self.store.duplicate_decisions)
         status["reference_scorer_stats"] = dict(self.scorer.stats)
         self.store.write_json("status.json", status)
         return status
+
+    DEFAULT_CREDENTIAL_ENV = {"openai": "OPENAI_API_KEY", "anthropic": "ANTHROPIC_API_KEY",
+                              "google": "GEMINI_API_KEY"}
+
+    def _credential_key(self, model_id: str) -> str:
+        m = self.models[model_id]
+        if m.provider in ("scripted", "fake"):
+            return f"{m.provider}:{m.id}"
+        return f"{m.provider}:{m.credential_env or self.DEFAULT_CREDENTIAL_ENV.get(m.provider, '')}"
+
+    def _on_budget_exhausted(self, e: BudgetExhausted, decision_id: str) -> None:
+        """A per-key cap pauses only that provider's games; a global cap stops scheduling."""
+        if e.provider:
+            self.halted_providers.setdefault(e.provider, f"budget: {e}")
+            self.store.append_event({"type": "provider_budget_stop", "provider": e.provider,
+                                     "reason": str(e), "decision_id": decision_id})
+        else:
+            self.budget_stopped = True
+            self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": decision_id})
+
+    def schedule_rematches(self) -> list[Fixture]:
+        """Append one rematch fixture per completed no-progress draw (idempotent).
+
+        A rematch starts from the same secret with rematch_extra_letters more
+        letters revealed.  Rematch fixtures never trigger further rematches.
+        The schedule file is extended append-only and logged as an event.
+        """
+        from .schedule import is_no_progress_capped, rematch_fixture
+
+        existing = {f.rematch_of for f in self.fixtures if f.rematch_of}
+        added: list[Fixture] = []
+        for f in list(self.fixtures):
+            if f.rematch_of or f.fixture_id in existing:
+                continue
+            ab, ba = self.store.read_game(f.game_ab), self.store.read_game(f.game_ba)
+            if not ab or not ba or ab.get("run_status") != "complete" or ba.get("run_status") != "complete":
+                continue
+            if not (is_no_progress_capped(ab["summary"]) and is_no_progress_capped(ba["summary"])):
+                continue
+            base = f.initial_prefix_length if f.initial_prefix_length is not None else self.cfg.protocol.initial_prefix_length
+            plen = base + self.cfg.tournament.rematch_extra_letters
+            if len(self.tasks[f.task_id].secret) <= plen:
+                continue
+            fx, games = rematch_fixture(f, plen)
+            taken = {g.game_id for g in self.games}
+            if any(g.game_id in taken for g in games):
+                raise EngineInvariantError(f"rematch game id collision for fixture {f.fixture_id}")
+            self.fixtures.append(fx)
+            self.games.extend(games)
+            added.append(fx)
+        if added:
+            self.store.write_json("schedule.json", {
+                "fixtures": [asdict(x) for x in self.fixtures],
+                "games": [asdict(x) for x in self.games],
+            })
+            self.store.append_event({"type": "rematches_scheduled",
+                                     "fixtures": [x.fixture_id for x in added]})
+        return added
 
     def status(self) -> dict:
         rows = {r["game_id"]: r for r in self.store.game_rows()}

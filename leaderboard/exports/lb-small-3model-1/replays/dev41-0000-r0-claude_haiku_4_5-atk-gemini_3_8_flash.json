@@ -1,0 +1,1500 @@
+{
+ "game_id": "dev41-0000-r0-claude_haiku_4_5-atk-gemini_3_8_flash",
+ "attacker": "claude_haiku_4_5",
+ "defender": "gemini_3_8_flash",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "artistic creation on canvas",
+   "blocklist": [
+    "artwork",
+    "oil",
+    "oils",
+    "painting",
+    "paintings",
+    "picture",
+    "portrait"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "paint"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "draw",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "rough preliminary design",
+   "blocklist": [
+    "blueprint",
+    "cartoon",
+    "croquis",
+    "doodle",
+    "draft",
+    "layout",
+    "mockup",
+    "outline",
+    "schema",
+    "scheme",
+    "sketch",
+    "study"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sculpt",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "printmaking technique using metal plate",
+   "blocklist": [
+    "aquatint",
+    "aquatints",
+    "drypoint",
+    "drypoints",
+    "engrave",
+    "engraving",
+    "engravings",
+    "etch",
+    "etching",
+    "etchings",
+    "intaglio",
+    "intaglios",
+    "lithograph",
+    "lithography",
+    "mezzotint",
+    "mezzotints"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "carve",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "shape in a container",
+   "blocklist": [
+    "cast",
+    "casting",
+    "casts",
+    "form",
+    "forming",
+    "forms",
+    "mold",
+    "molding",
+    "molds",
+    "mould",
+    "moulding",
+    "moulds",
+    "terrine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "flask"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "fired clay art form",
+   "blocklist": [
+    "ceramic",
+    "ceramics",
+    "china",
+    "cotta",
+    "earthenware",
+    "faience",
+    "majolica",
+    "porcelain",
+    "pottery",
+    "stoneware",
+    "terra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collage",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "statue",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "small pieces assembled into an image",
+   "blocklist": [
+    "jigsaw",
+    "jigsaws",
+    "marquetry",
+    "montage",
+    "montages",
+    "mosaic",
+    "mosaics",
+    "puzzle",
+    "puzzles",
+    "tessellation",
+    "tessera",
+    "tesserae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "fresco",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "textile",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "assemblage",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "batik",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "paint or draw on a surface",
+   "blocklist": [
+    "brush",
+    "brushes",
+    "chalk",
+    "chalks",
+    "coat",
+    "coats",
+    "daub",
+    "daubs",
+    "depict",
+    "depicts",
+    "gouache",
+    "gouaches",
+    "graffiti",
+    "illustrate",
+    "illustrates",
+    "mural",
+    "murals",
+    "prime",
+    "primes",
+    "render",
+    "renders",
+    "scribble",
+    "scribbles",
+    "stencil",
+    "stencils",
+    "trace",
+    "traces",
+    "varnish",
+    "varnishes",
+    "wash",
+    "washes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 31,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "medium"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "abacus",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "diorama",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "aardvark",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6828.656619347379,
+  "cost_numerator": 425234105,
+  "cost_denominator": 62272,
+  "cost_exact": false,
+  "cost_mcse": 4.071194007640951,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 423988665,
+   "denominator": 62272,
+   "value": 6808.656619347379,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:970,4:3892,5:8608,6:15207,7:23080,8:28402,9:24858,10:20297,11:15499,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.071194007640951,
+   "rollouts": 256,
+   "rank_total": 6783818640,
+   "rank_denominator": 996352,
+   "cache_key": "4cee5ca6d8a472f51d28563382fd536b"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "paint",
+    "clue": "artistic creation on canvas",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 2,
+    "action": "direct",
+    "word": "draw",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "sketch",
+    "clue": "rough preliminary design",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "direct",
+    "word": "sculpt",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "engraving",
+    "clue": "printmaking technique using metal plate",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "direct",
+    "word": "carve",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "mold",
+    "clue": "shape in a container",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "pottery",
+    "clue": "fired clay art form",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "direct",
+    "word": "collage",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "direct",
+    "word": "statue",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "mosaic",
+    "clue": "small pieces assembled into an image",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "direct",
+    "word": "fresco",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "direct",
+    "word": "textile",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 15,
+    "action": "direct",
+    "word": "assemblage",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "direct",
+    "word": "batik",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "medium",
+    "clue": "paint or draw on a surface",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 18,
+    "action": "direct",
+    "word": "abacus",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "direct",
+    "word": "diorama",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "direct",
+    "word": "aardvark",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "painting",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "sketch",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "etching",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "flask",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "pottery",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "puzzle",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "mural",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "artwork",
+     "oil",
+     "oils",
+     "painting",
+     "paintings",
+     "picture",
+     "portrait"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "blueprint",
+     "cartoon",
+     "croquis",
+     "doodle",
+     "draft",
+     "layout",
+     "mockup",
+     "outline",
+     "schema",
+     "scheme",
+     "sketch",
+     "study"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aquatint",
+     "aquatints",
+     "drypoint",
+     "drypoints",
+     "engrave",
+     "engraving",
+     "engravings",
+     "etch",
+     "etching",
+     "etchings",
+     "intaglio",
+     "intaglios",
+     "lithograph",
+     "lithography",
+     "mezzotint",
+     "mezzotints"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cast",
+     "casting",
+     "casts",
+     "form",
+     "forming",
+     "forms",
+     "mold",
+     "molding",
+     "molds",
+     "mould",
+     "moulding",
+     "moulds",
+     "terrine"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ceramic",
+     "ceramics",
+     "china",
+     "cotta",
+     "earthenware",
+     "faience",
+     "majolica",
+     "porcelain",
+     "pottery",
+     "stoneware",
+     "terra"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "jigsaw",
+     "jigsaws",
+     "marquetry",
+     "montage",
+     "montages",
+     "mosaic",
+     "mosaics",
+     "puzzle",
+     "puzzles",
+     "tessellation",
+     "tessera",
+     "tesserae"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "brush",
+     "brushes",
+     "chalk",
+     "chalks",
+     "coat",
+     "coats",
+     "daub",
+     "daubs",
+     "depict",
+     "depicts",
+     "gouache",
+     "gouaches",
+     "graffiti",
+     "illustrate",
+     "illustrates",
+     "mural",
+     "murals",
+     "prime",
+     "primes",
+     "render",
+     "renders",
+     "scribble",
+     "scribbles",
+     "stencil",
+     "stencils",
+     "trace",
+     "traces",
+     "varnish",
+     "varnishes",
+     "wash",
+     "washes"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "paint",
+   "w2": "painting",
+   "clue": "artistic creation on canvas",
+   "mentions": [
+    "artistic",
+    "canvas",
+    "creation"
+   ],
+   "blocklist": [
+    "artwork",
+    "oil",
+    "oils",
+    "painting",
+    "paintings",
+    "picture",
+    "portrait"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": true,
+   "choice_actor": "guesser1",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "paint"
+    }
+   ],
+   "emissions": [
+    "artistic",
+    "artwork",
+    "canvas",
+    "creation",
+    "oil",
+    "oils",
+    "paint",
+    "painting",
+    "paintings",
+    "picture",
+    "portrait"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172597,
+   "block_size": 7,
+   "block_fresh_secret_candidates": 7,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "draw"
+    }
+   ],
+   "emissions": [
+    "draw"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172597,
+   "secret_candidates_after": 172596,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sketch",
+   "w2": "sketch",
+   "clue": "rough preliminary design",
+   "mentions": [
+    "design",
+    "preliminary",
+    "rough"
+   ],
+   "blocklist": [
+    "blueprint",
+    "cartoon",
+    "croquis",
+    "doodle",
+    "draft",
+    "layout",
+    "mockup",
+    "outline",
+    "schema",
+    "scheme",
+    "sketch",
+    "study"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blueprint",
+    "cartoon",
+    "croquis",
+    "design",
+    "doodle",
+    "draft",
+    "layout",
+    "mockup",
+    "outline",
+    "preliminary",
+    "rough",
+    "schema",
+    "scheme",
+    "sketch",
+    "study"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172596,
+   "secret_candidates_after": 172581,
+   "block_size": 12,
+   "block_fresh_secret_candidates": 12,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "sculpt"
+    }
+   ],
+   "emissions": [
+    "sculpt"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172581,
+   "secret_candidates_after": 172580,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "engraving",
+   "w2": "etching",
+   "clue": "printmaking technique using metal plate",
+   "mentions": [
+    "metal",
+    "plate",
+    "printmaking",
+    "technique",
+    "using"
+   ],
+   "blocklist": [
+    "aquatint",
+    "aquatints",
+    "drypoint",
+    "drypoints",
+    "engrave",
+    "engraving",
+    "engravings",
+    "etch",
+    "etching",
+    "etchings",
+    "intaglio",
+    "intaglios",
+    "lithograph",
+    "lithography",
+    "mezzotint",
+    "mezzotints"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aquatint",
+    "aquatints",
+    "drypoint",
+    "drypoints",
+    "engrave",
+    "engraving",
+    "engravings",
+    "etch",
+    "etching",
+    "etchings",
+    "intaglio",
+    "intaglios",
+    "lithograph",
+    "lithography",
+    "metal",
+    "mezzotint",
+    "mezzotints",
+    "plate",
+    "printmaking",
+    "technique",
+    "using"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172580,
+   "secret_candidates_after": 172559,
+   "block_size": 16,
+   "block_fresh_secret_candidates": 16,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "carve"
+    }
+   ],
+   "emissions": [
+    "carve"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172559,
+   "secret_candidates_after": 172558,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "mold",
+   "w2": "flask",
+   "clue": "shape in a container",
+   "mentions": [
+    "container",
+    "shape"
+   ],
+   "blocklist": [
+    "cast",
+    "casting",
+    "casts",
+    "form",
+    "forming",
+    "forms",
+    "mold",
+    "molding",
+    "molds",
+    "mould",
+    "moulding",
+    "moulds",
+    "terrine"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": false,
+   "choice_actor": "guesser2",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser2",
+     "word": "flask"
+    }
+   ],
+   "emissions": [
+    "cast",
+    "casting",
+    "casts",
+    "container",
+    "flask",
+    "form",
+    "forming",
+    "forms",
+    "mold",
+    "molding",
+    "molds",
+    "mould",
+    "moulding",
+    "moulds",
+    "shape",
+    "terrine"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172558,
+   "secret_candidates_after": 172542,
+   "block_size": 13,
+   "block_fresh_secret_candidates": 13,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "pottery",
+   "w2": "pottery",
+   "clue": "fired clay art form",
+   "mentions": [
+    "art",
+    "clay",
+    "fired",
+    "form"
+   ],
+   "blocklist": [
+    "ceramic",
+    "ceramics",
+    "china",
+    "cotta",
+    "earthenware",
+    "faience",
+    "majolica",
+    "porcelain",
+    "pottery",
+    "stoneware",
+    "terra"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "art",
+    "ceramic",
+    "ceramics",
+    "china",
+    "clay",
+    "cotta",
+    "earthenware",
+    "faience",
+    "fired",
+    "form",
+    "majolica",
+    "porcelain",
+    "pottery",
+    "stoneware",
+    "terra"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172542,
+   "secret_candidates_after": 172528,
+   "block_size": 11,
+   "block_fresh_secret_candidates": 11,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "collage"
+    }
+   ],
+   "emissions": [
+    "collage"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172528,
+   "secret_candidates_after": 172527,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "statue"
+    }
+   ],
+   "emissions": [
+    "statue"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172527,
+   "secret_candidates_after": 172526,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "mosaic",
+   "w2": "puzzle",
+   "clue": "small pieces assembled into an image",
+   "mentions": [
+    "assembled",
+    "image",
+    "into",
+    "pieces",
+    "small"
+   ],
+   "blocklist": [
+    "jigsaw",
+    "jigsaws",
+    "marquetry",
+    "montage",
+    "montages",
+    "mosaic",
+    "mosaics",
+    "puzzle",
+    "puzzles",
+    "tessellation",
+    "tessera",
+    "tesserae"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "assembled",
+    "image",
+    "into",
+    "jigsaw",
+    "jigsaws",
+    "marquetry",
+    "montage",
+    "montages",
+    "mosaic",
+    "mosaics",
+    "pieces",
+    "puzzle",
+    "puzzles",
+    "small",
+    "tessellation",
+    "tessera",
+    "tesserae"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172526,
+   "secret_candidates_after": 172509,
+   "block_size": 12,
+   "block_fresh_secret_candidates": 12,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "fresco"
+    }
+   ],
+   "emissions": [
+    "fresco"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172509,
+   "secret_candidates_after": 172508,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "textile"
+    }
+   ],
+   "emissions": [
+    "textile"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172508,
+   "secret_candidates_after": 172507,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172507,
+   "secret_candidates_after": 172507,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "assemblage"
+    }
+   ],
+   "emissions": [
+    "assemblage"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172507,
+   "secret_candidates_after": 172506,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "batik"
+    }
+   ],
+   "emissions": [
+    "batik"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172506,
+   "secret_candidates_after": 172505,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "medium",
+   "w2": "mural",
+   "clue": "paint or draw on a surface",
+   "mentions": [
+    "draw",
+    "paint",
+    "surface"
+   ],
+   "blocklist": [
+    "brush",
+    "brushes",
+    "chalk",
+    "chalks",
+    "coat",
+    "coats",
+    "daub",
+    "daubs",
+    "depict",
+    "depicts",
+    "gouache",
+    "gouaches",
+    "graffiti",
+    "illustrate",
+    "illustrates",
+    "mural",
+    "murals",
+    "prime",
+    "primes",
+    "render",
+    "renders",
+    "scribble",
+    "scribbles",
+    "stencil",
+    "stencils",
+    "trace",
+    "traces",
+    "varnish",
+    "varnishes",
+    "wash",
+    "washes"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": true,
+   "choice_actor": "guesser1",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "medium"
+    }
+   ],
+   "emissions": [
+    "brush",
+    "brushes",
+    "chalk",
+    "chalks",
+    "coat",
+    "coats",
+    "daub",
+    "daubs",
+    "depict",
+    "depicts",
+    "draw",
+    "gouache",
+    "gouaches",
+    "graffiti",
+    "illustrate",
+    "illustrates",
+    "medium",
+    "mural",
+    "murals",
+    "paint",
+    "prime",
+    "primes",
+    "render",
+    "renders",
+    "scribble",
+    "scribbles",
+    "stencil",
+    "stencils",
+    "surface",
+    "trace",
+    "traces",
+    "varnish",
+    "varnishes",
+    "wash",
+    "washes"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172505,
+   "secret_candidates_after": 172472,
+   "block_size": 31,
+   "block_fresh_secret_candidates": 31,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "abacus"
+    }
+   ],
+   "emissions": [
+    "abacus"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172472,
+   "secret_candidates_after": 172471,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "diorama"
+    }
+   ],
+   "emissions": [
+    "diorama"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172471,
+   "secret_candidates_after": 172470,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    }
+   ],
+   "emissions": [
+    "aardvark"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172470,
+   "secret_candidates_after": 172469,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
+}

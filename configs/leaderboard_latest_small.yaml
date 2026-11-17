@@ -1,0 +1,71 @@
+# Round robin of the smallest/cheapest tier of each provider's latest family:
+# Claude Haiku 5.5, GPT-6 Luna, Gemini 4 Hydrogen. Dictionary-assisted, empty initial prefix.
+# max_output_tokens 8000: range-encoded blocklists keep defender output short, and a smaller
+# allowance keeps worst-case budget reservations close to real spend.
+name: leaderboard-latest-small
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 12
+  turn_limit: 20
+  clue_max_characters: 100
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 4
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+- id: gpt_6_luna
+  provider: openai
+  api_family: responses
+  model: gpt-6-luna
+  parameters: {}
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1050000
+  prices:
+    as_of: '2026-11-17'
+    source: third-party trackers; model ID verified via OpenAI models.list 2026-11-17
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+- id: gemini_4_hydrogen
+  provider: google
+  api_family: interactions
+  model: gemini-4-hydrogen
+  parameters:
+    thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: Google announcement via third-party trackers; model ID verified via models.list
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

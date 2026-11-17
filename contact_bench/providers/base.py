@@ -24,6 +24,18 @@ class AdapterConfigError(ValueError):
     """Preflight failure: unsupported parameter, missing credential, bad model settings."""
 
 
+# Categories where the provider rejected the request before generating any
+# output.  Every other failure (transport, timeout, server, unknown) may have
+# been billed and is charged conservatively against monetary caps.
+KNOWN_UNBILLED_CATEGORIES = frozenset(
+    {"auth", "quota_exhausted", "invalid_model", "bad_request", "unsupported_parameter", "rate_limit"}
+)
+
+
+def possibly_billed(e: "InfrastructureError") -> bool:
+    return bool(e.possibly_billed or e.category not in KNOWN_UNBILLED_CATEGORIES)
+
+
 class InfrastructureError(Exception):
     """Transport/provider failure (not model behavior).
 
@@ -148,6 +160,11 @@ class DecisionRequest:
     tools: list[ToolSpec] = field(default_factory=list)
     tool_executor: ToolExecutor | None = None
     max_tool_calls: int = 0
+    # Optional structured form of user_prompt for prefix caching:
+    # "\n\n".join(user_prompt_parts) == user_prompt, and the first
+    # cache_prefix_parts parts are an append-only, cacheable prefix.
+    user_prompt_parts: list[str] = field(default_factory=list)
+    cache_prefix_parts: int = 0
     # Keep the provider-native conversation (ending with the final assistant
     # turn) on the response so it can be forked for private forecast queries.
     keep_conversation: bool = False
@@ -163,7 +180,8 @@ class AttemptGate:
     async def before(self) -> Any:  # pragma: no cover - interface
         return None
 
-    async def after(self, token: Any, usage: "NormalizedUsage | None", ok: bool) -> None:  # pragma: no cover
+    async def after(self, token: Any, usage: "NormalizedUsage | None", ok: bool,
+                    possibly_billed: bool = True) -> None:  # pragma: no cover
         return None
 
 
@@ -220,6 +238,9 @@ class RetryPolicy:
     base_seconds: float = 1.0
     max_seconds: float = 60.0
     deadline_seconds: float = 300.0
+    # Rate limits (HTTP 429) are expected under concurrency and clear with
+    # time, so they get a larger attempt budget within the same deadline.
+    rate_limit_attempts: int = 8
 
 
 class CredentialSource:
@@ -359,21 +380,28 @@ class ProviderAdapter(ABC):
         attempts: list[TransportAttempt] = []
         start = self._clock()
         last: InfrastructureError | None = None
-        for i in range(1, self.retry.max_attempts + 1):
+        limit = self.retry.max_attempts
+        i = 0
+        while i < max(limit, self.retry.rate_limit_attempts):
+            i += 1
             token = await gate.before() if gate is not None else None
             t0 = self._clock()
             try:
                 out = await fn()
             except InfrastructureError as e:
                 if gate is not None:
-                    await gate.after(token, None, False)
+                    # Only failures that may have generated output (e.g. a
+                    # timeout after sending) can have been billed.
+                    await gate.after(token, None, False, possibly_billed=possibly_billed(e))
                 attempts.append(
                     TransportAttempt(
                         i, t0, self._clock() - t0, "error", e.category, str(e), e.retry_after, e.possibly_billed
                     )
                 )
                 last = e
-                if e.fatal or not e.retryable or i == self.retry.max_attempts:
+                if e.category == "rate_limit":
+                    limit = max(limit, self.retry.rate_limit_attempts)
+                if e.fatal or not e.retryable or i >= limit:
                     break
                 delay = e.retry_after
                 if delay is None:

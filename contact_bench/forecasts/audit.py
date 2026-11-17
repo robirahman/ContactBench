@@ -19,7 +19,7 @@ from ..providers.base import DecisionRequest
 from ..engine.actions import forecast_schema
 from .scoring import NO_MATCH, ForecastError, brier, log_score, match_label, parse_sparse
 
-AUDIT_PROMPT_VERSION = "forecast-audit-v1"
+AUDIT_PROMPT_VERSION = "forecast-audit-v2"  # v2: closed-book and lookup-tool conditions
 
 AUDIT_INSTRUCTIONS = {
     "guesser2": (
@@ -33,6 +33,38 @@ AUDIT_INSTRUCTIONS = {
         "word among the contact-eligible words. Nothing you report is said in the game."
     ),
 }
+SUPPORT_NOTES = {
+    "full_candidate_lists": "The support is the contact_candidates list in the observation.",
+    "closed_book": (
+        "The support is every contact-eligible dictionary word: it starts with the prefix, is longer than it, and is\n"
+        "not in used_words or inside used_ranges. You do not have the word list: list only words you are confident\n"
+        "are in the named dictionary. A listed word outside the support makes the whole report invalid."
+    ),
+    "lookup_tools": (
+        "The support is every contact-eligible dictionary word: it starts with the prefix, is longer than it, and is\n"
+        "not in used_words or inside used_ranges. You may use the lookup tools (is_legal_word, list_words,\n"
+        "count_words) before answering. A listed word outside the support makes the whole report invalid."
+    ),
+}
+
+
+def support_for(obs: dict, dictionary=None) -> list[str]:
+    """Forecast support: the pre-turn contact-eligible words.
+
+    Full-list observations carry it directly; otherwise it is rebuilt exactly
+    from the pre-turn prefix, used words and used ranges over the frozen
+    dictionary (referee-side; never shown to the forecaster as a list)."""
+    if "contact_candidates" in obs:
+        return list(obs["contact_candidates"])
+    if dictionary is None:
+        raise ValueError("this condition needs the run's dictionary to rebuild the forecast support")
+    prefix = obs["prefix"]
+    used = set(obs.get("used_words", []))
+    ranges = obs.get("used_ranges") or []
+    return [w for w in dictionary.all_words(prefix)
+            if len(w) > len(prefix) and w not in used and not any(a <= w <= b for a, b in ranges)]
+
+
 FORMAT = (
     'Reply with exactly {"entries": [{"word": w, "probability": p}, ... up to {K} entries], "other_mass": m}.\n'
     "Probabilities sum to 1; unlisted eligible words share other_mass uniformly."
@@ -88,6 +120,7 @@ async def build_item_bank(runner, *, rate: float = 1.0, seed: int = 0, max_items
                 "answer_intended_word": t["w1"],
                 "answer_commitment_match": match_label(t["w1"], (t.get("guesser2") or {}).get("canonical")),
                 "secret": game.secret,
+                "dictionary_access": runner.cfg.protocol.dictionary_access,
             })
     if max_items is not None:
         items = sorted(items, key=lambda it: _h(seed, "order", it["item_id"]))[:max_items]
@@ -95,30 +128,40 @@ async def build_item_bank(runner, *, rate: float = 1.0, seed: int = 0, max_items
     return items
 
 
-def audit_request(item: dict, seat: str, *, max_entries: int = 20, item_bank_id: str = "") -> DecisionRequest:
+def audit_request(item: dict, seat: str, *, max_entries: int = 20, item_bank_id: str = "",
+                  dictionary=None, max_tool_calls: int = 8) -> DecisionRequest:
     obs = item["receiver_observation"] if seat == "guesser2" else item["defender_observation"]
+    mode = obs.get("dictionary_access", "full_candidate_lists")
     user = "\n\n".join([
         AUDIT_INSTRUCTIONS[seat],
         FORMAT.replace("{K}", str(max_entries)),
+        SUPPORT_NOTES[mode],
         "OBSERVATION (JSON):",
         json.dumps(obs, sort_keys=True, separators=(",", ":")),
     ])
+    tools = mode == "lookup_tools"
+    if tools and dictionary is None:
+        raise ValueError("lookup-tool audits need the run's dictionary service")
     return DecisionRequest(
         decision_id=f"audit/{item_bank_id}/{item['item_id']}/{seat}",
         seat=seat,
         phase="forecast",
         system_prompt=system_prompt(clue_max_characters=obs["clue_max_characters"], turn_limit=obs["turn_limit"],
-                                    dictionary_access=obs.get("dictionary_access", "full_candidate_lists")),
+                                    dictionary_access=mode, max_tool_calls=max_tool_calls,
+                                    block_ranges="used_ranges" in obs, empty_prefix=False),
         user_prompt=user,
         schema_name="contact_forecast",
         json_schema=forecast_schema(),
+        tools=dictionary.tool_specs() if tools else [],
+        tool_executor=dictionary.execute if tools else None,
+        max_tool_calls=max_tool_calls if tools else 0,
     )
 
 
 def score_report(item: dict, seat: str, raw_text: str | None, *, max_entries: int, tolerance: float,
-                 invalid_score: float = -1.0) -> dict:
+                 invalid_score: float = -1.0, dictionary=None) -> dict:
     obs = item["receiver_observation"] if seat == "guesser2" else item["defender_observation"]
-    support = obs["contact_candidates"]
+    support = support_for(obs, dictionary)
     truth = item["answer_intended_word"]
     out = {"item_id": item["item_id"], "seat": seat, "support_size": len(support)}
     try:
@@ -136,7 +179,7 @@ def score_report(item: dict, seat: str, raw_text: str | None, *, max_entries: in
 
 async def run_shadow_audit(items: list[dict], adapter, *, seats=("guesser2", "defender"), max_entries: int = 20,
                            tolerance: float = 1e-6, invalid_score: float = -1.0, item_bank_id: str = "",
-                           gate=None) -> dict:
+                           gate=None, dictionary=None, max_tool_calls: int = 8) -> dict:
     """``gate`` (an AttemptGate, e.g. a BudgetGate) is applied to every
     transport attempt, so request/spend caps also bound retries."""
     from ..runner.budget import BudgetExhausted
@@ -148,7 +191,8 @@ async def run_shadow_audit(items: list[dict], adapter, *, seats=("guesser2", "de
             if stopped:
                 results.append({"item_id": it["item_id"], "seat": seat, "unavailable": True, "error": "budget"})
                 continue
-            req = audit_request(it, seat, max_entries=max_entries, item_bank_id=item_bank_id)
+            req = audit_request(it, seat, max_entries=max_entries, item_bank_id=item_bank_id,
+                                dictionary=dictionary, max_tool_calls=max_tool_calls)
             try:
                 resp = await adapter.decide(req, gate=gate)
                 raw = resp.output_text
@@ -159,8 +203,10 @@ async def run_shadow_audit(items: list[dict], adapter, *, seats=("guesser2", "de
             except Exception as e:  # infrastructure-unavailable: not model-invalid
                 results.append({"item_id": it["item_id"], "seat": seat, "unavailable": True, "error": type(e).__name__})
                 continue
-            results.append(score_report(it, seat, raw, max_entries=max_entries, tolerance=tolerance,
-                                        invalid_score=invalid_score))
+            r = score_report(it, seat, raw, max_entries=max_entries, tolerance=tolerance,
+                             invalid_score=invalid_score, dictionary=dictionary)
+            r["lookup_calls"] = len(getattr(resp, "tool_trace", []) or [])
+            results.append(r)
     summary = {}
     for seat in seats:
         rs = [r for r in results if r["seat"] == seat and not r.get("unavailable")]
@@ -176,4 +222,6 @@ async def run_shadow_audit(items: list[dict], adapter, *, seats=("guesser2", "de
             "exact_match_rate_valid": sum(r["exact_match_top"] for r in valid) / len(valid) if valid else None,
             "zero_probability_failures": sum(1 for r in valid if r["zero_probability"]),
         }
-    return {"audit_prompt_version": AUDIT_PROMPT_VERSION, "items": len(items), "summary": summary, "results": results}
+    modes = sorted({(it.get("receiver_observation") or {}).get("dictionary_access", "full_candidate_lists") for it in items})
+    return {"audit_prompt_version": AUDIT_PROMPT_VERSION, "dictionary_access": modes, "items": len(items),
+            "summary": summary, "results": results}

@@ -33,6 +33,18 @@ def _bfrac(d: dict | None) -> Fraction | None:
     return Fraction(b["numerator"], b["denominator"])
 
 
+def _median(xs: list[float]) -> float | None:
+    if not xs:
+        return None
+    s = sorted(xs)
+    n = len(s)
+    return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+
+
+def _geomean(xs: list[float]) -> float | None:
+    return math.exp(sum(math.log(x) for x in xs) / len(xs)) if xs and all(x > 0 for x in xs) else None
+
+
 def _f(x: Fraction | None) -> float | None:
     return None if x is None else float(x)
 
@@ -84,7 +96,12 @@ def load_rows(records: list[dict]) -> list[GameRow]:
     return [GameRow(r) for r in records]
 
 
-def fixture_results(rows: list[GameRow], fixtures: list[dict]) -> list[dict]:
+def _no_progress(r: "GameRow") -> bool:
+    s = r.summary
+    return s["outcome_status"] == "capped" and s["final_prefix"] == s["initial_prefix"]
+
+
+def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_draws: bool = True) -> list[dict]:
     by_id = {r.game_id: r for r in rows}
     out = []
     for f in fixtures:
@@ -99,9 +116,14 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict]) -> list[dict]:
             "complete": complete,
             "cost_ab": _fj(ab.cost) if ab else None,
             "cost_ba": _fj(ba.cost) if ba else None,
+            "rematch_of": f.get("rematch_of", ""),
+            "initial_prefix_length": f.get("initial_prefix_length"),
         }
         if complete:
-            item["points_a"] = match_points(ab.cost, ba.cost)
+            item["no_progress_draw"] = bool(no_progress_draws and _no_progress(ab) and _no_progress(ba))
+            # Both legs capped without any letter: the fallback-cost difference
+            # carries no signal, so the fixture is a draw for the rating.
+            item["points_a"] = 0.5 if item["no_progress_draw"] else match_points(ab.cost, ba.cost)
             item["points_b"] = 1.0 - item["points_a"]
             # Numerical uncertainty of the cost difference (estimated fallbacks).
             m1 = ab.cost_mcse or 0.0
@@ -156,8 +178,16 @@ def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict
             if per_opp
             else None
         )
+        off_costs = sorted(float(r.cost) for r in off)
+        de_costs = sorted(float(r.cost) for r in de)
         stats[m] = {
             "offense_games": len(off),
+            # Robust summaries: an unsolved game at a large-dictionary state is
+            # charged thousands of fallback turns, which dominates means.
+            "offense_median_effective_cost": _median(off_costs),
+            "offense_geometric_mean_cost": _geomean(off_costs),
+            "defense_median_cost_imposed": _median(de_costs),
+            "defense_geometric_mean_cost_imposed": _geomean(de_costs),
             "offense_aggregate_speedup": _fj(sb_o / sc_o) if sc_o else None,
             "offense_mean_effective_cost": _fj(sc_o / len(off)) if off else None,
             "offense_mean_baseline": _fj(sb_o / len(off)) if off else None,
@@ -400,6 +430,10 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
             dc = st[m]["defensive_cost_ratio"]
             if dc:
                 samples[m]["defensive_cost_ratio"].append(dc["value"])
+            for k in ("offense_median_effective_cost", "offense_geometric_mean_cost",
+                      "defense_median_cost_imposed"):
+                if st[m][k] is not None:
+                    samples[m][k].append(st[m][k])
     ci = {
         m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975), "n": len(v)} for k, v in d.items()}
         for m, d in samples.items()
@@ -421,7 +455,8 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     sched = json.loads((run_dir / "schedule.json").read_text())
     models = [m["id"] for m in manifest["config"]["models"]]
     rows = load_rows(records)
-    fx = fixture_results(rows, sched["fixtures"])
+    draw_rule = manifest["config"].get("tournament", {}).get("no_progress_draws", True)
+    fx = fixture_results(rows, sched["fixtures"], no_progress_draws=draw_rule)
     complete = [f for f in fx if f["complete"]]
     fit = fit_ratings(models, [(f["model_a"], f["model_b"], f["points_a"]) for f in complete],
                       penalty_scale=penalty_scale, elo_center=elo_center)
@@ -460,6 +495,9 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         "recorded_games": len(rows),
         "scored_games": sum(1 for r in rows if r.scored),
         "planned_fixtures": len(sched["fixtures"]),
+        "rematch_fixtures": sum(1 for f in sched["fixtures"] if f.get("rematch_of")),
+        "no_progress_draw_rule": draw_rule,
+        "no_progress_draws": sum(1 for f in fx if f.get("no_progress_draw")),
         "complete_fixtures": len(complete),
         "balanced_complete": len(complete) == len(sched["fixtures"]) and len(complete) > 0,
         "game_status_counts": dict(status_counts),
@@ -533,7 +571,8 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
         w = csv.writer(f)
         w.writerow(["model", "elo", "elo_lo", "elo_hi", "match_point_share", "fixtures",
                     "offense_speedup", "mean_paired_cost_advantage", "defensive_cost_ratio",
-                    "deadline_hold_rate", "offense_mean_cost"])
+                    "deadline_hold_rate", "offense_mean_cost", "offense_median_cost",
+                    "offense_geometric_mean_cost", "defense_median_cost_imposed"])
         for m in sorted(models, key=lambda m: -result["rating"]["elo"][m]):
             s = result["model_stats"][m]
             ci = boot.get(m, {}).get("elo", {})
@@ -545,6 +584,8 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
                 _r((s["defensive_cost_ratio"] or {}).get("value")),
                 _r(s["defense_deadline_hold_rate_of_defense_games"]),
                 _r((s["offense_mean_effective_cost"] or {}).get("value")),
+                _r(s["offense_median_effective_cost"]), _r(s["offense_geometric_mean_cost"]),
+                _r(s["defense_median_cost_imposed"]),
             ])
     with (out / "pairwise.csv").open("w", newline="") as f:
         w = csv.writer(f)
@@ -592,9 +633,11 @@ def render_report(res: dict) -> str:
     L.append(f"Games: planned {res['planned_games']}, recorded {res['recorded_games']}, scored {res['scored_games']}. "
              f"Fixtures: planned {res['planned_fixtures']}, complete {res['complete_fixtures']}"
              f"{' (balanced and complete)' if res['balanced_complete'] else ' (PROVISIONAL: incomplete)'}.\n")
+    L.append(f"No-progress draws (both legs capped without a letter; scored ½–½): {res.get('no_progress_draws', 0)}; "
+             f"rematch fixtures (same secret, extra letter revealed): {res.get('rematch_fixtures', 0)}.\n")
     L.append("## Paired competitive rating (batch Elo-style rating with half-point draws)\n")
-    L.append("| Model | Elo | 95% CI | Match-point share (per fixture) | Offense speedup (ΣB/ΣC) | Mean paired cost advantage | Defensive cost ratio (ΣC/ΣB) | Deadline hold rate (per defended game) |")
-    L.append("|---|---:|---|---:|---:|---:|---:|---:|")
+    L.append("| Model | Elo | 95% CI | Match-point share (per fixture) | Offense speedup (ΣB/ΣC) | Median offense cost (turns) | Median cost imposed as defender | Mean paired cost advantage | Defensive cost ratio (ΣC/ΣB) | Deadline hold rate (per defended game) |")
+    L.append("|---|---:|---|---:|---:|---:|---:|---:|---:|---:|")
     boot = (res.get("bootstrap") or {}).get("intervals_95", {})
     for m in sorted(res["models"], key=lambda m: -res["rating"]["elo"][m]):
         s = res["model_stats"][m]
@@ -603,6 +646,7 @@ def render_report(res: dict) -> str:
         L.append(
             f"| {m} | {res['rating']['elo'][m]:.0f} | {cis} | {_fmt(s['match_point_share'])} | "
             f"{_fmt((s['offense_aggregate_speedup'] or {}).get('value'))} | "
+            f"{_fmt(s['offense_median_effective_cost'])} | {_fmt(s['defense_median_cost_imposed'])} | "
             f"{_fmt((s['mean_paired_cost_advantage'] or {}).get('value'))} | "
             f"{_fmt((s['defensive_cost_ratio'] or {}).get('value'))} | "
             f"{_fmt(s['defense_deadline_hold_rate_of_defense_games'])} |"

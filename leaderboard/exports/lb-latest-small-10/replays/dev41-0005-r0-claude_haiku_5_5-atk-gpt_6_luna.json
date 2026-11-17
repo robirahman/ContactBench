@@ -1,0 +1,2761 @@
+{
+ "game_id": "dev41-0005-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend that barks and wags its tail",
+   "blocklist": [
+    "canine",
+    "dog",
+    "fido",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Aquatic animal that swims with fins and breathes through gills",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fish"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fish"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Frozen water used to chill a drink",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Preposition showing movement toward the inside of something",
+   "blocklist": [
+    "into"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Snow dwelling built from blocks of packed ice by Inuit peoples",
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Dark liquid used in pens and printers to make marks on paper",
+   "blocklist": [
+    "ink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A thought or plan formed in the mind",
+   "blocklist": [
+    "idea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Metal appliance used to press wrinkled clothes flat",
+   "blocklist": [
+    "iron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A single object or entry in a list",
+   "blocklist": [
+    "item"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Unit of length equal to one twelfth of a foot",
+   "blocklist": [
+    "inch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A picture or visual likeness of a person or thing",
+   "blocklist": [
+    "icon",
+    "illustration",
+    "image"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Alphabetical listing of terms with page numbers at the back of a book",
+   "blocklist": [
+    "index"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Climbing evergreen plant with glossy leaves that covers old brick walls",
+   "blocklist": [
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Colored part of the eye that surrounds the pupil",
+   "blocklist": [
+    "iris"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Small lodging place offering food and a bed to travelers on a road",
+   "blocklist": [
+    "inn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Irritating skin sensation that makes you want to scratch",
+   "blocklist": [
+    "irritation",
+    "itch",
+    "itchiness",
+    "itching",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Small body of land surrounded by water",
+   "blocklist": [
+    "island"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Poetic word for a small land surrounded by sea",
+   "blocklist": [
+    "isle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Greek letter used to mean a tiny amount or jot",
+   "blocklist": [
+    "iota"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Not feeling well; sick with a sickness",
+   "blocklist": [
+    "ill",
+    "illness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Charged atom or particle formed by gaining or losing electrons",
+   "blocklist": [
+    "ion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Doing nothing or not currently working",
+   "blocklist": [
+    "idle",
+    "idling",
+    "inactive",
+    "indolent",
+    "ineffective",
+    "inert",
+    "inoperative",
+    "insouciant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Perfect, the best possible example of something",
+   "blocklist": [
+    "ideal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Six-legged creature with antennae, often a buzzing bug",
+   "blocklist": [
+    "insect",
+    "insectile",
+    "insectivore",
+    "insectivorous",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Data entered into a computer for processing",
+   "blocklist": [
+    "input"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Try: icy icing ignore imp inky inlet ivory issue inner invite itself ingot inane irate iodine ire",
+   "blocklist": [
+    "induce",
+    "induct",
+    "induction",
+    "indurate",
+    "indurated",
+    "indurating",
+    "induration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inane"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inlay"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 344.91211167550057,
+  "cost_numerator": 37482289,
+  "cost_denominator": 108672,
+  "cost_exact": false,
+  "cost_mcse": 0.3728927280209099,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 34222129,
+   "denominator": 108672,
+   "value": 314.91211167550057,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:9,4:46,5:102,6:275,7:501,8:729,9:849,10:935,11:856,12:766,13:605,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.3728927280209099,
+   "rollouts": 256,
+   "rank_total": 68444258,
+   "rank_denominator": 217344,
+   "cache_key": "cf9423fe373bbb31c63fd23728aa00da"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "A common household pet that meows",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "dog",
+    "clue": "Man's best friend that barks and wags its tail",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "fish",
+    "clue": "Aquatic animal that swims with fins and breathes through gills",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "ice",
+    "clue": "Frozen water used to chill a drink",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "into",
+    "clue": "Preposition showing movement toward the inside of something",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "igloo",
+    "clue": "Snow dwelling built from blocks of packed ice by Inuit peoples",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "ink",
+    "clue": "Dark liquid used in pens and printers to make marks on paper",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "idea",
+    "clue": "A thought or plan formed in the mind",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "iron",
+    "clue": "Metal appliance used to press wrinkled clothes flat",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "item",
+    "clue": "A single object or entry in a list",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "inch",
+    "clue": "Unit of length equal to one twelfth of a foot",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "image",
+    "clue": "A picture or visual likeness of a person or thing",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "index",
+    "clue": "Alphabetical listing of terms with page numbers at the back of a book",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "ivy",
+    "clue": "Climbing evergreen plant with glossy leaves that covers old brick walls",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "iris",
+    "clue": "Colored part of the eye that surrounds the pupil",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "inn",
+    "clue": "Small lodging place offering food and a bed to travelers on a road",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "itch",
+    "clue": "Irritating skin sensation that makes you want to scratch",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "island",
+    "clue": "Small body of land surrounded by water",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "clue",
+    "committed_word": "isle",
+    "clue": "Poetic word for a small land surrounded by sea",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "iota",
+    "clue": "Greek letter used to mean a tiny amount or jot",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "ill",
+    "clue": "Not feeling well; sick with a sickness",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "ion",
+    "clue": "Charged atom or particle formed by gaining or losing electrons",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "clue",
+    "committed_word": "idle",
+    "clue": "Doing nothing or not currently working",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "clue",
+    "committed_word": "ideal",
+    "clue": "Perfect, the best possible example of something",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "clue",
+    "committed_word": "insect",
+    "clue": "Six-legged creature with antennae, often a buzzing bug",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "clue",
+    "committed_word": "input",
+    "clue": "Data entered into a computer for processing",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "clue",
+    "committed_word": "inane",
+    "clue": "Try: icy icing ignore imp inky inlet ivory issue inner invite itself ingot inane irate iodine ire",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "fish",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "ice",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "into",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "igloo",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "ink",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "idea",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "iron",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "item",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "inch",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "image",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "index",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "ivy",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "iris",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "inn",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "itch",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "island",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "guess",
+    "committed_word": "isle",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "iota",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "ill",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "ion",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "guess",
+    "committed_word": "idle",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "guess",
+    "committed_word": "ideal",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "guess",
+    "committed_word": "insect",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "guess",
+    "committed_word": "input",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "guess",
+    "committed_word": "inlay",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "canine",
+     "dog",
+     "fido",
+     "hound",
+     "mutt",
+     "pooch",
+     "pup",
+     "puppy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "invalid",
+    "reason": "blocklist entry is not a dictionary word",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ice"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "into"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "igloo"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ink"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "idea"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "iron"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "item"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "inch"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "icon",
+     "illustration",
+     "image"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "index"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ivy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "iris"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "inn"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "irritation",
+     "itch",
+     "itchiness",
+     "itching",
+     "itchy"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "island"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 22,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "isle"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "iota"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ill",
+     "illness"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ion"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 26,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "idle",
+     "idling",
+     "inactive",
+     "indolent",
+     "ineffective",
+     "inert",
+     "inoperative",
+     "insouciant"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 27,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ideal"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 28,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "insect",
+     "insectile",
+     "insectivore",
+     "insectivorous",
+     "insects"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 29,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "input"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 30,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "induce",
+     "induct",
+     "induction",
+     "indurate",
+     "indurated",
+     "indurating",
+     "induration"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "A common household pet that meows",
+   "mentions": [
+    "common",
+    "household",
+    "meows",
+    "pet",
+    "that"
+   ],
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cat",
+    "common",
+    "household",
+    "meows",
+    "pet",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172602,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "dog",
+   "w2": "dog",
+   "clue": "Man's best friend that barks and wags its tail",
+   "mentions": [
+    "and",
+    "barks",
+    "best",
+    "friend",
+    "its",
+    "man",
+    "tail",
+    "that",
+    "wags"
+   ],
+   "blocklist": [
+    "canine",
+    "dog",
+    "fido",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "barks",
+    "best",
+    "canine",
+    "dog",
+    "fido",
+    "friend",
+    "hound",
+    "its",
+    "man",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy",
+    "tail",
+    "that",
+    "wags"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172602,
+   "secret_candidates_after": 172586,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "i",
+   "w1": "fish",
+   "w2": "fish",
+   "clue": "Aquatic animal that swims with fins and breathes through gills",
+   "mentions": [
+    "and",
+    "animal",
+    "aquatic",
+    "breathes",
+    "fins",
+    "gills",
+    "swims",
+    "that",
+    "through",
+    "with"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "fish"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fish"
+    }
+   ],
+   "emissions": [
+    "and",
+    "animal",
+    "aquatic",
+    "breathes",
+    "fins",
+    "fish",
+    "gills",
+    "swims",
+    "that",
+    "through",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172586,
+   "secret_candidates_after": 6953,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ice",
+   "w2": "ice",
+   "clue": "Frozen water used to chill a drink",
+   "mentions": [
+    "chill",
+    "drink",
+    "frozen",
+    "used",
+    "water"
+   ],
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "chill",
+    "drink",
+    "frozen",
+    "ice",
+    "used",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6953,
+   "secret_candidates_after": 6952,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "into",
+   "w2": "into",
+   "clue": "Preposition showing movement toward the inside of something",
+   "mentions": [
+    "inside",
+    "movement",
+    "preposition",
+    "showing",
+    "something",
+    "the",
+    "toward"
+   ],
+   "blocklist": [
+    "into"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "inside",
+    "into",
+    "movement",
+    "preposition",
+    "showing",
+    "something",
+    "the",
+    "toward"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6952,
+   "secret_candidates_after": 6950,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "igloo",
+   "w2": "igloo",
+   "clue": "Snow dwelling built from blocks of packed ice by Inuit peoples",
+   "mentions": [
+    "blocks",
+    "built",
+    "dwelling",
+    "from",
+    "ice",
+    "packed",
+    "peoples",
+    "snow"
+   ],
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blocks",
+    "built",
+    "dwelling",
+    "from",
+    "ice",
+    "igloo",
+    "packed",
+    "peoples",
+    "snow"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6950,
+   "secret_candidates_after": 6949,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ink",
+   "w2": "ink",
+   "clue": "Dark liquid used in pens and printers to make marks on paper",
+   "mentions": [
+    "and",
+    "dark",
+    "liquid",
+    "make",
+    "marks",
+    "paper",
+    "pens",
+    "printers",
+    "used"
+   ],
+   "blocklist": [
+    "ink"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "dark",
+    "ink",
+    "liquid",
+    "make",
+    "marks",
+    "paper",
+    "pens",
+    "printers",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6949,
+   "secret_candidates_after": 6948,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "idea",
+   "w2": "idea",
+   "clue": "A thought or plan formed in the mind",
+   "mentions": [
+    "formed",
+    "mind",
+    "plan",
+    "the",
+    "thought"
+   ],
+   "blocklist": [
+    "idea"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "formed",
+    "idea",
+    "mind",
+    "plan",
+    "the",
+    "thought"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6948,
+   "secret_candidates_after": 6947,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "iron",
+   "w2": "iron",
+   "clue": "Metal appliance used to press wrinkled clothes flat",
+   "mentions": [
+    "appliance",
+    "clothes",
+    "flat",
+    "metal",
+    "press",
+    "used",
+    "wrinkled"
+   ],
+   "blocklist": [
+    "iron"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "appliance",
+    "clothes",
+    "flat",
+    "iron",
+    "metal",
+    "press",
+    "used",
+    "wrinkled"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6947,
+   "secret_candidates_after": 6946,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 6946,
+   "secret_candidates_after": 6946,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "item",
+   "w2": "item",
+   "clue": "A single object or entry in a list",
+   "mentions": [
+    "entry",
+    "list",
+    "object",
+    "single"
+   ],
+   "blocklist": [
+    "item"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "entry",
+    "item",
+    "list",
+    "object",
+    "single"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6946,
+   "secret_candidates_after": 6945,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "inch",
+   "w2": "inch",
+   "clue": "Unit of length equal to one twelfth of a foot",
+   "mentions": [
+    "equal",
+    "foot",
+    "length",
+    "one",
+    "twelfth",
+    "unit"
+   ],
+   "blocklist": [
+    "inch"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "equal",
+    "foot",
+    "inch",
+    "length",
+    "one",
+    "twelfth",
+    "unit"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6945,
+   "secret_candidates_after": 6944,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 6944,
+   "secret_candidates_after": 6944,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "image",
+   "w2": "image",
+   "clue": "A picture or visual likeness of a person or thing",
+   "mentions": [
+    "likeness",
+    "person",
+    "picture",
+    "thing",
+    "visual"
+   ],
+   "blocklist": [
+    "icon",
+    "illustration",
+    "image"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "icon",
+    "illustration",
+    "image",
+    "likeness",
+    "person",
+    "picture",
+    "thing",
+    "visual"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6944,
+   "secret_candidates_after": 6941,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "index",
+   "w2": "index",
+   "clue": "Alphabetical listing of terms with page numbers at the back of a book",
+   "mentions": [
+    "alphabetical",
+    "back",
+    "book",
+    "listing",
+    "numbers",
+    "page",
+    "terms",
+    "the",
+    "with"
+   ],
+   "blocklist": [
+    "index"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "alphabetical",
+    "back",
+    "book",
+    "index",
+    "listing",
+    "numbers",
+    "page",
+    "terms",
+    "the",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6941,
+   "secret_candidates_after": 6940,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ivy",
+   "w2": "ivy",
+   "clue": "Climbing evergreen plant with glossy leaves that covers old brick walls",
+   "mentions": [
+    "brick",
+    "climbing",
+    "covers",
+    "evergreen",
+    "glossy",
+    "leaves",
+    "old",
+    "plant",
+    "that",
+    "walls",
+    "with"
+   ],
+   "blocklist": [
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "brick",
+    "climbing",
+    "covers",
+    "evergreen",
+    "glossy",
+    "ivy",
+    "leaves",
+    "old",
+    "plant",
+    "that",
+    "walls",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6940,
+   "secret_candidates_after": 6939,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 6939,
+   "secret_candidates_after": 6939,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "iris",
+   "w2": "iris",
+   "clue": "Colored part of the eye that surrounds the pupil",
+   "mentions": [
+    "colored",
+    "eye",
+    "part",
+    "pupil",
+    "surrounds",
+    "that",
+    "the"
+   ],
+   "blocklist": [
+    "iris"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "colored",
+    "eye",
+    "iris",
+    "part",
+    "pupil",
+    "surrounds",
+    "that",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6939,
+   "secret_candidates_after": 6938,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "inn",
+   "w2": "inn",
+   "clue": "Small lodging place offering food and a bed to travelers on a road",
+   "mentions": [
+    "and",
+    "bed",
+    "food",
+    "lodging",
+    "offering",
+    "place",
+    "road",
+    "small",
+    "travelers"
+   ],
+   "blocklist": [
+    "inn"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "bed",
+    "food",
+    "inn",
+    "lodging",
+    "offering",
+    "place",
+    "road",
+    "small",
+    "travelers"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6938,
+   "secret_candidates_after": 6937,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "itch",
+   "w2": "itch",
+   "clue": "Irritating skin sensation that makes you want to scratch",
+   "mentions": [
+    "irritating",
+    "makes",
+    "scratch",
+    "sensation",
+    "skin",
+    "that",
+    "want",
+    "you"
+   ],
+   "blocklist": [
+    "irritation",
+    "itch",
+    "itchiness",
+    "itching",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "irritating",
+    "irritation",
+    "itch",
+    "itchiness",
+    "itching",
+    "itchy",
+    "makes",
+    "scratch",
+    "sensation",
+    "skin",
+    "that",
+    "want",
+    "you"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6937,
+   "secret_candidates_after": 6931,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "island",
+   "w2": "island",
+   "clue": "Small body of land surrounded by water",
+   "mentions": [
+    "body",
+    "land",
+    "small",
+    "surrounded",
+    "water"
+   ],
+   "blocklist": [
+    "island"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "body",
+    "island",
+    "land",
+    "small",
+    "surrounded",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6931,
+   "secret_candidates_after": 6930,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "isle",
+   "w2": "isle",
+   "clue": "Poetic word for a small land surrounded by sea",
+   "mentions": [
+    "for",
+    "land",
+    "poetic",
+    "sea",
+    "small",
+    "surrounded",
+    "word"
+   ],
+   "blocklist": [
+    "isle"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "for",
+    "isle",
+    "land",
+    "poetic",
+    "sea",
+    "small",
+    "surrounded",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6930,
+   "secret_candidates_after": 6929,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "iota",
+   "w2": "iota",
+   "clue": "Greek letter used to mean a tiny amount or jot",
+   "mentions": [
+    "amount",
+    "greek",
+    "jot",
+    "letter",
+    "mean",
+    "tiny",
+    "used"
+   ],
+   "blocklist": [
+    "iota"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "amount",
+    "greek",
+    "iota",
+    "jot",
+    "letter",
+    "mean",
+    "tiny",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6929,
+   "secret_candidates_after": 6928,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ill",
+   "w2": "ill",
+   "clue": "Not feeling well; sick with a sickness",
+   "mentions": [
+    "feeling",
+    "not",
+    "sick",
+    "sickness",
+    "well",
+    "with"
+   ],
+   "blocklist": [
+    "ill",
+    "illness"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "feeling",
+    "ill",
+    "illness",
+    "not",
+    "sick",
+    "sickness",
+    "well",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6928,
+   "secret_candidates_after": 6926,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ion",
+   "w2": "ion",
+   "clue": "Charged atom or particle formed by gaining or losing electrons",
+   "mentions": [
+    "atom",
+    "charged",
+    "electrons",
+    "formed",
+    "gaining",
+    "losing",
+    "particle"
+   ],
+   "blocklist": [
+    "ion"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "atom",
+    "charged",
+    "electrons",
+    "formed",
+    "gaining",
+    "ion",
+    "losing",
+    "particle"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6926,
+   "secret_candidates_after": 6925,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 26,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "idle",
+   "w2": "idle",
+   "clue": "Doing nothing or not currently working",
+   "mentions": [
+    "currently",
+    "doing",
+    "not",
+    "nothing",
+    "working"
+   ],
+   "blocklist": [
+    "idle",
+    "idling",
+    "inactive",
+    "indolent",
+    "ineffective",
+    "inert",
+    "inoperative",
+    "insouciant"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "currently",
+    "doing",
+    "idle",
+    "idling",
+    "inactive",
+    "indolent",
+    "ineffective",
+    "inert",
+    "inoperative",
+    "insouciant",
+    "not",
+    "nothing",
+    "working"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6925,
+   "secret_candidates_after": 6917,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 27,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "ideal",
+   "w2": "ideal",
+   "clue": "Perfect, the best possible example of something",
+   "mentions": [
+    "best",
+    "example",
+    "perfect",
+    "possible",
+    "something",
+    "the"
+   ],
+   "blocklist": [
+    "ideal"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "best",
+    "example",
+    "ideal",
+    "perfect",
+    "possible",
+    "something",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6917,
+   "secret_candidates_after": 6916,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 28,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "insect",
+   "w2": "insect",
+   "clue": "Six-legged creature with antennae, often a buzzing bug",
+   "mentions": [
+    "antennae",
+    "bug",
+    "buzzing",
+    "creature",
+    "legged",
+    "often",
+    "six",
+    "with"
+   ],
+   "blocklist": [
+    "insect",
+    "insectile",
+    "insectivore",
+    "insectivorous",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "antennae",
+    "bug",
+    "buzzing",
+    "creature",
+    "insect",
+    "insectile",
+    "insectivore",
+    "insectivorous",
+    "insects",
+    "legged",
+    "often",
+    "six",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6916,
+   "secret_candidates_after": 6911,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 29,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "input",
+   "w2": "input",
+   "clue": "Data entered into a computer for processing",
+   "mentions": [
+    "computer",
+    "data",
+    "entered",
+    "for",
+    "into",
+    "processing"
+   ],
+   "blocklist": [
+    "input"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "computer",
+    "data",
+    "entered",
+    "for",
+    "input",
+    "into",
+    "processing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 6911,
+   "secret_candidates_after": 6910,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 30,
+   "prefix_before": "i",
+   "prefix_after": "i",
+   "w1": "inane",
+   "w2": "inlay",
+   "clue": "Try: icy icing ignore imp inky inlet ivory issue inner invite itself ingot inane irate iodine ire",
+   "mentions": [
+    "icing",
+    "icy",
+    "ignore",
+    "imp",
+    "inane",
+    "ingot",
+    "inky",
+    "inlet",
+    "inner",
+    "invite",
+    "iodine",
+    "irate",
+    "ire",
+    "issue",
+    "itself",
+    "ivory",
+    "try"
+   ],
+   "blocklist": [
+    "induce",
+    "induct",
+    "induction",
+    "indurate",
+    "indurated",
+    "indurating",
+    "induration"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "inane"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inlay"
+    }
+   ],
+   "emissions": [
+    "icing",
+    "icy",
+    "ignore",
+    "imp",
+    "inane",
+    "induce",
+    "induct",
+    "induction",
+    "indurate",
+    "indurated",
+    "indurating",
+    "induration",
+    "ingot",
+    "inky",
+    "inlay",
+    "inlet",
+    "inner",
+    "invite",
+    "iodine",
+    "irate",
+    "ire",
+    "issue",
+    "itself",
+    "ivory",
+    "try"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": false,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 6910,
+   "secret_candidates_after": 6886,
+   "block_size": 7,
+   "block_fresh_secret_candidates": 7,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

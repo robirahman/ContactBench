@@ -15,7 +15,15 @@ import json
 
 from ._stainless import map_stainless_error
 from ._util import get, int_or_none, to_plain
-from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter, ToolCall
+from .base import (
+    AdapterResponse,
+    DecisionRequest,
+    InfrastructureError,
+    NormalizedUsage,
+    ProviderAdapter,
+    ToolCall,
+    sanitize,
+)
 
 # Above this many output tokens the SDK requires streaming for a single call.
 STREAMING_THRESHOLD = 16000
@@ -41,13 +49,29 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             )
         return self._client
 
+    @staticmethod
+    def user_content(request: DecisionRequest) -> Any:
+        """User message content.  With prompt parts, each part is its own block
+        and a cache breakpoint ends the append-only prefix (game header plus
+        public history), so the next turn's request hits that cache entry."""
+        if not request.user_prompt_parts:
+            return request.user_prompt
+        blocks: list[dict[str, Any]] = [{"type": "text", "text": p} for p in request.user_prompt_parts]
+        if request.cache_prefix_parts > 0:
+            blocks[request.cache_prefix_parts - 1]["cache_control"] = {"type": "ephemeral"}
+        return blocks
+
     def build_request(self, request: DecisionRequest) -> dict:
         output_config: dict[str, Any] = {"format": {"type": "json_schema", "schema": request.json_schema}}
+        system: Any = request.system_prompt
+        if request.user_prompt_parts:
+            # The rules text is identical for every call in a condition.
+            system = [{"type": "text", "text": request.system_prompt, "cache_control": {"type": "ephemeral"}}]
         kwargs: dict[str, Any] = {
             "model": self.config.model,
             "max_tokens": request.max_output_tokens or self.config.max_output_tokens,
-            "system": request.system_prompt,
-            "messages": [{"role": "user", "content": request.user_prompt}],
+            "system": system,
+            "messages": [{"role": "user", "content": self.user_content(request)}],
         }
         for k, v in self.config.parameters.items():
             if k == "effort":
@@ -71,6 +95,18 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             return await client.messages.create(**kwargs)
         except anthropic.AnthropicError as e:
             raise map_stainless_error(e, anthropic, secrets) from None
+        except Exception as e:
+            # Network errors raised while iterating a stream are not wrapped by
+            # the SDK (observed live: httpx2.ReadError mid-stream).  They are
+            # transport failures; output may already have been generated.
+            import httpx2
+
+            if isinstance(e, (httpx2.TransportError, httpx2.StreamError)):
+                raise InfrastructureError(
+                    f"{type(e).__name__}: {sanitize(str(e), secrets)}", category="transient",
+                    retryable=True, possibly_billed=True,
+                ) from None
+            raise
 
     async def send_once(self, request: DecisionRequest) -> AdapterResponse:
         kwargs = self.build_request(request)
@@ -79,11 +115,19 @@ class AnthropicMessagesAdapter(ProviderAdapter):
 
     # -- lookup-tool loop ------------------------------------------------------
     def tool_conversation_start(self, request: DecisionRequest) -> Any:
-        return [{"role": "user", "content": request.user_prompt}]
+        return [{"role": "user", "content": self.user_content(request)}]
 
     async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
         kwargs = self.build_request(request)
-        kwargs["messages"] = list(state)
+        msgs = list(state)
+        if request.user_prompt_parts and len(msgs) > 1 and isinstance(msgs[-1].get("content"), list) and msgs[-1]["content"]:
+            # Third breakpoint: cache the growing tool-loop conversation.
+            last = dict(msgs[-1])
+            content = [dict(b) for b in last["content"]]
+            content[-1]["cache_control"] = {"type": "ephemeral"}
+            last["content"] = content
+            msgs[-1] = last
+        kwargs["messages"] = msgs
         if request.tools:
             kwargs["tools"] = [
                 {"name": t.name, "description": t.description, "input_schema": t.parameters} for t in request.tools

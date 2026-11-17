@@ -1,0 +1,2707 @@
+{
+ "game_id": "dev41-0007-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "cretan minotaur prison",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "labyrinth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "labyrinth"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "scottish tartan wind instrument",
+   "blocklist": [
+    "bagpipers"
+   ],
+   "blocked_ranges": [
+    [
+     "bagpipe",
+     "bagpipes"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "green tree-like vegetable",
+   "blocklist": [
+    "broccoli"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "severe snowstorm with strong gusts",
+   "blocklist": [
+    "blizzard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "australian returning throwing stick",
+   "blocklist": [
+    "boomerang"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "elastic cord used for jumping from heights",
+   "blocklist": [
+    "bungee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "refuse to buy or use as protest",
+   "blocklist": [
+    "boycott"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "device measuring atmospheric pressure",
+   "blocklist": [
+    "barometer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "tactile writing system for blind",
+   "blocklist": [
+    "braille"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "norse warrior frenzy",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "berserk",
+     "berserks"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "improvised military camp without tents",
+   "blocklist": [
+    "bivouac"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "mythical serpent king with lethal gaze",
+   "blocklist": [
+    "basilisk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "layered filo pastry with nuts and honey",
+   "blocklist": [
+    "baklava"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "job 40 colossal land beast",
+   "blocklist": [
+    "behemoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "fierce elongated predatory marine fish",
+   "blocklist": [
+    "barracuda"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "irish female spirit wailing before death",
+   "blocklist": [
+    "banshee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "knitted headgear covering face and neck",
+   "blocklist": [
+    "balaclava",
+    "balaclavas",
+    "bandeau",
+    "beanie",
+    "bonnet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "japanese art of growing miniature trees in shallow pots",
+   "blocklist": [
+    "bonsai"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "shoulder-fired anti-tank rocket launcher",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "bazooka",
+     "bazookas"
+    ]
+   ],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "russian headscarf tied under chin",
+   "blocklist": [
+    "babushka",
+    "babushkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "double-reed woodwind instrument with low pitch",
+   "blocklist": [
+    "bassoon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "middle eastern open-air marketplace",
+   "blocklist": [
+    "bazaar",
+    "bazar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "stringed instrument with circular drumhead",
+   "blocklist": [
+    "banjo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "winter olympic ice track sled",
+   "blocklist": [
+    "bob",
+    "bobsled",
+    "bobsledder",
+    "bobsledding"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "giant panda primary woody grass diet",
+   "blocklist": [
+    "bamboo",
+    "bamboos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "indian fig tree with aerial roots",
+   "blocklist": [
+    "banyan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "church tower where bells are hung",
+   "blocklist": [
+    "belfries",
+    "belfry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "blade attached to rifle muzzle",
+   "blocklist": [
+    "bayonet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "caribbean pirate or sea robber",
+   "blocklist": [
+    "buccaneer",
+    "buccaneering",
+    "buccaneers",
+    "corsair",
+    "freebooter",
+    "privateer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 382.1956676136364,
+  "cost_numerator": 1076263,
+  "cost_denominator": 2816,
+  "cost_exact": false,
+  "cost_mcse": 0.3715282785079266,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 991783,
+   "denominator": 2816,
+   "value": 352.1956676136364,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:50,4:251,5:583,6:1059,7:1574,8:1816,9:1416,10:968,11:653,12:384,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.3715282785079266,
+   "rollouts": 256,
+   "rank_total": 87276904,
+   "rank_denominator": 247808,
+   "cache_key": "61306c377682d20203c377bf4421a231"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "labyrinth",
+    "clue": "cretan minotaur prison",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "bagpipe",
+    "clue": "scottish tartan wind instrument",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "broccoli",
+    "clue": "green tree-like vegetable",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "blizzard",
+    "clue": "severe snowstorm with strong gusts",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "boomerang",
+    "clue": "australian returning throwing stick",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "bungee",
+    "clue": "elastic cord used for jumping from heights",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "boycott",
+    "clue": "refuse to buy or use as protest",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "barometer",
+    "clue": "device measuring atmospheric pressure",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "braille",
+    "clue": "tactile writing system for blind",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "berserk",
+    "clue": "norse warrior frenzy",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "bivouac",
+    "clue": "improvised military camp without tents",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "basilisk",
+    "clue": "mythical serpent king with lethal gaze",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "baklava",
+    "clue": "layered filo pastry with nuts and honey",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "behemoth",
+    "clue": "job 40 colossal land beast",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "barracuda",
+    "clue": "fierce elongated predatory marine fish",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "banshee",
+    "clue": "irish female spirit wailing before death",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "balaclava",
+    "clue": "knitted headgear covering face and neck",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "bonsai",
+    "clue": "japanese art of growing miniature trees in shallow pots",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "bazooka",
+    "clue": "shoulder-fired anti-tank rocket launcher",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "babushka",
+    "clue": "russian headscarf tied under chin",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "bassoon",
+    "clue": "double-reed woodwind instrument with low pitch",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "clue",
+    "committed_word": "bazaar",
+    "clue": "middle eastern open-air marketplace",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "banjo",
+    "clue": "stringed instrument with circular drumhead",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "bobsled",
+    "clue": "winter olympic ice track sled",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "bamboo",
+    "clue": "giant panda primary woody grass diet",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "clue",
+    "committed_word": "banyan",
+    "clue": "indian fig tree with aerial roots",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "clue",
+    "committed_word": "belfry",
+    "clue": "church tower where bells are hung",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "clue",
+    "committed_word": "bayonet",
+    "clue": "blade attached to rifle muzzle",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "clue",
+    "committed_word": "buccaneer",
+    "clue": "caribbean pirate or sea robber",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "labyrinth",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "bagpipe",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "broccoli",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "blizzard",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "boomerang",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "bungee",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "boycott",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "barometer",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "braille",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "berserk",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "bivouac",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "basilisk",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "baklava",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "behemoth",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "barracuda",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "banshee",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "balaclava",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "bonsai",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "bazooka",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "babushka",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "bassoon",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "guess",
+    "committed_word": "bazaar",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "banjo",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "bobsled",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "bamboo",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "guess",
+    "committed_word": "banyan",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "guess",
+    "committed_word": "belfry",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "guess",
+    "committed_word": "bayonet",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "guess",
+    "committed_word": "buccaneer",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "invalid",
+    "reason": "blocklist entry is not a dictionary word",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bagpipers"
+    ],
+    "canonical_ranges": [
+     [
+      "bagpipe",
+      "bagpipes"
+     ]
+    ]
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "broccoli"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "blizzard"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "boomerang"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bungee"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "boycott"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "barometer"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "braille"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "berserk",
+      "berserks"
+     ]
+    ]
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bivouac"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "basilisk"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "baklava"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "behemoth"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "barracuda"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "banshee"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "balaclava",
+     "balaclavas",
+     "bandeau",
+     "beanie",
+     "bonnet"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bonsai"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "bazooka",
+      "bazookas"
+     ]
+    ]
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "babushka",
+     "babushkas"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bassoon"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 22,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bazaar",
+     "bazar"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "banjo"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bob",
+     "bobsled",
+     "bobsledder",
+     "bobsledding"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bamboo",
+     "bamboos"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 26,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "banyan"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 27,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "belfries",
+     "belfry"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 28,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bayonet"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 29,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "buccaneer",
+     "buccaneering",
+     "buccaneers",
+     "corsair",
+     "freebooter",
+     "privateer"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "b",
+   "w1": "labyrinth",
+   "w2": "labyrinth",
+   "clue": "cretan minotaur prison",
+   "mentions": [
+    "prison"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "labyrinth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "labyrinth"
+    }
+   ],
+   "emissions": [
+    "labyrinth",
+    "prison"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 9273,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bagpipe",
+   "w2": "bagpipe",
+   "clue": "scottish tartan wind instrument",
+   "mentions": [
+    "instrument",
+    "tartan",
+    "wind"
+   ],
+   "blocklist": [
+    "bagpipers"
+   ],
+   "blocked_ranges": [
+    [
+     "bagpipe",
+     "bagpipes"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bagpipe",
+    "bagpiper",
+    "bagpipers",
+    "bagpipes",
+    "instrument",
+    "tartan",
+    "wind"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9273,
+   "secret_candidates_after": 9269,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "broccoli",
+   "w2": "broccoli",
+   "clue": "green tree-like vegetable",
+   "mentions": [
+    "green",
+    "like",
+    "tree",
+    "vegetable"
+   ],
+   "blocklist": [
+    "broccoli"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "broccoli",
+    "green",
+    "like",
+    "tree",
+    "vegetable"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9269,
+   "secret_candidates_after": 9268,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "blizzard",
+   "w2": "blizzard",
+   "clue": "severe snowstorm with strong gusts",
+   "mentions": [
+    "gusts",
+    "severe",
+    "snowstorm",
+    "strong",
+    "with"
+   ],
+   "blocklist": [
+    "blizzard"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blizzard",
+    "gusts",
+    "severe",
+    "snowstorm",
+    "strong",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9268,
+   "secret_candidates_after": 9267,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "boomerang",
+   "w2": "boomerang",
+   "clue": "australian returning throwing stick",
+   "mentions": [
+    "returning",
+    "stick",
+    "throwing"
+   ],
+   "blocklist": [
+    "boomerang"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "boomerang",
+    "returning",
+    "stick",
+    "throwing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9267,
+   "secret_candidates_after": 9266,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bungee",
+   "w2": "bungee",
+   "clue": "elastic cord used for jumping from heights",
+   "mentions": [
+    "cord",
+    "elastic",
+    "for",
+    "from",
+    "heights",
+    "jumping",
+    "used"
+   ],
+   "blocklist": [
+    "bungee"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bungee",
+    "cord",
+    "elastic",
+    "for",
+    "from",
+    "heights",
+    "jumping",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9266,
+   "secret_candidates_after": 9265,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "boycott",
+   "w2": "boycott",
+   "clue": "refuse to buy or use as protest",
+   "mentions": [
+    "buy",
+    "protest",
+    "refuse",
+    "use"
+   ],
+   "blocklist": [
+    "boycott"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "boycott",
+    "buy",
+    "protest",
+    "refuse",
+    "use"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9265,
+   "secret_candidates_after": 9263,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "barometer",
+   "w2": "barometer",
+   "clue": "device measuring atmospheric pressure",
+   "mentions": [
+    "atmospheric",
+    "device",
+    "measuring",
+    "pressure"
+   ],
+   "blocklist": [
+    "barometer"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "atmospheric",
+    "barometer",
+    "device",
+    "measuring",
+    "pressure"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9263,
+   "secret_candidates_after": 9262,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "braille",
+   "w2": "braille",
+   "clue": "tactile writing system for blind",
+   "mentions": [
+    "blind",
+    "for",
+    "system",
+    "tactile",
+    "writing"
+   ],
+   "blocklist": [
+    "braille"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "blind",
+    "braille",
+    "for",
+    "system",
+    "tactile",
+    "writing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9262,
+   "secret_candidates_after": 9260,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "berserk",
+   "w2": "berserk",
+   "clue": "norse warrior frenzy",
+   "mentions": [
+    "frenzy",
+    "warrior"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "berserk",
+     "berserks"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "berserk",
+    "berserker",
+    "berserkers",
+    "berserkly",
+    "berserks",
+    "frenzy",
+    "warrior"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9260,
+   "secret_candidates_after": 9255,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bivouac",
+   "w2": "bivouac",
+   "clue": "improvised military camp without tents",
+   "mentions": [
+    "camp",
+    "improvised",
+    "military",
+    "tents",
+    "without"
+   ],
+   "blocklist": [
+    "bivouac"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bivouac",
+    "camp",
+    "improvised",
+    "military",
+    "tents",
+    "without"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9255,
+   "secret_candidates_after": 9254,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "basilisk",
+   "w2": "basilisk",
+   "clue": "mythical serpent king with lethal gaze",
+   "mentions": [
+    "gaze",
+    "king",
+    "lethal",
+    "mythical",
+    "serpent",
+    "with"
+   ],
+   "blocklist": [
+    "basilisk"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "basilisk",
+    "gaze",
+    "king",
+    "lethal",
+    "mythical",
+    "serpent",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9254,
+   "secret_candidates_after": 9253,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "baklava",
+   "w2": "baklava",
+   "clue": "layered filo pastry with nuts and honey",
+   "mentions": [
+    "and",
+    "filo",
+    "honey",
+    "layered",
+    "nuts",
+    "pastry",
+    "with"
+   ],
+   "blocklist": [
+    "baklava"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "baklava",
+    "filo",
+    "honey",
+    "layered",
+    "nuts",
+    "pastry",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9253,
+   "secret_candidates_after": 9252,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "behemoth",
+   "w2": "behemoth",
+   "clue": "job 40 colossal land beast",
+   "mentions": [
+    "beast",
+    "colossal",
+    "job",
+    "land"
+   ],
+   "blocklist": [
+    "behemoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "beast",
+    "behemoth",
+    "colossal",
+    "job",
+    "land"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9252,
+   "secret_candidates_after": 9250,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "barracuda",
+   "w2": "barracuda",
+   "clue": "fierce elongated predatory marine fish",
+   "mentions": [
+    "elongated",
+    "fierce",
+    "fish",
+    "marine",
+    "predatory"
+   ],
+   "blocklist": [
+    "barracuda"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "barracuda",
+    "elongated",
+    "fierce",
+    "fish",
+    "marine",
+    "predatory"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9250,
+   "secret_candidates_after": 9249,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "banshee",
+   "w2": "banshee",
+   "clue": "irish female spirit wailing before death",
+   "mentions": [
+    "before",
+    "death",
+    "female",
+    "spirit",
+    "wailing"
+   ],
+   "blocklist": [
+    "banshee"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "banshee",
+    "before",
+    "death",
+    "female",
+    "spirit",
+    "wailing"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9249,
+   "secret_candidates_after": 9247,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "balaclava",
+   "w2": "balaclava",
+   "clue": "knitted headgear covering face and neck",
+   "mentions": [
+    "and",
+    "covering",
+    "face",
+    "headgear",
+    "knitted",
+    "neck"
+   ],
+   "blocklist": [
+    "balaclava",
+    "balaclavas",
+    "bandeau",
+    "beanie",
+    "bonnet"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "balaclava",
+    "balaclavas",
+    "bandeau",
+    "beanie",
+    "bonnet",
+    "covering",
+    "face",
+    "headgear",
+    "knitted",
+    "neck"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9247,
+   "secret_candidates_after": 9242,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bonsai",
+   "w2": "bonsai",
+   "clue": "japanese art of growing miniature trees in shallow pots",
+   "mentions": [
+    "art",
+    "growing",
+    "miniature",
+    "pots",
+    "shallow",
+    "trees"
+   ],
+   "blocklist": [
+    "bonsai"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "art",
+    "bonsai",
+    "growing",
+    "miniature",
+    "pots",
+    "shallow",
+    "trees"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9242,
+   "secret_candidates_after": 9241,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bazooka",
+   "w2": "bazooka",
+   "clue": "shoulder-fired anti-tank rocket launcher",
+   "mentions": [
+    "anti",
+    "fired",
+    "launcher",
+    "rocket",
+    "shoulder",
+    "tank"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "bazooka",
+     "bazookas"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "anti",
+    "bazooka",
+    "bazookas",
+    "fired",
+    "launcher",
+    "rocket",
+    "shoulder",
+    "tank"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9241,
+   "secret_candidates_after": 9239,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "babushka",
+   "w2": "babushka",
+   "clue": "russian headscarf tied under chin",
+   "mentions": [
+    "chin",
+    "tied",
+    "under"
+   ],
+   "blocklist": [
+    "babushka",
+    "babushkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "babushka",
+    "babushkas",
+    "chin",
+    "tied",
+    "under"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9239,
+   "secret_candidates_after": 9237,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bassoon",
+   "w2": "bassoon",
+   "clue": "double-reed woodwind instrument with low pitch",
+   "mentions": [
+    "double",
+    "instrument",
+    "low",
+    "pitch",
+    "reed",
+    "with",
+    "woodwind"
+   ],
+   "blocklist": [
+    "bassoon"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bassoon",
+    "double",
+    "instrument",
+    "low",
+    "pitch",
+    "reed",
+    "with",
+    "woodwind"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9237,
+   "secret_candidates_after": 9236,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bazaar",
+   "w2": "bazaar",
+   "clue": "middle eastern open-air marketplace",
+   "mentions": [
+    "air",
+    "eastern",
+    "marketplace",
+    "middle",
+    "open"
+   ],
+   "blocklist": [
+    "bazaar",
+    "bazar"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "air",
+    "bazaar",
+    "bazar",
+    "eastern",
+    "marketplace",
+    "middle",
+    "open"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9236,
+   "secret_candidates_after": 9234,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "banjo",
+   "w2": "banjo",
+   "clue": "stringed instrument with circular drumhead",
+   "mentions": [
+    "circular",
+    "drumhead",
+    "instrument",
+    "stringed",
+    "with"
+   ],
+   "blocklist": [
+    "banjo"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "banjo",
+    "circular",
+    "drumhead",
+    "instrument",
+    "stringed",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9234,
+   "secret_candidates_after": 9233,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bobsled",
+   "w2": "bobsled",
+   "clue": "winter olympic ice track sled",
+   "mentions": [
+    "ice",
+    "sled",
+    "track",
+    "winter"
+   ],
+   "blocklist": [
+    "bob",
+    "bobsled",
+    "bobsledder",
+    "bobsledding"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bob",
+    "bobsled",
+    "bobsledder",
+    "bobsledding",
+    "ice",
+    "sled",
+    "track",
+    "winter"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9233,
+   "secret_candidates_after": 9229,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bamboo",
+   "w2": "bamboo",
+   "clue": "giant panda primary woody grass diet",
+   "mentions": [
+    "diet",
+    "giant",
+    "grass",
+    "panda",
+    "primary",
+    "woody"
+   ],
+   "blocklist": [
+    "bamboo",
+    "bamboos"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "bamboo",
+    "bamboos",
+    "diet",
+    "giant",
+    "grass",
+    "panda",
+    "primary",
+    "woody"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9229,
+   "secret_candidates_after": 9227,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 26,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "banyan",
+   "w2": "banyan",
+   "clue": "indian fig tree with aerial roots",
+   "mentions": [
+    "aerial",
+    "fig",
+    "roots",
+    "tree",
+    "with"
+   ],
+   "blocklist": [
+    "banyan"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aerial",
+    "banyan",
+    "fig",
+    "roots",
+    "tree",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9227,
+   "secret_candidates_after": 9226,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 27,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "belfry",
+   "w2": "belfry",
+   "clue": "church tower where bells are hung",
+   "mentions": [
+    "are",
+    "bells",
+    "church",
+    "hung",
+    "tower",
+    "where"
+   ],
+   "blocklist": [
+    "belfries",
+    "belfry"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "are",
+    "belfries",
+    "belfry",
+    "bells",
+    "church",
+    "hung",
+    "tower",
+    "where"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9226,
+   "secret_candidates_after": 9223,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 28,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "bayonet",
+   "w2": "bayonet",
+   "clue": "blade attached to rifle muzzle",
+   "mentions": [
+    "attached",
+    "blade",
+    "muzzle",
+    "rifle"
+   ],
+   "blocklist": [
+    "bayonet"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "attached",
+    "bayonet",
+    "blade",
+    "muzzle",
+    "rifle"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9223,
+   "secret_candidates_after": 9221,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 29,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "w1": "buccaneer",
+   "w2": "buccaneer",
+   "clue": "caribbean pirate or sea robber",
+   "mentions": [
+    "pirate",
+    "robber",
+    "sea"
+   ],
+   "blocklist": [
+    "buccaneer",
+    "buccaneering",
+    "buccaneers",
+    "corsair",
+    "freebooter",
+    "privateer"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "buccaneer",
+    "buccaneering",
+    "buccaneers",
+    "corsair",
+    "freebooter",
+    "pirate",
+    "privateer",
+    "robber",
+    "sea"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 9221,
+   "secret_candidates_after": 9218,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 30,
+   "prefix_before": "b",
+   "prefix_after": "b",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 9218,
+   "secret_candidates_after": 9218,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  }
+ ]
+}

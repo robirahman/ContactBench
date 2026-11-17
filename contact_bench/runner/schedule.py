@@ -22,6 +22,9 @@ class GameSpec:
     defender: str
     leg: str  # "AB" or "BA" or "self"
     policy_seed: int
+    # Rematch games override the starting prefix length.
+    initial_prefix_length: int | None = None
+    rematch_of: str = ""
 
 
 @dataclass(frozen=True)
@@ -33,6 +36,29 @@ class Fixture:
     model_b: str
     game_ab: str  # A attacks, B defends
     game_ba: str  # B attacks, A defends
+    rematch_of: str = ""  # fixture id of the no-progress draw this rematches
+    initial_prefix_length: int | None = None
+
+
+def is_no_progress_capped(summary: dict) -> bool:
+    """Capped game in which the attackers earned no letter."""
+    return summary.get("outcome_status") == "capped" and summary.get("final_prefix") == summary.get("initial_prefix")
+
+
+def rematch_fixture(f: Fixture, initial_prefix_length: int) -> tuple[Fixture, list[GameSpec]]:
+    # "~" cannot occur in model ids ([A-Za-z0-9_.-]), so these ids can never
+    # collide with ordinary game ids produced by build_schedule.
+    fid = f"{f.fixture_id}~rematch"
+    gab, gba = f"{f.game_ab}~rematch", f"{f.game_ba}~rematch"
+    fx = Fixture(fid, f.task_id, f.repetition, f.model_a, f.model_b, gab, gba,
+                 rematch_of=f.fixture_id, initial_prefix_length=initial_prefix_length)
+    games = [
+        GameSpec(gab, fid, f.task_id, f.repetition, f.model_a, f.model_b, "AB", _seed("policy", gab),
+                 initial_prefix_length, f.fixture_id),
+        GameSpec(gba, fid, f.task_id, f.repetition, f.model_b, f.model_a, "BA", _seed("policy", gba),
+                 initial_prefix_length, f.fixture_id),
+    ]
+    return fx, games
 
 
 def _seed(*parts) -> int:
@@ -74,7 +100,6 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
     R = cfg.tournament.repetitions
     L = cfg.protocol.turn_limit
     llm_models = {mc.id for mc in cfg.models if mc.is_llm}
-    llm_games = [g for g in games if g.attacker in llm_models or g.defender in llm_models]
     fork = cfg.forecasts.mode == "fork"
     # At most 4 decisions per clue turn: G1, G2 and conditional choice by
     # attackers, blocklist by defender.  Fork mode adds up to one forecast
@@ -82,7 +107,11 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
     att_calls = 3 * L + (2 * L if fork else 0)
     def_calls = L + (L if fork else 0)
     per_model_calls: dict[str, int] = {}
-    for g in games:
+    # A cross-model game can be followed by one rematch game (no-progress draw
+    # rule), so the advertised maxima include that possibility.
+    rematch = cfg.tournament.rematch_on_no_progress_draw
+    max_games = list(games) + ([g for g in games if g.leg in ("AB", "BA")] if rematch else [])
+    for g in max_games:
         if g.attacker in llm_models:
             per_model_calls[g.attacker] = per_model_calls.get(g.attacker, 0) + att_calls
         if g.defender in llm_models:
@@ -99,7 +128,8 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
         if cfg.tournament.schedule == "balanced_round_robin"
         else None,
         "maximum_game_decisions_per_game": 4 * L,
-        "maximum_game_decisions_total": 4 * L * len(games),
+        "maximum_rematch_games": len(max_games) - len(games),
+        "maximum_game_decisions_total": 4 * L * len(max_games),
         "maximum_paid_decisions": sum(per_model_calls.values()),
         "forecast_fork_calls_included": fork,
         "maximum_paid_decisions_by_model": per_model_calls,

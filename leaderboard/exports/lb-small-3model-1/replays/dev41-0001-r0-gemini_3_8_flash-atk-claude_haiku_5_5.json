@@ -1,0 +1,2089 @@
+{
+ "game_id": "dev41-0001-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "round fruit that keeps the doctor away",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "frozen precipitation falling in winter flakes",
+   "blocklist": [
+    "hail",
+    "sleet",
+    "slush",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "white crystalline substance extracted from cane or beets to sweeten tea",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sugar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sugar"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "the warmest season of the year between spring and autumn",
+   "blocklist": [
+    "summer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "naval vessel capable of underwater operation",
+   "blocklist": [
+    "submarine",
+    "submersible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Japanese dish featuring vinegared rice served with raw seafood or nori",
+   "blocklist": [
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "tall yellow blossom famous for tracking the daylight path across the sky",
+   "blocklist": [
+    "sun",
+    "sunflower",
+    "sunlight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "an affix added at the end of a root word to alter its meaning",
+   "blocklist": [
+    "suffix"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "an evening meal often eaten together with family",
+   "blocklist": [
+    "supper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "ice cream dessert served in a dish topped with syrup whipped cream and cherry",
+   "blocklist": [
+    "sundae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "the highest point of a mountain or a formal meeting between heads of government",
+   "blocklist": [
+    "summit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "portable rectangular piece of luggage with a handle used by travelers to pack clothes",
+   "blocklist": [
+    "suit",
+    "suitable",
+    "suitcase",
+    "suite",
+    "suitor",
+    "sum",
+    "super",
+    "sure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "underground electric railway system in an urban metropolitan city",
+   "blocklist": [
+    "subway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "medical doctor who performs specialized operations in an operating theater",
+   "blocklist": [
+    "surgeon",
+    "surgery",
+    "surgical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "large retail self-service grocery store selling food and household goods",
+   "blocklist": [
+    "supermarket"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+   "blocklist": [
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+   "blocklist": [
+    "sudden",
+    "surprise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "the outermost layer or uppermost boundary of an object or body of water",
+   "blocklist": [
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "daily disappearance of the sun below the western horizon at dusk",
+   "blocklist": [
+    "sunset",
+    "supply",
+    "suspect"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+   "blocklist": [
+    "minus"
+   ],
+   "blocked_ranges": [
+    [
+     "subtract",
+     "subtrahend"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 145.00330528846155,
+  "cost_numerator": 482571,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.464774844203489,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 416011,
+   "denominator": 3328,
+   "value": 125.00330528846153,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:27,5:47,6:104,7:233,8:383,9:407,10:424,11:354,12:274,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.464774844203489,
+   "rollouts": 256,
+   "rank_total": 3328088,
+   "rank_denominator": 26624,
+   "cache_key": "c549f0d2b9093eaadcd51cc51fe3d3ee"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "apple",
+    "clue": "round fruit that keeps the doctor away",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "snow",
+    "clue": "frozen precipitation falling in winter flakes",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "sugar",
+    "clue": "white crystalline substance extracted from cane or beets to sweeten tea",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "summer",
+    "clue": "the warmest season of the year between spring and autumn",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "submarine",
+    "clue": "naval vessel capable of underwater operation",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "sushi",
+    "clue": "Japanese dish featuring vinegared rice served with raw seafood or nori",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "sunflower",
+    "clue": "tall yellow blossom famous for tracking the daylight path across the sky",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "suffix",
+    "clue": "an affix added at the end of a root word to alter its meaning",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "supper",
+    "clue": "an evening meal often eaten together with family",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "sundae",
+    "clue": "ice cream dessert served in a dish topped with syrup whipped cream and cherry",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "summit",
+    "clue": "the highest point of a mountain or a formal meeting between heads of government",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "suitcase",
+    "clue": "portable rectangular piece of luggage with a handle used by travelers to pack clothes",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "subway",
+    "clue": "underground electric railway system in an urban metropolitan city",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "surgeon",
+    "clue": "medical doctor who performs specialized operations in an operating theater",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "supermarket",
+    "clue": "large retail self-service grocery store selling food and household goods",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "surrender",
+    "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "surprise",
+    "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "surface",
+    "clue": "the outermost layer or uppermost boundary of an object or body of water",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "sunset",
+    "clue": "daily disappearance of the sun below the western horizon at dusk",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "subtraction",
+    "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "apple",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "snow",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "sugar",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "summer",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "submarine",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "sushi",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "sunflower",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "suffix",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "supper",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "sundae",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "summit",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "suitcase",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "subway",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "surgeon",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "supermarket",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "surrender",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "surprise",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "surface",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "sunset",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "subtraction",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "invalid",
+    "reason": "range endpoints must be dictionary words",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "hail",
+     "sleet",
+     "slush",
+     "snow"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "invalid",
+    "reason": "blocklist entry is not a dictionary word",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "summer"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "submarine",
+     "submersible"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sushi"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sun",
+     "sunflower",
+     "sunlight"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "suffix"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supper"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sundae"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "summit"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "suit",
+     "suitable",
+     "suitcase",
+     "suite",
+     "suitor",
+     "sum",
+     "super",
+     "sure"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "subway"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "surgeon",
+     "surgery",
+     "surgical"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "supermarket"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "surrender",
+     "surrendered",
+     "surrendering",
+     "surrenders"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sudden",
+     "surprise"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "superficial",
+     "supplies",
+     "support",
+     "supreme",
+     "surface"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sunset",
+     "supply",
+     "suspect"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "minus"
+    ],
+    "canonical_ranges": [
+     [
+      "subtract",
+      "subtrahend"
+     ]
+    ]
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "s",
+   "w1": "apple",
+   "w2": "apple",
+   "clue": "round fruit that keeps the doctor away",
+   "mentions": [
+    "away",
+    "doctor",
+    "fruit",
+    "keeps",
+    "round",
+    "that",
+    "the"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "emissions": [
+    "apple",
+    "away",
+    "doctor",
+    "fruit",
+    "keeps",
+    "round",
+    "that",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 18982,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "s",
+   "prefix_after": "s",
+   "w1": "snow",
+   "w2": "snow",
+   "clue": "frozen precipitation falling in winter flakes",
+   "mentions": [
+    "falling",
+    "flakes",
+    "frozen",
+    "precipitation",
+    "winter"
+   ],
+   "blocklist": [
+    "hail",
+    "sleet",
+    "slush",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "falling",
+    "flakes",
+    "frozen",
+    "hail",
+    "precipitation",
+    "sleet",
+    "slush",
+    "snow",
+    "winter"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 18982,
+   "secret_candidates_after": 18979,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "s",
+   "prefix_after": "su",
+   "w1": "sugar",
+   "w2": "sugar",
+   "clue": "white crystalline substance extracted from cane or beets to sweeten tea",
+   "mentions": [
+    "beets",
+    "cane",
+    "crystalline",
+    "extracted",
+    "from",
+    "substance",
+    "sweeten",
+    "tea",
+    "white"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "sugar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sugar"
+    }
+   ],
+   "emissions": [
+    "beets",
+    "cane",
+    "crystalline",
+    "extracted",
+    "from",
+    "substance",
+    "sugar",
+    "sweeten",
+    "tea",
+    "white"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 18979,
+   "secret_candidates_after": 2884,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": false,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "summer",
+   "w2": "summer",
+   "clue": "the warmest season of the year between spring and autumn",
+   "mentions": [
+    "and",
+    "autumn",
+    "between",
+    "season",
+    "spring",
+    "the",
+    "warmest",
+    "year"
+   ],
+   "blocklist": [
+    "summer"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "autumn",
+    "between",
+    "season",
+    "spring",
+    "summer",
+    "the",
+    "warmest",
+    "year"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2884,
+   "secret_candidates_after": 2883,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "submarine",
+   "w2": "submarine",
+   "clue": "naval vessel capable of underwater operation",
+   "mentions": [
+    "capable",
+    "naval",
+    "operation",
+    "underwater",
+    "vessel"
+   ],
+   "blocklist": [
+    "submarine",
+    "submersible"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "capable",
+    "naval",
+    "operation",
+    "submarine",
+    "submersible",
+    "underwater",
+    "vessel"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2883,
+   "secret_candidates_after": 2881,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "sushi",
+   "w2": "sushi",
+   "clue": "Japanese dish featuring vinegared rice served with raw seafood or nori",
+   "mentions": [
+    "dish",
+    "featuring",
+    "nori",
+    "raw",
+    "rice",
+    "seafood",
+    "served",
+    "vinegared",
+    "with"
+   ],
+   "blocklist": [
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "dish",
+    "featuring",
+    "nori",
+    "raw",
+    "rice",
+    "seafood",
+    "served",
+    "sushi",
+    "vinegared",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2881,
+   "secret_candidates_after": 2880,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "sunflower",
+   "w2": "sunflower",
+   "clue": "tall yellow blossom famous for tracking the daylight path across the sky",
+   "mentions": [
+    "across",
+    "blossom",
+    "daylight",
+    "famous",
+    "for",
+    "path",
+    "sky",
+    "tall",
+    "the",
+    "tracking",
+    "yellow"
+   ],
+   "blocklist": [
+    "sun",
+    "sunflower",
+    "sunlight"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "across",
+    "blossom",
+    "daylight",
+    "famous",
+    "for",
+    "path",
+    "sky",
+    "sun",
+    "sunflower",
+    "sunlight",
+    "tall",
+    "the",
+    "tracking",
+    "yellow"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2880,
+   "secret_candidates_after": 2877,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "suffix",
+   "w2": "suffix",
+   "clue": "an affix added at the end of a root word to alter its meaning",
+   "mentions": [
+    "added",
+    "affix",
+    "alter",
+    "end",
+    "its",
+    "meaning",
+    "root",
+    "the",
+    "word"
+   ],
+   "blocklist": [
+    "suffix"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "added",
+    "affix",
+    "alter",
+    "end",
+    "its",
+    "meaning",
+    "root",
+    "suffix",
+    "the",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2877,
+   "secret_candidates_after": 2876,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "supper",
+   "w2": "supper",
+   "clue": "an evening meal often eaten together with family",
+   "mentions": [
+    "eaten",
+    "evening",
+    "family",
+    "meal",
+    "often",
+    "together",
+    "with"
+   ],
+   "blocklist": [
+    "supper"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "eaten",
+    "evening",
+    "family",
+    "meal",
+    "often",
+    "supper",
+    "together",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2876,
+   "secret_candidates_after": 2875,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "sundae",
+   "w2": "sundae",
+   "clue": "ice cream dessert served in a dish topped with syrup whipped cream and cherry",
+   "mentions": [
+    "and",
+    "cherry",
+    "cream",
+    "dessert",
+    "dish",
+    "ice",
+    "served",
+    "syrup",
+    "topped",
+    "whipped",
+    "with"
+   ],
+   "blocklist": [
+    "sundae"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "cherry",
+    "cream",
+    "dessert",
+    "dish",
+    "ice",
+    "served",
+    "sundae",
+    "syrup",
+    "topped",
+    "whipped",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2875,
+   "secret_candidates_after": 2874,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "summit",
+   "w2": "summit",
+   "clue": "the highest point of a mountain or a formal meeting between heads of government",
+   "mentions": [
+    "between",
+    "formal",
+    "government",
+    "heads",
+    "highest",
+    "meeting",
+    "mountain",
+    "point",
+    "the"
+   ],
+   "blocklist": [
+    "summit"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "between",
+    "formal",
+    "government",
+    "heads",
+    "highest",
+    "meeting",
+    "mountain",
+    "point",
+    "summit",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2874,
+   "secret_candidates_after": 2873,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "suitcase",
+   "w2": "suitcase",
+   "clue": "portable rectangular piece of luggage with a handle used by travelers to pack clothes",
+   "mentions": [
+    "clothes",
+    "handle",
+    "luggage",
+    "pack",
+    "piece",
+    "portable",
+    "rectangular",
+    "travelers",
+    "used",
+    "with"
+   ],
+   "blocklist": [
+    "suit",
+    "suitable",
+    "suitcase",
+    "suite",
+    "suitor",
+    "sum",
+    "super",
+    "sure"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "clothes",
+    "handle",
+    "luggage",
+    "pack",
+    "piece",
+    "portable",
+    "rectangular",
+    "suit",
+    "suitable",
+    "suitcase",
+    "suite",
+    "suitor",
+    "sum",
+    "super",
+    "sure",
+    "travelers",
+    "used",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2873,
+   "secret_candidates_after": 2865,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "subway",
+   "w2": "subway",
+   "clue": "underground electric railway system in an urban metropolitan city",
+   "mentions": [
+    "city",
+    "electric",
+    "metropolitan",
+    "railway",
+    "system",
+    "underground",
+    "urban"
+   ],
+   "blocklist": [
+    "subway"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "city",
+    "electric",
+    "metropolitan",
+    "railway",
+    "subway",
+    "system",
+    "underground",
+    "urban"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2865,
+   "secret_candidates_after": 2864,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surgeon",
+   "w2": "surgeon",
+   "clue": "medical doctor who performs specialized operations in an operating theater",
+   "mentions": [
+    "doctor",
+    "medical",
+    "operating",
+    "operations",
+    "performs",
+    "specialized",
+    "theater",
+    "who"
+   ],
+   "blocklist": [
+    "surgeon",
+    "surgery",
+    "surgical"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "doctor",
+    "medical",
+    "operating",
+    "operations",
+    "performs",
+    "specialized",
+    "surgeon",
+    "surgery",
+    "surgical",
+    "theater",
+    "who"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2864,
+   "secret_candidates_after": 2861,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "supermarket",
+   "w2": "supermarket",
+   "clue": "large retail self-service grocery store selling food and household goods",
+   "mentions": [
+    "and",
+    "food",
+    "goods",
+    "grocery",
+    "household",
+    "large",
+    "retail",
+    "self",
+    "selling",
+    "service",
+    "store"
+   ],
+   "blocklist": [
+    "supermarket"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "food",
+    "goods",
+    "grocery",
+    "household",
+    "large",
+    "retail",
+    "self",
+    "selling",
+    "service",
+    "store",
+    "supermarket"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2861,
+   "secret_candidates_after": 2860,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surrender",
+   "w2": "surrender",
+   "clue": "to stop fighting and admit defeat in battle by raising a white flag",
+   "mentions": [
+    "admit",
+    "and",
+    "battle",
+    "defeat",
+    "fighting",
+    "flag",
+    "raising",
+    "stop",
+    "white"
+   ],
+   "blocklist": [
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "admit",
+    "and",
+    "battle",
+    "defeat",
+    "fighting",
+    "flag",
+    "raising",
+    "stop",
+    "surrender",
+    "surrendered",
+    "surrendering",
+    "surrenders",
+    "white"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2860,
+   "secret_candidates_after": 2856,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surprise",
+   "w2": "surprise",
+   "clue": "an unexpected event or feeling of astonishment caused by something unanticipated",
+   "mentions": [
+    "astonishment",
+    "caused",
+    "event",
+    "feeling",
+    "something",
+    "unanticipated",
+    "unexpected"
+   ],
+   "blocklist": [
+    "sudden",
+    "surprise"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "astonishment",
+    "caused",
+    "event",
+    "feeling",
+    "something",
+    "sudden",
+    "surprise",
+    "unanticipated",
+    "unexpected"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2856,
+   "secret_candidates_after": 2854,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "surface",
+   "w2": "surface",
+   "clue": "the outermost layer or uppermost boundary of an object or body of water",
+   "mentions": [
+    "body",
+    "boundary",
+    "layer",
+    "object",
+    "outermost",
+    "the",
+    "uppermost",
+    "water"
+   ],
+   "blocklist": [
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "body",
+    "boundary",
+    "layer",
+    "object",
+    "outermost",
+    "superficial",
+    "supplies",
+    "support",
+    "supreme",
+    "surface",
+    "the",
+    "uppermost",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2854,
+   "secret_candidates_after": 2849,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "sunset",
+   "w2": "sunset",
+   "clue": "daily disappearance of the sun below the western horizon at dusk",
+   "mentions": [
+    "below",
+    "daily",
+    "disappearance",
+    "dusk",
+    "horizon",
+    "sun",
+    "the",
+    "western"
+   ],
+   "blocklist": [
+    "sunset",
+    "supply",
+    "suspect"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "below",
+    "daily",
+    "disappearance",
+    "dusk",
+    "horizon",
+    "sun",
+    "sunset",
+    "supply",
+    "suspect",
+    "the",
+    "western"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2849,
+   "secret_candidates_after": 2846,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "su",
+   "prefix_after": "su",
+   "w1": "subtraction",
+   "w2": "subtraction",
+   "clue": "arithmetic operation of taking one number away from another symbolized by a minus sign",
+   "mentions": [
+    "another",
+    "arithmetic",
+    "away",
+    "from",
+    "minus",
+    "number",
+    "one",
+    "operation",
+    "sign",
+    "symbolized",
+    "taking"
+   ],
+   "blocklist": [
+    "minus"
+   ],
+   "blocked_ranges": [
+    [
+     "subtract",
+     "subtrahend"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "another",
+    "arithmetic",
+    "away",
+    "from",
+    "minus",
+    "number",
+    "one",
+    "operation",
+    "sign",
+    "subtract",
+    "subtracted",
+    "subtracter",
+    "subtracters",
+    "subtracting",
+    "subtraction",
+    "subtractions",
+    "subtractive",
+    "subtracts",
+    "subtrahend",
+    "symbolized",
+    "taking"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 2846,
+   "secret_candidates_after": 2836,
+   "block_size": 11,
+   "block_fresh_secret_candidates": 10,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

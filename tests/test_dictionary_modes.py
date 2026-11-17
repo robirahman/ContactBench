@@ -82,3 +82,31 @@ def test_closed_book_scripted_baselines_use_dictionary(tmp_path):
                              {"id": "pack", "provider": "scripted", "policy": "combined_fresh_shuffle"}])
     st = asyncio.run(Runner(c, tmp_path / "r").run())
     assert st["complete_games"] == 4
+
+
+@pytest.mark.parametrize("mode", ["closed_book", "lookup_tools"])
+def test_forecast_audit_in_dictionary_conditions(tmp_path, mode):
+    from contact_bench.config import ModelConfig
+    from contact_bench.forecasts.audit import audit_request, build_item_bank, run_shadow_audit, support_for
+    from contact_bench.providers.fake import FakeAdapter
+
+    c = _cfg(mode, [{"id": "fl", "provider": "scripted", "policy": "first_last_two_guess"},
+                    {"id": "pack", "provider": "scripted", "policy": "combined_fresh_shuffle"}])
+    asyncio.run(Runner(c, tmp_path / "r").run())
+    r = Runner(c, tmp_path / "r", replay_only=True)
+    items = asyncio.run(build_item_bank(r))
+    assert items and all(it["dictionary_access"] == mode for it in items)
+    it = items[0]
+    obs = it["receiver_observation"]
+    assert "contact_candidates" not in obs
+    sup = support_for(obs, r.contact_dictionary)
+    assert it["answer_intended_word"] in sup and all(len(w) > len(obs["prefix"]) for w in sup)
+    req = audit_request(it, "guesser2", dictionary=r.contact_dictionary)
+    assert bool(req.tools) == (mode == "lookup_tools")
+    fake = FakeAdapter(ModelConfig(id="f", provider="fake", model="f", max_output_tokens=100))
+    res = asyncio.run(run_shadow_audit(items[:4], fake, dictionary=r.contact_dictionary))
+    s = res["summary"]["guesser2"]
+    assert res["dictionary_access"] == [mode] and s["observed"] == 4
+    if mode == "lookup_tools":
+        # the fake looks the words up, so its reports are valid against the rebuilt support
+        assert s["valid"] == 4 and all(x["lookup_calls"] >= 1 for x in res["results"] if x["seat"] == "guesser2")

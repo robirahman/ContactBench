@@ -126,3 +126,114 @@ def test_per_provider_dollar_cap():
         await b.commit(mg, t, NormalizedUsage(input_tokens=500, output_tokens=0), 1)
         assert b.usd_spent_by_provider["google"] == pytest.approx(0.0005)
     asyncio.run(go())
+
+
+def test_unbilled_failures_not_charged_and_provider_cap_is_local():
+    pt = PriceTable(as_of="x", input_per_mtok=1.0, output_per_mtok=1.0)
+    m = ModelConfig(id="g", provider="google", model="m", max_output_tokens=1000, prices=pt)
+    b = Budget(None, None, max_usd_by_provider={"google": 1.0})
+    gate = BudgetGate(b, m, 1000)
+
+    async def go():
+        t = await gate.before()
+        await gate.after(t, None, False, possibly_billed=False)  # e.g. HTTP 402 before generation
+        assert b.usd_spent == 0 and b.requests_used == 1
+        t = await gate.before()
+        await gate.after(t, None, False, possibly_billed=True)  # e.g. timeout: conservatively charged
+        assert b.usd_spent == pytest.approx(0.002)
+        b.max_usd_by_provider["google"] = 0.0
+        with pytest.raises(BudgetExhausted) as ei:
+            await gate.before()
+        assert ei.value.provider == "google"
+    asyncio.run(go())
+
+
+def test_anthropic_midstream_network_error_is_retryable():
+    import httpx2
+    from types import SimpleNamespace
+
+    class Stream:
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, *a):
+            return False
+
+        async def get_final_message(self):
+            raise httpx2.ReadError("connection reset")
+
+    client = SimpleNamespace(messages=SimpleNamespace(stream=lambda **kw: Stream()))
+    ad = AnthropicMessagesAdapter(ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=32000,
+                                              credential_env="ANTHROPIC_API_KEY"), client=client)
+    with pytest.raises(InfrastructureError) as ei:
+        asyncio.run(ad._call({"max_tokens": 32000}))
+    assert ei.value.retryable and ei.value.possibly_billed and ei.value.category == "transient"
+
+
+def test_non_rate_limit_errors_keep_the_normal_bound():
+    a = Flaky(fails=100)  # "server" errors
+    a.retry = RetryPolicy(max_attempts=3, rate_limit_attempts=8, base_seconds=0, deadline_seconds=5)
+    with pytest.raises(InfrastructureError):
+        asyncio.run(a.decide(_req()))
+    assert a.sent == 3
+
+
+def test_stainless_402_is_provider_wide_quota_failure():
+    import anthropic
+    import httpx2
+    from contact_bench.providers._stainless import map_stainless_error
+
+    resp = httpx2.Response(402, request=httpx2.Request("POST", "https://api.example.com/v1/messages"),
+                           json={"error": {"message": "credit balance too low"}})
+    err = anthropic.APIStatusError("payment required", response=resp, body=None)
+    mapped = map_stainless_error(err, anthropic, ())
+    assert mapped.category == "quota_exhausted" and mapped.fatal
+
+    from contact_bench.runner.run import PROVIDER_WIDE_FATAL
+    assert mapped.category in PROVIDER_WIDE_FATAL
+
+
+def test_budget_exhaustion_handler_is_provider_local(tmp_path):
+    from .test_runner import cfg as rcfg, SCRIPTED
+    r = Runner(rcfg(SCRIPTED, tasks=1, L=2, lexicon="lexicons/mechanics_fixture_manifest.json"), tmp_path / "r")
+    r.prepare()
+    r._on_budget_exhausted(BudgetExhausted("google cap", provider="google"), "fork/x")
+    assert r.halted_providers == {"google": "budget: google cap"} and not r.budget_stopped
+    r._on_budget_exhausted(BudgetExhausted("global cap"), "d/y")
+    assert r.budget_stopped
+
+
+def test_fork_path_uses_provider_local_budget_handler():
+    import inspect
+    from contact_bench.runner.run import Runner as R
+    src = inspect.getsource(R._schedule_fork)
+    assert "_on_budget_exhausted" in src and "budget_stopped = True" not in src
+
+
+def test_concurrency_overrides_must_be_positive(tmp_path):
+    from contact_bench.cli import main as cli
+    from .test_runner import cfg as rcfg, SCRIPTED
+    import types
+    c = rcfg(SCRIPTED)
+    for bad in (0, -1):
+        with pytest.raises(ValueError):
+            cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=bad, provider_concurrency=None))
+    ok = cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=3, provider_concurrency=2))
+    assert ok.execution.game_concurrency == 3 and ok.execution.per_provider_concurrency == 2
+
+
+def test_ambiguous_transport_failures_are_charged_conservatively():
+    from contact_bench.providers.base import possibly_billed
+    assert possibly_billed(InfrastructureError("conn reset", category="transient", retryable=True))
+    assert possibly_billed(InfrastructureError("?", category="unknown", fatal=True))
+    assert possibly_billed(InfrastructureError("502", category="server", retryable=True))
+    assert not possibly_billed(InfrastructureError("402", category="quota_exhausted", fatal=True))
+    assert not possibly_billed(InfrastructureError("429", category="rate_limit", retryable=True))
+    # through the gate: a server error is charged the reservation, a 402 is not
+    pt = PriceTable(as_of="x", input_per_mtok=1.0, output_per_mtok=1.0)
+    m = ModelConfig(id="g", provider="google", model="m", max_output_tokens=1000, prices=pt)
+    b = Budget(None, 100.0)  # a monetary cap makes reservations non-zero
+    a = Flaky(fails=1)  # one "server" error then success
+    a.config = m
+    asyncio.run(a.decide(_req(), gate=BudgetGate(b, m, 1000)))
+    assert b.usd_uncertain == 1

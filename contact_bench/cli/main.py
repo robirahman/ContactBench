@@ -21,7 +21,12 @@ def _runs_dir(args) -> Path:
 
 def _config_from_run(run_dir: Path) -> BenchConfig:
     manifest = json.loads((run_dir / "run.json").read_text())
-    data = dict(manifest["config"])
+    from ..config import snapshot_with_legacy_defaults
+
+    sched_path = run_dir / "schedule.json"
+    has_rm = sched_path.exists() and any(
+        f.get("rematch_of") for f in json.loads(sched_path.read_text()).get("fixtures", []))
+    data = snapshot_with_legacy_defaults(manifest["config"], has_rm)
     data["base_dir"] = str(Path.cwd())
     return BenchConfig.model_validate(data)
 
@@ -91,7 +96,7 @@ def _run(cfg: BenchConfig, run_dir: Path, *, live: bool, max_requests, max_usd, 
 
 
 def cmd_run(args) -> int:
-    cfg = load_config(args.config)
+    cfg = _with_concurrency(load_config(args.config), args)
     if args.live == args.offline:
         print("error: choose exactly one of --offline or --live", file=sys.stderr)
         return 2
@@ -104,12 +109,29 @@ def cmd_run(args) -> int:
     status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
                   provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
+
+
+def _with_concurrency(cfg: BenchConfig, args) -> BenchConfig:
+    """Operational overrides (never scored; execution settings are not frozen)."""
+    for name in ("game_concurrency", "provider_concurrency"):
+        v = getattr(args, name, None)
+        if v is not None and v < 1:
+            raise ValueError(f"--{name.replace('_', '-')} must be a positive integer")
+    upd = {}
+    if getattr(args, "game_concurrency", None):
+        upd["game_concurrency"] = args.game_concurrency
+    if getattr(args, "provider_concurrency", None):
+        upd["per_provider_concurrency"] = args.provider_concurrency
+        upd["global_concurrency"] = max(cfg.execution.global_concurrency, 3 * args.provider_concurrency)
+    if not upd:
+        return cfg
+    return cfg.model_copy(update={"execution": cfg.execution.model_copy(update=upd)})
 
 
 def cmd_resume(args) -> int:
     run_dir = _runs_dir(args) / args.run_id
-    cfg = _config_from_run(run_dir)
+    cfg = _with_concurrency(_config_from_run(run_dir), args)
     if args.live == args.offline:
         print("error: choose exactly one of --offline or --live", file=sys.stderr)
         return 2
@@ -119,7 +141,7 @@ def cmd_resume(args) -> int:
     status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
                   provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def cmd_replay(args) -> int:
@@ -248,7 +270,7 @@ def cmd_smoke(args) -> int:
     status = _run(scfg, run_dir, live=True, max_requests=args.max_requests, max_usd=args.max_usd)
     _print(status)
     print(f"smoke run directory: {run_dir} (resume it to test recovery: contact-bench resume {run_dir.name} --live ...)")
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def cmd_audit(args) -> int:
@@ -284,7 +306,9 @@ def cmd_audit(args) -> int:
     res = asyncio.run(run_shadow_audit(items, adapter, max_entries=cfg.forecasts.sparse_max_entries,
                                        tolerance=cfg.forecasts.mass_tolerance,
                                        invalid_score=cfg.forecasts.invalid_audit_score,
-                                       item_bank_id=run_dir.name, gate=gate))
+                                       item_bank_id=run_dir.name, gate=gate,
+                                       dictionary=runner.contact_dictionary,
+                                       max_tool_calls=cfg.protocol.max_tool_calls_per_decision))
     out = run_dir / "analysis" / f"forecast_audit_{m.id}.json"
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(res, indent=2) + "\n")
@@ -318,6 +342,8 @@ def build_parser() -> argparse.ArgumentParser:
         s.add_argument("--run-id")
         s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD",
                        help="per-provider dollar cap, e.g. --max-usd-provider google=4.5 (repeatable)")
+        s.add_argument("--game-concurrency", type=int)
+        s.add_argument("--provider-concurrency", type=int)
         s.set_defaults(fn=fn)
     s = sub.add_parser("smoke"); s.add_argument("config"); s.add_argument("--provider", required=True,
                                                                          choices=["openai", "anthropic", "google"])
@@ -326,7 +352,9 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("resume"); s.add_argument("run_id")
     s.add_argument("--offline", action="store_true"); s.add_argument("--live", action="store_true")
     s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float)
-    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD"); s.set_defaults(fn=cmd_resume)
+    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD")
+    s.add_argument("--game-concurrency", type=int); s.add_argument("--provider-concurrency", type=int)
+    s.set_defaults(fn=cmd_resume)
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
     s.set_defaults(fn=cmd_analyze)

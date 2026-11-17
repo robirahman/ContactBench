@@ -140,7 +140,8 @@ class FakeAdapter(ProviderAdapter):
             cands = [w for w in state["words"] if w not in used and not any(a <= w <= b for a, b in rng)
                      and len(w) > len(obs["prefix"])]
             obs = {**obs, "secret_candidates": cands, "contact_candidates": cands}
-        return self._respond(request, legal_action(obs)), [], state
+        payload = _forecast(obs) if request.phase == "forecast" else legal_action(obs)
+        return self._respond(request, payload), [], state
 
     def conversation_append_user(self, state: Any, text: str) -> Any:
         return {**state, "fork_prompt": text}

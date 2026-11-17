@@ -1,0 +1,2817 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Frozen water",
+   "blocklist": [
+    "frost",
+    "ice",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A household pet that purrs",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A young dog",
+   "blocklist": [
+    "pup",
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A small nocturnal mammal with a black facial mask and dexterous paws",
+   "blocklist": [
+    "coati",
+    "raccoon",
+    "racoon",
+    "ringtail"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Book of meanings: the and for are but not you all can had her was one our out day get has him",
+   "blocklist": [
+    "dictionary",
+    "glossary",
+    "lexicon",
+    "thesaurus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "An Arctic whale whose male has a long spiral tusk",
+   "blocklist": [
+    "narwal",
+    "narwhal",
+    "narwhale",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A building with rooms and a roof where people live",
+   "blocklist": [
+    "abode",
+    "domicile",
+    "dwelling",
+    "home",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Take initial letters: Xylophones yield little enchanting music.",
+   "blocklist": [
+    "xylem"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Some artists build lovely exhibitions.",
+   "blocklist": [
+    "sable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Quiet unicorns are rarely tame zebras.",
+   "blocklist": [
+    "quartz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Mirror the initials: Daring runners avoid winter evenings routinely.",
+   "blocklist": [
+    "drawer",
+    "reward"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Silent umber birds travel east, racing rapidly across northern Europe after nightfall.",
+   "blocklist": [
+    "subterranean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Yearly auctions keep prices surprisingly stable.",
+   "blocklist": [
+    "auction",
+    "yaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "yak"
+    },
+    {
+     "seat": "guesser2",
+     "word": "yak"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Ancient builders assembled complex unusual structures.",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A New Tale",
+   "blocklist": [
+    "ant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Look past the first: calm, scary, word, area, into.",
+   "blocklist": [
+    "acorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A Unique Radiance Appears.",
+   "blocklist": [
+    "aura"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Word endings after colon: alpha club tree wood.",
+   "blocklist": [
+    "abed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Read the third letter of each word: clay applies the boxes.",
+   "blocklist": [
+    "apex"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Take the fourth letter of each: area reach knee.",
+   "blocklist": [
+    "ace"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Abode, book, lovely, east.",
+   "blocklist": [
+    "able"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Word lengths encode A1Z26: I am a; uncharacteristically; quiet.",
+   "blocklist": [
+    "abate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Fruit? Initials: A Daring Artist Gathers Echoes.",
+   "blocklist": [
+    "adage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Take the final letters: pasta bulb extra music book.",
+   "blocklist": [
+    "aback"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "A brilliant acrobat never drops oranges nightly.",
+   "blocklist": [
+    "abandon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "To make someone feel embarrassed or self-conscious.",
+   "blocklist": [
+    "abash"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "aardvark",
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Initial letters: A brave artist notices distant owls; neighboring eagles rest silently.",
+   "blocklist": [
+    "abandoners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "aah aal aahs aals aas aba abas abba abbas abbe abbes abbess abbey abbeys abbot abbots abamp abamps",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abdominal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abampere"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 452.2784972947006,
+  "cost_numerator": 143108153,
+  "cost_denominator": 316416,
+  "cost_exact": false,
+  "cost_mcse": 0.4171482636010125,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 133615673,
+   "denominator": 316416,
+   "value": 422.2784972947006,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:182,5:483,6:820,7:1236,8:1613,9:1573,10:1307,11:1040,12:752,13:520,14:331,15:221,16:126,17:63,18:25,19:16,20:10",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.4171482636010125,
+   "rollouts": 256,
+   "rank_total": 133615673,
+   "rank_denominator": 316416,
+   "cache_key": "cf3d8b23ccfc9ffe2cf81e0f1141b644"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "ice",
+    "clue": "Frozen water",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "cat",
+    "clue": "A household pet that purrs",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "puppy",
+    "clue": "A young dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "raccoon",
+    "clue": "A small nocturnal mammal with a black facial mask and dexterous paws",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "dictionary",
+    "clue": "Book of meanings: the and for are but not you all can had her was one our out day get has him",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "clue must be printable ASCII"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "narwhal",
+    "clue": "An Arctic whale whose male has a long spiral tusk",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "house",
+    "clue": "A building with rooms and a roof where people live",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "clue",
+    "committed_word": "xylem",
+    "clue": "Take initial letters: Xylophones yield little enchanting music.",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "sable",
+    "clue": "Some artists build lovely exhibitions.",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "clue",
+    "committed_word": "quartz",
+    "clue": "Quiet unicorns are rarely tame zebras.",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "clue",
+    "committed_word": "reward",
+    "clue": "Mirror the initials: Daring runners avoid winter evenings routinely.",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "subterranean",
+    "clue": "Silent umber birds travel east, racing rapidly across northern Europe after nightfall.",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "clue",
+    "committed_word": "yak",
+    "clue": "Yearly auctions keep prices surprisingly stable.",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "clue",
+    "committed_word": "abacus",
+    "clue": "Ancient builders assembled complex unusual structures.",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "clue",
+    "committed_word": "ant",
+    "clue": "A New Tale",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "clue",
+    "committed_word": "acorn",
+    "clue": "Look past the first: calm, scary, word, area, into.",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "aura",
+    "clue": "A Unique Radiance Appears.",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "clue",
+    "committed_word": "abed",
+    "clue": "Word endings after colon: alpha club tree wood.",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "clue",
+    "committed_word": "apex",
+    "clue": "Read the third letter of each word: clay applies the boxes.",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "clue",
+    "committed_word": "ace",
+    "clue": "Take the fourth letter of each: area reach knee.",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "clue",
+    "committed_word": "able",
+    "clue": "Abode, book, lovely, east.",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "clue",
+    "committed_word": "abate",
+    "clue": "Word lengths encode A1Z26: I am a; uncharacteristically; quiet.",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "clue",
+    "committed_word": "adage",
+    "clue": "Fruit? Initials: A Daring Artist Gathers Echoes.",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "clue",
+    "committed_word": "aback",
+    "clue": "Take the final letters: pasta bulb extra music book.",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "clue",
+    "committed_word": "abandon",
+    "clue": "A brilliant acrobat never drops oranges nightly.",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "clue",
+    "committed_word": "abash",
+    "clue": "To make someone feel embarrassed or self-conscious.",
+    "validity": "valid"
+   },
+   {
+    "turn": 28,
+    "action": "direct",
+    "word": "aardvark",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "clue",
+    "committed_word": "abandoners",
+    "clue": "Initial letters: A brave artist notices distant owls; neighboring eagles rest silently.",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "clue",
+    "committed_word": "abdominal",
+    "clue": "aah aal aahs aals aas aba abas abba abbas abbe abbes abbess abbey abbeys abbot abbots abamp abamps",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "ice",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "puppy",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "raccoon",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "dictionary",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "narwhal",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "guess",
+    "committed_word": "house",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "guess",
+    "committed_word": "xylem",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "sable",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "guess",
+    "committed_word": "quartz",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "guess",
+    "committed_word": "drawer",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "subterranean",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "guess",
+    "committed_word": "yak",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "guess",
+    "committed_word": "abacus",
+    "validity": "valid"
+   },
+   {
+    "turn": 16,
+    "action": "guess",
+    "committed_word": "ant",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "guess",
+    "committed_word": "acorn",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "aura",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "guess",
+    "committed_word": "abed",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "guess",
+    "committed_word": "apex",
+    "validity": "valid"
+   },
+   {
+    "turn": 21,
+    "action": "guess",
+    "committed_word": "ace",
+    "validity": "valid"
+   },
+   {
+    "turn": 22,
+    "action": "guess",
+    "committed_word": "able",
+    "validity": "valid"
+   },
+   {
+    "turn": 23,
+    "action": "guess",
+    "committed_word": "abate",
+    "validity": "valid"
+   },
+   {
+    "turn": 24,
+    "action": "guess",
+    "committed_word": "adage",
+    "validity": "valid"
+   },
+   {
+    "turn": 25,
+    "action": "guess",
+    "committed_word": "aback",
+    "validity": "valid"
+   },
+   {
+    "turn": 26,
+    "action": "guess",
+    "committed_word": "abandon",
+    "validity": "valid"
+   },
+   {
+    "turn": 27,
+    "action": "guess",
+    "committed_word": "abash",
+    "validity": "valid"
+   },
+   {
+    "turn": 29,
+    "action": "guess",
+    "committed_word": "abandoners",
+    "validity": "valid"
+   },
+   {
+    "turn": 30,
+    "action": "guess",
+    "committed_word": "abampere",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "frost",
+     "ice",
+     "snow"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cat",
+     "feline",
+     "kitten",
+     "kitty"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "pup",
+     "puppy",
+     "whelp"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "coati",
+     "raccoon",
+     "racoon",
+     "ringtail"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "dictionary",
+     "glossary",
+     "lexicon",
+     "thesaurus"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "narwal",
+     "narwhal",
+     "narwhale",
+     "narwhals"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 8,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abode",
+     "domicile",
+     "dwelling",
+     "home",
+     "house",
+     "residence"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 9,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "xylem"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "sable"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 11,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "quartz"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 12,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "drawer",
+     "reward"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "subterranean"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 14,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "auction",
+     "yaks"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 15,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abacus"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 16,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ant"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 17,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "acorn"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aura"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 19,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abed"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 20,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "apex"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 21,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ace"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 22,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "able"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 23,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abate"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 24,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "adage"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 25,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aback"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 26,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abandon"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 27,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abash"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 29,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "abandoners"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 30,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "ice",
+   "w2": "ice",
+   "clue": "Frozen water",
+   "mentions": [
+    "frozen",
+    "water"
+   ],
+   "blocklist": [
+    "frost",
+    "ice",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "frost",
+    "frozen",
+    "ice",
+    "snow",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172603,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "cat",
+   "w2": "cat",
+   "clue": "A household pet that purrs",
+   "mentions": [
+    "household",
+    "pet",
+    "purrs",
+    "that"
+   ],
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cat",
+    "feline",
+    "household",
+    "kitten",
+    "kitty",
+    "pet",
+    "purrs",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172603,
+   "secret_candidates_after": 172595,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "puppy",
+   "w2": "puppy",
+   "clue": "A young dog",
+   "mentions": [
+    "dog",
+    "young"
+   ],
+   "blocklist": [
+    "pup",
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "dog",
+    "pup",
+    "puppy",
+    "whelp",
+    "young"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172595,
+   "secret_candidates_after": 172590,
+   "block_size": 3,
+   "block_fresh_secret_candidates": 3,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "raccoon",
+   "w2": "raccoon",
+   "clue": "A small nocturnal mammal with a black facial mask and dexterous paws",
+   "mentions": [
+    "and",
+    "black",
+    "dexterous",
+    "facial",
+    "mammal",
+    "mask",
+    "nocturnal",
+    "paws",
+    "small",
+    "with"
+   ],
+   "blocklist": [
+    "coati",
+    "raccoon",
+    "racoon",
+    "ringtail"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "black",
+    "coati",
+    "dexterous",
+    "facial",
+    "mammal",
+    "mask",
+    "nocturnal",
+    "paws",
+    "raccoon",
+    "racoon",
+    "ringtail",
+    "small",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172590,
+   "secret_candidates_after": 172576,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "dictionary",
+   "w2": "dictionary",
+   "clue": "Book of meanings: the and for are but not you all can had her was one our out day get has him",
+   "mentions": [
+    "all",
+    "and",
+    "are",
+    "book",
+    "but",
+    "can",
+    "day",
+    "for",
+    "get",
+    "had",
+    "has",
+    "her",
+    "him",
+    "meanings",
+    "not",
+    "one",
+    "our",
+    "out",
+    "the",
+    "was",
+    "you"
+   ],
+   "blocklist": [
+    "dictionary",
+    "glossary",
+    "lexicon",
+    "thesaurus"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "all",
+    "and",
+    "are",
+    "book",
+    "but",
+    "can",
+    "day",
+    "dictionary",
+    "for",
+    "get",
+    "glossary",
+    "had",
+    "has",
+    "her",
+    "him",
+    "lexicon",
+    "meanings",
+    "not",
+    "one",
+    "our",
+    "out",
+    "the",
+    "thesaurus",
+    "was",
+    "you"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172576,
+   "secret_candidates_after": 172552,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172552,
+   "secret_candidates_after": 172552,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "narwhal",
+   "w2": "narwhal",
+   "clue": "An Arctic whale whose male has a long spiral tusk",
+   "mentions": [
+    "arctic",
+    "has",
+    "long",
+    "male",
+    "spiral",
+    "tusk",
+    "whale",
+    "whose"
+   ],
+   "blocklist": [
+    "narwal",
+    "narwhal",
+    "narwhale",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "arctic",
+    "has",
+    "long",
+    "male",
+    "narwal",
+    "narwhal",
+    "narwhale",
+    "narwhals",
+    "spiral",
+    "tusk",
+    "whale",
+    "whose"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172552,
+   "secret_candidates_after": 172541,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "house",
+   "w2": "house",
+   "clue": "A building with rooms and a roof where people live",
+   "mentions": [
+    "and",
+    "building",
+    "live",
+    "people",
+    "roof",
+    "rooms",
+    "where",
+    "with"
+   ],
+   "blocklist": [
+    "abode",
+    "domicile",
+    "dwelling",
+    "home",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abode",
+    "and",
+    "building",
+    "domicile",
+    "dwelling",
+    "home",
+    "house",
+    "live",
+    "people",
+    "residence",
+    "roof",
+    "rooms",
+    "where",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172541,
+   "secret_candidates_after": 172529,
+   "block_size": 6,
+   "block_fresh_secret_candidates": 6,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "xylem",
+   "w2": "xylem",
+   "clue": "Take initial letters: Xylophones yield little enchanting music.",
+   "mentions": [
+    "enchanting",
+    "initial",
+    "letters",
+    "little",
+    "music",
+    "take",
+    "xylophones",
+    "yield"
+   ],
+   "blocklist": [
+    "xylem"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "enchanting",
+    "initial",
+    "letters",
+    "little",
+    "music",
+    "take",
+    "xylem",
+    "xylophones",
+    "yield"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172529,
+   "secret_candidates_after": 172520,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "sable",
+   "w2": "sable",
+   "clue": "Some artists build lovely exhibitions.",
+   "mentions": [
+    "artists",
+    "build",
+    "exhibitions",
+    "lovely",
+    "some"
+   ],
+   "blocklist": [
+    "sable"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "artists",
+    "build",
+    "exhibitions",
+    "lovely",
+    "sable",
+    "some"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172520,
+   "secret_candidates_after": 172514,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "quartz",
+   "w2": "quartz",
+   "clue": "Quiet unicorns are rarely tame zebras.",
+   "mentions": [
+    "are",
+    "quiet",
+    "rarely",
+    "tame",
+    "unicorns",
+    "zebras"
+   ],
+   "blocklist": [
+    "quartz"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "are",
+    "quartz",
+    "quiet",
+    "rarely",
+    "tame",
+    "unicorns",
+    "zebras"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172514,
+   "secret_candidates_after": 172508,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "reward",
+   "w2": "drawer",
+   "clue": "Mirror the initials: Daring runners avoid winter evenings routinely.",
+   "mentions": [
+    "avoid",
+    "daring",
+    "evenings",
+    "initials",
+    "mirror",
+    "routinely",
+    "runners",
+    "the",
+    "winter"
+   ],
+   "blocklist": [
+    "drawer",
+    "reward"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "avoid",
+    "daring",
+    "drawer",
+    "evenings",
+    "initials",
+    "mirror",
+    "reward",
+    "routinely",
+    "runners",
+    "the",
+    "winter"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172508,
+   "secret_candidates_after": 172498,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "subterranean",
+   "w2": "subterranean",
+   "clue": "Silent umber birds travel east, racing rapidly across northern Europe after nightfall.",
+   "mentions": [
+    "across",
+    "after",
+    "birds",
+    "east",
+    "nightfall",
+    "northern",
+    "racing",
+    "rapidly",
+    "silent",
+    "travel",
+    "umber"
+   ],
+   "blocklist": [
+    "subterranean"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "across",
+    "after",
+    "birds",
+    "east",
+    "nightfall",
+    "northern",
+    "racing",
+    "rapidly",
+    "silent",
+    "subterranean",
+    "travel",
+    "umber"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172498,
+   "secret_candidates_after": 172486,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "a",
+   "w1": "yak",
+   "w2": "yak",
+   "clue": "Yearly auctions keep prices surprisingly stable.",
+   "mentions": [
+    "auctions",
+    "keep",
+    "prices",
+    "stable",
+    "surprisingly",
+    "yearly"
+   ],
+   "blocklist": [
+    "auction",
+    "yaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "yak"
+    },
+    {
+     "seat": "guesser2",
+     "word": "yak"
+    }
+   ],
+   "emissions": [
+    "auction",
+    "auctions",
+    "keep",
+    "prices",
+    "stable",
+    "surprisingly",
+    "yak",
+    "yaks",
+    "yearly"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": true,
+   "blocked_contact": false,
+   "result": "prefix_extended",
+   "secret_candidates_before": 172486,
+   "secret_candidates_after": 10423,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abacus",
+   "w2": "abacus",
+   "clue": "Ancient builders assembled complex unusual structures.",
+   "mentions": [
+    "ancient",
+    "assembled",
+    "builders",
+    "complex",
+    "structures",
+    "unusual"
+   ],
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abacus",
+    "ancient",
+    "assembled",
+    "builders",
+    "complex",
+    "structures",
+    "unusual"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10423,
+   "secret_candidates_after": 10420,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "ant",
+   "w2": "ant",
+   "clue": "A New Tale",
+   "mentions": [
+    "new",
+    "tale"
+   ],
+   "blocklist": [
+    "ant"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ant",
+    "new",
+    "tale"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10420,
+   "secret_candidates_after": 10419,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "acorn",
+   "w2": "acorn",
+   "clue": "Look past the first: calm, scary, word, area, into.",
+   "mentions": [
+    "area",
+    "calm",
+    "first",
+    "into",
+    "look",
+    "past",
+    "scary",
+    "the",
+    "word"
+   ],
+   "blocklist": [
+    "acorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "acorn",
+    "area",
+    "calm",
+    "first",
+    "into",
+    "look",
+    "past",
+    "scary",
+    "the",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10419,
+   "secret_candidates_after": 10417,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "aura",
+   "w2": "aura",
+   "clue": "A Unique Radiance Appears.",
+   "mentions": [
+    "appears",
+    "radiance",
+    "unique"
+   ],
+   "blocklist": [
+    "aura"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "appears",
+    "aura",
+    "radiance",
+    "unique"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10417,
+   "secret_candidates_after": 10415,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abed",
+   "w2": "abed",
+   "clue": "Word endings after colon: alpha club tree wood.",
+   "mentions": [
+    "after",
+    "alpha",
+    "club",
+    "colon",
+    "endings",
+    "tree",
+    "wood",
+    "word"
+   ],
+   "blocklist": [
+    "abed"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abed",
+    "after",
+    "alpha",
+    "club",
+    "colon",
+    "endings",
+    "tree",
+    "wood",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10415,
+   "secret_candidates_after": 10413,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "apex",
+   "w2": "apex",
+   "clue": "Read the third letter of each word: clay applies the boxes.",
+   "mentions": [
+    "applies",
+    "boxes",
+    "clay",
+    "each",
+    "letter",
+    "read",
+    "the",
+    "third",
+    "word"
+   ],
+   "blocklist": [
+    "apex"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "apex",
+    "applies",
+    "boxes",
+    "clay",
+    "each",
+    "letter",
+    "read",
+    "the",
+    "third",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10413,
+   "secret_candidates_after": 10411,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 21,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "ace",
+   "w2": "ace",
+   "clue": "Take the fourth letter of each: area reach knee.",
+   "mentions": [
+    "area",
+    "each",
+    "fourth",
+    "knee",
+    "letter",
+    "reach",
+    "take",
+    "the"
+   ],
+   "blocklist": [
+    "ace"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ace",
+    "area",
+    "each",
+    "fourth",
+    "knee",
+    "letter",
+    "reach",
+    "take",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10411,
+   "secret_candidates_after": 10410,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 22,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "able",
+   "w2": "able",
+   "clue": "Abode, book, lovely, east.",
+   "mentions": [
+    "abode",
+    "book",
+    "east",
+    "lovely"
+   ],
+   "blocklist": [
+    "able"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "able",
+    "abode",
+    "book",
+    "east",
+    "lovely"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10410,
+   "secret_candidates_after": 10409,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 23,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abate",
+   "w2": "abate",
+   "clue": "Word lengths encode A1Z26: I am a; uncharacteristically; quiet.",
+   "mentions": [
+    "encode",
+    "lengths",
+    "quiet",
+    "uncharacteristically",
+    "word"
+   ],
+   "blocklist": [
+    "abate"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abate",
+    "encode",
+    "lengths",
+    "quiet",
+    "uncharacteristically",
+    "word"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10409,
+   "secret_candidates_after": 10408,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 24,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "adage",
+   "w2": "adage",
+   "clue": "Fruit? Initials: A Daring Artist Gathers Echoes.",
+   "mentions": [
+    "artist",
+    "daring",
+    "echoes",
+    "fruit",
+    "gathers",
+    "initials"
+   ],
+   "blocklist": [
+    "adage"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "adage",
+    "artist",
+    "daring",
+    "echoes",
+    "fruit",
+    "gathers",
+    "initials"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10408,
+   "secret_candidates_after": 10406,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 25,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "aback",
+   "w2": "aback",
+   "clue": "Take the final letters: pasta bulb extra music book.",
+   "mentions": [
+    "book",
+    "bulb",
+    "extra",
+    "final",
+    "letters",
+    "music",
+    "pasta",
+    "take",
+    "the"
+   ],
+   "blocklist": [
+    "aback"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aback",
+    "book",
+    "bulb",
+    "extra",
+    "final",
+    "letters",
+    "music",
+    "pasta",
+    "take",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10406,
+   "secret_candidates_after": 10405,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 26,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abandon",
+   "w2": "abandon",
+   "clue": "A brilliant acrobat never drops oranges nightly.",
+   "mentions": [
+    "acrobat",
+    "brilliant",
+    "drops",
+    "never",
+    "nightly",
+    "oranges"
+   ],
+   "blocklist": [
+    "abandon"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abandon",
+    "acrobat",
+    "brilliant",
+    "drops",
+    "never",
+    "nightly",
+    "oranges"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10405,
+   "secret_candidates_after": 10403,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 27,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abash",
+   "w2": "abash",
+   "clue": "To make someone feel embarrassed or self-conscious.",
+   "mentions": [
+    "conscious",
+    "embarrassed",
+    "feel",
+    "make",
+    "self",
+    "someone"
+   ],
+   "blocklist": [
+    "abash"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abash",
+    "conscious",
+    "embarrassed",
+    "feel",
+    "make",
+    "self",
+    "someone"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10403,
+   "secret_candidates_after": 10402,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 28,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    }
+   ],
+   "emissions": [
+    "aardvark"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 10402,
+   "secret_candidates_after": 10401,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 29,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abandoners",
+   "w2": "abandoners",
+   "clue": "Initial letters: A brave artist notices distant owls; neighboring eagles rest silently.",
+   "mentions": [
+    "artist",
+    "brave",
+    "distant",
+    "eagles",
+    "initial",
+    "letters",
+    "neighboring",
+    "notices",
+    "owls",
+    "rest",
+    "silently"
+   ],
+   "blocklist": [
+    "abandoners"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "abandoners",
+    "artist",
+    "brave",
+    "distant",
+    "eagles",
+    "initial",
+    "letters",
+    "neighboring",
+    "notices",
+    "owls",
+    "rest",
+    "silently"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 10401,
+   "secret_candidates_after": 10400,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 30,
+   "prefix_before": "a",
+   "prefix_after": "a",
+   "w1": "abdominal",
+   "w2": "abampere",
+   "clue": "aah aal aahs aals aas aba abas abba abbas abbe abbes abbess abbey abbeys abbot abbots abamp abamps",
+   "mentions": [
+    "aah",
+    "aahs",
+    "aal",
+    "aals",
+    "aas",
+    "aba",
+    "abamp",
+    "abamps",
+    "abas",
+    "abba",
+    "abbas",
+    "abbe",
+    "abbes",
+    "abbess",
+    "abbey",
+    "abbeys",
+    "abbot",
+    "abbots"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": false,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "abdominal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abampere"
+    }
+   ],
+   "emissions": [
+    "aah",
+    "aahs",
+    "aal",
+    "aals",
+    "aas",
+    "aba",
+    "abamp",
+    "abampere",
+    "abamps",
+    "abas",
+    "abba",
+    "abbas",
+    "abbe",
+    "abbes",
+    "abbess",
+    "abbey",
+    "abbeys",
+    "abbot",
+    "abbots",
+    "abdominal"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 10400,
+   "secret_candidates_after": 10380,
+   "block_size": 0,
+   "block_fresh_secret_candidates": 0,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}
