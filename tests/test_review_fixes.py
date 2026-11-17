@@ -191,3 +191,20 @@ def test_stainless_402_is_provider_wide_quota_failure():
 
     from contact_bench.runner.run import PROVIDER_WIDE_FATAL
     assert mapped.category in PROVIDER_WIDE_FATAL
+
+
+def test_budget_exhaustion_handler_is_provider_local(tmp_path):
+    from .test_runner import cfg as rcfg, SCRIPTED
+    r = Runner(rcfg(SCRIPTED, tasks=1, L=2, lexicon="lexicons/mechanics_fixture_manifest.json"), tmp_path / "r")
+    r.prepare()
+    r._on_budget_exhausted(BudgetExhausted("google cap", provider="google"), "fork/x")
+    assert r.halted_providers == {"google": "budget: google cap"} and not r.budget_stopped
+    r._on_budget_exhausted(BudgetExhausted("global cap"), "d/y")
+    assert r.budget_stopped
+
+
+def test_fork_path_uses_provider_local_budget_handler():
+    import inspect
+    from contact_bench.runner.run import Runner as R
+    src = inspect.getsource(R._schedule_fork)
+    assert "_on_budget_exhausted" in src and "budget_stopped = True" not in src

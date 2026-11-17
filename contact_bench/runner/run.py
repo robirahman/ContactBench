@@ -417,7 +417,7 @@ class Runner:
                 rec = {**base, "status": "ok", "raw_output": fo.raw, "response": fo.response,
                        "cost_estimate": fo.cost_estimate}
             except BudgetExhausted as e:
-                self.budget_stopped = True
+                self._on_budget_exhausted(e, fork_id)
                 rec = {**base, "status": "unavailable", "error": "budget",
                        "requests_sent": getattr(e, "fork_requests_sent", 0),
                        "cost_estimate": getattr(e, "fork_cost", None)}
@@ -476,14 +476,7 @@ class Runner:
                         "cost_estimate": out.cost_estimate, "response": meta,
                     })
             except BudgetExhausted as e:
-                if e.provider:
-                    # A per-key cap pauses only games that need that provider.
-                    self.halted_providers.setdefault(e.provider, f"budget: {e}")
-                    self.store.append_event({"type": "provider_budget_stop", "provider": e.provider,
-                                             "reason": str(e), "decision_id": did})
-                    return Unavailable("budget")
-                self.budget_stopped = True
-                self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": did})
+                self._on_budget_exhausted(e, did)
                 return Unavailable("budget")
             except InfrastructureError as e:
                 self.store.append_request({
@@ -635,6 +628,16 @@ class Runner:
         status["reference_scorer_stats"] = dict(self.scorer.stats)
         self.store.write_json("status.json", status)
         return status
+
+    def _on_budget_exhausted(self, e: BudgetExhausted, decision_id: str) -> None:
+        """A per-key cap pauses only that provider's games; a global cap stops scheduling."""
+        if e.provider:
+            self.halted_providers.setdefault(e.provider, f"budget: {e}")
+            self.store.append_event({"type": "provider_budget_stop", "provider": e.provider,
+                                     "reason": str(e), "decision_id": decision_id})
+        else:
+            self.budget_stopped = True
+            self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": decision_id})
 
     def schedule_rematches(self) -> list[Fixture]:
         """Append one rematch fixture per completed no-progress draw (idempotent).
