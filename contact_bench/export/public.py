@@ -47,7 +47,8 @@ PROTOCOL_KEYS = None  # all protocol fields are public rule settings
 
 def _public_event(e: dict) -> dict:
     """Public history events contain only public fields by construction; re-pick anyway."""
-    keys = ["turn", "type", "seat", "word", "clue", "blocklist", "blocklist_collected", "opened_guesses",
+    keys = ["turn", "type", "seat", "word", "clue", "blocklist", "blocked_ranges", "blocked_word_count",
+            "blocklist_collected", "opened_guesses",
             "prefix_after", "result", "terminal_reason", "hit_sources"]
     out = {k: e[k] for k in keys if k in e}
     if "opened_guesses" in out:
@@ -56,7 +57,7 @@ def _public_event(e: dict) -> dict:
 
 
 def _audit_turn(t: dict) -> dict:
-    keys = ["turn", "prefix_before", "prefix_after", "w1", "w2", "clue", "mentions", "blocklist",
+    keys = ["turn", "prefix_before", "prefix_after", "w1", "w2", "clue", "mentions", "blocklist", "blocked_ranges",
             "blocked_guesser1", "blocked_guesser2", "choice_actor", "choice", "choice_valid", "opened",
             "emissions", "target_hit", "hit_sources", "registered_match", "intended_covered",
             "covered_match", "fresh_for_contact", "contact", "blocked_contact", "result",
@@ -72,7 +73,7 @@ def _audit_turn(t: dict) -> dict:
 
 def _private_entry(e: dict) -> dict:
     keys = ["turn", "action", "word", "committed_word", "clue", "validity", "reason", "canonical_action",
-            "canonical_blocklist"]
+            "canonical_blocklist", "canonical_ranges"]
     out = {k: e[k] for k in keys if k in e}
     if "conditional_choice" in e:
         out["conditional_choice"] = _pick(e["conditional_choice"], ["offered", "partner_word_blocked", "choice", "validity"])

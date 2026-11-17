@@ -110,6 +110,10 @@ def validate_config(cfg: BenchConfig, *, live: bool = False) -> dict:
     biggest = len(groups_c[biggest_prefix])
     blocklist_json = json.dumps({"action": "block", "words": groups_c[biggest_prefix]})
     est_tokens = len(blocklist_json) // 2 + 16  # conservative (~2 chars/token)
+    if cfg.protocol.blocklist_encoding == "words_and_ranges":
+        # Any legal blocklist can be written as at most one range per maximal
+        # run; the full dictionary is a single range.
+        est_tokens = 64
     report["largest_initial_contact_set"] = biggest
     report["full_blocklist_estimated_output_tokens"] = est_tokens
     # Worst-case initial observation size (largest prefix group).  Histories
@@ -127,7 +131,9 @@ def validate_config(cfg: BenchConfig, *, live: bool = False) -> dict:
     g0 = Game(game_id="preflight", secret=groups[big_prefix][0], v_secret=vs, v_contact=vc, protocol=cfg.protocol)
     obs = g0.observation("defender", "block", 1, current_clue="x" * C)
     initial_obs_tokens = estimate_tokens(system_prompt(clue_max_characters=C, turn_limit=cfg.protocol.turn_limit,
-                                                       dictionary_access=cfg.protocol.dictionary_access)) + \
+                                                       dictionary_access=cfg.protocol.dictionary_access,
+                                                       block_ranges=cfg.protocol.blocklist_encoding == "words_and_ranges",
+                                                       empty_prefix=cfg.protocol.initial_prefix_length == 0)) + \
         estimate_tokens(user_prompt(obs))
     report["largest_initial_observation_estimated_tokens"] = initial_obs_tokens
     from ..providers.registry import make_adapter
@@ -331,6 +337,8 @@ class Runner:
             dictionary_access=self.cfg.protocol.dictionary_access,
             dictionary_service=self.contact_dictionary,
             max_tool_calls=self.cfg.protocol.max_tool_calls_per_decision,
+            block_ranges=self.cfg.protocol.blocklist_encoding == "words_and_ranges",
+            empty_prefix=self.cfg.protocol.initial_prefix_length == 0,
         )
 
     # ----------------------------------------------------------------- game

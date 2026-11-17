@@ -32,6 +32,10 @@ class ProtocolConfig(_Strict):
     #   lookup_tools         — every player may call the same deterministic lookup functions
     dictionary_access: Literal["full_candidate_lists", "closed_book", "lookup_tools"] = "full_candidate_lists"
     max_tool_calls_per_decision: int = Field(20, ge=1, le=200)
+    # v0.5: "words_and_ranges" adds a dictionary-ID block encoding (alphabetical
+    # ranges between two dictionary words) with identical decoded effects, so
+    # a full legal blocklist stays representable for very large dictionaries.
+    blocklist_encoding: Literal["words", "words_and_ranges"] = "words"
     clue_track: Literal["mechanical"] = "mechanical"
     role_policy: Literal["fixed_guesser_roles"] = "fixed_guesser_roles"
     timing: Literal["sealed_initial_responses_then_conditional_reveal"] = (
@@ -68,8 +72,10 @@ class ProtocolConfig(_Strict):
 
     @model_validator(mode="after")
     def _version_features(self):
-        if self.version == "contact-v0.4" and self.dictionary_access != "full_candidate_lists":
-            raise ValueError("dictionary_access other than full_candidate_lists requires protocol contact-v0.5")
+        if self.version == "contact-v0.4" and (
+            self.dictionary_access != "full_candidate_lists" or self.blocklist_encoding != "words"
+        ):
+            raise ValueError("dictionary_access / blocklist_encoding extensions require protocol contact-v0.5")
         return self
 
     def condition_key(self) -> dict:

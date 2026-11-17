@@ -151,26 +151,61 @@ def admit_guesser2(raw: Any, *, pre_contact: frozenset[str], joint_live: bool = 
 EMPTY_BLOCK = {"action": "block", "words": []}
 
 
-def admit_defender(raw: Any, *, contact_vocab: frozenset[str], joint_live: bool = False) -> Admission:
+def admit_defender(raw: Any, *, contact_vocab: frozenset[str], joint_live: bool = False,
+                   allow_ranges: bool = False) -> Admission:
+    """Admit a blocklist.  With ``allow_ranges`` (v0.5 dictionary-ID encoding)
+    the action also carries ``ranges``: [{"from": w1, "to": w2}], each blocking
+    every V_contact word alphabetically between two dictionary words
+    inclusive.  Decoded game effects are identical to listing those words."""
+    empty = {"action": "block", "words": [], "ranges": []} if allow_ranges else dict(EMPTY_BLOCK)
     obj, diag, has_diag, err = unwrap(raw, joint_live)
     if err:
-        return Admission(False, dict(EMPTY_BLOCK), err)
-    err = _exact_keys(obj, {"action", "words"})
+        return Admission(False, dict(empty), err)
+    err = _exact_keys(obj, {"action", "words", "ranges"} if allow_ranges else {"action", "words"})
     if err:
-        return Admission(False, dict(EMPTY_BLOCK), err, diag, has_diag)
+        return Admission(False, dict(empty), err, diag, has_diag)
     if obj["action"] != "block" or not isinstance(obj["words"], list):
-        return Admission(False, dict(EMPTY_BLOCK), "action must be block with a words array", diag, has_diag)
+        return Admission(False, dict(empty), "action must be block with a words array", diag, has_diag)
+    ranges: list[list[str]] = []
+    if allow_ranges:
+        if not isinstance(obj["ranges"], list):
+            return Admission(False, dict(empty), "ranges must be an array", diag, has_diag)
+        for r in obj["ranges"]:
+            if not isinstance(r, dict) or set(r) != {"from", "to"}:
+                return Admission(False, dict(empty), "each range needs exactly from and to", diag, has_diag)
+            a, b = normalize_word(r["from"]), normalize_word(r["to"])
+            if a is None or b is None or a not in contact_vocab or b not in contact_vocab:
+                return Admission(False, dict(empty), "range endpoints must be dictionary words", diag, has_diag)
+            if a > b:
+                return Admission(False, dict(empty), "range from must not follow to alphabetically", diag, has_diag)
+            if [a, b] not in ranges:
+                ranges.append([a, b])
     out: list[str] = []
     seen: set[str] = set()
     for entry in obj["words"]:
         w = normalize_word(entry)
         if w is None or w not in contact_vocab:
-            return Admission(False, dict(EMPTY_BLOCK), "blocklist entry is not a dictionary word", diag, has_diag)
+            return Admission(False, dict(empty), "blocklist entry is not a dictionary word", diag, has_diag)
         if w not in seen:
             seen.add(w)
             out.append(w)
     # Canonical blocklist is sorted for stable public display.
-    return Admission(True, {"action": "block", "words": sorted(out)}, None, diag, has_diag)
+    canon: dict[str, Any] = {"action": "block", "words": sorted(out)}
+    if allow_ranges:
+        canon["ranges"] = sorted(ranges)
+    return Admission(True, canon, None, diag, has_diag)
+
+
+def decode_blocklist(canonical: dict, contact_words: tuple[str, ...]) -> frozenset[str]:
+    """Explicit blocked word set (words plus every word inside each range)."""
+    import bisect
+
+    out = set(canonical.get("words", []))
+    for a, b in canonical.get("ranges", []) or []:
+        lo = bisect.bisect_left(contact_words, a)
+        hi = bisect.bisect_right(contact_words, b)
+        out.update(contact_words[lo:hi])
+    return frozenset(out)
 
 
 def admit_choice(raw: Any) -> Admission:
@@ -213,16 +248,22 @@ def guesser2_schema() -> dict:
     }
 
 
-def defender_schema() -> dict:
-    return {
-        "type": "object",
-        "properties": {
-            "action": {"type": "string", "enum": ["block"]},
-            "words": {"type": "array", "items": {"type": "string"}},
-        },
-        "required": ["action", "words"],
-        "additionalProperties": False,
+def defender_schema(ranges: bool = False) -> dict:
+    props: dict[str, Any] = {
+        "action": {"type": "string", "enum": ["block"]},
+        "words": {"type": "array", "items": {"type": "string"}},
     }
+    if ranges:
+        props["ranges"] = {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {"from": {"type": "string"}, "to": {"type": "string"}},
+                "required": ["from", "to"],
+                "additionalProperties": False,
+            },
+        }
+    return {"type": "object", "properties": props, "required": sorted(props), "additionalProperties": False}
 
 
 def choice_schema() -> dict:
@@ -278,16 +319,16 @@ def joint_schema(gameplay: dict, seat: str) -> dict:
     }
 
 
-def schema_for(seat: str, phase: str, joint_live: bool = False) -> tuple[str, dict]:
+def schema_for(seat: str, phase: str, joint_live: bool = False, block_ranges: bool = False) -> tuple[str, dict]:
     if phase == "choice":
         return "contact_choice", choice_schema()
-    base = {
-        "guesser1": ("contact_guesser1", guesser1_schema),
-        "guesser2": ("contact_guesser2", guesser2_schema),
-        "defender": ("contact_defender", defender_schema),
-    }[seat]
-    name, fn = base
-    schema = fn()
+    if seat == "defender":
+        name, schema = ("contact_defender_ranges" if block_ranges else "contact_defender"), defender_schema(block_ranges)
+    else:
+        name, schema = {
+            "guesser1": ("contact_guesser1", guesser1_schema()),
+            "guesser2": ("contact_guesser2", guesser2_schema()),
+        }[seat]
     if joint_live and seat in ("guesser2", "defender"):
         return name + "_joint", joint_schema(schema, seat)
     return name, schema

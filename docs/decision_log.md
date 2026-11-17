@@ -55,6 +55,23 @@ The design choices behind these conditions:
 - **Shadow audit.** The forecast support is still read from observation lists, so the shadow audit currently
   requires `full_candidate_lists`. This is a known gap.
 
+## Empty initial prefix and range-encoded blocklists (2026-11-17)
+
+- **Empty prefix.** `initial_prefix_length: 0` is supported. The secret can be any dictionary word, and the first
+  contact reveals its first letter. This departs from traditional Contact on purpose, to make the benchmark harder.
+  With ENABLE the initial candidate set is all 172,608 words, and the reference cost `B` is about 6,900 turns.
+- **Range-encoded blocklists.** With an empty prefix, a full explicit blocklist would be about 1M tokens, so the spec
+  §4.4 capacity requirement fails for every model. `blocklist_encoding: words_and_ranges` adds the dictionary-ID
+  encoding that the spec allows. A blocklist is `{"action": "block", "words": [...], "ranges": [{"from": w1, "to": w2}]}`,
+  and each range blocks every `V_contact` word alphabetically between two dictionary words, inclusive. Its decoded
+  effect is identical to listing those words: they become public and used, and a range that contains the secret
+  loses for the defender.
+- **Public record of ranges.** Public history records the explicit words, the ranges and `blocked_word_count`.
+  Observations list `used_ranges` (merged), and `used_words` omits the words those ranges cover, so a huge block
+  cannot overflow later prompts.
+- **Pilot configuration.** The self-play pilot used `turn_limit: 20` and 256 reference rollouts per histogram. One
+  rollout over the full dictionary takes about 0.11 s.
+
 ## Review fixes (Codex review of PR #1)
 
 1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes

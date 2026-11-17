@@ -9,7 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 
-PROMPT_VERSION = "prompts-v2"
+PROMPT_VERSION = "prompts-v3"
 
 RULES = """\
 You are playing CONTACT, a cooperative-versus-adversarial word game, as part of a benchmark.
@@ -140,16 +140,41 @@ DICTIONARY_PARAGRAPHS = {
 }
 
 
+RANGES_PARAGRAPH = """
+BLOCK RANGES
+- A blocklist may also contain ranges {"from": w1, "to": w2} (both dictionary words, w1 <= w2 alphabetically).
+  A range blocks every dictionary word alphabetically between w1 and w2 inclusive, exactly as if each were
+  listed: all of them become public and used, and a range containing the secret loses for the Defender.
+- The observation field used_ranges lists every published block range; all words inside them are used.
+"""
+
+EMPTY_PREFIX_NOTE = (
+    "- The prefix may be EMPTY at the start: then the secret can be any dictionary word, and the first\n"
+    "  successful contact reveals its first letter.\n"
+)
+
+
 def system_prompt(*, clue_max_characters: int, turn_limit: int,
-                  dictionary_access: str = "full_candidate_lists", max_tool_calls: int = 20) -> str:
+                  dictionary_access: str = "full_candidate_lists", max_tool_calls: int = 20,
+                  block_ranges: bool = False, empty_prefix: bool = False) -> str:
     para = DICTIONARY_PARAGRAPHS[dictionary_access].replace("{T}", str(max_tool_calls))
-    return (RULES.replace("{DICTIONARY_PARAGRAPH}", para)
+    if empty_prefix:
+        para = para + "\n" + EMPTY_PREFIX_NOTE.rstrip("\n")
+    text = (RULES.replace("{DICTIONARY_PARAGRAPH}", para)
             .replace("{C}", str(clue_max_characters)).replace("{L}", str(turn_limit)))
+    if block_ranges:
+        text = text.replace("\nWINNING\n", RANGES_PARAGRAPH + "\nWINNING\n", 1)
+    return text
 
 
 def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
     seat, phase = observation["role"], observation["phase"]
     parts = [ROLE_GUIDANCE[(seat, phase)]]
+    if seat == "defender" and observation.get("blocklist_encoding") == "words_and_ranges":
+        parts = [ROLE_GUIDANCE[(seat, phase)].replace(
+            '{"action": "block", "words": [<dictionary words>]} (an empty list is allowed).',
+            '{"action": "block", "words": [<dictionary words>], "ranges": [{"from": <word>, "to": <word>}, ...]}\n'
+            "(empty lists are allowed).")]
     cond = CONDITION_GUIDANCE.get(observation.get("offense_condition", "full"), "")
     if cond and seat != "defender":
         parts.append(cond)
@@ -172,4 +197,6 @@ def prompt_hash() -> str:
     h.update(FORECAST_GUIDANCE.encode())
     for k in sorted(DICTIONARY_PARAGRAPHS):
         h.update(DICTIONARY_PARAGRAPHS[k].encode())
+    h.update(RANGES_PARAGRAPH.encode())
+    h.update(EMPTY_PREFIX_NOTE.encode())
     return h.hexdigest()

@@ -98,6 +98,8 @@ class Game:
         self.joint_live = joint_live
         self.turn_limit = protocol.turn_limit
         self.clue_max = protocol.clue_max_characters
+        self.block_ranges_enabled = protocol.blocklist_encoding == "words_and_ranges"
+        self.blocked_ranges: list[list[str]] = []  # published ranges (public)
 
         # public state
         self.prefix = secret[:k]
@@ -163,11 +165,33 @@ class Game:
             "prefix": self.prefix,
             "turns_used": self.turns_used,
             "turn_limit": self.turn_limit,
-            "used_words": sorted(self.used_words),
+            **self._used_view(),
             "public_history": [dict(e) for e in self.public_history],
             "outcome_status": self.outcome_status
             if self.outcome_status != OUTCOME_INCOMPLETE
             else OUTCOME_ONGOING,
+        }
+
+    def _used_view(self) -> dict:
+        if not self.block_ranges_enabled:
+            return {"used_words": sorted(self.used_words)}
+        merged: list[list[str]] = []
+        for a, b in sorted(self.blocked_ranges):
+            if merged and a <= merged[-1][1]:
+                merged[-1][1] = max(merged[-1][1], b)
+            else:
+                merged.append([a, b])
+        starts = [a for a, _ in merged]
+
+        def covered(w: str) -> bool:
+            if w not in self.v_contact:
+                return False
+            i = bisect.bisect_right(starts, w) - 1
+            return i >= 0 and w <= merged[i][1]
+
+        return {
+            "used_words": sorted(w for w in self.used_words if not covered(w)),
+            "used_ranges": merged,
         }
 
     # ----------------------------------------------------------- observations
@@ -180,8 +204,8 @@ class Game:
             phase=phase,
             turn=turn,
             clue_max_characters=self.clue_max,
-            secret_candidates=self.secret_candidates(),
-            contact_candidates=self.contact_candidates(),
+            secret_candidates=self.secret_candidates() if self.protocol.dictionary_access == "full_candidate_lists" else [],
+            contact_candidates=self.contact_candidates() if self.protocol.dictionary_access == "full_candidate_lists" else [],
             own_private_history=[dict(e) for e in self.private_history[seat]],
             secret=self._secret if seat == "defender" else None,
             offense_condition=self.offense_condition,
@@ -208,7 +232,7 @@ class Game:
         return ident
 
     def _spec(self, seat: str, phase: str, turn: int, obs: dict) -> DecisionSpec:
-        name, schema = A.schema_for(seat, phase, self.joint_live)
+        name, schema = A.schema_for(seat, phase, self.joint_live, self.block_ranges_enabled)
         return DecisionSpec(self.game_id, turn, seat, phase, obs, name, schema)
 
     # ----------------------------------------------------------------- driver
@@ -362,7 +386,8 @@ class Game:
         if not isinstance(rd, Unavailable):
             self.decision_count += 1
             audit["decisions"] += 1
-            admd = A.admit_defender(rd, contact_vocab=self.v_contact.word_set, joint_live=self.joint_live)
+            admd = A.admit_defender(rd, contact_vocab=self.v_contact.word_set, joint_live=self.joint_live,
+                                    allow_ranges=self.block_ranges_enabled)
             self._record_diag(t, "defender", admd, w1)
 
         if missing:
@@ -370,7 +395,7 @@ class Game:
             sources = []
             if self._secret in M:
                 sources.append("clue")
-            if admd is not None and self._secret in admd.canonical["words"]:
+            if admd is not None and self._secret in A.decode_blocklist(admd.canonical, self.v_contact.words):
                 sources.append("blocklist")
             if sources:
                 self.collection_status = "incomplete"
@@ -382,6 +407,7 @@ class Game:
                         "type": "clue_round",
                         "clue": clue,
                         "blocklist": admd.canonical["words"] if admd else None,
+                        **({"blocked_ranges": admd.canonical.get("ranges", [])} if admd and self.block_ranges_enabled else {}),
                         "blocklist_collected": admd is not None,
                         "opened_guesses": [],
                         "prefix_after": self.prefix,
@@ -404,8 +430,11 @@ class Game:
 
         assert adm2 is not None and admd is not None
         w2 = adm2.canonical["word"]  # None for pass
-        H = frozenset(admd.canonical["words"])
+        H = A.decode_blocklist(admd.canonical, self.v_contact.words)
         blocklist = admd.canonical["words"]
+        block_ranges = admd.canonical.get("ranges", []) if self.block_ranges_enabled else None
+        if block_ranges is not None:
+            audit["blocked_ranges"] = block_ranges
         audit.update(
             guesser2=_adm_audit(adm2),
             defender=_adm_audit(admd),
@@ -430,6 +459,7 @@ class Game:
             "turn": t,
             "validity": "valid" if admd.valid else "invalid",
             "canonical_blocklist": blocklist,
+            **({"canonical_ranges": block_ranges} if block_ranges is not None else {}),
         }
         if not admd.valid:
             d_priv["reason"] = admd.reason
@@ -524,6 +554,7 @@ class Game:
             "type": "clue_round",
             "clue": clue,
             "blocklist": blocklist,
+            **({"blocked_ranges": block_ranges, "blocked_word_count": len(H)} if block_ranges is not None else {}),
             "opened_guesses": [{"seat": s, "word": w} for s, w in opened],
         }
         if target_hit:
@@ -532,6 +563,8 @@ class Game:
             audit["result"] = "won"
         else:
             self.used_words |= emissions
+            if block_ranges:
+                self.blocked_ranges.extend([list(r) for r in block_ranges])
             if contact:
                 self.prefix = self.prefix + self._secret[len(self.prefix)]
                 if self.prefix == self._secret:

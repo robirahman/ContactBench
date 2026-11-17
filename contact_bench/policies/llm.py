@@ -64,6 +64,8 @@ class LLMAgent:
         dictionary_access: str = "full_candidate_lists",
         dictionary_service=None,
         max_tool_calls: int = 20,
+        block_ranges: bool = False,
+        empty_prefix: bool = False,
     ):
         self.model = model
         self.adapter = adapter
@@ -77,7 +79,8 @@ class LLMAgent:
         if dictionary_access == "lookup_tools" and dictionary_service is None:
             raise ValueError("lookup_tools condition requires a dictionary service")
         self.system = system_prompt(clue_max_characters=clue_max_characters, turn_limit=turn_limit,
-                                    dictionary_access=dictionary_access, max_tool_calls=max_tool_calls)
+                                    dictionary_access=dictionary_access, max_tool_calls=max_tool_calls,
+                                    block_ranges=block_ranges, empty_prefix=empty_prefix)
 
     def build_request(self, spec: DecisionSpec, decision_id: str) -> DecisionRequest:
         up = user_prompt(spec.observation, sparse_max_entries=self.sparse_max_entries)

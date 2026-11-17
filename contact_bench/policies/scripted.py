@@ -60,17 +60,27 @@ class ScriptedAgent:
         return self.act(spec)
 
     # synchronous core, convenient for tests
+    @staticmethod
+    def _used_set(obs: dict):
+        used = set(obs["used_words"])
+        ranges = obs.get("used_ranges") or []
+
+        def is_used(w: str) -> bool:
+            return w in used or any(a <= w <= b for a, b in ranges)
+
+        return is_used
+
     def _with_lists(self, obs: dict) -> dict:
         if "secret_candidates" in obs:
             return obs
         if self.secret_dictionary is None:
             raise ValueError("scripted policy needs a dictionary service in this condition")
-        prefix, used = obs["prefix"], set(obs["used_words"])
+        prefix, is_used = obs["prefix"], self._used_set(obs)
         obs = dict(obs)
         obs["secret_candidates"] = [w for w in self.secret_dictionary.all_words(prefix)
-                                    if w not in used and len(w) > len(prefix)]
+                                    if not is_used(w) and len(w) > len(prefix)]
         obs["contact_candidates"] = [w for w in self.contact_dictionary.all_words(prefix)
-                                     if w not in used and len(w) > len(prefix)]
+                                     if not is_used(w) and len(w) > len(prefix)]
         return obs
 
     def act(self, spec: DecisionSpec) -> Any:
@@ -153,6 +163,12 @@ class ScriptedAgent:
 
     # ---------------------------------------------------------------- defense
     def _defend(self, obs: dict) -> Any:
+        out = self._defend_words(obs)
+        if obs.get("blocklist_encoding") == "words_and_ranges":
+            out["ranges"] = []
+        return out
+
+    def _defend_words(self, obs: dict) -> Any:
         secret = obs["secret"]
         contact: list[str] = obs["contact_candidates"]
         d = self.defense

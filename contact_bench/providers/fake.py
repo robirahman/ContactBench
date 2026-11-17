@@ -66,6 +66,8 @@ def legal_action(obs: dict) -> dict:
         action = {"action": "guess", "word": cands[-1]} if cands else {"action": "pass", "word": None}
     else:
         action = {"action": "block", "words": []}
+        if obs.get("blocklist_encoding") == "words_and_ranges":
+            action["ranges"] = []
     if obs.get("forecast_reports_requested"):
         diag = {"intended_word_forecast": _forecast(obs), "commitment_match_forecast": None}
         return {"gameplay": action, "diagnostics": diag}
@@ -125,7 +127,9 @@ class FakeAdapter(ProviderAdapter):
             return resp, [call], state
         if state["words"] is not None and "secret_candidates" not in obs:
             used = set(obs["used_words"])
-            cands = [w for w in state["words"] if w not in used and len(w) > len(obs["prefix"])]
+            rng = obs.get("used_ranges") or []
+            cands = [w for w in state["words"] if w not in used and not any(a <= w <= b for a, b in rng)
+                     and len(w) > len(obs["prefix"])]
             obs = {**obs, "secret_candidates": cands, "contact_candidates": cands}
         return self._respond(request, legal_action(obs)), [], state
 

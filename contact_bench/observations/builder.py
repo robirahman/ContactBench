@@ -68,6 +68,10 @@ def build_observation(
         "offense_condition": offense_condition,
         "forecast_reports_requested": bool(joint_live and seat in ("guesser2", "defender") and phase != "choice"),
     }
+    if public.get("used_ranges") is not None:
+        # Words inside these published block ranges are used (compact form).
+        obs["used_ranges"] = list(public["used_ranges"])
+        obs["blocklist_encoding"] = "words_and_ranges"
     if dictionary_access == "full_candidate_lists":
         obs["secret_candidates"] = list(secret_candidates)
         obs["contact_candidates"] = list(contact_candidates)
