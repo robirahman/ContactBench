@@ -399,6 +399,9 @@ class BenchConfig(_Strict):
             for o in hc.opponents:
                 if o not in ids or o == hc.player:
                     raise ValueError(f"human_challenge opponent {o!r} is not a configured model")
+            extra = set(ids) - set(hc.opponents) - {hc.player}
+            if extra:
+                raise ValueError(f"models {sorted(extra)} are not human_challenge opponents; remove them")
             if self.tournament.rematch_on_no_progress_draw:
                 # A rematch replays a secret the human has already seen.
                 raise ValueError("human_challenge requires rematch_on_no_progress_draw: false")

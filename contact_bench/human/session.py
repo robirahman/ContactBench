@@ -97,6 +97,10 @@ class HumanSession:
             "max_lookups": max_lookups, "lookups": [], "lookup_results": [], "rejected": 0,
         }
         with self._lock:
+            # Checked under the lock that stop() takes, so a pause can never
+            # slip between the check and publication and leave this waiting.
+            if self.stopped:
+                raise HumanStopped("stopped")
             self._pending = entry
             self.version += 1
         try:

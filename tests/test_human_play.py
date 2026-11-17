@@ -63,6 +63,10 @@ def test_config_rules():
     with pytest.raises(ValueError, match="human"):
         BenchConfig.model_validate(bad)
     bad = _data()
+    bad["tournament"]["human_challenge"]["opponents"] = ["bot_a"]
+    with pytest.raises(ValueError, match="not human_challenge opponents"):
+        BenchConfig.model_validate(bad)
+    bad = _data()
     bad["tournament"]["human_challenge"]["opponents"] = ["nobody"]
     with pytest.raises(ValueError, match="opponent"):
         BenchConfig.model_validate(bad)
@@ -290,6 +294,11 @@ def test_stop_pauses_and_resume_continues(tmp_path):
     st = asyncio.run(go())
     assert st["complete_games"] == 0 and session.state()["status"] == "stopped"
     session.mark_paused("8 games still pending (paused).")
+    from contact_bench.human.agent import HumanStopped
+
+    with pytest.raises(HumanStopped):  # a stopped session never publishes a new decision
+        asyncio.run(session.ask(None, "x", game=None, max_lookups=0))
+    assert session.state()["pending"] is None
     assert session.state()["message"].startswith("8 games")
     # a later session resumes the same run
     runner2 = Runner(cfg, tmp_path / "r")
