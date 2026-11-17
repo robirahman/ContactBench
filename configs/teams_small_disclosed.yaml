@@ -1,0 +1,112 @@
+# Mixed-team small-tier pilot, partner disclosure: disclosed.
+# Pairs of small models attack; defender per (pair, secret) chosen adaptively from the
+# small tier plus GPT-6.1 Terra (Argon/Sonnet excluded for cost).
+name: teams-small-disclosed
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 100
+  partner_disclosure: disclosed
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 4
+  generation_seed: 43
+tournament:
+  schedule: teams
+  homogeneous_attackers: false
+  teams:
+    pairs:
+    - - claude_haiku_5_5
+      - gpt_6_luna
+    - - claude_haiku_5_5
+      - gemini_4_hydrogen
+    - - gpt_6_luna
+      - gemini_4_hydrogen
+    defender_pool:
+    - claude_haiku_5_5
+    - gpt_6_luna
+    - gemini_4_hydrogen
+    - gpt_6_1_terra
+    rounds: 2
+    prior_runs:
+    - lb-latest-small-10
+    - lb-cross-tier-3
+    - lb-mid-tier-10
+    selection_seed: 17
+models:
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+    cache_write_per_mtok: 0.125
+- id: gpt_6_luna
+  provider: openai
+  api_family: responses
+  model: gpt-6-luna
+  parameters: {}
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1050000
+  prices:
+    as_of: '2026-11-17'
+    source: third-party trackers; model ID verified via OpenAI models.list 2026-11-17
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+- id: gemini_4_hydrogen
+  provider: google
+  api_family: interactions
+  model: gemini-4-hydrogen
+  parameters:
+    thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: Google announcement via third-party trackers; model ID verified via models.list;
+      cached rate set conservatively at 25% of input (trackers list $0.075)
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+    cached_input_per_mtok: 0.375
+- id: gpt_6_1_terra
+  provider: openai
+  api_family: responses
+  model: gpt-6.1-terra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: OpenAI launch page via trackers; model ID verified via models.list
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cached_input_per_mtok: 0.05
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

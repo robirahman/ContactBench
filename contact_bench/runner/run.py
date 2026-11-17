@@ -703,8 +703,13 @@ class Runner:
             sources.append((d, sched["fixtures"], sched["games"]))
         for d, fixtures, games in sources:
             store = self.store if d == self.run_dir else RunStore(d)
-            recs = [store.read_game(g["game_id"]) for g in games]
-            rows = load_rows([r for r in recs if r and r.get("run_status") == "complete"])
+            recs = []
+            for g in games:  # keep only what the fit needs (game records can be large)
+                r = store.read_game(g["game_id"])
+                if r and r.get("run_status") == "complete":
+                    recs.append({k: r.get(k) for k in ("game", "summary", "score", "run_status")})
+                del r
+            rows = load_rows(recs)
             fx = fixture_results(rows, fixtures, no_progress_draws=self.cfg.tournament.no_progress_draws)
             legs.extend(role_fixture_data(rows, fx))
             for g in games:  # every scheduled leg counts as a faced matchup
@@ -738,7 +743,8 @@ class Runner:
                 blocks = [Block(tid, r, a, b) for a, b in t.pairs for tid in slice_ids
                           for r in range(self.cfg.tournament.repetitions)]
                 chosen = select_defenders(blocks, pool=pool, faced=faced, fit=fit, round_no=rno,
-                                          seed=t.selection_seed)
+                                          seed=t.selection_seed,
+                                          legs_per_model=3 if t.include_self_play else 2)
                 for blk, d, _ in chosen:
                     fxs, gs = team_block(blk.task_id, blk.repetition, blk.a, blk.b, d,
                                          include_self_play=t.include_self_play, round_no=rno)

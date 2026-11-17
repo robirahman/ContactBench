@@ -93,9 +93,12 @@ The authoritative rules are in `CONTACT_BENCHMARK_SPEC.md`. This page describes 
   `teams.prior_runs` can include for defender selection). Components are centred within each role.
 - **Adaptive defender selection** (`defender_selection: adaptive_uncertainty`). Tasks are split into `rounds`;
   before each round the role model is refitted on all completed data (this run plus `prior_runs`) and each
-  (pair, task) block gets the defender that (1) fills the most missing (model, defender) matchups, then (2)
-  maximises `Var(g1_A + g2_B − d_D) + Var(g1_B + g2_A − d_D)` under the Laplace posterior, then (3) wins a seeded
-  hash tie-break. Selection depends only on earlier outcomes (a sequential design), is logged as a
+  (pair, task) block gets the defender that (1) fills the most missing (model, defender) matchups, then (2) has
+  the fewest earlier matchups with the pair (counting blocks already assigned this round), then (3) maximises
+  `Var(g1_A + g2_B − d_D) + Var(g1_B + g2_A − d_D)` under the Laplace posterior, then (4) wins a seeded hash
+  tie-break. Both fixtures of a block face the same defender, so `d_D` cancels in their likelihood: defender
+  choice changes which matchups are observed (and how often fixtures end as no-progress draws), not the
+  identifiability of role contrasts. The uncertainty rule is therefore secondary to matchup coverage. Selection depends only on earlier outcomes (a sequential design), is logged as a
   `defenders_selected` event, and the bootstrap resamples whole blocks with the defenders actually chosen.
 - **Diagnostics.** A cross-play matrix (G1 model × G2 model: median cost, contacts per clue turn) and each model's
   self-play vs mixed-partner median cost. Team runs are never combined with homogeneous runs (`analyze-combined`

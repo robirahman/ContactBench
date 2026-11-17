@@ -5,10 +5,17 @@ team).  Rounds are scheduled sequentially from all data completed so far:
 
 1. Missing matchups first: prefer defenders that neither team model has faced
    (in team legs, scheduled or completed, or in pooled homogeneous fixtures).
-2. Then the defender whose block would inform the most uncertain quantities:
-   the largest Var(g1_A+g2_B-d_D) + Var(g1_B+g2_A-d_D) under the current
-   role-rating posterior (Laplace covariance of the penalised fit).
-3. Ties broken by a seeded hash of (round, pair, task, defender), independent
+2. Then the fewest matchups: the smallest faced(A, D) + faced(B, D), counting
+   blocks already assigned in this round, so defenders spread across blocks.
+3. Then the most uncertain ratings: the largest
+   Var(g1_A+g2_B-d_D) + Var(g1_B+g2_A-d_D) under the current role-rating
+   posterior (Laplace covariance of the penalised fit).  Within one block both
+   fixtures face the same defender, so d_D cancels in the fixture likelihood;
+   the block's games still add (team, D) matchups that leg-level analyses and
+   later homogeneous fixtures use, which is why uncertainty about D's own
+   rating counts here.  This rule is secondary to matchup coverage because a
+   block cannot reduce Var(d_D) under the fixture model.
+4. Ties broken by a seeded hash of (round, pair, task, defender), independent
    of outcomes.
 
 Selection is a pure function of the logged data, so it can be recomputed from
@@ -52,6 +59,7 @@ def select_defenders(
     fit: RoleFit | None,
     round_no: int,
     seed: int,
+    legs_per_model: int = 3,
 ) -> list[tuple[Block, str, dict]]:
     """Choose a defender per block.  ``faced[(model, defender)]`` counts prior
     matchups; it is updated greedily so blocks in one round spread out."""
@@ -66,10 +74,13 @@ def select_defenders(
             if fit is not None and all(m in fit.models for m in (blk.a, blk.b, d)):
                 var = (fit.variance(leg_features(fit.models, (blk.a, blk.b, d)))
                        + fit.variance(leg_features(fit.models, (blk.b, blk.a, d))))
-            scored.append(((missing, round(var, 12), _tie(seed, round_no, blk, d)), d))
-        (missing, var, _), best = max(scored)
-        faced[(blk.a, best)] += 1
-        faced[(blk.b, best)] += 1
-        out.append((blk, best, {"missing_matchups": missing, "variance_score": var,
+            seen = faced[(blk.a, d)] + faced[(blk.b, d)]
+            scored.append(((missing, -seen, round(var, 12), _tie(seed, round_no, blk, d)), d))
+        (missing, neg_seen, var, _), best = max(scored)
+        # Count games, like the logged schedules: each model plays 3 of the 4
+        # legs of a block (A+B, B+A and its own self-play leg).
+        faced[(blk.a, best)] += legs_per_model
+        faced[(blk.b, best)] += legs_per_model
+        out.append((blk, best, {"missing_matchups": missing, "prior_matchups": -neg_seen, "variance_score": var,
                                 "candidates": [d for _, d in sorted(scored, reverse=True)]}))
     return out
