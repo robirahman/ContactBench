@@ -108,6 +108,11 @@ def test_offline_team_run_routes_seats_and_analyzes(tmp_path):
     assert t and t["partner_disclosure"] == "blind"
     assert set(t["role_rating"]["elo"]) == {"x", "y", "z"}
     assert "x" in t["cross_play_matrix"] and "self_vs_cross_play" in t
+    # team legs count in the efficiency statistics (L1/L2 labels)
+    assert res["model_stats"]["x+y"]["offense_games"] >= 2  # plus any rematch legs
+    # no fixture faces different defenders: defender components are not identified
+    assert t["defender_components_identified"] is False
+    assert all(v is None for v in t["role_rating"]["elo"].values())
     out = export_public(tmp_path / "run", tmp_path / "exp", res, recs)
     assert not scan_for_secrets(out)
     rep = asyncio.run(Runner(c, tmp_path / "run", replay_only=True).replay())
@@ -196,3 +201,9 @@ def test_adaptive_selection_missing_first_then_variance_and_deterministic():
 
 def test_match_points_symmetry_for_role_fixture():
     assert match_points(3, 5) == 1.0 and match_points(5, 3) == 0.0
+
+
+def test_defender_identified_only_with_different_defenders():
+    from contact_bench.analysis.analyze import defender_identified
+    assert not defender_identified([(("a", "b", "d"), ("b", "a", "d"), 1.0)])
+    assert defender_identified([(("a", "a", "b"), ("b", "b", "a"), 1.0)])

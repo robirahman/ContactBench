@@ -92,6 +92,10 @@ class GameRow:
         return self.cost is not None and self.baseline is not None
 
 
+# Leg labels of scored paired games: AB/BA (homogeneous) and L1/L2 (team fixtures).
+PAIRED_LEGS = ("AB", "BA", "L1", "L2")
+
+
 def load_rows(records: list[dict]) -> list[GameRow]:
     return [GameRow(r) for r in records]
 
@@ -146,7 +150,7 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_dr
 
 
 def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict[str, dict]:
-    cross = [r for r in rows if r.leg in ("AB", "BA") and r.scored]
+    cross = [r for r in rows if r.leg in PAIRED_LEGS and r.scored]
     stats: dict[str, dict] = {}
     for m in models:
         off = [r for r in cross if r.attacker == m]
@@ -407,7 +411,7 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
         by_task[f["task_id"]].append(f)
     rows_by_task: dict[str, list[GameRow]] = defaultdict(list)
     for r in rows:
-        if r.scored and r.leg in ("AB", "BA"):
+        if r.scored and r.leg in PAIRED_LEGS:
             rows_by_task[r.task_id].append(r)
     rng = random.Random(seed)
     samples: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in models}
@@ -457,8 +461,9 @@ def _seats(game: dict) -> tuple[str, str, str]:
             game["defender"])
 
 
-def role_fixture_data(rows: list[GameRow], fx: list[dict]) -> list[tuple[tuple, tuple, float]]:
-    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture."""
+def role_fixture_data(rows: list[GameRow], fx: list[dict], *, with_task: bool = False) -> list:
+    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture
+    (prefixed by the task id with ``with_task``)."""
     by_id = {r.game_id: r for r in rows}
     out = []
     for f in fx:
@@ -467,12 +472,42 @@ def role_fixture_data(rows: list[GameRow], fx: list[dict]) -> list[tuple[tuple, 
         ab, ba = by_id.get(f.get("game_ab", "")), by_id.get(f.get("game_ba", ""))
         if ab is None or ba is None:
             continue
-        out.append((_seats(ab.rec["game"]), _seats(ba.rec["game"]), f["points_a"]))
+        item = (_seats(ab.rec["game"]), _seats(ba.rec["game"]), f["points_a"])
+        out.append((f["task_id"], item) if with_task else item)
     return out
 
 
+def compact_record(rec: dict) -> dict:
+    """The fields rating fits need (full game records can be large)."""
+    return {k: rec.get(k) for k in ("game", "summary", "score", "run_status")}
+
+
+def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool) -> list[tuple[str, tuple]]:
+    """(task cluster, role-fit fixture) for every complete fixture of earlier runs."""
+    from ..runner.store import RunStore
+
+    out = []
+    for name in names:
+        d = Path(runs_root) / name
+        sched = json.loads((d / "schedule.json").read_text())
+        store = RunStore(d)
+        recs = []
+        for g in sched["games"]:
+            r = store.read_game(g["game_id"])
+            if r and r.get("run_status") == "complete":
+                recs.append(compact_record(r))
+        fx = fixture_results(load_rows(recs), sched["fixtures"], no_progress_draws=no_progress_draws)
+        out.extend((f"{name}/{t}", leg) for t, leg in role_fixture_data(load_rows(recs), fx, with_task=True))
+    return out
+
+
+def defender_identified(legs: list[tuple]) -> bool:
+    """Defender components enter the likelihood only via legs with different defenders."""
+    return any(l1[2] != l2[2] for l1, l2, _ in legs)
+
+
 def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resamples: int, seed: int,
-                   penalty_scale: float, elo_center: float) -> dict:
+                   penalty_scale: float, elo_center: float, drop: tuple = ()) -> dict:
     from .rating import ROLES, fit_role_ratings
 
     tasks = sorted(legs_by_task)
@@ -490,8 +525,8 @@ def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resample
             for r in ROLES:
                 samples[m][r].append(scale * fit.theta[m][r])
     return {"resamples": resamples, "seed": seed, "task_clusters": len(tasks), "fit_failures": failures,
-            "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()}
-                             for m, d in samples.items()}}
+            "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()
+                                 if k not in drop} for m, d in samples.items()}}
 
 
 def team_diagnostics(rows: list[GameRow]) -> dict:
@@ -565,15 +600,34 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     if team_mode or any(r.rec["game"].get("guesser1_model") for r in rows):
         from .rating import fit_role_ratings
 
-        legs = role_fixture_data(rows, fx)
+        tagged = role_fixture_data(rows, fx, with_task=True)
+        tcfg = manifest["config"].get("tournament", {}).get("teams") or {}
+        prior = tcfg.get("prior_runs") or []
+        if prior:
+            # The homogeneous fixtures used for defender selection also identify
+            # defender components; include them (as separate task clusters).
+            tagged += prior_run_legs(Path(run_dir).parent, prior, no_progress_draws=draw_rule)
+        legs = [leg for _, leg in tagged]
         by_task: dict[str, list] = defaultdict(list)
-        for f, leg in zip([f for f in fx if f.get("complete")], legs):
-            by_task[f["task_id"]].append(leg)
-        rfit = fit_role_ratings(model_ids, legs, penalty_scale=penalty_scale, elo_center=elo_center)
+        for t, leg in tagged:
+            by_task[t].append(leg)
+        fit_models = sorted(set(model_ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
+        rfit = fit_role_ratings(fit_models, legs, penalty_scale=penalty_scale, elo_center=elo_center)
+        rjson = rfit.to_json()
+        ident = defender_identified(legs)
+        if not ident:
+            # Every fixture faced one defender in both legs: d cancels, so the
+            # defender components (and composites) are only the prior.
+            rjson["components_elo_points"] = {m: {**c, "d": None} for m, c in rjson["components_elo_points"].items()}
+            rjson["elo"] = {m: None for m in rjson["elo"]}
+            rjson["composite_logit"] = {m: None for m in rjson["composite_logit"]}
         team_result = {
-            "role_rating": rfit.to_json(),
-            "role_bootstrap": role_bootstrap(model_ids, by_task, resamples=resamples, seed=seed,
-                                             penalty_scale=penalty_scale, elo_center=elo_center) if legs else None,
+            "role_rating": rjson,
+            "defender_components_identified": ident,
+            "prior_runs_in_role_fit": prior,
+            "role_bootstrap": role_bootstrap(fit_models, by_task, resamples=resamples, seed=seed,
+                                             penalty_scale=penalty_scale, elo_center=elo_center,
+                                             drop=() if ident else ("elo", "d")) if legs else None,
             **team_diagnostics(rows),
             "partner_disclosure": manifest["config"]["protocol"].get("partner_disclosure", "blind"),
             "identifiability_note": "Role fixtures (A+B vs B+A against one defender) identify clue-giver vs "
@@ -711,7 +765,7 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
 
     costs: dict[str, list[float]] = {}
     for r in rows:
-        if r.scored and r.leg in ("AB", "BA"):
+        if r.scored and r.leg in PAIRED_LEGS:
             costs.setdefault(r.attacker, []).append(float(r.cost))
     write_figures(out / "figures", result, costs)
 
@@ -789,10 +843,17 @@ def render_teams(t: dict) -> str:
         c = boot.get(m, {}).get(k) or {}
         return f"[{c['lo']:.0f}, {c['hi']:.0f}]" if c.get("lo") is not None else "—"
 
-    for m in sorted(rr["elo"], key=lambda m: -rr["elo"][m]):
+    def sg(x):
+        return "—" if x is None else f"{x:+.0f}"
+
+    for m in sorted(rr["elo"], key=lambda m: -(rr["elo"][m] or 0)):
         th = rr["components_elo_points"][m]
-        L.append(f"| {m} | {rr['elo'][m]:.0f} | {ci(m, 'elo')} | {th['g1']:+.0f} {ci(m, 'g1')} | "
-                 f"{th['g2']:+.0f} {ci(m, 'g2')} | {th['d']:+.0f} {ci(m, 'd')} |")
+        elo = "—" if rr["elo"][m] is None else f"{rr['elo'][m]:.0f}"
+        L.append(f"| {m} | {elo} | {ci(m, 'elo')} | {sg(th['g1'])} {ci(m, 'g1')} | "
+                 f"{sg(th['g2'])} {ci(m, 'g2')} | {sg(th['d'])} {ci(m, 'd')} |")
+    if not t.get("defender_components_identified", True):
+        L.append("\nDefender components and composites are not identified (every fixture faced one defender in both "
+                 "legs and no homogeneous prior runs were included), so they are omitted.")
     L.append("\n" + t["identifiability_note"] + "\n")
     L.append("### Cross-play matrix (median cost, turns; rows = Guesser 1, columns = Guesser 2)\n")
     mat = t["cross_play_matrix"]
