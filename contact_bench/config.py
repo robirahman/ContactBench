@@ -371,7 +371,8 @@ class BenchConfig(_Strict):
         return path if path.is_absolute() else Path(self.base_dir) / path
 
 
-def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = False) -> dict:
+def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = False,
+                                  schedule_has_nested_rematches: bool = False) -> dict:
     """Frozen run snapshots written before a setting existed must describe the
     games actually collected.  Rematches add games, so a run whose snapshot
     predates ``rematch_on_no_progress_draw`` had them disabled.  (The draw
@@ -379,8 +380,18 @@ def snapshot_with_legacy_defaults(config: dict, schedule_has_rematches: bool = F
     data = dict(config)
     tour = dict(data.get("tournament") or {})
     tour.setdefault("rematch_on_no_progress_draw", bool(schedule_has_rematches))
+    # Likewise recursion: on only if a rematch of a rematch was actually scheduled.
+    tour.setdefault("rematch_recursive", bool(schedule_has_nested_rematches))
     data["tournament"] = tour
     return data
+
+
+def schedule_rematch_flags(fixtures: list[dict]) -> tuple[bool, bool]:
+    """(has rematches, has nested rematches) from recorded schedule fixtures."""
+    by_id = {f["fixture_id"]: f for f in fixtures}
+    rm = [f for f in fixtures if f.get("rematch_of")]
+    nested = any(by_id.get(f["rematch_of"], {}).get("rematch_of") for f in rm)
+    return bool(rm), nested
 
 
 def load_config(path: str | Path) -> BenchConfig:

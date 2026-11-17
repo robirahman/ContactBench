@@ -23,10 +23,12 @@ def _config_from_run(run_dir: Path) -> BenchConfig:
     manifest = json.loads((run_dir / "run.json").read_text())
     from ..config import snapshot_with_legacy_defaults
 
+    from ..config import schedule_rematch_flags
+
     sched_path = run_dir / "schedule.json"
-    has_rm = sched_path.exists() and any(
-        f.get("rematch_of") for f in json.loads(sched_path.read_text()).get("fixtures", []))
-    data = snapshot_with_legacy_defaults(manifest["config"], has_rm)
+    flags = schedule_rematch_flags(json.loads(sched_path.read_text()).get("fixtures", [])) if sched_path.exists() \
+        else (False, False)
+    data = snapshot_with_legacy_defaults(manifest["config"], *flags)
     data["base_dir"] = str(Path.cwd())
     return BenchConfig.model_validate(data)
 

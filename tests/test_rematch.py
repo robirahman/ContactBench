@@ -76,15 +76,22 @@ def test_plan_maxima_include_possible_rematches():
     from contact_bench.runner.schedule import build_schedule, run_plan
     from contact_bench.runner.tasks import generate_tasks
 
-    for rematch, factor in ((True, 2), (False, 1)):
-        c = _cfg(rematch_on_no_progress_draw=rematch)
+    for rematch, recursive in ((True, True), (True, False), (False, False)):
+        c = _cfg(rematch_on_no_progress_draw=rematch, rematch_recursive=recursive)
         vs, vc = load_lexicons(c)
         tasks = generate_tasks(v_secret=vs, v_contact=vc, count=2, seed=1, split="development",
                                initial_prefix_length=0, turn_limit=2, clue_max_characters=100)
         _, games = build_schedule(c, tasks)
         plan = run_plan(c, tasks, games)
-        assert plan["maximum_game_decisions_total"] == 4 * 2 * len(games) * factor
-        assert plan["maximum_rematch_games"] == len(games) * (factor - 1)
+        slen = {t.task_id: len(t.secret) for t in tasks}
+        if not rematch:
+            extra = 0
+        elif recursive:
+            extra = sum(slen[g.task_id] - 1 for g in games)  # prefixes 1 .. len-1
+        else:
+            extra = len(games)
+        assert plan["maximum_rematch_games"] == extra
+        assert plan["maximum_game_decisions_total"] == 4 * 2 * (len(games) + extra)
 
 
 def test_draw_rule_is_part_of_condition_key(tmp_path):
@@ -157,3 +164,15 @@ def test_pairs_schedule_plays_only_listed_pairs(tmp_path):
     for bad in ([["a", "a"]], [["a", "zz"]], [["a", "c"], ["c", "a"]], []):
         with pytest.raises(Exception):
             BenchConfig.model_validate({**c.model_dump(), "tournament": {"schedule": "pairs", "pairs": bad}})
+
+
+
+def test_legacy_recursion_derived_from_schedule():
+    from contact_bench.config import schedule_rematch_flags, snapshot_with_legacy_defaults
+    flat = [{"fixture_id": "f"}, {"fixture_id": "f~rematch", "rematch_of": "f"}]
+    nested = flat + [{"fixture_id": "f~rematch~rematch", "rematch_of": "f~rematch"}]
+    assert schedule_rematch_flags(flat) == (True, False)
+    assert schedule_rematch_flags(nested) == (True, True)
+    legacy = {"tournament": {}}
+    assert snapshot_with_legacy_defaults(legacy, *schedule_rematch_flags(flat))["tournament"]["rematch_recursive"] is False
+    assert snapshot_with_legacy_defaults(legacy, *schedule_rematch_flags(nested))["tournament"]["rematch_recursive"] is True

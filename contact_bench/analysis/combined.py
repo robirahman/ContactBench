@@ -15,7 +15,7 @@ import shutil
 import time
 from pathlib import Path
 
-from ..config import BenchConfig, snapshot_with_legacy_defaults
+from ..config import BenchConfig, schedule_rematch_flags, snapshot_with_legacy_defaults
 from ..runner.store import atomic_write_json
 
 
@@ -30,8 +30,7 @@ TOURNAMENT_RULES = ("no_progress_draws", "rematch_on_no_progress_draw", "rematch
 def _normalized_config(run_dir: Path) -> dict:
     manifest = json.loads((run_dir / "run.json").read_text())
     sched = json.loads((run_dir / "schedule.json").read_text())
-    has_rm = any(f.get("rematch_of") for f in sched.get("fixtures", []))
-    data = snapshot_with_legacy_defaults(manifest["config"], has_rm)
+    data = snapshot_with_legacy_defaults(manifest["config"], *schedule_rematch_flags(sched.get("fixtures", [])))
     data["base_dir"] = "."
     return BenchConfig.model_validate(data).model_dump(mode="json", exclude={"base_dir"})
 
@@ -59,6 +58,8 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             raise CombineError(f"{d.name}: prompt templates differ")
         if m["secret_lexicon"]["sha256"] != ref_m["secret_lexicon"]["sha256"]:
             raise CombineError(f"{d.name}: secret lexicon differs")
+        if (m.get("contact_lexicon") or {}).get("sha256") != (ref_m.get("contact_lexicon") or {}).get("sha256"):
+            raise CombineError(f"{d.name}: contact lexicon differs")
     models: dict[str, dict] = {}
     for d, c in zip(run_dirs, cfgs):
         for mc in c["models"]:

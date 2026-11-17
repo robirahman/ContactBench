@@ -258,7 +258,7 @@ def test_plan_counts_fork_calls():
     L, games = 5, off["raw_games"]
     # Every cross-model game may be followed by a rematch game (no-progress draw rule).
     games_max = games + off["maximum_rematch_games"]
-    assert off["maximum_rematch_games"] == games
+    assert off["maximum_rematch_games"] >= games  # recursive chains may add several per game
     assert off["maximum_paid_decisions"] == 4 * L * games_max
     assert fk["maximum_paid_decisions"] == 7 * L * games_max and fk["forecast_fork_calls_included"]
 

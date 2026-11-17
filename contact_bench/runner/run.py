@@ -304,8 +304,10 @@ class Runner:
         # their (behaviour-preserving) defaults before comparison.
         from ..config import snapshot_with_legacy_defaults
 
-        has_rm = any(f.rematch_of for f in self.fixtures)
-        snap = BenchConfig.model_validate({**snapshot_with_legacy_defaults(manifest["config"], has_rm),
+        from ..config import schedule_rematch_flags
+
+        flags = schedule_rematch_flags([asdict(f) for f in self.fixtures])
+        snap = BenchConfig.model_validate({**snapshot_with_legacy_defaults(manifest["config"], *flags),
                                            "base_dir": self.cfg.base_dir}).model_dump(
             mode="json", exclude={"base_dir"})
         current = self.cfg.model_dump(mode="json", exclude={"base_dir"})
