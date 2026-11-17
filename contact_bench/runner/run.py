@@ -84,6 +84,33 @@ def load_lexicons(cfg: BenchConfig) -> tuple[Lexicon, Lexicon]:
     return vs, vc
 
 
+def make_tasks(cfg: BenchConfig, v_secret: Lexicon, v_contact: Lexicon) -> list[Task]:
+    """Generated tasks for a configuration (the planner uses the same draws)."""
+    need = human_challenge_task_count(cfg)
+    count = need
+    while True:
+        tasks = generate_tasks(
+            v_secret=v_secret,
+            v_contact=v_contact,
+            count=count,
+            seed=cfg.tasks.generation_seed,
+            split=cfg.tasks.split,
+            initial_prefix_length=cfg.protocol.initial_prefix_length,
+            turn_limit=cfg.protocol.turn_limit,
+            clue_max_characters=cfg.protocol.clue_max_characters,
+        )
+        if cfg.tournament.schedule != "human_challenge":
+            return tasks
+        # Human challenges never repeat a secret (sampling is with
+        # replacement): keep the first ``need`` distinct secrets.  Draws are
+        # prefix-stable, so oversampling keeps the earlier tasks.
+        seen: set[str] = set()
+        distinct = [t for t in tasks if not (t.secret in seen or seen.add(t.secret))][:need]
+        if len(distinct) == need or count >= 64 * need:
+            return distinct
+        count *= 2
+
+
 def make_scorer(cfg: BenchConfig) -> ReferenceScorer:
     return ReferenceScorer(
         cfg.protocol.clue_max_characters,
@@ -243,28 +270,7 @@ class Runner:
         if cfg.tasks.manifest:
             tasks = load_tasks(cfg.resolve(cfg.tasks.manifest))
         else:
-            need = human_challenge_task_count(cfg)
-            count = need
-            while True:
-                tasks = generate_tasks(
-                    v_secret=self.v_secret,
-                    v_contact=self.v_contact,
-                    count=count,
-                    seed=cfg.tasks.generation_seed,
-                    split=cfg.tasks.split,
-                    initial_prefix_length=cfg.protocol.initial_prefix_length,
-                    turn_limit=cfg.protocol.turn_limit,
-                    clue_max_characters=cfg.protocol.clue_max_characters,
-                )
-                if cfg.tournament.schedule != "human_challenge":
-                    break
-                # Human challenges never repeat a secret (sampling is with
-                # replacement): keep the first ``need`` distinct secrets.
-                seen: set[str] = set()
-                tasks = [t for t in tasks if not (t.secret in seen or seen.add(t.secret))][:need]
-                if len(tasks) == need or count >= 64 * need:
-                    break
-                count *= 2
+            tasks = make_tasks(cfg, self.v_secret, self.v_contact)
         expected = {
             "secret_lexicon_sha256": self.v_secret.sha256,
             "contact_lexicon_sha256": self.v_contact.sha256,

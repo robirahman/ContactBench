@@ -47,17 +47,12 @@ def cmd_validate(args) -> int:
 
 
 def cmd_plan(args) -> int:
-    from ..runner.run import load_lexicons
-    from ..runner.schedule import build_schedule, human_challenge_task_count, run_plan
-    from ..runner.tasks import generate_tasks
+    from ..runner.run import load_lexicons, make_tasks
+    from ..runner.schedule import build_schedule, run_plan
 
     cfg = load_config(args.config)
     vs, vc = load_lexicons(cfg)
-    tasks = generate_tasks(
-        v_secret=vs, v_contact=vc, count=human_challenge_task_count(cfg), seed=cfg.tasks.generation_seed,
-        split=cfg.tasks.split, initial_prefix_length=cfg.protocol.initial_prefix_length,
-        turn_limit=cfg.protocol.turn_limit, clue_max_characters=cfg.protocol.clue_max_characters,
-    )
+    tasks = make_tasks(cfg, vs, vc)
     _, games = build_schedule(cfg, tasks)
     plan = run_plan(cfg, tasks, games)
     # Optional cost estimate from user-supplied price tables.
@@ -172,23 +167,13 @@ async def _replayed_records(run_dir: Path) -> list[dict]:
     return [await runner.play(g) for g in sorted(runner.games, key=lambda g: g.game_id)]
 
 
-def _load_anchor(args) -> dict | None:
-    """Fixed model ratings for human-challenge analysis: a run id (its
-    analysis/analysis.json) or a path to an analysis.json / public
-    leaderboard.json."""
+def _load_anchor(args, run_dir: Path) -> dict | None:
     ref = getattr(args, "anchor", None)
     if not ref:
         return None
-    p = Path(ref)
-    if not p.is_file():
-        p = _runs_dir(args) / ref / "analysis" / "analysis.json"
-    if not p.is_file():
-        raise ValueError(f"--anchor {ref!r}: no analysis.json or leaderboard.json found (run analyze on it first)")
-    data = json.loads(p.read_text())
-    elo = (data.get("rating") or {}).get("elo")
-    if not elo:
-        raise ValueError(f"--anchor {ref!r}: no rating in {p}")
-    return {"elo": elo, "run_id": data.get("run_id")}
+    from ..analysis.anchor import load_anchor
+
+    return load_anchor(ref, _runs_dir(args), run_dir)
 
 
 def cmd_analyze(args) -> int:
@@ -202,7 +187,7 @@ def cmd_analyze(args) -> int:
         run_dir, records,
         resamples=args.bootstrap if args.bootstrap is not None else cfg.analysis.resamples,
         seed=cfg.analysis.bootstrap_seed, penalty_scale=cfg.analysis.logit_penalty_scale,
-        elo_center=cfg.analysis.elo_center, anchor=_load_anchor(args),
+        elo_center=cfg.analysis.elo_center, anchor=_load_anchor(args, run_dir),
     )
     print((run_dir / "analysis" / "report.md").read_text())
     print(f"analysis written to {run_dir / 'analysis'}")
@@ -495,8 +480,8 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(fn=cmd_resume)
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
-    s.add_argument("--anchor", help="human challenge: rate the player against fixed model Elo from this run id "
-                                    "or analysis.json / leaderboard.json path")
+    s.add_argument("--anchor", help="human challenge: rate the player against fixed model Elo from a compatible "
+                                    "model run (id or directory, analyzed) or public export directory")
     s.set_defaults(fn=cmd_analyze)
     s = sub.add_parser("play", help="play Contact yourself against benchmarked models (local browser page)")
     s.add_argument("config", nargs="?"); s.add_argument("--resume", metavar="RUN_ID")

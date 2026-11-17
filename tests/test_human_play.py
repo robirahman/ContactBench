@@ -381,3 +381,32 @@ def test_human_challenge_never_repeats_a_secret(tmp_path):
     dup = [tasks[0], replace(tasks[1], secret=tasks[0].secret)] + tasks[2:]
     with pytest.raises(ValueError, match="distinct"):
         build_schedule(BenchConfig.model_validate(d), dup)
+
+
+def test_anchor_must_match_the_challenge_condition(tmp_path):
+    from contact_bench.analysis.anchor import AnchorError, load_anchor
+
+    def model_run(name, **proto):
+        d = _data()
+        d["protocol"] = {**d["protocol"], **proto}
+        d["tournament"] = {"schedule": "balanced_round_robin"}
+        d["models"] = d["models"][1:]
+        d.pop("execution")
+        c = BenchConfig.model_validate(d)
+        asyncio.run(Runner(c, tmp_path / name).run())
+        analyze(tmp_path / name, load_game_records(tmp_path / name), resamples=0, seed=1, penalty_scale=2.5,
+                elo_center=1500)
+        return c
+
+    model_run("anchor")
+    model_run("other", turn_limit=3)
+    ch = Runner(_cfg(), tmp_path / "challenge")
+    ch.prepare()
+    a = load_anchor("anchor", tmp_path, tmp_path / "challenge")
+    assert set(a["elo"]) == {"bot_a", "bot_b"} and a["run_id"] == "anchor"
+    with pytest.raises(AnchorError, match="protocol"):
+        load_anchor("other", tmp_path, tmp_path / "challenge")
+    (tmp_path / "challenge" / "analysis").mkdir()
+    (tmp_path / "challenge" / "analysis" / "analysis.json").write_text(json.dumps({"rating": {"elo": {}}}))
+    with pytest.raises(AnchorError, match="human-challenge"):
+        load_anchor("challenge", tmp_path, tmp_path / "challenge")

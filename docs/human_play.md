@@ -52,13 +52,15 @@ Fair-play safeguards:
 ## Scoring and publishing
 
 ```bash
-contact-bench analyze RUN_ID --anchor lb-latest-small-10    # or a path to analysis.json / leaderboard.json
+contact-bench analyze RUN_ID --anchor lb-latest-small-10    # an analyzed model run, or an export directory
 contact-bench export RUN_ID --public --label "Human challenge: Your Name"
 ```
 
 `--anchor` fits an **anchored Elo**: the opponents' ratings are held fixed at the anchor run's values, and only
 your rating is fitted, with the same likelihood and penalty as the model fit. This puts you on the model
-leaderboard's scale without ever moving the model ratings.
+leaderboard's scale without ever moving the model ratings. The anchor must have been played under the same
+protocol, dictionary, scoring and prompts, with identically configured opponents. Otherwise `analyze`
+refuses it. Without `--anchor`, the report shows an unanchored fit, labeled as such.
 
 A human-challenge export is its own condition. Its condition key includes the human player and the mixed
 team composition. On the site it appears as **Human challenge: NAME**, with a separate human board. It's
