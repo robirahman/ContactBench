@@ -499,7 +499,10 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                              "response": f.get("response"), "cost_estimate": f.get("cost_estimate")})
             elif f.get("requests_sent"):
                 # Sent (possibly retried) but failed: keep attempts and charged cost.
-                attempts = f.get("attempts") or [{} for _ in range(f["requests_sent"])]
+                # requests_sent (BudgetGate calls) covers every model/tool turn;
+                # the error's attempts list covers only the final failed turn.
+                attempts = list(f.get("attempts") or [])
+                attempts += [{} for _ in range(max(0, f["requests_sent"] - len(attempts)))]
                 reqs.append({"model_id": f["model_id"], "seat": role, "status": "error",
                              "attempts": attempts, "cost_estimate": f.get("cost_estimate")})
             else:

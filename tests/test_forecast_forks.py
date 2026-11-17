@@ -284,8 +284,10 @@ def test_failed_fork_accounting(tmp_path, monkeypatch):
         if calls["n"] % 2:
             raise ContextOverflowError("too big")       # never sent
         e = InfrastructureError("503", category="server")
+        # two successful lookup turns, then a final turn failing three times:
+        # the error carries only the final turn's attempts
         e.attempts = [TransportAttempt(i, 0.0, 0.1, "error", "server") for i in (1, 2, 3)]
-        e.fork_requests_sent, e.fork_cost = 3, 0.03     # three sends, charged
+        e.fork_requests_sent, e.fork_cost = 5, 0.03
         raise e
 
     monkeypatch.setattr(LLMAgent, "fork", flaky)
@@ -300,6 +302,6 @@ def test_failed_fork_accounting(tmp_path, monkeypatch):
     assert sent and unsent
     roles = [v for m in res["resources"].values() for s, v in m.items() if s.endswith("/fork")]
     assert sum(v.get("requests", 0) for v in roles) == len(sent)
-    assert sum(v.get("transport_attempts", 0) for v in roles) == 3 * len(sent)
+    assert sum(v.get("transport_attempts", 0) for v in roles) == 5 * len(sent)
     assert sum(v.get("cost_estimate", 0) for v in roles) == pytest.approx(0.03 * len(sent))
     assert sum(v.get("forks_not_sent", 0) for v in roles) == len(unsent)
