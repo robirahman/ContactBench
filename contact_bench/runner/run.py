@@ -24,13 +24,14 @@ from ..engine.game import (
 )
 from ..lexicon import Lexicon, load_lexicon_manifest
 from ..policies.llm import AgentOutput, ContextOverflowError, Limiters, LLMAgent
+from ..human.agent import HumanStopped
 from ..policies.scripted import ScriptedAgent
 from ..prompts.templates import PROMPT_VERSION, prompt_hash
 from ..providers.base import AdapterConfigError, InfrastructureError, RetryPolicy, sanitize
 from ..scoring.cost import GameScore, score_game
 from ..scoring.reference import ReferenceScorer
 from .budget import Budget, BudgetExhausted
-from .schedule import Fixture, GameSpec, build_schedule, run_plan
+from .schedule import Fixture, GameSpec, build_schedule, human_challenge_task_count, run_plan
 from .store import RunStore, atomic_write_json
 from .tasks import Task, generate_tasks, load_tasks, save_tasks
 
@@ -183,6 +184,7 @@ class Runner:
         adapters: dict[str, Any] | None = None,
         progress: bool = False,
         max_usd_by_provider: dict[str, float] | None = None,
+        human_session: Any = None,
     ):
         self.cfg = cfg
         self.run_dir = Path(run_dir)
@@ -217,6 +219,9 @@ class Runner:
         self.halted_models: dict[str, str] = {}
         self._fork_tasks: dict[str, list] = {}
         self.budget_stopped = False
+        # Local play mode: the bridge to the human player's browser.  Without
+        # one, human decisions are unavailable and their games stay pending.
+        self.human_session = human_session
 
         paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
         if paid and not live and not replay_only:
@@ -241,7 +246,7 @@ class Runner:
             tasks = generate_tasks(
                 v_secret=self.v_secret,
                 v_contact=self.v_contact,
-                count=cfg.tasks.tasks_per_pair,
+                count=human_challenge_task_count(cfg),
                 seed=cfg.tasks.generation_seed,
                 split=cfg.tasks.split,
                 initial_prefix_length=cfg.protocol.initial_prefix_length,
@@ -339,6 +344,12 @@ class Runner:
         return self._adapters[m.id]
 
     def _agent(self, m: ModelConfig, seat: str, g: GameSpec):
+        if m.provider == "human":
+            from ..human.agent import HumanAgent
+
+            return HumanAgent(m, seat, g, self.human_session, self.contact_dictionary,
+                              max_lookups=self.cfg.protocol.max_tool_calls_per_decision,
+                              dictionary_access=self.cfg.protocol.dictionary_access)
         if m.provider == "scripted":
             return ScriptedAgent(
                 seat=seat,
@@ -449,8 +460,7 @@ class Runner:
 
         def agent_for(seat: str):
             if seat not in agents:
-                mid = g.defender if seat == "defender" else g.attacker
-                agents[seat] = self._agent(self.models[mid], seat, g)
+                agents[seat] = self._agent(self.models[g.seat_model(seat)], seat, g)
             return agents[seat]
 
         async def decide(spec: DecisionSpec):
@@ -461,7 +471,10 @@ class Runner:
                 if rec.get("observation_sha256") != oh:
                     raise EngineInvariantError(f"replay divergence at {did}: observation hash mismatch")
                 return rec["raw_output"]
-            seat_model = g.defender if spec.seat == "defender" else g.attacker
+            seat_model = g.seat_model(spec.seat)
+            if self.models[seat_model].provider == "human" and self.human_session is None \
+                    and not self.replay_only:
+                return Unavailable("human_not_connected")
             if self.replay_only or self.halted or self.budget_stopped:
                 return Unavailable("not_recorded")
             if self._credential_key(seat_model) in self.halted_credentials:
@@ -472,9 +485,12 @@ class Runner:
                 return Unavailable("model_halted")
             agent = agent_for(spec.seat)
             meta: dict | None = None
+            human_meta: dict | None = None
             try:
                 if isinstance(agent, ScriptedAgent):
                     raw = await agent.decide(spec)
+                elif self.models[seat_model].provider == "human":
+                    raw, human_meta = await agent.decide(spec, did)
                 else:
                     out: AgentOutput = await agent.decide(spec, did)
                     raw, meta = out.raw, out.response
@@ -490,6 +506,8 @@ class Runner:
             except BudgetExhausted as e:
                 self._on_budget_exhausted(e, did)
                 return Unavailable("budget")
+            except HumanStopped:
+                return Unavailable("human_stopped")
             except InfrastructureError as e:
                 self.store.append_request({
                     "decision_id": did, "game_id": g.game_id, "turn": spec.turn, "seat": spec.seat,
@@ -522,6 +540,8 @@ class Runner:
                 "observation_sha256": oh,
                 "schema_name": spec.schema_name,
                 "raw_output": raw,
+                # Unscored play metadata (think time, lookups); never in observations.
+                **({"human": human_meta} if human_meta is not None else {}),
             })
             return raw
 
@@ -559,6 +579,8 @@ class Runner:
 
     async def play(self, g: GameSpec) -> dict:
         game = self.new_game(g)
+        if self.human_session is not None and not self.replay_only:
+            self.human_session.game_started(g)
         try:
             await game.play(self._decide_fn(g, game))
         finally:
@@ -577,6 +599,8 @@ class Runner:
                 max_entries=fc.sparse_max_entries, tolerance=fc.mass_tolerance,
                 invalid_score=fc.invalid_audit_score)
         rec["run_status"] = status
+        if self.human_session is not None and not self.replay_only:
+            self.human_session.game_finished(g, rec)
         if not self.replay_only:
             self.store.write_game(g.game_id, rec)
             self.store.update_game({
@@ -603,11 +627,12 @@ class Runner:
 
         async def one(g: GameSpec):
             def blocked() -> bool:
-                provs = {self.models[g.attacker].provider, self.models[g.defender].provider}
-                creds = {self._credential_key(g.attacker), self._credential_key(g.defender)}
+                provs = {self.models[m].provider for m in g.models}
+                creds = {self._credential_key(m) for m in g.models}
                 return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
                             or creds & set(self.halted_credentials)
-                            or {g.attacker, g.defender} & set(self.halted_models))
+                            or g.models & set(self.halted_models)
+                            or (self.human_session is not None and self.human_session.stopped))
 
             if blocked():
                 return
@@ -621,7 +646,19 @@ class Runner:
                     print(f"  {g.game_id}: {s['outcome_status']} turns={s['turns_used']}"
                           + (f" cost={rec['score']['cost']:.3f}" if rec.get("score") and rec["score"]["cost"] is not None else ""))
 
-        await asyncio.gather(*(one(g) for g in todo))
+        if self.cfg.tournament.schedule == "human_challenge":
+            # One game at a time, in schedule order.  A defend leg never starts
+            # before the same secret's attack leg is complete: defending shows
+            # the human the secret.
+            fx_ab = {f.fixture_id: f.game_ab for f in self.fixtures}
+            for g in todo:
+                if g.leg == "BA":
+                    row = {r["game_id"]: r for r in self.store.game_rows()}.get(fx_ab[g.fixture_id], {})
+                    if not (row.get("status") == "complete" and row.get("collection_status") == "complete"):
+                        continue
+                await one(g)
+        else:
+            await asyncio.gather(*(one(g) for g in todo))
         if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
             attempted: set[str] = set()
             while not (self.halted or self.budget_stopped):
@@ -660,7 +697,7 @@ class Runner:
 
     def _credential_key(self, model_id: str) -> str:
         m = self.models[model_id]
-        if m.provider in ("scripted", "fake"):
+        if m.provider in ("scripted", "fake", "human"):
             return f"{m.provider}:{m.id}"
         return f"{m.provider}:{m.credential_env or self.DEFAULT_CREDENTIAL_ENV.get(m.provider, '')}"
 

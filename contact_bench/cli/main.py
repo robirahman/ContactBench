@@ -172,6 +172,25 @@ async def _replayed_records(run_dir: Path) -> list[dict]:
     return [await runner.play(g) for g in sorted(runner.games, key=lambda g: g.game_id)]
 
 
+def _load_anchor(args) -> dict | None:
+    """Fixed model ratings for human-challenge analysis: a run id (its
+    analysis/analysis.json) or a path to an analysis.json / public
+    leaderboard.json."""
+    ref = getattr(args, "anchor", None)
+    if not ref:
+        return None
+    p = Path(ref)
+    if not p.is_file():
+        p = _runs_dir(args) / ref / "analysis" / "analysis.json"
+    if not p.is_file():
+        raise ValueError(f"--anchor {ref!r}: no analysis.json or leaderboard.json found (run analyze on it first)")
+    data = json.loads(p.read_text())
+    elo = (data.get("rating") or {}).get("elo")
+    if not elo:
+        raise ValueError(f"--anchor {ref!r}: no rating in {p}")
+    return {"elo": elo, "run_id": data.get("run_id")}
+
+
 def cmd_analyze(args) -> int:
     from ..analysis.analyze import analyze
 
@@ -183,7 +202,7 @@ def cmd_analyze(args) -> int:
         run_dir, records,
         resamples=args.bootstrap if args.bootstrap is not None else cfg.analysis.resamples,
         seed=cfg.analysis.bootstrap_seed, penalty_scale=cfg.analysis.logit_penalty_scale,
-        elo_center=cfg.analysis.elo_center,
+        elo_center=cfg.analysis.elo_center, anchor=_load_anchor(args),
     )
     print((run_dir / "analysis" / "report.md").read_text())
     print(f"analysis written to {run_dir / 'analysis'}")
@@ -226,6 +245,107 @@ def cmd_build_site(args) -> int:
     out = build_site([Path(p) for p in args.export_dirs], Path(args.out))
     print(f"static site written to {out}; preview with: python -m http.server -d {out} 8000")
     return 0
+
+
+def _slug(name: str) -> str:
+    import re
+
+    s = re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")[:32]
+    return s or "player"
+
+
+def cmd_play(args) -> int:
+    """Local human play: serve the play page on 127.0.0.1 and run the challenge."""
+    import secrets as _secrets
+    import webbrowser
+
+    from ..human.server import PlayServer
+    from ..human.session import HumanSession
+    from ..runner.run import Runner
+
+    if args.resume:
+        run_dir = _runs_dir(args) / args.resume
+        if not (run_dir / "run.json").exists():
+            print(f"error: no run {args.resume!r} in {_runs_dir(args)}", file=sys.stderr)
+            return 2
+        cfg = _config_from_run(run_dir)
+    else:
+        if not args.config:
+            print("error: give a CONFIG (new challenge) or --resume RUN_ID", file=sys.stderr)
+            return 2
+        cfg = load_config(args.config)
+        data = cfg.model_dump(mode="json")
+        hc = data["tournament"].get("human_challenge") or {}
+        if args.player:
+            new_id = "human_" + _slug(args.player)
+            for m in data["models"]:
+                if m["provider"] == "human":
+                    m["id"], m["display_name"] = new_id, args.player
+            hc["player"] = new_id
+        if not data["tasks"].get("manifest"):
+            # Fresh, unpublished secrets: a player may have read published
+            # transcripts.  The seed is frozen in the run snapshot.
+            data["tasks"]["generation_seed"] = (args.task_seed if args.task_seed is not None
+                                                else _secrets.randbelow(2**31))
+        cfg = BenchConfig.model_validate(data)
+        run_dir = _runs_dir(args) / (args.run_id or f"human-{_slug(args.player or hc.get('player', 'player'))}-"
+                                     f"{time.strftime('%Y%m%d-%H%M%S')}")
+    if cfg.tournament.schedule != "human_challenge":
+        print("error: play needs a config with tournament.schedule: human_challenge", file=sys.stderr)
+        return 2
+    paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
+    if paid and not args.live:
+        print(f"error: opponents {paid} need paid API calls; pass --live with --max-usd and/or "
+              "--max-usd-provider caps", file=sys.stderr)
+        return 2
+    if args.live and not (args.max_requests or args.max_usd or args.max_usd_provider):
+        print("error: --live requires a budget (--max-usd, --max-usd-provider or --max-requests)", file=sys.stderr)
+        return 2
+    runner = Runner(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
+                    max_usd_by_provider=_provider_caps(args.max_usd_provider), progress=True)
+    runner.prepare()
+    hc = cfg.tournament.human_challenge
+    human = next(m for m in cfg.models if m.id == hc.player)
+    session = HumanSession(
+        run_id=runner.run_id, player=hc.player, display_name=human.display_name or human.id,
+        model_names={m.id: (m.display_name or m.model or m.id) for m in cfg.models},
+        fixtures=runner.fixtures, games=runner.games, contact_dictionary=runner.contact_dictionary,
+        secret_dictionary=runner.secret_dictionary, no_progress_draws=cfg.tournament.no_progress_draws)
+    session.preload([r for r in (runner.store.read_game(g.game_id) for g in runner.games) if r])
+    runner.human_session = session
+    server = PlayServer(session, port=args.port).start()
+    print(f"run {runner.run_id} -> {run_dir}")
+    print(f"play at {server.url}")
+    print("(the link carries a private session token; keep it to yourself)")
+    if not args.no_browser:
+        webbrowser.open(server.url)
+
+    async def go():
+        session.attach(asyncio.get_running_loop())
+        return await runner.run()
+
+    try:
+        status = asyncio.run(go())
+    except KeyboardInterrupt:
+        session.stop()
+        server.close()
+        print(f"\nstopped; resume with: contact-bench play --resume {runner.run_id}")
+        return 130
+    session.mark_finished()
+    _print(status)
+    if status.get("pending_games"):
+        print(f"{status['pending_games']} games pending; resume with: contact-bench play --resume {runner.run_id}")
+    else:
+        print(f"challenge complete; score it with: contact-bench analyze {runner.run_id} --anchor ANCHOR_RUN_ID")
+    if not args.no_wait:
+        print("results stay on the page; press Ctrl-C to close the server")
+        try:
+            while True:
+                time.sleep(3600)
+        except KeyboardInterrupt:
+            pass
+    server.close()
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def cmd_show(args) -> int:
@@ -375,7 +495,19 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(fn=cmd_resume)
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
+    s.add_argument("--anchor", help="human challenge: rate the player against fixed model Elo from this run id "
+                                    "or analysis.json / leaderboard.json path")
     s.set_defaults(fn=cmd_analyze)
+    s = sub.add_parser("play", help="play Contact yourself against benchmarked models (local browser page)")
+    s.add_argument("config", nargs="?"); s.add_argument("--resume", metavar="RUN_ID")
+    s.add_argument("--player", help="your name as shown on the human board")
+    s.add_argument("--run-id"); s.add_argument("--task-seed", type=int, help="default: a fresh random seed")
+    s.add_argument("--port", type=int, default=0); s.add_argument("--no-browser", action="store_true")
+    s.add_argument("--no-wait", action="store_true", help="exit as soon as the games are done")
+    s.add_argument("--live", action="store_true"); s.add_argument("--max-requests", type=int)
+    s.add_argument("--max-usd", type=float)
+    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD")
+    s.set_defaults(fn=cmd_play)
     s = sub.add_parser("analyze-combined", help="pool runs with an identical condition into one rating")
     s.add_argument("name"); s.add_argument("run_ids", nargs="+"); s.add_argument("--bootstrap", type=int)
     s.set_defaults(fn=cmd_analyze_combined)

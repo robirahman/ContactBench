@@ -100,7 +100,9 @@
       idx.conditions.forEach(function (c, i) {
         var access = { closed_book: "closed-book", lookup_tools: "dictionary-assisted",
                        full_candidate_lists: "full lists" }[c.condition.dictionary_access] || "full lists";
-        var label = (c.fixture_data ? "[DEMO] " : "") + access + ", prefix " +
+        var hc = c.condition.human_challenge;
+        var label = (c.fixture_data ? "[DEMO] " : "") +
+          (hc ? "Human challenge: " + hc.display_name + " — " : "") + access + ", prefix " +
           (c.condition.initial_prefix_length == null ? 1 : c.condition.initial_prefix_length) +
           ", C=" + c.condition.clue_max_characters +
           ", L=" + c.condition.turn_limit + ", " + c.condition.lexicon_name + " — run " + c.run_id +
@@ -206,6 +208,40 @@
     parts.push("Complete fixtures: " + (lb.complete_fixtures == null ? "—" : lb.complete_fixtures) + " of " +
       (lb.planned_fixtures == null ? "—" : lb.planned_fixtures) + (lb.balanced_complete ? " (balanced, complete)." : " (PROVISIONAL — incomplete run)."));
     notes.textContent = parts.join(" ");
+    renderHuman();
+  }
+
+  // Human challenge entries: a human player vs. models, rated against fixed
+  // model ratings and never pooled with model-only conditions.
+  function renderHuman() {
+    var box = $("human-board");
+    if (!box) return;
+    clear(box);
+    var lb = current.lb, hc = (current.manifest.condition || {}).human_challenge;
+    box.hidden = !hc;
+    if (!hc) return;
+    box.appendChild(el("h3", { text: "Human challenge: " + hc.display_name }));
+    box.appendChild(el("p", { cls: "note", text: "A human player attacks as Guesser 1 with the opponent model as " +
+      "Guesser 2, and defends against a two-instance team of the opponent model, on the same secret (attack leg first). " +
+      "This is a separate condition: these fixtures are never pooled into the model ratings above or on other boards. " +
+      "Play it yourself with `contact-bench play` (docs/human_play.md in the repository)." }));
+    var ar = lb.anchored_rating;
+    if (!ar) {
+      box.appendChild(el("p", { cls: "note", text: "No anchored rating in this export (analyze with --anchor)." }));
+      return;
+    }
+    var rows = (ar.free || []).map(function (m) {
+      return { m: hc.display_name && m === hc.player ? hc.display_name : m, elo: ar.elo[m], se: (ar.elo_se_approx || {})[m], fixed: false };
+    }).concat(Object.keys(ar.fixed_elo || {}).map(function (m) { return { m: m, elo: ar.fixed_elo[m], se: null, fixed: true }; }));
+    var t = el("table");
+    renderTable(t, [
+      { label: "Player", get: function (r) { return r.m; }, fmt: function (r) { return r.m + (r.fixed ? " (fixed)" : ""); } },
+      { label: "Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0); } },
+      { label: "± approx. s.e.", get: function (r) { return r.se; }, fmt: function (r) { return r.se == null ? "—" : num(r.se, 0); } }
+    ], rows, { sortCol: 1 });
+    box.appendChild(el("div", { cls: "scroll" }, t));
+    box.appendChild(el("p", { cls: "note", text: "Anchored to run " + (ar.anchor_run_id || "—") + "; " + ar.results +
+      " complete fixtures; opponents' Elo held fixed, same penalty as the model fit." }));
   }
 
   // ----------------------------------------------------------- efficiency

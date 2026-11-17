@@ -88,6 +88,94 @@ def _solve(A: list[list[float]], b: list[float]) -> list[float]:
     return [M[i][n] / M[i][i] for i in range(n)]
 
 
+def fit_anchored(
+    fixed_elo: dict[str, float],
+    results: Sequence[tuple[str, str, float]],
+    free: Sequence[str],
+    *,
+    penalty_scale: float = 2.5,
+    elo_center: float = 1500.0,
+    max_iter: int = 100,
+    tol: float = 1e-10,
+) -> dict:
+    """Rate ``free`` players against opponents whose Elo is held fixed.
+
+    Same likelihood and the same Gaussian penalty (centred on ``elo_center``)
+    as :func:`fit_ratings`, but only the free strengths are fitted, so adding a
+    player never moves the published model ratings.  Opponents must be in
+    ``fixed_elo``; results between two fixed players are constant and ignored.
+    """
+    scale = 400.0 / math.log(10)
+    free = list(free)
+    fidx = {m: i for i, m in enumerate(free)}
+    for a, b, _ in results:
+        for m in (a, b):
+            if m not in fidx and m not in fixed_elo:
+                raise ValueError(f"{m!r} is neither free nor in the anchor ratings")
+    results = [x for x in results if x[0] in fidx or x[1] in fidx]
+    n = len(free)
+    r = [0.0] * n
+    inv = 1.0 / (penalty_scale * penalty_scale)
+
+    def strength(m, r):
+        return r[fidx[m]] if m in fidx else (fixed_elo[m] - elo_center) / scale
+
+    def lgh(r):
+        loss = sum(x * x for x in r) * inv / 2
+        g = [x * inv for x in r]
+        H = [[(inv if i == j else 0.0) for j in range(n)] for i in range(n)]
+        for a, b, y in results:
+            p = _sigmoid(strength(a, r) - strength(b, r))
+            p = min(max(p, 1e-300), 1 - 1e-16)
+            loss -= y * math.log(p) + (1 - y) * math.log(1 - p)
+            d, w = p - y, p * (1 - p)
+            ia, ib = fidx.get(a), fidx.get(b)
+            if ia is not None:
+                g[ia] += d
+                H[ia][ia] += w
+            if ib is not None:
+                g[ib] -= d
+                H[ib][ib] += w
+            if ia is not None and ib is not None:
+                H[ia][ib] -= w
+                H[ib][ia] -= w
+        return loss, g, H
+
+    converged, it, gnorm, loss = False, 0, float("inf"), float("nan")
+    for it in range(1, max_iter + 1):
+        loss, g, H = lgh(r)
+        gnorm = math.sqrt(sum(x * x for x in g))
+        if gnorm < tol:
+            converged = True
+            break
+        step = _solve(H, g)
+        r = [x - s for x, s in zip(r, step)]
+    else:
+        converged = gnorm < 1e-6
+    _, _, H = lgh(r)
+    # Approximate standard errors from the penalised Hessian (Laplace).
+    se = {}
+    for m in free:
+        e = [1.0 if j == fidx[m] else 0.0 for j in range(n)]
+        try:
+            se[m] = scale * math.sqrt(max(_solve(H, e)[fidx[m]], 0.0))
+        except ZeroDivisionError:
+            se[m] = None
+    return {
+        "method": "anchored batch Elo-style rating (opponents fixed, same penalty)",
+        "free": free,
+        "elo": {m: elo_center + scale * r[fidx[m]] for m in free},
+        "elo_se_approx": se,
+        "fixed_elo": {m: fixed_elo[m] for m in sorted({x for a, b, _ in results for x in (a, b)} - set(free))},
+        "results": len(results),
+        "converged": converged,
+        "iterations": it,
+        "gradient_norm": gnorm,
+        "loss": loss,
+        "penalty_scale": penalty_scale,
+    }
+
+
 def fit_ratings(
     models: Sequence[str],
     results: Sequence[tuple[str, str, float]],

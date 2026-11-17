@@ -47,6 +47,10 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     manifests = [json.loads((d / "run.json").read_text()) for d in run_dirs]
     cfgs = [_normalized_config(d) for d in run_dirs]
     ref, ref_m = cfgs[0], manifests[0]
+    for d, c in zip(run_dirs, cfgs):
+        if any(mc["provider"] == "human" for mc in c["models"]):
+            # Human results are rated against fixed model ratings, never pooled.
+            raise CombineError(f"{d.name}: human-challenge runs are never pooled with model runs")
     for d, c, m in zip(run_dirs[1:], cfgs[1:], manifests[1:]):
         for sec in CONDITION_SECTIONS:
             if c[sec] != ref[sec]:

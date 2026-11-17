@@ -1,0 +1,32 @@
+.layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr); gap: 24px; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+.status { background: var(--private-bg); border-radius: 8px; padding: 10px 14px; font-weight: 600; }
+.status.your-turn { background: #d9f2df; color: #145a2a; }
+@media (prefers-color-scheme: dark) { .status.your-turn { background: #1f4a2c; color: #bff0cc; } }
+.board { display: flex; flex-wrap: wrap; gap: 28px; align-items: baseline; margin-bottom: 10px; }
+.board .label { display: block; color: var(--muted); font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.04em; }
+.prefix { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1.8em; font-weight: 700; }
+.clue { font-style: italic; font-size: 1.1em; }
+.words { color: var(--muted); font-size: 0.92em; overflow-wrap: anywhere; }
+.mono, td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+form#action-form { display: grid; gap: 10px; margin: 12px 0; max-width: 760px; }
+form#action-form label { display: grid; gap: 4px; }
+form#action-form .row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+input, textarea { font: inherit; padding: 5px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--card); color: var(--fg); max-width: 100%; }
+textarea { width: 100%; min-height: 3.2em; resize: vertical; }
+input.word { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; width: 18em; }
+.counter { color: var(--muted); font-size: 0.85em; }
+.counter.over { color: var(--audit-fg); font-weight: 700; }
+button.primary { background: var(--accent); color: #fff; border: 0; border-radius: 4px; padding: 6px 14px; cursor: pointer; }
+.range-row { display: flex; gap: 6px; align-items: center; margin: 4px 0; }
+#lookup-form { display: flex; flex-wrap: wrap; gap: 6px; }
+#lookup-offset { width: 6em; }
+#lookup-results { margin-top: 8px; max-height: 420px; overflow-y: auto; }
+.lookup { border-bottom: 1px solid var(--line); padding: 4px 0; font-size: 0.9em; overflow-wrap: anywhere; }
+.lookup .call { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); }
+.rules li { margin: 4px 0; }
+td.wrap { white-space: normal; overflow-wrap: anywhere; }
+.pill { display: inline-block; font-size: 0.75em; font-weight: 700; border-radius: 10px; padding: 1px 8px; background: var(--line); color: var(--muted); }
+.pill.ok { background: #d9f2df; color: #145a2a; }
+.pill.win { background: #2a5db0; color: #fff; }
+#stop { margin-top: 10px; }
