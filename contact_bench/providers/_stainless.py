@@ -33,7 +33,11 @@ def map_stainless_error(e: BaseException, sdk: ModuleType, secrets: tuple[str, .
     if isinstance(e, sdk.APIConnectionError):
         return mk("transient", retryable=True)
     if isinstance(e, sdk.RateLimitError):
-        if "insufficient_quota" in code or "billing" in code:
+        low = (msg + " " + code).lower()
+        # A 429 can also mean the prepaid balance is gone ("You have no credits
+        # remaining"); retrying cannot help, so halt the credential.
+        if any(k in low for k in ("insufficient_quota", "billing", "no credits", "credits remaining",
+                                  "add credits", "credit balance")):
             return mk("quota_exhausted", fatal=True)
         return mk("rate_limit", retryable=True)
     if isinstance(e, (sdk.AuthenticationError, sdk.PermissionDeniedError)):
