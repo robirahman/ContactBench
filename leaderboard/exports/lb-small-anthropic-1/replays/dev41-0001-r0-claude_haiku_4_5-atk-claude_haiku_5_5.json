@@ -1,0 +1,660 @@
+{
+ "game_id": "dev41-0001-r0-claude_haiku_4_5-atk-claude_haiku_5_5",
+ "attacker": "claude_haiku_4_5",
+ "defender": "claude_haiku_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "thought without form",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "supinate"
+    ]
+   ],
+   "blocked_word_count": 149578,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "physical reality",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "supinely",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 23022,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "supination",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 21.0,
+  "cost_numerator": 21,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1,
+   "denominator": 1,
+   "value": 1.0,
+   "exact": true,
+   "method": "all_fit",
+   "histogram": "6:1,9:3,10:2,11:1",
+   "target_length": 6,
+   "C": 100,
+   "mcse": null,
+   "rollouts": null,
+   "rank_total": null,
+   "rank_denominator": null,
+   "cache_key": null
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "abstract",
+    "clue": "thought without form",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 3,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 4,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "tangible",
+    "clue": "physical reality",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 7,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 8,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 9,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 10,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 11,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 12,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 13,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 14,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "intended word is not a current contact candidate"
+   },
+   {
+    "turn": 15,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 16,
+    "action": "direct",
+    "word": "supination",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 18,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 19,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 20,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "pass",
+    "committed_word": null,
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "pass",
+    "committed_word": null,
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "aah",
+      "supinate"
+     ]
+    ]
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [],
+    "canonical_ranges": [
+     [
+      "supinely",
+      "zyzzyvas"
+     ]
+    ]
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "abstract",
+   "w2": null,
+   "clue": "thought without form",
+   "mentions": [
+    "form",
+    "thought",
+    "without"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "supinate"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": null,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 23028,
+   "block_size": 149578,
+   "block_fresh_secret_candidates": 149578,
+   "block_overlap_with_clue": 1,
+   "emission_count": 149580,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "pass",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 23028,
+   "secret_candidates_after": 23028,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 23028,
+   "secret_candidates_after": 23028,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 23028,
+   "secret_candidates_after": 23028,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "tangible",
+   "w2": null,
+   "clue": "physical reality",
+   "mentions": [
+    "physical",
+    "reality"
+   ],
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "supinely",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_guesser1": true,
+   "blocked_guesser2": null,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": null,
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 23028,
+   "secret_candidates_after": 8,
+   "block_size": 23022,
+   "block_fresh_secret_candidates": 23020,
+   "block_overlap_with_clue": 0,
+   "emission_count": 23024,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "pass",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 8,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "supination"
+    }
+   ],
+   "emissions": [
+    "supination"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 8,
+   "secret_candidates_after": 7,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 7,
+   "secret_candidates_after": 7,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 7,
+   "secret_candidates_after": 7,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 7,
+   "secret_candidates_after": 7,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 7,
+   "secret_candidates_after": 7,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  }
+ ]
+}

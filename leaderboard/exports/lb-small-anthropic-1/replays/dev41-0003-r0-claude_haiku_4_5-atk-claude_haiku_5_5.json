@@ -1,0 +1,1282 @@
+{
+ "game_id": "dev41-0003-r0-claude_haiku_4_5-atk-claude_haiku_5_5",
+ "attacker": "claude_haiku_4_5",
+ "defender": "claude_haiku_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "fruit",
+   "blocklist": [
+    "fruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "password",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "burrowing mammal",
+   "blocklist": [
+    "aardvark",
+    "armadillo",
+    "badger",
+    "beaver",
+    "chipmunk",
+    "ferret",
+    "gerbil",
+    "gopher",
+    "groundhog",
+    "hamster",
+    "lemming",
+    "marmot",
+    "meerkat",
+    "mole",
+    "rabbit",
+    "shrew",
+    "vole",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "animal",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "striped big cat",
+   "blocklist": [
+    "cheetah",
+    "leopard",
+    "lion",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "man's best friend",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "moose",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "aardwolf",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "beetle",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "swim in water",
+   "blocklist": [
+    "bath",
+    "fish",
+    "lake",
+    "ocean",
+    "pool",
+    "river",
+    "swimmer",
+    "swimming"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "swims"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "bird",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "human",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "large gray animal with trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "hippopotamus",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros",
+    "tapir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "cattle",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "bacteria",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "reptile",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "winged insect",
+   "blocklist": [
+    "ant",
+    "bee",
+    "beetles",
+    "bug",
+    "butterfly",
+    "dragonfly",
+    "fly",
+    "gnat",
+    "hornet",
+    "insect",
+    "locust",
+    "mosquito",
+    "moth",
+    "wasp",
+    "winged"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "aardvarks",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "organism",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6967.745496752333,
+  "cost_numerator": 5543872769,
+  "cost_denominator": 795648,
+  "cost_exact": false,
+  "cost_mcse": 1.4878338402881492,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 5527959809,
+   "denominator": 795648,
+   "value": 6947.745496752333,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:964,4:3888,5:8623,6:15215,7:23099,8:28410,9:24864,10:20301,11:15504,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.4878338402881492,
+   "rollouts": 256,
+   "rank_total": 44223678472,
+   "rank_denominator": 6365184,
+   "cache_key": "290e521c35746cc7872b6df42aaadf65"
+  }
+ },
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "apple",
+    "clue": "fruit",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 2,
+    "action": "direct",
+    "word": "password",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "aardvark",
+    "clue": "burrowing mammal",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "direct",
+    "word": "animal",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "tiger",
+    "clue": "striped big cat",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "dog",
+    "clue": "man's best friend",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "direct",
+    "word": "moose",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "direct",
+    "word": "aardwolf",
+    "validity": "valid"
+   },
+   {
+    "turn": 9,
+    "action": "direct",
+    "word": "beetle",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "clue",
+    "committed_word": "fish",
+    "clue": "swim in water",
+    "validity": "valid"
+   },
+   {
+    "turn": 11,
+    "action": "direct",
+    "word": "bird",
+    "validity": "valid"
+   },
+   {
+    "turn": 12,
+    "action": "direct",
+    "word": "human",
+    "validity": "valid"
+   },
+   {
+    "turn": 13,
+    "action": "clue",
+    "committed_word": "elephant",
+    "clue": "large gray animal with trunk",
+    "validity": "valid"
+   },
+   {
+    "turn": 14,
+    "action": "direct",
+    "word": "cattle",
+    "validity": "valid"
+   },
+   {
+    "turn": 15,
+    "action": "invalid",
+    "validity": "invalid",
+    "reason": "direct word is not a current secret candidate"
+   },
+   {
+    "turn": 16,
+    "action": "direct",
+    "word": "bacteria",
+    "validity": "valid"
+   },
+   {
+    "turn": 17,
+    "action": "direct",
+    "word": "reptile",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "clue",
+    "committed_word": "butterfly",
+    "clue": "winged insect",
+    "validity": "valid"
+   },
+   {
+    "turn": 19,
+    "action": "direct",
+    "word": "aardvarks",
+    "validity": "valid"
+   },
+   {
+    "turn": 20,
+    "action": "direct",
+    "word": "organism",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "fruit",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "mole",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "tiger",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "dog",
+    "validity": "valid"
+   },
+   {
+    "turn": 10,
+    "action": "guess",
+    "committed_word": "swims",
+    "validity": "valid",
+    "conditional_choice": {
+     "offered": true,
+     "partner_word_blocked": true,
+     "choice": "reveal",
+     "validity": "valid"
+    }
+   },
+   {
+    "turn": 13,
+    "action": "guess",
+    "committed_word": "elephant",
+    "validity": "valid"
+   },
+   {
+    "turn": 18,
+    "action": "guess",
+    "committed_word": "bee",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "fruit"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "aardvark",
+     "armadillo",
+     "badger",
+     "beaver",
+     "chipmunk",
+     "ferret",
+     "gerbil",
+     "gopher",
+     "groundhog",
+     "hamster",
+     "lemming",
+     "marmot",
+     "meerkat",
+     "mole",
+     "rabbit",
+     "shrew",
+     "vole",
+     "wombat",
+     "woodchuck"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cheetah",
+     "leopard",
+     "lion",
+     "tiger"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "dog"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 10,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "bath",
+     "fish",
+     "lake",
+     "ocean",
+     "pool",
+     "river",
+     "swimmer",
+     "swimming"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 13,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "elephant",
+     "elephants",
+     "hippopotamus",
+     "mammoth",
+     "mastodon",
+     "pachyderm",
+     "rhinoceros",
+     "tapir"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 18,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "ant",
+     "bee",
+     "beetles",
+     "bug",
+     "butterfly",
+     "dragonfly",
+     "fly",
+     "gnat",
+     "hornet",
+     "insect",
+     "locust",
+     "mosquito",
+     "moth",
+     "wasp",
+     "winged"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "apple",
+   "w2": "fruit",
+   "clue": "fruit",
+   "mentions": [
+    "fruit"
+   ],
+   "blocklist": [
+    "fruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": false,
+   "blocked_guesser2": true,
+   "choice_actor": "guesser1",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    }
+   ],
+   "emissions": [
+    "apple",
+    "fruit"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": false,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172606,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "password"
+    }
+   ],
+   "emissions": [
+    "password"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172606,
+   "secret_candidates_after": 172605,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "aardvark",
+   "w2": "mole",
+   "clue": "burrowing mammal",
+   "mentions": [
+    "burrowing",
+    "mammal"
+   ],
+   "blocklist": [
+    "aardvark",
+    "armadillo",
+    "badger",
+    "beaver",
+    "chipmunk",
+    "ferret",
+    "gerbil",
+    "gopher",
+    "groundhog",
+    "hamster",
+    "lemming",
+    "marmot",
+    "meerkat",
+    "mole",
+    "rabbit",
+    "shrew",
+    "vole",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aardvark",
+    "armadillo",
+    "badger",
+    "beaver",
+    "burrowing",
+    "chipmunk",
+    "ferret",
+    "gerbil",
+    "gopher",
+    "groundhog",
+    "hamster",
+    "lemming",
+    "mammal",
+    "marmot",
+    "meerkat",
+    "mole",
+    "rabbit",
+    "shrew",
+    "vole",
+    "wombat",
+    "woodchuck"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172605,
+   "secret_candidates_after": 172584,
+   "block_size": 19,
+   "block_fresh_secret_candidates": 19,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "animal"
+    }
+   ],
+   "emissions": [
+    "animal"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172584,
+   "secret_candidates_after": 172583,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "tiger",
+   "w2": "tiger",
+   "clue": "striped big cat",
+   "mentions": [
+    "big",
+    "cat",
+    "striped"
+   ],
+   "blocklist": [
+    "cheetah",
+    "leopard",
+    "lion",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "big",
+    "cat",
+    "cheetah",
+    "leopard",
+    "lion",
+    "striped",
+    "tiger"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172583,
+   "secret_candidates_after": 172576,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "dog",
+   "w2": "dog",
+   "clue": "man's best friend",
+   "mentions": [
+    "best",
+    "friend",
+    "man"
+   ],
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "best",
+    "dog",
+    "friend",
+    "man"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172576,
+   "secret_candidates_after": 172572,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "moose"
+    }
+   ],
+   "emissions": [
+    "moose"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172572,
+   "secret_candidates_after": 172571,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 8,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "aardwolf"
+    }
+   ],
+   "emissions": [
+    "aardwolf"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172571,
+   "secret_candidates_after": 172570,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 9,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "beetle"
+    }
+   ],
+   "emissions": [
+    "beetle"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172570,
+   "secret_candidates_after": 172569,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 10,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "fish",
+   "w2": "swims",
+   "clue": "swim in water",
+   "mentions": [
+    "swim",
+    "water"
+   ],
+   "blocklist": [
+    "bath",
+    "fish",
+    "lake",
+    "ocean",
+    "pool",
+    "river",
+    "swimmer",
+    "swimming"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": false,
+   "choice_actor": "guesser2",
+   "choice": "reveal",
+   "choice_valid": true,
+   "opened": [
+    {
+     "seat": "guesser2",
+     "word": "swims"
+    }
+   ],
+   "emissions": [
+    "bath",
+    "fish",
+    "lake",
+    "ocean",
+    "pool",
+    "river",
+    "swim",
+    "swimmer",
+    "swimming",
+    "swims",
+    "water"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172569,
+   "secret_candidates_after": 172558,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 11,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "bird"
+    }
+   ],
+   "emissions": [
+    "bird"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172558,
+   "secret_candidates_after": 172557,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 12,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "human"
+    }
+   ],
+   "emissions": [
+    "human"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172557,
+   "secret_candidates_after": 172556,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 13,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "elephant",
+   "w2": "elephant",
+   "clue": "large gray animal with trunk",
+   "mentions": [
+    "animal",
+    "gray",
+    "large",
+    "trunk",
+    "with"
+   ],
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "hippopotamus",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros",
+    "tapir"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "animal",
+    "elephant",
+    "elephants",
+    "gray",
+    "hippopotamus",
+    "large",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros",
+    "tapir",
+    "trunk",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172556,
+   "secret_candidates_after": 172544,
+   "block_size": 8,
+   "block_fresh_secret_candidates": 8,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 14,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "cattle"
+    }
+   ],
+   "emissions": [
+    "cattle"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172544,
+   "secret_candidates_after": 172543,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 15,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [],
+   "emissions": [],
+   "result": "invalid_guesser1",
+   "secret_candidates_before": 172543,
+   "secret_candidates_after": 172543,
+   "guesser1_valid": false,
+   "guesser1_action": "invalid"
+  },
+  {
+   "turn": 16,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "bacteria"
+    }
+   ],
+   "emissions": [
+    "bacteria"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172543,
+   "secret_candidates_after": 172542,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 17,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "reptile"
+    }
+   ],
+   "emissions": [
+    "reptile"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172542,
+   "secret_candidates_after": 172541,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 18,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "butterfly",
+   "w2": "bee",
+   "clue": "winged insect",
+   "mentions": [
+    "insect",
+    "winged"
+   ],
+   "blocklist": [
+    "ant",
+    "bee",
+    "beetles",
+    "bug",
+    "butterfly",
+    "dragonfly",
+    "fly",
+    "gnat",
+    "hornet",
+    "insect",
+    "locust",
+    "mosquito",
+    "moth",
+    "wasp",
+    "winged"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "ant",
+    "bee",
+    "beetles",
+    "bug",
+    "butterfly",
+    "dragonfly",
+    "fly",
+    "gnat",
+    "hornet",
+    "insect",
+    "locust",
+    "mosquito",
+    "moth",
+    "wasp",
+    "winged"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": false,
+   "intended_covered": true,
+   "covered_match": false,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": false,
+   "result": "no_prefix",
+   "secret_candidates_before": 172541,
+   "secret_candidates_after": 172526,
+   "block_size": 15,
+   "block_fresh_secret_candidates": 15,
+   "block_overlap_with_clue": 2,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 19,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "aardvarks"
+    }
+   ],
+   "emissions": [
+    "aardvarks"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172526,
+   "secret_candidates_after": 172525,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  },
+  {
+   "turn": 20,
+   "prefix_before": "",
+   "prefix_after": "",
+   "opened": [
+    {
+     "seat": "guesser1",
+     "word": "organism"
+    }
+   ],
+   "emissions": [
+    "organism"
+   ],
+   "result": "wrong_direct",
+   "secret_candidates_before": 172525,
+   "secret_candidates_after": 172524,
+   "guesser1_valid": true,
+   "guesser1_action": "direct"
+  }
+ ]
+}
