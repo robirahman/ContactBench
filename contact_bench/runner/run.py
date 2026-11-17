@@ -350,12 +350,15 @@ class Runner:
     def new_game(self, g: GameSpec) -> Game:
         t = self.tasks[g.task_id]
         atk = self.models[g.attacker]
+        protocol = self.cfg.protocol
+        if g.initial_prefix_length is not None:
+            protocol = protocol.model_copy(update={"initial_prefix_length": g.initial_prefix_length})
         return Game(
             game_id=g.game_id,
             secret=t.secret,
             v_secret=self.v_secret,
             v_contact=self.v_contact,
-            protocol=self.cfg.protocol,
+            protocol=protocol,
             offense_condition=atk.offense_mode if atk.provider != "scripted" else "full",
             joint_live=self.cfg.forecasts.mode == "joint_live",
         )
@@ -522,6 +525,12 @@ class Runner:
                           + (f" cost={rec['score']['cost']:.3f}" if rec.get("score") and rec["score"]["cost"] is not None else ""))
 
         await asyncio.gather(*(one(g) for g in todo))
+        if self.cfg.tournament.rematch_on_no_progress_draw and not (self.halted or self.budget_stopped):
+            self.schedule_rematches()
+            finished = {r["game_id"] for r in self.store.game_rows()
+                        if r["status"] == "complete" and r["collection_status"] == "complete"}
+            pending_rm = [g for g in self.games if g.rematch_of and g.game_id not in finished]
+            await asyncio.gather(*(one(g) for g in pending_rm))
         status = self.status()
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
@@ -531,6 +540,42 @@ class Runner:
         status["reference_scorer_stats"] = dict(self.scorer.stats)
         self.store.write_json("status.json", status)
         return status
+
+    def schedule_rematches(self) -> list[Fixture]:
+        """Append one rematch fixture per completed no-progress draw (idempotent).
+
+        A rematch starts from the same secret with rematch_extra_letters more
+        letters revealed.  Rematch fixtures never trigger further rematches.
+        The schedule file is extended append-only and logged as an event.
+        """
+        from .schedule import is_no_progress_capped, rematch_fixture
+
+        existing = {f.rematch_of for f in self.fixtures if f.rematch_of}
+        added: list[Fixture] = []
+        for f in list(self.fixtures):
+            if f.rematch_of or f.fixture_id in existing:
+                continue
+            ab, ba = self.store.read_game(f.game_ab), self.store.read_game(f.game_ba)
+            if not ab or not ba or ab.get("run_status") != "complete" or ba.get("run_status") != "complete":
+                continue
+            if not (is_no_progress_capped(ab["summary"]) and is_no_progress_capped(ba["summary"])):
+                continue
+            base = f.initial_prefix_length if f.initial_prefix_length is not None else self.cfg.protocol.initial_prefix_length
+            plen = base + self.cfg.tournament.rematch_extra_letters
+            if len(self.tasks[f.task_id].secret) <= plen:
+                continue
+            fx, games = rematch_fixture(f, plen)
+            self.fixtures.append(fx)
+            self.games.extend(games)
+            added.append(fx)
+        if added:
+            self.store.write_json("schedule.json", {
+                "fixtures": [asdict(x) for x in self.fixtures],
+                "games": [asdict(x) for x in self.games],
+            })
+            self.store.append_event({"type": "rematches_scheduled",
+                                     "fixtures": [x.fixture_id for x in added]})
+        return added
 
     def status(self) -> dict:
         rows = {r["game_id"]: r for r in self.store.game_rows()}

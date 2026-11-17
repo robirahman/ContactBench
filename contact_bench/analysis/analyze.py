@@ -96,7 +96,12 @@ def load_rows(records: list[dict]) -> list[GameRow]:
     return [GameRow(r) for r in records]
 
 
-def fixture_results(rows: list[GameRow], fixtures: list[dict]) -> list[dict]:
+def _no_progress(r: "GameRow") -> bool:
+    s = r.summary
+    return s["outcome_status"] == "capped" and s["final_prefix"] == s["initial_prefix"]
+
+
+def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_draws: bool = True) -> list[dict]:
     by_id = {r.game_id: r for r in rows}
     out = []
     for f in fixtures:
@@ -111,9 +116,14 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict]) -> list[dict]:
             "complete": complete,
             "cost_ab": _fj(ab.cost) if ab else None,
             "cost_ba": _fj(ba.cost) if ba else None,
+            "rematch_of": f.get("rematch_of", ""),
+            "initial_prefix_length": f.get("initial_prefix_length"),
         }
         if complete:
-            item["points_a"] = match_points(ab.cost, ba.cost)
+            item["no_progress_draw"] = bool(no_progress_draws and _no_progress(ab) and _no_progress(ba))
+            # Both legs capped without any letter: the fallback-cost difference
+            # carries no signal, so the fixture is a draw for the rating.
+            item["points_a"] = 0.5 if item["no_progress_draw"] else match_points(ab.cost, ba.cost)
             item["points_b"] = 1.0 - item["points_a"]
             # Numerical uncertainty of the cost difference (estimated fallbacks).
             m1 = ab.cost_mcse or 0.0
@@ -441,7 +451,8 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     sched = json.loads((run_dir / "schedule.json").read_text())
     models = [m["id"] for m in manifest["config"]["models"]]
     rows = load_rows(records)
-    fx = fixture_results(rows, sched["fixtures"])
+    draw_rule = manifest["config"].get("tournament", {}).get("no_progress_draws", True)
+    fx = fixture_results(rows, sched["fixtures"], no_progress_draws=draw_rule)
     complete = [f for f in fx if f["complete"]]
     fit = fit_ratings(models, [(f["model_a"], f["model_b"], f["points_a"]) for f in complete],
                       penalty_scale=penalty_scale, elo_center=elo_center)
@@ -480,6 +491,9 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         "recorded_games": len(rows),
         "scored_games": sum(1 for r in rows if r.scored),
         "planned_fixtures": len(sched["fixtures"]),
+        "rematch_fixtures": sum(1 for f in sched["fixtures"] if f.get("rematch_of")),
+        "no_progress_draw_rule": draw_rule,
+        "no_progress_draws": sum(1 for f in fx if f.get("no_progress_draw")),
         "complete_fixtures": len(complete),
         "balanced_complete": len(complete) == len(sched["fixtures"]) and len(complete) > 0,
         "game_status_counts": dict(status_counts),
@@ -583,6 +597,8 @@ def render_report(res: dict) -> str:
     L.append(f"Games: planned {res['planned_games']}, recorded {res['recorded_games']}, scored {res['scored_games']}. "
              f"Fixtures: planned {res['planned_fixtures']}, complete {res['complete_fixtures']}"
              f"{' (balanced and complete)' if res['balanced_complete'] else ' (PROVISIONAL: incomplete)'}.\n")
+    L.append(f"No-progress draws (both legs capped without a letter; scored ½–½): {res.get('no_progress_draws', 0)}; "
+             f"rematch fixtures (same secret, extra letter revealed): {res.get('rematch_fixtures', 0)}.\n")
     L.append("## Paired competitive rating (batch Elo-style rating with half-point draws)\n")
     L.append("| Model | Elo | 95% CI | Match-point share (per fixture) | Offense speedup (ΣB/ΣC) | Median offense cost (turns) | Median cost imposed as defender | Mean paired cost advantage | Defensive cost ratio (ΣC/ΣB) | Deadline hold rate (per defended game) |")
     L.append("|---|---:|---|---:|---:|---:|---:|---:|---:|---:|")

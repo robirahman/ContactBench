@@ -145,6 +145,15 @@ class TournamentConfig(_Strict):
     homogeneous_attackers: Literal[True] = True
     repetitions: int = Field(1, ge=1)
     order_seed: int = 7
+    # A fixture where both legs hit the cap and neither attacker earned a
+    # letter beyond the starting prefix is scored as a draw for the rating
+    # (the fallback-cost difference between such legs carries no signal).
+    no_progress_draws: bool = True
+    # Each such draw schedules one rematch fixture on the same secret with
+    # extra letters of the secret revealed at the start.  The draw stands; the
+    # rematch is an additional result.  Rematches never trigger rematches.
+    rematch_on_no_progress_draw: bool = True
+    rematch_extra_letters: int = Field(1, ge=1)
 
 
 class ForecastConfig(_Strict):

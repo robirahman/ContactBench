@@ -179,14 +179,16 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "models": [_pick(m, MODEL_KEYS) for m in cfg["models"]],
     }
     keep = ["run_id", "protocol_version", "fixture_data", "models", "planned_games", "recorded_games",
-            "scored_games", "planned_fixtures", "complete_fixtures", "balanced_complete", "game_status_counts",
+            "scored_games", "planned_fixtures", "complete_fixtures", "rematch_fixtures", "no_progress_draw_rule",
+            "no_progress_draws", "balanced_complete", "game_status_counts",
             "missing_model_pairs", "rating", "rating_penalty_sensitivity", "bootstrap", "model_stats",
             "role_diagnostics", "pairwise_match_points", "pairwise_mean_cost", "capped_games",
             "capped_fraction_of_scored_games", "residual_candidate_counts_capped", "strata",
             "numerical_reference", "numerically_close_fixtures", "resources"]
     leaderboard = {k: analysis.get(k) for k in keep}
     fixtures = [_pick(f, ["fixture_id", "task_id", "repetition", "model_a", "model_b", "complete", "cost_ab",
-                          "cost_ba", "points_a", "points_b", "cost_difference_mcse", "numerically_close"])
+                          "cost_ba", "points_a", "points_b", "cost_difference_mcse", "numerically_close",
+                          "no_progress_draw", "rematch_of", "initial_prefix_length"])
                 for f in analysis.get("fixtures", [])]
     games = []
     for i, r in enumerate(sorted(records, key=lambda r: r["game"]["game_id"])):

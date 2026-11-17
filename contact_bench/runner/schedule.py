@@ -22,6 +22,9 @@ class GameSpec:
     defender: str
     leg: str  # "AB" or "BA" or "self"
     policy_seed: int
+    # Rematch games override the starting prefix length.
+    initial_prefix_length: int | None = None
+    rematch_of: str = ""
 
 
 @dataclass(frozen=True)
@@ -33,6 +36,27 @@ class Fixture:
     model_b: str
     game_ab: str  # A attacks, B defends
     game_ba: str  # B attacks, A defends
+    rematch_of: str = ""  # fixture id of the no-progress draw this rematches
+    initial_prefix_length: int | None = None
+
+
+def is_no_progress_capped(summary: dict) -> bool:
+    """Capped game in which the attackers earned no letter."""
+    return summary.get("outcome_status") == "capped" and summary.get("final_prefix") == summary.get("initial_prefix")
+
+
+def rematch_fixture(f: Fixture, initial_prefix_length: int) -> tuple[Fixture, list[GameSpec]]:
+    fid = f"{f.fixture_id}~rematch"
+    gab, gba = f"{f.game_ab}-rematch", f"{f.game_ba}-rematch"
+    fx = Fixture(fid, f.task_id, f.repetition, f.model_a, f.model_b, gab, gba,
+                 rematch_of=f.fixture_id, initial_prefix_length=initial_prefix_length)
+    games = [
+        GameSpec(gab, fid, f.task_id, f.repetition, f.model_a, f.model_b, "AB", _seed("policy", gab),
+                 initial_prefix_length, f.fixture_id),
+        GameSpec(gba, fid, f.task_id, f.repetition, f.model_b, f.model_a, "BA", _seed("policy", gba),
+                 initial_prefix_length, f.fixture_id),
+    ]
+    return fx, games
 
 
 def _seed(*parts) -> int:

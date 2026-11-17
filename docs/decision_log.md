@@ -84,6 +84,20 @@ The design choices behind these conditions:
 - **Per-provider caps.** `--max-usd-provider PROVIDER=USD` (repeatable) caps spend per API key, on both `run` and
   `resume`.
 
+## No-progress draws and rematches (2026-11-17, researcher decision)
+
+- **Draw rule.** A fixture where both legs hit the turn cap and neither attacker earned a letter beyond the
+  starting prefix is scored ½–½ for the rating (`tournament.no_progress_draws`, default true). Between strong
+  defenders such fixtures are common. Their fallback-cost difference reflects only incidental eliminations,
+  not skill.
+- **Rematch.** Each such draw schedules one rematch fixture, both legs, on the same secret with
+  `rematch_extra_letters` (default 1) more letters revealed. The draw stands and the rematch is an additional
+  result. Rematches never trigger rematches.
+- **Schedule.** Rematch fixtures are appended to `schedule.json` once both original legs are complete. This is
+  logged as a `rematches_scheduled` event and is idempotent on resume. Replay regenerates them from the logs.
+- **Re-analysis.** The rule is applied when analysing, so older runs re-analysed with this code also score
+  no-progress fixtures as draws.
+
 ## Review fixes (Codex review of PR #1)
 
 1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes
