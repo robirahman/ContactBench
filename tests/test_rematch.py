@@ -94,3 +94,14 @@ def test_legacy_snapshots_have_rematches_disabled():
     assert snapshot_with_legacy_defaults(legacy, True)["tournament"]["rematch_on_no_progress_draw"] is True
     new = {"tournament": {"rematch_on_no_progress_draw": True}}
     assert snapshot_with_legacy_defaults(new)["tournament"]["rematch_on_no_progress_draw"] is True
+
+
+def test_rematch_ids_cannot_collide_with_model_ids():
+    from contact_bench.runner.schedule import Fixture, rematch_fixture
+    import pytest
+    from contact_bench.config import ModelConfig
+    f = Fixture("t-r0-a~b", "t", 0, "a", "b", "t-r0-a-atk-b", "t-r0-b-atk-a")
+    _, games = rematch_fixture(f, 1)
+    assert all("~" in g.game_id for g in games)
+    with pytest.raises(ValueError):
+        ModelConfig(id="b~rematch", provider="scripted")

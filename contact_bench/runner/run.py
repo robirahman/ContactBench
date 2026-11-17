@@ -667,6 +667,9 @@ class Runner:
             if len(self.tasks[f.task_id].secret) <= plen:
                 continue
             fx, games = rematch_fixture(f, plen)
+            taken = {g.game_id for g in self.games}
+            if any(g.game_id in taken for g in games):
+                raise EngineInvariantError(f"rematch game id collision for fixture {f.fixture_id}")
             self.fixtures.append(fx)
             self.games.extend(games)
             added.append(fx)

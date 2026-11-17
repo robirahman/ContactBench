@@ -46,8 +46,10 @@ def is_no_progress_capped(summary: dict) -> bool:
 
 
 def rematch_fixture(f: Fixture, initial_prefix_length: int) -> tuple[Fixture, list[GameSpec]]:
+    # "~" cannot occur in model ids ([A-Za-z0-9_.-]), so these ids can never
+    # collide with ordinary game ids produced by build_schedule.
     fid = f"{f.fixture_id}~rematch"
-    gab, gba = f"{f.game_ab}-rematch", f"{f.game_ba}-rematch"
+    gab, gba = f"{f.game_ab}~rematch", f"{f.game_ba}~rematch"
     fx = Fixture(fid, f.task_id, f.repetition, f.model_a, f.model_b, gab, gba,
                  rematch_of=f.fixture_id, initial_prefix_length=initial_prefix_length)
     games = [
