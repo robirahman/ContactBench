@@ -53,6 +53,7 @@ class RunStore:
         (self.dir / "games").mkdir(exist_ok=True)
         self._lock = threading.Lock()
         self._decisions: dict[str, dict] | None = None
+        self._repaired: set[str] = set()
         self.duplicate_decisions: list[str] = []
         self.db = sqlite3.connect(self.dir / "index.sqlite", check_same_thread=False)
         self.db.executescript(
@@ -69,9 +70,37 @@ class RunStore:
         self.db.commit()
 
     # ----------------------------------------------------------------- append
+    def _repair_tail(self, name: str) -> None:
+        """Restore a record boundary after a crash left a partial final line.
+
+        The torn bytes (never a complete, applied record) are moved to
+        ``<name>.torn`` for audit and truncated from the log, so the next
+        append starts on its own line instead of being fused to garbage.
+        """
+        path = self.dir / name
+        if name in self._repaired or not path.exists():
+            self._repaired.add(name)
+            return
+        with path.open("rb+") as f:
+            f.seek(0, os.SEEK_END)
+            size = f.tell()
+            if size:
+                f.seek(size - 1)
+                if f.read(1) != b"\n":
+                    f.seek(0)
+                    data = f.read()
+                    cut = data.rfind(b"\n") + 1
+                    with (self.dir / f"{name}.torn").open("ab") as t:
+                        t.write(data[cut:] + b"\n")
+                    f.truncate(cut)
+                    f.flush()
+                    os.fsync(f.fileno())
+        self._repaired.add(name)
+
     def _append(self, name: str, record: dict) -> None:
         line = json.dumps(record, sort_keys=True, default=str) + "\n"
         with self._lock:
+            self._repair_tail(name)
             with (self.dir / name).open("a") as f:
                 f.write(line)
                 f.flush()

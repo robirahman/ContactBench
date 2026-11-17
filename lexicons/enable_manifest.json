@@ -1,0 +1,21 @@
+{
+  "name": "enable",
+  "words_file": "enable.txt",
+  "sha256": "efbf5011f68c5d9aedc2d0e09a5ae7008c8d4cb4a60e3521098e522ea4ba371a",
+  "word_count": 172608,
+  "source": "ENABLE word list (Enhanced North American Benchmark LExicon), via https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt, upstream sha256 3f16130220645692ed49c7134e24a18504c2ca55b3c012f7290e3e77c63b1a89",
+  "license": "Public domain (ENABLE)",
+  "source_revision": "dolph/dictionary master, fetched 2026-11-17",
+  "preprocessing": [
+    "strip surrounding ASCII whitespace",
+    "lowercase ASCII A-Z",
+    "keep tokens matching ^[a-z]+$",
+    "keep lengths 3..20",
+    "no exclusion list",
+    "sort and deduplicate"
+  ],
+  "exclusions": "",
+  "lines_dropped": 215,
+  "min_length": 3,
+  "max_length": 20
+}

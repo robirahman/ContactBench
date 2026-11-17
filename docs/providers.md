@@ -153,3 +153,67 @@ write.
   is `None`. OpenAI and Anthropic use the SDK's `_request_id`.
 - Error classification matches on message substrings for unsupported parameters and quota. A
   misclassified 400 still fails safely as a fatal `bad_request`.
+
+## Lookup tools
+
+The dictionary-assisted condition gives every seat the same deterministic lookup functions
+(`is_legal_word`, `list_words`, `count_words`). `ProviderAdapter._tool_loop` in `base.py` drives a
+model ↔ tool loop. Each model call is a separate transport attempt with its own bounded retries and its own
+`AttemptGate` reservation. Tool results are private diagnostics: they are recorded in `tool_trace` and never count as
+gameplay utterances. Each provider implements three hooks: `tool_conversation_start`, `send_tool_turn` and
+`tool_conversation_append`. Every turn still requests the final structured-output JSON schema. When the call limit is
+reached, the next turns disable tool calling and each further call returns an error result. A model that keeps asking
+for tools ends with `output_text=None` and `finish_reason="tool_loop_limit"`, which the engine scores as an invalid
+action.
+
+### OpenAI (Responses API)
+
+- `store=False`, so `previous_response_id` is never used. The full input item list is carried by the caller: the user
+  message, then the model's output items replayed verbatim (reasoning items, `function_call` items, any message), then
+  `{"type": "function_call_output", "call_id", "output": json.dumps(result)}`.
+- Every tool turn sends `include=["reasoning.encrypted_content"]` so reasoning items can be replayed statelessly.
+- Tools are `{"type": "function", name, description, parameters, "strict": false}`. They cannot be strict because
+  `offset` and `limit` are optional. `tool_choice` is `"auto"`, or `"none"` once the limit is reached.
+- `text.format` (strict JSON schema) is sent on every turn alongside the function tools.
+- Arguments that are not valid JSON are passed to the executor as `{"_unparseable_arguments": raw}`. The executor
+  answers them with an error.
+- **Unverified live:**
+  - Whether non-reasoning models accept `include=["reasoning.encrypted_content"]`, or reject it.
+  - Whether replaying output items exactly as returned, including `status` and `id` fields, is accepted with
+    `store=False`.
+
+### Gemini (Interactions API)
+
+- `store=False` and `automatic_continuation=False`, with no `previous_interaction_id`. The history is a list of steps:
+  `user_input`, then the model's own `thought` / `function_call` / `model_output` steps replayed as returned (thought
+  signatures included), then `{"type": "function_result", "call_id", "name", "result": json.dumps(result),
+  "is_error"?}`. Any `user_input` or `function_result` steps echoed back in the response are not re-sent.
+- Tools are `{"type": "function", name, description, parameters}`. `generation_config.tool_choice` is `"auto"`, or
+  `"none"` once the limit is reached.
+- `response_format` (JSON schema) is sent on every turn.
+- A turn that ends in function calls (status `requires_action`) is not treated as an incomplete answer.
+- **Unverified live:**
+  - Whether the response `steps` include the input steps (the code filters by type either way).
+  - Whether `response_format` is accepted together with function tools on every model.
+
+### Gemini (generateContent compatibility)
+
+- History is a list of `Content` entries:
+  1. the user turn;
+  2. the candidate's `content`, appended as the SDK object so `thought_signature` bytes survive;
+  3. a user turn of `function_response` parts `{"name", "id", "response": {"result": result}}`.
+- Function declarations use `parameters_json_schema`. `tool_config.function_calling_config.mode` is `AUTO`, or `NONE`
+  once the limit is reached. `automatic_function_calling={"disable": True}` is set, and only declarations (never
+  callables) are passed, so the SDK never executes anything.
+- `response_mime_type="application/json"` and `response_json_schema` are sent alongside the tools.
+- **Unverified live:**
+  - Whether older Gemini models reject combining a JSON response schema with function calling. If one does, the error
+    maps to a fatal `bad_request` or `unsupported_parameter` and halts the run; it is never silently degraded.
+
+### Anthropic lookup tools
+
+The tools are declared as `tools=[{name, description, input_schema}]` with `tool_choice` set to `auto`, or `none`
+once the call limit is reached. `output_config.format` (the final-answer JSON schema) is sent on every turn. Each
+assistant turn's content blocks, thinking blocks included, are passed back unchanged, followed by a user turn of
+`tool_result` blocks. When `max_tokens > 16000` the adapter calls `messages.stream(...)` and `get_final_message()`.
+This was verified live with `claude-haiku-5-5` on 2026-11-17: a 3-turn count_words → list_words → answer loop.

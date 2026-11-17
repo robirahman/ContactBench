@@ -3,7 +3,8 @@
 Protocol version 0.4 (see CONTACT_BENCHMARK_SPEC.md).
 """
 
-PROTOCOL_VERSION = "contact-v0.4"
+PROTOCOL_VERSION = "contact-v0.5"
+SUPPORTED_PROTOCOL_VERSIONS = ("contact-v0.4", "contact-v0.5")
 SCHEMA_VERSION = "1.0.0"
 ENGINE_VERSION = "engine-1"
 PACKING_VERSION = "combined-two-longest-maximal-prefix-v1"

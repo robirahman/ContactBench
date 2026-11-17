@@ -11,9 +11,14 @@ from __future__ import annotations
 
 from typing import Any
 
+import json
+
 from ._stainless import map_stainless_error
 from ._util import get, int_or_none, to_plain
-from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter
+from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter, ToolCall
+
+# Above this many output tokens the SDK requires streaming for a single call.
+STREAMING_THRESHOLD = 16000
 
 
 class AnthropicMessagesAdapter(ProviderAdapter):
@@ -52,25 +57,71 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         kwargs["output_config"] = output_config
         return kwargs
 
-    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+    async def _call(self, kwargs: dict) -> Any:
         import anthropic
 
-        kwargs = self.build_request(request)
         client = self._get_client()
         secrets = tuple(s for s in (self.credentials.get(self.credential_env or ""),) if s)
         try:
-            msg = await client.messages.create(**kwargs)
+            if kwargs["max_tokens"] > STREAMING_THRESHOLD:
+                # Large output allowances (e.g. a full explicit blocklist over a
+                # big dictionary) must stream; the final message is identical.
+                async with client.messages.stream(**kwargs) as stream:
+                    return await stream.get_final_message()
+            return await client.messages.create(**kwargs)
         except anthropic.AnthropicError as e:
             raise map_stainless_error(e, anthropic, secrets) from None
+
+    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+        kwargs = self.build_request(request)
+        msg = await self._call(kwargs)
         return self.parse_response(msg, kwargs)
+
+    # -- lookup-tool loop ------------------------------------------------------
+    def tool_conversation_start(self, request: DecisionRequest) -> Any:
+        return [{"role": "user", "content": request.user_prompt}]
+
+    async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
+        kwargs = self.build_request(request)
+        kwargs["messages"] = list(state)
+        kwargs["tools"] = [
+            {"name": t.name, "description": t.description, "input_schema": t.parameters} for t in request.tools
+        ]
+        kwargs["tool_choice"] = {"type": "auto"} if allow_tools else {"type": "none"}
+        msg = await self._call(kwargs)
+        resp = self.parse_response(msg, kwargs)
+        blocks = get(msg, "content", None) or []
+        calls = [
+            ToolCall(id=get(b, "id"), name=get(b, "name"), arguments=dict(get(b, "input", None) or {}))
+            for b in blocks
+            if get(b, "type") == "tool_use"
+        ]
+        # Pass every assistant block back unchanged (thinking blocks included).
+        assistant = [to_plain(b) for b in blocks]
+        new_state = list(state) + [{"role": "assistant", "content": assistant}]
+        if calls:
+            resp.output_text = None  # an intermediate turn is not a final answer
+        return resp, calls, new_state
+
+    def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
+        content = [
+            {"type": "tool_result", "tool_use_id": c.id, "content": json.dumps(r, separators=(",", ":"))}
+            for c, r in zip(calls, results)
+        ]
+        return list(state) + [{"role": "user", "content": content}]
 
     def parse_response(self, msg: Any, kwargs: dict) -> AdapterResponse:
         texts = [get(b, "text", "") or "" for b in (get(msg, "content", None) or []) if get(b, "type") == "text"]
         stop = get(msg, "stop_reason")
         u = get(msg, "usage")
         thinking = int_or_none(get(get(u, "output_tokens_details"), "thinking_tokens"))
+        # Normalized convention: input_tokens INCLUDES cache reads and writes
+        # (Anthropic reports them as separate, disjoint fields).
+        base_in = int_or_none(get(u, "input_tokens"))
+        c_read = int_or_none(get(u, "cache_read_input_tokens"))
+        c_write = int_or_none(get(u, "cache_creation_input_tokens"))
         usage = NormalizedUsage(
-            input_tokens=int_or_none(get(u, "input_tokens")),
+            input_tokens=None if base_in is None else base_in + (c_read or 0) + (c_write or 0),
             output_tokens=int_or_none(get(u, "output_tokens")),
             total_tokens=None,  # not reported by the Messages API
             cached_input_tokens=int_or_none(get(u, "cache_read_input_tokens")),
@@ -80,12 +131,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             reasoning_included_in_output=True if thinking is not None else None,
         )
         if usage.input_tokens is not None and usage.output_tokens is not None:
-            usage.total_tokens = (
-                usage.input_tokens
-                + usage.output_tokens
-                + (usage.cached_input_tokens or 0)
-                + (usage.cache_write_tokens or 0)
-            )
+            usage.total_tokens = usage.input_tokens + usage.output_tokens
         effective = {k: v for k, v in self.config.parameters.items()}
         effective["max_tokens"] = kwargs["max_tokens"]
         return AdapterResponse(

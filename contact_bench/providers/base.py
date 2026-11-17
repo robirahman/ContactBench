@@ -76,7 +76,13 @@ def sanitize(text: str, extra_secrets: tuple[str, ...] = ()) -> str:
 
 @dataclass
 class NormalizedUsage:
-    """Nullable usage fields.  Unknown is None, never zero."""
+    """Nullable usage fields.  Unknown is None, never zero.
+
+    Convention: ``input_tokens`` counts ALL input tokens, including cache
+    reads (``cached_input_tokens``) and cache writes (``cache_write_tokens``),
+    which are subsets of it.  Adapters whose API reports them as disjoint
+    fields (Anthropic) add them in.
+    """
 
     input_tokens: int | None = None
     output_tokens: int | None = None
@@ -108,6 +114,27 @@ class TransportAttempt:
     possibly_billed: bool = False
 
 
+@dataclass(frozen=True)
+class ToolSpec:
+    """A deterministic, side-effect-free lookup function offered to a model."""
+
+    name: str
+    description: str
+    parameters: dict  # JSON Schema of the arguments object
+
+
+@dataclass(frozen=True)
+class ToolCall:
+    id: str
+    name: str
+    arguments: dict
+
+
+# A tool executor maps (name, arguments) to a JSON-serializable result.  It
+# must never raise: bad arguments produce {"error": ...}.
+ToolExecutor = Callable[[str, dict], Any]
+
+
 @dataclass
 class DecisionRequest:
     decision_id: str
@@ -118,6 +145,37 @@ class DecisionRequest:
     schema_name: str
     json_schema: dict
     max_output_tokens: int | None = None
+    tools: list[ToolSpec] = field(default_factory=list)
+    tool_executor: ToolExecutor | None = None
+    max_tool_calls: int = 0
+
+
+class AttemptGate:
+    """Hook around every transport attempt (budget reservation / accounting).
+
+    ``before`` may raise (e.g. BudgetExhausted) to stop the decision before a
+    request is sent; ``after`` is always called once per ``before``.
+    """
+
+    async def before(self) -> Any:  # pragma: no cover - interface
+        return None
+
+    async def after(self, token: Any, usage: "NormalizedUsage | None", ok: bool) -> None:  # pragma: no cover
+        return None
+
+
+def sum_usage(usages: list["NormalizedUsage"]) -> "NormalizedUsage":
+    """Sum usage across model turns; a field is None if any turn lacks it."""
+    if len(usages) == 1:
+        return usages[0]
+    out = NormalizedUsage()
+    for f in ("input_tokens", "output_tokens", "total_tokens", "cached_input_tokens",
+              "cache_write_tokens", "reasoning_tokens"):
+        vals = [getattr(u, f) for u in usages]
+        setattr(out, f, None if any(v is None for v in vals) else sum(vals))
+    flags = {u.reasoning_included_in_output for u in usages}
+    out.reasoning_included_in_output = flags.pop() if len(flags) == 1 else None
+    return out
 
 
 @dataclass
@@ -139,6 +197,9 @@ class AdapterResponse:
     attempts: list[TransportAttempt] = field(default_factory=list)
     requested_parameters: dict = field(default_factory=dict)
     effective_parameters: dict = field(default_factory=dict)
+    # Lookup-tool trace (private diagnostics; never gameplay utterances).
+    tool_trace: list[dict] = field(default_factory=list)
+    model_turns: int = 1
 
     def to_json(self) -> dict:
         d = asdict(self)
@@ -248,21 +309,36 @@ class ProviderAdapter(ABC):
     async def send_once(self, request: DecisionRequest) -> AdapterResponse:
         """Exactly one transport attempt.  Raise InfrastructureError on failure."""
 
-    async def decide(self, request: DecisionRequest) -> AdapterResponse:
-        """Bounded retry of eligible infrastructure errors with the same request.
+    async def decide(self, request: DecisionRequest, gate: AttemptGate | None = None) -> AdapterResponse:
+        """Obtain one decision.
 
-        The first successfully received complete response is used; there is no
-        best-of-retries selection.  SDK-internal retries must be disabled by
-        concrete adapters so retries do not multiply.
+        Without tools this is one model call under the bounded retry policy.
+        With tools it is a model/tool loop in which every model call is
+        individually retried.  The first successfully received complete
+        response of each call is used; there is no best-of-retries selection.
+        SDK-internal retries must be disabled by concrete adapters.  ``gate``
+        is invoked around every transport attempt, including retries and
+        tool-loop turns, so request and spend caps hold per call.
         """
+        if not request.tools:
+            resp, attempts = await self._with_retries(lambda: self.send_once(request), gate)
+            resp.attempts = attempts
+            resp.latency_s = attempts[-1].latency_s
+            return resp
+        return await self._tool_loop(request, gate)
+
+    async def _with_retries(self, fn: Callable[[], Any], gate: AttemptGate | None) -> tuple[Any, list[TransportAttempt]]:
         attempts: list[TransportAttempt] = []
         start = self._clock()
         last: InfrastructureError | None = None
         for i in range(1, self.retry.max_attempts + 1):
+            token = await gate.before() if gate is not None else None
             t0 = self._clock()
             try:
-                resp = await self.send_once(request)
+                out = await fn()
             except InfrastructureError as e:
+                if gate is not None:
+                    await gate.after(token, None, False)
                 attempts.append(
                     TransportAttempt(
                         i, t0, self._clock() - t0, "error", e.category, str(e), e.retry_after, e.possibly_billed
@@ -279,16 +355,77 @@ class ProviderAdapter(ABC):
                     break
                 await self._sleep(delay)
                 continue
+            except BaseException:
+                if gate is not None:
+                    await gate.after(token, None, False)
+                raise
+            resp = out[0] if isinstance(out, tuple) else out
+            if gate is not None:
+                await gate.after(token, resp.usage, True)
             attempts.append(TransportAttempt(i, t0, self._clock() - t0, "ok"))
-            resp.attempts = attempts
-            resp.latency_s = attempts[-1].latency_s
-            return resp
+            return out, attempts
         assert last is not None
         err = InfrastructureError(
             str(last), category=last.category, retryable=False, fatal=last.fatal, retry_after=last.retry_after
         )
         err.attempts = attempts  # type: ignore[attr-defined]
         raise err
+
+    # -- lookup-tool loop -----------------------------------------------------
+    def tool_conversation_start(self, request: DecisionRequest) -> Any:
+        raise AdapterConfigError(f"{self.provider}/{self.api_family}: lookup tools are not supported")
+
+    async def send_tool_turn(
+        self, request: DecisionRequest, state: Any, allow_tools: bool
+    ) -> tuple[AdapterResponse, list[ToolCall], Any]:
+        """One model call.  Returns the response, requested tool calls and the
+        conversation state with the assistant turn appended."""
+        raise AdapterConfigError(f"{self.provider}/{self.api_family}: lookup tools are not supported")
+
+    def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
+        raise AdapterConfigError(f"{self.provider}/{self.api_family}: lookup tools are not supported")
+
+    async def _tool_loop(self, request: DecisionRequest, gate: AttemptGate | None) -> AdapterResponse:
+        assert request.tool_executor is not None, "tools require an executor"
+        limit = max(0, request.max_tool_calls)
+        state = self.tool_conversation_start(request)
+        trace: list[dict] = []
+        attempts: list[TransportAttempt] = []
+        usages: list[NormalizedUsage] = []
+        n_calls = 0
+        turns = 0
+        while True:
+            turns += 1
+            allow = n_calls < limit
+            (resp, calls, state), att = await self._with_retries(
+                lambda s=state, a=allow: self.send_tool_turn(request, s, a), gate
+            )
+            attempts.extend(att)
+            usages.append(resp.usage)
+            done = not calls or resp.refusal or resp.incomplete
+            if not done and turns > limit + 2:
+                # The model kept requesting tools after being told to answer.
+                resp.output_text = None
+                resp.incomplete = True
+                resp.finish_reason = "tool_loop_limit"
+                done = True
+            if done:
+                resp.usage = sum_usage(usages)
+                resp.attempts = attempts
+                resp.latency_s = sum(a.latency_s for a in attempts)
+                resp.tool_trace = trace
+                resp.model_turns = turns
+                return resp
+            results = []
+            for c in calls:
+                if n_calls >= limit:
+                    r = {"error": f"tool call limit ({limit}) reached; reply now with your final JSON answer"}
+                else:
+                    r = request.tool_executor(c.name, c.arguments)
+                    n_calls += 1
+                trace.append({"turn": turns, "name": c.name, "arguments": c.arguments, "result": r})
+                results.append(r)
+            state = self.tool_conversation_append(state, calls, results)
 
 
 def requested_and_effective(config: ModelConfig, effective: dict) -> tuple[dict, dict]:

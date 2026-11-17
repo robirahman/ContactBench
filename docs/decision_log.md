@@ -1,6 +1,7 @@
 # Decision log
 
-Protocol version: **contact-v0.4** (unchanged). This log records the implementation choices made where the spec left
+Protocol version: **contact-v0.5**. It adds the `dictionary_access` condition (below). With the default
+`full_candidate_lists` it behaves exactly like v0.4, and v0.4 configurations still load. This log records the implementation choices made where the spec left
 room. It also lists the Section 20 research decisions that the researcher must freeze before a main run. None of the
 entries below changes a game rule. If any of them is revised, update this log and the protocol version.
 
@@ -28,6 +29,43 @@ entries below changes a game rule. If any of them is revised, update this log an
 | 18 | Offense conditions | LLM models accept `offense_mode ∈ {full, direct_only, no_contact_batching}`. `direct_only` is enforced by admission: clue actions are invalid. `no_contact_batching` is a prompt condition only. | §11 |
 | 19 | Fixture lexicons | `mechanics_fixture` (the 10 words from §6.6) and `dev_fixture` (747 hand-written common words), both dedicated CC0 by the authors. | §4.1 |
 | 20 | Code license | **Not chosen.** The researcher must select one; `pyproject.toml` leaves it unset. | §16 |
+
+## Protocol v0.5: dictionary access conditions (2026-11-17)
+
+`protocol.dictionary_access` selects how players learn the dictionary. It is a non-poolable leaderboard condition.
+
+| Value | Player observation | Notes |
+|---|---|---|
+| `full_candidate_lists` | Complete pre-turn secret and contact lists (spec §4.5) | v0.4 behaviour; only practical for small lexicons |
+| `closed_book` | Only the dictionary's identity: name, size, SHA-256, source, word rules. No lists or counts | Players rely on their own knowledge; the engine still validates against the frozen list |
+| `lookup_tools` | Identity, plus the same deterministic functions for every seat: `is_legal_word(word)`, `list_words(prefix, offset=0, limit≤100)`, `count_words(prefix)` | At most `max_tool_calls_per_decision` calls (default 20), then the model must answer |
+
+The design choices behind these conditions:
+- **Static lookups.** Lookups query the frozen lexicon only. They ignore game state, so used words are still returned.
+  The `used_words` list is in every observation. Lookups are private and are never gameplay utterances.
+- **Tool trace.** The trace is recorded in the request log. Replay does not need it, because the final decision is
+  what is recorded.
+- **Budgets.** Each model call in a tool loop is a separate transport attempt for retries and budgets.
+- **Scripted baselines.** In both new conditions, scripted reference algorithms enumerate the dictionary through the
+  same lookup service. They are public algorithms over the public dictionary, not models, and are labeled that way.
+- **Large dictionaries.** The full-blocklist capacity preflight covers the largest initial prefix group. For
+  `enable` (s-words: 18,982 entries, 244,147 JSON characters) Haiku's `count_tokens` measured 109,130 tokens, so
+  a 128K output allowance can represent every legal blocklist. The Anthropic adapter streams whenever
+  `max_tokens > 16000`, because the SDK requires streaming for long calls.
+- **Shadow audit.** The forecast support is still read from observation lists, so the shadow audit currently
+  requires `full_candidate_lists`. This is a known gap.
+
+## Review fixes (Codex review of PR #1)
+
+1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes
+   to `<log>.torn`.
+2. **Request and spend caps.** These are now enforced per transport attempt through `AttemptGate` / `BudgetGate`.
+   That covers retries and tool-loop turns.
+3. **Shadow audit budget.** The audit uses the same per-attempt gate (`--max-requests`, `--max-usd`).
+4. **Anthropic input tokens.** The adapter now includes cache reads and writes in `input_tokens`, which is the
+   documented normalized convention. `estimate_cost` prices uncached, cache-read and cache-write tokens separately.
+5. **Task manifests.** A supplied manifest must match the contact-lexicon hash, prefix length, cap, clue budget,
+   split and sampling as well as the secret-lexicon hash.
 
 ## Known gaps
 

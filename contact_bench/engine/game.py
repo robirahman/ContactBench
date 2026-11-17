@@ -186,8 +186,26 @@ class Game:
             secret=self._secret if seat == "defender" else None,
             offense_condition=self.offense_condition,
             joint_live=self.joint_live,
+            protocol_version=self.protocol.version,
+            dictionary_access=self.protocol.dictionary_access,
+            dictionary_identity=self.dictionary_identity(),
             **extras,
         )
+
+    def dictionary_identity(self) -> dict | None:
+        if self.protocol.dictionary_access == "full_candidate_lists":
+            return None
+        lex = self.v_contact
+        ident = {
+            "name": lex.name,
+            "word_count": len(lex),
+            "sha256": lex.sha256,
+            "source": lex.source,
+            "word_rules": f"lowercase a-z only, {lex.min_length}-{lex.max_length} letters",
+        }
+        if self.v_secret is not self.v_contact:
+            ident["secret_vocabulary"] = {"name": self.v_secret.name, "word_count": len(self.v_secret)}
+        return ident
 
     def _spec(self, seat: str, phase: str, turn: int, obs: dict) -> DecisionSpec:
         name, schema = A.schema_for(seat, phase, self.joint_live)

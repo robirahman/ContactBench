@@ -9,7 +9,6 @@ from __future__ import annotations
 
 from typing import Any
 
-from .. import PROTOCOL_VERSION
 
 ALLOWED_EXTRAS = {
     "guesser1": {
@@ -41,6 +40,9 @@ def build_observation(
     secret: str | None,
     offense_condition: str,
     joint_live: bool,
+    protocol_version: str = "contact-v0.5",
+    dictionary_access: str = "full_candidate_lists",
+    dictionary_identity: dict | None = None,
     **extras: Any,
 ) -> dict:
     if seat not in ALLOWED_EXTRAS or phase not in ALLOWED_EXTRAS[seat]:
@@ -52,7 +54,7 @@ def build_observation(
     if (secret is not None) != (seat == "defender"):
         raise ObservationError("only the defender receives the labeled secret")
     obs: dict[str, Any] = {
-        "protocol": PROTOCOL_VERSION,
+        "protocol": protocol_version,
         "role": seat,
         "phase": phase,
         "turn": turn,
@@ -60,14 +62,19 @@ def build_observation(
         "turns_used_before_this_turn": public["turns_used"],
         "clue_max_characters": clue_max_characters,
         "prefix": public["prefix"],
-        "secret_candidates": list(secret_candidates),
-        "contact_candidates": list(contact_candidates),
         "used_words": list(public["used_words"]),
         "public_history": list(public["public_history"]),
         "own_private_history": list(own_private_history),
         "offense_condition": offense_condition,
         "forecast_reports_requested": bool(joint_live and seat in ("guesser2", "defender") and phase != "choice"),
     }
+    if dictionary_access == "full_candidate_lists":
+        obs["secret_candidates"] = list(secret_candidates)
+        obs["contact_candidates"] = list(contact_candidates)
+    else:
+        # Closed-book and lookup-tool conditions: identity only, no lists or counts.
+        obs["dictionary_access"] = dictionary_access
+        obs["dictionary"] = dict(dictionary_identity or {})
     if seat == "defender":
         obs["secret"] = secret
     for k in sorted(allowed):

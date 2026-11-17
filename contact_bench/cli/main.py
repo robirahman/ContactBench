@@ -260,15 +260,19 @@ def cmd_audit(args) -> int:
     if m.provider != "fake" and not args.live:
         print("error: paid audit calls need --live", file=sys.stderr)
         return 2
-    if args.live and m.provider != "fake" and len(items) * 2 > (args.max_requests or 0):
-        print("error: --max-requests is below the number of scheduled audit calls", file=sys.stderr)
+    if args.live and m.provider != "fake" and not (args.max_requests or args.max_usd):
+        print("error: paid audits need --max-requests and/or --max-usd", file=sys.stderr)
         return 2
+    from ..runner.budget import Budget, BudgetGate
+
     adapter = make_adapter(m)
     adapter.preflight(require_credentials=m.provider != "fake")
+    # The budget gate is enforced per transport attempt, so retries count too.
+    gate = BudgetGate(Budget(args.max_requests, args.max_usd), m, 8000) if m.provider != "fake" else None
     res = asyncio.run(run_shadow_audit(items, adapter, max_entries=cfg.forecasts.sparse_max_entries,
                                        tolerance=cfg.forecasts.mass_tolerance,
                                        invalid_score=cfg.forecasts.invalid_audit_score,
-                                       item_bank_id=run_dir.name))
+                                       item_bank_id=run_dir.name, gate=gate))
     out = run_dir / "analysis" / f"forecast_audit_{m.id}.json"
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(res, indent=2) + "\n")
@@ -331,7 +335,7 @@ def build_parser() -> argparse.ArgumentParser:
     s = sub.add_parser("audit", help="build a frozen forecast item bank and optionally run a shadow audit")
     s.add_argument("run_id"); s.add_argument("--rate", type=float, default=1.0); s.add_argument("--seed", type=int, default=0)
     s.add_argument("--max-items", type=int); s.add_argument("--model"); s.add_argument("--live", action="store_true")
-    s.add_argument("--max-requests", type=int); s.set_defaults(fn=cmd_audit)
+    s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float); s.set_defaults(fn=cmd_audit)
     return p
 
 

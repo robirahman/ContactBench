@@ -123,8 +123,9 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
     (out_dir / "replays").mkdir(parents=True)
     cfg = manifest["config"]
     condition = {
-        "protocol_version": PROTOCOL_VERSION,
+        "protocol_version": cfg["protocol"]["version"],
         "protocol": cfg["protocol"],
+        "dictionary_access": cfg["protocol"].get("dictionary_access", "full_candidate_lists"),
         "clue_max_characters": cfg["protocol"]["clue_max_characters"],
         "turn_limit": cfg["protocol"]["turn_limit"],
         "target_hit_scope": cfg["protocol"]["target_hit_scope"],
@@ -143,7 +144,7 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
     ckey = hashlib.sha256(json.dumps(condition, sort_keys=True).encode()).hexdigest()[:16]
     pub_manifest = {
         "schema_version": SCHEMA_VERSION,
-        "protocol_version": PROTOCOL_VERSION,
+        "protocol_version": cfg["protocol"]["version"],
         "run_id": manifest["run_id"],
         "run_created_at": manifest["created_at"],
         "exported_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),

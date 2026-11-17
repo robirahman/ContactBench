@@ -6,7 +6,7 @@ import asyncio
 from dataclasses import dataclass, field
 
 from ..config import ModelConfig, PriceTable
-from ..providers.base import NormalizedUsage
+from ..providers.base import AttemptGate, NormalizedUsage
 
 
 class BudgetExhausted(RuntimeError):
@@ -17,8 +17,10 @@ def estimate_cost(prices: PriceTable, usage: NormalizedUsage) -> float | None:
     """Estimated cost of one response from a dated user-supplied price table."""
     if usage.input_tokens is None or usage.output_tokens is None:
         return None
+    # Normalized convention: input_tokens includes cache reads and writes.
     cached = usage.cached_input_tokens or 0
-    uncached = max(0, usage.input_tokens - cached)
+    written = (usage.cache_write_tokens or 0) if prices.cache_write_per_mtok is not None else 0
+    uncached = max(0, usage.input_tokens - cached - written)
     c = uncached * prices.input_per_mtok / 1e6
     if cached:
         rate = prices.cached_input_per_mtok if prices.cached_input_per_mtok is not None else prices.input_per_mtok
@@ -85,3 +87,25 @@ class Budget:
             "usd_spent_estimate": round(self.usd_spent, 6),
             "responses_with_uncertain_usage": self.usd_uncertain,
         }
+
+
+class BudgetGate(AttemptGate):
+    """Reserve budget before EVERY transport attempt (retries and tool-loop
+    turns included) and settle it afterwards, so request and spend caps hold
+    per provider call rather than per logical decision."""
+
+    def __init__(self, budget: "Budget", model: ModelConfig, est_input_tokens: int):
+        self.budget = budget
+        self.model = model
+        self.est = est_input_tokens
+        self.cost = 0.0
+        self.calls = 0
+
+    async def before(self):
+        return await self.budget.reserve(self.model, self.est)
+
+    async def after(self, token, usage, ok):
+        self.calls += 1
+        c = await self.budget.commit(self.model, token, usage, 1)
+        if c:
+            self.cost += c

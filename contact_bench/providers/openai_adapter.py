@@ -7,11 +7,12 @@ retries are disabled (``max_retries=0``); ProviderAdapter.decide owns retries.
 
 from __future__ import annotations
 
+import json
 from typing import Any
 
 from ._stainless import map_stainless_error
 from ._util import get, int_or_none, to_plain
-from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter
+from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter, ToolCall
 
 
 class OpenAIResponsesAdapter(ProviderAdapter):
@@ -34,11 +35,11 @@ class OpenAIResponsesAdapter(ProviderAdapter):
             self._client = openai.AsyncOpenAI(api_key=self.credentials.require(self.credential_env), max_retries=0)
         return self._client
 
-    def build_request(self, request: DecisionRequest) -> dict:
+    def build_request(self, request: DecisionRequest, input_items: Any = None) -> dict:
         kwargs: dict[str, Any] = {
             "model": self.config.model,
             "instructions": request.system_prompt,
-            "input": request.user_prompt,
+            "input": request.user_prompt if input_items is None else input_items,
             "text": {
                 "format": {
                     "type": "json_schema",
@@ -54,17 +55,71 @@ class OpenAIResponsesAdapter(ProviderAdapter):
             kwargs[k] = v
         return kwargs
 
-    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+    async def _create(self, kwargs: dict) -> Any:
         import openai
 
-        kwargs = self.build_request(request)
         client = self._get_client()
         secrets = tuple(s for s in (self.credentials.get(self.credential_env or ""),) if s)
         try:
-            resp = await client.responses.create(**kwargs)
+            return await client.responses.create(**kwargs)
         except openai.OpenAIError as e:
             raise map_stainless_error(e, openai, secrets) from None
+
+    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+        kwargs = self.build_request(request)
+        resp = await self._create(kwargs)
         return self.parse_response(resp, kwargs)
+
+    # -- lookup tools ----------------------------------------------------------
+    # store=False means no previous_response_id: the full input item list is
+    # carried by the caller.  Reasoning items are replayed with their
+    # encrypted_content, which must be requested via ``include``.
+    def tool_conversation_start(self, request: DecisionRequest) -> list:
+        return [{"role": "user", "content": request.user_prompt}]
+
+    def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
+        kwargs = self.build_request(request, input_items=list(state))
+        kwargs["tools"] = [
+            {
+                "type": "function",
+                "name": t.name,
+                "description": t.description,
+                "parameters": t.parameters,
+                "strict": False,  # optional arguments (offset/limit) are not strict-compatible
+            }
+            for t in request.tools
+        ]
+        kwargs["tool_choice"] = "auto" if allow_tools else "none"
+        kwargs["include"] = ["reasoning.encrypted_content"]
+        return kwargs
+
+    async def send_tool_turn(self, request: DecisionRequest, state: list, allow_tools: bool):
+        kwargs = self.tool_kwargs(request, state, allow_tools)
+        raw = await self._create(kwargs)
+        resp = self.parse_response(raw, kwargs)
+        calls: list[ToolCall] = []
+        appended: list[dict] = []
+        for item in get(raw, "output", None) or []:
+            plain = to_plain(item)
+            if isinstance(plain, dict):
+                plain = {k: v for k, v in plain.items() if v is not None}
+            appended.append(plain)
+            if get(item, "type") == "function_call":
+                raw_args = get(item, "arguments") or "{}"
+                try:
+                    args = json.loads(raw_args)
+                    if not isinstance(args, dict):
+                        args = {"_unparseable_arguments": raw_args}
+                except (TypeError, json.JSONDecodeError):
+                    args = {"_unparseable_arguments": raw_args}
+                calls.append(ToolCall(id=get(item, "call_id") or get(item, "id") or "", name=get(item, "name") or "", arguments=args))
+        return resp, calls, list(state) + appended
+
+    def tool_conversation_append(self, state: list, calls: list[ToolCall], results: list[Any]) -> list:
+        out = list(state)
+        for c, r in zip(calls, results):
+            out.append({"type": "function_call_output", "call_id": c.id, "output": json.dumps(r)})
+        return out
 
     def parse_response(self, resp: Any, kwargs: dict) -> AdapterResponse:
         texts: list[str] = []

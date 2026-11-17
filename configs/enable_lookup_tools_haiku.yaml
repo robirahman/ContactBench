@@ -1,0 +1,22 @@
+# Pilot used on 2026-11-17 (Claude Haiku 5.5 vs scripted baselines on ENABLE, lookup_tools condition).
+# Run: contact-bench run configs/enable_lookup_tools_haiku.yaml --live --max-requests 3000 --max-usd 5
+name: enable-lookup_tools
+fixture_data: true
+protocol: {version: contact-v0.5, dictionary_access: lookup_tools, max_tool_calls_per_decision: 12, turn_limit: 10, clue_max_characters: 100}
+lexicon: {manifest: lexicons/enable_manifest.json}
+scoring: {development_rollouts: 256}
+tasks: {tasks_per_pair: 4, generation_seed: 21}
+models:
+  - id: claude_haiku_5_5
+    provider: anthropic
+    api_family: messages
+    model: claude-haiku-5-5
+    parameters: {effort: low}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 128000
+    context_window_tokens: 1000000
+    prices: {as_of: "2026-11-03", source: "claude-api skill model table", input_per_mtok: 0.10, output_per_mtok: 0.50}
+  - {id: first_last, provider: scripted, policy: first_last_two_guess}
+  - {id: fresh_shuffle_packing, provider: scripted, policy: combined_fresh_shuffle}
+execution: {global_concurrency: 6, per_provider_concurrency: 6, game_concurrency: 8}
+analysis: {development_bootstrap_resamples: 200}

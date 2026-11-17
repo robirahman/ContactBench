@@ -100,13 +100,16 @@ def validate_config(cfg: BenchConfig, *, live: bool = False) -> dict:
     C = cfg.protocol.clue_max_characters
     report["clue_only_listing_covers_all_targets"] = vs.max_word_length <= C
     # Full explicit blocklist must be representable within output limits.
-    biggest = max(
-        (sum(1 for w in vc.words if w.startswith(p)) for p in {w[: cfg.protocol.initial_prefix_length] for w in vs.words}),
-        default=0,
-    )
-    longest_list = sorted(vc.words, key=len, reverse=True)[:biggest]
-    blocklist_json = json.dumps({"action": "block", "words": longest_list})
-    est_tokens = len(blocklist_json) // 2 + 16  # conservative
+    k0 = cfg.protocol.initial_prefix_length
+    groups_c: dict[str, list[str]] = {}
+    for w in vc.words:
+        groups_c.setdefault(w[:k0], []).append(w)
+    # Largest serialized full blocklist over any initial contact set (the
+    # largest legal blocklist that is not redundant).
+    biggest_prefix = max(groups_c, key=lambda p: len(json.dumps(groups_c[p])))
+    biggest = len(groups_c[biggest_prefix])
+    blocklist_json = json.dumps({"action": "block", "words": groups_c[biggest_prefix]})
+    est_tokens = len(blocklist_json) // 2 + 16  # conservative (~2 chars/token)
     report["largest_initial_contact_set"] = biggest
     report["full_blocklist_estimated_output_tokens"] = est_tokens
     # Worst-case initial observation size (largest prefix group).  Histories
@@ -123,7 +126,8 @@ def validate_config(cfg: BenchConfig, *, live: bool = False) -> dict:
     big_prefix = max(groups, key=lambda p: len(groups[p]))
     g0 = Game(game_id="preflight", secret=groups[big_prefix][0], v_secret=vs, v_contact=vc, protocol=cfg.protocol)
     obs = g0.observation("defender", "block", 1, current_clue="x" * C)
-    initial_obs_tokens = estimate_tokens(system_prompt(clue_max_characters=C, turn_limit=cfg.protocol.turn_limit)) + \
+    initial_obs_tokens = estimate_tokens(system_prompt(clue_max_characters=C, turn_limit=cfg.protocol.turn_limit,
+                                                       dictionary_access=cfg.protocol.dictionary_access)) + \
         estimate_tokens(user_prompt(obs))
     report["largest_initial_observation_estimated_tokens"] = initial_obs_tokens
     from ..providers.registry import make_adapter
@@ -177,6 +181,12 @@ class Runner:
         self.progress = progress
         self.v_secret, self.v_contact = load_lexicons(cfg)
         self.scorer = make_scorer(cfg)
+        from ..dictionary import DictionaryService
+
+        self.secret_dictionary = DictionaryService(self.v_secret)
+        self.contact_dictionary = (
+            self.secret_dictionary if self.v_contact is self.v_secret else DictionaryService(self.v_contact)
+        )
         self.budget = Budget(max_requests, max_usd if max_usd is not None else cfg.execution.max_usd)
         self.limiters = Limiters(cfg.execution.global_concurrency, cfg.execution.per_provider_concurrency)
         self.models: dict[str, ModelConfig] = {m.id: m for m in cfg.models}
@@ -214,16 +224,28 @@ class Runner:
                 turn_limit=cfg.protocol.turn_limit,
                 clue_max_characters=cfg.protocol.clue_max_characters,
             )
+        expected = {
+            "secret_lexicon_sha256": self.v_secret.sha256,
+            "contact_lexicon_sha256": self.v_contact.sha256,
+            "initial_prefix_length": cfg.protocol.initial_prefix_length,
+            "turn_limit": cfg.protocol.turn_limit,
+            "clue_max_characters": cfg.protocol.clue_max_characters,
+            "split": cfg.tasks.split,
+            "sampling": cfg.tasks.sampling,
+        }
         for t in tasks:
-            if t.secret_lexicon_sha256 != self.v_secret.sha256:
-                raise ValueError(f"task {t.task_id} was generated for a different lexicon")
+            bad = {k: (getattr(t, k), v) for k, v in expected.items() if getattr(t, k) != v}
+            if bad:
+                raise ValueError(f"task {t.task_id} provenance does not match this configuration: {bad}")
+            if t.secret not in self.v_secret or len(t.secret) <= cfg.protocol.initial_prefix_length:
+                raise ValueError(f"task {t.task_id} has an inadmissible secret for this configuration")
         save_tasks(self.run_dir / "private" / "tasks_private.jsonl", tasks)
         fixtures, games = build_schedule(cfg, tasks)
         root = Path(__file__).resolve().parents[2]
         manifest = {
             "run_id": self.run_id,
             "schema_version": SCHEMA_VERSION,
-            "protocol_version": PROTOCOL_VERSION,
+            "protocol_version": cfg.protocol.version,
             "engine_version": ENGINE_VERSION,
             "packing_version": PACKING_VERSION,
             "rng_version": RNG_VERSION,
@@ -254,7 +276,10 @@ class Runner:
         self.games = [GameSpec(**g) for g in sched["games"]]
         self.tasks = {t.task_id: t for t in load_tasks(self.run_dir / "private" / "tasks_private.jsonl")}
         manifest = self.store.read_json("run.json")
-        snap = manifest["config"]
+        # Re-validate the snapshot so fields added by later code versions take
+        # their (behaviour-preserving) defaults before comparison.
+        snap = BenchConfig.model_validate({**manifest["config"], "base_dir": self.cfg.base_dir}).model_dump(
+            mode="json", exclude={"base_dir"})
         current = self.cfg.model_dump(mode="json", exclude={"base_dir"})
         # Never silently replace a model, prompt, cap or provider setting mid-run.
         for key in ("protocol", "lexicon", "scoring", "tournament", "models", "forecasts"):
@@ -262,7 +287,7 @@ class Runner:
                 if key == "scoring" and self.replay_only:
                     continue
                 raise ValueError(f"configuration section '{key}' differs from the run's frozen snapshot")
-        if manifest.get("prompt_hash") != prompt_hash():
+        if manifest.get("prompt_hash") != prompt_hash() and not self.replay_only:
             raise ValueError("prompt templates changed since this run was created")
 
     # --------------------------------------------------------------- agents
@@ -291,6 +316,8 @@ class Runner:
                 defender_policy=m.defender_policy or "empty",
                 choice_policy=m.choice_policy or "always_reveal",
                 policy_seed=g.policy_seed,
+                secret_dictionary=self.secret_dictionary,
+                contact_dictionary=self.contact_dictionary,
             )
         return LLMAgent(
             model=m,
@@ -301,6 +328,9 @@ class Runner:
             limiters=self.limiters,
             budget=self.budget,
             sparse_max_entries=self.cfg.forecasts.sparse_max_entries,
+            dictionary_access=self.cfg.protocol.dictionary_access,
+            dictionary_service=self.contact_dictionary,
+            max_tool_calls=self.cfg.protocol.max_tool_calls_per_decision,
         )
 
     # ----------------------------------------------------------------- game
@@ -390,7 +420,7 @@ class Runner:
         t = self.tasks[g.task_id]
         return {
             "schema_version": SCHEMA_VERSION,
-            "protocol_version": PROTOCOL_VERSION,
+            "protocol_version": self.cfg.protocol.version,
             "game": asdict(g),
             "task": asdict(t),
             "summary": game.summary(),

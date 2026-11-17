@@ -107,7 +107,8 @@ def audit_request(item: dict, seat: str, *, max_entries: int = 20, item_bank_id:
         decision_id=f"audit/{item_bank_id}/{item['item_id']}/{seat}",
         seat=seat,
         phase="forecast",
-        system_prompt=system_prompt(clue_max_characters=obs["clue_max_characters"], turn_limit=obs["turn_limit"]),
+        system_prompt=system_prompt(clue_max_characters=obs["clue_max_characters"], turn_limit=obs["turn_limit"],
+                                    dictionary_access=obs.get("dictionary_access", "full_candidate_lists")),
         user_prompt=user,
         schema_name="contact_forecast",
         json_schema=forecast_schema(),
@@ -134,14 +135,27 @@ def score_report(item: dict, seat: str, raw_text: str | None, *, max_entries: in
 
 
 async def run_shadow_audit(items: list[dict], adapter, *, seats=("guesser2", "defender"), max_entries: int = 20,
-                           tolerance: float = 1e-6, invalid_score: float = -1.0, item_bank_id: str = "") -> dict:
+                           tolerance: float = 1e-6, invalid_score: float = -1.0, item_bank_id: str = "",
+                           gate=None) -> dict:
+    """``gate`` (an AttemptGate, e.g. a BudgetGate) is applied to every
+    transport attempt, so request/spend caps also bound retries."""
+    from ..runner.budget import BudgetExhausted
+
     results = []
+    stopped = False
     for it in items:
         for seat in seats:
+            if stopped:
+                results.append({"item_id": it["item_id"], "seat": seat, "unavailable": True, "error": "budget"})
+                continue
             req = audit_request(it, seat, max_entries=max_entries, item_bank_id=item_bank_id)
             try:
-                resp = await adapter.decide(req)
+                resp = await adapter.decide(req, gate=gate)
                 raw = resp.output_text
+            except BudgetExhausted:
+                stopped = True
+                results.append({"item_id": it["item_id"], "seat": seat, "unavailable": True, "error": "budget"})
+                continue
             except Exception as e:  # infrastructure-unavailable: not model-invalid
                 results.append({"item_id": it["item_id"], "seat": seat, "unavailable": True, "error": type(e).__name__})
                 continue

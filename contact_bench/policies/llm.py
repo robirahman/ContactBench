@@ -61,6 +61,9 @@ class LLMAgent:
         limiters: Limiters,
         budget=None,
         sparse_max_entries: int = 20,
+        dictionary_access: str = "full_candidate_lists",
+        dictionary_service=None,
+        max_tool_calls: int = 20,
     ):
         self.model = model
         self.adapter = adapter
@@ -68,7 +71,13 @@ class LLMAgent:
         self.limiters = limiters
         self.budget = budget
         self.sparse_max_entries = sparse_max_entries
-        self.system = system_prompt(clue_max_characters=clue_max_characters, turn_limit=turn_limit)
+        self.dictionary_access = dictionary_access
+        self.dictionary_service = dictionary_service
+        self.max_tool_calls = max_tool_calls
+        if dictionary_access == "lookup_tools" and dictionary_service is None:
+            raise ValueError("lookup_tools condition requires a dictionary service")
+        self.system = system_prompt(clue_max_characters=clue_max_characters, turn_limit=turn_limit,
+                                    dictionary_access=dictionary_access, max_tool_calls=max_tool_calls)
 
     def build_request(self, spec: DecisionSpec, decision_id: str) -> DecisionRequest:
         up = user_prompt(spec.observation, sparse_max_entries=self.sparse_max_entries)
@@ -89,29 +98,21 @@ class LLMAgent:
             schema_name=spec.schema_name,
             json_schema=spec.schema,
             max_output_tokens=self.model.max_output_tokens,
+            tools=self.dictionary_service.tool_specs() if self.dictionary_access == "lookup_tools" else [],
+            tool_executor=self.dictionary_service.execute if self.dictionary_access == "lookup_tools" else None,
+            max_tool_calls=self.max_tool_calls if self.dictionary_access == "lookup_tools" else 0,
         )
 
     async def decide(self, spec: DecisionSpec, decision_id: str) -> AgentOutput:
+        from ..runner.budget import BudgetGate
+
         req = self.build_request(spec, decision_id)
         est = estimate_tokens(req.system_prompt) + estimate_tokens(req.user_prompt)
-        reservation = 0.0
-        if self.budget is not None:
-            reservation = await self.budget.reserve(self.model, est)
-        resp: AdapterResponse | None = None
-        attempts = 1
-        try:
-            async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
-                resp = await self.adapter.decide(req)
-            attempts = len(resp.attempts) or 1
-        except Exception as e:
-            attempts = len(getattr(e, "attempts", []) or [None])
-            raise
-        finally:
-            cost = None
-            if self.budget is not None:
-                cost = await self.budget.commit(self.model, reservation, resp.usage if resp else None, attempts)
+        gate = BudgetGate(self.budget, self.model, est) if self.budget is not None else None
+        async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
+            resp = await self.adapter.decide(req, gate=gate)
         meta = resp.to_json()
         meta["prompt_version"] = PROMPT_VERSION
         meta["prompt_hash"] = prompt_hash()
         return AgentOutput(raw=resp.output_text, response=meta, model_id=self.model.id,
-                           estimated_input_tokens=est, cost_estimate=cost)
+                           estimated_input_tokens=est, cost_estimate=gate.cost if gate else None)

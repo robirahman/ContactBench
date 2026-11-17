@@ -41,6 +41,8 @@ class ScriptedAgent:
         choice_policy: str = "always_reveal",
         policy_seed: int = 0,
         ambiguity: int = 2,
+        secret_dictionary=None,
+        contact_dictionary=None,
     ):
         self.seat = seat
         self.offense = offense_policy
@@ -48,13 +50,31 @@ class ScriptedAgent:
         self.choice = choice_policy
         self.policy_seed = policy_seed
         self.ambiguity = ambiguity
+        # In closed-book / lookup-tool conditions observations carry no lists;
+        # scripted reference algorithms then enumerate the public dictionary
+        # through the same deterministic lookup interface the models may use.
+        self.secret_dictionary = secret_dictionary
+        self.contact_dictionary = contact_dictionary or secret_dictionary
 
     async def decide(self, spec: DecisionSpec) -> Any:
         return self.act(spec)
 
     # synchronous core, convenient for tests
+    def _with_lists(self, obs: dict) -> dict:
+        if "secret_candidates" in obs:
+            return obs
+        if self.secret_dictionary is None:
+            raise ValueError("scripted policy needs a dictionary service in this condition")
+        prefix, used = obs["prefix"], set(obs["used_words"])
+        obs = dict(obs)
+        obs["secret_candidates"] = [w for w in self.secret_dictionary.all_words(prefix)
+                                    if w not in used and len(w) > len(prefix)]
+        obs["contact_candidates"] = [w for w in self.contact_dictionary.all_words(prefix)
+                                     if w not in used and len(w) > len(prefix)]
+        return obs
+
     def act(self, spec: DecisionSpec) -> Any:
-        obs = spec.observation
+        obs = self._with_lists(spec.observation)
         if spec.phase == "choice":
             return {"action": "reveal" if self.choice == "always_reveal" else "cancel"}
         if spec.seat == "defender":

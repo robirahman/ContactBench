@@ -1,7 +1,10 @@
 # ContactBench
 
 A reproducible benchmark that tests AI models on the word game **Contact**, implementing protocol
-**contact-v0.4** from [`CONTACT_BENCHMARK_SPEC.md`](CONTACT_BENCHMARK_SPEC.md).
+**contact-v0.4** from [`CONTACT_BENCHMARK_SPEC.md`](CONTACT_BENCHMARK_SPEC.md), extended in **contact-v0.5** with
+two dictionary conditions for large lexicons. In *closed-book* play, players are told only the dictionary's
+identity. In *dictionary-assisted* play, every player may call the same deterministic lookup functions
+`is_legal_word`, `list_words` and `count_words`. See [docs/decision_log.md](docs/decision_log.md).
 
 Two cooperating guessers (separate model instances) try to reach a secret word known to a defender. Guesser 1
 gives a public clue and privately registers an intended word. Guesser 2 privately registers a word. The defender

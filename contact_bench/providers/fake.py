@@ -16,6 +16,7 @@ from .base import (
     InfrastructureError,
     NormalizedUsage,
     ProviderAdapter,
+    ToolCall,
 )
 
 OBS_MARKER = "OBSERVATION (JSON):"
@@ -51,6 +52,10 @@ def legal_action(obs: dict) -> dict:
     """First/last-style legal action for the observed seat and phase."""
     seat, phase = obs["role"], obs["phase"]
     cands = obs.get("secret_candidates") or []
+    if not cands and "secret_candidates" not in obs and seat == "guesser1" and phase != "choice":
+        # Closed book: the fake has no lexical knowledge; it emits a fixed
+        # (usually illegal) word, which exercises the invalid-action path.
+        return {"action": "direct", "word": obs["prefix"] + "zzz", "clue": None}
     if phase == "choice":
         return {"action": "reveal"}
     if seat == "guesser1":
@@ -104,7 +109,33 @@ class FakeAdapter(ProviderAdapter):
             )
         obs = parse_observation(request.user_prompt)
         payload = _forecast(obs) if request.phase == "forecast" else legal_action(obs)
-        text = json.dumps(payload, separators=(",", ":"))
+        return self._respond(request, payload)
+
+    # -- lookup tools: one list_words call, then a first/last answer ----------
+    def tool_conversation_start(self, request: DecisionRequest) -> Any:
+        return {"obs": parse_observation(request.user_prompt), "words": None}
+
+    async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
+        self.calls += 1
+        obs = state["obs"]
+        if allow_tools and state["words"] is None and request.phase != "choice":
+            call = ToolCall(id=f"call-{self.calls}", name="list_words",
+                            arguments={"prefix": obs["prefix"], "offset": 0, "limit": 100})
+            resp = self._respond(request, None)
+            return resp, [call], state
+        if state["words"] is not None and "secret_candidates" not in obs:
+            used = set(obs["used_words"])
+            cands = [w for w in state["words"] if w not in used and len(w) > len(obs["prefix"])]
+            obs = {**obs, "secret_candidates": cands, "contact_candidates": cands}
+        return self._respond(request, legal_action(obs)), [], state
+
+    def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
+        res = results[0] if results else {}
+        return {**state, "words": res.get("result", []) if isinstance(res, dict) else []}
+
+    def _respond(self, request: DecisionRequest, payload: Any) -> AdapterResponse:
+        b = self.behavior
+        text = json.dumps(payload, separators=(",", ":")) if payload is not None else None
         resp = AdapterResponse(
             output_text=text,
             provider=self.provider,
@@ -127,6 +158,8 @@ class FakeAdapter(ProviderAdapter):
             resp.finish_reason = "max_output_tokens"
         elif b == "invalid_json":
             resp.output_text = "I think the answer is " + text
+        if payload is None:
+            resp.output_text = None
         out = resp.output_text or ""
         if b == "missing_usage":
             resp.usage = NormalizedUsage()

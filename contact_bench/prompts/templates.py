@@ -9,7 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 
-PROMPT_VERSION = "prompts-v1"
+PROMPT_VERSION = "prompts-v2"
 
 RULES = """\
 You are playing CONTACT, a cooperative-versus-adversarial word game, as part of a benchmark.
@@ -19,9 +19,7 @@ SEATS (fixed for the whole game)
 - The Defender knows the secret word and tries to delay the offense.
 
 DICTIONARY AND STATE
-- The secret is a word from a public finite dictionary. Every seat sees the current prefix of the secret,
-  the full list of remaining secret candidates and contact-eligible words (alphabetical), the used words,
-  and the public history. Legal membership is determined only by these lists.
+{DICTIONARY_PARAGRAPH}
 - Words are lowercase a-z. Whole-word matching only: no stemming, synonyms or spelling repair.
 - A word is USED once it has been publicly emitted: named in a clue, placed on a blocklist, opened as a
   guess, or displayed as the complete current prefix when that prefix is itself a dictionary word.
@@ -115,8 +113,38 @@ FORECAST_GUIDANCE = (
 )
 
 
-def system_prompt(*, clue_max_characters: int, turn_limit: int) -> str:
-    return RULES.replace("{C}", str(clue_max_characters)).replace("{L}", str(turn_limit))
+DICTIONARY_PARAGRAPHS = {
+    "full_candidate_lists": (
+        "- The secret is a word from a public finite dictionary. Every seat sees the current prefix of the secret,\n"
+        "  the full list of remaining secret candidates and contact-eligible words (alphabetical), the used words,\n"
+        "  and the public history. Legal membership is determined only by these lists."
+    ),
+    "closed_book": (
+        "- The secret is a word from a public finite dictionary, identified in the observation field 'dictionary'\n"
+        "  (name, size, word rules). You do NOT have the word list or any lookup: rely on your own knowledge of\n"
+        "  that dictionary. Legal membership is decided only by the frozen list; a word that is not in it makes\n"
+        "  your action invalid (guessers) or your whole blocklist invalid (defender).\n"
+        "- Remaining secret candidates are the dictionary words that start with the current prefix, are strictly\n"
+        "  longer than it, and are not in used_words. Every seat sees the prefix, used words and public history."
+    ),
+    "lookup_tools": (
+        "- The secret is a word from a public finite dictionary, identified in the observation field 'dictionary'.\n"
+        "  The word list is not shown, but every seat may call the same deterministic lookup functions over it:\n"
+        "  is_legal_word(word), list_words(prefix, offset, limit<=100) and count_words(prefix). Lookups are\n"
+        "  private, are never said in the game, and ignore game state (they still return used words).\n"
+        "  You may make at most {T} lookup calls per decision, then you must give your final JSON answer.\n"
+        "- Remaining secret candidates are the dictionary words that start with the current prefix, are strictly\n"
+        "  longer than it, and are not in used_words. Every seat sees the prefix, used words and public history.\n"
+        "  A word that is not in the dictionary makes your action invalid."
+    ),
+}
+
+
+def system_prompt(*, clue_max_characters: int, turn_limit: int,
+                  dictionary_access: str = "full_candidate_lists", max_tool_calls: int = 20) -> str:
+    para = DICTIONARY_PARAGRAPHS[dictionary_access].replace("{T}", str(max_tool_calls))
+    return (RULES.replace("{DICTIONARY_PARAGRAPH}", para)
+            .replace("{C}", str(clue_max_characters)).replace("{L}", str(turn_limit)))
 
 
 def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
@@ -142,4 +170,6 @@ def prompt_hash() -> str:
     for k in sorted(CONDITION_GUIDANCE):
         h.update(CONDITION_GUIDANCE[k].encode())
     h.update(FORECAST_GUIDANCE.encode())
+    for k in sorted(DICTIONARY_PARAGRAPHS):
+        h.update(DICTIONARY_PARAGRAPHS[k].encode())
     return h.hexdigest()

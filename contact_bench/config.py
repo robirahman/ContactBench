@@ -25,7 +25,13 @@ class _Strict(BaseModel):
 
 
 class ProtocolConfig(_Strict):
-    version: Literal["contact-v0.4"] = PROTOCOL_VERSION  # type: ignore[assignment]
+    version: Literal["contact-v0.4", "contact-v0.5"] = PROTOCOL_VERSION  # type: ignore[assignment]
+    # v0.5: how players learn the dictionary.
+    #   full_candidate_lists — v0.4 behaviour: complete pre-turn candidate lists in every observation
+    #   closed_book          — players are told only the dictionary's identity
+    #   lookup_tools         — every player may call the same deterministic lookup functions
+    dictionary_access: Literal["full_candidate_lists", "closed_book", "lookup_tools"] = "full_candidate_lists"
+    max_tool_calls_per_decision: int = Field(20, ge=1, le=200)
     clue_track: Literal["mechanical"] = "mechanical"
     role_policy: Literal["fixed_guesser_roles"] = "fixed_guesser_roles"
     timing: Literal["sealed_initial_responses_then_conditional_reveal"] = (
@@ -59,6 +65,12 @@ class ProtocolConfig(_Strict):
     responder_visibility: Literal["sealed"] = "sealed"
     blocklist_disclosure: Literal["full"] = "full"
     tools_enabled: Literal[False] = False
+
+    @model_validator(mode="after")
+    def _version_features(self):
+        if self.version == "contact-v0.4" and self.dictionary_access != "full_candidate_lists":
+            raise ValueError("dictionary_access other than full_candidate_lists requires protocol contact-v0.5")
+        return self
 
     def condition_key(self) -> dict:
         """Fields that define a non-poolable leaderboard condition."""

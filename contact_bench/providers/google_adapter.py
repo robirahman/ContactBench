@@ -13,10 +13,19 @@ defaults to several attempts even when ``retry_options`` is unset.
 
 from __future__ import annotations
 
+import json
 from typing import Any
 
 from ._util import get, int_or_none, to_plain
-from .base import AdapterResponse, DecisionRequest, InfrastructureError, NormalizedUsage, ProviderAdapter, sanitize
+from .base import (
+    AdapterResponse,
+    DecisionRequest,
+    InfrastructureError,
+    NormalizedUsage,
+    ProviderAdapter,
+    ToolCall,
+    sanitize,
+)
 
 REFUSAL_FINISH = {"SAFETY", "PROHIBITED_CONTENT", "BLOCKLIST", "SPII", "RECITATION", "IMAGE_SAFETY"}
 
@@ -85,11 +94,11 @@ class GeminiInteractionsAdapter(_GoogleBase):
     # Forwarded inside generation_config (except service_tier, top level).
     supported_parameters = frozenset({"thinking_level", "thinking_summaries", "temperature", "top_p", "seed", "service_tier"})
 
-    def build_request(self, request: DecisionRequest) -> dict:
+    def build_request(self, request: DecisionRequest, input_steps: Any = None) -> dict:
         gen: dict[str, Any] = {"max_output_tokens": request.max_output_tokens or self.config.max_output_tokens}
         kwargs: dict[str, Any] = {
             "model": self.config.model,
-            "input": request.user_prompt,
+            "input": request.user_prompt if input_steps is None else input_steps,
             "system_instruction": request.system_prompt,
             "response_format": {"type": "text", "mime_type": "application/json", "schema": request.json_schema},
             "store": False,
@@ -102,16 +111,73 @@ class GeminiInteractionsAdapter(_GoogleBase):
         kwargs["generation_config"] = gen
         return kwargs
 
-    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
-        kwargs = self.build_request(request)
+    async def _create(self, kwargs: dict) -> Any:
         client = self._get_client()
         try:
-            resp = await client.aio.interactions.create(automatic_continuation=False, **kwargs)
+            return await client.aio.interactions.create(automatic_continuation=False, **kwargs)
         except InfrastructureError:
             raise
         except Exception as e:  # SDK raises genai.errors.APIError and transport errors
             raise map_google_error(e, self._secrets()) from None
+
+    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+        kwargs = self.build_request(request)
+        resp = await self._create(kwargs)
         return self.parse_response(resp, kwargs)
+
+    # -- lookup tools ----------------------------------------------------------
+    # store=False: no previous_interaction_id; history is carried as a list of
+    # steps (user_input, the model's own thought/function_call/model_output
+    # steps replayed verbatim including thought signatures, function_result).
+    _MODEL_STEP_TYPES = {"thought", "function_call", "model_output"}
+
+    def tool_conversation_start(self, request: DecisionRequest) -> list:
+        return [{"type": "user_input", "content": [{"type": "text", "text": request.user_prompt}]}]
+
+    def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
+        kwargs = self.build_request(request, input_steps=list(state))
+        kwargs["tools"] = [
+            {"type": "function", "name": t.name, "description": t.description, "parameters": t.parameters}
+            for t in request.tools
+        ]
+        kwargs["generation_config"]["tool_choice"] = "auto" if allow_tools else "none"
+        return kwargs
+
+    async def send_tool_turn(self, request: DecisionRequest, state: list, allow_tools: bool):
+        kwargs = self.tool_kwargs(request, state, allow_tools)
+        raw = await self._create(kwargs)
+        resp = self.parse_response(raw, kwargs)
+        calls: list[ToolCall] = []
+        appended: list[Any] = []
+        for step in get(raw, "steps", None) or []:
+            stype = get(step, "type")
+            if stype not in self._MODEL_STEP_TYPES:
+                continue  # never re-send echoed user_input/function_result steps
+            plain = to_plain(step)
+            if isinstance(plain, dict):
+                plain = {k: v for k, v in plain.items() if v is not None}
+            appended.append(plain)
+            if stype == "function_call":
+                args = get(step, "arguments")
+                calls.append(
+                    ToolCall(
+                        id=get(step, "id") or "",
+                        name=get(step, "name") or "",
+                        arguments=args if isinstance(args, dict) else {"_unparseable_arguments": to_plain(args)},
+                    )
+                )
+        if calls:
+            resp.incomplete = False  # a turn ending in tool calls is not a truncated answer
+        return resp, calls, list(state) + appended
+
+    def tool_conversation_append(self, state: list, calls: list[ToolCall], results: list[Any]) -> list:
+        out = list(state)
+        for c, r in zip(calls, results):
+            step: dict[str, Any] = {"type": "function_result", "call_id": c.id, "name": c.name, "result": json.dumps(r)}
+            if isinstance(r, dict) and "error" in r:
+                step["is_error"] = True
+            out.append(step)
+        return out
 
     def parse_response(self, resp: Any, kwargs: dict) -> AdapterResponse:
         status = get(resp, "status")
@@ -162,7 +228,7 @@ class GeminiGenerateContentAdapter(_GoogleBase):
     api_family = "generate_content"
     supported_parameters = frozenset({"thinking_config", "temperature", "top_p", "seed"})
 
-    def build_request(self, request: DecisionRequest) -> dict:
+    def build_request(self, request: DecisionRequest, contents: Any = None) -> dict:
         config: dict[str, Any] = {
             "system_instruction": request.system_prompt,
             "response_mime_type": "application/json",
@@ -170,18 +236,79 @@ class GeminiGenerateContentAdapter(_GoogleBase):
             "max_output_tokens": request.max_output_tokens or self.config.max_output_tokens,
         }
         config.update(self.config.parameters)
-        return {"model": self.config.model, "contents": request.user_prompt, "config": config}
+        return {
+            "model": self.config.model,
+            "contents": request.user_prompt if contents is None else contents,
+            "config": config,
+        }
 
-    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
-        kwargs = self.build_request(request)
+    async def _create(self, kwargs: dict) -> Any:
         client = self._get_client()
         try:
-            resp = await client.aio.models.generate_content(**kwargs)
+            return await client.aio.models.generate_content(**kwargs)
         except InfrastructureError:
             raise
         except Exception as e:
             raise map_google_error(e, self._secrets()) from None
+
+    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+        kwargs = self.build_request(request)
+        resp = await self._create(kwargs)
         return self.parse_response(resp, kwargs)
+
+    # -- lookup tools ----------------------------------------------------------
+    # History is a list of Content entries.  The model's candidate content is
+    # replayed as the SDK object so thought_signature bytes survive intact.
+    def tool_conversation_start(self, request: DecisionRequest) -> list:
+        return [{"role": "user", "parts": [{"text": request.user_prompt}]}]
+
+    def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
+        kwargs = self.build_request(request, contents=list(state))
+        cfg = kwargs["config"]
+        cfg["tools"] = [
+            {
+                "function_declarations": [
+                    {"name": t.name, "description": t.description, "parameters_json_schema": t.parameters}
+                    for t in request.tools
+                ]
+            }
+        ]
+        cfg["tool_config"] = {"function_calling_config": {"mode": "AUTO" if allow_tools else "NONE"}}
+        # Only declarations are passed (no callables), so the SDK never runs
+        # functions itself; disable automatic function calling explicitly.
+        cfg["automatic_function_calling"] = {"disable": True}
+        return kwargs
+
+    async def send_tool_turn(self, request: DecisionRequest, state: list, allow_tools: bool):
+        kwargs = self.tool_kwargs(request, state, allow_tools)
+        raw = await self._create(kwargs)
+        resp = self.parse_response(raw, kwargs)
+        cands = get(raw, "candidates") or []
+        content = get(cands[0], "content") if cands else None
+        calls: list[ToolCall] = []
+        for i, p in enumerate(get(content, "parts") or []):
+            fc = get(p, "function_call")
+            if fc is None:
+                continue
+            args = get(fc, "args")
+            calls.append(
+                ToolCall(
+                    id=get(fc, "id") or f"call_{len(state)}_{i}",
+                    name=get(fc, "name") or "",
+                    arguments=dict(args) if isinstance(args, dict) else {},
+                )
+            )
+        new_state = list(state) + ([content] if content is not None else [])
+        return resp, calls, new_state
+
+    def tool_conversation_append(self, state: list, calls: list[ToolCall], results: list[Any]) -> list:
+        parts = []
+        for c, r in zip(calls, results):
+            fr: dict[str, Any] = {"name": c.name, "response": {"result": json.loads(json.dumps(r))}}
+            if c.id and not c.id.startswith("call_"):
+                fr["id"] = c.id
+            parts.append({"function_response": fr})
+        return list(state) + [{"role": "user", "parts": parts}]
 
     def parse_response(self, resp: Any, kwargs: dict) -> AdapterResponse:
         cands = get(resp, "candidates") or []
