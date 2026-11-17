@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contact-bench"
+version = "0.4.0"
+description = "ContactBench: a reproducible benchmark for AI models playing the word game Contact (protocol contact-v0.4)"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "pydantic==2.14.3",
+  "PyYAML==6.0.3",
+  "openai==3.52.0",
+  "anthropic==2.9.0",
+  "google-genai==3.4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0", "hypothesis==6.170.15"]
+
+[project.scripts]
+contact-bench = "contact_bench.cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["contact_bench*"]
+
+[tool.setuptools.package-data]
+contact_bench = ["site/static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

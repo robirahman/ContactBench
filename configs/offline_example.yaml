@@ -1,0 +1,64 @@
+# Complete offline example: scripted baselines plus an offline fake "LLM" adapter.
+# Runs with no network access and no API keys:
+#   contact-bench run configs/offline_example.yaml --offline
+name: offline-example
+fixture_data: true
+
+protocol:
+  version: contact-v0.4
+  initial_prefix_length: 1
+  turn_limit: 10
+  clue_max_characters: 100
+
+lexicon:
+  manifest: lexicons/dev_fixture_manifest.json
+  secret_equals_contact: true
+  maximum_secret_word_length: 20
+
+scoring:
+  development_rollouts: 512
+  proposed_final_rollouts: 4096
+  exact_small_state_limit: 12
+  root_seed: 20261116
+  cache_dir: .cache/reference
+
+tasks:
+  split: development
+  tasks_per_pair: 6
+  generation_seed: 1
+
+tournament:
+  schedule: balanced_round_robin
+  repetitions: 1
+
+forecasts:
+  mode: off
+
+models:
+  - id: first_last
+    provider: scripted
+    policy: first_last_two_guess
+    defender_policy: empty
+  - id: fresh_shuffle_packing
+    provider: scripted
+    policy: combined_fresh_shuffle
+    defender_policy: literal_clue_words
+  - id: index_contact
+    provider: scripted
+    policy: public_index_ambiguity
+    defender_policy: index_decoder
+  - id: fake_llm
+    provider: fake
+    model: fake-legal-v1
+    max_output_tokens: 8192
+
+execution:
+  live: false
+  max_requests: 0
+  game_concurrency: 8
+
+analysis:
+  development_bootstrap_resamples: 200
+  use_development_bootstrap: true
+  bootstrap_seed: 12345
+  logit_penalty_scale: 2.5

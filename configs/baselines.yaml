@@ -1,0 +1,24 @@
+# All scripted baselines and ablations from spec Section 11 (no paid calls).
+name: baselines
+fixture_data: true
+protocol: {turn_limit: 20, clue_max_characters: 100}
+lexicon: {manifest: lexicons/dev_fixture_manifest.json}
+scoring: {development_rollouts: 512}
+tasks: {tasks_per_pair: 8, generation_seed: 2}
+tournament: {schedule: round_robin_plus_self_play}
+models:
+  - {id: alphabetical_direct, provider: scripted, policy: alphabetical_direct}
+  - {id: reverse_direct, provider: scripted, policy: reverse_direct}
+  - {id: first_last, provider: scripted, policy: first_last_two_guess}
+  - {id: clue_only_alpha, provider: scripted, policy: clue_only_alphabetical}
+  - {id: clue_only_reverse, provider: scripted, policy: clue_only_reverse}
+  - {id: clue_only_shuffled, provider: scripted, policy: clue_only_shuffled}
+  - {id: combined_alpha, provider: scripted, policy: combined_alphabetical}
+  - {id: combined_reverse, provider: scripted, policy: combined_reverse}
+  - {id: combined_fixed_shuffle, provider: scripted, policy: combined_fixed_shuffle}
+  - {id: combined_fresh_shuffle, provider: scripted, policy: combined_fresh_shuffle}
+  - {id: wasted_turns, provider: scripted, policy: wasted_turns}
+  - {id: index_contact_empty_def, provider: scripted, policy: public_index_ambiguity, defender_policy: empty}
+  - {id: first_last_random3_def, provider: scripted, policy: first_last_two_guess, defender_policy: random_3}
+  - {id: first_last_allnonsecret_def, provider: scripted, policy: first_last_two_guess, defender_policy: all_nonsecret}
+  - {id: first_last_always_cancel, provider: scripted, policy: first_last_two_guess, choice_policy: always_cancel, defender_policy: random_10}

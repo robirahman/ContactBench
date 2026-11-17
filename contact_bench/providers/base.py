@@ -1,0 +1,295 @@
+"""Provider-independent adapter contract (spec Section 13.1).
+
+An adapter obtains exactly one model response for one decision request.  The
+engine validates and adjudicates; an adapter must never reinterpret, repair,
+substitute or semantically retry an answer.  Only eligible infrastructure
+errors are retried, with the same request, under a bounded policy.
+"""
+
+from __future__ import annotations
+
+import asyncio
+import os
+import random
+import re
+import time
+from abc import ABC, abstractmethod
+from dataclasses import asdict, dataclass, field
+from typing import Any, Callable, Mapping
+
+from ..config import ModelConfig
+
+
+class AdapterConfigError(ValueError):
+    """Preflight failure: unsupported parameter, missing credential, bad model settings."""
+
+
+class InfrastructureError(Exception):
+    """Transport/provider failure (not model behavior).
+
+    category: one of transient, rate_limit, timeout, server, auth, invalid_model,
+    unsupported_parameter, quota_exhausted, bad_request, unknown.
+    retryable: whether the same request may be re-sent.
+    fatal: halts or pauses the affected run (auth, invalid model, quota, ...).
+    """
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        category: str = "unknown",
+        retryable: bool = False,
+        fatal: bool = False,
+        retry_after: float | None = None,
+        possibly_billed: bool = False,
+    ):
+        super().__init__(sanitize(message))
+        self.category = category
+        self.retryable = retryable
+        self.fatal = fatal
+        self.retry_after = retry_after
+        self.possibly_billed = possibly_billed
+
+
+_SECRET_PATTERNS = [
+    re.compile(r"sk-[A-Za-z0-9_\-]{8,}"),
+    re.compile(r"(?i)bearer\s+[A-Za-z0-9._\-~+/=]+"),
+    re.compile(r"(?i)(api[_-]?key|authorization|x-api-key|x-goog-api-key)\s*[:=]\s*(bearer\s+)?\S+"),
+    re.compile(r"AIza[0-9A-Za-z_\-]{20,}"),
+]
+
+
+def sanitize(text: str, extra_secrets: tuple[str, ...] = ()) -> str:
+    """Remove credentials from error text before it is logged or exported."""
+    s = str(text)
+    for v in extra_secrets:
+        if v:
+            s = s.replace(v, "[REDACTED]")
+    for env in ("OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GEMINI_API_KEY"):
+        v = os.environ.get(env)
+        if v:
+            s = s.replace(v, "[REDACTED]")
+    for p in _SECRET_PATTERNS:
+        s = p.sub("[REDACTED]", s)
+    return s[:2000]
+
+
+@dataclass
+class NormalizedUsage:
+    """Nullable usage fields.  Unknown is None, never zero."""
+
+    input_tokens: int | None = None
+    output_tokens: int | None = None
+    total_tokens: int | None = None
+    cached_input_tokens: int | None = None
+    cache_write_tokens: int | None = None
+    reasoning_tokens: int | None = None
+    # True when reasoning tokens are already counted within output_tokens
+    # (OpenAI); False when billed as a separate category; None if unknown.
+    reasoning_included_in_output: bool | None = None
+
+    def billable_output_tokens(self) -> int | None:
+        if self.output_tokens is None:
+            return None
+        if self.reasoning_included_in_output is False and self.reasoning_tokens:
+            return self.output_tokens + self.reasoning_tokens
+        return self.output_tokens
+
+
+@dataclass
+class TransportAttempt:
+    attempt: int
+    started_at: float
+    latency_s: float
+    outcome: str  # ok | error
+    error_category: str | None = None
+    error_message: str | None = None
+    retry_after: float | None = None
+    possibly_billed: bool = False
+
+
+@dataclass
+class DecisionRequest:
+    decision_id: str
+    seat: str
+    phase: str
+    system_prompt: str
+    user_prompt: str
+    schema_name: str
+    json_schema: dict
+    max_output_tokens: int | None = None
+
+
+@dataclass
+class AdapterResponse:
+    output_text: str | None
+    parsed: Any = None
+    provider: str = ""
+    api_family: str = ""
+    response_id: str | None = None
+    request_id: str | None = None
+    requested_model: str | None = None
+    returned_model: str | None = None
+    finish_reason: str | None = None
+    refusal: bool = False
+    incomplete: bool = False
+    raw_usage: dict | None = None
+    usage: NormalizedUsage = field(default_factory=NormalizedUsage)
+    latency_s: float | None = None
+    attempts: list[TransportAttempt] = field(default_factory=list)
+    requested_parameters: dict = field(default_factory=dict)
+    effective_parameters: dict = field(default_factory=dict)
+
+    def to_json(self) -> dict:
+        d = asdict(self)
+        return d
+
+
+@dataclass(frozen=True)
+class RetryPolicy:
+    max_attempts: int = 3
+    base_seconds: float = 1.0
+    max_seconds: float = 60.0
+    deadline_seconds: float = 300.0
+
+
+class CredentialSource:
+    """Reads credentials from the environment or an injected mapping.
+
+    Credentials are never stored on adapter objects that get serialized, and
+    never appear in configuration snapshots or logs.
+    """
+
+    def __init__(self, injected: Mapping[str, str] | None = None):
+        self._injected = dict(injected or {})
+
+    def get(self, name: str) -> str | None:
+        return self._injected.get(name) or os.environ.get(name) or None
+
+    def require(self, name: str | None) -> str:
+        if not name:
+            raise AdapterConfigError("credential_env is not configured for this model")
+        v = self.get(name)
+        if not v:
+            raise AdapterConfigError(f"missing credential: environment variable {name} is not set")
+        return v
+
+
+class ProviderAdapter(ABC):
+    provider: str = ""
+    api_family: str = ""
+    # Parameters this adapter knows how to send.  Anything else fails preflight.
+    supported_parameters: frozenset[str] = frozenset()
+
+    def __init__(
+        self,
+        model_config: ModelConfig,
+        *,
+        credentials: CredentialSource | None = None,
+        retry: RetryPolicy | None = None,
+        sleep: Callable[[float], Any] | None = None,
+        clock: Callable[[], float] = time.monotonic,
+        jitter: random.Random | None = None,
+    ):
+        self.config = model_config
+        self.credentials = credentials or CredentialSource()
+        self.retry = retry or RetryPolicy()
+        self._sleep = sleep or asyncio.sleep
+        self._clock = clock
+        self._jitter = jitter or random.Random(0)
+
+    # Environment variable used when ModelConfig.credential_env is unset.
+    default_credential_env: str | None = None
+
+    @property
+    def credential_env(self) -> str | None:
+        return self.config.credential_env or self.default_credential_env
+
+    def check_credentials(self) -> None:
+        """Raise AdapterConfigError if the credential is unavailable (no network)."""
+        self.credentials.require(self.credential_env)
+
+    # -- preflight -----------------------------------------------------------
+    def preflight(self, *, require_credentials: bool = False) -> dict:
+        """Validate configuration without network access; return capability metadata.
+
+        Offline preflight never needs keys; live runs pass require_credentials=True.
+        """
+        if require_credentials:
+            self.check_credentials()
+        unsupported = set(self.config.parameters) - set(self.supported_parameters)
+        if unsupported:
+            raise AdapterConfigError(
+                f"{self.provider}/{self.api_family}: unsupported parameters {sorted(unsupported)}; "
+                "remove them or extend the adapter (they are never silently dropped)"
+            )
+        bad = self.config.unresolved_placeholders()
+        if bad:
+            raise AdapterConfigError(f"model {self.config.id}: unresolved placeholders in {bad}")
+        if not self.config.model:
+            raise AdapterConfigError(f"model {self.config.id}: model identifier is required")
+        if not self.config.max_output_tokens:
+            raise AdapterConfigError(f"model {self.config.id}: max_output_tokens must be set explicitly")
+        return self.capabilities()
+
+    def capabilities(self) -> dict:
+        return {
+            "provider": self.provider,
+            "api_family": self.api_family,
+            "schema_mode": "json_schema",
+            "max_output_tokens": self.config.max_output_tokens,
+            "context_window_tokens": self.config.context_window_tokens,
+            "provider_side_state": "disabled_or_unused",
+            "supported_parameters": sorted(self.supported_parameters),
+        }
+
+    # -- transport -----------------------------------------------------------
+    @abstractmethod
+    async def send_once(self, request: DecisionRequest) -> AdapterResponse:
+        """Exactly one transport attempt.  Raise InfrastructureError on failure."""
+
+    async def decide(self, request: DecisionRequest) -> AdapterResponse:
+        """Bounded retry of eligible infrastructure errors with the same request.
+
+        The first successfully received complete response is used; there is no
+        best-of-retries selection.  SDK-internal retries must be disabled by
+        concrete adapters so retries do not multiply.
+        """
+        attempts: list[TransportAttempt] = []
+        start = self._clock()
+        last: InfrastructureError | None = None
+        for i in range(1, self.retry.max_attempts + 1):
+            t0 = self._clock()
+            try:
+                resp = await self.send_once(request)
+            except InfrastructureError as e:
+                attempts.append(
+                    TransportAttempt(
+                        i, t0, self._clock() - t0, "error", e.category, str(e), e.retry_after, e.possibly_billed
+                    )
+                )
+                last = e
+                if e.fatal or not e.retryable or i == self.retry.max_attempts:
+                    break
+                delay = e.retry_after
+                if delay is None:
+                    delay = min(self.retry.max_seconds, self.retry.base_seconds * 2 ** (i - 1))
+                    delay *= 0.5 + self._jitter.random()
+                if self._clock() - start + delay > self.retry.deadline_seconds:
+                    break
+                await self._sleep(delay)
+                continue
+            attempts.append(TransportAttempt(i, t0, self._clock() - t0, "ok"))
+            resp.attempts = attempts
+            resp.latency_s = attempts[-1].latency_s
+            return resp
+        assert last is not None
+        err = InfrastructureError(
+            str(last), category=last.category, retryable=False, fatal=last.fatal, retry_after=last.retry_after
+        )
+        err.attempts = attempts  # type: ignore[attr-defined]
+        raise err
+
+
+def requested_and_effective(config: ModelConfig, effective: dict) -> tuple[dict, dict]:
+    return dict(config.parameters), dict(effective)
