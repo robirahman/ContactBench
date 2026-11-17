@@ -191,7 +191,7 @@
         w: s.wins, d: s.draws, l: s.losses, fixtures: s.fixtures, pts: s.match_points };
     });
     renderTable($("rating-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m + ((rating.fixed || []).indexOf(r.m) >= 0 ? " (fixed)" : ""); } },
       { label: "Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0); } },
       { label: "Elo 95% CI", get: function (r) { return r.eloCI ? r.eloCI.lo : null; }, fmt: function (r) { return ci(r.eloCI, 0); } },
       { label: "Rank 95% CI", get: function (r) { return r.rankCI ? r.rankCI.lo : null; }, fmt: function (r) { return ci(r.rankCI, 0); } },
@@ -207,6 +207,9 @@
       " task clusters (seed " + lb.bootstrap.seed + ", fit failures " + lb.bootstrap.fit_failures + ").");
     parts.push("Complete fixtures: " + (lb.complete_fixtures == null ? "—" : lb.complete_fixtures) + " of " +
       (lb.planned_fixtures == null ? "—" : lb.planned_fixtures) + (lb.balanced_complete ? " (balanced, complete)." : " (PROVISIONAL — incomplete run)."));
+    if (lb.human_challenge) parts.push(rating.unanchored ? String(rating.note || "Unanchored rating.")
+      : "Human challenge: the player's Elo is fitted with the opponents held at run " + (rating.anchor_run_id || "—") +
+        " (marked fixed below); opponents' ratings here are not re-estimated.");
     notes.textContent = parts.join(" ");
     renderHuman();
   }

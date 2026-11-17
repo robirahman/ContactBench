@@ -566,17 +566,37 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                               for m in manifest["config"]["models"] if m.get("provider") == "human"},
             "note": "Human vs model fixtures; never pooled with model-only ratings.",
         }
+        # The joint fit above moves the opponents' Elo with the human's games,
+        # so it is never the headline rating of a human-challenge run.
+        result["rating_joint_unanchored"] = result["rating"]
+        for iv in ((boot or {}).get("intervals_95") or {}).values():
+            iv.pop("elo", None)
+            iv.pop("rank", None)
+        result["rating_penalty_sensitivity"] = None
     if anchor is not None:
         from .rating import fit_anchored
 
         res = [(f["model_a"], f["model_b"], f["points_a"]) for f in complete]
         free = humans or [m for m in models if m not in anchor["elo"]]
-        missing = sorted({x for a, b, _ in res for x in (a, b)} - set(free) - set(anchor["elo"]))
+        missing = sorted(set(models) - set(free) - set(anchor["elo"]))
         if missing:
             raise ValueError(f"anchor ratings lack {missing}")
-        result["anchored_rating"] = {**fit_anchored(anchor["elo"], res, free, penalty_scale=penalty_scale,
-                                                    elo_center=elo_center),
-                                     "anchor_run_id": anchor.get("run_id")}
+        ar = {**fit_anchored(anchor["elo"], res, free, penalty_scale=penalty_scale, elo_center=elo_center),
+              "anchor_run_id": anchor.get("run_id")}
+        result["anchored_rating"] = ar
+        if humans:
+            result["rating"] = {
+                "method": ar["method"], "models": models,
+                "elo": {m: ar["elo"][m] if m in ar["elo"] else anchor["elo"][m] for m in models},
+                "fixed": sorted(m for m in models if m not in ar["elo"]),
+                "anchor_run_id": ar["anchor_run_id"], "converged": ar["converged"],
+                "iterations": ar["iterations"], "gradient_norm": ar["gradient_norm"], "loss": ar["loss"],
+                "penalty_scale": penalty_scale, "connected_components": result["rating"]["connected_components"],
+            }
+    elif humans:
+        result["rating"] = {**result["rating"], "unanchored": True,
+                            "note": "Unanchored joint fit of this run only; opponents' Elo is not their "
+                                    "leaderboard rating. Analyze with --anchor to rate the player on the model scale."}
     if write:
         write_outputs(run_dir / "analysis", result, rows)
     return result

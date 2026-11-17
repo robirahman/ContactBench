@@ -251,6 +251,14 @@ def test_end_to_end_through_http(tmp_path):
     assert res["complete_fixtures"] == 4
     assert res["anchored_rating"]["free"] == ["me"] and res["human_challenge"]["display_names"]["me"] == "Me"
     assert res["anchored_rating"]["fixed_elo"] == {"bot_a": 1550.0, "bot_b": 1450.0}
+    # the headline rating holds the opponents fixed; the joint fit is kept aside
+    assert res["rating"]["elo"]["bot_a"] == 1550.0 and res["rating"]["fixed"] == ["bot_a", "bot_b"]
+    assert res["rating"]["elo"]["me"] == res["anchored_rating"]["elo"]["me"]
+    assert "elo" in res["rating_joint_unanchored"]
+    unanchored = analyze(tmp_path / "r", load_game_records(tmp_path / "r"), resamples=3, seed=1, penalty_scale=2.5,
+                         elo_center=1500, write=False)
+    assert unanchored["rating"]["unanchored"] is True
+    assert all("elo" not in v for v in unanchored["bootstrap"]["intervals_95"].values())
     # the export is its own condition and is never combined with model runs
     from contact_bench.export.public import export_public
 
@@ -342,6 +350,7 @@ def test_play_command_end_to_end(tmp_path, monkeypatch):
 
     t = threading.Thread(target=bot, daemon=True)
     t.start()
+    assert cli.main(["plan", str(cfgp)]) == 0  # plans need tasks_per_pair x opponents secrets
     rc = cli.main(["--runs-dir", str(tmp_path / "runs"), "play", str(cfgp), "--player", "Ada L.",
                    "--run-id", "h1", "--no-browser", "--no-wait"])
     stop.set()

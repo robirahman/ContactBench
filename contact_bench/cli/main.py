@@ -48,13 +48,13 @@ def cmd_validate(args) -> int:
 
 def cmd_plan(args) -> int:
     from ..runner.run import load_lexicons
-    from ..runner.schedule import build_schedule, run_plan
+    from ..runner.schedule import build_schedule, human_challenge_task_count, run_plan
     from ..runner.tasks import generate_tasks
 
     cfg = load_config(args.config)
     vs, vc = load_lexicons(cfg)
     tasks = generate_tasks(
-        v_secret=vs, v_contact=vc, count=cfg.tasks.tasks_per_pair, seed=cfg.tasks.generation_seed,
+        v_secret=vs, v_contact=vc, count=human_challenge_task_count(cfg), seed=cfg.tasks.generation_seed,
         split=cfg.tasks.split, initial_prefix_length=cfg.protocol.initial_prefix_length,
         turn_limit=cfg.protocol.turn_limit, clue_max_characters=cfg.protocol.clue_max_characters,
     )
