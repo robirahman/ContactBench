@@ -217,3 +217,15 @@ once the call limit is reached. `output_config.format` (the final-answer JSON sc
 assistant turn's content blocks, thinking blocks included, are passed back unchanged, followed by a user turn of
 `tool_result` blocks. When `max_tokens > 16000` the adapter calls `messages.stream(...)` and `get_final_message()`.
 This was verified live with `claude-haiku-5-5` on 2026-11-17: a 3-turn count_words → list_words → answer loop.
+
+### Gemini context caching (checked live 2026-11-17)
+
+- **No explicit caching for Gemini 4.** The Gemini 4 models (`gemini-4-hydrogen`, `gemini-4-argon`, `gemini-4-carbon`)
+  do not list `createCachedContent` among their supported actions. Explicit context caches therefore cannot be
+  created for them; only nine older 2.5/3.x models list it. The Interactions API also marks `cached_content` as
+  deprecated.
+- **Implicit caching depends on the API family.** In a live test on the same prompts (consecutive turns of one
+  seat, prompts-v4 cache-friendly layout), Hydrogen reused about 16% of input through Interactions and about 50%
+  through `generateContent`.
+- **Configuration.** For cost, configure Gemini 4 models with `api_family: generate_content`. Both families
+  support the lookup-tool loop, the schema-on final turn and forecast forks.

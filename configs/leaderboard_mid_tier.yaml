@@ -1,0 +1,81 @@
+# Mid-tier round robin: Claude Sonnet 5.5, GPT-6.1 Terra, Gemini 4 Argon. Same condition as
+# leaderboard_latest_small_10.yaml (dictionary-assisted, empty prefix, cap 30, 10 secrets, draws+rematches).
+# Gemini uses the generate_content API family: Gemini 4 models do not support explicit context caching
+# (no createCachedContent action), and generateContent's implicit cache reused ~50% of the prompt in a
+# live test versus ~16% through Interactions. Inference profiles use low effort/reasoning/thinking.
+name: leaderboard-mid-tier
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 100
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 10
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_sonnet_5_5
+  provider: anthropic
+  model: claude-sonnet-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+- id: gpt_6_1_terra
+  provider: openai
+  api_family: responses
+  model: gpt-6.1-terra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: OpenAI launch page via trackers; model ID verified via models.list
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cached_input_per_mtok: 0.05
+- id: gemini_4_argon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-argon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: 'third-party trackers: intro $2/$10, reportedly $4/$20 from ~2026-12-01
+      (update before runs after that date); cached rate set conservatively at 25%
+      of input'
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.5
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500
