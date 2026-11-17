@@ -109,6 +109,10 @@ def cmd_run(args) -> int:
 
 def _with_concurrency(cfg: BenchConfig, args) -> BenchConfig:
     """Operational overrides (never scored; execution settings are not frozen)."""
+    for name in ("game_concurrency", "provider_concurrency"):
+        v = getattr(args, name, None)
+        if v is not None and v < 1:
+            raise ValueError(f"--{name.replace('_', '-')} must be a positive integer")
     upd = {}
     if getattr(args, "game_concurrency", None):
         upd["game_concurrency"] = args.game_concurrency

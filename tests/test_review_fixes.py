@@ -208,3 +208,15 @@ def test_fork_path_uses_provider_local_budget_handler():
     from contact_bench.runner.run import Runner as R
     src = inspect.getsource(R._schedule_fork)
     assert "_on_budget_exhausted" in src and "budget_stopped = True" not in src
+
+
+def test_concurrency_overrides_must_be_positive(tmp_path):
+    from contact_bench.cli import main as cli
+    from .test_runner import cfg as rcfg, SCRIPTED
+    import types
+    c = rcfg(SCRIPTED)
+    for bad in (0, -1):
+        with pytest.raises(ValueError):
+            cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=bad, provider_concurrency=None))
+    ok = cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=3, provider_concurrency=2))
+    assert ok.execution.game_concurrency == 3 and ok.execution.per_provider_concurrency == 2
