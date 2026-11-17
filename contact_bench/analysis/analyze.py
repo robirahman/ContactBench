@@ -510,6 +510,9 @@ def check_prior_run(current_run_dir: Path, prior_dir: Path, profiles: dict | Non
     for k in TOURNAMENT_RULES:
         if cur["tournament"][k] != pri["tournament"][k]:
             raise PriorRunError(f"prior run {name}: tournament rule '{k}' differs")
+    for k in ("engine_version", "packing_version", "rng_version", "protocol_version"):
+        if cm.get(k) != pm.get(k):
+            raise PriorRunError(f"prior run {name}: {k} differs")
     if pm.get("prompt_hash") != prompt_hash("blind"):
         raise PriorRunError(f"prior run {name}: prompt templates differ")
     for key in ("secret_lexicon", "contact_lexicon"):
@@ -680,6 +683,9 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         drop_for = {}
         for m in fit_models:
             rjson["components_elo_points"][m] = {r: (comp[m][r] if est[m][r] else None) for r in ROLES}
+            # Same centring and gating for the logit-scale components.
+            rjson["components_logit"][m] = {r: (comp[m][r] * math.log(10) / 400.0 if est[m][r] else None)
+                                            for r in ROLES}
             if not est[m]["composite"]:
                 rjson["elo"][m] = None
                 rjson["composite_logit"][m] = None

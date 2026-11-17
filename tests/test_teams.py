@@ -113,6 +113,7 @@ def test_offline_team_run_routes_seats_and_analyzes(tmp_path):
     # no fixture faces different defenders: defender components are not identified
     assert all(v is None for v in t["role_rating"]["elo"].values())
     assert all(c["d"] is None for c in t["role_rating"]["components_elo_points"].values())
+    assert all(c["d"] is None for c in t["role_rating"]["components_logit"].values())
     out = export_public(tmp_path / "run", tmp_path / "exp", res, recs)
     assert not scan_for_secrets(out)
     rep = asyncio.run(Runner(c, tmp_path / "run", replay_only=True).replay())
