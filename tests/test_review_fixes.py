@@ -220,3 +220,20 @@ def test_concurrency_overrides_must_be_positive(tmp_path):
             cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=bad, provider_concurrency=None))
     ok = cli._with_concurrency(c, types.SimpleNamespace(game_concurrency=3, provider_concurrency=2))
     assert ok.execution.game_concurrency == 3 and ok.execution.per_provider_concurrency == 2
+
+
+def test_ambiguous_transport_failures_are_charged_conservatively():
+    from contact_bench.providers.base import possibly_billed
+    assert possibly_billed(InfrastructureError("conn reset", category="transient", retryable=True))
+    assert possibly_billed(InfrastructureError("?", category="unknown", fatal=True))
+    assert possibly_billed(InfrastructureError("502", category="server", retryable=True))
+    assert not possibly_billed(InfrastructureError("402", category="quota_exhausted", fatal=True))
+    assert not possibly_billed(InfrastructureError("429", category="rate_limit", retryable=True))
+    # through the gate: a server error is charged the reservation, a 402 is not
+    pt = PriceTable(as_of="x", input_per_mtok=1.0, output_per_mtok=1.0)
+    m = ModelConfig(id="g", provider="google", model="m", max_output_tokens=1000, prices=pt)
+    b = Budget(None, 100.0)  # a monetary cap makes reservations non-zero
+    a = Flaky(fails=1)  # one "server" error then success
+    a.config = m
+    asyncio.run(a.decide(_req(), gate=BudgetGate(b, m, 1000)))
+    assert b.usd_uncertain == 1

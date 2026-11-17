@@ -24,6 +24,18 @@ class AdapterConfigError(ValueError):
     """Preflight failure: unsupported parameter, missing credential, bad model settings."""
 
 
+# Categories where the provider rejected the request before generating any
+# output.  Every other failure (transport, timeout, server, unknown) may have
+# been billed and is charged conservatively against monetary caps.
+KNOWN_UNBILLED_CATEGORIES = frozenset(
+    {"auth", "quota_exhausted", "invalid_model", "bad_request", "unsupported_parameter", "rate_limit"}
+)
+
+
+def possibly_billed(e: "InfrastructureError") -> bool:
+    return bool(e.possibly_billed or e.category not in KNOWN_UNBILLED_CATEGORIES)
+
+
 class InfrastructureError(Exception):
     """Transport/provider failure (not model behavior).
 
@@ -380,7 +392,7 @@ class ProviderAdapter(ABC):
                 if gate is not None:
                     # Only failures that may have generated output (e.g. a
                     # timeout after sending) can have been billed.
-                    await gate.after(token, None, False, possibly_billed=e.possibly_billed)
+                    await gate.after(token, None, False, possibly_billed=possibly_billed(e))
                 attempts.append(
                     TransportAttempt(
                         i, t0, self._clock() - t0, "error", e.category, str(e), e.retry_after, e.possibly_billed
