@@ -75,10 +75,12 @@ def build_site(export_dirs: list[Path], out_dir: Path) -> Path:
             "run_created_at": m.get("run_created_at"),
             "exported_at": m.get("exported_at"),
             "fixture_data": bool(m.get("fixture_data", True)),
+            "release_label": m.get("release_label"),
             "condition": {k: cond.get(k) for k in (
                 "clue_max_characters", "turn_limit", "lexicon_name", "lexicon_sha256", "resolver",
                 "packing_version", "rng_version", "numerical_rollouts", "forecast_mode", "timing",
-                "reveal_policy", "target_hit_scope", "count_cap")},
+                "reveal_policy", "target_hit_scope", "count_cap", "dictionary_access",
+                "blocklist_encoding", "initial_prefix_length")},
         })
     (out_dir / "data" / "index.json").write_text(json.dumps({"conditions": entries}, indent=2) + "\n")
     shutil.copy(STATIC_DIR / "index.html", out_dir / "index.html")
@@ -89,3 +91,19 @@ def build_site(export_dirs: list[Path], out_dir: Path) -> Path:
         shutil.rmtree(out_dir)
         raise SiteBuildError("site build aborted; credential-like content found: " + "; ".join(hits[:5]))
     return out_dir
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Stdlib-only entry point (used by the GitHub Pages workflow)."""
+    import argparse
+
+    p = argparse.ArgumentParser(description="Build the ContactBench static leaderboard site")
+    p.add_argument("export_dirs", nargs="+")
+    p.add_argument("--out", default="site_build")
+    a = p.parse_args(argv)
+    print(build_site([Path(x) for x in a.export_dirs], Path(a.out)))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

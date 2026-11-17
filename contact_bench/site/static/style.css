@@ -18,6 +18,7 @@ header h1 { margin: 24px 0 0; }
 nav { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
 nav a, a { color: var(--accent); }
 section { margin: 28px 0; }
+.banner.note { background: var(--card, transparent); color: inherit; font-weight: 600; position: static; border-bottom: 1px solid currentColor; }
 .banner { background: var(--banner-bg); color: var(--banner-fg); font-weight: 700; text-align: center; padding: 10px 16px; position: sticky; top: 0; z-index: 10; border-bottom: 2px solid var(--banner-fg); }
 .note { color: var(--muted); font-size: 0.92em; }
 .note.audit { color: var(--audit-fg); background: var(--audit-bg); padding: 6px 10px; border-radius: 4px; font-weight: 600; }

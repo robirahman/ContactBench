@@ -64,3 +64,31 @@ static host works:
   static website hosting or put CloudFront in front of the bucket.
 
 Keep earlier released snapshots under versioned paths or tags instead of overwriting them.
+
+## GitHub Pages deployment (this repository)
+
+`.github/workflows/pages.yml` builds the site from every export committed under `leaderboard/exports/` and
+deploys it with GitHub Pages. The build uses only the Python standard library:
+`python -m contact_bench.site.build leaderboard/exports/* --out _site`.
+
+**Publishing a run**
+
+```bash
+contact-bench analyze RUN_ID
+contact-bench export RUN_ID --public [--include-audit] --label "short release note" --out leaderboard/exports/RUN_ID
+git add leaderboard/exports/RUN_ID && git commit && git push      # deploys on push to main
+```
+
+**One-time setup (repository owner)**
+
+1. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+2. Project sites are served at `<custom domain>/<repository name>/`, and the path is case-sensitive. The
+   `robirahman.github.io` user site uses the custom domain `www.robirahman.com`. So a repository named
+   `ContactBench` publishes at `https://www.robirahman.com/ContactBench/`, and `/contactbench/` returns 404.
+   Rename the repository to `contactbench` (Settings → General) to get the lowercase URL. GitHub redirects the old
+   repository URL and git remotes.
+3. Merge to `main`, or run the workflow manually from the Actions tab. By default the `github-pages` environment
+   accepts deployments only from the default branch.
+
+Exports omit very large derived lists to keep the site small: whole-dictionary initial candidate sets and decoded
+range emissions are replaced by counts, since both can be recomputed from the public lexicon and events.

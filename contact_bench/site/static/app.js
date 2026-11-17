@@ -98,7 +98,11 @@
       index = idx;
       var sel = $("condition-select");
       idx.conditions.forEach(function (c, i) {
-        var label = (c.fixture_data ? "[DEMO] " : "") + "C=" + c.condition.clue_max_characters +
+        var access = { closed_book: "closed-book", lookup_tools: "dictionary-assisted",
+                       full_candidate_lists: "full lists" }[c.condition.dictionary_access] || "full lists";
+        var label = (c.fixture_data ? "[DEMO] " : "") + access + ", prefix " +
+          (c.condition.initial_prefix_length == null ? 1 : c.condition.initial_prefix_length) +
+          ", C=" + c.condition.clue_max_characters +
           ", L=" + c.condition.turn_limit + ", " + c.condition.lexicon_name + " — run " + c.run_id +
           " (" + c.condition_key + ")";
         sel.appendChild(el("option", { value: String(i), text: label }));
@@ -132,6 +136,9 @@
 
   function renderAll() {
     $("fixture-banner").hidden = !(current.manifest.fixture_data || current.entry.fixture_data);
+    var note = $("release-note"), label = current.manifest.release_label || current.entry.release_label;
+    note.hidden = !label;
+    note.textContent = label ? String(label) : "";  // text only, never HTML
     renderCondition();
     renderRating();
     renderEfficiency();
@@ -153,6 +160,10 @@
     row("Exported", m.exported_at);
     row("Clue character budget C", c.clue_max_characters);
     row("Turn cap L", c.turn_limit);
+    row("Dictionary access", c.dictionary_access || "full_candidate_lists");
+    row("Initial prefix length", c.initial_prefix_length == null ? 1 : c.initial_prefix_length);
+    row("Blocklist encoding", c.blocklist_encoding || "words");
+    row("Lookup calls per decision", c.dictionary_access === "lookup_tools" ? c.max_tool_calls_per_decision : "n/a");
     row("Literal-mention count cap", c.count_cap == null ? "none (character budget only)" : c.count_cap);
     row("Lexicon", (c.lexicon_name || "") + " (sha256 " + String(c.lexicon_sha256 || "").slice(0, 16) + "…)" +
       (m.lexicon ? ", " + m.lexicon.word_count + " words, license: " + m.lexicon.license : ""));
@@ -391,10 +402,14 @@
       box.hidden = true;
       $("reveal-secret").onclick = function () { box.hidden = false; box.textContent = "Secret: " + r.secret; };
       drawReplay();
-      $("replay").scrollIntoView({ behavior: "smooth" });
-    }).catch(function () {
+      var box2 = $("replay");
+      if (box2.scrollIntoView) { try { box2.scrollIntoView({ behavior: "smooth" }); } catch (e) { /* cosmetic */ } }
+    }).catch(function (e) {
       $("replay").hidden = false;
-      $("replay-title").textContent = "Replay not included in this export for " + g.game_id + ".";
+      var missing = e && /HTTP 404/.test(String(e.message));
+      $("replay-title").textContent = missing
+        ? "Replay not included in this export for " + g.game_id + "."
+        : "Could not display replay " + g.game_id + ": " + (e && e.message ? e.message : e);
       clear($("replay-turns"));
     });
   }
@@ -413,7 +428,14 @@
     var parts = [];
     parts.push("Clue: “" + e.clue + "”.");
     if (e.blocklist === null || e.blocklist === undefined) parts.push("Blocklist: not collected.");
-    else parts.push("Blocklist (" + e.blocklist.length + "): " + (e.blocklist.length ? e.blocklist.join(", ") : "(empty)") + ".");
+    else {
+      var rg = e.blocked_ranges || [];
+      var n = e.blocked_word_count != null ? e.blocked_word_count : e.blocklist.length;
+      var shown = e.blocklist.slice();
+      rg.forEach(function (r) { shown.push(r[0] + " … " + r[1]); });
+      parts.push("Blocklist (" + n + " words" + (rg.length ? ", " + rg.length + " range" + (rg.length > 1 ? "s" : "") : "") +
+        "): " + (shown.length ? shown.join(", ") : "(empty)") + ".");
+    }
     var og = e.opened_guesses || [];
     parts.push("Opened guesses: " + (og.length ? og.map(function (g) { return g.seat + "=" + g.word; }).join(", ") : "none") + ".");
     return parts.join(" ");
@@ -432,7 +454,8 @@
     $("view-explainer").className = view === "audit" ? "note audit" : "note";
     var ol = clear($("replay-turns"));
     ol.appendChild(el("li", { cls: "start" }, "Start: prefix “" + r.initial_prefix + "”, " +
-      (r.initial_secret_candidates ? r.initial_secret_candidates.length : "?") + " secret candidates, cap " + r.turn_limit + " turns." +
+      (r.initial_secret_candidate_count != null ? r.initial_secret_candidate_count :
+        (r.initial_secret_candidates ? r.initial_secret_candidates.length : "?")) + " secret candidates, cap " + r.turn_limit + " turns." +
       (view === "defender" || view === "audit" ? " Secret: " + r.secret + "." : "")));
     var priv = view !== "public" && view !== "audit" && r.seat_private_histories ? (r.seat_private_histories[view] || []) : [];
     var audit = view === "audit" ? (r.referee_audit || []) : [];

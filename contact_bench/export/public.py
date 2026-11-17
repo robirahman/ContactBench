@@ -29,6 +29,9 @@ CREDENTIAL_PATTERNS = [
 CREDENTIAL_ENVS = ("OPENAI_API_KEY", "ANTHROPIC_API_KEY", "GEMINI_API_KEY")
 
 
+MAX_EXPORTED_CANDIDATE_LIST = 2000
+
+
 class ExportLeakError(RuntimeError):
     pass
 
@@ -64,6 +67,11 @@ def _audit_turn(t: dict) -> dict:
             "secret_candidates_before", "secret_candidates_after", "block_size",
             "block_fresh_secret_candidates", "block_overlap_with_clue"]
     out = {k: t[k] for k in keys if k in t}
+    if isinstance(out.get("emissions"), list) and len(out["emissions"]) > MAX_EXPORTED_CANDIDATE_LIST:
+        # Range blocks can emit tens of thousands of words; the set is fully
+        # recomputable from the clue, explicit blocklist, ranges and openings.
+        out["emission_count"] = len(out["emissions"])
+        out["emissions"] = None
     for seat in ("guesser1", "guesser2", "defender"):
         if t.get(seat) is not None:
             out[f"{seat}_valid"] = t[seat].get("valid")
@@ -115,7 +123,7 @@ def scan_for_secrets(root: Path, extra_secrets: list[str] | None = None) -> list
 
 
 def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[dict], *,
-                  include_audit: bool = False, max_replays: int | None = None,
+                  include_audit: bool = False, max_replays: int | None = None, release_label: str | None = None,
                   extra_secrets: list[str] | None = None) -> Path:
     run_dir, out_dir = Path(run_dir), Path(out_dir)
     manifest = json.loads((run_dir / "run.json").read_text())
@@ -127,6 +135,9 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "protocol_version": cfg["protocol"]["version"],
         "protocol": cfg["protocol"],
         "dictionary_access": cfg["protocol"].get("dictionary_access", "full_candidate_lists"),
+        "blocklist_encoding": cfg["protocol"].get("blocklist_encoding", "words"),
+        "initial_prefix_length": cfg["protocol"].get("initial_prefix_length", 1),
+        "max_tool_calls_per_decision": cfg["protocol"].get("max_tool_calls_per_decision"),
         "clue_max_characters": cfg["protocol"]["clue_max_characters"],
         "turn_limit": cfg["protocol"]["turn_limit"],
         "target_hit_scope": cfg["protocol"]["target_hit_scope"],
@@ -153,6 +164,7 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "prompt_version": manifest.get("prompt_version"),
         "prompt_hash": manifest.get("prompt_hash"),
         "fixture_data": manifest.get("fixture_data", True),
+        "release_label": release_label,
         "condition": condition,
         "condition_key": ckey,
         "lexicon": _pick(manifest["secret_lexicon"], ["name", "word_count", "sha256", "source", "license", "source_revision"]),
@@ -194,7 +206,11 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             rep = {
                 "game_id": g["game_id"], "attacker": g["attacker"], "defender": g["defender"],
                 "secret": s["secret"], "initial_prefix": s["initial_prefix"], "turn_limit": s["turn_limit"],
-                "initial_secret_candidates": list(r.get("initial_secret_candidates", [])),
+                # Large initial sets (e.g. a whole dictionary at prefix length 0)
+                # are recomputable from the public lexicon and prefix; export the count.
+                "initial_secret_candidate_count": len(r.get("initial_secret_candidates", [])),
+                **({"initial_secret_candidates": list(r["initial_secret_candidates"])}
+                   if len(r.get("initial_secret_candidates", [])) <= MAX_EXPORTED_CANDIDATE_LIST else {}),
                 "outcome_status": s["outcome_status"], "terminal_reason": s["terminal_reason"],
                 "public_history": [_public_event(e) for e in r.get("public_history", [])],
                 "score": _score(r.get("score")),

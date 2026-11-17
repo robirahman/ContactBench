@@ -163,7 +163,8 @@ def cmd_export(args) -> int:
     analysis = json.loads(ap.read_text())
     records = asyncio.run(_replayed_records(run_dir))
     out = Path(args.out) if args.out else Path("exports") / args.run_id
-    export_public(run_dir, out, analysis, records, include_audit=args.include_audit, max_replays=args.max_replays)
+    export_public(run_dir, out, analysis, records, include_audit=args.include_audit, max_replays=args.max_replays,
+                  release_label=args.label)
     print(f"public export written to {out}")
     return 0
 
@@ -316,7 +317,9 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(fn=cmd_analyze)
     s = sub.add_parser("export"); s.add_argument("run_id"); s.add_argument("--public", action="store_true")
     s.add_argument("--out"); s.add_argument("--include-audit", action="store_true")
-    s.add_argument("--max-replays", type=int); s.set_defaults(fn=cmd_export)
+    s.add_argument("--max-replays", type=int)
+    s.add_argument("--label", help="release notice shown on the site, e.g. 'Pilot: 5 secrets, not confirmatory'")
+    s.set_defaults(fn=cmd_export)
     s = sub.add_parser("build-site"); s.add_argument("export_dirs", nargs="+"); s.add_argument("--out", default="site_build")
     s.set_defaults(fn=cmd_build_site)
     s = sub.add_parser("show", help="print a game transcript in one information view")

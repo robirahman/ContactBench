@@ -1,0 +1,49 @@
+# Builds the static ContactBench leaderboard from the committed public exports
+# in leaderboard/exports/ and deploys it with GitHub Pages.
+# One-time setup: repository Settings -> Pages -> Source: "GitHub Actions".
+name: Deploy leaderboard to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "leaderboard/**"
+      - "contact_bench/site/**"
+      - "contact_bench/export/public.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      # The site builder is standard-library only; no dependency install needed.
+      # It re-validates each export and aborts on credential-like content.
+      - name: Build site
+        run: python -m contact_bench.site.build leaderboard/exports/* --out _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
