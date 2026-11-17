@@ -200,6 +200,9 @@ class Runner:
         self.models: dict[str, ModelConfig] = {m.id: m for m in cfg.models}
         self._adapters = adapters or {}
         self.halted: str | None = None
+        # Fatal provider errors (billing, auth, invalid model) pause only the
+        # games that need that provider; other games keep running.
+        self.halted_providers: dict[str, str] = {}
         self.budget_stopped = False
 
         paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
@@ -375,9 +378,11 @@ class Runner:
                 if rec.get("observation_sha256") != oh:
                     raise EngineInvariantError(f"replay divergence at {did}: observation hash mismatch")
                 return rec["raw_output"]
+            seat_model = g.defender if spec.seat == "defender" else g.attacker
             if self.replay_only or self.halted or self.budget_stopped:
                 return Unavailable("not_recorded")
-            seat_model = g.defender if spec.seat == "defender" else g.attacker
+            if self.models[seat_model].provider in self.halted_providers:
+                return Unavailable("provider_halted")
             agent = agent_for(spec.seat)
             meta: dict | None = None
             try:
@@ -394,6 +399,12 @@ class Runner:
                         "cost_estimate": out.cost_estimate, "response": meta,
                     })
             except BudgetExhausted as e:
+                if e.provider:
+                    # A per-key cap pauses only games that need that provider.
+                    self.halted_providers.setdefault(e.provider, f"budget: {e}")
+                    self.store.append_event({"type": "provider_budget_stop", "provider": e.provider,
+                                             "reason": str(e), "decision_id": did})
+                    return Unavailable("budget")
                 self.budget_stopped = True
                 self.store.append_event({"type": "budget_stop", "reason": str(e), "decision_id": did})
                 return Unavailable("budget")
@@ -405,7 +416,10 @@ class Runner:
                     "attempts": [asdict(a) for a in getattr(e, "attempts", [])],
                 })
                 if e.fatal:
-                    self.halted = f"{e.category}: {sanitize(str(e))}"
+                    prov = self.models[seat_model].provider
+                    self.halted_providers.setdefault(prov, f"{e.category}: {sanitize(str(e))}")
+                    self.store.append_event({"type": "provider_halted", "provider": prov,
+                                             "reason": self.halted_providers[prov]})
                 return Unavailable(e.category)
             except ContextOverflowError as e:
                 self.halted = str(e)
@@ -491,10 +505,14 @@ class Runner:
         results: list[dict] = []
 
         async def one(g: GameSpec):
-            if self.halted or self.budget_stopped:
+            def blocked() -> bool:
+                provs = {self.models[g.attacker].provider, self.models[g.defender].provider}
+                return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers))
+
+            if blocked():
                 return
             async with sem:
-                if self.halted or self.budget_stopped:
+                if blocked():
                     return
                 rec = await self.play(g)
                 results.append(rec)
@@ -507,6 +525,7 @@ class Runner:
         status = self.status()
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
+        status["halted_providers"] = dict(self.halted_providers)
         status["budget_stopped"] = self.budget_stopped
         status["duplicate_decisions_ignored"] = len(self.store.duplicate_decisions)
         status["reference_scorer_stats"] = dict(self.scorer.stats)

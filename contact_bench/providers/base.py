@@ -160,7 +160,8 @@ class AttemptGate:
     async def before(self) -> Any:  # pragma: no cover - interface
         return None
 
-    async def after(self, token: Any, usage: "NormalizedUsage | None", ok: bool) -> None:  # pragma: no cover
+    async def after(self, token: Any, usage: "NormalizedUsage | None", ok: bool,
+                    possibly_billed: bool = True) -> None:  # pragma: no cover
         return None
 
 
@@ -344,7 +345,9 @@ class ProviderAdapter(ABC):
                 out = await fn()
             except InfrastructureError as e:
                 if gate is not None:
-                    await gate.after(token, None, False)
+                    # Only failures that may have generated output (e.g. a
+                    # timeout after sending) can have been billed.
+                    await gate.after(token, None, False, possibly_billed=e.possibly_billed)
                 attempts.append(
                     TransportAttempt(
                         i, t0, self._clock() - t0, "error", e.category, str(e), e.retry_after, e.possibly_billed

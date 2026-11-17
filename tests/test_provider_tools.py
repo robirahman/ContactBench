@@ -69,7 +69,7 @@ class CountingGate(AttemptGate):
         self.before_n += 1
         return self.before_n
 
-    async def after(self, token, usage, ok):  # type: ignore[override]
+    async def after(self, token, usage, ok, possibly_billed=True):  # type: ignore[override]
         self.afters.append((token, ok))
 
 

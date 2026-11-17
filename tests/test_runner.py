@@ -184,7 +184,7 @@ def test_budget_stop_then_resume(tmp_path):
     assert st2["pending_games"] == 0
 
 
-def test_fatal_error_halts_and_retries_bounded(tmp_path):
+def test_fatal_error_halts_provider_and_retries_bounded(tmp_path):
     c = _two_model_cfg()
     calls = {"n": 0}
 
@@ -195,7 +195,25 @@ def test_fatal_error_halts_and_retries_bounded(tmp_path):
     r = Runner(c, tmp_path / "run", adapters={"atk": Programmable(c.models[0], boom),
                                               "def": Programmable(c.models[1], boom)})
     st = asyncio.run(r.run())
-    assert st["halted"] and calls["n"] <= 2  # fatal: not retried
+    assert st["halted_providers"] and calls["n"] <= 2  # fatal: not retried, provider paused
+    assert st["pending_games"] == st["planned_games"]
+
+
+def test_fatal_billing_error_pauses_only_that_providers_games(tmp_path):
+    # three models: two scripted (always available) and one failing LLM
+    c = cfg(SCRIPTED + [{"id": "broke", "provider": "fake", "model": "f", "max_output_tokens": 9000}],
+            tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("402 credits depleted",
+                                                                    category="quota_exhausted", fatal=True))
+    st = asyncio.run(Runner(c, tmp_path / "run", adapters={"broke": bad}).run())
+    assert "fake" in st["halted_providers"]
+    rows = {r["game_id"]: r for r in RunStore(tmp_path / "run").game_rows()}
+    for gid, r in rows.items():
+        if "broke" not in gid:
+            assert r["status"] == "complete" and r["collection_status"] == "complete"  # unaffected
+        elif r["status"] == "complete":
+            # only a publicly proven win may complete without the paused provider
+            assert r["outcome_status"] == "solved" and r["collection_status"] == "incomplete"
 
 
 def test_duplicate_decision_ignored(tmp_path):

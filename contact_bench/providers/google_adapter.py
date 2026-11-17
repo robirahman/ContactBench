@@ -47,6 +47,9 @@ def map_google_error(e: BaseException, secrets: tuple[str, ...]) -> Infrastructu
             # RESOURCE_EXHAUSTED may be a per-minute rate limit or an exhausted
             # project quota; quotas can apply at project scope.  Retry boundedly.
             return mk("rate_limit", retryable=True)
+        if code == 402:
+            # Prepaid credits depleted: billing problem, halt the run.
+            return mk("quota_exhausted", fatal=True)
         if code in (401, 403):
             return mk("auth", fatal=True)
         if code == 404:

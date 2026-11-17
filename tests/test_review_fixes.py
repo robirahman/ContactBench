@@ -126,3 +126,23 @@ def test_per_provider_dollar_cap():
         await b.commit(mg, t, NormalizedUsage(input_tokens=500, output_tokens=0), 1)
         assert b.usd_spent_by_provider["google"] == pytest.approx(0.0005)
     asyncio.run(go())
+
+
+def test_unbilled_failures_not_charged_and_provider_cap_is_local():
+    pt = PriceTable(as_of="x", input_per_mtok=1.0, output_per_mtok=1.0)
+    m = ModelConfig(id="g", provider="google", model="m", max_output_tokens=1000, prices=pt)
+    b = Budget(None, None, max_usd_by_provider={"google": 1.0})
+    gate = BudgetGate(b, m, 1000)
+
+    async def go():
+        t = await gate.before()
+        await gate.after(t, None, False, possibly_billed=False)  # e.g. HTTP 402 before generation
+        assert b.usd_spent == 0 and b.requests_used == 1
+        t = await gate.before()
+        await gate.after(t, None, False, possibly_billed=True)  # e.g. timeout: conservatively charged
+        assert b.usd_spent == pytest.approx(0.002)
+        b.max_usd_by_provider["google"] = 0.0
+        with pytest.raises(BudgetExhausted) as ei:
+            await gate.before()
+        assert ei.value.provider == "google"
+    asyncio.run(go())
