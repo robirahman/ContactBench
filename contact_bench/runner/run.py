@@ -35,6 +35,11 @@ from .store import RunStore, atomic_write_json
 from .tasks import Task, generate_tasks, load_tasks, save_tasks
 
 
+# Fatal categories that affect every model of a provider (shared credentials
+# or billing); other fatal categories are scoped to the failing model.
+PROVIDER_WIDE_FATAL = {"auth", "quota_exhausted"}
+
+
 class RunHalted(RuntimeError):
     """Fatal infrastructure condition (auth, invalid model, exhausted quota...)."""
 
@@ -203,6 +208,9 @@ class Runner:
         # Fatal provider errors (billing, auth, invalid model) pause only the
         # games that need that provider; other games keep running.
         self.halted_providers: dict[str, str] = {}
+        # Model-specific configuration failures (invalid model id, unsupported
+        # parameter, bad request) pause only that model's games.
+        self.halted_models: dict[str, str] = {}
         self.budget_stopped = False
 
         paid = [m.id for m in cfg.models if m.provider in ("openai", "anthropic", "google")]
@@ -386,6 +394,8 @@ class Runner:
                 return Unavailable("not_recorded")
             if self.models[seat_model].provider in self.halted_providers:
                 return Unavailable("provider_halted")
+            if seat_model in self.halted_models:
+                return Unavailable("model_halted")
             agent = agent_for(spec.seat)
             meta: dict | None = None
             try:
@@ -419,10 +429,14 @@ class Runner:
                     "attempts": [asdict(a) for a in getattr(e, "attempts", [])],
                 })
                 if e.fatal:
-                    prov = self.models[seat_model].provider
-                    self.halted_providers.setdefault(prov, f"{e.category}: {sanitize(str(e))}")
-                    self.store.append_event({"type": "provider_halted", "provider": prov,
-                                             "reason": self.halted_providers[prov]})
+                    reason = f"{e.category}: {sanitize(str(e))}"
+                    if e.category in PROVIDER_WIDE_FATAL:
+                        prov = self.models[seat_model].provider
+                        self.halted_providers.setdefault(prov, reason)
+                        self.store.append_event({"type": "provider_halted", "provider": prov, "reason": reason})
+                    else:
+                        self.halted_models.setdefault(seat_model, reason)
+                        self.store.append_event({"type": "model_halted", "model_id": seat_model, "reason": reason})
                 return Unavailable(e.category)
             except ContextOverflowError as e:
                 self.halted = str(e)
@@ -510,7 +524,8 @@ class Runner:
         async def one(g: GameSpec):
             def blocked() -> bool:
                 provs = {self.models[g.attacker].provider, self.models[g.defender].provider}
-                return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers))
+                return bool(self.halted or self.budget_stopped or provs & set(self.halted_providers)
+                            or {g.attacker, g.defender} & set(self.halted_models))
 
             if blocked():
                 return
@@ -535,6 +550,12 @@ class Runner:
         status["budget"] = self.budget.snapshot()
         status["halted"] = self.halted
         status["halted_providers"] = dict(self.halted_providers)
+        status["halted_models"] = dict(self.halted_models)
+        # Fatal provider/model failures are failures of the command even though
+        # unaffected games kept running (budget pauses are not failures).
+        status["fatal_failures"] = sorted(
+            [f"provider:{p}" for p, r in self.halted_providers.items() if not r.startswith("budget:")]
+            + [f"model:{m}" for m in self.halted_models])
         status["budget_stopped"] = self.budget_stopped
         status["duplicate_decisions_ignored"] = len(self.store.duplicate_decisions)
         status["reference_scorer_stats"] = dict(self.scorer.stats)

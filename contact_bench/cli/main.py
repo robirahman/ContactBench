@@ -104,7 +104,7 @@ def cmd_run(args) -> int:
     status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
                   provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def _with_concurrency(cfg: BenchConfig, args) -> BenchConfig:
@@ -132,7 +132,7 @@ def cmd_resume(args) -> int:
     status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
                   provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def cmd_replay(args) -> int:
@@ -261,7 +261,7 @@ def cmd_smoke(args) -> int:
     status = _run(scfg, run_dir, live=True, max_requests=args.max_requests, max_usd=args.max_usd)
     _print(status)
     print(f"smoke run directory: {run_dir} (resume it to test recovery: contact-bench resume {run_dir.name} --live ...)")
-    return 0 if not status.get("halted") else 3
+    return 0 if not (status.get("halted") or status.get("fatal_failures")) else 3
 
 
 def cmd_audit(args) -> int:

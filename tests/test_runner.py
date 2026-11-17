@@ -293,3 +293,26 @@ def test_median_and_geometric_mean_costs():
     assert _median([1.0, 3.0, 100.0]) == 3.0 and _median([1.0, 3.0, 5.0, 7000.0]) == 4.0
     assert _median([]) is None
     assert abs(_geomean([1.0, 100.0]) - 10.0) < 1e-9
+
+
+def test_model_specific_fatal_error_pauses_only_that_model(tmp_path):
+    c = cfg(SCRIPTED + [{"id": "badmodel", "provider": "fake", "model": "f", "max_output_tokens": 9000},
+                        {"id": "goodmodel", "provider": "fake", "model": "g", "max_output_tokens": 9000}],
+            tasks=1, L=3, lexicon="lexicons/mechanics_fixture_manifest.json")
+    bad = Programmable(c.models[2], lambda req: InfrastructureError("404 no such model",
+                                                                   category="invalid_model", fatal=True))
+    st = asyncio.run(Runner(c, tmp_path / "run", adapters={"badmodel": bad}).run())
+    assert "badmodel" in st["halted_models"] and not st["halted_providers"]
+    assert st["fatal_failures"] == ["model:badmodel"]
+    rows = RunStore(tmp_path / "run").game_rows()
+    # the other model of the same provider kept playing
+    assert any(r["status"] == "complete" and "goodmodel" in r["game_id"] for r in rows)
+
+
+def test_cli_exit_code_reflects_fatal_failures(tmp_path, monkeypatch):
+    from contact_bench.cli import main as cli
+    monkeypatch.setattr(cli, "_run", lambda *a, **k: {"halted": None, "fatal_failures": ["provider:google"]})
+    monkeypatch.setattr(cli, "load_config", lambda p: cfg(SCRIPTED))
+    assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 3
+    monkeypatch.setattr(cli, "_run", lambda *a, **k: {"halted": None, "fatal_failures": []})
+    assert cli.main(["--runs-dir", str(tmp_path), "run", "x.yaml", "--offline"]) == 0
