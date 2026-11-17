@@ -240,3 +240,34 @@ def test_fork_context_overflow_recorded_unavailable(tmp_path, monkeypatch):
     assert not st["halted"] and st["complete_games"] == st["planned_games"]
     forks = RunStore(tmp_path / "r").forecasts()
     assert forks and all(f["status"] == "unavailable" and f["error"].startswith("context_overflow") for f in forks)
+
+
+def test_plan_counts_fork_calls():
+    from contact_bench.runner.run import load_lexicons
+    from contact_bench.runner.schedule import build_schedule, run_plan
+    from contact_bench.runner.tasks import generate_tasks
+
+    def plan(mode):
+        c = _cfg(mode)
+        vs, vc = load_lexicons(c)
+        tasks = generate_tasks(v_secret=vs, v_contact=vc, count=2, seed=1, split="development",
+                               initial_prefix_length=1, turn_limit=5, clue_max_characters=100)
+        return run_plan(c, tasks, build_schedule(c, tasks)[1])
+
+    off, fk = plan("off"), plan("fork")
+    L, games = 5, off["raw_games"]
+    assert off["maximum_paid_decisions"] == 4 * L * games
+    assert fk["maximum_paid_decisions"] == 7 * L * games and fk["forecast_fork_calls_included"]
+
+
+def test_resources_include_fork_calls(tmp_path):
+    asyncio.run(Runner(_cfg("fork"), tmp_path / "r").run())
+    rr = Runner(_cfg("fork"), tmp_path / "r", replay_only=True)
+    rr.prepare()
+    res = analyze(tmp_path / "r", [asyncio.run(rr.play(g)) for g in rr.games], resamples=0, seed=1,
+                  penalty_scale=2.5, elo_center=1500)
+    n_forks = len(RunStore(tmp_path / "r").forecasts())
+    fork_reqs = sum(v["requests"] for m in res["resources"].values() for s, v in m.items() if s.endswith("/fork"))
+    assert n_forks and fork_reqs == n_forks
+    assert all(v.get("input_tokens", 0) > 0 for m in res["resources"].values() for s, v in m.items()
+               if s.endswith("/fork"))

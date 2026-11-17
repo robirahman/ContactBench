@@ -482,6 +482,15 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rp = run_dir / "requests.jsonl"
     if rp.exists():
         reqs = [json.loads(l) for l in rp.read_text().splitlines() if l.strip()]
+    # Forecast-fork calls are billed and budgeted like gameplay calls; account
+    # for them under a separate role key ("<seat>/fork").
+    if (run_dir / "forecasts.jsonl").exists():
+        from ..runner.store import RunStore
+
+        for f in RunStore(run_dir).forecasts():
+            reqs.append({"model_id": f["model_id"], "seat": f"{f['seat']}/fork",
+                         "status": "ok" if f["status"] == "ok" else "error",
+                         "response": f.get("response"), "cost_estimate": f.get("cost_estimate")})
     result["resources"] = _resources(reqs)
     from .calibration import forecast_calibration
 
