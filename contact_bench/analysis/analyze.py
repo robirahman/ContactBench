@@ -462,8 +462,11 @@ def _seats(game: dict) -> tuple[str, str, str]:
 
 
 def role_fixture_data(rows: list[GameRow], fx: list[dict], *, with_task: bool = False) -> list:
-    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture
-    (prefixed by the task id with ``with_task``)."""
+    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture.
+
+    With ``with_task`` each item is prefixed by its bootstrap cluster key: the
+    secret, so the same secret played in several (compatible) runs forms one
+    cluster, as do a fixture and its rematches."""
     by_id = {r.game_id: r for r in rows}
     out = []
     for f in fx:
@@ -473,7 +476,7 @@ def role_fixture_data(rows: list[GameRow], fx: list[dict], *, with_task: bool = 
         if ab is None or ba is None:
             continue
         item = (_seats(ab.rec["game"]), _seats(ba.rec["game"]), f["points_a"])
-        out.append((f["task_id"], item) if with_task else item)
+        out.append((ab.summary["secret"], item) if with_task else item)
     return out
 
 
@@ -482,13 +485,51 @@ def compact_record(rec: dict) -> dict:
     return {k: rec.get(k) for k in ("game", "summary", "score", "run_status")}
 
 
-def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool) -> list[tuple[str, tuple]]:
-    """(task cluster, role-fit fixture) for every complete fixture of earlier runs."""
+class PriorRunError(ValueError):
+    pass
+
+
+def check_prior_run(current_run_dir: Path, prior_dir: Path) -> None:
+    """Reject a prior run whose condition differs from the team run's
+    (protocol apart from partner disclosure, lexicons, scoring, draw rules,
+    base prompts, and the profile of every shared model id)."""
+    from ..prompts.templates import prompt_hash
+    from .combined import CONDITION_SECTIONS, TOURNAMENT_RULES, _normalized_config
+
+    cur, pri = _normalized_config(Path(current_run_dir)), _normalized_config(Path(prior_dir))
+    cm = json.loads((Path(current_run_dir) / "run.json").read_text())
+    pm = json.loads((Path(prior_dir) / "run.json").read_text())
+    name = Path(prior_dir).name
+    for sec in CONDITION_SECTIONS:
+        a, b = dict(cur[sec]), dict(pri[sec])
+        if sec == "protocol":
+            a.pop("partner_disclosure", None), b.pop("partner_disclosure", None)
+        if a != b:
+            raise PriorRunError(f"prior run {name}: section '{sec}' differs from the team run")
+    for k in TOURNAMENT_RULES:
+        if cur["tournament"][k] != pri["tournament"][k]:
+            raise PriorRunError(f"prior run {name}: tournament rule '{k}' differs")
+    if pm.get("prompt_hash") != prompt_hash("blind"):
+        raise PriorRunError(f"prior run {name}: prompt templates differ")
+    for key in ("secret_lexicon", "contact_lexicon"):
+        if (cm.get(key) or {}).get("sha256") != (pm.get(key) or {}).get("sha256"):
+            raise PriorRunError(f"prior run {name}: {key} differs")
+    mine = {m["id"]: m for m in cur["models"]}
+    for m in pri["models"]:
+        if m["id"] in mine and mine[m["id"]] != m:
+            raise PriorRunError(f"prior run {name}: model '{m['id']}' is configured differently")
+
+
+def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool,
+                   current_run_dir: Path | None = None) -> list[tuple[str, tuple]]:
+    """(secret cluster, role-fit fixture) for every complete fixture of earlier runs."""
     from ..runner.store import RunStore
 
     out = []
     for name in names:
         d = Path(runs_root) / name
+        if current_run_dir is not None:
+            check_prior_run(current_run_dir, d)
         sched = json.loads((d / "schedule.json").read_text())
         store = RunStore(d)
         recs = []
@@ -497,17 +538,22 @@ def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool
             if r and r.get("run_status") == "complete":
                 recs.append(compact_record(r))
         fx = fixture_results(load_rows(recs), sched["fixtures"], no_progress_draws=no_progress_draws)
-        out.extend((f"{name}/{t}", leg) for t, leg in role_fixture_data(load_rows(recs), fx, with_task=True))
+        out.extend(role_fixture_data(load_rows(recs), fx, with_task=True))
     return out
 
 
+def identified_defenders(legs: list[tuple]) -> set[str]:
+    """Models whose defender component enters the likelihood: only fixtures
+    whose legs face different defenders carry d terms."""
+    return {m for l1, l2, _ in legs if l1[2] != l2[2] for m in (l1[2], l2[2])}
+
+
 def defender_identified(legs: list[tuple]) -> bool:
-    """Defender components enter the likelihood only via legs with different defenders."""
-    return any(l1[2] != l2[2] for l1, l2, _ in legs)
+    return bool(identified_defenders(legs))
 
 
 def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resamples: int, seed: int,
-                   penalty_scale: float, elo_center: float, drop: tuple = ()) -> dict:
+                   penalty_scale: float, elo_center: float, drop_for: dict | None = None) -> dict:
     from .rating import ROLES, fit_role_ratings
 
     tasks = sorted(legs_by_task)
@@ -526,7 +572,7 @@ def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resample
                 samples[m][r].append(scale * fit.theta[m][r])
     return {"resamples": resamples, "seed": seed, "task_clusters": len(tasks), "fit_failures": failures,
             "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()
-                                 if k not in drop} for m, d in samples.items()}}
+                                 if k not in (drop_for or {}).get(m, ())} for m, d in samples.items()}}
 
 
 def team_diagnostics(rows: list[GameRow]) -> dict:
@@ -606,7 +652,8 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         if prior:
             # The homogeneous fixtures used for defender selection also identify
             # defender components; include them (as separate task clusters).
-            tagged += prior_run_legs(Path(run_dir).parent, prior, no_progress_draws=draw_rule)
+            tagged += prior_run_legs(Path(run_dir).parent, prior, no_progress_draws=draw_rule,
+                                     current_run_dir=Path(run_dir))
         legs = [leg for _, leg in tagged]
         by_task: dict[str, list] = defaultdict(list)
         for t, leg in tagged:
@@ -614,20 +661,24 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         fit_models = sorted(set(model_ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
         rfit = fit_role_ratings(fit_models, legs, penalty_scale=penalty_scale, elo_center=elo_center)
         rjson = rfit.to_json()
-        ident = defender_identified(legs)
-        if not ident:
-            # Every fixture faced one defender in both legs: d cancels, so the
-            # defender components (and composites) are only the prior.
-            rjson["components_elo_points"] = {m: {**c, "d": None} for m, c in rjson["components_elo_points"].items()}
-            rjson["elo"] = {m: None for m in rjson["elo"]}
-            rjson["composite_logit"] = {m: None for m in rjson["composite_logit"]}
+        known_d = identified_defenders(legs)
+        ident = bool(known_d)
+        # A model whose defender component never enters the likelihood (it only
+        # defended fixtures with the same defender in both legs) has d = prior:
+        # omit its defender component and composite.
+        unknown = [m for m in fit_models if m not in known_d]
+        for m in unknown:
+            rjson["components_elo_points"][m] = {**rjson["components_elo_points"][m], "d": None}
+            rjson["elo"][m] = None
+            rjson["composite_logit"][m] = None
         team_result = {
             "role_rating": rjson,
             "defender_components_identified": ident,
+            "defender_components_omitted": unknown,
             "prior_runs_in_role_fit": prior,
             "role_bootstrap": role_bootstrap(fit_models, by_task, resamples=resamples, seed=seed,
                                              penalty_scale=penalty_scale, elo_center=elo_center,
-                                             drop=() if ident else ("elo", "d")) if legs else None,
+                                             drop_for={m: ("elo", "d") for m in unknown}) if legs else None,
             **team_diagnostics(rows),
             "partner_disclosure": manifest["config"]["protocol"].get("partner_disclosure", "blind"),
             "identifiability_note": "Role fixtures (A+B vs B+A against one defender) identify clue-giver vs "
@@ -851,9 +902,10 @@ def render_teams(t: dict) -> str:
         elo = "—" if rr["elo"][m] is None else f"{rr['elo'][m]:.0f}"
         L.append(f"| {m} | {elo} | {ci(m, 'elo')} | {sg(th['g1'])} {ci(m, 'g1')} | "
                  f"{sg(th['g2'])} {ci(m, 'g2')} | {sg(th['d'])} {ci(m, 'd')} |")
-    if not t.get("defender_components_identified", True):
-        L.append("\nDefender components and composites are not identified (every fixture faced one defender in both "
-                 "legs and no homogeneous prior runs were included), so they are omitted.")
+    if t.get("defender_components_omitted"):
+        L.append("\nDefender components and composites are omitted for " + ", ".join(t["defender_components_omitted"])
+                 + ": no fixture in the fit had those models defending only one of its two legs, so their defender "
+                 "component would be the prior.")
     L.append("\n" + t["identifiability_note"] + "\n")
     L.append("### Cross-play matrix (median cost, turns; rows = Guesser 1, columns = Guesser 2)\n")
     mat = t["cross_play_matrix"]

@@ -410,6 +410,10 @@ class BenchConfig(_Strict):
                     raise ValueError("defender_pool must list configured model ids")
                 if not (set(pool) - set(p)):
                     raise ValueError(f"no eligible defender for team pair {p}")
+            modes = {m.offense_mode for m in self.models if any(m.id in p for p in t.pairs)}
+            if len(modes) > 1:
+                # Role-swapped legs must run under one offense condition.
+                raise ValueError("all team models must share one offense_mode")
         else:
             if self.tournament.teams is not None:
                 raise ValueError("tournament.teams is only valid with schedule 'teams'")

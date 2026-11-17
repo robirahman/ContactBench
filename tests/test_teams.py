@@ -207,3 +207,33 @@ def test_defender_identified_only_with_different_defenders():
     from contact_bench.analysis.analyze import defender_identified
     assert not defender_identified([(("a", "b", "d"), ("b", "a", "d"), 1.0)])
     assert defender_identified([(("a", "a", "b"), ("b", "b", "a"), 1.0)])
+
+
+def test_identified_defenders_per_model():
+    from contact_bench.analysis.analyze import identified_defenders
+    legs = [(("a", "a", "b"), ("b", "b", "a"), 1.0), (("a", "c", "d"), ("c", "a", "d"), 0.0)]
+    assert identified_defenders(legs) == {"a", "b"}
+
+
+def test_team_models_must_share_offense_mode():
+    c = team_cfg().model_dump(mode="json")
+    c["models"][0]["offense_mode"] = "direct_only"
+    with pytest.raises(ValueError):
+        BenchConfig.model_validate(c)
+
+
+def test_prior_runs_must_match_condition(tmp_path):
+    from contact_bench.analysis.analyze import PriorRunError, check_prior_run
+    homo = BenchConfig.model_validate({**team_cfg().model_dump(mode="json"),
+                                       "tournament": {"schedule": "balanced_round_robin"}})
+    seen = []
+    asyncio.run(Runner(homo, tmp_path / "prior", adapters=_adapters(homo, seen)).run())
+    c = team_cfg(tasks=1, rounds=1, pairs=(("x", "y"),), prior_runs=["prior"])
+    st = asyncio.run(Runner(c, tmp_path / "team", adapters=_adapters(c, seen)).run())
+    assert st["pending_games"] == 0
+    check_prior_run(tmp_path / "team", tmp_path / "prior")  # compatible
+    other = BenchConfig.model_validate({**homo.model_dump(mode="json"),
+                                        "protocol": {**homo.model_dump(mode="json")["protocol"], "turn_limit": 5}})
+    asyncio.run(Runner(other, tmp_path / "prior5", adapters=_adapters(other, seen)).run())
+    with pytest.raises(PriorRunError):
+        check_prior_run(tmp_path / "team", tmp_path / "prior5")

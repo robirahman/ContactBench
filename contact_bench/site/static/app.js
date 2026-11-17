@@ -254,7 +254,7 @@
       table.appendChild(tr);
     });
     var gaps = t.self_vs_cross_play || {}, parts = ["Partner disclosure: " + t.partner_disclosure + "."];
-    if (t.defender_components_identified === false) parts.push("Defender components and composites are not identified in this run (each fixture faced one defender in both legs), so they are omitted.");
+    if (t.defender_components_omitted && t.defender_components_omitted.length) parts.push("Defender components and composites are omitted for " + t.defender_components_omitted.join(", ") + " (no fitted fixture had them defending only one leg).");
     Object.keys(gaps).sort().forEach(function (m) {
       var g = gaps[m];
       parts.push(m + ": median cost " + num(g.self_play_median_cost, 1) + " with itself (n=" + g.self_play_games +

@@ -704,7 +704,8 @@ class Runner:
         rows = load_rows(recs)
         legs = role_fixture_data(rows, fixture_results(rows, [asdict(f) for f in self.fixtures],
                                                        no_progress_draws=draws))
-        legs += [leg for _, leg in prior_run_legs(self.run_dir.parent, t.prior_runs, no_progress_draws=draws)]
+        legs += [leg for _, leg in prior_run_legs(self.run_dir.parent, t.prior_runs, no_progress_draws=draws,
+                                                          current_run_dir=self.run_dir)]
         faced: Counter = Counter()
         games = [asdict(g) for g in self.games]
         for name in t.prior_runs:
