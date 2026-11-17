@@ -115,3 +115,34 @@ def test_unknown_files_and_bad_manifest_rejected(tmp_path):
 def test_static_assets_exist():
     for name in ("index.html", "app.js", "style.css"):
         assert (STATIC_DIR / name).exists()
+
+
+def test_highlights_page_is_built_and_escapes_data(tmp_path):
+    import json as _json
+    from contact_bench.site.build import SiteBuildError, build_site
+    exp = make_export(tmp_path / "exp", run_id="run-hl")
+    evil = "<script>alert(1)</script><img src=x onerror=alert(2)>"
+    hl = {"schema": "contactbench-highlights-1", "title": "t", "intro": evil, "games": [{
+        "id": "g1", "title": evil, "blurb": evil, "tags": [evil], "run_id": "r", "game_id": "g",
+        "attacker": "a", "defender": "b", "secret": "word", "initial_prefix": "", "final_prefix": "",
+        "outcome": "capped", "terminal_reason": "turn_cap", "turns_used": 1, "turn_limit": 1, "contacts": 0,
+        "prevented": 0, "rematch_level": 0,
+        "condition": {"dictionary_access": "lookup_tools", "lexicon": "x", "lexicon_words": 1, "clue_max_characters": 100},
+        "turns": [{"turn": 1, "prefix_before": "", "prefix_after": "", "kind": "clue", "clue": evil, "intended": "a",
+                   "receiver": "b", "block_words": [], "block_words_total": 0, "block_ranges": [], "block_size": 0,
+                   "opened": [], "result": "no_prefix", "contact": False, "prevented": False, "choice": None}]}]}
+    p = tmp_path / "hl.json"
+    p.write_text(_json.dumps(hl))
+    out = build_site([exp], tmp_path / "site", highlights=p)
+    page = (out / "highlights" / "index.html").read_text()
+    js = (out / "highlights" / "highlights.js").read_text()
+    assert evil not in page and "<script>alert" not in page
+    for bad in (".innerHTML", ".outerHTML", "insertAdjacentHTML(", "document.write("):
+        assert bad not in js
+    assert (out / "highlights" / "highlights.json").exists()
+    assert 'href="highlights/"' in (out / "index.html").read_text()
+    bad = tmp_path / "bad.json"
+    bad.write_text("{}")
+    import pytest
+    with pytest.raises(SiteBuildError):
+        build_site([exp], tmp_path / "site2", highlights=bad)

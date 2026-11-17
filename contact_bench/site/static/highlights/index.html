@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+<title>ContactBench Highlights</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="highlights.css">
+</head>
+<body>
+<header>
+  <h1>ContactBench highlights</h1>
+  <p class="sub">Selected games between AI models playing the word game <em>Contact</em>.</p>
+  <nav>
+    <a href="../">← Leaderboard</a>
+    <span id="toc"></span>
+  </nav>
+</header>
+<main>
+  <section>
+    <p id="intro" class="lede"></p>
+    <dl class="legend">
+      <dt><span class="pill ok">letter</span></dt><dd>a contact got through and revealed the next letter</dd>
+      <dt><span class="pill win">win</span></dt><dd>the secret was said in public, or a contact completed it</dd>
+      <dt><span class="pill blocked">blocked</span></dt><dd>both guessers matched but the Defender had blocked the word</dd>
+    </dl>
+  </section>
+  <div id="games"><p class="placeholder">Loading…</p></div>
+</main>
+<footer><p class="note">Transcripts are generated from the referee logs. Guesser words are shown from the post-game audit; during play the Defender saw only the clue and opened guesses.</p></footer>
+<script src="highlights.js"></script>
+</body>
+</html>

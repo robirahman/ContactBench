@@ -1,0 +1,30 @@
+.lede { max-width: 900px; }
+#toc a { margin-right: 10px; }
+.legend { display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; font-size: 0.92em; color: var(--muted); }
+.legend dd { margin: 0; }
+.game { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin: 24px 0; }
+.game h2 { margin: 0 0 4px; font-size: 1.3em; }
+.game .meta { color: var(--muted); font-size: 0.92em; margin: 0 0 10px; }
+.game .blurb { max-width: 900px; margin: 8px 0 12px; }
+.tags span { display: inline-block; font-size: 0.75em; border: 1px solid var(--line); border-radius: 10px; padding: 1px 8px; margin: 0 4px 4px 0; color: var(--muted); }
+.secret-row { display: flex; align-items: center; gap: 10px; margin: 6px 0 12px; }
+.secret { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700; }
+.turns td { white-space: normal; }
+.turns td.n, .turns td.prefix { white-space: nowrap; }
+.turns td.prefix, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.clue { font-style: italic; }
+.words { color: var(--muted); font-size: 0.92em; }
+.blockedw { text-decoration: line-through; color: var(--muted); }
+.pill { display: inline-block; font-size: 0.75em; font-weight: 700; border-radius: 10px; padding: 1px 8px; }
+.pill.ok { background: #d9f2df; color: #145a2a; }
+.pill.win { background: #2a5db0; color: #fff; }
+.pill.blocked { background: var(--audit-bg); color: var(--audit-fg); }
+.pill.miss { background: var(--line); color: var(--muted); }
+tr.row-ok { background: rgba(60, 170, 90, 0.10); }
+tr.row-win { background: rgba(42, 93, 176, 0.14); }
+@media (prefers-color-scheme: dark) {
+  .pill.ok { background: #1f4a2c; color: #bff0cc; }
+}
+@media (max-width: 700px) {
+  .turns th.hide-sm, .turns td.hide-sm { display: none; }
+}

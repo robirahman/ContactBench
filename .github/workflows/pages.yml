@@ -33,7 +33,7 @@ jobs:
       # The site builder is standard-library only; no dependency install needed.
       # It re-validates each export and aborts on credential-like content.
       - name: Build site
-        run: python -m contact_bench.site.build leaderboard/exports/* --out _site
+        run: python -m contact_bench.site.build leaderboard/exports/* --out _site --highlights leaderboard/highlights/highlights.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

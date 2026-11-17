@@ -1,0 +1,93 @@
+# Curated highlights for the static site (robirahman.com/ContactBench/highlights/).
+# Regenerate the data file with:
+#   python -m contact_bench.site.highlights leaderboard/highlights/selection.yaml RUNS_DIR leaderboard/highlights/highlights.json
+# Each secret appears at most once.
+title: ContactBench highlights
+intro: >-
+  Selected games from the ContactBench runs. In every game two instances of one model (Guesser 1 and
+  Guesser 2) try to reach a secret word that a third model, the Defender, knows. Guesser 1 gives a public
+  clue for a privately chosen word; if both guessers name the same word and the Defender has not blocked
+  it, the next letter of the secret is revealed. Saying the secret in public wins. These games use the
+  172,608-word ENABLE dictionary with an empty starting prefix, dictionary lookup tools, 100-character
+  clues and a 30-turn cap (20 in the earlier run marked below). Words in grey were blocked; the Defender
+  may block single words or whole alphabetical ranges. Guesser words are shown from the post-game referee
+  audit: during play, the Defender saw only the clue and the opened guesses.
+games:
+  - id: shifters-encodings
+    run: lb-latest-small-10
+    game_id: dev41-0009-r0-gpt_6_luna-atk-gemini_4_hydrogen
+    title: Every code cracked
+    tags: [small tier, encodings, defense]
+    blurb: >-
+      GPT-6 Luna earns the first letter on turn 1 with an acrostic ("Old Woods Whisper" = owl), then
+      throws every encoding it can think of at Gemini 4 Hydrogen: acrostics, a reversed acrostic ("Start
+      at the end"), last letters of each word, spelled-out letter names ("ess, ay, el, ess, eye, eff,
+      why"), "index 2 in each token". Its teammate decodes every one, and so does Hydrogen, which blocks
+      exactly the intended word, usually with a one-word blocklist. Luna earns nothing more in 29 turns.
+
+  - id: effectuated-palindrome
+    run: lb-latest-small-10
+    game_id: dev41-0006-r0-gemini_4_hydrogen-atk-gpt_6_luna
+    title: The palindrome blind spot
+    tags: [small tier, defense lapse]
+    blurb: >-
+      GPT-6 Luna is an excellent defender: it blocks Hydrogen's quixotic, labyrinth and mycology clues and
+      29 contacts in all. But on turn 8 it returns an empty blocklist for "a word that reads the same
+      forwards and backwards", and Hydrogen earns the first letter. Luna made exactly the same mistake
+      on the same clue against Hydrogen on wert, so one blind spot decided two of their fixtures.
+
+  - id: wert-cross-tier
+    run: lb-cross-tier-3
+    game_id: dev41-0000-r0-gpt_6_luna-atk-claude_sonnet_5_5
+    title: A small model beats a mid-tier defender
+    tags: [cross tier, final-letter win, decoys]
+    blurb: >-
+      Small-tier GPT-6 Luna attacks mid-tier Claude Sonnet 5.5. Luna pads its clues with long lists of
+      real w-words before the real clue ("wallop wallpaper walnut walrus; cricket's three stumps and two
+      bails"), and every listed word is publicly used up. Sonnet blocks most attempts, sometimes with
+      a range such as waltz-waltzing, but lets otter, wicket and weathercock through. With "wer" showing,
+      the matched guess werwolf reveals the final letter and completes the secret on turn 26. No final
+      guess is needed.
+
+  - id: unsealing-acrostics
+    run: lb-latest-small-1
+    game_id: dev41-0003-r0-gpt_6_luna-atk-claude_haiku_5_5
+    title: Acrostics against a weaker defender
+    tags: [small tier, encodings, earlier run (20-turn cap)]
+    blurb: >-
+      Against Claude Haiku 5.5, Luna switches to acrostics once its plain clues are blocked: "Take word
+      heads: Usually Llamas Need Apples" gives ulna and the prefix "un". Haiku learns the trick and blocks
+      the next acrostics, plus a 3,152-word range, but Luna mixes encodings and word lists to reach "unse"
+      and then simply describes the secret: "Opening a previously sealed envelope".
+
+  - id: collard-giveaway
+    run: lb-latest-small-10
+    game_id: dev41-0002-r0-gpt_6_luna-atk-claude_haiku_5_5
+    title: Blocking 172,604 words
+    tags: [small tier, defense blunder]
+    blurb: >-
+      On turn 2 Claude Haiku 5.5 tries to stop a contact by blocking two alphabetical ranges, aah-collar
+      and collards-zyzzyva: 172,604 words, the whole dictionary except a handful. Every blocked word is
+      publicly eliminated, so Luna reads the answer off the gap and guesses collard on turn 3.
+
+  - id: indurates-rematch
+    run: lb-latest-small-10
+    game_id: dev41-0005-r0-gemini_4_hydrogen-atk-gpt_6_luna-rematch~rematch
+    title: Two letters of help, still nothing
+    tags: [small tier, recursive rematch, defense]
+    blurb: >-
+      When neither attacker earns a letter in either leg, the fixture is a draw and the two models rematch
+      on the same secret with one more letter revealed. This is the second rematch between Hydrogen and
+      Luna on indurates, starting from "in". Hydrogen gives clean one-line clues (indigo, insect, infant);
+      Luna blocks all 30, often adding inflections and synonyms. Zero contacts.
+
+  - id: arbores-mid-tier
+    run: lb-mid-tier-10
+    game_id: dev41-0004-r0-gpt_6_1_terra-atk-gemini_4_argon
+    title: Mid-tier stalemate
+    tags: [mid tier, filler words, defense]
+    blurb: >-
+      GPT-6.1 Terra pads every clue with dozens of common filler words after a short definition ("Feline
+      pet. the and for are but not you all..."), which spends the clue budget on words that are not
+      candidates. Gemini 4 Argon ignores the noise and blocks the defined word together with its
+      synonyms and inflections (cat, cats, kitten, kitty). 27 contacts prevented, no letters.

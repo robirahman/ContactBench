@@ -25,7 +25,7 @@ contact-bench = "contact_bench.cli.main:main"
 include = ["contact_bench*"]
 
 [tool.setuptools.package-data]
-contact_bench = ["site/static/*"]
+contact_bench = ["site/static/*", "site/static/highlights/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

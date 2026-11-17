@@ -46,7 +46,17 @@ def _validate_export(d: Path) -> dict:
     return manifest
 
 
-def build_site(export_dirs: list[Path], out_dir: Path) -> Path:
+def _add_highlights(out_dir: Path, highlights: Path) -> None:
+    """Copy the highlights page and its curated data (see site/highlights.py)."""
+    data = json.loads(Path(highlights).read_text())
+    if data.get("schema") != "contactbench-highlights-1" or not isinstance(data.get("games"), list):
+        raise SiteBuildError(f"{highlights}: not a ContactBench highlights file")
+    dest = out_dir / "highlights"
+    shutil.copytree(STATIC_DIR / "highlights", dest)
+    shutil.copy(highlights, dest / "highlights.json")
+
+
+def build_site(export_dirs: list[Path], out_dir: Path, highlights: Path | None = None) -> Path:
     """Build the static site into ``out_dir`` and return it."""
     export_dirs = [Path(d) for d in export_dirs]
     out_dir = Path(out_dir)
@@ -86,6 +96,8 @@ def build_site(export_dirs: list[Path], out_dir: Path) -> Path:
     shutil.copy(STATIC_DIR / "index.html", out_dir / "index.html")
     for name in ("app.js", "style.css"):
         shutil.copy(STATIC_DIR / name, out_dir / "assets" / name)
+    if highlights is not None:
+        _add_highlights(out_dir, highlights)
     hits = scan_for_secrets(out_dir)
     if hits:
         shutil.rmtree(out_dir)
@@ -100,8 +112,10 @@ def main(argv: list[str] | None = None) -> int:
     p = argparse.ArgumentParser(description="Build the ContactBench static leaderboard site")
     p.add_argument("export_dirs", nargs="+")
     p.add_argument("--out", default="site_build")
+    p.add_argument("--highlights", help="curated highlights JSON (contact_bench.site.highlights)")
     a = p.parse_args(argv)
-    print(build_site([Path(x) for x in a.export_dirs], Path(a.out)))
+    print(build_site([Path(x) for x in a.export_dirs], Path(a.out),
+                     Path(a.highlights) if a.highlights else None))
     return 0
 
 
