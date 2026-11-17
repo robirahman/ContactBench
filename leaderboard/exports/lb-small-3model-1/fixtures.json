@@ -1,0 +1,176 @@
+[
+ {
+  "fixture_id": "dev41-0000-r0-claude_haiku_5_5~claude_haiku_4_5",
+  "task_id": "dev41-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "claude_haiku_4_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 7,
+   "denominator": 1,
+   "value": 7.0
+  },
+  "cost_ba": {
+   "numerator": 1742941,
+   "denominator": 12224,
+   "value": 142.5835242146597
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.33789464958382365,
+  "numerically_close": false
+ },
+ {
+  "fixture_id": "dev41-0001-r0-claude_haiku_5_5~claude_haiku_4_5",
+  "task_id": "dev41-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "claude_haiku_4_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 5,
+   "denominator": 1,
+   "value": 5.0
+  },
+  "cost_ba": {
+   "numerator": 117227103,
+   "denominator": 153344,
+   "value": 764.4714041631886
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.6329225482029794,
+  "numerically_close": false
+ },
+ {
+  "fixture_id": "dev41-0002-r0-claude_haiku_5_5~claude_haiku_4_5",
+  "task_id": "dev41-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "claude_haiku_4_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 8,
+   "denominator": 1,
+   "value": 8.0
+  },
+  "cost_ba": {
+   "numerator": 3400853483,
+   "denominator": 492352,
+   "value": 6907.361974766021
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 1.625156903668654,
+  "numerically_close": false
+ },
+ {
+  "fixture_id": "dev41-0000-r0-claude_haiku_5_5~gemini_3_8_flash",
+  "task_id": "dev41-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": false,
+  "cost_ab": {
+   "numerator": 6302199,
+   "denominator": 41216,
+   "value": 152.9066139363354
+  },
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null
+ },
+ {
+  "fixture_id": "dev41-0001-r0-claude_haiku_5_5~gemini_3_8_flash",
+  "task_id": "dev41-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": false,
+  "cost_ab": {
+   "numerator": 349501051,
+   "denominator": 458752,
+   "value": 761.8518306187221
+  },
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null
+ },
+ {
+  "fixture_id": "dev41-0002-r0-claude_haiku_5_5~gemini_3_8_flash",
+  "task_id": "dev41-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": false,
+  "cost_ab": null,
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null
+ },
+ {
+  "fixture_id": "dev41-0000-r0-claude_haiku_4_5~gemini_3_8_flash",
+  "task_id": "dev41-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_4_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 425234105,
+   "denominator": 62272,
+   "value": 6828.656619347379
+  },
+  "cost_ba": {
+   "numerator": 5,
+   "denominator": 1,
+   "value": 5.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 4.071194007640951,
+  "numerically_close": false
+ },
+ {
+  "fixture_id": "dev41-0001-r0-claude_haiku_4_5~gemini_3_8_flash",
+  "task_id": "dev41-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_4_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": false,
+  "cost_ab": {
+   "numerator": 26745628057,
+   "denominator": 3888128,
+   "value": 6878.793099661328
+  },
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null
+ },
+ {
+  "fixture_id": "dev41-0002-r0-claude_haiku_4_5~gemini_3_8_flash",
+  "task_id": "dev41-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_4_5",
+  "model_b": "gemini_3_8_flash",
+  "complete": false,
+  "cost_ab": {
+   "numerator": 10212222221,
+   "denominator": 1478080,
+   "value": 6909.113323365447
+  },
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null
+ }
+]

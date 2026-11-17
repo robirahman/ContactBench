@@ -1,0 +1,537 @@
+{
+ "game_id": "dev41-0001-r0-gemini_3_8_flash-atk-claude_haiku_4_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_4_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Element with atomic number eight essential for human respiration",
+   "blocklist": [
+    "air",
+    "breathing",
+    "oxygen",
+    "respiration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Green pigment found in plants that absorbs light for photosynthesis",
+   "blocklist": [
+    "chlorophyll",
+    "green",
+    "photosynthesis",
+    "pigment",
+    "plants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Handheld collapsible device used as protection against precipitation",
+   "blocklist": [
+    "parasol",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Medical instrument used by doctors to listen to sounds inside the body",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Australian marsupial known for hopping on large hind legs and carrying young in a pouch",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "oxygen",
+    "clue": "Element with atomic number eight essential for human respiration",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "chlorophyll",
+    "clue": "Green pigment found in plants that absorbs light for photosynthesis",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "umbrella",
+    "clue": "Handheld collapsible device used as protection against precipitation",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "stethoscope",
+    "clue": "Medical instrument used by doctors to listen to sounds inside the body",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "kangaroo",
+    "clue": "Australian marsupial known for hopping on large hind legs and carrying young in a pouch",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "dreamt",
+    "clue": "The common English verb form that uniquely ends with the letters mt",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "oxygen",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "chlorophyll",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "umbrella",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "stethoscope",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "kangaroo",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "air",
+     "breathing",
+     "oxygen",
+     "respiration"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "chlorophyll",
+     "green",
+     "photosynthesis",
+     "pigment",
+     "plants"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "parasol",
+     "umbrella"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "stethoscope"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kangaroo",
+     "kangaroos"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "oxygen",
+   "w2": "oxygen",
+   "clue": "Element with atomic number eight essential for human respiration",
+   "mentions": [
+    "atomic",
+    "eight",
+    "element",
+    "essential",
+    "for",
+    "human",
+    "number",
+    "respiration",
+    "with"
+   ],
+   "blocklist": [
+    "air",
+    "breathing",
+    "oxygen",
+    "respiration"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "air",
+    "atomic",
+    "breathing",
+    "eight",
+    "element",
+    "essential",
+    "for",
+    "human",
+    "number",
+    "oxygen",
+    "respiration",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172596,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 1,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "chlorophyll",
+   "w2": "chlorophyll",
+   "clue": "Green pigment found in plants that absorbs light for photosynthesis",
+   "mentions": [
+    "absorbs",
+    "for",
+    "found",
+    "green",
+    "light",
+    "photosynthesis",
+    "pigment",
+    "plants",
+    "that"
+   ],
+   "blocklist": [
+    "chlorophyll",
+    "green",
+    "photosynthesis",
+    "pigment",
+    "plants"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "absorbs",
+    "chlorophyll",
+    "for",
+    "found",
+    "green",
+    "light",
+    "photosynthesis",
+    "pigment",
+    "plants",
+    "that"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172596,
+   "secret_candidates_after": 172587,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 4,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "umbrella",
+   "w2": "umbrella",
+   "clue": "Handheld collapsible device used as protection against precipitation",
+   "mentions": [
+    "against",
+    "collapsible",
+    "device",
+    "handheld",
+    "precipitation",
+    "protection",
+    "used"
+   ],
+   "blocklist": [
+    "parasol",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "against",
+    "collapsible",
+    "device",
+    "handheld",
+    "parasol",
+    "precipitation",
+    "protection",
+    "umbrella",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172587,
+   "secret_candidates_after": 172578,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "stethoscope",
+   "w2": "stethoscope",
+   "clue": "Medical instrument used by doctors to listen to sounds inside the body",
+   "mentions": [
+    "body",
+    "doctors",
+    "inside",
+    "instrument",
+    "listen",
+    "medical",
+    "sounds",
+    "the",
+    "used"
+   ],
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "body",
+    "doctors",
+    "inside",
+    "instrument",
+    "listen",
+    "medical",
+    "sounds",
+    "stethoscope",
+    "the",
+    "used"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172578,
+   "secret_candidates_after": 172569,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "kangaroo",
+   "w2": "kangaroo",
+   "clue": "Australian marsupial known for hopping on large hind legs and carrying young in a pouch",
+   "mentions": [
+    "and",
+    "carrying",
+    "for",
+    "hind",
+    "hopping",
+    "known",
+    "large",
+    "legs",
+    "marsupial",
+    "pouch",
+    "young"
+   ],
+   "blocklist": [
+    "kangaroo",
+    "kangaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "carrying",
+    "for",
+    "hind",
+    "hopping",
+    "kangaroo",
+    "kangaroos",
+    "known",
+    "large",
+    "legs",
+    "marsupial",
+    "pouch",
+    "young"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172569,
+   "secret_candidates_after": 172557,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}

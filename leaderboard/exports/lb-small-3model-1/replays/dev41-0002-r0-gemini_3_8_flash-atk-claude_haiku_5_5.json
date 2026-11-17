@@ -1,0 +1,722 @@
+{
+ "game_id": "dev41-0002-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 20,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Red or green fruit that keeps the doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit monkeys famously love",
+   "blocklist": [
+    "banana",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Sour yellow citrus fruit often used in lemonade",
+   "blocklist": [
+    "kale",
+    "lemon",
+    "lime",
+    "orange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "An eight-legged marine mollusk with tentacles",
+   "blocklist": [
+    "cuttlefish",
+    "nautilus",
+    "octopi",
+    "octopus",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "African wild horse with black and white stripes",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Australian marsupial that hops and carries babies in a pouch",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "possum",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Flightless aquatic bird living mainly in Antarctica",
+   "blocklist": [
+    "emu",
+    "kiwi",
+    "ostrich",
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null,
+ "seat_private_histories": {
+  "guesser1": [
+   {
+    "turn": 1,
+    "action": "clue",
+    "committed_word": "apple",
+    "clue": "Red or green fruit that keeps the doctor away",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "clue",
+    "committed_word": "banana",
+    "clue": "Yellow curved fruit monkeys famously love",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "clue",
+    "committed_word": "lemon",
+    "clue": "Sour yellow citrus fruit often used in lemonade",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "clue",
+    "committed_word": "octopus",
+    "clue": "An eight-legged marine mollusk with tentacles",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "clue",
+    "committed_word": "zebra",
+    "clue": "African wild horse with black and white stripes",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "clue",
+    "committed_word": "kangaroo",
+    "clue": "Australian marsupial that hops and carries babies in a pouch",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "clue",
+    "committed_word": "penguin",
+    "clue": "Flightless aquatic bird living mainly in Antarctica",
+    "validity": "valid"
+   },
+   {
+    "turn": 8,
+    "action": "clue",
+    "committed_word": "pencil",
+    "clue": "Writing implement with a graphite core encased in wood",
+    "validity": "valid"
+   }
+  ],
+  "guesser2": [
+   {
+    "turn": 1,
+    "action": "guess",
+    "committed_word": "apple",
+    "validity": "valid"
+   },
+   {
+    "turn": 2,
+    "action": "guess",
+    "committed_word": "banana",
+    "validity": "valid"
+   },
+   {
+    "turn": 3,
+    "action": "guess",
+    "committed_word": "lemon",
+    "validity": "valid"
+   },
+   {
+    "turn": 4,
+    "action": "guess",
+    "committed_word": "octopus",
+    "validity": "valid"
+   },
+   {
+    "turn": 5,
+    "action": "guess",
+    "committed_word": "zebra",
+    "validity": "valid"
+   },
+   {
+    "turn": 6,
+    "action": "guess",
+    "committed_word": "kangaroo",
+    "validity": "valid"
+   },
+   {
+    "turn": 7,
+    "action": "guess",
+    "committed_word": "penguin",
+    "validity": "valid"
+   }
+  ],
+  "defender": [
+   {
+    "turn": 1,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "apple"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 2,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "banana",
+     "plantain"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 3,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kale",
+     "lemon",
+     "lime",
+     "orange"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 4,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "cuttlefish",
+     "nautilus",
+     "octopi",
+     "octopus",
+     "squid"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 5,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "zebra"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 6,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "kangaroo",
+     "koala",
+     "possum",
+     "wallaby",
+     "wombat"
+    ],
+    "canonical_ranges": []
+   },
+   {
+    "turn": 7,
+    "validity": "valid",
+    "canonical_blocklist": [
+     "emu",
+     "kiwi",
+     "ostrich",
+     "penguin"
+    ],
+    "canonical_ranges": []
+   }
+  ]
+ },
+ "referee_audit": [
+  {
+   "turn": 1,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "apple",
+   "w2": "apple",
+   "clue": "Red or green fruit that keeps the doctor away",
+   "mentions": [
+    "away",
+    "doctor",
+    "fruit",
+    "green",
+    "keeps",
+    "red",
+    "that",
+    "the"
+   ],
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "apple",
+    "away",
+    "doctor",
+    "fruit",
+    "green",
+    "keeps",
+    "red",
+    "that",
+    "the"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172608,
+   "secret_candidates_after": 172599,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 2,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "banana",
+   "w2": "banana",
+   "clue": "Yellow curved fruit monkeys famously love",
+   "mentions": [
+    "curved",
+    "famously",
+    "fruit",
+    "love",
+    "monkeys",
+    "yellow"
+   ],
+   "blocklist": [
+    "banana",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "banana",
+    "curved",
+    "famously",
+    "fruit",
+    "love",
+    "monkeys",
+    "plantain",
+    "yellow"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172599,
+   "secret_candidates_after": 172592,
+   "block_size": 2,
+   "block_fresh_secret_candidates": 2,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 3,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "lemon",
+   "w2": "lemon",
+   "clue": "Sour yellow citrus fruit often used in lemonade",
+   "mentions": [
+    "citrus",
+    "fruit",
+    "lemonade",
+    "often",
+    "sour",
+    "used",
+    "yellow"
+   ],
+   "blocklist": [
+    "kale",
+    "lemon",
+    "lime",
+    "orange"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "citrus",
+    "fruit",
+    "kale",
+    "lemon",
+    "lemonade",
+    "lime",
+    "often",
+    "orange",
+    "sour",
+    "used",
+    "yellow"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172592,
+   "secret_candidates_after": 172583,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 4,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "octopus",
+   "w2": "octopus",
+   "clue": "An eight-legged marine mollusk with tentacles",
+   "mentions": [
+    "eight",
+    "legged",
+    "marine",
+    "mollusk",
+    "tentacles",
+    "with"
+   ],
+   "blocklist": [
+    "cuttlefish",
+    "nautilus",
+    "octopi",
+    "octopus",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "cuttlefish",
+    "eight",
+    "legged",
+    "marine",
+    "mollusk",
+    "nautilus",
+    "octopi",
+    "octopus",
+    "squid",
+    "tentacles",
+    "with"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172583,
+   "secret_candidates_after": 172572,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 5,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "zebra",
+   "w2": "zebra",
+   "clue": "African wild horse with black and white stripes",
+   "mentions": [
+    "and",
+    "black",
+    "horse",
+    "stripes",
+    "white",
+    "wild",
+    "with"
+   ],
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "black",
+    "horse",
+    "stripes",
+    "white",
+    "wild",
+    "with",
+    "zebra"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172572,
+   "secret_candidates_after": 172565,
+   "block_size": 1,
+   "block_fresh_secret_candidates": 1,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 6,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "kangaroo",
+   "w2": "kangaroo",
+   "clue": "Australian marsupial that hops and carries babies in a pouch",
+   "mentions": [
+    "and",
+    "babies",
+    "carries",
+    "hops",
+    "marsupial",
+    "pouch",
+    "that"
+   ],
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "possum",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "and",
+    "babies",
+    "carries",
+    "hops",
+    "kangaroo",
+    "koala",
+    "marsupial",
+    "possum",
+    "pouch",
+    "that",
+    "wallaby",
+    "wombat"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172565,
+   "secret_candidates_after": 172555,
+   "block_size": 5,
+   "block_fresh_secret_candidates": 5,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  },
+  {
+   "turn": 7,
+   "prefix_before": "",
+   "prefix_after": "",
+   "w1": "penguin",
+   "w2": "penguin",
+   "clue": "Flightless aquatic bird living mainly in Antarctica",
+   "mentions": [
+    "aquatic",
+    "bird",
+    "flightless",
+    "living",
+    "mainly"
+   ],
+   "blocklist": [
+    "emu",
+    "kiwi",
+    "ostrich",
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_guesser1": true,
+   "blocked_guesser2": true,
+   "choice_actor": null,
+   "choice": null,
+   "choice_valid": null,
+   "opened": [],
+   "emissions": [
+    "aquatic",
+    "bird",
+    "emu",
+    "flightless",
+    "kiwi",
+    "living",
+    "mainly",
+    "ostrich",
+    "penguin"
+   ],
+   "target_hit": false,
+   "hit_sources": [],
+   "registered_match": true,
+   "intended_covered": true,
+   "covered_match": true,
+   "fresh_for_contact": true,
+   "contact": false,
+   "blocked_contact": true,
+   "result": "no_prefix",
+   "secret_candidates_before": 172555,
+   "secret_candidates_after": 172546,
+   "block_size": 4,
+   "block_fresh_secret_candidates": 4,
+   "block_overlap_with_clue": 0,
+   "guesser1_valid": true,
+   "guesser1_action": "clue",
+   "guesser2_valid": true,
+   "guesser2_action": "guess",
+   "defender_valid": true,
+   "defender_action": "block"
+  }
+ ]
+}
