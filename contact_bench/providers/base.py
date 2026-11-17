@@ -148,6 +148,11 @@ class DecisionRequest:
     tools: list[ToolSpec] = field(default_factory=list)
     tool_executor: ToolExecutor | None = None
     max_tool_calls: int = 0
+    # Optional structured form of user_prompt for prefix caching:
+    # "\n\n".join(user_prompt_parts) == user_prompt, and the first
+    # cache_prefix_parts parts are an append-only, cacheable prefix.
+    user_prompt_parts: list[str] = field(default_factory=list)
+    cache_prefix_parts: int = 0
 
 
 class AttemptGate:

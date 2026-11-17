@@ -146,3 +146,25 @@ def test_unbilled_failures_not_charged_and_provider_cap_is_local():
             await gate.before()
         assert ei.value.provider == "google"
     asyncio.run(go())
+
+
+def test_anthropic_midstream_network_error_is_retryable():
+    import httpx2
+    from types import SimpleNamespace
+
+    class Stream:
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, *a):
+            return False
+
+        async def get_final_message(self):
+            raise httpx2.ReadError("connection reset")
+
+    client = SimpleNamespace(messages=SimpleNamespace(stream=lambda **kw: Stream()))
+    ad = AnthropicMessagesAdapter(ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=32000,
+                                              credential_env="ANTHROPIC_API_KEY"), client=client)
+    with pytest.raises(InfrastructureError) as ei:
+        asyncio.run(ad._call({"max_tokens": 32000}))
+    assert ei.value.retryable and ei.value.possibly_billed and ei.value.category == "transient"

@@ -56,6 +56,9 @@ The authoritative rules are in `CONTACT_BENCHMARK_SPEC.md`. This page describes 
 - **Game cost.** `B = R_C(S0, s)`. The cost `C` is the winning turn `t`, or `L + R_C(S_L, s)` if the game is still
   unsolved after turn `L` has fully resolved. Infrastructure-incomplete games get no cost.
 - **Aggregates** are ratios of totals: `aggregate_speedup = ΣB/ΣC`. Per-game ratios are never averaged.
+- **Robust summaries.** An unsolved game in a large-dictionary state is charged thousands of fallback turns, so
+  means are dominated by whether the first letter fell. Analysis therefore also reports the median and
+  geometric-mean effective cost per attacker, and the median cost imposed per defender, with bootstrap intervals.
 
 ## Competitive rating
 

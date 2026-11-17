@@ -286,3 +286,10 @@ def test_rating_properties():
     assert connected_components(["a", "b", "c", "d"], [("a", "b"), ("c", "d")]) == [["a", "b"], ["c", "d"]]
     from fractions import Fraction
     assert match_points(Fraction(3), Fraction(4)) + match_points(Fraction(4), Fraction(3)) == 1
+
+
+def test_median_and_geometric_mean_costs():
+    from contact_bench.analysis.analyze import _geomean, _median
+    assert _median([1.0, 3.0, 100.0]) == 3.0 and _median([1.0, 3.0, 5.0, 7000.0]) == 4.0
+    assert _median([]) is None
+    assert abs(_geomean([1.0, 100.0]) - 10.0) < 1e-9

@@ -33,6 +33,18 @@ def _bfrac(d: dict | None) -> Fraction | None:
     return Fraction(b["numerator"], b["denominator"])
 
 
+def _median(xs: list[float]) -> float | None:
+    if not xs:
+        return None
+    s = sorted(xs)
+    n = len(s)
+    return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+
+
+def _geomean(xs: list[float]) -> float | None:
+    return math.exp(sum(math.log(x) for x in xs) / len(xs)) if xs and all(x > 0 for x in xs) else None
+
+
 def _f(x: Fraction | None) -> float | None:
     return None if x is None else float(x)
 
@@ -156,8 +168,16 @@ def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict
             if per_opp
             else None
         )
+        off_costs = sorted(float(r.cost) for r in off)
+        de_costs = sorted(float(r.cost) for r in de)
         stats[m] = {
             "offense_games": len(off),
+            # Robust summaries: an unsolved game at a large-dictionary state is
+            # charged thousands of fallback turns, which dominates means.
+            "offense_median_effective_cost": _median(off_costs),
+            "offense_geometric_mean_cost": _geomean(off_costs),
+            "defense_median_cost_imposed": _median(de_costs),
+            "defense_geometric_mean_cost_imposed": _geomean(de_costs),
             "offense_aggregate_speedup": _fj(sb_o / sc_o) if sc_o else None,
             "offense_mean_effective_cost": _fj(sc_o / len(off)) if off else None,
             "offense_mean_baseline": _fj(sb_o / len(off)) if off else None,
@@ -396,6 +416,10 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
             dc = st[m]["defensive_cost_ratio"]
             if dc:
                 samples[m]["defensive_cost_ratio"].append(dc["value"])
+            for k in ("offense_median_effective_cost", "offense_geometric_mean_cost",
+                      "defense_median_cost_imposed"):
+                if st[m][k] is not None:
+                    samples[m][k].append(st[m][k])
     ci = {
         m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975), "n": len(v)} for k, v in d.items()}
         for m, d in samples.items()
@@ -497,7 +521,8 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
         w = csv.writer(f)
         w.writerow(["model", "elo", "elo_lo", "elo_hi", "match_point_share", "fixtures",
                     "offense_speedup", "mean_paired_cost_advantage", "defensive_cost_ratio",
-                    "deadline_hold_rate", "offense_mean_cost"])
+                    "deadline_hold_rate", "offense_mean_cost", "offense_median_cost",
+                    "offense_geometric_mean_cost", "defense_median_cost_imposed"])
         for m in sorted(models, key=lambda m: -result["rating"]["elo"][m]):
             s = result["model_stats"][m]
             ci = boot.get(m, {}).get("elo", {})
@@ -509,6 +534,8 @@ def write_outputs(out: Path, result: dict, rows: list[GameRow]) -> None:
                 _r((s["defensive_cost_ratio"] or {}).get("value")),
                 _r(s["defense_deadline_hold_rate_of_defense_games"]),
                 _r((s["offense_mean_effective_cost"] or {}).get("value")),
+                _r(s["offense_median_effective_cost"]), _r(s["offense_geometric_mean_cost"]),
+                _r(s["defense_median_cost_imposed"]),
             ])
     with (out / "pairwise.csv").open("w", newline="") as f:
         w = csv.writer(f)
@@ -557,8 +584,8 @@ def render_report(res: dict) -> str:
              f"Fixtures: planned {res['planned_fixtures']}, complete {res['complete_fixtures']}"
              f"{' (balanced and complete)' if res['balanced_complete'] else ' (PROVISIONAL: incomplete)'}.\n")
     L.append("## Paired competitive rating (batch Elo-style rating with half-point draws)\n")
-    L.append("| Model | Elo | 95% CI | Match-point share (per fixture) | Offense speedup (ΣB/ΣC) | Mean paired cost advantage | Defensive cost ratio (ΣC/ΣB) | Deadline hold rate (per defended game) |")
-    L.append("|---|---:|---|---:|---:|---:|---:|---:|")
+    L.append("| Model | Elo | 95% CI | Match-point share (per fixture) | Offense speedup (ΣB/ΣC) | Median offense cost (turns) | Median cost imposed as defender | Mean paired cost advantage | Defensive cost ratio (ΣC/ΣB) | Deadline hold rate (per defended game) |")
+    L.append("|---|---:|---|---:|---:|---:|---:|---:|---:|---:|")
     boot = (res.get("bootstrap") or {}).get("intervals_95", {})
     for m in sorted(res["models"], key=lambda m: -res["rating"]["elo"][m]):
         s = res["model_stats"][m]
@@ -567,6 +594,7 @@ def render_report(res: dict) -> str:
         L.append(
             f"| {m} | {res['rating']['elo'][m]:.0f} | {cis} | {_fmt(s['match_point_share'])} | "
             f"{_fmt((s['offense_aggregate_speedup'] or {}).get('value'))} | "
+            f"{_fmt(s['offense_median_effective_cost'])} | {_fmt(s['defense_median_cost_imposed'])} | "
             f"{_fmt((s['mean_paired_cost_advantage'] or {}).get('value'))} | "
             f"{_fmt((s['defensive_cost_ratio'] or {}).get('value'))} | "
             f"{_fmt(s['defense_deadline_hold_rate_of_defense_games'])} |"

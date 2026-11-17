@@ -9,7 +9,12 @@ from __future__ import annotations
 import hashlib
 import json
 
-PROMPT_VERSION = "prompts-v3"
+PROMPT_VERSION = "prompts-v4"
+# v4 layout: a game-constant header and the append-only public history come
+# first (one event per part), so consecutive calls share a long cacheable
+# prefix; volatile state, role guidance and the observation JSON come last.
+PROMPT_LAYOUT = "cache-friendly-v1"
+HEADER_FIELDS = ("protocol", "dictionary_access", "dictionary", "clue_max_characters", "turn_limit")
 
 RULES = """\
 You are playing CONTACT, a cooperative-versus-adversarial word game, as part of a benchmark.
@@ -167,7 +172,32 @@ def system_prompt(*, clue_max_characters: int, turn_limit: int,
     return text
 
 
+def user_prompt_parts(observation: dict, *, sparse_max_entries: int = 20) -> tuple[list[str], int]:
+    """Prompt parts and the number of leading parts forming the stable prefix.
+
+    The prefix (game header plus one part per public event, oldest first) is
+    identical for every seat in a game at a given point and only grows by
+    appending, so providers' prefix caches can reuse it across turns and seats.
+    """
+    hist = observation.get("public_history", [])
+    header = {k: observation[k] for k in HEADER_FIELDS if k in observation}
+    parts = [
+        "GAME CONTEXT (fixed for this game): " + json.dumps(header, separators=(",", ":"), sort_keys=True),
+        "PUBLIC HISTORY (one event per line, oldest first):" + ("" if hist else " none yet"),
+    ]
+    parts += [json.dumps(e, separators=(",", ":"), sort_keys=True) for e in hist]
+    n_prefix = len(parts)
+    rest = {k: v for k, v in observation.items() if k != "public_history"}
+    parts.append(_guidance_and_observation(rest, sparse_max_entries))
+    return parts, n_prefix
+
+
 def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
+    parts, _ = user_prompt_parts(observation, sparse_max_entries=sparse_max_entries)
+    return "\n\n".join(parts)
+
+
+def _guidance_and_observation(observation: dict, sparse_max_entries: int) -> str:
     seat, phase = observation["role"], observation["phase"]
     parts = [ROLE_GUIDANCE[(seat, phase)]]
     if seat == "defender" and observation.get("blocklist_encoding") == "words_and_ranges":
@@ -180,6 +210,7 @@ def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
         parts.append(cond)
     if observation.get("forecast_reports_requested"):
         parts.append(FORECAST_GUIDANCE.replace("{K}", str(sparse_max_entries)))
+    parts.append("CURRENT STATE. The public history is listed above; everything else is in this observation.")
     parts.append("OBSERVATION (JSON):")
     parts.append(json.dumps(observation, separators=(",", ":"), sort_keys=True))
     return "\n\n".join(parts)
@@ -188,6 +219,7 @@ def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
 def prompt_hash() -> str:
     h = hashlib.sha256()
     h.update(PROMPT_VERSION.encode())
+    h.update(PROMPT_LAYOUT.encode())
     h.update(RULES.encode())
     for k in sorted(ROLE_GUIDANCE):
         h.update(repr(k).encode())

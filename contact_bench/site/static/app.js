@@ -217,17 +217,23 @@
         cost: fval(s.offense_mean_effective_cost), base: fval(s.offense_mean_baseline), og: s.offense_games,
         adv: fval(s.mean_paired_cost_advantage), advCI: b.mean_paired_cost_advantage,
         dcr: fval(s.defensive_cost_ratio), dcrCI: b.defensive_cost_ratio, dg: s.defense_games,
-        hold: s.defense_deadline_hold_rate_of_defense_games, capped: s.offense_capped_fraction_of_offense_games };
+        hold: s.defense_deadline_hold_rate_of_defense_games, capped: s.offense_capped_fraction_of_offense_games,
+        med: s.offense_median_effective_cost, medCI: b.offense_median_effective_cost,
+        geo: s.offense_geometric_mean_cost, dmed: s.defense_median_cost_imposed };
     });
     renderTable($("efficiency-table"), [
       { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
       { label: "Offense speedup ΣB/ΣC", get: function (r) { return r.sp; }, fmt: function (r) { return num(r.sp); } },
       { label: "Speedup 95% CI", get: function (r) { return r.spCI ? r.spCI.lo : null; }, fmt: function (r) { return ci(r.spCI); } },
+      { label: "Median effective cost (turns)", get: function (r) { return r.med; }, fmt: function (r) { return num(r.med); } },
+      { label: "Median 95% CI", get: function (r) { return r.medCI ? r.medCI.lo : null; }, fmt: function (r) { return ci(r.medCI); } },
+      { label: "Geometric-mean cost", get: function (r) { return r.geo; }, fmt: function (r) { return num(r.geo); } },
       { label: "Mean effective cost (turns)", get: function (r) { return r.cost; }, fmt: function (r) { return num(r.cost); } },
       { label: "Mean reference B", get: function (r) { return r.base; }, fmt: function (r) { return num(r.base); } },
       { label: "Offense games (n)", get: function (r) { return r.og; }, fmt: function (r) { return r.og == null ? "—" : String(r.og); } },
       { label: "Mean paired cost advantage", get: function (r) { return r.adv; }, fmt: function (r) { return num(r.adv); } },
       { label: "Advantage 95% CI", get: function (r) { return r.advCI ? r.advCI.lo : null; }, fmt: function (r) { return ci(r.advCI); } },
+      { label: "Median cost imposed as defender", get: function (r) { return r.dmed; }, fmt: function (r) { return num(r.dmed); } },
       { label: "Defensive cost ratio ΣC/ΣB", get: function (r) { return r.dcr; }, fmt: function (r) { return num(r.dcr); } },
       { label: "Deadline hold rate (per defended game)", get: function (r) { return r.hold; }, fmt: function (r) { return pct(r.hold); } },
       { label: "Defense games (n)", get: function (r) { return r.dg; }, fmt: function (r) { return r.dg == null ? "—" : String(r.dg); } },

@@ -13,7 +13,7 @@ from typing import Any
 
 from ..config import ModelConfig
 from ..engine.game import DecisionSpec
-from ..prompts.templates import PROMPT_VERSION, prompt_hash, system_prompt, user_prompt
+from ..prompts.templates import PROMPT_VERSION, prompt_hash, system_prompt, user_prompt_parts
 from ..providers.base import AdapterResponse, DecisionRequest, ProviderAdapter
 
 
@@ -83,7 +83,8 @@ class LLMAgent:
                                     block_ranges=block_ranges, empty_prefix=empty_prefix)
 
     def build_request(self, spec: DecisionSpec, decision_id: str) -> DecisionRequest:
-        up = user_prompt(spec.observation, sparse_max_entries=self.sparse_max_entries)
+        parts, n_prefix = user_prompt_parts(spec.observation, sparse_max_entries=self.sparse_max_entries)
+        up = "\n\n".join(parts)
         est = estimate_tokens(self.system) + estimate_tokens(up)
         if self.model.context_window_tokens is not None:
             need = est + (self.model.max_output_tokens or 0)
@@ -104,6 +105,8 @@ class LLMAgent:
             tools=self.dictionary_service.tool_specs() if self.dictionary_access == "lookup_tools" else [],
             tool_executor=self.dictionary_service.execute if self.dictionary_access == "lookup_tools" else None,
             max_tool_calls=self.max_tool_calls if self.dictionary_access == "lookup_tools" else 0,
+            user_prompt_parts=parts,
+            cache_prefix_parts=n_prefix,
         )
 
     async def decide(self, spec: DecisionSpec, decision_id: str) -> AgentOutput:

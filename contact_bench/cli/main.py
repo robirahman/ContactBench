@@ -284,7 +284,9 @@ def cmd_audit(args) -> int:
     res = asyncio.run(run_shadow_audit(items, adapter, max_entries=cfg.forecasts.sparse_max_entries,
                                        tolerance=cfg.forecasts.mass_tolerance,
                                        invalid_score=cfg.forecasts.invalid_audit_score,
-                                       item_bank_id=run_dir.name, gate=gate))
+                                       item_bank_id=run_dir.name, gate=gate,
+                                       dictionary=runner.contact_dictionary,
+                                       max_tool_calls=cfg.protocol.max_tool_calls_per_decision))
     out = run_dir / "analysis" / f"forecast_audit_{m.id}.json"
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(res, indent=2) + "\n")
