@@ -483,6 +483,9 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     if rp.exists():
         reqs = [json.loads(l) for l in rp.read_text().splitlines() if l.strip()]
     result["resources"] = _resources(reqs)
+    from .calibration import forecast_calibration
+
+    result["forecast_calibration"] = forecast_calibration(records)
     if write:
         write_outputs(run_dir / "analysis", result, rows)
     return result
@@ -587,6 +590,9 @@ def render_report(res: dict) -> str:
              f"fallbacks exact/estimated: {n['fallbacks_exact']}/{n['fallbacks_estimated']}; "
              f"max MCSE {n['max_mcse']:.4g}; numerically close fixtures: {res['numerically_close_fixtures']}.\n")
     L.append(f"Capped games: {res['capped_games']} ({res['capped_fraction_of_scored_games']:.1%} of scored games).\n")
+    from .calibration import render_calibration
+
+    L.append(render_calibration(res.get("forecast_calibration") or {}))
     if res["missing_model_pairs"]:
         L.append(f"Missing pairs: {res['missing_model_pairs']}\n")
     return "\n".join(L) + "\n"

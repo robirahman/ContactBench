@@ -1,0 +1,158 @@
+"""Live transcript forks for forecasts (forecast mode ``fork``)."""
+
+import asyncio
+import json
+from pathlib import Path
+
+import pytest
+
+from contact_bench.analysis.analyze import analyze
+from contact_bench.analysis.calibration import forecast_calibration
+from contact_bench.config import BenchConfig, ModelConfig
+from contact_bench.forecasts.forks import PASS, build_support, score_fork, support_descriptor
+from contact_bench.providers.anthropic_adapter import AnthropicMessagesAdapter
+from contact_bench.providers.base import DecisionRequest
+from contact_bench.runner.run import Runner
+from contact_bench.runner.store import RunStore
+
+from .helpers import lex
+
+REPO = Path(__file__).resolve().parents[1]
+
+
+def _cfg(mode, access="full_candidate_lists", **proto):
+    return BenchConfig.model_validate({
+        "name": "fk", "base_dir": str(REPO), "lexicon": {"manifest": "lexicons/dev_fixture_manifest.json"},
+        "protocol": {"version": "contact-v0.5", "dictionary_access": access, "turn_limit": 5, **proto},
+        "scoring": {"development_rollouts": 32, "cache_dir": ".cache/test_reference"},
+        "tasks": {"tasks_per_pair": 2, "generation_seed": 9}, "forecasts": {"mode": mode},
+        "models": [{"id": "fa", "provider": "fake", "model": "a", "max_output_tokens": 9000},
+                   {"id": "fb", "provider": "fake", "model": "b", "max_output_tokens": 9000}],
+    })
+
+
+@pytest.mark.parametrize("access", ["full_candidate_lists", "lookup_tools"])
+def test_forks_do_not_change_gameplay_or_observations(tmp_path, access):
+    recs = {}
+    for mode in ("off", "fork"):
+        r = Runner(_cfg(mode, access), tmp_path / mode)
+        asyncio.run(r.run())
+        recs[mode] = {p.name: json.loads(p.read_text()) for p in (tmp_path / mode / "games").glob("*.json")}
+        recs[mode + "_obs"] = {k.split("/", 1)[1]: v["observation_sha256"]
+                               for k, v in RunStore(tmp_path / mode).decisions().items()}
+    assert recs["off_obs"] == recs["fork_obs"]
+    for name, off in recs["off"].items():
+        fk = recs["fork"][name]
+        for key in ("summary", "public_history", "referee_audit", "private_histories", "score"):
+            assert off[key] == fk[key], (name, key)
+    assert not (tmp_path / "off" / "forecasts.jsonl").exists()
+
+
+def test_fork_records_labels_and_calibration(tmp_path):
+    r = Runner(_cfg("fork"), tmp_path / "r")
+    asyncio.run(r.run())
+    forks = RunStore(tmp_path / "r").forecasts()
+    kinds = {(f["seat"], f["kind"]) for f in forks}
+    assert kinds == {("guesser1", "guesser1"), ("guesser2", "intended_word"), ("defender", "intended_word")}
+    assert all(f["status"] == "ok" for f in forks)
+    recs = [json.loads(p.read_text()) for p in (tmp_path / "r" / "games").glob("*.json")]
+    scored = [f for rec in recs for f in rec["forecasts"]]
+    iw = [f for f in scored if f["kind"] == "intended_word"]
+    assert iw and all(f["answer"] and f["scores"]["intended_word"]["valid"] for f in iw)
+    # the fake reports uniform intended-word forecasts: Brier = 1/M
+    for f in iw:
+        s = f["scores"]["intended_word"]
+        assert s["brier"] == pytest.approx(1 / s["support_size"])
+    g1 = [f for f in scored if f["kind"] == "guesser1"]
+    assert all(f["scores"]["block_probability"]["p"] == 0.25 for f in g1)
+    assert all(f["answer"]["receiver_word"] is not None for f in g1)
+    cal = forecast_calibration(recs)
+    assert set(cal["fa"]) == {"intended_word@guesser2", "intended_word@defender", "receiver_word@guesser1",
+                              "block_probability@guesser1"}
+    rr = Runner(_cfg("fork"), tmp_path / "r", replay_only=True)
+    rr.prepare()
+    replayed = [asyncio.run(rr.play(g)) for g in rr.games]
+    res = analyze(tmp_path / "r", replayed, resamples=5, seed=1, penalty_scale=2.5, elo_center=1500)
+    assert res["forecast_calibration"]["fa"]["block_probability@guesser1"]["valid"] > 0
+    assert "Forecast calibration" in (tmp_path / "r" / "analysis" / "report.md").read_text()
+
+
+def _support(words, prefix="ca", used=(), ranges=()):
+    lx = lex(words)
+    return lx, support_descriptor(prefix, {"used_words": list(used), "used_ranges": [list(r) for r in ranges]},
+                                  sum(1 for w in words if w.startswith(prefix) and len(w) > len(prefix)
+                                      and w not in used and not any(a <= w <= b for a, b in ranges)))
+
+
+def test_support_membership_with_used_words_and_ranges():
+    lx, d = _support(["cab", "cable", "camel", "candy", "cobra"], used=["cab"], ranges=[("camel", "camel")])
+    s = build_support(d, lx)
+    assert "cable" in s and "candy" in s and "cab" not in s and "camel" not in s and "cobra" not in s
+    assert len(s) == 2
+    assert PASS in build_support(d, lx, special=(PASS,))
+
+
+def test_score_fork_labels_and_invalid_reports():
+    lx, d = _support(["cable", "candle", "candy", "canoe"])
+    rec = {"fork_id": "x", "status": "ok", "kind": "guesser1", "turn": 1, "support": d,
+           "raw_output": json.dumps({"receiver_word_forecast": {"entries": [{"word": "candle", "probability": 0.7},
+                                                                            {"word": "PASS", "probability": 0.1}],
+                                                                "other_mass": 0.2},
+                                     "block_probability": 0.8})}
+    audit = {"turn": 1, "w1": "candle", "guesser2": {"canonical": {"action": "pass", "word": None}},
+             "defender": {"canonical": {}}, "blocked_guesser1": True}
+    out = score_fork(rec, audit, lx)
+    assert out["answer"] == {"receiver_word": PASS, "intended_blocked": True}
+    assert out["scores"]["receiver_word"]["q_truth"] == pytest.approx(0.1)
+    assert out["scores"]["block_probability"]["brier"] == pytest.approx(1 - 2 * 0.2 ** 2)
+    bad = dict(rec, raw_output=json.dumps({"receiver_word_forecast": {"entries": [{"word": "zebra", "probability": 1}],
+                                                                      "other_mass": 0}, "block_probability": 2}))
+    o2 = score_fork(bad, audit, lx)
+    assert o2["scores"]["receiver_word"]["brier"] == -1 and o2["scores"]["block_probability"]["brier"] == -1
+    iw = {"fork_id": "y", "status": "ok", "kind": "intended_word", "turn": 1, "support": d,
+          "raw_output": json.dumps({"entries": [{"word": "candy", "probability": 1.0}], "other_mass": 0.0})}
+    o3 = score_fork(iw, audit, lx)
+    assert o3["answer"] == "candle" and o3["scores"]["intended_word"]["brier"] == -1  # confident and wrong
+    # infrastructure-unavailable: counted, never scored
+    o4 = score_fork({**iw, "status": "unavailable"}, audit, lx)
+    assert o4["scores"] is None
+    cal = forecast_calibration([{"forecasts": [dict(o3, model_id="m", seat="defender"),
+                                               dict(o4, model_id="m", seat="defender")]}])
+    s = cal["m"]["intended_word@defender"]
+    assert s["scheduled"] == 2 and s["unavailable"] == 1 and s["top1_accuracy"] == 0.0
+
+
+class _Msgs:
+    def __init__(self):
+        self.calls = []
+
+    async def create(self, **kw):
+        self.calls.append(kw)
+        text = '{"action": "clue", "word": "cable", "clue": "rope"}' if len(self.calls) == 1 else \
+            '{"entries": [], "other_mass": 1.0}'
+        return {"id": f"m{len(self.calls)}", "model": "x", "stop_reason": "end_turn",
+                "content": [{"type": "thinking", "thinking": "", "signature": "sig"}, {"type": "text", "text": text}],
+                "usage": {"input_tokens": 10, "output_tokens": 3}}
+
+
+class _Client:
+    def __init__(self):
+        self.messages = _Msgs()
+
+
+def test_anthropic_fork_replays_own_answer_then_asks():
+    c = _Client()
+    ad = AnthropicMessagesAdapter(ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=100,
+                                              credential_env="ANTHROPIC_API_KEY"), client=c)
+    req = DecisionRequest("d", "guesser1", "act", "SYS", "PLAY", "g1", {"type": "object"}, 100,
+                          keep_conversation=True)
+    r = asyncio.run(ad.decide(req))
+    assert "tools" not in c.messages.calls[0] and r.conversation[-1]["role"] == "assistant"
+    before = json.dumps(r.conversation)
+    fr = DecisionRequest("d/fork", "guesser1", "fork_guesser1", "SYS", "FORECAST?", "f", {"type": "object"}, 100)
+    asyncio.run(ad.fork(fr, r.conversation))
+    msgs = c.messages.calls[1]["messages"]
+    assert [m["role"] for m in msgs] == ["user", "assistant", "user"]
+    assert msgs[1]["content"][0]["signature"] == "sig" and msgs[2]["content"] == "FORECAST?"
+    assert c.messages.calls[1]["output_config"]["format"]["schema"] == {"type": "object"}
+    assert json.dumps(r.conversation) == before  # original transcript untouched

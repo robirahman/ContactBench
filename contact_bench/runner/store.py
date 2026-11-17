@@ -46,6 +46,7 @@ class RunStore:
     DECISIONS = "decisions.jsonl"
     REQUESTS = "requests.jsonl"
     EVENTS = "events.jsonl"
+    FORECASTS = "forecasts.jsonl"
 
     def __init__(self, run_dir: str | Path):
         self.dir = Path(run_dir)
@@ -141,6 +142,20 @@ class RunStore:
                     continue  # first received response wins
                 self._decisions[did] = rec
         return self._decisions
+
+    def append_forecast(self, record: dict) -> None:
+        """Private forecast-fork records (never gameplay; never in observations)."""
+        self._append(self.FORECASTS, {"recorded_at": time.time(), **record})
+
+    def forecasts(self, game_id: str | None = None) -> list[dict]:
+        seen: set[str] = set()
+        out = []
+        for rec in read_jsonl(self.dir / self.FORECASTS):
+            if rec["fork_id"] in seen or (game_id is not None and rec.get("game_id") != game_id):
+                continue
+            seen.add(rec["fork_id"])
+            out.append(rec)
+        return out
 
     def events(self) -> list[dict]:
         return list(read_jsonl(self.dir / self.EVENTS))

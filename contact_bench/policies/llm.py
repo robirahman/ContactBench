@@ -33,6 +33,7 @@ class AgentOutput:
     model_id: str
     estimated_input_tokens: int | None = None
     cost_estimate: float | None = None
+    conversation: Any = None  # provider-native transcript (fork mode only)
 
 
 class Limiters:
@@ -66,7 +67,9 @@ class LLMAgent:
         max_tool_calls: int = 20,
         block_ranges: bool = False,
         empty_prefix: bool = False,
+        keep_conversation: bool = False,
     ):
+        self.keep_conversation = keep_conversation
         self.model = model
         self.adapter = adapter
         self.seat = seat
@@ -104,6 +107,7 @@ class LLMAgent:
             tools=self.dictionary_service.tool_specs() if self.dictionary_access == "lookup_tools" else [],
             tool_executor=self.dictionary_service.execute if self.dictionary_access == "lookup_tools" else None,
             max_tool_calls=self.max_tool_calls if self.dictionary_access == "lookup_tools" else 0,
+            keep_conversation=self.keep_conversation,
         )
 
     async def decide(self, spec: DecisionSpec, decision_id: str) -> AgentOutput:
@@ -118,4 +122,33 @@ class LLMAgent:
         meta["prompt_version"] = PROMPT_VERSION
         meta["prompt_hash"] = prompt_hash()
         return AgentOutput(raw=resp.output_text, response=meta, model_id=self.model.id,
+                           estimated_input_tokens=est, cost_estimate=gate.cost if gate else None,
+                           conversation=resp.conversation)
+
+    async def fork(self, spec: DecisionSpec, decision_id: str, conversation: Any, *, kind: str,
+                   prompt: str) -> AgentOutput:
+        """Branch this seat's finished transcript with a private forecast query."""
+        from ..forecasts.forks import fork_schema
+        from ..runner.budget import BudgetGate
+
+        base = self.build_request(spec, decision_id)
+        name, schema = fork_schema(kind)
+        req = DecisionRequest(
+            decision_id=decision_id,
+            seat=spec.seat,
+            phase=f"fork_{kind}",
+            system_prompt=self.system,
+            user_prompt=prompt,
+            schema_name=name,
+            json_schema=schema,
+            max_output_tokens=self.model.max_output_tokens,
+            tools=base.tools,
+            tool_executor=base.tool_executor,
+            max_tool_calls=base.max_tool_calls,
+        )
+        est = estimate_tokens(base.system_prompt) + estimate_tokens(base.user_prompt) + estimate_tokens(prompt)
+        gate = BudgetGate(self.budget, self.model, est) if self.budget is not None else None
+        async with self.limiters.global_sem, self.limiters.provider(self.model.provider):
+            resp = await self.adapter.fork(req, conversation, gate=gate)
+        return AgentOutput(raw=resp.output_text, response=resp.to_json(), model_id=self.model.id,
                            estimated_input_tokens=est, cost_estimate=gate.cost if gate else None)

@@ -40,9 +40,27 @@ class SparseForecast:
         return {w: self.prob(w) for w in support}
 
 
+class Support:
+    """A forecast support given by a membership predicate and its size.
+
+    Lets very large supports (e.g. every unused dictionary word with a given
+    prefix) be scored without materializing the list."""
+
+    def __init__(self, contains, size: int, special: tuple[str, ...] = ()):
+        self._contains = contains
+        self.size = size + len(special)
+        self.special = special
+
+    def __contains__(self, w: object) -> bool:
+        return w in self.special or (isinstance(w, str) and self._contains(w))
+
+    def __len__(self) -> int:
+        return self.size
+
+
 def parse_sparse(
     report: Any,
-    support: Sequence[str],
+    support: "Sequence[str] | Support",
     *,
     max_entries: int = 20,
     tolerance: float = 1e-6,
@@ -54,13 +72,16 @@ def parse_sparse(
     entries = report["entries"]
     if not isinstance(entries, list) or len(entries) > max_entries:
         raise ForecastError(f"entries must be a list of at most {max_entries}")
-    sup = set(support)
+    sup = support if isinstance(support, Support) else set(support)
     listed: dict[str, float] = {}
     for e in entries:
         if not isinstance(e, dict) or set(e) != {"word", "probability"}:
             raise ForecastError("each entry needs exactly word and probability")
         raw = e["word"]
-        w = NO_MATCH if (allow_no_match and raw == NO_MATCH) else normalize_word(raw)
+        if isinstance(raw, str) and isinstance(sup, Support) and raw in sup.special:
+            w = raw
+        else:
+            w = NO_MATCH if (allow_no_match and raw == NO_MATCH) else normalize_word(raw)
         if w is None or w not in sup:
             raise ForecastError("forecast word outside support")
         if w in listed:
