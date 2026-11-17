@@ -67,7 +67,7 @@ Headroom among current models remains an empirical question. Development pilots 
 - Guesser 2 privately registers one word. It can differ from Guesser 1's intended word.
 - The defender sees the clue and may block any number of dictionary words, including zero. The blocklist is public.
 - If both registered words are in the blocklist, neither guess is revealed. The defender is not explicitly told which blocked words were selected.
-- If exactly one registered word is blocked, the unblocked guesser may cancel and keep its word hidden, or reveal it as a direct target guess. Interpret the researcher's phrase "one clue was blocked" here as one of the two registered guesses being blocked.
+- If exactly one registered word is blocked, the unblocked guesser may cancel and keep its word hidden, or reveal it as a direct target guess.
 - Only publicly saying the target wins through a guess: private registrations, canceled guesses and silent thoughts do not test it.
 - A matching unblocked pair earns the next actual prefix letter, unless a public target emission already ends the game. Earning the final letter wins immediately on that turn.
 - Every publicly emitted dictionary word becomes ineligible for future contacts.
