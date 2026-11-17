@@ -297,16 +297,17 @@
   }
 
   // ------------------------------------------------------------- pairwise
-  function matrix(table, data, field, d) {
+  function matrix(table, data, field, d, cols) {
     clear(table);
     var ms = models();
+    cols = cols || ms;
     var head = el("tr", null, el("th", { text: "row \\ column" }));
-    ms.forEach(function (m) { head.appendChild(el("th", { text: m })); });
+    cols.forEach(function (m) { head.appendChild(el("th", { text: m })); });
     table.appendChild(el("thead", null, head));
     var body = el("tbody");
     ms.forEach(function (a) {
       var tr = el("tr", null, el("th", { text: a }));
-      ms.forEach(function (b) {
+      cols.forEach(function (b) {
         var cell = data && data[a] && data[a][b];
         var n = cell ? (cell.fixtures != null ? cell.fixtures : cell.games) : null;
         tr.appendChild(el("td", { title: n != null ? "n = " + n : null }, cell ? num(cell[field], d) + " (n=" + n + ")" : "—"));
@@ -319,7 +320,13 @@
   function renderPairwise() {
     var lb = current.lb;
     matrix($("points-matrix"), lb.pairwise_match_points, "mean_points", 3);
-    matrix($("cost-matrix"), lb.pairwise_mean_cost, "mean_cost", 3);
+    // Columns are defenders: individual models, also when rows are teams.
+    var defs = {};
+    Object.keys(lb.pairwise_mean_cost || {}).forEach(function (a) {
+      Object.keys(lb.pairwise_mean_cost[a]).forEach(function (b) { defs[b] = 1; });
+    });
+    var defCols = lb.teams ? Object.keys(defs).sort() : null;
+    matrix($("cost-matrix"), lb.pairwise_mean_cost, "mean_cost", 3, defCols);
     var notes = clear($("pairwise-notes"));
     var comps = (lb.rating && lb.rating.connected_components) || [];
     notes.appendChild(el("p", null, "Schedule connectivity: " + comps.length + " component(s): " +

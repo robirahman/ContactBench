@@ -489,7 +489,7 @@ class PriorRunError(ValueError):
     pass
 
 
-def check_prior_run(current_run_dir: Path, prior_dir: Path) -> None:
+def check_prior_run(current_run_dir: Path, prior_dir: Path, profiles: dict | None = None) -> None:
     """Reject a prior run whose condition differs from the team run's
     (protocol apart from partner disclosure, lexicons, scoring, draw rules,
     base prompts, and the profile of every shared model id)."""
@@ -514,9 +514,13 @@ def check_prior_run(current_run_dir: Path, prior_dir: Path) -> None:
     for key in ("secret_lexicon", "contact_lexicon"):
         if (cm.get(key) or {}).get("sha256") != (pm.get(key) or {}).get("sha256"):
             raise PriorRunError(f"prior run {name}: {key} differs")
-    mine = {m["id"]: m for m in cur["models"]}
+    # Profiles seen so far (the team run's, then earlier prior runs'), so one
+    # model id always means one inference profile in the pooled fit.
+    mine = profiles if profiles is not None else {}
+    for m in cur["models"]:
+        mine.setdefault(m["id"], m)
     for m in pri["models"]:
-        if m["id"] in mine and mine[m["id"]] != m:
+        if mine.setdefault(m["id"], m) != m:
             raise PriorRunError(f"prior run {name}: model '{m['id']}' is configured differently")
 
 
@@ -526,10 +530,11 @@ def prior_run_legs(runs_root: Path, names: list[str], *, no_progress_draws: bool
     from ..runner.store import RunStore
 
     out = []
+    profiles: dict = {}
     for name in names:
         d = Path(runs_root) / name
         if current_run_dir is not None:
-            check_prior_run(current_run_dir, d)
+            check_prior_run(current_run_dir, d, profiles)
         sched = json.loads((d / "schedule.json").read_text())
         store = RunStore(d)
         recs = []
