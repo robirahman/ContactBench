@@ -138,9 +138,8 @@ class TasksConfig(_Strict):
 
 
 class TournamentConfig(_Strict):
-    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play", "pairs"] = (
-        "balanced_round_robin"
-    )
+    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play", "pairs",
+                      "human_challenge"] = "balanced_round_robin"
     # schedule "pairs": play only these unordered model pairs (e.g. cross-tier
     # matchups), each on the same tasks_per_pair tasks and both legs.
     pairs: list[list[str]] | None = None
@@ -161,6 +160,28 @@ class TournamentConfig(_Strict):
     # rematch_extra_letters more letters, until the revealed prefix would
     # reach the secret's length (at most len(secret) - 1 letters revealed).
     rematch_recursive: bool = True
+    # schedule "human_challenge": one human player against each opponent model.
+    human_challenge: "HumanChallengeConfig | None" = None
+
+
+class HumanChallengeConfig(_Strict):
+    """A human plays paired fixtures against benchmarked models (local play mode).
+
+    Per opponent O and secret: the human attacks as Guesser 1 with O as
+    Guesser 2 against O defending, then defends against an O+O team.  Each
+    secret is used in exactly one fixture and the attack leg is always played
+    first, so the human never attacks a secret they have seen.
+    """
+
+    player: str
+    opponents: list[str]
+    # Guesser 2 on the human's team: the opponent's own model.
+    teammate: Literal["opponent"] = "opponent"
+    # The attack leg precedes the defend leg on every secret.
+    leg_order: Literal["attack_first"] = "attack_first"
+
+
+TournamentConfig.model_rebuild()
 
 
 class ForecastConfig(_Strict):
@@ -222,7 +243,9 @@ class PriceTable(_Strict):
 
 class ModelConfig(_Strict):
     id: str
-    provider: Literal["scripted", "fake", "openai", "anthropic", "google"]
+    provider: Literal["scripted", "fake", "openai", "anthropic", "google", "human"]
+    # human players: the name shown on the leaderboard
+    display_name: str | None = None
     # scripted
     policy: str | None = None
     defender_policy: str | None = None
@@ -258,7 +281,7 @@ class ModelConfig(_Strict):
                 raise ValueError(f"unknown scripted defender policy {self.defender_policy!r}")
             if (self.choice_policy or "always_reveal") not in SCRIPTED_CHOICES:
                 raise ValueError(f"unknown scripted choice policy {self.choice_policy!r}")
-        elif self.provider == "fake":
+        elif self.provider in ("fake", "human"):
             pass
         else:
             expected = {"openai": "responses", "anthropic": "messages", "google": "interactions"}
@@ -278,7 +301,7 @@ class ModelConfig(_Strict):
 
     @property
     def effective_api_family(self) -> str | None:
-        if self.provider in ("scripted",):
+        if self.provider in ("scripted", "human"):
             return None
         if self.provider == "fake":
             return "fake"
@@ -364,6 +387,35 @@ class BenchConfig(_Strict):
                 seen.add(key)
         elif self.tournament.pairs:
             raise ValueError("tournament.pairs is only valid with schedule 'pairs'")
+        humans = [m.id for m in self.models if m.provider == "human"]
+        hc = self.tournament.human_challenge
+        if self.tournament.schedule == "human_challenge":
+            if hc is None:
+                raise ValueError("schedule 'human_challenge' requires tournament.human_challenge")
+            if humans != [hc.player]:
+                raise ValueError("human_challenge needs exactly one provider 'human' model, named by player")
+            if not hc.opponents or len(set(hc.opponents)) != len(hc.opponents):
+                raise ValueError("human_challenge.opponents must be a non-empty list of distinct model ids")
+            for o in hc.opponents:
+                if o not in ids or o == hc.player:
+                    raise ValueError(f"human_challenge opponent {o!r} is not a configured model")
+            extra = set(ids) - set(hc.opponents) - {hc.player}
+            if extra:
+                raise ValueError(f"models {sorted(extra)} are not human_challenge opponents; remove them")
+            if self.tournament.rematch_on_no_progress_draw:
+                # A rematch replays a secret the human has already seen.
+                raise ValueError("human_challenge requires rematch_on_no_progress_draw: false")
+            if self.tournament.repetitions != 1:
+                raise ValueError("human_challenge requires repetitions: 1 (a human remembers secrets)")
+            if self.execution.game_concurrency != 1:
+                raise ValueError("human_challenge requires execution.game_concurrency: 1")
+            if self.forecasts.mode != "off":
+                raise ValueError("human_challenge does not support forecasts")
+        else:
+            if hc is not None:
+                raise ValueError("tournament.human_challenge is only valid with schedule 'human_challenge'")
+            if humans:
+                raise ValueError("provider 'human' models are only valid with schedule 'human_challenge'")
         return self
 
     def resolve(self, p: str) -> Path:

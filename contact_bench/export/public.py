@@ -44,7 +44,7 @@ def _pick(d: dict | None, keys: list[str]) -> dict | None:
 
 MODEL_KEYS = ["id", "provider", "api_family", "model", "parameters", "max_output_tokens",
               "context_window_tokens", "prompt_version", "policy", "defender_policy", "choice_policy",
-              "offense_mode"]
+              "offense_mode", "display_name"]
 PROTOCOL_KEYS = None  # all protocol fields are public rule settings
 
 
@@ -163,6 +163,16 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "rematch_extra_letters": cfg.get("tournament", {}).get("rematch_extra_letters", 1),
         "inference_profiles": {m["id"]: _pick(m, ["provider", "api_family", "model", "parameters", "max_output_tokens"]) for m in cfg["models"]},
     }
+    hc = cfg.get("tournament", {}).get("human_challenge")
+    if hc:
+        # A separate, never-pooled condition: a human player with a model teammate.
+        human = next(m for m in cfg["models"] if m["id"] == hc["player"])
+        condition["human_challenge"] = {
+            "player": hc["player"], "display_name": human.get("display_name") or hc["player"],
+            "opponents": list(hc["opponents"]), "teammate": hc.get("teammate", "opponent"),
+            "leg_order": hc.get("leg_order", "attack_first"),
+            "team_composition": "human Guesser 1 + model Guesser 2 (attack); human Defender (defense)",
+        }
     ckey = hashlib.sha256(json.dumps(condition, sort_keys=True).encode()).hexdigest()[:16]
     pub_manifest = {
         "schema_version": SCHEMA_VERSION,
@@ -194,7 +204,8 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "missing_model_pairs", "rating", "rating_penalty_sensitivity", "bootstrap", "model_stats",
             "role_diagnostics", "pairwise_match_points", "pairwise_mean_cost", "capped_games",
             "capped_fraction_of_scored_games", "residual_candidate_counts_capped", "strata",
-            "numerical_reference", "numerically_close_fixtures", "resources", "forecast_calibration"]
+            "numerical_reference", "numerically_close_fixtures", "resources", "forecast_calibration",
+            "human_challenge", "anchored_rating", "rating_joint_unanchored"]
     leaderboard = {k: analysis.get(k) for k in keep}
     fixtures = [_pick(f, ["fixture_id", "task_id", "repetition", "model_a", "model_b", "complete", "cost_ab",
                           "cost_ba", "points_a", "points_b", "cost_difference_mcse", "numerically_close",
@@ -213,6 +224,7 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "initial_secret_candidate_count": s["initial_secret_candidate_count"],
             "final_secret_candidate_count": s["final_secret_candidate_count"],
             "score": _score(r.get("score")),
+            **({"attacker_g2": g["attacker_g2"]} if g.get("attacker_g2") else {}),
         })
         if max_replays is None or i < max_replays:
             rep = {

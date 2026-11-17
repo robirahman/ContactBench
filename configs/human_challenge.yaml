@@ -1,0 +1,88 @@
+# Human challenge: play Contact yourself against the small-tier models (local only).
+#   contact-bench play configs/human_challenge.yaml --player "Your Name" --live \
+#       --max-usd-provider anthropic=1 --max-usd-provider openai=1 --max-usd-provider google=1
+# Per opponent and secret you play two games: you attack as Guesser 1 with the model as
+# Guesser 2 (the model also defends), then you defend against two instances of the model.
+# The condition matches the leaderboard (ENABLE, empty prefix, lookup tools, ranges, C=100,
+# 30-turn cap) and opponent entries are identical to leaderboard_latest_small_10.yaml, so
+# `contact-bench analyze RUN --anchor <model run>` rates you against fixed model Elo.
+# Secrets come from a fresh random seed per run (published transcripts never help).
+name: human-challenge
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 100
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 2
+tournament:
+  schedule: human_challenge
+  # A rematch would replay a secret you have already seen; draws still count as draws.
+  rematch_on_no_progress_draw: false
+  human_challenge:
+    player: human
+    opponents: [claude_haiku_5_5, gpt_6_luna, gemini_4_hydrogen]
+models:
+- id: human
+  provider: human
+  display_name: Human player
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+    cache_write_per_mtok: 0.125
+- id: gpt_6_luna
+  provider: openai
+  api_family: responses
+  model: gpt-6-luna
+  parameters: {}
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1050000
+  prices:
+    as_of: '2026-11-17'
+    source: third-party trackers; model ID verified via OpenAI models.list 2026-11-17
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+- id: gemini_4_hydrogen
+  provider: google
+  api_family: interactions
+  model: gemini-4-hydrogen
+  parameters:
+    thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: Google announcement via third-party trackers; model ID verified via models.list;
+      cached rate set conservatively at 25% of input (trackers list $0.075)
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+    cached_input_per_mtok: 0.375
+execution:
+  game_concurrency: 1
+  global_concurrency: 4
+  per_provider_concurrency: 2
+analysis:
+  bootstrap_resamples: 0
+  development_bootstrap_resamples: 0

@@ -25,6 +25,20 @@ class GameSpec:
     # Rematch games override the starting prefix length.
     initial_prefix_length: int | None = None
     rematch_of: str = ""
+    # Mixed attacking team (human challenge): Guesser 2's model when it differs
+    # from Guesser 1's (``attacker``).  Empty means a homogeneous team.
+    attacker_g2: str = ""
+
+    def seat_model(self, seat: str) -> str:
+        if seat == "defender":
+            return self.defender
+        if seat == "guesser2" and self.attacker_g2:
+            return self.attacker_g2
+        return self.attacker
+
+    @property
+    def models(self) -> set[str]:
+        return {self.attacker, self.defender} | ({self.attacker_g2} if self.attacker_g2 else set())
 
 
 @dataclass(frozen=True)
@@ -58,6 +72,8 @@ def rematch_fixture(f: Fixture, initial_prefix_length: int) -> tuple[Fixture, li
         GameSpec(gba, fid, f.task_id, f.repetition, f.model_b, f.model_a, "BA", _seed("policy", gba),
                  initial_prefix_length, f.fixture_id),
     ]
+    if any(g.attacker_g2 for g in games):  # pragma: no cover - defensive
+        raise ValueError("mixed-team fixtures are never rematched")
     return fx, games
 
 
@@ -71,6 +87,8 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     games: list[GameSpec] = []
     sched = cfg.tournament.schedule
     reps = cfg.tournament.repetitions
+    if sched == "human_challenge":
+        return _human_challenge_schedule(cfg, tasks)
     if sched in ("balanced_round_robin", "round_robin_plus_self_play", "pairs"):
         pair_list = ([tuple(p) for p in cfg.tournament.pairs] if sched == "pairs"
                      else list(itertools.combinations(ids, 2)))
@@ -94,6 +112,44 @@ def build_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], 
     order = list(games)
     rng.shuffle(order)
     return fixtures, order
+
+
+def human_challenge_task_count(cfg: BenchConfig) -> int:
+    """Each secret is used in exactly one fixture (a human remembers secrets)."""
+    hc = cfg.tournament.human_challenge
+    return cfg.tasks.tasks_per_pair * len(hc.opponents) if hc else cfg.tasks.tasks_per_pair
+
+
+def _human_challenge_schedule(cfg: BenchConfig, tasks: list[Task]) -> tuple[list[Fixture], list[GameSpec]]:
+    """Fixtures human-vs-opponent on disjoint secrets, attack leg first.
+
+    Leg AB: human (Guesser 1) + opponent (Guesser 2) attack, opponent defends.
+    Leg BA: opponent + opponent attack, human defends (the human now knows the
+    secret, so this leg always comes second and the secret is never reused).
+    The fixture order is shuffled by order_seed, independently of secrets.
+    """
+    hc = cfg.tournament.human_challenge
+    h = hc.player
+    k = cfg.tasks.tasks_per_pair
+    need = human_challenge_task_count(cfg)
+    if len(tasks) < need:
+        raise ValueError(f"human_challenge needs {need} tasks (tasks_per_pair x opponents), got {len(tasks)}")
+    if len({t.secret for t in tasks[:need]}) < need:
+        # A repeated secret would be defended (seen) before it is attacked again.
+        raise ValueError("human_challenge needs distinct secrets in every fixture")
+    fixtures: list[Fixture] = []
+    legs: list[tuple[GameSpec, GameSpec]] = []
+    for i, o in enumerate(hc.opponents):
+        for t in tasks[i * k:(i + 1) * k]:
+            fid = f"{t.task_id}-r0-{h}~{o}"
+            gab = f"{t.task_id}-r0-{h}-atk-{o}"  # Guesser 2 is {o}: see attacker_g2
+            gba = f"{t.task_id}-r0-{o}-atk-{h}"
+            fixtures.append(Fixture(fid, t.task_id, 0, h, o, gab, gba))
+            legs.append((GameSpec(gab, fid, t.task_id, 0, h, o, "AB", _seed("policy", gab), attacker_g2=o),
+                         GameSpec(gba, fid, t.task_id, 0, o, h, "BA", _seed("policy", gba))))
+    rng = random.Random(_seed("order", cfg.tournament.order_seed, len(legs)))
+    rng.shuffle(legs)
+    return fixtures, [g for pair in legs for g in pair]
 
 
 def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict:
@@ -125,7 +181,13 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
                       else 1)
             max_games.extend([g] * max(0, levels))
     for g in max_games:
-        if g.attacker in llm_models:
+        if g.attacker_g2:
+            # Mixed team: Guesser 1 acts and may choose (2 calls/turn); Guesser 2
+            # responds and may choose (2 calls/turn).
+            for mid in (g.attacker, g.attacker_g2):
+                if mid in llm_models:
+                    per_model_calls[mid] = per_model_calls.get(mid, 0) + 2 * L
+        elif g.attacker in llm_models:
             per_model_calls[g.attacker] = per_model_calls.get(g.attacker, 0) + att_calls
         if g.defender in llm_models:
             per_model_calls[g.defender] = per_model_calls.get(g.defender, 0) + def_calls
