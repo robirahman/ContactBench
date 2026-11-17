@@ -690,33 +690,30 @@ class Runner:
 
     def _team_selection_data(self):
         """Role fit and matchup counts from this run plus configured prior runs."""
-        from ..analysis.analyze import load_rows, fixture_results, role_fixture_data
+        from ..analysis.analyze import compact_record, fixture_results, load_rows, prior_run_legs, role_fixture_data
         from ..analysis.rating import fit_role_ratings
         from collections import Counter
 
         t = self.cfg.tournament.teams
-        legs, faced = [], Counter()
-        sources = [(self.run_dir, [asdict(f) for f in self.fixtures], [asdict(g) for g in self.games])]
+        draws = self.cfg.tournament.no_progress_draws
+        recs = []
+        for g in self.games:
+            r = self.store.read_game(g.game_id)
+            if r and r.get("run_status") == "complete":
+                recs.append(compact_record(r))
+        rows = load_rows(recs)
+        legs = role_fixture_data(rows, fixture_results(rows, [asdict(f) for f in self.fixtures],
+                                                       no_progress_draws=draws))
+        legs += [leg for _, leg in prior_run_legs(self.run_dir.parent, t.prior_runs, no_progress_draws=draws)]
+        faced: Counter = Counter()
+        games = [asdict(g) for g in self.games]
         for name in t.prior_runs:
-            d = self.run_dir.parent / name
-            sched = json.loads((d / "schedule.json").read_text())
-            sources.append((d, sched["fixtures"], sched["games"]))
-        for d, fixtures, games in sources:
-            store = self.store if d == self.run_dir else RunStore(d)
-            recs = []
-            for g in games:  # keep only what the fit needs (game records can be large)
-                r = store.read_game(g["game_id"])
-                if r and r.get("run_status") == "complete":
-                    recs.append({k: r.get(k) for k in ("game", "summary", "score", "run_status")})
-                del r
-            rows = load_rows(recs)
-            fx = fixture_results(rows, fixtures, no_progress_draws=self.cfg.tournament.no_progress_draws)
-            legs.extend(role_fixture_data(rows, fx))
-            for g in games:  # every scheduled leg counts as a faced matchup
-                g1 = g.get("guesser1_model") or g["attacker"]
-                g2 = g.get("guesser2_model") or g["attacker"]
-                for m in {g1, g2}:
-                    faced[(m, g["defender"])] += 1
+            games += json.loads((self.run_dir.parent / name / "schedule.json").read_text())["games"]
+        for g in games:  # every scheduled leg counts as a faced matchup
+            g1 = g.get("guesser1_model") or g["attacker"]
+            g2 = g.get("guesser2_model") or g["attacker"]
+            for m in {g1, g2}:
+                faced[(m, g["defender"])] += 1
         ids = [m.id for m in self.cfg.models]
         known = sorted(set(ids) | {m for l1, l2, _ in legs for leg in (l1, l2) for m in leg})
         fit = fit_role_ratings(known, legs, penalty_scale=self.cfg.analysis.logit_penalty_scale) if legs else None
