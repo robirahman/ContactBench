@@ -316,11 +316,15 @@ def cmd_play(args) -> int:
         server.close()
         print(f"\nstopped; resume with: contact-bench play --resume {runner.run_id}")
         return 130
-    session.mark_finished()
     _print(status)
     if status.get("pending_games"):
+        why = ("budget cap reached" if status.get("budget_stopped") or status.get("halted_providers")
+               else "an opponent is unavailable" if status.get("fatal_failures") or status.get("halted")
+               else "paused")
+        session.mark_paused(f"{status['pending_games']} games still pending ({why}).")
         print(f"{status['pending_games']} games pending; resume with: contact-bench play --resume {runner.run_id}")
     else:
+        session.mark_finished()
         print(f"challenge complete; score it with: contact-bench analyze {runner.run_id} --anchor ANCHOR_RUN_ID")
     if not args.no_wait:
         print("results stay on the page; press Ctrl-C to close the server")

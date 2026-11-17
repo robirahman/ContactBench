@@ -289,6 +289,8 @@ def test_stop_pauses_and_resume_continues(tmp_path):
 
     st = asyncio.run(go())
     assert st["complete_games"] == 0 and session.state()["status"] == "stopped"
+    session.mark_paused("8 games still pending (paused).")
+    assert session.state()["message"].startswith("8 games")
     # a later session resumes the same run
     runner2 = Runner(cfg, tmp_path / "r")
     runner2.prepare()

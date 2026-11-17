@@ -44,6 +44,7 @@ class HumanSession:
         self._game_specs = {g.game_id: g for g in games}
         self.stopped = False
         self.finished = False
+        self.message: str | None = None
         self.version = 0
 
     # ------------------------------------------------------------ runner side
@@ -172,6 +173,13 @@ class HumanSession:
             self.finished = True
             self.version += 1
 
+    def mark_paused(self, message: str) -> None:
+        """The runner stopped with games still pending (budget, provider halt)."""
+        with self._lock:
+            self.stopped = True
+            self.message = message
+            self.version += 1
+
     def _fixture_rows(self) -> list[dict]:
         rows = []
         for f in self._fixtures:
@@ -210,6 +218,7 @@ class HumanSession:
                 "model_names": self.model_names,
                 "status": ("stopped" if self.stopped else "finished" if self.finished
                            else "your_turn" if pending else "waiting"),
+                "message": self.message,
                 "current": self._current,
                 "pending": pending,
                 "fixtures": fx,

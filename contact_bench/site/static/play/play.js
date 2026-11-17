@@ -55,7 +55,8 @@
     $("who").textContent = "Player: " + s.display_name + " · run " + s.run_id;
     var text;
     if (s.status === "finished") text = "All available games are done. Your results are on the right; the run is saved.";
-    else if (s.status === "stopped") text = "Paused. Every recorded move is saved; resume with: contact-bench play --resume " + s.run_id;
+    else if (s.status === "stopped") text = "Paused. " + (s.message ? s.message + " " : "") +
+      "Every recorded move is saved; resume with: contact-bench play --resume " + s.run_id;
     else if (!cur) text = "Starting…";
     else {
       var role = cur.role === "attack"
