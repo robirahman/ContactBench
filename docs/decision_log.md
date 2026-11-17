@@ -72,6 +72,18 @@ The design choices behind these conditions:
 - **Pilot configuration.** The self-play pilot used `turn_limit: 20` and 256 reference rollouts per histogram. One
   rollout over the full dictionary takes about 0.11 s.
 
+## Gemini tool loop and per-provider caps (2026-11-17)
+
+- **Gemini tool loop.** In live tests on 2026-11-17, `gemini-3.8-flash` re-called lookup tools until the call limit
+  whenever `response_format` was sent together with function tools. This happened on both Interactions and
+  generateContent. Without the format it calls tools sensibly, but it wraps its answer in a Markdown code fence.
+  The Gemini adapters therefore set `structured_output_with_tools = False`. Lookup turns omit the output schema.
+  When the model stops calling tools, one final turn runs with tools disabled and the schema enforced, preceded by
+  a fixed user nudge (`FINAL_ANSWER_NUDGE`). So the final answer is still strictly validated, and the extra call
+  is counted against the budget like any other.
+- **Per-provider caps.** `--max-usd-provider PROVIDER=USD` (repeatable) caps spend per API key, on both `run` and
+  `resume`.
+
 ## Review fixes (Codex review of PR #1)
 
 1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes

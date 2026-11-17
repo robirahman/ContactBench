@@ -116,7 +116,8 @@ def cmd_resume(args) -> int:
     if args.live and not (args.max_requests or args.max_usd):
         print("error: --live requires --max-requests N and/or --max-usd X", file=sys.stderr)
         return 2
-    status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd)
+    status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
+                  provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
     return 0 if not status.get("halted") else 3
 
@@ -324,7 +325,8 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--max-usd", type=float); s.set_defaults(fn=cmd_smoke)
     s = sub.add_parser("resume"); s.add_argument("run_id")
     s.add_argument("--offline", action="store_true"); s.add_argument("--live", action="store_true")
-    s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float); s.set_defaults(fn=cmd_resume)
+    s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float)
+    s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD"); s.set_defaults(fn=cmd_resume)
     s = sub.add_parser("replay"); s.add_argument("run_id"); s.set_defaults(fn=cmd_replay)
     s = sub.add_parser("analyze"); s.add_argument("run_id"); s.add_argument("--bootstrap", type=int)
     s.set_defaults(fn=cmd_analyze)
