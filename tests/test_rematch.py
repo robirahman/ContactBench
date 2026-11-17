@@ -105,3 +105,21 @@ def test_rematch_ids_cannot_collide_with_model_ids():
     assert all("~" in g.game_id for g in games)
     with pytest.raises(ValueError):
         ModelConfig(id="b~rematch", provider="scripted")
+
+
+def test_rematch_execution_order_is_shuffled_deterministically(tmp_path):
+    import hashlib
+    c = _cfg()
+    r = Runner(c, tmp_path / "r")
+    played = []
+    orig = r.play
+
+    async def spy(g):
+        played.append(g.game_id)
+        return await orig(g)
+
+    r.play = spy
+    asyncio.run(r.run())
+    rm = [x for x in played if "rematch" in x]
+    key = lambda gid: hashlib.sha256(f"rematch-order|{c.tournament.order_seed}|{gid}".encode()).hexdigest()
+    assert rm and rm == sorted(rm, key=key)

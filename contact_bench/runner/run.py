@@ -625,6 +625,10 @@ class Runner:
             finished = {r["game_id"] for r in self.store.game_rows()
                         if r["status"] == "complete" and r["collection_status"] == "complete"}
             pending_rm = [g for g in self.games if g.rematch_of and g.game_id not in finished]
+            # Shuffle deterministically (independent of outcomes) so a budget
+            # stop does not systematically favour earlier model pairs.
+            pending_rm.sort(key=lambda g: hashlib.sha256(
+                f"rematch-order|{self.cfg.tournament.order_seed}|{g.game_id}".encode()).hexdigest())
             await asyncio.gather(*(one(g) for g in pending_rm))
         status = self.status()
         status["budget"] = self.budget.snapshot()
