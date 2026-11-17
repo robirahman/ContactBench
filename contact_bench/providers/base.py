@@ -241,6 +241,12 @@ class ProviderAdapter(ABC):
     api_family: str = ""
     # Parameters this adapter knows how to send.  Anything else fails preflight.
     supported_parameters: frozenset[str] = frozenset()
+    # False when the provider misbehaves if structured output and tools are
+    # requested together.  The tool loop then runs lookup turns without the
+    # output format and finishes with one extra turn that has tools disabled
+    # and the JSON schema enforced, so the final answer is still strictly
+    # validated.
+    structured_output_with_tools: bool = True
 
     def __init__(
         self,
@@ -394,15 +400,21 @@ class ProviderAdapter(ABC):
         usages: list[NormalizedUsage] = []
         n_calls = 0
         turns = 0
+        force_final = False
         while True:
             turns += 1
-            allow = n_calls < limit
+            allow = n_calls < limit and not force_final
             (resp, calls, state), att = await self._with_retries(
                 lambda s=state, a=allow: self.send_tool_turn(request, s, a), gate
             )
             attempts.extend(att)
             usages.append(resp.usage)
             done = not calls or resp.refusal or resp.incomplete
+            if done and not calls and allow and not resp.refusal and not self.structured_output_with_tools:
+                # Lookup phase ended without the schema; request the final,
+                # schema-constrained answer with tools disabled.
+                force_final = True
+                continue
             if not done and turns > limit + 2:
                 # The model kept requesting tools after being told to answer.
                 resp.output_text = None

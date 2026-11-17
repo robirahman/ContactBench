@@ -73,10 +73,19 @@ def _new_run_id(cfg: BenchConfig) -> str:
     return f"{cfg.name}-{time.strftime('%Y%m%d-%H%M%S')}"
 
 
-def _run(cfg: BenchConfig, run_dir: Path, *, live: bool, max_requests, max_usd, progress=True) -> dict:
+def _provider_caps(items) -> dict[str, float]:
+    caps = {}
+    for it in items or []:
+        k, _, v = it.partition("=")
+        caps[k.strip()] = float(v)
+    return caps
+
+
+def _run(cfg: BenchConfig, run_dir: Path, *, live: bool, max_requests, max_usd, progress=True, provider_caps=None) -> dict:
     from ..runner.run import Runner
 
-    runner = Runner(cfg, run_dir, live=live, max_requests=max_requests, max_usd=max_usd, progress=progress)
+    runner = Runner(cfg, run_dir, live=live, max_requests=max_requests, max_usd=max_usd, progress=progress,
+                    max_usd_by_provider=provider_caps)
     status = asyncio.run(runner.run())
     return status
 
@@ -92,7 +101,8 @@ def cmd_run(args) -> int:
     run_id = args.run_id or _new_run_id(cfg)
     run_dir = _runs_dir(args) / run_id
     print(f"run {run_id} -> {run_dir}")
-    status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd)
+    status = _run(cfg, run_dir, live=args.live, max_requests=args.max_requests, max_usd=args.max_usd,
+                  provider_caps=_provider_caps(args.max_usd_provider))
     _print(status)
     return 0 if not status.get("halted") else 3
 
@@ -304,7 +314,10 @@ def build_parser() -> argparse.ArgumentParser:
         s = sub.add_parser(name); s.add_argument("config")
         s.add_argument("--offline", action="store_true"); s.add_argument("--live", action="store_true")
         s.add_argument("--max-requests", type=int); s.add_argument("--max-usd", type=float)
-        s.add_argument("--run-id"); s.set_defaults(fn=fn)
+        s.add_argument("--run-id")
+        s.add_argument("--max-usd-provider", action="append", metavar="PROVIDER=USD",
+                       help="per-provider dollar cap, e.g. --max-usd-provider google=4.5 (repeatable)")
+        s.set_defaults(fn=fn)
     s = sub.add_parser("smoke"); s.add_argument("config"); s.add_argument("--provider", required=True,
                                                                          choices=["openai", "anthropic", "google"])
     s.add_argument("--live", action="store_true"); s.add_argument("--max-requests", type=int)

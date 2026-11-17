@@ -84,9 +84,10 @@ git add leaderboard/exports/RUN_ID && git commit && git push      # deploys on p
 1. Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 2. Project sites are served at `<custom domain>/<repository name>/`, and the path is case-sensitive. The
    `robirahman.github.io` user site uses the custom domain `www.robirahman.com`. So a repository named
-   `ContactBench` publishes at `https://www.robirahman.com/ContactBench/`, and `/contactbench/` returns 404.
-   Rename the repository to `contactbench` (Settings → General) to get the lowercase URL. GitHub redirects the old
-   repository URL and git remotes.
+   `ContactBench` publishes at `https://www.robirahman.com/ContactBench/` (the URL in use), and `/contactbench/`
+   returns 404. GitHub Pages has no case-insensitivity setting and cannot send server-side redirects. To make the
+   lowercase path work, add a redirect stub `contactbench/index.html` to the user-site repository
+   (`robirahman.github.io`). That repository serves every path that no project repository claims.
 3. Merge to `main`, or run the workflow manually from the Actions tab. By default the `github-pages` environment
    accepts deployments only from the default branch.
 

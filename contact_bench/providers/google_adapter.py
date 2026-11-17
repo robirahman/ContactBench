@@ -66,7 +66,13 @@ def map_google_error(e: BaseException, secrets: tuple[str, ...]) -> Infrastructu
     return mk("unknown", fatal=True)
 
 
+FINAL_ANSWER_NUDGE = (
+    "Lookups are finished. Reply now with only your final answer as a JSON object matching the required schema."
+)
+
+
 class _GoogleBase(ProviderAdapter):
+    structured_output_with_tools = False
     provider = "google"
     default_credential_env = "GEMINI_API_KEY"
 
@@ -135,7 +141,14 @@ class GeminiInteractionsAdapter(_GoogleBase):
         return [{"type": "user_input", "content": [{"type": "text", "text": request.user_prompt}]}]
 
     def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
-        kwargs = self.build_request(request, input_steps=list(state))
+        state = list(state)
+        if not allow_tools and state and state[-1].get("type") in ("model_output", "thought"):
+            state.append({"type": "user_input", "content": [{"type": "text", "text": FINAL_ANSWER_NUDGE}]})
+        kwargs = self.build_request(request, input_steps=state)
+        if allow_tools:
+            # Gemini re-calls tools indefinitely when response_format is also
+            # set (observed live 2026-11-17); see structured_output_with_tools.
+            kwargs.pop("response_format", None)
         kwargs["tools"] = [
             {"type": "function", "name": t.name, "description": t.description, "parameters": t.parameters}
             for t in request.tools
@@ -263,8 +276,14 @@ class GeminiGenerateContentAdapter(_GoogleBase):
         return [{"role": "user", "parts": [{"text": request.user_prompt}]}]
 
     def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
-        kwargs = self.build_request(request, contents=list(state))
+        state = list(state)
+        if not allow_tools and state and get(state[-1], "role") == "model":
+            state.append({"role": "user", "parts": [{"text": FINAL_ANSWER_NUDGE}]})
+        kwargs = self.build_request(request, contents=state)
         cfg = kwargs["config"]
+        if allow_tools:
+            cfg.pop("response_mime_type", None)
+            cfg.pop("response_json_schema", None)
         cfg["tools"] = [
             {
                 "function_declarations": [

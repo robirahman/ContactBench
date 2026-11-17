@@ -193,18 +193,22 @@ def gi_client(script):
 
 
 def test_interactions_two_turn_loop():
-    client, rec = gi_client([gi_call(), gi_final()])
+    # Gemini: lookup turns run without response_format; a final turn with
+    # tools disabled re-requests the schema-constrained answer.
+    client, rec = gi_client([gi_call(), gi_final(), gi_final()])
     ex = Executor()
     resp = asyncio.run(adapter(GeminiInteractionsAdapter, "google", client).decide(req(ex)))
     assert json.loads(resp.output_text) == FINAL and ex.calls == [("list_words", {"prefix": "ca"})]
-    assert resp.usage.input_tokens == 30 and resp.usage.output_tokens == 10 and resp.usage.reasoning_tokens == 4
-    first, second = rec.kwargs
+    assert resp.usage.input_tokens == 50 and resp.usage.output_tokens == 16 and resp.usage.reasoning_tokens == 6
+    first, second, third = rec.kwargs
+    assert "response_format" not in first and "response_format" not in second
+    assert third["response_format"]["schema"] == SCHEMA and third["generation_config"]["tool_choice"] == "none"
+    assert third["input"][-1]["type"] == "user_input"
     assert first["store"] is False and "previous_interaction_id" not in first
     assert first["automatic_continuation"] is False
     assert first["generation_config"]["tool_choice"] == "auto"
     assert first["tools"][0] == {"type": "function", "name": "list_words", "description": TOOLS[0].description,
                                  "parameters": TOOLS[0].parameters}
-    assert first["response_format"]["schema"] == SCHEMA
     steps = second["input"]
     assert [s["type"] for s in steps] == ["user_input", "thought", "function_call", "function_result"]
     assert steps[1]["signature"] == "SIG"
@@ -221,10 +225,10 @@ def test_interactions_limit_and_none_mode():
 
 
 def test_interactions_gate_with_retry():
-    client, _ = gi_client([gi_call(), transient(), gi_final()])
+    client, _ = gi_client([gi_call(), transient(), gi_final(), gi_final()])
     gate = CountingGate()
     asyncio.run(adapter(GeminiInteractionsAdapter, "google", client).decide(req(Executor()), gate=gate))
-    assert gate.before_n == 3 and [ok for _, ok in gate.afters] == [True, False, True]
+    assert gate.before_n == 4 and [ok for _, ok in gate.afters] == [True, False, True, True]
 
 
 # ---------------------------------------------------------------- generateContent
@@ -255,18 +259,20 @@ def gc_client(script):
 
 
 def test_generate_content_two_turn_loop():
-    client, rec = gc_client([gc_call(), gc_final()])
+    client, rec = gc_client([gc_call(), gc_final(), gc_final()])
     ex = Executor()
     resp = asyncio.run(adapter(GeminiGenerateContentAdapter, "google", client, api_family="generate_content")
                        .decide(req(ex)))
     assert json.loads(resp.output_text) == FINAL and ex.calls == [("list_words", {"prefix": "ca"})]
-    assert resp.usage.input_tokens == 30 and resp.usage.output_tokens == 8
-    first, second = rec.kwargs
+    assert resp.usage.input_tokens == 50 and resp.usage.output_tokens == 13
+    first, second, third = rec.kwargs
+    assert "response_json_schema" not in first["config"] and "response_json_schema" not in second["config"]
+    assert third["config"]["response_json_schema"] == SCHEMA
+    assert third["config"]["tool_config"]["function_calling_config"]["mode"] == "NONE"
     cfg = first["config"]
     assert cfg["tool_config"]["function_calling_config"]["mode"] == "AUTO"
     assert cfg["automatic_function_calling"] == {"disable": True}
     assert cfg["tools"][0]["function_declarations"][0]["name"] == "list_words"
-    assert cfg["response_json_schema"] == SCHEMA
     contents = second["contents"]
     assert contents[0]["role"] == "user"
     assert contents[1]["role"] == "model" and contents[1]["parts"][0]["thought_signature"] == "SIG"
@@ -284,11 +290,11 @@ def test_generate_content_limit_and_none_mode():
 
 
 def test_generate_content_gate_with_retry():
-    client, _ = gc_client([gc_call(), transient(), gc_final()])
+    client, _ = gc_client([gc_call(), transient(), gc_final(), gc_final()])
     gate = CountingGate()
     asyncio.run(adapter(GeminiGenerateContentAdapter, "google", client, api_family="generate_content")
                 .decide(req(Executor()), gate=gate))
-    assert gate.before_n == 3 and [ok for _, ok in gate.afters] == [True, False, True]
+    assert gate.before_n == 4 and [ok for _, ok in gate.afters] == [True, False, True, True]
 
 
 @pytest.mark.parametrize("cls,provider,kw", [

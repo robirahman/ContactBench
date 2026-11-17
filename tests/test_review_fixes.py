@@ -109,3 +109,20 @@ def test_task_manifest_provenance_validated(tmp_path):
         c2 = cfg(SCRIPTED, tasks=2).model_copy(update={"tasks": c.tasks.model_copy(update={"manifest": str(p)})})
         with pytest.raises(ValueError, match="provenance"):
             Runner(c2, tmp_path / f"run_{field}").prepare()
+
+
+def test_per_provider_dollar_cap():
+    pt = PriceTable(as_of="x", input_per_mtok=1.0, output_per_mtok=1.0)
+    ma = ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=1000, prices=pt,
+                     credential_env="ANTHROPIC_API_KEY")
+    mg = ModelConfig(id="g", provider="google", model="m", max_output_tokens=1000, prices=pt)
+    b = Budget(None, None, max_usd_by_provider={"google": 0.0025})
+
+    async def go():
+        t = await b.reserve(mg, 1000)  # reserves 0.002
+        with pytest.raises(BudgetExhausted):
+            await b.reserve(mg, 1000)
+        await b.reserve(ma, 1000)  # other provider unaffected
+        await b.commit(mg, t, NormalizedUsage(input_tokens=500, output_tokens=0), 1)
+        assert b.usd_spent_by_provider["google"] == pytest.approx(0.0005)
+    asyncio.run(go())

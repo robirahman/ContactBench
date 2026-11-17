@@ -45,6 +45,10 @@ class Budget:
     usd_reserved: float = 0.0
     usd_spent: float = 0.0
     usd_uncertain: int = 0  # responses with unknown usage
+    # Optional per-provider dollar caps (one API key per provider).
+    max_usd_by_provider: dict[str, float] = field(default_factory=dict)
+    usd_spent_by_provider: dict[str, float] = field(default_factory=dict)
+    usd_reserved_by_provider: dict[str, float] = field(default_factory=dict)
     _lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
     async def reserve(self, model: ModelConfig, est_input_tokens: int) -> float:
@@ -52,12 +56,18 @@ class Budget:
             if self.max_requests is not None and self.requests_used + self.requests_reserved >= self.max_requests:
                 raise BudgetExhausted("request budget exhausted")
             res = 0.0
-            if self.max_usd is not None:
+            pcap = self.max_usd_by_provider.get(model.provider)
+            if self.max_usd is not None or pcap is not None:
                 if model.prices is None:
                     raise BudgetExhausted(f"monetary cap requires a price table for {model.id}")
                 res = worst_case_cost(model.prices, est_input_tokens, model.max_output_tokens or 0)
-                if self.usd_spent + self.usd_reserved + res > self.max_usd:
+                if self.max_usd is not None and self.usd_spent + self.usd_reserved + res > self.max_usd:
                     raise BudgetExhausted("monetary budget would be exceeded by in-flight reservation")
+                p = model.provider
+                if pcap is not None and (self.usd_spent_by_provider.get(p, 0.0)
+                                         + self.usd_reserved_by_provider.get(p, 0.0) + res) > pcap:
+                    raise BudgetExhausted(f"{p} monetary budget would be exceeded by in-flight reservation")
+                self.usd_reserved_by_provider[p] = self.usd_reserved_by_provider.get(p, 0.0) + res
             self.requests_reserved += 1
             self.usd_reserved += res
             return res
@@ -66,6 +76,9 @@ class Budget:
         async with self._lock:
             self.requests_reserved -= 1
             self.usd_reserved -= reservation
+            p = model.provider
+            if p in self.usd_reserved_by_provider:
+                self.usd_reserved_by_provider[p] -= reservation
             # Every transport attempt may be billed; count them all.
             self.requests_used += max(1, attempts)
             cost = None
@@ -77,6 +90,7 @@ class Budget:
                 cost = reservation
             if cost is not None:
                 self.usd_spent += cost
+                self.usd_spent_by_provider[p] = self.usd_spent_by_provider.get(p, 0.0) + cost
             return cost
 
     def snapshot(self) -> dict:
@@ -85,6 +99,8 @@ class Budget:
             "max_usd": self.max_usd,
             "requests_used": self.requests_used,
             "usd_spent_estimate": round(self.usd_spent, 6),
+            "max_usd_by_provider": dict(self.max_usd_by_provider),
+            "usd_spent_by_provider": {k: round(v, 6) for k, v in self.usd_spent_by_provider.items()},
             "responses_with_uncertain_usage": self.usd_uncertain,
         }
 

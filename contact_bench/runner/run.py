@@ -177,6 +177,7 @@ class Runner:
         replay_only: bool = False,
         adapters: dict[str, Any] | None = None,
         progress: bool = False,
+        max_usd_by_provider: dict[str, float] | None = None,
     ):
         self.cfg = cfg
         self.run_dir = Path(run_dir)
@@ -193,7 +194,8 @@ class Runner:
         self.contact_dictionary = (
             self.secret_dictionary if self.v_contact is self.v_secret else DictionaryService(self.v_contact)
         )
-        self.budget = Budget(max_requests, max_usd if max_usd is not None else cfg.execution.max_usd)
+        self.budget = Budget(max_requests, max_usd if max_usd is not None else cfg.execution.max_usd,
+                             max_usd_by_provider=dict(max_usd_by_provider or {}))
         self.limiters = Limiters(cfg.execution.global_concurrency, cfg.execution.per_provider_concurrency)
         self.models: dict[str, ModelConfig] = {m.id: m for m in cfg.models}
         self._adapters = adapters or {}
@@ -207,7 +209,7 @@ class Runner:
                 "Use --live with an explicit --max-requests budget."
             )
         if live and not replay_only:
-            if not (max_requests or max_usd or cfg.execution.max_usd):
+            if not (max_requests or max_usd or cfg.execution.max_usd or max_usd_by_provider):
                 raise LiveModeError("live mode requires a request-count or monetary stopping budget")
 
     # ---------------------------------------------------------------- setup
