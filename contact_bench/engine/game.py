@@ -80,6 +80,7 @@ class Game:
         protocol: ProtocolConfig,
         offense_condition: str = "full",
         joint_live: bool = False,
+        partner_models: dict[str, str] | None = None,
     ):
         if secret not in v_secret:
             raise GameSetupError("secret is not in V_secret")
@@ -96,6 +97,8 @@ class Game:
         self.protocol = protocol
         self.offense_condition = offense_condition
         self.joint_live = joint_live
+        # Mixed-team "disclosed" condition only: guesser seat -> partner model name.
+        self.partner_models = dict(partner_models or {}) if protocol.partner_disclosure == "disclosed" else {}
         self.turn_limit = protocol.turn_limit
         self.clue_max = protocol.clue_max_characters
         self.block_ranges_enabled = protocol.blocklist_encoding == "words_and_ranges"
@@ -213,6 +216,7 @@ class Game:
             protocol_version=self.protocol.version,
             dictionary_access=self.protocol.dictionary_access,
             dictionary_identity=self.dictionary_identity(),
+            partner_model=self.partner_models.get(seat) if seat in ("guesser1", "guesser2") else None,
             **extras,
         )
 

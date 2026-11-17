@@ -75,6 +75,32 @@ The authoritative rules are in `CONTACT_BENCHMARK_SPEC.md`. This page describes 
   `A_i = mean_j mean_tasks(C_ji − C_ij)`, defensive cost ratio, deadline hold rate) is reported separately from the
   rating.
 
+## Mixed-model attacking teams (separate condition)
+
+- **Schedule `teams`** (`tournament.homogeneous_attackers: false`). For each configured unordered pair {A, B} and
+  task, one defender D (not A or B) is chosen and four legs are played on the same secret: A+B, B+A (the **role
+  fixture**: same models and defender, roles swapped) and A+A, B+B (the **self-play fixture**). `G1+G2` names a team
+  (Guesser 1 = clue-giver, Guesser 2 = receiver). Each seat keeps its own context; there is no teammate channel.
+- **Partner disclosure.** `protocol.partner_disclosure: blind` (default) tells no one who their partner is;
+  `disclosed` adds one line naming the partner model to each guesser's prompt (never to the defender's). Blind
+  prompts are byte-identical to the homogeneous track (same prompt hash). The two are separate conditions.
+- **Additive role ratings.** A leg's strength is `g1[G1] + g2[G2] − d[D]`; a fixture's first leg is cheaper with
+  probability `sigmoid(strength(L1) − strength(L2))`, with half-point draws as before. Each component has prior
+  `N(0, s²/3)`, so the composite `g1 + g2 + d` has the same `N(0, s²)` prior as the homogeneous rating, and on
+  homogeneous fixtures (A+A vs D=B against B+B vs D=A) the composite reproduces the homogeneous Elo exactly.
+  Role fixtures identify clue-giver vs receiver contrasts; self-play fixtures identify `g1 + g2` differences;
+  defender components are identified only by fixtures whose legs face different defenders (homogeneous runs, which
+  `teams.prior_runs` can include for defender selection). Components are centred within each role.
+- **Adaptive defender selection** (`defender_selection: adaptive_uncertainty`). Tasks are split into `rounds`;
+  before each round the role model is refitted on all completed data (this run plus `prior_runs`) and each
+  (pair, task) block gets the defender that (1) fills the most missing (model, defender) matchups, then (2)
+  maximises `Var(g1_A + g2_B − d_D) + Var(g1_B + g2_A − d_D)` under the Laplace posterior, then (3) wins a seeded
+  hash tie-break. Selection depends only on earlier outcomes (a sequential design), is logged as a
+  `defenders_selected` event, and the bootstrap resamples whole blocks with the defenders actually chosen.
+- **Diagnostics.** A cross-play matrix (G1 model × G2 model: median cost, contacts per clue turn) and each model's
+  self-play vs mixed-partner median cost. Team runs are never combined with homogeneous runs (`analyze-combined`
+  refuses), and their export condition key includes the team design and disclosure.
+
 ## Forecast diagnostics (optional)
 
 These use a sparse report with up to 20 entries plus `other_mass`, which is spread uniformly over the unlisted support.

@@ -17,6 +17,7 @@
   <p class="sub">A benchmark of AI models on the word game <em>Contact</em>.</p>
   <nav>
     <a href="#rating">Rating</a>
+    <a href="#teams" id="teams-nav" hidden>Teams</a>
     <a href="#efficiency">Efficiency</a>
     <a href="#pairwise">Pairwise</a>
     <a href="#settings">Models &amp; resources</a>
@@ -40,6 +41,15 @@
     <p class="note">Batch Elo-style rating with half-point draws, fitted to paired cost comparisons (A+A attacking B vs. B+B attacking A on the same secret). 95% intervals from a task-cluster bootstrap. Click a column header to sort.</p>
     <div class="scroll"><table id="rating-table" class="sortable"></table></div>
     <p id="rating-notes" class="note"></p>
+  </section>
+
+  <section id="teams" hidden>
+    <h2>Mixed-model teams</h2>
+    <p class="note">In this condition the two guessers are different models. The rating table above rates teams ("Guesser 1+Guesser 2"). Below, each model's additive role ratings: a leg's strength is clue-giver(G1) + receiver(G2) − defender(D). Composite Elo = sum of the three components on the usual scale. Role fixtures (A+B vs B+A against one defender) identify clue-giver vs receiver contrasts; defender components come from fixtures whose legs face different defenders.</p>
+    <div class="scroll"><table id="role-table" class="sortable"></table></div>
+    <h3>Cross-play matrix (median cost in turns; rows = Guesser 1, columns = Guesser 2)</h3>
+    <div class="scroll"><table id="crossplay-matrix"></table></div>
+    <p id="teams-notes" class="note"></p>
   </section>
 
   <section id="efficiency">

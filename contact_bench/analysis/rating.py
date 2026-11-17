@@ -159,3 +159,129 @@ def fit_ratings(
         penalty_scale=penalty_scale,
         components=comps,
     )
+
+
+# ---------------------------------------------------------------------------
+# Additive role ratings (mixed-model attacking teams)
+# ---------------------------------------------------------------------------
+ROLES = ("g1", "g2", "d")  # clue-giver (Guesser 1), receiver (Guesser 2), defender
+
+
+@dataclass
+class RoleFit:
+    models: list[str]
+    theta: dict[str, dict[str, float]]  # model -> role -> logit strength
+    composite: dict[str, float]  # g1 + g2 + d, recentred to mean zero
+    elo: dict[str, float]
+    covariance: list[list[float]]  # Laplace covariance of the stacked parameters
+    converged: bool
+    iterations: int
+    penalty_scale: float
+    n_fixtures: int
+
+    def index(self, model: str, role: str) -> int:
+        return 3 * self.models.index(model) + ROLES.index(role)
+
+    def variance(self, x: dict[int, float]) -> float:
+        return sum(a * self.covariance[i][j] * b for i, a in x.items() for j, b in x.items())
+
+    def to_json(self) -> dict:
+        scale = 400.0 / math.log(10)
+        return {
+            "method": "additive role ratings: leg strength g1[G1] + g2[G2] - d[D]; "
+                      "fixture P(first leg cheaper) = sigmoid(strength difference); half-point draws",
+            "models": self.models,
+            "components_logit": self.theta,
+            "components_elo_points": {m: {r: scale * v for r, v in t.items()} for m, t in self.theta.items()},
+            "composite_logit": self.composite,
+            "elo": self.elo,
+            "converged": self.converged,
+            "iterations": self.iterations,
+            "penalty_scale": self.penalty_scale,
+            "fixtures": self.n_fixtures,
+        }
+
+
+Leg = tuple[str, str, str]  # (guesser1 model, guesser2 model, defender model)
+
+
+def leg_features(models: Sequence[str], leg: Leg, sign: float = 1.0) -> dict[int, float]:
+    idx = {m: i for i, m in enumerate(models)}
+    g1, g2, d = leg
+    x: dict[int, float] = {}
+    for k, v in ((3 * idx[g1] + 0, sign), (3 * idx[g2] + 1, sign), (3 * idx[d] + 2, -sign)):
+        x[k] = x.get(k, 0.0) + v
+    return x
+
+
+def fit_role_ratings(
+    models: Sequence[str],
+    fixtures: Sequence[tuple[Leg, Leg, float]],
+    *,
+    penalty_scale: float = 2.5,
+    elo_center: float = 1500.0,
+    max_iter: int = 100,
+    tol: float = 1e-10,
+) -> RoleFit:
+    """MAP fit of role strengths from paired fixtures.
+
+    Each fixture is (leg1, leg2, y) with y the first leg's match points.  Each
+    role component has prior N(0, s^2/3), so a model's composite g1+g2+d has
+    prior N(0, s^2): with only homogeneous fixtures (A+A vs B, B+B vs A) the
+    composite equals the existing per-model Elo fit.
+    """
+    models = list(models)
+    n = 3 * len(models)
+    inv = 3.0 / (penalty_scale * penalty_scale)
+    xs = []
+    for l1, l2, y in fixtures:
+        x = leg_features(models, l1)
+        for k, v in leg_features(models, l2, -1.0).items():
+            x[k] = x.get(k, 0.0) + v
+        xs.append(({k: v for k, v in x.items() if v}, y))
+    th = [0.0] * n
+
+    def lgh(th):
+        loss = sum(t * t for t in th) * inv / 2
+        g = [t * inv for t in th]
+        H = [[(inv if i == j else 0.0) for j in range(n)] for i in range(n)]
+        for x, y in xs:
+            z = sum(th[k] * v for k, v in x.items())
+            p = min(max(_sigmoid(z), 1e-300), 1 - 1e-16)
+            loss -= y * math.log(p) + (1 - y) * math.log(1 - p)
+            w = p * (1 - p)
+            for k, v in x.items():
+                g[k] += (p - y) * v
+                for k2, v2 in x.items():
+                    H[k][k2] += w * v * v2
+        return loss, g, H
+
+    converged, it = False, 0
+    H = None
+    for it in range(1, max_iter + 1):
+        loss, g, H = lgh(th)
+        if math.sqrt(sum(v * v for v in g)) < tol:
+            converged = True
+            break
+        step = _solve(H, g)
+        th = [a - b for a, b in zip(th, step)]
+    else:
+        loss, g, H = lgh(th)
+        converged = math.sqrt(sum(v * v for v in g)) < 1e-6
+    cov = [_solve(H, [1.0 if i == j else 0.0 for i in range(n)]) for j in range(n)]
+    theta = {m: {r: th[3 * i + k] for k, r in enumerate(ROLES)} for i, m in enumerate(models)}
+    # Each role is identified only up to a common shift (e.g. +c to every g1
+    # and -c to every g2 leaves all legs unchanged), so report components
+    # centred within each role.  Team fixtures (same defender in both legs)
+    # carry no information on d; defender components come from homogeneous
+    # model-pair fixtures in the pool.
+    for k, r in enumerate(ROLES):
+        mu = sum(theta[m][r] for m in models) / len(models) if models else 0.0
+        for m in models:
+            theta[m][r] -= mu
+    comp = {m: sum(theta[m].values()) for m in models}
+    mean = sum(comp.values()) / len(models) if models else 0.0
+    comp = {m: v - mean for m, v in comp.items()}
+    scale = 400.0 / math.log(10)
+    return RoleFit(models, theta, comp, {m: elo_center + scale * v for m, v in comp.items()}, cov,
+                   converged, it, penalty_scale, len(fixtures))

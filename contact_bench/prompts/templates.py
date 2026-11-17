@@ -200,6 +200,8 @@ def user_prompt(observation: dict, *, sparse_max_entries: int = 20) -> str:
 def _guidance_and_observation(observation: dict, sparse_max_entries: int) -> str:
     seat, phase = observation["role"], observation["phase"]
     parts = [ROLE_GUIDANCE[(seat, phase)]]
+    if observation.get("partner_model"):
+        parts.append(PARTNER_DISCLOSURE.replace("{PARTNER}", observation["partner_model"]))
     if seat == "defender" and observation.get("blocklist_encoding") == "words_and_ranges":
         parts = [ROLE_GUIDANCE[(seat, phase)].replace(
             '{"action": "block", "words": [<dictionary words>]} (an empty list is allowed).',
@@ -216,7 +218,21 @@ def _guidance_and_observation(observation: dict, sparse_max_entries: int) -> str
     return "\n\n".join(parts)
 
 
-def prompt_hash() -> str:
+# Mixed-team "disclosed" condition only.  Hashed separately (see prompt_hash)
+# so prompts and hashes of every other condition are unchanged.
+PARTNER_DISCLOSURE = (
+    "TEAM: your partner (the other guesser) is the model {PARTNER}. The defender is a different model and is not named."
+)
+
+
+def prompt_hash(partner_disclosure: str = "blind") -> str:
+    base = _base_prompt_hash()
+    if partner_disclosure == "disclosed":
+        return hashlib.sha256((base + "|disclosed|" + PARTNER_DISCLOSURE).encode()).hexdigest()
+    return base
+
+
+def _base_prompt_hash() -> str:
     h = hashlib.sha256()
     h.update(PROMPT_VERSION.encode())
     h.update(PROMPT_LAYOUT.encode())

@@ -36,6 +36,9 @@ class ProtocolConfig(_Strict):
     # ranges between two dictionary words) with identical decoded effects, so
     # a full legal blocklist stays representable for very large dictionaries.
     blocklist_encoding: Literal["words", "words_and_ranges"] = "words"
+    # v0.5 mixed-team condition: whether each guesser is told its partner's
+    # model.  "blind" prompts are byte-identical to the homogeneous track.
+    partner_disclosure: Literal["blind", "disclosed"] = "blind"
     clue_track: Literal["mechanical"] = "mechanical"
     role_policy: Literal["fixed_guesser_roles"] = "fixed_guesser_roles"
     timing: Literal["sealed_initial_responses_then_conditional_reveal"] = (
@@ -74,6 +77,7 @@ class ProtocolConfig(_Strict):
     def _version_features(self):
         if self.version == "contact-v0.4" and (
             self.dictionary_access != "full_candidate_lists" or self.blocklist_encoding != "words"
+            or self.partner_disclosure != "blind"
         ):
             raise ValueError("dictionary_access / blocklist_encoding extensions require protocol contact-v0.5")
         return self
@@ -137,15 +141,39 @@ class TasksConfig(_Strict):
     generation_seed: int = 1
 
 
+class TeamsConfig(_Strict):
+    """Mixed-model attacking teams (schedule "teams").
+
+    For each unordered model pair {A, B} and task, one defender D (not on the
+    team) is chosen adaptively and the legs A+B and B+A (role fixture) and,
+    optionally, A+A and B+B (self-play fixture) are played against D.
+    """
+
+    pairs: list[list[str]]
+    # Defender candidates; None = every configured model not on the team.
+    defender_pool: list[str] | None = None
+    defender_selection: Literal["adaptive_uncertainty"] = "adaptive_uncertainty"
+    include_self_play: bool = True
+    # Tasks are split into this many rounds; each round's defenders are chosen
+    # from all data completed before it (a sequential design).
+    rounds: int = Field(2, ge=1)
+    # Earlier runs (directory names under the runs dir) whose completed
+    # fixtures inform defender selection.  Their games are not re-played.
+    prior_runs: list[str] = Field(default_factory=list)
+    selection_seed: int = 17
+
+
 class TournamentConfig(_Strict):
-    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play", "pairs"] = (
+    schedule: Literal["balanced_round_robin", "self_play", "round_robin_plus_self_play", "pairs", "teams"] = (
         "balanced_round_robin"
     )
+    teams: TeamsConfig | None = None
     # schedule "pairs": play only these unordered model pairs (e.g. cross-tier
     # matchups), each on the same tasks_per_pair tasks and both legs.
     pairs: list[list[str]] | None = None
     same_secret_both_legs: Literal[True] = True
-    homogeneous_attackers: Literal[True] = True
+    # False for the mixed-team condition (schedule "teams").
+    homogeneous_attackers: bool = True
     repetitions: int = Field(1, ge=1)
     order_seed: int = 7
     # A fixture where both legs hit the cap and neither attacker earned a
@@ -364,6 +392,31 @@ class BenchConfig(_Strict):
                 seen.add(key)
         elif self.tournament.pairs:
             raise ValueError("tournament.pairs is only valid with schedule 'pairs'")
+        if self.tournament.schedule == "teams":
+            t = self.tournament.teams
+            if t is None or not t.pairs:
+                raise ValueError("schedule 'teams' requires tournament.teams.pairs")
+            if self.tournament.homogeneous_attackers:
+                raise ValueError("schedule 'teams' requires tournament.homogeneous_attackers: false")
+            seen = set()
+            for p in t.pairs:
+                if len(p) != 2 or p[0] == p[1] or not set(p) <= set(ids):
+                    raise ValueError(f"invalid team pair {p}: need two distinct configured model ids")
+                if frozenset(p) in seen:
+                    raise ValueError(f"duplicate team pair {p}")
+                seen.add(frozenset(p))
+                pool = t.defender_pool if t.defender_pool is not None else ids
+                if not set(pool) <= set(ids):
+                    raise ValueError("defender_pool must list configured model ids")
+                if not (set(pool) - set(p)):
+                    raise ValueError(f"no eligible defender for team pair {p}")
+        else:
+            if self.tournament.teams is not None:
+                raise ValueError("tournament.teams is only valid with schedule 'teams'")
+            if not self.tournament.homogeneous_attackers:
+                raise ValueError("homogeneous_attackers: false requires schedule 'teams'")
+        if self.protocol.partner_disclosure != "blind" and self.tournament.schedule != "teams":
+            raise ValueError("partner_disclosure applies only to the mixed-team condition")
         return self
 
     def resolve(self, p: str) -> Path:

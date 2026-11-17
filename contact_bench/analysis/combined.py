@@ -46,6 +46,10 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     run_dirs = [Path(d) for d in run_dirs]
     manifests = [json.loads((d / "run.json").read_text()) for d in run_dirs]
     cfgs = [_normalized_config(d) for d in run_dirs]
+    for d, c in zip(run_dirs, cfgs):
+        if not c["tournament"].get("homogeneous_attackers", True):
+            raise CombineError(f"{d.name}: mixed-team runs are a separate condition and are not combined "
+                               "(use tournament.teams.prior_runs to inform defender selection)")
     ref, ref_m = cfgs[0], manifests[0]
     for d, c, m in zip(run_dirs[1:], cfgs[1:], manifests[1:]):
         for sec in CONDITION_SECTIONS:

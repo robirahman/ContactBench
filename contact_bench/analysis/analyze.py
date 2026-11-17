@@ -117,6 +117,10 @@ def fixture_results(rows: list[GameRow], fixtures: list[dict], *, no_progress_dr
             "cost_ab": _fj(ab.cost) if ab else None,
             "cost_ba": _fj(ba.cost) if ba else None,
             "rematch_of": f.get("rematch_of", ""),
+            "kind": f.get("kind", "model_pair"),
+            "defender_model": f.get("defender_model", ""),
+            "game_ab": f["game_ab"],
+            "game_ba": f["game_ba"],
             "initial_prefix_length": f.get("initial_prefix_length"),
         }
         if complete:
@@ -448,6 +452,74 @@ def bootstrap(models: list[str], fx: list[dict], rows: list[GameRow], *, resampl
     }
 
 
+def _seats(game: dict) -> tuple[str, str, str]:
+    return (game.get("guesser1_model") or game["attacker"], game.get("guesser2_model") or game["attacker"],
+            game["defender"])
+
+
+def role_fixture_data(rows: list[GameRow], fx: list[dict]) -> list[tuple[tuple, tuple, float]]:
+    """(leg1 seats, leg2 seats, first-leg points) for every complete fixture."""
+    by_id = {r.game_id: r for r in rows}
+    out = []
+    for f in fx:
+        if not f.get("complete"):
+            continue
+        ab, ba = by_id.get(f.get("game_ab", "")), by_id.get(f.get("game_ba", ""))
+        if ab is None or ba is None:
+            continue
+        out.append((_seats(ab.rec["game"]), _seats(ba.rec["game"]), f["points_a"]))
+    return out
+
+
+def role_bootstrap(models: list[str], legs_by_task: dict[str, list], *, resamples: int, seed: int,
+                   penalty_scale: float, elo_center: float) -> dict:
+    from .rating import ROLES, fit_role_ratings
+
+    tasks = sorted(legs_by_task)
+    rng = random.Random(seed)
+    samples: dict[str, dict[str, list[float]]] = {m: defaultdict(list) for m in models}
+    failures = 0
+    for _ in range(resamples):
+        pick = [tasks[rng.randrange(len(tasks))] for _ in tasks] if tasks else []
+        fit = fit_role_ratings(models, [x for t in pick for x in legs_by_task[t]],
+                               penalty_scale=penalty_scale, elo_center=elo_center)
+        failures += not fit.converged
+        scale = 400.0 / math.log(10)
+        for m in models:
+            samples[m]["elo"].append(fit.elo[m])
+            for r in ROLES:
+                samples[m][r].append(scale * fit.theta[m][r])
+    return {"resamples": resamples, "seed": seed, "task_clusters": len(tasks), "fit_failures": failures,
+            "intervals_95": {m: {k: {"lo": _pct(v, 0.025), "hi": _pct(v, 0.975)} for k, v in d.items()}
+                             for m, d in samples.items()}}
+
+
+def team_diagnostics(rows: list[GameRow]) -> dict:
+    """Cross-play matrix (Guesser 1 model x Guesser 2 model) and self-play gaps."""
+    cells: dict[str, dict[str, list[GameRow]]] = defaultdict(lambda: defaultdict(list))
+    for r in rows:
+        if r.scored and r.rec["game"].get("guesser1_model"):
+            g1, g2, _ = _seats(r.rec["game"])
+            cells[g1][g2].append(r)
+
+    def contact_rate(rs):
+        clue = sum(1 for r in rs for t in r.rec.get("referee_audit", []) if t.get("clue") is not None)
+        con = sum(1 for r in rs for t in r.rec.get("referee_audit", []) if t.get("contact"))
+        return con / clue if clue else None
+
+    matrix = {g1: {g2: {"games": len(rs), "median_cost": _median([float(r.cost) for r in rs]),
+                        "contacts_per_clue_turn": contact_rate(rs)} for g2, rs in d.items()}
+              for g1, d in cells.items()}
+    gaps = {}
+    for m in sorted(set(cells) | {g2 for d in cells.values() for g2 in d}):
+        selfp = [float(r.cost) for r in cells.get(m, {}).get(m, [])]
+        mixed = [float(r.cost) for g1, d in cells.items() for g2, rs in d.items() if g1 != g2 and m in (g1, g2)
+                 for r in rs]
+        gaps[m] = {"self_play_median_cost": _median(selfp), "cross_play_median_cost": _median(mixed),
+                   "self_play_games": len(selfp), "cross_play_games": len(mixed)}
+    return {"cross_play_matrix": matrix, "self_vs_cross_play": gaps}
+
+
 def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
             penalty_scale: float, elo_center: float, write: bool = True) -> dict:
     run_dir = Path(run_dir)
@@ -457,6 +529,11 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rows = load_rows(records)
     draw_rule = manifest["config"].get("tournament", {}).get("no_progress_draws", True)
     fx = fixture_results(rows, sched["fixtures"], no_progress_draws=draw_rule)
+    team_mode = any(f.get("kind") in ("role", "self_play") for f in sched["fixtures"])
+    model_ids = models
+    if team_mode:
+        # Rating entities are teams ("G1+G2"); per-model role ratings below.
+        models = sorted({f["model_a"] for f in sched["fixtures"]} | {f["model_b"] for f in sched["fixtures"]})
     complete = [f for f in fx if f["complete"]]
     fit = fit_ratings(models, [(f["model_a"], f["model_b"], f["points_a"]) for f in complete],
                       penalty_scale=penalty_scale, elo_center=elo_center)
@@ -465,7 +542,7 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                             penalty_scale=s, elo_center=elo_center).elo
         for s in (1.0, 2.5, 5.0)
     }
-    stats = _model_stats(models, rows, fx)
+    stats = _model_stats(models + ([m for m in model_ids if m not in models] if team_mode else []), rows, fx)
     boot = bootstrap(models, fx, rows, resamples=resamples, seed=seed,
                      penalty_scale=penalty_scale, elo_center=elo_center) if complete else None
     # pairwise matrices
@@ -484,8 +561,29 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     for r in rows:
         status_counts[f"{r.summary['outcome_status']}/{r.summary['collection_status']}"] += 1
     capped = [r for r in rows if r.capped]
+    team_result = None
+    if team_mode or any(r.rec["game"].get("guesser1_model") for r in rows):
+        from .rating import fit_role_ratings
+
+        legs = role_fixture_data(rows, fx)
+        by_task: dict[str, list] = defaultdict(list)
+        for f, leg in zip([f for f in fx if f.get("complete")], legs):
+            by_task[f["task_id"]].append(leg)
+        rfit = fit_role_ratings(model_ids, legs, penalty_scale=penalty_scale, elo_center=elo_center)
+        team_result = {
+            "role_rating": rfit.to_json(),
+            "role_bootstrap": role_bootstrap(model_ids, by_task, resamples=resamples, seed=seed,
+                                             penalty_scale=penalty_scale, elo_center=elo_center) if legs else None,
+            **team_diagnostics(rows),
+            "partner_disclosure": manifest["config"]["protocol"].get("partner_disclosure", "blind"),
+            "identifiability_note": "Role fixtures (A+B vs B+A against one defender) identify clue-giver vs "
+                                    "receiver contrasts; defender components are informed only by fixtures whose "
+                                    "legs face different defenders (homogeneous model-pair fixtures).",
+        }
     result = {
         "run_id": manifest["run_id"],
+        "teams": team_result,
+        "model_ids": model_ids,
         "protocol_version": manifest["protocol_version"],
         "fixture_data": manifest.get("fixture_data", True),
         "condition": manifest["config"]["protocol"],
@@ -672,6 +770,47 @@ def render_report(res: dict) -> str:
     L.append(render_calibration(res.get("forecast_calibration") or {}))
     if res["missing_model_pairs"]:
         L.append(f"Missing pairs: {res['missing_model_pairs']}\n")
+    if res.get("teams"):
+        L.append(render_teams(res["teams"]))
+    return "\n".join(L) + "\n"
+
+
+def render_teams(t: dict) -> str:
+    L = [f"## Mixed-model attacking teams (partner disclosure: {t['partner_disclosure']})\n",
+         "The table above rates teams (\"Guesser 1+Guesser 2\"). Role ratings per model (Elo-scale components; "
+         "composite = clue-giver + receiver + defender):\n",
+         "| Model | Composite Elo | 95% CI | Clue-giver (G1) | Receiver (G2) | Defender |",
+         "|---|---:|---|---:|---:|---:|"]
+    rr = t["role_rating"]
+    boot = ((t.get("role_bootstrap") or {}).get("intervals_95") or {})
+    scale = 400.0 / math.log(10)
+
+    def ci(m, k):
+        c = boot.get(m, {}).get(k) or {}
+        return f"[{c['lo']:.0f}, {c['hi']:.0f}]" if c.get("lo") is not None else "—"
+
+    for m in sorted(rr["elo"], key=lambda m: -rr["elo"][m]):
+        th = rr["components_elo_points"][m]
+        L.append(f"| {m} | {rr['elo'][m]:.0f} | {ci(m, 'elo')} | {th['g1']:+.0f} {ci(m, 'g1')} | "
+                 f"{th['g2']:+.0f} {ci(m, 'g2')} | {th['d']:+.0f} {ci(m, 'd')} |")
+    L.append("\n" + t["identifiability_note"] + "\n")
+    L.append("### Cross-play matrix (median cost, turns; rows = Guesser 1, columns = Guesser 2)\n")
+    mat = t["cross_play_matrix"]
+    cols = sorted({g2 for d in mat.values() for g2 in d})
+    L.append("| G1 \\ G2 | " + " | ".join(cols) + " |")
+    L.append("|---|" + "---:|" * len(cols))
+    for g1 in sorted(mat):
+        cells = []
+        for g2 in cols:
+            c = mat[g1].get(g2)
+            cells.append(f"{_fmt(c['median_cost'])} (n={c['games']})" if c else "—")
+        L.append(f"| {g1} | " + " | ".join(cells) + " |")
+    L.append("\n### Self-play vs cross-play (median cost)\n")
+    L.append("| Model | Self-play | n | With other partner | n |")
+    L.append("|---|---:|---:|---:|---:|")
+    for m, g in sorted(t["self_vs_cross_play"].items()):
+        L.append(f"| {m} | {_fmt(g['self_play_median_cost'])} | {g['self_play_games']} | "
+                 f"{_fmt(g['cross_play_median_cost'])} | {g['cross_play_games']} |")
     return "\n".join(L) + "\n"
 
 
