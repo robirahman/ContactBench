@@ -99,14 +99,18 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
     L = cfg.protocol.turn_limit
     llm_models = {mc.id for mc in cfg.models if mc.is_llm}
     llm_games = [g for g in games if g.attacker in llm_models or g.defender in llm_models]
+    fork = cfg.forecasts.mode == "fork"
+    # At most 4 decisions per clue turn: G1, G2 and conditional choice by
+    # attackers, blocklist by defender.  Fork mode adds up to one forecast
+    # branch after each of G1, G2 (attacking model) and the Defender.
+    att_calls = 3 * L + (2 * L if fork else 0)
+    def_calls = L + (L if fork else 0)
     per_model_calls: dict[str, int] = {}
     for g in games:
-        # At most 4 decisions per clue turn: G1, G2 and conditional choice by
-        # attackers, blocklist by defender.
         if g.attacker in llm_models:
-            per_model_calls[g.attacker] = per_model_calls.get(g.attacker, 0) + 3 * L
+            per_model_calls[g.attacker] = per_model_calls.get(g.attacker, 0) + att_calls
         if g.defender in llm_models:
-            per_model_calls[g.defender] = per_model_calls.get(g.defender, 0) + L
+            per_model_calls[g.defender] = per_model_calls.get(g.defender, 0) + def_calls
     plan = {
         "models": [mc.id for mc in cfg.models],
         "llm_models": sorted(llm_models),
@@ -120,7 +124,8 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
         else None,
         "maximum_game_decisions_per_game": 4 * L,
         "maximum_game_decisions_total": 4 * L * len(games),
-        "maximum_paid_decisions": 4 * L * len(llm_games),
+        "maximum_paid_decisions": sum(per_model_calls.values()),
+        "forecast_fork_calls_included": fork,
         "maximum_paid_decisions_by_model": per_model_calls,
         "forecast_mode": cfg.forecasts.mode,
         "separate_planning_items": [
@@ -128,6 +133,7 @@ def run_plan(cfg: BenchConfig, tasks: list[Task], games: list[GameSpec]) -> dict
             "shadow forecast audit calls (separate command)",
             "joint-live forecast token growth" if cfg.forecasts.mode == "joint_live" else None,
             "blocklist output capacity (see preflight)",
+            "lookup-tool turns (lookup_tools condition): up to max_tool_calls_per_decision + 2 model calls per decision",
         ],
         "estimated_cost": None,
     }

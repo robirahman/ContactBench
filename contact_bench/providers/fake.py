@@ -120,6 +120,15 @@ class FakeAdapter(ProviderAdapter):
     async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
         self.calls += 1
         obs = state["obs"]
+        if state.get("fork_prompt"):
+            # Deterministic forecast answers for offline tests.
+            if request.schema_name == "contact_fork_guesser1":
+                payload = {"receiver_word_forecast": {"entries": [{"word": "PASS", "probability": 0.1}],
+                                                      "other_mass": 0.9},
+                           "block_probability": 0.25}
+            else:
+                payload = {"entries": [], "other_mass": 1.0}
+            return self._respond(request, payload), [], state
         if allow_tools and state["words"] is None and request.phase != "choice":
             call = ToolCall(id=f"call-{self.calls}", name="list_words",
                             arguments={"prefix": obs["prefix"], "offset": 0, "limit": 100})
@@ -133,6 +142,9 @@ class FakeAdapter(ProviderAdapter):
             obs = {**obs, "secret_candidates": cands, "contact_candidates": cands}
         payload = _forecast(obs) if request.phase == "forecast" else legal_action(obs)
         return self._respond(request, payload), [], state
+
+    def conversation_append_user(self, state: Any, text: str) -> Any:
+        return {**state, "fork_prompt": text}
 
     def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
         res = results[0] if results else {}

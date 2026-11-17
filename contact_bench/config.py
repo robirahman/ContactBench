@@ -157,7 +157,9 @@ class TournamentConfig(_Strict):
 
 
 class ForecastConfig(_Strict):
-    mode: Literal["off", "shadow_audit", "joint_live"] = "off"
+    mode: Literal["off", "shadow_audit", "joint_live", "fork"] = "off"
+    # fork: after each LLM gameplay decision, branch that seat's transcript and
+    # privately elicit forecasts (see contact_bench/forecasts/forks.py).
     sparse_max_entries: int = Field(20, ge=1)
     tail_policy: Literal["uniform_over_unlisted"] = "uniform_over_unlisted"
     primary_score: Literal["higher_is_better_brier"] = "higher_is_better_brier"

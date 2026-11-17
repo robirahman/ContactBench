@@ -153,6 +153,9 @@ class DecisionRequest:
     # cache_prefix_parts parts are an append-only, cacheable prefix.
     user_prompt_parts: list[str] = field(default_factory=list)
     cache_prefix_parts: int = 0
+    # Keep the provider-native conversation (ending with the final assistant
+    # turn) on the response so it can be forked for private forecast queries.
+    keep_conversation: bool = False
 
 
 class AttemptGate:
@@ -206,10 +209,15 @@ class AdapterResponse:
     # Lookup-tool trace (private diagnostics; never gameplay utterances).
     tool_trace: list[dict] = field(default_factory=list)
     model_turns: int = 1
+    # Provider-native transcript for forking (never serialized or logged).
+    conversation: Any = field(default=None, repr=False, compare=False)
 
     def to_json(self) -> dict:
-        d = asdict(self)
-        return d
+        conv, self.conversation = self.conversation, None
+        try:
+            return asdict(self)
+        finally:
+            self.conversation = conv
 
 
 @dataclass(frozen=True)
@@ -335,12 +343,26 @@ class ProviderAdapter(ABC):
         is invoked around every transport attempt, including retries and
         tool-loop turns, so request and spend caps hold per call.
         """
-        if not request.tools:
+        if not request.tools and not request.keep_conversation:
             resp, attempts = await self._with_retries(lambda: self.send_once(request), gate)
             resp.attempts = attempts
             resp.latency_s = attempts[-1].latency_s
             return resp
         return await self._tool_loop(request, gate)
+
+    async def fork(self, request: DecisionRequest, base_conversation: Any,
+                   gate: AttemptGate | None = None) -> AdapterResponse:
+        """Branch a finished transcript: append ``request.user_prompt`` as a new
+        user turn after the model's own final answer and obtain a reply under
+        ``request.json_schema``.  The original transcript is not modified and
+        nothing from the branch flows back into the game."""
+        if base_conversation is None:
+            raise AdapterConfigError("fork requires a kept conversation (keep_conversation=True)")
+        state = self.conversation_append_user(base_conversation, request.user_prompt)
+        return await self._tool_loop(request, gate, initial_state=state)
+
+    def conversation_append_user(self, state: Any, text: str) -> Any:
+        raise AdapterConfigError(f"{self.provider}/{self.api_family}: transcript forking is not supported")
 
     async def _with_retries(self, fn: Callable[[], Any], gate: AttemptGate | None) -> tuple[Any, list[TransportAttempt]]:
         attempts: list[TransportAttempt] = []
@@ -407,10 +429,11 @@ class ProviderAdapter(ABC):
     def tool_conversation_append(self, state: Any, calls: list[ToolCall], results: list[Any]) -> Any:
         raise AdapterConfigError(f"{self.provider}/{self.api_family}: lookup tools are not supported")
 
-    async def _tool_loop(self, request: DecisionRequest, gate: AttemptGate | None) -> AdapterResponse:
-        assert request.tool_executor is not None, "tools require an executor"
-        limit = max(0, request.max_tool_calls)
-        state = self.tool_conversation_start(request)
+    async def _tool_loop(self, request: DecisionRequest, gate: AttemptGate | None,
+                         initial_state: Any = None) -> AdapterResponse:
+        assert request.tool_executor is not None or not request.tools, "tools require an executor"
+        limit = max(0, request.max_tool_calls) if request.tools else 0
+        state = initial_state if initial_state is not None else self.tool_conversation_start(request)
         trace: list[dict] = []
         attempts: list[TransportAttempt] = []
         usages: list[NormalizedUsage] = []
@@ -443,10 +466,11 @@ class ProviderAdapter(ABC):
                 resp.latency_s = sum(a.latency_s for a in attempts)
                 resp.tool_trace = trace
                 resp.model_turns = turns
+                resp.conversation = state
                 return resp
             results = []
             for c in calls:
-                if n_calls >= limit:
+                if n_calls >= limit or request.tool_executor is None:
                     r = {"error": f"tool call limit ({limit}) reached; reply now with your final JSON answer"}
                 else:
                     r = request.tool_executor(c.name, c.arguments)

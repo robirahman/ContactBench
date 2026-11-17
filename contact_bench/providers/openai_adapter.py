@@ -79,19 +79,30 @@ class OpenAIResponsesAdapter(ProviderAdapter):
 
     def tool_kwargs(self, request: DecisionRequest, state: list, allow_tools: bool) -> dict:
         kwargs = self.build_request(request, input_items=list(state))
-        kwargs["tools"] = [
-            {
-                "type": "function",
-                "name": t.name,
-                "description": t.description,
-                "parameters": t.parameters,
-                "strict": False,  # optional arguments (offset/limit) are not strict-compatible
-            }
-            for t in request.tools
-        ]
-        kwargs["tool_choice"] = "auto" if allow_tools else "none"
+        if request.tools:
+            kwargs["tools"] = [
+                {
+                    "type": "function",
+                    "name": t.name,
+                    "description": t.description,
+                    "parameters": t.parameters,
+                    "strict": False,  # optional arguments (offset/limit) are not strict-compatible
+                }
+                for t in request.tools
+            ]
+            kwargs["tool_choice"] = "auto" if allow_tools else "none"
+        # Requested on every conversation-path call (tool loops and kept
+        # conversations): with store=False, reasoning items can only be
+        # replayed later -- in a tool turn or a forked branch -- if their
+        # encrypted_content was returned.  It changes the payload, not the model.
         kwargs["include"] = ["reasoning.encrypted_content"]
         return kwargs
+
+    def conversation_append_user(self, state: list, text: str) -> list:
+        # Branch: everything already in state (reasoning items with
+        # encrypted_content, function calls/outputs, the final message) is
+        # replayed unchanged, followed by a new user message.
+        return list(state) + [{"role": "user", "content": text}]
 
     async def send_tool_turn(self, request: DecisionRequest, state: list, allow_tools: bool):
         kwargs = self.tool_kwargs(request, state, allow_tools)

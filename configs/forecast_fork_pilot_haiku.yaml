@@ -1,0 +1,29 @@
+# Live forecast-fork pilot (2026-11-17): Haiku 5.5 vs Haiku 4.5, dictionary-assisted, empty prefix.
+# Run: contact-bench run configs/forecast_fork_pilot_haiku.yaml --live --max-requests 3000 --max-usd 2.2
+name: forecast-fork-pilot
+fixture_data: true
+protocol: {version: contact-v0.5, dictionary_access: lookup_tools, blocklist_encoding: words_and_ranges, initial_prefix_length: 0, max_tool_calls_per_decision: 12, turn_limit: 12, clue_max_characters: 100}
+lexicon: {manifest: lexicons/enable_manifest.json}
+scoring: {development_rollouts: 256}
+tasks: {tasks_per_pair: 3, generation_seed: 51}
+tournament: {schedule: balanced_round_robin}
+forecasts: {mode: fork, sparse_max_entries: 20}
+models:
+  - id: claude_haiku_5_5
+    provider: anthropic
+    model: claude-haiku-5-5
+    parameters: {effort: low}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 1000000
+    prices: {as_of: "2026-11-03", source: "Anthropic model table (claude-api skill)", input_per_mtok: 0.10, output_per_mtok: 0.50}
+  - id: claude_haiku_4_5
+    provider: anthropic
+    model: claude-haiku-4-5
+    parameters: {}
+    credential_env: ANTHROPIC_API_KEY
+    max_output_tokens: 32000
+    context_window_tokens: 200000
+    prices: {as_of: "2026-11-03", source: "Anthropic model table (claude-api skill)", input_per_mtok: 1.00, output_per_mtok: 5.00}
+execution: {global_concurrency: 8, per_provider_concurrency: 6, game_concurrency: 6}
+analysis: {development_bootstrap_resamples: 300}

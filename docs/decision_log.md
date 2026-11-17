@@ -98,6 +98,41 @@ The design choices behind these conditions:
 - **Re-analysis.** The rule is applied when analysing, so older runs re-analysed with this code also score
   no-progress fixtures as draws.
 
+## Live forecast forks (forecast mode `fork`, 2026-11-17)
+
+`forecasts.mode: fork` adds a fourth collection mode. After each LLM gameplay decision, the runner branches
+that seat's transcript: the model's own final answer stays in place, and a new private user turn asks for a
+probability report under its own JSON schema. Nothing from the branch reaches the game. Gameplay prompts,
+observations and outcomes are byte-identical to `off`, which a regression test checks.
+
+| Seat (after its decision) | Question | Answer key |
+|---|---|---|
+| Guesser 2 (respond) | Distribution over Guesser 1's intended word W | W |
+| Defender (block) | Distribution over W | W |
+| Guesser 1 (valid clue only) | Distribution over what Guesser 2 registers, with `PASS` allowed | Guesser 2's canonical word, or `PASS` (an invalid reply counts as `PASS`) |
+| Guesser 1 (valid clue only) | `block_probability`: the chance the blocklist covers W | Whether W is in the decoded blocklist |
+
+How forks work:
+- **Elicited, not sampled.** Forecasts are elicited reports, not token log-probabilities. The Anthropic API
+  exposes no logprobs, and the other providers do not expose them uniformly, especially for reasoning models.
+  Sampling each fork N times to estimate a distribution empirically would be possible but costs N times as much.
+  It is not implemented.
+- **Branch construction.** Each provider's native transcript is carried along: Anthropic message blocks with
+  thinking signatures, OpenAI input items with encrypted reasoning, Gemini steps or contents with thought
+  signatures. The branch is that transcript plus one new user turn. In the lookup-tool condition the branch
+  keeps tool access.
+- **Support.** The support is the pre-turn contact set, stored compactly as prefix plus used words and ranges, and
+  scored without being materialized. A word outside the support, duplicate entries, more than
+  `sparse_max_entries` entries, or a mass error beyond `mass_tolerance` (1e-6) makes the report invalid. It then
+  scores -1 in the overall Brier mean, and valid-only means are reported separately.
+- **Failures.** An infrastructure failure in a fork is recorded as `unavailable` and never scored. Forks are not
+  retried on resume, because the live transcript cannot be rebuilt from the decision log.
+- **Storage and analysis.** Records go to `forecasts.jsonl`. Game records hold the labeled, scored forks. `analyze`
+  reports per-model, per-target Brier, log score, q(true), top-1 accuracy, reliability tables and ECE.
+- **Pilot result.** In the 2026-11-17 Haiku pilot, 26 of 98 parseable reports had probabilities summing to between
+  0.83 and 1.31, so they were invalid at the spec tolerance. Whether to declare a looser tolerance (for example
+  0.02, followed by renormalization) is a research decision.
+
 ## Review fixes (Codex review of PR #1)
 
 1. **Torn JSONL tail.** `RunStore` truncates a partial final line before its first append and saves the torn bytes

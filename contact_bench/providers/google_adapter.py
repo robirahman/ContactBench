@@ -148,6 +148,8 @@ class GeminiInteractionsAdapter(_GoogleBase):
         if not allow_tools and state and state[-1].get("type") in ("model_output", "thought"):
             state.append({"type": "user_input", "content": [{"type": "text", "text": FINAL_ANSWER_NUDGE}]})
         kwargs = self.build_request(request, input_steps=state)
+        if not request.tools:
+            return kwargs
         if allow_tools:
             # Gemini re-calls tools indefinitely when response_format is also
             # set (observed live 2026-11-17); see structured_output_with_tools.
@@ -158,6 +160,11 @@ class GeminiInteractionsAdapter(_GoogleBase):
         ]
         kwargs["generation_config"]["tool_choice"] = "auto" if allow_tools else "none"
         return kwargs
+
+    def conversation_append_user(self, state: list, text: str) -> list:
+        # Model steps (thoughts with signatures, function calls, model_output)
+        # are kept verbatim; the branch adds a new user_input step.
+        return list(state) + [{"type": "user_input", "content": [{"type": "text", "text": text}]}]
 
     async def send_tool_turn(self, request: DecisionRequest, state: list, allow_tools: bool):
         kwargs = self.tool_kwargs(request, state, allow_tools)
@@ -184,7 +191,9 @@ class GeminiInteractionsAdapter(_GoogleBase):
                 )
         if calls:
             resp.incomplete = False  # a turn ending in tool calls is not a truncated answer
-        return resp, calls, list(state) + appended
+        # Persist exactly what was sent (including any FINAL_ANSWER_NUDGE) so a
+        # forked transcript replays what the model actually saw.
+        return resp, calls, list(kwargs.get("input", state)) + appended
 
     def tool_conversation_append(self, state: list, calls: list[ToolCall], results: list[Any]) -> list:
         out = list(state)
@@ -283,6 +292,8 @@ class GeminiGenerateContentAdapter(_GoogleBase):
         if not allow_tools and state and get(state[-1], "role") == "model":
             state.append({"role": "user", "parts": [{"text": FINAL_ANSWER_NUDGE}]})
         kwargs = self.build_request(request, contents=state)
+        if not request.tools:
+            return kwargs
         cfg = kwargs["config"]
         if allow_tools:
             cfg.pop("response_mime_type", None)
@@ -320,8 +331,14 @@ class GeminiGenerateContentAdapter(_GoogleBase):
                     arguments=dict(args) if isinstance(args, dict) else {},
                 )
             )
-        new_state = list(state) + ([content] if content is not None else [])
+        # Persist exactly what was sent (including any FINAL_ANSWER_NUDGE).
+        new_state = list(kwargs.get("contents", state)) + ([content] if content is not None else [])
         return resp, calls, new_state
+
+    def conversation_append_user(self, state: list, text: str) -> list:
+        # Prior candidate Content objects are replayed as-is (thought_signature
+        # bytes intact); the branch adds a new user turn.
+        return list(state) + [{"role": "user", "parts": [{"text": text}]}]
 
     def tool_conversation_append(self, state: list, calls: list[ToolCall], results: list[Any]) -> list:
         parts = []

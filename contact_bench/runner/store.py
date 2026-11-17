@@ -46,6 +46,7 @@ class RunStore:
     DECISIONS = "decisions.jsonl"
     REQUESTS = "requests.jsonl"
     EVENTS = "events.jsonl"
+    FORECASTS = "forecasts.jsonl"
 
     def __init__(self, run_dir: str | Path):
         self.dir = Path(run_dir)
@@ -141,6 +142,29 @@ class RunStore:
                     continue  # first received response wins
                 self._decisions[did] = rec
         return self._decisions
+
+    def append_forecast(self, record: dict) -> None:
+        """Private forecast-fork records (never gameplay; never in observations)."""
+        self._append(self.FORECASTS, {"recorded_at": time.time(), **record})
+
+    def forecasts(self, game_id: str | None = None) -> list[dict]:
+        """One record per fork: the first final (ok/unavailable) record, else
+        the scheduled marker reported as unavailable ("interrupted")."""
+        final: dict[str, dict] = {}
+        marker: dict[str, dict] = {}
+        order: list[str] = []
+        for rec in read_jsonl(self.dir / self.FORECASTS):
+            if game_id is not None and rec.get("game_id") != game_id:
+                continue
+            fid = rec["fork_id"]
+            if fid not in final and fid not in marker:
+                order.append(fid)
+            if rec.get("status") == "scheduled":
+                marker.setdefault(fid, rec)
+            else:
+                final.setdefault(fid, rec)
+        return [final[f] if f in final else {**marker[f], "status": "unavailable", "error": "interrupted"}
+                for f in order]
 
     def events(self) -> list[dict]:
         return list(read_jsonl(self.dir / self.EVENTS))
