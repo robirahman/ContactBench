@@ -119,11 +119,24 @@
   // ---------------------------------------------------- format comparison
   // One model-only leaderboard per clue budget C (headline first, then a
   // combined run, then the first listed); shown only when two formats exist.
+  // Every condition field except C must match, so a column difference is a
+  // clue-budget difference and nothing else.
+  function signatureWithoutC(c) {
+    var keys = Object.keys(c.condition).filter(function (k) { return k !== "clue_max_characters"; }).sort();
+    return JSON.stringify(keys.map(function (k) { return [k, c.condition[k] == null ? null : c.condition[k]]; }));
+  }
+
   function formatEntries() {
+    var eligible = index.conditions.filter(function (c) {
+      return !(c.fixture_data || c.condition.human_challenge || c.condition.homogeneous_attackers === false);
+    });
+    if (!eligible.length) return [];
+    var anchor = eligible.filter(function (c) { return c.headline; })[0] || eligible[0];
+    var sig = signatureWithoutC(anchor);
     var byC = {};
-    index.conditions.forEach(function (c, i) {
+    eligible.forEach(function (c, i) {
+      if (signatureWithoutC(c) !== sig) return;
       var k = c.condition.clue_max_characters;
-      if (c.fixture_data || c.condition.human_challenge || c.condition.homogeneous_attackers === false) return;
       var score = (c.headline ? 2 : 0) + (c.combined ? 1 : 0);
       if (!(k in byC) || score > byC[k].score) byC[k] = { score: score, i: i, c: c };
     });
@@ -139,11 +152,11 @@
           var elo = (lbs[j].rating && lbs[j].rating.elo) || {};
           var order = Object.keys(elo).filter(function (m) { return elo[m] != null; })
             .sort(function (a, b) { return elo[b] - elo[a]; });
-          // Competition ranking: models with equal Elo (to 0.5 point) share a rank.
+          // Competition ranking on the displayed (rounded) Elo: equal shown values share a rank.
           var rank = {};
           order.forEach(function (m, r) {
             var prev = order[r - 1];
-            rank[m] = (r > 0 && Math.abs(elo[prev] - elo[m]) < 0.5) ? rank[prev] : r + 1;
+            rank[m] = (r > 0 && Math.round(elo[prev]) === Math.round(elo[m])) ? rank[prev] : r + 1;
           });
           return { c: p.c, elo: elo, rank: rank, n: order.length };
         });
