@@ -509,6 +509,8 @@
         oblk: orates.matches_blocked_per_registered_match, clen: ((rd[m] || {}).seat || {}).median_clue_characters,
         cbud: ((rd[m] || {}).seat || {}).clue_budget_used, sg1inv: ((rd[m] || {}).seat || {}).guesser1_invalid_rate,
         sg2inv: ((rd[m] || {}).seat || {}).guesser2_invalid_rate, hasSeat: !!(rd[m] || {}).seat,
+        sc: (((rd[m] || {}).seat || {}).self_contained) || {}, leak: orates.clue_leak_per_defended_clue_turn,
+        endg: orates.endgame_conversion, tpl: o.turns_per_letter_earned,
         recall: drates.intended_word_blocked_per_clue_turn, dblk: drates.matches_blocked_per_registered_match,
         wpp: d.blocked_words_per_contact_prevented, reasons: (rd[m] || {}).invalid_reasons || {} });
     });
@@ -534,8 +536,23 @@
       rate("recall", "Block recall: intended word blocked (defense)"),
       rate("dblk", "Opponents' matches blocked (defense)"),
       { label: "Words blocked per contact prevented", title: "Blocklist precision: lower is more precise", get: function (r) { return r.wpp; }, fmt: function (r) { return num(r.wpp, 1); } },
+      rate("leak", "Clue leakage (intended word blocked)"),
+      rate("endg", "Endgame conversion (≤20 candidates → solved)"),
+      { label: "Turns per letter earned", get: function (r) { return r.tpl; }, fmt: function (r) { return num(r.tpl, 1); } },
       rate("sg1inv", "G1 invalid rate"), rate("sg2inv", "G2 invalid rate"), rate("binv", "Defender invalid rate")
     ], drows, { sortCol: 5 });
+    var srows = drows.filter(function (r) { return r.sc && r.sc.action_validity != null; });
+    function sc(k, label, title) {
+      return { label: label, title: title, get: function (r) { return r.sc[k]; }, fmt: function (r) { return pct(r.sc[k]); } };
+    }
+    renderTable($("selfcontained-table"), [
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      sc("self_coordination", "Self-coordination", "Its Guesser 2 named its Guesser 1's intended word (both seats this model; sealed, so the defender cannot affect it)"),
+      sc("action_validity", "Action validity", "Legal decisions in every seat"),
+      sc("clue_length_compliance", "Clue-length compliance", "Guesser 1 decisions not rejected for exceeding the character budget"),
+      { label: "Self-coordination clue turns (n)", get: function (r) { return r.sc.self_coordination_clue_turns; },
+        fmt: function (r) { return String(r.sc.self_coordination_clue_turns || 0); } }
+    ], srows, { sortCol: 1 });
     // Exports made before these metrics existed lack them: hide rather than show dashes.
     var hasGameplay = drows.some(function (r) { return r.hasSeat; });
     $("gameplay-section").hidden = !hasGameplay;
