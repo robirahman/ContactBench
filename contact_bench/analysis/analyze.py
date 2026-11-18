@@ -228,8 +228,8 @@ def _self_contained(sc: Counter) -> dict:
       word, in games where both guessers are this model. Responses are sealed and the defender
       acts simultaneously, so the opponent cannot affect whether the match happens.
     """
-    dec = sc.get("g1_decisions", 0) + sc.get("g2_decisions", 0) + sc.get("d_decisions", 0)
-    inv = sc.get("g1_invalid", 0) + sc.get("g2_invalid", 0) + sc.get("d_invalid", 0)
+    dec = sum(sc.get(k, 0) for k in ("g1_decisions", "g2_decisions", "d_decisions", "choice_decisions"))
+    inv = sum(sc.get(k, 0) for k in ("g1_invalid", "g2_invalid", "d_invalid", "choice_invalid"))
     return {
         "action_validity": 1 - inv / dec if dec else None,
         "clue_length_compliance": 1 - sc.get("g1_overlong", 0) / sc["g1_decisions"] if sc.get("g1_decisions") else None,
@@ -347,6 +347,10 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 dd["contacts_prevented"] += 1
             if t.get("choice_actor"):
                 a["choice_opportunities"] += 1
+                cm = seat_m.get(t["choice_actor"], r.attacker)
+                seat[cm]["choice_decisions"] += 1
+                if t.get("choice_valid") is False:
+                    seat[cm]["choice_invalid"] += 1
                 if t.get("choice") == "reveal":
                     a["choice_reveal"] += 1
                 else:
