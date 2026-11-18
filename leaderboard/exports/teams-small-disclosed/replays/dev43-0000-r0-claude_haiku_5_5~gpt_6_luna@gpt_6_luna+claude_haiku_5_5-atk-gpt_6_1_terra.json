@@ -1,0 +1,457 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+claude_haiku_5_5-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_luna+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Water in its solid state.",
+   "blocklist": [
+    "frost",
+    "ice",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A young dog.",
+   "blocklist": [
+    "pup",
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A pivoted support that keeps an object level while its base tilts.",
+   "blocklist": [
+    "gimbal",
+    "gimbals",
+    "gyroscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A=1, B=2, etc.; each number is one too high: 18-22-10-15-4-22-15-25",
+   "blocklist": [
+    "quincunx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A soft whispering or rustling sound, especially among leaves.",
+   "blocklist": [
+    "murmur",
+    "rustle",
+    "susurration",
+    "susurrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "In International Morse, decode: --.. -.-- -- ..- .-. --. -.--",
+   "blocklist": [
+    "zymurgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A rhetorical device that inserts a word or phrase inside another word, for emphasis.",
+   "blocklist": [
+    "infix",
+    "infixation",
+    "interpolation",
+    "tmesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "In a circular alphabet, move each letter 3 places backward: hforjxh",
+   "blocklist": [
+    "eclogue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Take the even-positioned letters from this string: xmxaxrxmxoxt",
+   "blocklist": [
+    "marmot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Curious owls bring acorns, leaving tracks.",
+   "blocklist": [
+    "cobalt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "cache"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A dragon's hidden store of treasure, or a squirrel's reserve of food for winter.",
+   "blocklist": [
+    "hoard",
+    "horde",
+    "stash",
+    "stockpile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A metal fitting at the end of a wooden tool handle, serving as a reinforcing collar.",
+   "blocklist": [
+    "ferrule",
+    "ferule"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "An adjective for speech that uses unusually long words; this description is itself an example.",
+   "blocklist": [
+    "polysyllabic",
+    "sesquipedalian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Opening letters are the key: Brave investigators vanish; old uniforms are carefully folded.",
+   "blocklist": [
+    "bivouac",
+    "bivouacked",
+    "bivouacs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "On a standard keyboard, take the first six letters on the top alphabet row, from left to right.",
+   "blocklist": [
+    "qwerty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Paddlers in a narrow, open vessel use one blade; birchbark craft are traditional.",
+   "blocklist": [
+    "boat",
+    "canoe",
+    "canoeing",
+    "canoeist",
+    "canoeists",
+    "canoes",
+    "kayak",
+    "paddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Reflect each letter across the alphabet's midpoint: xrevg",
+   "blocklist": [
+    "civet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Read the first letters: My aunt never goes rowing or visits estuaries.",
+   "blocklist": [
+    "mangrove"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Base64-decode this: amFjaW50aA==",
+   "blocklist": [
+    "jacinth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "An agricultural building used to store harvested grain.",
+   "blocklist": [
+    "barn",
+    "corncrib",
+    "granaries",
+    "granary",
+    "grange",
+    "silo",
+    "warehouse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Rearrange the letters in 'olive' and add the 20th letter of the alphabet.",
+   "blocklist": [
+    "violet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "A small Australian wallaby, famously photographed with a cheerful-looking smile.",
+   "blocklist": [
+    "quokka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit: apple, pear, peach, plum, mango, grape, lemon, lime, fig, kiwi, date, nut, yam.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "The beginning is a good place to look: Curious young night owls study unusual rivers eagerly.",
+   "blocklist": [
+    "cynosure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Read the first letters: Xenial youths locate elusive minerals.",
+   "blocklist": [
+    "xylem"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "aah aal aas aba baa cab dab dad dag gab gad abba abbe abas aals baal baas baba babe babu bach dace",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abacus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "stone"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7069.250018356438,
+  "cost_numerator": 1925550597,
+  "cost_denominator": 272384,
+  "cost_exact": false,
+  "cost_mcse": 4.453883175839694,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1917379077,
+   "denominator": 272384,
+   "value": 7039.250018356438,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:940,4:3858,5:8589,6:15184,7:23083,8:28395,9:24861,10:20296,11:15500,12:11355,13:7824,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.453883175839694,
+   "rollouts": 256,
+   "rank_total": 5752137231,
+   "rank_denominator": 817152,
+   "cache_key": "ad9ac57c7aeee51ed4c73c01a7afc4ea"
+  }
+ }
+}

@@ -1,0 +1,700 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+claude_haiku_5_5-atk-gemini_4_hydrogen",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A loyal animal that barks and fetches sticks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "hound",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Hoofed creature you can ride in a saddle",
+   "blocklist": [
+    "donkey",
+    "equine",
+    "horse",
+    "mare",
+    "mustang",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Long-eared hopper with a cottontail",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "hare",
+    "jackrabbit",
+    "lapin",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Scaly swimmer often kept in a bowl or caught with a line",
+   "blocklist": [
+    "betta",
+    "carp",
+    "fish",
+    "goldfish",
+    "guppy",
+    "minnow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Pack hunter that howls at the full moon in the wild",
+   "blocklist": [
+    "coyote",
+    "dingo",
+    "hyena",
+    "jackal",
+    "lobo",
+    "lupine",
+    "werewolf",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Large African savanna predator with a shaggy mane that roars",
+   "blocklist": [
+    "lion",
+    "lioness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings from a nest in the tree",
+   "blocklist": [
+    "avian",
+    "bird",
+    "robin",
+    "songbird",
+    "sparrow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Barnyard or zoo beasts: cow pig sheep goat deer fox bear tiger mouse ape ox",
+   "blocklist": [
+    "animals",
+    "beast",
+    "critter",
+    "fauna",
+    "livestock",
+    "mammal",
+    "wildlife"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Huge gray trunk-nosed herbivore with tusks that lives on the savanna",
+   "blocklist": [
+    "elephant",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "tusker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Primate that swings from branches and throws bananas at the zoo",
+   "blocklist": [
+    "baboon",
+    "chimp",
+    "chimpanzee",
+    "gibbon",
+    "gorilla",
+    "monkey",
+    "orangutan",
+    "simian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Slithering reptile with no legs that hisses",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "boa",
+    "cobra",
+    "python",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Green amphibian that croaks by the pond",
+   "blocklist": [
+    "bullfrog",
+    "frog",
+    "peeper",
+    "polliwog",
+    "tadpole",
+    "toad"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Huge ocean creature that sprays a spout of water from its blowhole",
+   "blocklist": [
+    "beluga",
+    "cetacean",
+    "dolphin",
+    "leviathan",
+    "narwhal",
+    "orca",
+    "porpoise",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Black and white striped grazer of African plains",
+   "blocklist": [
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Small caged rodent that runs on a squeaky exercise wheel",
+   "blocklist": [
+    "chinchilla",
+    "gerbil",
+    "hamster",
+    "rat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Scaly reptile that basks on rocks in the sun",
+   "blocklist": [
+    "alligator",
+    "chameleon",
+    "crocodile",
+    "dragon",
+    "gecko",
+    "iguana",
+    "lizard",
+    "skink",
+    "tortoise",
+    "turtle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Antlered giant of northern forests and marshes",
+   "blocklist": [
+    "caribou",
+    "elk",
+    "moose",
+    "reindeer",
+    "stag",
+    "wapiti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Buzzing insect that makes honey in a hive",
+   "blocklist": [
+    "bee",
+    "bumblebee",
+    "honeybee",
+    "hornet",
+    "wasp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner that lurks in corners of the house",
+   "blocklist": [
+    "arachnid",
+    "recluse",
+    "spider",
+    "tarantula",
+    "widow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Nocturnal hunter with big eyes that hoots at night",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Pests or pets: ant gnat crab seal yak emu bat duck hen llama camel otter stoat ferret newt",
+   "blocklist": [
+    "ark",
+    "menagerie",
+    "pest",
+    "varmint",
+    "vermin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lemur"
+    },
+    {
+     "seat": "guesser2",
+     "word": "mole"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Plump city square flyer that coos and bobs its head",
+   "blocklist": [
+    "dove",
+    "doves",
+    "pigeon",
+    "pigeons",
+    "squab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Honking waterfowl that flies in a V formation and nips at grass by the lake",
+   "blocklist": [
+    "brant",
+    "gander",
+    "geese",
+    "goose",
+    "gosling",
+    "swan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "cub kid colt calf pup kit lamb foal joey hog boar bull ram ewe doe buck stag gnu yak pika vole",
+   "blocklist": [
+    "chick",
+    "drake",
+    "fawn",
+    "filly",
+    "heifer",
+    "marsupial",
+    "offspring",
+    "piglet",
+    "sow",
+    "steer",
+    "ungulate",
+    "vixen",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "heron"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Pink-fleshed river ffish that swims upstream to spawn",
+   "blocklist": [
+    "char",
+    "chinook",
+    "coho",
+    "salmon",
+    "sockeye",
+    "steelhead",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Large hooked-beak raptor that soars high over mountains and hunts fish",
+   "blocklist": [
+    "buzzard",
+    "condor",
+    "eagle",
+    "falcon",
+    "harrier",
+    "hawk",
+    "kite",
+    "osprey",
+    "vulture"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Massive African river beast that wallows in mud and has a huge mouth",
+   "blocklist": [
+    "behemoth",
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos",
+    "rhino",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "bison buffalo ostrich lynx puma panda mink sloth badger beaver mule crow raven kangaroo koala",
+   "blocklist": [
+    "antelope",
+    "cheetah",
+    "giraffe",
+    "jaguar",
+    "leopard",
+    "raccoon",
+    "skunk",
+    "squirrel",
+    "walrus",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bison"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "old new get set let man run sit hit bag tan ten for but not was all one our out day use any way who",
+   "blocklist": [
+    "are",
+    "art",
+    "ask",
+    "bad",
+    "bed",
+    "boy",
+    "bus",
+    "buy",
+    "car",
+    "cup",
+    "cut",
+    "did",
+    "dot",
+    "ear",
+    "eat",
+    "end",
+    "eye",
+    "fan",
+    "fix",
+    "fly",
+    "fun",
+    "gas",
+    "had",
+    "hat",
+    "her",
+    "his",
+    "hot",
+    "ice",
+    "ink",
+    "jar",
+    "job",
+    "key",
+    "law",
+    "leg",
+    "lip",
+    "mad",
+    "map",
+    "mat",
+    "may",
+    "mix",
+    "mop",
+    "now",
+    "oil",
+    "pan",
+    "pay",
+    "pen",
+    "pin",
+    "pot",
+    "put",
+    "rag",
+    "red",
+    "rug",
+    "sad",
+    "sea",
+    "see",
+    "she",
+    "sky",
+    "tag",
+    "tax",
+    "toe",
+    "too",
+    "top",
+    "try",
+    "two",
+    "van",
+    "war",
+    "win",
+    "yes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 68,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "old"
+    },
+    {
+     "seat": "guesser2",
+     "word": "beetle"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6908.410446204041,
+  "cost_numerator": 5098738513,
+  "cost_denominator": 738048,
+  "cost_exact": false,
+  "cost_mcse": 1.6393226300199242,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 5076597073,
+   "denominator": 738048,
+   "value": 6878.410446204041,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:840,4:3823,5:8532,6:15163,7:23064,8:28390,9:24852,10:20296,11:15503,12:11357,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6393226300199242,
+   "rollouts": 256,
+   "rank_total": 40612776584,
+   "rank_denominator": 5904384,
+   "cache_key": "5d59084915d8633e10a6476d5a786487"
+  }
+ }
+}

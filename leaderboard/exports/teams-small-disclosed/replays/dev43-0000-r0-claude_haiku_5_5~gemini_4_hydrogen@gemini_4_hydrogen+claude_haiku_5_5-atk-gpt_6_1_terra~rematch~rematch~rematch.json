@@ -1,0 +1,612 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen@gemini_4_hydrogen+claude_haiku_5_5-atk-gpt_6_1_terra~rematch~rematch~rematch",
+ "attacker": "gemini_4_hydrogen+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "sinterabilities",
+ "initial_prefix": "sin",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 140,
+ "initial_secret_candidates": [
+  "sinapism",
+  "sinapisms",
+  "since",
+  "sincere",
+  "sincerely",
+  "sincereness",
+  "sincerenesses",
+  "sincerer",
+  "sincerest",
+  "sincerities",
+  "sincerity",
+  "sincipita",
+  "sincipital",
+  "sinciput",
+  "sinciputs",
+  "sine",
+  "sinecure",
+  "sinecures",
+  "sines",
+  "sinew",
+  "sinewed",
+  "sinewing",
+  "sinews",
+  "sinewy",
+  "sinfonia",
+  "sinfonie",
+  "sinfonietta",
+  "sinfoniettas",
+  "sinful",
+  "sinfully",
+  "sinfulness",
+  "sinfulnesses",
+  "sing",
+  "singable",
+  "singe",
+  "singed",
+  "singeing",
+  "singer",
+  "singers",
+  "singes",
+  "singing",
+  "single",
+  "singled",
+  "singleness",
+  "singlenesses",
+  "singles",
+  "singlestick",
+  "singlesticks",
+  "singlet",
+  "singleton",
+  "singletons",
+  "singletree",
+  "singletrees",
+  "singlets",
+  "singling",
+  "singly",
+  "sings",
+  "singsong",
+  "singsongs",
+  "singsongy",
+  "singspiel",
+  "singspiels",
+  "singular",
+  "singularities",
+  "singularity",
+  "singularize",
+  "singularized",
+  "singularizes",
+  "singularizing",
+  "singularly",
+  "singulars",
+  "sinh",
+  "sinhs",
+  "sinicize",
+  "sinicized",
+  "sinicizes",
+  "sinicizing",
+  "sinister",
+  "sinisterly",
+  "sinisterness",
+  "sinisternesses",
+  "sinistral",
+  "sinistrous",
+  "sink",
+  "sinkable",
+  "sinkage",
+  "sinkages",
+  "sinker",
+  "sinkers",
+  "sinkhole",
+  "sinkholes",
+  "sinking",
+  "sinks",
+  "sinless",
+  "sinlessly",
+  "sinlessness",
+  "sinlessnesses",
+  "sinned",
+  "sinner",
+  "sinners",
+  "sinning",
+  "sinoatrial",
+  "sinological",
+  "sinologies",
+  "sinologist",
+  "sinologists",
+  "sinologue",
+  "sinologues",
+  "sinology",
+  "sinopia",
+  "sinopias",
+  "sinopie",
+  "sins",
+  "sinsemilla",
+  "sinsemillas",
+  "sinsyne",
+  "sinter",
+  "sinterabilities",
+  "sinterability",
+  "sintered",
+  "sintering",
+  "sinters",
+  "sinuate",
+  "sinuated",
+  "sinuates",
+  "sinuating",
+  "sinuosities",
+  "sinuosity",
+  "sinuous",
+  "sinuously",
+  "sinuousness",
+  "sinuousnesses",
+  "sinus",
+  "sinuses",
+  "sinusitis",
+  "sinusitises",
+  "sinusoid",
+  "sinusoidal",
+  "sinusoidally",
+  "sinusoids"
+ ],
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "vocalist who performs songs",
+   "blocklist": [
+    "singer",
+    "singers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "evil, menacing, or threatening",
+   "blocklist": [
+    "sinister",
+    "sinisterly",
+    "sinistrous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "genuine and honest, without pretense",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sincere",
+     "sincerity"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "nasal air cavity in the skull",
+   "blocklist": [
+    "sinus",
+    "sinuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "only one; not married or paired",
+   "blocklist": [
+    "single"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "tendon; tough fibrous tissue attaching muscle to bone",
+   "blocklist": [
+    "sinew",
+    "sinews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "kitchen basin with a faucet; or go down below water",
+   "blocklist": [
+    "sink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "scorch or burn the surface slightly",
+   "blocklist": [
+    "singe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "winding, curving, or serpentine in form",
+   "blocklist": [
+    "sinuous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "produce musical sounds with the voice",
+   "blocklist": [
+    "sing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "person who commits a moral transgression",
+   "blocklist": [
+    "sinner",
+    "sinners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "from a past time until now; or because",
+   "blocklist": [
+    "since"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "trigonometric ratio of opposite side to hypotenuse",
+   "blocklist": [
+    "sine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "grammatical number for one item; or remarkably unusual",
+   "blocklist": [
+    "singular"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "paid position or office requiring little or no work",
+   "blocklist": [
+    "sinecure",
+    "sinecures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "depression or hole in the ground caused by collapse of surface",
+   "blocklist": [
+    "sinkhole",
+    "sinkholes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "inflammation of the nasal cavities",
+   "blocklist": [
+    "sinusitis",
+    "sinusitises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "academic study of Chinese history, language, and culture",
+   "blocklist": [
+    "sinology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "lead weight on a fishing line",
+   "blocklist": [
+    "sinker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "wicked, immoral, or guilty of wrongdoing",
+   "blocklist": [
+    "sinful"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "a set with only one element, or a single card of a suit in a hand",
+   "blocklist": [
+    "singleton",
+    "singletons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "free from moral wrongdoing; innocent and pure",
+   "blocklist": [
+    "sinless"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "point of infinite density at the center of a black hole",
+   "blocklist": [
+    "singularities",
+    "singularity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sleeveless undershirt or athletic jersey",
+   "blocklist": [
+    "singlet",
+    "singlets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "lean, strong, and muscular",
+   "blocklist": [
+    "sinewy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "monotonous rhythmic rise and fall of the voice when speaking",
+   "blocklist": [
+    "singsong",
+    "singsongs",
+    "singsongy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "heat powder to fuse into a solid mass without melting",
+   "blocklist": [
+    "sinter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "potent seedless cannabis",
+   "blocklist": [
+    "sinsemilla",
+    "sinsemillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "a curve having the form of a sine wave",
+   "blocklist": [
+    "sinusoid",
+    "sinusoidal",
+    "sinusoids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "sins sinh sinhs sines sings sinks singly singed singes sinned singles singled sinewed sinters",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinoatrial"
+    },
+    {
+     "seat": "guesser2",
+     "word": "singing"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 33.44140625,
+  "cost_numerator": 8561,
+  "cost_denominator": 256,
+  "cost_exact": false,
+  "cost_mcse": 0.11297022464662783,
+  "baseline": {
+   "numerator": 1493,
+   "denominator": 256,
+   "value": 5.83203125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:5,5:8,6:12,7:20,8:25,9:24,10:16,11:14,12:8,13:6,14:1,15:1",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 0.20200349685406038,
+   "rollouts": 256,
+   "rank_total": 1493,
+   "rank_denominator": 256,
+   "cache_key": "1525e10015c0a204e29379e7491ba55a"
+  },
+  "fallback": {
+   "numerator": 881,
+   "denominator": 256,
+   "value": 3.44140625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "7:8,8:16,9:14,10:10,11:9,12:8,13:4,14:1,15:1",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 0.11297022464662783,
+   "rollouts": 256,
+   "rank_total": 881,
+   "rank_denominator": 256,
+   "cache_key": "52ea6db4c311743bc1d2ad942bee828e"
+  }
+ }
+}

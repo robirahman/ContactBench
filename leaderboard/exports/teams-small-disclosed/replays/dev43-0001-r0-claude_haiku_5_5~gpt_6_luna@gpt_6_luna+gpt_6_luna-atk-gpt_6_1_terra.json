@@ -1,0 +1,477 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+gpt_6_luna-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "excitors",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Common household feline that meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitty",
+    "pussycat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Large African mammal with a long trunk and ivory tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "pachyderm",
+    "tusker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A fine rain that falls from a clear sky, especially after sunset",
+   "blocklist": [
+    "dew",
+    "drizzle",
+    "mist",
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A porous, lightweight volcanic rock used as an abrasive, especially for smoothing rough skin",
+   "blocklist": [
+    "pumice",
+    "pumices",
+    "scoria"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Obsolete word for the plug placed in a cannon's muzzle or a brass instrument's bell",
+   "blocklist": [
+    "bung",
+    "stopper",
+    "tampion",
+    "tampions",
+    "tompion",
+    "tompions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A tropical American weevil, famously the final entry in some dictionaries",
+   "blocklist": [
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Quietly under amber rivers, travelers zigzag.",
+   "blocklist": [
+    "acrostic",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "quartzites",
+    "quartzitic",
+    "quartzose"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Xylophones yodel loudly over tiny old mountain yaks.",
+   "blocklist": [
+    "acronym",
+    "xylotomies",
+    "xylotomy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Start at the end; read the first letters backward. Little ants travel in bright red orchards.",
+   "blocklist": [
+    "orbit",
+    "orbital",
+    "orbitals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Every calm librarian appreciates tea.",
+   "blocklist": [
+    "eclat",
+    "eclats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Young ocean haiku; follow their tails.",
+   "blocklist": [
+    "gnu",
+    "gnus",
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Shift back one: Nearby birds sing under fresh overhangs.",
+   "blocklist": [
+    "lodestone",
+    "magnet",
+    "magnetic",
+    "magnets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "marten"
+    },
+    {
+     "seat": "guesser2",
+     "word": "marten"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Shift back one: Faint blue herons migrate freely.",
+   "blocklist": [
+    "eager",
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Every aged raven watches icy towers; nearby explorers seek shelter.",
+   "blocklist": [
+    "earwitness",
+    "earwitnesses",
+    "eyewitness",
+    "eyewitnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Fierce birds serenely uncover icy clouds; patient visitors observe evenings.",
+   "blocklist": [
+    "earthbound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Fuzzy jars eagerly fill slowly.",
+   "blocklist": [
+    "eider",
+    "eiderdown",
+    "eiderdowns",
+    "eiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Friendly bears seldom eat sour pickled quince.",
+   "blocklist": [
+    "eardrop",
+    "eardrops",
+    "earlobe",
+    "earring",
+    "earrings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Follow word tails: the zebra near rivers bright piano moon blue.",
+   "blocklist": [
+    "earstone",
+    "earstones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Feral visitors see fresh lilies blossoming.",
+   "blocklist": [
+    "eureka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Friendly quiet birds sail downstream inland. Shift initials back one.",
+   "blocklist": [
+    "eparch",
+    "eparchies",
+    "eparchs",
+    "eparchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Frail owls borrow clean maps freely.",
+   "blocklist": [
+    "enable",
+    "enabled",
+    "enabler",
+    "enablers",
+    "enables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Frail birds migrate east; people study northern boundary omens.",
+   "blocklist": [
+    "ealdorman",
+    "ealdormen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Every orange hat is placed precisely under softcovers.",
+   "blocklist": [
+    "eohippus",
+    "eohippuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Every night insomniacs gather, making anecdotes.",
+   "blocklist": [
+    "enigma",
+    "enigmas",
+    "enigmata",
+    "enigmatic",
+    "enigmatical",
+    "enigmatically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Each letter is one step after the intended letter: f b s m z x p p e",
+   "blocklist": [
+    "earlywood",
+    "earlywoods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 321.85020001672615,
+  "cost_numerator": 92363283,
+  "cost_denominator": 286976,
+  "cost_exact": false,
+  "cost_mcse": 0.308117355163592,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 83754003,
+   "denominator": 286976,
+   "value": 291.85020001672615,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:37,4:100,5:186,6:445,7:794,8:1121,9:1121,10:968,11:710,12:557,13:378,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.308117355163592,
+   "rollouts": 256,
+   "rank_total": 83754003,
+   "rank_denominator": 286976,
+   "cache_key": "93898ab10a083bd33c11b4df2db129a3"
+  }
+ }
+}

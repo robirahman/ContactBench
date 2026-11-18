@@ -1,0 +1,422 @@
+{
+ "game_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Common household pet, a small domesticated feline that meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "pet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "An African antelope also known as a wildebeest; its name has three letters.",
+   "blocklist": [
+    "eland",
+    "gnu",
+    "kudu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "An adult female sheep, as opposed to a ram.",
+   "blocklist": [
+    "ewe",
+    "ewes",
+    "lamb",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A feather pen.",
+   "blocklist": [
+    "feather",
+    "nib",
+    "pen",
+    "plume",
+    "quill"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A round citrus fruit, commonly peeled and eaten, whose juice is a breakfast staple.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "orange"
+    },
+    {
+     "seat": "guesser2",
+     "word": "orange"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The bright daytime object around which Earth revolves",
+   "blocklist": [
+    "solar",
+    "star",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Loose rocks and broken stone covering a steep mountainside, often collected at its base.",
+   "blocklist": [
+    "scree",
+    "shale",
+    "slope",
+    "stone",
+    "talus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A literary term for the grassy surface of the ground, as in a green field or lawn.",
+   "blocklist": [
+    "sod",
+    "sward",
+    "turf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A Japanese dish made with vinegared rice, sometimes wrapped in seaweed and served with raw fish.",
+   "blocklist": [
+    "sashimi",
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A medieval Icelandic prose narrative recounting the history and adventures of a family or hero.",
+   "blocklist": [
+    "saga",
+    "sagas",
+    "sage",
+    "sail",
+    "salt",
+    "sand",
+    "sea",
+    "ship",
+    "sinter",
+    "snow",
+    "song",
+    "star",
+    "stories",
+    "storm",
+    "story",
+    "sword"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A rapid, jerky movement of the eye when changing fixation from one point to another.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sable",
+     "sinter"
+    ],
+    [
+     "sit",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 18851,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Mythical singing beings whose voices lured sailors toward danger in Greek legend",
+   "blocklist": [
+    "sinew",
+    "singer",
+    "sister",
+    "sisters",
+    "sitter",
+    "sixty",
+    "size",
+    "sleep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "siren"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sirens"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A tube for transferring liquid by creating a partial vacuum and letting gravity do the rest.",
+   "blocklist": [
+    "siphon",
+    "siphons",
+    "syphon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A strong, coarse plant fiber traditionally used to make rope, twine, and floor coverings.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sisal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sisal"
+    }
+   ],
+   "prefix_after": "si",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A hot, dry, dust-laden wind that blows from the Sahara toward the Mediterranean region.",
+   "blocklist": [
+    "simoom",
+    "simoon",
+    "sirocco"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A small finch, often yellowish, with a pointed bill and dark wings.",
+   "blocklist": [
+    "siskin",
+    "siskins"
+   ],
+   "blocked_ranges": [
+    [
+     "siskin",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 11817,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A hollow cavity in the skull connected to the nasal passages.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinus"
+    }
+   ],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Describes a line or route that winds and bends in many graceful curves rather than running straight.",
+   "blocklist": [
+    "silent",
+    "silk",
+    "silly",
+    "sinewy",
+    "sinterability"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinuous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinuous"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Having a wavy, winding edge or outline, especially describing a leaf margin.",
+   "blocklist": [
+    "sinful",
+    "sing",
+    "single",
+    "sinks",
+    "sinner"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinuate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinuate"
+    }
+   ],
+   "prefix_after": "sint",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "sinterabilities sintered sintering sinters",
+   "blocklist": [
+    "sintered",
+    "sintering",
+    "sinters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sint",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 21.0,
+  "cost_numerator": 21,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,500 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that purrs and chases mice",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's loyal friend that barks and fetches sticks",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A feathered animal that flies, sings and builds nests in trees",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Aquatic creature that swims with fins and gills in rivers and seas",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Hoofed animal that neighs, gallops across fields and is ridden with a saddle",
+   "blocklist": [
+    "horse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Big African predator with a shaggy mane, often called the king of beasts",
+   "blocklist": [
+    "lion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Large wild canine that howls at the moon and hunts in packs",
+   "blocklist": [
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped jungle cat, the largest of its kind, with orange fur and black bars",
+   "blocklist": [
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A building where people live, with rooms, walls and a roof",
+   "blocklist": [
+    "home",
+    "house"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Device on a wrist or wall that shows the hour and minute",
+   "blocklist": [
+    "chronometer",
+    "clock",
+    "timepiece",
+    "watch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses, slithers through grass and sheds its skin",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "cobra",
+    "python",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Large furry forest animal that hibernates in winter and loves honey",
+   "blocklist": [
+    "bear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Four-wheeled motor vehicle for driving on roads",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "car"
+    },
+    {
+     "seat": "guesser2",
+     "word": "car"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Antlered grazing creature that bounds through woods and meadows",
+   "blocklist": [
+    "deer",
+    "doe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Waterfowl that quacks, paddles on ponds and has webbed feet",
+   "blocklist": [
+    "duck",
+    "gander",
+    "goose",
+    "mallard",
+    "swan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Mythical fire-breathing winged lizard that hoards gold in caves",
+   "blocklist": [
+    "dinosaur",
+    "dinosaurs",
+    "dragon",
+    "dragons",
+    "drake",
+    "drakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Rhythmic moves set to music at a party or ball",
+   "blocklist": [
+    "dance"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A hinged barrier you open to enter or leave a room",
+   "blocklist": [
+    "door",
+    "doorway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Bright sunlit period between dawn and dusk, when the sun is up",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "day",
+     "dayworks"
+    ]
+   ],
+   "blocked_word_count": 45,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Toy that a child cradles, a plaything shaped like a small person",
+   "blocklist": [
+    "doll",
+    "dolly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of light, the condition of night when the sun has gone down",
+   "blocklist": [
+    "dark",
+    "darkness",
+    "dim",
+    "dimness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Percussion instrument you strike with sticks to keep a beat in a band",
+   "blocklist": [
+    "drum",
+    "drumhead",
+    "drumheads",
+    "drummer",
+    "drumming",
+    "drums",
+    "drumstick",
+    "drumsticks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Evening meal served on plates at the table, often shared with family",
+   "blocklist": [
+    "diner",
+    "dining",
+    "dinner",
+    "dinnertime",
+    "dinnerware",
+    "dish",
+    "dishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Fine powder that settles on furniture when nobody cleans",
+   "blocklist": [
+    "dust"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Morning moisture that forms droplets on grass before the sun burns it off",
+   "blocklist": [
+    "damp",
+    "dew",
+    "dewdrop",
+    "dewdrops",
+    "dewfall",
+    "droplet",
+    "droplets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Not alive, lifeless, no longer breathing or moving at all",
+   "blocklist": [
+    "dead",
+    "death",
+    "deceased",
+    "defunct",
+    "departed",
+    "die",
+    "died",
+    "dying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Writing piece with drawers that you sit at to work or study",
+   "blocklist": [
+    "desk",
+    "desks",
+    "desktop",
+    "dresser"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "dream",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Clever sea mammal that leaps through ocean waves and squeaks to echo-locate",
+   "blocklist": [
+    "dolphin",
+    "dolphinfish",
+    "dolphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "daisy",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 439.4214968724364,
+  "cost_numerator": 68563815,
+  "cost_denominator": 156032,
+  "cost_exact": false,
+  "cost_mcse": 0.43623382799880434,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 63882855,
+   "denominator": 156032,
+   "value": 409.4214968724364,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:41,4:217,5:447,6:797,7:1219,8:1534,9:1478,10:1219,11:977,12:745,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.43623382799880434,
+   "rollouts": 256,
+   "rank_total": 127765710,
+   "rank_denominator": 312064,
+   "cache_key": "30ebfa99f806b3292803f1c1c0b0f6be"
+  }
+ }
+}

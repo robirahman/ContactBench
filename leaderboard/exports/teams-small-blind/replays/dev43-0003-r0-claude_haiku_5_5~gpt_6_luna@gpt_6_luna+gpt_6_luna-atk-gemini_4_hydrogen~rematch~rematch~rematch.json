@@ -1,0 +1,159 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+gpt_6_luna-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "daf",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 16,
+ "initial_secret_candidates": [
+  "daff",
+  "daffed",
+  "daffier",
+  "daffiest",
+  "daffily",
+  "daffing",
+  "daffodil",
+  "daffodils",
+  "daffs",
+  "daffy",
+  "daft",
+  "dafter",
+  "daftest",
+  "daftly",
+  "daftness",
+  "daftnesses"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "trumpet-shaped spring bloom",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "wacky, zany, or eccentric",
+   "blocklist": [
+    "daffy",
+    "daft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Comparative form of the silly adjective suggested last turn",
+   "blocklist": [
+    "daffier",
+    "dafter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "The condition of being foolish, absurd, or silly",
+   "blocklist": [
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The most zany or eccentric of a group",
+   "blocklist": [
+    "daffiest",
+    "daftest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "daftly",
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Plural of a noun meaning foolishness or absurdity",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daftnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daftnesses"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7.0,
+  "cost_numerator": 7,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 17,
+   "denominator": 16,
+   "value": 1.0625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:2,6:3,7:4,8:3,9:1,10:1",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.01515847656477081,
+   "rollouts": 256,
+   "rank_total": 272,
+   "rank_denominator": 256,
+   "cache_key": "d45997d69c6596edb35f1ed6b347c70b"
+  },
+  "fallback": null
+ }
+}

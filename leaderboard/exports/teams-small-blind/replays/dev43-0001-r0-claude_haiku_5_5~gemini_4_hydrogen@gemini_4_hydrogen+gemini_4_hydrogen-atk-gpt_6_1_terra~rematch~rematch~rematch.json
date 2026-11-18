@@ -1,0 +1,693 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-gpt_6_1_terra~rematch~rematch~rematch",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "excitors",
+ "initial_prefix": "exc",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 238,
+ "initial_secret_candidates": [
+  "excavate",
+  "excavated",
+  "excavates",
+  "excavating",
+  "excavation",
+  "excavational",
+  "excavations",
+  "excavator",
+  "excavators",
+  "exceed",
+  "exceeded",
+  "exceeder",
+  "exceeders",
+  "exceeding",
+  "exceedingly",
+  "exceeds",
+  "excel",
+  "excelled",
+  "excellence",
+  "excellences",
+  "excellencies",
+  "excellency",
+  "excellent",
+  "excellently",
+  "excelling",
+  "excels",
+  "excelsior",
+  "excelsiors",
+  "except",
+  "excepted",
+  "excepting",
+  "exception",
+  "exceptionabilities",
+  "exceptionability",
+  "exceptionable",
+  "exceptionably",
+  "exceptional",
+  "exceptionalism",
+  "exceptionalisms",
+  "exceptionalities",
+  "exceptionality",
+  "exceptionally",
+  "exceptionalness",
+  "exceptionalnesses",
+  "exceptions",
+  "exceptive",
+  "excepts",
+  "excerpt",
+  "excerpted",
+  "excerpter",
+  "excerpters",
+  "excerpting",
+  "excerption",
+  "excerptions",
+  "excerptor",
+  "excerptors",
+  "excerpts",
+  "excess",
+  "excessed",
+  "excesses",
+  "excessing",
+  "excessive",
+  "excessively",
+  "excessiveness",
+  "excessivenesses",
+  "exchange",
+  "exchangeabilities",
+  "exchangeability",
+  "exchangeable",
+  "exchanged",
+  "exchanger",
+  "exchangers",
+  "exchanges",
+  "exchanging",
+  "exchequer",
+  "exchequers",
+  "excide",
+  "excided",
+  "excides",
+  "exciding",
+  "excimer",
+  "excimers",
+  "excipient",
+  "excipients",
+  "exciple",
+  "exciples",
+  "excisable",
+  "excise",
+  "excised",
+  "exciseman",
+  "excisemen",
+  "excises",
+  "excising",
+  "excision",
+  "excisional",
+  "excisions",
+  "excitabilities",
+  "excitability",
+  "excitable",
+  "excitableness",
+  "excitablenesses",
+  "excitant",
+  "excitants",
+  "excitation",
+  "excitations",
+  "excitative",
+  "excitatory",
+  "excite",
+  "excited",
+  "excitedly",
+  "excitement",
+  "excitements",
+  "exciter",
+  "exciters",
+  "excites",
+  "exciting",
+  "excitingly",
+  "exciton",
+  "excitonic",
+  "excitons",
+  "excitor",
+  "excitors",
+  "exclaim",
+  "exclaimed",
+  "exclaimer",
+  "exclaimers",
+  "exclaiming",
+  "exclaims",
+  "exclamation",
+  "exclamations",
+  "exclamatory",
+  "exclave",
+  "exclaves",
+  "excludabilities",
+  "excludability",
+  "excludable",
+  "exclude",
+  "excluded",
+  "excluder",
+  "excluders",
+  "excludes",
+  "excludible",
+  "excluding",
+  "exclusion",
+  "exclusionary",
+  "exclusionist",
+  "exclusionists",
+  "exclusions",
+  "exclusive",
+  "exclusively",
+  "exclusiveness",
+  "exclusivenesses",
+  "exclusives",
+  "exclusivism",
+  "exclusivisms",
+  "exclusivist",
+  "exclusivists",
+  "exclusivities",
+  "exclusivity",
+  "excogitate",
+  "excogitated",
+  "excogitates",
+  "excogitating",
+  "excogitation",
+  "excogitations",
+  "excogitative",
+  "excommunicate",
+  "excommunicated",
+  "excommunicates",
+  "excommunicating",
+  "excommunication",
+  "excommunications",
+  "excommunicative",
+  "excommunicator",
+  "excommunicators",
+  "excoriate",
+  "excoriated",
+  "excoriates",
+  "excoriating",
+  "excoriation",
+  "excoriations",
+  "excrement",
+  "excremental",
+  "excrementitious",
+  "excrements",
+  "excrescence",
+  "excrescences",
+  "excrescencies",
+  "excrescency",
+  "excrescent",
+  "excrescently",
+  "excreta",
+  "excretal",
+  "excrete",
+  "excreted",
+  "excreter",
+  "excreters",
+  "excretes",
+  "excreting",
+  "excretion",
+  "excretions",
+  "excretory",
+  "excruciate",
+  "excruciated",
+  "excruciates",
+  "excruciating",
+  "excruciatingly",
+  "excruciation",
+  "excruciations",
+  "exculpate",
+  "exculpated",
+  "exculpates",
+  "exculpating",
+  "exculpation",
+  "exculpations",
+  "exculpatory",
+  "excurrent",
+  "excursion",
+  "excursionist",
+  "excursionists",
+  "excursions",
+  "excursive",
+  "excursively",
+  "excursiveness",
+  "excursivenesses",
+  "excursus",
+  "excursuses",
+  "excusable",
+  "excusableness",
+  "excusablenesses",
+  "excusably",
+  "excusatory",
+  "excuse",
+  "excused",
+  "excuser",
+  "excusers",
+  "excuses",
+  "excusing"
+ ],
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "trade one thing for another",
+   "blocklist": [
+    "exchange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "to dig a hole in the ground",
+   "blocklist": [
+    "excavate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "cry out suddenly in surprise",
+   "blocklist": [
+    "exclaim"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "more than is necessary or normal",
+   "blocklist": [
+    "excess",
+    "excessive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "a short passage taken from a book or film",
+   "blocklist": [
+    "excerpt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "a short journey or trip for pleasure",
+   "blocklist": [
+    "excursion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "a reason or explanation put forward to defend or justify a fault",
+   "blocklist": [
+    "excuse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "keep out or leave out",
+   "blocklist": [
+    "exclude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Microsoft spreadsheet software",
+   "blocklist": [
+    "excel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "not including; other than",
+   "blocklist": [
+    "except"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "arouse enthusiasm or thrill",
+   "blocklist": [
+    "excite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "clear from blame or guilt",
+   "blocklist": [
+    "exculpate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "British royal treasury or finance department",
+   "blocklist": [
+    "exchequer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "expel someone from participation in the sacraments of a church",
+   "blocklist": [
+    "excommunicate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "go beyond a limit or expectation",
+   "blocklist": [
+    "exceed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "a tax levied on certain goods produced and sold within a country",
+   "blocklist": [
+    "excise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "censure or criticize severely",
+   "blocklist": [
+    "excoriate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "punctuation mark ! or a sudden cry",
+   "blocklist": [
+    "exclamation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "extremely good; outstanding",
+   "blocklist": [
+    "excellent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "intensely painful; agonizing",
+   "blocklist": [
+    "excruciating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "an instance that does not follow a rule",
+   "blocklist": [
+    "exception"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "fine wood shavings used as packing material",
+   "blocklist": [
+    "excelsior"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "discharge waste matter from the body",
+   "blocklist": [
+    "excrete"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "restricted to a particular person, group, or area",
+   "blocklist": [
+    "exclusive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "a small territory completely surrounded by a foreign state",
+   "blocklist": [
+    "exclave"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "surgical removal of tissue or an organ",
+   "blocklist": [
+    "excision"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "feces or dung",
+   "blocklist": [
+    "excrement",
+    "excreta"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "heavy construction machine for digging earth",
+   "blocklist": [
+    "excavator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "the noun form of excite",
+   "blocklist": [
+    "excitation",
+    "excitement"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "excels exceeds excepts excavated exceeded exceeder excelled excepted excerpter excavates excelsiors",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "excellency"
+    },
+    {
+     "seat": "guesser2",
+     "word": "excavating"
+    }
+   ],
+   "prefix_after": "exc",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 39.270182291666664,
+  "cost_numerator": 60319,
+  "cost_denominator": 1536,
+  "cost_exact": false,
+  "cost_mcse": 0.06352809138493053,
+  "baseline": {
+   "numerator": 86157,
+   "denominator": 7936,
+   "value": 10.85647681451613,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:1,6:8,7:22,8:31,9:47,10:39,11:28,12:19,13:16,14:7,15:14,16:3,17:2,18:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.06300756186745096,
+   "rollouts": 256,
+   "rank_total": 86157,
+   "rank_denominator": 7936,
+   "cache_key": "1ed709b0d8e21d9d2873120b6a7ae980"
+  },
+  "fallback": {
+   "numerator": 14239,
+   "denominator": 1536,
+   "value": 9.270182291666666,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:1,7:14,8:24,9:33,10:34,11:27,12:18,13:15,14:7,15:14,16:3,17:2,18:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.06352809138493053,
+   "rollouts": 256,
+   "rank_total": 56956,
+   "rank_denominator": 6144,
+   "cache_key": "836dba163e378f33b6c3e47d73e133a6"
+  }
+ }
+}

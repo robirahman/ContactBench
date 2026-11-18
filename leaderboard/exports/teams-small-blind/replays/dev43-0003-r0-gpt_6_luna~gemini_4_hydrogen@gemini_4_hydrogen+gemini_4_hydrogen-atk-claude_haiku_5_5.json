@@ -1,0 +1,218 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A gentle, mild breeze from the west.",
+   "blocklist": [
+    "wind",
+    "winds",
+    "zephyr",
+    "zephyrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Egg-laying mammal with a duck-like bill.",
+   "blocklist": [
+    "echidna",
+    "mammal",
+    "mammals",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Figure of speech combining contradictory terms, like jumbo shrimp.",
+   "blocklist": [
+    "antitheses",
+    "antithesis",
+    "contradiction",
+    "contradictions",
+    "oxymoron",
+    "oxymorons",
+    "paradox",
+    "paradoxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Optical toy with mirrors and colored glass.",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Refuse to buy or use as a protest, named after an Irish land agent.",
+   "blocklist": [
+    "boycott",
+    "boycotted",
+    "boycotting",
+    "boycotts",
+    "daft",
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Intricate confusing network of passages built for the Minotaur.",
+   "blocklist": [
+    "labyrinth",
+    "labyrinths",
+    "maze",
+    "mazes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Finding something good without looking for it; a happy accident.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "serendipity"
+    },
+    {
+     "seat": "guesser2",
+     "word": "serendipity"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Yellow weed whose white puffball seeds are blown to make a wish.",
+   "blocklist": [
+    "dafter",
+    "daftest",
+    "daftly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dandelion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dandelion"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "White dog breed with black spots, famous from a Disney movie about 101 of them.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dab",
+     "daftness"
+    ],
+    [
+     "dag",
+     "dazzle"
+    ]
+   ],
+   "blocked_word_count": 678,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "daftnesses dazzled dazzler dazzlers dazzles dazzling dazzlingly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,487 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "excitors",
+ "initial_prefix": "e",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 7037,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large bird of prey known for keen eyesight",
+   "blocklist": [
+    "eagle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Third planet from the sun, the one we live on",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Way in to a room, the opposite of leaving by the door",
+   "blocklist": [
+    "enter",
+    "entrance",
+    "entry",
+    "entryway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Largest land animal, known for its trunk and big ears",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Repeated sound bounced back off a canyon wall",
+   "blocklist": [
+    "echo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Way out of a building, the opposite of an entrance",
+   "blocklist": [
+    "egress",
+    "exit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Organ used for hearing, found on the side of your head",
+   "blocklist": [
+    "ear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Strong feeling such as joy, fear or anger",
+   "blocklist": [
+    "emotion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Organ you see with, one of a pair in your face",
+   "blocklist": [
+    "eye",
+    "eyeball",
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Power to do work, and vigor a person shows when lively",
+   "blocklist": [
+    "energy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Number that comes right after seven",
+   "blocklist": [
+    "eight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Sharp border of a knife or a cliff drop",
+   "blocklist": [
+    "edge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Each single one of a group, all without exception",
+   "blocklist": [
+    "every",
+    "everybody",
+    "everyone",
+    "everything"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "ebb ecru edit egg ego elk elm emu end era eve ewe eon ell eel ear",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "east"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elbow"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Additional, beyond what is required or expected",
+   "blocklist": [
+    "excess",
+    "excessive",
+    "extra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Time of day after afternoon, before night falls",
+   "blocklist": [
+    "evenfall",
+    "evening",
+    "eventide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Containing nothing at all, vacant and void",
+   "blocklist": [
+    "emptiness",
+    "empty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Foe or opponent in battle or war",
+   "blocklist": [
+    "enemies",
+    "enemy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "eager early easy eat effect effort engine enough error escape estate event even ever exact",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "easy"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Number that comes right after ten",
+   "blocklist": [
+    "eleven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Older relative or senior member of a family, in years",
+   "blocklist": [
+    "elder",
+    "elderly",
+    "elders",
+    "eldest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Resentful desire for what another person has",
+   "blocklist": [
+    "envious",
+    "envy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Banished from one's homeland, forced to live abroad",
+   "blocklist": [
+    "exile",
+    "exiled",
+    "expatriate",
+    "expatriated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "To receive wages or money for labor done",
+   "blocklist": [
+    "earn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Best of a group, the privileged upper class",
+   "blocklist": [
+    "elite",
+    "elites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Sincere and serious in manner, not joking at all",
+   "blocklist": [
+    "earnest",
+    "earnestly",
+    "earnestness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "eft edh eke elf eld eng erg ern err ere eta eth ems els ens ess est eds ehs earl ease",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "eft"
+    },
+    {
+     "seat": "guesser2",
+     "word": "eels"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Whole and complete, with nothing left out",
+   "blocklist": [
+    "encompassing",
+    "entire",
+    "entirety",
+    "exhaustive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "elicit embark endure engage enjoy ensure escort evolve expand expert elect ember enact erode evoke",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "elicit"
+    },
+    {
+     "seat": "guesser2",
+     "word": "emerge"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 320.63798828125,
+  "cost_numerator": 3283333,
+  "cost_denominator": 10240,
+  "cost_exact": false,
+  "cost_mcse": 0.2947239475360131,
+  "baseline": {
+   "numerator": 42339521,
+   "denominator": 144512,
+   "value": 292.98273499778566,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:39,4:102,5:192,6:453,7:805,8:1129,9:1130,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.32223628936903,
+   "rollouts": 256,
+   "rank_total": 84679042,
+   "rank_denominator": 289024,
+   "cache_key": "d7bee67741ebb45a8d44e90bfa43ac6d"
+  },
+  "fallback": {
+   "numerator": 2976133,
+   "denominator": 10240,
+   "value": 290.63798828125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:7,4:85,5:168,6:428,7:798,8:1120,9:1125,10:972,11:709,12:558,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.2947239475360131,
+   "rollouts": 256,
+   "rank_total": 83331724,
+   "rank_denominator": 286720,
+   "cache_key": "47471bfdc2325aa8964ec3c3c5aa21d1"
+  }
+ }
+}

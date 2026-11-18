@@ -1,0 +1,370 @@
+{
+ "game_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "man's best friend",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "feline pet",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Golden resin from ancient trees, sometimes preserving insects",
+   "blocklist": [
+    "amber",
+    "insect",
+    "insects",
+    "resin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A huge gray animal with a trunk and tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mammoths",
+    "mastodon",
+    "mastodons",
+    "pachyderm",
+    "pachyderms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A crystalline mineral found in granite and used in watches",
+   "blocklist": [
+    "crystal",
+    "granite",
+    "mineral",
+    "quartz",
+    "watch",
+    "watches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "In Greek myth, the personification of the west wind.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zephyr"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zephyr"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "The legendary riddle-posing monster who guarded the road to Thebes",
+   "blocklist": [
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A crystalline ingredient refined from cane or beets, commonly used to sweeten food and drinks.",
+   "blocklist": [
+    "salt",
+    "starch",
+    "sucrose",
+    "sugar",
+    "sugars",
+    "sweet",
+    "sweetener",
+    "syrup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "In Zen Buddhism, a sudden moment of spiritual awakening or insight.",
+   "blocklist": [
+    "satori"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A traditional wooden clog; the same term names a tactic of deliberately damaging equipment.",
+   "blocklist": [
+    "sabot",
+    "sabotage",
+    "sabotaged",
+    "sabotages",
+    "sabotaging",
+    "saboteur",
+    "sabots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Grafted shoot: sad sag sap sat saw say sea see set she shy sin sip sir sit six ski sky sob son spa",
+   "blocklist": [
+    "sad",
+    "sag",
+    "sap",
+    "sat",
+    "saw",
+    "say",
+    "sea",
+    "see",
+    "set",
+    "she",
+    "shy",
+    "sin",
+    "sinter",
+    "sintered",
+    "sintering",
+    "sinters",
+    "sip",
+    "sir",
+    "sit",
+    "six",
+    "ski",
+    "sky",
+    "sob",
+    "son",
+    "spa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "scion"
+    }
+   ],
+   "prefix_after": "si",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Fine riverbed sediment: sial sib sic sick side siege sift sigh sign silk sill silly silo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "silt"
+    },
+    {
+     "seat": "guesser2",
+     "word": "silt"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "since sincere sincerity sine sinew sinful sing single singular sinister sink sins. One who sings.",
+   "blocklist": [
+    "sincerely",
+    "sinecure",
+    "sinewy",
+    "sinful",
+    "sing",
+    "singe",
+    "singer",
+    "singers",
+    "singes",
+    "singing",
+    "singled",
+    "sinker",
+    "sinking",
+    "sinless",
+    "sinned",
+    "sinner",
+    "sinners",
+    "sinning",
+    "sinuous",
+    "sinus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Harness bar connecting a horse's traces to a wagon; sinapism sincipital sinciput sinfonia",
+   "blocklist": [
+    "sinkhole",
+    "sinkholes",
+    "sinologies",
+    "sinologue",
+    "sinology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "singletree"
+    },
+    {
+     "seat": "guesser2",
+     "word": "singletree"
+    }
+   ],
+   "prefix_after": "sint",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "The ability of a powdered material to fuse into a solid mass when heated.",
+   "blocklist": [
+    "sinterability"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sint",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinterabilities",
+   "prefix_after": "sint",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 17.0,
+  "cost_numerator": 17,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

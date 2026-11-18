@@ -1,0 +1,151 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_1_terra~rematch~rematch~rematch~rematch",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "excitors",
+ "initial_prefix": "exci",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 46,
+ "initial_secret_candidates": [
+  "excide",
+  "excided",
+  "excides",
+  "exciding",
+  "excimer",
+  "excimers",
+  "excipient",
+  "excipients",
+  "exciple",
+  "exciples",
+  "excisable",
+  "excise",
+  "excised",
+  "exciseman",
+  "excisemen",
+  "excises",
+  "excising",
+  "excision",
+  "excisional",
+  "excisions",
+  "excitabilities",
+  "excitability",
+  "excitable",
+  "excitableness",
+  "excitablenesses",
+  "excitant",
+  "excitants",
+  "excitation",
+  "excitations",
+  "excitative",
+  "excitatory",
+  "excite",
+  "excited",
+  "excitedly",
+  "excitement",
+  "excitements",
+  "exciter",
+  "exciters",
+  "excites",
+  "exciting",
+  "excitingly",
+  "exciton",
+  "excitonic",
+  "excitons",
+  "excitor",
+  "excitors"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Candidates: excite excited exciting excitement excise excises exciter excites excitable",
+   "blocklist": [
+    "excision",
+    "excitation",
+    "excitedly",
+    "excitements",
+    "exciters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "excide excided excides exciding excimer excimers exciple exciples excised excising",
+   "blocklist": [
+    "excipient",
+    "excipients"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "exciton"
+    }
+   ],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Plural of a quasiparticle bound electron-hole pair in physics",
+   "blocklist": [
+    "excitons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "excitability excitant excitants excitatory excitations excitor excitors excitingly excitonic",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 4.0,
+  "cost_numerator": 4,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 1503,
+   "denominator": 640,
+   "value": 2.3484375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:3,7:11,8:10,9:9,10:7,11:2,12:1,13:1,14:1,15:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.017344978206821075,
+   "rollouts": 256,
+   "rank_total": 6012,
+   "rank_denominator": 2560,
+   "cache_key": "eb05eae6b50d2708d8e0c37d02fbfecb"
+  },
+  "fallback": null
+ }
+}

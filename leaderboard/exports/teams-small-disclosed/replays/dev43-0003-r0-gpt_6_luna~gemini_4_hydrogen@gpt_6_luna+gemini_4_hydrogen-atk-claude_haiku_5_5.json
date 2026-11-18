@@ -1,0 +1,348 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common mineral used as the timing crystal in watches.",
+   "blocklist": [
+    "quartz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A large gray mammal with a long trunk and enormous ears.",
+   "blocklist": [
+    "ears",
+    "elephant",
+    "gray",
+    "large",
+    "mammal",
+    "mammoth",
+    "trunk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A doctor listens to a patient's heartbeat through this instrument.",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A yellow lawn flower with a fluffy spherical seed head.",
+   "blocklist": [
+    "dandelion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Use the first letter of each word, in order: Xenial youths love elegant music.",
+   "blocklist": [
+    "xylem"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Initials after colon, in order: Tall insects gather eagerly, resting.",
+   "blocklist": [
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Odd initials, in order: Crows observe mice eating tomatoes.",
+   "blocklist": [
+    "comet",
+    "crow",
+    "mice",
+    "motet",
+    "tomato"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Clever uncles make interesting noodles.",
+   "blocklist": [
+    "clever",
+    "cumin",
+    "interesting",
+    "make",
+    "noodles",
+    "uncles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Look at the second letters of these three words: acorn, safely, brings.",
+   "blocklist": [
+    "art",
+    "can",
+    "cap",
+    "car",
+    "care",
+    "cart",
+    "cat"
+   ],
+   "blocked_ranges": [
+    [
+     "cab",
+     "cay"
+    ]
+   ],
+   "blocked_word_count": 2991,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Zany artists frame fine rural etchings.",
+   "blocklist": [
+    "artist",
+    "etching",
+    "etchings",
+    "fine",
+    "frame",
+    "rural",
+    "zany"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zaffre"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zaffre"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Take the first letters, in order: Daring rabbits always guard old nests.",
+   "blocklist": [
+    "dad",
+    "daft",
+    "dance",
+    "dark",
+    "data",
+    "date",
+    "day",
+    "dead"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dragon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dragon"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Read first letters in sequence: Dancers arrange colorful tiny yellow lilies.",
+   "blocklist": [
+    "dame",
+    "damp",
+    "dart",
+    "dash",
+    "dawn",
+    "days"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dactyl"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dactyl"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Initial letters, in order: Dapper astronauts find fascinating orchids during icy landscapes.",
+   "blocklist": [
+    "daffodil",
+    "daffs",
+    "daffy",
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Initial letters, in order: Daring ants find tiny little yams.",
+   "blocklist": [
+    "daffier",
+    "daffiest",
+    "daftly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Take the first letters in order: Daring artists find fresh emeralds daily.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daffed"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daffed"
+    }
+   ],
+   "prefix_after": "daft",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Take first letters in order: Distant astronomers follow tall elephants racing.",
+   "blocklist": [
+    "dafter",
+    "daftest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daft",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "daftnesses",
+   "prefix_after": "daft",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 18.0,
+  "cost_numerator": 18,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

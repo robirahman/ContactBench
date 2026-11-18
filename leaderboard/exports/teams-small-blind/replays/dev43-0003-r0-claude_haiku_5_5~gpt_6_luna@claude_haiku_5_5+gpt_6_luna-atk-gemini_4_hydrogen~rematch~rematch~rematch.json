@@ -1,0 +1,127 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "daf",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 16,
+ "initial_secret_candidates": [
+  "daff",
+  "daffed",
+  "daffier",
+  "daffiest",
+  "daffily",
+  "daffing",
+  "daffodil",
+  "daffodils",
+  "daffs",
+  "daffy",
+  "daft",
+  "dafter",
+  "daftest",
+  "daftly",
+  "daftness",
+  "daftnesses"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Silly or foolish, as in not sensible",
+   "blocklist": [
+    "daffy",
+    "daft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow trumpet-shaped spring flower, often planted in gardens in early spring",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Doffs or tips off, as a hat in old usage",
+   "blocklist": [
+    "daff",
+    "daffs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "In a silly, foolish manner, without good sense",
+   "blocklist": [
+    "daftly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "daffed daffier daffiest daffily daffing dafter daftest daftness daftnesses",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 5.0,
+  "cost_numerator": 5,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 17,
+   "denominator": 16,
+   "value": 1.0625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:2,6:3,7:4,8:3,9:1,10:1",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.01515847656477081,
+   "rollouts": 256,
+   "rank_total": 272,
+   "rank_denominator": 256,
+   "cache_key": "d45997d69c6596edb35f1ed6b347c70b"
+  },
+  "fallback": null
+ }
+}

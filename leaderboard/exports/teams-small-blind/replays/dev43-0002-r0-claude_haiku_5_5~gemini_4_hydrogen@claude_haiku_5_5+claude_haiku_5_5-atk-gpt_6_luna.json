@@ -1,0 +1,693 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "moggy",
+    "puss",
+    "tabby",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A loyal animal that barks and fetches sticks for its owner",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Clear liquid that fills rivers, lakes and oceans and is needed by every living thing",
+   "blocklist": [
+    "aqua",
+    "clear",
+    "drink",
+    "fluid",
+    "lake",
+    "life",
+    "liquid",
+    "ocean",
+    "pond",
+    "rain",
+    "river",
+    "sea",
+    "stream",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Large hoofed creature ridden with a saddle and bridle",
+   "blocklist": [
+    "bronco",
+    "colt",
+    "draft",
+    "equine",
+    "gelding",
+    "horse",
+    "mare",
+    "mount",
+    "mustang",
+    "nag",
+    "pony",
+    "stallion",
+    "steed",
+    "thoroughbred"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Structure where people live with a roof, walls and rooms",
+   "blocklist": [
+    "abode",
+    "apartment",
+    "building",
+    "bungalow",
+    "cabin",
+    "cottage",
+    "domicile",
+    "dwelling",
+    "habitation",
+    "home",
+    "house",
+    "hut",
+    "mansion",
+    "residence",
+    "shelter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Feathered creature that flies, sings and often builds a nest in a tree",
+   "blocklist": [
+    "bird",
+    "birds",
+    "eagle",
+    "parrot",
+    "robin",
+    "songbird",
+    "sparrow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Scaly creature that swims with fins and breathes through gills",
+   "blocklist": [
+    "carp",
+    "fish",
+    "fishes",
+    "salmon",
+    "shark",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Furniture with four legs where meals are served",
+   "blocklist": [
+    "banquet",
+    "bench",
+    "breakfast",
+    "chair",
+    "counter",
+    "countertop",
+    "desk",
+    "dining",
+    "dinner",
+    "eat",
+    "kitchen",
+    "lunch",
+    "meal",
+    "serving",
+    "stool",
+    "table",
+    "tabletop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Baked Italian dish with cheese and tomato sauce on a round crust",
+   "blocklist": [
+    "calzone",
+    "dough",
+    "mozzarella",
+    "pepperoni",
+    "pie",
+    "pizza",
+    "pizzeria"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Red or green fruit that grows on orchard trees and keeps the doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Big maned predator that roars and lives in prides on the savanna",
+   "blocklist": [
+    "king",
+    "lion",
+    "lioness",
+    "mane",
+    "predator",
+    "pride",
+    "roars",
+    "savanna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Striped jungle hunter with orange fur and a long tail",
+   "blocklist": [
+    "cheetah",
+    "jaguar",
+    "leopard",
+    "panther",
+    "tiger",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Long-eared hopper that eats carrots and lives in burrows",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "cottontail",
+    "hare",
+    "jackrabbit",
+    "lapin",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Wild pack hunter that howls at the moon and is related to the dog",
+   "blocklist": [
+    "canine",
+    "coyote",
+    "fox",
+    "howl",
+    "howls",
+    "jackal",
+    "lupine",
+    "moon",
+    "pack",
+    "werewolf",
+    "wild",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Vehicle with four wheels that you drive on roads",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "cab",
+    "car",
+    "convertible",
+    "coupe",
+    "hatchback",
+    "jeep",
+    "limousine",
+    "minivan",
+    "motorcar",
+    "sedan",
+    "taxi",
+    "truck",
+    "van",
+    "wagon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Floating vessel that sails across the sea carrying passengers and cargo",
+   "blocklist": [
+    "boat",
+    "cruise",
+    "ferry",
+    "freighter",
+    "liner",
+    "sailboat",
+    "schooner",
+    "ship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Play for fun with rules, players and a winner, such as chess or checkers",
+   "blocklist": [
+    "activity",
+    "amusement",
+    "board",
+    "cards",
+    "competition",
+    "contest",
+    "entertainment",
+    "game",
+    "gaming",
+    "leisure",
+    "match",
+    "parlor",
+    "pastime",
+    "puzzle",
+    "recreation",
+    "sport",
+    "toy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Farm animal that gives milk and says moo",
+   "blocklist": [
+    "bovine",
+    "bull",
+    "calf",
+    "cattle",
+    "cow",
+    "dairy",
+    "heifer",
+    "milch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Striped African hoofed animal related to the horse",
+   "blocklist": [
+    "zebra",
+    "zebraic",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrawood",
+    "zebrawoods",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses, slithers through grass and sheds its skin",
+   "blocklist": [
+    "anaconda",
+    "cobra",
+    "python",
+    "rattlesnake",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Hand head heart door light night time day money work face room world city street stone",
+   "blocklist": [
+    "blinds",
+    "covering",
+    "curtain",
+    "curtains",
+    "drape",
+    "drapes",
+    "fabric",
+    "hangings",
+    "shade",
+    "tapestry",
+    "textile",
+    "upholstery",
+    "valance",
+    "wallpaper",
+    "window"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hand"
+    },
+    {
+     "seat": "guesser2",
+     "word": "earth"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Small rodent that squeaks and nibbles grain in barns",
+   "blocklist": [
+    "gerbil",
+    "hamster",
+    "mice",
+    "mouse",
+    "rat",
+    "rats",
+    "rodent",
+    "vole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Fluffy white mass floating in the sky that can bring showers",
+   "blocklist": [
+    "cloud",
+    "clouds",
+    "cumulonimbus",
+    "cumulus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Bearded farm animal that bleats, climbs rocky hills and gives milk",
+   "blocklist": [
+    "billy",
+    "caprine",
+    "goat",
+    "ibex",
+    "kid",
+    "nanny",
+    "ruminant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Green leafy organism that grows in soil and needs sunlight to make food",
+   "blocklist": [
+    "bush",
+    "fern",
+    "flower",
+    "foliage",
+    "grass",
+    "herb",
+    "leaf",
+    "moss",
+    "photosynthesis",
+    "plant",
+    "seed",
+    "shrub",
+    "tree",
+    "vegetation",
+    "weed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Tiny six-legged insect that lives in colonies and carries food back to its nest",
+   "blocklist": [
+    "ant",
+    "ants",
+    "colony",
+    "formicary",
+    "insect",
+    "nest",
+    "queen",
+    "worker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Bright disk in the sky that gives Earth light and warmth",
+   "blocklist": [
+    "daylight",
+    "solar",
+    "star",
+    "sun",
+    "sunbeam",
+    "sunny",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Outdoor plot where flowers and vegetables are grown, often behind a house",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "garden"
+    },
+    {
+     "seat": "guesser2",
+     "word": "garden"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Father, a male parent of a child",
+   "blocklist": [
+    "dad",
+    "dada",
+    "daddy",
+    "dads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Visions you see in your mind while asleep at night",
+   "blocklist": [
+    "daydream",
+    "dream",
+    "dreamed",
+    "dreaming",
+    "dreams",
+    "dreamt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 440.9119241107315,
+  "cost_numerator": 140414575,
+  "cost_denominator": 318464,
+  "cost_exact": false,
+  "cost_mcse": 0.4287662188056039,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 130860655,
+   "denominator": 318464,
+   "value": 410.9119241107315,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:44,4:227,5:449,6:800,7:1244,8:1550,9:1487,10:1226,11:981,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.4287662188056039,
+   "rollouts": 256,
+   "rank_total": 130860655,
+   "rank_denominator": 318464,
+   "cache_key": "c85fdc136c9ceb81d84ebce264d6f931"
+  }
+ }
+}

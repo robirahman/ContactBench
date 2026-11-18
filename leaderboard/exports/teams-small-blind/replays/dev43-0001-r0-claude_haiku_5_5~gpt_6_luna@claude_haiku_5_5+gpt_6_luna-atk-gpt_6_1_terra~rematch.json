@@ -1,0 +1,482 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "excitors",
+ "initial_prefix": "e",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 7037,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large bird of prey known for keen eyesight",
+   "blocklist": [
+    "eagle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Sound reflected back from a wall or cave",
+   "blocklist": [
+    "echo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The planet we live on, third from the sun",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Compass direction opposite of west",
+   "blocklist": [
+    "east"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Number of legs on a spider",
+   "blocklist": [
+    "eight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Huge gray animal with a long trunk and big ears",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Go inside through a door or gate",
+   "blocklist": [
+    "enter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Power to do work, or vigor and force of expression",
+   "blocklist": [
+    "energy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Way out of a building or hall",
+   "blocklist": [
+    "exit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Border or outer limit of something",
+   "blocklist": [
+    "edge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Always, at all times, throughout all time",
+   "blocklist": [
+    "eternally",
+    "ever"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Green gemstone prized in jewelry",
+   "blocklist": [
+    "emerald"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Keen and enthusiastic about doing something",
+   "blocklist": [
+    "eager"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Joint connecting the upper arm and the forearm",
+   "blocklist": [
+    "elbow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Try these: ear eat egg ego elf elk emu end era eve ewe eye ebb eel ell eld eme eke elm",
+   "blocklist": [
+    "eon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ebony"
+    },
+    {
+     "seat": "guesser2",
+     "word": "eerie"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Precisely correct, without any error or approximation",
+   "blocklist": [
+    "exact",
+    "exactly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Heroic, grand, or legendary in scale",
+   "blocklist": [
+    "epic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Older family member, or a shrub bearing white flowers and dark berries",
+   "blocklist": [
+    "elder"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Number right after ten",
+   "blocklist": [
+    "eleven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Each one of a group, without exception",
+   "blocklist": [
+    "each",
+    "every"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Relaxed comfort, or try: earl, emir, ends, eyre, edit, eros, emus",
+   "blocklist": [
+    "ease",
+    "easiness",
+    "easy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Organs of sight, plural",
+   "blocklist": [
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "eyeballs"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Beyond what is normal, usual, or required",
+   "blocklist": [
+    "excess",
+    "excessive",
+    "extra",
+    "extraordinary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Wicked and morally bad, the opposite of good",
+   "blocklist": [
+    "evil"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Apply force or effort to accomplish something",
+   "blocklist": [
+    "exert"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Same in amount, size, or value as something else",
+   "blocklist": [
+    "equal",
+    "equivalent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Containing nothing inside, vacant and hollow",
+   "blocklist": [
+    "emptiness",
+    "empty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Something that happens, an occurrence or incident",
+   "blocklist": [
+    "episode",
+    "event"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Try these: ecru eddy epoch exam even erg eft ebon emit ogle",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "etch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "enigma"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Try: earn easel eaten eraser empire engine entry estate evening expert eyelid elegant exotic",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "engine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "enough"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 320.5896423611111,
+  "cost_numerator": 92329817,
+  "cost_denominator": 288000,
+  "cost_exact": false,
+  "cost_mcse": 0.28859710226744356,
+  "baseline": {
+   "numerator": 42339521,
+   "denominator": 144512,
+   "value": 292.98273499778566,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:39,4:102,5:192,6:453,7:805,8:1129,9:1130,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.32223628936903,
+   "rollouts": 256,
+   "rank_total": 84679042,
+   "rank_denominator": 289024,
+   "cache_key": "d7bee67741ebb45a8d44e90bfa43ac6d"
+  },
+  "fallback": {
+   "numerator": 83689817,
+   "denominator": 288000,
+   "value": 290.5896423611111,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:17,4:74,5:171,6:440,7:800,8:1125,9:1126,10:973,11:711,12:558,13:378,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.28859710226744356,
+   "rollouts": 256,
+   "rank_total": 83689817,
+   "rank_denominator": 288000,
+   "cache_key": "2070992f2f1e3a2a6b78480499adfae3"
+  }
+ }
+}

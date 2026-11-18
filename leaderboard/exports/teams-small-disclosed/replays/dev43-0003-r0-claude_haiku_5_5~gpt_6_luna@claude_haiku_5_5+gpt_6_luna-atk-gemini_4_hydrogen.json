@@ -1,0 +1,529 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Something measured by clocks and calendars, a duration",
+   "blocklist": [
+    "interval",
+    "period",
+    "span",
+    "time"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Sixty minutes make up this unit of measured duration on a clock",
+   "blocklist": [
+    "hour",
+    "hours"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Sixty of these make up one minute on a clock",
+   "blocklist": [
+    "second",
+    "seconds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Twelve of these fill out one year on a calendar",
+   "blocklist": [
+    "month",
+    "months"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Twenty-four of these make up one full rotation of the planet, a stretch of light",
+   "blocklist": [
+    "day",
+    "days"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Seven days make up this unit of time before the weekend returns",
+   "blocklist": [
+    "week",
+    "weeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ten of these fill out a century on the calendar",
+   "blocklist": [
+    "decade",
+    "decades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "The dark stretch between sunset and sunrise, when the stars come out",
+   "blocklist": [
+    "night",
+    "nights",
+    "nighttime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Spring, summer, autumn and winter are each one of these, a quarter of the calendar year",
+   "blocklist": [
+    "season",
+    "seasons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Two weeks, a stretch of fourteen nights, a span once common in British English",
+   "blocklist": [
+    "fortnight",
+    "fortnights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Break of day, the first light before the sun rises above the horizon",
+   "blocklist": [
+    "dawn",
+    "dawns",
+    "daybreak",
+    "daybreaks",
+    "morning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "The day after today, still ahead on the calendar",
+   "blocklist": [
+    "tomorrow",
+    "tomorrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A brief instant, a very short while, something you can blink through",
+   "blocklist": [
+    "flash",
+    "heartbeat",
+    "jiffy",
+    "moment",
+    "moments",
+    "trice",
+    "wink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A long era in history, a distinct phase of geologic age",
+   "blocklist": [
+    "aeon",
+    "aeons",
+    "eon",
+    "eons",
+    "epoch",
+    "epochs",
+    "millennia",
+    "millennium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Happening once each revolution of the earth around the sun, recurring every orbit",
+   "blocklist": [
+    "annual",
+    "annually",
+    "yearly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "The evening twilight that comes just before night falls, the opposite of dawn",
+   "blocklist": [
+    "dusk",
+    "dusks",
+    "eventide",
+    "gloaming",
+    "sundown"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Twelve o'clock at night, the middle of the dark hours",
+   "blocklist": [
+    "midnight",
+    "midnights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The day before today, now behind us on the calendar",
+   "blocklist": [
+    "yesterday",
+    "yesterdays"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Monday through Friday, the working part of the week",
+   "blocklist": [
+    "weekday",
+    "weekdays",
+    "workday",
+    "workdays",
+    "workweek",
+    "workweeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Twelve o'clock in the daytime, the middle of the day",
+   "blocklist": [
+    "midday",
+    "middays",
+    "noon",
+    "noons",
+    "noontide",
+    "noontime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "A period of five years, an old Roman span of time for taking the census",
+   "blocklist": [
+    "lustra",
+    "lustrum",
+    "lustrums",
+    "quinquennia",
+    "quinquennium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "A fixed term of office or imprisonment, a stretch of time",
+   "blocklist": [
+    "mandate",
+    "mandates",
+    "sentence",
+    "sentences",
+    "stint",
+    "stints",
+    "tenure",
+    "tenures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Endless duration with no beginning or end, forever and always",
+   "blocklist": [
+    "endlessness",
+    "eternities",
+    "eternity",
+    "immortality",
+    "infinities",
+    "infinity",
+    "perpetuity",
+    "timelessness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "The span of a person's existence from birth to death",
+   "blocklist": [
+    "life",
+    "lifetime",
+    "lifetimes",
+    "lives"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "A fiftieth anniversary celebrated after half a century has passed",
+   "blocklist": [
+    "jubilee",
+    "jubilees",
+    "semicentennial",
+    "semicentennials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "The part of the day before noon, the early hours of daylight",
+   "blocklist": [
+    "aurora",
+    "auroras",
+    "forenoon",
+    "forenoons",
+    "matins",
+    "mornings",
+    "sunup",
+    "sunups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Sand-filled glass timer that measures a passage of time by trickling from one bulb to the other",
+   "blocklist": [
+    "hourglass",
+    "hourglasses",
+    "sandglass",
+    "sandglasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A short period of weather or activity, or a magic incantation",
+   "blocklist": [
+    "spell",
+    "spells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A recurring period of time, like a lunar or solar one",
+   "blocklist": [
+    "cycle",
+    "cycles",
+    "eclipse",
+    "eclipses",
+    "lunation",
+    "lunations",
+    "tide",
+    "tides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sennight",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7001.403666108209,
+  "cost_numerator": 71043243,
+  "cost_denominator": 10147,
+  "cost_exact": false,
+  "cost_mcse": 1.5514897754701416,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 70738833,
+   "denominator": 10147,
+   "value": 6971.403666108209,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:953,4:3865,5:8582,6:15191,7:23074,8:28383,9:24851,10:20294,11:15497,12:11355,13:7827,14:5126,15:3191,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.5514897754701416,
+   "rollouts": 256,
+   "rank_total": 36218282496,
+   "rank_denominator": 5195264,
+   "cache_key": "50d9ff6bd11c95d7ea317cba2e544d5c"
+  }
+ }
+}

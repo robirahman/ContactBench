@@ -1,0 +1,486 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+claude_haiku_5_5-atk-gpt_6_1_terra~rematch",
+ "attacker": "gpt_6_luna+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "excitors",
+ "initial_prefix": "e",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 7037,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A huge land mammal with a trunk and tusks.",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Organ of hearing, found on either side of the head.",
+   "blocklist": [
+    "ear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A female sheep, whose name sounds like the word for the person being addressed.",
+   "blocklist": [
+    "ewe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A powerful feathered predator with a hooked bill, often shown on a national crest.",
+   "blocklist": [
+    "eagle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Keen: each eagerer eagerest eagerly eagerness eagers eaglets eagre eagres ealdorman ealdormen",
+   "blocklist": [
+    "eager"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Within hearing distance: close enough for a voice to reach you.",
+   "blocklist": [
+    "earshot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Every autumn rabbits avoid cold hills entirely.",
+   "blocklist": [
+    "earache"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Every novice insists great mysteries merit answers.",
+   "blocklist": [
+    "enigma",
+    "enigmas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A broad historical period; take the ends: blue radio when.",
+   "blocklist": [
+    "eon",
+    "epoch",
+    "era"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Every xenobiologist uses very intricate apparatus, extensively.",
+   "blocklist": [
+    "exuvia",
+    "exuviae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Even blackbirds often nest.",
+   "blocklist": [
+    "ebon",
+    "ebony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "eyrie"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A sea duck prized for the soft down used in bedding.",
+   "blocklist": [
+    "eider",
+    "eiderdown",
+    "eiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Every lazy visitor enjoys reading.",
+   "blocklist": [
+    "elver",
+    "elvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "The third planet from the Sun, our home.",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "east easy eight end else; vibrating membrane in the ear",
+   "blocklist": [
+    "eardrum",
+    "eardrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A sound that returns after bouncing off a distant surface.",
+   "blocklist": [
+    "echo",
+    "echoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Eminent celebrations leave audiences thrilled.",
+   "blocklist": [
+    "eclat",
+    "eclats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "elated"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Eager novices join our youthful party.",
+   "blocklist": [
+    "enjoy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Every night actors create theater.",
+   "blocklist": [
+    "enact",
+    "enacts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Eulogy: eagles eaglet earful earl earlobe early earn earned earnest earner earnings earing earliest",
+   "blocklist": [
+    "elegies",
+    "elegy",
+    "encomium",
+    "epitaph",
+    "eulogies",
+    "eulogize"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "energy"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Preserve a corpse with chemicals, especially before burial.",
+   "blocklist": [
+    "embalm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Every novice eventually reaches valleys; adventurous travelers explore.",
+   "blocklist": [
+    "enervate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "When the moon passes between Earth and the Sun, it obscures the Sun from view.",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Rapture: ecstasy, elation, exhilaration, exultation.",
+   "blocklist": [
+    "euphoria",
+    "euphorias",
+    "euphoric",
+    "exaltation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Every new community lies amid varying environs, a territory surrounded by another.",
+   "blocklist": [
+    "enclave",
+    "enclaves",
+    "exclave",
+    "exclaves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Every novice travels east rapidly.",
+   "blocklist": [
+    "enter",
+    "enters",
+    "entry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "event"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Executive decrees issued compel compliance today.",
+   "blocklist": [
+    "edict",
+    "edicts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "eclair ecology economy edge effect effort elder elect element email emperor empty enemy engine",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ecru"
+    },
+    {
+     "seat": "guesser2",
+     "word": "exit"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "eleven",
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 319.21636479878595,
+  "cost_numerator": 90871961,
+  "cost_denominator": 284672,
+  "cost_exact": false,
+  "cost_mcse": 0.29737776167725993,
+  "baseline": {
+   "numerator": 42339521,
+   "denominator": 144512,
+   "value": 292.98273499778566,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:39,4:102,5:192,6:453,7:805,8:1129,9:1130,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.32223628936903,
+   "rollouts": 256,
+   "rank_total": 84679042,
+   "rank_denominator": 289024,
+   "cache_key": "d7bee67741ebb45a8d44e90bfa43ac6d"
+  },
+  "fallback": {
+   "numerator": 82331801,
+   "denominator": 284672,
+   "value": 289.21636479878595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:34,4:89,5:168,6:424,7:782,8:1112,9:1123,10:971,11:710,12:558,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.29737776167725993,
+   "rollouts": 256,
+   "rank_total": 82331801,
+   "rank_denominator": 284672,
+   "cache_key": "39eae6daa487df310f935cc5f6e52314"
+  }
+ }
+}

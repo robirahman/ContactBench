@@ -1,0 +1,527 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen@gemini_4_hydrogen+claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen+claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "egg-laying duck-billed Australian mammal",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "optical instrument for viewing distant stars",
+   "blocklist": [
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "medical device for listening to heartbeat",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "tube with mirrors and colored glass showing changing patterns",
+   "blocklist": [
+    "kaleidoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "handheld canopy against rain",
+   "blocklist": [
+    "bumbershoot",
+    "parasol",
+    "raincoat",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "dome-shaped snow house",
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns to thrower",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "ancient counting frame with sliding beads",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Japanese art of paper folding",
+   "blocklist": [
+    "origami"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "reptile famous for changing its skin color",
+   "blocklist": [
+    "camouflage",
+    "chameleon",
+    "chameleons",
+    "lizard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "dark shape or outline of someone against a lighter background",
+   "blocklist": [
+    "contour",
+    "figure",
+    "image",
+    "profile",
+    "shade",
+    "shadow",
+    "silhouette"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "musical instrument with wooden bars struck by mallets",
+   "blocklist": [
+    "glockenspiel",
+    "marimba",
+    "metallophone",
+    "vibraphone",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "magnetic needle instrument for finding north",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "submarine optical tube for seeing above water",
+   "blocklist": [
+    "periscope",
+    "periscopes",
+    "scope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "pink wading bird that stands on one leg",
+   "blocklist": [
+    "egret",
+    "flamingo",
+    "flamingoes",
+    "flamingos",
+    "heron",
+    "ibis",
+    "stork",
+    "wader"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "swinging weight on a grandfather clock",
+   "blocklist": [
+    "bob",
+    "pendulum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "bellows-driven reed instrument squeezed between both hands",
+   "blocklist": [
+    "accordion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "concertina"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "sand-filled timekeeper with two bulbs",
+   "blocklist": [
+    "clepsydra",
+    "hourglass",
+    "hourglasses",
+    "sandglass",
+    "timepiece",
+    "timer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "musician's ticking device for keeping steady tempo",
+   "blocklist": [
+    "beat",
+    "chronometer",
+    "metronome",
+    "metronomes",
+    "metronomic",
+    "ticker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "slung bed of netting suspended between two trees",
+   "blocklist": [
+    "hammock",
+    "hammocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "springy canvas sheet for acrobatic bouncing",
+   "blocklist": [
+    "bouncer",
+    "rebounder",
+    "springboard",
+    "trampoline",
+    "trampolines",
+    "trampolining",
+    "trampolinist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Aboriginal wind instrument made from a hollowed tree trunk",
+   "blocklist": [
+    "didgeridoo",
+    "didgeridoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "single-lens eyeglass held in place by the eye socket",
+   "blocklist": [
+    "eyeglass",
+    "eyepiece",
+    "lorgnette",
+    "monocle",
+    "spectacle",
+    "spectacles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "ancient timekeeper that uses the sun's shadow",
+   "blocklist": [
+    "dial",
+    "gnomon",
+    "heliograph",
+    "horologe",
+    "sundial",
+    "sundials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "medieval siege engine with a counterweight",
+   "blocklist": [
+    "ballista",
+    "catapult",
+    "mangonel",
+    "onager",
+    "trebuchet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "French Revolution execution device with a falling blade",
+   "blocklist": [
+    "guillotine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "mercury-filled glass tube for measuring temperature",
+   "blocklist": [
+    "thermometer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "weather instrument for measuring atmospheric pressure",
+   "blocklist": [
+    "altimeter",
+    "aneroid",
+    "barograph",
+    "barometer",
+    "barometric",
+    "manometer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "laboratory instrument for magnifying tiny cells and bacteria",
+   "blocklist": [
+    "magnification",
+    "magnifier",
+    "magnifying",
+    "microscope",
+    "microscopes",
+    "microscopic",
+    "microscopical",
+    "microscopy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "small rectangular mouth organ played by blowing and sucking",
+   "blocklist": [
+    "harmonica",
+    "harmonicas",
+    "harp",
+    "mouthpiece"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6912.720619804311,
+  "cost_numerator": 40818896337,
+  "cost_denominator": 5904896,
+  "cost_exact": false,
+  "cost_mcse": 1.4260461931224735,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40641749457,
+   "denominator": 5904896,
+   "value": 6882.720619804311,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:959,4:3876,5:8600,6:15201,7:23066,8:28392,9:24842,10:20274,11:15490,12:11353,13:7824,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.4260461931224735,
+   "rollouts": 256,
+   "rank_total": 40641749457,
+   "rank_denominator": 5904896,
+   "cache_key": "25dde3fe7156613b9c7289d454a700ec"
+  }
+ }
+}

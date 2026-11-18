@@ -1,0 +1,528 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+claude_haiku_5_5-atk-gemini_4_hydrogen~rematch",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "daftnesses",
+ "initial_prefix": "d",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 10139,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Man's best friend, a common household pet that barks",
+   "blocklist": [
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A beverage you swallow, such as water or juice",
+   "blocklist": [
+    "draft",
+    "draught",
+    "drink",
+    "drinking",
+    "drinks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Mythical fire-breathing winged reptile found in fantasy stories",
+   "blocklist": [
+    "dragon",
+    "dragonet",
+    "dragonets",
+    "dragons",
+    "drake",
+    "drakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Gentle bird that coos and is a symbol of peace",
+   "blocklist": [
+    "dove",
+    "doves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Waterfowl that quacks and paddles on a pond",
+   "blocklist": [
+    "duck",
+    "duckling",
+    "ducklings",
+    "ducks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Entrance you open with a knob to enter a room or house",
+   "blocklist": [
+    "door",
+    "doors",
+    "doorway",
+    "doorways"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pair of cubes with pips, rolled in games of chance",
+   "blocklist": [
+    "dice",
+    "dices",
+    "die"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Move rhythmically to music at a party or ball",
+   "blocklist": [
+    "dance",
+    "danced",
+    "dancer",
+    "dancers",
+    "dances",
+    "disco"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Evening meal eaten at the table with family or guests",
+   "blocklist": [
+    "dine",
+    "dining",
+    "dinner",
+    "dinners",
+    "dinnertime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Percussion instrument you strike with sticks in a marching band",
+   "blocklist": [
+    "drum",
+    "drummer",
+    "drums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Antlered forest animal that grazes in meadows and leaps through woods",
+   "blocklist": [
+    "deer",
+    "deers",
+    "doe",
+    "does"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Sleek marine mammal that leaps through waves and is known for its intelligence",
+   "blocklist": [
+    "dolphin",
+    "dolphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Yellow-centered white flower that grows in a field",
+   "blocklist": [
+    "daisies",
+    "daisy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "dab dad dam dan day deb den dew dib dig dim din dip dit don dot dow dry dub dud due dug dun dye",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dad"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Lacking sharpness or excitement; boring and unexciting",
+   "blocklist": [
+    "drab",
+    "dreary",
+    "dull",
+    "duller",
+    "dullest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Steer a car along the road, as a motorist does",
+   "blocklist": [
+    "drive",
+    "driven",
+    "driver",
+    "drivers",
+    "drives",
+    "driving",
+    "drove"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Time of day when the sun sets and evening begins",
+   "blocklist": [
+    "dusk",
+    "dusks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Piece of furniture with drawers where you write letters and work at a computer",
+   "blocklist": [
+    "desk",
+    "desks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Rounded roof shaped like half a sphere, often crowning a cathedral or capitol",
+   "blocklist": [
+    "dome",
+    "domes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Short bearded miner of fairy tales and fantasy lore who lives underground",
+   "blocklist": [
+    "dwarf",
+    "dwarfs",
+    "dwarves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Soil or grime that covers the ground",
+   "blocklist": [
+    "dirt",
+    "dirts",
+    "dirty",
+    "dust"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Student housing building on a college campus, where roommates share rooms",
+   "blocklist": [
+    "dorm",
+    "dormitories",
+    "dormitory",
+    "dorms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Small bead of liquid that falls from a faucet, a leaf, or the rain",
+   "blocklist": [
+    "drip",
+    "drips",
+    "drop",
+    "droplet",
+    "droplets",
+    "drops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Opposite of up, toward the ground or lower position",
+   "blocklist": [
+    "down",
+    "downs",
+    "downward",
+    "downwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Affectionate term of address for a loved one, as in a letter greeting",
+   "blocklist": [
+    "darling",
+    "darlings",
+    "dear",
+    "dearest",
+    "dearie",
+    "dears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Plate or bowl you eat from, washed after meals",
+   "blocklist": [
+    "dish",
+    "dishes",
+    "dishware"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Structure at a harbor where ships tie up and load cargo",
+   "blocklist": [
+    "dock",
+    "docks",
+    "dockside"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Sandy hill shaped by desert wind",
+   "blocklist": [
+    "dune",
+    "dunes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Try these: deal debt dream dress drama drift drill drown dozen dune",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dream"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "dag dah dal did doc dor dos duo dap dey dhow dhal dell dent dial dies dike dill dime dint dire",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dell"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 443.76877232142857,
+  "cost_numerator": 19880841,
+  "cost_denominator": 44800,
+  "cost_exact": false,
+  "cost_mcse": 0.3899590811530686,
+  "baseline": {
+   "numerator": 65594971,
+   "denominator": 156928,
+   "value": 417.9940545982871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:47,4:233,5:457,6:806,7:1245,8:1555,9:1487,10:1226,11:981,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.4053906714314501,
+   "rollouts": 256,
+   "rank_total": 131189942,
+   "rank_denominator": 313856,
+   "cache_key": "e9faecbe83dc1738cedf1b99a3b9b358"
+  },
+  "fallback": {
+   "numerator": 18536841,
+   "denominator": 44800,
+   "value": 413.76877232142857,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:11,4:196,5:422,6:788,7:1229,8:1545,9:1483,10:1225,11:980,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.3899590811530686,
+   "rollouts": 256,
+   "rank_total": 129757887,
+   "rank_denominator": 313600,
+   "cache_key": "a02632de6abac1e5c2234802e3c3abfa"
+  }
+ }
+}

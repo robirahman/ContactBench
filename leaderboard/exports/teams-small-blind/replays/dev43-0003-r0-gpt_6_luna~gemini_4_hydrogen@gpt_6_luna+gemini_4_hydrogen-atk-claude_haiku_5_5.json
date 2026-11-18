@@ -1,0 +1,267 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "The traditional collective noun for crows",
+   "blocklist": [
+    "murder"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A group of owls",
+   "blocklist": [
+    "parliament",
+    "stare",
+    "wisdom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A sheltered place where ships can anchor safely",
+   "blocklist": [
+    "anchorage",
+    "harbor",
+    "harbour",
+    "haven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "The academic study of flags and their symbolism, history, and use",
+   "blocklist": [
+    "academic",
+    "flag",
+    "flags",
+    "heraldry",
+    "history",
+    "symbolism",
+    "vexillological",
+    "vexillologist",
+    "vexillologists",
+    "vexillology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A fortunate discovery made by chance while looking for something else",
+   "blocklist": [
+    "accident",
+    "boon",
+    "chance",
+    "fluke",
+    "godsend",
+    "luck",
+    "serendipities",
+    "serendipity",
+    "windfall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "An instrument used to measure atmospheric pressure",
+   "blocklist": [
+    "barometer",
+    "barometers",
+    "manometer",
+    "manometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "The rhetorical insertion of a word or phrase into the middle of another word",
+   "blocklist": [
+    "infix",
+    "insertion",
+    "interjection",
+    "interpolate",
+    "interpolation",
+    "parenthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tmesis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tmesis"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "The scientific dating of wood by analyzing its annual growth rings",
+   "blocklist": [
+    "daft",
+    "dance",
+    "dark",
+    "day",
+    "dead",
+    "deal",
+    "dear",
+    "death"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dendrochronology"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dendrochronology"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The art or practice of communicating by means of fingerspelling or a manual alphabet",
+   "blocklist": [
+    "dame",
+    "damp",
+    "dare",
+    "data",
+    "date",
+    "dawn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dactylology"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dactylology"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A familiar yellow spring flower in the narcissus family",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Describing someone as foolish or eccentric, with an offbeat, cartoonish quality",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "daffodil",
+     "daftness"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "daftnesses",
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

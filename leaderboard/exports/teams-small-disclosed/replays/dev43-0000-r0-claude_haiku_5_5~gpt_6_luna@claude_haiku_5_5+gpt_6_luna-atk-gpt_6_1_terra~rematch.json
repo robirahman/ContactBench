@@ -1,0 +1,481 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "sinterabilities",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Hard mineral material used for building walls, and the sort of thing a pebble is made of",
+   "blocklist": [
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen white flakes that fall from winter clouds",
+   "blocklist": [
+    "snow",
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Bright glowing star that our planet orbits and gives us daylight",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Vast salty body of water that ships cross between continents",
+   "blocklist": [
+    "sea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Fine grains on the beach that fill an hourglass",
+   "blocklist": [
+    "sand"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Blue expanse overhead where birds fly and weather happens",
+   "blocklist": [
+    "sky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "skies"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Restful state each night when you close your eyes and dream",
+   "blocklist": [
+    "sleep",
+    "sleeping",
+    "slumber"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Season after winter when flowers bloom and days grow longer",
+   "blocklist": [
+    "spring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Firm and not liquid or gas, like ice or a brick",
+   "blocklist": [
+    "solid",
+    "solids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Paved road in a town lined with houses and shops",
+   "blocklist": [
+    "sidewalk",
+    "street",
+    "streets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "White crystal condiment shaken onto dinner, mined from the earth or evaporated from brine",
+   "blocklist": [
+    "salt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Loose earth where plants take root and worms wriggle through the garden",
+   "blocklist": [
+    "sod",
+    "soil",
+    "soils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Long metal blade with a hilt, carried by knights and used in fencing",
+   "blocklist": [
+    "saber",
+    "sabre",
+    "sword",
+    "swords"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Piece of furniture you rest on, or a place in a theater",
+   "blocklist": [
+    "seat",
+    "seats",
+    "settee",
+    "sofa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Happy expression that curves the lips when you are pleased",
+   "blocklist": [
+    "smile",
+    "smiles",
+    "smiling",
+    "smirk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Single movement of the foot when walking, or one stage in a process",
+   "blocklist": [
+    "step",
+    "stepping",
+    "steps",
+    "stride",
+    "strides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Shiny precious metal used in coins, jewelry and cutlery",
+   "blocklist": [
+    "silver",
+    "silvers",
+    "sterling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Utensil with a shallow bowl for stirring soup or eating cereal",
+   "blocklist": [
+    "spoon",
+    "spoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Kitchen appliance with burners and an oven for cooking food",
+   "blocklist": [
+    "stove",
+    "stoves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Sweet granules stirred into coffee or tea, often kept in a bowl on the table",
+   "blocklist": [
+    "sugar",
+    "sugars",
+    "sweetener",
+    "sweeteners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Footwear, a leather covering worn on each foot",
+   "blocklist": [
+    "shoe",
+    "shoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Hot vapor rising from a boiling kettle or pot of water",
+   "blocklist": [
+    "steam",
+    "steaming",
+    "steams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Thin piece of wood, or something you do to adhere to another thing",
+   "blocklist": [
+    "splinter",
+    "stick",
+    "sticking",
+    "sticks",
+    "stuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Graceful white waterbird with a long curved neck that glides across ponds",
+   "blocklist": [
+    "swan",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Athletic contest like football or tennis, played for fun or competition",
+   "blocklist": [
+    "sport",
+    "sporting",
+    "sports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Eight-legged creature that spins webs and often lives in corners of old houses",
+   "blocklist": [
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Whirl or rotate rapidly, like a top or a dancer twirling",
+   "blocklist": [
+    "spin",
+    "spinning",
+    "spun",
+    "swirl",
+    "swirling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Gaze fixedly at something for a long time without looking away",
+   "blocklist": [
+    "stare",
+    "stares",
+    "staring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "store",
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 793.8919322096457,
+  "cost_numerator": 51622029,
+  "cost_denominator": 65024,
+  "cost_exact": false,
+  "cost_mcse": 1.5538178422047455,
+  "baseline": {
+   "numerator": 24808479,
+   "denominator": 32512,
+   "value": 763.0560716043307,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.6676291160468641,
+   "rollouts": 256,
+   "rank_total": 49616958,
+   "rank_denominator": 65024,
+   "cache_key": "ced2167337019d13ccb82dae281f2ca3"
+  },
+  "fallback": {
+   "numerator": 49671309,
+   "denominator": 65024,
+   "value": 763.8919322096457,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:58,4:339,5:1024,6:1782,7:2642,8:3455,9:2904,10:2245,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.5538178422047455,
+   "rollouts": 256,
+   "rank_total": 49671309,
+   "rank_denominator": 65024,
+   "cache_key": "d0ff91814d19b7bad684e34a17b21f62"
+  }
+ }
+}

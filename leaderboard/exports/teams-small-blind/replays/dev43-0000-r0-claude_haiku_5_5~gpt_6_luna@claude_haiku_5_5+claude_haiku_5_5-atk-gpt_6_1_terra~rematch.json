@@ -1,0 +1,578 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "sinterabilities",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Bright star that warms our planet and rises each morning",
+   "blocklist": [
+    "sol",
+    "sun",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen white flakes that fall from clouds in winter",
+   "blocklist": [
+    "sleet",
+    "snow",
+    "snowfall",
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Blue expanse above us where birds fly and clouds drift",
+   "blocklist": [
+    "skies",
+    "sky",
+    "skyline"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Grainy material on a beach near the ocean waves",
+   "blocklist": [
+    "sand",
+    "sands",
+    "sandstone",
+    "shingle",
+    "silt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Curved expression showing happiness on a face",
+   "blocklist": [
+    "smile",
+    "smiles",
+    "smiling",
+    "smirk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Utensil used for eating soup and stirring tea",
+   "blocklist": [
+    "soupspoon",
+    "spoon",
+    "spoonful",
+    "spoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Salty body of water covering most of the planet's surface",
+   "blocklist": [
+    "saltwater",
+    "sea",
+    "seas",
+    "seawater",
+    "seawaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Hard mineral material used for building walls and monuments",
+   "blocklist": [
+    "slate",
+    "stone",
+    "stones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Place where you rest your body on a chair",
+   "blocklist": [
+    "seat",
+    "seating",
+    "seats",
+    "sit",
+    "sits",
+    "sitting",
+    "stool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Not fast, moving at a leisurely pace",
+   "blocklist": [
+    "slow",
+    "slower",
+    "slowly",
+    "slowness",
+    "sluggish",
+    "sluggishly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Rest state at night when you close your eyes",
+   "blocklist": [
+    "shuteye",
+    "sleep",
+    "sleeping",
+    "sleeps",
+    "slumber",
+    "slumbering",
+    "snooze",
+    "snoozing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Candy-like taste, the opposite of sour",
+   "blocklist": [
+    "saccharine",
+    "sugar",
+    "sugary",
+    "sweet",
+    "sweetened",
+    "sweetish",
+    "sweetness",
+    "sweets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Confident and certain about something, without any doubt",
+   "blocklist": [
+    "secure",
+    "sure",
+    "surely",
+    "sureness",
+    "surer",
+    "surest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Halt motion or cease going forward",
+   "blocklist": [
+    "standstill",
+    "stationary",
+    "stay",
+    "stop",
+    "stoppage",
+    "stopped",
+    "stopping",
+    "stops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Gentle and yielding to touch, not hard or firm",
+   "blocklist": [
+    "soft",
+    "softer",
+    "softest",
+    "softish",
+    "softness",
+    "spongy",
+    "squashy",
+    "squishy",
+    "supple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Seasoning crystals sprinkled on fries and popcorn to add flavor",
+   "blocklist": [
+    "salt",
+    "salted",
+    "salting",
+    "salts",
+    "saltshaker",
+    "saltshakers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Season when flowers bloom and the weather turns warm again",
+   "blocklist": [
+    "spring",
+    "springtide",
+    "springtides",
+    "springtime",
+    "springtimes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Canvas that catches wind to move a boat across water",
+   "blocklist": [
+    "sail",
+    "sailcloth",
+    "sailcloths",
+    "sails"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Cinnamon or pepper used to flavor food and baked goods",
+   "blocklist": [
+    "spice",
+    "spiced",
+    "spicery",
+    "spices",
+    "spicey",
+    "spicing",
+    "spicy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Foot covering worn inside shoes, often made of cotton or wool",
+   "blocklist": [
+    "sock",
+    "socks",
+    "stocking",
+    "stockings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses and slithers through grass",
+   "blocklist": [
+    "serpent",
+    "serpents",
+    "snake",
+    "snakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Powerful and sturdy, able to lift heavy loads with great force",
+   "blocklist": [
+    "stalwart",
+    "stout",
+    "strapping",
+    "strength",
+    "strengths",
+    "strong",
+    "stronger",
+    "strongest",
+    "strongman",
+    "strongmen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Cool area sheltered from sunlight, often under a tree",
+   "blocklist": [
+    "shade",
+    "shaded",
+    "shades",
+    "shadow",
+    "shadows",
+    "shadowy",
+    "shady",
+    "shelter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Woolly farm animal that bleats and grazes in a flock",
+   "blocklist": [
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Winter ride pulled by dogs across snow and ice",
+   "blocklist": [
+    "dogsled",
+    "dogsleds",
+    "sled",
+    "sledge",
+    "sledges",
+    "sleds",
+    "sleigh",
+    "sleighs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Melody that a choir or singer performs for an audience",
+   "blocklist": [
+    "serenade",
+    "sing",
+    "singing",
+    "sings",
+    "singsong",
+    "solo",
+    "song",
+    "songs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "sag sap sat saw say set sew sex shy sip sir sob sod son sow soy spa spy sue sum sup sub sty spry",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sad"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Saliva expelled from the mouth",
+   "blocklist": [
+    "spit",
+    "spits",
+    "spittle",
+    "sputum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "sac see sec sen sib sic sin ski sly sop sot sox syn stub slim slap skit snip",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sin"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Propel yourself through water using arm strokes and kicking legs",
+   "blocklist": [
+    "swim",
+    "swimmer",
+    "swimming",
+    "swims"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 781.9553395669292,
+  "cost_numerator": 6355733,
+  "cost_denominator": 8128,
+  "cost_exact": false,
+  "cost_mcse": 1.657307195269247,
+  "baseline": {
+   "numerator": 24808479,
+   "denominator": 32512,
+   "value": 763.0560716043307,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.6676291160468641,
+   "rollouts": 256,
+   "rank_total": 49616958,
+   "rank_denominator": 65024,
+   "cache_key": "ced2167337019d13ccb82dae281f2ca3"
+  },
+  "fallback": {
+   "numerator": 6111893,
+   "denominator": 8128,
+   "value": 751.9553395669292,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:20,4:324,5:1023,6:1769,7:2624,8:3442,9:2889,10:2237,11:1560,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.657307195269247,
+   "rollouts": 256,
+   "rank_total": 48895144,
+   "rank_denominator": 65024,
+   "cache_key": "68551c57d448bb1763c98644ba6f798a"
+  }
+ }
+}

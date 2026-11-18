@@ -1,0 +1,70 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_1_terra~rematch~rematch~rematch~rematch",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "sinterabilities",
+ "initial_prefix": "sint",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 6,
+ "initial_secret_candidates": [
+  "sinter",
+  "sinterabilities",
+  "sinterability",
+  "sintered",
+  "sintering",
+  "sinters"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinter",
+   "prefix_after": "sint",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "sintered sintering sinters sinterability sinterabilities",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "sint",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 2.0,
+  "cost_numerator": 2,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 1,
+   "denominator": 1,
+   "value": 1.0,
+   "exact": true,
+   "method": "all_fit",
+   "histogram": "6:1,7:1,8:1,9:1,13:1,15:1",
+   "target_length": 15,
+   "C": 100,
+   "mcse": null,
+   "rollouts": null,
+   "rank_total": null,
+   "rank_denominator": null,
+   "cache_key": null
+  },
+  "fallback": null
+ }
+}

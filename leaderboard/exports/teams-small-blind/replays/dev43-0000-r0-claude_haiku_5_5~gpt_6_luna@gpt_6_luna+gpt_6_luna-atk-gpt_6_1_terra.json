@@ -1,0 +1,495 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+gpt_6_luna-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Definite article",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A small domesticated feline",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A tiny planktonic crustacean genus commonly called water fleas",
+   "blocklist": [
+    "cladoceran",
+    "copepod",
+    "daphnia",
+    "daphnias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A tree that produces acorns",
+   "blocklist": [
+    "oak",
+    "oaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Kitchen implement that separates fine particles from larger ones by letting them pass through a mesh",
+   "blocklist": [
+    "colander",
+    "sieve",
+    "sift",
+    "sifter",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "people, time, year, work, day, man, world, life, hand, eye, house, book; Australian flightless bird",
+   "blocklist": [
+    "cassowaries",
+    "cassowary",
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A prized seasoning made from the dried stigmas of a crocus",
+   "blocklist": [
+    "saffron",
+    "saffrons",
+    "spice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Smiling Australian marsupial; good, make, take, home, back, long, great, little, right, state, still",
+   "blocklist": [
+    "kangaroo",
+    "quokka",
+    "quokkas",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A Mexican salamander that keeps its feathery external gills into adulthood and can regenerate limbs",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Coffee-cup sleeve for insulation; go, new, first, last, food, money, place, thing, woman, child",
+   "blocklist": [
+    "cosy",
+    "cozy",
+    "zarf",
+    "zarfs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Salamander",
+   "blocklist": [
+    "eft",
+    "hellbender",
+    "mudpuppy",
+    "newt",
+    "newts",
+    "salamanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A long yellow fruit that is botanically classified as a berry",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A blue astronaut calmly used silver.",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "The traditional collective noun for a group of crows",
+   "blocklist": [
+    "flock",
+    "murder",
+    "murders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Green apple river dawn earth night; ace,act,age,ago,air,arm,art,ask,ate,bag,bar,bat,bed,bee,bet,bit",
+   "blocklist": [
+    "garden",
+    "gardener",
+    "gardens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Hand tool for boring small holes; one, two, who, how, out, now, old, way, too, use, its, men, end",
+   "blocklist": [
+    "auger",
+    "awl",
+    "awls",
+    "brace",
+    "bradawl",
+    "drill",
+    "gimlet",
+    "gimlets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Calm artists build intricate narratives.",
+   "blocklist": [
+    "cabin",
+    "cabins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Some travelers observe nocturnal eclipses.",
+   "blocklist": [
+    "stone",
+    "stoner",
+    "stones",
+    "stony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Quiet uncles admire rare turquoise zeppelins.",
+   "blocklist": [
+    "quartz",
+    "quartzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Sushi red the area.",
+   "blocklist": [
+    "idea",
+    "ideas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "The cruel farm.",
+   "blocklist": [
+    "elm",
+    "elms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Quail under oak, inspecting nests.",
+   "blocklist": [
+    "coin",
+    "coins",
+    "quoin",
+    "quoins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Fast iguanas glide.",
+   "blocklist": [
+    "fig",
+    "figs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Read the last letters: menu, star, rain.",
+   "blocklist": [
+    "urn",
+    "urns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Xylophones emit neon over nights.",
+   "blocklist": [
+    "xenon",
+    "xenons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Initials backwards: olives, lambs, lions, eagles, cats.",
+   "blocklist": [
+    "cello",
+    "cellos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Automobile: are but not you him she his her was own our put get got let say set had did may why yet",
+   "blocklist": [
+    "auto",
+    "automobiles",
+    "autos",
+    "car",
+    "cars",
+    "motorcar",
+    "vehicle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "all,any,bad,ban,bay,big,boy,bus,buy,cap,cow,cut,dog,dry,due,eat,fan,far,few,fit,fly,fox,fun,gas,hat",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "love"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7061.148252711858,
+  "cost_numerator": 5770031417,
+  "cost_denominator": 817152,
+  "cost_exact": false,
+  "cost_mcse": 4.632351303980809,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 5745516857,
+   "denominator": 817152,
+   "value": 7031.148252711858,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:876,4:3842,5:8578,6:15198,7:23087,8:28402,9:24858,10:20288,11:15499,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.632351303980809,
+   "rollouts": 256,
+   "rank_total": 5745516857,
+   "rank_denominator": 817152,
+   "cache_key": "c5e8f61f99b9eff01e5f6cd04e4a27de"
+  }
+ }
+}

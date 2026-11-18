@@ -1,0 +1,315 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_1_terra~rematch~rematch~rematch~rematch",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "excitors",
+ "initial_prefix": "exci",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 46,
+ "initial_secret_candidates": [
+  "excide",
+  "excided",
+  "excides",
+  "exciding",
+  "excimer",
+  "excimers",
+  "excipient",
+  "excipients",
+  "exciple",
+  "exciples",
+  "excisable",
+  "excise",
+  "excised",
+  "exciseman",
+  "excisemen",
+  "excises",
+  "excising",
+  "excision",
+  "excisional",
+  "excisions",
+  "excitabilities",
+  "excitability",
+  "excitable",
+  "excitableness",
+  "excitablenesses",
+  "excitant",
+  "excitants",
+  "excitation",
+  "excitations",
+  "excitative",
+  "excitatory",
+  "excite",
+  "excited",
+  "excitedly",
+  "excitement",
+  "excitements",
+  "exciter",
+  "exciters",
+  "excites",
+  "exciting",
+  "excitingly",
+  "exciton",
+  "excitonic",
+  "excitons",
+  "excitor",
+  "excitors"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feeling thrilled and enthusiastic, the opposite of bored",
+   "blocklist": [
+    "excited"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "To cut out or remove surgically, or a tax on certain goods",
+   "blocklist": [
+    "excise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Stir up or thrill someone emotionally",
+   "blocklist": [
+    "excite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Thrilling and full of energy, a lively and stirring kind of experience",
+   "blocklist": [
+    "exciting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A strong feeling of eagerness, agitation, or thrilled anticipation",
+   "blocklist": [
+    "excitement"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Third-person form of a verb meaning to arouse or stir up feelings",
+   "blocklist": [
+    "excites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "The process of stimulating or energizing something, such as an electron or a circuit, into activity",
+   "blocklist": [
+    "excitation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Short-lived excited dimer molecule that emits ultraviolet light in some gas lasers",
+   "blocklist": [
+    "excimer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Easily aroused, nervous and high-strung, quick to get worked up",
+   "blocklist": [
+    "excitable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Surgical removal of tissue or a passage cut out of a text",
+   "blocklist": [
+    "excision"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Bound electron-hole pair in a semiconductor crystal, a quasiparticle of excitation energy",
+   "blocklist": [
+    "exciton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "excitons"
+    }
+   ],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Inactive ingredient that carries the active drug in a tablet or capsule",
+   "blocklist": [
+    "excipient"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A device or person that provokes activity and energizes something",
+   "blocklist": [
+    "exciter",
+    "excitor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Stimulating drugs or substances that speed up bodily activity",
+   "blocklist": [
+    "excitant",
+    "excitants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Tending to stimulate nerve or muscle activity, as certain signals do in the brain",
+   "blocklist": [
+    "excitatory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "exci",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "excisable excised excises excising excisions excimers excipients excitably excitedly excitements",
+   "blocklist": [
+    "excide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "excitors"
+    },
+    {
+     "seat": "guesser2",
+     "word": "excitability"
+    }
+   ],
+   "prefix_after": "exci",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 16.0,
+  "cost_numerator": 16,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 1503,
+   "denominator": 640,
+   "value": 2.3484375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:3,7:11,8:10,9:9,10:7,11:2,12:1,13:1,14:1,15:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.017344978206821075,
+   "rollouts": 256,
+   "rank_total": 6012,
+   "rank_denominator": 2560,
+   "cache_key": "eb05eae6b50d2708d8e0c37d02fbfecb"
+  },
+  "fallback": null
+ }
+}

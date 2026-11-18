@@ -1,0 +1,310 @@
+{
+ "game_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Australian egg-laying mammal with a duck-like bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Complex maze from Greek mythology built for the Minotaur",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "labyrinth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "labyrinth"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Medical instrument used by doctors to listen to heartbeats",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A dark shape or outline of someone or something visible against a lighter background",
+   "blocklist": [
+    "outline",
+    "shade",
+    "shadow",
+    "shadows",
+    "shape",
+    "silhouette",
+    "silhouetted",
+    "silhouettes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Brass woodwind musical instrument with a single reed, popular in jazz",
+   "blocklist": [
+    "sax",
+    "saxhorn",
+    "saxhorns",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Underwater warship or vessel capable of operating beneath the ocean surface",
+   "blocklist": [
+    "sub",
+    "submarine",
+    "submarines",
+    "submersible",
+    "subs",
+    "vessel",
+    "vessels",
+    "warship",
+    "warships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Icicle-shaped mineral formation hanging from the ceiling of a cave",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "stalactite"
+    },
+    {
+     "seat": "guesser2",
+     "word": "stalactite"
+    }
+   ],
+   "prefix_after": "si",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Handwritten name of a person on a letter or document",
+   "blocklist": [
+    "signature",
+    "signatures",
+    "signed",
+    "signer",
+    "signet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Loud warning sound on a police car or ambulance",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "siren"
+    },
+    {
+     "seat": "guesser2",
+     "word": "siren"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Air-filled cavity in the skull behind the nose or eyes",
+   "blocklist": [
+    "sinew",
+    "sinful",
+    "sing",
+    "sinner",
+    "sinus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Menacing, threatening, or suggesting evil",
+   "blocklist": [
+    "sinister"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Genuine, honest, and free from deceit or hypocrisy",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sin",
+     "sinter"
+    ],
+    [
+     "sinterability",
+     "sinus"
+    ]
+   ],
+   "blocked_word_count": 133,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinusitis",
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinusoid",
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Plural of the air-filled cavity in the skull behind the nose",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinuses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinuses"
+    }
+   ],
+   "prefix_after": "sint",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinterabilities",
+   "prefix_after": "sint",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 18.0,
+  "cost_numerator": 18,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

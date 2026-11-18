@@ -1,0 +1,622 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend that barks and wags its tail",
+   "blocklist": [
+    "canine",
+    "dog",
+    "hound",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered creature that sings and flies across the sky",
+   "blocklist": [
+    "avian",
+    "bird",
+    "fowl",
+    "songbird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Saddled four-legged animal that gallops and neighs",
+   "blocklist": [
+    "equine",
+    "horse",
+    "mare",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Scaly swimmer with gills that lives in rivers and seas",
+   "blocklist": [
+    "fish",
+    "minnow",
+    "salmon",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Large African big cat with a shaggy mane that roars",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Striped Asian wildcat that hunts in jungles and growls",
+   "blocklist": [
+    "tiger",
+    "tigers",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Long-eared hopping creature with a fluffy cotton tuft that nibbles carrots",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "cottontail",
+    "hare",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pack hunter that howls at the moon in dark forests",
+   "blocklist": [
+    "coyote",
+    "jackal",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses and sheds its skin",
+   "blocklist": [
+    "adder",
+    "cobra",
+    "python",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Large furry omnivore that hibernates through the winter in dens",
+   "blocklist": [
+    "bear",
+    "bears",
+    "bruin",
+    "grizzly",
+    "ursine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Bearded farm animal that bleats and chews cud in pastures",
+   "blocklist": [
+    "billy",
+    "caprine",
+    "goat",
+    "goats",
+    "kid",
+    "nanny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Tiny rodent that squeaks and nibbles cheese in pantries",
+   "blocklist": [
+    "mice",
+    "mouse",
+    "rat",
+    "rats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Black and white striped hoofed beast of the African plains",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Green hopping amphibian that croaks in ponds and swamps",
+   "blocklist": [
+    "bullfrog",
+    "frog",
+    "frogs",
+    "tadpole",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Huge antlered northern woodland animal with a bulbous nose",
+   "blocklist": [
+    "caribou",
+    "elk",
+    "moose",
+    "reindeer",
+    "stag"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Small social insect that forms busy colonies underground",
+   "blocklist": [
+    "ant",
+    "ants",
+    "termite",
+    "termites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Woolly farm animal that baas and grazes in meadows",
+   "blocklist": [
+    "ewe",
+    "lamb",
+    "ovine",
+    "ram",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Hairy Himalayan ox that carries loads over mountain passes",
+   "blocklist": [
+    "yak",
+    "yaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Graceful forest animal with a white tail that bounds away from hunters",
+   "blocklist": [
+    "buck",
+    "deer",
+    "doe",
+    "fawn",
+    "whitetail"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Bovine farm beast that gives milk and says moo in barns",
+   "blocklist": [
+    "bull",
+    "calf",
+    "cattle",
+    "cow",
+    "cows",
+    "heifer",
+    "oxen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Barnyard or wild critter: hen pig owl eel crab hog boar lynx emu fox bat bee ape gnu",
+   "blocklist": [
+    "badger",
+    "beaver",
+    "bison",
+    "camel",
+    "chicken",
+    "critter",
+    "critters",
+    "crow",
+    "donkey",
+    "dove",
+    "duck",
+    "goose",
+    "hawk",
+    "koala",
+    "llama",
+    "mole",
+    "moth",
+    "mule",
+    "otter",
+    "panda",
+    "piglet",
+    "possum",
+    "raccoon",
+    "rooster",
+    "seal",
+    "shark",
+    "skunk",
+    "sloth",
+    "snail",
+    "sow",
+    "swan",
+    "swine",
+    "turkey",
+    "wasp",
+    "whale",
+    "worm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 36,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Massive gray African river mammal with enormous jaws and short legs",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Majestic hunting raptor with a hooked beak and keen eyesight that soars high",
+   "blocklist": [
+    "buzzard",
+    "condor",
+    "eagle",
+    "eagles",
+    "falcon",
+    "kestrel",
+    "osprey",
+    "vulture"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Cold-blooded scaly creature that basks on warm rocks in deserts",
+   "blocklist": [
+    "chameleon",
+    "gecko",
+    "iguana",
+    "lizard",
+    "lizards",
+    "skink",
+    "tortoise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Small aquatic salamander-like creature with a long tail that lives in ponds",
+   "blocklist": [
+    "axolotl",
+    "eft",
+    "efts",
+    "mudpuppy",
+    "newt",
+    "newts",
+    "salamanders",
+    "triton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Spotted scavenger of African savannas with a laughing cackle",
+   "blocklist": [
+    "hyena",
+    "hyenas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "gerbil hamster ferret weasel mink stoat jaguar leopard cheetah giraffe rhino gorilla monkey baboon",
+   "blocklist": [
+    "aardvark",
+    "anteater",
+    "antelope",
+    "armadillo",
+    "bobcat",
+    "buffalo",
+    "chimpanzee",
+    "chinchilla",
+    "chipmunk",
+    "cougar",
+    "dingo",
+    "dolphin",
+    "gazelle",
+    "gibbon",
+    "gopher",
+    "groundhog",
+    "hedgehog",
+    "impala",
+    "kangaroo",
+    "lemming",
+    "lemur",
+    "manatee",
+    "marmot",
+    "meerkat",
+    "mongoose",
+    "muskrat",
+    "narwhal",
+    "ocelot",
+    "okapi",
+    "opossum",
+    "orangutan",
+    "orca",
+    "panther",
+    "platypus",
+    "porcupine",
+    "porpoise",
+    "puma",
+    "rhinoceros",
+    "squirrel",
+    "tapir",
+    "vole",
+    "wallaby",
+    "walrus",
+    "warthog",
+    "wildebeest",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 47,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Long-legged wading bird that stands motionless in marshes and spears fish with its bill",
+   "blocklist": [
+    "bittern",
+    "crane",
+    "egret",
+    "egrets",
+    "heron",
+    "herons",
+    "ibis",
+    "stork"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6909.462946811136,
+  "cost_numerator": 40766052489,
+  "cost_denominator": 5900032,
+  "cost_exact": false,
+  "cost_mcse": 1.6771367025089248,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40589051529,
+   "denominator": 5900032,
+   "value": 6879.462946811136,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:939,4:3820,5:8549,6:15148,7:23047,8:28386,9:24862,10:20294,11:15501,12:11357,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6771367025089248,
+   "rollouts": 256,
+   "rank_total": 40589051529,
+   "rank_denominator": 5900032,
+   "cache_key": "9e51d54f9204ed5a168a1f9fc495d53d"
+  }
+ }
+}

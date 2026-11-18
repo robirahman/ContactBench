@@ -1,0 +1,479 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+claude_haiku_5_5-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna+claude_haiku_5_5",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Geologic time unit equal to one billion years",
+   "blocklist": [
+    "aeon",
+    "aeons",
+    "eon",
+    "eons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "the and for are but not you all can her was out day get has his him man she striped African horse",
+   "blocklist": [
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "One who writes or compiles dictionaries",
+   "blocklist": [
+    "lexicographer",
+    "lexicographers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A verb for making a prolonged, wavering cry heard in mourning or celebration",
+   "blocklist": [
+    "keen",
+    "ululate",
+    "ululated",
+    "ululates",
+    "ululating",
+    "wail"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The small plastic or metal tip at the end of a shoelace.",
+   "blocklist": [
+    "aglet",
+    "aglets",
+    "aiglet",
+    "aiglets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Writing in alternating left-to-right and right-to-left lines, like an ox plowing a field.",
+   "blocklist": [
+    "boustrophedon",
+    "boustrophedonic",
+    "boustrophedons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A fine rain that falls from a clear sky shortly after sunset",
+   "blocklist": [
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "drizzle"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A British verb for falling as very fine rain; it sounds a little like a sizzling pan.",
+   "blocklist": [
+    "mizzle",
+    "mizzled",
+    "mizzles",
+    "mizzling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Register the word formed by taking the first letter of each of these words: Quiet Astronauts Travel.",
+   "blocklist": [
+    "qat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A male swan.",
+   "blocklist": [
+    "cob",
+    "cobs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A thick cloud of tiny water droplets near the ground, reducing visibility.",
+   "blocklist": [
+    "fog",
+    "haze",
+    "mist",
+    "smog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Register the initials of these words: Silent Owls Nest.",
+   "blocklist": [
+    "son"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Register the initials: Daring Owls Growl.",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A sudden, brief burst of wind.",
+   "blocklist": [
+    "flurry",
+    "gust",
+    "gusts",
+    "puff",
+    "squall",
+    "squalls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A pile of stones built as a trail marker or memorial.",
+   "blocklist": [
+    "cairn",
+    "cairns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Take the first letter of each word: Zany young zebras zigzag; yellow vultures arrive.",
+   "blocklist": [
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Every river ages.",
+   "blocklist": [
+    "era"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Take the second character of each word, in order: okay once each scat okay.",
+   "blocklist": [
+    "knack"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Move each initial one letter backward: Please Rest Briefly.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "orb"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Take the first letters: Young Astronauts Knit.",
+   "blocklist": [
+    "yak"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Initials: Eager Larks Kick. apple orange banana grape lemon mango peach plum pear fig date kiwi lime",
+   "blocklist": [
+    "elk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Read the last letter of each word, in order: bee plum tofu.",
+   "blocklist": [
+    "emu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Use the initials to identify an African antelope: Giant Neighbors Unite.",
+   "blocklist": [
+    "gnu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Subtract two from each alphabet index in 8,17,26.",
+   "blocklist": [
+    "fox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Take the initials: In Valleys, Yews.",
+   "blocklist": [
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Take the initials of these words: Unusual Llamas Unite.",
+   "blocklist": [
+    "ulu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Decode this standard Base64 payload to plain text: d2F4",
+   "blocklist": [
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Take the second letter of each word: ascent count arrive begin feet",
+   "blocklist": [
+    "sore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scree"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "A nocturnal bird with a facial disk and forward-facing eyes.",
+   "blocklist": [
+    "owl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7001.001968519088,
+  "cost_numerator": 3638280703,
+  "cost_denominator": 519680,
+  "cost_exact": false,
+  "cost_mcse": 1.6037491682276772,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 3622690303,
+   "denominator": 519680,
+   "value": 6971.001968519088,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:925,4:3845,5:8588,6:15196,7:23087,8:28398,9:24868,10:20300,11:15502,12:11357,13:7825,14:5125,15:3191,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.6037491682276772,
+   "rollouts": 256,
+   "rank_total": 36226903030,
+   "rank_denominator": 5196800,
+   "cache_key": "2c5a91b1571b41b3e39fb3a834d9971c"
+  }
+ }
+}

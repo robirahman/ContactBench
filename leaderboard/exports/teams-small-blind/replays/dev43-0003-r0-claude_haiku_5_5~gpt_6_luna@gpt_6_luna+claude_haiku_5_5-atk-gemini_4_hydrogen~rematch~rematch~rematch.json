@@ -1,0 +1,111 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+claude_haiku_5_5-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "gpt_6_luna+claude_haiku_5_5",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "daftnesses",
+ "initial_prefix": "daf",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 16,
+ "initial_secret_candidates": [
+  "daff",
+  "daffed",
+  "daffier",
+  "daffiest",
+  "daffily",
+  "daffing",
+  "daffodil",
+  "daffodils",
+  "daffs",
+  "daffy",
+  "daft",
+  "dafter",
+  "daftest",
+  "daftly",
+  "daftness",
+  "daftnesses"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Yellow spring flower",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Looney Tunes' black-feathered rival to Bugs Bunny",
+   "blocklist": [
+    "daffy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Plural of the quality of being silly or foolish.",
+   "blocklist": [
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daftnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daftnesses"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 3.0,
+  "cost_numerator": 3,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 17,
+   "denominator": 16,
+   "value": 1.0625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:2,6:3,7:4,8:3,9:1,10:1",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.01515847656477081,
+   "rollouts": 256,
+   "rank_total": 272,
+   "rank_denominator": 256,
+   "cache_key": "d45997d69c6596edb35f1ed6b347c70b"
+  },
+  "fallback": null
+ }
+}

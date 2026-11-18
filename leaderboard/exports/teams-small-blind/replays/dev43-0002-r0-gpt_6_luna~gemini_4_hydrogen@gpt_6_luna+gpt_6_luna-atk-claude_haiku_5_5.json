@@ -1,0 +1,160 @@
+{
+ "game_id": "dev43-0002-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Red or green fruit often baked in a pie; proverb says one a day keeps the doctor away",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "abacus",
+     "dozen"
+    ]
+   ],
+   "blocked_word_count": 44630,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The metal element with symbol W, historically used in incandescent lightbulb filaments",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dryer",
+     "zyzzyva"
+    ]
+   ],
+   "blocked_word_count": 127258,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Mythical fire-breathing creature often guarding treasure",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dragon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dragon"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A sturdy horse-drawn cart used for hauling heavy goods",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dozen",
+     "drape"
+    ],
+    [
+     "drapes",
+     "dryer"
+    ]
+   ],
+   "blocked_word_count": 689,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fabric used for curtains or theatrical stage decorations",
+   "blocklist": [
+    "draper",
+    "draperies",
+    "drapers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "drapery"
+    },
+    {
+     "seat": "guesser2",
+     "word": "drapery"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 9.0,
+  "cost_numerator": 9,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "game_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "sinterabilities",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A small domesticated feline that purrs.",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A plant's water-conducting vascular tissue, carrying water upward from the roots.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "xylem"
+    },
+    {
+     "seat": "guesser2",
+     "word": "xylem"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The phase of a heartbeat when the ventricles contract and pump blood.",
+   "blocklist": [
+    "systole",
+    "systoles",
+    "systolic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A poetic adjective for vegetation that is dry and withered, especially after prolonged drought.",
+   "blocklist": [
+    "sear",
+    "seared",
+    "sears",
+    "sere",
+    "seres"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Greek riddle monster, human head, lion body; sad sea see set she shy sin sip six ski sky son sum sun",
+   "blocklist": [
+    "sinew",
+    "sinter",
+    "sinters",
+    "sister",
+    "sitter",
+    "snow",
+    "soon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sphinx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sphinx"
+    }
+   ],
+   "prefix_after": "si",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A fine-mesh kitchen tool used to separate flour lumps or strain solids from liquid.",
+   "blocklist": [
+    "sinter",
+    "sinters"
+   ],
+   "blocked_ranges": [
+    [
+     "sibilant",
+     "sinter"
+    ]
+   ],
+   "blocked_word_count": 739,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A strong natural fiber from agave leaves, traditionally twisted into rope and twine.",
+   "blocklist": [
+    "hemp",
+    "henequen",
+    "jute",
+    "ramie",
+    "sisal",
+    "sisals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Describes a winding course, especially one that curves repeatedly rather than running straight.",
+   "blocklist": [
+    "sinuosity",
+    "sinuous",
+    "sinus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "si",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Tube draws liquid by suction: sick sickle sickly side siege sift sigh sight sign silk silver simple",
+   "blocklist": [
+    "sick",
+    "sickle",
+    "sickly",
+    "side",
+    "siege",
+    "sift",
+    "sigh",
+    "sight",
+    "sign",
+    "silk",
+    "silver",
+    "simple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "siphon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "siphon"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A medical condition causing facial pain, pressure, and congestion after a cold.",
+   "blocklist": [
+    "sinuses",
+    "sinusitis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Describes a wave-shaped curve that varies smoothly and periodically, like a sine wave.",
+   "blocklist": [
+    "sine",
+    "sinecure",
+    "sinful",
+    "sing",
+    "singe",
+    "sink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinusoidal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinusoidal"
+    }
+   ],
+   "prefix_after": "sint",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The process of bonding powdered material by heating it below its melting point.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sintering"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sintering"
+    }
+   ],
+   "prefix_after": "sinte",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Adjective for powder particles consolidated by heating below their melting point.",
+   "blocklist": [
+    "sintered"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sinte",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinterability",
+   "prefix_after": "sinte",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sinterabilities",
+   "prefix_after": "sinte",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 21.0,
+  "cost_numerator": 21,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 51383927,
+   "denominator": 7296,
+   "value": 7042.7531524122805,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 4.356525481638661,
+   "rollouts": 256,
+   "rank_total": 5754999824,
+   "rank_denominator": 817152,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

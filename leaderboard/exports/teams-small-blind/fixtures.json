@@ -1,0 +1,1919 @@
+[
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 12654471,
+   "denominator": 1792,
+   "value": 7061.646763392857
+  },
+  "cost_ba": {
+   "numerator": 5776226989,
+   "denominator": 817152,
+   "value": 7068.730161585605
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 6.088712889372852,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 961937307,
+   "denominator": 136192,
+   "value": 7063.097002760808
+  },
+  "cost_ba": {
+   "numerator": 5770031417,
+   "denominator": 817152,
+   "value": 7061.148252711858
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 6.354481240827455,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 25222802607,
+   "denominator": 3634432,
+   "value": 6939.957222201433
+  },
+  "cost_ba": {
+   "numerator": 50505021943,
+   "denominator": 7272192,
+   "value": 6944.951665605088
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 1.9494354792584456,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 50508626109,
+   "denominator": 7273216,
+   "value": 6944.469421642366
+  },
+  "cost_ba": {
+   "numerator": 12631054529,
+   "denominator": 1818304,
+   "value": 6946.613178544402
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 1.914174481569984,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1923128435,
+   "denominator": 272384,
+   "value": 7060.357565055217
+  },
+  "cost_ba": {
+   "numerator": 2884081033,
+   "denominator": 408320,
+   "value": 7063.286228938087
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 6.338372421596047,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 962579095,
+   "denominator": 136192,
+   "value": 7067.809379405545
+  },
+  "cost_ba": {
+   "numerator": 5778649259,
+   "denominator": 817152,
+   "value": 7071.694444852365
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 6.414188815575463,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 25246625375,
+   "denominator": 3636096,
+   "value": 6943.333007434348
+  },
+  "cost_ba": {
+   "numerator": 50410962069,
+   "denominator": 7263488,
+   "value": 6940.324272443212
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 1.9852596039179569,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1576937593,
+   "denominator": 227144,
+   "value": 6942.457617194379
+  },
+  "cost_ba": {
+   "numerator": 6300453853,
+   "denominator": 908256,
+   "value": 6936.870059762886
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.017029075411663,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen~role@claude_haiku_5_5",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 17,
+   "denominator": 1,
+   "value": 17.0
+  },
+  "cost_ba": {
+   "numerator": 19,
+   "denominator": 1,
+   "value": 19.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-gpt_6_luna~gemini_4_hydrogen~self_play@claude_haiku_5_5",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 21,
+   "denominator": 1,
+   "value": 21.0
+  },
+  "cost_ba": {
+   "numerator": 18,
+   "denominator": 1,
+   "value": 18.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 41548733,
+   "denominator": 5980,
+   "value": 6947.948662207358
+  },
+  "cost_ba": {
+   "numerator": 50493476361,
+   "denominator": 7270144,
+   "value": 6945.319977293435
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 1.946379418182751,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 50497598533,
+   "denominator": 7271168,
+   "value": 6944.908786731376
+  },
+  "cost_ba": {
+   "numerator": 50494551923,
+   "denominator": 7271168,
+   "value": 6944.489788023052
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.0536991259008146,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 51531971,
+   "denominator": 65024,
+   "value": 792.5069359005905
+  },
+  "cost_ba": {
+   "numerator": 51172965,
+   "denominator": 65024,
+   "value": 786.9858052411417
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.314191784204137,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 6355733,
+   "denominator": 8128,
+   "value": 781.9553395669292
+  },
+  "cost_ba": {
+   "numerator": 51397413,
+   "denominator": 65024,
+   "value": 790.4375768946851
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.2927464422228563,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 92329817,
+   "denominator": 288000,
+   "value": 320.5896423611111
+  },
+  "cost_ba": {
+   "numerator": 90871961,
+   "denominator": 284672,
+   "value": 319.21636479878595
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.4143933162797664,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 46218709,
+   "denominator": 144128,
+   "value": 320.67820964698046
+  },
+  "cost_ba": {
+   "numerator": 22407177,
+   "denominator": 70400,
+   "value": 318.28376420454543
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.43876971706529405,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 51335893,
+   "denominator": 65024,
+   "value": 789.4914646899606
+  },
+  "cost_ba": {
+   "numerator": 51305053,
+   "denominator": 65024,
+   "value": 789.0171782726378
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.291763209086607,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 12768583,
+   "denominator": 16256,
+   "value": 785.4689345472441
+  },
+  "cost_ba": {
+   "numerator": 4652875,
+   "denominator": 5888,
+   "value": 790.230129076087
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.308653508596324,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 45768343,
+   "denominator": 143360,
+   "value": 319.2546247209821
+  },
+  "cost_ba": {
+   "numerator": 46295597,
+   "denominator": 143744,
+   "value": 322.0697698686554
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.402093750557161,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 103033,
+   "denominator": 1152,
+   "value": 89.43836805555556
+  },
+  "cost_ba": {
+   "numerator": 3533407,
+   "denominator": 38912,
+   "value": 90.80507298519737
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.2443189613549101,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 19527,
+   "denominator": 512,
+   "value": 38.138671875
+  },
+  "cost_ba": {
+   "numerator": 18,
+   "denominator": 1,
+   "value": 18.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.06860839621959144,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 40839282929,
+   "denominator": 5906688,
+   "value": 6914.0748468515685
+  },
+  "cost_ba": {
+   "numerator": 5108183201,
+   "denominator": 738976,
+   "value": 6912.515698750703
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.2987180641010547,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 5098738513,
+   "denominator": 738048,
+   "value": 6908.410446204041
+  },
+  "cost_ba": {
+   "numerator": 40894193721,
+   "denominator": 5912320,
+   "value": 6916.776108363552
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.2645106885859874,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 757106731,
+   "denominator": 108240,
+   "value": 6994.703723207686
+  },
+  "cost_ba": {
+   "numerator": 171605251,
+   "denominator": 24512,
+   "value": 7000.866963120105
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.3684572888206206,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 36366838267,
+   "denominator": 5196288,
+   "value": 6998.618680681287
+  },
+  "cost_ba": {
+   "numerator": 18193788891,
+   "denominator": 2598272,
+   "value": 7002.264924919331
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.2697913278975363,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1274990909,
+   "denominator": 184448,
+   "value": 6912.468061459056
+  },
+  "cost_ba": {
+   "numerator": 40818896337,
+   "denominator": 5904896,
+   "value": 6912.720619804311
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 2.047722051629625,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_luna",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 140414575,
+   "denominator": 318464,
+   "value": 440.9119241107315
+  },
+  "cost_ba": {
+   "numerator": 5103343123,
+   "denominator": 738272,
+   "value": 6912.55136724676
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 1.6506226717226395,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 9091575577,
+   "denominator": 1298880,
+   "value": 6999.550056202266
+  },
+  "cost_ba": {
+   "numerator": 3569,
+   "denominator": 66,
+   "value": 54.07575757575758
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 1.5733738650966795,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_luna",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 17296167,
+   "denominator": 39104,
+   "value": 442.3119629705401
+  },
+  "cost_ba": {
+   "numerator": 36288649345,
+   "denominator": 5187072,
+   "value": 6995.979493826189
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 1.8465247306579178,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-gpt_6_luna~gemini_4_hydrogen~role@claude_haiku_5_5",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 14,
+   "denominator": 1,
+   "value": 14.0
+  },
+  "cost_ba": {
+   "numerator": 1290107,
+   "denominator": 24576,
+   "value": 52.494588216145836
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.07364704792516986,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-gpt_6_luna~gemini_4_hydrogen~self_play@claude_haiku_5_5",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 9,
+   "denominator": 1,
+   "value": 9.0
+  },
+  "cost_ba": {
+   "numerator": 22,
+   "denominator": 1,
+   "value": 22.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen~role@claude_haiku_5_5",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 12,
+   "denominator": 1,
+   "value": 12.0
+  },
+  "cost_ba": {
+   "numerator": 11,
+   "denominator": 1,
+   "value": 11.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "role",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen~self_play@claude_haiku_5_5",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 26,
+   "denominator": 1,
+   "value": 26.0
+  },
+  "cost_ba": {
+   "numerator": 10,
+   "denominator": 1,
+   "value": 10.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "self_play",
+  "defender_model": "claude_haiku_5_5"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 3283333,
+   "denominator": 10240,
+   "value": 320.63798828125
+  },
+  "cost_ba": {
+   "numerator": 46171991,
+   "denominator": 143616,
+   "value": 321.49614945409985
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.42574462501461485,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 22588451,
+   "denominator": 71104,
+   "value": 317.68186037353735
+  },
+  "cost_ba": {
+   "numerator": 30857479,
+   "denominator": 95744,
+   "value": 322.2915169618984
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.4437320575315082,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 91358519,
+   "denominator": 285184,
+   "value": 320.349384958483
+  },
+  "cost_ba": {
+   "numerator": 46320035,
+   "denominator": 143872,
+   "value": 321.9530902468861
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.4140615084810223,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 3145,
+   "denominator": 48,
+   "value": 65.52083333333333
+  },
+  "cost_ba": {
+   "numerator": 142693,
+   "denominator": 2304,
+   "value": 61.93272569444444
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5679323526885441,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 24023,
+   "denominator": 384,
+   "value": 62.559895833333336
+  },
+  "cost_ba": {
+   "numerator": 135889,
+   "denominator": 2304,
+   "value": 58.97960069444444
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.4669791715454522,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 919051,
+   "denominator": 10112,
+   "value": 90.88716376582279
+  },
+  "cost_ba": {
+   "numerator": 1895549,
+   "denominator": 20736,
+   "value": 91.41343557098766
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.22569195399142913,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 16663,
+   "denominator": 256,
+   "value": 65.08984375
+  },
+  "cost_ba": {
+   "numerator": 50287,
+   "denominator": 768,
+   "value": 65.47786458333333
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.598005050878065,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 49589,
+   "denominator": 768,
+   "value": 64.56901041666667
+  },
+  "cost_ba": {
+   "numerator": 148465,
+   "denominator": 2304,
+   "value": 64.43793402777777
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5935196072878375,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 3572439,
+   "denominator": 40192,
+   "value": 88.88433021496816
+  },
+  "cost_ba": {
+   "numerator": 2095361,
+   "denominator": 22272,
+   "value": 94.08050466954023
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.22901520007472914,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 4065,
+   "denominator": 128,
+   "value": 31.7578125
+  },
+  "cost_ba": {
+   "numerator": 24,
+   "denominator": 1,
+   "value": 24.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.04160247046038087,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~role@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 4333,
+   "denominator": 128,
+   "value": 33.8515625
+  },
+  "cost_ba": {
+   "numerator": 8181,
+   "denominator": 256,
+   "value": 31.95703125
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.12724014265325367,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 30,
+   "denominator": 1,
+   "value": 30.0
+  },
+  "cost_ba": {
+   "numerator": 46339,
+   "denominator": 1280,
+   "value": 36.20234375
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.08662717630089545,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 4,
+   "denominator": 1,
+   "value": 4.0
+  },
+  "cost_ba": {
+   "numerator": 6,
+   "denominator": 1,
+   "value": 6.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "initial_prefix_length": 4,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 5512267,
+   "denominator": 12544,
+   "value": 439.4345503826531
+  },
+  "cost_ba": {
+   "numerator": 135430129,
+   "denominator": 310272,
+   "value": 436.4884005002063
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.6071652591538897,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 34908453,
+   "denominator": 78464,
+   "value": 444.8976983075041
+  },
+  "cost_ba": {
+   "numerator": 137649171,
+   "denominator": 312064,
+   "value": 441.0927598184988
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5856895013363658,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 69789931,
+   "denominator": 158464,
+   "value": 440.41505326130857
+  },
+  "cost_ba": {
+   "numerator": 138731083,
+   "denominator": 315904,
+   "value": 439.15582898602105
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5999500124543374,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 19880841,
+   "denominator": 44800,
+   "value": 443.76877232142857
+  },
+  "cost_ba": {
+   "numerator": 17386155,
+   "denominator": 39136,
+   "value": 444.2496678250204
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5719869371526275,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen",
+  "initial_prefix_length": 1,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 5844329,
+   "denominator": 13248,
+   "value": 441.14802234299515
+  },
+  "cost_ba": {
+   "numerator": 68759443,
+   "denominator": 157056,
+   "value": 437.80207696617765
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.5797894169928689,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna",
+  "initial_prefix_length": 1,
+  "kind": "role",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 44579,
+   "denominator": 496,
+   "value": 89.87701612903226
+  },
+  "cost_ba": {
+   "numerator": 2131605,
+   "denominator": 22528,
+   "value": 94.62025035511364
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.23478746328239072,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 3739673,
+   "denominator": 40704,
+   "value": 91.87482802672956
+  },
+  "cost_ba": {
+   "numerator": 3858441,
+   "denominator": 41984,
+   "value": 91.9026533917683
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.23193060851276007,
+  "numerically_close": true,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 944833,
+   "denominator": 10240,
+   "value": 92.26884765625
+  },
+  "cost_ba": {
+   "numerator": 1073747,
+   "denominator": 11328,
+   "value": 94.78698799435028
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.2410651802914383,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 8823,
+   "denominator": 256,
+   "value": 34.46484375
+  },
+  "cost_ba": {
+   "numerator": 2257,
+   "denominator": 64,
+   "value": 35.265625
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.21748130320775816,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 2091,
+   "denominator": 64,
+   "value": 32.671875
+  },
+  "cost_ba": {
+   "numerator": 31,
+   "denominator": 1,
+   "value": 31.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.07948569940129939,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1539,
+   "denominator": 40,
+   "value": 38.475
+  },
+  "cost_ba": {
+   "numerator": 50463,
+   "denominator": 1408,
+   "value": 35.84019886363637
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.0819228033370838,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1287029,
+   "denominator": 24064,
+   "value": 53.483585438829785
+  },
+  "cost_ba": {
+   "numerator": 26,
+   "denominator": 1,
+   "value": 26.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0807003609044695,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 209157,
+   "denominator": 4096,
+   "value": 51.063720703125
+  },
+  "cost_ba": {
+   "numerator": 434431,
+   "denominator": 8704,
+   "value": 49.91164981617647
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.16942346978009482,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 1226411,
+   "denominator": 23296,
+   "value": 52.6447029532967
+  },
+  "cost_ba": {
+   "numerator": 5,
+   "denominator": 1,
+   "value": 5.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.08177595329634373,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 115169,
+   "denominator": 2240,
+   "value": 51.41473214285714
+  },
+  "cost_ba": {
+   "numerator": 444127,
+   "denominator": 8704,
+   "value": 51.02562040441177
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.1706487197922938,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch",
+  "initial_prefix_length": 2,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna~rematch~rematch",
+  "task_id": "dev43-0002",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 620365,
+   "denominator": 11904,
+   "value": 52.11399529569893
+  },
+  "cost_ba": {
+   "numerator": 13,
+   "denominator": 1,
+   "value": 13.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0794265776409775,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_luna~rematch",
+  "initial_prefix_length": 2,
+  "kind": "role",
+  "defender_model": "gpt_6_luna"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 73723,
+   "denominator": 1920,
+   "value": 38.397395833333334
+  },
+  "cost_ba": {
+   "numerator": 60319,
+   "denominator": 1536,
+   "value": 39.270182291666664
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.09366425271096016,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 17813,
+   "denominator": 480,
+   "value": 37.110416666666666
+  },
+  "cost_ba": {
+   "numerator": 29,
+   "denominator": 1,
+   "value": 29.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.06578551150492896,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 123337,
+   "denominator": 3328,
+   "value": 37.06039663461539
+  },
+  "cost_ba": {
+   "numerator": 285933,
+   "denominator": 7168,
+   "value": 39.890206473214285
+  },
+  "points_a": 0.5,
+  "points_b": 0.5,
+  "cost_difference_mcse": 0.09011563506710805,
+  "numerically_close": false,
+  "no_progress_draw": true,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch~rematch",
+  "task_id": "dev43-0000",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 6,
+   "denominator": 1,
+   "value": 6.0
+  },
+  "cost_ba": {
+   "numerator": 1,
+   "denominator": 1,
+   "value": 1.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "initial_prefix_length": 4,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gemini_4_hydrogen",
+  "model_b": "gemini_4_hydrogen+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 4,
+   "denominator": 1,
+   "value": 4.0
+  },
+  "cost_ba": {
+   "numerator": 7,
+   "denominator": 1,
+   "value": 7.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~role@gpt_6_1_terra~rematch~rematch~rematch",
+  "initial_prefix_length": 4,
+  "kind": "role",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch~rematch~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+gpt_6_luna",
+  "model_b": "gpt_6_luna+claude_haiku_5_5",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 5,
+   "denominator": 1,
+   "value": 5.0
+  },
+  "cost_ba": {
+   "numerator": 3,
+   "denominator": 1,
+   "value": 3.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~role@gemini_4_hydrogen~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "role",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch~rematch~rematch",
+  "task_id": "dev43-0003",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gpt_6_luna+gpt_6_luna",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 4,
+   "denominator": 1,
+   "value": 4.0
+  },
+  "cost_ba": {
+   "numerator": 7,
+   "denominator": 1,
+   "value": 7.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna~self_play@gemini_4_hydrogen~rematch~rematch",
+  "initial_prefix_length": 3,
+  "kind": "self_play",
+  "defender_model": "gemini_4_hydrogen"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "claude_haiku_5_5+claude_haiku_5_5",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 16,
+   "denominator": 1,
+   "value": 16.0
+  },
+  "cost_ba": {
+   "numerator": 8,
+   "denominator": 1,
+   "value": 8.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "initial_prefix_length": 4,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ },
+ {
+  "fixture_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch~rematch",
+  "task_id": "dev43-0001",
+  "repetition": 0,
+  "model_a": "gpt_6_luna+gpt_6_luna",
+  "model_b": "gemini_4_hydrogen+gemini_4_hydrogen",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 18,
+   "denominator": 1,
+   "value": 18.0
+  },
+  "cost_ba": {
+   "numerator": 25,
+   "denominator": 1,
+   "value": 25.0
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen~self_play@gpt_6_1_terra~rematch~rematch~rematch",
+  "initial_prefix_length": 4,
+  "kind": "self_play",
+  "defender_model": "gpt_6_1_terra"
+ }
+]

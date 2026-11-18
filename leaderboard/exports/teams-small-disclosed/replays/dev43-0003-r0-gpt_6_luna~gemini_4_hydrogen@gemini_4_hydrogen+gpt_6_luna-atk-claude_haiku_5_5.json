@@ -1,0 +1,354 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gemini_4_hydrogen+gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen+gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Egg-laying duck-billed Australian mammal",
+   "blocklist": [
+    "echidna",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Process by which plants convert sunlight into chemical energy",
+   "blocklist": [
+    "chlorophyll",
+    "chloroplast",
+    "photosynthesis",
+    "sunlight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "When the moon blocks the sun",
+   "blocklist": [
+    "eclipse",
+    "lunar",
+    "shadow",
+    "solar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Finding something valuable or pleasant when you were not looking for it",
+   "blocklist": [
+    "accident",
+    "bonanza",
+    "chance",
+    "fortune",
+    "jackpot",
+    "luck",
+    "serendipity",
+    "windfall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tube with mirrors and colored glass showing changing symmetrical patterns",
+   "blocklist": [
+    "kaleidoscope",
+    "mirror",
+    "prism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Word or phrase that reads the same backward as forward",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palindrome"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palindrome"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "German dog breed with short legs and long body",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dachshund"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dachshund"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Yellow spring flower with a trumpet-shaped center",
+   "blocklist": [
+    "daffodil",
+    "daffodils",
+    "dahlia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Flakes of dead skin on the scalp",
+   "blocklist": [
+    "dander",
+    "dandruff"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Control panel in front of a car driver",
+   "blocklist": [
+    "dashboard",
+    "dashboards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Organized collection of structured information stored electronically",
+   "blocklist": [
+    "data",
+    "database",
+    "databases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Short pointed knife used as a weapon",
+   "blocklist": [
+    "dagger",
+    "daggers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "White dog breed famous for its black spots, featured in a Disney film",
+   "blocklist": [
+    "dalmatian",
+    "dalmatians"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Where photographers work under a red safelight",
+   "blocklist": [
+    "darkroom",
+    "darkrooms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Rum cocktail made with lime juice and sugar",
+   "blocklist": [
+    "daiquiri",
+    "daiquiris"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Yellow weed whose fluffy white seed head you blow to make a wish",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dagger",
+     "dandruff"
+    ]
+   ],
+   "blocked_word_count": 243,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Pleasant fantasy or reverie while awake",
+   "blocklist": [
+    "daydream",
+    "daydreamed",
+    "daydreamer",
+    "daydreamers",
+    "daydreaming",
+    "daydreams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Female child of parents",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daughter"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daughter"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Silly, foolish: daff daffed daffier daffiest daffily daffing daffs daffy dafter daftest daftly",
+   "blocklist": [
+    "daft",
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "daftnesses",
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 20.0,
+  "cost_numerator": 20,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

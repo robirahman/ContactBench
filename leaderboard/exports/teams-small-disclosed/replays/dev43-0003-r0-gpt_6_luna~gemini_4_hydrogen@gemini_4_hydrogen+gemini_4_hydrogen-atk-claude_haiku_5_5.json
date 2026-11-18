@@ -1,0 +1,240 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "fastest land animal",
+   "blocklist": [
+    "cheetah",
+    "gazelle",
+    "pronghorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "sponge house fruit",
+   "blocklist": [
+    "fruit",
+    "house",
+    "sponge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pineapple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pineapple"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "flipper marine mammal",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "dugong"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "mohs ten gem",
+   "blocklist": [
+    "diamond"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "wordsworth lonely cloud flower",
+   "blocklist": [
+    "daffodil",
+    "daffodils",
+    "daisies",
+    "daisy",
+    "dandelion",
+    "dandelions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "german ghostly double",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "doppelganger"
+    },
+    {
+     "seat": "guesser2",
+     "word": "doppelganger"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "louis invention early silver photograph",
+   "blocklist": [
+    "daft",
+    "daguerreotype",
+    "daguerreotypes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "black spotted firehouse dog",
+   "blocklist": [
+    "dalmatian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "wiener sausage hound",
+   "blocklist": [
+    "dachshund",
+    "dachshunds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "flaky scalp condition",
+   "blocklist": [
+    "dander",
+    "dandruff"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "matt murdock vigilante",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dab",
+     "daftest"
+    ],
+    [
+     "dag",
+     "dazzling"
+    ]
+   ],
+   "blocked_word_count": 681,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "daftly daftness daftnesses",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "daftly",
+     "daftness"
+    ]
+   ],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "da",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

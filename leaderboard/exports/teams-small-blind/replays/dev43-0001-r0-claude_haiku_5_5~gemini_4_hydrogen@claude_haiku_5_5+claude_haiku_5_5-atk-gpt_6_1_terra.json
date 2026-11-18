@@ -1,0 +1,559 @@
+{
+ "game_id": "dev43-0001-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_1_terra",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "excitors",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A small feline pet that likes to nap and chase mice",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A feathered animal that can fly and sing in trees",
+   "blocklist": [
+    "bird",
+    "songbird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A loyal domestic canine that barks, fetches sticks, and guards its owner's home",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Aquatic creature with fins and gills that swims in lakes and rivers",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large hoofed mammal that is ridden, neighs, and lives in stables",
+   "blocklist": [
+    "horse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Hopping long-eared creature with a fluffy tail, often kept as a burrowing pet in hutches",
+   "blocklist": [
+    "bunny",
+    "hare",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Try these: lion tiger bear wolf moose zebra goat sheep ferret hamster otter",
+   "blocklist": [
+    "chicken",
+    "cow",
+    "duck",
+    "elephant",
+    "giraffe",
+    "monkey",
+    "pig"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "walrus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "mouse"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Dwelling with rooms, walls, and a roof where families reside",
+   "blocklist": [
+    "apartment",
+    "building",
+    "cottage",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses, slithers, and sheds its skin",
+   "blocklist": [
+    "serpent",
+    "snake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Device that gives light when you switch it on in a room at night",
+   "blocklist": [
+    "bulb",
+    "flashlight",
+    "lamp",
+    "lantern",
+    "lightbulb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Vessel that floats on water and carries people across a lake or sea",
+   "blocklist": [
+    "boat",
+    "canoe",
+    "ferry",
+    "raft",
+    "sailboat",
+    "ship",
+    "watercraft",
+    "yacht"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Four-wheeled motor vehicle that you drive on roads",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "car",
+    "coupe",
+    "jeep",
+    "motorcar",
+    "sedan",
+    "truck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Try these: fox crow frog newt eagle hawk owl ant bee ape yak emu elk",
+   "blocklist": [
+    "alligator",
+    "bat",
+    "butterfly",
+    "camel",
+    "cheetah",
+    "crab",
+    "crocodile",
+    "deer",
+    "dolphin",
+    "donkey",
+    "goose",
+    "insect",
+    "kangaroo",
+    "koala",
+    "leopard",
+    "lizard",
+    "llama",
+    "octopus",
+    "panda",
+    "parrot",
+    "penguin",
+    "raccoon",
+    "rooster",
+    "seal",
+    "shark",
+    "spider",
+    "squirrel",
+    "swan",
+    "toad",
+    "turkey",
+    "turtle",
+    "whale",
+    "worm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 33,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Tall woody plant with a trunk, branches, and leaves that grows in forests",
+   "blocklist": [
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Female bird that lays eggs on a farm and clucks in a coop",
+   "blocklist": [
+    "chick",
+    "hen",
+    "pullet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Small shaggy equine often ridden by children at county fairs",
+   "blocklist": [
+    "ponies",
+    "pony",
+    "shetland"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Try these: hippo gerbil parakeet cricket beetle hyena jaguar moth bison mule",
+   "blocklist": [
+    "antelope",
+    "buffalo",
+    "gorilla",
+    "hippopotamus",
+    "lemur",
+    "lioness",
+    "ostrich",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hippo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "rat"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Common small brown city bird that hops and chirps in parks and gardens",
+   "blocklist": [
+    "finch",
+    "pigeon",
+    "sparrow",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Wild spotted cat with tufted ears and a short bobbed tail that lives in northern forests",
+   "blocklist": [
+    "bobcat",
+    "caracal",
+    "lynx",
+    "wildcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Scent-tracking hunter that bays and chases game across fields and hills",
+   "blocklist": [
+    "basset",
+    "beagle",
+    "bloodhound",
+    "coonhound",
+    "deerhound",
+    "foxhound",
+    "harrier",
+    "hound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Gentle grey bird that coos and is a symbol of peace",
+   "blocklist": [
+    "dove",
+    "doves",
+    "turtledove"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Pink-fleshed fish that swims upstream to spawn in rivers and streams",
+   "blocklist": [
+    "chinook",
+    "coho",
+    "salmon",
+    "sockeye",
+    "steelhead",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Hooded venomous reptile of Asia that rears up when threatened and can spit venom",
+   "blocklist": [
+    "cobra",
+    "cobras",
+    "mamba"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Flowing freshwater channel that empties into the ocean",
+   "blocklist": [
+    "brook",
+    "creek",
+    "river",
+    "stream",
+    "tributary",
+    "waterway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Small nocturnal reptile with sticky toe pads that climbs walls and chirps at night",
+   "blocklist": [
+    "gecko",
+    "geckos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Long-legged wading bird that stands still in marshes and catches fish",
+   "blocklist": [
+    "bittern",
+    "crane",
+    "egret",
+    "flamingo",
+    "heron",
+    "ibis",
+    "stork",
+    "wader"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "beaver",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Clawed crustacean with ten legs that lives on the sea floor and turns red when cooked",
+   "blocklist": [
+    "crawfish",
+    "crayfish",
+    "lobster",
+    "lobsters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "badger",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "skunk",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6942.457617194379,
+  "cost_numerator": 1576937593,
+  "cost_denominator": 227144,
+  "cost_exact": false,
+  "cost_mcse": 1.4560339755863103,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1570123273,
+   "denominator": 227144,
+   "value": 6912.457617194379,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:943,4:3836,5:8547,6:15164,7:23063,8:28393,9:24860,10:20293,11:15504,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.4560339755863103,
+   "rollouts": 256,
+   "rank_total": 50243944736,
+   "rank_denominator": 7268608,
+   "cache_key": "205d7c5b5952074231be80a86064c638"
+  }
+ }
+}

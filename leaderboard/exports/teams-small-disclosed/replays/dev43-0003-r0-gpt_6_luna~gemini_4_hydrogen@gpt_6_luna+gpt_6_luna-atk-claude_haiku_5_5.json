@@ -1,0 +1,194 @@
+{
+ "game_id": "dev43-0003-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Fourth planet from the Sun",
+   "blocklist": [
+    "mars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "In particle physics, one of six flavors: up, down, charm, strange, top, or bottom.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quark"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A familiar household canine companion",
+   "blocklist": [
+    "dog",
+    "dogie",
+    "dogs",
+    "dogy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A wild canid native to Australia, often called an Australian wild dog.",
+   "blocklist": [
+    "dark",
+    "data",
+    "days"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dingo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dingo"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A stunned state of confusion; to leave someone bewildered.",
+   "blocklist": [
+    "daily",
+    "dairy",
+    "damp",
+    "dance",
+    "dare",
+    "date",
+    "dawn",
+    "day"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daze"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daze"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A spring-blooming flower with a trumpet-shaped center, often yellow.",
+   "blocklist": [
+    "daffodil",
+    "daffodils",
+    "daffy",
+    "daft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "daf",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Plural form of the abstract noun meaning foolishness or silliness.",
+   "blocklist": [
+    "daff",
+    "daffed",
+    "daffier",
+    "daffiest",
+    "daffily",
+    "daffing",
+    "daffs",
+    "dafter",
+    "daftest",
+    "daftly",
+    "daftness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "daftnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "daftnesses"
+    }
+   ],
+   "prefix_after": "daf",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7.0,
+  "cost_numerator": 7,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

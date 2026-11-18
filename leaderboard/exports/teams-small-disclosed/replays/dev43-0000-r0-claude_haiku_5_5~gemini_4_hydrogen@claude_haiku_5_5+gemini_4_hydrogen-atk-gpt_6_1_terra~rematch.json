@@ -1,0 +1,572 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "sinterabilities",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Star at the center of our solar system",
+   "blocklist": [
+    "sol",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen white flakes that fall from winter clouds",
+   "blocklist": [
+    "sleet",
+    "snow",
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Vessel that sails across the ocean carrying crew and cargo",
+   "blocklist": [
+    "sailboat",
+    "sailer",
+    "schooner",
+    "ship",
+    "ships",
+    "steamer",
+    "steamship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Salty body of water covering most of the Earth's surface",
+   "blocklist": [
+    "saltwater",
+    "sea",
+    "seas",
+    "seawater",
+    "seawaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Season of renewal when flowers bloom and birds return",
+   "blocklist": [
+    "spring",
+    "springtide",
+    "springtime",
+    "springtimes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Grainy material that covers a beach and gets into your shoes",
+   "blocklist": [
+    "sand",
+    "sands",
+    "shingle",
+    "silica",
+    "silt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Hard mineral material used for building walls and paving roads",
+   "blocklist": [
+    "sandstone",
+    "sett",
+    "setts",
+    "slate",
+    "stone",
+    "stones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Blue dome overhead on a clear day",
+   "blocklist": [
+    "skies",
+    "sky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hot liquid dish served in a bowl before the main course at dinner",
+   "blocklist": [
+    "soup",
+    "soups",
+    "starter",
+    "stew",
+    "stews",
+    "stock"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Rest at night in bed with your eyes closed",
+   "blocklist": [
+    "shuteye",
+    "siesta",
+    "sleep",
+    "sleeping",
+    "sleeps",
+    "slumber",
+    "slumbering",
+    "slumbers",
+    "snooze",
+    "snoozing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Woolly farm animal that bleats in a meadow",
+   "blocklist": [
+    "shearling",
+    "shearlings",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Eight-legged web builder that often hides in a corner of your home",
+   "blocklist": [
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Long legless reptile that hisses and sheds its skin",
+   "blocklist": [
+    "serpent",
+    "serpentine",
+    "serpents",
+    "sidewinder",
+    "snake",
+    "snakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Moving through water using arms and legs to stay afloat",
+   "blocklist": [
+    "swim",
+    "swimmer",
+    "swimmers",
+    "swimming",
+    "swims"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Piece of living room furniture you lounge on with cushions",
+   "blocklist": [
+    "sectional",
+    "settee",
+    "settees",
+    "settle",
+    "sleeper",
+    "sofa",
+    "sofas",
+    "squab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "White crystal seasoning that makes food taste savory and is shaken from a shaker",
+   "blocklist": [
+    "salt",
+    "salts",
+    "sodium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Knitted wrap worn around the neck against the cold",
+   "blocklist": [
+    "scarf",
+    "scarfs",
+    "scarves",
+    "shawl",
+    "shawls",
+    "snood",
+    "snoods",
+    "stole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bar used for washing hands and body in the shower",
+   "blocklist": [
+    "soap",
+    "soaps",
+    "suds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Warm knitted top worn over a shirt on the upper body during cold weather",
+   "blocklist": [
+    "sweater",
+    "sweaters",
+    "sweatshirt",
+    "sweatshirts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Chair or bench you rest on when you take a break",
+   "blocklist": [
+    "seat",
+    "seated",
+    "seating",
+    "seatings",
+    "seats",
+    "sit",
+    "sits",
+    "sitter",
+    "sitters",
+    "sitting",
+    "sittings",
+    "stool",
+    "stools"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Movement made by lifting a foot to walk forward",
+   "blocklist": [
+    "step",
+    "stepped",
+    "stepping",
+    "steps",
+    "stomp",
+    "stride",
+    "strides",
+    "striding",
+    "strut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Land edge where the waves roll up to meet the coastline",
+   "blocklist": [
+    "seashore",
+    "seashores",
+    "shore",
+    "shoreline",
+    "shorelines",
+    "shores",
+    "strand",
+    "strands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Guess among: stir slow scar sled spit soot sift silk tide tree sage",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "slow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "spoon"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Backbone running down the middle of your back",
+   "blocklist": [
+    "spinal",
+    "spine",
+    "spines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Aromatic seasoning from tropical plants, like cinnamon or cumin",
+   "blocklist": [
+    "spice",
+    "spicery",
+    "spices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Long metal blade with a hilt, carried by knights in battle",
+   "blocklist": [
+    "saber",
+    "sabre",
+    "scimitar",
+    "steel",
+    "sword",
+    "swords"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Number of days in a week",
+   "blocklist": [
+    "seven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Pout while brooding in a sullen mood after losing an argument",
+   "blocklist": [
+    "sulk",
+    "sulked",
+    "sulking",
+    "sulks",
+    "sulky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Twinkling lights scattered across the night heavens",
+   "blocklist": [
+    "starlight",
+    "starry",
+    "stars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "A category or kind of thing, or to arrange by type",
+   "blocklist": [
+    "sort",
+    "sorted",
+    "sorting",
+    "sorts",
+    "species",
+    "strain",
+    "style"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 786.3165754183071,
+  "cost_numerator": 51129449,
+  "cost_denominator": 65024,
+  "cost_exact": false,
+  "cost_mcse": 1.6541540895948106,
+  "baseline": {
+   "numerator": 24808479,
+   "denominator": 32512,
+   "value": 763.0560716043307,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.6676291160468641,
+   "rollouts": 256,
+   "rank_total": 49616958,
+   "rank_denominator": 65024,
+   "cache_key": "ced2167337019d13ccb82dae281f2ca3"
+  },
+  "fallback": {
+   "numerator": 49178729,
+   "denominator": 65024,
+   "value": 756.3165754183071,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:57,4:323,5:1009,6:1764,7:2628,8:3450,9:2895,10:2238,11:1561,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 1.6541540895948106,
+   "rollouts": 256,
+   "rank_total": 49178729,
+   "rank_denominator": 65024,
+   "cache_key": "bdeb37a59c184df1b2667446409955d0"
+  }
+ }
+}

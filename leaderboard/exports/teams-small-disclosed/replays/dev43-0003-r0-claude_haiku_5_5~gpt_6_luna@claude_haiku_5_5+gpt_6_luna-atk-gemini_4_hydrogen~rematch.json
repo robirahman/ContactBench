@@ -1,0 +1,521 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gemini_4_hydrogen~rematch",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "daftnesses",
+ "initial_prefix": "d",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 10139,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Man's best friend, a loyal canine pet that barks",
+   "blocklist": [
+    "dog",
+    "dogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Quacking waterfowl that paddles across ponds and lakes",
+   "blocklist": [
+    "duck",
+    "duckling",
+    "ducklings",
+    "ducks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Shovel soil to make a hole in the garden",
+   "blocklist": [
+    "dig",
+    "digging",
+    "digs",
+    "dug"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Wooden entrance you knock on to enter a room",
+   "blocklist": [
+    "door",
+    "doors",
+    "doorway",
+    "doorways"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Antlered forest animal that bounds through the woods and grazes on meadows",
+   "blocklist": [
+    "deer",
+    "deers",
+    "doe",
+    "does"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Percussion instrument you beat with sticks in a marching band",
+   "blocklist": [
+    "drum",
+    "drums",
+    "drumstick",
+    "drumsticks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Rounded roof built atop a cathedral or a capitol building",
+   "blocklist": [
+    "dome",
+    "domes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Thrown at a circular board in a pub game, pointed and tipped with metal",
+   "blocklist": [
+    "dart",
+    "darts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fine powder that settles on furniture and needs regular wiping",
+   "blocklist": [
+    "dust",
+    "dusts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Plate or bowl you eat from at dinner",
+   "blocklist": [
+    "dish",
+    "dishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Toy figure of a child that little girls dress up and play with",
+   "blocklist": [
+    "doll",
+    "dolls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Images that visit your mind while you are sleeping at night",
+   "blocklist": [
+    "dream",
+    "dreaming",
+    "dreams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "dab dad dam dan dap daw day dee del den dew dim din dip dit doc don dot dub due dye",
+   "blocklist": [
+    "dud",
+    "dun",
+    "duo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dab"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dabble"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Moves your feet to music at a party or ball",
+   "blocklist": [
+    "dance",
+    "danced",
+    "dances",
+    "dancing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Mythical fire-breathing reptile that guards a hoard of gold in a cave",
+   "blocklist": [
+    "dragon",
+    "dragons",
+    "drake",
+    "drakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Piece of furniture with drawers where you sit to write letters or homework",
+   "blocklist": [
+    "desk",
+    "desks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Sparkling gem cut from carbon, the hardest natural material, often set in rings",
+   "blocklist": [
+    "diamond",
+    "diamonds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Liquid falling in small drops from a leaky faucet or pipe",
+   "blocklist": [
+    "drip",
+    "dripped",
+    "dripping",
+    "drips",
+    "droplet",
+    "droplets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Gentle white bird that symbolizes peace and coos from rooftops",
+   "blocklist": [
+    "dove",
+    "doves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Operate a car on the road to travel somewhere",
+   "blocklist": [
+    "drive",
+    "driver",
+    "drives",
+    "driving",
+    "drove"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Smart sea mammal that leaps out of ocean waves and clicks to communicate",
+   "blocklist": [
+    "dolphin",
+    "dolphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Giant prehistoric reptile that roamed the earth millions of years ago and went extinct",
+   "blocklist": [
+    "dinosaur",
+    "dinosaurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Grime and soil that muddies your shoes after a rainy walk outside",
+   "blocklist": [
+    "dirt",
+    "dirts",
+    "dirty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Turn this knob on a radio or pick numbers on an old phone",
+   "blocklist": [
+    "dial",
+    "dialed",
+    "dialing",
+    "dials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Tooth doctor who cleans your teeth and fills cavities",
+   "blocklist": [
+    "dentist",
+    "dentists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Reaching far down from the surface, like the bottom of the ocean or a well",
+   "blocklist": [
+    "deep",
+    "deeper",
+    "deepest",
+    "deeply",
+    "depth",
+    "depths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Bargain struck between two parties, or the cards handed out at the start of a game",
+   "blocklist": [
+    "deal",
+    "dealer",
+    "dealers",
+    "dealing",
+    "dealings",
+    "deals",
+    "dealt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "First light of morning when the sun begins to rise over the horizon",
+   "blocklist": [
+    "dawn",
+    "dawned",
+    "dawning",
+    "dawns",
+    "daybreak",
+    "daybreaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "date deck deed disk dock dole doom dose dune dusk dare draw dual dupe dross dray dread",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "date"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dwarf"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "drink",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 443.65051977040815,
+  "cost_numerator": 139128803,
+  "cost_denominator": 313600,
+  "cost_exact": false,
+  "cost_mcse": 0.3707135440972558,
+  "baseline": {
+   "numerator": 65594971,
+   "denominator": 156928,
+   "value": 417.9940545982871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:47,4:233,5:457,6:806,7:1245,8:1555,9:1487,10:1226,11:981,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.4053906714314501,
+   "rollouts": 256,
+   "rank_total": 131189942,
+   "rank_denominator": 313856,
+   "cache_key": "e9faecbe83dc1738cedf1b99a3b9b358"
+  },
+  "fallback": {
+   "numerator": 129720803,
+   "denominator": 313600,
+   "value": 413.65051977040815,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:20,4:197,5:428,6:789,7:1229,8:1544,9:1483,10:1225,11:981,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.3707135440972558,
+   "rollouts": 256,
+   "rank_total": 129720803,
+   "rank_denominator": 313600,
+   "cache_key": "0b343b575cf6cbb40d553b3188ccf5cf"
+  }
+ }
+}

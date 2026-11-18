@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_version": "contact-v0.5",
+  "run_id": "teams-small-disclosed",
+  "run_created_at": "2026-11-17T18:43:05Z",
+  "exported_at": "2026-11-18T07:14:50Z",
+  "code_revision": "82f66d84a3eb49297fb568b8bea729e7764b4d3b",
+  "prompt_version": "prompts-v4",
+  "prompt_hash": "6f671be5ea39125c819c6752c1e7573a3430118d7190950ea2e9fb4942b65f65",
+  "fixture_data": false,
+  "release_label": "Mixed-model team pilot (C=100, partner disclosure: disclosed): small-tier pairs, adaptively chosen defenders. Separate condition; not pooled with the main leaderboards.",
+  "headline": false,
+  "condition": {
+    "protocol_version": "contact-v0.5",
+    "protocol": {
+      "blocklist_disclosure": "full",
+      "blocklist_encoding": "words_and_ranges",
+      "both_blocked": "open_neither",
+      "clue_max_characters": 100,
+      "clue_max_live_candidate_mentions": null,
+      "clue_track": "mechanical",
+      "contact_word_absent_from_current_clue": true,
+      "defender_block_cardinality_limit": null,
+      "dictionary_access": "lookup_tools",
+      "displayed_dictionary_prefix_is_used": true,
+      "ending_policy": "final_letter_contact_wins",
+      "exactly_one_blocked": "unblocked_seat_reveal_or_cancel",
+      "initial_prefix_length": 0,
+      "initial_response_collection": "complete_even_on_public_clue_hit",
+      "invalid_reveal_choice": "cancel",
+      "max_tool_calls_per_decision": 8,
+      "neither_blocked": "open_both",
+      "publish_hidden_branch_flags": false,
+      "receiver_pass": "open_guesser1_if_unblocked",
+      "responder_visibility": "sealed",
+      "retirement_policy": "public_utterances_and_dictionary_prefixes",
+      "reveal_policy": "conditional_on_block_membership",
+      "role_policy": "fixed_guesser_roles",
+      "singleton_auto_win": false,
+      "target_hit_scope": "public_emissions",
+      "timing": "sealed_initial_responses_then_conditional_reveal",
+      "tools_enabled": false,
+      "turn_limit": 30,
+      "version": "contact-v0.5"
+    },
+    "dictionary_access": "lookup_tools",
+    "blocklist_encoding": "words_and_ranges",
+    "initial_prefix_length": 0,
+    "max_tool_calls_per_decision": 8,
+    "clue_max_characters": 100,
+    "turn_limit": 30,
+    "target_hit_scope": "public_emissions",
+    "reveal_policy": "conditional_on_block_membership",
+    "timing": "sealed_initial_responses_then_conditional_reveal",
+    "count_cap": null,
+    "lexicon_name": "enable",
+    "lexicon_sha256": "efbf5011f68c5d9aedc2d0e09a5ae7008c8d4cb4a60e3521098e522ea4ba371a",
+    "resolver": "fresh_shuffle_character_packing",
+    "packing_version": "combined-two-longest-maximal-prefix-v1",
+    "rng_version": "python-mt19937-sha256-seed-v1",
+    "numerical_rollouts": 256,
+    "forecast_mode": "off",
+    "no_progress_draws": true,
+    "rematch_on_no_progress_draw": true,
+    "rematch_recursive": true,
+    "rematch_extra_letters": 1,
+    "inference_profiles": {
+      "claude_haiku_5_5": {
+        "provider": "anthropic",
+        "api_family": null,
+        "model": "claude-haiku-5-5",
+        "parameters": {
+          "effort": "low"
+        },
+        "max_output_tokens": 8000
+      },
+      "gpt_6_luna": {
+        "provider": "openai",
+        "api_family": "responses",
+        "model": "gpt-6-luna",
+        "parameters": {},
+        "max_output_tokens": 8000
+      },
+      "gemini_4_hydrogen": {
+        "provider": "google",
+        "api_family": "interactions",
+        "model": "gemini-4-hydrogen",
+        "parameters": {
+          "thinking_level": "low"
+        },
+        "max_output_tokens": 8000
+      },
+      "gpt_6_1_terra": {
+        "provider": "openai",
+        "api_family": "responses",
+        "model": "gpt-6.1-terra",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          }
+        },
+        "max_output_tokens": 8000
+      }
+    },
+    "homogeneous_attackers": false,
+    "partner_disclosure": "disclosed",
+    "team_design": {
+      "defender_selection": "adaptive_uncertainty",
+      "include_self_play": true,
+      "rounds": 2,
+      "defender_pool": [
+        "claude_haiku_5_5",
+        "gpt_6_luna",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra"
+      ],
+      "selection_seed": 17
+    }
+  },
+  "condition_key": "693e6f154332453f",
+  "lexicon": {
+    "name": "enable",
+    "word_count": 172608,
+    "sha256": "efbf5011f68c5d9aedc2d0e09a5ae7008c8d4cb4a60e3521098e522ea4ba371a",
+    "source": "ENABLE word list (Enhanced North American Benchmark LExicon), via https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt, upstream sha256 3f16130220645692ed49c7134e24a18504c2ca55b3c012f7290e3e77c63b1a89",
+    "license": "Public domain (ENABLE)",
+    "source_revision": "dolph/dictionary master, fetched 2026-11-17"
+  },
+  "release_policy": {
+    "secrets_revealed_post_game": true,
+    "omniscient_audit_included": false,
+    "seat_private_histories_included": false,
+    "note": "Players never saw secrets (except the defender), hidden commitments or audit fields during play."
+  },
+  "licenses": {
+    "code": "see repository LICENSE",
+    "lexicon": "Public domain (ENABLE)",
+    "transcripts": "researcher to declare before publication"
+  },
+  "models": [
+    {
+      "id": "claude_haiku_5_5",
+      "provider": "anthropic",
+      "api_family": null,
+      "model": "claude-haiku-5-5",
+      "parameters": {
+        "effort": "low"
+      },
+      "max_output_tokens": 8000,
+      "context_window_tokens": 1000000,
+      "prompt_version": "prompts-v1",
+      "policy": null,
+      "defender_policy": null,
+      "choice_policy": null,
+      "offense_mode": "full",
+      "display_name": null
+    },
+    {
+      "id": "gpt_6_luna",
+      "provider": "openai",
+      "api_family": "responses",
+      "model": "gpt-6-luna",
+      "parameters": {},
+      "max_output_tokens": 8000,
+      "context_window_tokens": 1050000,
+      "prompt_version": "prompts-v1",
+      "policy": null,
+      "defender_policy": null,
+      "choice_policy": null,
+      "offense_mode": "full",
+      "display_name": null
+    },
+    {
+      "id": "gemini_4_hydrogen",
+      "provider": "google",
+      "api_family": "interactions",
+      "model": "gemini-4-hydrogen",
+      "parameters": {
+        "thinking_level": "low"
+      },
+      "max_output_tokens": 8000,
+      "context_window_tokens": 1000000,
+      "prompt_version": "prompts-v1",
+      "policy": null,
+      "defender_policy": null,
+      "choice_policy": null,
+      "offense_mode": "full",
+      "display_name": null
+    },
+    {
+      "id": "gpt_6_1_terra",
+      "provider": "openai",
+      "api_family": "responses",
+      "model": "gpt-6.1-terra",
+      "parameters": {
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "max_output_tokens": 8000,
+      "context_window_tokens": 1000000,
+      "prompt_version": "prompts-v1",
+      "policy": null,
+      "defender_policy": null,
+      "choice_policy": null,
+      "offense_mode": "full",
+      "display_name": null
+    }
+  ]
+}

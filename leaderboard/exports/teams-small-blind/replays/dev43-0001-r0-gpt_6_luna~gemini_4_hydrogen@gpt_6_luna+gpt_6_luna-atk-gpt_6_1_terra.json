@@ -1,0 +1,473 @@
+{
+ "game_id": "dev43-0001-r0-gpt_6_luna~gemini_4_hydrogen@gpt_6_luna+gpt_6_luna-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "excitors",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Small Australian marsupial often called the world's happiest animal",
+   "blocklist": [
+    "quokka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A long, curved yellow fruit that is usually peeled before eating",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A tropical bird known for its enormous, brightly colored bill",
+   "blocklist": [
+    "toucan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Careful artists prepare elegant recipes.",
+   "blocklist": [
+    "caper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A large flightless bird native to Australia.",
+   "blocklist": [
+    "cassowary",
+    "emu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Fine rain falling from a cloudless sky after sunset",
+   "blocklist": [
+    "dew",
+    "drizzle",
+    "serein"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Glowing orbs sometimes shimmer above moonlit evening rivers.",
+   "blocklist": [
+    "gossamer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "wisp"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A portable light source once powered by oil, often carried while camping.",
+   "blocklist": [
+    "flashlight",
+    "lamp",
+    "lantern",
+    "torch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A short phrase adopted as a guiding principle or slogan",
+   "blocklist": [
+    "catchphrase",
+    "credo",
+    "mantra",
+    "maxim",
+    "motto",
+    "watchword"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Plant tissue that carries water and dissolved minerals upward from the roots.",
+   "blocklist": [
+    "xylem"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A pile of stones built as a landmark or trail marker, especially on a mountain.",
+   "blocklist": [
+    "cairn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Finding something valuable by happy accident while searching for something else.",
+   "blocklist": [
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A hint lies behind each word: flora club ski mud the.",
+   "blocklist": [
+    "abide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "The first letters matter: Curious otters boldly arrange little treasures.",
+   "blocklist": [
+    "cobalt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "The last letters spell a word: glass bright halo often here.",
+   "blocklist": [
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Move each opening one letter forward: Perhaps tiny dragons question maps.",
+   "blocklist": [
+    "quern"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Young adventurers keep exploring.",
+   "blocklist": [
+    "explorer",
+    "yak",
+    "yaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "scout"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The center letters, in order, are hidden in: comma mid arrow later aha.",
+   "blocklist": [
+    "mirth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Take the second letters, in order, from: aunt tree one.",
+   "blocklist": [
+    "urn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Fresh autumn breezes linger everywhere.",
+   "blocklist": [
+    "fable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Zealous astronomers record faint phenomena.",
+   "blocklist": [
+    "zarf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "A person who shows travelers the way through an unfamiliar place.",
+   "blocklist": [
+    "guide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A large celestial body that orbits a star and does not produce its own light.",
+   "blocklist": [
+    "planet",
+    "planetoid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Read the initial letters of these words backwards: Zany travelers recount ancient underwater quests.",
+   "blocklist": [
+    "quartz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Great legends yield pictorial hieroglyphs.",
+   "blocklist": [
+    "glyph"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Base64-decode this: ZmpvcmQ=",
+   "blocklist": [
+    "fjord"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Humor that imitates folly or vice to expose it.",
+   "blocklist": [
+    "lampoon",
+    "parody",
+    "satire",
+    "satirical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A state of communication or interaction between two people, often initiated by reaching out.",
+   "blocklist": [
+    "connection",
+    "contact",
+    "liaison",
+    "rapport",
+    "relationship",
+    "touch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A curious explorer searches.",
+   "blocklist": [
+    "ace",
+    "aces",
+    "searcher",
+    "seeker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "apple",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6944.908786731376,
+  "cost_numerator": 50497598533,
+  "cost_denominator": 7271168,
+  "cost_exact": false,
+  "cost_mcse": 1.407907527734372,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 50279463493,
+   "denominator": 7271168,
+   "value": 6914.908786731376,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:949,4:3864,5:8581,6:15185,7:23068,8:28403,9:24854,10:20295,11:15498,12:11357,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.407907527734372,
+   "rollouts": 256,
+   "rank_total": 50279463493,
+   "rank_denominator": 7271168,
+   "cache_key": "fe9c6d440feef617fdec2976c7f1833a"
+  }
+ }
+}

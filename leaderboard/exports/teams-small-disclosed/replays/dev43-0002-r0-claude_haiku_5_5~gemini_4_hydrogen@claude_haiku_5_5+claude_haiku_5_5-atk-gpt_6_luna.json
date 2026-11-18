@@ -1,0 +1,541 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A feline household pet that purrs and chases mice",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A loyal animal that barks, fetches sticks, and guards the home",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered creature that sings, nests in trees, and flies south in winter",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly aquatic creature with fins and gills that swims in rivers and seas",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large African cat with a shaggy mane that roars and lives in pride groups",
+   "blocklist": [
+    "lion",
+    "lioness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Hoofed animal that neighs, gallops across fields, and is ridden with a saddle",
+   "blocklist": [
+    "horse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Long legless reptile that hisses and sheds its skin",
+   "blocklist": [
+    "adder",
+    "cobra",
+    "lizard",
+    "python",
+    "reptile",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped big cat of Asia and India that hunts alone in dense jungles",
+   "blocklist": [
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Huge furry omnivore that hibernates in caves and loves honey",
+   "blocklist": [
+    "bear",
+    "grizzly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Wild pack canine that howls at the full moon and hunts deer in forests",
+   "blocklist": [
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Sly red creature that raids henhouses and has a bushy tail",
+   "blocklist": [
+    "fox",
+    "foxes",
+    "foxlike",
+    "foxy",
+    "reynard",
+    "vixen",
+    "vulpine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Fierce daytime raptor with keen eyesight that dives from the sky onto prey",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hawk"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hawk"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Waterfowl that quacks and paddles on ponds, with webbed feet and a flat bill",
+   "blocklist": [
+    "duck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Opposite of light, the shade found at night",
+   "blocklist": [
+    "dark",
+    "darker",
+    "darkly",
+    "darkness",
+    "dim",
+    "dimness",
+    "dusk",
+    "duskiness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Hinged barrier you swing open to enter or leave a room",
+   "blocklist": [
+    "door",
+    "doorjamb",
+    "doorknob",
+    "doorstop",
+    "doorway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Images that visit your mind while you sleep and rest",
+   "blocklist": [
+    "dream",
+    "dreams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Mythical winged beast that breathes fire and hoards gold in its lair",
+   "blocklist": [
+    "draconic",
+    "dragon",
+    "dragonet",
+    "dragonfly",
+    "dragoon",
+    "drake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Rhythmic steps performed to music at a party or ball",
+   "blocklist": [
+    "dance",
+    "danced",
+    "dancer",
+    "dances",
+    "dancing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Stubborn long-eared beast of burden that brays and is a relative of the horse",
+   "blocklist": [
+    "donkey",
+    "donkeys",
+    "draft",
+    "draught",
+    "dray",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Period of light between dawn and night, when the sun is up",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "day",
+     "dayworks"
+    ]
+   ],
+   "blocked_word_count": 45,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Percussion instrument struck with sticks to keep the beat in a band",
+   "blocklist": [
+    "drum",
+    "drumbeat",
+    "drumhead",
+    "drummer",
+    "drumming",
+    "drums",
+    "drumstick",
+    "drumsticks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Furniture with drawers where you sit to write letters or work at a computer",
+   "blocklist": [
+    "desk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Intelligent sea mammal that leaps through waves and uses echolocation to hunt",
+   "blocklist": [
+    "dolphin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Fine powder that settles on shelves and needs regular cleaning",
+   "blocklist": [
+    "dander",
+    "debris",
+    "dirt",
+    "dust",
+    "duster",
+    "dustiness",
+    "dusting",
+    "dustpan",
+    "dusty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Rounded roof shaped like half a sphere, atop a cathedral or mosque",
+   "blocklist": [
+    "dome",
+    "domed",
+    "domelike",
+    "domes",
+    "domical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Informal name for your father, the male parent at home",
+   "blocklist": [
+    "dad",
+    "dada",
+    "dadaism",
+    "daddies",
+    "daddy",
+    "dads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "dig deep dish dozen dry dew den dive dock dove dart dash date dune doze",
+   "blocklist": [
+    "down",
+    "drape",
+    "drink",
+    "drive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "debt"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dial"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Evade a thrown ball by moving quickly out of its path",
+   "blocklist": [
+    "ducking"
+   ],
+   "blocked_ranges": [
+    [
+     "dodge",
+     "dodging"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Silly and foolish, lacking good sense",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "daft",
+     "doltish"
+    ]
+   ],
+   "blocked_word_count": 7986,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Guess one of these: dab dam dip dot dub dug",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dab"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 106.865625,
+  "cost_numerator": 34197,
+  "cost_denominator": 320,
+  "cost_exact": false,
+  "cost_mcse": 0.15033780118736836,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 24597,
+   "denominator": 320,
+   "value": 76.865625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:87,5:192,6:275,7:360,8:409,9:324,10:185,11:112,12:63,13:39,14:20,15:9,17:4",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.15033780118736836,
+   "rollouts": 256,
+   "rank_total": 7083936,
+   "rank_denominator": 92160,
+   "cache_key": "215a068d846b242565b91af3d6bff391"
+  }
+ }
+}

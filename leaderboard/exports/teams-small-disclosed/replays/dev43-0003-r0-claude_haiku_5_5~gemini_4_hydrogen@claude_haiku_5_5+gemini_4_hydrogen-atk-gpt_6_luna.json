@@ -1,0 +1,572 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5+gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that purrs and chases mice",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal animal that barks, fetches sticks, and is often called man's best friend",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Aquatic creature with fins and gills that swims in lakes and oceans",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings, builds nests in trees, and lays eggs",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tall woody plant with a trunk, branches, roots and green leaves",
+   "blocklist": [
+    "forest",
+    "oak",
+    "sapling",
+    "shrub",
+    "timber",
+    "tree",
+    "wood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Motor vehicle with four wheels that drives on roads",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "bus",
+    "car",
+    "motorcar",
+    "sedan",
+    "truck",
+    "vehicle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Building with rooms, a roof and walls where people live",
+   "blocklist": [
+    "abode",
+    "domicile",
+    "dwelling",
+    "home",
+    "house",
+    "residence",
+    "shelter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Hard mineral mass found in mountains, cliffs and riverbeds",
+   "blocklist": [
+    "boulder",
+    "granite",
+    "mineral",
+    "ore",
+    "pebble",
+    "rock",
+    "stone",
+    "stonework"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hot flames that burn, give off light and heat, and need oxygen to keep going",
+   "blocklist": [
+    "blaze",
+    "combustion",
+    "fire",
+    "flame",
+    "inferno"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Bright star at the center of our solar system that gives Earth light and warmth during the day",
+   "blocklist": [
+    "daylight",
+    "sol",
+    "sun",
+    "sunlight",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Clear liquid we drink that falls from clouds as rain and fills rivers and seas",
+   "blocklist": [
+    "aqua",
+    "aqueous",
+    "beverage",
+    "brook",
+    "dew",
+    "drinkable",
+    "fluid",
+    "fluids",
+    "freshwater",
+    "hydrate",
+    "hydration",
+    "hydro",
+    "ice",
+    "lake",
+    "moisture",
+    "ocean",
+    "pond",
+    "potable",
+    "rainwater",
+    "river",
+    "runoff",
+    "sea",
+    "snow",
+    "spring",
+    "stream",
+    "tap",
+    "thirst",
+    "thirsty",
+    "water",
+    "waters",
+    "well",
+    "wet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Natural satellite that orbits Earth and glows at night over the ocean",
+   "blocklist": [
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Crisp round fruit, red or green, said to keep the doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Green blades covering lawns and meadows, often mowed by a gardener",
+   "blocklist": [
+    "grass",
+    "greenery",
+    "herbage",
+    "meadow",
+    "sod",
+    "turf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Raised earth smaller than a mountain, often a grassy slope with a summit",
+   "blocklist": [
+    "eminence",
+    "hill",
+    "hillock",
+    "hummock",
+    "knoll",
+    "mound",
+    "rise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bound pages with a cover that you read for story or learning",
+   "blocklist": [
+    "book",
+    "hardcover",
+    "novel",
+    "paperback",
+    "storybook",
+    "textbook",
+    "tome",
+    "volume"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Ringing metal instrument hung in a church steeple",
+   "blocklist": [
+    "bell"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Golden-maned big cat that roars and hunts on African plains",
+   "blocklist": [
+    "carnivore",
+    "feline",
+    "king",
+    "leopard",
+    "lion",
+    "lioness",
+    "mane",
+    "panther",
+    "predator",
+    "pride",
+    "savannah",
+    "tiger",
+    "wildcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Hoofed animal that neighs, gallops, and is ridden with a saddle and bridle",
+   "blocklist": [
+    "horse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Farm animal that gives milk, grazes in pastures, and says moo",
+   "blocklist": [
+    "bovine",
+    "calf",
+    "cattle",
+    "cow",
+    "milk",
+    "moo",
+    "pasture"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Large soaring bird of prey with a hooked beak and keen eyesight",
+   "blocklist": [
+    "buzzard",
+    "condor",
+    "eagle",
+    "falcon",
+    "goshawk",
+    "hawk",
+    "kestrel",
+    "kite",
+    "osprey",
+    "raptor",
+    "talon",
+    "vulture",
+    "wing",
+    "wings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Piece of furniture with legs and a flat top for dining",
+   "blocklist": [
+    "table"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Seat with a back and four legs, made for one person to sit on",
+   "blocklist": [
+    "armchair",
+    "bench",
+    "chair",
+    "rocker",
+    "stool",
+    "throne"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Pink farm animal that oinks, roots in mud, and is often called a hog",
+   "blocklist": [
+    "boar",
+    "oink",
+    "pig",
+    "piglet",
+    "pork",
+    "sow",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Puffy white mass floating in the sky that may bring rain",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cloud"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cloud"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Antlered woodland animal that bounds through meadows and grazes at dusk",
+   "blocklist": [
+    "deer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "donkey",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Hinged panel you open with a handle to enter or leave a room",
+   "blocklist": [
+    "door",
+    "doorknob",
+    "doorway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "down",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Waterfowl that quacks, paddles on ponds, and has webbed feet",
+   "blocklist": [
+    "dabchick",
+    "dipper",
+    "diver",
+    "drake",
+    "duck",
+    "duckling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 446.5813908289152,
+  "cost_numerator": 140162249,
+  "cost_denominator": 313856,
+  "cost_exact": false,
+  "cost_mcse": 0.4054256020805935,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 130746569,
+   "denominator": 313856,
+   "value": 416.5813908289152,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:44,4:228,5:454,6:800,7:1244,8:1549,9:1486,10:1226,11:981,12:747,13:500,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.4054256020805935,
+   "rollouts": 256,
+   "rank_total": 130746569,
+   "rank_denominator": 313856,
+   "cache_key": "aeb49c557a505247a6d66cd0e6a91dd0"
+  }
+ }
+}

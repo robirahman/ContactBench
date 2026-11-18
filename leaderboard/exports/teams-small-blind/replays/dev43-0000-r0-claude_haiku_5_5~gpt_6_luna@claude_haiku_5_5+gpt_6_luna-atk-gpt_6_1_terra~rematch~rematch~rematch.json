@@ -1,0 +1,645 @@
+{
+ "game_id": "dev43-0000-r0-claude_haiku_5_5~gpt_6_luna@claude_haiku_5_5+gpt_6_luna-atk-gpt_6_1_terra~rematch~rematch~rematch",
+ "attacker": "claude_haiku_5_5+gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "sinterabilities",
+ "initial_prefix": "sin",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 140,
+ "initial_secret_candidates": [
+  "sinapism",
+  "sinapisms",
+  "since",
+  "sincere",
+  "sincerely",
+  "sincereness",
+  "sincerenesses",
+  "sincerer",
+  "sincerest",
+  "sincerities",
+  "sincerity",
+  "sincipita",
+  "sincipital",
+  "sinciput",
+  "sinciputs",
+  "sine",
+  "sinecure",
+  "sinecures",
+  "sines",
+  "sinew",
+  "sinewed",
+  "sinewing",
+  "sinews",
+  "sinewy",
+  "sinfonia",
+  "sinfonie",
+  "sinfonietta",
+  "sinfoniettas",
+  "sinful",
+  "sinfully",
+  "sinfulness",
+  "sinfulnesses",
+  "sing",
+  "singable",
+  "singe",
+  "singed",
+  "singeing",
+  "singer",
+  "singers",
+  "singes",
+  "singing",
+  "single",
+  "singled",
+  "singleness",
+  "singlenesses",
+  "singles",
+  "singlestick",
+  "singlesticks",
+  "singlet",
+  "singleton",
+  "singletons",
+  "singletree",
+  "singletrees",
+  "singlets",
+  "singling",
+  "singly",
+  "sings",
+  "singsong",
+  "singsongs",
+  "singsongy",
+  "singspiel",
+  "singspiels",
+  "singular",
+  "singularities",
+  "singularity",
+  "singularize",
+  "singularized",
+  "singularizes",
+  "singularizing",
+  "singularly",
+  "singulars",
+  "sinh",
+  "sinhs",
+  "sinicize",
+  "sinicized",
+  "sinicizes",
+  "sinicizing",
+  "sinister",
+  "sinisterly",
+  "sinisterness",
+  "sinisternesses",
+  "sinistral",
+  "sinistrous",
+  "sink",
+  "sinkable",
+  "sinkage",
+  "sinkages",
+  "sinker",
+  "sinkers",
+  "sinkhole",
+  "sinkholes",
+  "sinking",
+  "sinks",
+  "sinless",
+  "sinlessly",
+  "sinlessness",
+  "sinlessnesses",
+  "sinned",
+  "sinner",
+  "sinners",
+  "sinning",
+  "sinoatrial",
+  "sinological",
+  "sinologies",
+  "sinologist",
+  "sinologists",
+  "sinologue",
+  "sinologues",
+  "sinology",
+  "sinopia",
+  "sinopias",
+  "sinopie",
+  "sins",
+  "sinsemilla",
+  "sinsemillas",
+  "sinsyne",
+  "sinter",
+  "sinterabilities",
+  "sinterability",
+  "sintered",
+  "sintering",
+  "sinters",
+  "sinuate",
+  "sinuated",
+  "sinuates",
+  "sinuating",
+  "sinuosities",
+  "sinuosity",
+  "sinuous",
+  "sinuously",
+  "sinuousness",
+  "sinuousnesses",
+  "sinus",
+  "sinuses",
+  "sinusitis",
+  "sinusitises",
+  "sinusoid",
+  "sinusoidal",
+  "sinusoidally",
+  "sinusoids"
+ ],
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "sinew sinful sink singer since sinister sine sinner single sincere sing sins",
+   "blocklist": [
+    "sincerely",
+    "sincerity",
+    "sinewy",
+    "singers",
+    "singing",
+    "singles",
+    "sings",
+    "sinking",
+    "sinks",
+    "sinned",
+    "sinners",
+    "sinter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinew"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinus"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Well-paid job requiring little or no work",
+   "blocklist": [
+    "sinecure",
+    "sinecures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Mustard plaster applied to a sore chest",
+   "blocklist": [
+    "sinapism",
+    "sinapisms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Winding and curving, like a river or a snake's path",
+   "blocklist": [
+    "sinuate",
+    "sinuated",
+    "sinuosity",
+    "sinuous",
+    "sinuously",
+    "sinusoidal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Wickedly, in a morally wrong manner",
+   "blocklist": [
+    "sinfully",
+    "sinisterly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Fishing weight that pulls a line down",
+   "blocklist": [
+    "sinker",
+    "sinkers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Hyperbolic function built from exponentials, half the difference of e to x and e to minus x",
+   "blocklist": [
+    "sinh",
+    "sinhs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Scorch lightly with fire",
+   "blocklist": [
+    "singe",
+    "singed",
+    "singeing",
+    "singes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Air cavities behind the nose, often inflamed in a cold",
+   "blocklist": [
+    "sinuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Free from moral wrongdoing, pure and blameless",
+   "blocklist": [
+    "sinless"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "One at a time, individually, not in pairs",
+   "blocklist": [
+    "singly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Italian term for an orchestral symphony or overture, a musical form",
+   "blocklist": [
+    "sinfonia",
+    "sinfonie",
+    "sinfonietta"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Unique or exceptional; also the grammatical form meaning one",
+   "blocklist": [
+    "singular"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Front part of the skull, between the forehead and the crown",
+   "blocklist": [
+    "sincipita",
+    "sincipital",
+    "sinciput",
+    "sinciputs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Depression where the ground collapses into a hollow in limestone terrain",
+   "blocklist": [
+    "sinkhole",
+    "sinkholes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Tough tissues connecting muscle to bone",
+   "blocklist": [
+    "sinews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A lone item with no partner or match in its set",
+   "blocklist": [
+    "singlet",
+    "singleton",
+    "singletons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Trigonometric ratios, plural",
+   "blocklist": [
+    "sines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Picked out from a group for special attention",
+   "blocklist": [
+    "singled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Relating to the left side, or left-handed in a figurative sense",
+   "blocklist": [
+    "sinistral",
+    "sinistrous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Amount something sinks or settles downward, as of a ship's hull or a foundation",
+   "blocklist": [
+    "sinkage",
+    "sinkages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Possessing strong tendons, muscular and tough, like a well-built athlete",
+   "blocklist": [
+    "sinewed",
+    "sinewing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "In a blameless, morally pure manner, without any guilt",
+   "blocklist": [
+    "sinlessly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sinning sinters sinopia sinopie sinsyne sinology sinkable singable sintered sincerer singling",
+   "blocklist": [
+    "singsong",
+    "singularity",
+    "sinterability",
+    "sintering",
+    "sinusitis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Uniquely, in an exceptional and remarkable manner",
+   "blocklist": [
+    "singularly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Points where equations break down, such as the center of a black hole, in physics",
+   "blocklist": [
+    "singularities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "singlets sinopias singsongs singsongy singulars sinicize sinusoid singspiel sinusoids sinologue",
+   "blocklist": [
+    "sincereness",
+    "sincerenesses",
+    "sincerest",
+    "sincerities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "singlets"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinologist"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "The quality of being free from moral wrongdoing, a state of purity",
+   "blocklist": [
+    "sinlessness",
+    "sinlessnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "sinicized sinicizes sinicizing singleness singletree sinfulness sinoatrial sinologies sinuousness",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sinoatrial"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sinfulnesses"
+    }
+   ],
+   "prefix_after": "sin",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 31.7578125,
+  "cost_numerator": 4065,
+  "cost_denominator": 128,
+  "cost_exact": false,
+  "cost_mcse": 0.04160247046038087,
+  "baseline": {
+   "numerator": 1493,
+   "denominator": 256,
+   "value": 5.83203125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:5,5:8,6:12,7:20,8:25,9:24,10:16,11:14,12:8,13:6,14:1,15:1",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 0.20200349685406038,
+   "rollouts": 256,
+   "rank_total": 1493,
+   "rank_denominator": 256,
+   "cache_key": "1525e10015c0a204e29379e7491ba55a"
+  },
+  "fallback": {
+   "numerator": 225,
+   "denominator": 128,
+   "value": 1.7578125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "8:1,9:1,10:3,11:8,12:7,13:2,14:1,15:1",
+   "target_length": 15,
+   "C": 100,
+   "mcse": 0.04160247046038087,
+   "rollouts": 256,
+   "rank_total": 450,
+   "rank_denominator": 256,
+   "cache_key": "70f17825a67b47c60374d77bbcdf1352"
+  }
+ }
+}

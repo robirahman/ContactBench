@@ -1,0 +1,546 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen@claude_haiku_5_5+claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5+claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "claude_haiku_5_5",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend, a loyal barking animal",
+   "blocklist": [
+    "canine",
+    "dog",
+    "fido",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Hoofed steed that neighs, gallops, and carries riders",
+   "blocklist": [
+    "colt",
+    "equine",
+    "horse",
+    "mare",
+    "mustang",
+    "pony",
+    "stallion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Aquatic creature with fins and gills that swims in water",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings and nests in trees",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Long-eared hopping pet that nibbles carrots and lettuce",
+   "blocklist": [
+    "bunny",
+    "carrot",
+    "hare",
+    "lapin",
+    "lettuce",
+    "rabbit",
+    "rodent",
+    "warren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Savanna predator with a shaggy mane that roars and lives in a pride",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Waterfowl that quacks and paddles on a pond",
+   "blocklist": [
+    "dabchick",
+    "drake",
+    "duck",
+    "duckling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Antlered woodland grazer that bounds through forest clearings",
+   "blocklist": [
+    "deer",
+    "doe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Words: dab dad dam day den dew did die dig dim din dip dot dry dub due dug dye duo dun",
+   "blocklist": [
+    "dabble",
+    "dabbled",
+    "daddy",
+    "daffodil",
+    "daffy",
+    "daftness",
+    "dagger",
+    "daisy",
+    "dance",
+    "dancer",
+    "danger",
+    "dapper",
+    "dark",
+    "darkness",
+    "data",
+    "date",
+    "dawn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dock"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Fire-breathing mythical winged beast that hoards gold in legends",
+   "blocklist": [
+    "dragon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Hinged barrier you swing open to enter or leave a room",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "door",
+     "doozy"
+    ]
+   ],
+   "blocked_word_count": 36,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Intelligent sea mammal that leaps through waves and uses echoes to navigate",
+   "blocklist": [
+    "dolphin",
+    "dolphinfish",
+    "dolphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Sandy hill shaped by desert wind",
+   "blocklist": [
+    "dune",
+    "duneland",
+    "dunelands",
+    "dunes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Gentle cooing bird that symbolizes peace and is often white",
+   "blocklist": [
+    "dove",
+    "doves",
+    "peaceful",
+    "pigeon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Huge extinct reptile that roamed the earth long before humans",
+   "blocklist": [
+    "dinosaur",
+    "dinosaurian",
+    "dinosaurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Wild Australian canine that howls and is not a domesticated pet in the outback",
+   "blocklist": [
+    "dingo",
+    "dingoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "dah dal dan daw dee def deb del dev dey dib dif dis dit div dob doc dod don dor dos dow",
+   "blocklist": [
+    "daft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dah"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Small silver coin worth ten cents",
+   "blocklist": [
+    "dime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Percussion instrument you beat with sticks in a band",
+   "blocklist": [
+    "drum",
+    "drumhead",
+    "drumheads",
+    "drummer",
+    "drumming",
+    "drums",
+    "drumstick",
+    "drumsticks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Round face on a phone or clock you turn to set a value",
+   "blocklist": [
+    "dial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "down",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Soil or grime that gets on your shoes and clothes outdoors",
+   "blocklist": [
+    "dirt",
+    "dirtiness",
+    "dirty",
+    "dust",
+    "dusty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Nighttime visions that play in your mind while you sleep",
+   "blocklist": [
+    "dream",
+    "dreamer",
+    "dreaming",
+    "dreamlike",
+    "dreams",
+    "dreamt",
+    "dreamy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Water falling in slow drops from a leaky faucet",
+   "blocklist": [
+    "dribble",
+    "dribblet",
+    "dribbling",
+    "drip",
+    "dripping",
+    "drips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Toy that a child cradles and dresses up, a plaything with a face",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "doll",
+     "dolly"
+    ]
+   ],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "dead",
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "dare deed deep defy desk dice dish dull dumb dump dusk duty dame damp dank dash daub dodo",
+   "blocklist": [
+    "dame",
+    "damp",
+    "dank",
+    "dare",
+    "dash",
+    "daub",
+    "deed",
+    "deep",
+    "defy",
+    "desk",
+    "dice",
+    "dish",
+    "dodo",
+    "dull",
+    "dumb",
+    "dump",
+    "dusk",
+    "duty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "dinner"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Underwater swimmer who explores reefs and wrecks while breathing through scuba gear",
+   "blocklist": [
+    "dive",
+    "dived",
+    "diver",
+    "divers",
+    "diving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 442.3119629705401,
+  "cost_numerator": 17296167,
+  "cost_denominator": 39104,
+  "cost_exact": false,
+  "cost_mcse": 0.40554279348265804,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 16123047,
+   "denominator": 39104,
+   "value": 412.3119629705401,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:9,4:194,5:437,6:788,7:1226,8:1529,9:1467,10:1222,11:977,12:746,13:499,14:347,15:227,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.40554279348265804,
+   "rollouts": 256,
+   "rank_total": 128984376,
+   "rank_denominator": 312832,
+   "cache_key": "17feb6ac2815a2ddb3f61d3abbe6ab16"
+  }
+ }
+}

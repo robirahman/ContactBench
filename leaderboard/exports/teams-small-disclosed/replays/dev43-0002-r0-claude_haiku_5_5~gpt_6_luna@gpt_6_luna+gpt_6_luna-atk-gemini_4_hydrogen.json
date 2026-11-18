@@ -1,0 +1,504 @@
+{
+ "game_id": "dev43-0002-r0-claude_haiku_5_5~gpt_6_luna@gpt_6_luna+gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna+gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "guesser1_model": "gpt_6_luna",
+ "guesser2_model": "gpt_6_luna",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Common household pet that purrs and catches mice",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Twice yearly, day and night are nearly equal in length at this astronomical event.",
+   "blocklist": [
+    "equinox",
+    "equinoxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Geology: a foreign rock fragment enclosed within a larger igneous rock.",
+   "blocklist": [
+    "inclusion",
+    "inclusions",
+    "xenolith",
+    "xenoliths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A short-winged diving seabird of northern oceans, often likened to a penguin.",
+   "blocklist": [
+    "alcid",
+    "auk",
+    "auks",
+    "guillemot",
+    "murre",
+    "puffin",
+    "razorbill"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Soft evening rain ending in nightfall, a fine precipitation from a clear sky after sunset.",
+   "blocklist": [
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "dewfall"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A collector of matchbox labels, especially the printed wrappers kept as a hobby.",
+   "blocklist": [
+    "phillumenist",
+    "phillumenists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "The rhetorical insertion of a word within another, as in abso-bloody-lutely.",
+   "blocklist": [
+    "infix",
+    "infixes",
+    "tmeses",
+    "tmesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "The medical term for the rumbling and gurgling sounds produced by the intestines.",
+   "blocklist": [
+    "borborygmi",
+    "borborygmus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A concise, pointed saying or maxim; use the uncommon Greek-derived spelling with an h after the p.",
+   "blocklist": [
+    "apophthegm",
+    "apophthegms",
+    "apothegm",
+    "apothegms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Describing a person whose buttocks are notably shapely or well-formed.",
+   "blocklist": [
+    "callipygian",
+    "callipygous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A silly, flighty, talkative person; an old-fashioned noun with a playful, repetitive sound.",
+   "blocklist": [
+    "flibbertigibbet",
+    "flibbertigibbets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Read initials: Silly elephants roam every night; daring iguanas paint imaginary tiny yaks.",
+   "blocklist": [
+    "serendipities",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Read openings: Zany young zebras zigzag; yaks visit Africa.",
+   "blocklist": [
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Zoologists examine unusual groups: mammals, amphibians.",
+   "blocklist": [
+    "zeugma",
+    "zeugmas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Quietly inquisitive visitors inspect unusual tundra.",
+   "blocklist": [
+    "qiviut",
+    "qiviuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "First three initials: elk lap map ace act age ago aid aim air ale ape arc arm art ash ask ate bad",
+   "blocklist": [
+    "elm",
+    "elms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Read the final letters: piano snow crawl.",
+   "blocklist": [
+    "owl",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Take alternate initials, starting at the start: Nimble clouds, old trees, river.",
+   "blocklist": [
+    "nor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Take the first letters: Calm winds move.",
+   "blocklist": [
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "The first letters of these words spell the target: Venerable undergraduates garden.",
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Ordinary astronomers know many constellations.",
+   "blocklist": [
+    "oak",
+    "oaks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Even keen explorers notice hidden starts.",
+   "blocklist": [
+    "eke",
+    "ekes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "ken"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "The first letters spell an adjective meaning whimsical or otherworldly: Fables end yonder.",
+   "blocklist": [
+    "fey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Read the first letters of these sentences: Umbrellas drift. Rivers flow. Night falls.",
+   "blocklist": [
+    "urn",
+    "urns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Read the first letters: Your otters unite.",
+   "blocklist": [
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Even frogs travel.",
+   "blocklist": [
+    "eft",
+    "efts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Gales nourish umbrellas.",
+   "blocklist": [
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A low, marshy tract of land, especially the groundwater-fed wetlands of eastern England.",
+   "blocklist": [
+    "bog",
+    "carr",
+    "fen",
+    "fens",
+    "marsh",
+    "mire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Alphabet positions, read as letters: 10, 15, 20.",
+   "blocklist": [
+    "jot",
+    "jots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "aah aal aba abbe abbas abbot abaka abaci aback abamp abash abate abator abaxial abaxile abapical aas",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abacus"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6914.316098619268,
+  "cost_numerator": 40838937863,
+  "cost_denominator": 5906432,
+  "cost_exact": false,
+  "cost_mcse": 1.5380162364244432,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40661744903,
+   "denominator": 5906432,
+   "value": 6884.316098619268,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:919,4:3858,5:8585,6:15187,7:23072,8:28397,9:24851,10:20292,11:15496,12:11355,13:7824,14:5125,15:3191,16:1942,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.5380162364244432,
+   "rollouts": 256,
+   "rank_total": 40661744903,
+   "rank_denominator": 5906432,
+   "cache_key": "a5614083c72ed22dccaf10f80f12a9c4"
+  }
+ }
+}

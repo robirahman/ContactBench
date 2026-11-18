@@ -1,0 +1,389 @@
+{
+ "game_id": "dev43-0002-r0-gpt_6_luna~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "drapery",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "egg-laying mammal with a duck bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "bright red pigment from cinnabar",
+   "blocklist": [
+    "carmine",
+    "crimson",
+    "scarlet",
+    "vermilion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "alignment of three celestial bodies",
+   "blocklist": [
+    "conjunction",
+    "opposition",
+    "quadrature",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "what you break just by saying its name",
+   "blocklist": [
+    "silence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "brisk and cheerful readiness",
+   "blocklist": [
+    "alacrity",
+    "ardor",
+    "briskness",
+    "celerity",
+    "cheerfulness",
+    "eagerness",
+    "gaiety",
+    "glee",
+    "promptness",
+    "readiness",
+    "willingness",
+    "zeal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "exceedingly idealistic, unrealistic, and impractical",
+   "blocklist": [
+    "dreamy",
+    "fanciful",
+    "idealistic",
+    "impractical",
+    "quixotic",
+    "romantic",
+    "starry",
+    "unrealistic",
+    "unworldly",
+    "utopia",
+    "utopian",
+    "visionary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "sixth letter of the Greek alphabet",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zeta"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zeta"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "German word for a biologically unrelated look-alike or double of a living person",
+   "blocklist": [
+    "dolphin",
+    "domino",
+    "dopester",
+    "doppelganger",
+    "doppelgangers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "trees that shed their leaves annually",
+   "blocklist": [
+    "deciduous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "excessively harsh and severe, after an Athenian lawgiver",
+   "blocklist": [
+    "draconian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "scientific method of dating tree rings",
+   "blocklist": [
+    "dendrite",
+    "dendrites",
+    "dendroid"
+   ],
+   "blocked_ranges": [
+    [
+     "dendrochronologist",
+     "dendrology"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "a twelve-sided regular polyhedron",
+   "blocklist": [
+    "dodecahedron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "a sound formed by the combination of two vowels in a single syllable",
+   "blocklist": [
+    "diphthong",
+    "diphthongs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "a steerable airship or blimp",
+   "blocklist": [
+    "dirigible",
+    "dirigibles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "dome-shaped muscular partition separating the thorax from the abdomen",
+   "blocklist": [
+    "diaphragm"
+   ],
+   "blocked_ranges": [
+    [
+     "dab",
+     "drape"
+    ]
+   ],
+   "blocked_word_count": 8897,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "an imagined society where there is great suffering or injustice",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dystopia"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dystopia"
+    }
+   ],
+   "prefix_after": "dr",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "prolonged period of abnormally low rainfall",
+   "blocklist": [
+    "drought"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "dr",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "one-humped camel",
+   "blocklist": [
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "dr",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "light rain falling in very fine drops",
+   "blocklist": [
+    "draper",
+    "draperies"
+   ],
+   "blocked_ranges": [
+    [
+     "drapes",
+     "dry"
+    ]
+   ],
+   "blocked_word_count": 516,
+   "opened_guesses": [],
+   "prefix_after": "dr",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "draped drapers drapery dryable dryad dryads dryer dryers dryest drying dryish dryland drylot dryly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "dr",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 22.0,
+  "cost_numerator": 22,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

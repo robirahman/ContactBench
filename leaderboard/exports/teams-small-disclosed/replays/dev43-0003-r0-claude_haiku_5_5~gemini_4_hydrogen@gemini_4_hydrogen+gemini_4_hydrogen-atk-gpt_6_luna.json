@@ -1,0 +1,584 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen@gemini_4_hydrogen+gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen+gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "gemini_4_hydrogen",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "When the moon passes directly between the earth and the sun",
+   "blocklist": [
+    "alignment",
+    "astronomy",
+    "eclipse",
+    "eclipses",
+    "occultation",
+    "solar",
+    "syzygy",
+    "umbra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A group or chain of many islands in a sea",
+   "blocklist": [
+    "archipelago",
+    "archipelagos",
+    "atoll",
+    "atolls",
+    "island",
+    "islands",
+    "isle",
+    "isles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "In Greek mythology, the maze built by Daedalus to hold the Minotaur",
+   "blocklist": [
+    "labyrinth",
+    "labyrinthian",
+    "labyrinthine",
+    "labyrinths",
+    "maze"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A tube containing mirrors and colored glass that shows changing symmetrical patterns when rotated",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "kaleidoscopically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The dark shape and outline of someone or something visible against a brighter background",
+   "blocklist": [
+    "contour",
+    "figure",
+    "outline",
+    "profile",
+    "shadow",
+    "shape",
+    "silhouette",
+    "silhouettes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A 1975 Spielberg film about a great white shark",
+   "blocklist": [
+    "film",
+    "great",
+    "jaws",
+    "movie",
+    "ocean",
+    "shark",
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A musical instrument and a freshwater fish",
+   "blocklist": [
+    "bass",
+    "carp",
+    "catfish",
+    "drum",
+    "perch",
+    "pike",
+    "sunfish",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Exceedingly idealistic, unrealistic, and impractical, named after a Cervantes character",
+   "blocklist": [
+    "fanciful",
+    "foolhardy",
+    "foolish",
+    "quixotic",
+    "quixotically",
+    "quixotism",
+    "quixotry",
+    "romantic",
+    "utopian",
+    "visionary",
+    "windmill",
+    "windmills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A soft, whispering or rustling sound, from Latin for whisper",
+   "blocklist": [
+    "murmur",
+    "murmuring",
+    "rustle",
+    "sough",
+    "susurrant",
+    "susurration",
+    "susurrations",
+    "susurrous",
+    "susurrus",
+    "susurruses",
+    "whisper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Finding valuable or agreeable things by chance when not looking for them",
+   "blocklist": [
+    "accident",
+    "accidental",
+    "accidentally",
+    "coincidence",
+    "coincidental",
+    "discovery",
+    "fortuitous",
+    "fortuity",
+    "fortunate",
+    "happenstance",
+    "luck",
+    "luckily",
+    "lucky",
+    "serendipities",
+    "serendipitous",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Boy George's karma creature",
+   "blocklist": [
+    "chameleon",
+    "chameleons",
+    "lizard",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "The dot over the letter i or j",
+   "blocklist": [
+    "diacritic",
+    "iota",
+    "jot",
+    "superscript",
+    "title",
+    "tittle",
+    "tittles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Pleasure derived from another person's misfortune",
+   "blocklist": [
+    "delight",
+    "glee",
+    "gloat",
+    "gloating",
+    "malicious",
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "An ancient counting frame with beads on rods",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "calculator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A manuscript or piece of writing material on which later writing has been superimposed",
+   "blocklist": [
+    "codex",
+    "overwrite",
+    "palimpsest",
+    "palimpsests",
+    "papyrus",
+    "parchment",
+    "vellum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A soft felt hat with a creased crown, famously worn by Indiana Jones",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fedora"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fedora"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "An Australian Aboriginal wind instrument",
+   "blocklist": [
+    "didgeridoo",
+    "didgeridoos",
+    "didjeridoo",
+    "didjeridoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "A short-legged, long-bodied German dog breed, nicknamed wiener dog",
+   "blocklist": [
+    "dachshund",
+    "dachshunds",
+    "doxie",
+    "doxies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A biologically unrelated look-alike or ghostly double of a living person, from German",
+   "blocklist": [
+    "doppelganger",
+    "doppelgangers",
+    "double",
+    "doubles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Wordsworth's golden spring flower fluttering and dancing in the breeze",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "An Arabian camel with a single hump",
+   "blocklist": [
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Fats who sang Blueberry Hill, or a spotted tile game",
+   "blocklist": [
+    "domino",
+    "dominoes",
+    "dominos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Trees that shed their leaves annually",
+   "blocklist": [
+    "decidua",
+    "deciduae",
+    "decidual",
+    "deciduas",
+    "deciduate",
+    "deciduous",
+    "deciduousness",
+    "deciduousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Equatorial ocean regions of calm winds, or a state of stagnation",
+   "blocklist": [
+    "doldrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "A steerable lighter-than-air craft, such as a blimp or zeppelin",
+   "blocklist": [
+    "dirigible",
+    "dirigibles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "A yellow weed whose fluffy white seed head is blown to make a wish",
+   "blocklist": [
+    "dandelion",
+    "dandelions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A twelve-sided regular polyhedron",
+   "blocklist": [
+    "dodecagon",
+    "dodecahedra",
+    "dodecahedral",
+    "dodecahedron",
+    "dodecahedrons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Cruella de Vil's coveted coat source, or 101 of them",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dalmatian",
+     "dalmatics"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "The final resolution of a play or narrative, from French for untying",
+   "blocklist": [
+    "denouement",
+    "denouements"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 445.3969057629204,
+  "cost_numerator": 34748085,
+  "cost_denominator": 78016,
+  "cost_exact": false,
+  "cost_mcse": 0.396183623834341,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 32407605,
+   "denominator": 78016,
+   "value": 415.3969057629204,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:45,4:231,5:456,6:803,7:1239,8:1547,9:1475,10:1219,11:976,12:743,13:495,14:345,15:225,16:133,17:74,18:42,19:25,20:7",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.396183623834341,
+   "rollouts": 256,
+   "rank_total": 129630420,
+   "rank_denominator": 312064,
+   "cache_key": "4128a7b37b207179364aa4c6f1c3de7b"
+  }
+ }
+}

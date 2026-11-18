@@ -1,0 +1,569 @@
+{
+ "game_id": "dev43-0003-r0-claude_haiku_5_5~gemini_4_hydrogen@gemini_4_hydrogen+claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen+claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "guesser1_model": "gemini_4_hydrogen",
+ "guesser2_model": "claude_haiku_5_5",
+ "secret": "daftnesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Australian egg-laying mammal with a duck-like bill",
+   "blocklist": [
+    "bill",
+    "duckbill",
+    "echidna",
+    "mammal",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "lizard famous for changing its skin color",
+   "blocklist": [
+    "camouflage",
+    "chameleon",
+    "chameleons",
+    "chromatophore",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "ancient counting frame with beads sliding on rods",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "medical instrument doctors wear around their neck to listen to heartbeats",
+   "blocklist": [
+    "auscultate",
+    "auscultation",
+    "cardiology",
+    "heartbeat",
+    "nurse",
+    "physician",
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "celestial event when the moon passes directly between earth and the sun",
+   "blocklist": [
+    "eclipse",
+    "occultation",
+    "solar",
+    "syzygy",
+    "totality"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "optical tube containing mirrors and colored glass that shows symmetrical patterns when rotated",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "kaleidoscopically",
+    "periscope",
+    "prism",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "rigid airship named after a German count",
+   "blocklist": [
+    "airship",
+    "blimp",
+    "dirigible",
+    "zeppelin",
+    "zeppelins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "curved wooden throwing weapon used by indigenous Australians that returns to the thrower",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "device used to measure temperature",
+   "blocklist": [
+    "pyrometer",
+    "pyrometers",
+    "thermistor",
+    "thermistors",
+    "thermocouple",
+    "thermocouples",
+    "thermograph",
+    "thermographs",
+    "thermometer",
+    "thermometers",
+    "thermopile",
+    "thermopiles",
+    "thermoscope",
+    "thermoscopes",
+    "thermostat",
+    "thermostats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "word or phrase that reads the same forwards and backwards",
+   "blocklist": [
+    "civic",
+    "level",
+    "madam",
+    "palindrome",
+    "radar",
+    "refer",
+    "rotator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "word that phonetically imitates the sound it describes, like buzz or meow",
+   "blocklist": [
+    "echoic",
+    "mimesis",
+    "onomatopoeia",
+    "onomatopoeias",
+    "onomatopoeic",
+    "onomatopoeically",
+    "onomatopoetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "chain or group of islands clustered together in a sea",
+   "blocklist": [
+    "archipelago",
+    "archipelagos",
+    "atoll",
+    "atolls",
+    "island",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "waterlogged sand that sucks down anything resting on its surface",
+   "blocklist": [
+    "bog",
+    "mire",
+    "quagmire",
+    "quicksand",
+    "quicksands",
+    "sinkhole",
+    "swamp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "process by which green plants convert sunlight into chemical energy",
+   "blocklist": [
+    "autotroph",
+    "chlorophyll",
+    "glucose",
+    "photolysis",
+    "photosynthesis",
+    "photosynthetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "intricate maze built by Daedalus to hold the Minotaur",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "labyrinth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "labyrinth"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "white dog breed famous for its black spots",
+   "blocklist": [
+    "dalmatian",
+    "dalmatians"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "yellow weed whose fluffy white seed head is blown to make a wish",
+   "blocklist": [
+    "dandelion",
+    "dandelions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "intelligent marine mammal with a dorsal fin and blowhole",
+   "blocklist": [
+    "dolphin",
+    "dolphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "ghostly double or look-alike of a living person",
+   "blocklist": [
+    "doppelganger",
+    "duplicate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "explosive invented by Alfred Nobel",
+   "blocklist": [
+    "dynamite",
+    "dynamited",
+    "dynamiter",
+    "dynamiters",
+    "dynamites",
+    "dynamitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Olympic athletic contest consisting of ten track and field events",
+   "blocklist": [
+    "decathlete",
+    "decathletes",
+    "decathlon",
+    "decathlons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "hardest natural mineral, often cut into gems for engagement rings",
+   "blocklist": [
+    "diamante",
+    "diamond",
+    "diamonded",
+    "diamondiferous",
+    "diamonding",
+    "diamonds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "prolonged period of abnormally low rainfall causing water shortage",
+   "blocklist": [
+    "desiccation",
+    "drought",
+    "droughtiness",
+    "droughts",
+    "droughty",
+    "dry",
+    "dryness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "springtime yellow flower with a trumpet-shaped center",
+   "blocklist": [
+    "daffodil",
+    "daffodils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "black-and-white rectangular tile with pips, often lined up to topple in a chain reaction",
+   "blocklist": [
+    "domino",
+    "dominoes",
+    "dominos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "long-bodied short-legged German dog breed, nicknamed wiener",
+   "blocklist": [
+    "dachshund",
+    "dachshunds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "insect with two pairs of transparent wings and a long slender body",
+   "blocklist": [
+    "damselflies",
+    "damselfly",
+    "dragonflies",
+    "dragonfly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "extinct prehistoric reptile, such as Tyrannosaurus rex or Triceratops",
+   "blocklist": [
+    "dinosaur",
+    "dinosaurian",
+    "dinosaurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "doctor who treats teeth and gums",
+   "blocklist": [
+    "dental",
+    "dentist",
+    "dentistry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "book listing words and their definitions in alphabetical order",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dictionary"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dictionary"
+    }
+   ],
+   "prefix_after": "da",
+   "result": "prefix_extended"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 54.07575757575758,
+  "cost_numerator": 3569,
+  "cost_denominator": 66,
+  "cost_exact": false,
+  "cost_mcse": 0.13830472543528352,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1589,
+   "denominator": 66,
+   "value": 24.075757575757574,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:10,4:40,5:55,6:116,7:163,8:130,9:81,10:33,11:13,12:10,13:11,14:5,15:7,16:1",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.13830472543528352,
+   "rollouts": 256,
+   "rank_total": 203392,
+   "rank_denominator": 8448,
+   "cache_key": "254581b325b9d7f196fbf31f117e86e5"
+  }
+ }
+}
