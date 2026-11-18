@@ -27,6 +27,9 @@ from .base import (
 
 # Above this many output tokens the SDK requires streaming for a single call.
 STREAMING_THRESHOLD = 16000
+# Task budgets (beta): an advisory token target the model sees as a countdown, so it
+# finishes its answer instead of being cut off by max_tokens mid-thought.
+TASK_BUDGET_BETA = "task-budgets-2026-03-13"
 
 
 class AnthropicMessagesAdapter(ProviderAdapter):
@@ -34,7 +37,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
     api_family = "messages"
     default_credential_env = "ANTHROPIC_API_KEY"
     # "effort" is sent as output_config.effort; the others go to messages.create verbatim.
-    supported_parameters = frozenset({"thinking", "effort", "service_tier", "speed", "inference_geo"})
+    supported_parameters = frozenset({"thinking", "effort", "service_tier", "speed", "inference_geo", "task_budget"})
 
     def __init__(self, model_config, *, client: Any = None, **kwargs: Any):
         super().__init__(model_config, **kwargs)
@@ -76,6 +79,9 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         for k, v in self.config.parameters.items():
             if k == "effort":
                 output_config["effort"] = v
+            elif k == "task_budget":
+                output_config["task_budget"] = {"type": "tokens", "total": int(v)}
+                kwargs["betas"] = [TASK_BUDGET_BETA]
             else:
                 kwargs[k] = v
         kwargs["output_config"] = output_config
@@ -85,14 +91,16 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         import anthropic
 
         client = self._get_client()
+        # Beta features (task budgets) go through the beta Messages endpoint.
+        messages = client.beta.messages if kwargs.get("betas") else client.messages
         secrets = tuple(s for s in (self.credentials.get(self.credential_env or ""),) if s)
         try:
             if kwargs["max_tokens"] > STREAMING_THRESHOLD:
                 # Large output allowances (e.g. a full explicit blocklist over a
                 # big dictionary) must stream; the final message is identical.
-                async with client.messages.stream(**kwargs) as stream:
+                async with messages.stream(**kwargs) as stream:
                     return await stream.get_final_message()
-            return await client.messages.create(**kwargs)
+            return await messages.create(**kwargs)
         except anthropic.AnthropicError as e:
             raise map_stainless_error(e, anthropic, secrets) from None
         except Exception as e:
