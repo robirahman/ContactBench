@@ -139,8 +139,12 @@
           var elo = (lbs[j].rating && lbs[j].rating.elo) || {};
           var order = Object.keys(elo).filter(function (m) { return elo[m] != null; })
             .sort(function (a, b) { return elo[b] - elo[a]; });
+          // Competition ranking: models with equal Elo (to 0.5 point) share a rank.
           var rank = {};
-          order.forEach(function (m, r) { rank[m] = r + 1; });
+          order.forEach(function (m, r) {
+            var prev = order[r - 1];
+            rank[m] = (r > 0 && Math.abs(elo[prev] - elo[m]) < 0.5) ? rank[prev] : r + 1;
+          });
           return { c: p.c, elo: elo, rank: rank, n: order.length };
         });
         var models = {};
