@@ -216,6 +216,28 @@ def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict
     return stats
 
 
+ENDGAME_CANDIDATES = 20
+
+
+def _self_contained(sc: Counter) -> dict:
+    """Scores in [0, 1], higher is better, that depend only on the evaluated model.
+
+    - action_validity: share of its decisions (any seat) that were legal.
+    - clue_length_compliance: share of its Guesser 1 decisions not rejected for exceeding C.
+    - self_coordination: share of clue turns where its Guesser 2 named its Guesser 1's intended
+      word, in games where both guessers are this model. Responses are sealed and the defender
+      acts simultaneously, so the opponent cannot affect whether the match happens.
+    """
+    dec = sc.get("g1_decisions", 0) + sc.get("g2_decisions", 0) + sc.get("d_decisions", 0)
+    inv = sc.get("g1_invalid", 0) + sc.get("g2_invalid", 0) + sc.get("d_invalid", 0)
+    return {
+        "action_validity": 1 - inv / dec if dec else None,
+        "clue_length_compliance": 1 - sc.get("g1_overlong", 0) / sc["g1_decisions"] if sc.get("g1_decisions") else None,
+        "self_coordination": sc.get("self_matches", 0) / sc["self_clue_turns"] if sc.get("self_clue_turns") else None,
+        "self_coordination_clue_turns": sc.get("self_clue_turns", 0),
+    }
+
+
 def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[str, dict]:
     """Per-attacker and per-defender gameplay diagnostics (referee audit)."""
     att: dict[str, dict[str, Any]] = defaultdict(lambda: defaultdict(float))
@@ -234,6 +256,16 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
         a["games"] += 1
         dd["games"] += 1
         s = r.summary
+        # Efficiency per letter: letters of the secret earned (all of them when solved).
+        il = len(s.get("initial_prefix") or "")
+        fl = len(s["secret"]) if s["outcome_status"] == "solved" else len(s.get("final_prefix") or "")
+        a["letters_earned"] += max(0, fl - il)
+        a["turns_used_total"] += s.get("turns_used") or 0
+        # Endgame conversion: once at most ENDGAME_CANDIDATES secret candidates remain.
+        if any((t.get("secret_candidates_after") or 10**9) <= ENDGAME_CANDIDATES for t in r.rec.get("referee_audit", [])) \
+                or (s.get("initial_secret_candidate_count") or 10**9) <= ENDGAME_CANDIDATES:
+            a["endgame_reached"] += 1
+            a["endgame_converted"] += s["outcome_status"] == "solved"
         if s["outcome_status"] == "solved":
             a["wins"] += 1
             if s["terminal_reason"] == "prefix_completed":
@@ -249,6 +281,8 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
             seat[seat_m["guesser1"]]["g1_decisions"] += 1
             if not g1.get("valid", True):
                 seat[seat_m["guesser1"]]["g1_invalid"] += 1
+                if "clue exceeds" in str(g1.get("reason") or ""):
+                    seat[seat_m["guesser1"]]["g1_overlong"] += 1
             a["turns"] += 1
             a["guesser1_decisions"] += 1
             if not g1.get("valid", True):
@@ -276,7 +310,15 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                     reasons[seat_m["guesser2"]]["guesser2: " + why(g2)] += 1
                 if g2["canonical"]["action"] == "pass":
                     a["guesser2_pass"] += 1
+            homogeneous = seat_m["guesser1"] == seat_m["guesser2"]
+            if g2 is not None and homogeneous:
+                seat[seat_m["guesser1"]]["self_clue_turns"] += 1
+                seat[seat_m["guesser1"]]["self_matches"] += bool(t.get("registered_match"))
             if de is not None:
+                a["clue_turns_defended"] += 1
+                seat[seat_m["defender"]]["d_decisions"] += 1
+                if not de["valid"]:
+                    seat[seat_m["defender"]]["d_invalid"] += 1
                 dd["block_decisions"] += 1
                 if not de["valid"]:
                     dd["block_invalid"] += 1
@@ -334,6 +376,9 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 "guesser1_invalid_per_guesser1_decision": a.get("guesser1_invalid", 0) / a["guesser1_decisions"] if a.get("guesser1_decisions") else None,
                 "direct_share_per_valid_turn": a.get("direct_turns", 0) / (a.get("direct_turns", 0) + ct) if (a.get("direct_turns", 0) + ct) else None,
                 "registered_match_per_clue_turn": a.get("registered_matches", 0) / ct if ct else None,
+                # Clue leakage: the defender put the clue-giver's intended word on its blocklist.
+                "clue_leak_per_defended_clue_turn": a.get("intended_word_covered", 0) / a["clue_turns_defended"] if a.get("clue_turns_defended") else None,
+                "endgame_conversion": a.get("endgame_converted", 0) / a["endgame_reached"] if a.get("endgame_reached") else None,
                 "contact_per_clue_turn": a.get("contacts_awarded", 0) / ct if ct else None,
                 "contact_per_registered_match": a.get("contacts_awarded", 0) / a["registered_matches"] if a.get("registered_matches") else None,
                 "guesser2_invalid_per_guesser2_decision": a.get("guesser2_invalid", 0) / a["guesser2_decisions"] if a.get("guesser2_decisions") else None,
@@ -341,6 +386,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 # Of turns where both guessers named the same word, the share the defender blocked.
                 "matches_blocked_per_registered_match": a.get("registered_matches_blocked", 0) / a["registered_matches"] if a.get("registered_matches") else None,
             },
+            "turns_per_letter_earned": a.get("turns_used_total", 0) / a["letters_earned"] if a.get("letters_earned") else None,
         }
     for m, dd in dfn.items():
         dd = dict(dd)
@@ -372,6 +418,8 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
             "clue_budget_used": (mean(cc) / C) if cc and C else None,
             "guesser1_invalid_rate": sc["g1_invalid"] / sc["g1_decisions"] if sc.get("g1_decisions") else None,
             "guesser2_invalid_rate": sc["g2_invalid"] / sc["g2_decisions"] if sc.get("g2_decisions") else None,
+            # Self-contained scores: depend only on this model (0-1, higher is better).
+            "self_contained": _self_contained(sc),
         }
     return out
 
@@ -1035,6 +1083,20 @@ def render_gameplay(rd: dict) -> str:
                  f"{pc(st.get('guesser1_invalid_rate'))} | "
                  f"{pc(st.get('guesser2_invalid_rate'))} | "
                  f"{pc(drr.get('block_invalid_per_block_decision'))} |")
+    L.append("\n### Self-contained scores (depend only on the model; 0-100%, higher is better)\n")
+    L.append("| Model | Self-coordination | n | Action validity | Clue-length compliance | Clue leakage* | Endgame conversion* | Turns per letter* |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|")
+    for m in sorted(rd):
+        sc = (rd[m].get("seat") or {}).get("self_contained") or {}
+        o = rd[m].get("offense") or {}
+        orr = o.get("rates") or {}
+        if not sc and not o:
+            continue
+        L.append(f"| {m} | {pc(sc.get('self_coordination'))} | {sc.get('self_coordination_clue_turns', 0)} | "
+                 f"{pc(sc.get('action_validity'))} | {pc(sc.get('clue_length_compliance'))} | "
+                 f"{pc(orr.get('clue_leak_per_defended_clue_turn'))} | {pc(orr.get('endgame_conversion'))} | "
+                 f"{_fmt(o.get('turns_per_letter_earned'))} |")
+    L.append("\n*Opponent-dependent (shown for context).")
     reasons = [(m, k, v) for m in sorted(rd) for k, v in (rd[m].get("invalid_reasons") or {}).items()]
     if reasons:
         L.append("\nInvalid actions by reason: " + "; ".join(f"{m} {k} ×{v}" for m, k, v in reasons) + ".")

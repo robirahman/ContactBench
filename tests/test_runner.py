@@ -84,6 +84,10 @@ def test_offline_round_robin_replay_and_analysis(tmp_path):
     assert "intended_word_blocked_per_clue_turn" in rd[m]["defense"]["rates"]
     assert "matches_blocked_per_registered_match" in rd[m]["offense"]["rates"]
     assert "Gameplay metrics" in (tmp_path / "run1" / "analysis" / "report.md").read_text()
+    for m, v in rd.items():
+        for k, x in ((v.get("seat") or {}).get("self_contained") or {}).items():
+            if x is not None and k != "self_coordination_clue_turns":
+                assert 0.0 <= x <= 1.0
     # export contains no credentials and no credential env names
     out = export_public(tmp_path / "run1", tmp_path / "exp", res, recs)
     assert not scan_for_secrets(out)
