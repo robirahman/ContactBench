@@ -86,7 +86,7 @@ def test_offline_round_robin_replay_and_analysis(tmp_path):
     assert "Gameplay metrics" in (tmp_path / "run1" / "analysis" / "report.md").read_text()
     for m, v in rd.items():
         for k, x in ((v.get("seat") or {}).get("self_contained") or {}).items():
-            if x is not None and k != "self_coordination_clue_turns":
+            if x is not None and not k.endswith(("_n", "_turns")):
                 assert 0.0 <= x <= 1.0
     # export contains no credentials and no credential env names
     out = export_public(tmp_path / "run1", tmp_path / "exp", res, recs)

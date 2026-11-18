@@ -550,8 +550,12 @@
       sc("self_coordination", "Self-coordination", "Its Guesser 2 named its Guesser 1's intended word (both seats this model; sealed, so the defender cannot affect it)"),
       sc("action_validity", "Action validity", "Legal decisions in every seat"),
       sc("clue_length_compliance", "Clue-length compliance", "Guesser 1 decisions not rejected for exceeding the character budget"),
-      { label: "Self-coordination clue turns (n)", get: function (r) { return r.sc.self_coordination_clue_turns; },
-        fmt: function (r) { return String(r.sc.self_coordination_clue_turns || 0); } }
+      sc("intended_word_legality", "Intended-word legality", "Guesser 1 intended words that were legal, fresh contact candidates"),
+      sc("reveal_optimality", "Reveal optimality", "When its partner's word was blocked and its own word was a live secret candidate, it revealed (the reference-optimal choice)"),
+      sc("forced_win_conversion", "Forced-win conversion", "Turns where every remaining secret candidate could be named at once: Guesser 1 won that turn"),
+      sc("lookup_discipline", "Lookup discipline", "Decisions where its own is_legal_word lookup rejected a word: the final action did not use that word"),
+      { label: "n (coordination / reveal / forced-win / lookup)", get: function (r) { return r.sc.self_coordination_clue_turns; },
+        fmt: function (r) { return [r.sc.self_coordination_clue_turns, r.sc.reveal_optimality_n, r.sc.forced_win_n, r.sc.lookup_discipline_n].map(function (x) { return String(x || 0); }).join(" / "); } }
     ], srows, { sortCol: 1 });
     // Exports made before these metrics existed lack them: hide rather than show dashes.
     var hasGameplay = drows.some(function (r) { return r.hasSeat; });

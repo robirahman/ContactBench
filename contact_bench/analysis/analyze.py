@@ -228,6 +228,9 @@ def _self_contained(sc: Counter) -> dict:
       word, in games where both guessers are this model. Responses are sealed and the defender
       acts simultaneously, so the opponent cannot affect whether the match happens.
     """
+    def frac(num, den):
+        return sc.get(num, 0) / sc[den] if sc.get(den) else None
+
     dec = sum(sc.get(k, 0) for k in ("g1_decisions", "g2_decisions", "d_decisions", "choice_decisions"))
     inv = sum(sc.get(k, 0) for k in ("g1_invalid", "g2_invalid", "d_invalid", "choice_invalid"))
     return {
@@ -235,10 +238,84 @@ def _self_contained(sc: Counter) -> dict:
         "clue_length_compliance": 1 - sc.get("g1_overlong", 0) / sc["g1_decisions"] if sc.get("g1_decisions") else None,
         "self_coordination": sc.get("self_matches", 0) / sc["self_clue_turns"] if sc.get("self_clue_turns") else None,
         "self_coordination_clue_turns": sc.get("self_clue_turns", 0),
+        # Reveal when the own word is a live secret candidate (reference-optimal).
+        "reveal_optimality": frac("choice_secret_word_revealed", "choice_secret_word"),
+        "reveal_optimality_n": sc.get("choice_secret_word", 0),
+        # All remaining candidates could be named this turn: did Guesser 1 win now?
+        "forced_win_conversion": frac("forced_win_converted", "forced_win_turns"),
+        "forced_win_n": sc.get("forced_win_turns", 0),
+        "intended_word_legality": (1 - sc.get("intended_illegal", 0) / sc["intended_attempts"]) if sc.get("intended_attempts") else None,
+        # Filled in from request logs (lookup-tools condition), see _lookup_discipline.
+        "lookup_discipline": None,
+        "lookup_discipline_n": 0,
     }
 
 
-def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[str, dict]:
+def _secret_lexicon(run_dir: Path, manifest: dict):
+    """The run's secret lexicon, located by manifest path and verified by sha256 (None if absent)."""
+    from ..lexicon import load_lexicon_manifest
+
+    want = (manifest.get("secret_lexicon") or {}).get("sha256")
+    cfg = manifest.get("config") or {}
+    rel = (cfg.get("lexicon") or {}).get("manifest")
+    repo = Path(__file__).resolve().parents[2]
+    cands = []
+    if rel:
+        cands += [Path(rel), Path(cfg.get("base_dir") or ".") / rel, repo / rel]
+    for c in cands:
+        try:
+            if c.exists():
+                lex = load_lexicon_manifest(c)
+                if want is None or lex.sha256 == want:
+                    return lex
+        except Exception:
+            continue
+    return None
+
+
+def _prefix_words(lex, prefix: str) -> list[str]:
+    import bisect
+
+    words = lex.words
+    lo = bisect.bisect_left(words, prefix)
+    hi = bisect.bisect_left(words, prefix + "\uffff")
+    return list(words[lo:hi])
+
+
+def _strings(x) -> set[str]:
+    if isinstance(x, str):
+        return set(re.findall(r"[a-z]+", x.lower()))
+    if isinstance(x, dict):
+        return set().union(*(_strings(v) for v in x.values())) if x else set()
+    if isinstance(x, list):
+        return set().union(*(_strings(v) for v in x)) if x else set()
+    return set()
+
+
+def _lookup_discipline(requests: list[dict]) -> dict[str, dict]:
+    """Per model: of decisions where its own is_legal_word lookup rejected a word, the share
+    whose final action used none of the rejected words (0-1, higher is better)."""
+    out: dict[str, Counter] = defaultdict(Counter)
+    for q in requests:
+        resp = q.get("response") or {}
+        trace = resp.get("tool_trace") or []
+        rejected = {str((c.get("arguments") or {}).get("word", "")).lower() for c in trace
+                    if c.get("name") == "is_legal_word" and (c.get("result") or {}).get("result") is False}
+        rejected.discard("")
+        if not rejected:
+            continue
+        final = resp.get("parsed")
+        if final is None:
+            try:
+                final = json.loads(resp.get("output_text") or "null")
+            except ValueError:
+                final = resp.get("output_text") or ""
+        out[q.get("model_id")]["n"] += 1
+        out[q.get("model_id")]["ok"] += not (rejected & _strings(final))
+    return {m: {"lookup_discipline": c["ok"] / c["n"], "lookup_discipline_n": c["n"]} for m, c in out.items() if c["n"]}
+
+
+def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret=None) -> dict[str, dict]:
     """Per-attacker and per-defender gameplay diagnostics (referee audit)."""
     att: dict[str, dict[str, Any]] = defaultdict(lambda: defaultdict(float))
     dfn: dict[str, dict[str, Any]] = defaultdict(lambda: defaultdict(float))
@@ -246,6 +323,32 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
     clue_chars: dict[str, list[int]] = defaultdict(list)
     reasons: dict[str, Counter] = defaultdict(Counter)  # model -> "seat: reason" -> count
     seat: dict[str, Counter] = defaultdict(Counter)  # per seat model (not team id)
+
+    def forced_win_state(t: dict, used: set, ranges: list) -> bool:
+        """Every remaining secret candidate can be named publicly this turn (one direct
+        guess, or all of them as clue mentions within C), so an optimal Guesser 1 wins now.
+        The candidate set is rebuilt from the lexicon and the public emissions so far and
+        must match the engine's logged count; otherwise the turn is skipped."""
+        n = t.get("secret_candidates_before")
+        if v_secret is None or not n or n > 64 or clue_max is None:
+            return False
+        cands = [w for w in _prefix_words(v_secret, t.get("prefix_before") or "")
+                 if w not in used and not any(a <= w <= b for a, b in ranges)]
+        if len(cands) != n:
+            return False
+        return n == 1 or sum(len(w) + 1 for w in cands) - 1 <= clue_max
+
+    def retire(t: dict, used: set, ranges: list) -> None:
+        used.update(t.get("mentions") or [])
+        used.update(t.get("blocklist") or [])
+        ranges.extend(tuple(x) for x in (t.get("blocked_ranges") or []))
+        used.update(o["word"] for o in (t.get("opened") or []) if isinstance(o, dict))
+        g1c = (t.get("guesser1") or {}).get("canonical") or {}
+        if g1c.get("action") == "direct" and g1c.get("word"):
+            used.add(g1c["word"])
+        pa = t.get("prefix_after")
+        if pa and v_secret is not None and pa in v_secret:
+            used.add(pa)
 
     def why(x: dict) -> str:
         return re.sub(r"\d+", "N", str(x.get("reason") or "invalid"))[:80]
@@ -274,11 +377,28 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 a[f"hit_source_{src}"] += 1
         canceled: list[tuple[int, str]] = []
         audits = r.rec.get("referee_audit", [])
+        used: set = set()
+        ranges: list = []
+        ip = s.get("initial_prefix") or ""
+        if ip and v_secret is not None and ip in v_secret:
+            used.add(ip)
         # Seat models (mixed teams / human challenges have different G1 and G2).
         seat_m = dict(zip(("guesser1", "guesser2", "defender"), _seats(r.rec["game"])))
         for t in audits:
             g1 = t.get("guesser1") or {}
             seat[seat_m["guesser1"]]["g1_decisions"] += 1
+            sg1 = seat[seat_m["guesser1"]]
+            fw = forced_win_state(t, used, ranges)
+            retire(t, used, ranges)
+            if fw:
+                sg1["forced_win_turns"] += 1
+                sg1["forced_win_converted"] += t.get("result") == "won"
+            g1act = (g1.get("canonical") or {}).get("action")
+            if g1.get("valid", True) and g1act == "clue":
+                sg1["intended_attempts"] += 1
+            elif not g1.get("valid", True) and "intended word" in str(g1.get("reason") or ""):
+                sg1["intended_attempts"] += 1
+                sg1["intended_illegal"] += 1
             if not g1.get("valid", True):
                 seat[seat_m["guesser1"]]["g1_invalid"] += 1
                 if "clue exceeds" in str(g1.get("reason") or ""):
@@ -349,6 +469,15 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 a["choice_opportunities"] += 1
                 cm = seat_m.get(t["choice_actor"], r.attacker)
                 seat[cm]["choice_decisions"] += 1
+                # The actor's own word is a fresh contact candidate (validity), so it is a
+                # live secret candidate iff it is in V_secret. Revealing it then wins with
+                # probability 1/N or removes a candidate; cancelling leaves the reference
+                # cost unchanged, so reveal is the reference-optimal choice.
+                aw = t.get("w1") if t["choice_actor"] == "guesser1" else t.get("w2")
+                if v_secret is not None and aw and aw in v_secret:
+                    seat[cm]["choice_secret_word"] += 1
+                    if t.get("choice") == "reveal" and t.get("choice_valid") is not False:
+                        seat[cm]["choice_secret_word_revealed"] += 1
                 if t.get("choice_valid") is False:
                     seat[cm]["choice_invalid"] += 1
                 if t.get("choice") == "reveal":
@@ -844,7 +973,8 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         "rating_penalty_sensitivity": sensitivity,
         "bootstrap": boot,
         "model_stats": stats,
-        "role_diagnostics": _role_diagnostics(rows, manifest["config"]["protocol"].get("clue_max_characters")),
+        "role_diagnostics": _role_diagnostics(rows, manifest["config"]["protocol"].get("clue_max_characters"),
+                                              _secret_lexicon(run_dir, manifest)),
         "pairwise_match_points": pair_points,
         "pairwise_mean_cost": pair_cost,
         "fixtures": fx,
@@ -888,6 +1018,9 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                 unsent.setdefault(f["model_id"], {}).setdefault(role, {}).setdefault(key, 0)
                 unsent[f["model_id"]][role][key] += 1
     result["resources"] = _resources(reqs)
+    for m, ld in _lookup_discipline(reqs).items():
+        sc = result["role_diagnostics"].setdefault(m, {}).setdefault("seat", {}).setdefault("self_contained", {})
+        sc.update(ld)
     for m, roles in unsent.items():
         for role, counts in roles.items():
             for k, v in counts.items():
@@ -1088,8 +1221,10 @@ def render_gameplay(rd: dict) -> str:
                  f"{pc(st.get('guesser2_invalid_rate'))} | "
                  f"{pc(drr.get('block_invalid_per_block_decision'))} |")
     L.append("\n### Self-contained scores (depend only on the model; 0-100%, higher is better)\n")
-    L.append("| Model | Self-coordination | n | Action validity | Clue-length compliance | Clue leakage* | Endgame conversion* | Turns per letter* |")
-    L.append("|---|---:|---:|---:|---:|---:|---:|---:|")
+    L.append("| Model | Self-coordination | n | Action validity | Clue-length compliance | Intended-word legality | "
+             "Reveal optimality (n) | Forced-win conversion (n) | Lookup discipline (n) | Clue leakage* | "
+             "Endgame conversion* | Turns per letter* |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
     for m in sorted(rd):
         sc = (rd[m].get("seat") or {}).get("self_contained") or {}
         o = rd[m].get("offense") or {}
@@ -1098,6 +1233,10 @@ def render_gameplay(rd: dict) -> str:
             continue
         L.append(f"| {m} | {pc(sc.get('self_coordination'))} | {sc.get('self_coordination_clue_turns', 0)} | "
                  f"{pc(sc.get('action_validity'))} | {pc(sc.get('clue_length_compliance'))} | "
+                 f"{pc(sc.get('intended_word_legality'))} | "
+                 f"{pc(sc.get('reveal_optimality'))} ({sc.get('reveal_optimality_n', 0)}) | "
+                 f"{pc(sc.get('forced_win_conversion'))} ({sc.get('forced_win_n', 0)}) | "
+                 f"{pc(sc.get('lookup_discipline'))} ({sc.get('lookup_discipline_n', 0)}) | "
                  f"{pc(orr.get('clue_leak_per_defended_clue_turn'))} | {pc(orr.get('endgame_conversion'))} | "
                  f"{_fmt(o.get('turns_per_letter_earned'))} |")
     L.append("\n*Opponent-dependent (shown for context).")
