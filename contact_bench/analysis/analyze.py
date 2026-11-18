@@ -324,7 +324,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
     reasons: dict[str, Counter] = defaultdict(Counter)  # model -> "seat: reason" -> count
     seat: dict[str, Counter] = defaultdict(Counter)  # per seat model (not team id)
 
-    def forced_win_state(t: dict, used: set, ranges: list) -> bool:
+    def forced_win_state(t: dict, used: set, ranges: list, summary: dict) -> bool:
         """Every remaining secret candidate can be named publicly this turn (one direct
         guess, or all of them as clue mentions within C), so an optimal Guesser 1 wins now.
         The candidate set is rebuilt from the lexicon and the public emissions so far and
@@ -336,7 +336,11 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
                  if w not in used and not any(a <= w <= b for a, b in ranges)]
         if len(cands) != n:
             return False
-        return n == 1 or sum(len(w) + 1 for w in cands) - 1 <= clue_max
+        if n == 1:
+            return True
+        if summary.get("offense_condition") == "direct_only":
+            return False  # clues are rejected, so several candidates cannot be named at once
+        return sum(len(w) + 1 for w in cands) - 1 <= clue_max
 
     def retire(t: dict, used: set, ranges: list) -> None:
         used.update(t.get("mentions") or [])
@@ -388,7 +392,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
             g1 = t.get("guesser1") or {}
             seat[seat_m["guesser1"]]["g1_decisions"] += 1
             sg1 = seat[seat_m["guesser1"]]
-            fw = forced_win_state(t, used, ranges)
+            fw = forced_win_state(t, used, ranges, s)
             retire(t, used, ranges)
             if fw:
                 sg1["forced_win_turns"] += 1
@@ -399,6 +403,11 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
             elif not g1.get("valid", True) and "intended word" in str(g1.get("reason") or ""):
                 sg1["intended_attempts"] += 1
                 sg1["intended_illegal"] += 1
+            elif not g1.get("valid", True) and str(g1.get("reason") or "").startswith("clue ") \
+                    and "not allowed" not in str(g1.get("reason")):
+                # Admission checks the intended word before the clue text, so a clue-text
+                # rejection means the intended word was legal.
+                sg1["intended_attempts"] += 1
             if not g1.get("valid", True):
                 seat[seat_m["guesser1"]]["g1_invalid"] += 1
                 if "clue exceeds" in str(g1.get("reason") or ""):
@@ -474,7 +483,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
                 # probability 1/N or removes a candidate; cancelling leaves the reference
                 # cost unchanged, so reveal is the reference-optimal choice.
                 aw = t.get("w1") if t["choice_actor"] == "guesser1" else t.get("w2")
-                if v_secret is not None and aw and aw in v_secret:
+                if v_secret is not None and aw and aw in v_secret and aw not in (t.get("mentions") or []):
                     seat[cm]["choice_secret_word"] += 1
                     if t.get("choice") == "reveal" and t.get("choice_valid") is not False:
                         seat[cm]["choice_secret_word_revealed"] += 1
@@ -992,6 +1001,7 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
     rp = run_dir / "requests.jsonl"
     if rp.exists():
         reqs = [json.loads(l) for l in rp.read_text().splitlines() if l.strip()]
+    lookup = _lookup_discipline(reqs)  # gameplay decisions only (before forecast forks are added)
     unsent: dict[str, dict[str, dict[str, int]]] = {}
     # Forecast-fork calls are billed and budgeted like gameplay calls; account
     # for them under a separate role key ("<seat>/fork").
@@ -1018,7 +1028,7 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
                 unsent.setdefault(f["model_id"], {}).setdefault(role, {}).setdefault(key, 0)
                 unsent[f["model_id"]][role][key] += 1
     result["resources"] = _resources(reqs)
-    for m, ld in _lookup_discipline(reqs).items():
+    for m, ld in lookup.items():
         sc = result["role_diagnostics"].setdefault(m, {}).setdefault("seat", {}).setdefault("self_contained", {})
         sc.update(ld)
     for m, roles in unsent.items():
