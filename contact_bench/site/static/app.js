@@ -506,7 +506,9 @@
         can: o.choice_cancel, reused: o.preserved_words_later_reused, g1inv: orates.guesser1_invalid_per_guesser1_decision,
         g2inv: orates.guesser2_invalid_per_guesser2_decision, bsize: d.mean_blocklist_size_per_block_decision,
         empty: drates.empty_blocklist_per_block_decision, binv: drates.block_invalid_per_block_decision,
-        oblk: orates.matches_blocked_per_registered_match, clen: o.median_clue_characters, cbud: o.clue_budget_used,
+        oblk: orates.matches_blocked_per_registered_match, clen: ((rd[m] || {}).seat || {}).median_clue_characters,
+        cbud: ((rd[m] || {}).seat || {}).clue_budget_used, sg1inv: ((rd[m] || {}).seat || {}).guesser1_invalid_rate,
+        sg2inv: ((rd[m] || {}).seat || {}).guesser2_invalid_rate, hasSeat: !!(rd[m] || {}).seat,
         recall: drates.intended_word_blocked_per_clue_turn, dblk: drates.matches_blocked_per_registered_match,
         wpp: d.blocked_words_per_contact_prevented, reasons: (rd[m] || {}).invalid_reasons || {} });
     });
@@ -532,8 +534,11 @@
       rate("recall", "Block recall: intended word blocked (defense)"),
       rate("dblk", "Opponents' matches blocked (defense)"),
       { label: "Words blocked per contact prevented", title: "Blocklist precision: lower is more precise", get: function (r) { return r.wpp; }, fmt: function (r) { return num(r.wpp, 1); } },
-      rate("g1inv", "G1 invalid rate"), rate("g2inv", "G2 invalid rate"), rate("binv", "Defender invalid rate")
+      rate("sg1inv", "G1 invalid rate"), rate("sg2inv", "G2 invalid rate"), rate("binv", "Defender invalid rate")
     ], drows, { sortCol: 5 });
+    // Exports made before these metrics existed lack them: hide rather than show dashes.
+    var hasGameplay = drows.some(function (r) { return r.hasSeat; });
+    $("gameplay-section").hidden = !hasGameplay;
     var rtab = clear($("invalid-reasons-table"));
     var head = el("tr", null, el("th", { text: "Model" }));
     head.appendChild(el("th", { text: "Invalid action (seat: reason)" }));

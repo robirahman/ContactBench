@@ -223,6 +223,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
     block_sizes: dict[str, list[int]] = defaultdict(list)
     clue_chars: dict[str, list[int]] = defaultdict(list)
     reasons: dict[str, Counter] = defaultdict(Counter)  # model -> "seat: reason" -> count
+    seat: dict[str, Counter] = defaultdict(Counter)  # per seat model (not team id)
 
     def why(x: dict) -> str:
         return re.sub(r"\d+", "N", str(x.get("reason") or "invalid"))[:80]
@@ -245,6 +246,9 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
         seat_m = dict(zip(("guesser1", "guesser2", "defender"), _seats(r.rec["game"])))
         for t in audits:
             g1 = t.get("guesser1") or {}
+            seat[seat_m["guesser1"]]["g1_decisions"] += 1
+            if not g1.get("valid", True):
+                seat[seat_m["guesser1"]]["g1_invalid"] += 1
             a["turns"] += 1
             a["guesser1_decisions"] += 1
             if not g1.get("valid", True):
@@ -258,10 +262,13 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
             a["clue_turns"] += 1
             dd["clue_turns_faced"] += 1
             if t.get("clue") is not None:
-                clue_chars[r.attacker].append(len(t["clue"]))
+                clue_chars[seat_m["guesser1"]].append(len(t["clue"]))
             g2 = t.get("guesser2")
             de = t.get("defender")
             if g2 is not None:
+                seat[seat_m["guesser2"]]["g2_decisions"] += 1
+                if not g2["valid"]:
+                    seat[seat_m["guesser2"]]["g2_invalid"] += 1
                 a["guesser2_decisions"] += 1
                 if not g2["valid"]:
                     a["guesser2_invalid"] += 1
@@ -320,7 +327,6 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
     for m, a in att.items():
         a = dict(a)
         ct = a.get("clue_turns", 0)
-        cc = clue_chars.get(m, [])
         out.setdefault(m, {})["offense"] = {
             **a,
             "rates": {
@@ -334,9 +340,6 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 # Of turns where both guessers named the same word, the share the defender blocked.
                 "matches_blocked_per_registered_match": a.get("registered_matches_blocked", 0) / a["registered_matches"] if a.get("registered_matches") else None,
             },
-            "mean_clue_characters": mean(cc) if cc else None,
-            "median_clue_characters": _median([float(x) for x in cc]),
-            "clue_budget_used": (mean(cc) / C) if cc and C else None,
         }
     for m, dd in dfn.items():
         dd = dict(dd)
@@ -357,6 +360,18 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
         }
     for m, rs in reasons.items():
         out.setdefault(m, {})["invalid_reasons"] = dict(rs.most_common())
+    # Seat-level metrics keyed by the model that occupied the seat (differs from
+    # the team-level offense rows for mixed teams and human challenges).
+    for m in set(seat) | set(clue_chars):
+        sc, cc = seat.get(m, Counter()), clue_chars.get(m, [])
+        out.setdefault(m, {})["seat"] = {
+            **dict(sc),
+            "mean_clue_characters": mean(cc) if cc else None,
+            "median_clue_characters": _median([float(x) for x in cc]),
+            "clue_budget_used": (mean(cc) / C) if cc and C else None,
+            "guesser1_invalid_rate": sc["g1_invalid"] / sc["g1_decisions"] if sc.get("g1_decisions") else None,
+            "guesser2_invalid_rate": sc["g2_invalid"] / sc["g2_decisions"] if sc.get("g2_decisions") else None,
+        }
     return out
 
 
@@ -1010,14 +1025,14 @@ def render_gameplay(rd: dict) -> str:
         return "—" if x is None else f"{100 * x:.1f}%"
 
     for m in sorted(rd):
-        o, d = rd[m].get("offense") or {}, rd[m].get("defense") or {}
+        o, d, st = rd[m].get("offense") or {}, rd[m].get("defense") or {}, rd[m].get("seat") or {}
         orr, drr = o.get("rates") or {}, d.get("rates") or {}
-        L.append(f"| {m} | {_fmt(o.get('median_clue_characters'))} | {pc(o.get('clue_budget_used'))} | "
+        L.append(f"| {m} | {_fmt(st.get('median_clue_characters'))} | {pc(st.get('clue_budget_used'))} | "
                  f"{pc(orr.get('contact_per_clue_turn'))} | {pc(orr.get('matches_blocked_per_registered_match'))} | "
                  f"{pc(drr.get('intended_word_blocked_per_clue_turn'))} | {pc(drr.get('matches_blocked_per_registered_match'))} | "
                  f"{_fmt(d.get('blocked_words_per_contact_prevented'))} | "
-                 f"{pc(orr.get('guesser1_invalid_per_guesser1_decision'))} | "
-                 f"{pc(orr.get('guesser2_invalid_per_guesser2_decision'))} | "
+                 f"{pc(st.get('guesser1_invalid_rate'))} | "
+                 f"{pc(st.get('guesser2_invalid_rate'))} | "
                  f"{pc(drr.get('block_invalid_per_block_decision'))} |")
     reasons = [(m, k, v) for m in sorted(rd) for k, v in (rd[m].get("invalid_reasons") or {}).items()]
     if reasons:
