@@ -20,8 +20,9 @@ submit it.
 
 ## What you play
 
-The default config pits you against the small tier (Claude Haiku 5.5, GPT-6 Luna, Gemini 4 Hydrogen), with
-two secrets per opponent. For each opponent O and secret, you play a **fixture** of two games:
+The default config is 4 games, with one secret each against GPT-6 Luna and Gemini 4 Hydrogen (edit
+`tasks_per_pair` and `opponents` in `configs/human_challenge.yaml` for more). For each opponent O and secret, you
+play a **fixture** of two games:
 
 1. **Attack:** you are Guesser 1, O is your Guesser 2, and O defends. You give clues and choose intended
    words, or guess the secret directly. Your teammate is a separate instance of O, so it doesn't know your word.
