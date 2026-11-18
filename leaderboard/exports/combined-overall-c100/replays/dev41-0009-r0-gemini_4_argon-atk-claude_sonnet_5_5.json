@@ -1,0 +1,464 @@
+{
+ "game_id": "dev41-0009-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Exact midpoint of the dictionary (offset 86304); plural of a small racing sled ridden feet-first.",
+   "blocklist": [
+    "luges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "14-letter biological process: plants use sunlight to make food from CO2 and water.",
+   "blocklist": [
+    "photosynthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "8-letter burrowing African mammal that eats termites; starts with two A's.",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "12-letter large semiaquatic African mammal; Greek for river horse.",
+   "blocklist": [
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "7-letter tropical weevil; the second-to-last word in the dictionary (singular of the very last).",
+   "blocklist": [
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "14-letter noun: the act of throwing someone or something out of a window.",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "13-letter transformation process: how a caterpillar becomes a butterfly; also a famous Kafka story.",
+   "blocklist": [
+    "metamorphosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "14-letter noun: extreme or irrational fear of confined, enclosed, or crowded spaces.",
+   "blocklist": [
+    "agoraphobia",
+    "claustrophobia",
+    "claustrophobic",
+    "phobia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "13-letter German loanword: pleasure derived by someone from another person's misfortune.",
+   "blocklist": [
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "12-letter science: the study of fossils and ancient prehistoric life forms such as dinosaurs.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "paleontology"
+    },
+    {
+     "seat": "guesser2",
+     "word": "paleontology"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "12-letter medical/Latin term for sleepwalking (walking while asleep).",
+   "blocklist": [
+    "somnambulism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "11-letter noun: finding valuable or pleasant things by happy accident or chance.",
+   "blocklist": [
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "11-letter tool used by doctors to listen to heartbeats and breathing in the chest.",
+   "blocklist": [
+    "stethoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "9-letter dramatic speech: a play character speaks thoughts aloud while alone on stage.",
+   "blocklist": [
+    "soliloquy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "11-letter stone coffin, often decorated with sculpture and inscriptions, as in ancient Egypt.",
+   "blocklist": [
+    "sarcophagi",
+    "sarcophagus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "11-letter plant-eating dinosaur with a double row of bony plates along its back and a spiked tail.",
+   "blocklist": [
+    "stegosaur",
+    "stegosaurs",
+    "stegosaurus",
+    "stegosauruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "12-letter tropical Smilax plant whose dried roots flavor an old-fashioned soft drink like root beer.",
+   "blocklist": [
+    "sarsaparilla",
+    "sarsaparillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "16-letter noun/adjective for a 150th anniversary or its celebration.",
+   "blocklist": [
+    "sesquicentennial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "11-letter scientific instrument that detects, measures, and records earthquake ground vibrations.",
+   "blocklist": [
+    "seismograph"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "13-letter severe psychiatric disorder marked by hallucinations, delusions, and disorganized thought.",
+   "blocklist": [
+    "schizophrenia",
+    "schizophrenic",
+    "schizophrenics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "10-letter dark outline or profile of a person or object seen against a lighter background.",
+   "blocklist": [
+    "silhouette"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "9-letter brass-bodied single-reed woodwind instrument invented by Adolphe Sax, popular in jazz.",
+   "blocklist": [
+    "saxophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "10-letter icicle-shaped mineral deposit hanging downward from the ceiling of a limestone cave.",
+   "blocklist": [
+    "stalactite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "9-letter servile flatterer or yes-man who acts obsequiously toward important people for advantage.",
+   "blocklist": [
+    "sycophant",
+    "sycophantic",
+    "sycophants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "10-letter lizard-like amphibian that can regenerate lost limbs; in folklore, lives in fire.",
+   "blocklist": [
+    "salamander",
+    "salamanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "11-letter Swedish buffet meal with many hot and cold dishes; also a wide variety of things.",
+   "blocklist": [
+    "smorgasbord"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "10-letter German food of finely shredded cabbage fermented in brine until sour; topped on hot dogs.",
+   "blocklist": [
+    "sauerkraut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "12-letter second layer of Earth's atmosphere, located above the troposphere, containing ozone.",
+   "blocklist": [
+    "stratosphere"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "10-letter verbal error swapping initial consonant sounds of words, named for Oxford's Rev. Spooner.",
+   "blocklist": [
+    "spoonerism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "8-letter legal writ ordering a person to attend court or produce evidence; Latin for 'under penalty'",
+   "blocklist": [
+    "subpoena"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 778.4107837781711,
+  "cost_numerator": 689684409,
+  "cost_denominator": 886016,
+  "cost_exact": false,
+  "cost_mcse": 0.4399152054979184,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 663103929,
+   "denominator": 886016,
+   "value": 748.4107837781711,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:61,4:348,5:1051,6:1790,7:2648,8:3461,9:2901,10:2238,11:1554,12:1128,13:709,14:470,15:254,16:157,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.4399152054979184,
+   "rollouts": 256,
+   "rank_total": 663103929,
+   "rank_denominator": 886016,
+   "cache_key": "e014bcb9c145c4decb4683239be0d4f9"
+  }
+ }
+}

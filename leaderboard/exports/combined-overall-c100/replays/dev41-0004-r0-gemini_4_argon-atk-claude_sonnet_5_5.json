@@ -1,0 +1,632 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "insect transformation",
+   "blocklist": [
+    "chrysalis",
+    "cocoon",
+    "imago",
+    "larva",
+    "metamorphoses",
+    "metamorphosis",
+    "pupa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "happy accident or fortunate discovery by chance",
+   "blocklist": [
+    "fluke",
+    "serendipitous",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "1st word in dictionary",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs",
+    "aal",
+    "aalii",
+    "aaliis",
+    "aals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "1st word in list_words(prefix='', offset=100000, limit=1)",
+   "blocklist": [
+    "nonuniform"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "reverse each word: eduerfnedahcs citoxiuq aieopotamono tnahpocys laremehpe",
+   "blocklist": [
+    "ephemeral",
+    "onomatopoeia",
+    "quixotic",
+    "schadenfreude",
+    "sycophant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1. plant process using sunlight  2. fear of spiders  3. study of stars  4. liquid metal element",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "photosynthesis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "photosynthesis"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1. chain of islands  2. frog animal class  3. study of celestial bodies  4. Newton falling fruit",
+   "blocklist": [
+    "amphibian",
+    "amphibians",
+    "apple",
+    "apples",
+    "archipelago",
+    "archipelagoes",
+    "archipelagos",
+    "astronomy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1. Chinese needle therapy 2. guacamole fruit 3. armored mammal 4. bellows keyboard instrument",
+   "blocklist": [
+    "accordion",
+    "accordions",
+    "acupuncture",
+    "armadillo",
+    "armadillos",
+    "avocado",
+    "avocados"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1. counting frame with beads 2. snow slide down mountain 3. large ocean seabird 4. purple quartz",
+   "blocklist": [
+    "abacus",
+    "albatross",
+    "amethyst",
+    "avalanche"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "1. swamp reptile 2. space traveler 3. fish tank 4. green spear veggie 5. old pharmacist 6. thistle",
+   "blocklist": [
+    "alligator",
+    "alligators",
+    "apothecaries",
+    "apothecary",
+    "aquaria",
+    "aquarium",
+    "aquariums",
+    "artichoke",
+    "artichokes",
+    "asparagus",
+    "astronaut",
+    "astronauts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "1. emergency hospital van 2. salty pizza fish 3. horned savanna ungulate 4. space rock in belt",
+   "blocklist": [
+    "ambulance",
+    "ambulances",
+    "anchovies",
+    "anchovy",
+    "antelope",
+    "antelopes",
+    "asteroid",
+    "asteroids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "1. giant constrictor snake 2. memory loss 3. lead to gold magic 4. orange stone peach 5. yearly book",
+   "blocklist": [
+    "alchemist",
+    "alchemy",
+    "almanac",
+    "almanacs",
+    "amnesia",
+    "amnesias",
+    "anaconda",
+    "anacondas",
+    "annual",
+    "annuals",
+    "apricot",
+    "apricots",
+    "boa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1. burrowing anteater 2. bow and arrow sport 3. toxic fireproof mineral 4. inflamed appendix",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "appendicitis",
+    "archery",
+    "asbestos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "1. rearranged letters puzzle 2. northern lights 3. corpse medical exam 4. foil can metal 5. truce",
+   "blocklist": [
+    "aluminium",
+    "aluminum",
+    "anagram",
+    "anagrams",
+    "armistice",
+    "armistices",
+    "aurora",
+    "auroras",
+    "autopsies",
+    "autopsy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "1. end of world doomsday 2. dig up ancient ruins 3. surgery numbing drug 4. fight or flight hormone",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apocalypse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apocalypse"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1. study of past artifacts 2. basic math with numbers 3. designing buildings 4. spider eight-legger",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "archaeologist",
+    "archaeologists",
+    "archaeology",
+    "architect",
+    "architects",
+    "architecture",
+    "architectures",
+    "arithmetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "1. painful joint inflammation 2. heavy cannons and guns 3. poison element As 4. weapon storage",
+   "blocklist": [
+    "armories",
+    "armory",
+    "arsenal",
+    "arsenals",
+    "arsenic",
+    "arsenics",
+    "arthritic",
+    "arthritis",
+    "artillery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "1. rule by noble elite 2. blood vessel from heart 3. noble gas Ar 4. pleasant coffee scent",
+   "blocklist": [
+    "argon",
+    "argons",
+    "aristocracies",
+    "aristocracy",
+    "aristocrat",
+    "aristocrats",
+    "aroma",
+    "aromas",
+    "aromatic",
+    "arterial",
+    "arteries",
+    "artery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "1. crime of setting fire 2. Spanish fleet of warships 3. video game coin hall 4. historical records",
+   "blocklist": [
+    "arcade",
+    "arcades",
+    "archive",
+    "archived",
+    "archives",
+    "armada",
+    "armadas",
+    "arson",
+    "arsonist",
+    "arsons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "1. padded living room seat 2. botanical tree garden 3. high ranking angel 4. broken musical chord",
+   "blocklist": [
+    "arboreta",
+    "arboretum",
+    "archangel",
+    "archangels",
+    "armchair",
+    "armchairs",
+    "arpeggio",
+    "arpeggios"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "1. original model pattern 2. gladiator stadium 3. Noah flood boat 4. binding dispute settlement",
+   "blocklist": [
+    "arbitration",
+    "arbitrations",
+    "archetype",
+    "archetypes",
+    "arena",
+    "arenas",
+    "ark",
+    "arks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "1. chief church bishop 2. haughty pride hubris 3. starch root tuber 4. Jason fleece sailor",
+   "blocklist": [
+    "archbishop",
+    "archbishops",
+    "argonaut",
+    "argonauts",
+    "arrogance",
+    "arrowroot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "1. irregular heartbeat 2. feathered dinosaur fossil 3. Austrian royal duke 4. skilled craftworker",
+   "blocklist": [
+    "archaeopteryx",
+    "archduke",
+    "archdukes",
+    "arrhythmia",
+    "arrhythmias",
+    "artificer",
+    "artisan",
+    "artisans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "1. essential oil smell treatment 2. jointed leg invertebrate 3. curved doorway passage 4. farmable",
+   "blocklist": [
+    "arable",
+    "arch",
+    "arched",
+    "arches",
+    "archway",
+    "archways",
+    "aromatherapy",
+    "arthropod",
+    "arthropods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "1. underarm deodorant spot 2. peppery salad rocket leaf 3. tall wardrobe cabinet 4. flint spear tip",
+   "blocklist": [
+    "armoire",
+    "armoires",
+    "armpit",
+    "armpits",
+    "arrowhead",
+    "arrowheads",
+    "arugula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "1. ballet one-leg pose 2. dry canyon gully 3. opera solo song 4. hardened arteries",
+   "blocklist": [
+    "arabesque",
+    "arabesques",
+    "aria",
+    "arias",
+    "arroyo",
+    "arroyos",
+    "arteriole",
+    "arterioles",
+    "arteriosclerosis",
+    "arteriosclerotic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "1. chief foe nemesis 2. diamond sock pattern 3. elbow support on chair 4. biceps strap",
+   "blocklist": [
+    "archenemy",
+    "argyle",
+    "argyles",
+    "armrest",
+    "armrests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "1. biceps strap 2. polar cold region 3. court dispute 4. nipple ring 5. handcuffs",
+   "blocklist": [
+    "arbitrate",
+    "arbitrator",
+    "arctic",
+    "arctics",
+    "armband",
+    "armbands",
+    "armlet",
+    "armlets",
+    "arraignment",
+    "arraignments",
+    "arrest",
+    "arrested",
+    "arrests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 60.326931423611114,
+  "cost_numerator": 555973,
+  "cost_denominator": 9216,
+  "cost_exact": false,
+  "cost_mcse": 0.09362062783109357,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 279493,
+   "denominator": 9216,
+   "value": 30.32693142361111,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:7,4:17,5:43,6:83,7:108,8:125,9:107,10:80,11:63,12:48,13:34,14:20,15:13,16:9,17:4,18:1",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.09362062783109357,
+   "rollouts": 256,
+   "rank_total": 838479,
+   "rank_denominator": 27648,
+   "cache_key": "e6b60d115c7877b2fb328122e15f9a84"
+  }
+ }
+}

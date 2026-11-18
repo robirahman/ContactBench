@@ -1,0 +1,537 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Round red fruit. Bonus: cat dog house love water time world man woman life work day sun moon star.",
+   "blocklist": [
+    "apple",
+    "cherry",
+    "cranberry",
+    "plum",
+    "pomegranate",
+    "raspberry",
+    "strawberry",
+    "tomato"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of cold. the and you for are this that with have from they not but what all can one two",
+   "blocklist": [
+    "boiling",
+    "burning",
+    "fiery",
+    "heat",
+    "heated",
+    "hot",
+    "scorching",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Color of grass. air fire earth sea sky tree light dark black white blue yellow hand head home food",
+   "blocklist": [
+    "brown",
+    "emerald",
+    "green",
+    "jade",
+    "lime",
+    "olive",
+    "verdant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Frozen water. king queen boy girl mother father baby good bad big small new old yes no book car",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icicle",
+    "sleet",
+    "slush",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Largest land animal with trunk and tusks. people person year way school state family night money",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Tallest spotted creature, long neck. make take come see know think want give find use tell feel call",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "King of the jungle. said get just like now well also back even most only over such than then very",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lions",
+    "tarzan",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Striped African horse. first last next right left high low great little long young place part eyes",
+   "blocklist": [
+    "okapi",
+    "okapis",
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebrass",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird. happy sad beautiful fear hope peace war friend child hand foot eye face",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "macaroni",
+    "penguin",
+    "penguins",
+    "rockhopper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial. answer question problem system country government company number group",
+   "blocklist": [
+    "joey",
+    "joeys",
+    "kangaroo",
+    "kangaroos",
+    "quokka",
+    "quokkas",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Intelligent marine mammal with a beak. houseplant music river mountain ocean dream heart soul story",
+   "blocklist": [
+    "cetacean",
+    "dolphin",
+    "dolphins",
+    "orca",
+    "porpoise",
+    "porpoises",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. field road city town street door room table chair window floor wall roof",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "cobweb",
+    "spider",
+    "spiders",
+    "tarantula",
+    "weaver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Curved tropical fruit. human body mind power houseplant nature science art health truth blood brain",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "mango",
+    "mangoes",
+    "mangos",
+    "papaya",
+    "papayas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Eight armed sea creature. about after again before between under through around open close start end",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "cuttlefish",
+    "kraken",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid",
+    "starfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Flying nocturnal mammal. other some more many much every each few another any because where when why",
+   "blocklist": [
+    "bat",
+    "bats",
+    "chiropteran",
+    "vampire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Bamboo eating bear. real important different public major local social national large possible point",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Mythical one-horned equine. computer phone internet email video game movie coffee bread milk cheese",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Fire-breathing mythical reptile. again always away best better case change early easy enough example",
+   "blocklist": [
+    "dragon",
+    "dragons",
+    "drake",
+    "drakes",
+    "wyvern",
+    "wyverns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Howling wild canine. god church death heaven hell evil jesus prayer faith spirit heaven angel devil",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "dingo",
+    "dingoes",
+    "jackal",
+    "jackals",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Huge river beast with wide jaws. silver gold copper iron stone wood glass paper rain wind cloud",
+   "blocklist": [
+    "alligator",
+    "alligators",
+    "caiman",
+    "caimans",
+    "croc",
+    "crocodile",
+    "crocodiles",
+    "crocs",
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Young feline. hello goodbye morning evening summer winter spring autumn north south east west",
+   "blocklist": [
+    "cub",
+    "cubs",
+    "kit",
+    "kits",
+    "kitten",
+    "kittens",
+    "kitties",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Wise hooting bird. their there would could should these those which your our out into down look",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Cunning woodland canine. walk talk run play live move read write laugh smile happy sad dark bright",
+   "blocklist": [
+    "fox",
+    "foxes",
+    "reynard",
+    "reynards",
+    "tod",
+    "tods",
+    "vixen",
+    "vixens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Predatory fish with fins. beautiful freedom justice future past present warship kingly language song",
+   "blocklist": [
+    "barracuda",
+    "barracudas",
+    "pike",
+    "pikes",
+    "piranha",
+    "piranhas",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7017.650953449639,
+  "cost_numerator": 1988746139,
+  "cost_denominator": 283392,
+  "cost_exact": false,
+  "cost_mcse": 1.6955157869370536,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1980244379,
+   "denominator": 283392,
+   "value": 6987.650953449639,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:918,4:3765,5:8521,6:15147,7:23048,8:28392,9:24848,10:20291,11:15498,12:11357,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.6955157869370536,
+   "rollouts": 256,
+   "rank_total": 27723421306,
+   "rank_denominator": 3967488,
+   "cache_key": "e55d93b6a821e8dbd493a2aa496fb181"
+  }
+ }
+}

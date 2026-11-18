@@ -1,0 +1,623 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. the and for are but not you all can her was one our out day get has him his how",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend. with this that have from they will your what when make like time just know take",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Star at center of solar system. about after again also back been could first good into more most",
+   "blocklist": [
+    "sol",
+    "sun",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite. new now way who boy did its let put say she too use had may see two well",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "lunas",
+    "moon",
+    "moons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "H2O. other some than then them these only over such even much many must long look come made find",
+   "blocklist": [
+    "aqua",
+    "aquas",
+    "ice",
+    "steam",
+    "water",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Flames and burning. people year work life world still should while where being every great right",
+   "blocklist": [
+    "blaze",
+    "blazes",
+    "conflagration",
+    "fire",
+    "fires",
+    "flame",
+    "inferno",
+    "infernos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Tall woody plant. said each which their there would could about before through between under around",
+   "blocklist": [
+    "sapling",
+    "shrub",
+    "shrubs",
+    "timber",
+    "tree",
+    "trees",
+    "wood",
+    "woods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Opposite of black. house home little big small large old young man woman child hand eye head face",
+   "blocklist": [
+    "albino",
+    "bright",
+    "light",
+    "lights",
+    "pale",
+    "snow",
+    "white",
+    "whites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Opposite of cold. love live give want need feel tell ask seem help talk turn start show hear play",
+   "blocklist": [
+    "heat",
+    "heated",
+    "heats",
+    "hot",
+    "hotter",
+    "warm",
+    "warmer",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Color of blood. very real last next high low part same left few place case week number group",
+   "blocklist": [
+    "carmine",
+    "crimson",
+    "maroon",
+    "red",
+    "reddish",
+    "reds",
+    "ruby",
+    "scarlet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Flying mammal using echolocation. thing person state family student country problem school question",
+   "blocklist": [
+    "bat",
+    "bats",
+    "chiropteran",
+    "chiropterans",
+    "vampire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. government company business service community important different public",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders",
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Largest land animal with trunk. air sea car run walk food book town city rain green blue yellow",
+   "blocklist": [
+    "elephant",
+    "elephantine",
+    "elephants",
+    "jumbo",
+    "mammoth",
+    "mammoths",
+    "mastodon",
+    "mastodons",
+    "pachyderm",
+    "pachyderms",
+    "proboscidean",
+    "proboscidian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "King of the jungle. money job night morning mother father friend music game story door room power",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions",
+    "tarzan",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A riding animal that neighs. happy family river mountain computer phone table chair bread milk",
+   "blocklist": [
+    "equine",
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Farm bird that lays eggs. human point fact area eye open change line set end why far off let put",
+   "blocklist": [
+    "chicken",
+    "chickens",
+    "duck",
+    "fowl",
+    "goose",
+    "hen",
+    "hens",
+    "poultry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Curved yellow fruit peeled before eating. orange apple grape peach pear plum lemon lime mango melon",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Largest ocean. president history party national office police war art law field form age body mind",
+   "blocklist": [
+    "arctic",
+    "pacific",
+    "pacifically",
+    "pacification",
+    "pacify"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Female monarch. because never another always often together without during early later almost enough",
+   "blocklist": [
+    "butterfly",
+    "czarina",
+    "empress",
+    "queen",
+    "queendom",
+    "queenly",
+    "queens",
+    "queenship",
+    "regina",
+    "tsarina"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Number following 2. four five six seven nine ten hundred thousand second minute hour today tomorrow",
+   "blocklist": [
+    "third",
+    "three",
+    "threefold",
+    "threes",
+    "threesome",
+    "trey",
+    "triad",
+    "trio",
+    "triple",
+    "triplet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird. think thought write read learn become leave bring keep hold happen move",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "macaroni",
+    "penguin",
+    "penguins",
+    "rockhopper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Ocean predator with fins. please thank yes maybe sure sorry welcome hello goodbye morning evening",
+   "blocklist": [
+    "barracuda",
+    "dolphin",
+    "jaws",
+    "mako",
+    "orca",
+    "orcas",
+    "shark",
+    "sharks",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Long-necked spotted African mammal. earth wind stone rock metal gold silver iron glass paper music",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "cheetah",
+    "giraffe",
+    "giraffes",
+    "giraffish",
+    "leopard",
+    "okapi",
+    "okapis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Striped African equid. aah aal aas aba abas abba abbe abbes abbey abbot aback abaca abaci abacus",
+   "blocklist": [
+    "ass",
+    "donkey",
+    "onager",
+    "onagers",
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebraic",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ursine animal. abacas abaft abaka abakas abalone abalones abamp abampere abamps abandon abase abash",
+   "blocklist": [
+    "bear",
+    "bearcat",
+    "bearcats",
+    "bearish",
+    "bearlike",
+    "bears",
+    "bruin",
+    "bruins",
+    "cub",
+    "cubs",
+    "grizzlies",
+    "grizzly",
+    "panda",
+    "pandas",
+    "ursa",
+    "ursae",
+    "ursiform"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial. abacterial abacuses abamperes abandoned abandoner abandoners abandons",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "quokka",
+    "quokkas",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Eight armed cephalopod. abandoning abandonment abandonments abapical abased abasedly abasement",
+   "blocklist": [
+    "cuttlefish",
+    "kraken",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "abasements abaser abasers abases abashed abashes abashing abashment abashments abasia abasias abate",
+   "blocklist": [
+    "abatable",
+    "abated",
+    "abatement",
+    "abatements",
+    "abater",
+    "abaters",
+    "abates",
+    "abating",
+    "abatis",
+    "abatises",
+    "abator",
+    "abators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "frog"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6907.587838396966,
+  "cost_numerator": 20367768761,
+  "cost_denominator": 2948608,
+  "cost_exact": false,
+  "cost_mcse": 1.6530055736611065,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 20279310521,
+   "denominator": 2948608,
+   "value": 6877.587838396966,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:893,4:3751,5:8500,6:15136,7:23036,8:28383,9:24839,10:20288,11:15499,12:11352,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6530055736611065,
+   "rollouts": 256,
+   "rank_total": 40558621042,
+   "rank_denominator": 5897216,
+   "cache_key": "3f4793757609eae9d8b0b7dbdb0f07c3"
+  }
+ }
+}

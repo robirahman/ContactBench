@@ -1,0 +1,463 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-gpt_6_luna",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Paul Bunyan's occupation: timber cutter in plaid flannel",
+   "blocklist": [
+    "axeman",
+    "forester",
+    "logger",
+    "lumberjack",
+    "lumberman",
+    "timberman",
+    "woodsman"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "An Australian mammal that lays eggs; guess the duck-billed one or the spiny anteater",
+   "blocklist": [
+    "echidna",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Australian marsupial: 1st letter of koala + 8-letter word for a hopping pouch-bearer",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Bead-sliding counting frame; or if blocked, next turn we can use list_words offsets!",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Wait: Defender also has lookup tools! Let's do a broad clue: 1st alphabetically 7-letter element",
+   "blocklist": [
+    "bromine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arsenic"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arsenic"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "1st alphabetically 8-letter chemical element starting with s",
+   "blocklist": [
+    "samarium",
+    "scandium",
+    "selenium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1st alphabetically 6-letter chemical element starting with s",
+   "blocklist": [
+    "silver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1st alphabetically 9-letter chemical element starting with s",
+   "blocklist": [
+    "strontium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1st alphabetically 7-letter chemical element starting with s",
+   "blocklist": [
+    "silicon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st alphabetically unused 6-letter chemical element starting with s",
+   "blocklist": [
+    "sodium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "1st alphabetically unused 6-letter chemical element starting with s",
+   "blocklist": [
+    "sulfur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "September birthstone; blue precious corundum gem (8 letters)",
+   "blocklist": [
+    "sapphire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "10-letter chemical element starting with s",
+   "blocklist": [
+    "seaborgium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1st alphabetically 9-letter musical instrument starting with s",
+   "blocklist": [
+    "saxophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "5-letter Indian plucked string musical instrument starting with s",
+   "blocklist": [
+    "sarod",
+    "sitar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "6-letter small harpsichord or upright piano starting with s",
+   "blocklist": [
+    "spinet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "10-letter wearable marching-band bass tuba musical instrument starting with s",
+   "blocklist": [
+    "sousaphone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "11-letter electronic keyboard musical instrument starting with s",
+   "blocklist": [
+    "synth",
+    "synthesizer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "7-letter early Renaissance slide trombone musical instrument starting with s",
+   "blocklist": [
+    "sackbut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "6-letter Jewish ritual ram's-horn wind musical instrument starting with s",
+   "blocklist": [
+    "shofar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "7-letter ancient Egyptian sacred rattle percussion musical instrument starting with s",
+   "blocklist": [
+    "sistrum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "5-letter medieval and Renaissance double-reed woodwind musical instrument starting with s",
+   "blocklist": [
+    "shawm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "7-letter Japanese 3-stringed plucked banjo-like musical instrument starting with s",
+   "blocklist": [
+    "samisen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "6-letter Persian hammered dulcimer musical instrument starting with s",
+   "blocklist": [
+    "santur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "7-letter snake-shaped early bass wind musical instrument starting with s",
+   "blocklist": [
+    "serpent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "6-letter Greek mythological panpipe wind musical instrument starting with s",
+   "blocklist": [
+    "syrinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "5-letter marching drum with rattled wires across the bottom head starting with s",
+   "blocklist": [
+    "snare"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "9-letter silk-producing organ on a spider's abdomen starting with s",
+   "blocklist": [
+    "spinneret"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "10-letter waxy substance found in the head cavities of a sperm whale starting with s",
+   "blocklist": [
+    "spermaceti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "10-letter small black Belgian barge dog breed starting with s",
+   "blocklist": [
+    "schipperke"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 773.3708406075419,
+  "cost_numerator": 177194727,
+  "cost_denominator": 229120,
+  "cost_exact": false,
+  "cost_mcse": 0.663040115074554,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 170321127,
+   "denominator": 229120,
+   "value": 743.3708406075419,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:352,5:1046,6:1790,7:2645,8:3460,9:2903,10:2243,11:1562,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.663040115074554,
+   "rollouts": 256,
+   "rank_total": 340642254,
+   "rank_denominator": 458240,
+   "cache_key": "69ca0440169c054ddab3621a1d421f87"
+  }
+ }
+}

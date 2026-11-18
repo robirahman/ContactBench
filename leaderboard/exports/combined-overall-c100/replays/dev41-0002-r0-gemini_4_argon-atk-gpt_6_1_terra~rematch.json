@@ -1,0 +1,509 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-gpt_6_1_terra~rematch",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "collard",
+ "initial_prefix": "c",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 16216,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "cab cabal cabala cabalas cabaletta cabalettas cabalism cabalist caballero caballeros: B12",
+   "blocklist": [
+    "cobalamin",
+    "cyanocobalamin",
+    "cyanocobalamine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "caballed"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "cabalistic cabalists caballing cabals cabana cabanas cabaret cabarets cabbage: plural of cabalism",
+   "blocklist": [
+    "cabalisms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "cabbages cabbageworm cabbageworms cabbaging cabbala cabbalah cabbalahs cabbalas cabbed: missing one",
+   "blocklist": [
+    "cabbaged"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "cabbie cabbies cabbing cabby cabdriver cabdrivers caber cabernet cabernets cabers: CMV",
+   "blocklist": [
+    "cytomegalovirus",
+    "cytomegaloviruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "cabestro cabestros cabezon cabezone cabezones cabezons cabildo cabildos cabin cabined: D3",
+   "blocklist": [
+    "cholecalciferol",
+    "cholecalciferols"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "cabinet cabinetmaker cabinetmakers cabinetmaking cabinetmakings cabinetries cabinetry cabinets: CFC",
+   "blocklist": [
+    "chlorofluorocarbon",
+    "chlorofluorocarbons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "cabinetwork cabinetworks cabining cabins cable cabled cablegram cablegrams cables: Valley fever",
+   "blocklist": [
+    "coccidioidomycoses",
+    "coccidioidomycosis",
+    "coccidioses",
+    "coccidiosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "cablet cablets cableway cableways cabling cabman cabmen cabob cabobs caboched: gallbladder removal",
+   "blocklist": [
+    "cholecystectomies",
+    "cholecystectomized",
+    "cholecystectomy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "cabochon cabochons cabomba cabombas caboodle caboodles caboose cabooses caboshed: glow stick",
+   "blocklist": [
+    "chemical",
+    "chemiluminescence",
+    "chemiluminescences",
+    "chemiluminescent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "cabotage cabotages cabresta cabrestas cabresto cabrestos cabretta cabrettas cabrilla: gallstones",
+   "blocklist": [
+    "calculi",
+    "calculus",
+    "cholecystitis",
+    "cholelithiases",
+    "cholelithiasis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "cabrillas cabriole cabrioles cabriolet cabriolets cabs cabstand cabstands caca cacao cacaos: pinkeye",
+   "blocklist": [
+    "conjunctivites",
+    "conjunctivitides",
+    "conjunctivitis",
+    "conjunctivitises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "cacas cacciatore cachalot cachalots cache cachectic cached cachepot cachepots caches: heart muscle",
+   "blocklist": [
+    "cardiac",
+    "cardiacs",
+    "cardiomyopathies",
+    "cardiomyopathy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "cachet cacheted cacheting cachets cachexia cachexias cachexic cachexies cachexy: Bigfoot study",
+   "blocklist": [
+    "cryptozoologies",
+    "cryptozoologist",
+    "cryptozoologists",
+    "cryptozoology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "caching cachinnate cachinnated cachinnates cachinnating cachinnation: prednisone class",
+   "blocklist": [
+    "corticoid",
+    "corticoids",
+    "corticosteroid",
+    "corticosteroids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "cachinnations cachou cachous cachucha cachuchas cacique caciques caciquism: undescended testis",
+   "blocklist": [
+    "cryptorchid",
+    "cryptorchidism",
+    "cryptorchidisms",
+    "cryptorchids",
+    "cryptorchism",
+    "cryptorchisms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "caciquisms cackle cackled cackler cacklers cackles cackling cacodemon cacodemonic: dopamine class",
+   "blocklist": [
+    "catecholamine",
+    "catecholaminergic",
+    "catecholamines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "cacodemons cacodyl cacodyls cacoethes cacographical cacographies cacography: pork tapeworm disease",
+   "blocklist": [
+    "cysticercoses",
+    "cysticercosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "cacomistle cacomistles cacomixl cacomixls cacophonies cacophonous cacophonously: trophoblast cancer",
+   "blocklist": [
+    "choriocarcinoma",
+    "choriocarcinomas",
+    "choriocarcinomata"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "cacophony cacti cactoid cactus cactuses cacuminal cad cadaster cadasters: color stone print",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "chromolithograph",
+     "chromolithography"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "cadastral cadastrally cadastre cadastres cadaver cadaveric cadaverine cadaverines: diphtheria genus",
+   "blocklist": [
+    "cadaverous",
+    "cadaverously",
+    "cadavers",
+    "corynebacteria",
+    "corynebacterial",
+    "corynebacterium",
+    "coryneform"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "caddice caddices caddie caddied caddies caddis caddises caddish caddishly caddishness: Keflex class",
+   "blocklist": [
+    "cephalexin",
+    "cephalexins",
+    "cephalosporin",
+    "cephalosporins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "caddishnesses caddisworm caddisworms caddy caddying cade cadelle cadelles cadence: Thorazine generic",
+   "blocklist": [
+    "chlorpromazine",
+    "chlorpromazines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "cadenced cadences cadencies cadencing cadency cadent cadential cadenza cadenzas cades: element 48",
+   "blocklist": [
+    "cadmium",
+    "cadmiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "cadet cadets cadetship cadetships cadge cadged cadger cadgers cadges cadging cadgy: Hermes staff",
+   "blocklist": [
+    "caducean",
+    "caducei",
+    "caduceus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "cadi cadis cadmic cadre cadres cads caducities caducity caducous caeca caecal caecally: element 55",
+   "blocklist": [
+    "caesium",
+    "caesiums",
+    "cesium",
+    "cesiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "caecilian caecilians caecum caeoma caeomas caesar caesarean caesareans caesarian caesarians: Z=98",
+   "blocklist": [
+    "californium",
+    "californiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "caesars caespitose caestus caestuses caesura caesurae caesural caesuras caesuric cafe cafes: Z=58",
+   "blocklist": [
+    "cerium",
+    "ceriums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "cafeteria cafeterias cafetorium cafetoriums caff caffein caffeinated caffeine caffeines caffeins:Z96",
+   "blocklist": [
+    "curium",
+    "curiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "caffs caftan caftans cage caged cageful cagefuls cageling cagelings cager cagers cages cagey: Z=27",
+   "blocklist": [
+    "cobalt",
+    "cobalts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "cageyness cageynesses cagier cagiest cagily caginess caginesses caging cagy cahier cahiers: Z=24",
+   "blocklist": [
+    "chromium",
+    "chromiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 678.0435751283175,
+  "cost_numerator": 346637573,
+  "cost_denominator": 511232,
+  "cost_exact": false,
+  "cost_mcse": 0.5272954137656318,
+  "baseline": {
+   "numerator": 174269989,
+   "denominator": 262528,
+   "value": 663.8148654619698,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:37,4:230,5:665,6:1294,7:2051,8:2649,9:2351,10:1996,11:1602,12:1206,13:813,14:527,15:320,16:204,17:147,18:59,19:48,20:17",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.5351807556882284,
+   "rollouts": 256,
+   "rank_total": 348539978,
+   "rank_denominator": 525056,
+   "cache_key": "31ef23d6de10b8bdca5b8d1491491d7e"
+  },
+  "fallback": {
+   "numerator": 331300613,
+   "denominator": 511232,
+   "value": 648.0435751283175,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:35,4:221,5:639,6:1250,7:1997,8:2578,9:2294,10:1969,11:1581,12:1196,13:800,14:514,15:308,16:196,17:140,18:51,19:44,20:17",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.5272954137656318,
+   "rollouts": 256,
+   "rank_total": 331300613,
+   "rank_denominator": 511232,
+   "cache_key": "9a72215ee3e50366e728bd4aeda562b1"
+  }
+ }
+}

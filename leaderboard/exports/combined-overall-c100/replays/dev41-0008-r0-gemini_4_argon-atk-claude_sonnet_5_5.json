@@ -1,0 +1,260 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "First animal in the dictionary, African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Science of fermentation; or let us try the 10434th word starting with a",
+   "blocklist": [
+    "zymology",
+    "zymurgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Alignment of three celestial bodies, or 16216th c-word, or 10139th d-word, or 9273rd b-word",
+   "blocklist": [
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Pick the 1st word in list_words(prefix, 0, 1) for one of: q, x, z, j, v, y, k, w, u, g, f, p",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "qaid"
+    },
+    {
+     "seat": "guesser2",
+     "word": "qaid"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Female sheep; or 1st word in list_words(p, 0, 1) for p in: ew, ek, ej, ey, eq, ef, eg, eb, eo, eu",
+   "blocklist": [
+    "ewe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Pick the 1st word in list_words(p, 0, 1) for p in: ek, ej, ey, eq, ef, eg, eb, eo, eu, ev, el, ep",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "eke"
+    },
+    {
+     "seat": "guesser2",
+     "word": "eke"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pick the 1st word in list_words(p, 0, 1) for p in: enz, enq, enw, env, enu, ent, ens, enr, enl, enk",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "enkindle",
+     "enzymes"
+    ]
+   ],
+   "blocked_word_count": 648,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pick the 1st word in list_words(p, 0, 1) for p in: ena, enc, end, ene, enf, eng, enh, eni, enj",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "enable"
+    },
+    {
+     "seat": "guesser2",
+     "word": "enable"
+    }
+   ],
+   "prefix_after": "eng",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1st unused in list_words(\"eng\",0,100) or engulf engulfs engulfed engulfing engorge engorges engorged",
+   "blocklist": [
+    "engage",
+    "engaged",
+    "engagement",
+    "engages",
+    "engine",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st unused in list_words(\"eng\",0,100) or engrave engraved engraver engravers engraves engross engs",
+   "blocklist": [
+    "engrave",
+    "engraved",
+    "engraver",
+    "engravers",
+    "engraves",
+    "engross",
+    "engs"
+   ],
+   "blocked_ranges": [
+    [
+     "engaging",
+     "engineer"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "engagements"
+    },
+    {
+     "seat": "guesser2",
+     "word": "engagements"
+    }
+   ],
+   "prefix_after": "engi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "1st unused in list_words(\"engi\",0,100) or engirdle engirdled engirdles engirdling engirds engirt",
+   "blocklist": [
+    "engirdle",
+    "engirdled",
+    "engirdles",
+    "engirdling",
+    "engirds",
+    "engirt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "engineered"
+    },
+    {
+     "seat": "guesser2",
+     "word": "engineered"
+    }
+   ],
+   "prefix_after": "engin",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "engineering engineerings engineers engineries enginery engining enginous",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "engin",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

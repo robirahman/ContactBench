@@ -1,0 +1,547 @@
+{
+ "game_id": "dev41-0004-r0-claude_sonnet_5_5-atk-gemini_4_argon",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_argon",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Most common English article, definite one",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Conjunction joining words; plus; also; as well as",
+   "blocklist": [
+    "additionally",
+    "and",
+    "besides",
+    "further",
+    "furthermore",
+    "moreover"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Preposition meaning in favor of; used with 'while' in 'a ___ of' or 'what ___?'",
+   "blocklist": [
+    "bit",
+    "for",
+    "lot",
+    "pro"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs and chases mice",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "mouser",
+    "puss",
+    "pussycat",
+    "tabby",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Barking canine, man's best friend, often chases cats",
+   "blocklist": [
+    "cur",
+    "dog",
+    "doggie",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Star at the center of our solar system; daytime light and heat",
+   "blocklist": [
+    "daystar",
+    "sol",
+    "sun",
+    "sunlight",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Clear liquid essential for life; H2O; rain, rivers, and oceans are made of it",
+   "blocklist": [
+    "aqua",
+    "water",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Tall woody plant with trunk and branches; oak or maple is one; leaves grow on it",
+   "blocklist": [
+    "sapling",
+    "shrub",
+    "timber",
+    "tree",
+    "trees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Home; building where a family lives; a dwelling with rooms, roof and doors",
+   "blocklist": [
+    "abode",
+    "cottage",
+    "domicile",
+    "habitation",
+    "house",
+    "houses",
+    "mansion",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pages bound together for reading; novel or textbook; library lends it",
+   "blocklist": [
+    "book",
+    "booklet",
+    "books",
+    "codex",
+    "handbook",
+    "manual",
+    "publication",
+    "tome",
+    "volume",
+    "volumes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite; full or crescent in the night sky; astronauts landed on it in 1969",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "moon",
+    "moonbeam",
+    "moonlight",
+    "moons",
+    "orb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Flames and smoke; campfire heat; firefighters put it out with hoses; opposite of ice",
+   "blocklist": [
+    "blaze",
+    "bonfire",
+    "conflagration",
+    "fire",
+    "fires",
+    "flame",
+    "inferno",
+    "wildfire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Deep affection; Valentine's feeling; hate's opposite; romance",
+   "blocklist": [
+    "adoration",
+    "ardor",
+    "devotion",
+    "fondness",
+    "infatuation",
+    "love",
+    "passion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Ocean's smaller cousin; sailors cross it; shell and gull go with it; Mediterranean or Caspian is one",
+   "blocklist": [
+    "bay",
+    "brine",
+    "deep",
+    "gulf",
+    "lake",
+    "main",
+    "ocean",
+    "sea",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Mississippi or Nile is one; flows to the sea; has a bank and a mouth; not a lake or a creek",
+   "blocklist": [
+    "brook",
+    "channel",
+    "estuary",
+    "river",
+    "rivulet",
+    "stream",
+    "tributary",
+    "watercourse",
+    "waterway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Color of grass and emeralds; go on a traffic light; kermit the frog's color; not red or blue",
+   "blocklist": [
+    "chartreuse",
+    "emerald",
+    "green",
+    "greens",
+    "jade",
+    "lime",
+    "olive",
+    "verdant",
+    "viridian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings at dawn and builds a nest; robin or sparrow is one",
+   "blocklist": [
+    "avian",
+    "bird",
+    "birdie",
+    "birds",
+    "fowl",
+    "passerine",
+    "songbird",
+    "songbirds",
+    "songster",
+    "warbler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Beach grains; desert dunes; hourglass filling; castle building material at the shore",
+   "blocklist": [
+    "dirt",
+    "dust",
+    "gravel",
+    "grit",
+    "sand",
+    "sands",
+    "shingle",
+    "silica",
+    "silt",
+    "soil"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Everest or Fuji is one; taller than a hill; climbers scale its peak and snow caps it in winter",
+   "blocklist": [
+    "alp",
+    "alps",
+    "mount",
+    "mountain",
+    "mountains",
+    "mounts",
+    "peak",
+    "peaks",
+    "summit",
+    "summits",
+    "volcano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Breeze or gust; kites ride it; turbines spin from it; a weather vane points where it blows from",
+   "blocklist": [
+    "air",
+    "airflow",
+    "airs",
+    "breezes",
+    "draft",
+    "draught",
+    "gale",
+    "gales",
+    "gusts",
+    "squall",
+    "wind",
+    "winds",
+    "zephyr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Melody and rhythm; songs, notes, concerts; played by bands and orchestras; you hear it on a radio",
+   "blocklist": [
+    "audio",
+    "harmonies",
+    "harmony",
+    "melodies",
+    "music",
+    "musical",
+    "musics",
+    "song",
+    "sound",
+    "sounds",
+    "symphony",
+    "tune",
+    "tunes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Furniture with four legs for dinner plates",
+   "blocklist": [
+    "buffet",
+    "buffets",
+    "counter",
+    "counters",
+    "desk",
+    "desks",
+    "dinette",
+    "dinettes",
+    "island",
+    "islands",
+    "sideboard",
+    "sideboards",
+    "stand",
+    "stands",
+    "table",
+    "tables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "zebra",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "time",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "people",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "street",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6914.646311191085,
+  "cost_numerator": 1275779903,
+  "cost_denominator": 184504,
+  "cost_exact": false,
+  "cost_mcse": 1.5504686666402743,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1270244783,
+   "denominator": 184504,
+   "value": 6884.646311191085,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:940,4:3828,5:8551,6:15178,7:23063,8:28387,9:24857,10:20297,11:15498,12:11356,13:7825,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.5504686666402743,
+   "rollouts": 256,
+   "rank_total": 40647833056,
+   "rank_denominator": 5904128,
+   "cache_key": "819d75e74dbccfdc2fff14e063c2261e"
+  }
+ }
+}

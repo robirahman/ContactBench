@@ -1,0 +1,513 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-gemini_4_argon~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "supine",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Our daytime star: sea see set sit sat sad sod sap sip sup sin son sew sow sky ski spy say she shy",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen white flakes: saw six sly sob spa sue sum sub sue ski ski soap soup salt sand send some",
+   "blocklist": [
+    "sleet",
+    "slush",
+    "snow",
+    "snowfall",
+    "snowflake",
+    "snowflakes",
+    "snows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Legless reptile: stop step spin spot snap soft save safe same sale sail sack sick sock seek song",
+   "blocklist": [
+    "serpent",
+    "serpents",
+    "sidewinder",
+    "skink",
+    "slowworm",
+    "snake",
+    "snakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner: sabbath saber sable sabotage sabre sac sadden saddle salad salmon sample",
+   "blocklist": [
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Footwear worn on one foot: scarf shirt shorts skirt socks sport space sound sweet sugar smoke stone",
+   "blocklist": [
+    "sandal",
+    "sandals",
+    "shoe",
+    "shoes",
+    "skate",
+    "skates",
+    "slipper",
+    "slippers",
+    "sneaker",
+    "sneakers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Large ocean vessel: school skin sleep smile small smart south spring summer sister silver screen",
+   "blocklist": [
+    "sailboat",
+    "sailboats",
+    "schooner",
+    "schooners",
+    "ship",
+    "ships",
+    "sloop",
+    "sloops",
+    "steamer",
+    "steamers",
+    "steamship",
+    "steamships",
+    "submarine",
+    "submarines",
+    "superliner",
+    "superliners",
+    "supertanker",
+    "supertankers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Upholstered couch: says seem seen self sell sent side sign site size slow show shot shop shut swim",
+   "blocklist": [
+    "sectional",
+    "sectionals",
+    "settee",
+    "settees",
+    "settle",
+    "settles",
+    "sofa",
+    "sofas",
+    "squab",
+    "squabs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Red seeded berry: sab sabin sabir sabot sabra sabs sabe sabed sabers sabes sabins sabirs sables",
+   "blocklist": [
+    "salmonberries",
+    "salmonberry",
+    "serviceberries",
+    "serviceberry",
+    "silverberry",
+    "strawberries",
+    "strawberry",
+    "sugarberries",
+    "sugarberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Sharp bladed weapon: stand start state still study staff stage steam steel stick store storm street",
+   "blocklist": [
+    "sabres",
+    "scalpel",
+    "scalpels",
+    "scimitar",
+    "scimitars",
+    "shiv",
+    "shivs",
+    "spear",
+    "spears",
+    "stiletto",
+    "stilettoes",
+    "stilettos",
+    "switchblade",
+    "switchblades",
+    "sword",
+    "swords"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Jazz reed instrument: sadder saddest saddens saddled saddler saddles sadly sadness sadism sadist",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Arachnid with a stinging tail: safari safaris safely safer safes safest safety saffron safflower",
+   "blocklist": [
+    "scorpion",
+    "scorpions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Five armed marine echinoderm: sag saga sagaman sagamen sagamore saganash sagas sagbut sagbuts sage",
+   "blocklist": [
+    "starfish",
+    "starfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Apex predatory fish: sagamores saganashes sagebrush sagely sageness sager sages sagest saggar saggy",
+   "blocklist": [
+    "shark",
+    "sharks",
+    "swordfish",
+    "swordfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Ink squirting cephalopod: sago sagos sags sagum sagy sagier sagiest sagging sagged sagger saggers",
+   "blocklist": [
+    "sepia",
+    "sepias",
+    "squid",
+    "squids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Slow shelled garden mollusk: sahib sahibs sahiwal sahiwals sahuaro sahuaros saice saices said saids",
+   "blocklist": [
+    "slug",
+    "slugs",
+    "snail",
+    "snails"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Flippered circus mammal: saiga saigas sailable sailboard sailboards sailcloth sailed sailer sailers",
+   "blocklist": [
+    "seal",
+    "seals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bushy tailed tree rodent: sailcloths sailfish sailfishes sailing sailings sailor sailorly sailors",
+   "blocklist": [
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Smelly striped animal: sails sailplane sailplanes sailplaned sailplaner sailplaners sailboarding",
+   "blocklist": [
+    "skunk",
+    "skunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Murmuration bird: saimin saimins sain sained sainfoin sainfoins saining sains saint saintdom saints",
+   "blocklist": [
+    "starling",
+    "starlings",
+    "swallow",
+    "swallows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Woolly farm animal: saintdoms sainted sainthood sainthoods sainting saintlier saintliest saintlike",
+   "blocklist": [
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Tall yellow flower: saintliness saintlinesses saintly saintship saintships saith saiths sake sakes",
+   "blocklist": [
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Bones of the body: saker sakers saki sakis sal salaam salaamed salaaming salaams salable salably",
+   "blocklist": [
+    "scapula",
+    "scapulae",
+    "skeleton",
+    "skeletons",
+    "skull",
+    "skulls",
+    "spine",
+    "spines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Spotted amphibian: salal salals salads salami salamis salary salaries salaried sales salep saleps",
+   "blocklist": [
+    "salamander",
+    "salamanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Object orbiting a planet: salic salicin saline salines salina salinas saliva salivas salient salify",
+   "blocklist": [
+    "satellite",
+    "satellites",
+    "spacecraft",
+    "spacecrafts",
+    "spaceship",
+    "spaceships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Steps between floors: sall sallet sallets sallied sallier salliers sallies sallow sally salmi salmis",
+   "blocklist": [
+    "stair",
+    "staircase",
+    "staircases",
+    "stairs",
+    "stairway",
+    "stairways",
+    "stairwell",
+    "stairwells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 761.4962272003474,
+  "cost_numerator": 84166655,
+  "cost_denominator": 110528,
+  "cost_exact": false,
+  "cost_mcse": 0.6305474522221645,
+  "baseline": {
+   "numerator": 85865913,
+   "denominator": 115264,
+   "value": 744.9499670322043,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.64524150184898,
+   "rollouts": 256,
+   "rank_total": 343463652,
+   "rank_denominator": 461056,
+   "cache_key": "ced2167337019d13ccb82dae281f2ca3"
+  },
+  "fallback": {
+   "numerator": 80850815,
+   "denominator": 110528,
+   "value": 731.4962272003474,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:28,4:294,5:964,6:1727,7:2599,8:3429,9:2873,10:2219,11:1553,12:1126,13:712,14:470,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.6305474522221645,
+   "rollouts": 256,
+   "rank_total": 323403260,
+   "rank_denominator": 442112,
+   "cache_key": "516bd201408cd27e63dc302892a96a90"
+  }
+ }
+}

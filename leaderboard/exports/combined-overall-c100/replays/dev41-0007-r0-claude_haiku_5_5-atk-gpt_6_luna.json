@@ -1,0 +1,604 @@
+{
+ "game_id": "dev41-0007-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend that barks and wags its tail",
+   "blocklist": [
+    "bark",
+    "canine",
+    "dog",
+    "fido",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy",
+    "retriever",
+    "tail",
+    "terrier",
+    "woof"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Farm animal that gives milk and says moo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings at dawn and builds nests in trees",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "beak",
+     "beaks"
+    ],
+    [
+     "bird",
+     "birdwatchers"
+    ],
+    [
+     "bluebird",
+     "bluebirds"
+    ],
+    [
+     "bluejay",
+     "bluejays"
+    ]
+   ],
+   "blocked_word_count": 54,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Buzzing insect that makes honey in a hive",
+   "blocklist": [
+    "bee",
+    "beehive",
+    "beehives",
+    "beekeeper",
+    "beekeepers",
+    "beekeeping",
+    "bees",
+    "beeswax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Large furry forest omnivore that hibernates through winter",
+   "blocklist": [
+    "bear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Baked loaf made from flour and yeast, sliced for sandwiches",
+   "blocklist": [
+    "bread"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Vessel that floats on water and is steered with an oar or motor",
+   "blocklist": [
+    "boat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Bound pages with a cover that you read for story or study",
+   "blocklist": [
+    "bookworm",
+    "bookworms"
+   ],
+   "blocked_ranges": [
+    [
+     "book",
+     "books"
+    ]
+   ],
+   "blocked_word_count": 56,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Red building block stacked to make a wall or chimney",
+   "blocklist": [
+    "brick",
+    "bricklayer",
+    "bricks",
+    "brickwork"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Creamy spread churned from milk and often served on toast",
+   "blocklist": [
+    "butter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Round toy that kids bounce, throw, or kick in games",
+   "blocklist": [
+    "ball",
+    "balls",
+    "baseball",
+    "basketball",
+    "football",
+    "volleyball"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "bus bed big box bag bat bell bowl bug bone bank bar bay bin bud bit boy",
+   "blocklist": [
+    "baby",
+    "banana",
+    "barn",
+    "basket",
+    "bath",
+    "battle",
+    "beach",
+    "beard",
+    "beer",
+    "bench",
+    "berry",
+    "bicycle",
+    "black",
+    "blood",
+    "blue",
+    "board",
+    "body",
+    "bottle",
+    "bridge",
+    "brown",
+    "bush",
+    "business",
+    "button",
+    "buy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Underground storage organ that sprouts into a flower each spring",
+   "blocklist": [
+    "bulb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Fluffy long-eared hopper that eats carrots and lives in a burrow",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Footwear that covers the ankle and foot in winter",
+   "blocklist": [
+    "boot",
+    "booted",
+    "bootie",
+    "booties",
+    "booting",
+    "boots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Large shaggy plains animal with a big hump on its back",
+   "blocklist": [
+    "bison",
+    "buffalo",
+    "buffaloes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bristled tool used to scrub floors or smooth out your hair",
+   "blocklist": [
+    "bristle",
+    "broom",
+    "brush",
+    "brushes",
+    "comb",
+    "hairbrush",
+    "scrubber",
+    "toothbrush"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Group of musicians who play together on stage",
+   "blocklist": [
+    "band"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Round red root vegetable that is often pickled or boiled",
+   "blocklist": [
+    "beet",
+    "beetroot",
+    "beets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Cured pork strips fried for breakfast",
+   "blocklist": [
+    "bacon",
+    "bacons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Sleeping platform stacked in pairs in dorms and camps",
+   "blocklist": [
+    "bunk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Male sibling who shares your parents",
+   "blocklist": [
+    "brethren",
+    "bro",
+    "brother",
+    "brotherhood",
+    "brothers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Warm cover you pull over yourself in bed on a cold night",
+   "blocklist": [
+    "bedclothes",
+    "bedcover",
+    "bedcovering",
+    "bedding",
+    "bedspread",
+    "blanket",
+    "blanketing",
+    "blankets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Dam-building rodent with a broad flat tail that gnaws trees",
+   "blocklist": [
+    "beaver",
+    "beavers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "bad bid bow bum bun bur bib bop bye",
+   "blocklist": [
+    "bull",
+    "bullet",
+    "burn",
+    "burned"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bike"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Thorny shrub that produces blackberries and raspberries",
+   "blocklist": [
+    "blackberries",
+    "blackberry",
+    "bramble",
+    "brambles",
+    "briar",
+    "bush",
+    "raspberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Yellow metal alloy used in trumpets and tubas",
+   "blocklist": [
+    "brass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "What a flower does when it opens up in spring garden beds",
+   "blocklist": [
+    "bloom",
+    "bloomed",
+    "bloomer",
+    "bloomeries",
+    "bloomers",
+    "bloomery",
+    "bloomier",
+    "bloomiest",
+    "blooming",
+    "blooms",
+    "bloomy",
+    "blossom",
+    "blossomed",
+    "blossoming",
+    "blossoms",
+    "blossomy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Bake bold bite bump bust belt beam bean bolt bend bale bide bile",
+   "blocklist": [
+    "bake",
+    "bale",
+    "beam",
+    "bean",
+    "belt",
+    "bend",
+    "bide",
+    "bile",
+    "bite",
+    "bold",
+    "bolt",
+    "bump",
+    "bust"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bulk"
+    },
+    {
+     "seat": "guesser2",
+     "word": "beans"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 375.23021051941237,
+  "cost_numerator": 22886041,
+  "cost_denominator": 60992,
+  "cost_exact": false,
+  "cost_mcse": 0.38466627506198803,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 21056281,
+   "denominator": 60992,
+   "value": 345.23021051941237,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:26,4:207,5:559,6:1040,7:1551,8:1781,9:1394,10:953,11:641,12:381,13:217,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.38466627506198803,
+   "rollouts": 256,
+   "rank_total": 84225124,
+   "rank_denominator": 243968,
+   "cache_key": "1ee30edd57ec8d2a4fadfd30bc600274"
+  }
+ }
+}

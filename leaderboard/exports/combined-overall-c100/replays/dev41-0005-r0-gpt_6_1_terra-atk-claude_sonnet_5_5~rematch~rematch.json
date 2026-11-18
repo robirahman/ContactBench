@@ -1,0 +1,549 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_1_terra-atk-claude_sonnet_5_5~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "indurates",
+ "initial_prefix": "in",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 4499,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Opposite of outside. ink inn input into income index insect insult injury invite incur infant inch",
+   "blocklist": [
+    "inside"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Cannot be seen. inability inactive inaccurate inadequate inappropriate inane inanimate innate",
+   "blocklist": [
+    "inaudible",
+    "invisible",
+    "invisibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Not guilty. indeed instead interest intense include incredible indicate industry insist invest",
+   "blocklist": [
+    "indict",
+    "indicted",
+    "innocence",
+    "innocent",
+    "innocently",
+    "innocuous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Breathe air into lungs. information international individual internet internal introduce increase",
+   "blocklist": [
+    "inhalant",
+    "inhalants",
+    "inhalation",
+    "inhalations",
+    "inhale",
+    "inhaled",
+    "inhaler",
+    "inhalers",
+    "inhales",
+    "inhaling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Sideways figure eight represents this. infection inflation influence informal inform insistence",
+   "blocklist": [
+    "infinite",
+    "infinitely",
+    "infinitesimal",
+    "infinities",
+    "infinitude",
+    "infinity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A shot given by needle. insurance intelligence initiative investment instrument intention invasion",
+   "blocklist": [
+    "inject",
+    "injectable",
+    "injected",
+    "injection",
+    "injections",
+    "injector",
+    "inoculate",
+    "inoculation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Create something new. involved initial institution insight instinct invitation inevitable intuition",
+   "blocklist": [
+    "innovate",
+    "innovated",
+    "innovates",
+    "innovating",
+    "innovation",
+    "innovations",
+    "innovative",
+    "innovator",
+    "innovators",
+    "invent",
+    "invented",
+    "inventing",
+    "invention",
+    "inventions",
+    "inventive",
+    "inventor",
+    "inventors",
+    "invents"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Traveling under a false identity. independent interaction interactive interview intermediate interim",
+   "blocklist": [
+    "incognito"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Sleep disorder: can't sleep. inspect inspector instant instantly install instance integral integrity",
+   "blocklist": [
+    "insomnia",
+    "insomniac",
+    "insomniacs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Chemical used to kill bugs. indoor indoors indoorsy influence influenza inferior infinite infinity",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "insecticide"
+    },
+    {
+     "seat": "guesser2",
+     "word": "insecticide"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Rainbow color between blue and violet. industrial indigenous independence indirect indispensable",
+   "blocklist": [
+    "indigo",
+    "indigos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Move first line of paragraph inward. indebted indecent indecision indefinite indelible indemnity",
+   "blocklist": [
+    "indent",
+    "indentation",
+    "indentations",
+    "indented",
+    "indenting",
+    "indention",
+    "indentions",
+    "indents",
+    "indenture",
+    "indentured",
+    "indentures",
+    "indenturing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Impossible to destroy. indecisive indecipherable indefensible indefinitely indelibly indemnify",
+   "blocklist": [
+    "indecipherable",
+    "indecisive",
+    "indefensible",
+    "indefinitely",
+    "indelibly",
+    "indemnify",
+    "indestructibility",
+    "indestructible",
+    "indestructibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Angry at unfair treatment. individuals individuality indicator indicators indications indigestion",
+   "blocklist": [
+    "indict",
+    "indigent",
+    "indignant",
+    "indignantly",
+    "indignation",
+    "indignities",
+    "indignity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Teach beliefs uncritically. indebtedness indecency indelicate indemnification indecisiveness",
+   "blocklist": [
+    "indoctrinate",
+    "indoctrinated",
+    "indoctrinates",
+    "indoctrinating",
+    "indoctrination",
+    "indoctrinations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Formal admission into a group. indaba indabas indagate indagated indagates indagating indagation",
+   "blocklist": [
+    "induct",
+    "inductance",
+    "inductances",
+    "inducted",
+    "inductee",
+    "inductees",
+    "inducting",
+    "induction",
+    "inductions",
+    "inductive",
+    "inductor",
+    "inductors",
+    "inducts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Never tiring. indagations indagator indagators indamin indamine indamines indamins",
+   "blocklist": [
+    "indefatigable",
+    "indefatigably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Give in to a craving. indeclinable indecomposable indecorous indecorously indecorum indecorums",
+   "blocklist": [
+    "indulge",
+    "indulged",
+    "indulgence",
+    "indulgent",
+    "indulges",
+    "indulging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Apathetic; not caring. indicated indicates indicating indication indicative indices indictment indie",
+   "blocklist": [
+    "indifference",
+    "indifferent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Lazy; averse to exertion. indexed indexer indexes indexing indene indenes indicant indicants",
+   "blocklist": [
+    "indolence",
+    "indolent",
+    "indolently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Impossible to subdue or defeat. independently independents indescribable indexation indexers",
+   "blocklist": [
+    "indomitable",
+    "indomitably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Cannot be disputed. indenter indenters indentor indentors independences indevout indexations",
+   "blocklist": [
+    "indisputable",
+    "indisputably",
+    "indubitable",
+    "indubitably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Element with atomic number 49. indiscreet indiscretion indiscriminate individually individualism",
+   "blocklist": [
+    "indium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Slightly ill. indies indicium indicia indexical indictee indicter indictor indicts indictable",
+   "blocklist": [
+    "indisposed",
+    "indisposition"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Cannot be divided. indite indited inditer inditers indites inditing indiums indocile indocility",
+   "blocklist": [
+    "individuate",
+    "individuated",
+    "individuates",
+    "individuating",
+    "individuation",
+    "indivisibilities",
+    "indivisibility",
+    "indivisible",
+    "indivisibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Hardworking. indol indole indoles indols indow indowed indowing indows indoxyl indue indued indues",
+   "blocklist": [
+    "industrious",
+    "industriously",
+    "industriousness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Impropriety. indebtednesses indecencies indecenter indecentest indecently indecisions indecisively",
+   "blocklist": [
+    "indurate",
+    "indurated",
+    "indurating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indecorousness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indelicacy"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 44.705078125,
+  "cost_numerator": 22889,
+  "cost_denominator": 512,
+  "cost_exact": false,
+  "cost_mcse": 0.11272304049006024,
+  "baseline": {
+   "numerator": 28313239,
+   "denominator": 133632,
+   "value": 211.87469318726053,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:3,4:11,5:37,6:140,7:275,8:406,9:522,10:622,11:582,12:569,13:445,14:272,15:231,16:173,17:110,18:58,19:29,20:14",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.33073004556401264,
+   "rollouts": 256,
+   "rank_total": 28313239,
+   "rank_denominator": 133632,
+   "cache_key": "d2b4737cafce22ba68921f44b499e114"
+  },
+  "fallback": {
+   "numerator": 7529,
+   "denominator": 512,
+   "value": 14.705078125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:1,6:4,7:14,8:22,9:22,10:18,11:22,12:34,13:26,14:39,15:22,16:19,17:18,18:9,19:6,20:3",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.11272304049006024,
+   "rollouts": 256,
+   "rank_total": 82819,
+   "rank_denominator": 5632,
+   "cache_key": "375ef1cc93f515d10f1ed6c3d44f5ed5"
+  }
+ }
+}

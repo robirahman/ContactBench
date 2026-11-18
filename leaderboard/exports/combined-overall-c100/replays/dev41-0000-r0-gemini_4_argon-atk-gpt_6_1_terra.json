@@ -1,0 +1,469 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_argon-atk-gpt_6_1_terra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Middle dictionary word (offset 86304). Plural of a winter sled ridden feet-first on ice.",
+   "blocklist": [
+    "luges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Straight-line alignment of three celestial bodies, or a six-letter word with three y's and no aeiou.",
+   "blocklist": [
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Twas brillig, and the slithy toves: Carroll's nonsense poem about a fearsome beast.",
+   "blocklist": [
+    "jabberwocky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "If Defender blocks this 4-letter plural, next turn we both pick qintars without saying it in clue!",
+   "blocklist": [
+    "cats",
+    "ones",
+    "qats",
+    "zags",
+    "zeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "If the word I named in Turn 4 is used, pick the 1st dictionary word (offset 0), else pick the last!",
+   "blocklist": [
+    "aah",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Starting at turn 6, we always pick the word at offset (turn * 1000) regardless of my future clues.",
+   "blocklist": [
+    "antibody"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ace"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ignore turn 6 rule! Pick the 2nd word starting with X (offset 1 of prefix x): plural of a gum.",
+   "blocklist": [
+    "apodous",
+    "xanthans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A 4-letter animal!",
+   "blocklist": [
+    "aristae",
+    "bear",
+    "bird",
+    "boar",
+    "carp",
+    "clam",
+    "crab",
+    "crow",
+    "deer",
+    "dove",
+    "duck",
+    "fish",
+    "flea",
+    "frog",
+    "goat",
+    "hare",
+    "lion",
+    "lynx",
+    "mink",
+    "mole",
+    "moth",
+    "seal",
+    "swan",
+    "toad",
+    "wasp",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pick the second dictionary word (offset 1, past tense of the first word)!",
+   "blocklist": [
+    "aahed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pick the 3rd dictionary word (offset 2, ends in -ing)",
+   "blocklist": [
+    "aahing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites (9th dictionary word, offset 8)",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "11th dictionary word (offset 10), African insectivorous hyaenid",
+   "blocklist": [
+    "aardwolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "25th dictionary word (offset 24): counting frame with sliding beads",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Starting with ab, offset 11: edible marine snail with iridescent shell",
+   "blocklist": [
+    "abalone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Starting with ab, offset 59: French word for a slaughterhouse",
+   "blocklist": [
+    "abattoir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Starting with ab, offset 72: monastery or church building led by an abbot",
+   "blocklist": [
+    "abbey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Starting with ab, offset 95: belly or stomach region of the body",
+   "blocklist": [
+    "abdomen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Starting with ac, offset 0: thorny African tree or shrub of the mimosa family",
+   "blocklist": [
+    "acacia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Starting with ac, offset 17: school, college, or institution of higher learning",
+   "blocklist": [
+    "academy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Starting with ad, offset 0: traditional proverb or short pithy saying",
+   "blocklist": [
+    "adage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Starting with ae, offset 12: protective shield or sponsorship in Greek myth",
+   "blocklist": [
+    "aegis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Starting with af, offset 28: fond feeling of love, warmth, or tenderness",
+   "blocklist": [
+    "affection"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Starting with ag, offset 38: succulent desert plant used to make tequila",
+   "blocklist": [
+    "agave"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Starting with ah, offset 4: Hindu, Buddhist, and Jain principle of nonviolence toward living beings",
+   "blocklist": [
+    "ahimsa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Starting with ai, offset 23: Japanese martial art founded by Morihei Ueshiba",
+   "blocklist": [
+    "aikido"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Starting with aj, offset 0: slightly open, as a door",
+   "blocklist": [
+    "ajar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Starting with ak, offset 6: with hands on the hips and elbows turned outward",
+   "blocklist": [
+    "akimbo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Starting with al, offset 1: fine-grained translucent gypsum mineral used for carvings",
+   "blocklist": [
+    "alabaster"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Starting with am, offset 8: alloy of mercury with another metal, or a mixture",
+   "blocklist": [
+    "amalgam"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6829.468765254816,
+  "cost_numerator": 6715389319,
+  "cost_denominator": 983296,
+  "cost_exact": false,
+  "cost_mcse": 3.9061309862970237,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 6685890439,
+   "denominator": 983296,
+   "value": 6799.468765254816,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:962,4:3841,5:8609,6:15190,7:23087,8:28403,9:24865,10:20297,11:15498,12:11358,13:7826,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 3.9061309862970237,
+   "rollouts": 256,
+   "rank_total": 6685890439,
+   "rank_denominator": 983296,
+   "cache_key": "5050038811c5fdbd56117c553ade7953"
+  }
+ }
+}

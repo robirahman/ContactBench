@@ -1,0 +1,687 @@
+{
+ "game_id": "dev41-0003-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A feline pet that often chases mice and purrs when content",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A loyal companion animal that barks, fetches sticks, and wags its tail",
+   "blocklist": [
+    "bark",
+    "canine",
+    "dog",
+    "fetch",
+    "hound",
+    "mutt",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A building with a roof where people live, cook, and sleep",
+   "blocklist": [
+    "abode",
+    "apartment",
+    "cottage",
+    "domicile",
+    "dwelling",
+    "home",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "An aquatic creature with fins and gills that swims in a tank or pond",
+   "blocklist": [
+    "aquarium",
+    "carp",
+    "fish",
+    "goldfish",
+    "guppy",
+    "koi",
+    "minnow",
+    "tropical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A feathered flyer that sings from trees and lays eggs in a nest",
+   "blocklist": [
+    "avian",
+    "bird",
+    "bluebird",
+    "canary",
+    "crow",
+    "eagle",
+    "finch",
+    "fowl",
+    "hawk",
+    "lark",
+    "nestling",
+    "owl",
+    "parrot",
+    "pigeon",
+    "raven",
+    "robin",
+    "songbird",
+    "sparrow",
+    "swallow",
+    "thrush",
+    "warbler",
+    "waterfowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A hoofed grazing mammal that neighs, gallops, and is often ridden in a saddle",
+   "blocklist": [
+    "bronco",
+    "charger",
+    "colt",
+    "equine",
+    "filly",
+    "foal",
+    "gelding",
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "nag",
+    "ponies",
+    "pony",
+    "racehorse",
+    "stallion",
+    "steed",
+    "thoroughbred",
+    "workhorse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A vessel that floats on water and carries sailors across a sea or lake",
+   "blocklist": [
+    "barge",
+    "battleship",
+    "boat",
+    "canoe",
+    "cruiser",
+    "ferry",
+    "freighter",
+    "frigate",
+    "kayak",
+    "liner",
+    "raft",
+    "rowboat",
+    "sailboat",
+    "schooner",
+    "ship",
+    "steamer",
+    "tanker",
+    "tugboat",
+    "vessel",
+    "watercraft",
+    "yacht"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A striped African animal that roams grasslands in herds",
+   "blocklist": [
+    "antelope",
+    "bongo",
+    "eland",
+    "gazelle",
+    "giraffe",
+    "gnu",
+    "grassland",
+    "herd",
+    "hyena",
+    "impala",
+    "okapi",
+    "oryx",
+    "plains",
+    "safari",
+    "savanna",
+    "savannah",
+    "springbok",
+    "ungulate",
+    "wildebeest",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Large golden-maned predator, often called the king of the jungle",
+   "blocklist": [
+    "beast",
+    "lion",
+    "lioness",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A tiny rodent with a long scaly tail that squeaks and nibbles cheese",
+   "blocklist": [
+    "gerbil",
+    "hamster",
+    "mice",
+    "mouse",
+    "rat",
+    "rodent",
+    "squirrel",
+    "vole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Huge gray creature with a trunk and tusks, the largest land mammal",
+   "blocklist": [
+    "elephant",
+    "elephantine",
+    "elephants",
+    "ivory",
+    "mammoth",
+    "pachyderm",
+    "tusk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A legless reptile that hisses, slithers, and sheds its skin",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "boa",
+    "cobra",
+    "python",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A playful primate that swings through jungle branches and loves to eat bananas",
+   "blocklist": [
+    "ape",
+    "banana",
+    "chimpanzee",
+    "gorilla",
+    "marmoset",
+    "monkey",
+    "orangutan",
+    "primate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Orange-striped big hunter of Asian forests that roars",
+   "blocklist": [
+    "leopard",
+    "panther",
+    "tiger",
+    "tigers",
+    "tigress",
+    "wildcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk that squirts ink and hides in dens under reefs",
+   "blocklist": [
+    "cephalopod",
+    "cuttlefish",
+    "mollusk",
+    "nautilus",
+    "octopus",
+    "squid",
+    "tentacle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A large furry omnivore that hibernates through the winter in dens and caves",
+   "blocklist": [
+    "bear",
+    "bears",
+    "black",
+    "brown",
+    "cave",
+    "cub",
+    "den",
+    "grizzly",
+    "hibernate",
+    "hibernation",
+    "koala",
+    "panda",
+    "polar",
+    "teddy",
+    "ursine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A crustacean with pincers that scuttles sideways along a beach",
+   "blocklist": [
+    "barnacle",
+    "clam",
+    "claw",
+    "claws",
+    "crab",
+    "crabs",
+    "crawfish",
+    "crayfish",
+    "crustacean",
+    "hermit",
+    "lobster",
+    "lobsters",
+    "mussel",
+    "oyster",
+    "prawn",
+    "prawns",
+    "scallop",
+    "shellfish",
+    "shrimp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A wild pack hunter that howls at the moon and roams northern forests",
+   "blocklist": [
+    "howler",
+    "lupine",
+    "lycanthrope",
+    "werewolf",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "A bearded farm animal that bleats and climbs rocky hills",
+   "blocklist": [
+    "goat",
+    "goats",
+    "ibex",
+    "ibexes",
+    "kid",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A green amphibian that hops, croaks near ponds, and catches flies with a sticky tongue",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "frog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "frog"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Milk-producing sac hanging beneath a cow",
+   "blocklist": [
+    "udder"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "ubiety udo ugly ulna ulcer ukase uhlan ulema ulan ulpan ulster ultima ufology uke ughs udos ulexite",
+   "blocklist": [
+    "unseal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ugly"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Small four-stringed Hawaiian guitar strummed at island luaus",
+   "blocklist": [
+    "ukulele"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Painful open sores on the stomach lining or skin",
+   "blocklist": [
+    "ulcerate",
+    "ulcerated",
+    "ulceration",
+    "ulcerations",
+    "ulcerative",
+    "ulcerous",
+    "ulcers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Final, highest, or best possible; last in a sequence",
+   "blocklist": [
+    "ultimate",
+    "upmost",
+    "uppermost",
+    "utmost"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Your parent's brother, a male relative on the family tree",
+   "blocklist": [
+    "uncle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "unable unite upper union until untie upon undo unit usual usher using usage user urban urge",
+   "blocklist": [
+    "unsealed",
+    "unseals",
+    "unseam",
+    "unseated",
+    "unseen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unit"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Hidden motive behind an action, not openly stated",
+   "blocklist": [
+    "ulterior",
+    "underlying",
+    "unexpressed",
+    "unspoken",
+    "unstated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "ugh ukes ulnad ulnae ulnar ulnas ulama ulamas ullage ullages uglies ukeleles ugsome",
+   "blocklist": [
+    "ukes",
+    "ulama",
+    "ulamas",
+    "ullage",
+    "ulnae",
+    "ulnar",
+    "ulnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ugh"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ubique udders uglier uglify uhlans ukases ulans ulemas ulcered ultimas ulsters ukelele ulcering",
+   "blocklist": [
+    "ubique",
+    "udders",
+    "uglier",
+    "uglify",
+    "uhlans",
+    "ukases",
+    "ukelele",
+    "ulans",
+    "ulcered",
+    "ulemas",
+    "ulsters",
+    "ultimas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "unsure"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 243.99499848929557,
+  "cost_numerator": 45223009,
+  "cost_denominator": 185344,
+  "cost_exact": false,
+  "cost_mcse": 0.2763247663273282,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 39662689,
+   "denominator": 185344,
+   "value": 213.99499848929557,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:26,5:93,6:325,7:523,8:814,9:724,10:661,11:495,12:429,13:310,14:217,15:126,16:103,17:54,18:30,19:19,20:11",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.2763247663273282,
+   "rollouts": 256,
+   "rank_total": 39662689,
+   "rank_denominator": 185344,
+   "cache_key": "1f87ad886cc4bded662ad4b942ce868c"
+  }
+ }
+}

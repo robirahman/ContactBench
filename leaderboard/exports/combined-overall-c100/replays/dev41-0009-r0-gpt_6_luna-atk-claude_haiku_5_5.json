@@ -1,0 +1,274 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "common household feline",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "pet",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "fear of confined spaces",
+   "blocklist": [
+    "claustrophobia",
+    "claustrophobic",
+    "confine",
+    "confined",
+    "fear",
+    "fears",
+    "phobia",
+    "phobias",
+    "shift",
+    "shifter",
+    "shifts",
+    "space",
+    "spaces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Nocturnal bird often portrayed as wise",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A Clever Enigma: beginnings matter.",
+   "blocklist": [
+    "ace",
+    "clever",
+    "enigma",
+    "riddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A mythical guardian famous for posing a riddle near the pyramids.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sphinx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sphinx"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Read the first letters: Sly unicorns gather around rivers.",
+   "blocklist": [
+    "sly",
+    "slyer",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Adolphe Sax's single-reed jazz instrument",
+   "blocklist": [
+    "sax",
+    "sousaphone",
+    "sousaphones"
+   ],
+   "blocked_ranges": [
+    [
+     "sax",
+     "saxophonist"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Silent artists remember distant islands; nightfall echoes.",
+   "blocklist": [
+    "shafts",
+    "sift",
+    "sifter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sardine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sardine"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Sailors honor ancient reefs daily.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shard"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Shy hikers inspect valleys, exploring ravines.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shifty",
+     "shiny"
+    ]
+   ],
+   "blocked_word_count": 95,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shiver"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiver"
+    }
+   ],
+   "prefix_after": "shif",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Silent hikers inspect forests; travelers leave every stream silently.",
+   "blocklist": [
+    "shift",
+    "shiftable",
+    "shifted",
+    "shiftier",
+    "shiftiest",
+    "shiftily",
+    "shiftiness",
+    "shiftinesses",
+    "shifting",
+    "shiftless",
+    "shiftlessly",
+    "shiftlessness",
+    "shiftlessnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "shif",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "shifters",
+   "prefix_after": "shif",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

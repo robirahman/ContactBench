@@ -1,0 +1,202 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "26.2 mile footrace",
+   "blocklist": [
+    "marathon",
+    "marathons",
+    "race",
+    "run",
+    "running"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "duck-billed egg-laying mammal",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "echidnas",
+    "mammal",
+    "monotreme",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "1st word alphabetically in dictionary (index 0)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aah"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aah"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "cast block of gold or metal (or list_words prefix i offset 3473)",
+   "blocklist": [
+    "ingot",
+    "ingots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "ibex ibexes ibices ibidem ibis ibises ice icebergs icebox icecap iced iceman: 1st word starting w/ i",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "iamb"
+    },
+    {
+     "seat": "guesser2",
+     "word": "iamb"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "inboard inborn inbound inby incant infant infamy ingest ingle indeed: 1st word starting w/ in",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inabilities"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inabilities"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "indene indent indents indie indigo indite indol indole indoor indow: 1st word starting w/ ind",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indaba"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indaba"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "induce induced inducer induces induct indue indued indues indulge indulin: 1st word starting w/ indu",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indubitabilities"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indubitabilities"
+    }
+   ],
+   "prefix_after": "indur",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "indurate indurated indurates indurating induration indurations indurative",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "indur",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 9.0,
+  "cost_numerator": 9,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

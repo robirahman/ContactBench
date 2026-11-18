@@ -1,0 +1,167 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A small domesticated feline that purrs",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kittens",
+    "puss",
+    "pussy",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A ring-shaped coral island enclosing a lagoon",
+   "blocklist": [
+    "atoll",
+    "atolls",
+    "island",
+    "lagoon",
+    "reef"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A Welsh term for a steep-sided hollow or valley on a mountainside.",
+   "blocklist": [
+    "combe",
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Read the first letters of these words: Quiet umbrellas invite zany zebras every day.",
+   "blocklist": [
+    "day",
+    "effect",
+    "effects",
+    "effectual",
+    "every",
+    "invite",
+    "quiet",
+    "zany"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quizzed"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quizzed"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Read initials, as before: Eager artists gather leafy easels.",
+   "blocklist": [
+    "eager",
+    "eagle",
+    "earl",
+    "early",
+    "easel",
+    "easels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Notice initials: Eccentric bears observe nature.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "each",
+     "effectuate"
+    ],
+    [
+     "effectuates",
+     "eyry"
+    ]
+   ],
+   "blocked_word_count": 7036,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "effectuated",
+   "prefix_after": "e",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7.0,
+  "cost_numerator": 7,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

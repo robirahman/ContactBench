@@ -1,0 +1,343 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Bags and suitcases you pack for travel",
+   "blocklist": [
+    "baggage",
+    "luggage",
+    "satchel",
+    "trunk",
+    "valise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lugged"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Inuit word for the soft underwool of the Arctic muskox",
+   "blocklist": [
+    "qiviut",
+    "wool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The act of persuading someone not to take a particular course of action",
+   "blocklist": [
+    "deter",
+    "deterrence",
+    "discourage",
+    "discouragement",
+    "dissuasion"
+   ],
+   "blocked_ranges": [
+    [
+     "dissuade",
+     "dissuading"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Large burrowing African mammal that feeds on termites and ants",
+   "blocklist": [
+    "aardvark",
+    "aardwolf",
+    "anteater",
+    "armadillo",
+    "mongoose",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Semiaquatic egg-laying mammal of Australia with a duck-like bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypi",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Tropical American weevil often found as the final entry in dictionaries",
+   "blocklist": [
+    "collar",
+    "collie"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zyzzyva"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zyzzyva"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ancient lobe-finned fish once thought extinct for millions of years until found alive in 1938",
+   "blocklist": [
+    "coelacanth",
+    "coelacanths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Italian art term for the treatment of light and shade in painting and drawing",
+   "blocklist": [
+    "chiaroscuro"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Adjective from Greek roots meaning having shapely or well-proportioned buttocks",
+   "blocklist": [
+    "cola",
+    "cold",
+    "color"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "callipygian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "callipygian"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Botanical term for the embryonic seed leaf that first emerges from a germinating plant",
+   "blocklist": [
+    "cotyledon",
+    "cotyledons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "12-letter British slang word for stomachache or nervous butterflies in the belly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collywobbles"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collywobbles"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "10-letter alkaloid drug from autumn crocus used to treat gout",
+   "blocklist": [
+    "colchicine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "10-letter zoological order of beetles and weevils meaning sheath-winged",
+   "blocklist": [
+    "colander",
+    "collage",
+    "collagen",
+    "collapse",
+    "collate",
+    "colleague",
+    "collect",
+    "college",
+    "collide",
+    "collision",
+    "colon",
+    "colonel",
+    "colony",
+    "colossal",
+    "colt",
+    "column"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coleoptera"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleoptera"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "11-letter plant tissue of elongated living cells that supports growing stems",
+   "blocklist": [
+    "collaborate",
+    "collage",
+    "collagist",
+    "collarbone",
+    "collards",
+    "collared",
+    "collaret",
+    "collarets",
+    "collars",
+    "collate",
+    "collateral",
+    "collateralize",
+    "collation",
+    "collator",
+    "collected",
+    "collectible",
+    "collecting",
+    "collection",
+    "collective",
+    "collector"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collenchyma"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collenchyma"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "11-letter adjective meaning able to fold down compactly: collarbones collarless collard",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 15.0,
+  "cost_numerator": 15,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

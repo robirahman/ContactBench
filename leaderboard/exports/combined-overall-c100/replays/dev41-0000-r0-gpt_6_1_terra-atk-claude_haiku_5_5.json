@@ -1,0 +1,154 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_1_terra-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_haiku_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. Bonus: aah aal aas aba abaca abaci aback abacus abaft abaka abamp abas abase abased",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "H2O. Bonus: wab wabble wabbled wabbler wabblers wabbles wabblier wabbliest wabbling wabbly wabs wack",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wab",
+     "weld"
+    ]
+   ],
+   "blocked_word_count": 1342,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Howling canine. weldable welded welder welders welding weldless weldment weldments weldor weldors",
+   "blocklist": [
+    "wee",
+    "weed",
+    "week",
+    "weir",
+    "well",
+    "wend",
+    "went",
+    "west",
+    "wet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wolf"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wolf"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Government assistance for the poor. welds welfares welfarism welfarisms welfarist welfarists welkin",
+   "blocklist": [
+    "weak",
+    "wean",
+    "wear",
+    "wept",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "welfare"
+    },
+    {
+     "seat": "guesser2",
+     "word": "welfare"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Lycanthrope. weregild weregilds werewolves wergeld wergelds wergelt wergelts wergild wergilds wert",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "wer",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7.0,
+  "cost_numerator": 7,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

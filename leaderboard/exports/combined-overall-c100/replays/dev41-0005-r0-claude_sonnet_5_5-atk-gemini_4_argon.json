@@ -1,0 +1,384 @@
+{
+ "game_id": "dev41-0005-r0-claude_sonnet_5_5-atk-gemini_4_argon",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_argon",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common furry household pet that purrs and chases mice",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend, barks and wags its tail, often walks on a leash",
+   "blocklist": [
+    "canine",
+    "canines",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "hound",
+    "hounds",
+    "pooch",
+    "pup",
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Large animal you ride, with a mane, hooves and a gallop; says neigh",
+   "blocklist": [
+    "bronco",
+    "broncos",
+    "colt",
+    "colts",
+    "equine",
+    "equines",
+    "fillies",
+    "filly",
+    "foal",
+    "foals",
+    "horse",
+    "horses",
+    "mare",
+    "mares",
+    "mustang",
+    "mustangs",
+    "ponies",
+    "pony",
+    "stallion",
+    "stallions",
+    "steed",
+    "steeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Farm animal that gives milk and says moo; beef comes from it; grazes in pastures",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Frozen water; cubes of it chill a drink; skaters glide on it in winter; melts into liquid",
+   "blocklist": [
+    "ice",
+    "iceberg",
+    "icebergs",
+    "iced",
+    "ices",
+    "icicle",
+    "icicled",
+    "icicles",
+    "icier",
+    "iciest",
+    "icily",
+    "iciness",
+    "icinesses",
+    "icing",
+    "icings",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Piece of land surrounded by water; Hawaii or Iceland, for example, is one",
+   "blocklist": [
+    "island",
+    "islanded",
+    "islander",
+    "islanders",
+    "islanding",
+    "islands",
+    "isle",
+    "isled",
+    "isleless",
+    "isles",
+    "islet",
+    "islets",
+    "isling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "idea",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "item",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "important",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "information",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "interest",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "inside",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "internal",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "increase",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "industry",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "individual",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "international",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "include",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "image",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "instead",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "issue",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "involve",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "indeed",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "inner",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "inch",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "iron",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "idle",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "ink",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 345.55218915636044,
+  "cost_numerator": 25034565,
+  "cost_denominator": 72448,
+  "cost_exact": false,
+  "cost_mcse": 0.3821098131821056,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 22861125,
+   "denominator": 72448,
+   "value": 315.55218915636044,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:15,4:49,5:109,6:277,7:496,8:724,9:849,10:939,11:858,12:767,13:605,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.3821098131821056,
+   "rollouts": 256,
+   "rank_total": 68583375,
+   "rank_denominator": 217344,
+   "cache_key": "123fd131591656cc56d8538d48012940"
+  }
+ }
+}

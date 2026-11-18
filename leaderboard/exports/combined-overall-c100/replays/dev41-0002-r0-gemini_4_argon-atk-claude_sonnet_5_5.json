@@ -1,0 +1,572 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Bags and suitcases packed for a trip, seven letters",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "bags",
+    "cases",
+    "luggage",
+    "luggages",
+    "suitcase",
+    "suitcases",
+    "trunks",
+    "valise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Single male member of a trial jury, seven letters",
+   "blocklist": [
+    "foreman",
+    "foremen",
+    "juror",
+    "jurors",
+    "juryman",
+    "jurymen",
+    "tales",
+    "talesman",
+    "venireman",
+    "veniremen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Percussion instrument of tuned wooden bars struck with mallets, nine letters",
+   "blocklist": [
+    "glockenspiel",
+    "marimba",
+    "marimbas",
+    "vibraphone",
+    "xylophone",
+    "xylophones",
+    "xylophonist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Word at offset 86307 in list_words(prefix='', offset=86307, limit=1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lugged"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lugged"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Leafy green vegetable used to make coleslaw and sauerkraut",
+   "blocklist": [
+    "cabbage",
+    "cabbages",
+    "coleslaw",
+    "collards",
+    "greens",
+    "kale",
+    "lettuce",
+    "slaw",
+    "spinach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Word at offset 8108 in list_words(prefix='c', offset=8108, limit=1)",
+   "blocklist": [
+    "coigned"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Diacritical mark placed under the letter c in French to give it an s sound",
+   "blocklist": [
+    "cedilla",
+    "cedillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Circular particle accelerator invented by Ernest Lawrence",
+   "blocklist": [
+    "accelerator",
+    "betatron",
+    "collider",
+    "cyclotron",
+    "cyclotrons",
+    "synchrotron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Autumn flower symbolic of the Japanese imperial throne, also called a mum, thirteen letters",
+   "blocklist": [
+    "chrysanthemum",
+    "chrysanthemums",
+    "mum",
+    "mums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Multihulled boat or sailboat with two parallel hulls of equal size, nine letters",
+   "blocklist": [
+    "catamaran",
+    "catamarans",
+    "trimaran"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Flaky crescent-shaped pastry made of layered yeast-leavened dough, nine letters",
+   "blocklist": [
+    "croissant",
+    "croissants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Mythological creature with the upper body of a human and the lower body and legs of a horse",
+   "blocklist": [
+    "centaur",
+    "centaurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Old World lizard famous for changing its skin color and having a prehensile tail, nine letters",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Andean rodent prized for its extremely dense and soft fur, ten letters",
+   "blocklist": [
+    "chinchilla",
+    "chinchillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Sweet orange-fleshed muskmelon with a netted rind, ten letters",
+   "blocklist": [
+    "cantaloup",
+    "cantaloupe",
+    "cantaloupes",
+    "cantaloups",
+    "casaba",
+    "casabas",
+    "honeydew",
+    "honeydews",
+    "melon",
+    "melons",
+    "muskmelon",
+    "muskmelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Art of decorative or ornamental handwriting done with a brush or pen, eleven letters",
+   "blocklist": [
+    "calligrapher",
+    "calligraphic",
+    "calligraphist",
+    "calligraphy",
+    "cursive",
+    "handwriting",
+    "lettering",
+    "penmanship",
+    "script"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Military disguise using mottled patterns to blend into surroundings, ten letters",
+   "blocklist": [
+    "camouflage",
+    "camouflaged",
+    "camouflages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Italian espresso drink topped with steamed milk foam, ten letters",
+   "blocklist": [
+    "cappuccino",
+    "cappuccinos",
+    "espresso",
+    "espressos",
+    "latte",
+    "lattes",
+    "mocha",
+    "mochas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Green pigment in plant leaves essential for photosynthesis, eleven letters",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chlorophyll"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chlorophyll"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Horn of plenty overflowing with harvest fruits and vegetables, ten letters",
+   "blocklist": [
+    "corn",
+    "cornucopia",
+    "cornucopias",
+    "coronet",
+    "fruits",
+    "harvest",
+    "horn",
+    "overflowing",
+    "plenty",
+    "vegetables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Ancient Roman amphitheater in Rome where gladiators fought, nine letters",
+   "blocklist": [
+    "coliseum",
+    "coliseums",
+    "colosseum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Lobe-finned fish once thought extinct for millions of years, living fossil, ten letters",
+   "blocklist": [
+    "coelacanth",
+    "coelacanths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Named group of stars forming a recognizable pattern in the night sky, thirteen letters",
+   "blocklist": [
+    "constellation",
+    "constellations",
+    "star",
+    "stars",
+    "zodiac"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Spanish sixteenth-century conqueror of Mexico and Peru such as Cortes or Pizarro, twelve letters",
+   "blocklist": [
+    "conquistador",
+    "conquistadores",
+    "conquistadors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Australian crested parrot with a curved bill and erectile head crest, eight letters",
+   "blocklist": [
+    "cockatiel",
+    "cockatiels",
+    "cockatoo",
+    "cockatoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Inflammation of the membrane lining the eyelid, commonly called pinkeye, fourteen letters",
+   "blocklist": [
+    "conjunctivitis",
+    "conjunctivitises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Venomous semiaquatic pit viper of the southern US, also called water moccasin, eleven letters",
+   "blocklist": [
+    "copperhead",
+    "cottonmouth",
+    "cottonmouths",
+    "moccasin",
+    "rattlesnake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Spiral metal tool for pulling stoppers from wine bottles, nine letters",
+   "blocklist": [
+    "bottle",
+    "bottles",
+    "cork",
+    "corks",
+    "corkscrew",
+    "corkscrews",
+    "opener",
+    "screw",
+    "stopper",
+    "stoppers",
+    "uncork",
+    "wine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Perforated kitchen bowl used for draining liquid from pasta, eight letters",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "sieve",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Thick cotton fabric with vertical velvety ribs or wales, eight letters",
+   "blocklist": [
+    "corduroy",
+    "corduroys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 307.9748903508772,
+  "cost_numerator": 2808731,
+  "cost_denominator": 9120,
+  "cost_exact": false,
+  "cost_mcse": 0.39837125650740485,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 2535131,
+   "denominator": 9120,
+   "value": 277.9748903508772,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:14,4:66,5:165,6:334,7:570,8:778,9:862,10:861,11:784,12:649,13:470,14:309,15:202,16:118,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.39837125650740485,
+   "rollouts": 256,
+   "rank_total": 40562096,
+   "rank_denominator": 145920,
+   "cache_key": "a3f3f0dc9506abac556e0589033a83a8"
+  }
+ }
+}

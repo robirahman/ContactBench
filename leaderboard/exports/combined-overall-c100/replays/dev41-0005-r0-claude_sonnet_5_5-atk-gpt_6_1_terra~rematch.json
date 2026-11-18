@@ -1,0 +1,357 @@
+{
+ "game_id": "dev41-0005-r0-claude_sonnet_5_5-atk-gpt_6_1_terra~rematch",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gpt_6_1_terra",
+ "secret": "indurates",
+ "initial_prefix": "i",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 6954,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Frozen water, cold cubes in a drink (starts with i)",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Land surrounded by sea, like Hawaii or Iceland's cousin",
+   "blocklist": [
+    "island",
+    "islet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A brainstorm thought or notion, lightbulb moment",
+   "blocklist": [
+    "idea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Of great significance or value, vital, key; 9 letters, starts with im",
+   "blocklist": [
+    "important"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Metal element, Fe; also a tool for pressing wrinkled shirts (starts with i)",
+   "blocklist": [
+    "iron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Bug with six legs, like an ant or beetle (starts with i)",
+   "blocklist": [
+    "insect"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "inn ink ion ill imp ivy icy irk ire ilk its ids iffy ibis inch info into itch item ibex iris idol",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inside"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Curiosity or a fee a bank charges on loans; 8 letters, begins with the letter i",
+   "blocklist": [
+    "interest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Picture or likeness, a photo is one; 5 letters, starts with ima",
+   "blocklist": [
+    "image"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Truly, in fact; 'yes, ___' (6 letters, starts with ind)",
+   "blocklist": [
+    "indeed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "idiom",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "To create something brand new, like a gadget or machine (6 letters, starts with inv)",
+   "blocklist": [
+    "invent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Dome-shaped snow house built by Inuit (5 letters, starts with ig)",
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "To pay no attention to, snub on purpose (6 letters, starts with ign)",
+   "blocklist": [
+    "ignore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Large green tropical lizard, sometimes kept as a pet (6 letters, starts with igu)",
+   "blocklist": [
+    "iguana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "illustrate",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "increase",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "information",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "individual",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "impossible",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "identify",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "imagine",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "imitate",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "involve",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "instead",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "international",
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 345.45197421508215,
+  "cost_numerator": 75347221,
+  "cost_denominator": 218112,
+  "cost_exact": false,
+  "cost_mcse": 0.35349172846082544,
+  "baseline": {
+   "numerator": 17333635,
+   "denominator": 54592,
+   "value": 317.51236444900354,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:19,4:58,5:118,6:285,7:504,8:732,9:853,10:940,11:859,12:767,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.36278994412085985,
+   "rollouts": 256,
+   "rank_total": 69334540,
+   "rank_denominator": 218368,
+   "cache_key": "8442ef5829f75f5b769d6c411707bdad"
+  },
+  "fallback": {
+   "numerator": 68803861,
+   "denominator": 218112,
+   "value": 315.45197421508215,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:46,5:114,6:278,7:500,8:729,9:852,10:937,11:858,12:767,13:605,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.35349172846082544,
+   "rollouts": 256,
+   "rank_total": 68803861,
+   "rank_denominator": 218112,
+   "cache_key": "986419687c45f82f4ab2d53ba9406730"
+  }
+ }
+}

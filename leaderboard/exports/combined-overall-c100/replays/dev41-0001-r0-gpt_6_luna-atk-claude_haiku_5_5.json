@@ -1,0 +1,329 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Canine companion: cat rat bat bee ant ape arm art ash ask ate bad bag ban bar bed beg bet big bit",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dog"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Saltwater body, smaller than an ocean",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "sumo"
+    ]
+   ],
+   "blocked_word_count": 16571,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Bright orb above us",
+   "blocklist": [
+    "sun",
+    "sup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Elegant long-necked waterbird often shown in pairs",
+   "blocklist": [
+    "crane",
+    "egret",
+    "heron",
+    "ibis",
+    "stork",
+    "swan",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Ice cream dessert often served with syrup, nuts, or fruit",
+   "blocklist": [
+    "summer",
+    "super",
+    "supper",
+    "supply"
+   ],
+   "blocked_ranges": [
+    [
+     "sumac",
+     "supe"
+    ]
+   ],
+   "blocked_word_count": 233,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Japanese dish of vinegared rice, often served with fish or vegetables.",
+   "blocklist": [
+    "sunny",
+    "sunset",
+    "superb",
+    "supervise",
+    "supplement",
+    "supplies",
+    "support",
+    "suppose",
+    "supreme",
+    "surface"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sushi"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sushi"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Remain alive through a dangerous ordeal",
+   "blocklist": [
+    "sudden",
+    "sugar",
+    "suit",
+    "sulk",
+    "summit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "survive"
+    },
+    {
+     "seat": "guesser2",
+     "word": "survive"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "An exploding star that can briefly outshine an entire galaxy",
+   "blocklist": [
+    "supernova"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Large self-service store selling groceries and household goods",
+   "blocklist": [
+    "supermarket",
+    "suppress",
+    "supremacy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A nation's global dominance, or an extraordinary ability beyond ordinary human limits",
+   "blocklist": [
+    "superhuman",
+    "supernal",
+    "superpower",
+    "supinate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Better than others in quality, rank, or status",
+   "blocklist": [
+    "superior",
+    "superlative",
+    "supervene",
+    "supplant",
+    "supple",
+    "suppliant",
+    "suppurate",
+    "supremo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A performer whose fame puts them at the very top of the entertainment world",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superstar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superstar"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Anatomical rotation that turns the palm to face upward",
+   "blocklist": [
+    "supinely",
+    "supineness",
+    "supinenesses",
+    "supines"
+   ],
+   "blocked_ranges": [
+    [
+     "supinated",
+     "supinators"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "supi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Lying on the back with the face turned upward",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "supine"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 17.0,
+  "cost_numerator": 17,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

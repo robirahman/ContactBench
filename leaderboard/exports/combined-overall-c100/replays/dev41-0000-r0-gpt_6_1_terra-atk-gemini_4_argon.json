@@ -1,0 +1,598 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A domesticated feline. Also: dog, sun, sky, sea, red, blue, green, tree, house, love, time, day.",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Huge gray animal with a trunk. Also: water, fire, earth, moon, star, rain, wind, snow, bird, fish.",
+   "blocklist": [
+    "elephant",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Frozen water. Also: man, woman, child, hand, head, eye, face, heart, world, life, light, night.",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icicle",
+    "rime",
+    "sleet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of cold. Also: good, bad, big, small, new, old, long, short, high, low, food, home, book.",
+   "blocklist": [
+    "boiling",
+    "burning",
+    "fiery",
+    "heat",
+    "heated",
+    "hot",
+    "scorching",
+    "searing",
+    "sizzling",
+    "sweltering",
+    "thermal",
+    "torrid",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Striped African equine. car, air, war, art, age, arm, bag, bar, bed, box, boy, bus, cup, cut, ear.",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit. ant, ape, ash, axe, bat, bee, bet, bib, bid, bit, bow, bug, bun, cap, cob, cow.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Forbidden orchard fruit. hat, key, map, pen, pig, rat, run, sit, top, toy, wet, yes, zoo, job, leg.",
+   "blocklist": [
+    "apple",
+    "apples",
+    "fig",
+    "pomegranate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "King of the jungle: get, put, say, see, set, try, use, way, who, why, win, word, work, year, you.",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Seven days make a ... mud, net, oil, owl, pan, pet, pot, row, six, ten, tie, tip, van, wax, web.",
+   "blocklist": [
+    "hebdomad",
+    "sennight",
+    "weak",
+    "week",
+    "weeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Long-eared hopping animal. money, music, friend, family, school, city, road, room, door, name, game.",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "hare",
+    "hares",
+    "jackrabbit",
+    "kangaroo",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Orange predator with black stripes. war, peace, peace, king, queen, power, people, place, country.",
+   "blocklist": [
+    "tiger",
+    "tigers",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Canine sound. act add ago aim ale all and any apt arc are ark ate awe bad ban bay beg bin bio",
+   "blocklist": [
+    "arf",
+    "arfs",
+    "bark",
+    "barking",
+    "barks",
+    "bowwow",
+    "bowwows",
+    "growl",
+    "growls",
+    "howl",
+    "howling",
+    "howls",
+    "whimper",
+    "whimpers",
+    "whine",
+    "whines",
+    "woof",
+    "woofs",
+    "yap",
+    "yaps",
+    "yelp",
+    "yelps",
+    "yip",
+    "yips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Tallest mammal. black white brown purple pink orange yellow gray gold silver fast slow happy sad",
+   "blocklist": [
+    "giraffe",
+    "giraffes",
+    "giraffish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. ace ado aft aid ail alb amp ana ani ado awl baa bal bam bap bas baw",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "arachnoid",
+    "arachnoids",
+    "spider",
+    "spiders",
+    "tarantula",
+    "tarantulae",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Eight armed sea creature. king queen prince princess father mother brother sister baby friend",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "kraken",
+    "krakens",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid",
+    "squids",
+    "starfish",
+    "starfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird. boa bog bop bot bud bum bur cab cad cam can cat cod cog con cop cot",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Person who travels into space. cupola river mountain ocean forest grass stone cloud horse mouse",
+   "blocklist": [
+    "astronaut",
+    "astronauts",
+    "cosmonaut",
+    "cosmonauts",
+    "spaceman",
+    "spacemen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Intelligent marine mammal. bread milk cheese sugar salt rice meat egg cake soup tea coffee juice",
+   "blocklist": [
+    "cetacean",
+    "cetaceans",
+    "dolphin",
+    "dolphins",
+    "dugong",
+    "dugongs",
+    "manatee",
+    "manatees",
+    "orca",
+    "orcas",
+    "otter",
+    "otters",
+    "porpoise",
+    "porpoises",
+    "seal",
+    "seals",
+    "walrus",
+    "walruses",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Nile reptile with powerful jaws. dab dabs dace daces dacha dad dada dadas dado dados dads daffy daft",
+   "blocklist": [
+    "alligator",
+    "alligators",
+    "caiman",
+    "caimans",
+    "croc",
+    "crocodile",
+    "crocodiles",
+    "crocodilian",
+    "crocodilians",
+    "crocs",
+    "gator",
+    "gators",
+    "gavial",
+    "gavials",
+    "gharial",
+    "gharials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Large flightless Australian bird. table chair window floor wall roof garden paper pencil phone train",
+   "blocklist": [
+    "cassowaries",
+    "cassowary",
+    "emu",
+    "emus",
+    "ostrich",
+    "ostriches",
+    "ratite",
+    "ratites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Element needed for breathing. computer internet science history language human body mind dream truth",
+   "blocklist": [
+    "breath",
+    "gas",
+    "nitrogen",
+    "oxygen",
+    "oxygens",
+    "ozone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Erupting mountain. carmine violet indigo turquoise copper iron steel brass bronze metal wood plastic",
+   "blocklist": [
+    "caldera",
+    "crater",
+    "geyser",
+    "lava",
+    "magma",
+    "volcanic",
+    "volcano",
+    "volcanoes",
+    "volcanos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Massive river mammal: hello goodbye please thanks sorry welcome today tomorrow morning evening sleep",
+   "blocklist": [
+    "beaver",
+    "beavers",
+    "capybara",
+    "capybaras",
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Legless reptile. walk talk write read laugh smile cry sing dance jump swim drive cook wash clean",
+   "blocklist": [
+    "adder",
+    "adders",
+    "anaconda",
+    "anacondas",
+    "asp",
+    "asps",
+    "blindworm",
+    "blindworms",
+    "boas",
+    "cobra",
+    "cobras",
+    "mamba",
+    "mambas",
+    "python",
+    "pythons",
+    "rattlesnake",
+    "rattlesnakes",
+    "serpent",
+    "serpents",
+    "slowworm",
+    "slowworms",
+    "snake",
+    "snakes",
+    "viper",
+    "vipers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Extinct prehistoric reptile. zero zone zoom zest zinc zipper zombie yogurt youth yacht zebra",
+   "blocklist": [
+    "brontosaur",
+    "brontosaurus",
+    "dinosaur",
+    "dinosaurs",
+    "pterodactyl",
+    "pterosaur",
+    "tyrannosaur",
+    "tyrannosaurus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6828.30628121714,
+  "cost_numerator": 831196067,
+  "cost_denominator": 121728,
+  "cost_exact": false,
+  "cost_mcse": 3.982435834487594,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 827544227,
+   "denominator": 121728,
+   "value": 6798.30628121714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:818,4:3804,5:8534,6:15154,7:23050,8:28381,9:24843,10:20287,11:15494,12:11353,13:7826,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 3.982435834487594,
+   "rollouts": 256,
+   "rank_total": 6620353816,
+   "rank_denominator": 973824,
+   "cache_key": "3d1287994b771f0904609bc043d34afe"
+  }
+ }
+}

@@ -1,0 +1,529 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Contact: feline pet. Bonus guesses: the and for you are not dog man woman house time world love",
+   "blocklist": [
+    "cat",
+    "kitten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Huge animal with trunk and tusks. water fire earth air life good people day night sun moon star",
+   "blocklist": [
+    "elephant",
+    "mammoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit. Bonus: apple orange red blue green black white gold silver heart hand eye head",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Frozen flakes fall in winter. Bonus: tree bird fish sea sky rain wind cloud light dark flower book",
+   "blocklist": [
+    "flake",
+    "flakes",
+    "frost",
+    "hail",
+    "ice",
+    "sleet",
+    "snow",
+    "snowfall",
+    "snowflake",
+    "snowflakes",
+    "snowy",
+    "winter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tall spotted African mammal with a very long neck. king queen war peace music dream hope home family",
+   "blocklist": [
+    "giraffe",
+    "giraffes",
+    "neck",
+    "okapi",
+    "safari",
+    "savanna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Eight legged web spinner. child mother father sister brother friend school work food drink road car",
+   "blocklist": [
+    "arachnid",
+    "eight",
+    "legged",
+    "legs",
+    "spider",
+    "spiders",
+    "spinner",
+    "tarantula",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped big cat. river mountain stone rock wood grass leaf root soil field garden horse cow pig bear",
+   "blocklist": [
+    "leopard",
+    "lion",
+    "stripe",
+    "striped",
+    "stripes",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Flying mammal active at night. yes why how who all can new old one two six ten way may say play",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bat"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Ocean predator with fins and sharp teeth. song sound silence smile sleep sweet sugar summer spring",
+   "blocklist": [
+    "fin",
+    "fins",
+    "ocean",
+    "predator",
+    "shark",
+    "sharks",
+    "teeth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Legless slithering reptile. space speed street stop stand small smart speak story strong south seven",
+   "blocklist": [
+    "adder",
+    "cobra",
+    "lizard",
+    "python",
+    "reptile",
+    "serpent",
+    "serpents",
+    "slither",
+    "snake",
+    "snakes",
+    "snaky",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Slow garden mollusk with a shell. sand salt safe sail saint salad salmon salon same sample save",
+   "blocklist": [
+    "escargot",
+    "gastropod",
+    "mollusk",
+    "shell",
+    "slow",
+    "slug",
+    "slugs",
+    "snail",
+    "snaillike",
+    "snails"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bushy tailed nut gathering rodent. set sit sir son sip sob sod sow sue sum sap saw see she shy",
+   "blocklist": [
+    "acorn",
+    "chipmunk",
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Five armed marine echinoderm. sad sag sat sax sea seal seat seed seek seem sell send sent ship shoe",
+   "blocklist": [
+    "starfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Red berry with seeds on outside. state status stay step still stock store study such sure staff size",
+   "blocklist": [
+    "berries",
+    "berry",
+    "raspberry",
+    "seed",
+    "seeds",
+    "strawberries",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Stinging desert arachnid. super supply support system simple single sense serve service social",
+   "blocklist": [
+    "desert",
+    "scorpion",
+    "scorpions",
+    "sting",
+    "stinger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Object orbiting a planet. sub sud suey suit sulk sunk surf swap swan swim spin spit spot starve",
+   "blocklist": [
+    "lunar",
+    "moonlet",
+    "moons",
+    "orbit",
+    "planet",
+    "satellite",
+    "satellites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Black and white animal that sprays foul odor. soft sort sour soup soap soak sock socket solar solid",
+   "blocklist": [
+    "musk",
+    "odor",
+    "polecat",
+    "skunk",
+    "skunks",
+    "spray",
+    "sprays",
+    "stink",
+    "stripe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Tall yellow flower with edible kernels. short shot show shut shutout side sign sight signal since",
+   "blocklist": [
+    "corn",
+    "maize",
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Medieval blade wielded by knights. steel stick stairs stonework screen script search second self",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sword"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sword"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Woolly farm animal says baa. shape share shake shadow shallow shame shift shine shirt shock shop",
+   "blocklist": [
+    "ewe",
+    "lamb",
+    "ram",
+    "shear",
+    "shearing",
+    "shears",
+    "sheep",
+    "sheepdog",
+    "sheepfold",
+    "sheepish",
+    "sheepskin",
+    "shepherd",
+    "wool",
+    "woolly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Tool for digging holes. shade shady shaft shaggy shabby shack shad shadows shaded shapes shaking",
+   "blocklist": [
+    "shovel",
+    "shoveled",
+    "shovelful",
+    "shovels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Pink seafood crustacean. shiny shook shoot shore shores shopping shirts shoes shower showers shone",
+   "blocklist": [
+    "crab",
+    "lobster",
+    "prawn",
+    "prawns",
+    "shrimp",
+    "shrimps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Joint connecting arm to torso. sheaf sheath sheave shed sheen sheer sheet shelf shelter shield shin",
+   "blocklist": [
+    "arm",
+    "armpit",
+    "elbow",
+    "joint",
+    "shoulder",
+    "shouldered",
+    "shoulders",
+    "torso"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Tiny mouse like insectivore. shout shove shiver shriek shrink shun shush shred shroud shrub shuffle",
+   "blocklist": [
+    "mole",
+    "moles",
+    "shrew",
+    "shrewd",
+    "shrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 82.3177559177741,
+  "cost_numerator": 6343077,
+  "cost_denominator": 77056,
+  "cost_exact": false,
+  "cost_mcse": 0.10336314161984858,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 4031397,
+   "denominator": 77056,
+   "value": 52.317755917774086,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:18,5:79,6:164,7:247,8:301,9:244,10:140,11:86,12:51,13:20,14:11,15:3,16:2,18:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.10336314161984858,
+   "rollouts": 256,
+   "rank_total": 4031397,
+   "rank_denominator": 77056,
+   "cache_key": "398003eb84f2f72d0ea7342c74da96e5"
+  }
+ }
+}

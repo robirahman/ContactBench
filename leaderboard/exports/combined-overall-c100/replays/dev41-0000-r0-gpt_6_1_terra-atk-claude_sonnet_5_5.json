@@ -1,0 +1,477 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. Also: dog, sun, sky, sea, man, woman, love, life, time, day, night, water, fire, earth.",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Natural satellite seen at night. star, air, wind, rain, snow, tree, house, home, bird, fish, book.",
+   "blocklist": [
+    "air",
+    "bird",
+    "book",
+    "fish",
+    "home",
+    "house",
+    "moon",
+    "rain",
+    "snow",
+    "star",
+    "tree",
+    "wind"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Large animal with trunk. red, blue, green, black, white, king, queen, child, world, hand, heart.",
+   "blocklist": [
+    "black",
+    "blue",
+    "child",
+    "elephant",
+    "green",
+    "hand",
+    "heart",
+    "king",
+    "mammoth",
+    "queen",
+    "red",
+    "white",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Newton's falling fruit. car, road, people, good, bad, light, dark, food, family, friend, work, play.",
+   "blocklist": [
+    "apple",
+    "fruit",
+    "gravity",
+    "newton",
+    "pear",
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of cold. the, and, for, you, are, not, but, all, can, had, her, was, one, two, new, old.",
+   "blocklist": [
+    "heat",
+    "heated",
+    "hot",
+    "warm",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Canine sound. have, this, that, they, what, when, where, who, why, how, more, some, make, get.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bark"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Howling wild canine. word, way, well, want, went, will, wood, walk, war, wish, watch, winter, write.",
+   "blocklist": [
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Largest ocean mammal. would, were, which, while, whose, without, within, wonder, weather, wedding.",
+   "blocklist": [
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Broom-riding sorceress. wide, wife, wing, wine, wise, wall, wave, weak, week, west, wheel, window.",
+   "blocklist": [
+    "witch",
+    "witches",
+    "wizard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Burrowing Australian marsupial. wages, wagon, waist, wake, walnut, wander, warfare, wash, waste.",
+   "blocklist": [
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Striped green rind, juicy pink summer fruit. warrior, warrant, warship, washer, wealthy, weapon.",
+   "blocklist": [
+    "warrant",
+    "warrior",
+    "warship",
+    "washer",
+    "watermelon",
+    "wealthy",
+    "weapon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Speak very softly. wrist, wreck, wreath, wring, wrong, wrote, worth, worse, worry, wound, woven.",
+   "blocklist": [
+    "whisper",
+    "whispered",
+    "whispering",
+    "whispers",
+    "wreck",
+    "wrist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Grid-shaped breakfast pancake. woods, wooden, worker, working, works, words, worms, worm, wings.",
+   "blocklist": [
+    "wafer",
+    "waffle",
+    "waffled",
+    "waffles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "One-wheeled garden cart. wage, wail, wait, wale, wand, ward, ware, warp, wart, wary, wasp, watt.",
+   "blocklist": [
+    "wheelbarrow",
+    "wheelbarrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tusked Arctic marine mammal. wax, web, wed, wee, wet, wig, win, wit, wok, won, woo, wow, wry.",
+   "blocklist": [
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Marvel mutant Logan. wade, wads, wags, wane, wank, wans, waps, wars, wartime, wavy, ways.",
+   "blocklist": [
+    "wolverine",
+    "wolverines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Bird that drills holes in trees. wheat, wheatgrass, whistle, whisk, whisker, wharf, whack, whiff.",
+   "blocklist": [
+    "wheat",
+    "whistle",
+    "woodpecker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Niagara feature. welcome, wealth, welfare, willow, willing, winner, wisdom, wildlife, windowpane.",
+   "blocklist": [
+    "waterfall",
+    "waterfalls",
+    "wealth",
+    "welcome",
+    "welfare"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Saturday and Sunday together. waterproof, wilderness, warehouse, wheatfield, woodwork, worldwide.",
+   "blocklist": [
+    "weekend",
+    "weekends"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Pumbaa in The Lion King. whirlpool, wheelchair, wallpaper, wardrobe, watershed, wetsuit, wasteland.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "warthog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "warthog"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Slender mustelid. wear, wears, wearer, weary, wean, weaned, weaker, weakest, weakness, weakling.",
+   "blocklist": [
+    "weasel",
+    "weasels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Snout beetle. weaken, weakly, weapons, weaponry, wearable, wearing, weeping, weaver, weaving, weeds.",
+   "blocklist": [
+    "weevil",
+    "weevils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Low dam across a river. wealthy, wealthier, wealthiest, weal, weald, weakenings, weariness, wearied.",
+   "blocklist": [
+    "weir",
+    "weirs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Interlace threads on a loom. webbed, weeping, wept, weigh, weight, weird, welded, westward, wetland.",
+   "blocklist": [
+    "weave",
+    "weaved",
+    "weaves",
+    "webbed",
+    "weft",
+    "wefts",
+    "weigh",
+    "weight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.24462890625,
+  "cost_numerator": 94709,
+  "cost_denominator": 2048,
+  "cost_exact": false,
+  "cost_mcse": 0.15012746331947532,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 33269,
+   "denominator": 2048,
+   "value": 16.24462890625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:16,5:28,6:42,7:94,8:90,9:50,10:28,11:27,12:14,13:15,14:13,15:7,16:5,18:1",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 0.15012746331947532,
+   "rollouts": 256,
+   "rank_total": 66538,
+   "rank_denominator": 4096,
+   "cache_key": "0a9c03f5031a4924f616e78ad29de76d"
+  }
+ }
+}

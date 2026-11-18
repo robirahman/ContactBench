@@ -1,0 +1,536 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Striped African equine. Bonus: cat dog ant bee cow pig hen rat bat owl fox eel ape yak ram elk",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long-necked spotted African animal. Also: sun sky sea red blue green gold man boy girl arm leg eye",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Largest land mammal with trunk. the and for are but not you all can her was one our out day new",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Australian marsupial that hops. car bus run fun big hot cold ice air water fire earth moon star",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Forbidden fruit in Eden. ace act add age ago aid aim ale ash ask ate awe axe able acid acre also",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Noah's flood vessel. aah aal aba aas abaca abaci aback abacus abaft abalone abandon abase abate",
+   "blocklist": [
+    "ark",
+    "arks",
+    "boat",
+    "ship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Person traveling in space. about above across after again against almost along already always among",
+   "blocklist": [
+    "astronaut",
+    "astronauts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Florida reptile with broad snout, like crocodile. any art away back bad ball bank base black blood",
+   "blocklist": [
+    "alligator",
+    "alligators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Eight-legged creature such as a spider or scorpion. abacas abacterial abacuses abaka abakas abalones",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "scorpion",
+    "scorpions",
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Flying passenger vehicle. abaters abates abating abatis abator abattis abaxial abaxile abba abbacy",
+   "blocklist": [
+    "aeroplane",
+    "aeroplanes",
+    "aircraft",
+    "airliner",
+    "airplane",
+    "airplanes",
+    "jet",
+    "plane",
+    "planes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Green fruit used in guacamole. abbacies abbas abbatial abbe abbes abbess abbesses abbey abbeys abbot",
+   "blocklist": [
+    "avocado",
+    "avocados"
+   ],
+   "blocked_ranges": [
+    [
+     "abbacies",
+     "abbots"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Heavenly winged being. abdicable abdicate abdicated abdicates abdicating abdication abdications",
+   "blocklist": [
+    "angel",
+    "angelic",
+    "angels",
+    "archangel",
+    "archangels",
+    "cherub",
+    "cherubim",
+    "seraph",
+    "seraphim"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Long-snouted mammal that eats ants. abdicator abdicators abdomen abdomens abdomina abdominal",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "anteater",
+    "anteaters",
+    "armadillo",
+    "armadillos",
+    "echidna",
+    "echidnas",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Alien kidnapping. abduce abduced abducens abducent abduces abducing abduct abducted abducting",
+   "blocklist": [
+    "alien",
+    "aliens"
+   ],
+   "blocked_ranges": [
+    [
+     "abduce",
+     "abductors"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Opposite of presence. abeam abecedarian abecedarians abed abele abeles abelia abelian abelias",
+   "blocklist": [
+    "absence",
+    "absences",
+    "absent",
+    "absentee",
+    "absentees",
+    "absently",
+    "lack",
+    "void"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bellows instrument with keys. abelmosk abelmosks aberrance aberrances aberrancies aberrancy aberrant",
+   "blocklist": [
+    "accordion",
+    "accordions",
+    "concertina",
+    "concertinas",
+    "harmonium",
+    "harmoniums",
+    "organ",
+    "piano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Letters from A to Z in order. aberrantly aberrants aberrated aberration aberrational aberrations",
+   "blocklist": [
+    "alphabet",
+    "alphabets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Where planes take off. abet abetment abetments abets abettal abettals abetted abetter abetters",
+   "blocklist": [
+    "aerodrome",
+    "airfield",
+    "airport",
+    "airstrip",
+    "apron",
+    "hangar",
+    "runway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Smallest unit of an element. abetting abettor abettors abeyance abeyances abeyancies abeyancy",
+   "blocklist": [
+    "atom",
+    "atomic",
+    "atoms",
+    "molecule",
+    "particle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Heavy device holding a ship in place. abeyant abfarad abfarads abhenries abhenry abhenrys abhor",
+   "blocklist": [
+    "anchor",
+    "anchorage",
+    "anchored",
+    "anchors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Emergency medical vehicle. abhorred abhorrence abhorrences abhorrent abhorrently abhorrer abhorrers",
+   "blocklist": [
+    "ambulance",
+    "ambulances"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Magician's magic word. abhorring abhors abidance abidances abide abided abider abiders abides",
+   "blocklist": [
+    "abracadabra",
+    "presto"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Rocky body orbiting the sun. abiding abidingly abigail abigails abilities ability abiogeneses",
+   "blocklist": [
+    "asteroid",
+    "asteroidal",
+    "asteroids",
+    "comet",
+    "comets",
+    "meteor",
+    "meteorite",
+    "meteoroid",
+    "meteors",
+    "planet",
+    "planetoid",
+    "planetoids",
+    "planets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Orange stone fruit. abiogenesis abiogenic abiogenically abiogenist abiogenists abioses abiosis",
+   "blocklist": [
+    "apricot",
+    "apricots",
+    "mango",
+    "nectarine",
+    "nectarines",
+    "papaya",
+    "peach",
+    "peaches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Swift African horned grazer. abiological abiotic abiotically abject abjection abjections abjectly",
+   "blocklist": [
+    "addax",
+    "antelope",
+    "antelopes",
+    "eland",
+    "gazelle",
+    "gazelles",
+    "gnu",
+    "gnus",
+    "impala",
+    "impalas",
+    "oryx",
+    "springbok"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Green spear vegetable. abjectness abjectnesses abjuration abjurations abjure abjured abjurer",
+   "blocklist": [
+    "asparagus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Snow rushing down a mountain. amazing answer anyone around another animal attack action angry alive",
+   "blocklist": [
+    "avalanche",
+    "avalanches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 444.4464512821844,
+  "cost_numerator": 136989063,
+  "cost_denominator": 308224,
+  "cost_exact": false,
+  "cost_mcse": 0.43089169649699083,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 127742343,
+   "denominator": 308224,
+   "value": 414.4464512821844,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:44,4:180,5:467,6:793,7:1204,8:1570,9:1531,10:1283,11:1027,12:749,13:519,14:331,15:221,16:126,17:63,18:25,19:16,20:10",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.43089169649699083,
+   "rollouts": 256,
+   "rank_total": 127742343,
+   "rank_denominator": 308224,
+   "cache_key": "d80b93332998bee5557567a18bd1c83a"
+  }
+ }
+}

@@ -1,0 +1,627 @@
+{
+ "game_id": "dev41-0002-r0-claude_haiku_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_haiku_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that often purrs",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty",
+    "pet",
+    "purr",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal canine that barks and fetches sticks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggy",
+    "dogs",
+    "hound",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings at dawn and builds nests in trees",
+   "blocklist": [
+    "bird",
+    "birds",
+    "dawn",
+    "finch",
+    "lark",
+    "nest",
+    "nests",
+    "robin",
+    "songbird",
+    "sparrow",
+    "tree",
+    "trees",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly swimmer with fins and gills that lives in water",
+   "blocklist": [
+    "bass",
+    "carp",
+    "cod",
+    "eel",
+    "fin",
+    "fins",
+    "fish",
+    "fishes",
+    "gill",
+    "gills",
+    "goldfish",
+    "minnow",
+    "salmon",
+    "scale",
+    "scales",
+    "shark",
+    "swim",
+    "trout",
+    "tuna",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Shelter with rooms, walls and a roof for a family",
+   "blocklist": [
+    "apartment",
+    "building",
+    "bungalow",
+    "cabin",
+    "condo",
+    "cottage",
+    "dwelling",
+    "family",
+    "home",
+    "house",
+    "hut",
+    "mansion",
+    "residence",
+    "roof",
+    "room",
+    "rooms",
+    "shelter",
+    "villa",
+    "wall",
+    "walls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Animal that neighs and gallops across open fields",
+   "blocklist": [
+    "colt",
+    "equine",
+    "field",
+    "fields",
+    "foal",
+    "gallop",
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "neigh",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses and sheds its skin",
+   "blocklist": [
+    "adder",
+    "asp",
+    "boa",
+    "cobra",
+    "molt",
+    "python",
+    "reptile",
+    "serpent",
+    "skin",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Green amphibian that leaps and croaks near ponds",
+   "blocklist": [
+    "amphibian",
+    "croak",
+    "frog",
+    "frogs",
+    "green",
+    "leap",
+    "newt",
+    "pond",
+    "ponds",
+    "salamander",
+    "tadpole",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Savage African animal with a mane, often called king of the jungle",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Desert hump animal: camel, coyote, crane, cricket, cactus, cliff, comet, clam, crab, cloud, crow",
+   "blocklist": [
+    "cactus",
+    "camel",
+    "clam",
+    "cliff",
+    "cloud",
+    "comet",
+    "coyote",
+    "crab",
+    "crane",
+    "cricket",
+    "crow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Farm animal that gives milk and says moo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Try these: coat code coal coin cold cook cool copy cord core corn cost cone cozy comb come cove",
+   "blocklist": [
+    "cola",
+    "collar",
+    "collect",
+    "college",
+    "color",
+    "column",
+    "combat",
+    "common"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coin"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Long sofa for lounging on in the living room",
+   "blocklist": [
+    "comfort",
+    "condo",
+    "contour",
+    "cot",
+    "cots",
+    "couch",
+    "couchant",
+    "couches",
+    "cozier",
+    "cushion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Lid or shield that protects something",
+   "blocklist": [
+    "cap",
+    "coat",
+    "cope",
+    "coping",
+    "cork",
+    "cosh",
+    "cover",
+    "covers",
+    "covert",
+    "cowl",
+    "cowling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Angle where two edges meet inside a room",
+   "blocklist": [
+    "corner",
+    "cornered",
+    "corners",
+    "coroner",
+    "nook"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Tally numbers, or a European nobleman",
+   "blocklist": [
+    "baron",
+    "count",
+    "countess",
+    "counts",
+    "duke",
+    "earl",
+    "viscount"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Deep unconsciousness lasting for a long time after a severe injury",
+   "blocklist": [
+    "coma",
+    "comas",
+    "comatose"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Shore where land meets the sea and waves roll in",
+   "blocklist": [
+    "beach",
+    "coast",
+    "coastal",
+    "coaster",
+    "coasters",
+    "coasting",
+    "coastline",
+    "coastlines",
+    "coasts",
+    "shore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Reef-building marine animal with a limestone skeleton",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coral"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coral"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Severe abdominal cramping, often in crying infants, that doctors treat",
+   "blocklist": [
+    "colds",
+    "colic",
+    "colicky",
+    "colicroot",
+    "colicroots",
+    "colics",
+    "colitis",
+    "colitises",
+    "colon",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Herding breed famous as Lassie, a long-haired sheepdog",
+   "blocklist": [
+    "collie",
+    "collies",
+    "colly",
+    "sheepdog",
+    "sheepdogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Kitchen strainer with holes for draining pasta",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "drainer",
+    "kitchen",
+    "pasta",
+    "sieve",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "colder",
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Ancient Roman arena where gladiators fought before huge crowds",
+   "blocklist": [
+    "coliseum",
+    "coliseums",
+    "colosseum",
+    "colosseums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Shredded cabbage side dish usually drowned in mayonnaise at picnics",
+   "blocklist": [
+    "cole",
+    "coles",
+    "coleslaw",
+    "coleslaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Small American quail, also called bobwhite",
+   "blocklist": [
+    "colin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "In an unfriendly, chilly manner",
+   "blocklist": [
+    "coldest",
+    "coldish",
+    "coldly",
+    "coolly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collaborate",
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "colonel",
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 51.15272177419355,
+  "cost_numerator": 101487,
+  "cost_denominator": 1984,
+  "cost_exact": false,
+  "cost_mcse": 0.13677653662916378,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 41967,
+   "denominator": 1984,
+   "value": 21.152721774193548,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:5,6:17,7:31,8:78,9:93,10:76,11:55,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.13677653662916378,
+   "rollouts": 256,
+   "rank_total": 167868,
+   "rank_denominator": 7936,
+   "cache_key": "71f04b6d008938b9c4c073a67e932bbf"
+  }
+ }
+}

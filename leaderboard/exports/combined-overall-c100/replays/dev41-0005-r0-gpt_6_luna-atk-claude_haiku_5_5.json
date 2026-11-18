@@ -1,0 +1,228 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray mammal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A six-string instrument commonly played by strumming or plucking",
+   "blocklist": [
+    "banjo",
+    "bass",
+    "cello",
+    "guitar",
+    "harp",
+    "lute",
+    "lyre",
+    "mandolin",
+    "pluck",
+    "sitar",
+    "strum",
+    "ukulele",
+    "viola",
+    "violin",
+    "zither"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A sound reflected back after bouncing off a surface.",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "English's definite article",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "the"
+    },
+    {
+     "seat": "guesser2",
+     "word": "the"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Frozen water, often formed into cubes and added to a drink.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ice",
+     "indrawn"
+    ]
+   ],
+   "blocked_word_count": 2773,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A dark liquid used by a pen to leave marks on paper.",
+   "blocklist": [
+    "indurate",
+    "indurated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ink"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "The inner part of a space, as opposed to its exterior.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inside"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inside"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A small six-legged arthropod, such as an ant or beetle.",
+   "blocklist": [
+    "inch",
+    "index"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "insect"
+    },
+    {
+     "seat": "guesser2",
+     "word": "insect"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A sector of economic activity, such as manufacturing or tourism",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "indrawn",
+     "indurated"
+    ],
+    [
+     "indurating",
+     "indwelt"
+    ]
+   ],
+   "blocked_word_count": 92,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "indurates",
+   "prefix_after": "ind",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

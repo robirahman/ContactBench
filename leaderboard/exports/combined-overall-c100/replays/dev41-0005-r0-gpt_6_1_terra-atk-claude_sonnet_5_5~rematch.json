@@ -1,0 +1,594 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_1_terra-atk-claude_sonnet_5_5~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "indurates",
+ "initial_prefix": "i",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 6954,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Titanic struck a floating mass of ice. image images imagine imaginary imagination inaction inactive",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Advil generic drug: iamb iambi iambic iambics iambs iambus iambuses iatric iatrical ibex ibexes",
+   "blocklist": [
+    "ibuprofen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Frozen water spike hanging from roof: iceblink iceblinks iceboat iceboater iceboaters iceboating",
+   "blocklist": [
+    "icicle",
+    "icicles",
+    "icier",
+    "iciest",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of legal: iceboatings iceboats icebound icebox iceboxes icebreaker icebreakers icecap iced",
+   "blocklist": [
+    "illegal",
+    "illegally",
+    "illegals",
+    "illegitimate",
+    "illicit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Six-legged bug: icecaps icefall icefalls icehouse icehouses icekhana icekhanas iceless icelike",
+   "blocklist": [
+    "ice",
+    "insect",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Inuit snow house: iceman icemen ices ich ichnite ichnites ichor ichorous ichors ichs icicled icily",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Land surrounded by water: iciness icinesses icing icings ick icker ickers ickier ickiest ickily",
+   "blocklist": [
+    "island",
+    "islander",
+    "islanders",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Metal with chemical symbol Fe: ickiness ickinesses icky icon icones iconic iconical iconically",
+   "blocklist": [
+    "iron",
+    "ironic",
+    "irons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fluid used in pens: iconicities iconicity iconoclasm iconoclasms iconoclast iconoclastic icons",
+   "blocklist": [
+    "ink",
+    "inked",
+    "inkier",
+    "inkiest",
+    "inkpot",
+    "inkpots",
+    "inks",
+    "inkwell",
+    "inkwells",
+    "inky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Fool: idea ideal idealess idealise idealised idealises idealising idealism idealisms idealist ideals",
+   "blocklist": [
+    "idiot",
+    "idiotic",
+    "idiots",
+    "idler",
+    "idlers",
+    "ignoramus",
+    "ignorant",
+    "imbecile",
+    "imbeciles",
+    "imbecilic",
+    "inane",
+    "inept"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Resistance to infection: idealistic idealists idealities ideality idealization idealize idealized",
+   "blocklist": [
+    "immune",
+    "immunities",
+    "immunity",
+    "immunize",
+    "immunized",
+    "immunology",
+    "infect",
+    "infection",
+    "infections",
+    "inoculate",
+    "inoculation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Scratchy skin sensation: ideas ideate ideated ideates ideating ideation idem identic identical",
+   "blocklist": [
+    "itch",
+    "itches",
+    "itchier",
+    "itchiest",
+    "itchiness",
+    "itching",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Not possible: identically identicalness identifiable identifiably identification identified",
+   "blocklist": [
+    "impossible",
+    "impracticable",
+    "infeasible",
+    "unattainable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Cannot be seen: identicalnesses identifications identifier identifiers identifies identify identity",
+   "blocklist": [
+    "imperceptible",
+    "inconspicuous",
+    "indiscernible",
+    "intangible",
+    "invisibility",
+    "invisible",
+    "invisibly",
+    "unseen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Newborn baby: ideally idealogy ideations ideative idempotent identifying identities ideogram",
+   "blocklist": [
+    "infancy",
+    "infant",
+    "infants",
+    "ingenue",
+    "neonate",
+    "newborn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "General rise in prices: idealistically idealizations idealizer idealizers idealizes idealizing ides",
+   "blocklist": [
+    "inflate",
+    "inflated",
+    "inflates",
+    "inflating",
+    "inflation",
+    "inflationary",
+    "inflationism",
+    "inflationist",
+    "inflationists",
+    "inflator",
+    "inflators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Green tropical lizard: ideogramic ideogrammatic ideogrammic ideograms ideograph ideographic",
+   "blocklist": [
+    "iguana",
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bring goods into a country: ideographically ideographies ideographs ideography ideologic ideology",
+   "blocklist": [
+    "import",
+    "importation",
+    "importations",
+    "imported",
+    "importer",
+    "importers",
+    "importing",
+    "imports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Elephant tusk material: ideological ideologically ideologies ideologist ideologists ideologize",
+   "blocklist": [
+    "ivied",
+    "ivies",
+    "ivories",
+    "ivory",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Rock formed from cooled magma: ideologized ideologizes ideologizing ideologue ideologues ideomotor",
+   "blocklist": [
+    "basalt",
+    "extrusive",
+    "granite",
+    "igneous",
+    "intrusive",
+    "lava",
+    "obsidian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Without end: idioblast idioblastic idioblasts idiocies idiocy idiographic idiolect idiolectal idiom",
+   "blocklist": [
+    "incessant",
+    "infinite",
+    "infinitely",
+    "infinities",
+    "infinitude",
+    "infinity",
+    "interminable",
+    "interminably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Blood sugar regulating hormone: idiolects idiomatic idiomatically idiomaticness idiomorphic idioms",
+   "blocklist": [
+    "diabetes",
+    "glucagon",
+    "hormone",
+    "insulin",
+    "insulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Shot from a syringe: idiomaticnesses idiopathic idiopathically idiosyncrasies idiosyncrasy",
+   "blocklist": [
+    "inject",
+    "injected",
+    "injecting",
+    "injection",
+    "injections",
+    "injector",
+    "injectors",
+    "injects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Not guilty: idle idled idleness idlenesses idles idlesse idlesses idlest idling idly idocrase",
+   "blocklist": [
+    "blameless",
+    "guiltless",
+    "innocent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Colored part of the eye: idocrases idol idolater idolaters idolator idolators idolatries idolatrous",
+   "blocklist": [
+    "cornea",
+    "iris",
+    "irises",
+    "pupil",
+    "retina"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Chemical that kills bugs: idolatry idolise idolised idoliser idolisers idolises idolising idolism",
+   "blocklist": [
+    "indigo",
+    "industry",
+    "insecticidal",
+    "insecticidally",
+    "insecticide",
+    "insecticides",
+    "insectile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Atoms of an element differing in neutron count: idols ids idyl idyll idyls idylls idolize idolized",
+   "blocklist": [
+    "isotope",
+    "isotopes",
+    "isotopic",
+    "isotopically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Flu virus illness: idolatrously idolisms idolization idolizations idolizer idolizers idolizes",
+   "blocklist": [
+    "ill",
+    "illness",
+    "illnesses",
+    "influenza",
+    "influenzas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Set fire to: iff iffier iffiest iffiness iffinesses iffy ifs iglu iglus ignatia ignatias ignescent",
+   "blocklist": [
+    "ignite",
+    "ignited",
+    "ignites",
+    "igniting",
+    "ignition",
+    "ignitions",
+    "inflame",
+    "inflamed",
+    "inflames",
+    "kindle",
+    "kindled",
+    "kindles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Lack of knowledge: ignified ignifies ignify ignifying ignimbrite ignimbrites ignitable igniter",
+   "blocklist": [
+    "ignoramuses",
+    "ignorance",
+    "ignore",
+    "ignored",
+    "illiteracy",
+    "inexperience"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 332.49396575504414,
+  "cost_numerator": 67498935,
+  "cost_denominator": 203008,
+  "cost_exact": false,
+  "cost_mcse": 0.3726680387201124,
+  "baseline": {
+   "numerator": 17333635,
+   "denominator": 54592,
+   "value": 317.51236444900354,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:19,4:58,5:118,6:285,7:504,8:732,9:853,10:940,11:859,12:767,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.36278994412085985,
+   "rollouts": 256,
+   "rank_total": 69334540,
+   "rank_denominator": 218368,
+   "cache_key": "8442ef5829f75f5b769d6c411707bdad"
+  },
+  "fallback": {
+   "numerator": 61408695,
+   "denominator": 203008,
+   "value": 302.49396575504414,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:9,4:35,5:87,6:238,7:454,8:657,9:793,10:896,11:836,12:746,13:595,14:367,15:304,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.3726680387201124,
+   "rollouts": 256,
+   "rank_total": 61408695,
+   "rank_denominator": 203008,
+   "cache_key": "7798723e89c454232f41c8081a5bb858"
+  }
+ }
+}

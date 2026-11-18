@@ -1,0 +1,568 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-gpt_6_1_terra~rematch~rematch",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "supine",
+ "initial_prefix": "su",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 2886,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "suability suasions suaveness subabbot subacidness subacutely subadolescents subagencies: #3",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "suabilities",
+     "subagents"
+    ]
+   ],
+   "blocked_word_count": 42,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "subah subahdars subalar suballocations subalterns subapical subaqueous subarctic subareas: #5",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subah",
+     "subaxial"
+    ]
+   ],
+   "blocked_word_count": 33,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "subbase subbasements subbasin subbass subbed subbing subblock subbranch subbreed subcabinet: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subbase",
+     "subcabinet"
+    ]
+   ],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "subcaste subcause subcell subcenter subchief subclan subclerk subcode subcolony subcool: #6",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subcaste",
+     "subcool"
+    ]
+   ],
+   "blocked_word_count": 89,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "subcools subcounty subcult subcutes subdean subdeb subdepot subdivide subduct subdue subedit: #5",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subcooled",
+     "subedit"
+    ]
+   ],
+   "blocked_word_count": 89,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "subentry subepoch suber suberise subfamily subfield subfile subfix subfloor subfluid subgum: #7",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subentry",
+     "subgum"
+    ]
+   ],
+   "blocked_word_count": 59,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "subgums subhead subhuman subidea subindex subindustry subirrigate subitem subito subjoin: #6",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subgums",
+     "subjoin"
+    ]
+   ],
+   "blocked_word_count": 67,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "subjoined subkingdom sublate sublease sublet sublevel subline sublot sublunar submargin: #5",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sublime"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sublets"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "submarine submarket submenu submerge submicron submiss submit subnet subnormal suboptic: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "submarine",
+     "suboptic"
+    ]
+   ],
+   "blocked_word_count": 79,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "subjoining subjoins subjugate subjugated subjugates subjugating subjugation subjugations: #2",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subjoining",
+     "subkingdoms"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "sublanguage sublethal sublicensed sublimate subliminal sublines subliteracy sublittoral sublots: #3",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sublanguage",
+     "subluxations"
+    ]
+   ],
+   "blocked_word_count": 65,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "submanager submanagers submandibular submandibulars submarginal suborder suborn suboval subpar: #5",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "submanager",
+     "subpar"
+    ]
+   ],
+   "blocked_word_count": 126,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "subparallel subphase subpolar subproblem subprogram subpubic subregion subring subrule subs: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subparallel",
+     "subs"
+    ]
+   ],
+   "blocked_word_count": 69,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "subsale subsample subscale subscribe subscript subsea subsect subsense subserve subset subside: #5",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subsale",
+     "subside"
+    ]
+   ],
+   "blocked_word_count": 69,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "subsided subsidise subsidize subsidy subsist subsite subskill subsocial subsoil subsonic: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subsided",
+     "subsonic"
+    ]
+   ],
+   "blocked_word_count": 48,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "substantial"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "subspace subspecialist subspecies substage substance substandard substantiate substantive: #8",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subspace",
+     "substantivizing"
+    ]
+   ],
+   "blocked_word_count": 43,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "substitution"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "substate substation substituent substitute substrata substrate substructure subsume subsystem: #6",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "substate",
+     "subsystem"
+    ]
+   ],
+   "blocked_word_count": 37,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "subtask subteen subtend subtest subtext subtheme subtitle subtopic subtotal subtract subtype: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subtask",
+     "subtype"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "subulate subumbrella subunit suburb suburbanite suburbia subvariety subvene subvert subzone: #4",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "subulate",
+     "subzone"
+    ]
+   ],
+   "blocked_word_count": 72,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "succah succeed success succinct succor succotash succubus succumb such suck sucrose suction: #3",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "succah",
+     "suction"
+    ]
+   ],
+   "blocked_word_count": 104,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "sudaria sudden suds sue suede suet suffer suffice suffocate suffrage suffuse sugar suggest: #8",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "suffice",
+     "sufficing"
+    ]
+   ],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "suffix"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sugh suicide suit suite sulfa sulfate sulfide sulfur sulk sullen sum summary summon sun: #12",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "summaries",
+     "summarizing"
+    ]
+   ],
+   "blocked_word_count": 15,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "summer"
+    },
+    {
+     "seat": "guesser2",
+     "word": "summer"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "supe super superable superabound superabundance superadd superagency superagent superb supercar: #10",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "supercar",
+     "supercars"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supercharger"
+    },
+    {
+     "seat": "guesser2",
+     "word": "supercharge"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "supercautious supercede supercenter superchic superchurch superciliary supercilious supercity: #5",
+   "blocklist": [
+    "superchurches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superconductor"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "superclass superclub supercoil supercomputer superconduct supercool supercop supercute: #6",
+   "blocklist": [
+    "supercooled",
+    "supercooling",
+    "supercools"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supercritical"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "supered superego superelite superette superfamily superfan superfarm superfast superfine: #8",
+   "blocklist": [
+    "superfatted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superficial"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superfluid"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "superfirm superfix superflack superfluity superfluous superfund supergene supergiant superglue: #8",
+   "blocklist": [
+    "supergiants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supergravity"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "supergood supergroup supergrowth superheat superheavy superhelix superhero superhit superhot: #6",
+   "blocklist": [
+    "superhelical",
+    "superhelices",
+    "superhelixes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superhighway"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superhuman"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 68.06315104166667,
+  "cost_numerator": 104545,
+  "cost_denominator": 1536,
+  "cost_exact": false,
+  "cost_mcse": 0.5825903612394552,
+  "baseline": {
+   "numerator": 3702677,
+   "denominator": 29184,
+   "value": 126.87352658991227,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:29,5:51,6:114,7:239,8:390,9:412,10:428,11:362,12:276,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.4235369955328278,
+   "rollouts": 256,
+   "rank_total": 3702677,
+   "rank_denominator": 29184,
+   "cache_key": "3f486de9525a98994e5615a3858c8b85"
+  },
+  "fallback": {
+   "numerator": 58465,
+   "denominator": 1536,
+   "value": 38.063151041666664,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:1,5:2,6:6,7:10,8:33,9:59,10:115,11:115,12:98,13:96,14:78,15:56,16:46,17:26,18:11,19:3,20:1",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.5825903612394552,
+   "rollouts": 256,
+   "rank_total": 58465,
+   "rank_denominator": 1536,
+   "cache_key": "ee8174211b642601d919f1f681a932a4"
+  }
+ }
+}

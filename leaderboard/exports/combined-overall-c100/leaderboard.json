@@ -1,0 +1,2090 @@
+{
+  "run_id": "combined-overall-c100",
+  "protocol_version": "contact-v0.5",
+  "fixture_data": false,
+  "models": [
+    "claude_haiku_5_5",
+    "gpt_6_luna",
+    "gemini_4_hydrogen",
+    "claude_sonnet_5_5",
+    "gpt_6_1_terra",
+    "gemini_4_argon"
+  ],
+  "planned_games": 294,
+  "recorded_games": 294,
+  "scored_games": 294,
+  "planned_fixtures": 147,
+  "complete_fixtures": 147,
+  "rematch_fixtures": 60,
+  "no_progress_draw_rule": true,
+  "no_progress_draws": 60,
+  "balanced_complete": true,
+  "game_status_counts": {
+    "capped/complete": 230,
+    "solved/complete": 64
+  },
+  "missing_model_pairs": [],
+  "rating": {
+    "method": "batch Elo-style rating with half-point draws",
+    "models": [
+      "claude_haiku_5_5",
+      "gpt_6_luna",
+      "gemini_4_hydrogen",
+      "claude_sonnet_5_5",
+      "gpt_6_1_terra",
+      "gemini_4_argon"
+    ],
+    "strengths_logit": {
+      "claude_haiku_5_5": -2.697050282991337,
+      "gpt_6_luna": 0.8996148232913365,
+      "gemini_4_hydrogen": 0.9681164065975518,
+      "claude_sonnet_5_5": -1.6886437907887115,
+      "gpt_6_1_terra": 1.1590300936553497,
+      "gemini_4_argon": 1.3589327502358106
+    },
+    "elo": {
+      "claude_haiku_5_5": 1031.4743778725035,
+      "gpt_6_luna": 1656.2791014375186,
+      "gemini_4_hydrogen": 1668.1790452901287,
+      "claude_sonnet_5_5": 1206.6525279041093,
+      "gpt_6_1_terra": 1701.3441496137311,
+      "gemini_4_argon": 1736.070797882009
+    },
+    "converged": true,
+    "iterations": 7,
+    "gradient_norm": 6.994736343322318e-11,
+    "loss": 70.71831771093133,
+    "penalty_scale": 2.5,
+    "connected_components": [
+      [
+        "claude_haiku_5_5",
+        "claude_sonnet_5_5",
+        "gemini_4_argon",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra",
+        "gpt_6_luna"
+      ]
+    ]
+  },
+  "rating_penalty_sensitivity": {
+    "1.0": {
+      "claude_haiku_5_5": 1172.5935962357262,
+      "gpt_6_luna": 1608.6882507699302,
+      "gemini_4_hydrogen": 1619.5177887801788,
+      "claude_sonnet_5_5": 1270.227516582247,
+      "gpt_6_1_terra": 1649.0705489247584,
+      "gemini_4_argon": 1679.9022987071592
+    },
+    "2.5": {
+      "claude_haiku_5_5": 1031.4743778725035,
+      "gpt_6_luna": 1656.2791014375186,
+      "gemini_4_hydrogen": 1668.1790452901287,
+      "claude_sonnet_5_5": 1206.6525279041093,
+      "gpt_6_1_terra": 1701.3441496137311,
+      "gemini_4_argon": 1736.070797882009
+    },
+    "5.0": {
+      "claude_haiku_5_5": 978.7117826048836,
+      "gpt_6_luna": 1674.119581233711,
+      "gemini_4_hydrogen": 1686.2146452305265,
+      "claude_sonnet_5_5": 1186.097835247298,
+      "gpt_6_1_terra": 1719.691369945098,
+      "gemini_4_argon": 1755.164785738483
+    }
+  },
+  "bootstrap": {
+    "resamples": 500,
+    "seed": 12345,
+    "cluster": "task (secret) \u2014 both directions and all pairings kept together",
+    "task_clusters": 10,
+    "fit_failures": 0,
+    "intervals_95": {
+      "claude_haiku_5_5": {
+        "elo": {
+          "lo": 848.0488249591257,
+          "hi": 1157.6303129358218,
+          "n": 500
+        },
+        "rank": {
+          "lo": 5.0,
+          "hi": 6.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.3481358716388563,
+          "hi": 1.7497926848367535,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -4553.50147949169,
+          "hi": -3116.9590576204823,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.0019337128150470793,
+          "hi": 0.0956389418968561,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 6826.395200338324,
+          "hi": 6912.606637076178,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 1397.235142050705,
+          "hi": 2787.310749023551,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 10.0,
+          "hi": 13.0,
+          "n": 500
+        }
+      },
+      "gpt_6_luna": {
+        "elo": {
+          "lo": 1618.3620776789833,
+          "hi": 1738.932745047722,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 4.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.6880707899953766,
+          "hi": 2.6841372923407567,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": 420.2757599093839,
+          "hi": 1902.4087149821703,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.47895336285736284,
+          "hi": 0.7311642492875355,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 86.38594850352112,
+          "hi": 307.5693814404122,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 143.16549548447884,
+          "hi": 284.72155367269363,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 243.99499848929557,
+          "hi": 766.1028630909742,
+          "n": 500
+        }
+      },
+      "gemini_4_hydrogen": {
+        "elo": {
+          "lo": 1626.0222497194839,
+          "hi": 1740.1051798229666,
+          "n": 500
+        },
+        "rank": {
+          "lo": 2.0,
+          "hi": 4.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.9025877170807997,
+          "hi": 3.492730241984308,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": 1446.8051092030494,
+          "hi": 4233.308594730364,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.8028406791323399,
+          "hi": 1.0053700151600513,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 75.87377424568965,
+          "hi": 309.2292308538732,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 128.14815514011303,
+          "hi": 265.4131205472964,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 342.29572966328965,
+          "hi": 6911.376469311568,
+          "n": 500
+        }
+      },
+      "claude_sonnet_5_5": {
+        "elo": {
+          "lo": 986.1889914548951,
+          "hi": 1351.2251962042956,
+          "n": 500
+        },
+        "rank": {
+          "lo": 5.0,
+          "hi": 6.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.0734105380365928,
+          "hi": 1.4825629497685622,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -5740.821730081251,
+          "hi": -3656.0537885860763,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.029467341677296997,
+          "hi": 0.22936825116256815,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 6831.266589315844,
+          "hi": 6947.430577733495,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 1533.412927224453,
+          "hi": 4364.909195356405,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 46.63792067307692,
+          "hi": 320.4895133486563,
+          "n": 500
+        }
+      },
+      "gpt_6_1_terra": {
+        "elo": {
+          "lo": 1628.3278959592815,
+          "hi": 1777.046733874657,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 4.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.3364854408579163,
+          "hi": 1.7121362170923988,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": 1621.7214004656194,
+          "hi": 2726.949354419412,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.8868008475752842,
+          "hi": 1.006594121785982,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 138.02897783702403,
+          "hi": 326.49173955185023,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 189.15922859220498,
+          "hi": 303.79596378269224,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 325.7896723364979,
+          "hi": 770.2529990906547,
+          "n": 500
+        }
+      },
+      "gemini_4_argon": {
+        "elo": {
+          "lo": 1670.7121080604925,
+          "hi": 1799.3491155193467,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 3.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.8332209538697775,
+          "hi": 2.5902301226333613,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -504.93016895502603,
+          "hi": 3668.8546218566626,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.6731981154146871,
+          "hi": 0.9271614884621837,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 157.9157618512356,
+          "hi": 326.5213028169014,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 136.78736464905091,
+          "hi": 242.04141122849234,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 314.5809063843123,
+          "hi": 767.4813122195737,
+          "n": 500
+        }
+      }
+    }
+  },
+  "model_stats": {
+    "claude_haiku_5_5": {
+      "offense_games": 29,
+      "offense_median_effective_cost": 6883.197670319612,
+      "offense_geometric_mean_cost": 1950.604069753004,
+      "defense_median_cost_imposed": 11.0,
+      "defense_geometric_mean_cost_imposed": 14.34918982521975,
+      "offense_aggregate_speedup": {
+        "numerator": 1770114782173876718927495167428774277852331965941607871750235264916398257210418888549218915884978516515,
+        "denominator": 1156764162591348194749438549980554230331082256663353894225520446336559737210905474987677222537512783424,
+        "value": 1.5302296175985595
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 43467533228738092556118795568927968057794554862847795018266708405695606110721842019,
+        "denominator": 9633664908826587935323562688380617461532310215668794020793031378029390920358400,
+        "value": 4512.0453783805715
+      },
+      "offense_mean_baseline": {
+        "numerator": 12699819166215748593721288541949,
+        "denominator": 1839363121466436603324170240,
+        "value": 6904.46547394665
+      },
+      "offense_capped_fraction_of_offense_games": 1.0,
+      "defense_games": 29,
+      "defensive_cost_ratio": {
+        "numerator": 704402973473278026654094620238720,
+        "denominator": 19316424951814153611050079872304429,
+        "value": 0.03646652914452072
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.13793103448275862,
+      "mean_paired_cost_advantage": {
+        "numerator": -14669341665667874337614605531911373969456827193637829298238052144583502255931131936633,
+        "denominator": 3886685497699002718733989084622524975859587224942237587699257486998064612696320000,
+        "value": -3774.254869438864
+      },
+      "opponents": [
+        "claude_sonnet_5_5",
+        "gemini_4_argon",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra",
+        "gpt_6_luna"
+      ],
+      "fixtures": 29,
+      "match_points": 1.0,
+      "match_point_share": 0.034482758620689655,
+      "wins": 1,
+      "draws": 0,
+      "losses": 28
+    },
+    "gpt_6_luna": {
+      "offense_games": 52,
+      "offense_median_effective_cost": 216.94042361296422,
+      "offense_geometric_mean_cost": 213.8573328339622,
+      "defense_median_cost_imposed": 378.71293906652437,
+      "defense_geometric_mean_cost_imposed": 496.83498120031436,
+      "offense_aggregate_speedup": {
+        "numerator": 16834976993090535042483866063508698278861914628252611951908878204450363506820765445756629464406741894283806107798489,
+        "denominator": 8535852652472074867726420545107357774859653494116128873135906015031324321188952920914701843194386825908148478253580,
+        "value": 1.9722665887648545
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 571911258614570735204551721293323531147046666788127534330792019019469499126173,
+        "denominator": 285708604390251859396334814732674346737328389462368526999930311804680241152,
+        "value": 2001.729208803919
+      },
+      "offense_mean_baseline": {
+        "numerator": 10979890503474268472168343214970184360397617396852131,
+        "denominator": 2781166984506789056249047492032848133778022727680,
+        "value": 3947.9436382786766
+      },
+      "offense_capped_fraction_of_offense_games": 0.6923076923076923,
+      "defense_games": 52,
+      "defensive_cost_ratio": {
+        "numerator": 113240205016979648843317471600757994358998162026836720168872116545511950977489574394950875884217006968104902014615804,
+        "denominator": 178024882278879589894389117862369010158910708884536728956986777523257797485560861845271281426201301412144298946720685,
+        "value": 0.6360920089787593
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8653846153846154,
+      "mean_paired_cost_advantage": {
+        "numerator": 215390988276641131031653323372389059577209031088820850583225018658692248312297364000027323970466819298309827441838527804396681158833,
+        "denominator": 144057152282293604946970172507136577367996766583771650782463977637372006705235077174849481356561068768018133227776905183605760000,
+        "value": 1495.17732972093
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "claude_sonnet_5_5",
+        "gemini_4_argon",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra"
+      ],
+      "fixtures": 52,
+      "match_points": 30.5,
+      "match_point_share": 0.5865384615384616,
+      "wins": 19,
+      "draws": 23,
+      "losses": 10
+    },
+    "gemini_4_hydrogen": {
+      "offense_games": 53,
+      "offense_median_effective_cost": 161.904296875,
+      "offense_geometric_mean_cost": 192.11114803277601,
+      "defense_median_cost_imposed": 778.4397048861994,
+      "defense_geometric_mean_cost_imposed": 868.6854461763086,
+      "offense_aggregate_speedup": {
+        "numerator": 2138952458187797698272204340953916529739189298786752506545568211610783536689680338028459235522112285,
+        "denominator": 880958805519103135788160582940610880142679273920500074182111585601303908826498189436913949031217008,
+        "value": 2.427982381000692
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 166890855179218245074595849463496985367507012394838311172846067919276581,
+        "denominator": 104552544842207329444840766630490267236241632739408375154414609766400,
+        "value": 1596.2390531105011
+      },
+      "offense_mean_baseline": {
+        "numerator": 32958262521845112667980271749712363664820506996250473,
+        "denominator": 8503952894934220383530741369869670255205877186560,
+        "value": 3875.640296817525
+      },
+      "offense_capped_fraction_of_offense_games": 0.7547169811320755,
+      "defense_games": 53,
+      "defensive_cost_ratio": {
+        "numerator": 136187794989143917307882564642767645760627208754804149749063686327564230407173152171913684771708240101560635480491632611475952564716,
+        "denominator": 149443614108936361407389158178899357485808401500221611082277117522626991142348187549309530616042611335402035494477259880585585062005,
+        "value": 0.9112988587780695
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8679245283018868,
+      "mean_paired_cost_advantage": {
+        "numerator": 22357476943009270675442188519321083182526616556264944375272874699009526242567537361398606382274800128469914166315217002626201624370371351075301623,
+        "denominator": 7962739065243093686668098659473430542947026784088730147292874211516771794435940831238046997555922313496723808657978259324519041210531828480000,
+        "value": 2807.762097919094
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "claude_sonnet_5_5",
+        "gemini_4_argon",
+        "gpt_6_1_terra",
+        "gpt_6_luna"
+      ],
+      "fixtures": 53,
+      "match_points": 32.0,
+      "match_point_share": 0.6037735849056604,
+      "wins": 20,
+      "draws": 24,
+      "losses": 9
+    },
+    "claude_sonnet_5_5": {
+      "offense_games": 32,
+      "offense_median_effective_cost": 6891.795485770141,
+      "offense_geometric_mean_cost": 2618.245307894067,
+      "defense_median_cost_imposed": 118.54885842763704,
+      "defense_geometric_mean_cost_imposed": 125.99481264957564,
+      "offense_aggregate_speedup": {
+        "numerator": 731849199212961975558346977303791312292578245363578146376758276219196852041490543142726259141417738357925,
+        "denominator": 589742679795775270993436987657648606360119582577856515552420996697630509565674868459762307576718215814174,
+        "value": 1.2409636003729583
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 1078672939095400335691402644742692778073492704568829358275504020302771431821592331420939,
+        "denominator": 213050744016701609599123362770331572706695168618676954854424915089120541274865664000,
+        "value": 5062.986022761039
+      },
+      "offense_mean_baseline": {
+        "numerator": 2577998165119551281943597021407989549,
+        "denominator": 410314469515891078802336639877120,
+        "value": 6282.981363443504
+      },
+      "offense_capped_fraction_of_offense_games": 0.96875,
+      "defense_games": 32,
+      "defensive_cost_ratio": {
+        "numerator": 194561895362022869700177543825872838664071151848021691273733598293264,
+        "denominator": 1887784761123799911432315499187637321191253907878860638633846893380985,
+        "value": 0.103063600982879
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8125,
+      "mean_paired_cost_advantage": {
+        "numerator": -650230572322150656575107369482698199723755304778947193017400049393278361199523480741878274049291237876352563,
+        "denominator": 137777355795213193114418503000105693951379182765021027420447376940607568181052242320858416501644226560000,
+        "value": -4719.429898833504
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "gemini_4_argon",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra",
+        "gpt_6_luna"
+      ],
+      "fixtures": 32,
+      "match_points": 3.5,
+      "match_point_share": 0.109375,
+      "wins": 2,
+      "draws": 3,
+      "losses": 27
+    },
+    "gpt_6_1_terra": {
+      "offense_games": 71,
+      "offense_median_effective_cost": 299.06032311893205,
+      "offense_geometric_mean_cost": 234.4644078099856,
+      "defense_median_cost_imposed": 449.2783740755957,
+      "defense_geometric_mean_cost_imposed": 522.262657787903,
+      "offense_aggregate_speedup": {
+        "numerator": 192950804739253445550927569918236942476850829498413643277004302581262083026856785827041299538174816557688346430392355701466460915525,
+        "denominator": 125031602204757879517551806594403695409574898194063338139234546942973546113143576386862364823816110186267707838095584738163927624768,
+        "value": 1.5432162856176772
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 1291219881559532119280597449917408036612893773421405207817839734652245306734903812907445757225771,
+        "denominator": 674188792124860201256553816856175642234034017276044336448293344735004576343984828678057894400,
+        "value": 1915.2200342725325
+      },
+      "offense_mean_baseline": {
+        "numerator": 11006193059777546697092106316862336420284959130928610847668329,
+        "denominator": 3723845487938958851095176860982004600991433976967919009792,
+        "value": 2955.5987474306185
+      },
+      "offense_capped_fraction_of_offense_games": 0.7605633802816901,
+      "defense_games": 71,
+      "defensive_cost_ratio": {
+        "numerator": 8744726327559048238615765293155133345054895262046177123040121678444700315125689978375104119918993536921038159663233250297078313559232895703138201679405914941658448,
+        "denominator": 8980969106551577288378544439281452951088066161031991893704824216482387186020654407605336755002351420109418552718354373812324106206264034507492031352622736471693625,
+        "value": 0.973695179641561
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8591549295774648,
+      "mean_paired_cost_advantage": {
+        "numerator": 490412891994178438010677710546068880420829277303888056888900964361843118800933661926631691715253035246402377210703850395579983825067082069735341526040436602698593388757944227698366279921559945629,
+        "denominator": 226116173800356106888840437464395292185574515197966668952084372166295359084923765347040266467719941647193042753173587335802562122903151860540275087246850381807018675414416733982289685185280000,
+        "value": 2168.8536638125533
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "claude_sonnet_5_5",
+        "gemini_4_argon",
+        "gemini_4_hydrogen",
+        "gpt_6_luna"
+      ],
+      "fixtures": 71,
+      "match_points": 42.5,
+      "match_point_share": 0.5985915492957746,
+      "wins": 21,
+      "draws": 43,
+      "losses": 7
+    },
+    "gemini_4_argon": {
+      "offense_games": 57,
+      "offense_median_effective_cost": 307.9748903508772,
+      "offense_geometric_mean_cost": 188.08400377242614,
+      "defense_median_cost_imposed": 437.6666932397959,
+      "defense_geometric_mean_cost_imposed": 528.3673554638185,
+      "offense_aggregate_speedup": {
+        "numerator": 250406743305313309324546331303421071636926447469837208045026703670660674534194219298679071697844876281857282259284797028917315,
+        "denominator": 120890080845101561787325086929645620765157076386016971498890276386622574948209085034441005160691672856970251375186644454972736,
+        "value": 2.0713588869724022
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 252040892992548466701618696029028457349794795223389368770767132490830863909893964449873,
+        "denominator": 143985646677096910685229189353851065533534314278783728203578765295611616771865402880,
+        "value": 1750.458457555682
+      },
+      "offense_mean_baseline": {
+        "numerator": 12707680549667290405518926224362010570469159617496162622917,
+        "denominator": 3504766818230943885085366991000681311304125236318732288,
+        "value": 3625.8276823339656
+      },
+      "offense_capped_fraction_of_offense_games": 0.7017543859649122,
+      "defense_games": 57,
+      "defensive_cost_ratio": {
+        "numerator": 7595938473609213941304564047686951169623322783140115027786147317311994076548676051474521251717386385173265087971191668572202566491112714392202622,
+        "denominator": 9389881441977710183700408849034278176946181501055642069587453767969427032558924687247470493123388763178732367524802730488719196357220328797927035,
+        "value": 0.8089493483540029
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.8421052631578947,
+      "mean_paired_cost_advantage": {
+        "numerator": 15902412298491438437737896649104716856824262698916416029706438663770931602895707151297808435893200648351468225242723439546405610131900914985042983087683652101155143653,
+        "denominator": 7865115861945757019005021326291672815487886283441910906281940945585049935006305208478903644577643380939887132791528801733395818860711607031628312709312801492992000,
+        "value": 2021.8916768197905
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "claude_sonnet_5_5",
+        "gemini_4_hydrogen",
+        "gpt_6_1_terra",
+        "gpt_6_luna"
+      ],
+      "fixtures": 57,
+      "match_points": 37.5,
+      "match_point_share": 0.6578947368421053,
+      "wins": 23,
+      "draws": 29,
+      "losses": 5
+    }
+  },
+  "role_diagnostics": {
+    "claude_haiku_5_5": {
+      "offense": {
+        "games": 29.0,
+        "turns": 870.0,
+        "guesser1_decisions": 870.0,
+        "clue_turns": 825.0,
+        "guesser2_decisions": 825.0,
+        "registered_matches": 770.0,
+        "intended_word_covered": 766.0,
+        "contacts_prevented": 755.0,
+        "guesser2_pass": 22.0,
+        "guesser1_invalid": 23.0,
+        "direct_turns": 22.0,
+        "choice_opportunities": 6.0,
+        "choice_reveal": 3.0,
+        "contacts_awarded": 14.0,
+        "choice_cancel": 3.0,
+        "preserved_words_later_reused": 1.0,
+        "guesser2_invalid": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.026436781609195402,
+          "direct_share_per_valid_turn": 0.025974025974025976,
+          "registered_match_per_clue_turn": 0.9333333333333333,
+          "contact_per_clue_turn": 0.01696969696969697,
+          "contact_per_registered_match": 0.01818181818181818,
+          "guesser2_invalid_per_guesser2_decision": 0.0012121212121212121,
+          "reveal_per_choice_opportunity": 0.5
+        }
+      },
+      "defense": {
+        "games": 29.0,
+        "block_decisions": 323.0,
+        "block_invalid": 27.0,
+        "empty_blocklists": 49.0,
+        "fresh_secret_candidates_blocked": 652850.0,
+        "blocks_overlapping_clue": 195.0,
+        "intended_word_covered": 234.0,
+        "contacts_prevented": 232.0,
+        "mean_blocklist_size_per_block_decision": 3020.0712074303406,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.15170278637770898,
+          "block_invalid_per_block_decision": 0.08359133126934984
+        }
+      }
+    },
+    "gemini_4_hydrogen": {
+      "offense": {
+        "games": 53.0,
+        "wins": 13.0,
+        "hit_source_direct": 6.0,
+        "turns": 1366.0,
+        "guesser1_decisions": 1366.0,
+        "clue_turns": 1346.0,
+        "guesser2_decisions": 1346.0,
+        "registered_matches": 1338.0,
+        "contacts_awarded": 31.0,
+        "intended_word_covered": 1306.0,
+        "contacts_prevented": 1300.0,
+        "direct_turns": 8.0,
+        "hit_source_clue": 3.0,
+        "hit_source_guesser1_opened": 4.0,
+        "hit_source_guesser2_opened": 4.0,
+        "choice_opportunities": 2.0,
+        "choice_reveal": 2.0,
+        "guesser1_invalid": 12.0,
+        "guesser2_pass": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.008784773060029283,
+          "direct_share_per_valid_turn": 0.005908419497784343,
+          "registered_match_per_clue_turn": 0.9940564635958395,
+          "contact_per_clue_turn": 0.023031203566121844,
+          "contact_per_registered_match": 0.023168908819133034,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": 1.0
+        }
+      },
+      "defense": {
+        "games": 53.0,
+        "block_decisions": 1349.0,
+        "empty_blocklists": 23.0,
+        "fresh_secret_candidates_blocked": 4229.0,
+        "blocks_overlapping_clue": 7.0,
+        "intended_word_covered": 1286.0,
+        "contacts_prevented": 1241.0,
+        "mean_blocklist_size_per_block_decision": 3.1363973313565605,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.01704966641957005,
+          "block_invalid_per_block_decision": 0.0
+        }
+      }
+    },
+    "gpt_6_luna": {
+      "offense": {
+        "games": 52.0,
+        "wins": 16.0,
+        "hit_source_direct": 6.0,
+        "turns": 1279.0,
+        "guesser1_decisions": 1279.0,
+        "clue_turns": 1182.0,
+        "guesser2_decisions": 1182.0,
+        "registered_matches": 1079.0,
+        "contacts_awarded": 44.0,
+        "intended_word_covered": 1085.0,
+        "contacts_prevented": 1028.0,
+        "guesser1_invalid": 65.0,
+        "direct_turns": 32.0,
+        "choice_opportunities": 33.0,
+        "choice_reveal": 22.0,
+        "hit_source_guesser1_opened": 4.0,
+        "hit_source_guesser2_opened": 4.0,
+        "choice_cancel": 11.0,
+        "preserved_words_later_reused": 4.0,
+        "hit_source_clue": 4.0,
+        "guesser2_invalid": 5.0,
+        "guesser2_pass": 5.0,
+        "wins_prefix_completed": 2.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.0508209538702111,
+          "direct_share_per_valid_turn": 0.026359143327841845,
+          "registered_match_per_clue_turn": 0.9128595600676819,
+          "contact_per_clue_turn": 0.03722504230118443,
+          "contact_per_registered_match": 0.04077849860982391,
+          "guesser2_invalid_per_guesser2_decision": 0.004230118443316413,
+          "reveal_per_choice_opportunity": 0.6666666666666666
+        }
+      },
+      "defense": {
+        "games": 52.0,
+        "block_decisions": 1329.0,
+        "empty_blocklists": 17.0,
+        "fresh_secret_candidates_blocked": 95650.0,
+        "blocks_overlapping_clue": 184.0,
+        "intended_word_covered": 1295.0,
+        "contacts_prevented": 1254.0,
+        "block_invalid": 11.0,
+        "mean_blocklist_size_per_block_decision": 72.13995485327314,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.012791572610985704,
+          "block_invalid_per_block_decision": 0.008276899924755455
+        }
+      }
+    },
+    "claude_sonnet_5_5": {
+      "offense": {
+        "games": 32.0,
+        "turns": 960.0,
+        "guesser1_decisions": 960.0,
+        "clue_turns": 478.0,
+        "guesser2_decisions": 478.0,
+        "registered_matches": 477.0,
+        "intended_word_covered": 469.0,
+        "contacts_prevented": 464.0,
+        "guesser1_invalid": 128.0,
+        "direct_turns": 354.0,
+        "contacts_awarded": 7.0,
+        "wins": 1.0,
+        "hit_source_direct": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.13333333333333333,
+          "direct_share_per_valid_turn": 0.4254807692307692,
+          "registered_match_per_clue_turn": 0.997907949790795,
+          "contact_per_clue_turn": 0.014644351464435146,
+          "contact_per_registered_match": 0.014675052410901468,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": null
+        }
+      },
+      "defense": {
+        "games": 32.0,
+        "block_decisions": 782.0,
+        "empty_blocklists": 63.0,
+        "fresh_secret_candidates_blocked": 4229.0,
+        "blocks_overlapping_clue": 593.0,
+        "intended_word_covered": 704.0,
+        "contacts_prevented": 680.0,
+        "block_invalid": 47.0,
+        "mean_blocklist_size_per_block_decision": 6.132992327365729,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.08056265984654731,
+          "block_invalid_per_block_decision": 0.06010230179028133
+        }
+      }
+    },
+    "gemini_4_argon": {
+      "offense": {
+        "games": 57.0,
+        "wins": 17.0,
+        "hit_source_clue": 13.0,
+        "turns": 1352.0,
+        "guesser1_decisions": 1352.0,
+        "clue_turns": 1329.0,
+        "guesser2_decisions": 1329.0,
+        "registered_matches": 1254.0,
+        "contacts_awarded": 46.0,
+        "intended_word_covered": 1241.0,
+        "contacts_prevented": 1198.0,
+        "choice_opportunities": 21.0,
+        "choice_reveal": 19.0,
+        "guesser1_invalid": 21.0,
+        "direct_turns": 2.0,
+        "hit_source_guesser2_opened": 3.0,
+        "choice_cancel": 2.0,
+        "guesser2_invalid": 1.0,
+        "guesser2_pass": 1.0,
+        "hit_source_guesser1_opened": 1.0,
+        "hit_source_direct": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.015532544378698224,
+          "direct_share_per_valid_turn": 0.0015026296018031556,
+          "registered_match_per_clue_turn": 0.9435665914221218,
+          "contact_per_clue_turn": 0.0346124905944319,
+          "contact_per_registered_match": 0.03668261562998405,
+          "guesser2_invalid_per_guesser2_decision": 0.0007524454477050414,
+          "reveal_per_choice_opportunity": 0.9047619047619048
+        }
+      },
+      "defense": {
+        "games": 57.0,
+        "block_decisions": 1290.0,
+        "empty_blocklists": 12.0,
+        "fresh_secret_candidates_blocked": 15384.0,
+        "blocks_overlapping_clue": 20.0,
+        "intended_word_covered": 1262.0,
+        "contacts_prevented": 1232.0,
+        "block_invalid": 12.0,
+        "mean_blocklist_size_per_block_decision": 11.98294573643411,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.009302325581395349,
+          "block_invalid_per_block_decision": 0.009302325581395349
+        }
+      }
+    },
+    "gpt_6_1_terra": {
+      "offense": {
+        "games": 71.0,
+        "turns": 1806.0,
+        "guesser1_decisions": 1806.0,
+        "clue_turns": 1603.0,
+        "guesser2_decisions": 1603.0,
+        "registered_matches": 1539.0,
+        "intended_word_covered": 1564.0,
+        "contacts_prevented": 1494.0,
+        "contacts_awarded": 29.0,
+        "guesser1_invalid": 203.0,
+        "wins": 17.0,
+        "hit_source_clue": 15.0,
+        "choice_opportunities": 52.0,
+        "choice_reveal": 52.0,
+        "guesser2_pass": 2.0,
+        "hit_source_guesser1_opened": 2.0,
+        "hit_source_guesser2_opened": 2.0,
+        "guesser2_invalid": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.1124031007751938,
+          "direct_share_per_valid_turn": 0.0,
+          "registered_match_per_clue_turn": 0.9600748596381784,
+          "contact_per_clue_turn": 0.018091079226450407,
+          "contact_per_registered_match": 0.018843404808317088,
+          "guesser2_invalid_per_guesser2_decision": 0.0006238303181534623,
+          "reveal_per_choice_opportunity": 1.0
+        }
+      },
+      "defense": {
+        "games": 71.0,
+        "block_decisions": 1690.0,
+        "empty_blocklists": 17.0,
+        "fresh_secret_candidates_blocked": 9746.0,
+        "blocks_overlapping_clue": 196.0,
+        "intended_word_covered": 1650.0,
+        "contacts_prevented": 1600.0,
+        "block_invalid": 1.0,
+        "mean_blocklist_size_per_block_decision": 5.825443786982248,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.010059171597633136,
+          "block_invalid_per_block_decision": 0.000591715976331361
+        }
+      }
+    }
+  },
+  "pairwise_match_points": {
+    "claude_haiku_5_5": {
+      "gpt_6_luna": {
+        "mean_points": 0.0,
+        "fixtures": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.0,
+        "fixtures": 10
+      },
+      "claude_sonnet_5_5": {
+        "mean_points": 0.3333333333333333,
+        "fixtures": 3
+      },
+      "gpt_6_1_terra": {
+        "mean_points": 0.0,
+        "fixtures": 3
+      },
+      "gemini_4_argon": {
+        "mean_points": 0.0,
+        "fixtures": 3
+      }
+    },
+    "gpt_6_luna": {
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.5,
+        "fixtures": 23
+      },
+      "claude_sonnet_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 3
+      },
+      "gpt_6_1_terra": {
+        "mean_points": 0.36363636363636365,
+        "fixtures": 11
+      },
+      "gemini_4_argon": {
+        "mean_points": 0.4,
+        "fixtures": 5
+      }
+    },
+    "gemini_4_hydrogen": {
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 10
+      },
+      "gpt_6_luna": {
+        "mean_points": 0.5,
+        "fixtures": 23
+      },
+      "claude_sonnet_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 3
+      },
+      "gpt_6_1_terra": {
+        "mean_points": 0.45454545454545453,
+        "fixtures": 11
+      },
+      "gemini_4_argon": {
+        "mean_points": 0.4166666666666667,
+        "fixtures": 6
+      }
+    },
+    "claude_sonnet_5_5": {
+      "gpt_6_1_terra": {
+        "mean_points": 0.11538461538461539,
+        "fixtures": 13
+      },
+      "gemini_4_argon": {
+        "mean_points": 0.0,
+        "fixtures": 10
+      },
+      "claude_haiku_5_5": {
+        "mean_points": 0.6666666666666666,
+        "fixtures": 3
+      },
+      "gpt_6_luna": {
+        "mean_points": 0.0,
+        "fixtures": 3
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.0,
+        "fixtures": 3
+      }
+    },
+    "gpt_6_1_terra": {
+      "claude_sonnet_5_5": {
+        "mean_points": 0.8846153846153846,
+        "fixtures": 13
+      },
+      "gemini_4_argon": {
+        "mean_points": 0.45454545454545453,
+        "fixtures": 33
+      },
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 3
+      },
+      "gpt_6_luna": {
+        "mean_points": 0.6363636363636364,
+        "fixtures": 11
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.5454545454545454,
+        "fixtures": 11
+      }
+    },
+    "gemini_4_argon": {
+      "claude_sonnet_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 10
+      },
+      "gpt_6_1_terra": {
+        "mean_points": 0.5454545454545454,
+        "fixtures": 33
+      },
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 3
+      },
+      "gpt_6_luna": {
+        "mean_points": 0.6,
+        "fixtures": 5
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.5833333333333334,
+        "fixtures": 6
+      }
+    }
+  },
+  "pairwise_mean_cost": {
+    "claude_haiku_5_5": {
+      "gemini_4_hydrogen": {
+        "mean_cost": 6945.987064825513,
+        "games": 10
+      },
+      "gpt_6_luna": {
+        "mean_cost": 2643.986946588236,
+        "games": 10
+      },
+      "claude_sonnet_5_5": {
+        "mean_cost": 122.31769092753851,
+        "games": 3
+      },
+      "gemini_4_argon": {
+        "mean_cost": 4649.44725364796,
+        "games": 3
+      },
+      "gpt_6_1_terra": {
+        "mean_cost": 6878.093675057525,
+        "games": 3
+      }
+    },
+    "gemini_4_hydrogen": {
+      "claude_haiku_5_5": {
+        "mean_cost": 16.7,
+        "games": 10
+      },
+      "gpt_6_luna": {
+        "mean_cost": 1983.1437420049385,
+        "games": 23
+      },
+      "claude_sonnet_5_5": {
+        "mean_cost": 375.46899856873995,
+        "games": 3
+      },
+      "gemini_4_argon": {
+        "mean_cost": 2477.524907758998,
+        "games": 6
+      },
+      "gpt_6_1_terra": {
+        "mean_cost": 2075.4370278620704,
+        "games": 11
+      }
+    },
+    "gpt_6_luna": {
+      "claude_haiku_5_5": {
+        "mean_cost": 11.3,
+        "games": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_cost": 2582.760599651132,
+        "games": 23
+      },
+      "claude_sonnet_5_5": {
+        "mean_cost": 283.1764149533283,
+        "games": 3
+      },
+      "gemini_4_argon": {
+        "mean_cost": 4191.133405037794,
+        "games": 5
+      },
+      "gpt_6_1_terra": {
+        "mean_cost": 2069.8389814344364,
+        "games": 11
+      }
+    },
+    "claude_sonnet_5_5": {
+      "gemini_4_argon": {
+        "mean_cost": 4333.039578124277,
+        "games": 10
+      },
+      "gpt_6_1_terra": {
+        "mean_cost": 5417.636541108039,
+        "games": 13
+      },
+      "claude_haiku_5_5": {
+        "mean_cost": 2323.224950519121,
+        "games": 3
+      },
+      "gemini_4_hydrogen": {
+        "mean_cost": 6879.809408976476,
+        "games": 3
+      },
+      "gpt_6_luna": {
+        "mean_cost": 6882.259611406395,
+        "games": 3
+      }
+    },
+    "gemini_4_argon": {
+      "claude_sonnet_5_5": {
+        "mean_cost": 191.18093595946655,
+        "games": 10
+      },
+      "gpt_6_1_terra": {
+        "mean_cost": 2050.482358316279,
+        "games": 33
+      },
+      "claude_haiku_5_5": {
+        "mean_cost": 9.333333333333334,
+        "games": 3
+      },
+      "gemini_4_hydrogen": {
+        "mean_cost": 2491.534593618165,
+        "games": 6
+      },
+      "gpt_6_luna": {
+        "mean_cost": 3044.239466986604,
+        "games": 5
+      }
+    },
+    "gpt_6_1_terra": {
+      "claude_sonnet_5_5": {
+        "mean_cost": 1266.6765555577167,
+        "games": 13
+      },
+      "gemini_4_argon": {
+        "mean_cost": 2245.0839277437717,
+        "games": 33
+      },
+      "claude_haiku_5_5": {
+        "mean_cost": 8.0,
+        "games": 3
+      },
+      "gemini_4_hydrogen": {
+        "mean_cost": 2066.9934987189276,
+        "games": 11
+      },
+      "gpt_6_luna": {
+        "mean_cost": 2060.466282695166,
+        "games": 11
+      }
+    }
+  },
+  "capped_games": 230,
+  "capped_fraction_of_scored_games": 0.782312925170068,
+  "residual_candidate_counts_capped": [
+    1,
+    3,
+    4,
+    106,
+    120,
+    279,
+    333,
+    342,
+    343,
+    383,
+    388,
+    405,
+    431,
+    441,
+    447,
+    459,
+    469,
+    472,
+    479,
+    736,
+    756,
+    762,
+    774,
+    802,
+    866,
+    991,
+    1075,
+    1143,
+    1305,
+    1316,
+    1362,
+    1369,
+    1425,
+    2024,
+    2590,
+    2603,
+    2630,
+    2640,
+    2748,
+    2766,
+    2777,
+    2786,
+    2790,
+    2804,
+    2821,
+    3231,
+    3339,
+    3369,
+    3369,
+    3411,
+    3511,
+    3585,
+    3614,
+    3618,
+    3645,
+    3648,
+    3770,
+    3818,
+    4361,
+    4389,
+    4463,
+    4637,
+    4873,
+    4879,
+    4972,
+    4976,
+    6093,
+    6114,
+    6148,
+    6307,
+    6320,
+    6353,
+    6371,
+    6374,
+    6383,
+    6383,
+    6387,
+    6550,
+    6679,
+    6695,
+    6779,
+    6816,
+    6821,
+    6829,
+    6832,
+    6851,
+    6875,
+    6886,
+    6887,
+    6901,
+    6905,
+    6931,
+    6989,
+    6993,
+    7027,
+    8995,
+    9135,
+    9217,
+    9218,
+    9227,
+    10011,
+    10159,
+    10283,
+    10380,
+    15656,
+    15830,
+    15864,
+    15866,
+    16079,
+    16081,
+    16112,
+    16136,
+    16140,
+    16170,
+    18553,
+    18605,
+    18609,
+    18682,
+    18739,
+    18811,
+    18839,
+    18849,
+    18865,
+    18871,
+    18871,
+    18874,
+    18889,
+    18891,
+    18894,
+    18907,
+    18917,
+    18939,
+    93955,
+    167314,
+    171913,
+    171916,
+    171967,
+    171975,
+    172015,
+    172047,
+    172068,
+    172073,
+    172083,
+    172086,
+    172088,
+    172090,
+    172091,
+    172132,
+    172132,
+    172138,
+    172149,
+    172156,
+    172158,
+    172160,
+    172163,
+    172166,
+    172181,
+    172184,
+    172185,
+    172190,
+    172193,
+    172193,
+    172197,
+    172205,
+    172217,
+    172229,
+    172231,
+    172232,
+    172239,
+    172240,
+    172241,
+    172243,
+    172247,
+    172250,
+    172252,
+    172256,
+    172260,
+    172264,
+    172264,
+    172282,
+    172294,
+    172297,
+    172298,
+    172301,
+    172301,
+    172305,
+    172318,
+    172319,
+    172320,
+    172320,
+    172326,
+    172330,
+    172332,
+    172335,
+    172336,
+    172340,
+    172341,
+    172357,
+    172362,
+    172368,
+    172373,
+    172374,
+    172381,
+    172382,
+    172382,
+    172386,
+    172394,
+    172398,
+    172402,
+    172407,
+    172408,
+    172408,
+    172414,
+    172415,
+    172419,
+    172422,
+    172448,
+    172468,
+    172469,
+    172474,
+    172475,
+    172480,
+    172503,
+    172507,
+    172508,
+    172518,
+    172519,
+    172533,
+    172533,
+    172544
+  ],
+  "strata": {
+    "by_target_length": [
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 4,
+        "games": 5,
+        "aggregate_speedup": 1.6350698734497298,
+        "mean_cost": 4162.119708246447,
+        "mean_baseline": 6805.356544645145
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 6,
+        "games": 5,
+        "aggregate_speedup": 1.2393046777118804,
+        "mean_cost": 5538.749035603713,
+        "mean_baseline": 6864.197588495847
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 7,
+        "games": 7,
+        "aggregate_speedup": 1.6915519722952368,
+        "mean_cost": 4075.6734608616184,
+        "mean_baseline": 6894.2134811518235
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 1.970431650945032,
+        "mean_cost": 3512.156796242474,
+        "mean_baseline": 6920.464914397871
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 9,
+        "games": 4,
+        "aggregate_speedup": 1.9140472836148907,
+        "mean_cost": 3632.1112486371335,
+        "mean_baseline": 6952.032669240994
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 10,
+        "games": 2,
+        "aggregate_speedup": 1.8931956749151142,
+        "mean_cost": 3685.832793303914,
+        "mean_baseline": 6978.002702743264
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 11,
+        "games": 4,
+        "aggregate_speedup": 1.1256018164618102,
+        "mean_cost": 6222.708463528281,
+        "mean_baseline": 7004.291949859714
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 4,
+        "games": 5,
+        "aggregate_speedup": 1.2422707013077847,
+        "mean_cost": 5478.159098078134,
+        "mean_baseline": 6805.356544645145
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 6,
+        "games": 5,
+        "aggregate_speedup": 0.9962443587745182,
+        "mean_cost": 6890.074235340723,
+        "mean_baseline": 6864.197588495847
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 7,
+        "games": 7,
+        "aggregate_speedup": 1.3670360663858974,
+        "mean_cost": 5043.183315110628,
+        "mean_baseline": 6894.2134811518235
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 0.9961155065024379,
+        "mean_cost": 6947.452247477822,
+        "mean_baseline": 6920.464914397871
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 9,
+        "games": 6,
+        "aggregate_speedup": 1.296743822774182,
+        "mean_cost": 3642.1377449320867,
+        "mean_baseline": 4722.919622433374
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 10,
+        "games": 2,
+        "aggregate_speedup": 1.8893831832544483,
+        "mean_cost": 3693.2702506241785,
+        "mean_baseline": 6978.002702743264
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "target_length": 11,
+        "games": 5,
+        "aggregate_speedup": 1.3025073715942648,
+        "mean_cost": 4347.566277937609,
+        "mean_baseline": 5662.737125508375
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 4,
+        "games": 8,
+        "aggregate_speedup": 1.6591857900414888,
+        "mean_cost": 2584.9846014853947,
+        "mean_baseline": 4288.969718260627
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 6,
+        "games": 10,
+        "aggregate_speedup": 2.211668447833955,
+        "mean_cost": 1632.5133058925398,
+        "mean_baseline": 3610.578169311633
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 7,
+        "games": 13,
+        "aggregate_speedup": 2.152126617177112,
+        "mean_cost": 1799.5328432529539,
+        "mean_baseline": 3872.8225304490898
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 8,
+        "games": 5,
+        "aggregate_speedup": 1.7073654084392826,
+        "mean_cost": 1716.9000383486539,
+        "mean_baseline": 2931.3757352245693
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 9,
+        "games": 7,
+        "aggregate_speedup": 3.6047657707831897,
+        "mean_cost": 1118.0662834402294,
+        "mean_baseline": 4030.367068012115
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 10,
+        "games": 5,
+        "aggregate_speedup": 1.8323182530705542,
+        "mean_cost": 1567.0459273512083,
+        "mean_baseline": 2871.326856085492
+      },
+      {
+        "model": "gemini_4_argon",
+        "target_length": 11,
+        "games": 9,
+        "aggregate_speedup": 1.8955693876959172,
+        "mean_cost": 1681.2223816662224,
+        "mean_baseline": 3186.873680595713
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 4,
+        "games": 7,
+        "aggregate_speedup": 4.612414205824195,
+        "mean_cost": 1058.5862838291548,
+        "mean_baseline": 4882.638413624237
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 6,
+        "games": 14,
+        "aggregate_speedup": 1.5296799283889193,
+        "mean_cost": 1730.516020552472,
+        "mean_baseline": 2647.1356223945827
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 7,
+        "games": 10,
+        "aggregate_speedup": 2.1563766799890978,
+        "mean_cost": 2282.745381486326,
+        "mean_baseline": 4922.45890698993
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 1.990438660824839,
+        "mean_cost": 3476.854148085139,
+        "mean_baseline": 6920.464914397871
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 9,
+        "games": 11,
+        "aggregate_speedup": 1.9205125590052314,
+        "mean_cost": 1361.839733021833,
+        "mean_baseline": 2615.4303106207617
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 10,
+        "games": 2,
+        "aggregate_speedup": 35.314165992150095,
+        "mean_cost": 197.5978338068182,
+        "mean_baseline": 6978.002702743264
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 11,
+        "games": 7,
+        "aggregate_speedup": 3.6352287960272123,
+        "mean_cost": 1115.2495283472197,
+        "mean_baseline": 4054.18720020358
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 4,
+        "games": 11,
+        "aggregate_speedup": 1.6375432816814801,
+        "mean_cost": 1914.2778545371,
+        "mean_baseline": 3134.712839968866
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 6,
+        "games": 13,
+        "aggregate_speedup": 1.532530277149034,
+        "mean_cost": 1858.1011718434938,
+        "mean_baseline": 2847.596303856254
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 7,
+        "games": 18,
+        "aggregate_speedup": 1.6224577417303645,
+        "mean_cost": 1767.314218099056,
+        "mean_baseline": 2867.392635224959
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 8,
+        "games": 5,
+        "aggregate_speedup": 1.8617966788929305,
+        "mean_cost": 1574.4875734592224,
+        "mean_baseline": 2931.3757352245693
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 9,
+        "games": 9,
+        "aggregate_speedup": 1.3220285503347229,
+        "mean_cost": 2415.6442953977325,
+        "mean_baseline": 3193.5507259690075
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 10,
+        "games": 5,
+        "aggregate_speedup": 1.9879218940103125,
+        "mean_cost": 1444.3861525630932,
+        "mean_baseline": 2871.326856085492
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "target_length": 11,
+        "games": 10,
+        "aggregate_speedup": 1.3099688454605525,
+        "mean_cost": 2212.1427585002116,
+        "mean_baseline": 2897.838095346444
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 4,
+        "games": 8,
+        "aggregate_speedup": 1.6510589759664285,
+        "mean_cost": 2597.708368200553,
+        "mean_baseline": 4288.969718260627
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 6,
+        "games": 11,
+        "aggregate_speedup": 1.5466430918517566,
+        "mean_cost": 2124.6559225262845,
+        "mean_baseline": 3286.0844051371987
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 7,
+        "games": 11,
+        "aggregate_speedup": 2.210121091204134,
+        "mean_cost": 2052.063783617506,
+        "mean_baseline": 4535.309448669206
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 17.510418243461643,
+        "mean_cost": 395.2198524430997,
+        "mean_baseline": 6920.464914397871
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 9,
+        "games": 11,
+        "aggregate_speedup": 1.9090010101696082,
+        "mean_cost": 1370.0518211817969,
+        "mean_baseline": 2615.4303106207617
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 10,
+        "games": 2,
+        "aggregate_speedup": 1.988840322684571,
+        "mean_cost": 3508.578654179857,
+        "mean_baseline": 6978.002702743264
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 11,
+        "games": 7,
+        "aggregate_speedup": 1.9590626181270419,
+        "mean_cost": 2069.4525854817125,
+        "mean_baseline": 4054.18720020358
+      }
+    ],
+    "by_initial_candidate_count": [
+      {
+        "model": "claude_haiku_5_5",
+        "bin": ">100",
+        "games": 29,
+        "aggregate_speedup": 1.5302296175985595,
+        "mean_cost": 4512.0453783805715,
+        "mean_baseline": 6904.46547394665
+      },
+      {
+        "model": "claude_sonnet_5_5",
+        "bin": ">100",
+        "games": 32,
+        "aggregate_speedup": 1.2409636003729583,
+        "mean_cost": 5062.986022761039,
+        "mean_baseline": 6282.981363443504
+      },
+      {
+        "model": "gemini_4_argon",
+        "bin": "31-100",
+        "games": 1,
+        "aggregate_speedup": 0.7421061197916666,
+        "mean_cost": 6.0,
+        "mean_baseline": 4.45263671875
+      },
+      {
+        "model": "gemini_4_argon",
+        "bin": ">100",
+        "games": 56,
+        "aggregate_speedup": 2.0714388258923653,
+        "mean_cost": 1781.6095014406048,
+        "mean_baseline": 3690.495093862809
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "bin": "31-100",
+        "games": 2,
+        "aggregate_speedup": 0.33377779447115385,
+        "mean_cost": 13.0,
+        "mean_baseline": 4.339111328125
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "bin": ">100",
+        "games": 51,
+        "aggregate_speedup": 2.428626182736708,
+        "mean_cost": 1658.3268591148346,
+        "mean_baseline": 4027.456029581815
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "bin": "31-100",
+        "games": 1,
+        "aggregate_speedup": 4.45263671875,
+        "mean_cost": 1.0,
+        "mean_baseline": 4.45263671875
+      },
+      {
+        "model": "gpt_6_1_terra",
+        "bin": ">100",
+        "games": 70,
+        "aggregate_speedup": 1.5431948896145036,
+        "mean_cost": 1942.5660347621401,
+        "mean_baseline": 2997.7579775836452
+      },
+      {
+        "model": "gpt_6_luna",
+        "bin": "31-100",
+        "games": 2,
+        "aggregate_speedup": 0.4339111328125,
+        "mean_cost": 10.0,
+        "mean_baseline": 4.339111328125
+      },
+      {
+        "model": "gpt_6_luna",
+        "bin": ">100",
+        "games": 50,
+        "aggregate_speedup": 1.9725622275955246,
+        "mean_cost": 2081.3983771560756,
+        "mean_baseline": 4105.687819356699
+      }
+    ]
+  },
+  "numerical_reference": {
+    "baselines_exact": 0,
+    "baselines_estimated": 294,
+    "fallbacks_exact": 3,
+    "fallbacks_estimated": 227,
+    "max_mcse": 4.466451560382475,
+    "mean_mcse_of_estimates": 1.2571019086922717,
+    "methods": {
+      "baseline:length_class_monte_carlo": 294,
+      "fallback:length_class_monte_carlo": 227,
+      "fallback:all_fit": 3
+    },
+    "fallback_cache_entries_used": 227,
+    "fallback_cache_reuse": 0
+  },
+  "numerically_close_fixtures": 14,
+  "resources": {
+    "claude_haiku_5_5": {
+      "guesser1": {
+        "requests": 874.0,
+        "input_tokens": 6433167.0,
+        "output_tokens": 387460.0,
+        "reasoning_tokens": 343217.0,
+        "cached_input_tokens": 4364452.0,
+        "latency_s": 3623.1730222808455,
+        "transport_attempts": 935.0,
+        "cost_estimate": 0.4665501949999995,
+        "errors": 1.0
+      },
+      "guesser2": {
+        "requests": 828.0,
+        "input_tokens": 5377602.0,
+        "output_tokens": 202587.0,
+        "reasoning_tokens": 186301.0,
+        "cached_input_tokens": 3829711.0,
+        "latency_s": 2355.09575892907,
+        "transport_attempts": 843.0,
+        "cost_estimate": 0.2998734099999998
+      },
+      "defender": {
+        "requests": 323.0,
+        "input_tokens": 1922919.0,
+        "output_tokens": 226536.0,
+        "reasoning_tokens": 207919.0,
+        "cached_input_tokens": 1342184.0,
+        "latency_s": 1909.3863467499632,
+        "transport_attempts": 351.0,
+        "cost_estimate": 0.19300201499999994
+      }
+    },
+    "gpt_6_luna": {
+      "defender": {
+        "requests": 1331.0,
+        "input_tokens": 11091389.0,
+        "output_tokens": 995782.0,
+        "reasoning_tokens": 818895.0,
+        "cached_input_tokens": 7285997.0,
+        "latency_s": 16710.000717749055,
+        "transport_attempts": 2784.0,
+        "cost_estimate": 0.9742220700000008,
+        "errors": 2.0
+      },
+      "guesser1": {
+        "requests": 1298.0,
+        "input_tokens": 17716382.0,
+        "output_tokens": 3143257.0,
+        "reasoning_tokens": 2992785.0,
+        "cached_input_tokens": 12134324.0,
+        "latency_s": 39321.08703606142,
+        "transport_attempts": 3717.0,
+        "cost_estimate": 2.268458340000001,
+        "errors": 7.0
+      },
+      "guesser2": {
+        "requests": 1206.0,
+        "input_tokens": 8479177.0,
+        "output_tokens": 373653.0,
+        "reasoning_tokens": 314081.0,
+        "cached_input_tokens": 5727995.0,
+        "latency_s": 7380.222186663936,
+        "transport_attempts": 2421.0,
+        "cost_estimate": 0.5235992500000006,
+        "errors": 3.0
+      }
+    },
+    "gemini_4_hydrogen": {
+      "defender": {
+        "requests": 1370.0,
+        "input_tokens": 15435513.0,
+        "output_tokens": 182291.0,
+        "reasoning_tokens": 273991.0,
+        "cached_input_tokens": 1895655.0,
+        "latency_s": 12631.691970129545,
+        "transport_attempts": 3950.0,
+        "cost_estimate": 24.573859124999984,
+        "errors": 21.0
+      },
+      "guesser1": {
+        "requests": 1391.0,
+        "input_tokens": 17407162.0,
+        "output_tokens": 166739.0,
+        "reasoning_tokens": 653729.0,
+        "cached_input_tokens": 2580242.0,
+        "latency_s": 17378.90839618644,
+        "transport_attempts": 4281.0,
+        "cost_estimate": 29.361480749999977,
+        "errors": 24.0
+      },
+      "guesser2": {
+        "requests": 1367.0,
+        "input_tokens": 14968775.0,
+        "output_tokens": 99224.0,
+        "reasoning_tokens": 174051.0,
+        "cached_input_tokens": 1987287.0,
+        "latency_s": 12428.7529653826,
+        "transport_attempts": 4077.0,
+        "cost_estimate": 22.267027124999988,
+        "errors": 20.0
+      }
+    },
+    "claude_sonnet_5_5": {
+      "guesser1": {
+        "requests": 960.0,
+        "input_tokens": 6366388.0,
+        "output_tokens": 147287.0,
+        "reasoning_tokens": 97247.0,
+        "cached_input_tokens": 4574024.0,
+        "latency_s": 3363.11961530782,
+        "transport_attempts": 1070.0,
+        "cost_estimate": 6.389437299999998,
+        "incomplete": 1.0
+      },
+      "guesser2": {
+        "requests": 478.0,
+        "input_tokens": 2469864.0,
+        "output_tokens": 12158.0,
+        "reasoning_tokens": 3601.0,
+        "cached_input_tokens": 1808999.0,
+        "latency_s": 888.0752690289883,
+        "transport_attempts": 489.0,
+        "cost_estimate": 1.8784663000000013
+      },
+      "defender": {
+        "requests": 782.0,
+        "input_tokens": 5494913.0,
+        "output_tokens": 159607.0,
+        "reasoning_tokens": 121685.0,
+        "cached_input_tokens": 3672775.0,
+        "latency_s": 3170.1599882539376,
+        "transport_attempts": 817.0,
+        "cost_estimate": 6.992980999999995
+      }
+    },
+    "gpt_6_1_terra": {
+      "defender": {
+        "requests": 1702.0,
+        "input_tokens": 10462225.0,
+        "output_tokens": 147297.0,
+        "reasoning_tokens": 31367.0,
+        "cached_input_tokens": 6773657.0,
+        "latency_s": 7578.888532714045,
+        "transport_attempts": 3043.0,
+        "cost_estimate": 4.984435850000005,
+        "errors": 12.0
+      },
+      "guesser1": {
+        "requests": 1827.0,
+        "input_tokens": 17969113.0,
+        "output_tokens": 297547.0,
+        "reasoning_tokens": 130965.0,
+        "cached_input_tokens": 12554441.0,
+        "latency_s": 14310.608326536385,
+        "transport_attempts": 4279.0,
+        "cost_estimate": 7.925054049999995,
+        "errors": 17.0
+      },
+      "guesser2": {
+        "requests": 1653.0,
+        "input_tokens": 6982202.0,
+        "output_tokens": 48660.0,
+        "reasoning_tokens": 9161.0,
+        "cached_input_tokens": 2990102.0,
+        "latency_s": 4537.0979855090845,
+        "transport_attempts": 1909.0,
+        "cost_estimate": 4.384905099999998,
+        "errors": 2.0
+      }
+    },
+    "gemini_4_argon": {
+      "defender": {
+        "requests": 1315.0,
+        "input_tokens": 16469102.0,
+        "output_tokens": 228578.0,
+        "reasoning_tokens_unknown": 1290.0,
+        "cached_input_tokens_unknown": 1290.0,
+        "latency_s": 57984.758538112736,
+        "transport_attempts": 3785.0,
+        "cost_estimate": 31.501480499999982,
+        "errors": 25.0
+      },
+      "guesser1": {
+        "requests": 1407.0,
+        "input_tokens": 18289562.0,
+        "output_tokens": 233887.0,
+        "reasoning_tokens_unknown": 1369.0,
+        "cached_input_tokens_unknown": 1369.0,
+        "latency_s": 66626.53178000524,
+        "transport_attempts": 4323.0,
+        "cost_estimate": 34.34070049999996,
+        "errors": 38.0
+      },
+      "guesser2": {
+        "requests": 1363.0,
+        "input_tokens": 14832926.0,
+        "output_tokens": 104256.0,
+        "reasoning_tokens_unknown": 1333.0,
+        "cached_input_tokens_unknown": 1333.0,
+        "latency_s": 53436.52929222478,
+        "transport_attempts": 3957.0,
+        "cost_estimate": 27.76679399999999,
+        "errors": 30.0,
+        "input_tokens_unknown": 1.0,
+        "output_tokens_unknown": 1.0,
+        "refusals": 1.0
+      }
+    }
+  },
+  "forecast_calibration": {},
+  "human_challenge": null,
+  "anchored_rating": null,
+  "rating_joint_unanchored": null,
+  "teams": null,
+  "model_ids": [
+    "claude_haiku_5_5",
+    "gpt_6_luna",
+    "gemini_4_hydrogen",
+    "claude_sonnet_5_5",
+    "gpt_6_1_terra",
+    "gemini_4_argon"
+  ]
+}

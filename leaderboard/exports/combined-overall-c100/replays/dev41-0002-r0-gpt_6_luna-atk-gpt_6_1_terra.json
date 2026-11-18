@@ -1,0 +1,526 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "the,and,for,are,but,not,you,all,any,can,had,her,was,one,our,out,day,get,has,him,his; paper fastener",
+   "blocklist": [
+    "brad",
+    "clip",
+    "pin",
+    "staple",
+    "stapler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A non-moon celestial body orbiting a star.",
+   "blocklist": [
+    "asteroid",
+    "comet",
+    "meteoroid",
+    "planet",
+    "planetoid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Masonry term for the dressed stone at the external corner of a building.",
+   "blocklist": [
+    "quoin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A fine rain that falls from a clear sky after sunset.",
+   "blocklist": [
+    "serein"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "dewfall"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "ace,act,add,age,ago,aid,aim,air,ale,amp,ant,ape,apt,arc,ark,arm,art,ash,ask,awe; fine rain in drops",
+   "blocklist": [
+    "dribble",
+    "drizzle",
+    "mist",
+    "mizzle",
+    "sprinkle",
+    "sprinkling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A tiny nocturnal primate with huge eyes, native to Southeast Asia.",
+   "blocklist": [
+    "galago",
+    "loris",
+    "tarsier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A large land mammal with a long trunk and ivory tusks.",
+   "blocklist": [
+    "elephant",
+    "mammoth",
+    "mastodon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "An obsolete verb meaning to apply makeup or paint the face.",
+   "blocklist": [
+    "bedaub",
+    "bepaint",
+    "fard",
+    "rouge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A specialist who studies adhesive postal labels, their perforations, watermarks, and cancellations.",
+   "blocklist": [
+    "collector",
+    "philatelist",
+    "philatelists",
+    "philately",
+    "stamp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A Welsh word for a steep-sided hollow or valley, often found in the mountains.",
+   "blocklist": [
+    "combe",
+    "coomb",
+    "corrie",
+    "cwm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "The ducted mouthpiece of a recorder or tin whistle, directing air onto an edge.",
+   "blocklist": [
+    "block",
+    "fipple",
+    "labium",
+    "windway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Initial letters spell the word: brave ants dig gardens every rose.",
+   "blocklist": [
+    "badger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Cooks in Paris have excellent recipes.",
+   "blocklist": [
+    "cipher",
+    "cypher"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "chef"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "home life world work woman child water food love time; tall African mammal with a very long neck.",
+   "blocklist": [
+    "camelopard",
+    "giraffe",
+    "giraffes",
+    "okapi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A playful semiaquatic mammal that floats on its back while eating shellfish.",
+   "blocklist": [
+    "beaver",
+    "otter",
+    "otters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Scottish poetic name for the dim light after sunset, before night fully falls.",
+   "blocklist": [
+    "crepuscule",
+    "dusk",
+    "evenfall",
+    "eventide",
+    "gloam",
+    "gloaming",
+    "mirk",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "bed,big,boy,bus,box,cat,cup,cow,cry,dry,eat,egg,fly,fun,gas,hat,ice; yellow fruit eaten by monkeys",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "mango",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "initial letters: time elephant ace",
+   "blocklist": [
+    "tea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A patient person learns endurance.",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "patience"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Take initials: zebras yodel, mice undertake rhythmic gymnastics yearly.",
+   "blocklist": [
+    "zymurgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "A crystalline sweetener commonly stirred into coffee.",
+   "blocklist": [
+    "dextrose",
+    "glucose",
+    "saccharin",
+    "sucrose",
+    "sugar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A large flightless bird native to Australia.",
+   "blocklist": [
+    "cassowary",
+    "emu",
+    "kiwi",
+    "ostrich",
+    "rhea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "A multicolored arc in the sky, formed when sunlight is refracted through raindrops.",
+   "blocklist": [
+    "iridescence",
+    "rainbow",
+    "rainbows",
+    "sunbow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Fierce jaguars often roam deserts.",
+   "blocklist": [
+    "fjord"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Quiet astronauts use strange apparatuses regularly; dried fibrous gourd used as a bath scrubber.",
+   "blocklist": [
+    "loofa",
+    "loofah",
+    "luffa",
+    "quasar",
+    "sponge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ding-dong at the threshold announces a visitor.",
+   "blocklist": [
+    "bell",
+    "buzzer",
+    "chime",
+    "door",
+    "doorbell",
+    "doorbells",
+    "knocker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Take initials: Many alpine rodents make old tunnels.",
+   "blocklist": [
+    "marmot",
+    "marmots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A glass timer that measures the passing minutes as sand falls from one chamber into another.",
+   "blocklist": [
+    "hourglass",
+    "hourglasses",
+    "sandglass",
+    "sandglasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "bad,bag,bar,bat,bay,bee,beg,bet,bib,bid,bin,bit,bog,boo,bow,bra,bud,bug,bun,buy,cab,cad,cap,car",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bad"
+    },
+    {
+     "seat": "guesser2",
+     "word": "alphabet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6914.342206026999,
+  "cost_numerator": 40828471635,
+  "cost_denominator": 5904896,
+  "cost_exact": false,
+  "cost_mcse": 1.5751342495881835,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40651324755,
+   "denominator": 5904896,
+   "value": 6884.342206026999,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:878,4:3846,5:8579,6:15188,7:23066,8:28392,9:24849,10:20293,11:15497,12:11355,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.5751342495881835,
+   "rollouts": 256,
+   "rank_total": 40651324755,
+   "rank_denominator": 5904896,
+   "cache_key": "73d4ab79d6883e05985854c9639bdd0c"
+  }
+ }
+}

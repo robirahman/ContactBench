@@ -1,0 +1,495 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Newton's falling fruit. cat dog fox ant bee cow pig hen ram rat bat hat sun sky sea air ice red",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow curved tropical fruit. the and for are but not you all can had her was one our out day man",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Citrus color. his she him how who why what when then them this that with from have will your time",
+   "blocklist": [
+    "lemon",
+    "lime",
+    "orange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. god has its may now old see two way get did use big car far few got let",
+   "blocklist": [
+    "arachnid",
+    "spider",
+    "spiders",
+    "spinner",
+    "tarantula",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest land animal. new good make like just over such take than into year some come could more",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "giraffe",
+    "hippopotamus",
+    "mammoth",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite. love life world work home house water fire hand head eye name first last",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "month",
+    "moon",
+    "orbit",
+    "satellite",
+    "tide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Striped feline. people other about many after before under where there their these those would",
+   "blocklist": [
+    "cat",
+    "lion",
+    "tabby",
+    "tiger",
+    "tigers",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird. black white blue green brown night light day tree book door room food",
+   "blocklist": [
+    "auk",
+    "emperor",
+    "emu",
+    "kiwi",
+    "ostrich",
+    "penguin",
+    "penguins",
+    "puffin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Frozen precipitation in winter. boy girl mother father friend school city road river mountain",
+   "blocklist": [
+    "frost",
+    "hail",
+    "ice",
+    "rain",
+    "sleet",
+    "snow",
+    "snowflake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Erupting mountain. said each which does very much only also back well even most must long great",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "volcano"
+    },
+    {
+     "seat": "guesser2",
+     "word": "volcano"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Brewed morning caffeine drink. cancer change child country computer company case call cash care",
+   "blocklist": [
+    "cafe",
+    "cappuccino",
+    "cocoa",
+    "coffee",
+    "coffees",
+    "espresso",
+    "java",
+    "latte"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Nile's long-jawed reptile. community control center course court cause culture class clear cold cost",
+   "blocklist": [
+    "alligator",
+    "crocodile",
+    "crocodiles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Fastest running feline. christmas church chicken cheese chocolate children chance choice close cover",
+   "blocklist": [
+    "cheetah",
+    "cougar",
+    "jaguar",
+    "leopard",
+    "lynx",
+    "puma"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Royal headwear. capital captain castle catch camera camp card carry code cook copy cut cup current",
+   "blocklist": [
+    "cap",
+    "coronet",
+    "coronets",
+    "crown",
+    "crowns",
+    "tiara"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Desert beast with humps. create crime credit cross crowd critical century character charge check",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Prickly succulent with spines. carl casual ceiling cell central certain chain chair chief circle",
+   "blocklist": [
+    "agave",
+    "aloe",
+    "cacti",
+    "cactus",
+    "cactuses",
+    "cholla",
+    "prickly",
+    "spine",
+    "succulent",
+    "thorn",
+    "yucca"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Wall device showing hours. count couple cousin cry cute curious corner common correct complete",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "dial",
+    "timepiece",
+    "timer",
+    "watch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Orange root vegetable. catfish candy candle carpet carbon ceramic citizen climate cloud coffee coin",
+   "blocklist": [
+    "beet",
+    "carrot",
+    "carrots",
+    "parsnip",
+    "pumpkin",
+    "radish",
+    "turnip",
+    "yam"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Hooded venomous snake. command contract congress condition conversation construction college",
+   "blocklist": [
+    "cobra",
+    "college",
+    "command",
+    "condition",
+    "congress",
+    "construction",
+    "contract",
+    "conversation",
+    "copperhead",
+    "mamba",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Ocean crustacean with pincers. career classic clothing concern consider continue coming copper",
+   "blocklist": [
+    "crab",
+    "crabs",
+    "crawdad",
+    "crawfish",
+    "crayfish",
+    "langoustine",
+    "lobster",
+    "lobsters",
+    "prawn",
+    "shrimp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Six-sided solid with square faces. cabin cable cactus calculus calendar calm cancel candidate canvas",
+   "blocklist": [
+    "cube",
+    "cubed",
+    "cubes",
+    "cubic",
+    "cubical",
+    "cubicle",
+    "cuboid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Board game of kings. cool corn cornfield coral cottage cotton cousin count craft crash crazy creek",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chess"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chess"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 308.7668552602313,
+  "cost_numerator": 44422905,
+  "cost_denominator": 143872,
+  "cost_exact": false,
+  "cost_mcse": 0.4261037458796148,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 40106745,
+   "denominator": 143872,
+   "value": 278.7668552602313,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:13,4:59,5:159,6:325,7:562,8:779,9:867,10:865,11:787,12:649,13:472,14:312,15:202,16:119,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.4261037458796148,
+   "rollouts": 256,
+   "rank_total": 40106745,
+   "rank_denominator": 143872,
+   "cache_key": "699c619eb29279227cf9a637f5b06109"
+  }
+ }
+}

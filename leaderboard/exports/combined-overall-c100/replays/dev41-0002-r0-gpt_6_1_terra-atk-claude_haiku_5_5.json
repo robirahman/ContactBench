@@ -1,0 +1,216 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Feline pet; apple house water music world love time life people money happy beautiful",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Opposite of hot; car city computer country company child color coffee cake call change cheese chair",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cold"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cold"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Bovine farm animal; come could count course court cover cost control common community contain copy",
+   "blocklist": [
+    "code",
+    "coin",
+    "colt",
+    "comb",
+    "cook",
+    "cool",
+    "cord",
+    "core",
+    "corn",
+    "cow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Sofa; consider continue condition conduct concept concern connect content contract conversation",
+   "blocklist": [
+    "collar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "couch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "couch"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "University; collect collection colony colon column collapse colleague colossal colonial collide",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collapse",
+     "collar"
+    ],
+    [
+     "collate",
+     "colt"
+    ]
+   ],
+   "blocked_word_count": 344,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Brown fizzy soft drink; colander colanders colas colic colics colitis coliseum coleslaw collarbone",
+   "blocklist": [
+    "collet",
+    "collie",
+    "collier",
+    "colloid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cola"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cola"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Plural of clavicle; collaborate collaboration collaborative collaborator collage collagen collages",
+   "blocklist": [
+    "collect",
+    "collection",
+    "colon",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collarbones"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collarbones"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Leafy greens; collard collared collaret collarets collaring collarless collars",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

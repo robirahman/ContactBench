@@ -1,0 +1,251 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A loyal canine companion often called man's best friend",
+   "blocklist": [
+    "canine",
+    "companion",
+    "dog",
+    "dogs",
+    "friend",
+    "hound",
+    "hounds",
+    "mutt",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A particularly showy collective noun for a flock of pink wading birds",
+   "blocklist": [
+    "flamboyance",
+    "flamingo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A pressure-sensitive capsule, rather than a liquid column, in a barograph.",
+   "blocklist": [
+    "aneroid",
+    "barograph",
+    "barometer",
+    "capsule",
+    "seal",
+    "sealing",
+    "unseal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Initials of these words: curious ants travel.",
+   "blocklist": [
+    "cart",
+    "cat",
+    "catalog",
+    "cats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A small Australian marsupial famous for its unusually cheerful-looking face.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A preposition meaning beneath or lower than; it can also indicate subjection or control.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "under"
+    },
+    {
+     "seat": "guesser2",
+     "word": "under"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A mythical horse-like creature with one horn on its forehead.",
+   "blocklist": [
+    "unicorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Not happy; feeling sad or displeased.",
+   "blocklist": [
+    "unfeeling",
+    "unpleased",
+    "unsealed"
+   ],
+   "blocked_ranges": [
+    [
+     "unhappy",
+     "unicorn"
+    ]
+   ],
+   "blocked_word_count": 102,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The totality of all space, time, matter, and energy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "unicorn",
+     "unsealed"
+    ],
+    [
+     "unseamed",
+     "unzip"
+    ]
+   ],
+   "blocked_word_count": 1800,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Showing no shame or awkwardness; openly confident.",
+   "blocklist": [
+    "unseal",
+    "unseals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unabashed"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unabashed"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "The act of removing a closure from a previously closed envelope or container.",
+   "blocklist": [
+    "unseam"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unsealing"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unsealing"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11.0,
+  "cost_numerator": 11,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,473 @@
+{
+ "game_id": "dev41-0001-r0-claude_sonnet_5_5-atk-gpt_6_luna",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Most common English article, definite one",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Conjunction meaning plus, joins words together",
+   "blocklist": [
+    "and"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Preposition meaning in favor of, or on behalf of; 'to' or 'from' partner",
+   "blocklist": [
+    "for"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Preposition meaning accompanied by; opposite of without",
+   "blocklist": [
+    "with"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Pronoun pointing to a thing over there; this and ___ (demonstrative)",
+   "blocklist": [
+    "that"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Verb: to possess or own; 'to ___ and to hold'",
+   "blocklist": [
+    "get",
+    "had",
+    "has",
+    "have",
+    "having",
+    "keep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Vast salt water body covering most of Earth, bigger than a sea",
+   "blocklist": [
+    "ocean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Seconds, minutes and hours measure this; clocks tell it",
+   "blocklist": [
+    "time"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Humans in general; persons collectively; a crowd of folks, plural of person",
+   "blocklist": [
+    "folk",
+    "humanity",
+    "humankind",
+    "mankind",
+    "people",
+    "populace",
+    "population",
+    "society"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Planet we live on; globe; 'Hello, ___' is a classic first program output",
+   "blocklist": [
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Home building where a family resides",
+   "blocklist": [
+    "abode",
+    "building",
+    "cottage",
+    "domicile",
+    "dwelling",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Rhythm, melody and harmony; songs are made of it; a piano or guitar produces it",
+   "blocklist": [
+    "composition",
+    "harmony",
+    "instrument",
+    "melodies",
+    "music",
+    "musical",
+    "noise",
+    "notes",
+    "rhythm",
+    "song",
+    "sound",
+    "tune"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Long flowing stream with banks; the Nile or the Amazon",
+   "blocklist": [
+    "brook",
+    "creek",
+    "river",
+    "rivers",
+    "tributary",
+    "watercourse",
+    "waterway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Dark period when the moon appears; opposite of day; sleep happens in it, stars shine then",
+   "blocklist": [
+    "darkness",
+    "evening",
+    "midnight",
+    "night",
+    "nightfall",
+    "nightly",
+    "nighttime",
+    "nocturnal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Opposite of death; biological existence from birth until dying",
+   "blocklist": [
+    "alive",
+    "being",
+    "life",
+    "living",
+    "organism",
+    "survival",
+    "vitality"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Cash, currency; coins and bills; what you earn at a job and spend at a store",
+   "blocklist": [
+    "dollar",
+    "finance",
+    "funds",
+    "income",
+    "money",
+    "salary",
+    "wages",
+    "wealth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of heavy; the sun gives off this; lamps and bulbs make it so we can see",
+   "blocklist": [
+    "light"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Twelve months; 365 days; Earth's orbit around the sun takes one of these. New ___'s Eve",
+   "blocklist": [
+    "year"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Adult male human, opposite of woman; boy grows into one; Mr.; ___kind is a related word minus kind",
+   "blocklist": [
+    "dude",
+    "gentleman",
+    "guy",
+    "man"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Place where children go to learn from teachers; classrooms, students, homework, recess bell",
+   "blocklist": [
+    "academy",
+    "college",
+    "education",
+    "institution",
+    "lesson",
+    "school",
+    "schoolhouse",
+    "schooling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Labor, employment; opposite of play; what you do at the office",
+   "blocklist": [
+    "business",
+    "career",
+    "occupation",
+    "profession",
+    "task",
+    "toil",
+    "trade",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Edible items eaten at meals; bread, meat, fruit, hunger satisfier; nutrition on a plate",
+   "blocklist": [
+    "breakfast",
+    "chow",
+    "cuisine",
+    "diet",
+    "dinner",
+    "dish",
+    "dishes",
+    "eat",
+    "fare",
+    "food",
+    "foods",
+    "lunch",
+    "meal",
+    "nourishment",
+    "provisions",
+    "supper",
+    "sustenance"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Football or chess is one; players compete to win by following rules, often on a board or field",
+   "blocklist": [
+    "game"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6887.401024699737,
+  "cost_numerator": 13395719497,
+  "cost_denominator": 1944960,
+  "cost_exact": false,
+  "cost_mcse": 1.7830207309590704,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 13337370697,
+   "denominator": 1944960,
+   "value": 6857.401024699737,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:948,4:3850,5:8561,6:15195,7:23077,8:28395,9:24860,10:20293,11:15496,12:11357,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.7830207309590704,
+   "rollouts": 256,
+   "rank_total": 26674741394,
+   "rank_denominator": 3889920,
+   "cache_key": "6fc6f6111a82f424ef48ded08a3279cd"
+  }
+ }
+}

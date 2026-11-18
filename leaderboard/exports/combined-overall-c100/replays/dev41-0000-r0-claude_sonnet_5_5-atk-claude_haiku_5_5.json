@@ -1,0 +1,348 @@
+{
+ "game_id": "dev41-0000-r0-claude_sonnet_5_5-atk-claude_haiku_5_5",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "claude_haiku_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A very common English article, the most frequent word",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A conjunction joining two items, like salt ___ pepper; also an ampersand's meaning",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "and"
+    },
+    {
+     "seat": "guesser2",
+     "word": "and"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Opposite of without; accompanied by, as in coffee ___ cream",
+   "blocklist": [
+    "was",
+    "water",
+    "way",
+    "were",
+    "what",
+    "when",
+    "will",
+    "with",
+    "work",
+    "would"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Question word for choosing among options: ___ one do you want?",
+   "blocklist": [
+    "where",
+    "whether",
+    "which",
+    "white",
+    "who",
+    "whom",
+    "whose",
+    "why"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Planet Earth and everyone on it; the globe; Cup soccer event held every four years",
+   "blocklist": [
+    "week",
+    "well",
+    "went",
+    "were",
+    "west",
+    "wide",
+    "wind",
+    "woman",
+    "word",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Put pen to paper; what an author does with a novel or a letter (past tense: wrote)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "was",
+     "went"
+    ],
+    [
+     "west",
+     "wry"
+    ]
+   ],
+   "blocked_word_count": 3003,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Move on foot at a normal pace, one step after another; a stroll in the park (not run)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wages",
+     "wallow"
+    ],
+    [
+     "wine",
+     "wizard"
+    ]
+   ],
+   "blocked_word_count": 565,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "war",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wander",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "waltz",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wept",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "walnut",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "walrus",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wacky",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wade",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "warm",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "waffle",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wad",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "ward",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wafer",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wage",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wand",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.831119791666666,
+  "cost_numerator": 359663,
+  "cost_denominator": 7680,
+  "cost_exact": false,
+  "cost_mcse": 0.10520963736765045,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 129263,
+   "denominator": 7680,
+   "value": 16.831119791666666,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:8,4:30,5:41,6:76,7:118,8:95,9:50,10:30,11:14,12:7,13:3,14:2,15:3,17:2",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 0.10520963736765045,
+   "rollouts": 256,
+   "rank_total": 129263,
+   "rank_denominator": 7680,
+   "cache_key": "61ce1a4474a5c59a14c57c8ff3914cf4"
+  }
+ }
+}

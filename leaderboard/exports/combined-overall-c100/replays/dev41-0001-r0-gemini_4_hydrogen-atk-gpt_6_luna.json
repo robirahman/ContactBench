@@ -1,0 +1,662 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "semiaquatic egg-laying mammal with a bill",
+   "blocklist": [
+    "duckbill",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "optical instrument for viewing distant stars and planets",
+   "blocklist": [
+    "binoculars",
+    "observatory",
+    "planetarium",
+    "refractor",
+    "spyglass",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "suspended weight swinging back and forth under gravity",
+   "blocklist": [
+    "bob",
+    "clock",
+    "gravity",
+    "metronome",
+    "oscillation",
+    "oscillator",
+    "pendulum",
+    "swing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "dark outline of an object against a bright background",
+   "blocklist": [
+    "contour",
+    "cutout",
+    "profile",
+    "shade",
+    "shadow",
+    "shape",
+    "silhouette",
+    "umbra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "a bullet or stone bouncing off a surface at an angle",
+   "blocklist": [
+    "bank",
+    "bounce",
+    "carom",
+    "deflect",
+    "glance",
+    "rebound",
+    "ricochet",
+    "skip"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "tube with mirrors and colored glass producing symmetrical patterns",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "lens",
+    "lenses",
+    "microscope",
+    "microscopes",
+    "mosaic",
+    "periscope",
+    "periscopes",
+    "prism",
+    "prisms",
+    "reflection",
+    "reflector",
+    "scope",
+    "scopes",
+    "symmetry",
+    "toy",
+    "viewfinder"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "a chain or cluster of islands",
+   "blocklist": [
+    "archipelago",
+    "archipelagos",
+    "atoll",
+    "atolls",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "curved Australian throwing stick that returns when thrown",
+   "blocklist": [
+    "atlatl",
+    "boomerang",
+    "boomerangs",
+    "returner",
+    "thrower",
+    "woomera"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "manuscript page scraped clean and written over again",
+   "blocklist": [
+    "erasable",
+    "erasure",
+    "palimpsest",
+    "palimpsests",
+    "parchment",
+    "rewrite",
+    "scraped",
+    "vellum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "finding something good without looking for it",
+   "blocklist": [
+    "accident",
+    "coincidence",
+    "discovery",
+    "fluke",
+    "fortuity",
+    "happenstance",
+    "luck",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "exceedingly idealistic, unrealistic and impractical",
+   "blocklist": [
+    "dreamer",
+    "fanciful",
+    "quixotic",
+    "romantic",
+    "utopian",
+    "visionary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "ancient counting frame with beads sliding on rods",
+   "blocklist": [
+    "abacus",
+    "calculator",
+    "reckoning",
+    "tally"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "jumbo shrimp is a famous example of this figure of speech",
+   "blocklist": [
+    "oxymoron",
+    "paradox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "reptile that changes skin color to blend in",
+   "blocklist": [
+    "camouflage",
+    "chameleon",
+    "chameleons",
+    "gecko",
+    "iguana",
+    "lizard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "three celestial bodies in a straight line",
+   "blocklist": [
+    "alignment",
+    "collinearity",
+    "conjunction",
+    "eclipse",
+    "lineup",
+    "occultation",
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "arctic whale with a long spiral tusk",
+   "blocklist": [
+    "cetacean",
+    "narwhal",
+    "narwhale",
+    "unicorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "words like buzz and splash that imitate the sound they describe",
+   "blocklist": [
+    "echoic",
+    "imitative",
+    "onomatopoeia",
+    "onomatopoeic",
+    "onomatopoeically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "maze from Greek mythology built by Daedalus for the Minotaur",
+   "blocklist": [
+    "bull",
+    "labyrinth",
+    "labyrinthine",
+    "labyrinths",
+    "thread"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Japanese art of paper folding",
+   "blocklist": [
+    "kirigami",
+    "origami"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "mythical creature with lion body and human head in Egypt",
+   "blocklist": [
+    "chimera",
+    "griffin",
+    "gryphon",
+    "hieroglyph",
+    "sphinges",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "catapult",
+    "catapulted",
+    "catapulting",
+    "catapults",
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations",
+    "eject",
+    "ejected",
+    "ejecting",
+    "ejection",
+    "ejections",
+    "ejects",
+    "expel",
+    "expelled",
+    "expelling",
+    "expels",
+    "expulsion",
+    "expulsions",
+    "fling",
+    "flinging",
+    "flings",
+    "flung",
+    "hurl",
+    "hurled",
+    "hurling",
+    "hurls",
+    "toss",
+    "tossed",
+    "tosses",
+    "tossing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 34,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "burrowing mammal covered in bony armor plates",
+   "blocklist": [
+    "anteater",
+    "armadillo",
+    "echidna",
+    "hedgehog",
+    "pangolin",
+    "porcupine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "pleasure derived from another person's misfortune",
+   "blocklist": [
+    "delight",
+    "gloating",
+    "joy",
+    "malice",
+    "satisfaction",
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "icicle-shaped mineral formation hanging from a cave ceiling",
+   "blocklist": [
+    "stalactite",
+    "stalactites",
+    "stalagmite",
+    "stalagmites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "process by which green plants convert sunlight into chemical energy",
+   "blocklist": [
+    "autotroph",
+    "chlorophyll",
+    "photolysis",
+    "photosynthesis",
+    "photosynthetic",
+    "synthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "spirit of the age or defining mood of a particular period in history",
+   "blocklist": [
+    "air",
+    "ambiance",
+    "ambience",
+    "atmosphere",
+    "character",
+    "climate",
+    "culture",
+    "epoch",
+    "era",
+    "ethic",
+    "ethics",
+    "ethos",
+    "feeling",
+    "milieu",
+    "mood",
+    "sentiment",
+    "temper",
+    "tenor",
+    "tone",
+    "vibe",
+    "zeitgeist",
+    "zeitgeists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "tall pink wading bird that stands on one leg",
+   "blocklist": [
+    "crane",
+    "flamingo",
+    "flamingoes",
+    "flamingos",
+    "heron",
+    "ibis",
+    "stork",
+    "wader"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "improvised camp without tents or shelter",
+   "blocklist": [
+    "bivouac",
+    "camping",
+    "encampment",
+    "outdoors",
+    "roughing",
+    "tentless"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "French execution device with a heavy falling blade",
+   "blocklist": [
+    "behead",
+    "beheading",
+    "chopper",
+    "decapitation",
+    "executioner",
+    "guillotine",
+    "guillotined",
+    "guillotining"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "mountain that erupts with lava and ash",
+   "blocklist": [
+    "crater",
+    "eruption",
+    "magma",
+    "vent",
+    "volcanic",
+    "volcanically",
+    "volcanicities",
+    "volcanicity",
+    "volcanics",
+    "volcanism",
+    "volcanisms",
+    "volcano",
+    "volcanoes",
+    "volcanologic",
+    "volcanological",
+    "volcanologies",
+    "volcanologist",
+    "volcanologists",
+    "volcanology",
+    "volcanos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6881.648412265162,
+  "cost_numerator": 13362509621,
+  "cost_denominator": 1941760,
+  "cost_exact": false,
+  "cost_mcse": 1.9627187048297,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 13304256821,
+   "denominator": 1941760,
+   "value": 6851.648412265162,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:955,4:3858,5:8579,6:15170,7:23042,8:28368,9:24834,10:20270,11:15481,12:11345,13:7819,14:5121,15:3191,16:1942,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9627187048297,
+   "rollouts": 256,
+   "rank_total": 26608513642,
+   "rank_denominator": 3883520,
+   "cache_key": "8ee6ff865868ffd908b041ba12aabbd9"
+  }
+ }
+}

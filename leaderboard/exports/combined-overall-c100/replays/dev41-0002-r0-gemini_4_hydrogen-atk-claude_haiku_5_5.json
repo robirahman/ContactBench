@@ -1,0 +1,511 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "medical instrument for listening to heartbeat",
+   "blocklist": [
+    "heartbeat",
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "large seabird and a golf score of three under par",
+   "blocklist": [
+    "albatross",
+    "birdie",
+    "condor",
+    "eagle",
+    "gannet",
+    "petrel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "optical tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "microscope",
+    "periscope",
+    "telescope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "scaly anteater mammal that rolls into a ball",
+   "blocklist": [
+    "anteater",
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "act of throwing someone out a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "ejection",
+    "window"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "words that imitate sounds like buzz or meow",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "onomatopoeia"
+    },
+    {
+     "seat": "guesser2",
+     "word": "onomatopoeia"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "color changing lizard",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "crescent shaped flaky french pastry",
+   "blocklist": [
+    "crepe",
+    "crescent",
+    "croissant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "green pigment in plants used for photosynthesis",
+   "blocklist": [
+    "collar"
+   ],
+   "blocked_ranges": [
+    [
+     "cabbage",
+     "collapse"
+    ]
+   ],
+   "blocked_word_count": 8290,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "brass percussion instrument clashed together in pairs",
+   "blocklist": [
+    "carillon",
+    "castanet",
+    "castanets",
+    "chime",
+    "chimes",
+    "cowbell",
+    "cymbal",
+    "cymbals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "group of stars forming a recognizable pattern in the night sky",
+   "blocklist": [
+    "cluster",
+    "constellation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "large aquatic reptile with long snout and sharp teeth",
+   "blocklist": [
+    "collards"
+   ],
+   "blocked_ranges": [
+    [
+     "collapsed",
+     "collapsing"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "crocodile"
+    },
+    {
+     "seat": "guesser2",
+     "word": "crocodile"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "horn of plenty overflowing with fruit and vegetables",
+   "blocklist": [
+    "cornucopia",
+    "cornucopias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "ancient roman amphitheater where gladiators fought",
+   "blocklist": [
+    "coliseum",
+    "colosseum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "magnetic navigation device with a needle pointing north",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "small pieces of colored paper thrown at celebrations",
+   "blocklist": [
+    "cola",
+    "cole",
+    "collie",
+    "confetti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "spiral metal tool for pulling corks from wine bottles",
+   "blocklist": [
+    "collage",
+    "collate",
+    "collect",
+    "collector",
+    "college"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "corkscrew"
+    },
+    {
+     "seat": "guesser2",
+     "word": "corkscrew"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "military officer rank pronounced like kernel",
+   "blocklist": [
+    "colonel",
+    "colonels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "fragrant liquid perfume worn by men",
+   "blocklist": [
+    "cologne",
+    "colon",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "vertical architectural pillar supporting a roof or table of numbers",
+   "blocklist": [
+    "column",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "violent impact when two moving vehicles crash into each other",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "colcannon",
+    "colchicum",
+    "cold",
+    "colder",
+    "coldest",
+    "colds",
+    "coleslaw",
+    "colic",
+    "colitis",
+    "collaborate",
+    "collaboration",
+    "collaborative",
+    "collagen",
+    "collateral",
+    "collation",
+    "colleague",
+    "collected",
+    "collective",
+    "collector",
+    "collide",
+    "collie",
+    "collier",
+    "colloid",
+    "collude",
+    "colon",
+    "colony",
+    "colt",
+    "colts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collision"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collision"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "secret agreement or cooperation for an illegal or deceitful purpose",
+   "blocklist": [
+    "collaborated",
+    "collaborates",
+    "collaborating",
+    "collaborator",
+    "collaborators",
+    "collage",
+    "collagen",
+    "collages",
+    "collapses",
+    "collapsible",
+    "collar",
+    "collarbone",
+    "collarbones",
+    "collared",
+    "collaret",
+    "collarets",
+    "collaring",
+    "collars",
+    "collating",
+    "collator",
+    "collators",
+    "collectible",
+    "collectibles",
+    "collecting",
+    "collection",
+    "collections",
+    "collectives",
+    "collectivism",
+    "collectivist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 29,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collusion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collusion"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "collard collarless collated collates collations collapsibility collapsibilities",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 25.0,
+  "cost_numerator": 25,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

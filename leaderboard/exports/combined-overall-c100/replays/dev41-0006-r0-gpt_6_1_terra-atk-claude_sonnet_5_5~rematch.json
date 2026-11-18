@@ -1,0 +1,540 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_1_terra-atk-claude_sonnet_5_5~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "e",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 7037,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk. eat egg ear eye end era eve elf elm eel ewe eon elk ebb echo",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Our home planet. each eager eagle early earn east easy edge edit else emit empty enemy enjoy enter",
+   "blocklist": [
+    "earth",
+    "earths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Power flowing through wires. energy enough every ever even equal escape estate event example extra",
+   "blocklist": [
+    "electric",
+    "electrical",
+    "electricities",
+    "electricity",
+    "electron",
+    "electrons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Car's motor. exact exactly exist expect explain express exercise excited exit expert entire effect",
+   "blocklist": [
+    "engine",
+    "engined",
+    "enginery",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Flightless Australian bird. eggs ears eats eels elks elms earl earns easier eastern eating eight",
+   "blocklist": [
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Sun obscured by moon. eight either elbow elder elect elegant element eleven emerge emotion empire",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Sudden shaking of the ground. education effort effects eggshell elderly election elements emergency",
+   "blocklist": [
+    "earthquake",
+    "earthquakes",
+    "education",
+    "effects",
+    "effort",
+    "eggshell",
+    "elderly",
+    "election",
+    "elements",
+    "emergency"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Mail container. evil evening everyone evidence existence experience equipment excuse export",
+   "blocklist": [
+    "envelope",
+    "envelopes",
+    "equipment",
+    "evening",
+    "everyone",
+    "evidence",
+    "evil",
+    "excuse",
+    "existence",
+    "experience",
+    "export"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Purple vegetable. everything everywhere everyday excellent except exchange exciting explore extend",
+   "blocklist": [
+    "eggplant",
+    "eggplants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Breathe out. effortful eagerest elastic elbowed embrace employ enable encounter endless escapee",
+   "blocklist": [
+    "exhalation",
+    "exhalations",
+    "exhale",
+    "exhaled",
+    "exhales",
+    "exhaling",
+    "expire",
+    "expired",
+    "expires",
+    "expiring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Lift between floors. emperor edible erase eraser error essay eternal essence ethical ethnic enormous",
+   "blocklist": [
+    "elevate",
+    "elevated",
+    "elevator",
+    "elevators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "School test. essential establish evolution executive expensive expenses exposure expression",
+   "blocklist": [
+    "essential",
+    "establish",
+    "evolution",
+    "exam",
+    "examination",
+    "examinations",
+    "exams",
+    "executive",
+    "expenses",
+    "expensive",
+    "exposure",
+    "expression"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Imaginary line dividing northern and southern hemispheres. economy environment especially emperor",
+   "blocklist": [
+    "equator",
+    "equatorial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Strong concentrated coffee. entertainment enthusiasm equation enormous entirely equivalent erase",
+   "blocklist": [
+    "entertainment",
+    "enthusiasm",
+    "entirely",
+    "equation",
+    "equivalent",
+    "espresso",
+    "espressos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Extreme happiness. epoch enterprise economic effective efficient employee employment emotions",
+   "blocklist": [
+    "ecstasy",
+    "effectuate",
+    "elation",
+    "euphoria"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Artist's painting stand. eyes escaped earnest earnings eerie earliest earthbound easily easterners",
+   "blocklist": [
+    "easel",
+    "easels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Volcano's explosive outburst. earnestly earthling edible edify eerie eightfold eject elaborate",
+   "blocklist": [
+    "erupt",
+    "erupted",
+    "erupting",
+    "eruption",
+    "eruptions",
+    "erupts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Early developing organism. empire enthrall eradicate erosion estimate eventual eviction explicit",
+   "blocklist": [
+    "embryo",
+    "embryonal",
+    "embryonic",
+    "embryos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Reference work with articles on many subjects. elephantine empathy epidemic epitome episode era",
+   "blocklist": [
+    "encyclopedia",
+    "encyclopedias",
+    "encyclopedic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Repeated reflected sounds. embarrass embraced embassy eyebrow eyelash encourage entrance entirety",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoic",
+    "echoing",
+    "echos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Jewelry worn on an ear. educate educated educator educational electoral employer electrons",
+   "blocklist": [
+    "earring",
+    "earrings",
+    "educate",
+    "educated",
+    "educational",
+    "educator",
+    "electoral",
+    "employer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "White wading bird. execution explosion expansion extraordinary elderly ecosystem exotic equivalent",
+   "blocklist": [
+    "egret",
+    "egrets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Tree green all year. endure endpoint envy ebony edible earlobe eastern endless entitle exile evade",
+   "blocklist": [
+    "eucalyptus",
+    "evergreen",
+    "evergreens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Winter ear warmers. esteem etiquette eclipse earthquake eyelid envelope edible ebony elsewhere",
+   "blocklist": [
+    "earmuff",
+    "earmuffs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Moving staircase. emerald emeralds emotional enthusiast eccentric exterior exhausted extinct extent",
+   "blocklist": [
+    "escalate",
+    "escalated",
+    "escalates",
+    "escalating",
+    "escalator",
+    "escalators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Pain in hearing organ. eagerly eagerness eagles earful earbuds eardrum eardrums earthen earthly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "earache"
+    },
+    {
+     "seat": "guesser2",
+     "word": "earache"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "A likeness burned in protest. eff effable efface effaceable effaced effacement effacements effacer",
+   "blocklist": [
+    "effable",
+    "efface",
+    "effaceable",
+    "effaced",
+    "effacement",
+    "effacements",
+    "effacer",
+    "effacers",
+    "effaces",
+    "effacing",
+    "effective",
+    "effectively",
+    "effector",
+    "effects",
+    "efficient",
+    "effigies",
+    "effigy",
+    "effort"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 35.27373798076923,
+  "cost_numerator": 117391,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.04287371721257801,
+  "baseline": {
+   "numerator": 53970989,
+   "denominator": 182016,
+   "value": 296.51782810302393,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:39,4:102,5:192,6:453,7:805,8:1129,9:1130,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.37097180591028067,
+   "rollouts": 256,
+   "rank_total": 53970989,
+   "rank_denominator": 182016,
+   "cache_key": "d7bee67741ebb45a8d44e90bfa43ac6d"
+  },
+  "fallback": {
+   "numerator": 17551,
+   "denominator": 3328,
+   "value": 5.273737980769231,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:2,6:3,7:6,8:16,9:12,10:17,11:13,12:15,13:8,14:6,15:4,16:1,17:1",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.04287371721257801,
+   "rollouts": 256,
+   "rank_total": 17551,
+   "rank_denominator": 3328,
+   "cache_key": "c339a2d78fbdb9fcbba794238a0a3fbc"
+  }
+ }
+}

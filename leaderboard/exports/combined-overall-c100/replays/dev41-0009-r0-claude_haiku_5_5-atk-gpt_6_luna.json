@@ -1,0 +1,588 @@
+{
+ "game_id": "dev41-0009-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend that barks and fetches sticks",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings at dawn and builds nests in trees",
+   "blocklist": [
+    "bird",
+    "bluebird",
+    "canary",
+    "cardinal",
+    "finch",
+    "lark",
+    "robin",
+    "songbird",
+    "sparrow",
+    "swallow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly creature with fins that swims in rivers and oceans",
+   "blocklist": [
+    "bass",
+    "carp",
+    "fish",
+    "minnow",
+    "perch",
+    "salmon",
+    "shark",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Four-legged animal that is ridden, shod with iron, and neighs",
+   "blocklist": [
+    "colt",
+    "equine",
+    "horse",
+    "mare",
+    "mustang",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "King of the jungle with a shaggy mane that roars",
+   "blocklist": [
+    "beast",
+    "feline",
+    "roar",
+    "tiger"
+   ],
+   "blocked_ranges": [
+    [
+     "lion",
+     "lions"
+    ]
+   ],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Wild pack hunter that howls at the moon",
+   "blocklist": [
+    "coyote",
+    "werewolf",
+    "wolf",
+    "wolfhound",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Large forest omnivore that hibernates through winter and growls",
+   "blocklist": [
+    "bear",
+    "bears",
+    "bruin",
+    "grizzly",
+    "growl",
+    "hibernate",
+    "panda",
+    "ursine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses and slithers through grass",
+   "blocklist": [
+    "adder",
+    "boa",
+    "cobra",
+    "constrictor",
+    "python",
+    "rattler",
+    "rattlesnake",
+    "serpent",
+    "snake",
+    "snakes",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Dairy animal that gives milk and says moo",
+   "blocklist": [
+    "bull",
+    "calf",
+    "cattle",
+    "cow",
+    "dairy",
+    "heifer",
+    "milk",
+    "moo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Long-eared hopper with a fluffy tail that eats carrots and lettuce",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "cottontail",
+    "hare",
+    "jackrabbit",
+    "lapin",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Horned farm animal that bleats and climbs rocky cliffs",
+   "blocklist": [
+    "bighorn",
+    "caprine",
+    "chamois",
+    "goat",
+    "ibex",
+    "nanny",
+    "ram",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Antlered woodland creature that leaps across meadows and grazes on shrubs",
+   "blocklist": [
+    "antelope",
+    "buck",
+    "caribou",
+    "deer",
+    "doe",
+    "elk",
+    "fawn",
+    "hart",
+    "moose",
+    "reindeer",
+    "stag",
+    "wapiti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Small rodent that squeaks and nibbles cheese in the pantry",
+   "blocklist": [
+    "dormouse",
+    "gerbil",
+    "hamster",
+    "mice",
+    "mouse",
+    "rat",
+    "shrew",
+    "vole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Vast salty body of water covering most of the planet",
+   "blocklist": [
+    "blue",
+    "marine",
+    "maritime",
+    "ocean",
+    "pacific",
+    "saltwater",
+    "sea",
+    "seawater"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Striped African wild animal related to the horse family",
+   "blocklist": [
+    "equid",
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Desert ship with one or two humps that stores water",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "camel"
+    },
+    {
+     "seat": "guesser2",
+     "word": "camel"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bright daytime star that warms the Earth and gives light",
+   "blocklist": [
+    "solar",
+    "star",
+    "sun",
+    "sunbeam",
+    "sunlight",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Frozen white flakes that fall from clouds in cold weather",
+   "blocklist": [
+    "ice",
+    "sleet",
+    "snow",
+    "snowfall",
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tiny grains on the beach near the surf",
+   "blocklist": [
+    "sand",
+    "sands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Shiny precious metal used in coins and jewelry",
+   "blocklist": [
+    "silver",
+    "silvered",
+    "silvering",
+    "silverware",
+    "silvery",
+    "sterling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Utensil used to eat soup and stir tea",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "spoon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "spoon"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Dark outline cast by a body that blocks the light",
+   "blocklist": [
+    "shade",
+    "shading",
+    "shadow",
+    "shadower",
+    "shadows",
+    "shadowy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Flat board mounted on a wall that holds books and jars",
+   "blocklist": [
+    "shelf",
+    "shelve",
+    "shelves",
+    "shelving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sloping edge of land where waves break against the coastline",
+   "blocklist": [
+    "shingle",
+    "shore",
+    "shoreline",
+    "shores"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Protective plate a warrior carries into battle to block blows",
+   "blocklist": [
+    "shield",
+    "shielded",
+    "shielder",
+    "shielding",
+    "shields"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Crude little hut or cabin built as a rough shelter",
+   "blocklist": [
+    "shack"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Narrow passage or pole, like a mine shaft or a spear handle",
+   "blocklist": [
+    "shank"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shaft"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shaft"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Worn-out, scruffy and run down, looking tatty and neglected",
+   "blocklist": [
+    "shabby",
+    "shoddy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 83.92075709292763,
+  "cost_numerator": 6531049,
+  "cost_denominator": 77824,
+  "cost_exact": false,
+  "cost_mcse": 0.10263642706151276,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 4196329,
+   "denominator": 77824,
+   "value": 53.92075709292763,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:26,5:104,6:177,7:249,8:304,9:246,10:141,11:86,12:51,13:20,14:11,15:3,16:2,18:1",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.10263642706151276,
+   "rollouts": 256,
+   "rank_total": 4196329,
+   "rank_denominator": 77824,
+   "cache_key": "db6ee7abd7af822f7794fa6336a518e6"
+  }
+ }
+}

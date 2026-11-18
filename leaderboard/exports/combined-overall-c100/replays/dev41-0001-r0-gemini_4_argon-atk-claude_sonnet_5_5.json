@@ -1,0 +1,191 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "1. 0-index 86304 OR 2. winter sleds on ice",
+   "blocklist": [
+    "bobsled",
+    "bobsleds",
+    "luge",
+    "luges",
+    "sled",
+    "sledding",
+    "sleds",
+    "sleigh",
+    "sleighs",
+    "toboggan",
+    "toboggans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "1. 0-index 50001 OR 2. headfirst Olympic ice sliding sport (not luge)",
+   "blocklist": [
+    "skeletal",
+    "skeleton",
+    "skeletons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "epithets"
+    },
+    {
+     "seat": "guesser2",
+     "word": "epithets"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "1. prefix s 0-index 8000 OR 2. winter sport on two planks",
+   "blocklist": [
+    "skate",
+    "skates",
+    "ski",
+    "skied",
+    "skier",
+    "skiers",
+    "skiing",
+    "skis",
+    "snowboard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "slicks"
+    },
+    {
+     "seat": "guesser2",
+     "word": "slicks"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "1. prefix su 0-index 1500 OR 2. riding ocean waves on a board",
+   "blocklist": [
+    "surf",
+    "surfboard",
+    "surfboards",
+    "surfed",
+    "surfer",
+    "surfers",
+    "surfing",
+    "surfs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "summa"
+    },
+    {
+     "seat": "guesser2",
+     "word": "summa"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "1. prefix sup 0-index 200 OR 2. Batman or Superman",
+   "blocklist": [
+    "super",
+    "superb",
+    "superhero",
+    "superheroes",
+    "superior",
+    "superman",
+    "supermen",
+    "supers",
+    "superwoman",
+    "supper",
+    "supply",
+    "support"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "superfatted"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superfatted"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "supinate supinated supinates supinating supination supinations supinator supine supinely",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "supi",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6.0,
+  "cost_numerator": 6,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

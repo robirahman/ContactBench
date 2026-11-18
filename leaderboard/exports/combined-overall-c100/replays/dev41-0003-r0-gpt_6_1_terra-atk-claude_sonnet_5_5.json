@@ -1,0 +1,570 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. Ignore: ant ape bad bag bar bat bed bee big bin bird bit box boy bus car cow dog ear",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "pet",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite. Ignore: egg elf end eye fan far fat fit fly fog fox fun gas get god gum",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "moon",
+    "moons",
+    "satellite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Opposite of cold: aah aal aas aba abaca abaci aback abaft abaka abamp abas abase abash abate abba",
+   "blocklist": [
+    "boiling",
+    "heat",
+    "heated",
+    "hot",
+    "hotter",
+    "scalding",
+    "tepid",
+    "torrid",
+    "warm",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Star at center of solar system: abbas abbacy abbe abbes abbess abbey abbeys abbot abbots abbotcy",
+   "blocklist": [
+    "helios",
+    "sol",
+    "solar",
+    "star",
+    "stars",
+    "sun",
+    "sunlight",
+    "sunny",
+    "sunrise",
+    "sunset",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Liquid essential for life: abbacies abbatial abbesses abbotcies abdicate abdicated abdicates abdomen",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "water"
+    },
+    {
+     "seat": "guesser2",
+     "word": "water"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Rain shelter carried by hand: ubieties ubiety ubique ubiquinone ubiquinones ubiquities ubiquitous",
+   "blocklist": [
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Mythical one-horned horse: ubiquitously ubiquity udder udders udo udometer udometers udometry udos",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hawaiian four-string instrument: udometries ufological ufologies ufologist ufologists ufology ugh",
+   "blocklist": [
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Opposite of beautiful: ughs uglier uglies ugliest uglification uglifications uglified uglifier",
+   "blocklist": [
+    "hideous",
+    "plain",
+    "ugly",
+    "unattractive",
+    "unsightly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Undo a lock: uglifiers uglifies uglify uglifying uglily ugliness uglinesses uhlan uhlans uintahite",
+   "blocklist": [
+    "unbolt",
+    "undo",
+    "unlatch",
+    "unlock",
+    "unlocked",
+    "unlocking",
+    "unlocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Painful sore in stomach lining: uintahites uintaite uintaites ulama ulamas ulan ulans ulema ulemas",
+   "blocklist": [
+    "ulcer",
+    "ulcerate",
+    "ulcerated",
+    "ulcerous",
+    "ulcers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Not ordinary or common: ulcerates ulcerating ulceration ulcerations ulcerative ulcered ulcering",
+   "blocklist": [
+    "uncommon",
+    "uncommonly",
+    "unique",
+    "unusual",
+    "unusually"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Opposite of downstairs: ulcerogenic ulexite ulexites ullage ullaged ullages ulna ulnad ulnae ulnar",
+   "blocklist": [
+    "upstairs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Capital letters: ulnas ulpan ulpanim ulster ulsters ulterior ulteriorly ultima ultimacies ultimacy",
+   "blocklist": [
+    "upper",
+    "uppercase",
+    "uppercased"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "School dress outfit: ultimas ultimata ultimate ultimated ultimately ultimateness ultimatenesses",
+   "blocklist": [
+    "uniform",
+    "uniformed",
+    "uniformity",
+    "uniformly",
+    "uniforms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "All of space and time: ultimates ultimating ultimatum ultimatums ultimo ultimogeniture ultrabasic",
+   "blocklist": [
+    "cosmos",
+    "universal",
+    "universe",
+    "universes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Garments worn beneath clothes: ultra ultrabasics ultracareful ultracasual ultracautious ultrachic",
+   "blocklist": [
+    "boxers",
+    "bra",
+    "briefs",
+    "lingerie",
+    "panties",
+    "slip",
+    "underclothes",
+    "underclothing",
+    "undergarment",
+    "undergarments",
+    "underpants",
+    "underwear",
+    "undies",
+    "unmentionables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Opposite of downward: ultracentrifugal ultracentrifugally ultracentrifugation ultracivilized",
+   "blocklist": [
+    "above",
+    "ascending",
+    "higher",
+    "rising",
+    "uphill",
+    "upward",
+    "upwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Needing immediate attention: ultraclean ultracold ultracommercial ultracompact ultracompetent",
+   "blocklist": [
+    "acute",
+    "critical",
+    "immediate",
+    "pressing",
+    "unattended",
+    "urgencies",
+    "urgency",
+    "urgent",
+    "urgently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Institution granting degrees: ultraconservatism ultraconservatisms ultraconservative ultraconvenient",
+   "blocklist": [
+    "academy",
+    "college",
+    "school",
+    "universities",
+    "university"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Emotionally distressed: ultracool ultracritical ultracentrifuge ultracentrifuged ultracentrifuges",
+   "blocklist": [
+    "uneasy",
+    "unhappy",
+    "unsettled",
+    "unstable",
+    "unsteady",
+    "upset",
+    "uptight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Beneath earth: ultrademocratic ultradense ultradistance ultradistances ultradistant ultradry",
+   "blocklist": [
+    "below",
+    "buried",
+    "grave",
+    "hell",
+    "subsoil",
+    "subterranean",
+    "under",
+    "underground",
+    "underworld"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "One-wheeled cycle: ultraefficient ultraenergetic ultraexclusive ultrafamiliar ultrafast",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unicycle"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unicycle"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Undo a shoelace knot: unabashed unabashedly unabated unabatedly unable unabraded unabridged",
+   "blocklist": [
+    "unlace",
+    "unlaced",
+    "unlaces",
+    "unlacing",
+    "untie",
+    "untied",
+    "unties",
+    "untying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Not yet completed: unabsorbed unabsorbent unabused unacademic unacademically unaccented",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unfinished"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unfinished"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Not safe: unsaddle unsaddled unsaddles unsaddling unsafely unsafeties unsafety unsaid unsalable",
+   "blocklist": [
+    "dangerous",
+    "hazardous",
+    "insecure",
+    "perilous",
+    "risky",
+    "unprotected",
+    "unsafe",
+    "unsecured",
+    "unsound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Rearrange jumbled letters: unsalaried unsalted unsalvageable unsanctioned unsanitary unsated",
+   "blocklist": [
+    "unscramble",
+    "unscrambled",
+    "unscrambles",
+    "unscrambling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Remove a screw by turning: unsaved unsavory unsawed unsawn unsay unsayable unsaying unsays",
+   "blocklist": [
+    "unscrew",
+    "unscrewed",
+    "unscrewing",
+    "unscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 47.040390625,
+  "cost_numerator": 602117,
+  "cost_denominator": 12800,
+  "cost_exact": false,
+  "cost_mcse": 0.08387092171580834,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 218117,
+   "denominator": 12800,
+   "value": 17.040390625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:3,6:23,7:43,8:71,9:50,10:59,11:40,12:31,13:23,14:13,15:11,16:9,17:2,18:4,20:1",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.08387092171580834,
+   "rollouts": 256,
+   "rank_total": 218117,
+   "rank_denominator": 12800,
+   "cache_key": "37207df8bf3d2d0ec52251333821da4f"
+  }
+ }
+}

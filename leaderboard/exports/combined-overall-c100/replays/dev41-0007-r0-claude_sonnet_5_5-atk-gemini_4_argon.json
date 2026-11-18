@@ -1,0 +1,410 @@
+{
+ "game_id": "dev41-0007-r0-claude_sonnet_5_5-atk-gemini_4_argon",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_argon",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Most common English article, starts with t",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Conjunction joining two items, like salt ___ pepper",
+   "blocklist": [
+    "and"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Preposition: a gift ___ you; also a word meaning in favor of, opposite of against",
+   "blocklist": [
+    "for"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Clear liquid that falls as rain and fills oceans, H2O, essential for drinking",
+   "blocklist": [
+    "water",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Place where a family lives; home sweet home, a dwelling with rooms and a roof",
+   "blocklist": [
+    "abode",
+    "domicile",
+    "homes",
+    "house",
+    "houses",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Clocks measure it: seconds, minutes, hours; a period, as in 'what is the ___ now'",
+   "blocklist": [
+    "time",
+    "times"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Feline pet that meows and purrs, chases mice, often kept by owners of litter boxes",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Bound pages you read at a library; a novel is one, opposite of a movie adaptation, starts with b",
+   "blocklist": [
+    "book",
+    "books"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Young male child, opposite of girl; three letters, starts with b, ends with y",
+   "blocklist": [
+    "boy",
+    "boys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Furniture you sleep on at night, with a mattress and pillow; three letters, rhymes with red",
+   "blocklist": [
+    "bed",
+    "beds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Color of coal and ink, opposite of white",
+   "blocklist": [
+    "black",
+    "blacks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Striped insect that buzzes, makes honey and can sting; three letters, starts with b, ends with e",
+   "blocklist": [
+    "bee",
+    "bees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Rear part of the body, opposite of front; spine is here, or to support someone, as in ___ up a claim",
+   "blocklist": [
+    "back",
+    "backs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Round thing kicked in soccer or bounced in basketball; a formal dance party is also one of these",
+   "blocklist": [
+    "ball",
+    "balls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings and lays eggs in a nest in trees; robin or sparrow, for example",
+   "blocklist": [
+    "bird",
+    "birdie",
+    "birdies",
+    "birds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Baked staple sliced for sandwiches; toast is made from it; a loaf, starts with b, five letters",
+   "blocklist": [
+    "bread",
+    "breads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Place to deposit money, with tellers and ATMs; starts with b, four letters",
+   "blocklist": [
+    "bank",
+    "banks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Small vessel that floats on a lake; you row or sail it; starts with b, four letters",
+   "blocklist": [
+    "bark",
+    "barks",
+    "boat",
+    "boats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Color of chocolate, dirt and tree trunks; a bear may be this color; five letters",
+   "blocklist": [
+    "brown",
+    "browns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Alcoholic drink brewed from hops and barley, served in pints at a pub; four letters, starts with b",
+   "blocklist": [
+    "beer",
+    "beers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "bake",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "bad",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "banana",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "bit",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "been",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "business",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 383.5152025939753,
+  "cost_numerator": 95332675,
+  "cost_denominator": 248576,
+  "cost_exact": false,
+  "cost_mcse": 0.3885032571162898,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 87875395,
+   "denominator": 248576,
+   "value": 353.5152025939753,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:47,4:236,5:575,6:1060,7:1585,8:1825,9:1425,10:971,11:654,12:385,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.3885032571162898,
+   "rollouts": 256,
+   "rank_total": 87875395,
+   "rank_denominator": 248576,
+   "cache_key": "affecf196740baf5627a69ac3a524200"
+  }
+ }
+}

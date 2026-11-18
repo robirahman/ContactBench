@@ -1,0 +1,462 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_argon-atk-gpt_6_1_terra~rematch",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "unsealing",
+ "initial_prefix": "u",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 5060,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "comprehend (add erstand to und)",
+   "blocklist": [
+    "understand",
+    "understands",
+    "understood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "rain canopy (put mbrella after u)",
+   "blocklist": [
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "udder udo udometer ufology uglify ugliness uhlan ukulele ulcer ulna ulterior ultimate ubiquitous",
+   "blocklist": [
+    "umpire",
+    "unicorn",
+    "unicorns",
+    "unicycle",
+    "uniform",
+    "united",
+    "universe",
+    "unusual"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ubiquitous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ubieties"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; singular of ubieties",
+   "blocklist": [
+    "ubiety"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; umbel umber umbilical umbilicus umbo umbra umbrage",
+   "blocklist": [
+    "ubique"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; uracil urban utensil utopia uvula uxorial",
+   "blocklist": [
+    "ubiquinone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; upbeat upbringing upgrade uphold usable usage useful",
+   "blocklist": [
+    "ubiquinones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unabashed unabated unable unabridged unacceptable",
+   "blocklist": [
+    "ubiquities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unaccepted unacclimated unaccommodating unaccompanied",
+   "blocklist": [
+    "ubiquitously"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unacademic unaccented unaccountable unaccustomed",
+   "blocklist": [
+    "ubiquitousness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unadapted unaddressed unadjusted unadvised unadorned",
+   "blocklist": [
+    "ubiquitousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unaffected unafraid unaided unalienable",
+   "blocklist": [
+    "ubiquity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unachieved unacknowledged unacquainted unadaptable",
+   "blocklist": [
+    "udders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unadulterated unadventurous unaffiliated unaffordable",
+   "blocklist": [
+    "udometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unanimity unanimous unannounced unanswered",
+   "blocklist": [
+    "udometries"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unappealing unapproachable unarmed unashamed",
+   "blocklist": [
+    "udometry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unasked unassisted unassuming unattached unattended",
+   "blocklist": [
+    "udos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unattainable unattractive unauthorized unavailable",
+   "blocklist": [
+    "ufological"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unamused unanalyzed unanchored unanticipated",
+   "blocklist": [
+    "ufologies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unapologetic unapparent unappealable unappeased",
+   "blocklist": [
+    "ufologist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unalienable unaligned unalike unallied unalloyed",
+   "blocklist": [
+    "ufologists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbalance unbalanced unban unbar unbearable unbeaten",
+   "blocklist": [
+    "ugh"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbecoming unbeknown unbelief unbelievable",
+   "blocklist": [
+    "ughs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbend unbending unbent unbiased unbidden unbind",
+   "blocklist": [
+    "uglier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbacked unbaked unbanned unbarred unbased unbathed",
+   "blocklist": [
+    "uglies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbleached unblemished unblended unblinking unblock",
+   "blocklist": [
+    "ugliest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unblamed unblessed unblinded unbloodied unblushing",
+   "blocklist": [
+    "uglification"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbolt unbolted unborn unbosom unbound unbounded unbox",
+   "blocklist": [
+    "uglifications"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbrace unbraid unbrake unbranded unbreakable unbroken",
+   "blocklist": [
+    "uglified"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "first remaining unused u word alphabetically; unbuckle unbuild unbuilt unbundle unburden unbutton",
+   "blocklist": [
+    "uglifier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 238.45873155227596,
+  "cost_numerator": 42914941,
+  "cost_denominator": 179968,
+  "cost_exact": false,
+  "cost_mcse": 0.2827003894232264,
+  "baseline": {
+   "numerator": 40242157,
+   "denominator": 185856,
+   "value": 216.52331374827824,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:15,4:37,5:117,6:348,7:532,8:825,9:726,10:664,11:497,12:429,13:310,14:217,15:126,16:103,17:54,18:30,19:19,20:11",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.24718049937463493,
+   "rollouts": 256,
+   "rank_total": 40242157,
+   "rank_denominator": 185856,
+   "cache_key": "a655e8ee6c4d7b78967f9244fe429a7f"
+  },
+  "fallback": {
+   "numerator": 37515901,
+   "denominator": 179968,
+   "value": 208.45873155227596,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:13,4:33,5:105,6:327,7:508,8:793,9:703,10:631,11:486,12:415,13:304,14:214,15:125,16:102,17:54,18:30,19:19,20:11",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 0.2827003894232264,
+   "rollouts": 256,
+   "rank_total": 37515901,
+   "rank_denominator": 179968,
+   "cache_key": "f1e9bc87d6ac1b57afd81241b4e92f97"
+  }
+ }
+}

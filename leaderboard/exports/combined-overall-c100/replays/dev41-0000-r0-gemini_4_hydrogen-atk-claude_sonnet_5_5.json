@@ -1,0 +1,535 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Australian marsupial that hops with a pouch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Large green-striped summer fruit with sweet red flesh and black seeds",
+   "blocklist": [
+    "watermelon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Arctic marine mammal with long ivory tusks and whiskers",
+   "blocklist": [
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Breakfast batter cake cooked in a gridded iron",
+   "blocklist": [
+    "waffle",
+    "waffled",
+    "waffler",
+    "waffles",
+    "waffling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tower with spinning sails used to grind grain or pump liquid",
+   "blocklist": [
+    "windmill",
+    "windmills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Burrowing Australian marsupial with cube-shaped droppings",
+   "blocklist": [
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Enormous ocean mammal that breathes through a blowhole",
+   "blocklist": [
+    "whale",
+    "whaler",
+    "whalers",
+    "whales",
+    "whaling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pungent green Japanese condiment served with sushi",
+   "blocklist": [
+    "wasabi",
+    "wasabis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Magical practitioner who casts spells with a wand and wears a pointed hat",
+   "blocklist": [
+    "wand",
+    "wands",
+    "warlock",
+    "warlocks",
+    "witch",
+    "witches",
+    "wizard",
+    "wizardry",
+    "wizards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Cascade of water falling from a steep height",
+   "blocklist": [
+    "water",
+    "waterfall",
+    "waterfalls",
+    "waterfowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Bird that drums on tree trunks with its beak",
+   "blocklist": [
+    "woodpecker",
+    "woodpeckers",
+    "wren",
+    "wrens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Hugh Jackman's clawed X-Men character",
+   "blocklist": [
+    "wolverine",
+    "wolverines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Edible brain-shaped tree nut inside a hard brown shell",
+   "blocklist": [
+    "walnut",
+    "walnuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Three-quarter time ballroom dance",
+   "blocklist": [
+    "waltz",
+    "waltzed",
+    "waltzer",
+    "waltzers",
+    "waltzes",
+    "waltzing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Tool used to grip and turn nuts and bolts",
+   "blocklist": [
+    "wrench",
+    "wrenched",
+    "wrenches",
+    "wrenching"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Instrument blown by a referee to stop play",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "whistle",
+     "whistling"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Single-wheeled garden cart with two handles pushed by hand",
+   "blocklist": [
+    "cart",
+    "carts",
+    "wagon",
+    "wagons",
+    "wheelbarrow",
+    "wheelbarrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Wild canine pack animal that howls at the moon",
+   "blocklist": [
+    "wolf",
+    "wolfer",
+    "wolfers",
+    "wolfing",
+    "wolfish",
+    "wolflike",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Rolling chair with two large side wheels for people who cannot walk",
+   "blocklist": [
+    "wheel",
+    "wheelchair",
+    "wheelchairs",
+    "wheeler",
+    "wheelies",
+    "wheels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Timepiece worn strapped around the arm",
+   "blocklist": [
+    "watch",
+    "watches",
+    "wrist",
+    "wrists",
+    "wristwatch",
+    "wristwatches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Glass opening in a wall to let in light and air",
+   "blocklist": [
+    "window",
+    "windowed",
+    "windowing",
+    "windowless",
+    "windowpane",
+    "windows",
+    "windowsill"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Yellow-and-black stinging insect that builds papery nests",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wasp"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wasp"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Marriage ceremony between a bride and groom",
+   "blocklist": [
+    "wedlock"
+   ],
+   "blocked_ranges": [
+    [
+     "wed",
+     "weds"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Saturday and Sunday",
+   "blocklist": [
+    "weekday",
+    "weekdays",
+    "weekend",
+    "weekends"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Atmospheric conditions such as rain, snow, sunshine, and wind",
+   "blocklist": [
+    "weather",
+    "weathered",
+    "weathering",
+    "weatherman",
+    "weathermen",
+    "weathers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sword, gun, or bomb used to fight or attack",
+   "blocklist": [
+    "weapon",
+    "weaponry",
+    "weapons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Small slender carnivorous mammal known for stealing eggs and popping in a nursery rhyme",
+   "blocklist": [
+    "weasel",
+    "weasels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Person who joins metal pieces together using heat or a torch",
+   "blocklist": [
+    "weld",
+    "welded",
+    "welder",
+    "welders",
+    "welding",
+    "welds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Mythical human who transforms into a wolf during a full moon",
+   "blocklist": [
+    "werewolf",
+    "werewolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.63792067307692,
+  "cost_numerator": 155211,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.11964772075194431,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 55371,
+   "denominator": 3328,
+   "value": 16.637920673076923,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:26,5:32,6:46,7:94,8:87,9:51,10:25,11:27,12:14,13:15,14:13,15:7,16:5,18:1",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 0.11964772075194431,
+   "rollouts": 256,
+   "rank_total": 110742,
+   "rank_denominator": 6656,
+   "cache_key": "8e4c95b29510d23e1e199055a037f5d4"
+  }
+ }
+}

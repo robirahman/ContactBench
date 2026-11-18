@@ -1,0 +1,505 @@
+{
+ "game_id": "dev41-0002-r0-claude_sonnet_5_5-atk-claude_haiku_5_5",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A very common English article, definite one",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "the"
+    },
+    {
+     "seat": "guesser2",
+     "word": "the"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs and meows",
+   "blocklist": [
+    "cat",
+    "cats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Automobile; four wheels, drive it on the road",
+   "blocklist": [
+    "auto",
+    "autos",
+    "cab",
+    "cabs",
+    "car",
+    "cars",
+    "coupe",
+    "sedan",
+    "truck",
+    "trucks",
+    "van",
+    "vans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of hot; freezing temperature, winter weather, starts with c",
+   "blocklist": [
+    "chill",
+    "chilled",
+    "chilly",
+    "cold",
+    "colder",
+    "coldest",
+    "cool",
+    "cooler",
+    "crisp",
+    "frigid",
+    "frosty",
+    "icy",
+    "winter",
+    "wintry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Machine with keyboard and mouse, PC, laptop or desktop, used for processing data",
+   "blocklist": [
+    "chip",
+    "circuit",
+    "computer",
+    "console",
+    "cursor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Birthday dessert with frosting and candles, baked in layers, sliced at parties",
+   "blocklist": [
+    "cake",
+    "cakes",
+    "candied",
+    "candle",
+    "candles",
+    "candy",
+    "carrot",
+    "cheesecake",
+    "cherry",
+    "chocolate",
+    "coconut",
+    "cookie",
+    "cookies",
+    "cream",
+    "cupcake",
+    "custard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Medieval fortress with towers, a moat and a drawbridge; a king lives here",
+   "blocklist": [
+    "castle",
+    "castles",
+    "chateau",
+    "citadel",
+    "drawbridge",
+    "fort",
+    "fortress",
+    "forts",
+    "keep",
+    "keeps",
+    "king",
+    "kings",
+    "manor",
+    "moat",
+    "moats",
+    "palace",
+    "tower",
+    "towers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Ship's leader or skipper; Hook in Peter Pan; rank above lieutenant, ___ America",
+   "blocklist": [
+    "admiral",
+    "captain",
+    "captains",
+    "commander",
+    "skipper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Seat with four legs and a back, found at a table",
+   "blocklist": [
+    "bench",
+    "benches",
+    "carrel",
+    "cathedra",
+    "chair",
+    "chairs",
+    "chaise",
+    "chaises",
+    "couch",
+    "couches",
+    "cushion",
+    "cushions",
+    "ottoman",
+    "ottomans",
+    "recliner",
+    "recliners",
+    "seat",
+    "seats",
+    "settee",
+    "settees",
+    "sofa",
+    "sofas",
+    "stool",
+    "stools",
+    "throne",
+    "thrones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "White fluffy thing floating in the sky that brings rain; nimbus or cumulus, starts with cl",
+   "blocklist": [
+    "cirrus",
+    "cloud",
+    "clouds",
+    "cloudy",
+    "cumulus",
+    "nimbus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Nation like France or Canada; also rural land outside the city, as in music",
+   "blocklist": [
+    "land",
+    "lands",
+    "music",
+    "nation",
+    "nations",
+    "rural"
+   ],
+   "blocked_ranges": [
+    [
+     "countries",
+     "countryside"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Young human, kid, boy or girl before becoming an adult; offspring of a parent, plural is children",
+   "blocklist": [
+    "child",
+    "children",
+    "collar",
+    "collars",
+    "color",
+    "colors",
+    "cow",
+    "cows",
+    "kid",
+    "kids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Morning brew in a mug, made from roasted beans, caffeine, espresso or latte, Starbucks drink",
+   "blocklist": [
+    "caffeine",
+    "cappuccino",
+    "cocoa",
+    "coffee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Tick tock; hands on its face tell the time, hangs on a wall or sits on a nightstand",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "clockwork",
+    "watch",
+    "watches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Dairy product from curdled milk; cheddar, swiss, brie; mice love it; say it for a photo smile",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cheese"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cheese"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Reddish-brown metal used in pennies and electrical wires, element Cu",
+   "blocklist": [
+    "cobalt",
+    "coin",
+    "coins",
+    "copies",
+    "copper",
+    "coppers",
+    "copy",
+    "cord",
+    "cords",
+    "corn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A business firm or corporation; also friends who keep you ___ when you are alone; Inc. or Ltd.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coal",
+     "collar"
+    ],
+    [
+     "collards",
+     "cozy"
+    ]
+   ],
+   "blocked_word_count": 6354,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coach",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coaches",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coached",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coaching",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coachman",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coachable",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coachmen",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coact",
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collard",
+   "prefix_after": "co",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 30.0,
+  "cost_numerator": 30,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

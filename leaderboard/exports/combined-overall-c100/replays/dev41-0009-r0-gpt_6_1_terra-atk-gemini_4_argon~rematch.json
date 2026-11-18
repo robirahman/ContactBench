@@ -1,0 +1,489 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_1_terra-atk-gemini_4_argon~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "shifters",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Our solar system's central star. sea set sit son sky say see she sir six soft sand snow song salt",
+   "blocklist": [
+    "sol",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. stop stay soon seem some such show slow small smile sound stone still",
+   "blocklist": [
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Legless slithering reptile. state space sleep speed speak spend stand start step stick stock storm",
+   "blocklist": [
+    "serpent",
+    "serpents",
+    "snake",
+    "snakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Ocean predator with a fin and sharp teeth. school ship short side sign simple since sing sister size",
+   "blocklist": [
+    "sawfish",
+    "sawfishes",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Utensil for eating soup. sweet swim swing switch sword sugar summer super sure surprise street",
+   "blocklist": [
+    "soupspoon",
+    "soupspoons",
+    "spoon",
+    "spoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Footwear for one foot. spring strong south story study store stuff strange straight surface support",
+   "blocklist": [
+    "sandal",
+    "shoe",
+    "shoes",
+    "slipper",
+    "sneaker",
+    "sock",
+    "socks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Red berry with seeds on its exterior. second seven several single special service season sentence",
+   "blocklist": [
+    "strawberries",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Visible fumes from fire. save safe same sale sail sake sack sad said saint salad salary sample",
+   "blocklist": [
+    "smog",
+    "smoke",
+    "smokes",
+    "soot",
+    "steam"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Black and white mammal that sprays foul odor. sell sent send serve shake shape share shift shine",
+   "blocklist": [
+    "skunk",
+    "skunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Tool with two blades for cutting paper. sadder saddle sadly safari saga sage salon salmon savage",
+   "blocklist": [
+    "scissor",
+    "scissors",
+    "shear",
+    "shears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Bushy-tailed nut-loving tree rodent. should shall skill skin skirt slave slice slide slight slope",
+   "blocklist": [
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Food between slices of bread. summer sunlit sunset sunny sunrise suit steam sailor saddleback salad",
+   "blocklist": [
+    "sandwich",
+    "sandwiches",
+    "sub"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Unique six-sided ice crystal. science secret social society source speech sport success silver",
+   "blocklist": [
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Five-armed marine echinoderm. soap soda sort spin spot shot shut shop sick silk singe sink slap",
+   "blocklist": [
+    "starfish",
+    "starfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Shell-bearing garden gastropod. smart smell soldier solid solve sorrow spark spare spiderweb",
+   "blocklist": [
+    "slug",
+    "slugs",
+    "snail",
+    "snails"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Kenny G's musical instrument. sacred sadness safety satire sauce sausage scar scare scene scent",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Flippered mammal that barks. sense series senior separate shadow shelter shame shirt shock shout",
+   "blocklist": [
+    "seal",
+    "seals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tall yellow flower whose seeds are eaten. space station statue status steel steamship study styles",
+   "blocklist": [
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Underwater naval vessel. sab sabe saber sabers sabin sabine sabir sable sables sabot sabots sabre",
+   "blocklist": [
+    "submarine",
+    "submarines",
+    "subs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Bones of a body. sabbath sabbat sabbed sabbing sabed sabeing sabes sabines sabins sabirs saboteur",
+   "blocklist": [
+    "skeletal",
+    "skeleton",
+    "skeletons",
+    "skull",
+    "skulls",
+    "spine",
+    "spines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Doctor listens to heartbeat with it. sac sacaton sacbut saccade saccadic saccate sachem sachet sacks",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Desert arachnid with a venomous tail. spindle spiral spirit spray stack staff stage stamp stair",
+   "blocklist": [
+    "scorpion",
+    "scorpions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Long-necked white waterbird. sacatons sacbuts saccades sachems sachets sacked sacker sackful sacra",
+   "blocklist": [
+    "swan",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Luggage carried on a trip. saccule saccules sacculi sacculus sacral sacrals sacque sacques sackbut",
+   "blocklist": [
+    "saddlebag",
+    "saddlebags",
+    "satchel",
+    "satchels",
+    "suitcase",
+    "suitcases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Frozen rain pellets. sadden saddened saddening saddens saddest saddhu saddhus saddlebow saddlebows",
+   "blocklist": [
+    "sleet",
+    "sleets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Artificial object orbiting Earth. sade sades sadhe sadhes sadhu sadhus sadi sadis sadism sadist",
+   "blocklist": [
+    "satellite",
+    "satellites",
+    "spacecraft",
+    "spacecrafts",
+    "sputnik",
+    "sputniks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Digging tool. saddlebred saddlebreds saddlecloth saddlecloths saddled saddleless saddler saddlers",
+   "blocklist": [
+    "scoop",
+    "scoops",
+    "shovel",
+    "shovels",
+    "spade",
+    "spades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "saddlery"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 770.1561228936665,
+  "cost_numerator": 21207019,
+  "cost_denominator": 27536,
+  "cost_exact": false,
+  "cost_mcse": 0.4058819902730651,
+  "baseline": {
+   "numerator": 333084709,
+   "denominator": 443648,
+   "value": 750.7860037687536,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.41432906625894517,
+   "rollouts": 256,
+   "rank_total": 666169418,
+   "rank_denominator": 887296,
+   "cache_key": "ced2167337019d13ccb82dae281f2ca3"
+  },
+  "fallback": {
+   "numerator": 20380939,
+   "denominator": 27536,
+   "value": 740.1561228936665,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:45,4:291,5:947,6:1722,7:2604,8:3442,9:2891,10:2232,11:1559,12:1128,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 0.4058819902730651,
+   "rollouts": 256,
+   "rank_total": 652190048,
+   "rank_denominator": 881152,
+   "cache_key": "84b371828a8028562ee6bf690b41b5c2"
+  }
+ }
+}

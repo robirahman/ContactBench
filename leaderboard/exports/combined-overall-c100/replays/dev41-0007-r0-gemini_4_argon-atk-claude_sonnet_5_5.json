@@ -1,0 +1,540 @@
+{
+ "game_id": "dev41-0007-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Water lily flower",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lotus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lotus"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "American buffalo",
+   "blocklist": [
+    "bison",
+    "buffalo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Curved throwing stick that returns",
+   "blocklist": [
+    "boomerang"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Marxist capitalist middle class",
+   "blocklist": [
+    "bourgeoisie"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Light produced by living organisms like fireflies",
+   "blocklist": [
+    "bioluminescence",
+    "bioluminescent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Provencal fish stew from Marseille",
+   "blocklist": [
+    "bouillabaisse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Medical term for stomach rumbling sound",
+   "blocklist": [
+    "borborygmi",
+    "borborygmus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Disease caused by thiamine vitamin B1 deficiency, or a person who loves and collects books",
+   "blocklist": [
+    "beriberi",
+    "bibliophile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Optical double refraction in crystals like calcite, or parasitic schistosomiasis snail fever",
+   "blocklist": [
+    "bilharzia",
+    "bilharziasis",
+    "birefringence",
+    "birefringent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Virus that infects bacteria, or thorny tropical climbing vine with colorful papery bracts",
+   "blocklist": [
+    "bacteriophage",
+    "bacteriophages",
+    "bougainvillea",
+    "bougainvilleas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Ancient writing alternating left-to-right and right-to-left, or braking radiation in physics",
+   "blocklist": [
+    "boustrophedon",
+    "bremsstrahlung"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "German literary genre for a coming-of-age novel, or empty arrogant boasting and swagger",
+   "blocklist": [
+    "bildungsroman",
+    "bluster",
+    "bombast",
+    "braggadocio",
+    "bravado"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Russian triangular stringed instrument, or deadly nightshade plant, or sedative sleeping drug",
+   "blocklist": [
+    "balalaika",
+    "barbiturate",
+    "belladonna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Spherical deep-sea diving vessel, or massive African upside-down tree, or chest ammunition belt",
+   "blocklist": [
+    "bandoleer",
+    "bandoleers",
+    "bandolier",
+    "bandoliers",
+    "baobab",
+    "baobabs",
+    "bathysphere",
+    "bathyspheres"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Mythical lizard whose gaze turns to stone, or Biblical giant monster, or short-headed skull shape",
+   "blocklist": [
+    "basilisk",
+    "basilisks",
+    "behemoth",
+    "behemoths",
+    "brachycephalic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sweet flaky phyllo pastry with nuts and honey, or Australian marsupial rat, or pressure gauge",
+   "blocklist": [
+    "baklava",
+    "bandicoot",
+    "barometer",
+    "bourdon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Fierce predatory tropical ray-finned fish, or artisan who forges horseshoes, or golden brown candy",
+   "blocklist": [
+    "barracuda",
+    "barracudas",
+    "blacksmith",
+    "butterscotch",
+    "butterscotches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Lapel flower worn on a tuxedo, or Venetian gondolier boat song, or to hoodwink and deceive",
+   "blocklist": [
+    "bamboozle",
+    "bamboozled",
+    "bamboozles",
+    "barcarole",
+    "barcaroles",
+    "barcarolle",
+    "barcarolles",
+    "boutonniere",
+    "boutonnieres"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Wasteful make-work project, or flamboyant carnival pitchman hype, or heir receiving trust or will",
+   "blocklist": [
+    "ballyhoo",
+    "beneficiary",
+    "boondoggle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Australian oxbow stagnant waterhole in Waltzing Matilda, or DIY art made from whatever is at hand",
+   "blocklist": [
+    "billabong",
+    "bricolage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Person who talks foolish nonsense, or noisy uproar and commotion, or joint fluid sac inflammation",
+   "blocklist": [
+    "babbler",
+    "bedlam",
+    "blabbermouth",
+    "blather",
+    "blatherskite",
+    "brouhaha",
+    "bursitis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Thunder lizard dinosaur, or high puffed-out hairdo style, or senseless drivel and rubbish",
+   "blocklist": [
+    "balderdash",
+    "baloney",
+    "bosh",
+    "bouffant",
+    "brontosaurus",
+    "bunk",
+    "bunkum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Compassionate Buddhist enlightened being, or eyelid twitching spasm, or abnormally slow heart rate",
+   "blocklist": [
+    "blepharospasm",
+    "bodhisattva",
+    "bradycardia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "C60 soccer ball carbon allotrope, or Caribbean pirate corsair, or improvised open-air military camp",
+   "blocklist": [
+    "bivouac",
+    "buccaneer",
+    "buckminsterfullerene",
+    "buckyball"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Leading sheep with a neck bell indicating trends, or grain-producing region, or eco-friendly rot",
+   "blocklist": [
+    "bellwether",
+    "bellwethers",
+    "biodegradable",
+    "biodegradation",
+    "biodegrade",
+    "breadbasket",
+    "breadbaskets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Fragrant myrrh-like gum resin starting with bd, or Sermon on the Mount blessing, or engagement",
+   "blocklist": [
+    "bdellium",
+    "beatitude",
+    "beatitudes",
+    "betrothal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Board game with 24 triangular points and doubling cube, or scent-tracking dog, or 118-pound boxer",
+   "blocklist": [
+    "backgammon",
+    "bantamweight",
+    "basset",
+    "beagle",
+    "bloodhound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Racket sport played with a shuttlecock, or Russian grandmother headscarf, or bronchial airway cough",
+   "blocklist": [
+    "babushka",
+    "badminton",
+    "bronchi",
+    "bronchus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Men's haircutting shop with a striped pole, or to besiege and surround with troops, or highwaymen",
+   "blocklist": [
+    "bandit",
+    "bandits",
+    "banditti",
+    "barber",
+    "barbers",
+    "barbershop",
+    "beleaguer",
+    "besiege",
+    "besieged",
+    "besieges",
+    "brigand",
+    "brigands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Refusal to buy goods as a protest, or Earl Grey citrus oil, or classical lullaby cradle song",
+   "blocklist": [
+    "berceuse",
+    "bergamot",
+    "boycott"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 379.5754512251048,
+  "cost_numerator": 92701435,
+  "cost_denominator": 244224,
+  "cost_exact": false,
+  "cost_mcse": 0.3595711357206761,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 85374715,
+   "denominator": 244224,
+   "value": 349.5754512251048,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:51,4:245,5:583,6:1060,7:1569,8:1806,9:1404,10:954,11:641,12:375,13:211,14:119,15:64,16:26,17:17,18:7,19:2,20:1",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.3595711357206761,
+   "rollouts": 256,
+   "rank_total": 85374715,
+   "rank_denominator": 244224,
+   "cache_key": "50e9742d52e5e2b2290a2b9a5cbbb508"
+  }
+ }
+}

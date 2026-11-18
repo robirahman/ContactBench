@@ -1,0 +1,547 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_argon-atk-gemini_4_hydrogen",
+ "attacker": "gemini_4_argon",
+ "defender": "gemini_4_hydrogen",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "list_words('', offset=86304, limit=1)",
+   "blocklist": [
+    "luges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites, eight letters starting with double a",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "pick 1: list_words(prefix in s,c,p,r,d,a,m,b; offset=5000; limit=1)",
+   "blocklist": [
+    "anaphasic",
+    "bleach",
+    "chitties",
+    "dieseled",
+    "mineralised",
+    "photoinduction",
+    "remindful",
+    "shakoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "xylophone"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "list_words('s',0,20): pick 1 randomly to force Defender to block all 20 or lose contact",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "sabeing"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "list_words('z', 0, 1): pick index 0 OR 6",
+   "blocklist": [
+    "zabaglione",
+    "zacaton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "list_words('a', 1, 4): Guesser2 pick index 2 (4 letters). Defender can't know which.",
+   "blocklist": [
+    "aahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pick 1 randomly from: qiviut, qanat, qindar, qoph, quaalude, quacksalver, quadrangle, quadrant",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "qiviut"
+    },
+    {
+     "seat": "guesser2",
+     "word": "qaid"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "4-letter mammal or noble gas: ibex, lynx, oryx, zebu, vole, or 5-letter gas starting with x",
+   "blocklist": [
+    "xenon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pick 1 element: He, Ne, Ar, Kr, Rn, Be, Mg, Ca, Sr, Ba, Ra, Li, Na, K, Rb, Cs, Fr (write full name)",
+   "blocklist": [
+    "argon",
+    "barium",
+    "beryllium",
+    "calcium",
+    "cesium",
+    "francium",
+    "helium",
+    "krypton",
+    "lithium",
+    "magnesium",
+    "neon",
+    "potassium",
+    "radium",
+    "radon",
+    "rubidium",
+    "sodium",
+    "strontium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pick 1 element: Sc, Ti, V, Cr, Mn, Fe, Co, Ni, Cu, Zn, Ag, Au, Pt, Hg, W, Pb, Sn, Bi, U, Pu",
+   "blocklist": [
+    "bismuth",
+    "chromium",
+    "cobalt",
+    "copper",
+    "gold",
+    "iron",
+    "lead",
+    "manganese",
+    "mercury",
+    "nickel",
+    "platinum",
+    "plutonium",
+    "scandium",
+    "silver",
+    "tin",
+    "titanium",
+    "tungsten",
+    "uranium",
+    "vanadium",
+    "zinc"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Pick 1 element: B, C, N, O, F, Cl, Br, I, At, Al, Ga, In, Tl, Si, Ge, P, As, Sb, S, Se, Te, Po",
+   "blocklist": [
+    "aluminium",
+    "aluminum",
+    "antimony",
+    "arsenic",
+    "astatine",
+    "boron",
+    "bromine",
+    "carbon",
+    "chlorine",
+    "fluorine",
+    "gallium",
+    "germanium",
+    "indium",
+    "iodine",
+    "nitrogen",
+    "oxygen",
+    "phosphorus",
+    "polonium",
+    "selenium",
+    "silicon",
+    "sulfur",
+    "sulphur",
+    "tellurium",
+    "thallium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Unscramble one of these two options: KLYO or TAFI",
+   "blocklist": [
+    "fiat",
+    "yolk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Join parts: synec+doche (Pick this 10-letter figure of speech; or quod+libet or pachy+derm)",
+   "blocklist": [
+    "pachyderm",
+    "quodlibet",
+    "synecdoche"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Pick 1 element: H, Y, Zr, Nb, Mo, Tc, Ru, Rh, Pd, Cd, Hf, Ta, Re, Os, Ir, Ac, Th, Pa, Np, Am (H=1st)",
+   "blocklist": [
+    "actinium",
+    "americium",
+    "cadmium",
+    "hafnium",
+    "hydrogen",
+    "iridium",
+    "molybdenum",
+    "neptunium",
+    "niobium",
+    "osmium",
+    "palladium",
+    "protactinium",
+    "rhenium",
+    "rhodium",
+    "ruthenium",
+    "tantalum",
+    "technetium",
+    "thorium",
+    "yttrium",
+    "zirconium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Pick 1 element: La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, Lu, Cm, Bk, Cf, Es, Fm",
+   "blocklist": [
+    "berkelium",
+    "californium",
+    "cerium",
+    "curium",
+    "dysprosium",
+    "einsteinium",
+    "erbium",
+    "europium",
+    "fermium",
+    "gadolinium",
+    "holmium",
+    "lanthanum",
+    "lutetium",
+    "neodymium",
+    "praseodymium",
+    "promethium",
+    "samarium",
+    "terbium",
+    "thulium",
+    "ytterbium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Decode 11-letter word (a=1..z=26): 1-18-3-8-9-16-5-12-1-7-15",
+   "blocklist": [
+    "archipelago"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Optical tube with mirrors and colored glass producing symmetrical patterns (12 letters, k...e)",
+   "blocklist": [
+    "kaleidoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Egg-laying Australian mammal with a duck bill and beaver tail (8 letters, p...s)",
+   "blocklist": [
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with swiveling eyes and a projectile tongue (9 letters, c...n)",
+   "blocklist": [
+    "chameleon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Arctic whale with a long spiral tusk (7 letters, n...l)",
+   "blocklist": [
+    "narwhal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Scaly anteating mammal that rolls into a protective ball (8 letters, p...n)",
+   "blocklist": [
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Spiny egg-laying Australian monotreme also called a spiny anteater (7 letters, e...a)",
+   "blocklist": [
+    "echidna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "New World mammal with a bony armored shell that curls up for defense (9 letters, a...o)",
+   "blocklist": [
+    "armadillo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Burrowing Australian marsupial with cube-shaped droppings (6 letters, w...t)",
+   "blocklist": [
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Neotenic Mexican salamander with external feathery gills (7 letters, a...l)",
+   "blocklist": [
+    "axolotl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "World's largest living rodent, native to South America (8 letters, c...a)",
+   "blocklist": [
+    "capybara"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Large flightless bird of New Guinea and Australia with a helmetlike casque (9 letters, c...y)",
+   "blocklist": [
+    "cassowary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Australian kingfisher known for its loud humanlike laughing call (10 letters, k...a)",
+   "blocklist": [
+    "kookaburra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6833.182587057622,
+  "cost_numerator": 963861403,
+  "cost_denominator": 141056,
+  "cost_exact": false,
+  "cost_mcse": 4.179457957507396,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 959629723,
+   "denominator": 141056,
+   "value": 6803.182587057622,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:960,4:3857,5:8605,6:15187,7:23064,8:28374,9:24838,10:20283,11:15497,12:11355,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.179457957507396,
+   "rollouts": 256,
+   "rank_total": 6717408061,
+   "rank_denominator": 987392,
+   "cache_key": "7304202a46b16e2cf0537fcc3e053bb0"
+  }
+ }
+}

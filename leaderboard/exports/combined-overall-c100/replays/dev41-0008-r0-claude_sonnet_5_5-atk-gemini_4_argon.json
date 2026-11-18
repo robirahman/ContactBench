@@ -1,0 +1,596 @@
+{
+ "game_id": "dev41-0008-r0-claude_sonnet_5_5-atk-gemini_4_argon",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_argon",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A very common English article, definite one",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Conjunction joining words, as in 'salt ___ pepper'; also a logical operator with or and not",
+   "blocklist": [
+    "and",
+    "nor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A small domesticated feline that purrs and chases mice",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Huge gray animal with a trunk and tusks, found in Africa and India",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Organ of sight, found on your face; you blink it",
+   "blocklist": [
+    "eye",
+    "eyeball",
+    "eyeballs",
+    "eyelid",
+    "eyelids",
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Our planet, third from the sun; soil or ground",
+   "blocklist": [
+    "earth",
+    "earthen",
+    "earthly",
+    "earths",
+    "earthy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Laid by a hen; sunny side up or scrambled at breakfast, with a yolk",
+   "blocklist": [
+    "egg",
+    "eggs",
+    "eggshell",
+    "eggshells",
+    "eggy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Sound that bounces back off a canyon wall; a repeated shout returns to you",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoer",
+    "echoers",
+    "echoes",
+    "echoey",
+    "echoic",
+    "echoing",
+    "echolocation",
+    "echos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Every one of a group, individually; every single",
+   "blocklist": [
+    "each",
+    "either",
+    "everybody",
+    "everyone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Finish; the opposite of begin or start; conclusion of a story",
+   "blocklist": [
+    "end",
+    "ended",
+    "ender",
+    "enders",
+    "endgame",
+    "endgames",
+    "ending",
+    "endings",
+    "endmost",
+    "endnote",
+    "endnotes",
+    "endpoint",
+    "endpoints",
+    "ends",
+    "epilog",
+    "epilogue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Not difficult; simple, effortless, a breeze",
+   "blocklist": [
+    "ease",
+    "easeful",
+    "eases",
+    "easier",
+    "easiest",
+    "easily",
+    "easiness",
+    "easy",
+    "easygoing",
+    "elementary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Not odd; divisible by two, like four or six",
+   "blocklist": [
+    "eight",
+    "eighteen",
+    "eighteens",
+    "eighties",
+    "eights",
+    "eighty",
+    "even",
+    "evened",
+    "evener",
+    "eveners",
+    "evenest",
+    "evenly",
+    "evenness",
+    "evennesses",
+    "evens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Power; kinetic or potential, measured in joules; what electricity supplies",
+   "blocklist": [
+    "energetic",
+    "energetics",
+    "energies",
+    "energize",
+    "energizer",
+    "energy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Way out of a building; the door sign says this, or to leave a stage",
+   "blocklist": [
+    "egress",
+    "egresses",
+    "escape",
+    "escapes",
+    "exit",
+    "exited",
+    "exiting",
+    "exits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Joint between upper arm and forearm; you can bend it or nudge someone with it in a crowd",
+   "blocklist": [
+    "elbow",
+    "elbowed",
+    "elbowing",
+    "elbowroom",
+    "elbowrooms",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Opposite of late; ahead of schedule, like the bird that catches the worm",
+   "blocklist": [
+    "earlier",
+    "earliest",
+    "earliness",
+    "earlinesses",
+    "early"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Large bird of prey, national symbol of the USA, with a bald head and sharp talons",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Lift in a tall building that goes up and down between floors; push a button to ride it",
+   "blocklist": [
+    "elevate",
+    "elevated",
+    "elevateds",
+    "elevates",
+    "elevating",
+    "elevation",
+    "elevations",
+    "elevator",
+    "elevators",
+    "escalator",
+    "escalators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Border or rim; the sharp side of a knife blade; cliff's brink; advantage over a rival",
+   "blocklist": [
+    "edge",
+    "edged",
+    "edgeless",
+    "edger",
+    "edgers",
+    "edges",
+    "edgeways",
+    "edgewise",
+    "edgier",
+    "edgiest",
+    "edgily",
+    "edginess",
+    "edginesses",
+    "edging",
+    "edgings",
+    "edgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Slippery snakelike fish that can be electric",
+   "blocklist": [
+    "eel",
+    "eelier",
+    "eeliest",
+    "eellike",
+    "eelpout",
+    "eelpouts",
+    "eels",
+    "eelworm",
+    "eelworms",
+    "eely",
+    "elver",
+    "elvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Additional; more than needed, a spare; a bonus beyond the usual amount",
+   "blocklist": [
+    "else",
+    "encore",
+    "encores",
+    "exceed",
+    "exceeding",
+    "excess",
+    "excessed",
+    "excesses",
+    "excessing",
+    "excessive",
+    "excessively",
+    "excessiveness",
+    "excessivenesses",
+    "extra",
+    "extraneous",
+    "extraneously",
+    "extraneousness",
+    "extraneousnesses",
+    "extras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Flightless Australian bird, similar to an ostrich, three letters starting with e",
+   "blocklist": [
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Precisely correct, accurate in every detail; not approximate",
+   "blocklist": [
+    "exact",
+    "exacted",
+    "exacter",
+    "exactest",
+    "exacting",
+    "exactingly",
+    "exactingness",
+    "exactitude",
+    "exactitudes",
+    "exactly",
+    "exactness",
+    "exactnesses",
+    "exacts",
+    "explicit",
+    "explicitly",
+    "explicitness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Motor that powers a car or locomotive; what a mechanic repairs under the hood",
+   "blocklist": [
+    "engine",
+    "engined",
+    "engineries",
+    "enginery",
+    "engines",
+    "engining",
+    "enginous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Compass direction where the sun rises, opposite of west; N, S, W and this one",
+   "blocklist": [
+    "east",
+    "eastbound",
+    "easter",
+    "easterlies",
+    "easterly",
+    "eastern",
+    "easterner",
+    "easterners",
+    "easternmost",
+    "easters",
+    "easting",
+    "eastings",
+    "easts",
+    "eastward",
+    "eastwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "enough",
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "enter",
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "example",
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 320.05077570921986,
+  "cost_numerator": 14440691,
+  "cost_denominator": 45120,
+  "cost_exact": false,
+  "cost_mcse": 0.3825717250113208,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 13087091,
+   "denominator": 45120,
+   "value": 290.05077570921986,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:34,4:85,5:172,6:413,7:768,8:1091,9:1108,10:960,11:705,12:555,13:378,14:208,15:156,16:84,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.3825717250113208,
+   "rollouts": 256,
+   "rank_total": 52348364,
+   "rank_denominator": 180480,
+   "cache_key": "4bc1b85caf55167fe06d4b89da542383"
+  }
+ }
+}

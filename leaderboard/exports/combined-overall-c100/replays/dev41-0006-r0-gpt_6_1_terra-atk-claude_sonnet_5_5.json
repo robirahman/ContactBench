@@ -1,0 +1,506 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet; dog fox cow pig hen rat bat ant bee fly owl ape yak ram ewe hog emu eel cod.",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Star at center of solar system; moon earth mars venus jupiter saturn comet space light day night sky",
+   "blocklist": [
+    "star",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Liquid to drink; love life time world people house home tree fish bird fire air rain snow sea river.",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of cold; man woman child boy girl hand head eye ear nose mouth foot heart blood food bread.",
+   "blocklist": [
+    "heat",
+    "hot",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Color of clear sky; red green black white yellow brown purple orange pink gray gold silver dark.",
+   "blocklist": [
+    "blue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Chess monarch; queen pawn rook knight bishop board game play win lose war peace land city town road.",
+   "blocklist": [
+    "king"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Frozen water; one two three four five six seven eight nine ten mother father sister brother friend.",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Sound a dog makes; work job money bank book car bus train plane ship door room bed table chair.",
+   "blocklist": [
+    "bank",
+    "bark",
+    "book",
+    "job",
+    "money",
+    "woof",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Fruit from an orchard; pear plum peach grape lemon lime melon berry cherry mango nut seed leaf root.",
+   "blocklist": [
+    "apple",
+    "fruit",
+    "orchard",
+    "peach",
+    "pear",
+    "plum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Opposite of up; the and for you are but not all can her was yet new old big bad say way day get.",
+   "blocklist": [
+    "down"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Young canine; happy sad high low fast slow long short good great small large hope dream music song.",
+   "blocklist": [
+    "dog",
+    "dream",
+    "hope",
+    "music",
+    "pup",
+    "puppy",
+    "song"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Affirmative answer; she his him who how why now let put too use any may did had has our out own.",
+   "blocklist": [
+    "aye",
+    "yea",
+    "yeah",
+    "yep",
+    "yes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Nightly rest; art age ago aid aim arm ash ask bag bar bay bit box buy cap cut die dry due end far.",
+   "blocklist": [
+    "age",
+    "ago",
+    "aid",
+    "aim",
+    "arm",
+    "art",
+    "ash",
+    "ask",
+    "bag",
+    "bar",
+    "bay",
+    "bit",
+    "box",
+    "buy",
+    "cap",
+    "cut",
+    "die",
+    "dry",
+    "due",
+    "end",
+    "far",
+    "night",
+    "nightly",
+    "rest",
+    "sleep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Infant; face fact fate fear feel feet fell felt few fit fix flat flow folk fun gas gap garden gift.",
+   "blocklist": [
+    "baby",
+    "face",
+    "fact",
+    "fate",
+    "fear",
+    "feel",
+    "feet",
+    "fell",
+    "felt",
+    "few",
+    "fit",
+    "fix",
+    "flat",
+    "flow",
+    "folk",
+    "fun",
+    "gap",
+    "garden",
+    "gas",
+    "gift",
+    "infant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Animal ridden by cowboy; hat gun run sit top pot pan cup map sea sun air tea ink pen key leg lip.",
+   "blocklist": [
+    "cowboy",
+    "horse",
+    "mare",
+    "pony",
+    "stallion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Alexander Graham Bell invention for voice calls; tax law oil wet web let net few van vet via vow.",
+   "blocklist": [
+    "call",
+    "phone",
+    "telephone",
+    "voice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Royal realm; mud mug nap nor oak odd off ohm ore oar orb pack pain pair park part pass path pool.",
+   "blocklist": [
+    "empire",
+    "kingdom",
+    "monarchy",
+    "nor",
+    "oak",
+    "oar",
+    "odd",
+    "off",
+    "ohm",
+    "orb",
+    "ore",
+    "realm",
+    "royalty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Morning caffeinated beverage; walk talk look see hear read write open close live grow learn teach.",
+   "blocklist": [
+    "brew",
+    "caffeine",
+    "coffee",
+    "espresso",
+    "java",
+    "latte",
+    "tea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Yellow curved tropical fruit; school student teacher family person human power computer science.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "fruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Seasoning for fries; sugar milk egg cheese meat rice soup cake pie jam butter flour pepper honey.",
+   "blocklist": [
+    "ketchup",
+    "salt",
+    "salty",
+    "vinegar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Eight legged arachnid; stone rock mountain hill valley lake ocean forest field grass flower animal.",
+   "blocklist": [
+    "arachnid",
+    "spider",
+    "tarantula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Artificial object orbiting Earth; truth beauty freedom justice reason purpose memory history future.",
+   "blocklist": [
+    "beauty",
+    "freedom",
+    "future",
+    "history",
+    "justice",
+    "memory",
+    "moon",
+    "orbit",
+    "purpose",
+    "reason",
+    "satellite",
+    "truth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Cease; right left turn back front side full free true false real hard easy kind word name place.",
+   "blocklist": [
+    "desist",
+    "end",
+    "halt",
+    "pause",
+    "quit",
+    "stop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "thing"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7025.125141866775,
+  "cost_numerator": 27879293427,
+  "cost_denominator": 3968512,
+  "cost_exact": false,
+  "cost_mcse": 1.8233601731429585,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 27760238067,
+   "denominator": 3968512,
+   "value": 6995.125141866775,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:816,4:3778,5:8550,6:15186,7:23092,8:28409,9:24867,10:20301,11:15502,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.8233601731429585,
+   "rollouts": 256,
+   "rank_total": 27760238067,
+   "rank_denominator": 3968512,
+   "cache_key": "09efe108c4a59a4a9c9c001560330031"
+  }
+ }
+}

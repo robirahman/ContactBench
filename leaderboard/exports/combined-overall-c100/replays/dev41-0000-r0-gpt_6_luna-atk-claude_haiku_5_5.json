@@ -1,0 +1,361 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "The small, famously smiling Australian marsupial often called the world's happiest animal.",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The direction opposite east.",
+   "blocklist": [
+    "west"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A ballroom dance with a characteristic one-two-three rhythm.",
+   "blocklist": [
+    "waltz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The involuntary facial reaction to a sudden sharp pain.",
+   "blocklist": [
+    "wince"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The spiral pattern found in fingerprints, shells, or tree trunks.",
+   "blocklist": [
+    "whorl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "An old adverb meaning counterclockwise, especially in folklore about witches' unlucky circles.",
+   "blocklist": [
+    "widdershins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The medical term for a raised, itchy patch of skin, as in urticaria.",
+   "blocklist": [
+    "wale",
+    "weal",
+    "welt",
+    "wheal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "The clear liquid with the formula H2O, essential for life.",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A tiny brown songbird, renowned for its surprisingly loud song.",
+   "blocklist": [
+    "wagtail",
+    "warbler",
+    "wheatear",
+    "whinchat",
+    "wigeon",
+    "wren"
+   ],
+   "blocked_ranges": [
+    [
+     "wren",
+     "wryneck"
+    ]
+   ],
+   "blocked_word_count": 129,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A bird named for the bright red, waxlike tips on its wing feathers.",
+   "blocklist": [
+    "waxwing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "An adult human female.",
+   "blocklist": [
+    "wife",
+    "woman",
+    "women"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "This huge ocean-dwelling mammal surfaces to breathe through blowholes and sings.",
+   "blocklist": [
+    "whale",
+    "whales",
+    "whelk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "wab wabble wabbled wabbler wabblers wabbles wabblier wabbling wabbly wabs wack wacke wackes wackier",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wackiest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wackiest"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "web wed weed week weep weevil weird welcome weight wet; Small mustelid that hunts mice.",
+   "blocklist": [
+    "wear",
+    "weary",
+    "weasel",
+    "weave",
+    "wee",
+    "weft",
+    "weigh",
+    "weir",
+    "weld",
+    "well",
+    "wen",
+    "wench",
+    "wend",
+    "went",
+    "wept",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A person regarded as lacking physical strength or courage.",
+   "blocklist": [
+    "weak",
+    "weaken",
+    "weaker",
+    "weakest",
+    "weakling",
+    "weakly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Across the cloth, from selvage to selvage, rather than lengthwise.",
+   "blocklist": [
+    "wefts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "weftwise"
+    },
+    {
+     "seat": "guesser2",
+     "word": "weftwise"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A legendary human who transforms into a wolf, especially at the full moon.",
+   "blocklist": [
+    "weregild",
+    "weregilds",
+    "werewolf",
+    "werewolves",
+    "wergeld",
+    "wergelds",
+    "wergelt",
+    "wergelts",
+    "wergild",
+    "wergilds",
+    "werwolf",
+    "werwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "wer",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wert",
+   "prefix_after": "wer",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 21.0,
+  "cost_numerator": 21,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 849961811,
+   "denominator": 124896,
+   "value": 6805.356544645145,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 100,
+   "mcse": 4.168994479155132,
+   "rollouts": 256,
+   "rank_total": 6799694488,
+   "rank_denominator": 999168,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

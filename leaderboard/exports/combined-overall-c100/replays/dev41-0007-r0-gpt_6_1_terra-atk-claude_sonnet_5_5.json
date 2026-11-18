@@ -1,0 +1,563 @@
+{
+ "game_id": "dev41-0007-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Striped African equine. Bonus: cat dog pig cow hen fox ant bee bat rat owl eel ape yak ram ewe sow",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "King of the jungle: aah aal aas aba abo abs ace act add ado ads adz aft aga age ago aid ail aim air",
+   "blocklist": [
+    "king",
+    "lion",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Large animal with trunk: art sea sky sun air ice fly bug red big new old man kid boy girl day eye",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Tallest land mammal, long neck. One two six ten car bus cup hat bed map pen box key leg arm ear tea",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Orange and black striped big cat: all any are ask bad bag bar bit can cap cut end far fat fit fun",
+   "blocklist": [
+    "cheetah",
+    "jaguar",
+    "leopard",
+    "panther",
+    "tiger",
+    "tigers",
+    "tigon",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird in a tuxedo. war peace love life time hand head face book home tree water",
+   "blocklist": [
+    "auk",
+    "emperor",
+    "penguin",
+    "penguins",
+    "puffin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with pouch: was you for not but had her his she him our out who how why",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "kangaroos",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Honey-loving ursine: ash axe ark apt amp awe ale awl awn aye bay bog bun cab cod cog cub den dew",
+   "blocklist": [
+    "bear",
+    "bears",
+    "bun",
+    "cub",
+    "honey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Intelligent marine mammal with a beak: run sit eat see get put set let use try cry dry low hot wet",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "narwhal",
+    "orca",
+    "porpoise",
+    "porpoises",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Ridable hoofed animal that neighs: house world people music money food good great work play game day",
+   "blocklist": [
+    "colt",
+    "donkey",
+    "filly",
+    "foal",
+    "horse",
+    "horses",
+    "mare",
+    "mule",
+    "mustang",
+    "pony",
+    "stallion",
+    "steed",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Howling wild canine: this from have make take come know want just like more some most very much only",
+   "blocklist": [
+    "coyote",
+    "dingo",
+    "dog",
+    "howl",
+    "husky",
+    "jackal",
+    "wolf",
+    "wolfs",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Eight-armed ocean creature: blue green white black light night star moon fire earth wind rain snow",
+   "blocklist": [
+    "cuttlefish",
+    "kraken",
+    "nautilus",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Long-eared hopping animal that eats carrots: baa baas baba babas babe babel babes babies baby bach",
+   "blocklist": [
+    "babe",
+    "baby",
+    "bach",
+    "bunnies",
+    "bunny",
+    "carrot",
+    "carrots",
+    "coney",
+    "cony",
+    "hare",
+    "hares",
+    "lagomorph",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Primate with a tail: badger beaver otter ferret raccoon skunk moose elk deer camel llama alpaca",
+   "blocklist": [
+    "ape",
+    "baboon",
+    "badger",
+    "beaver",
+    "lemur",
+    "monkey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Huge river mammal with enormous jaws: airship apple banana bread cheese coffee computer happy river",
+   "blocklist": [
+    "alligator",
+    "crocodile",
+    "hippo",
+    "hippopotamus",
+    "hippopotamuses",
+    "manatee",
+    "rhino",
+    "rhinoceros",
+    "walrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Legless slithering reptile: dream dance smile laugh hope fear truth power sound color magic stone",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "asp",
+    "boa",
+    "cobra",
+    "lizard",
+    "mamba",
+    "python",
+    "rattlesnake",
+    "reptile",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Toothy predatory fish: loveable quick brown jump over lazy frog duck goose chicken sheep goat mouse",
+   "blocklist": [
+    "barracuda",
+    "bass",
+    "gar",
+    "muskie",
+    "pickerel",
+    "pike",
+    "piranha",
+    "salmon",
+    "shark",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Largest living primate: kingkong jungle jungle gym zoo cage banana peel giant hairy black silverback",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gorilla"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gorilla"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Winged insect from chrysalis: ball bank bark barn base bath beach bean beat beauty become began beg",
+   "blocklist": [
+    "butterflies",
+    "butterfly",
+    "caterpillar",
+    "chrysalis",
+    "moth",
+    "moths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Two-wheeled pedal vehicle: back bake bald band bang bare bead beam beans belly belt bend best bird",
+   "blocklist": [
+    "bicycle",
+    "bicycles",
+    "bike",
+    "bikes",
+    "cycle",
+    "tricycle",
+    "unicycle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Scavenging bird also called a vulture: book brain branch bridge bright brother build business busy",
+   "blocklist": [
+    "buzzard",
+    "buzzards",
+    "condor",
+    "condors",
+    "vulture",
+    "vultures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Inflatable party decoration: babyish bachelors bacteria baggage bakery balance balcony ballet bamboo",
+   "blocklist": [
+    "balloon",
+    "ballooned",
+    "ballooning",
+    "balloonist",
+    "balloonists",
+    "balloons",
+    "confetti",
+    "party"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Small blue fruit in muffins: beautiful between beyond because before begin believe better birthday",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "blueberry"
+    },
+    {
+     "seat": "guesser2",
+     "word": "blueberry"
+    }
+   ],
+   "prefix_after": "bu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "American bison: bub bubo bubs buck bucket buckle bucko bucks bud buds buff buffed bugle bulk bull",
+   "blocklist": [
+    "bison",
+    "buffalo",
+    "buffaloes",
+    "buffalos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Noisy release of stomach gas: burn burned burning burns burst bury buried burial burglar burger",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "burp"
+    },
+    {
+     "seat": "guesser2",
+     "word": "burp"
+    }
+   ],
+   "prefix_after": "but",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Shirt fastener: butter butte butt butler butcher butane butch butternut butterscotch buttercup",
+   "blocklist": [
+    "button",
+    "buttoned",
+    "buttonhole",
+    "buttons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "but",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 35.46127717391305,
+  "cost_numerator": 52199,
+  "cost_denominator": 1472,
+  "cost_exact": false,
+  "cost_mcse": 0.03130332356112699,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 8039,
+   "denominator": 1472,
+   "value": 5.461277173913044,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:6,6:8,7:18,8:15,9:18,10:23,11:15,12:7,13:4,14:4",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 0.03130332356112699,
+   "rollouts": 256,
+   "rank_total": 32156,
+   "rank_denominator": 5888,
+   "cache_key": "ba70e87c6bd08d55ef9aa7bff6b9be26"
+  }
+ }
+}

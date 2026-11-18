@@ -1,0 +1,489 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_luna-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_hydrogen",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird that waddles",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Toothed cetacean famous for a long spiral tusk",
+   "blocklist": [
+    "narwhal",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "To become less intense, as a storm",
+   "blocklist": [
+    "abate",
+    "diminish",
+    "moderate",
+    "slacken",
+    "subside",
+    "wane"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Lunar phase when more than half the visible disk is illuminated, but it is not yet full",
+   "blocklist": [
+    "gibbous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A young swan, especially one still covered in gray down",
+   "blocklist": [
+    "cygnet",
+    "cygnets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Mexican salamander that keeps its external feathery gills into adulthood",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A poetic or archaic noun for a layer of mist or fog",
+   "blocklist": [
+    "brume",
+    "haar",
+    "mirk",
+    "murk",
+    "pall",
+    "shroud"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "rack"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fine rain that falls from a clear sky just after sunset",
+   "blocklist": [
+    "serein",
+    "sereins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Night bird; forest, river, mountain, garden, window, candle, silver, mirror, orange, velvet, copper.",
+   "blocklist": [
+    "nighthawk",
+    "nightjar",
+    "owl",
+    "owlet",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A verb for the soft rushing sound of wind moving through trees, often used in poetry.",
+   "blocklist": [
+    "murmur",
+    "rustle",
+    "sough",
+    "soughs",
+    "whisper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Burrowing mammal; apple, table, chair, water, light, stone, music, green, bread, horse, cloud, cat",
+   "blocklist": [
+    "badger",
+    "gopher",
+    "groundhog",
+    "marmot",
+    "mole",
+    "rabbit",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Distant galactic core; people, time, way, day, man, world, life, hand, part, child, eye, place, work",
+   "blocklist": [
+    "quasar",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A grasslike plant common in marshes and wetlands",
+   "blocklist": [
+    "bulrush",
+    "cattail",
+    "reed",
+    "reeds",
+    "rush",
+    "rushes",
+    "sedge",
+    "sedges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "The first appearance of daylight in the morning, before the sun rises",
+   "blocklist": [
+    "aurora",
+    "cockcrow",
+    "dawn",
+    "dawning",
+    "daybreak",
+    "sunrise",
+    "sunup",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A small mountain lake, especially one formed in a cirque",
+   "blocklist": [
+    "tarn",
+    "tarns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A pile of stones built as a landmark or trail marker, often on a hill",
+   "blocklist": [
+    "barrow",
+    "cairn",
+    "cairns",
+    "mound",
+    "tumulus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The fixed plug inside a recorder's mouthpiece that forms its windway",
+   "blocklist": [
+    "fipple",
+    "fipples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Three initials, read in order: green needles unfurl.",
+   "blocklist": [
+    "gnu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Take the first letter of each word, in order: Yonder Apples Wait Lazily.",
+   "blocklist": [
+    "yawl",
+    "yawls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Read the final letters, in order: bravE darK bravE.",
+   "blocklist": [
+    "eke"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "First letters, read in order: Zany Elk Bring Umbrellas.",
+   "blocklist": [
+    "zebu",
+    "zebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Initials, in order: Vivid Umbrellas Glow.",
+   "blocklist": [
+    "vug",
+    "vugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Our adventurous team sails.",
+   "blocklist": [
+    "oat",
+    "oats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "A very long geological age, longer than an era.",
+   "blocklist": [
+    "aeon",
+    "aeons",
+    "eon",
+    "eons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A=1, B=2, and so on. Convert these numbers to letters: 3-23-13.",
+   "blocklist": [
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Initials: Iguanas Visit Yaks. act, add, air, all, amp, ant, any, apt, arc, are, ark, arm, art, ash.",
+   "blocklist": [
+    "ivies",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ace, ado, ago, aha, aid, ail, aim, ale, ape, ask, ate, awe, axe, bad, bag, ban, bar, bat, bay, bed",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "alphabet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7026.722292889627,
+  "cost_numerator": 6971407935,
+  "cost_denominator": 992128,
+  "cost_exact": false,
+  "cost_mcse": 1.8089997457007259,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 6941644095,
+   "denominator": 992128,
+   "value": 6996.722292889627,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:909,4:3838,5:8575,6:15183,7:23076,8:28400,9:24865,10:20296,11:15502,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.8089997457007259,
+   "rollouts": 256,
+   "rank_total": 27766576380,
+   "rank_denominator": 3968512,
+   "cache_key": "bf7f883206d2fba1846318cd45959253"
+  }
+ }
+}

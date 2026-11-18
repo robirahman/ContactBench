@@ -1,0 +1,248 @@
+{
+ "game_id": "dev41-0009-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Australian marsupial that hops with a pouch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "underwater vessel used by navies",
+   "blocklist": [
+    "sea",
+    "ship",
+    "ships",
+    "sonar",
+    "sub",
+    "submarine",
+    "subs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "sweet red berry with tiny seeds on the outside",
+   "blocklist": [
+    "berry",
+    "blackberry",
+    "cherry",
+    "cranberry",
+    "gooseberry",
+    "raspberry",
+    "strawberry",
+    "tomato"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "internal framework of bones in a body",
+   "blocklist": [
+    "scaffold",
+    "shell",
+    "shells",
+    "skeletal",
+    "skeleton",
+    "skeletons",
+    "skull",
+    "skulls",
+    "spine",
+    "spines",
+    "sternum",
+    "structure",
+    "system"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "expensive golden-yellow spice from crocus stigmas",
+   "blocklist": [
+    "saffron",
+    "spice",
+    "spices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "curved brass woodwind instrument with a single reed, popular in jazz",
+   "blocklist": [
+    "bassoon",
+    "clarinet",
+    "cornet",
+    "flute",
+    "oboe",
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "medical device used by doctors to listen to heartbeats and breathing",
+   "blocklist": [
+    "breathing",
+    "doctor",
+    "doctors",
+    "heartbeat",
+    "heartbeats",
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "dark outline of a person or object seen against a bright background",
+   "blocklist": [
+    "shade",
+    "shades",
+    "shadow",
+    "shadows",
+    "silhouette",
+    "silhouettes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ancient timekeeper using the sun's position",
+   "blocklist": [
+    "calendar",
+    "calendars",
+    "clock",
+    "clocks",
+    "hourglass",
+    "sun",
+    "sundial",
+    "sundials",
+    "timekeeper",
+    "timekeepers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "dramatic speech where a character speaks thoughts aloud alone",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sad",
+     "shifter"
+    ],
+    [
+     "shifting",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 18800,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "shifters",
+   "prefix_after": "s",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11.0,
+  "cost_numerator": 11,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 25174990447,
+   "denominator": 3637760,
+   "value": 6920.464914397871,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 100,
+   "mcse": 1.2873654292631207,
+   "rollouts": 256,
+   "rank_total": 50349980894,
+   "rank_denominator": 7275520,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

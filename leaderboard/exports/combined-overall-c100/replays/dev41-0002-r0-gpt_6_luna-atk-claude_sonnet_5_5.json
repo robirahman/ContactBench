@@ -1,0 +1,609 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Ancient counting device with sliding beads.",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "When the moon passes between Earth and the sun, it causes this.",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "lunar",
+    "solar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Long yellow fruit often peeled before eating.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "peel",
+    "peeled",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Hooter at night: ace act add age ago aid aim air ale all ant any ape apt arc arm ash ask awe bad bag",
+   "blocklist": [
+    "hoot",
+    "hooter",
+    "night",
+    "owl",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Wooden bars played by striking; bar bat bed bee beg bet bid big bin bit box boy bus can cap car cat",
+   "blocklist": [
+    "bar",
+    "bars",
+    "glockenspiel",
+    "mallet",
+    "marimba",
+    "marimbas",
+    "percussion",
+    "vibraphone",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Protection or sponsorship, especially by a powerful person.",
+   "blocklist": [
+    "aegis",
+    "auspices",
+    "backing",
+    "egis",
+    "patron",
+    "patronage",
+    "protection",
+    "sponsor",
+    "sponsorship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A crisp fruit, often red or green: dog god man men sky sea eye ear leg top hot new old run eat fly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A small shelter or house, especially one found in the woods.",
+   "blocklist": [
+    "cabana",
+    "cabin",
+    "cabins",
+    "camp",
+    "cave",
+    "chalet",
+    "chalets",
+    "cot",
+    "cote",
+    "cottage",
+    "cottager",
+    "cottages",
+    "croft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A secretive inner circle that conspires behind the scenes.",
+   "blocklist": [
+    "cabal",
+    "cabala",
+    "cabalas",
+    "cabals",
+    "cadre",
+    "camarilla",
+    "cartel",
+    "cell",
+    "clan",
+    "clique",
+    "cliques",
+    "club",
+    "conspiracy",
+    "coterie",
+    "coven",
+    "cult"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A Welsh glacial mountain hollow, also known as a corrie; three letters, with W doing vowel duty.",
+   "blocklist": [
+    "cirque",
+    "combe",
+    "coombe",
+    "corrie",
+    "cwm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A device for taking photographs, once using film and now often a digital sensor.",
+   "blocklist": [
+    "cam",
+    "camcorder",
+    "camera",
+    "cameras",
+    "digital",
+    "film",
+    "lens",
+    "photograph"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A bowed string instrument, larger and lower-pitched than a violin.",
+   "blocklist": [
+    "bass",
+    "basses",
+    "cellist",
+    "cello",
+    "cellos",
+    "contrabass",
+    "fiddle",
+    "viola",
+    "violas",
+    "violin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A taxi plus a bag, then the fifth letter of the alphabet.",
+   "blocklist": [
+    "cabbage",
+    "cabbages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A spiny desert plant, often shown with arms and growing in dry climates.",
+   "blocklist": [
+    "agave",
+    "cacti",
+    "cactus",
+    "cactuses",
+    "cholla",
+    "desert",
+    "prickly",
+    "saguaro",
+    "spine",
+    "spiny",
+    "succulent",
+    "yucca"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A heap of stones erected as a landmark or memorial, especially on a Scottish hill.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cairn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cairn"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "A hot caffeinated drink brewed from roasted beans, often served in a mug at breakfast.",
+   "blocklist": [
+    "cappuccino",
+    "cocoa",
+    "cocoas",
+    "coffee",
+    "coffeecake",
+    "coffeehouse",
+    "coffeepot",
+    "coffees",
+    "cola",
+    "colas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "A black waterbird with a white bill and frontal shield, belonging to the rail family.",
+   "blocklist": [
+    "coot",
+    "coots",
+    "gallinule",
+    "moorhen",
+    "rail",
+    "waterbird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "The woody central core of an ear of maize, left after the kernels are removed.",
+   "blocklist": [
+    "cob",
+    "cobb",
+    "cobs",
+    "corn",
+    "corncob",
+    "corncobs",
+    "corns",
+    "husk",
+    "kernel",
+    "kernels",
+    "maize"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "A mentor who trains athletes and guides a team, often from the sidelines.",
+   "blocklist": [
+    "athlete",
+    "coach",
+    "coached",
+    "coaches",
+    "coaching",
+    "manager",
+    "mentor",
+    "team",
+    "trainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "A stretch of land bordering the sea, often rocky, sandy, or lined with cliffs.",
+   "blocklist": [
+    "beach",
+    "cliff",
+    "coast",
+    "coastal",
+    "coasted",
+    "coaster",
+    "coastline",
+    "coastlines",
+    "coasts",
+    "shore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A metal whose vivid blue compounds color glass and ceramics; its chemical symbol is Co.",
+   "blocklist": [
+    "blue",
+    "ceramics",
+    "cobalt",
+    "cobaltic",
+    "cobaltite",
+    "cobaltous",
+    "cobalts",
+    "glass",
+    "metal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Halley's famous visitor to the inner solar system, often seen with a glowing tail.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "comet"
+    },
+    {
+     "seat": "guesser2",
+     "word": "comet"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "A vertical arrangement of entries in a table or newspaper, or a pillar supporting a building.",
+   "blocklist": [
+    "colonnade",
+    "colonnades",
+    "column",
+    "columnar",
+    "columnist",
+    "columnists",
+    "columns",
+    "pillar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "The adjective for a low temperature, as winter air may feel.",
+   "blocklist": [
+    "cold",
+    "colder",
+    "coldest",
+    "coldish",
+    "coldly",
+    "colds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "An organized community of ants, or a territory ruled from overseas.",
+   "blocklist": [
+    "colonial",
+    "colonials",
+    "colonies",
+    "colonist",
+    "colonists",
+    "colonize",
+    "colonized",
+    "colonizer",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "A pasta-draining kitchen sieve; cole colead colemanite coleoptera coleoptile coleorhiza colic",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A band around a shirt's neck, or a strap worn by a dog.",
+   "blocklist": [
+    "choker",
+    "collar",
+    "collarbone",
+    "collared",
+    "collaring",
+    "collarless",
+    "collars",
+    "leash"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "colon",
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 50.84654017857143,
+  "cost_numerator": 91117,
+  "cost_denominator": 1792,
+  "cost_exact": false,
+  "cost_mcse": 0.13356443242576058,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 37357,
+   "denominator": 1792,
+   "value": 20.846540178571427,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:3,5:7,6:18,7:35,8:74,9:91,10:70,11:56,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 0.13356443242576058,
+   "rollouts": 256,
+   "rank_total": 186785,
+   "rank_denominator": 8960,
+   "cache_key": "91a85ffd3b3a221190115592a8238a37"
+  }
+ }
+}

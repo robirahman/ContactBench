@@ -1,0 +1,304 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_hydrogen-atk-gpt_6_luna-rematch~rematch~rematch",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "engineering",
+ "initial_prefix": "eng",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 97,
+ "initial_secret_candidates": [
+  "engage",
+  "engaged",
+  "engagement",
+  "engagements",
+  "engager",
+  "engagers",
+  "engages",
+  "engaging",
+  "engagingly",
+  "engarland",
+  "engarlanded",
+  "engarlanding",
+  "engarlands",
+  "engender",
+  "engendered",
+  "engendering",
+  "engenders",
+  "engild",
+  "engilded",
+  "engilding",
+  "engilds",
+  "engine",
+  "engined",
+  "engineer",
+  "engineered",
+  "engineering",
+  "engineerings",
+  "engineers",
+  "engineries",
+  "enginery",
+  "engines",
+  "engining",
+  "enginous",
+  "engird",
+  "engirded",
+  "engirding",
+  "engirdle",
+  "engirdled",
+  "engirdles",
+  "engirdling",
+  "engirds",
+  "engirt",
+  "english",
+  "englished",
+  "englishes",
+  "englishing",
+  "englut",
+  "engluts",
+  "englutted",
+  "englutting",
+  "engorge",
+  "engorged",
+  "engorgement",
+  "engorgements",
+  "engorges",
+  "engorging",
+  "engraft",
+  "engrafted",
+  "engrafting",
+  "engraftment",
+  "engraftments",
+  "engrafts",
+  "engrail",
+  "engrailed",
+  "engrailing",
+  "engrails",
+  "engrain",
+  "engrained",
+  "engraining",
+  "engrains",
+  "engram",
+  "engramme",
+  "engrammes",
+  "engrams",
+  "engrave",
+  "engraved",
+  "engraver",
+  "engravers",
+  "engraves",
+  "engraving",
+  "engravings",
+  "engross",
+  "engrossed",
+  "engrosser",
+  "engrossers",
+  "engrosses",
+  "engrossing",
+  "engrossingly",
+  "engrossment",
+  "engrossments",
+  "engs",
+  "engulf",
+  "engulfed",
+  "engulfing",
+  "engulfment",
+  "engulfments",
+  "engulfs"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "car motor",
+   "blocklist": [
+    "engine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "language of britain",
+   "blocklist": [
+    "english"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "swallow up completely",
+   "blocklist": [
+    "engulf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "carve into metal or stone",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "engrave",
+     "engravings"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "promise to marry",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "engage",
+     "engaging"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "absorb all attention",
+   "blocklist": [
+    "engross",
+    "engrossed",
+    "engrosses",
+    "engrossing",
+    "engrossingly",
+    "engrossment",
+    "engrossments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "person who designs bridges or machines",
+   "blocklist": [
+    "engineer",
+    "engineered",
+    "engineers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "stuff oneself with food",
+   "blocklist": [
+    "englut",
+    "engluts",
+    "englutted",
+    "englutting",
+    "engorge",
+    "engorged",
+    "engorgement",
+    "engorgements",
+    "engorges",
+    "engorging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "cause or give rise to",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "engender",
+     "engenders"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "eng",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "profession of designing and building",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "engineering"
+    },
+    {
+     "seat": "guesser2",
+     "word": "engineering"
+    }
+   ],
+   "prefix_after": "eng",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 9119,
+   "denominator": 2048,
+   "value": 4.45263671875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:1,6:8,7:17,8:20,9:21,10:16,11:8,12:6",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.048590558334886555,
+   "rollouts": 256,
+   "rank_total": 9119,
+   "rank_denominator": 2048,
+   "cache_key": "b5c42a8fdcd9bed4142a4fdb54625fc9"
+  },
+  "fallback": null
+ }
+}

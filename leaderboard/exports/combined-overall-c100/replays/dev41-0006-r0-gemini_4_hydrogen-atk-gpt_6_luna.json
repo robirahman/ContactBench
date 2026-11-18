@@ -1,0 +1,547 @@
+{
+ "game_id": "dev41-0006-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "exceedingly idealistic; unrealistic and impractical",
+   "blocklist": [
+    "quixotic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Minotaur's maze",
+   "blocklist": [
+    "bull",
+    "greek",
+    "labyrinth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "study of fungi",
+   "blocklist": [
+    "fungal",
+    "fungus",
+    "mushroom",
+    "mushrooms",
+    "mycological",
+    "mycologist",
+    "mycology",
+    "yeast"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "act of throwing someone out a window",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "lasting for a very short time",
+   "blocklist": [
+    "brief",
+    "ephemeral",
+    "evanescent",
+    "fleeting",
+    "impermanent",
+    "momentary",
+    "passing",
+    "temporary",
+    "transient",
+    "transitory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "the dot over a lowercase i or j",
+   "blocklist": [
+    "diacritic",
+    "jot",
+    "superscript",
+    "title",
+    "tittle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "finding something good without looking for it",
+   "blocklist": [
+    "accident",
+    "accidental",
+    "chance",
+    "coincidence",
+    "discovery",
+    "fluke",
+    "fortuitous",
+    "fortuity",
+    "fortunate",
+    "happenstance",
+    "luck",
+    "lucky",
+    "serendipitous",
+    "serendipity",
+    "unexpected",
+    "windfall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "a word that reads the same forwards and backwards",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palindrome"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palindrome"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "speech praising someone who has died",
+   "blocklist": [
+    "elegy",
+    "encomium",
+    "eulogy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "spiny egg-laying mammal native to Australia",
+   "blocklist": [
+    "echidna",
+    "echidnae",
+    "echidnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "twice-yearly event when day and night are equal in length",
+   "blocklist": [
+    "equinox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "muscular tube connecting the throat to the stomach",
+   "blocklist": [
+    "esophageal",
+    "esophagi",
+    "esophagus",
+    "gullet",
+    "oesophagus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "branch of zoology dealing with insects",
+   "blocklist": [
+    "entomological",
+    "entomologies",
+    "entomologist",
+    "entomologists",
+    "entomology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "cry of joy upon finding or discovering something",
+   "blocklist": [
+    "ecstasy",
+    "elation",
+    "enlightenment",
+    "epiphany",
+    "eureka",
+    "excitement",
+    "exclamation",
+    "exhilaration",
+    "exultation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "philosophical study of the nature and limits of knowledge",
+   "blocklist": [
+    "epistemology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "astronomical event when one celestial body obscures another",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "eclipse",
+     "ecliptics"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "white alpine flower featured in The Sound of Music",
+   "blocklist": [
+    "edelweiss"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "a person after whom a discovery, invention, or place is named",
+   "blocklist": [
+    "eponym",
+    "eponymic",
+    "eponymous",
+    "eponyms",
+    "eponymy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "large gray mammal with a trunk and tusks",
+   "blocklist": [
+    "elephant",
+    "elephantiasis",
+    "elephantine",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "bright green precious gemstone",
+   "blocklist": [
+    "emerald",
+    "emeralds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "intended for or understood by only a small, specialized group",
+   "blocklist": [
+    "elitist",
+    "enigmatic",
+    "erudite",
+    "esoteric",
+    "esoterica",
+    "exclusive",
+    "exoteric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "a feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement",
+   "blocklist": [
+    "ennui",
+    "ennuis",
+    "ennuye"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "secretly listen to a conversation",
+   "blocklist": [
+    "earwig",
+    "eavesdrop",
+    "eavesdropped",
+    "eavesdropper",
+    "eavesdroppers",
+    "eavesdropping",
+    "eavesdrops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sudden violent shaking of the ground",
+   "blocklist": [
+    "earthquake",
+    "earthquakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "moving staircase",
+   "blocklist": [
+    "elevator",
+    "escalator",
+    "escalators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "study of the origin of words",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "etyma",
+     "etymons"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "book or set of books giving information on many subjects",
+   "blocklist": [
+    "encyclopaedia",
+    "encyclopaedias",
+    "encyclopaedic",
+    "encyclopedia",
+    "encyclopedias",
+    "encyclopedic",
+    "encyclopedist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "tidal mouth of a river",
+   "blocklist": [
+    "estuarial",
+    "estuaries",
+    "estuarine",
+    "estuary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "sweet creamy holiday drink made with milk, sugar, and beaten eggs",
+   "blocklist": [
+    "eggnog",
+    "eggnogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "oblong choux pastry filled with cream and topped with chocolate icing",
+   "blocklist": [
+    "eclair",
+    "eclairs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 323.6583337037696,
+  "cost_numerator": 58248143,
+  "cost_denominator": 179968,
+  "cost_exact": false,
+  "cost_mcse": 0.3922960313804625,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 52849103,
+   "denominator": 179968,
+   "value": 293.6583337037696,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:38,4:101,5:187,6:444,7:791,8:1114,9:1114,10:966,11:703,12:545,13:367,14:207,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.3922960313804625,
+   "rollouts": 256,
+   "rank_total": 52849103,
+   "rank_denominator": 179968,
+   "cache_key": "166e74bee167fbd603330697513d4a6d"
+  }
+ }
+}

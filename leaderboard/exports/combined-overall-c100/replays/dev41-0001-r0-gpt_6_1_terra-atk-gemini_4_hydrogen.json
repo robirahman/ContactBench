@@ -1,0 +1,501 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A domesticated feline that meows.",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A barking canine pet. sun moon star sky tree sea air fire water earth red blue green gold rain snow",
+   "blocklist": [
+    "dog",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Largest land mammal with a trunk. love time life world hand house home heart light night day man",
+   "blocklist": [
+    "elephant",
+    "mammoth",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Striped African horse. black white brown yellow purple orange pink bird fish stone river mountain",
+   "blocklist": [
+    "quagga",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "King of the jungle. book word good great small big long short high low old young new first last",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Tall African animal with a very long neck. car road city town people woman child family friend food",
+   "blocklist": [
+    "giraffe",
+    "giraffes",
+    "okapi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic seabird in tuxedo. king queen war peace bread milk horse sheep bear wolf fox",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Australian marsupial with a pouch. dream music money power smile happy hope sleep death dark green",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Flipper's species. ocean beach sand wind cloud storm rock grass flower plant forest field lake blue",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "porpoise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Nocturnal hooting raptor. one two three four five six seven eight nine ten see eyes head face body",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Honey-making insect. school work play run walk talk sing dance song game story paper phone computer",
+   "blocklist": [
+    "bee",
+    "bees",
+    "bumblebee",
+    "bumblebees",
+    "honeybee",
+    "honeybees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. truth beauty freedom justice morning evening father mother sister brother",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders",
+    "tarantula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Croaking amphibian. door window table chair glass cup plate knife fork spoon room floor wall bed",
+   "blocklist": [
+    "bullfrog",
+    "frog",
+    "frogs",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Mythical single-horned equine. kingly magic dragon castle prince princess crown sword knight fairy",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Eight armed mollusk. housework birthday wedding coffee tea beer wine bread butter cheese sugar salt",
+   "blocklist": [
+    "cephalopod",
+    "octopi",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Legless slithering reptile. apple banana lemon grape peach pear plum berry cherry mango melon fruit",
+   "blocklist": [
+    "boa",
+    "cobra",
+    "python",
+    "serpent",
+    "serpents",
+    "snake",
+    "snakes",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Bamboo eating Chinese bear. yes no maybe right left up down fast slow hot cold hard soft open close",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Massive river dwelling African mammal. art age boy girl dogma faith fear joy luck mind soul voice",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Horned African grazer. write read learn teach watch listen laugh cry kiss hug touch hold give take",
+   "blocklist": [
+    "antelope",
+    "buffalo",
+    "gazelle",
+    "gnu",
+    "rhino",
+    "rhinoceri",
+    "rhinoceros",
+    "rhinoceroses",
+    "rhinos",
+    "wildebeest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Fastest land animal. summer winter spring autumn oceanic mountain valley island desert rainbows",
+   "blocklist": [
+    "cheetah",
+    "cheetahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Toothy ocean predator with fins. moonlight sunshine rainbow thunder lightning shadow silver jewel",
+   "blocklist": [
+    "barracuda",
+    "barracudas",
+    "orca",
+    "orcas",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Humped desert beast. blood bone brain skin hair tooth tongue foot leg arm nose ear mouth eye neck",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Striped smelly mammal. dragonfly butterfly mosquito cricket beetle moth wasp fly worm snail slug",
+   "blocklist": [
+    "badger",
+    "polecat",
+    "skunk",
+    "skunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Shelled reptile. beautiful music sunset sunrise ocean love happiness friendship laughter wonderful",
+   "blocklist": [
+    "terrapin",
+    "terrapins",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Primate with a tail. doctor teacher lawyer president country history science language question",
+   "blocklist": [
+    "baboon",
+    "capuchin",
+    "lemur",
+    "macaque",
+    "marmoset",
+    "monkey",
+    "monkeys",
+    "tamarin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Long eared pack animal. god human person universe space future past present reason idea name place",
+   "blocklist": [
+    "alpaca",
+    "ass",
+    "burro",
+    "donkey",
+    "donkeys",
+    "llama",
+    "mule",
+    "mules"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6882.8036230262505,
+  "cost_numerator": 26697789567,
+  "cost_denominator": 3878912,
+  "cost_exact": false,
+  "cost_mcse": 1.918623251982085,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 26581422207,
+   "denominator": 3878912,
+   "value": 6852.8036230262505,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:924,4:3797,5:8514,6:15152,7:23059,8:28388,9:24849,10:20294,11:15502,12:11355,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.918623251982085,
+   "rollouts": 256,
+   "rank_total": 26581422207,
+   "rank_denominator": 3878912,
+   "cache_key": "0db55c319c7a640b44c1b5e4040bb590"
+  }
+ }
+}

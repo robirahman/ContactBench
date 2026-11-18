@@ -1,0 +1,474 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Exact median word of the dictionary (offset 86304); winter sleds ridden feet-first",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "luges"
+    },
+    {
+     "seat": "guesser2",
+     "word": "luges"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Exact median of u-words (offset 2530); not hurt or harmed, unscathed",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "uninjured"
+    },
+    {
+     "seat": "guesser2",
+     "word": "uninjured"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Exact median of un-words (offset 1925); past tense of releasing one's grip on someone",
+   "blocklist": [
+    "unclasped",
+    "unclenched",
+    "unhanded"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Working in secret as a spy or detective; or not shortened as a dictionary",
+   "blocklist": [
+    "unabridged",
+    "undercover"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Pick 1st of: inflexible/adamant; disheveled; open a jacket fastener; uncover; unfair; indisputable",
+   "blocklist": [
+    "unbending",
+    "undeniable",
+    "unjust",
+    "unkempt",
+    "unveil",
+    "unyielding",
+    "unzip",
+    "unzipped"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "1st: all in agreement; dig up; let loose; come undone; knocked out; memorable; unprincipled",
+   "blocklist": [
+    "unanimous",
+    "unconscious",
+    "unearth",
+    "unleash",
+    "unravel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1st of: not embarrassed/shameless; beneath; favorite to lose; one-wheeled cycle; mythical 1-horned",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unabashed"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unashamed"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1st: 1-horn horse; 1-wheel bike; expected loser; below; can't be forgotten; can't be stopped; busy",
+   "blocklist": [
+    "underdog",
+    "unforgettable",
+    "unicorn",
+    "unicycle",
+    "unoccupied",
+    "unstoppable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "under",
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st: having no moral scruples; with no conditions; never done before; nonconformist; unambiguous",
+   "blocklist": [
+    "unconditional",
+    "unconventional",
+    "unequivocal",
+    "unprecedented",
+    "unscrupulous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "1st: not acceptable; not believable; not available; not predictable; not comfortable; underpants",
+   "blocklist": [
+    "unacceptable",
+    "unavailable",
+    "unbelievable",
+    "uncomfortable",
+    "underpants",
+    "unpredictable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "1st: comprehend; cosmos; college; identical attire; not fortunate; not necessary; joblessness; undie",
+   "blocklist": [
+    "understand",
+    "underwear",
+    "unemployed",
+    "unemployment",
+    "unfortunate",
+    "uniform",
+    "uniforms",
+    "universal",
+    "universe",
+    "university",
+    "unlucky",
+    "unnecessary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "1st: labor guild/marriage; combine; one-of-a-kind; unity; parent's brother; UNTIL; UNLESS; UNABLE",
+   "blocklist": [
+    "unable",
+    "uncle",
+    "union",
+    "unions",
+    "unique",
+    "unit",
+    "unite",
+    "united",
+    "unites",
+    "unity",
+    "unless",
+    "until"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1st: not usual; loosen a knot; UNTO UNDID UNFIT UNWED UNLIT UNIFY UNCUT UNSET UNFED UNMET UNCAP UNDO",
+   "blocklist": [
+    "unknot",
+    "unlace",
+    "unlaced",
+    "unravels",
+    "untangle",
+    "untie",
+    "untied",
+    "unties",
+    "unusual",
+    "unusually"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "1st: not known; UNDYED UNEASY UNEATEN UNEQUAL UNEVEN UNFIX UNHOOK UNHOLY UNHUMAN UNLOAD UNLOCK UNMAN",
+   "blocklist": [
+    "uneasy",
+    "unevenly",
+    "unfixed",
+    "unheard",
+    "unhooked",
+    "unknown",
+    "unlearned",
+    "unloaded",
+    "unlocked",
+    "unmanned",
+    "unsaid",
+    "unseen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "1st: sad; UNMADE UNMAKE UNMASK UNPACK UNPAID UNPIN UNPLUG UNREAL UNREAD UNSAFE UNSAY UNSEAL UNSEAT",
+   "blocklist": [
+    "unhappily",
+    "unhappiness",
+    "unhappy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1st: false; UNTOLD UNTORN UNTRIED UNTIDY UNTIMELY UNTUCK UNTUNE UNTWIST UNUSED UNWARY UNWELL UNWISE",
+   "blocklist": [
+    "untrue",
+    "untruth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "1st: not certain; UNAFRAID UNAIDED UNARMED UNBENT UNBIAS UNBIND UNBLOCK UNBOLT UNBORN UNBOUND UNBOX",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "uncertain"
+    },
+    {
+     "seat": "guesser2",
+     "word": "uncertain"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "1st: not sure; UNSEWN UNSHOD UNSHUT UNSOLD UNSOWN UNSPUN UNSTOP UNSTEP UNSTUCK UNSUNG UNSUNK UNSWORN",
+   "blocklist": [
+    "unsure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "1st: not stable; UNSATED UNSAVED UNSAWN UNSEAM UNSELL UNSENT UNSEW UNSEX UNSHED UNSHIP UNSHORN",
+   "blocklist": [
+    "unsealed",
+    "unsettled",
+    "unstable",
+    "unsteady"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "1st: not solved; UNSAYING UNSEATS UNSETTE UNSEWS UNSHELL UNSHIFTS UNSLING UNSNAP UNSNARL UNSOUND",
+   "blocklist": [
+    "unsettle",
+    "unsolved",
+    "unsound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "1st: not skilled; UNSAYS UNSEALS UNSEAMS UNSETS UNSEWED UNSEXED UNSEXY UNSHIPS UNSIGHT UNSLUNG",
+   "blocklist": [
+    "unskilled",
+    "unskillful",
+    "unskillfully"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "1st: not spoken; UNSAWED UNSCALED UNSEEDED UNSEIZED UNSELLS UNSERIOUS UNSEXES UNSHAMED UNSHARED",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unspoken"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unspoken"
+    }
+   ],
+   "prefix_after": "unse",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "1st: not selfish; UNSEATED UNSECURED UNSEEING UNSEEMLY UNSERVED UNSETTLES UNSETTLING UNSEXING",
+   "blocklist": [
+    "unselfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "unse",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "1st: not sentimental; UNSEALING UNSEAMED UNSEAMING UNSEARED UNSEASONED UNSEATING UNSETTING UNSEWING",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "unse",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 25.0,
+  "cost_numerator": 25,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

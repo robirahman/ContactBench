@@ -1,0 +1,581 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Red fruit from a tree. Also: cat dog rat bat hat mat sat fat man can fan pan ran tan van war car bar",
+   "blocklist": [
+    "apple",
+    "cherry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow curved tropical fruit. the and for are but not you all any day her his how new now old out",
+   "blocklist": [
+    "banana",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "King of the jungle, roaring big cat. one two six ten use way who boy did get let put she too was yes",
+   "blocklist": [
+    "big",
+    "cat",
+    "jungle",
+    "king",
+    "lion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Largest land mammal with trunk and tusks. sun moon star sky sea air water fire earth house home book",
+   "blocklist": [
+    "air",
+    "book",
+    "earth",
+    "elephant",
+    "elephants",
+    "fire",
+    "home",
+    "house",
+    "mammoth",
+    "moon",
+    "sea",
+    "sky",
+    "star",
+    "sun",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of cold. act add age ago aid aim arm art ask bad bag bed bit box bus buy cut dry ear eat",
+   "blocklist": [
+    "heat",
+    "hot",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "White flakes falling from winter clouds. eve eye far few fit fix fly fog fox fun fur gap gas gem",
+   "blocklist": [
+    "cloud",
+    "clouds",
+    "flake",
+    "flakes",
+    "snow",
+    "snowfall",
+    "snowflake",
+    "snowflakes",
+    "white",
+    "winter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. him its our had has may see say god got guy gun hit job joy key kid law",
+   "blocklist": [
+    "arachnid",
+    "eight",
+    "legs",
+    "spider",
+    "spiders",
+    "spinner",
+    "tarantula",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Sound a kitten makes. age air axe ash ape bee cow day den dew dim dip doe dug end far fig fin fir",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "meow",
+    "mew",
+    "purr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Striped African horse. ice ill ink inn ivy jam jar jet jog keg lab lad lap leg lid lip log lot low",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zebra"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zebra"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Bald national bird of USA. each eager early earn easy east eggs exit ever evil even else edge echo",
+   "blocklist": [
+    "each",
+    "eager",
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eagre",
+    "early",
+    "earn",
+    "east",
+    "easy",
+    "eat",
+    "echo",
+    "edge",
+    "eggs",
+    "else",
+    "even",
+    "ever",
+    "evil",
+    "exit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Containing nothing. egg era end era eon eel elm elf emu ego elk ebb err ere essay enemy enjoy enter",
+   "blocklist": [
+    "bare",
+    "blank",
+    "emptiness",
+    "empty",
+    "hollow",
+    "none",
+    "nothing",
+    "null",
+    "vacant",
+    "void",
+    "zero"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Flow of electric charge. every extra exist exact equip equal event elect elite elbow elder enact",
+   "blocklist": [
+    "electric",
+    "electrical",
+    "electricity",
+    "electrode",
+    "electron",
+    "electrons",
+    "energy",
+    "engine",
+    "engineer",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Moon obscures sun: education effort effect escape estate ethnic eternal evidence excess exchange",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "ecliptic",
+    "education",
+    "effect",
+    "effort",
+    "escape",
+    "estate",
+    "eternal",
+    "ethnic",
+    "evidence",
+    "excess",
+    "exchange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Volcanic blast: example enough entire express experience explain extreme expert expensive emperor",
+   "blocklist": [
+    "blast",
+    "erupt",
+    "erupted",
+    "eruption",
+    "eruptions",
+    "erupts",
+    "explode",
+    "exploded",
+    "explodes",
+    "explosion",
+    "explosive",
+    "lava",
+    "magma",
+    "volcano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Opposite of beginning: earthquake exercise evening everyone enormous emotion embrace employ exhibit",
+   "blocklist": [
+    "close",
+    "closing",
+    "conclusion",
+    "end",
+    "ending",
+    "final",
+    "finale",
+    "finish",
+    "finished",
+    "finishing",
+    "last",
+    "terminate",
+    "termination"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Strong Italian coffee: equipment especially essential establish estimate effective economy economic",
+   "blocklist": [
+    "cappuccino",
+    "coffee",
+    "espresso",
+    "espressos",
+    "latte"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Imaginary line dividing hemispheres: essence empire evolve evident excuse eastern edition elegant",
+   "blocklist": [
+    "equator",
+    "equatorial",
+    "equinox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Pencil mark remover: envelope eyebrow educate endure embark emerge enhance enrich equipage erode",
+   "blocklist": [
+    "eradicate",
+    "erase",
+    "erased",
+    "eraser",
+    "erasers",
+    "erases",
+    "erasure",
+    "rubber"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Green precious gemstone: either eleven election element explore environment except enable encourage",
+   "blocklist": [
+    "emerald",
+    "emeralds",
+    "enable",
+    "encourage",
+    "environment",
+    "gemstone",
+    "green",
+    "jade"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Purple vegetable: easily eaten eating elderly eliminate embassy employer employment entrance episode",
+   "blocklist": [
+    "aubergine",
+    "eggplant",
+    "purple",
+    "vegetable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Single hair on edge of eyelid: examine emergency eligible episode equation evolution emission escape",
+   "blocklist": [
+    "cilia",
+    "cilium",
+    "eligible",
+    "emergency",
+    "emission",
+    "equation",
+    "evolution",
+    "examine",
+    "eyelash",
+    "eyelashes",
+    "eyelid",
+    "eyelids",
+    "lash",
+    "lashes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Spiny egg-laying Australian mammal: escaped escaping escapade escapism esoteric espionage espouse",
+   "blocklist": [
+    "anteater",
+    "echidna",
+    "echidnas",
+    "hedgehog",
+    "monotreme",
+    "platypus",
+    "porcupine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Lift between floors: everybody everything everyday executive existence expansion expose expression",
+   "blocklist": [
+    "elevator",
+    "escalator",
+    "floor",
+    "floors",
+    "lift"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Feeling of shame: earlier earliest earnest earrings elaborate elsewhere emotional emphasis employ",
+   "blocklist": [
+    "ashamed",
+    "embarrassment",
+    "guilt",
+    "humiliation",
+    "shame"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Breathe out: easily essential essentially existence existential exhibition extraordinary escapee",
+   "blocklist": [
+    "escapee",
+    "essentially",
+    "exhale",
+    "exhibition",
+    "existential",
+    "expire",
+    "extraordinary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 320.4895133486563,
+  "cost_numerator": 29003019,
+  "cost_denominator": 90496,
+  "cost_exact": false,
+  "cost_mcse": 0.3594934636427027,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 26288139,
+   "denominator": 90496,
+   "value": 290.4895133486563,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:22,4:90,5:165,6:417,7:763,8:1091,9:1101,10:966,11:707,12:559,13:377,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 0.3594934636427027,
+   "rollouts": 256,
+   "rank_total": 52576278,
+   "rank_denominator": 180992,
+   "cache_key": "be26bca1ef99d5bee411cde48cf808e7"
+  }
+ }
+}

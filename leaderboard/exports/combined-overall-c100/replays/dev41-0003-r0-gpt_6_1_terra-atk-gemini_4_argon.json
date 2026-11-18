@@ -1,0 +1,599 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Red fruit from a tree. cat dog sun sky sea man woman house car book fire water earth wind moon star",
+   "blocklist": [
+    "apple",
+    "cherry",
+    "plum",
+    "pomegranate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk. the and for you are with this that have not but all can one day",
+   "blocklist": [
+    "elephant",
+    "mammoth",
+    "mastodon",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Frozen water. love time life world people good new year way work home hand eye head light night rain",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icicle",
+    "sleet",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Tallest mammal with a long neck. big small old young first last name place thing food air blue green",
+   "blocklist": [
+    "camelopard",
+    "giraffe",
+    "giraffes",
+    "okapi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Striped African equine. age ago aid aim arm art ask bad bag bar bed bee bet bird bit box boy bus",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebrass",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Orange feline, black stripes. cup cut dad dry ear eat egg end era eve far fat few fit fix fly fox",
+   "blocklist": [
+    "tabby",
+    "tiger",
+    "tigers",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "King of the jungle. run jump play sing walk talk read write school friend family mother father baby",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner. make take give see know think come want use find tell feel try leave call",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders",
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Ocean mammal squeaks. aah aahed aahing aahs aal aalii aaliis aals aardvark aardvarks aardwolf aas",
+   "blocklist": [
+    "beluga",
+    "belugas",
+    "cetacean",
+    "cetaceans",
+    "dolphin",
+    "dolphins",
+    "orca",
+    "orcas",
+    "otter",
+    "otters",
+    "porpoise",
+    "porpoises",
+    "seal",
+    "seals",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird. aardwolves aargh aarrgh aarrghh aasvogel aasvogels aba abaca abacas abaci",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hopping Australian marsupial. aback abacterial abacus abacuses abaft abaka abakas abalone abalones",
+   "blocklist": [
+    "joey",
+    "joeys",
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Australian eucalyptus eater. abamp abampere abamperes abamps abandon abandoned abandoner abandoners",
+   "blocklist": [
+    "koala",
+    "koalas",
+    "possum",
+    "possums",
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bee product. abandoning abandonment abandonments abandons abapical abas abase abased abasedly",
+   "blocklist": [
+    "beeswax",
+    "honey",
+    "honeycomb",
+    "mead",
+    "nectar",
+    "pollen",
+    "propolis",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Erupting mountain. abasement abasements abaser abasers abases abash abashed abashes abashing",
+   "blocklist": [
+    "caldera",
+    "calderas",
+    "crater",
+    "craters",
+    "geyser",
+    "lava",
+    "magma",
+    "volcanic",
+    "volcano",
+    "volcanoes",
+    "volcanos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Artificial object orbiting a planet. abashment abashments abatable abate abated abatement abatements",
+   "blocklist": [
+    "orbiter",
+    "orbiters",
+    "probe",
+    "satellite",
+    "satellites",
+    "spacecraft",
+    "sputnik",
+    "sputniks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Eight armed sea creature. abater abaters abates abating abatis abatises abator abators abattis",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "cuttlefish",
+    "kraken",
+    "krakens",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid",
+    "squids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Ocean predator. abattises abattoir abattoirs abaxial abaxile abba abbacies abbacy abbas abbatial",
+   "blocklist": [
+    "barracuda",
+    "barracudas",
+    "marlin",
+    "moray",
+    "morays",
+    "shark",
+    "sharks",
+    "swordfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Desert dromedary. abbe abbes abbess abbesses abbey abbeys abbot abbotcies abbotcy abbots",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedaries"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit. abbreviate abbreviated abbreviates abbreviating abbreviation abbreviations",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Bovine moo. abbreviator abbreviators abdicable abdicate abdicated abdicates abdicating abdication",
+   "blocklist": [
+    "bull",
+    "bulls",
+    "calf",
+    "calves",
+    "cattle",
+    "cow",
+    "cows",
+    "heifer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Black and white bear. abdications abdicator abdicators abdomen abdomens abdomina abdominal abduce",
+   "blocklist": [
+    "bear",
+    "bears",
+    "grizzly",
+    "panda",
+    "pandas",
+    "ursine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Huge African river mammal. abduced abducens abducent abducentes abduces abducing abduct abducted",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos",
+    "manatee",
+    "manatees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Hoofed riding animal. abducting abduction abductions abductor abductores abductors abducts abeam",
+   "blocklist": [
+    "bronco",
+    "broncos",
+    "donkey",
+    "donkeys",
+    "horse",
+    "horses",
+    "mare",
+    "mares",
+    "mule",
+    "mules",
+    "mustang",
+    "mustangs",
+    "ponies",
+    "pony",
+    "stallion",
+    "stallions",
+    "steed",
+    "steeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Long eared hopping pet. abecedarian abecedarians abed abele abeles abelia abelian abelias abelmosk",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "coney",
+    "hare",
+    "hares",
+    "lapin",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Oink. abelmosks aberrance aberrances aberrancies aberrancy aberrant aberrantly aberrants aberrated",
+   "blocklist": [
+    "boar",
+    "hog",
+    "hogs",
+    "pig",
+    "piglet",
+    "pigs",
+    "sow",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Extinct prehistoric reptile. aberration aberrational aberrations abet abetment abetments abets",
+   "blocklist": [
+    "brontosaur",
+    "brontosaurus",
+    "dinosaur",
+    "dinosaurs",
+    "pterodactyl",
+    "pterosaur",
+    "tyrannosaur",
+    "tyrannosaurus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Clucking farm bird. abettal abettals abetted abetter abetters abetting abettor abettors abeyance",
+   "blocklist": [
+    "capon",
+    "capons",
+    "chick",
+    "chicken",
+    "chickens",
+    "chicks",
+    "cock",
+    "cockerel",
+    "cocks",
+    "fowl",
+    "fowls",
+    "hen",
+    "hens",
+    "poultry",
+    "pullet",
+    "pullets",
+    "rooster",
+    "roosters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6963.5792434992345,
+  "cost_numerator": 11063289033,
+  "cost_denominator": 1588736,
+  "cost_exact": false,
+  "cost_mcse": 1.5057120809415625,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 11015626953,
+   "denominator": 1588736,
+   "value": 6933.5792434992345,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:895,4:3823,5:8553,6:15147,7:23039,8:28357,9:24824,10:20274,11:15489,12:11350,13:7825,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.5057120809415625,
+   "rollouts": 256,
+   "rank_total": 44062507812,
+   "rank_denominator": 6354944,
+   "cache_key": "8ef4a4fbf2b6f64a07c63dd348e47d40"
+  }
+ }
+}

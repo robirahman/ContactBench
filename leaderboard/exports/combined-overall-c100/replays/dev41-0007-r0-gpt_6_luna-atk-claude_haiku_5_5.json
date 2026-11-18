@@ -1,0 +1,262 @@
+{
+ "game_id": "dev41-0007-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A canine pet that barks",
+   "blocklist": [
+    "bark",
+    "canines",
+    "cur",
+    "dog",
+    "dogs",
+    "hound",
+    "hounds",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppies",
+    "puppy",
+    "pups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The precious metal represented by the chemical symbol Au",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gold"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gold"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A very young human child",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "baby"
+    },
+    {
+     "seat": "guesser2",
+     "word": "baby"
+    }
+   ],
+   "prefix_after": "bu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A small sphere of air enclosed in a thin film of liquid, often seen in soap suds",
+   "blocklist": [
+    "bubble"
+   ],
+   "blocked_ranges": [
+    [
+     "bubble",
+     "butadiene"
+    ]
+   ],
+   "blocked_word_count": 909,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A dairy spread made by churning cream, often served on bread",
+   "blocklist": [
+    "butane",
+    "butter",
+    "butters",
+    "butyl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "An informal, often affectionate term of address for a boy or man, especially in Australia",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bub"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bub"
+    }
+   ],
+   "prefix_after": "but",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A small fastener attached to clothing and passed through a slit to hold fabric together",
+   "blocklist": [
+    "butt",
+    "butte",
+    "buttes",
+    "button",
+    "buttons",
+    "butts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "but",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "An insect that develops from a caterpillar and has large, colorful wings",
+   "blocklist": [
+    "butanol"
+   ],
+   "blocked_ranges": [
+    [
+     "butcher",
+     "butyryl"
+    ]
+   ],
+   "blocked_word_count": 127,
+   "opened_guesses": [],
+   "prefix_after": "but",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Describing a woman with traditionally masculine traits or appearance",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "butch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "butch"
+    }
+   ],
+   "prefix_after": "buta",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Plural form of the four-carbon alkane used as lighter fuel",
+   "blocklist": [
+    "butanes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "buta",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A four-carbon ketone used as a solvent, also known as methyl ethyl ketone",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "butanone"
+    },
+    {
+     "seat": "guesser2",
+     "word": "butanone"
+    }
+   ],
+   "prefix_after": "butad",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "butadienes",
+   "prefix_after": "butad",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 13.0,
+  "cost_numerator": 13,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 36266857183,
+   "denominator": 5197312,
+   "value": 6978.002702743264,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 100,
+   "mcse": 1.7061294541207968,
+   "rollouts": 256,
+   "rank_total": 36266857183,
+   "rank_denominator": 5197312,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}

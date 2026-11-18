@@ -1,0 +1,468 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal? cat dog sun moon star love life time water fire earth air man woman child",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest animal? house home world people day night good bad red blue green black white hand head",
+   "blocklist": [
+    "giraffe",
+    "home",
+    "house",
+    "people",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "King of the jungle? book car tree food money work family friend school happy heart light war peace",
+   "blocklist": [
+    "jungle",
+    "king",
+    "leopard",
+    "lion",
+    "lions",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Largest ocean mammal? sky rain wind snow sea river mountain fish bird bear horse music game day",
+   "blocklist": [
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Striped African equine? mother father baby boy girl human health power plant city country road room",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Bamboo eating black and white Chinese bear? yes new old big small long high right left first last",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Antarctic tuxedo swimmer? apple bread milk coffee tea sugar salt chair table door window water",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial? doctor hospital government story word question answer true false today",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Eight armed ocean creature? orange purple yellow pink brown gray gold silver stone river lake ocean",
+   "blocklist": [
+    "kraken",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Flipper mammal? jump walk run talk play read write sleep eat drink laugh smile dream hope joy fear",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "porpoise",
+    "seal",
+    "walrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Fastest flightless feathered runner? name place year way thing person number father mother house",
+   "blocklist": [
+    "cassowary",
+    "emu",
+    "ostrich",
+    "rhea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Nile reptile with powerful jaws? housewife husband sister brother young beautiful strong age mind",
+   "blocklist": [
+    "alligator",
+    "caiman",
+    "crocodile",
+    "crocodiles",
+    "gator",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Huge river dwelling African mammal? truth justice freedom future past present idea case fact problem",
+   "blocklist": [
+    "hippopotamus",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Buzzing honey maker? amazing best change different each end enough far great help important kind",
+   "blocklist": [
+    "bee",
+    "beehive",
+    "bees",
+    "bumblebee",
+    "hive",
+    "honeybee",
+    "wasp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Fastest land animal? computer internet phone television movie music art science history sports",
+   "blocklist": [
+    "antelope",
+    "cheetah",
+    "gazelle",
+    "greyhound",
+    "pronghorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Caterpillar becomes? king queen prince princess dragon magic angel heaven death night dark bright",
+   "blocklist": [
+    "butterflies",
+    "butterfly",
+    "chrysalis",
+    "cocoon",
+    "imago",
+    "moth",
+    "moths",
+    "pupa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Eight legged web spinner? dance song voice face eyes hair mouth nose feet body blood brain skin bone",
+   "blocklist": [
+    "arachnid",
+    "scorpion",
+    "spider",
+    "spiders",
+    "tarantula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Desert ship with humps? can you see why how who what when where all any some more most only just",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "camel"
+    },
+    {
+     "seat": "guesser2",
+     "word": "camel"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Legless hissing reptile? say she son set six sit sad saw sex sea sun star sky snow sleep small",
+   "blocklist": [
+    "adder",
+    "cobra",
+    "python",
+    "serpent",
+    "serpents",
+    "snake",
+    "snakes",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Ocean predator with dorsal fin? said same soon side state still such sure stand start stop sound",
+   "blocklist": [
+    "dorsal",
+    "fin",
+    "predator",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Bushy tailed nut gathering rodent? should shall since second system service social space special",
+   "blocklist": [
+    "beaver",
+    "chipmunk",
+    "gopher",
+    "marmot",
+    "rodent",
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Slow tree dwelling mammal? sing sister street spring summer smile simple single south seven",
+   "blocklist": [
+    "sloth",
+    "sloths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Stinky black and white spraying animal? sorry sweet soft safe save serve share short show strong",
+   "blocklist": [
+    "badger",
+    "opossum",
+    "polecat",
+    "raccoon",
+    "skunk",
+    "stinkbug",
+    "weasel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 772.2014831474467,
+  "cost_numerator": 352272139,
+  "cost_denominator": 456192,
+  "cost_exact": false,
+  "cost_mcse": 0.6469052433864835,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 338586379,
+   "denominator": 456192,
+   "value": 742.2014831474467,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:49,4:332,5:1030,6:1782,7:2643,8:3461,9:2906,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 0.6469052433864835,
+   "rollouts": 256,
+   "rank_total": 338586379,
+   "rank_denominator": 456192,
+   "cache_key": "435470bf806d7342a8854b278259051c"
+  }
+ }
+}

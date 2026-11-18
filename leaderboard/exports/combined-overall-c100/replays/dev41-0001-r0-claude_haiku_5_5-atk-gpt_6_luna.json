@@ -1,0 +1,663 @@
+{
+ "game_id": "dev41-0001-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that often chases mice and purrs",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Barks, wags, and fetches; man's best friend on four legs",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Dwelling with a roof where people live with their family",
+   "blocklist": [
+    "home",
+    "house"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Feathered animal that sings, flies, and builds nests in trees",
+   "blocklist": [
+    "avian",
+    "bird",
+    "birds",
+    "nest",
+    "robin",
+    "songbird",
+    "sparrow",
+    "wing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Scaly swimmer that breathes through gills and lives in water",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Tall woody plant with a trunk, branches, and leaves",
+   "blocklist": [
+    "forest",
+    "lumber",
+    "maple",
+    "oak",
+    "pine",
+    "plant",
+    "sapling",
+    "shrub",
+    "timber",
+    "tree",
+    "trees",
+    "wood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Hoofed animal that neighs, gallops, and is often ridden in saddles",
+   "blocklist": [
+    "bronco",
+    "colt",
+    "equine",
+    "foal",
+    "gelding",
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "nag",
+    "ponies",
+    "pony",
+    "riding",
+    "saddle",
+    "stallion",
+    "steed",
+    "thoroughbred"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Four-wheeled vehicle that drives on roads and carries passengers",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "bus",
+    "cab",
+    "car",
+    "convertible",
+    "coupe",
+    "jeep",
+    "limo",
+    "limousine",
+    "minivan",
+    "motor",
+    "motorcar",
+    "pickup",
+    "sedan",
+    "taxi",
+    "truck",
+    "van",
+    "wagon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Watercraft that floats, sails across lakes and oceans, and is rowed or powered",
+   "blocklist": [
+    "barge",
+    "barges",
+    "boat",
+    "boats",
+    "canoe",
+    "canoes",
+    "craft",
+    "dinghy",
+    "ferries",
+    "ferry",
+    "kayak",
+    "kayaks",
+    "pontoon",
+    "raft",
+    "rafts",
+    "rowboat",
+    "rowboats",
+    "sailboat",
+    "sailboats",
+    "ship",
+    "ships",
+    "skiff",
+    "vessel",
+    "vessels",
+    "yacht",
+    "yachts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Amphibian that hops, croaks, and lives near ponds and marshes",
+   "blocklist": [
+    "bullfrog",
+    "frog",
+    "frogs",
+    "newt",
+    "newts",
+    "salamander",
+    "salamanders",
+    "tadpole",
+    "tadpoles",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Glowing satellite that orbits Earth and shines in the night sky",
+   "blocklist": [
+    "celestial",
+    "luna",
+    "lunar",
+    "moon",
+    "orb",
+    "planet",
+    "star"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Long-eared hopper that nibbles carrots and has a fluffy tail",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "cottontail",
+    "hare",
+    "jackrabbit",
+    "lapin",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hard mineral piece often used to build walls and paths",
+   "blocklist": [
+    "boulder",
+    "brick",
+    "cobble",
+    "cobblestone",
+    "flagstone",
+    "granite",
+    "gravel",
+    "limestone",
+    "marble",
+    "masonry",
+    "paver",
+    "paving",
+    "pebble",
+    "quartz",
+    "rock",
+    "slab",
+    "slate",
+    "stone",
+    "stonework"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Hot bright disc giving daylight and warmth to the planet",
+   "blocklist": [
+    "daylight",
+    "heat",
+    "sol",
+    "solar",
+    "sun",
+    "sunlight",
+    "sunny",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Crisp orchard fruit that keeps the doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Farm animals: cow pig goat sheep hen duck goose lamb mule ox bull lion tiger",
+   "blocklist": [
+    "agriculture",
+    "barn",
+    "barnyard",
+    "beast",
+    "bovine",
+    "cattle",
+    "domestic",
+    "domesticated",
+    "farm",
+    "farmland",
+    "flock",
+    "herd",
+    "husbandry",
+    "livestock",
+    "pasture",
+    "poultry",
+    "ranch",
+    "stable",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chicken"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Striped savanna animal that looks like a horse with black and white stripes",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses, slithers, and sheds its skin",
+   "blocklist": [
+    "cobra",
+    "hiss",
+    "python",
+    "reptile",
+    "serpent",
+    "slither",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Small scaly crawler that basks on warm rocks and flicks its tongue",
+   "blocklist": [
+    "chameleon",
+    "dragon",
+    "gecko",
+    "iguana",
+    "lizard",
+    "monitor",
+    "skink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Six-legged buzzing creature that makes honey and pollinates flowers",
+   "blocklist": [
+    "bee",
+    "bees",
+    "bumblebee",
+    "hive",
+    "honey",
+    "insect",
+    "pollinator",
+    "wasp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Sly red canine with a bushy tail that raids henhouses at night",
+   "blocklist": [
+    "coyote",
+    "dingo",
+    "fox",
+    "foxes",
+    "jackal",
+    "reynard",
+    "vulpine",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Majestic raptor with a hooked beak that soars over mountains and hunts from high above",
+   "blocklist": [
+    "buzzard",
+    "condor",
+    "eagle",
+    "falcon",
+    "hawk",
+    "kite",
+    "osprey",
+    "vulture"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Antlered woodland grazer with a white tail that bounds through meadows",
+   "blocklist": [
+    "antler",
+    "buck",
+    "deer",
+    "doe",
+    "elk",
+    "fawn",
+    "moose",
+    "stag"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Tiny rodent that squeaks, scurries, and nibbles cheese in the pantry",
+   "blocklist": [
+    "chipmunk",
+    "gerbil",
+    "hamster",
+    "mouse",
+    "rat",
+    "squeaker",
+    "vole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Tall spotted African grazer with a very long neck and dark tongue",
+   "blocklist": [
+    "camelopard",
+    "giraffe",
+    "giraffes",
+    "mammal",
+    "okapi",
+    "spots",
+    "ungulate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Massive gray wallower with huge jaws that lives in African rivers and lakes",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Slow armored creature that retreats into its hard shell when threatened",
+   "blocklist": [
+    "armadillo",
+    "snail",
+    "terrapin",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Tiny colony-forming worker that marches in long lines and carries crumbs home",
+   "blocklist": [
+    "ant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "elephant monkey kangaroo crab shark whale dolphin owl bat bear emu yak camel llama hyena panda koala",
+   "blocklist": [
+    "fauna",
+    "marsupial",
+    "menagerie",
+    "species",
+    "vertebrate",
+    "wildlife",
+    "zoo",
+    "zoology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "elephant"
+    },
+    {
+     "seat": "guesser2",
+     "word": "penguin"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6883.480680435231,
+  "cost_numerator": 26696891471,
+  "cost_denominator": 3878400,
+  "cost_exact": false,
+  "cost_mcse": 1.9346490942654355,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 26580539471,
+   "denominator": 3878400,
+   "value": 6853.480680435231,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:936,4:3816,5:8522,6:15150,7:23048,8:28387,9:24854,10:20291,11:15499,12:11355,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9346490942654355,
+   "rollouts": 256,
+   "rank_total": 26580539471,
+   "rank_denominator": 3878400,
+   "cache_key": "eff35a1f9ad34abf40da6f4fee67b43b"
+  }
+ }
+}

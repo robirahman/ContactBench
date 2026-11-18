@@ -1,0 +1,503 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_argon-atk-gpt_6_1_terra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Closest planet to the sun, element 80",
+   "blocklist": [
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Element 8, breathed by humans, 21% of atmosphere",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Alphabetically very last word in the entire dictionary, after zyzzyva",
+   "blocklist": [
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Guesser2: call list_words(prefix='b', offset=1000, limit=50) and register the 19th word (index 18)",
+   "blocklist": [
+    "baratheas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "aah aahed aahing aahs aal aalii aaliis aals aardvarks aardwolf aardwolves aargh aarrgh: ant-eater",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "aarrghh aas aasvogel aasvogels aba abaca abacas abaci aback abacterial abacuses: bead counting frame",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "abaft abaka abakas abalones abamp abampere abamperes abamps abandon: sea snail with mother-of-pearl",
+   "blocklist": [
+    "abalone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "abandoned abandoner abandoners abandoning abandonment abandonments abandons: slaughterhouse",
+   "blocklist": [
+    "abattoir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "abapical abas abase abased abasedly abasement abasements abaser abasers abases: monastery church",
+   "blocklist": [
+    "abbey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "abash abashed abashes abashing abashment abashments abasia abasias abasing abatable: head of monks",
+   "blocklist": [
+    "abbot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "abate abated abatement abatements abater abaters abates abating abatis abatises: belly, stomach",
+   "blocklist": [
+    "abdomen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "abattis abattises abattoirs abaxial abaxile abba abbacies abbacy abbas abbatial abbe: kidnap",
+   "blocklist": [
+    "abduct"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "abbes abbess abbesses abbeys abbotcies abbotcy abbots abbreviate abbreviated abbreviates: hate",
+   "blocklist": [
+    "abhor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "abbreviating abbreviation abbreviations abbreviator abbreviators abdicable: renounce the throne",
+   "blocklist": [
+    "abdicate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "abdicated abdicates abdicating abdication abdications abdicator abdicators abdomens: stay, tolerate",
+   "blocklist": [
+    "abide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "abdomina abdominal abdominally abduce abduced abducens abducent abducentes abduces abducing: on fire",
+   "blocklist": [
+    "ablaze"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "abducted abducting abduction abductions abductor abductores abductors abducts abeam: skill, talent",
+   "blocklist": [
+    "ability"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "abecedarian abecedarians abed abele abeles abelia abelian abelias abelmosk abelmosks: unusual, weird",
+   "blocklist": [
+    "aberrant",
+    "aberration",
+    "abnormal",
+    "atypical",
+    "bizarre",
+    "odd",
+    "peculiar",
+    "strange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "aberrance aberrances aberrancies aberrancy aberrantly aberrants aberrated aberrational: end slavery",
+   "blocklist": [
+    "abolish",
+    "abolition",
+    "emancipate",
+    "free",
+    "manumit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "aberrations abet abetment abetments abets abettal abettals abetted abetter abetters: end pregnancy",
+   "blocklist": [
+    "abort",
+    "abortion",
+    "miscarriage",
+    "miscarry",
+    "terminate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "abetting abettor abettors abeyance abeyances abeyancies abeyancy abeyant abfarad: magic spell word",
+   "blocklist": [
+    "abracadabra",
+    "hocus",
+    "incantation",
+    "presto"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "abfarads abhenries abhenry abhenrys abhorred abhorrence abhorrences abhorrent abhorrently: shorten",
+   "blocklist": [
+    "abridge",
+    "clip",
+    "condense",
+    "contract",
+    "curtail",
+    "truncate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "abhorrer abhorrers abhorring abhors abidance abidances abided abider abiders abides abiding: on ship",
+   "blocklist": [
+    "aboard",
+    "afloat",
+    "onboard",
+    "shipboard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "abidingly abigail abigails abilities abiogeneses abiogenesis abiogenic abiogenically: not present",
+   "blocklist": [
+    "absent",
+    "absentee",
+    "away",
+    "gone",
+    "lacking",
+    "missing",
+    "nonexistent",
+    "unavailable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "abiogenist abiogenists abiological abioses abiosis abiotic abiotically abject: green fairy liquor",
+   "blocklist": [
+    "absinth",
+    "absinthe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "abjection abjections abjectly abjectness abjectnesses abjuration abjurations abjure: native Aussie",
+   "blocklist": [
+    "aboriginal",
+    "aboriginals",
+    "aborigine",
+    "aborigines",
+    "dingo",
+    "kangaroo",
+    "koala"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "abjured abjurer abjurers abjures abjuring ablate ablated ablates ablating ablation: forgive sin",
+   "blocklist": [
+    "absolution",
+    "absolve",
+    "exonerate",
+    "pardon",
+    "remit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "ablations ablative ablatively ablatives ablaut ablauts able ablegate ablegates abler ables: soak up",
+   "blocklist": [
+    "absorb",
+    "assimilate",
+    "imbibe",
+    "sop",
+    "sponge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "ablest ablings ablins abloom abluent abluents ablush abluted ablution ablutionary: sudden, curt",
+   "blocklist": [
+    "abrupt",
+    "blunt",
+    "brusque",
+    "crisp",
+    "sharp",
+    "short",
+    "snappish",
+    "terse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ablutions ably abmho abmhos abnegate abnegated abnegates abnegating abnegation abnegations: total",
+   "blocklist": [
+    "absolute",
+    "aggregate",
+    "complete",
+    "outright",
+    "overall",
+    "sum",
+    "utter",
+    "whole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6965.6521099068905,
+  "cost_numerator": 44264545875,
+  "cost_denominator": 6354688,
+  "cost_exact": false,
+  "cost_mcse": 1.5172823735273722,
+  "baseline": {
+   "numerator": 44266984597,
+   "denominator": 6367488,
+   "value": 6952.032669240994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.3863854295239175,
+   "rollouts": 256,
+   "rank_total": 44266984597,
+   "rank_denominator": 6367488,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 44073905235,
+   "denominator": 6354688,
+   "value": 6935.6521099068905,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:957,4:3876,5:8583,6:15172,7:23042,8:28350,9:24823,10:20269,11:15479,12:11351,13:7825,14:5125,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 100,
+   "mcse": 1.5172823735273722,
+   "rollouts": 256,
+   "rank_total": 44073905235,
+   "rank_denominator": 6354688,
+   "cache_key": "b7387b540f0a1790f62b33df6acb6d77"
+  }
+ }
+}

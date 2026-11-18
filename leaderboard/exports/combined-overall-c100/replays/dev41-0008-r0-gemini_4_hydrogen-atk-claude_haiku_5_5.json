@@ -1,0 +1,475 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "african equine with black and white stripes",
+   "blocklist": [
+    "quagga",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill and beaver tail",
+   "blocklist": [
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "word reading the same forwards and backwards",
+   "blocklist": [
+    "civic",
+    "deed",
+    "kayak",
+    "level",
+    "madam",
+    "minim",
+    "noon",
+    "peep",
+    "radar",
+    "refer",
+    "reviver",
+    "rotor",
+    "sagas",
+    "stats",
+    "tenet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palindrome"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palindrome"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "mild or indirect expression substituted for a harsh or blunt one",
+   "blocklist": [
+    "euphemism",
+    "euphemisms",
+    "euphemistic",
+    "expression"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "imaginary line dividing earth into northern and southern hemispheres",
+   "blocklist": [
+    "equator",
+    "equatorial",
+    "latitude",
+    "meridian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "anagram of listen",
+   "blocklist": [
+    "enlist",
+    "inlets",
+    "silent",
+    "tinsel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "secretly listen to a private conversation",
+   "blocklist": [
+    "earwig",
+    "eavesdrops",
+    "espionage"
+   ],
+   "blocked_ranges": [
+    [
+     "eavesdrop",
+     "eavesdropping"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "greek exclamation of joy upon making a discovery",
+   "blocklist": [
+    "euphoria",
+    "eureka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "biological sonar used by bats and dolphins",
+   "blocklist": [
+    "eagle",
+    "early",
+    "easy",
+    "echo",
+    "edge",
+    "effort",
+    "eight",
+    "either"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "echolocation"
+    },
+    {
+     "seat": "guesser2",
+     "word": "echolocation"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "multi-volume reference book with articles on all branches of knowledge",
+   "blocklist": [
+    "encyclopaedia",
+    "encyclopedia",
+    "encyclopedias",
+    "entry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "german cipher machine used in world war ii",
+   "blocklist": [
+    "engineer",
+    "engineers",
+    "enigma",
+    "enigmas",
+    "enigmatic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "scientific study of insects",
+   "blocklist": [
+    "entomologist",
+    "entomology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "french word shouted by an audience for another performance",
+   "blocklist": [
+    "encore",
+    "english"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "protein that acts as a biological catalyst",
+   "blocklist": [
+    "enzymatic",
+    "enzyme",
+    "enzymes",
+    "enzymic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "hard glossy outer layer covering the crown of a tooth",
+   "blocklist": [
+    "enamel",
+    "enamelled",
+    "enamelling",
+    "enamels",
+    "enamelware"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "measure of disorder or randomness in a thermodynamic system",
+   "blocklist": [
+    "entropies",
+    "entropy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "brain chemical released during exercise that reduces pain",
+   "blocklist": [
+    "endorphin",
+    "endorphins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "flat paper container with a sealable flap used to send a letter",
+   "blocklist": [
+    "envelop",
+    "envelope",
+    "enveloped",
+    "envelopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "group of people attending or surrounding an important person",
+   "blocklist": [
+    "engine",
+    "enter",
+    "entire",
+    "entourage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "portion of territory completely surrounded by a larger foreign territory",
+   "blocklist": [
+    "enclave",
+    "enclaves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "musicians, actors, or dancers performing together as a unified whole",
+   "blocklist": [
+    "end"
+   ],
+   "blocked_ranges": [
+    [
+     "enable",
+     "engineer"
+    ],
+    [
+     "engineers",
+     "enzymic"
+    ]
+   ],
+   "blocked_word_count": 1422,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "enzymology",
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "enzymically enzymologies enzymologist enzymologists enzyms",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "enzyms"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 31.0,
+  "cost_numerator": 31,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2316683571,
+   "denominator": 330752,
+   "value": 7004.291949859714,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 100,
+   "mcse": 1.7815770338906243,
+   "rollouts": 256,
+   "rank_total": 27800202852,
+   "rank_denominator": 3969024,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": {
+   "numerator": 1,
+   "denominator": 1,
+   "value": 1.0,
+   "exact": true,
+   "method": "all_fit",
+   "histogram": "10:1,11:1,12:1",
+   "target_length": 11,
+   "C": 100,
+   "mcse": null,
+   "rollouts": null,
+   "rank_total": null,
+   "rank_denominator": null,
+   "cache_key": null
+  }
+ }
+}

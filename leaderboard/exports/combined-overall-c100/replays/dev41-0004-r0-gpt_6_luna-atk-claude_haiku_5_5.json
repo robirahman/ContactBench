@@ -1,0 +1,285 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "prefix_completed",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common three-letter pet that barks.",
+   "blocklist": [
+    "cat",
+    "dog",
+    "hound",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The collective noun for foxes is also a verb meaning to move furtively.",
+   "blocklist": [
+    "fox",
+    "foxes",
+    "skulk",
+    "skulked",
+    "skulking",
+    "skulks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Initials: Try in new tents if needed; now ants bite ugly lions and tigers in old nests.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tintinnabulation"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tintinnabulation"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Initials spell it: A brisk eagle circles every distant alpine ridge, inspecting ancient nests.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aardvark",
+     "arboreal"
+    ]
+   ],
+   "blocked_word_count": 7620,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Initials: A zealous young gardener observes unusual shrubs.",
+   "blocklist": [
+    "arbor",
+    "arbors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "azygous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "azygous"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Initials spell it: A river curves here.",
+   "blocklist": [
+    "arch",
+    "area",
+    "arena",
+    "argue",
+    "arise",
+    "arm",
+    "armor",
+    "army",
+    "around",
+    "arrow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Initials spell it: A restless cartographer hikes east, tracing yellow paths everywhere.",
+   "blocklist": [
+    "arbiter",
+    "arbitral",
+    "arbitrary",
+    "arbitrate",
+    "arbutes",
+    "argosy",
+    "argot",
+    "arid"
+   ],
+   "blocked_ranges": [
+    [
+     "arborescent",
+     "arborist"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "archetype"
+    },
+    {
+     "seat": "guesser2",
+     "word": "archetype"
+    }
+   ],
+   "prefix_after": "arb",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Initials spell it: A researcher believes our virus is rarely understood scientifically.",
+   "blocklist": [
+    "arboretum",
+    "arbour",
+    "arbours",
+    "arbutus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arbovirus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arbovirus"
+    }
+   ],
+   "prefix_after": "arbo",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Initials spell it: A rabbit bounces over rocks, eating apples, leaves, lilacs, yams.",
+   "blocklist": [
+    "arboreta",
+    "arboretums",
+    "arboriculture",
+    "arborize",
+    "arborvitae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arboreally"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arboreally"
+    }
+   ],
+   "prefix_after": "arbor",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Initials spell it: A restless botanist observes rare orchids under sunlight.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arborous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arborous"
+    }
+   ],
+   "prefix_after": "arbore",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Initials: A rabbit brings oranges; rabbits eat oranges under sunlight.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arboreous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arboreous"
+    }
+   ],
+   "prefix_after": "arbores",
+   "result": "won",
+   "terminal_reason": "prefix_completed",
+   "hit_sources": []
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12.0,
+  "cost_numerator": 12,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 6797584185,
+   "denominator": 985984,
+   "value": 6894.2134811518235,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 100,
+   "mcse": 1.6232981544697853,
+   "rollouts": 256,
+   "rank_total": 40785505110,
+   "rank_denominator": 5915904,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}
