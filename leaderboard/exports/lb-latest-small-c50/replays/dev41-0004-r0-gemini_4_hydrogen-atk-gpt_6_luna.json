@@ -1,0 +1,522 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "darkest inner part of a shadow",
+   "blocklist": [
+    "umbra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "flightless tuxedoed antarctic bird",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "bat navigation using sound waves",
+   "blocklist": [
+    "echo",
+    "echolocation",
+    "sonar",
+    "ultrasonic",
+    "ultrasound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "plant process turning light into food",
+   "blocklist": [
+    "photosynthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "study of mushrooms and fungi",
+   "blocklist": [
+    "mycologist",
+    "mycology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "happy accident or fortunate discovery",
+   "blocklist": [
+    "chance",
+    "fluke",
+    "fortuity",
+    "fortune",
+    "luck",
+    "serendipity",
+    "windfall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "word reading same backward and forward",
+   "blocklist": [
+    "civic",
+    "deed",
+    "kayak",
+    "level",
+    "madam",
+    "noon",
+    "radar",
+    "refer",
+    "rotor",
+    "stats",
+    "tenet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palindrome"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palindrome"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "large seabird, or golf score three under par",
+   "blocklist": [
+    "albatross"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ancient counting frame with beads",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "chain or cluster of islands",
+   "blocklist": [
+    "atoll",
+    "atolls"
+   ],
+   "blocked_ranges": [
+    [
+     "archipelago",
+     "archipelagos"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "purple quartz gemstone",
+   "blocklist": [
+    "amethyst",
+    "amethystine",
+    "amethysts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "massive snow slide down a mountain",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "avalanche",
+     "avalanches"
+    ]
+   ],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "punctuation mark showing possession or omission",
+   "blocklist": [
+    "apostrophe",
+    "apostrophes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "burrowing mammal with bony armor plates",
+   "blocklist": [
+    "armadillo",
+    "armadillos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "word formed by rearranging letters of another",
+   "blocklist": [
+    "anagram",
+    "anagrammatic",
+    "anagrammatical",
+    "anagrammatically",
+    "anagrammatization",
+    "anagrammatizations",
+    "anagrammatize",
+    "anagrammatized",
+    "anagrammatizes",
+    "anagrammatizing",
+    "anagrammed",
+    "anagramming",
+    "anagrams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "bellows musical instrument played by squeezing",
+   "blocklist": [
+    "accordion",
+    "accordionist",
+    "accordionists",
+    "accordions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "roman bridge-like channel carrying water",
+   "blocklist": [
+    "aqueduct"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "green fruit used to make guacamole",
+   "blocklist": [
+    "avocado"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "whale secretion used in perfume",
+   "blocklist": [
+    "amber",
+    "ambergris",
+    "ambergrises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "medieval chemistry turning lead to gold",
+   "blocklist": [
+    "alchemic",
+    "alchemist",
+    "alchemists",
+    "alchemy",
+    "transmutation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "frog or salamander, cold-blooded vertebrate",
+   "blocklist": [
+    "amphibia",
+    "amphibian",
+    "amphibians",
+    "amphibious",
+    "amphibiously",
+    "amphibiousness",
+    "amphibiousnesses",
+    "anuran",
+    "anurans",
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "classic stage magician's incantation",
+   "blocklist": [
+    "abracadabra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "space traveler in a spacesuit",
+   "blocklist": [
+    "astronaut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "proof of being elsewhere during a crime",
+   "blocklist": [
+    "alibi",
+    "alibis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "book of maps",
+   "blocklist": [
+    "atlas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "blacksmiths heavy iron block",
+   "blocklist": [
+    "anvil"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "northern lights in polar sky",
+   "blocklist": [
+    "aurora",
+    "aurorae",
+    "auroral",
+    "auroras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "edible flower bud vegetable with leaves",
+   "blocklist": [
+    "artichoke",
+    "artichokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "oak tree nut eaten by squirrels",
+   "blocklist": [
+    "acorn",
+    "acorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "heavy metal device holding a ship in place",
+   "blocklist": [
+    "anchor",
+    "anchors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 744.8267172280844,
+  "cost_numerator": 58728097,
+  "cost_denominator": 78848,
+  "cost_exact": false,
+  "cost_mcse": 0.6938523616497134,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 56362657,
+   "denominator": 78848,
+   "value": 714.8267172280844,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:70,4:192,5:490,6:821,7:1232,8:1609,9:1564,10:1298,11:1034,12:748,13:517,14:327,15:220,16:124,17:62,18:24,19:16,20:10",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.6938523616497134,
+   "rollouts": 256,
+   "rank_total": 225450628,
+   "rank_denominator": 315392,
+   "cache_key": "9e3d07bdef7bf7d56a27fd89b27c0356"
+  }
+ }
+}

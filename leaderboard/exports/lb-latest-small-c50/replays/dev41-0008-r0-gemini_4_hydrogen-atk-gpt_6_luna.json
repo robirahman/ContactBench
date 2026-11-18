@@ -1,0 +1,585 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "element with atomic number 8",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "tallest animal with long neck",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "sherlock holmes street",
+   "blocklist": [
+    "baker",
+    "detective"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "moon blocks the sun",
+   "blocklist": [
+    "eclipse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "throwing someone out a window",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "defenestrate",
+     "defenestrations"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "happy accidental discovery",
+   "blocklist": [
+    "coincidence",
+    "fluke",
+    "fortune",
+    "luck",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "half man half horse",
+   "blocklist": [
+    "centaur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "ancient counting frame with beads",
+   "blocklist": [
+    "abacus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "measures temperature",
+   "blocklist": [
+    "thermocouple",
+    "thermometer",
+    "thermometry",
+    "thermostat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "maze in greek mythology",
+   "blocklist": [
+    "labyrinth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "chain or group of islands",
+   "blocklist": [
+    "archipelago",
+    "archipelagos",
+    "atoll",
+    "island",
+    "isle",
+    "isles",
+    "islet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "plants making food from sunlight",
+   "blocklist": [
+    "autotroph",
+    "autotrophic",
+    "chlorophyll",
+    "photoautotroph",
+    "photosynthesis",
+    "photosynthetic",
+    "plant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "australian curved throwing stick",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "japanese art of paper folding",
+   "blocklist": [
+    "crane",
+    "fold",
+    "origami"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "lizard that changes color",
+   "blocklist": [
+    "camouflage",
+    "chameleon",
+    "gecko",
+    "iguana",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "sand timer with two glass bulbs",
+   "blocklist": [
+    "clepsydra",
+    "hourglass",
+    "hourglasses",
+    "sandglass",
+    "sandglasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "flightless tuxedo bird",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "three under par in golf",
+   "blocklist": [
+    "albatross",
+    "birdie",
+    "condor",
+    "eagle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "study of fungi",
+   "blocklist": [
+    "fungus",
+    "mildew",
+    "mold",
+    "mushroom",
+    "mushrooms",
+    "mycological",
+    "mycologist",
+    "mycology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "manuscript scraped clean and reused",
+   "blocklist": [
+    "erasures",
+    "overwrite",
+    "palimpsest",
+    "palimpsests",
+    "parchment",
+    "vellum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "smiling australian marsupial",
+   "blocklist": [
+    "kangaroo",
+    "koala",
+    "quokka",
+    "quokkas",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "light produced by living organisms",
+   "blocklist": [
+    "bioluminescence",
+    "bioluminescent",
+    "firefly",
+    "glow",
+    "luciferin",
+    "luminescence",
+    "luminescent",
+    "phosphorescence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "word reading same forwards and backwards",
+   "blocklist": [
+    "bib",
+    "bob",
+    "civic",
+    "dad",
+    "deed",
+    "eve",
+    "kayak",
+    "level",
+    "madam",
+    "minim",
+    "mom",
+    "noon",
+    "palindrome",
+    "pop",
+    "radar",
+    "redder",
+    "refer",
+    "reviver",
+    "rotator",
+    "rotor",
+    "solos",
+    "stats",
+    "tenet",
+    "wow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "word that imitates a sound",
+   "blocklist": [
+    "bang",
+    "beep",
+    "boom",
+    "buzz",
+    "chirp",
+    "clang",
+    "click",
+    "crash",
+    "ding",
+    "echo",
+    "growl",
+    "hiss",
+    "honk",
+    "meow",
+    "moo",
+    "onomatopoeia",
+    "onomatopoeias",
+    "onomatopoeic",
+    "onomatopoeically",
+    "ping",
+    "quack",
+    "roar",
+    "squeak",
+    "thud",
+    "toot",
+    "woof"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "alignment of three celestial bodies",
+   "blocklist": [
+    "conjunction",
+    "occultation",
+    "opposition",
+    "syzygy",
+    "transit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "thing out of its proper time",
+   "blocklist": [
+    "anachronism",
+    "anachronisms",
+    "anachronistic",
+    "anachronistically",
+    "anachronous",
+    "anachronously"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "pleasure derived from another's misfortune",
+   "blocklist": [
+    "delight",
+    "glee",
+    "gloat",
+    "gloating",
+    "malice",
+    "misery",
+    "rejoicing",
+    "relish",
+    "sadism",
+    "sadistic",
+    "schadenfreude",
+    "spite",
+    "suffering",
+    "vicarious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "contradictory terms like jumbo shrimp",
+   "blocklist": [
+    "contradiction",
+    "contradictory",
+    "incongruity",
+    "juxtaposition",
+    "oxymora",
+    "oxymoron",
+    "oxymoronic",
+    "paradox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12045.141014212433,
+  "cost_numerator": 47751949759,
+  "cost_denominator": 3964416,
+  "cost_exact": false,
+  "cost_mcse": 3.1434975385393167,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 47633017279,
+   "denominator": 3964416,
+   "value": 12015.141014212433,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:954,4:3862,5:8584,6:15196,7:23078,8:28401,9:24849,10:20288,11:15486,12:11350,13:7818,14:5121,15:3189,16:1942,17:1126,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.1434975385393167,
+   "rollouts": 256,
+   "rank_total": 47633017279,
+   "rank_denominator": 3964416,
+   "cache_key": "3cbf1faa90f044722a5a321710115951"
+  }
+ }
+}

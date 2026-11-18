@@ -1,0 +1,602 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Einstein's famous theory",
+   "blocklist": [
+    "physics",
+    "quantum",
+    "relativity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Newton's apple force",
+   "blocklist": [
+    "calculus",
+    "energy",
+    "gravity",
+    "inertia",
+    "law",
+    "mass",
+    "momentum",
+    "motion",
+    "orbit",
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Plants convert sunlight to sugar",
+   "blocklist": [
+    "algae",
+    "broccoli",
+    "cabbage",
+    "cauliflower",
+    "chard",
+    "chlorophyll",
+    "fern",
+    "glucose",
+    "kale",
+    "leaf",
+    "lettuce",
+    "moss",
+    "photosynthesis",
+    "seaweed",
+    "spinach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Shakespeare's Danish prince",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hamlet"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hamlet"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Color-changing lizard",
+   "blocklist": [
+    "chameleon",
+    "gecko",
+    "iguana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Twin-hulled sailboat",
+   "blocklist": [
+    "caravel",
+    "carrack",
+    "catamaran",
+    "catboat",
+    "clipper",
+    "corvette",
+    "cutter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Half-man, half-horse creature",
+   "blocklist": [
+    "centaur",
+    "chimera",
+    "cyclops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Magnetic navigation instrument",
+   "blocklist": [
+    "compass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "French crescent-shaped pastry",
+   "blocklist": [
+    "crepe",
+    "croissant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Butterfly larva",
+   "blocklist": [
+    "caterpillar",
+    "centipede",
+    "cocoon"
+   ],
+   "blocked_ranges": [
+    [
+     "caterpillar",
+     "cocoon"
+    ]
+   ],
+   "blocked_word_count": 4955,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Spiky desert plant",
+   "blocklist": [
+    "cacti",
+    "cactus",
+    "cactuses",
+    "cholla",
+    "chollas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Vegetable that becomes a pickle",
+   "blocklist": [
+    "carrot",
+    "cassava",
+    "celery",
+    "chicory",
+    "chive",
+    "chives",
+    "collards",
+    "corn",
+    "cress",
+    "cucumber"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Desert animal with humps",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Medieval royal fortress",
+   "blocklist": [
+    "castle",
+    "castles",
+    "chateau",
+    "citadel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Wax stick for coloring",
+   "blocklist": [
+    "crayons"
+   ],
+   "blocked_ranges": [
+    [
+     "car",
+     "collar"
+    ],
+    [
+     "collards",
+     "crayon"
+    ]
+   ],
+   "blocked_word_count": 12379,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Melts with a burning wick",
+   "blocklist": [
+    "candle",
+    "candled",
+    "candlelight",
+    "candler",
+    "candlers",
+    "candles",
+    "candlewick",
+    "candlewicks",
+    "chandler",
+    "chandlers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Monarch's golden headpiece",
+   "blocklist": [
+    "chaplet",
+    "circlet",
+    "circlets",
+    "corona",
+    "coronal",
+    "coronet",
+    "coronets",
+    "crown",
+    "crowns",
+    "diadem",
+    "diadems",
+    "tiara",
+    "tiaras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Clear quartz mineral",
+   "blocklist": [
+    "cairngorm",
+    "calcite",
+    "chalcedony",
+    "citrine",
+    "crystal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Clashing brass percussion discs",
+   "blocklist": [
+    "collar",
+    "cymbal",
+    "cymbalist",
+    "cymbals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Birthday dessert with frosting",
+   "blocklist": [
+    "cake",
+    "cakes",
+    "candy",
+    "cheesecake",
+    "chocolate",
+    "cobbler",
+    "compote",
+    "confection",
+    "cookie",
+    "cookies",
+    "cream",
+    "crumble",
+    "cupcake",
+    "cupcakes",
+    "custard",
+    "pie",
+    "pudding",
+    "sundae",
+    "tart",
+    "torte"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Large scaly Nile reptile",
+   "blocklist": [
+    "caiman",
+    "crocodile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Fabric hanging over a window",
+   "blocklist": [
+    "calico",
+    "cambric",
+    "canvas",
+    "cashmere",
+    "chiffon",
+    "chintz",
+    "corduroy",
+    "cotton",
+    "cretonne",
+    "curtain",
+    "curtains",
+    "damask",
+    "drape",
+    "drapes",
+    "gauze",
+    "linen",
+    "muslin",
+    "organza",
+    "satin",
+    "silk",
+    "tapestry",
+    "valance",
+    "velvet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Deep gorge carved by a river",
+   "blocklist": [
+    "canyon",
+    "canyons",
+    "chasm",
+    "chasms",
+    "cleft",
+    "clefts",
+    "coulee",
+    "coulees",
+    "crevasse",
+    "crevasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Clock bird that chimes the hour",
+   "blocklist": [
+    "carrion",
+    "cuckoo",
+    "cuckoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Soft pillow for a sofa",
+   "blocklist": [
+    "couch",
+    "cushion",
+    "cushions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Chirping insect or bat-and-ball sport",
+   "blocklist": [
+    "cicada",
+    "cicadas",
+    "cricket",
+    "crickets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Two-wheeled pedal vehicle",
+   "blocklist": [
+    "cab",
+    "cabs",
+    "caravan",
+    "caravans",
+    "carriage",
+    "carriages",
+    "cart",
+    "carts",
+    "chariot",
+    "chariots",
+    "coach",
+    "coaches",
+    "cruiser",
+    "cruisers",
+    "cycle",
+    "cyclecar",
+    "cyclecars",
+    "cycled",
+    "cycler",
+    "cyclers",
+    "cycles",
+    "cyclist",
+    "cyclists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 281.45938579447323,
+  "cost_numerator": 10429759,
+  "cost_denominator": 37056,
+  "cost_exact": false,
+  "cost_mcse": 0.3626303765567405,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 9318079,
+   "denominator": 37056,
+   "value": 251.45938579447323,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:13,4:69,5:199,6:379,7:579,8:736,9:583,10:414,11:308,12:203,13:135,14:69,15:32,16:29,17:11,18:3,19:3,20:2",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.3626303765567405,
+   "rollouts": 256,
+   "rank_total": 37272316,
+   "rank_denominator": 148224,
+   "cache_key": "e4da9b9abcadfc45ccf8980e4be2dbc4"
+  }
+ }
+}

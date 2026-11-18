@@ -1,0 +1,632 @@
+{
+ "game_id": "dev41-0006-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that often purrs",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "meow",
+    "mog",
+    "tabby",
+    "tom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal canine companion, man's best friend",
+   "blocklist": [
+    "dog",
+    "faithful",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Animal that neighs and gallops",
+   "blocklist": [
+    "colt",
+    "equine",
+    "foal",
+    "gallop",
+    "horse",
+    "mare",
+    "mustang",
+    "nag",
+    "neigh",
+    "pony",
+    "racehorse",
+    "stallion",
+    "steed",
+    "thoroughbred"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Winged creature that sings and flies",
+   "blocklist": [
+    "bird",
+    "birdsong",
+    "blackbird",
+    "bluebird",
+    "canary",
+    "cardinal",
+    "crow",
+    "dove",
+    "eagle",
+    "falcon",
+    "finch",
+    "hawk",
+    "hummingbird",
+    "jay",
+    "lark",
+    "macaw",
+    "magpie",
+    "nightingale",
+    "owl",
+    "parakeet",
+    "parrot",
+    "peacock",
+    "pigeon",
+    "robin",
+    "seagull",
+    "songbird",
+    "sparrow",
+    "swallow",
+    "warbler",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Striped African grazing mammal with hooves",
+   "blocklist": [
+    "antelope",
+    "gazelle",
+    "gnu",
+    "impala",
+    "okapi",
+    "warthog",
+    "wildebeest",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Animal: ant bee fox elk emu ram hen pig eel ape",
+   "blocklist": [
+    "beast",
+    "fauna",
+    "menagerie",
+    "species",
+    "vertebrate",
+    "wildlife",
+    "zoo",
+    "zoology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fox"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "King of the jungle with a shaggy mane",
+   "blocklist": [
+    "king",
+    "lion",
+    "lionhearted",
+    "pride",
+    "roar",
+    "safari"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Tall woody plant with leaves and branches",
+   "blocklist": [
+    "bush",
+    "forest",
+    "oak",
+    "sapling",
+    "shrub",
+    "tree",
+    "trunk",
+    "woods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Bearded farm animal that bleats and climbs",
+   "blocklist": [
+    "goat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "asp",
+    "boa",
+    "cobra",
+    "constrictor",
+    "copperhead",
+    "hiss",
+    "hissing",
+    "mamba",
+    "moccasin",
+    "python",
+    "rattler",
+    "rattlesnake",
+    "serpent",
+    "sidewinder",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Pack hunter that howls at the moon",
+   "blocklist": [
+    "coyote",
+    "howler",
+    "lupine",
+    "werewolf",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Huge horned plains grazer of North America",
+   "blocklist": [
+    "aurochs",
+    "bison",
+    "buffalo",
+    "buffaloes",
+    "bull"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Antlered forest grazer that bounds away",
+   "blocklist": [
+    "buck",
+    "caribou",
+    "deer",
+    "doe",
+    "fawn",
+    "hart",
+    "hind",
+    "moose",
+    "pronghorn",
+    "reindeer",
+    "stag",
+    "venison",
+    "wapiti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Large striped jungle predator with orange coat",
+   "blocklist": [
+    "jaguar",
+    "leopard",
+    "tiger",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Long-eared hopping burrower with a cotton tail",
+   "blocklist": [
+    "bunny",
+    "coney",
+    "cottontail",
+    "hare",
+    "jackrabbit",
+    "lagomorph",
+    "rabbit",
+    "warren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Huge gray pachyderm with ivory tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "ivory",
+    "mammoth",
+    "pachyderm",
+    "tusk",
+    "tusks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Gilled swimmer with fins and scales",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fish"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fish"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Tall white wader that stalks prey in marshes",
+   "blocklist": [
+    "egret",
+    "egrets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Oval laid by hens, often boiled or scrambled",
+   "blocklist": [
+    "egg",
+    "eggs",
+    "omelet",
+    "omelette",
+    "ovum",
+    "yolk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Our planet, the home of all living things",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Organs for seeing, found in pairs on a face",
+   "blocklist": [
+    "eye",
+    "eyeball",
+    "eyeballs",
+    "eyes",
+    "eyesight",
+    "sight",
+    "vision"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Organ for hearing, on each side of the head",
+   "blocklist": [
+    "ear",
+    "earache",
+    "eardrum",
+    "earlobe",
+    "earring",
+    "ears",
+    "earwax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Joint between the upper arm and forearm",
+   "blocklist": [
+    "articulation",
+    "elbow",
+    "flexure",
+    "hinge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Number that comes right after seven",
+   "blocklist": [
+    "eight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Go into a place or join a group",
+   "blocklist": [
+    "embark",
+    "engage",
+    "enlist",
+    "enroll",
+    "enrolls",
+    "enter",
+    "entering",
+    "entrance"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Way out of a building or room",
+   "blocklist": [
+    "egress",
+    "emergency",
+    "escape",
+    "exit",
+    "exodus",
+    "outlet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "ebb eft ego eke elf ell elm end eon era ere eta",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ebb"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Keen and enthusiastic, impatient to start",
+   "blocklist": [
+    "eager",
+    "eagerly",
+    "eagerness",
+    "earnest",
+    "enthusiasm",
+    "enthusiastic",
+    "excited",
+    "exuberant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ewe err ern eld eth ess ens eve elt ems eta",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "effectuate"
+    ],
+    [
+     "effectuates",
+     "ewe"
+    ]
+   ],
+   "blocked_word_count": 51526,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 149.3730785472973,
+  "cost_numerator": 7074309,
+  "cost_denominator": 47360,
+  "cost_exact": false,
+  "cost_mcse": 0.2846894984314829,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 5653509,
+   "denominator": 47360,
+   "value": 119.3730785472973,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:15,5:26,6:65,7:130,8:202,9:254,10:239,11:185,12:166,13:125,14:56,15:54,16:28,17:7,18:4,19:5,20:3",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.2846894984314829,
+   "rollouts": 256,
+   "rank_total": 5653509,
+   "rank_denominator": 47360,
+   "cache_key": "e0cb39970350fa2aace6dbec320f3280"
+  }
+ }
+}

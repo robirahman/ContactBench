@@ -1,0 +1,925 @@
+{
+  "run_id": "lb-latest-small-c50",
+  "protocol_version": "contact-v0.5",
+  "fixture_data": false,
+  "models": [
+    "claude_haiku_5_5",
+    "gpt_6_luna",
+    "gemini_4_hydrogen"
+  ],
+  "planned_games": 68,
+  "recorded_games": 68,
+  "scored_games": 68,
+  "planned_fixtures": 34,
+  "complete_fixtures": 34,
+  "rematch_fixtures": 4,
+  "no_progress_draw_rule": true,
+  "no_progress_draws": 4,
+  "balanced_complete": true,
+  "game_status_counts": {
+    "capped/complete": 48,
+    "solved/complete": 20
+  },
+  "missing_model_pairs": [],
+  "rating": {
+    "method": "batch Elo-style rating with half-point draws",
+    "models": [
+      "claude_haiku_5_5",
+      "gpt_6_luna",
+      "gemini_4_hydrogen"
+    ],
+    "strengths_logit": {
+      "claude_haiku_5_5": -2.593937937996867,
+      "gpt_6_luna": 1.0185320423498294,
+      "gemini_4_hydrogen": 1.5754058956470374
+    },
+    "elo": {
+      "claude_haiku_5_5": 1049.3868268513845,
+      "gpt_6_luna": 1676.937138253672,
+      "gemini_4_hydrogen": 1773.6760348949433
+    },
+    "converged": true,
+    "iterations": 8,
+    "gradient_norm": 1.6306400674181987e-16,
+    "loss": 10.365673262456735,
+    "penalty_scale": 2.5,
+    "connected_components": [
+      [
+        "claude_haiku_5_5",
+        "gemini_4_hydrogen",
+        "gpt_6_luna"
+      ]
+    ]
+  },
+  "rating_penalty_sensitivity": {
+    "1.0": {
+      "claude_haiku_5_5": 1216.8734396726786,
+      "gpt_6_luna": 1601.23470080301,
+      "gemini_4_hydrogen": 1681.8918595243115
+    },
+    "2.5": {
+      "claude_haiku_5_5": 1049.3868268513845,
+      "gpt_6_luna": 1676.937138253672,
+      "gemini_4_hydrogen": 1773.6760348949433
+    },
+    "5.0": {
+      "claude_haiku_5_5": 916.6330831783506,
+      "gpt_6_luna": 1741.4479534579134,
+      "gemini_4_hydrogen": 1841.918963363736
+    }
+  },
+  "bootstrap": {
+    "resamples": 500,
+    "seed": 12345,
+    "cluster": "task (secret) \u2014 both directions and all pairings kept together",
+    "task_clusters": 10,
+    "fit_failures": 0,
+    "intervals_95": {
+      "claude_haiku_5_5": {
+        "elo": {
+          "lo": 994.6447570486199,
+          "hi": 1052.7546265835922,
+          "n": 500
+        },
+        "rank": {
+          "lo": 3.0,
+          "hi": 3.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.4863870996576702,
+          "hi": 1.9309036334389527,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -7864.924488692381,
+          "hi": -6104.397860119568,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.0012529903464728923,
+          "hi": 0.005888699352182088,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 6292.669775429318,
+          "hi": 11674.484379282922,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 1661.8892871688502,
+          "hi": 3857.585957678323,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 12.0,
+          "hi": 21.0,
+          "n": 500
+        }
+      },
+      "gpt_6_luna": {
+        "elo": {
+          "lo": 1536.6013042249194,
+          "hi": 1741.6187928429272,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 2.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 1.9750967061970013,
+          "hi": 2.784043047148852,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": -4087.5791728276413,
+          "hi": 305.6640715726468,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.10879829545294332,
+          "hi": 0.3888285855335093,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 139.9055782245223,
+          "hi": 3228.5548719326525,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 199.08096289605626,
+          "hi": 371.7448058020944,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 536.2330953734837,
+          "hi": 1293.215150591922,
+          "n": 500
+        }
+      },
+      "gemini_4_hydrogen": {
+        "elo": {
+          "lo": 1706.0863602082557,
+          "hi": 1968.753938726458,
+          "n": 500
+        },
+        "rank": {
+          "lo": 1.0,
+          "hi": 2.0,
+          "n": 500
+        },
+        "offense_aggregate_speedup": {
+          "lo": 3.1210541326839487,
+          "hi": 16.87937540753369,
+          "n": 500
+        },
+        "mean_paired_cost_advantage": {
+          "lo": 6526.742047251802,
+          "hi": 10838.553993709813,
+          "n": 500
+        },
+        "defensive_cost_ratio": {
+          "lo": 0.8581047141699898,
+          "hi": 1.0015287220028377,
+          "n": 500
+        },
+        "offense_median_effective_cost": {
+          "lo": 244.53260933195594,
+          "hi": 416.537860146849,
+          "n": 500
+        },
+        "offense_geometric_mean_cost": {
+          "lo": 128.4811932023224,
+          "hi": 303.5495068362631,
+          "n": 500
+        },
+        "defense_median_cost_imposed": {
+          "lo": 11681.001761208345,
+          "hi": 11928.809711136208,
+          "n": 500
+        }
+      }
+    }
+  },
+  "model_stats": {
+    "claude_haiku_5_5": {
+      "offense_games": 20,
+      "offense_median_effective_cost": 11593.712643768617,
+      "offense_geometric_mean_cost": 2551.9721403385083,
+      "defense_median_cost_imposed": 17.5,
+      "defense_geometric_mean_cost_imposed": 18.19507557728169,
+      "offense_aggregate_speedup": {
+        "numerator": 151789846778856818531186646516455696915427870130104373384966925239536252745,
+        "denominator": 86848776093870206411489143917429160549593876692305198432581128521356812616,
+        "value": 1.7477488296990538
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 3019294289439533278899661987577349167393229644715074673,
+        "denominator": 445995337993685501720060392562375334020763183308800,
+        "value": 6769.788901879241
+      },
+      "offense_mean_baseline": {
+        "numerator": 4502719299950284303168363548917,
+        "denominator": 380557887199952400687759360,
+        "value": 11831.890630569087
+      },
+      "offense_capped_fraction_of_offense_games": 1.0,
+      "defense_games": 20,
+      "defensive_cost_ratio": {
+        "numerator": 225440344219649403660073629815584,
+        "denominator": 68652961166341984770408039030337499,
+        "value": 0.0032837672314442643
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.1,
+      "mean_paired_cost_advantage": {
+        "numerator": -1738138287736456473937778733987139689530071448622587322127,
+        "denominator": 258231300698343905495914967293615318398021883135795200,
+        "value": -6730.935727140546
+      },
+      "opponents": [
+        "gemini_4_hydrogen",
+        "gpt_6_luna"
+      ],
+      "fixtures": 20,
+      "match_points": 0.0,
+      "match_point_share": 0.0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 20
+    },
+    "gpt_6_luna": {
+      "offense_games": 24,
+      "offense_median_effective_cost": 141.4055782245223,
+      "offense_geometric_mean_cost": 270.83068870416895,
+      "defense_median_cost_imposed": 602.1954730774144,
+      "defense_geometric_mean_cost_imposed": 743.6462081368087,
+      "offense_aggregate_speedup": {
+        "numerator": 58606921162328990601233275858055564098345240056994758574683059374670736985,
+        "denominator": 26760546075863999193368538121988916369324794190475452541885569037922306352,
+        "value": 2.1900495227632155
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 8066952232450818417009283386648741921614437775381,
+        "denominator": 1782030169968177622120368998821431890334474240,
+        "value": 4526.832580278297
+      },
+      "offense_mean_baseline": {
+        "numerator": 185616754970855351151207491459482578317,
+        "denominator": 18722714182407981725628274236850176,
+        "value": 9913.98753206746
+      },
+      "offense_capped_fraction_of_offense_games": 0.5,
+      "defense_games": 24,
+      "defensive_cost_ratio": {
+        "numerator": 99853900448002248078190891672664052568277342886784392143679269476087960704,
+        "denominator": 397806483626727732530365668983920202851118781340735335368175279271141128775,
+        "value": 0.25101124430565536
+      },
+      "defense_deadline_hold_rate_of_defense_games": 1.0,
+      "mean_paired_cost_advantage": {
+        "numerator": -776356299020769264868119934925378452995014183214021888566523551480957708739537378035749,
+        "denominator": 514873961115014304512945112637942507632971670816307584736123610302228727586022502400,
+        "value": -1507.8569856970182
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "gemini_4_hydrogen"
+      ],
+      "fixtures": 24,
+      "match_points": 15.0,
+      "match_point_share": 0.625,
+      "wins": 13,
+      "draws": 4,
+      "losses": 7
+    },
+    "gemini_4_hydrogen": {
+      "offense_games": 24,
+      "offense_median_effective_cost": 339.15954181252584,
+      "offense_geometric_mean_cost": 209.46647463031246,
+      "defense_median_cost_imposed": 11807.08919543028,
+      "defense_geometric_mean_cost_imposed": 4694.050425696347,
+      "offense_aggregate_speedup": {
+        "numerator": 16593485941314971615131090851162623368088835659790246925343055925,
+        "denominator": 3031219970788411629143899672298385553406696820551925398299697088,
+        "value": 5.4741939223233125
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 143570592193455964039731770879841525601,
+        "denominator": 79275191810320655607964963493836800,
+        "value": 1811.0406157953294
+      },
+      "offense_mean_baseline": {
+        "numerator": 185616754970855351151207491459482578317,
+        "denominator": 18722714182407981725628274236850176,
+        "value": 9913.98753206746
+      },
+      "offense_capped_fraction_of_offense_games": 0.6666666666666666,
+      "defense_games": 24,
+      "defensive_cost_ratio": {
+        "numerator": 121532583703994208471495810799615920665062506658530763747070497614184072876825999176028934472,
+        "denominator": 127385643719868849103753768612609599510350758790742165715705943672028503117683167434003447155,
+        "value": 0.9540524360127584
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.9166666666666666,
+      "mean_paired_cost_advantage": {
+        "numerator": 374869618487297781856638137723569041757035918823863120418540670282009646600277564357548421446587,
+        "denominator": 45500552271837293368820948890028289695640694277356520598555765896526445948173352544347545600,
+        "value": 8238.792712837565
+      },
+      "opponents": [
+        "claude_haiku_5_5",
+        "gpt_6_luna"
+      ],
+      "fixtures": 24,
+      "match_points": 19.0,
+      "match_point_share": 0.7916666666666666,
+      "wins": 17,
+      "draws": 4,
+      "losses": 3
+    }
+  },
+  "role_diagnostics": {
+    "claude_haiku_5_5": {
+      "offense": {
+        "games": 20.0,
+        "turns": 600.0,
+        "guesser1_decisions": 600.0,
+        "clue_turns": 551.0,
+        "guesser2_decisions": 551.0,
+        "registered_matches": 507.0,
+        "intended_word_covered": 511.0,
+        "contacts_prevented": 499.0,
+        "guesser2_pass": 18.0,
+        "direct_turns": 9.0,
+        "guesser1_invalid": 40.0,
+        "choice_opportunities": 5.0,
+        "choice_cancel": 4.0,
+        "contacts_awarded": 8.0,
+        "final_turn_cancellations": 1.0,
+        "choice_reveal": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.06666666666666667,
+          "direct_share_per_valid_turn": 0.01607142857142857,
+          "registered_match_per_clue_turn": 0.9201451905626135,
+          "contact_per_clue_turn": 0.014519056261343012,
+          "contact_per_registered_match": 0.015779092702169626,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": 0.2
+        }
+      },
+      "defense": {
+        "games": 20.0,
+        "block_decisions": 277.0,
+        "empty_blocklists": 38.0,
+        "fresh_secret_candidates_blocked": 602596.0,
+        "blocks_overlapping_clue": 94.0,
+        "intended_word_covered": 213.0,
+        "contacts_prevented": 206.0,
+        "block_invalid": 20.0,
+        "mean_blocklist_size_per_block_decision": 2815.216606498195,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.1371841155234657,
+          "block_invalid_per_block_decision": 0.07220216606498195
+        }
+      }
+    },
+    "gemini_4_hydrogen": {
+      "offense": {
+        "games": 24.0,
+        "wins": 8.0,
+        "hit_source_direct": 7.0,
+        "turns": 615.0,
+        "guesser1_decisions": 615.0,
+        "clue_turns": 593.0,
+        "guesser2_decisions": 593.0,
+        "registered_matches": 585.0,
+        "contacts_awarded": 34.0,
+        "intended_word_covered": 558.0,
+        "contacts_prevented": 550.0,
+        "guesser1_invalid": 11.0,
+        "choice_opportunities": 1.0,
+        "choice_reveal": 1.0,
+        "direct_turns": 11.0,
+        "hit_source_clue": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.01788617886178862,
+          "direct_share_per_valid_turn": 0.018211920529801324,
+          "registered_match_per_clue_turn": 0.9865092748735245,
+          "contact_per_clue_turn": 0.05733558178752108,
+          "contact_per_registered_match": 0.05811965811965812,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": 1.0
+        }
+      },
+      "defense": {
+        "games": 24.0,
+        "block_decisions": 650.0,
+        "empty_blocklists": 26.0,
+        "fresh_secret_candidates_blocked": 2650.0,
+        "blocks_overlapping_clue": 2.0,
+        "intended_word_covered": 599.0,
+        "contacts_prevented": 567.0,
+        "mean_blocklist_size_per_block_decision": 4.081538461538462,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.04,
+          "block_invalid_per_block_decision": 0.0
+        }
+      }
+    },
+    "gpt_6_luna": {
+      "offense": {
+        "games": 24.0,
+        "wins": 12.0,
+        "hit_source_direct": 5.0,
+        "turns": 552.0,
+        "guesser1_decisions": 552.0,
+        "clue_turns": 472.0,
+        "guesser2_decisions": 472.0,
+        "registered_matches": 413.0,
+        "intended_word_covered": 405.0,
+        "contacts_prevented": 375.0,
+        "guesser1_invalid": 73.0,
+        "contacts_awarded": 33.0,
+        "guesser2_invalid": 2.0,
+        "guesser2_pass": 2.0,
+        "direct_turns": 7.0,
+        "hit_source_guesser1_opened": 4.0,
+        "hit_source_guesser2_opened": 4.0,
+        "choice_opportunities": 20.0,
+        "choice_cancel": 12.0,
+        "choice_reveal": 8.0,
+        "hit_source_blocklist": 1.0,
+        "hit_source_clue": 2.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.1322463768115942,
+          "direct_share_per_valid_turn": 0.014613778705636743,
+          "registered_match_per_clue_turn": 0.875,
+          "contact_per_clue_turn": 0.06991525423728813,
+          "contact_per_registered_match": 0.07990314769975787,
+          "guesser2_invalid_per_guesser2_decision": 0.00423728813559322,
+          "reveal_per_choice_opportunity": 0.4
+        }
+      },
+      "defense": {
+        "games": 24.0,
+        "block_decisions": 689.0,
+        "empty_blocklists": 14.0,
+        "fresh_secret_candidates_blocked": 185896.0,
+        "blocks_overlapping_clue": 85.0,
+        "intended_word_covered": 662.0,
+        "contacts_prevented": 651.0,
+        "block_invalid": 14.0,
+        "mean_blocklist_size_per_block_decision": 337.2249637155297,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.020319303338171262,
+          "block_invalid_per_block_decision": 0.020319303338171262
+        }
+      }
+    }
+  },
+  "pairwise_match_points": {
+    "claude_haiku_5_5": {
+      "gpt_6_luna": {
+        "mean_points": 0.0,
+        "fixtures": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.0,
+        "fixtures": 10
+      }
+    },
+    "gpt_6_luna": {
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_points": 0.35714285714285715,
+        "fixtures": 14
+      }
+    },
+    "gemini_4_hydrogen": {
+      "claude_haiku_5_5": {
+        "mean_points": 1.0,
+        "fixtures": 10
+      },
+      "gpt_6_luna": {
+        "mean_points": 0.6428571428571429,
+        "fixtures": 14
+      }
+    }
+  },
+  "pairwise_mean_cost": {
+    "claude_haiku_5_5": {
+      "gemini_4_hydrogen": {
+        "mean_cost": 11850.315300697866,
+        "games": 10
+      },
+      "gpt_6_luna": {
+        "mean_cost": 1689.2625030606162,
+        "games": 10
+      }
+    },
+    "gemini_4_hydrogen": {
+      "claude_haiku_5_5": {
+        "mean_cost": 63.30634947739036,
+        "games": 10
+      },
+      "gpt_6_luna": {
+        "mean_cost": 3059.422234593857,
+        "games": 14
+      }
+    },
+    "gpt_6_luna": {
+      "claude_haiku_5_5": {
+        "mean_cost": 14.4,
+        "games": 10
+      },
+      "gemini_4_hydrogen": {
+        "mean_cost": 7749.99870904851,
+        "games": 14
+      }
+    }
+  },
+  "capped_games": 48,
+  "capped_fraction_of_scored_games": 0.7058823529411765,
+  "residual_candidate_counts_capped": [
+    20,
+    66,
+    965,
+    1564,
+    2624,
+    3653,
+    3767,
+    4689,
+    4978,
+    5048,
+    6910,
+    6928,
+    6945,
+    6986,
+    7021,
+    7024,
+    9145,
+    9187,
+    10327,
+    10358,
+    16150,
+    16177,
+    18879,
+    18882,
+    18921,
+    172168,
+    172214,
+    172231,
+    172273,
+    172283,
+    172291,
+    172306,
+    172310,
+    172311,
+    172318,
+    172325,
+    172327,
+    172344,
+    172352,
+    172384,
+    172388,
+    172393,
+    172401,
+    172402,
+    172413,
+    172414,
+    172435,
+    172445
+  ],
+  "strata": {
+    "by_target_length": [
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 4,
+        "games": 2,
+        "aggregate_speedup": 1.988472245479424,
+        "mean_cost": 5775.637348214868,
+        "mean_baseline": 11484.694566879643
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 6,
+        "games": 2,
+        "aggregate_speedup": 0.9984455672972135,
+        "mean_cost": 11674.484379282922,
+        "mean_baseline": 11656.337178975595
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 7,
+        "games": 4,
+        "aggregate_speedup": 1.8484971510513477,
+        "mean_cost": 6353.52035916217,
+        "mean_baseline": 11744.464283058007
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 1.7971175996911963,
+        "mean_cost": 6580.511968787928,
+        "mean_baseline": 11825.95387408735
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 9,
+        "games": 4,
+        "aggregate_speedup": 1.9209066132962695,
+        "mean_cost": 6201.5924627893855,
+        "mean_baseline": 11912.679974740431
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 10,
+        "games": 2,
+        "aggregate_speedup": 1.9423470895114792,
+        "mean_cost": 6167.267977884128,
+        "mean_baseline": 11978.975007080584
+      },
+      {
+        "model": "claude_haiku_5_5",
+        "target_length": 11,
+        "games": 4,
+        "aggregate_speedup": 1.9418175865056202,
+        "mean_cost": 6194.880850359727,
+        "mean_baseline": 12029.32858153541
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 4,
+        "games": 2,
+        "aggregate_speedup": 1.995627569762892,
+        "mean_cost": 5754.928795779357,
+        "mean_baseline": 11484.694566879643
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 6,
+        "games": 2,
+        "aggregate_speedup": 15.440705375933415,
+        "mean_cost": 754.9096297856762,
+        "mean_baseline": 11656.337178975595
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 7,
+        "games": 4,
+        "aggregate_speedup": 21.3557495947185,
+        "mean_cost": 549.943902974145,
+        "mean_baseline": 11744.464283058007
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 17.678679695103742,
+        "mean_cost": 668.938748709987,
+        "mean_baseline": 11825.95387408735
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 9,
+        "games": 4,
+        "aggregate_speedup": 48.333517264406204,
+        "mean_cost": 246.4683029288492,
+        "mean_baseline": 11912.679974740431
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 10,
+        "games": 4,
+        "aggregate_speedup": 1.9360068322817579,
+        "mean_cost": 3182.17790381523,
+        "mean_baseline": 6160.718163322328
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "target_length": 11,
+        "games": 6,
+        "aggregate_speedup": 3.6936298232583904,
+        "mean_cost": 2198.843331944161,
+        "mean_baseline": 8121.713307541801
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 4,
+        "games": 2,
+        "aggregate_speedup": 83.27940547975196,
+        "mean_cost": 137.9055782245223,
+        "mean_baseline": 11484.694566879643
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 6,
+        "games": 2,
+        "aggregate_speedup": 1.9947912598338395,
+        "mean_cost": 5843.386931596308,
+        "mean_baseline": 11656.337178975595
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 7,
+        "games": 4,
+        "aggregate_speedup": 1.993170532614997,
+        "mean_cost": 5892.352957701779,
+        "mean_baseline": 11744.464283058007
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 8,
+        "games": 2,
+        "aggregate_speedup": 1.994277040798026,
+        "mean_cost": 5929.945354711149,
+        "mean_baseline": 11825.95387408735
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 9,
+        "games": 4,
+        "aggregate_speedup": 1.9952100823026306,
+        "mean_cost": 5970.639423088848,
+        "mean_baseline": 11912.679974740431
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 10,
+        "games": 4,
+        "aggregate_speedup": 1.9446244657913683,
+        "mean_cost": 3168.076033032534,
+        "mean_baseline": 6160.718163322328
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 11,
+        "games": 6,
+        "aggregate_speedup": 1.9731068961570462,
+        "mean_cost": 4116.205423720423,
+        "mean_baseline": 8121.713307541801
+      }
+    ],
+    "by_initial_candidate_count": [
+      {
+        "model": "claude_haiku_5_5",
+        "bin": ">100",
+        "games": 20,
+        "aggregate_speedup": 1.7477488296990538,
+        "mean_cost": 6769.788901879241,
+        "mean_baseline": 11831.890630569087
+      },
+      {
+        "model": "gemini_4_hydrogen",
+        "bin": ">100",
+        "games": 24,
+        "aggregate_speedup": 5.4741939223233125,
+        "mean_cost": 1811.0406157953294,
+        "mean_baseline": 9913.98753206746
+      },
+      {
+        "model": "gpt_6_luna",
+        "bin": ">100",
+        "games": 24,
+        "aggregate_speedup": 2.1900495227632155,
+        "mean_cost": 4526.832580278297,
+        "mean_baseline": 9913.98753206746
+      }
+    ]
+  },
+  "numerical_reference": {
+    "baselines_exact": 0,
+    "baselines_estimated": 68,
+    "fallbacks_exact": 0,
+    "fallbacks_estimated": 48,
+    "max_mcse": 6.866633736207895,
+    "mean_mcse_of_estimates": 2.494681181727148,
+    "methods": {
+      "baseline:length_class_monte_carlo": 68,
+      "fallback:length_class_monte_carlo": 48
+    },
+    "fallback_cache_entries_used": 48,
+    "fallback_cache_reuse": 0
+  },
+  "numerically_close_fixtures": 2,
+  "resources": {
+    "claude_haiku_5_5": {
+      "guesser1": {
+        "requests": 604.0,
+        "input_tokens": 4051018.0,
+        "output_tokens": 251356.0,
+        "reasoning_tokens": 226313.0,
+        "cached_input_tokens": 2823608.0,
+        "latency_s": 1887.8504323560628,
+        "transport_attempts": 623.0,
+        "cost_estimate": 0.28081293
+      },
+      "guesser2": {
+        "requests": 552.0,
+        "input_tokens": 3433896.0,
+        "output_tokens": 132525.0,
+        "reasoning_tokens": 121782.0,
+        "cached_input_tokens": 2495856.0,
+        "latency_s": 1198.0708831790544,
+        "transport_attempts": 563.0,
+        "cost_estimate": 0.18802598500000015
+      },
+      "defender": {
+        "requests": 277.0,
+        "input_tokens": 1626562.0,
+        "output_tokens": 185345.0,
+        "reasoning_tokens": 170416.0,
+        "cached_input_tokens": 1181056.0,
+        "latency_s": 1276.402190730063,
+        "transport_attempts": 296.0,
+        "cost_estimate": 0.151136985
+      }
+    },
+    "gpt_6_luna": {
+      "defender": {
+        "requests": 689.0,
+        "input_tokens": 5883883.0,
+        "output_tokens": 548279.0,
+        "reasoning_tokens": 439061.0,
+        "cached_input_tokens": 3877159.0,
+        "latency_s": 7654.649962110998,
+        "transport_attempts": 1457.0,
+        "cost_estimate": 0.5135834900000005
+      },
+      "guesser1": {
+        "requests": 558.0,
+        "input_tokens": 5909413.0,
+        "output_tokens": 1254505.0,
+        "reasoning_tokens": 1199750.0,
+        "cached_input_tokens": 3905474.0,
+        "latency_s": 16492.1434483903,
+        "transport_attempts": 1427.0,
+        "cost_estimate": 0.8710270400000011
+      },
+      "guesser2": {
+        "requests": 486.0,
+        "input_tokens": 3101364.0,
+        "output_tokens": 182966.0,
+        "reasoning_tokens": 158442.0,
+        "cached_input_tokens": 2120217.0,
+        "latency_s": 2948.3833358480188,
+        "transport_attempts": 967.0,
+        "cost_estimate": 0.21079987
+      }
+    },
+    "gemini_4_hydrogen": {
+      "defender": {
+        "requests": 661.0,
+        "input_tokens": 6935825.0,
+        "output_tokens": 97947.0,
+        "reasoning_tokens_unknown": 551.0,
+        "cached_input_tokens_unknown": 650.0,
+        "latency_s": 4219.77934714056,
+        "transport_attempts": 1814.0,
+        "cost_estimate": 11.416999125000004,
+        "reasoning_tokens": 23892.0,
+        "errors": 11.0
+      },
+      "guesser1": {
+        "requests": 615.0,
+        "input_tokens": 7501438.0,
+        "output_tokens": 67510.0,
+        "reasoning_tokens_unknown": 558.0,
+        "cached_input_tokens_unknown": 614.0,
+        "latency_s": 5714.958494635663,
+        "transport_attempts": 1895.0,
+        "cost_estimate": 13.062019125000006,
+        "reasoning_tokens": 28683.0,
+        "cached_input_tokens": 5196.0
+      },
+      "guesser2": {
+        "requests": 598.0,
+        "input_tokens": 6364959.0,
+        "output_tokens": 43436.0,
+        "reasoning_tokens_unknown": 579.0,
+        "cached_input_tokens_unknown": 594.0,
+        "latency_s": 3407.521070583287,
+        "transport_attempts": 1786.0,
+        "cost_estimate": 9.552294375000006,
+        "reasoning_tokens": 2191.0,
+        "errors": 4.0
+      }
+    }
+  },
+  "forecast_calibration": {},
+  "human_challenge": null,
+  "anchored_rating": null,
+  "rating_joint_unanchored": null,
+  "teams": null,
+  "model_ids": [
+    "claude_haiku_5_5",
+    "gpt_6_luna",
+    "gemini_4_hydrogen"
+  ]
+}

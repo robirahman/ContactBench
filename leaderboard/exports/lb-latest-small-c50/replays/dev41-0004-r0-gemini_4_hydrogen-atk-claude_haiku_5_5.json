@@ -1,0 +1,381 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "ancient Egyptian tomb",
+   "blocklist": [
+    "crypt",
+    "mastaba",
+    "pyramid",
+    "sarcophagus",
+    "sepulchre",
+    "tomb",
+    "vault"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "twelve-sided polygon",
+   "blocklist": [
+    "dodecagon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "word reading same backwards",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palindrome"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palindrome"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "chain or group of islands",
+   "blocklist": [
+    "archipelago",
+    "atoll"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "purple quartz birthstone",
+   "blocklist": [
+    "amethyst"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "armored burrowing mammal",
+   "blocklist": [
+    "aardvark",
+    "aardwolf",
+    "anteater",
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "musical instrument with bellows",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "accordion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "accordion"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "noble gas atomic number 18",
+   "blocklist": [
+    "argon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "edible flower bud vegetable",
+   "blocklist": [
+    "artichoke"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "fleet of warships",
+   "blocklist": [
+    "argosy",
+    "armada",
+    "armament",
+    "arsenal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "eight-legged creature like a spider",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "arbor",
+    "arch",
+    "area",
+    "arena",
+    "arm",
+    "army",
+    "arrow",
+    "art",
+    "arthropod"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "sport of shooting with a bow",
+   "blocklist": [
+    "arbors",
+    "arbour",
+    "arbours",
+    "arbutus"
+   ],
+   "blocked_ranges": [
+    [
+     "arch",
+     "arsenal"
+    ]
+   ],
+   "blocked_word_count": 577,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "object made by ancient humans",
+   "blocklist": [
+    "artefact",
+    "artefacts",
+    "artifact",
+    "artifacts",
+    "artifice",
+    "artwork"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "blood vessel carrying from heart",
+   "blocklist": [
+    "aorta",
+    "aortas",
+    "arteries",
+    "artery",
+    "capillaries",
+    "capillary",
+    "vein",
+    "veins",
+    "vessel",
+    "vessels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "painful joint inflammation",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arthritis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arthritis"
+    }
+   ],
+   "prefix_after": "arb",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "botanical garden for trees",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arboretum"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arboretum"
+    }
+   ],
+   "prefix_after": "arbo",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "tree surgeon",
+   "blocklist": [
+    "arboreal",
+    "arboreally",
+    "arbored",
+    "arboreous",
+    "arborescence",
+    "arborescences",
+    "arborescent",
+    "arboreta",
+    "arboretums",
+    "arboricultural",
+    "arboriculture",
+    "arboricultures",
+    "arborist",
+    "arborists",
+    "arborize",
+    "arborized",
+    "arborizes",
+    "arborous",
+    "arborvitae",
+    "arborvitaes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "arbo",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "virus transmitted by mosquitoes or ticks",
+   "blocklist": [
+    "arborization",
+    "arborizations",
+    "arborizing",
+    "arboured",
+    "arbovirus",
+    "arboviruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "arbo",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "arbores",
+   "prefix_after": "arbo",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 19.0,
+  "cost_numerator": 19,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

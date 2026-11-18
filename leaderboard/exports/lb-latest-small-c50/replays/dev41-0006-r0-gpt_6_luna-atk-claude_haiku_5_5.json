@@ -1,0 +1,335 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "red or green orchard snack",
+   "blocklist": [
+    "apple",
+    "apricot",
+    "berry",
+    "cherry",
+    "fruit",
+    "grape",
+    "lemon",
+    "melon",
+    "orange",
+    "peach",
+    "pear",
+    "plum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A young swan",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cygnet"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cygnet"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "What a hen lays",
+   "blocklist": [
+    "egg",
+    "eggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The bird on the US Great Seal",
+   "blocklist": [
+    "eagle",
+    "earth",
+    "easy",
+    "eat",
+    "echo",
+    "edge",
+    "effect",
+    "effects",
+    "effort",
+    "eight",
+    "either",
+    "elephant",
+    "empty",
+    "end",
+    "enter",
+    "even",
+    "event",
+    "every",
+    "exact",
+    "example",
+    "extra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Flightless bird of Australia",
+   "blocklist": [
+    "emeu",
+    "emeus",
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Every one considered individually",
+   "blocklist": [
+    "eager",
+    "early",
+    "earnest",
+    "easily",
+    "eleven",
+    "else",
+    "enough",
+    "equal",
+    "equally",
+    "escape",
+    "even",
+    "ever"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "each"
+    },
+    {
+     "seat": "guesser2",
+     "word": "each"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A likeness burned in protest",
+   "blocklist": [
+    "effigy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Erase or wipe away completely",
+   "blocklist": [
+    "efface",
+    "effaced",
+    "effaces",
+    "effacing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Decadent, weak, and overrefined",
+   "blocklist": [
+    "effeminate",
+    "effete"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Power to produce a desired result",
+   "blocklist": [
+    "effective",
+    "effectively",
+    "effectiveness",
+    "effectual",
+    "effectuate",
+    "effectuates",
+    "effectuating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "efficacy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "efficacy"
+    }
+   ],
+   "prefix_after": "eff",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A foul-smelling vapor or exhalation",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effluvium"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effluvium"
+    }
+   ],
+   "prefix_after": "effe",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A Turkish title of respect for a gentleman",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "effecter",
+     "effectuate"
+    ],
+    [
+     "effectuates",
+     "effete"
+    ]
+   ],
+   "blocked_word_count": 43,
+   "opened_guesses": [],
+   "prefix_after": "effe",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "The condition of being decadent and overrefined",
+   "blocklist": [
+    "effected",
+    "effecting",
+    "effector",
+    "effectors",
+    "effeminacy",
+    "effendi",
+    "efferent",
+    "effervesce",
+    "effervescent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effeteness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effeteness"
+    }
+   ],
+   "prefix_after": "effec",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "effectuated",
+   "prefix_after": "effec",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 15.0,
+  "cost_numerator": 15,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}
