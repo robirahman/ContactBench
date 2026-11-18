@@ -86,12 +86,17 @@ def build_site(export_dirs: list[Path], out_dir: Path, highlights: Path | None =
             "exported_at": m.get("exported_at"),
             "fixture_data": bool(m.get("fixture_data", True)),
             "release_label": m.get("release_label"),
+            "headline": bool(m.get("headline", False)),
+            "combined": str(m["run_id"]).startswith("combined-"),
             "condition": {k: cond.get(k) for k in (
                 "clue_max_characters", "turn_limit", "lexicon_name", "lexicon_sha256", "resolver",
                 "packing_version", "rng_version", "numerical_rollouts", "forecast_mode", "timing",
                 "reveal_policy", "target_hit_scope", "count_cap", "dictionary_access",
-                "blocklist_encoding", "initial_prefix_length", "human_challenge")},
+                "blocklist_encoding", "initial_prefix_length", "human_challenge", "homogeneous_attackers",
+                "partner_disclosure")},
         })
+    # Headline exports (the main format) first; otherwise keep the given order.
+    entries.sort(key=lambda e: not e["headline"])
     (out_dir / "data" / "index.json").write_text(json.dumps({"conditions": entries}, indent=2) + "\n")
     shutil.copy(STATIC_DIR / "index.html", out_dir / "index.html")
     for name in ("app.js", "style.css"):

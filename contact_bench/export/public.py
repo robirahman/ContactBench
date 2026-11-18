@@ -124,6 +124,7 @@ def scan_for_secrets(root: Path, extra_secrets: list[str] | None = None) -> list
 
 def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[dict], *,
                   include_audit: bool = False, max_replays: int | None = None, release_label: str | None = None,
+                  headline: bool = False,
                   extra_secrets: list[str] | None = None) -> Path:
     run_dir, out_dir = Path(run_dir), Path(out_dir)
     manifest = json.loads((run_dir / "run.json").read_text())
@@ -195,6 +196,8 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
         "prompt_hash": manifest.get("prompt_hash"),
         "fixture_data": manifest.get("fixture_data", True),
         "release_label": release_label,
+        # The site lists headline exports first (the main leaderboard format).
+        "headline": bool(headline),
         "condition": condition,
         "condition_key": ckey,
         "lexicon": _pick(manifest["secret_lexicon"], ["name", "word_count", "sha256", "source", "license", "source_revision"]),

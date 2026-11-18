@@ -14,7 +14,7 @@ MALICIOUS = "<script>alert(1)</script><img src=x onerror=alert(2)>"
 
 
 def make_export(d: Path, *, run_id: str = "run-a", condition_key: str = "cond1", clue: str = MALICIOUS,
-                fixture: bool = True) -> Path:
+                fixture: bool = True, headline: bool = False, clue_chars: int = 100) -> Path:
     (d / "replays").mkdir(parents=True)
     manifest = {
         "schema_version": "1.0.0",
@@ -24,7 +24,8 @@ def make_export(d: Path, *, run_id: str = "run-a", condition_key: str = "cond1",
         "exported_at": "2026-11-17T00:00:00Z",
         "fixture_data": fixture,
         "condition_key": condition_key,
-        "condition": {"clue_max_characters": 100, "turn_limit": 20, "lexicon_name": "dev_fixture",
+        "headline": headline,
+        "condition": {"clue_max_characters": clue_chars, "turn_limit": 20, "lexicon_name": "dev_fixture",
                       "lexicon_sha256": "ab" * 32, "resolver": "fresh_shuffle_character_packing"},
         "lexicon": {"name": "dev_fixture", "word_count": 10, "license": "CC0-1.0"},
         "models": [{"id": "a", "provider": "scripted"}, {"id": "b", "provider": "scripted"}],
@@ -146,3 +147,16 @@ def test_highlights_page_is_built_and_escapes_data(tmp_path):
     import pytest
     with pytest.raises(SiteBuildError):
         build_site([exp], tmp_path / "site2", highlights=bad)
+
+
+def test_headline_export_listed_first_and_formats_not_pooled(tmp_path):
+    old = make_export(tmp_path / "c100", run_id="combined-overall", condition_key="k100", fixture=False)
+    new = make_export(tmp_path / "c50", run_id="combined-overall-c50", condition_key="k50", fixture=False,
+                      headline=True, clue_chars=50)
+    out = build_site([old, new], tmp_path / "site")
+    entries = json.loads((out / "data" / "index.json").read_text())["conditions"]
+    assert [e["run_id"] for e in entries] == ["combined-overall-c50", "combined-overall"]
+    assert entries[0]["headline"] and not entries[1]["headline"] and entries[0]["combined"]
+    assert {e["condition"]["clue_max_characters"] for e in entries} == {50, 100}
+    app = (out / "assets" / "app.js").read_text()
+    assert "renderFormatComparison" in app and 'id="format-comparison"' in (out / "index.html").read_text()
