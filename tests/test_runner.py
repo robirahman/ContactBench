@@ -79,6 +79,11 @@ def test_offline_round_robin_replay_and_analysis(tmp_path):
     adv = [res["model_stats"][m]["mean_paired_cost_advantage"]["value"] for m in res["models"]]
     assert abs(sum(adv)) < 1e-9  # balanced schedule sums to zero
     assert (tmp_path / "run1" / "analysis" / "report.md").exists()
+    rd = res["role_diagnostics"]
+    m = next(iter(rd))
+    assert "intended_word_blocked_per_clue_turn" in rd[m]["defense"]["rates"]
+    assert "matches_blocked_per_registered_match" in rd[m]["offense"]["rates"]
+    assert "Gameplay metrics" in (tmp_path / "run1" / "analysis" / "report.md").read_text()
     # export contains no credentials and no credential env names
     out = export_public(tmp_path / "run1", tmp_path / "exp", res, recs)
     assert not scan_for_secrets(out)

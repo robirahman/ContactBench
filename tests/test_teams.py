@@ -108,6 +108,9 @@ def test_offline_team_run_routes_seats_and_analyzes(tmp_path):
     assert t and t["partner_disclosure"] == "blind"
     assert set(t["role_rating"]["elo"]) == {"x", "y", "z"}
     assert "x" in t["cross_play_matrix"] and "self_vs_cross_play" in t
+    # seat-level gameplay metrics are keyed by the model in the seat, never a team id
+    seat_keys = {m for m, v in res["role_diagnostics"].items() if "seat" in v}
+    assert seat_keys and seat_keys <= {"x", "y", "z"}
     # team legs count in the efficiency statistics (L1/L2 labels)
     assert res["model_stats"]["x+y"]["offense_games"] >= 2  # plus any rematch legs
     # no fixture faces different defenders: defender components are not identified

@@ -505,7 +505,12 @@
         prevented: o.contacts_prevented, cpc: orates.contact_per_clue_turn, opp: o.choice_opportunities, rev: o.choice_reveal,
         can: o.choice_cancel, reused: o.preserved_words_later_reused, g1inv: orates.guesser1_invalid_per_guesser1_decision,
         g2inv: orates.guesser2_invalid_per_guesser2_decision, bsize: d.mean_blocklist_size_per_block_decision,
-        empty: drates.empty_blocklist_per_block_decision, binv: drates.block_invalid_per_block_decision });
+        empty: drates.empty_blocklist_per_block_decision, binv: drates.block_invalid_per_block_decision,
+        oblk: orates.matches_blocked_per_registered_match, clen: ((rd[m] || {}).seat || {}).median_clue_characters,
+        cbud: ((rd[m] || {}).seat || {}).clue_budget_used, sg1inv: ((rd[m] || {}).seat || {}).guesser1_invalid_rate,
+        sg2inv: ((rd[m] || {}).seat || {}).guesser2_invalid_rate, hasSeat: !!(rd[m] || {}).seat,
+        recall: drates.intended_word_blocked_per_clue_turn, dblk: drates.matches_blocked_per_registered_match,
+        wpp: d.blocked_words_per_contact_prevented, reasons: (rd[m] || {}).invalid_reasons || {} });
     });
     function cnt(k, label) { return { label: label, get: function (r) { return r[k]; }, fmt: function (r) { return r[k] == null ? "0" : String(r[k]); } }; }
     function rate(k, label) { return { label: label, get: function (r) { return r[k]; }, fmt: function (r) { return pct(r[k]); } }; }
@@ -518,6 +523,34 @@
       { label: "Mean blocklist size (as defender)", get: function (r) { return r.bsize; }, fmt: function (r) { return num(r.bsize, 2); } },
       rate("empty", "Empty blocklists per block decision"), rate("binv", "Invalid blocklists per block decision")
     ], drows);
+
+    // Objective gameplay metrics from the referee log (no extra games).
+    renderTable($("gameplay-table"), [
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Median clue length (chars)", title: "Median characters per clue as Guesser 1", get: function (r) { return r.clen; }, fmt: function (r) { return num(r.clen, 0); } },
+      rate("cbud", "Clue budget used"),
+      rate("cpc", "Contacts per clue turn (attack)"),
+      rate("oblk", "Own matches blocked by defender"),
+      rate("recall", "Block recall: intended word blocked (defense)"),
+      rate("dblk", "Opponents' matches blocked (defense)"),
+      { label: "Words blocked per contact prevented", title: "Blocklist precision: lower is more precise", get: function (r) { return r.wpp; }, fmt: function (r) { return num(r.wpp, 1); } },
+      rate("sg1inv", "G1 invalid rate"), rate("sg2inv", "G2 invalid rate"), rate("binv", "Defender invalid rate")
+    ], drows, { sortCol: 5 });
+    // Exports made before these metrics existed lack them: hide rather than show dashes.
+    var hasGameplay = drows.some(function (r) { return r.hasSeat; });
+    $("gameplay-section").hidden = !hasGameplay;
+    var rtab = clear($("invalid-reasons-table"));
+    var head = el("tr", null, el("th", { text: "Model" }));
+    head.appendChild(el("th", { text: "Invalid action (seat: reason)" }));
+    head.appendChild(el("th", { text: "Count" }));
+    rtab.appendChild(el("thead", null, head));
+    var rbody = el("tbody");
+    drows.forEach(function (row) {
+      Object.keys(row.reasons).forEach(function (k) {
+        rbody.appendChild(el("tr", null, el("td", { text: row.m }), el("td", { text: k }), el("td", { text: String(row.reasons[k]) })));
+      });
+    });
+    rtab.appendChild(rbody);
 
     var nr = current.lb.numerical_reference || {}, dl = clear($("numerical"));
     Object.keys(nr).forEach(function (k) {

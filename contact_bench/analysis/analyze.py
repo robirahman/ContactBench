@@ -11,7 +11,8 @@ import csv
 import json
 import math
 import random
-from collections import defaultdict
+import re
+from collections import Counter, defaultdict
 from fractions import Fraction
 from pathlib import Path
 from statistics import mean
@@ -215,11 +216,18 @@ def _model_stats(models: list[str], rows: list[GameRow], fx: list[dict]) -> dict
     return stats
 
 
-def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
+def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[str, dict]:
     """Per-attacker and per-defender gameplay diagnostics (referee audit)."""
     att: dict[str, dict[str, Any]] = defaultdict(lambda: defaultdict(float))
     dfn: dict[str, dict[str, Any]] = defaultdict(lambda: defaultdict(float))
     block_sizes: dict[str, list[int]] = defaultdict(list)
+    clue_chars: dict[str, list[int]] = defaultdict(list)
+    reasons: dict[str, Counter] = defaultdict(Counter)  # model -> "seat: reason" -> count
+    seat: dict[str, Counter] = defaultdict(Counter)  # per seat model (not team id)
+
+    def why(x: dict) -> str:
+        return re.sub(r"\d+", "N", str(x.get("reason") or "invalid"))[:80]
+
     for r in rows:
         a = att[r.attacker]
         dd = dfn[r.defender]
@@ -234,30 +242,45 @@ def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
                 a[f"hit_source_{src}"] += 1
         canceled: list[tuple[int, str]] = []
         audits = r.rec.get("referee_audit", [])
+        # Seat models (mixed teams / human challenges have different G1 and G2).
+        seat_m = dict(zip(("guesser1", "guesser2", "defender"), _seats(r.rec["game"])))
         for t in audits:
             g1 = t.get("guesser1") or {}
+            seat[seat_m["guesser1"]]["g1_decisions"] += 1
+            if not g1.get("valid", True):
+                seat[seat_m["guesser1"]]["g1_invalid"] += 1
             a["turns"] += 1
             a["guesser1_decisions"] += 1
             if not g1.get("valid", True):
                 a["guesser1_invalid"] += 1
+                reasons[seat_m["guesser1"]]["guesser1: " + why(g1)] += 1
                 continue
             act = (g1.get("canonical") or {}).get("action")
             if act == "direct":
                 a["direct_turns"] += 1
                 continue
             a["clue_turns"] += 1
+            if t.get("defender") is not None:
+                dd["clue_turns_faced"] += 1  # only turns where the defender was asked to block
+            if t.get("clue") is not None:
+                clue_chars[seat_m["guesser1"]].append(len(t["clue"]))
             g2 = t.get("guesser2")
             de = t.get("defender")
             if g2 is not None:
+                seat[seat_m["guesser2"]]["g2_decisions"] += 1
+                if not g2["valid"]:
+                    seat[seat_m["guesser2"]]["g2_invalid"] += 1
                 a["guesser2_decisions"] += 1
                 if not g2["valid"]:
                     a["guesser2_invalid"] += 1
+                    reasons[seat_m["guesser2"]]["guesser2: " + why(g2)] += 1
                 if g2["canonical"]["action"] == "pass":
                     a["guesser2_pass"] += 1
             if de is not None:
                 dd["block_decisions"] += 1
                 if not de["valid"]:
                     dd["block_invalid"] += 1
+                    reasons[seat_m["defender"]]["defender: " + why(de)] += 1
                 bs = t.get("block_size", len(de["canonical"]["words"]))
                 block_sizes[r.defender].append(bs)
                 dd["empty_blocklists"] += bs == 0
@@ -265,11 +288,18 @@ def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
                 dd["blocks_overlapping_clue"] += t.get("block_overlap_with_clue", 0)
             if t.get("registered_match"):
                 a["registered_matches"] += 1
+                dd["registered_matches_faced"] += 1
+                if t.get("covered_match"):
+                    # The matched word was on the blocklist (whether or not the
+                    # engine's contact rule would otherwise have applied).
+                    a["registered_matches_blocked"] += 1
+                    dd["registered_matches_blocked"] += 1
             if t.get("intended_covered"):
                 a["intended_word_covered"] += 1
                 dd["intended_word_covered"] += 1
             if t.get("contact"):
                 a["contacts_awarded"] += 1
+                dd["contacts_conceded"] += 1
             if t.get("blocked_contact"):
                 a["contacts_prevented"] += 1
                 dd["contacts_prevented"] += 1
@@ -287,11 +317,14 @@ def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
                         a["final_turn_cancellations"] += 1
                 if t.get("choice_valid") is False:
                     a["choice_invalid"] += 1
+                    actor = t.get("choice_actor")
+                    reasons[seat_m.get(actor, r.attacker)][f"{actor}: invalid reveal/cancel choice"] += 1
         for turn, w in canceled:
             later = [t for t in audits if t["turn"] > turn]
             if any(t.get("w1") == w or t.get("w2") == w for t in later):
                 a["preserved_words_later_reused"] += 1
     out = {}
+    C = clue_max
     for m, a in att.items():
         a = dict(a)
         ct = a.get("clue_turns", 0)
@@ -305,6 +338,8 @@ def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
                 "contact_per_registered_match": a.get("contacts_awarded", 0) / a["registered_matches"] if a.get("registered_matches") else None,
                 "guesser2_invalid_per_guesser2_decision": a.get("guesser2_invalid", 0) / a["guesser2_decisions"] if a.get("guesser2_decisions") else None,
                 "reveal_per_choice_opportunity": a.get("choice_reveal", 0) / a["choice_opportunities"] if a.get("choice_opportunities") else None,
+                # Of turns where both guessers named the same word, the share the defender blocked.
+                "matches_blocked_per_registered_match": a.get("registered_matches_blocked", 0) / a["registered_matches"] if a.get("registered_matches") else None,
             },
         }
     for m, dd in dfn.items():
@@ -316,7 +351,27 @@ def _role_diagnostics(rows: list[GameRow]) -> dict[str, dict]:
             "rates": {
                 "empty_blocklist_per_block_decision": dd.get("empty_blocklists", 0) / dd["block_decisions"] if dd.get("block_decisions") else None,
                 "block_invalid_per_block_decision": dd.get("block_invalid", 0) / dd["block_decisions"] if dd.get("block_decisions") else None,
+                # Block recall: the clue-giver's intended word was on the blocklist.
+                "intended_word_blocked_per_clue_turn": dd.get("intended_word_covered", 0) / dd["clue_turns_faced"] if dd.get("clue_turns_faced") else None,
+                # Of the opponents' registered matches, the share this defender blocked.
+                "matches_blocked_per_registered_match": dd.get("registered_matches_blocked", 0) / dd["registered_matches_faced"] if dd.get("registered_matches_faced") else None,
             },
+            # Blocklist precision: words blocked per contact actually prevented.
+            "blocked_words_per_contact_prevented": (sum(bs) / dd["contacts_prevented"]) if bs and dd.get("contacts_prevented") else None,
+        }
+    for m, rs in reasons.items():
+        out.setdefault(m, {})["invalid_reasons"] = dict(rs.most_common())
+    # Seat-level metrics keyed by the model that occupied the seat (differs from
+    # the team-level offense rows for mixed teams and human challenges).
+    for m in set(seat) | set(clue_chars):
+        sc, cc = seat.get(m, Counter()), clue_chars.get(m, [])
+        out.setdefault(m, {})["seat"] = {
+            **dict(sc),
+            "mean_clue_characters": mean(cc) if cc else None,
+            "median_clue_characters": _median([float(x) for x in cc]),
+            "clue_budget_used": (mean(cc) / C) if cc and C else None,
+            "guesser1_invalid_rate": sc["g1_invalid"] / sc["g1_decisions"] if sc.get("g1_decisions") else None,
+            "guesser2_invalid_rate": sc["g2_invalid"] / sc["g2_decisions"] if sc.get("g2_decisions") else None,
         }
     return out
 
@@ -737,7 +792,7 @@ def analyze(run_dir: Path, records: list[dict], *, resamples: int, seed: int,
         "rating_penalty_sensitivity": sensitivity,
         "bootstrap": boot,
         "model_stats": stats,
-        "role_diagnostics": _role_diagnostics(rows),
+        "role_diagnostics": _role_diagnostics(rows, manifest["config"]["protocol"].get("clue_max_characters")),
         "pairwise_match_points": pair_points,
         "pairwise_mean_cost": pair_cost,
         "fixtures": fx,
@@ -951,8 +1006,38 @@ def render_report(res: dict) -> str:
     L.append(render_calibration(res.get("forecast_calibration") or {}))
     if res["missing_model_pairs"]:
         L.append(f"Missing pairs: {res['missing_model_pairs']}\n")
+    L.append(render_gameplay(res.get("role_diagnostics") or {}))
     if res.get("teams"):
         L.append(render_teams(res["teams"]))
+    return "\n".join(L) + "\n"
+
+
+def render_gameplay(rd: dict) -> str:
+    """Objective per-model gameplay metrics from the referee log."""
+    if not rd:
+        return ""
+    L = ["## Gameplay metrics (referee log)\n",
+         "| Model | Median clue chars | Clue budget used | Contacts / clue turn | Own matches blocked | "
+         "Block recall (defense) | Opp. matches blocked | Words blocked / contact prevented | G1 invalid | "
+         "G2 invalid | Defender invalid |",
+         "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+
+    def pc(x):
+        return "—" if x is None else f"{100 * x:.1f}%"
+
+    for m in sorted(rd):
+        o, d, st = rd[m].get("offense") or {}, rd[m].get("defense") or {}, rd[m].get("seat") or {}
+        orr, drr = o.get("rates") or {}, d.get("rates") or {}
+        L.append(f"| {m} | {_fmt(st.get('median_clue_characters'))} | {pc(st.get('clue_budget_used'))} | "
+                 f"{pc(orr.get('contact_per_clue_turn'))} | {pc(orr.get('matches_blocked_per_registered_match'))} | "
+                 f"{pc(drr.get('intended_word_blocked_per_clue_turn'))} | {pc(drr.get('matches_blocked_per_registered_match'))} | "
+                 f"{_fmt(d.get('blocked_words_per_contact_prevented'))} | "
+                 f"{pc(st.get('guesser1_invalid_rate'))} | "
+                 f"{pc(st.get('guesser2_invalid_rate'))} | "
+                 f"{pc(drr.get('block_invalid_per_block_decision'))} |")
+    reasons = [(m, k, v) for m in sorted(rd) for k, v in (rd[m].get("invalid_reasons") or {}).items()]
+    if reasons:
+        L.append("\nInvalid actions by reason: " + "; ".join(f"{m} {k} ×{v}" for m, k, v in reasons) + ".")
     return "\n".join(L) + "\n"
 
 
