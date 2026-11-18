@@ -1,0 +1,585 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-gpt_6_luna",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_luna",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Opposite of cold. cat dog sun moon sky red blue",
+   "blocklist": [
+    "hot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen water. love time life man day sea air fire",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Bovine says moo. the and for you all are one two",
+   "blocklist": [
+    "cow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Sound a kitten makes. big new old good bad yes no",
+   "blocklist": [
+    "meow",
+    "mew",
+    "mewl",
+    "miaow",
+    "purr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "5+5=? war peace world work home house book food",
+   "blocklist": [
+    "addition",
+    "decade",
+    "five",
+    "math",
+    "number",
+    "sum",
+    "ten",
+    "total"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Color of snow. god way can her she not but out",
+   "blocklist": [
+    "alabaster",
+    "blank",
+    "bleach",
+    "chalk",
+    "clean",
+    "ivory",
+    "milk",
+    "pale",
+    "pure",
+    "purity",
+    "snowy",
+    "white",
+    "whiteness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "King of jungle. people year night hand eye head",
+   "blocklist": [
+    "lion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Eight legs, spins webs. car bus train road tree",
+   "blocklist": [
+    "spider"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Largest land animal. put get see use run far near",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "giraffe",
+    "hippopotamus",
+    "mammoth",
+    "rhinoceros",
+    "tusk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Reverse of up. boy girl long small high low black",
+   "blocklist": [
+    "below",
+    "beneath",
+    "bottom",
+    "descend",
+    "fall",
+    "lower",
+    "under"
+   ],
+   "blocked_ranges": [
+    [
+     "down",
+     "downward"
+    ]
+   ],
+   "blocked_word_count": 113,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Opposite of start. green pink gold rain wind star",
+   "blocklist": [
+    "cease",
+    "close",
+    "closure",
+    "completion",
+    "conclude",
+    "conclusion",
+    "end",
+    "ending",
+    "finale",
+    "finish",
+    "last",
+    "stop",
+    "terminate",
+    "termination"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Fruit from an orchard. have make take come live",
+   "blocklist": [
+    "apple",
+    "apricot",
+    "cherry",
+    "nectarine",
+    "peach",
+    "pear",
+    "plum",
+    "quince"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "2+2=? friend money family mother father child",
+   "blocklist": [
+    "double",
+    "even",
+    "four",
+    "fourth",
+    "pair",
+    "quad",
+    "quartet",
+    "twice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit. music heart light room door",
+   "blocklist": [
+    "banana",
+    "curved",
+    "door",
+    "heart",
+    "light",
+    "music",
+    "room",
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Planet we inhabit. why who what when where how now",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Striped feline. was his had has this that with",
+   "blocklist": [
+    "cheetah",
+    "cougar",
+    "jaguar",
+    "leopard",
+    "lynx",
+    "ocelot",
+    "panther",
+    "puma",
+    "tiger",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Canine vocalization. said each their will other",
+   "blocklist": [
+    "arf",
+    "bark",
+    "growl",
+    "howl",
+    "whine",
+    "woof",
+    "yap",
+    "yelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Flying mammal. right left play three first thing",
+   "blocklist": [
+    "bat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Flightless bird. king queen prince princess horse",
+   "blocklist": [
+    "cassowary",
+    "dodo",
+    "emu",
+    "kiwi",
+    "ostrich",
+    "penguin",
+    "rhea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Largest ocean. great little next never more best",
+   "blocklist": [
+    "antarctic",
+    "arctic",
+    "marine",
+    "maritime",
+    "ocean",
+    "oceanic",
+    "oceans",
+    "pacific",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Opposite of false. happy sad young woman power",
+   "blocklist": [
+    "accuracy",
+    "accurate",
+    "actual",
+    "authentic",
+    "correct",
+    "factual",
+    "genuine",
+    "honest",
+    "real",
+    "true",
+    "truth",
+    "valid",
+    "verity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Chemical element. school student study learn read",
+   "blocklist": [
+    "carbon",
+    "helium",
+    "hydrogen",
+    "iron",
+    "nitrogen",
+    "oxygen",
+    "silver",
+    "uranium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Body part at end of leg. through over under again",
+   "blocklist": [
+    "ankle",
+    "feet",
+    "foot",
+    "heel",
+    "instep",
+    "sole",
+    "toe",
+    "toes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Deliver a sermon. just very much many some such",
+   "blocklist": [
+    "evangelize",
+    "exhort",
+    "homily",
+    "minister",
+    "preach",
+    "proselytize",
+    "sermon",
+    "sermonize"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Not wet. person place find give tell ask feel call",
+   "blocklist": [
+    "arid",
+    "dehydrated",
+    "drought",
+    "dry",
+    "parched"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Not asleep. word game space door open close side",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "awake"
+    },
+    {
+     "seat": "guesser2",
+     "word": "awake"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Electronic calculator. city country children case",
+   "blocklist": [
+    "calculating",
+    "calculation",
+    "computation",
+    "computer",
+    "computers",
+    "computing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Seat of government. coffee cake candy chair cloud",
+   "blocklist": [
+    "congress",
+    "council",
+    "county"
+   ],
+   "blocked_ranges": [
+    [
+     "capital",
+     "capitols"
+    ]
+   ],
+   "blocked_word_count": 27,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1151.0325533573875,
+  "cost_numerator": 301146949,
+  "cost_denominator": 261632,
+  "cost_exact": false,
+  "cost_mcse": 0.8531622527704487,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 293297989,
+   "denominator": 261632,
+   "value": 1121.0325533573875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:33,4:224,5:656,6:1287,7:2044,8:2641,9:2347,10:1988,11:1592,12:1203,13:813,14:526,15:319,16:203,17:147,18:59,19:48,20:17",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.8531622527704487,
+   "rollouts": 256,
+   "rank_total": 586595978,
+   "rank_denominator": 523264,
+   "cache_key": "4fb4303a88864ce929584bb2203fadf5"
+  }
+ }
+}

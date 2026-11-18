@@ -344,15 +344,21 @@
     "claude_haiku_5_5": {
       "offense": {
         "games": 20.0,
+        "letters_earned": 8.0,
+        "turns_used_total": 600.0,
         "turns": 600.0,
         "guesser1_decisions": 600.0,
         "clue_turns": 551.0,
         "guesser2_decisions": 551.0,
+        "clue_turns_defended": 551.0,
         "registered_matches": 507.0,
+        "registered_matches_blocked": 499.0,
         "intended_word_covered": 511.0,
         "contacts_prevented": 499.0,
         "guesser2_pass": 18.0,
         "direct_turns": 9.0,
+        "endgame_reached": 1.0,
+        "endgame_converted": 0.0,
         "guesser1_invalid": 40.0,
         "choice_opportunities": 5.0,
         "choice_cancel": 4.0,
@@ -363,39 +369,95 @@
           "guesser1_invalid_per_guesser1_decision": 0.06666666666666667,
           "direct_share_per_valid_turn": 0.01607142857142857,
           "registered_match_per_clue_turn": 0.9201451905626135,
+          "clue_leak_per_defended_clue_turn": 0.9274047186932849,
+          "endgame_conversion": 0.0,
           "contact_per_clue_turn": 0.014519056261343012,
           "contact_per_registered_match": 0.015779092702169626,
           "guesser2_invalid_per_guesser2_decision": 0.0,
-          "reveal_per_choice_opportunity": 0.2
-        }
+          "reveal_per_choice_opportunity": 0.2,
+          "matches_blocked_per_registered_match": 0.9842209072978304
+        },
+        "turns_per_letter_earned": 75.0
       },
       "defense": {
         "games": 20.0,
+        "clue_turns_faced": 277.0,
         "block_decisions": 277.0,
         "empty_blocklists": 38.0,
         "fresh_secret_candidates_blocked": 602596.0,
         "blocks_overlapping_clue": 94.0,
+        "registered_matches_faced": 268.0,
+        "contacts_conceded": 56.0,
+        "registered_matches_blocked": 207.0,
         "intended_word_covered": 213.0,
         "contacts_prevented": 206.0,
         "block_invalid": 20.0,
         "mean_blocklist_size_per_block_decision": 2815.216606498195,
         "rates": {
           "empty_blocklist_per_block_decision": 0.1371841155234657,
-          "block_invalid_per_block_decision": 0.07220216606498195
+          "block_invalid_per_block_decision": 0.07220216606498195,
+          "intended_word_blocked_per_clue_turn": 0.7689530685920578,
+          "matches_blocked_per_registered_match": 0.7723880597014925
+        },
+        "blocked_words_per_contact_prevented": 3785.509708737864
+      },
+      "invalid_reasons": {
+        "guesser1: clue exceeds N characters": 28,
+        "defender: blocklist entry is not a dictionary word": 16,
+        "guesser1: intended word is not a current contact candidate": 11,
+        "defender: range endpoints must be dictionary words": 4,
+        "guesser1: direct word is not a current secret candidate": 1
+      },
+      "seat": {
+        "g1_decisions": 600,
+        "intended_attempts": 590,
+        "g2_decisions": 551,
+        "self_clue_turns": 551,
+        "self_matches": 507,
+        "g1_invalid": 40,
+        "g1_overlong": 28,
+        "d_decisions": 277,
+        "choice_decisions": 5,
+        "d_invalid": 20,
+        "choice_secret_word": 1,
+        "intended_illegal": 11,
+        "mean_clue_characters": 37.50635208711434,
+        "median_clue_characters": 38.0,
+        "clue_budget_used": 0.7501270417422867,
+        "guesser1_invalid_rate": 0.06666666666666667,
+        "guesser2_invalid_rate": 0.0,
+        "self_contained": {
+          "action_validity": 0.9581297976273552,
+          "clue_length_compliance": 0.9533333333333334,
+          "self_coordination": 0.9201451905626135,
+          "self_coordination_clue_turns": 551,
+          "reveal_optimality": 0.0,
+          "reveal_optimality_n": 1,
+          "forced_win_conversion": null,
+          "forced_win_n": 0,
+          "intended_word_legality": 0.9813559322033898,
+          "lookup_discipline": 1.0,
+          "lookup_discipline_n": 1
         }
       }
     },
     "gemini_4_hydrogen": {
       "offense": {
         "games": 24.0,
+        "letters_earned": 79.0,
+        "turns_used_total": 615.0,
+        "endgame_reached": 8.0,
+        "endgame_converted": 8.0,
         "wins": 8.0,
         "hit_source_direct": 7.0,
         "turns": 615.0,
         "guesser1_decisions": 615.0,
         "clue_turns": 593.0,
         "guesser2_decisions": 593.0,
+        "clue_turns_defended": 593.0,
         "registered_matches": 585.0,
         "contacts_awarded": 34.0,
+        "registered_matches_blocked": 550.0,
         "intended_word_covered": 558.0,
         "contacts_prevented": 550.0,
         "guesser1_invalid": 11.0,
@@ -407,37 +469,90 @@
           "guesser1_invalid_per_guesser1_decision": 0.01788617886178862,
           "direct_share_per_valid_turn": 0.018211920529801324,
           "registered_match_per_clue_turn": 0.9865092748735245,
+          "clue_leak_per_defended_clue_turn": 0.9409780775716695,
+          "endgame_conversion": 1.0,
           "contact_per_clue_turn": 0.05733558178752108,
           "contact_per_registered_match": 0.05811965811965812,
           "guesser2_invalid_per_guesser2_decision": 0.0,
-          "reveal_per_choice_opportunity": 1.0
-        }
+          "reveal_per_choice_opportunity": 1.0,
+          "matches_blocked_per_registered_match": 0.9401709401709402
+        },
+        "turns_per_letter_earned": 7.784810126582278
       },
       "defense": {
         "games": 24.0,
+        "clue_turns_faced": 650.0,
         "block_decisions": 650.0,
         "empty_blocklists": 26.0,
         "fresh_secret_candidates_blocked": 2650.0,
         "blocks_overlapping_clue": 2.0,
+        "registered_matches_faced": 570.0,
+        "registered_matches_blocked": 567.0,
         "intended_word_covered": 599.0,
         "contacts_prevented": 567.0,
+        "contacts_conceded": 3.0,
         "mean_blocklist_size_per_block_decision": 4.081538461538462,
         "rates": {
           "empty_blocklist_per_block_decision": 0.04,
-          "block_invalid_per_block_decision": 0.0
+          "block_invalid_per_block_decision": 0.0,
+          "intended_word_blocked_per_clue_turn": 0.9215384615384615,
+          "matches_blocked_per_registered_match": 0.9947368421052631
+        },
+        "blocked_words_per_contact_prevented": 4.679012345679013
+      },
+      "invalid_reasons": {
+        "guesser1: intended word is not a current contact candidate": 11
+      },
+      "seat": {
+        "d_decisions": 650,
+        "g1_decisions": 615,
+        "intended_attempts": 604,
+        "g2_decisions": 593,
+        "self_clue_turns": 593,
+        "self_matches": 585,
+        "intended_illegal": 11,
+        "g1_invalid": 11,
+        "choice_decisions": 1,
+        "choice_secret_word": 1,
+        "choice_secret_word_revealed": 1,
+        "forced_win_turns": 9,
+        "forced_win_converted": 7,
+        "mean_clue_characters": 31.021922428330523,
+        "median_clue_characters": 31.0,
+        "clue_budget_used": 0.6204384485666105,
+        "guesser1_invalid_rate": 0.01788617886178862,
+        "guesser2_invalid_rate": 0.0,
+        "self_contained": {
+          "action_validity": 0.9940828402366864,
+          "clue_length_compliance": 1.0,
+          "self_coordination": 0.9865092748735245,
+          "self_coordination_clue_turns": 593,
+          "reveal_optimality": 1.0,
+          "reveal_optimality_n": 1,
+          "forced_win_conversion": 0.7777777777777778,
+          "forced_win_n": 9,
+          "intended_word_legality": 0.9817880794701986,
+          "lookup_discipline": 0.9886363636363636,
+          "lookup_discipline_n": 88
         }
       }
     },
     "gpt_6_luna": {
       "offense": {
         "games": 24.0,
+        "letters_earned": 100.0,
+        "turns_used_total": 552.0,
+        "endgame_reached": 8.0,
+        "endgame_converted": 8.0,
         "wins": 12.0,
         "hit_source_direct": 5.0,
         "turns": 552.0,
         "guesser1_decisions": 552.0,
         "clue_turns": 472.0,
         "guesser2_decisions": 472.0,
+        "clue_turns_defended": 472.0,
         "registered_matches": 413.0,
+        "registered_matches_blocked": 376.0,
         "intended_word_covered": 405.0,
         "contacts_prevented": 375.0,
         "guesser1_invalid": 73.0,
@@ -456,25 +571,80 @@
           "guesser1_invalid_per_guesser1_decision": 0.1322463768115942,
           "direct_share_per_valid_turn": 0.014613778705636743,
           "registered_match_per_clue_turn": 0.875,
+          "clue_leak_per_defended_clue_turn": 0.8580508474576272,
+          "endgame_conversion": 1.0,
           "contact_per_clue_turn": 0.06991525423728813,
           "contact_per_registered_match": 0.07990314769975787,
           "guesser2_invalid_per_guesser2_decision": 0.00423728813559322,
-          "reveal_per_choice_opportunity": 0.4
-        }
+          "reveal_per_choice_opportunity": 0.4,
+          "matches_blocked_per_registered_match": 0.910411622276029
+        },
+        "turns_per_letter_earned": 5.52
       },
       "defense": {
         "games": 24.0,
+        "clue_turns_faced": 689.0,
         "block_decisions": 689.0,
         "empty_blocklists": 14.0,
         "fresh_secret_candidates_blocked": 185896.0,
         "blocks_overlapping_clue": 85.0,
+        "registered_matches_faced": 667.0,
+        "registered_matches_blocked": 651.0,
         "intended_word_covered": 662.0,
         "contacts_prevented": 651.0,
         "block_invalid": 14.0,
+        "contacts_conceded": 16.0,
         "mean_blocklist_size_per_block_decision": 337.2249637155297,
         "rates": {
           "empty_blocklist_per_block_decision": 0.020319303338171262,
-          "block_invalid_per_block_decision": 0.020319303338171262
+          "block_invalid_per_block_decision": 0.020319303338171262,
+          "intended_word_blocked_per_clue_turn": 0.9608127721335269,
+          "matches_blocked_per_registered_match": 0.9760119940029985
+        },
+        "blocked_words_per_contact_prevented": 356.9093701996928
+      },
+      "invalid_reasons": {
+        "guesser1: clue exceeds N characters": 50,
+        "guesser1: intended word is not a current contact candidate": 18,
+        "defender: blocklist entry is not a dictionary word": 14,
+        "guesser1: clue must be printable ASCII": 4,
+        "guesser2: word is not a current contact candidate": 2,
+        "guesser1: direct word is not a current secret candidate": 1
+      },
+      "seat": {
+        "d_decisions": 689,
+        "g1_decisions": 552,
+        "intended_attempts": 544,
+        "g2_decisions": 472,
+        "self_clue_turns": 472,
+        "self_matches": 413,
+        "g1_invalid": 73,
+        "g1_overlong": 50,
+        "intended_illegal": 18,
+        "forced_win_turns": 16,
+        "forced_win_converted": 6,
+        "g2_invalid": 2,
+        "d_invalid": 14,
+        "choice_decisions": 20,
+        "choice_secret_word": 19,
+        "choice_secret_word_revealed": 8,
+        "mean_clue_characters": 35.53813559322034,
+        "median_clue_characters": 38.0,
+        "clue_budget_used": 0.7107627118644068,
+        "guesser1_invalid_rate": 0.1322463768115942,
+        "guesser2_invalid_rate": 0.00423728813559322,
+        "self_contained": {
+          "action_validity": 0.9486439699942296,
+          "clue_length_compliance": 0.9094202898550725,
+          "self_coordination": 0.875,
+          "self_coordination_clue_turns": 472,
+          "reveal_optimality": 0.42105263157894735,
+          "reveal_optimality_n": 19,
+          "forced_win_conversion": 0.375,
+          "forced_win_n": 16,
+          "intended_word_legality": 0.9669117647058824,
+          "lookup_discipline": 0.9961685823754789,
+          "lookup_discipline_n": 261
         }
       }
     }

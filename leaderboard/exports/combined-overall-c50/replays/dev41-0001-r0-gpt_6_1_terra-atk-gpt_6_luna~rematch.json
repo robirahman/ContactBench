@@ -1,0 +1,473 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-gpt_6_luna~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "sun sea sky star snow sand song; hissing reptile",
+   "blocklist": [
+    "snake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "school science space spring summer; happy face",
+   "blocklist": [
+    "smile",
+    "smiley",
+    "smiling",
+    "smirk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "story sound state sleep sweet; small rock",
+   "blocklist": [
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "street strong south short side system; eight legs",
+   "blocklist": [
+    "spider"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "silver sugar safe soft seven shape; desert stinger",
+   "blocklist": [
+    "scorpion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "stop stay show ship shop step; ocean predator",
+   "blocklist": [
+    "sawfish",
+    "seal",
+    "squid",
+    "stingray",
+    "swordfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shark"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "super sure such suit supper; tall yellow flower",
+   "blocklist": [
+    "sunflower"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "sudden supply support surface; underwater vessel",
+   "blocklist": [
+    "submarine",
+    "submersible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "subject success suggest suffer; evening sundown",
+   "blocklist": [
+    "sunset"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "surprise survive surgery suspect; morning daybreak",
+   "blocklist": [
+    "sunrise",
+    "sunup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "subway sunshine suitcase survey; UV protection",
+   "blocklist": [
+    "sunscreen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "sustain supreme suburb summit; Japanese rice roll",
+   "blocklist": [
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "substance surname suspend; math opposite of add",
+   "blocklist": [
+    "subtract",
+    "subtracted",
+    "subtraction",
+    "subtractive",
+    "subtrahend"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "superior superb subsidy; too much sun reddens skin",
+   "blocklist": [
+    "sunburn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "surrender surround sulfur; surgical stitch",
+   "blocklist": [
+    "suture",
+    "sutured",
+    "sutures",
+    "suturing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "sunlight supermarket suspicion; dark eyewear",
+   "blocklist": [
+    "sunglass",
+    "sunglasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "suitor sultan sulphur superman; ice cream dessert",
+   "blocklist": [
+    "sundae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "sunny sunday superstar surplus; shadow clock",
+   "blocklist": [
+    "sundial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "suave sultry superficial; taking one's own life",
+   "blocklist": [
+    "suicidal",
+    "suicide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "subtle summary sufficient suspense; choke",
+   "blocklist": [
+    "suffocate",
+    "suffocated",
+    "suffocates",
+    "suffocating",
+    "suffocation",
+    "suffocations",
+    "suffocative"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "supernatural supervisor suppose; bronzed skin",
+   "blocklist": [
+    "suntan",
+    "suntanned",
+    "suntans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "surgeon surfing surely surge; hero with red cape",
+   "blocklist": [
+    "superhero",
+    "superheroes",
+    "superpower",
+    "superwoman"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sum sub sue survival suburbia; car roof window",
+   "blocklist": [
+    "sunroof",
+    "sunroofs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "successful suspicious suddenly; powerful adhesive",
+   "blocklist": [
+    "superglue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "suspension supervision supplement; exploding star",
+   "blocklist": [
+    "supernova"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "suck succulent succumb summon surpass; word ending",
+   "blocklist": [
+    "suffix"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "surreal sulphate subpoena sulfuric; sugar plant",
+   "blocklist": [
+    "sugarcane"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "subside submit subsist subway; dark solar blemish",
+   "blocklist": [
+    "sunspot"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "suitable supplies suffering subjects; ray of sun",
+   "blocklist": [
+    "sunbeam",
+    "sunbeams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 233.45831902472528,
+  "cost_numerator": 5438645,
+  "cost_denominator": 23296,
+  "cost_exact": false,
+  "cost_mcse": 0.7701765651681931,
+  "baseline": {
+   "numerator": 584312895,
+   "denominator": 461056,
+   "value": 1267.3360611292337,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.0104841613344107,
+   "rollouts": 256,
+   "rank_total": 584312895,
+   "rank_denominator": 461056,
+   "cache_key": "10eda2845647c2d879e72c58a227e264"
+  },
+  "fallback": {
+   "numerator": 4739765,
+   "denominator": 23296,
+   "value": 203.45831902472528,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:25,5:44,6:91,7:204,8:366,9:397,10:415,11:352,12:274,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.7701765651681931,
+   "rollouts": 256,
+   "rank_total": 4739765,
+   "rank_denominator": 23296,
+   "cache_key": "fb982d0f5856c1da7aa30c0a08ce2050"
+  }
+ }
+}

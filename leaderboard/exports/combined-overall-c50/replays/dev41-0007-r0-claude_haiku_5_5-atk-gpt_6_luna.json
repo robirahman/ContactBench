@@ -1,0 +1,467 @@
+{
+ "game_id": "dev41-0007-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Barks, wags, and fetches for its owner",
+   "blocklist": [
+    "canine",
+    "dog",
+    "fetch",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy",
+    "rover"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered flier that sings in trees",
+   "blocklist": [
+    "bird",
+    "birds",
+    "bluebird",
+    "canary",
+    "cardinal",
+    "finch",
+    "lark",
+    "nightingale",
+    "robin",
+    "songbird",
+    "songbirds",
+    "sparrow",
+    "thrush",
+    "warbler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly swimmer that lives in rivers and seas",
+   "blocklist": [
+    "alligator",
+    "bass",
+    "caiman",
+    "crocodile",
+    "dolphin",
+    "eel",
+    "fish",
+    "hippo",
+    "lizard",
+    "manatee",
+    "otter",
+    "pike",
+    "reptile",
+    "river",
+    "salmon",
+    "sea",
+    "seal",
+    "shark",
+    "snake",
+    "trout",
+    "turtle",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Hooved animal that neighs and gallops",
+   "blocklist": [
+    "colt",
+    "equine",
+    "foal",
+    "horse",
+    "mare",
+    "mustang",
+    "pony",
+    "stallion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Amphibian that hops and croaks in ponds",
+   "blocklist": [
+    "amphibians",
+    "eft",
+    "newt",
+    "newts",
+    "salamander",
+    "salamanders"
+   ],
+   "blocked_ranges": [
+    [
+     "frog",
+     "frogs"
+    ],
+    [
+     "tadpole",
+     "tadpoles"
+    ],
+    [
+     "toad",
+     "toads"
+    ]
+   ],
+   "blocked_word_count": 38,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Bearded farm animal that bleats",
+   "blocklist": [
+    "billy",
+    "ewe",
+    "goat",
+    "goats",
+    "kid",
+    "nanny",
+    "ram",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Bovine that gives milk and says moo",
+   "blocklist": [
+    "cow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Antlered woodland grazer with a spotted coat",
+   "blocklist": [
+    "antelope",
+    "buck",
+    "deer",
+    "doe",
+    "elk",
+    "fawn",
+    "reindeer",
+    "stag"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "King of the savanna with a shaggy mane",
+   "blocklist": [
+    "lion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Pack hunter that howls at the moon",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wolf"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wolf"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Shaggy forest omnivore that hibernates in winter",
+   "blocklist": [
+    "bear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Buzzing insect that makes sweet honey in hives",
+   "blocklist": [
+    "bee",
+    "beehive",
+    "bees",
+    "bumblebee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Vessel that floats on water and sails",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "barge",
+     "boats"
+    ]
+   ],
+   "blocked_word_count": 4519,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "bad bag bat bed big box bit bus bar bin",
+   "blocklist": [
+    "baby",
+    "but"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bag"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bug"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Organ that thinks inside the skull",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "brain",
+     "brainy"
+    ]
+   ],
+   "blocked_word_count": 41,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Baked loaf from an oven",
+   "blocklist": [
+    "bread"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Daring and brave in spirit",
+   "blocklist": [
+    "bold",
+    "boldly",
+    "boldness",
+    "braver",
+    "bravery",
+    "bravest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Round toy for playing catch and bounce",
+   "blocklist": [
+    "ball"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "back",
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 337.45394472698075,
+  "cost_numerator": 20171647,
+  "cost_denominator": 59776,
+  "cost_exact": false,
+  "cost_mcse": 0.46502833768403345,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 18378367,
+   "denominator": 59776,
+   "value": 307.45394472698075,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:26,4:144,5:323,6:591,7:857,8:908,9:687,10:467,11:313,12:175,13:95,14:60,15:25,16:7,17:4,18:3,19:2,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.46502833768403345,
+   "rollouts": 256,
+   "rank_total": 36756734,
+   "rank_denominator": 119552,
+   "cache_key": "26c9067366a7ea39356fb99683a15879"
+  }
+ }
+}

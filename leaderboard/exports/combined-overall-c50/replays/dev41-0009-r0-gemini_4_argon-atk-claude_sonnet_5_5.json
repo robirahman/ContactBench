@@ -1,0 +1,576 @@
+{
+ "game_id": "dev41-0009-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Suitcases and bags for travel",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "bags",
+    "luggage",
+    "luggages",
+    "suitcase",
+    "suitcases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal of Australia",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "African burrowing ant-eating mammal with long ears",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with swiveling eyes",
+   "blocklist": [
+    "chameleon",
+    "chameleons",
+    "gecko",
+    "geckos",
+    "iguana",
+    "iguanas",
+    "lizard",
+    "lizards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Armored mammal that rolls into a ball",
+   "blocklist": [
+    "armadillo",
+    "armadillos",
+    "hedgehog",
+    "hedgehogs",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "ROT13: qrsrarfgebgvba (throwing out window)",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1st word in list_words(prefix='', offset=100000)",
+   "blocklist": [
+    "nonuniform"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Edible sea snail with iridescent mother-of-pearl",
+   "blocklist": [
+    "abalone",
+    "abalones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with a pouch",
+   "blocklist": [
+    "joey",
+    "joeys",
+    "kangaroo",
+    "kangaroos",
+    "koala",
+    "koalas",
+    "marsupial",
+    "marsupials",
+    "wallabies",
+    "wallaby",
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Straight-line alignment of three celestial bodies",
+   "blocklist": [
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Rigid German airship named after Ferdinand von Z.",
+   "blocklist": [
+    "airship",
+    "airships",
+    "blimp",
+    "blimps",
+    "dirigible",
+    "dirigibles",
+    "zeppelin",
+    "zeppelins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Arctic whale with a long spiral tusk",
+   "blocklist": [
+    "narwhal",
+    "narwhals",
+    "tusk",
+    "tusks",
+    "unicorn",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "World's largest living rodent native to S. America",
+   "blocklist": [
+    "beaver",
+    "beavers",
+    "capybara",
+    "capybaras",
+    "rodent",
+    "rodents"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Mexican walking fish, a neotenic salamander",
+   "blocklist": [
+    "axolotl",
+    "axolotls",
+    "salamander",
+    "salamanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Congolese forest giraffe relative w/ zebra stripes",
+   "blocklist": [
+    "okapi",
+    "okapis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Gentle Florida sea cow with a paddle-shaped tail",
+   "blocklist": [
+    "dugong",
+    "dugongs",
+    "manatee",
+    "manatees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Tall pink wading bird that stands on one leg",
+   "blocklist": [
+    "crane",
+    "cranes",
+    "egret",
+    "egrets",
+    "flamingo",
+    "flamingos",
+    "heron",
+    "herons",
+    "ibis",
+    "spoonbill",
+    "stork",
+    "storks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Spiny herbivorous rodent covered in sharp quills",
+   "blocklist": [
+    "covered",
+    "echidna",
+    "herbivorous",
+    "porcupine",
+    "porcupines",
+    "quill",
+    "quills",
+    "sharp",
+    "spine",
+    "spines",
+    "spiny",
+    "tenrec",
+    "tenrecs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Small African mongoose that stands on hind legs",
+   "blocklist": [
+    "meerkat",
+    "meerkats",
+    "mongoose",
+    "mongooses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Waterbird with a large throat sac for scooping",
+   "blocklist": [
+    "pelican",
+    "pelicans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Tropical bird with a huge colorful bill",
+   "blocklist": [
+    "hornbill",
+    "hornbills",
+    "macaw",
+    "macaws",
+    "parrot",
+    "parrots",
+    "puffin",
+    "puffins",
+    "toucan",
+    "toucans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Large flightless Australian bird with a casque",
+   "blocklist": [
+    "cassowaries",
+    "cassowary",
+    "emu",
+    "emus",
+    "kiwi",
+    "kiwis",
+    "ostrich",
+    "ostriches",
+    "rhea",
+    "rheas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Tusked Arctic marine mammal with flippers",
+   "blocklist": [
+    "narwhal",
+    "seal",
+    "seals",
+    "tusked",
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Thick-skinned herbivore with a horn on its snout",
+   "blocklist": [
+    "rhino",
+    "rhinoceros",
+    "rhinoceroses",
+    "rhinos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Large semi-aquatic African river horse",
+   "blocklist": [
+    "hippo",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Oceanic seabird with the longest wingspan",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "albatross"
+    },
+    {
+     "seat": "guesser2",
+     "word": "albatross"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Brass woodwind instrument invented by Adolphe Sax",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Medical device used by doctors to hear heartbeats",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Underwater naval vessel with a periscope",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "submarine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "submarine"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Feathered birdie hit over the net in badminton",
+   "blocklist": [
+    "shuttlecock",
+    "shuttlecocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 124.80623478084415,
+  "cost_numerator": 4920361,
+  "cost_denominator": 39424,
+  "cost_exact": false,
+  "cost_mcse": 0.16218325360044394,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 3737641,
+   "denominator": 39424,
+   "value": 94.80623478084415,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:28,5:113,6:184,7:256,8:308,9:248,10:141,11:85,12:50,13:20,14:11,15:3,16:2,18:1",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.16218325360044394,
+   "rollouts": 256,
+   "rank_total": 7475282,
+   "rank_denominator": 78848,
+   "cache_key": "2f2ceb7b89e03c8ec14c4a96202a242f"
+  }
+ }
+}

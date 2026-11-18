@@ -1,0 +1,238 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Common household canine",
+   "blocklist": [
+    "canine",
+    "collie",
+    "dog",
+    "dogs",
+    "hound",
+    "hounds",
+    "mutt",
+    "pup",
+    "puppy",
+    "terrier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "book fiction; the and for are but not you all",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "shifter"
+    ],
+    [
+     "shifty",
+     "zyzzyva"
+    ]
+   ],
+   "blocked_word_count": 172595,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "moving between places; changing a work schedule",
+   "blocklist": [
+    "between",
+    "change",
+    "changing",
+    "move",
+    "moved",
+    "mover",
+    "movers",
+    "moving",
+    "place",
+    "places",
+    "schedule",
+    "shift",
+    "shifted",
+    "shifting",
+    "shifts",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Lacking ambition or energy",
+   "blocklist": [
+    "apathetic",
+    "indolent",
+    "inert",
+    "lackadaisical",
+    "languid",
+    "lazy",
+    "lethargic",
+    "lifeless",
+    "listless",
+    "passive",
+    "slothful",
+    "sluggish",
+    "supine",
+    "torpid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shiftless"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiftless"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Quality of being sly, slippery, or evasive",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shiftiness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiftiness"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The state of lacking ambition or energy",
+   "blocklist": [
+    "shift",
+    "shifted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shiftlessness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shiftlessness"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "In an unambitious, listless manner",
+   "blocklist": [
+    "shiftier",
+    "shiftiest",
+    "shiftily",
+    "shiftlessly",
+    "shifty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Gear-changing mechanisms",
+   "blocklist": [
+    "shill",
+    "shim",
+    "shin",
+    "shiny",
+    "shire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shifters"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shifters"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 9.0,
+  "cost_numerator": 9,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

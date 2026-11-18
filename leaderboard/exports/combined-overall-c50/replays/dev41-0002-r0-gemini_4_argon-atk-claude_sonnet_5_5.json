@@ -1,0 +1,527 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Bags and suitcases packed for a trip.",
+   "blocklist": [
+    "baggage",
+    "luggage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardwolf",
+    "anteater",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Tallest African animal with a very long neck",
+   "blocklist": [
+    "giraffe",
+    "giraffes",
+    "okapi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Australian egg-laying mammal with a duck bill",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with a pouch",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "koala",
+    "wallaby",
+    "wallaroo",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "African striped equine mammal like a horse",
+   "blocklist": [
+    "horse",
+    "quagga",
+    "zebra",
+    "zebras",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abdicates"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1st word in dictionary: sigh of relief or delight",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aah"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aah"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1st c-word in dictionary: a taxi for hire",
+   "blocklist": [
+    "cab",
+    "cabs",
+    "taxi",
+    "taxicab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "100th c-word (offset 99), or 2nd c-word if blocked",
+   "blocklist": [
+    "cabal",
+    "cabriolet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st word in list_words(prefix='c', offset=100*9)",
+   "blocklist": [
+    "canalizes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Loud buzzing tree insect with periodical broods",
+   "blocklist": [
+    "cicada",
+    "cicadas",
+    "cicala"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with swiveling eyes",
+   "blocklist": [
+    "anole",
+    "chameleon",
+    "chameleons",
+    "gecko",
+    "iguana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Fastest spotted African wild cat on land",
+   "blocklist": [
+    "caracal",
+    "cheetah",
+    "cheetahs",
+    "cougar",
+    "leopard",
+    "lion",
+    "serval"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Mythical half-human half-horse creature",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "centaur"
+    },
+    {
+     "seat": "guesser2",
+     "word": "centaur"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Venomous hooded snake charmed with a flute",
+   "blocklist": [
+    "cobra",
+    "cobras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Magnetic navigation tool with a needle pointing N",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Perforated kitchen bowl for draining pasta",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "sieve",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Howling North American prairie wild dog",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "coyotillo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Spiral metal tool for pulling wine bottle stoppers",
+   "blocklist": [
+    "corkscrew",
+    "corkscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Australian parrot with a tall erectile head crest",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cockatoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cockatoo"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Side dish of finely shredded raw cabbage and mayo",
+   "blocklist": [
+    "cabbage",
+    "cole",
+    "coleslaw",
+    "slaw"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Scottish herding dog breed famous as Lassie",
+   "blocklist": [
+    "collie",
+    "collies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Clavicle, the human bone between shoulder and neck",
+   "blocklist": [
+    "collar",
+    "collarbone",
+    "collarbones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Young male horse, or famous revolver brand",
+   "blocklist": [
+    "colt",
+    "colts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Tall vertical stone pillar, or spreadsheet stack",
+   "blocklist": [
+    "column",
+    "columnar",
+    "columned",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Scented perfume water named for a German city",
+   "blocklist": [
+    "cologne",
+    "colognes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "University school of higher education after HS",
+   "blocklist": [
+    "college",
+    "colleges",
+    "collegian",
+    "collegiate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Giant bronze statue of Rhodes, an ancient Wonder",
+   "blocklist": [
+    "colossi",
+    "colossus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Fellow coworker or professional associate at work",
+   "blocklist": [
+    "colleague",
+    "colleagues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Punctuation mark of two vertical dots, or bowel",
+   "blocklist": [
+    "colon",
+    "colonel",
+    "colonic",
+    "colons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 65.314697265625,
+  "cost_numerator": 267529,
+  "cost_denominator": 4096,
+  "cost_exact": false,
+  "cost_mcse": 0.21612234891454038,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 144649,
+   "denominator": 4096,
+   "value": 35.314697265625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:4,5:9,6:20,7:32,8:74,9:96,10:75,11:55,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.21612234891454038,
+   "rollouts": 256,
+   "rank_total": 289298,
+   "rank_denominator": 8192,
+   "cache_key": "c5a6d7303223b4ef42f56f10d0078866"
+  }
+ }
+}

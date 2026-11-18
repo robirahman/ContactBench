@@ -1,0 +1,536 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_argon-atk-gemini_4_hydrogen",
+ "attacker": "gemini_4_argon",
+ "defender": "gemini_4_hydrogen",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Airport bags plural",
+   "blocklist": [
+    "carryons",
+    "duffels",
+    "luggages",
+    "suitcases",
+    "valises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "T1 synonym starting with b-a-g-g",
+   "blocklist": [
+    "baggage",
+    "baggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Large hinged travel chests or elephant noses",
+   "blocklist": [
+    "trunk",
+    "trunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Two-compartment bag or blended word like brunch",
+   "blocklist": [
+    "portmanteau",
+    "portmanteaus",
+    "portmanteaux"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Small handheld bag or satchel",
+   "blocklist": [
+    "clutch",
+    "handbag",
+    "pouch",
+    "purse",
+    "reticule",
+    "tote"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "luggage"
+    },
+    {
+     "seat": "guesser2",
+     "word": "valise"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Canvas gym bag or coat with toggles",
+   "blocklist": [
+    "duffel",
+    "duffle",
+    "duffles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Singular of T1 blocked s-word for clothing",
+   "blocklist": [
+    "suitcase"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Singular of T1 blocked c-word for overhead bin",
+   "blocklist": [
+    "carryon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Strapped shoulder pack for hikers",
+   "blocklist": [
+    "backpack",
+    "haversack",
+    "knapsack",
+    "rucksack"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Coarse jute sack fabric or gunny",
+   "blocklist": [
+    "burlap",
+    "gunnysack",
+    "hessian",
+    "sackcloth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Flat hard case for business documents or attache",
+   "blocklist": [
+    "briefcase",
+    "folio",
+    "portfolio"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Small folding leather holder for money and cards",
+   "blocklist": [
+    "billfold",
+    "cardholder",
+    "wallet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Woven wicker container for picnics or laundry",
+   "blocklist": [
+    "basket",
+    "baskets",
+    "creel",
+    "hamper",
+    "hampers",
+    "pannier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Wooden stave cask for aging wine or whiskey",
+   "blocklist": [
+    "barrel",
+    "barrels",
+    "firkin",
+    "hogshead",
+    "keg",
+    "puncheon",
+    "tun",
+    "vat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Ancient two-handled clay jar for olive oil",
+   "blocklist": [
+    "amphora",
+    "amphorae",
+    "amphoras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Metal water flask carried by soldiers or hikers",
+   "blocklist": [
+    "canteen",
+    "canteens",
+    "flagon",
+    "thermos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Glass carafe or stopper bottle for serving liquor",
+   "blocklist": [
+    "cruet",
+    "cruets",
+    "decanter",
+    "decanters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Wicker-encased narrow-necked carboy bottle",
+   "blocklist": [
+    "demijohn",
+    "demijohns",
+    "fiasco",
+    "fiascos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Ceremonial goblet or cup for communion wine",
+   "blocklist": [
+    "chalice",
+    "chalices",
+    "ciborium",
+    "grail"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tall pewter beer mug with hinged lid or stein",
+   "blocklist": [
+    "tankard",
+    "tankards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Large iron witch kettle for brewing potions",
+   "blocklist": [
+    "caldron",
+    "caldrons",
+    "cauldron",
+    "cauldrons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Russian heated metal urn for boiling tea water",
+   "blocklist": [
+    "samovar",
+    "samovars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Perforated kitchen bowl for draining pasta",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "strainer",
+    "strainers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Deep covered serving dish for soup or stew",
+   "blocklist": [
+    "casserole",
+    "casseroles",
+    "tureen",
+    "tureens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Small glazed ceramic baking dish for creme brulee",
+   "blocklist": [
+    "cocotte",
+    "cocottes",
+    "ramekin",
+    "ramekins",
+    "ramequin",
+    "ramequins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Cast-iron frying pan with a long handle",
+   "blocklist": [
+    "frypan",
+    "frypans",
+    "skillet",
+    "skillets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Deep stovetop cooking pot with one long handle",
+   "blocklist": [
+    "saucepan",
+    "saucepans",
+    "stockpot",
+    "stockpots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Flat kitchen turner for flipping pancakes",
+   "blocklist": [
+    "flipper",
+    "flippers",
+    "spatula",
+    "spatulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Wire kitchen tool for beating eggs or cream",
+   "blocklist": [
+    "beater",
+    "beaters",
+    "eggbeater",
+    "eggbeaters",
+    "mixer",
+    "mixers",
+    "whisk",
+    "whisks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Long-handled deep bowl spoon for serving soup",
+   "blocklist": [
+    "dipper",
+    "dippers",
+    "ladle",
+    "ladles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11508.567677419354,
+  "cost_numerator": 178382799,
+  "cost_denominator": 15500,
+  "cost_exact": false,
+  "cost_mcse": 6.480375073021123,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 177917799,
+   "denominator": 15500,
+   "value": 11478.567677419354,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:953,4:3875,5:8606,6:15184,7:23054,8:28375,9:24854,10:20297,11:15502,12:11356,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.480375073021123,
+   "rollouts": 256,
+   "rank_total": 11386739136,
+   "rank_denominator": 992000,
+   "cache_key": "13e925f7272d76af27bf28fb46044cb7"
+  }
+ }
+}

@@ -1,0 +1,627 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Red fruit; cat dog sun moon star sky sea tree",
+   "blocklist": [
+    "apple",
+    "cherry",
+    "cranberry",
+    "pomegranate",
+    "raspberry",
+    "strawberry",
+    "tomato",
+    "watermelon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of cold; love life time water fire earth",
+   "blocklist": [
+    "heat",
+    "hot",
+    "warm",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Says moo; man woman day night house car book world",
+   "blocklist": [
+    "bull",
+    "calf",
+    "cattle",
+    "cow",
+    "cows",
+    "heifer",
+    "steer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Color of clear sky; people good new first last",
+   "blocklist": [
+    "azure",
+    "blue",
+    "cerulean",
+    "cobalt",
+    "cyan",
+    "indigo",
+    "sapphire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Largest land animal; air hand heart head home hope",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "giraffe",
+    "hippopotamus",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "King of jungle; work way year mother father child",
+   "blocklist": [
+    "jaguar",
+    "leopard",
+    "lion",
+    "lioness",
+    "lions",
+    "panther",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Frozen water; person place thing part eye face arm",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icicle",
+    "sleet",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Opposite of up; name food room school friend money",
+   "blocklist": [
+    "below",
+    "beneath",
+    "bottom",
+    "down",
+    "downward",
+    "downwards",
+    "lower",
+    "under"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Eight legged web weaver; light dark right left end",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "recluse",
+    "spider",
+    "spiders",
+    "tarantula",
+    "widow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Female monarch; power state country family long",
+   "blocklist": [
+    "czarina",
+    "empress",
+    "empresses",
+    "monarch",
+    "monarchs",
+    "queen",
+    "queens",
+    "sovereign",
+    "tsarina"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Canine sound; music song war peace game road river",
+   "blocklist": [
+    "arf",
+    "bark",
+    "growl",
+    "howl",
+    "woof",
+    "yap",
+    "yelp",
+    "yip"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Feline noise; bird fish wind rain stone gold king",
+   "blocklist": [
+    "caterwaul",
+    "hiss",
+    "meow",
+    "mew",
+    "miaow",
+    "purr",
+    "roar",
+    "yowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Equine mount; body mind soul blood bone beach city",
+   "blocklist": [
+    "bronco",
+    "donkey",
+    "horse",
+    "horses",
+    "mare",
+    "mule",
+    "mustang",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Striped African animal; smile dream sleep green",
+   "blocklist": [
+    "bongo",
+    "hyena",
+    "kudu",
+    "okapi",
+    "okapis",
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit; table chair door window floor",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "lemon",
+    "lemons",
+    "mango",
+    "mangoes",
+    "papaya",
+    "pear",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Closest planet to sun; love hate death birth war",
+   "blocklist": [
+    "mars",
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bee product; god boy girl young old big small",
+   "blocklist": [
+    "beeswax",
+    "honey",
+    "honeycomb",
+    "nectar",
+    "pollen",
+    "propolis",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Milk color; yes true great happy best free open",
+   "blocklist": [
+    "alabaster",
+    "cream",
+    "eggshell",
+    "ivory",
+    "milky",
+    "pearl",
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Ocean predator with fins; one two three four five",
+   "blocklist": [
+    "barracuda",
+    "dolphin",
+    "dolphins",
+    "marlin",
+    "orca",
+    "orcas",
+    "shark",
+    "sharks",
+    "swordfish",
+    "tuna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "French bread; six seven nine ten black brown pink",
+   "blocklist": [
+    "baguette",
+    "baguettes",
+    "boule",
+    "boules",
+    "brioche",
+    "brioches",
+    "croissant",
+    "croissants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Opposite of dry; take make know come see look use",
+   "blocklist": [
+    "damp",
+    "dank",
+    "drenched",
+    "humid",
+    "moist",
+    "moisture",
+    "soaked",
+    "soggy",
+    "waterlogged",
+    "wet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Flying mammal; put get give find tell ask try feel",
+   "blocklist": [
+    "bat",
+    "bats",
+    "chiropteran",
+    "colugo",
+    "squirrel",
+    "vampire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird; walk talk run play live",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "macaroni",
+    "penguin",
+    "penguins",
+    "rockhopper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Quacking bird; high low hard soft fast slow easy",
+   "blocklist": [
+    "drake",
+    "duck",
+    "duckling",
+    "ducklings",
+    "ducks",
+    "mallard",
+    "mallards",
+    "waterfowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Croaking amphibian; near far deep round full empty",
+   "blocklist": [
+    "anuran",
+    "bullfrog",
+    "bullfrogs",
+    "frog",
+    "frogs",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Slow shelled reptile; starve laugh cry sing dance",
+   "blocklist": [
+    "chelonian",
+    "terrapin",
+    "terrapins",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Eight arms cephalopod; beautiful human nature art",
+   "blocklist": [
+    "cuttlefish",
+    "kraken",
+    "nautilus",
+    "octopi",
+    "octopus",
+    "octopuses",
+    "squid",
+    "squids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Thanksgiving bird; computer phone history future",
+   "blocklist": [
+    "fowl",
+    "gobbler",
+    "gobblers",
+    "pheasant",
+    "poultry",
+    "tom",
+    "turkey",
+    "turkeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Egg laying farm bird; truth beauty justice freedom",
+   "blocklist": [
+    "bantam",
+    "bantams",
+    "chicken",
+    "chickens",
+    "goose",
+    "hen",
+    "hens",
+    "ostrich",
+    "quail",
+    "rooster",
+    "roosters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11672.228688826894,
+  "cost_numerator": 22660184643,
+  "cost_denominator": 1941376,
+  "cost_exact": false,
+  "cost_mcse": 3.742344445740277,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22601943363,
+   "denominator": 1941376,
+   "value": 11642.228688826894,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:919,4:3787,5:8540,6:15167,7:23065,8:28386,9:24846,10:20294,11:15501,12:11356,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.742344445740277,
+   "rollouts": 256,
+   "rank_total": 45203886726,
+   "rank_denominator": 3882752,
+   "cache_key": "7d01168b851e4c35ec453de1cc258b98"
+  }
+ }
+}

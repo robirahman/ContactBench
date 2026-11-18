@@ -1,0 +1,638 @@
+{
+ "game_id": "dev41-0001-r0-claude_haiku_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_haiku_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal barking companion that fetches sticks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "pup",
+    "puppy",
+    "retriever"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered animal that sings and flies",
+   "blocklist": [
+    "bird",
+    "birds",
+    "canary",
+    "finch",
+    "parrot",
+    "robin",
+    "songbird",
+    "sparrow",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly aquatic creature that swims with fins",
+   "blocklist": [
+    "bass",
+    "carp",
+    "catfish",
+    "cod",
+    "eel",
+    "fish",
+    "fishes",
+    "goldfish",
+    "minnow",
+    "perch",
+    "pike",
+    "salmon",
+    "shark",
+    "trout",
+    "tuna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large hoofed animal that people ride",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "horse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "horse"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Long legless reptile that hisses and slithers",
+   "blocklist": [
+    "salamander",
+    "serpent",
+    "serpents",
+    "sidewinder",
+    "skink",
+    "slither",
+    "slithers",
+    "snake",
+    "snakes",
+    "snaky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Slow tree-dwelling mammal that hangs upside down",
+   "blocklist": [
+    "sloth",
+    "sloths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Eight-legged web spinner that catches insects",
+   "blocklist": [
+    "arachnid",
+    "spider",
+    "spiders",
+    "spinner",
+    "tarantula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Vast salty body of water that waves crash over",
+   "blocklist": [
+    "brine",
+    "ocean",
+    "oceans",
+    "salt",
+    "salty",
+    "sea",
+    "seas",
+    "seawater",
+    "water",
+    "wave",
+    "waves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Male deer that grows antlers each year",
+   "blocklist": [
+    "antler",
+    "antlers",
+    "buck",
+    "bucks",
+    "deer",
+    "elk",
+    "hart",
+    "moose",
+    "reindeer",
+    "stag",
+    "stagger",
+    "stags"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Hard mineral material found in rocky ground",
+   "blocklist": [
+    "earth",
+    "flint",
+    "granite",
+    "gravel",
+    "ground",
+    "marble",
+    "rock",
+    "rocks",
+    "sand",
+    "sandstone",
+    "shale",
+    "silica",
+    "silicon",
+    "slate",
+    "soil",
+    "solid",
+    "steel",
+    "stone",
+    "stones",
+    "stony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Slimy garden mollusk that carries a spiral shell",
+   "blocklist": [
+    "conch",
+    "escargot",
+    "gastropod",
+    "mollusc",
+    "mollusk",
+    "shell",
+    "slug",
+    "slugs",
+    "snail",
+    "snails",
+    "spiral",
+    "whelk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Bushy-tailed tree rodent that hoards nuts",
+   "blocklist": [
+    "acorn",
+    "acorns",
+    "chipmunk",
+    "chipmunks",
+    "nut",
+    "nuts",
+    "rodent",
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Bright celestial body seen twinkling at night",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "star"
+    },
+    {
+     "seat": "guesser2",
+     "word": "star"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "sun sum suit sure surf super sulk sued sup",
+   "blocklist": [
+    "sugar",
+    "summer",
+    "summit",
+    "sunny",
+    "supper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "surly"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Abrupt and unexpected, happening all at once",
+   "blocklist": [
+    "sudden",
+    "suddenly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Evening sky color when the day ends",
+   "blocklist": [
+    "sunburst",
+    "sundown",
+    "sundowns",
+    "sunglow",
+    "sunlight",
+    "sunrise",
+    "sunset",
+    "sunsets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Underground city railway train system",
+   "blocklist": [
+    "subway",
+    "subways"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Outer layer of a lake, road, or planet",
+   "blocklist": [
+    "asphalt",
+    "crust",
+    "exterior",
+    "pavement",
+    "skin",
+    "surface",
+    "surfaced",
+    "surfaces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Prop up or back, to bear weight",
+   "blocklist": [
+    "support",
+    "supported",
+    "supporter",
+    "supports",
+    "suspend",
+    "sustain",
+    "sustained",
+    "sustains",
+    "uphold"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "sub sue suds suet suede sumo surge sulky sump",
+   "blocklist": [
+    "sub",
+    "suds",
+    "sue",
+    "suede",
+    "suet",
+    "sulky",
+    "sumo",
+    "sump",
+    "surge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "suave"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "To yield or surrender to someone else's authority",
+   "blocklist": [
+    "cede",
+    "defer",
+    "subdue",
+    "subject",
+    "subjugate",
+    "submission",
+    "submissive",
+    "submit",
+    "submits",
+    "submitted",
+    "subordinate",
+    "subservient",
+    "succumb",
+    "succumbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Favorable outcome of an effort or venture",
+   "blocklist": [
+    "succeed",
+    "succeeded",
+    "succeeds",
+    "success",
+    "successes",
+    "successful",
+    "successfully",
+    "succession",
+    "successive",
+    "successor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "sultan sundae superb suffer subtle suite sully",
+   "blocklist": [
+    "subtle",
+    "suffer",
+    "suite",
+    "sully",
+    "sultan",
+    "sundae",
+    "superb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "sultry"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Warm bright light that comes from the sky by day",
+   "blocklist": [
+    "sunbeam",
+    "sunburn",
+    "sunlight",
+    "sunlit",
+    "sunny",
+    "sunshine",
+    "sunshiny",
+    "sunup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Submerged beneath the water, having sunk low",
+   "blocklist": [
+    "submerge",
+    "submerged",
+    "submerges",
+    "submersed",
+    "sunk",
+    "sunken"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Dark blemish on the face of a star",
+   "blocklist": [
+    "blemish",
+    "spot",
+    "spots",
+    "sunscald",
+    "sunspot",
+    "sunspots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "suspect",
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sushi",
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 236.65776466836735,
+  "cost_numerator": 2968635,
+  "cost_denominator": 12544,
+  "cost_exact": false,
+  "cost_mcse": 0.7175582235267696,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 2592315,
+   "denominator": 12544,
+   "value": 206.65776466836735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:19,5:39,6:98,7:221,8:375,9:400,10:423,11:360,12:275,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.7175582235267696,
+   "rollouts": 256,
+   "rank_total": 5184630,
+   "rank_denominator": 25088,
+   "cache_key": "14740eea8729a106ffc71651619b7f0d"
+  }
+ }
+}

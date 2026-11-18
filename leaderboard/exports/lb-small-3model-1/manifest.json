@@ -3,12 +3,13 @@
   "protocol_version": "contact-v0.5",
   "run_id": "lb-small-3model-1",
   "run_created_at": "2026-11-17T04:45:10Z",
-  "exported_at": "2026-11-17T15:08:25Z",
+  "exported_at": "2026-11-18T16:43:48Z",
   "code_revision": "bba6245adb2deb1bf301f5ff5b6e822b40f7d8c6+dirty",
   "prompt_version": "prompts-v3",
   "prompt_hash": "dd3cb87b2b0f2e81cb2cb7587c1e157219d5a6cb843567407ae63c40ca0d2761",
   "fixture_data": false,
   "release_label": null,
+  "headline": false,
   "condition": {
     "protocol_version": "contact-v0.5",
     "protocol": {
@@ -61,6 +62,7 @@
     "forecast_mode": "off",
     "no_progress_draws": true,
     "rematch_on_no_progress_draw": false,
+    "rematch_recursive": false,
     "rematch_extra_letters": 1,
     "inference_profiles": {
       "claude_haiku_5_5": {
@@ -90,7 +92,7 @@
       }
     }
   },
-  "condition_key": "11f227a7b53ee732",
+  "condition_key": "5e8603d31a8143fc",
   "lexicon": {
     "name": "enable",
     "word_count": 172608,
@@ -125,7 +127,8 @@
       "policy": null,
       "defender_policy": null,
       "choice_policy": null,
-      "offense_mode": "full"
+      "offense_mode": "full",
+      "display_name": null
     },
     {
       "id": "claude_haiku_4_5",
@@ -139,7 +142,8 @@
       "policy": null,
       "defender_policy": null,
       "choice_policy": null,
-      "offense_mode": "full"
+      "offense_mode": "full",
+      "display_name": null
     },
     {
       "id": "gemini_3_8_flash",
@@ -155,7 +159,8 @@
       "policy": null,
       "defender_policy": null,
       "choice_policy": null,
-      "offense_mode": "full"
+      "offense_mode": "full",
+      "display_name": null
     }
   ]
 }

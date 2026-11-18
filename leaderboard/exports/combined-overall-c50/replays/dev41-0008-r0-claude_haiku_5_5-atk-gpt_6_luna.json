@@ -1,0 +1,564 @@
+{
+ "game_id": "dev41-0008-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine that barks and fetches sticks",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Home where people live under a roof",
+   "blocklist": [
+    "abode",
+    "apartment",
+    "building",
+    "dwelling",
+    "house",
+    "residence",
+    "shelter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Tall woody plant with branches and leaves",
+   "blocklist": [
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Liquid that falls as rain from clouds",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Aquatic creature with fins and gills",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings from branches of trees",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped African animal that looks like a horse",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Bright star that warms our planet",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Night sky glowing satellite orbiting earth",
+   "blocklist": [
+    "crescent",
+    "lunar",
+    "moon",
+    "moonlight",
+    "orb",
+    "planet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Frozen form of water that chills drinks",
+   "blocklist": [
+    "cold",
+    "cube",
+    "cubes",
+    "freezer",
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "iced",
+    "icicle",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Vehicle with four wheels that drives on roads",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "car",
+    "jeep",
+    "sedan",
+    "taxi",
+    "truck",
+    "van"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hard mineral solid found in quarries",
+   "blocklist": [
+    "basalt",
+    "boulder",
+    "brick",
+    "chalk",
+    "flint",
+    "gneiss",
+    "granite",
+    "gravel",
+    "limestone",
+    "marble",
+    "mineral",
+    "ore",
+    "pebble",
+    "quartz",
+    "rock",
+    "sandstone",
+    "schist",
+    "shale",
+    "slate",
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Flowing stream that empties into the sea",
+   "blocklist": [
+    "brook",
+    "delta",
+    "estuary",
+    "river",
+    "rivulet",
+    "tributary",
+    "watercourse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Still inland body of water surrounded by land",
+   "blocklist": [
+    "billabong",
+    "lagoon",
+    "lake",
+    "loch",
+    "pond",
+    "pool",
+    "reservoir",
+    "tarn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Head covering worn outdoors in cold weather",
+   "blocklist": [
+    "beanie",
+    "bonnet",
+    "cap",
+    "hat",
+    "hood",
+    "scarf",
+    "toque",
+    "woolly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Moving air that blows across the sky",
+   "blocklist": [
+    "airflow",
+    "breeze",
+    "draft",
+    "gale",
+    "gust",
+    "squall",
+    "wind",
+    "zephyr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Hot glowing flame that burns wood",
+   "blocklist": [
+    "blaze",
+    "bonfire",
+    "campfire",
+    "combustion",
+    "conflagration",
+    "ember",
+    "fire",
+    "hearth",
+    "heat",
+    "ignition",
+    "inferno",
+    "pyre",
+    "tinder",
+    "wildfire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Fluffy mass drifting high above the ground",
+   "blocklist": [
+    "cloud",
+    "cotton",
+    "cumulus",
+    "fog",
+    "mist",
+    "puff",
+    "vapor",
+    "vapour"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Green lawn covering yards and fields",
+   "blocklist": [
+    "grass",
+    "greenery",
+    "lawn",
+    "meadow",
+    "pasture",
+    "sod",
+    "turf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Vast salty body covering most of the globe",
+   "blocklist": [
+    "blue",
+    "briny",
+    "ocean",
+    "oceanfront",
+    "oceanic",
+    "oceans",
+    "saltwater",
+    "seawater"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Horned farm animal that bleats",
+   "blocklist": [
+    "billy",
+    "ewe",
+    "goat",
+    "kid",
+    "lamb",
+    "nanny",
+    "ram",
+    "sheep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Legless reptile that hisses and slithers",
+   "blocklist": [
+    "adder",
+    "anaconda",
+    "asp",
+    "boa",
+    "cobra",
+    "constrictor",
+    "mamba",
+    "python",
+    "rattler",
+    "rattlesnake",
+    "serpent",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Crisp red fruit that keeps doctors away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Sweet orchard fruit shaped like a bulb",
+   "blocklist": [
+    "pome",
+    "quince"
+   ],
+   "blocked_ranges": [
+    [
+     "pear",
+     "pears"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Baked loaf made from flour and yeast",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bread"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bread"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Noble title held by dukes and such",
+   "blocklist": [
+    "earl",
+    "earldom",
+    "earldoms",
+    "earls",
+    "earlship",
+    "emir",
+    "emirs",
+    "esquire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 537.984342035865,
+  "cost_numerator": 16320293,
+  "cost_denominator": 30336,
+  "cost_exact": false,
+  "cost_mcse": 0.6252154104624358,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 15410213,
+   "denominator": 30336,
+   "value": 507.984342035865,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:38,4:100,5:188,6:453,7:801,8:1127,9:1130,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6252154104624358,
+   "rollouts": 256,
+   "rank_total": 92461278,
+   "rank_denominator": 182016,
+   "cache_key": "c92e4a4bd90c5f5dc5492536a83aeb2d"
+  }
+ }
+}

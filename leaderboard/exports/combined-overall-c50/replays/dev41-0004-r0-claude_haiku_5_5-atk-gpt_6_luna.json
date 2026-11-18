@@ -1,0 +1,558 @@
+{
+ "game_id": "dev41-0004-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs and chases mice",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "mice",
+    "purr",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal companion that barks and fetches sticks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Winged animal that sings and nests in trees",
+   "blocklist": [
+    "bird",
+    "birds",
+    "bluebird",
+    "canary",
+    "crow",
+    "dove",
+    "eagle",
+    "finch",
+    "lark",
+    "nest",
+    "nestling",
+    "owl",
+    "parrot",
+    "raven",
+    "robin",
+    "songbird",
+    "songbirds",
+    "sparrow",
+    "swallow",
+    "warbler",
+    "woodpecker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly swimmer with fins and gills",
+   "blocklist": [
+    "anchovy",
+    "barracuda",
+    "bass",
+    "carp",
+    "catfish",
+    "cod",
+    "dolphin",
+    "eel",
+    "fish",
+    "fishes",
+    "flounder",
+    "goldfish",
+    "grouper",
+    "guppy",
+    "halibut",
+    "herring",
+    "mackerel",
+    "marlin",
+    "minnow",
+    "perch",
+    "pike",
+    "salmon",
+    "sardine",
+    "shark",
+    "snapper",
+    "sturgeon",
+    "swordfish",
+    "trout",
+    "tuna",
+    "whale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Hoofed rider's mount that neighs and gallops",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "horse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "horse"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Red fruit that keeps doctors away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Small six-legged creature that marches in lines",
+   "blocklist": [
+    "ant",
+    "ants",
+    "army",
+    "bug",
+    "colony",
+    "insect",
+    "march",
+    "worker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Sharp shaft shot from a bow at a target",
+   "blocklist": [
+    "arrow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Your mother's sister or uncle's wife, a relative",
+   "blocklist": [
+    "aunt",
+    "auntie",
+    "aunties",
+    "aunts",
+    "aunty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Concerning; on the subject of, roughly",
+   "blocklist": [
+    "about",
+    "anent",
+    "apropos",
+    "around"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Nut that grows on an oak tree",
+   "blocklist": [
+    "acorn",
+    "acorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Solitary, without any company or friends nearby",
+   "blocklist": [
+    "abandoned",
+    "alone",
+    "aloof",
+    "antisocial",
+    "apart",
+    "asocial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Ever; at all times, forever",
+   "blocklist": [
+    "alway",
+    "always"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Heavenly messenger with wings and a halo",
+   "blocklist": [
+    "angel",
+    "angels",
+    "archangel",
+    "cherub",
+    "halo",
+    "seraph",
+    "winged"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Invisible gas we breathe that surrounds the earth",
+   "blocklist": [
+    "air",
+    "airborne",
+    "atmosphere",
+    "atmospheric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Later in time; following, behind",
+   "blocklist": [
+    "after",
+    "afterward",
+    "afterwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Scared; frightened, feeling fear",
+   "blocklist": [
+    "afeard",
+    "afraid",
+    "aghast",
+    "alarmed",
+    "anxious",
+    "appalled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Limb attached to your shoulder, used to hug",
+   "blocklist": [
+    "appendage",
+    "arm",
+    "armful",
+    "armlet",
+    "armpit",
+    "armrest",
+    "arms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Span of life, or an era of history",
+   "blocklist": [
+    "adulthood",
+    "aeon",
+    "age",
+    "ages",
+    "antiquity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Pose a question to seek an answer",
+   "blocklist": [
+    "ask"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "alligator",
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Fossilized tree resin, a warm golden gemstone",
+   "blocklist": [
+    "amber"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Blacksmith's iron block for hammering hot metal",
+   "blocklist": [
+    "anvil",
+    "anviled",
+    "anvils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Not asleep; alert and conscious",
+   "blocklist": [
+    "active",
+    "animated",
+    "aroused",
+    "astir",
+    "attentive",
+    "awake",
+    "awakened",
+    "aware"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Moved to one side; set apart from the rest",
+   "blocklist": [
+    "aside",
+    "askew",
+    "aslant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "ado ago aid ail aim ajar akin ale ape apt arc are",
+   "blocklist": [
+    "arbiter",
+    "arbor",
+    "arboreal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ale"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "abs ace act add aft aha ark art ash asp ate awe",
+   "blocklist": [
+    "abs",
+    "ace",
+    "act",
+    "add",
+    "aft",
+    "aha",
+    "arborescent",
+    "ark",
+    "art",
+    "ash",
+    "asp",
+    "ate",
+    "awe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 745.2853209904704,
+  "cost_numerator": 235247821,
+  "cost_denominator": 315648,
+  "cost_exact": false,
+  "cost_mcse": 0.7420805344923604,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 225778381,
+   "denominator": 315648,
+   "value": 715.2853209904704,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:41,4:183,5:475,6:811,7:1233,8:1610,9:1567,10:1305,11:1038,12:752,13:520,14:331,15:221,16:126,17:63,18:25,19:16,20:10",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.7420805344923604,
+   "rollouts": 256,
+   "rank_total": 225778381,
+   "rank_denominator": 315648,
+   "cache_key": "c668f99ff326ccdad5580bb615b07a98"
+  }
+ }
+}

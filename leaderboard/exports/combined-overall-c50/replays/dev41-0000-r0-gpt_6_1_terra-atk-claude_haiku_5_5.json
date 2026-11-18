@@ -1,0 +1,184 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_1_terra-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_haiku_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet; the and for are but not you all any",
+   "blocklist": [
+    "ant",
+    "bat",
+    "bee",
+    "cat",
+    "cats",
+    "cow",
+    "dog",
+    "dogs",
+    "feline",
+    "fox",
+    "fur",
+    "kit",
+    "kitten",
+    "owl",
+    "paw",
+    "pet",
+    "pig",
+    "rat",
+    "sow",
+    "tom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of cold; was his her had has one out can",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hot"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hot"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "H2O; who why win war way web wet wig wit wok",
+   "blocklist": [
+    "wait",
+    "walk",
+    "wall",
+    "want",
+    "week",
+    "well",
+    "west",
+    "wide",
+    "wife",
+    "wind",
+    "wish",
+    "with",
+    "word",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "water"
+    },
+    {
+     "seat": "guesser2",
+     "word": "water"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Marriage ceremony; weak wear wean weapon weather",
+   "blocklist": [
+    "weal",
+    "wean",
+    "wear",
+    "weary",
+    "weave",
+    "wed",
+    "wee",
+    "weed",
+    "weel",
+    "ween",
+    "weep",
+    "weet",
+    "weft",
+    "weigh",
+    "weir",
+    "weird",
+    "weka",
+    "weld",
+    "welt",
+    "wen",
+    "went",
+    "wept",
+    "were",
+    "wetly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wedding"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wedding"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Wolfman; wert wergeld wergelds wergelt wergelts",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "wer",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 5.0,
+  "cost_numerator": 5,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,624 @@
+{
+ "game_id": "dev41-0002-r0-claude_haiku_5_5-atk-gpt_6_luna",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gpt_6_luna",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal animal that barks and wags",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Scaly swimmer with fins that lives in water",
+   "blocklist": [
+    "fish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Building where people live with family",
+   "blocklist": [
+    "abode",
+    "apartment",
+    "bungalow",
+    "condo",
+    "cottage",
+    "domicile",
+    "dwelling",
+    "flat",
+    "home",
+    "house",
+    "hut",
+    "residence",
+    "shelter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tall woody plant with bark and leaves",
+   "blocklist": [
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Motor vehicle with four wheels and an engine",
+   "blocklist": [
+    "auto",
+    "automobile",
+    "car",
+    "motorcar",
+    "sedan",
+    "truck",
+    "vehicle",
+    "wagon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Vessel that sails across the sea",
+   "blocklist": [
+    "barge",
+    "boat",
+    "cruiser",
+    "liner",
+    "sailboat",
+    "schooner",
+    "ship",
+    "yacht"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Winged creature that sings and nests in trees",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hours and minutes measured by clocks",
+   "blocklist": [
+    "clock",
+    "duration",
+    "hour",
+    "minute",
+    "second",
+    "time",
+    "timing",
+    "watch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Bright star at the center of our solar system",
+   "blocklist": [
+    "sol",
+    "sun",
+    "sunbeam",
+    "sunflower",
+    "sunlight",
+    "sunrise",
+    "sunset",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Device that gives light in a room",
+   "blocklist": [
+    "bulb",
+    "chandelier",
+    "fixture",
+    "lamp",
+    "lantern",
+    "lightbulb",
+    "sconce"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Paved path for cars and trucks between towns",
+   "blocklist": [
+    "avenue",
+    "bypass",
+    "expressway",
+    "freeway",
+    "highway",
+    "interstate",
+    "lane",
+    "motorway",
+    "parkway",
+    "road",
+    "roadway",
+    "route",
+    "street",
+    "thoroughfare",
+    "turnpike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hoofed mount that neighs and gallops in fields",
+   "blocklist": [
+    "colt",
+    "equine",
+    "foal",
+    "horse",
+    "mare",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Hard mineral piece from a quarry",
+   "blocklist": [
+    "basalt",
+    "bedrock",
+    "boulder",
+    "brick",
+    "chunk",
+    "cobblestone",
+    "crystal",
+    "flint",
+    "fragment",
+    "gem",
+    "granite",
+    "gravel",
+    "limestone",
+    "marble",
+    "ore",
+    "pebble",
+    "quartz",
+    "rock",
+    "rubble",
+    "sandstone",
+    "shale",
+    "slab",
+    "slate",
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "cow pig hen ant bee owl elk ape",
+   "blocklist": [
+    "beast",
+    "farm",
+    "fauna",
+    "livestock",
+    "mammal",
+    "three",
+    "vertebrate",
+    "wildlife",
+    "zoology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Keyboard instrument with keys and pedals",
+   "blocklist": [
+    "clavichord",
+    "harpsichord",
+    "keyboard",
+    "organ",
+    "piano",
+    "pianoforte",
+    "synthesizer",
+    "upright"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Night sky object that orbits the Earth",
+   "blocklist": [
+    "celestial",
+    "lunar",
+    "moon",
+    "orb",
+    "orbit",
+    "planet",
+    "satellite",
+    "space"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Furniture you sleep on at night",
+   "blocklist": [
+    "bed",
+    "bedstead",
+    "berth",
+    "bunk",
+    "cot",
+    "couch",
+    "crib",
+    "divan",
+    "futon",
+    "hammock",
+    "mattress",
+    "pallet",
+    "sofa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Sly red creature with a bushy tail",
+   "blocklist": [
+    "fox",
+    "vixen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Striped big cat roaming Asian jungles",
+   "blocklist": [
+    "jaguar",
+    "leopard",
+    "lion",
+    "panther",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Tiny rodent that squeaks and nibbles cheese",
+   "blocklist": [
+    "gerbil",
+    "hamster",
+    "mice",
+    "mouse",
+    "rat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Pack hunter that howls in forests and snow",
+   "blocklist": [
+    "canine",
+    "coyote",
+    "howler",
+    "jackal",
+    "lupine",
+    "predator",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Head covering worn outdoors in cold weather",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hat"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Brimmed headwear for a baseball player",
+   "blocklist": [
+    "cap",
+    "caps",
+    "coif",
+    "cowl",
+    "crown"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Outer garment with sleeves worn in winter",
+   "blocklist": [
+    "cape",
+    "cardigan",
+    "chesterfield",
+    "cloak",
+    "coat",
+    "coatdress",
+    "coverall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Black bird that caws loudly at dawn",
+   "blocklist": [
+    "crow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Seat with four legs and a back",
+   "blocklist": [
+    "chair",
+    "chairs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Fluffy white mass floating high in the sky",
+   "blocklist": [
+    "cirrus",
+    "cloud",
+    "clouded",
+    "clouding",
+    "cloudless",
+    "clouds",
+    "cloudy",
+    "cumulus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Sweet baked dessert with frosting and candles",
+   "blocklist": [
+    "cake",
+    "candy",
+    "cheesecake",
+    "confection",
+    "cookie",
+    "cupcake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Mug used for coffee or tea",
+   "blocklist": [
+    "canister",
+    "carafe",
+    "ceramic",
+    "chalice",
+    "china",
+    "container",
+    "crock",
+    "cup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1152.6139488705926,
+  "cost_numerator": 602531247,
+  "cost_denominator": 522752,
+  "cost_exact": false,
+  "cost_mcse": 0.8184813981290653,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 586848687,
+   "denominator": 522752,
+   "value": 1122.6139488705926,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:31,4:218,5:654,6:1282,7:2042,8:2643,9:2347,10:1992,11:1601,12:1205,13:813,14:527,15:320,16:204,17:147,18:59,19:48,20:17",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.8184813981290653,
+   "rollouts": 256,
+   "rank_total": 586848687,
+   "rank_denominator": 522752,
+   "cache_key": "c59fbb64ffb80f7df198cbd5a88b76af"
+  }
+ }
+}

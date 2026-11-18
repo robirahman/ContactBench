@@ -1,0 +1,633 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal; cat dog man sun moon star",
+   "blocklist": [
+    "elephant",
+    "giraffe",
+    "hippopotamus",
+    "mammoth",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Striped African equine; the and you one red blue",
+   "blocklist": [
+    "and",
+    "blue",
+    "one",
+    "red",
+    "the",
+    "you",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "King of jungle; love time life world water fire",
+   "blocklist": [
+    "fire",
+    "jungle",
+    "king",
+    "life",
+    "lion",
+    "lions",
+    "love",
+    "tiger",
+    "time",
+    "water",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial; house tree green sky",
+   "blocklist": [
+    "green",
+    "house",
+    "kangaroo",
+    "kangaroos",
+    "koala",
+    "sky",
+    "tree",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Bamboo eating bear; day night good bad big small",
+   "blocklist": [
+    "bad",
+    "bamboo",
+    "bear",
+    "big",
+    "day",
+    "good",
+    "night",
+    "panda",
+    "pandas",
+    "small"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest flightless bird; war peace new old two can",
+   "blocklist": [
+    "bird",
+    "can",
+    "cassowary",
+    "emu",
+    "emus",
+    "flightless",
+    "kiwi",
+    "new",
+    "old",
+    "ostrich",
+    "ostriches",
+    "peace",
+    "rhea",
+    "two",
+    "war"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Antarctic tuxedo swimmer; god people school money",
+   "blocklist": [
+    "antarctic",
+    "auk",
+    "god",
+    "money",
+    "penguin",
+    "penguins",
+    "people",
+    "puffin",
+    "school",
+    "swimmer",
+    "tuxedo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Ocean giant mammal; home family work food air sea",
+   "blocklist": [
+    "air",
+    "dolphin",
+    "family",
+    "food",
+    "giant",
+    "home",
+    "mammal",
+    "ocean",
+    "porpoise",
+    "sea",
+    "whale",
+    "whales",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Eight legged web spinner; hand eye head foot book",
+   "blocklist": [
+    "arachnid",
+    "book",
+    "eye",
+    "foot",
+    "hand",
+    "head",
+    "spider",
+    "spiders",
+    "spinner",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Buzzing honey maker; car run eat walk talk play go",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bee"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bee"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Rain protection; under upon until use user unit",
+   "blocklist": [
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Mythical one-horned horse; urban urge urn umpire",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hawaiian small guitar; ugly uncle union unique",
+   "blocklist": [
+    "ukulele"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "All of existence; usual utter utmost upset upper",
+   "blocklist": [
+    "unison",
+    "unity",
+    "universal",
+    "universe",
+    "universes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Not known; upward update upload upset using usual",
+   "blocklist": [
+    "unknown",
+    "unseen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Without a job; unfair unlike united undo ultra",
+   "blocklist": [
+    "jobless",
+    "unemployed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Opposite of happy; unusual urgent useful unable",
+   "blocklist": [
+    "unhappier",
+    "unhappily",
+    "unhappy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Not wearing clothes; unlock unsafe unsure unpaid",
+   "blocklist": [
+    "unclad",
+    "unclothed",
+    "undress",
+    "undressed",
+    "unlock",
+    "unpaid",
+    "unrobed",
+    "unsafe",
+    "unsure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Knocked out; undoing unfairly upside uptake ump",
+   "blocklist": [
+    "dazed",
+    "unconscious",
+    "unconsciously",
+    "unconsciousness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "False; uglier umpteen unarmed unclear uncouth",
+   "blocklist": [
+    "fake",
+    "falsehood",
+    "falsely",
+    "uglier",
+    "umpteen",
+    "unarmed",
+    "unclear",
+    "uncouth",
+    "unfaithful",
+    "unfounded",
+    "unreal",
+    "untrue",
+    "untruly",
+    "untrusty",
+    "untruth",
+    "untruthful",
+    "untruths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Not sure; university understand unlikely upstairs",
+   "blocklist": [
+    "doubtful",
+    "uncertain",
+    "undecided",
+    "unsettled",
+    "unsolved",
+    "unsorted",
+    "unsound",
+    "unsteady",
+    "unsung",
+    "unsure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Not fair; underground underwear underwater undergo",
+   "blocklist": [
+    "undergo",
+    "underground",
+    "underwater",
+    "underwear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unjust"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unjust"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Not yet completed; unbroken uncovered unwanted",
+   "blocklist": [
+    "undone",
+    "unfinished",
+    "unready",
+    "unripe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Reverse tying a knot; untold unfold unwell unleash",
+   "blocklist": [
+    "unbind",
+    "unbound",
+    "unfasten",
+    "unfold",
+    "unfurl",
+    "unknot",
+    "unknots",
+    "unknotted",
+    "unlace",
+    "unlaced",
+    "unlash",
+    "unleash",
+    "unloose",
+    "unloosen",
+    "unravel",
+    "untangle",
+    "untie",
+    "untied",
+    "unties",
+    "untold",
+    "untwist",
+    "untying",
+    "unwell",
+    "unwind",
+    "unwound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Zombie state; unexpected unimportant unbelievable",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "undead"
+    },
+    {
+     "seat": "guesser2",
+     "word": "undead"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Loosen a screw; unsaid unsalted unsavory unsaved",
+   "blocklist": [
+    "unscrew",
+    "unscrewed",
+    "unscrewing",
+    "unscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Rearrange mixed letters; unsanitary unscathed",
+   "blocklist": [
+    "unsanitary",
+    "unscathed",
+    "unscramble",
+    "unscrambled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Not selfish; unsatisfied unscheduled unsaturated",
+   "blocklist": [
+    "generous",
+    "unselfish",
+    "unselfishly",
+    "unselfishness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Open sealed envelope; unsightly unstable unspoken",
+   "blocklist": [
+    "unseal",
+    "unsealed",
+    "unseals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Without fragrance; unscrupulous unsatisfactory",
+   "blocklist": [
+    "unscented"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 58.87785456730769,
+  "cost_numerator": 391891,
+  "cost_denominator": 6656,
+  "cost_exact": false,
+  "cost_mcse": 0.13365582050805036,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 192211,
+   "denominator": 6656,
+   "value": 28.877854567307693,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:4,6:21,7:44,8:71,9:52,10:62,11:37,12:32,13:23,14:12,15:11,16:9,17:2,18:4,20:1",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.13365582050805036,
+   "rollouts": 256,
+   "rank_total": 384422,
+   "rank_denominator": 13312,
+   "cache_key": "a75285499c5a10a2201b2fdba907bf04"
+  }
+ }
+}

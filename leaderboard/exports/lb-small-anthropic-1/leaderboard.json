@@ -61,7 +61,7 @@
     }
   },
   "bootstrap": {
-    "resamples": 1000,
+    "resamples": 500,
     "seed": 12345,
     "cluster": "task (secret) \u2014 both directions and all pairings kept together",
     "task_clusters": 5,
@@ -71,84 +71,84 @@
         "elo": {
           "lo": 1759.7640884169305,
           "hi": 1759.7640884169305,
-          "n": 1000
+          "n": 500
         },
         "rank": {
           "lo": 1.0,
           "hi": 1.0,
-          "n": 1000
+          "n": 500
         },
         "offense_aggregate_speedup": {
-          "lo": 764.0491215389432,
+          "lo": 763.6989361246234,
           "hi": 955.8053308034473,
-          "n": 1000
+          "n": 500
         },
         "mean_paired_cost_advantage": {
-          "lo": 11.8,
+          "lo": 11.2,
           "hi": 4202.759198436554,
-          "n": 1000
+          "n": 500
         },
         "defensive_cost_ratio": {
-          "lo": 0.002828536436583183,
+          "lo": 0.002723721121856259,
           "hi": 0.6077669129653124,
-          "n": 1000
+          "n": 500
         },
         "offense_median_effective_cost": {
           "lo": 7.0,
           "hi": 10.0,
-          "n": 1000
+          "n": 500
         },
         "offense_geometric_mean_cost": {
           "lo": 7.18946260962546,
           "hi": 8.905075489802286,
-          "n": 1000
+          "n": 500
         },
         "defense_median_cost_imposed": {
           "lo": 17.0,
           "hi": 6967.745496752333,
-          "n": 1000
+          "n": 500
         }
       },
       "claude_haiku_4_5": {
         "elo": {
           "lo": 1240.2359115830695,
           "hi": 1240.2359115830695,
-          "n": 1000
+          "n": 500
         },
         "rank": {
           "lo": 2.0,
           "hi": 2.0,
-          "n": 1000
+          "n": 500
         },
         "offense_aggregate_speedup": {
           "lo": 1.6453676214800357,
-          "hi": 353.5397271417089,
-          "n": 1000
+          "hi": 367.14478291319494,
+          "n": 500
         },
         "mean_paired_cost_advantage": {
           "lo": -4202.759198436554,
-          "hi": -11.8,
-          "n": 1000
+          "hi": -11.2,
+          "n": 500
         },
         "defensive_cost_ratio": {
           "lo": 0.001046238148891054,
-          "hi": 0.0013088163729392242,
-          "n": 1000
+          "hi": 0.0013094167648043259,
+          "n": 500
         },
         "offense_median_effective_cost": {
           "lo": 17.0,
           "hi": 6967.745496752333,
-          "n": 1000
+          "n": 500
         },
         "offense_geometric_mean_cost": {
-          "lo": 19.297948602901247,
+          "lo": 18.499375625154727,
           "hi": 945.7352921436271,
-          "n": 1000
+          "n": 500
         },
         "defense_median_cost_imposed": {
           "lo": 7.0,
           "hi": 10.0,
-          "n": 1000
+          "n": 500
         }
       }
     }
@@ -247,14 +247,20 @@
     "claude_haiku_4_5": {
       "offense": {
         "games": 5.0,
+        "letters_earned": 7.0,
+        "turns_used_total": 97.0,
+        "endgame_reached": 3.0,
+        "endgame_converted": 1.0,
         "wins": 1.0,
         "hit_source_direct": 1.0,
         "turns": 97.0,
         "guesser1_decisions": 97.0,
         "clue_turns": 21.0,
         "guesser2_decisions": 21.0,
+        "clue_turns_defended": 21.0,
         "registered_matches": 12.0,
         "contacts_awarded": 6.0,
+        "registered_matches_blocked": 6.0,
         "intended_word_covered": 12.0,
         "contacts_prevented": 6.0,
         "direct_turns": 28.0,
@@ -267,39 +273,98 @@
           "guesser1_invalid_per_guesser1_decision": 0.4948453608247423,
           "direct_share_per_valid_turn": 0.5714285714285714,
           "registered_match_per_clue_turn": 0.5714285714285714,
+          "clue_leak_per_defended_clue_turn": 0.5714285714285714,
+          "endgame_conversion": 0.3333333333333333,
           "contact_per_clue_turn": 0.2857142857142857,
           "contact_per_registered_match": 0.5,
           "guesser2_invalid_per_guesser2_decision": 0.047619047619047616,
-          "reveal_per_choice_opportunity": 1.0
-        }
+          "reveal_per_choice_opportunity": 1.0,
+          "matches_blocked_per_registered_match": 0.5
+        },
+        "turns_per_letter_earned": 13.857142857142858
       },
       "defense": {
         "games": 5.0,
+        "clue_turns_faced": 35.0,
         "block_decisions": 35.0,
         "empty_blocklists": 17.0,
         "fresh_secret_candidates_blocked": 558.0,
         "blocks_overlapping_clue": 14.0,
+        "registered_matches_faced": 30.0,
+        "contacts_conceded": 21.0,
+        "registered_matches_blocked": 9.0,
         "intended_word_covered": 10.0,
         "contacts_prevented": 8.0,
         "block_invalid": 2.0,
         "mean_blocklist_size_per_block_decision": 16.942857142857143,
         "rates": {
           "empty_blocklist_per_block_decision": 0.4857142857142857,
-          "block_invalid_per_block_decision": 0.05714285714285714
+          "block_invalid_per_block_decision": 0.05714285714285714,
+          "intended_word_blocked_per_clue_turn": 0.2857142857142857,
+          "matches_blocked_per_registered_match": 0.3
+        },
+        "blocked_words_per_contact_prevented": 74.125
+      },
+      "invalid_reasons": {
+        "guesser1: direct word is not a current secret candidate": 34,
+        "guesser1: intended word is not a current contact candidate": 14,
+        "defender: blocklist entry is not a dictionary word": 1,
+        "guesser2: word is not a current contact candidate": 1,
+        "defender: range endpoints must be dictionary words": 1
+      },
+      "seat": {
+        "g1_decisions": 97,
+        "intended_attempts": 35,
+        "g2_decisions": 21,
+        "self_clue_turns": 21,
+        "self_matches": 12,
+        "forced_win_turns": 18,
+        "forced_win_converted": 1,
+        "d_decisions": 35,
+        "g1_invalid": 48,
+        "intended_illegal": 14,
+        "choice_decisions": 3,
+        "d_invalid": 2,
+        "choice_secret_word": 2,
+        "choice_secret_word_revealed": 2,
+        "g2_invalid": 1,
+        "mean_clue_characters": 16.238095238095237,
+        "median_clue_characters": 16.0,
+        "clue_budget_used": 0.16238095238095238,
+        "guesser1_invalid_rate": 0.4948453608247423,
+        "guesser2_invalid_rate": 0.047619047619047616,
+        "self_contained": {
+          "action_validity": 0.6730769230769231,
+          "clue_length_compliance": 1.0,
+          "self_coordination": 0.5714285714285714,
+          "self_coordination_clue_turns": 21,
+          "reveal_optimality": 1.0,
+          "reveal_optimality_n": 2,
+          "forced_win_conversion": 0.05555555555555555,
+          "forced_win_n": 18,
+          "intended_word_legality": 0.6,
+          "lookup_discipline": 1.0,
+          "lookup_discipline_n": 2
         }
       }
     },
     "claude_haiku_5_5": {
       "offense": {
         "games": 5.0,
+        "letters_earned": 33.0,
+        "turns_used_total": 40.0,
+        "endgame_reached": 4.0,
+        "endgame_converted": 4.0,
         "wins": 5.0,
         "hit_source_direct": 2.0,
         "turns": 40.0,
         "guesser1_decisions": 40.0,
         "clue_turns": 35.0,
         "guesser2_decisions": 35.0,
+        "clue_turns_defended": 35.0,
         "registered_matches": 30.0,
         "contacts_awarded": 21.0,
+        "registered_matches_blocked": 9.0,
         "intended_word_covered": 10.0,
         "contacts_prevented": 8.0,
         "direct_turns": 3.0,
@@ -315,25 +380,75 @@
           "guesser1_invalid_per_guesser1_decision": 0.05,
           "direct_share_per_valid_turn": 0.07894736842105263,
           "registered_match_per_clue_turn": 0.8571428571428571,
+          "clue_leak_per_defended_clue_turn": 0.2857142857142857,
+          "endgame_conversion": 1.0,
           "contact_per_clue_turn": 0.6,
           "contact_per_registered_match": 0.7,
           "guesser2_invalid_per_guesser2_decision": 0.02857142857142857,
-          "reveal_per_choice_opportunity": 0.0
-        }
+          "reveal_per_choice_opportunity": 0.0,
+          "matches_blocked_per_registered_match": 0.3
+        },
+        "turns_per_letter_earned": 1.2121212121212122
       },
       "defense": {
         "games": 5.0,
+        "clue_turns_faced": 21.0,
         "block_decisions": 21.0,
         "empty_blocklists": 4.0,
         "fresh_secret_candidates_blocked": 196568.0,
         "blocks_overlapping_clue": 4.0,
+        "registered_matches_faced": 12.0,
+        "contacts_conceded": 6.0,
         "block_invalid": 2.0,
+        "registered_matches_blocked": 6.0,
         "intended_word_covered": 12.0,
         "contacts_prevented": 6.0,
         "mean_blocklist_size_per_block_decision": 9575.47619047619,
         "rates": {
           "empty_blocklist_per_block_decision": 0.19047619047619047,
-          "block_invalid_per_block_decision": 0.09523809523809523
+          "block_invalid_per_block_decision": 0.09523809523809523,
+          "intended_word_blocked_per_clue_turn": 0.5714285714285714,
+          "matches_blocked_per_registered_match": 0.5
+        },
+        "blocked_words_per_contact_prevented": 33514.166666666664
+      },
+      "invalid_reasons": {
+        "defender: range endpoints must be dictionary words": 2,
+        "guesser1: intended word is not a current contact candidate": 2,
+        "guesser2: word is not a current contact candidate": 1
+      },
+      "seat": {
+        "d_decisions": 21,
+        "d_invalid": 2,
+        "g1_decisions": 40,
+        "intended_attempts": 37,
+        "g2_decisions": 35,
+        "self_clue_turns": 35,
+        "self_matches": 30,
+        "forced_win_turns": 2,
+        "forced_win_converted": 2,
+        "choice_decisions": 1,
+        "choice_secret_word": 1,
+        "g2_invalid": 1,
+        "intended_illegal": 2,
+        "g1_invalid": 2,
+        "mean_clue_characters": 42.57142857142857,
+        "median_clue_characters": 40.0,
+        "clue_budget_used": 0.4257142857142857,
+        "guesser1_invalid_rate": 0.05,
+        "guesser2_invalid_rate": 0.02857142857142857,
+        "self_contained": {
+          "action_validity": 0.9484536082474226,
+          "clue_length_compliance": 1.0,
+          "self_coordination": 0.8571428571428571,
+          "self_coordination_clue_turns": 35,
+          "reveal_optimality": 0.0,
+          "reveal_optimality_n": 1,
+          "forced_win_conversion": 1.0,
+          "forced_win_n": 2,
+          "intended_word_legality": 0.9459459459459459,
+          "lookup_discipline": null,
+          "lookup_discipline_n": 0
         }
       }
     }
@@ -542,5 +657,13 @@
       }
     }
   },
-  "forecast_calibration": {}
+  "forecast_calibration": {},
+  "human_challenge": null,
+  "anchored_rating": null,
+  "rating_joint_unanchored": null,
+  "teams": null,
+  "model_ids": [
+    "claude_haiku_5_5",
+    "claude_haiku_4_5"
+  ]
 }

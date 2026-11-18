@@ -1,0 +1,661 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_1_terra-atk-gemini_4_argon~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "unsealing",
+ "initial_prefix": "u",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 5060,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "One-horned mythical horse. use urn ump uptown ugly",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Rain protection held overhead. ugh uke udder ulna",
+   "blocklist": [
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Higher education institution. undo union upon",
+   "blocklist": [
+    "universities",
+    "university"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of downward. unit urge user usual",
+   "blocklist": [
+    "upward",
+    "upwardly",
+    "upwardness",
+    "upwardnesses",
+    "upwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of over. until upper united urban uncle",
+   "blocklist": [
+    "under",
+    "underneath"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Not usual. umpire utter utmost usher upset usage",
+   "blocklist": [
+    "uncommon",
+    "uncommoner",
+    "uncommonest",
+    "uncommonly",
+    "uncommonness",
+    "uncommonnesses",
+    "unusual",
+    "unusually",
+    "unusualness",
+    "unusualnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "One-wheeled cycle. unique update ultimate unable",
+   "blocklist": [
+    "unicycle",
+    "unicycles",
+    "unicyclist",
+    "unicyclists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Vampires are this. unity upside urgent unlock",
+   "blocklist": [
+    "undead",
+    "undying",
+    "unliving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Without a job. unsure unfair unpaid untold unfit",
+   "blocklist": [
+    "unemployable",
+    "unemployables",
+    "unemployed",
+    "unemployeds",
+    "unemployment",
+    "unemployments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Not conscious. untrue unused unpack unwell unjust",
+   "blocklist": [
+    "unaware",
+    "unawarely",
+    "unawareness",
+    "unawarenesses",
+    "unawares",
+    "unconscious",
+    "unconsciouses",
+    "unconsciously",
+    "unconsciousness",
+    "unconsciousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Soldier's standard outfit. unzip unwise upgrade",
+   "blocklist": [
+    "uniform",
+    "uniformed",
+    "uniforms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Not happy. universe universal unite uncover",
+   "blocklist": [
+    "unhappier",
+    "unhappiest",
+    "unhappily",
+    "unhappiness",
+    "unhappinesses",
+    "unhappy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Not certain. used unless unlike useful understand",
+   "blocklist": [
+    "uncertain",
+    "uncertainly",
+    "uncertainness",
+    "uncertainnesses",
+    "uncertainties",
+    "uncertainty",
+    "unsurely"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Undo a knot. utensil utilize ultra umpteen uphold",
+   "blocklist": [
+    "unknot",
+    "unknots",
+    "unknotted",
+    "unknotting",
+    "unravel",
+    "untangle",
+    "untangled",
+    "untangles",
+    "untangling",
+    "untie",
+    "untied",
+    "unties",
+    "untying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Remove clothing. uranium ukulele upstairs utility",
+   "blocklist": [
+    "unclothe",
+    "unclothed",
+    "unclothes",
+    "unclothing",
+    "undress",
+    "undressed",
+    "undresses",
+    "undressing",
+    "unrobe",
+    "unrobed",
+    "unrobes",
+    "unrobing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Capital letters. uppercut upshot uptake uproar",
+   "blocklist": [
+    "uncial",
+    "uncials",
+    "uppercase",
+    "uppercased",
+    "uppercases",
+    "uppercasing",
+    "uppers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Below the surface. utopia ugliness uplift upfront",
+   "blocklist": [
+    "undercurrent",
+    "undercurrents",
+    "underground",
+    "undergrounder",
+    "undergrounders",
+    "undergrounds",
+    "underlie",
+    "underlies",
+    "underlying",
+    "underlyingly",
+    "undersea",
+    "underseas",
+    "undersurface",
+    "undersurfaces",
+    "underwater",
+    "underworld",
+    "underworlds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Not seen. unknown unlikely utopian unsigned uphill",
+   "blocklist": [
+    "undiscovered",
+    "unnoticed",
+    "unobservable",
+    "unobserved",
+    "unperceived",
+    "unseeing",
+    "unseen",
+    "unsighted",
+    "unspotted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Not married. unspoken unstable unlucky unhealthy",
+   "blocklist": [
+    "unattached",
+    "uncoupled",
+    "unhitched",
+    "unmarried",
+    "unmarrieds",
+    "unmated",
+    "unpaired",
+    "unwed",
+    "unwedded"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Not safe. upload undertake utterly upgradeable",
+   "blocklist": [
+    "undefended",
+    "unguarded",
+    "unprotected",
+    "unsafe",
+    "unsafely",
+    "unsafeties",
+    "unsafety",
+    "unsecured",
+    "unsound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Cannot be broken. unfortunate unexpected upstream",
+   "blocklist": [
+    "unbreakable",
+    "unbroke",
+    "unbroken",
+    "uncracked",
+    "undamaged"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Not legal. upcoming upswing unison upbeat unsung",
+   "blocklist": [
+    "unauthorized",
+    "unconstitutional",
+    "unconstitutionality",
+    "unconstitutionally",
+    "unlawful",
+    "unlawfully",
+    "unlawfulness",
+    "unlawfulnesses",
+    "unlicensed",
+    "unsanctioned"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Not clean. ups ulu umm upo urb urea uvea umbo upas",
+   "blocklist": [
+    "unclean",
+    "uncleaned",
+    "uncleaner",
+    "uncleanest",
+    "uncleanliness",
+    "uncleanlinesses",
+    "uncleanly",
+    "uncleanness",
+    "uncleannesses",
+    "unhygienic",
+    "unpure",
+    "unsanitary",
+    "unsterile",
+    "unsterilized",
+    "untidy",
+    "unwashed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Present everywhere. udo udos ughs ukes ulan ulnae",
+   "blocklist": [
+    "ubique",
+    "ubiquities",
+    "ubiquitous",
+    "ubiquitously",
+    "ubiquitousness",
+    "ubiquitousnesses",
+    "ubiquity",
+    "universalities",
+    "universality",
+    "universally",
+    "universalness",
+    "universalnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Not needed. ubiety umber umbra uteri ulus uraeus",
+   "blocklist": [
+    "uncalled",
+    "unessential",
+    "unnecessarily",
+    "unnecessary",
+    "unneeded",
+    "unwanted",
+    "unwarranted",
+    "useless",
+    "uselessly",
+    "uselessness",
+    "uselessnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Not comfortable. umbel umbles umbos umbrae umbral",
+   "blocklist": [
+    "uncomfortable",
+    "uncomfortably",
+    "unease",
+    "uneases",
+    "uneasier",
+    "uneasiest",
+    "uneasily",
+    "uneasiness",
+    "uneasinesses",
+    "uneasy",
+    "unpleasant",
+    "unpleasantly",
+    "unpleasantness",
+    "unpleasantnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Lacking schooling. umps urds urbs ureal ureas",
+   "blocklist": [
+    "uneducated",
+    "uninstructed",
+    "unlearned",
+    "unlettered",
+    "unschooled",
+    "untaught",
+    "untrained",
+    "untutored"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Disconnect electrical cord. uracil urate urari",
+   "blocklist": [
+    "unhook",
+    "unhooked",
+    "unhooking",
+    "unhooks",
+    "unplug",
+    "unplugged",
+    "unplugging",
+    "unplugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Not important. urd urare urase uraei uratic urbia",
+   "blocklist": [
+    "uncounted",
+    "unimportant",
+    "unmeaning",
+    "unsubstantial",
+    "unsubstantialities",
+    "unsubstantiality",
+    "unsubstantially",
+    "unvalued"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Not comprehensible. urbane urchin ureic uranyl",
+   "blocklist": [
+    "unclear",
+    "unclearer",
+    "unclearest",
+    "uncomprehended",
+    "uncomprehending",
+    "uncomprehendingly",
+    "undecipherable",
+    "undeciphered",
+    "unfathomable",
+    "ungraspable",
+    "unintelligibilities",
+    "unintelligibility",
+    "unintelligible",
+    "unintelligibleness",
+    "unintelligiblenesses",
+    "unintelligibly",
+    "unknowable",
+    "ununderstandable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 371.6690184471366,
+  "cost_numerator": 10799215,
+  "cost_denominator": 29056,
+  "cost_exact": false,
+  "cost_mcse": 0.4469483867677834,
+  "baseline": {
+   "numerator": 11365509,
+   "denominator": 30976,
+   "value": 366.9133845557851,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:15,4:37,5:117,6:348,7:532,8:825,9:726,10:664,11:497,12:429,13:310,14:217,15:126,16:103,17:54,18:30,19:19,20:11",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4453757539751783,
+   "rollouts": 256,
+   "rank_total": 68193054,
+   "rank_denominator": 185856,
+   "cache_key": "f49df3108d22a71bd70a50c856e4553d"
+  },
+  "fallback": {
+   "numerator": 9927535,
+   "denominator": 29056,
+   "value": 341.6690184471366,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:3,4:17,5:83,6:287,7:495,8:783,9:681,10:624,11:471,12:407,13:290,14:207,15:120,16:98,17:51,18:27,19:17,20:10",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4469483867677834,
+   "rollouts": 256,
+   "rank_total": 59565210,
+   "rank_denominator": 174336,
+   "cache_key": "18e6b743204092bf80aca0721ae8be90"
+  }
+ }
+}

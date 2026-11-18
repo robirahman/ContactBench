@@ -1,0 +1,532 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "doctor keeps red fruit tree pie cider juice core",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "world orbiting a star",
+   "blocklist": [
+    "planet",
+    "star",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Six strings, frets, chords, and a pick",
+   "blocklist": [
+    "guitar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Little explorers map old northern terrain",
+   "blocklist": [
+    "arctic",
+    "explorer",
+    "explorers",
+    "little",
+    "map",
+    "maps",
+    "north",
+    "northern",
+    "old",
+    "polar",
+    "terrain",
+    "tundra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lemon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lemon"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Curious animals tumble",
+   "blocklist": [
+    "animals",
+    "calf",
+    "camel",
+    "cartwheel",
+    "cat",
+    "cats",
+    "cheetah",
+    "chimp",
+    "chimpanzee",
+    "cow",
+    "coyote",
+    "crash",
+    "cub",
+    "cubs",
+    "curious",
+    "kitten",
+    "kittens",
+    "somersault",
+    "tumble"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "circus"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Curious adventurers build in nature",
+   "blocklist": [
+    "cabin",
+    "cabins",
+    "cairn",
+    "camp",
+    "camper",
+    "campers",
+    "campfire",
+    "camping",
+    "camps",
+    "campsite",
+    "canopy",
+    "castle",
+    "castles",
+    "cave",
+    "caves",
+    "climb",
+    "climbing",
+    "cocoon",
+    "colony",
+    "construct",
+    "coop",
+    "cottage",
+    "craft",
+    "crafts",
+    "create",
+    "creature",
+    "creek"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 27,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Last letters: music piano staff cliff latte tree",
+   "blocklist": [
+    "coffee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Last letters: music piano club sofa hotel desert",
+   "blocklist": [
+    "cobalt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Curious rabbits observe winter nights",
+   "blocklist": [
+    "bat",
+    "bunny",
+    "cold",
+    "comet",
+    "coyote",
+    "hare",
+    "moon",
+    "night",
+    "nights",
+    "owl",
+    "rabbit",
+    "rabbits",
+    "snow",
+    "winter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "crown"
+    },
+    {
+     "seat": "guesser2",
+     "word": "crown"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Clever otters use nifty techniques",
+   "blocklist": [
+    "cobble",
+    "coconut",
+    "code",
+    "cogent",
+    "combine",
+    "complex",
+    "conch",
+    "cool",
+    "cooperate",
+    "cooperation",
+    "cooperative",
+    "coordinate",
+    "cope",
+    "crack",
+    "tool",
+    "tools"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "count"
+    },
+    {
+     "seat": "guesser2",
+     "word": "count"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Children often linger, looking at redwoods",
+   "blocklist": [
+    "collage",
+    "collar",
+    "collars",
+    "college"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "colossal"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "music piano trail piano river",
+   "blocklist": [
+    "collie",
+    "color",
+    "colored",
+    "colors",
+    "colour"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Roman crowds watched gladiators fight",
+   "blocklist": [
+    "coliseum",
+    "coliseums",
+    "colosseum",
+    "colosseums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Cooks often leave apples near dishes enjoy recipes",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colander"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colander"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Gather seashells, stamps, or baseball cards",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collect",
+     "collects"
+    ]
+   ],
+   "blocked_word_count": 39,
+   "opened_guesses": [],
+   "prefix_after": "coll",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Cool otters love lakes; all prefer sunny evenings",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collapse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collapse"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Clever otters love lakes and trees eagerly",
+   "blocklist": [
+    "collate",
+    "collated",
+    "collateral",
+    "collates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Can our lambs love? A boy often rides a tiny elk.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collaborate",
+     "collaborator"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Cute owls linger, looking at geese each night.",
+   "blocklist": [
+    "collagen",
+    "collagens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Cute owls love lakes; a red inn needs guests.",
+   "blocklist": [
+    "collarbone",
+    "collared",
+    "collaring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Calm otters love lakes; all goats eat daisies.",
+   "blocklist": [
+    "collaged",
+    "collages",
+    "collaging",
+    "collagist",
+    "collagists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Cute owls love lakes; a pup sees icy new games",
+   "blocklist": [
+    "collapsed",
+    "collapses",
+    "collapsing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "colla",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Curious otters love lakes and rabbits dig",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collard"
+    }
+   ],
+   "prefix_after": "colla",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 27.0,
+  "cost_numerator": 27,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

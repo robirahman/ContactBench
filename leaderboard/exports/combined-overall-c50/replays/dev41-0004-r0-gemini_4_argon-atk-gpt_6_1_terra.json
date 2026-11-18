@@ -1,0 +1,571 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_argon-atk-gpt_6_1_terra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "suitcases and bags carried by a traveler",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "first entry in this lexicon",
+   "blocklist": [
+    "aah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "last word in this dictionary",
+   "blocklist": [
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "not consistent or identical throughout",
+   "blocklist": [
+    "heterogeneous",
+    "inconsistent",
+    "inhomogeneous",
+    "irregular",
+    "nonuniform",
+    "uneven",
+    "variable",
+    "varied"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "lack of symmetry or balance between parts",
+   "blocklist": [
+    "asymmetrical",
+    "asymmetry",
+    "disproportion",
+    "imbalance",
+    "lopsidedness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "lack of symmetry starting with dis",
+   "blocklist": [
+    "dissymmetric",
+    "dissymmetries",
+    "dissymmetry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "miscellaneous articles or equipment needed",
+   "blocklist": [
+    "accoutrements",
+    "apparatus",
+    "appurtenances",
+    "gear",
+    "impedimenta",
+    "paraphernalia",
+    "stuff"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "carriages with horses and attendants",
+   "blocklist": [
+    "corteges",
+    "entourages",
+    "equipage",
+    "equipages",
+    "retinue",
+    "retinues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ceremonial clothes and emblems of royalty",
+   "blocklist": [
+    "crown",
+    "insignia",
+    "panoply",
+    "regalia",
+    "robes",
+    "trappings",
+    "vestments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "small ornaments or jewelry of little value",
+   "blocklist": [
+    "bauble",
+    "baubles",
+    "bibelots",
+    "gewgaws",
+    "knickknacks",
+    "tchotchkes",
+    "trinket",
+    "trinkets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "showy unnecessary finery or ostentatious ornament",
+   "blocklist": [
+    "flummery",
+    "fripperies",
+    "frippery",
+    "froufrou",
+    "gaud",
+    "gaudery",
+    "gimcrack",
+    "tinsel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "ornamental covering for a horse",
+   "blocklist": [
+    "bard",
+    "barding",
+    "caparison",
+    "caparisons",
+    "housing",
+    "housings",
+    "trapper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "gilded bronze or copper alloy used on furniture",
+   "blocklist": [
+    "dore",
+    "gilt",
+    "ormolu",
+    "ormolus",
+    "pinchbeck",
+    "tombac"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "inlaid work of variously colored wood veneers",
+   "blocklist": [
+    "inlay",
+    "inlaying",
+    "intarsia",
+    "intarsias",
+    "marqueterie",
+    "marquetries",
+    "marquetry",
+    "parquetry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "enamelwork with cells separated by wire strips",
+   "blocklist": [
+    "cloisonne",
+    "cloisonnes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "delicate lace-like metalwork of twisted threads",
+   "blocklist": [
+    "filigree",
+    "filigreed",
+    "filigreeing",
+    "filigrees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "black metallic alloy of sulfur used in engraving",
+   "blocklist": [
+    "niello",
+    "nielloed",
+    "nielloing",
+    "niellos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "metalwork hammered into relief from the reverse",
+   "blocklist": [
+    "repousse",
+    "repousses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "inlay iron or steel with wavy patterns of gold",
+   "blocklist": [
+    "damascene",
+    "damascened",
+    "damascenes",
+    "damascening",
+    "damask",
+    "damasked",
+    "damasking",
+    "damasks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "carved or engraved work on whalebone or ivory",
+   "blocklist": [
+    "scrimshaw",
+    "scrimshawed",
+    "scrimshawing",
+    "scrimshaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "design incised or sunken below the surface",
+   "blocklist": [
+    "engrave",
+    "engraves",
+    "etch",
+    "etched",
+    "etching",
+    "etchings",
+    "gravure",
+    "incise",
+    "incision",
+    "intaglio",
+    "intaglioed",
+    "intaglioing",
+    "intaglios"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "decoration made by scratching through plaster",
+   "blocklist": [
+    "sgraffiti",
+    "sgraffito"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "mural painting done rapidly on wet lime",
+   "blocklist": [
+    "fresco",
+    "frescoed",
+    "frescoer",
+    "frescoers",
+    "frescoes",
+    "frescoing",
+    "frescos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "pigment mixed with hot beeswax burned in",
+   "blocklist": [
+    "encaustic",
+    "encaustics",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "technique of tiny distinct dots of pure color",
+   "blocklist": [
+    "divisionism",
+    "divisionisms",
+    "divisionist",
+    "divisionists",
+    "pointillism",
+    "pointillisms",
+    "pointillist",
+    "pointillistic",
+    "pointillists",
+    "stipple",
+    "stippled",
+    "stippler",
+    "stipplers",
+    "stipples",
+    "stippling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "strong contrast of light and shade in art",
+   "blocklist": [
+    "chiaroscurist",
+    "chiaroscurists",
+    "chiaroscuro",
+    "chiaroscuros",
+    "tenebrism",
+    "tenebrisms",
+    "tenebrist",
+    "tenebrists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "thick application of paint that leaves brush marks",
+   "blocklist": [
+    "impasto",
+    "impastoed",
+    "impastos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "smoky blending of tones without harsh outlines",
+   "blocklist": [
+    "sfumato",
+    "sfumatos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "monochrome painting executed in shades of gray",
+   "blocklist": [
+    "grisaille",
+    "grisailles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "pigment mixed with egg yolk medium",
+   "blocklist": [
+    "tempera",
+    "temperas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11753.244930766312,
+  "cost_numerator": 2478524291,
+  "cost_denominator": 210880,
+  "cost_exact": false,
+  "cost_mcse": 2.6213935377871125,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 2472197891,
+   "denominator": 210880,
+   "value": 11723.244930766312,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:961,4:3871,5:8607,6:15202,7:23065,8:28369,9:24829,10:20279,11:15488,12:11347,13:7817,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.6213935377871125,
+   "rollouts": 256,
+   "rank_total": 69221540948,
+   "rank_denominator": 5904640,
+   "cache_key": "92ccec6d44365449eb76f083316416e2"
+  }
+ }
+}

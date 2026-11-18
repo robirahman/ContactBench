@@ -1,0 +1,680 @@
+{
+ "game_id": "dev41-0005-r0-claude_haiku_5_5-atk-gemini_4_hydrogen",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gemini_4_hydrogen",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine companion that barks",
+   "blocklist": [
+    "dog",
+    "dogs",
+    "hound",
+    "pooch",
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Scaly swimmer with fins and gills",
+   "blocklist": [
+    "fish",
+    "fishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Animal that neighs and gallops",
+   "blocklist": [
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "ponies",
+    "pony",
+    "stallion",
+    "steed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Wild pack hunter that howls",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "jackal",
+    "jackals",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Feathered flyer that sings from a nest",
+   "blocklist": [
+    "avian",
+    "bird",
+    "birds",
+    "fowl",
+    "robin",
+    "songbird",
+    "sparrow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Savanna king with a shaggy mane",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped stalker of Asian jungles",
+   "blocklist": [
+    "tiger",
+    "tigers",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Dwelling with rooms and a roof",
+   "blocklist": [
+    "abode",
+    "cabin",
+    "cottage",
+    "home",
+    "homes",
+    "house",
+    "houses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Nocturnal hooter with huge round eyes",
+   "blocklist": [
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Striped African hoofed beast that grazes",
+   "blocklist": [
+    "okapi",
+    "okapis",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Vessel that floats on water",
+   "blocklist": [
+    "barge",
+    "boat",
+    "boats",
+    "canoe",
+    "raft",
+    "ship",
+    "ships",
+    "yacht"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "ant bee elk emu gnu hen ram yak",
+   "blocklist": [
+    "animals",
+    "beasts",
+    "creature",
+    "creatures",
+    "critter",
+    "critters",
+    "fauna",
+    "wildlife",
+    "zoo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cod"
+    },
+    {
+     "seat": "guesser2",
+     "word": "goat"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Tiny rodent with a long tail",
+   "blocklist": [
+    "gerbil",
+    "gerbils",
+    "mice",
+    "mouse",
+    "rat",
+    "rats",
+    "shrew",
+    "shrews",
+    "vole",
+    "voles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Long-eared hopper that loves carrots",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "cottontail",
+    "cottontails",
+    "hare",
+    "hares",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "pig cow ox ape eel newt bat crab camel",
+   "blocklist": [
+    "bass",
+    "bear",
+    "carp",
+    "clam",
+    "crow",
+    "deer",
+    "dodo",
+    "donkey",
+    "dove",
+    "duck",
+    "flea",
+    "fox",
+    "frog",
+    "gull",
+    "hawk",
+    "jay",
+    "kiwi",
+    "lamb",
+    "lark",
+    "lynx",
+    "mole",
+    "moth",
+    "mule",
+    "pike",
+    "puma",
+    "seal",
+    "shark",
+    "sheep",
+    "slug",
+    "snail",
+    "snake",
+    "squid",
+    "swan",
+    "toad",
+    "trout",
+    "wasp",
+    "whale",
+    "worm",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 39,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Honking waterfowl with a long neck",
+   "blocklist": [
+    "cygnet",
+    "gander",
+    "ganders",
+    "geese",
+    "goose",
+    "gosling",
+    "goslings",
+    "swans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Device on a desk that gives off light",
+   "blocklist": [
+    "bulb",
+    "bulbs",
+    "candle",
+    "candles",
+    "flashlight",
+    "flashlights",
+    "lamp",
+    "lamps",
+    "lantern",
+    "lanterns",
+    "monitor",
+    "monitors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Primate that swings through jungle trees",
+   "blocklist": [
+    "apes",
+    "chimp",
+    "chimpanzee",
+    "gibbon",
+    "gorilla",
+    "monkey",
+    "monkeys",
+    "orangutan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tiny flying pest that bites",
+   "blocklist": [
+    "blackfly",
+    "flies",
+    "fly",
+    "gnat",
+    "gnats",
+    "midge",
+    "midges",
+    "mosquito",
+    "mosquitoes",
+    "mosquitos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Massive river mammal with a huge mouth",
+   "blocklist": [
+    "capybara",
+    "capybaras",
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos",
+    "manatee",
+    "manatees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Large soaring raptor with a hooked beak",
+   "blocklist": [
+    "condor",
+    "condors",
+    "eagle",
+    "eagles",
+    "falcon",
+    "falcons",
+    "vulture",
+    "vultures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Andean woolly pack animal that spits",
+   "blocklist": [
+    "alpaca",
+    "alpacas",
+    "guanaco",
+    "guanacos",
+    "llama",
+    "llamas",
+    "vicuna",
+    "vicunas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Antlered giant of northern forests",
+   "blocklist": [
+    "caribou",
+    "caribous",
+    "moose",
+    "reindeer",
+    "reindeers",
+    "stag",
+    "stags",
+    "wapiti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Shelled reptile that moves slowly",
+   "blocklist": [
+    "chelonian",
+    "terrapin",
+    "terrapins",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Tall woody plant with leaves and bark",
+   "blocklist": [
+    "ash",
+    "birch",
+    "birches",
+    "cedar",
+    "cedars",
+    "elm",
+    "elms",
+    "maple",
+    "maples",
+    "oak",
+    "oaks",
+    "pine",
+    "pines",
+    "redwood",
+    "redwoods",
+    "sapling",
+    "saplings",
+    "sequoia",
+    "sequoias",
+    "tree",
+    "willow",
+    "willows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Flightless runner with a long neck and huge eggs",
+   "blocklist": [
+    "cassowaries",
+    "cassowary",
+    "moa",
+    "moas",
+    "ostrich",
+    "ostriches",
+    "rhea",
+    "rheas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Hard mineral rock used for buildings",
+   "blocklist": [
+    "basalt",
+    "granite",
+    "limestone",
+    "marble",
+    "sandstone",
+    "slate",
+    "stone",
+    "stones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Hot blaze that flickers at a campfire",
+   "blocklist": [
+    "bonfire",
+    "ember",
+    "embers",
+    "fire",
+    "fires",
+    "flame",
+    "flames",
+    "inferno",
+    "spark",
+    "sparks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ace age aid aim air arm art bag bed bet box buy",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sun"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11924.699634930494,
+  "cost_numerator": 37936190045,
+  "cost_denominator": 3181312,
+  "cost_exact": false,
+  "cost_mcse": 2.450130180411396,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 37840750685,
+   "denominator": 3181312,
+   "value": 11894.699634930494,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:928,4:3816,5:8548,6:15167,7:23055,8:28394,9:24854,10:20297,11:15500,12:11357,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.450130180411396,
+   "rollouts": 256,
+   "rank_total": 75681501370,
+   "rank_denominator": 6362624,
+   "cache_key": "1993cd1287d56911eeb906019151d92d"
+  }
+ }
+}

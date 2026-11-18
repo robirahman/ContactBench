@@ -1,0 +1,609 @@
+{
+ "game_id": "dev41-0000-r0-claude_haiku_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_haiku_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that says meow",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "pet",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine animal that barks loudly",
+   "blocklist": [
+    "bark",
+    "barks",
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "pup",
+    "puppy",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Structure with walls and a roof where people live",
+   "blocklist": [
+    "apartment",
+    "building",
+    "cabin",
+    "condo",
+    "cottage",
+    "dwelling",
+    "home",
+    "homes",
+    "house",
+    "houses",
+    "hut",
+    "mansion",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Scaly swimmer that lives in water and has gills",
+   "blocklist": [
+    "bass",
+    "carp",
+    "eel",
+    "fish",
+    "fishes",
+    "gill",
+    "gills",
+    "goldfish",
+    "salmon",
+    "scales",
+    "shark",
+    "swimmer",
+    "trout",
+    "tuna",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Feathered flyer that chirps and sings",
+   "blocklist": [
+    "bird",
+    "birds",
+    "canary",
+    "dove",
+    "finch",
+    "jay",
+    "lark",
+    "parrot",
+    "robin",
+    "songbird",
+    "sparrow",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Savanna predator with a mane that roars",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Moving air felt outdoors on a breezy day",
+   "blocklist": [
+    "air",
+    "blow",
+    "breeze",
+    "gust",
+    "wind",
+    "winds",
+    "windy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Timber from trees used for furniture and fires",
+   "blocklist": [
+    "wood",
+    "wooded",
+    "wooden",
+    "woodman",
+    "woods",
+    "woodsy",
+    "woody"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Old horse-drawn vehicle with four wheels for cargo",
+   "blocklist": [
+    "waggon",
+    "waggons",
+    "wagon",
+    "wagoner",
+    "wagoners",
+    "wagons",
+    "wain",
+    "wains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Ocean swell rolling toward the shore",
+   "blocklist": [
+    "breaker",
+    "surf",
+    "swell",
+    "tide",
+    "wade",
+    "wake",
+    "wash",
+    "washout",
+    "wave",
+    "waved",
+    "wavelet",
+    "wavelets",
+    "waver",
+    "waves",
+    "wavy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Thin crisp cracker or communion disk",
+   "blocklist": [
+    "wafer",
+    "wafers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Grain ground into flour for bread and pasta",
+   "blocklist": [
+    "flour",
+    "rye",
+    "wheat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Round rolling part of a car",
+   "blocklist": [
+    "wheel",
+    "wheelbase",
+    "wheelchair",
+    "wheeled",
+    "wheeler",
+    "wheelie",
+    "wheelies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Huge sea mammal that spouts spray and sings",
+   "blocklist": [
+    "whale",
+    "whaler",
+    "whalers",
+    "whales",
+    "whaling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Opposite of cold, mild in temperature",
+   "blocklist": [
+    "cold",
+    "cool",
+    "heat",
+    "hot",
+    "lukewarm",
+    "tepid",
+    "warm",
+    "warmed",
+    "warmer",
+    "warmest",
+    "warms",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Hope or desire for something to happen",
+   "blocklist": [
+    "desire",
+    "hope",
+    "want",
+    "wanting",
+    "wish",
+    "wishes",
+    "wishful",
+    "wishing",
+    "wist",
+    "yearning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "wall",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Compass point opposite of east",
+   "blocklist": [
+    "west",
+    "westerly",
+    "western",
+    "westward"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Joint connecting the hand and forearm",
+   "blocklist": [
+    "wrist",
+    "wrists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Limb a plane or bird uses to fly",
+   "blocklist": [
+    "wing",
+    "winged",
+    "wings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Stroll on foot at an easy pace",
+   "blocklist": [
+    "amble",
+    "saunter",
+    "stroll",
+    "walk",
+    "walked",
+    "walker",
+    "walkers",
+    "walking",
+    "walks",
+    "wander",
+    "wanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Opposite of dry, soaked with liquid",
+   "blocklist": [
+    "damp",
+    "drenched",
+    "moist",
+    "saturated",
+    "soaked",
+    "soggy",
+    "wet",
+    "wetland",
+    "wetlands",
+    "wetly",
+    "wetness",
+    "wets",
+    "wetted",
+    "wetter",
+    "wettest",
+    "wetting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Untamed, not domesticated or cultivated",
+   "blocklist": [
+    "feral",
+    "savage",
+    "tame",
+    "untamed",
+    "wild",
+    "wildcat",
+    "wilder",
+    "wildest",
+    "wildfire",
+    "wildly",
+    "wildness",
+    "wilds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Glass opening that lets light into a room",
+   "blocklist": [
+    "window",
+    "windowed",
+    "windowing",
+    "windowless",
+    "windowpane",
+    "windowpanes",
+    "windows",
+    "windowsill",
+    "windowsills",
+    "windshield"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "wax way week weed wine work world worm",
+   "blocklist": [
+    "web",
+    "webs",
+    "wed",
+    "wee",
+    "weeks",
+    "weep",
+    "weld",
+    "well",
+    "welt",
+    "went",
+    "wept",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "work"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wit"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Habitual custom, or accustomed to doing something",
+   "blocklist": [
+    "accustomed",
+    "custom",
+    "customs",
+    "habit",
+    "habits",
+    "practice",
+    "routine",
+    "usage",
+    "wont",
+    "wonted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "winter",
+   "prefix_after": "w",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 251.54276001908397,
+  "cost_numerator": 4217869,
+  "cost_denominator": 16768,
+  "cost_exact": false,
+  "cost_mcse": 0.6637909841549354,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 3714829,
+   "denominator": 16768,
+   "value": 221.54276001908397,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:31,4:131,5:272,6:428,7:662,8:720,9:505,10:323,11:225,12:117,13:65,14:43,15:22,16:10,17:3,18:1",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.6637909841549354,
+   "rollouts": 256,
+   "rank_total": 7429658,
+   "rank_denominator": 33536,
+   "cache_key": "116433d69ecac57766e8f2cd0a4afb01"
+  }
+ }
+}

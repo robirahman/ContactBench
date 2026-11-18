@@ -1,0 +1,556 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Meowing feline; dog sun sky sea ice red blue green",
+   "blocklist": [
+    "blue",
+    "cat",
+    "dog",
+    "green",
+    "ice",
+    "red",
+    "sea",
+    "sky",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of night; the and for you are not one two",
+   "blocklist": [
+    "and",
+    "are",
+    "bright",
+    "day",
+    "daytime",
+    "for",
+    "light",
+    "not",
+    "one",
+    "sun",
+    "the",
+    "two",
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Earth satellite; love time man war world life air",
+   "blocklist": [
+    "air",
+    "life",
+    "love",
+    "man",
+    "moon",
+    "time",
+    "war",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Bovine says moo; water fire house home tree food",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Land surrounded by water; idea iron item inch ink",
+   "blocklist": [
+    "idea",
+    "inch",
+    "ink",
+    "iron",
+    "island",
+    "item"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Eskimo snow dwelling; image issue input into iris",
+   "blocklist": [
+    "igloo",
+    "image",
+    "input",
+    "into",
+    "iris",
+    "issue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Six legged bug; inside ideal index income industry",
+   "blocklist": [
+    "ant",
+    "bug",
+    "ideal",
+    "income",
+    "index",
+    "industry",
+    "insect",
+    "insects",
+    "inside"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Newborn; information important interest include",
+   "blocklist": [
+    "baby",
+    "important",
+    "include",
+    "infant",
+    "information",
+    "interest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Cannot be seen; imagine impossible invent",
+   "blocklist": [
+    "imagine",
+    "impossible",
+    "invent",
+    "invisible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Hanging ice spike; international individual itself",
+   "blocklist": [
+    "icicle",
+    "icicles",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Elephant tusk material; increase impact indeed",
+   "blocklist": [
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Sickness; instead initial immediately",
+   "blocklist": [
+    "ailment",
+    "disease",
+    "ill",
+    "illness",
+    "illnesses",
+    "immediately",
+    "initial",
+    "instead"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Foolish person; internal investment involved",
+   "blocklist": [
+    "idiot",
+    "imbecile",
+    "internal",
+    "investment",
+    "involved"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Titanic struck one; independent intelligent",
+   "blocklist": [
+    "iceberg",
+    "independent",
+    "indicate",
+    "indurate",
+    "intelligent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Blue purple color; identify improve influence",
+   "blocklist": [
+    "indigo",
+    "lavender",
+    "violet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Endless quantity; invention inhale insult impulse",
+   "blocklist": [
+    "immense",
+    "inexhaustible",
+    "infinite",
+    "infinitely",
+    "infinitude",
+    "infinity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Needle delivers medicine; inspired intact invite",
+   "blocklist": [
+    "inject",
+    "injected",
+    "injection",
+    "injects",
+    "shot",
+    "syringe",
+    "vaccine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tropical lizard; internet interview institute",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "iguana"
+    },
+    {
+     "seat": "guesser2",
+     "word": "iguana"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of outdoor; interact invade inherit",
+   "blocklist": [
+    "indoor",
+    "indoors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Small hotel; innocent inquiry insane inherent",
+   "blocklist": [
+    "hostel",
+    "inn",
+    "inns",
+    "motel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Germs cause this; ingredient integrity indication",
+   "blocklist": [
+    "infect",
+    "infected",
+    "infection",
+    "infections",
+    "infectious",
+    "infects",
+    "infest",
+    "infested",
+    "infirm",
+    "infirmity",
+    "inflammation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Inability to sleep; insurance instruction",
+   "blocklist": [
+    "insomnia",
+    "instruction",
+    "insurance"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Gut organ; introduction interaction intention",
+   "blocklist": [
+    "bowel",
+    "intestinal",
+    "intestine",
+    "intestines",
+    "stomach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Army enters country; incredible inclusion insight",
+   "blocklist": [
+    "incursion",
+    "incursions",
+    "invaded",
+    "invader",
+    "invaders",
+    "invasion",
+    "invasions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Innate animal behavior; insist intend inventors",
+   "blocklist": [
+    "instinct",
+    "instinctive",
+    "instincts",
+    "instinctual",
+    "instinctually"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Police detective; insurrection indifference",
+   "blocklist": [
+    "indifference",
+    "inquest",
+    "inspector",
+    "inspectors",
+    "insurrection",
+    "investigate",
+    "investigation",
+    "investigator",
+    "investigators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Rising prices; industrial inner insert invest",
+   "blocklist": [
+    "industrial",
+    "inflation",
+    "inner",
+    "insert",
+    "invest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 377.6655409611554,
+  "cost_numerator": 24267277,
+  "cost_denominator": 64256,
+  "cost_exact": false,
+  "cost_mcse": 0.5403507810121569,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22339597,
+   "denominator": 64256,
+   "value": 347.6655409611554,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:8,5:34,6:117,7:262,8:386,9:502,10:608,11:574,12:564,13:440,14:272,15:231,16:173,17:110,18:58,19:29,20:14",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.5403507810121569,
+   "rollouts": 256,
+   "rank_total": 44679194,
+   "rank_denominator": 128512,
+   "cache_key": "d5d506db90d4dc4bc48464dab7729829"
+  }
+ }
+}

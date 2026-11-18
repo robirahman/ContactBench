@@ -1,0 +1,326 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Giza monument",
+   "blocklist": [
+    "pyramid",
+    "sphinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "striped African equine",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zebra"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zebra"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "green tropical lizard",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "iamb",
+     "indurate"
+    ]
+   ],
+   "blocked_word_count": 2848,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "land surrounded by water",
+   "blocklist": [
+    "inlet",
+    "islet"
+   ],
+   "blocked_ranges": [
+    [
+     "island",
+     "isthmus"
+    ]
+   ],
+   "blocked_word_count": 254,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "elephant tusk material",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "iodide",
+     "isthmus"
+    ]
+   ],
+   "blocked_word_count": 676,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ivory"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ivory"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "pen liquid",
+   "blocklist": [
+    "ink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "six-legged bug",
+   "blocklist": [
+    "insect"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "newborn baby",
+   "blocklist": [
+    "infant",
+    "neonate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "inability to sleep",
+   "blocklist": [
+    "insomnia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "cannot be seen",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "invisible"
+    },
+    {
+     "seat": "guesser2",
+     "word": "invisible"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "manufacturing sector",
+   "blocklist": [
+    "industrial",
+    "industries",
+    "industrious",
+    "industry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "live within",
+   "blocklist": [
+    "indeed",
+    "indent",
+    "indexes",
+    "indicate",
+    "indies",
+    "indigo",
+    "indoor",
+    "indoors",
+    "induce",
+    "indulge"
+   ],
+   "blocked_ranges": [
+    [
+     "indaba",
+     "indecent"
+    ]
+   ],
+   "blocked_word_count": 30,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indwell"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indwell"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "factory owner or tycoon",
+   "blocklist": [
+    "induct"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "industrialist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "industrialist"
+    }
+   ],
+   "prefix_after": "indur",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "indurated",
+   "prefix_after": "indur",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "induration",
+   "prefix_after": "indur",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "indurates",
+   "prefix_after": "indur",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 20.0,
+  "cost_numerator": 20,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

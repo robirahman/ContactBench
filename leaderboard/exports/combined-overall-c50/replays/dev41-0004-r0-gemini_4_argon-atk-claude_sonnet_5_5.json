@@ -1,0 +1,510 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "airport bags and suitcases",
+   "blocklist": [
+    "bag",
+    "baggage",
+    "baggages",
+    "bags",
+    "luggage",
+    "luggages",
+    "suitcase",
+    "suitcases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "baked dish often made with tuna and noodles",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "casserole"
+    },
+    {
+     "seat": "guesser2",
+     "word": "casserole"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "african mammal that eats ants and starts a dict",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "belly area between chest and pelvis",
+   "blocklist": [
+    "abdomen",
+    "abdomens",
+    "abdominal",
+    "abdominally"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "polka instrument with bellows and keys",
+   "blocklist": [
+    "accordion",
+    "accordionist",
+    "accordionists",
+    "accordions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "snowslide down a mountain",
+   "blocklist": [
+    "avalanche",
+    "avalanched",
+    "avalanches",
+    "avalanching"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "main fruit used to make guacamole",
+   "blocklist": [
+    "avocado",
+    "avocados"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "generic chemical name for tylenol painkiller",
+   "blocklist": [
+    "acetaminophen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "state of having mixed or contradictory feelings",
+   "blocklist": [
+    "ambivalence",
+    "ambivalences",
+    "ambivalent",
+    "ambivalently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "repeating initial consonant sounds in poetry",
+   "blocklist": [
+    "alliteration",
+    "alliterations",
+    "alliterative"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "chain or group of islands like hawaii or indonesia",
+   "blocklist": [
+    "archipelago",
+    "archipelagoes",
+    "archipelagos",
+    "atoll",
+    "atolls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "book about ones own life written by oneself",
+   "blocklist": [
+    "autobiographer",
+    "autobiographers",
+    "autobiographic",
+    "autobiographical",
+    "autobiographically",
+    "autobiographies",
+    "autobiography"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "plastic or metal sheath at the tip of a shoelace",
+   "blocklist": [
+    "aglet",
+    "aglets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "mexican walking fish salamander with external gill",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "counting frame with sliding beads on rods or wires",
+   "blocklist": [
+    "abaca",
+    "abacas",
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "inflammation of the appendix",
+   "blocklist": [
+    "appendicitis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "ancient astronomical instrument for star altitudes",
+   "blocklist": [
+    "astrolabe",
+    "astrolabes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "chinese healing therapy inserting thin needles",
+   "blocklist": [
+    "acupuncture",
+    "acupunctures",
+    "acupuncturist",
+    "acupuncturists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "texas mammal with bony armor plates that rolls up",
+   "blocklist": [
+    "armadillo",
+    "armadillos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "artificial sweetener in diet soda and nutrasweet",
+   "blocklist": [
+    "aspartame",
+    "aspartames"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "seabird around ancient mariner neck or golf score",
+   "blocklist": [
+    "albatross",
+    "albatrosses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "something out of its proper historical time period",
+   "blocklist": [
+    "anachronic",
+    "anachronism",
+    "anachronisms",
+    "anachronistic",
+    "anachronistically",
+    "anachronous",
+    "anachronously"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "open air tiered arena for gladiator shows",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "amphitheater"
+    },
+    {
+     "seat": "guesser2",
+     "word": "amphitheater"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "green thistle vegetable with edible heart and leaf",
+   "blocklist": [
+    "artichoke",
+    "artichokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "truce ending war like on november eleventh",
+   "blocklist": [
+    "armistice",
+    "armistices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "eight legged creature like a spider or scorpion",
+   "blocklist": [
+    "arachnid",
+    "arachnids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "painful joint inflammation common in elderly",
+   "blocklist": [
+    "arthritic",
+    "arthritides",
+    "arthritis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "sport of shooting arrows with a bow at a target",
+   "blocklist": [
+    "archer",
+    "archers",
+    "archery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "basic branch of math with addition and division",
+   "blocklist": [
+    "arithmetic",
+    "arithmetical",
+    "arithmetically",
+    "arithmetician",
+    "arithmeticians"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 87.7780625,
+  "cost_numerator": 1404449,
+  "cost_denominator": 16000,
+  "cost_exact": false,
+  "cost_mcse": 0.18170339703617347,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 924449,
+   "denominator": 16000,
+   "value": 57.7780625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:8,4:19,5:47,6:97,7:125,8:145,9:126,10:90,11:69,12:51,13:37,14:19,15:13,16:11,17:4,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.18170339703617347,
+   "rollouts": 256,
+   "rank_total": 1848898,
+   "rank_denominator": 32000,
+   "cache_key": "ecff061d7679ca740a9d8090ff41b3ab"
+  }
+ }
+}

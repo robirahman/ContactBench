@@ -1,0 +1,627 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A purring feline pet; not a dog.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Four-wheeled motor vehicle; cab can cap cow cup",
+   "blocklist": [
+    "car"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Opposite of hot; cob cod cog con cop cot coy cry",
+   "blocklist": [
+    "chill",
+    "chilled",
+    "chilly",
+    "cold",
+    "colder",
+    "coldest",
+    "cool",
+    "coolant",
+    "cooler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Baby bear; cabin cable cage cake call calm came",
+   "blocklist": [
+    "cub",
+    "cubs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Swiss dairy product; camp cane card care case cash",
+   "blocklist": [
+    "camp",
+    "cane",
+    "card",
+    "care",
+    "case",
+    "cash",
+    "cheddar",
+    "cheese",
+    "cream"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Seat for one; city club coat code coffee coin cook",
+   "blocklist": [
+    "chair",
+    "chairs",
+    "coach",
+    "couch",
+    "couches",
+    "cushion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Sweet cocoa candy; come cost cut cute cycle child",
+   "blocklist": [
+    "cacao",
+    "candy",
+    "caramel",
+    "chocolate",
+    "chocolates",
+    "cocoa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Royal headwear; count court cover cross cloud",
+   "blocklist": [
+    "coronet",
+    "cowl",
+    "crown",
+    "crowned",
+    "crowns",
+    "hat",
+    "helmet",
+    "king",
+    "queen",
+    "tiara"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Wall timepiece; class clear close color copy corn",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "clockwise",
+    "dial",
+    "timer",
+    "watch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Egg laying farm bird; change check chance cause",
+   "blocklist": [
+    "bird",
+    "capon",
+    "chick",
+    "chicken",
+    "chickens",
+    "chicks",
+    "chook",
+    "cock",
+    "egg",
+    "eggs",
+    "fowl",
+    "hen",
+    "hens",
+    "poultry",
+    "pullet",
+    "rooster"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Fortified palace; country computer company culture",
+   "blocklist": [
+    "cabal",
+    "campus",
+    "castle",
+    "castled",
+    "castles",
+    "cathedral",
+    "chateau",
+    "citadel",
+    "compound",
+    "computer",
+    "corporation",
+    "corps",
+    "cottage",
+    "cultural",
+    "culture",
+    "fort",
+    "fortress",
+    "kremlin",
+    "palace"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pincered sea crustacean; could carry catch cause",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "crab"
+    },
+    {
+     "seat": "guesser2",
+     "word": "crab"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Icy body orbiting sun; common complete control",
+   "blocklist": [
+    "comet",
+    "comets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Ice cream holder; community condition consider",
+   "blocklist": [
+    "cone",
+    "coned",
+    "cones",
+    "cornet",
+    "cornets",
+    "scoop",
+    "sundae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "North pointing device; conversation construction",
+   "blocklist": [
+    "compass",
+    "compassed",
+    "compasses",
+    "magnet",
+    "magnetic",
+    "needle",
+    "north"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Marine reef builder; college collect combat comedy",
+   "blocklist": [
+    "colony",
+    "coral",
+    "coralline",
+    "coralloid",
+    "corals",
+    "polyp",
+    "reef"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Baked chip treat; contact correct compare concern",
+   "blocklist": [
+    "biscuit",
+    "brownie",
+    "cookie",
+    "cookies",
+    "cooky",
+    "cracker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Metal in pennies; coast course corners correspond",
+   "blocklist": [
+    "brass",
+    "bronze",
+    "coin",
+    "copper",
+    "coppers",
+    "coppery",
+    "nickel",
+    "penny",
+    "zinc"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Hooded venomous snake; corgi cosmic cosmos",
+   "blocklist": [
+    "adder",
+    "asp",
+    "cobra",
+    "cobras",
+    "mamba",
+    "snake",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Western ranch rider; couple county counter contain",
+   "blocklist": [
+    "buckaroo",
+    "cowboy",
+    "cowboys",
+    "cowgirl",
+    "cowgirls",
+    "cowhand",
+    "cowhands",
+    "cowherd",
+    "cowpoke",
+    "cowpokes",
+    "gaucho",
+    "horseman",
+    "rancher",
+    "vaquero",
+    "wrangler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Soft textile fiber; cougar coupon cousin coral",
+   "blocklist": [
+    "cotton",
+    "cottons",
+    "cottonseed",
+    "cottony",
+    "fabric",
+    "flax",
+    "linen",
+    "silk",
+    "wool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Tropical hairy fruit; cooperate compete concert",
+   "blocklist": [
+    "coconut",
+    "coconuts",
+    "kiwi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Halloween disguise; comfort command concern corner",
+   "blocklist": [
+    "comfort",
+    "command",
+    "costume",
+    "costumed",
+    "costumer",
+    "costumes",
+    "ghost",
+    "mask",
+    "masked",
+    "masks",
+    "witch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Hack from lungs; contract compose contest content",
+   "blocklist": [
+    "cough",
+    "coughed",
+    "cougher",
+    "coughers",
+    "coughing",
+    "coughs",
+    "lung",
+    "lungs",
+    "phlegm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Horn of plenty; core chorus costly cottage coral",
+   "blocklist": [
+    "chorus",
+    "core",
+    "cornucopia",
+    "cornucopias",
+    "costly",
+    "horn",
+    "plenty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Burial box; coastwise coalition colleague collapse",
+   "blocklist": [
+    "cask",
+    "casket",
+    "caskets",
+    "coffer",
+    "coffers",
+    "coffin",
+    "coffins",
+    "crypt",
+    "grave",
+    "sarcophagus",
+    "tomb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Wild canine that howls; concord concrete corona",
+   "blocklist": [
+    "canine",
+    "coydog",
+    "coyote",
+    "coyotes",
+    "dingo",
+    "fox",
+    "howl",
+    "jackal",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Punctuation pause; collie colon comic colt comb",
+   "blocklist": [
+    "colonel",
+    "colonic",
+    "colons",
+    "comma",
+    "commas",
+    "dash",
+    "hyphen",
+    "pause",
+    "period",
+    "semicolon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 492.36847225522814,
+  "cost_numerator": 66300369,
+  "cost_denominator": 134656,
+  "cost_exact": false,
+  "cost_mcse": 0.7349086633604051,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 62260689,
+   "denominator": 134656,
+   "value": 462.36847225522814,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:52,5:146,6:301,7:526,8:770,9:860,10:863,11:785,12:649,13:472,14:312,15:202,16:119,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.7349086633604051,
+   "rollouts": 256,
+   "rank_total": 62260689,
+   "rank_denominator": 134656,
+   "cache_key": "e570aaf436021808361fbe65d9c29e2e"
+  }
+ }
+}

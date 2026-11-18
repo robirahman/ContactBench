@@ -1,0 +1,433 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-claude_haiku_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Barks, wags its tail; man's best friend.",
+   "blocklist": [
+    "dog",
+    "hound",
+    "pup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "It dances to show others where flowers are.",
+   "blocklist": [
+    "bee",
+    "bees",
+    "dance",
+    "dancer",
+    "dances",
+    "flower",
+    "flowers",
+    "hive",
+    "honeybee",
+    "nectar",
+    "pollen",
+    "waggle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "The ominous collective noun for crows.",
+   "blocklist": [
+    "crow",
+    "crows",
+    "murder",
+    "murders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "dog",
+   "blocklist": [
+    "cabbage",
+    "collards",
+    "greens",
+    "kale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "canine"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A puzzle made from interlocking pieces.",
+   "blocklist": [
+    "interlock",
+    "interlocking",
+    "jigsaw",
+    "jigsaws",
+    "piece",
+    "pieces",
+    "puzzle",
+    "puzzles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Take the initials: Curious ants travel.",
+   "blocklist": [
+    "act",
+    "acts",
+    "ant",
+    "ants",
+    "art",
+    "arts",
+    "cat",
+    "cats",
+    "cot",
+    "curious",
+    "tar",
+    "tars",
+    "travel",
+    "travels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A tiny rodent often chased by a house cat.",
+   "blocklist": [
+    "gerbil",
+    "hamster",
+    "mice",
+    "mole",
+    "moles",
+    "mouse",
+    "rat",
+    "rats",
+    "rodent",
+    "rodents",
+    "shrew",
+    "shrews",
+    "vermin",
+    "vole",
+    "voles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Alphabet positions 19, 21, 14.",
+   "blocklist": [
+    "collar",
+    "collars",
+    "sun",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Every leaf matters.",
+   "blocklist": [
+    "bush",
+    "chard",
+    "every",
+    "herb",
+    "leaf",
+    "leafy",
+    "leaves",
+    "lettuce",
+    "matter",
+    "matters",
+    "plant",
+    "spinach",
+    "sprout",
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Quick underdogs often keep kicking around.",
+   "blocklist": [
+    "kick",
+    "kicking",
+    "kicks",
+    "underdog",
+    "underdogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "football"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Take initials: Zebras eat bananas, unusually.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "eat",
+    "eats",
+    "unusual",
+    "unusually",
+    "zebra",
+    "zebras",
+    "zebu",
+    "zebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Silent-winged night hunter with a swiveling head.",
+   "blocklist": [
+    "hawk",
+    "hawks",
+    "owl",
+    "owlet",
+    "owlets",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Take initials: Gentle neighbors understand.",
+   "blocklist": [
+    "gentle",
+    "gnu",
+    "gnus",
+    "neighbor",
+    "neighbors",
+    "understand"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "I value youth.",
+   "blocklist": [
+    "valued",
+    "values",
+    "youth",
+    "youths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ivy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ivy"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Take initials: Curious ants roam.",
+   "blocklist": [
+    "car",
+    "cars",
+    "cart",
+    "carts",
+    "roam",
+    "roams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Take initials: Clever wizards meet.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "collar"
+    ],
+    [
+     "collards",
+     "zebus"
+    ]
+   ],
+   "blocked_word_count": 152483,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Cold owls love long; ants run by old newts early.",
+   "blocklist": [
+    "cwm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collarbone"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collarbone"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collard",
+   "prefix_after": "co",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 22.0,
+  "cost_numerator": 22,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

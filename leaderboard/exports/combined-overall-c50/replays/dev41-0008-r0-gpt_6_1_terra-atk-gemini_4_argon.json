@@ -1,0 +1,607 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "striped African equine; cat dog sun moon star love",
+   "blocklist": [
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "king of jungle; man woman boy girl red blue sky",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lions",
+    "tarzan",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "largest land mammal; water fire earth air time day",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "tallest animal; the and for are but not you all",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "black white bamboo eater; new old good bad big sea",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "flightless Antarctic bird; one two six ten ice hot",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial; yes was she her his",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Flipper is a marine mammal; house tree car book",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "porpoise",
+    "porpoises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "eight armed sea creature; war peace art music law",
+   "blocklist": [
+    "kraken",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "honey making insect; life world people year work",
+   "blocklist": [
+    "bee",
+    "bees",
+    "bumblebee",
+    "bumblebees",
+    "honeybee",
+    "honeybees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "largest ocean mammal; hand head face eye ear nose",
+   "blocklist": [
+    "cetacean",
+    "cetaceans",
+    "rorqual",
+    "rorquals",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "hoofed riding mount; home family food heart money",
+   "blocklist": [
+    "bronco",
+    "broncos",
+    "camel",
+    "camels",
+    "donkey",
+    "donkeys",
+    "horse",
+    "horses",
+    "mare",
+    "mares",
+    "mule",
+    "mules",
+    "mustang",
+    "mustangs",
+    "ponies",
+    "pony",
+    "stallion",
+    "stallions",
+    "steed",
+    "steeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Nile reptile; god day night house light rain wind",
+   "blocklist": [
+    "alligator",
+    "alligators",
+    "asp",
+    "asps",
+    "cobra",
+    "cobras",
+    "croc",
+    "crocodile",
+    "crocodiles",
+    "crocodilian",
+    "crocodilians",
+    "crocs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Jaws predator; good great little long high right",
+   "blocklist": [
+    "mako",
+    "makos",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "caterpillar becomes this; said make take way know",
+   "blocklist": [
+    "butterflies",
+    "butterfly",
+    "chrysalis",
+    "chrysalises",
+    "cocoon",
+    "cocoons",
+    "moth",
+    "moths",
+    "pupa",
+    "pupae",
+    "pupas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "eucalyptus eating marsupial; run walk talk play go",
+   "blocklist": [
+    "koala",
+    "koalas",
+    "possum",
+    "possums",
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "grizzly; come see look live give think use find",
+   "blocklist": [
+    "bear",
+    "bears",
+    "bruin",
+    "bruins",
+    "grizzlies",
+    "ursine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "ribbit amphibian; first last black green gold hope",
+   "blocklist": [
+    "bullfrog",
+    "bullfrogs",
+    "frog",
+    "frogs",
+    "tadpole",
+    "tadpoles",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "nocturnal hooting bird; have has had can did get",
+   "blocklist": [
+    "nightjar",
+    "nightjars",
+    "owl",
+    "owlet",
+    "owlets",
+    "owls",
+    "raptor",
+    "raptors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "eight legged web spinner; hope dream truth free",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders",
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "howling canine; table chair window door road river",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wolf"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wolf"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "bald bird; end era eat egg easy east evil ever",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets",
+    "egret",
+    "egrets",
+    "emu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "opposite of entrance; each even else empty enough",
+   "blocklist": [
+    "egress",
+    "egresses",
+    "exit",
+    "exited",
+    "exiting",
+    "exits",
+    "exodus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "slippery snake fish; every extra edge echo edit",
+   "blocklist": [
+    "eel",
+    "eelier",
+    "eeliest",
+    "eellike",
+    "eelpout",
+    "eelpouts",
+    "eels",
+    "eelworm",
+    "eelworms",
+    "eely",
+    "elver",
+    "elvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "motor; energy event early enter enjoy equal enemy",
+   "blocklist": [
+    "engine",
+    "engined",
+    "engineries",
+    "enginery",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "removes pencil marks; example experience exact",
+   "blocklist": [
+    "erase",
+    "erased",
+    "eraser",
+    "erasers",
+    "erases",
+    "erasing",
+    "erasion",
+    "erasions",
+    "erasure",
+    "erasures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "purple vegetable; elastic elderly emotion estate",
+   "blocklist": [
+    "eggplant",
+    "eggplants",
+    "endive",
+    "endives",
+    "escarole",
+    "escaroles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "moon blocks sun; effect effort either entire exist",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "eclipsis",
+    "eclipsises",
+    "ecliptic",
+    "ecliptics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ground shaking; education election electric escape",
+   "blocklist": [
+    "earthquake",
+    "earthquakes",
+    "earthshaker",
+    "earthshakers",
+    "earthshaking",
+    "earthshakingly",
+    "epicenter",
+    "epicenters",
+    "epicentral",
+    "erupt",
+    "erupted",
+    "erupting",
+    "eruption",
+    "eruptions",
+    "erupts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 531.4726507404796,
+  "cost_numerator": 24116103,
+  "cost_denominator": 45376,
+  "cost_exact": false,
+  "cost_mcse": 0.6197660756645654,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22754823,
+   "denominator": 45376,
+   "value": 501.47265074047954,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:31,4:89,5:172,6:429,7:786,8:1111,9:1122,10:968,11:709,12:557,13:379,14:208,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6197660756645654,
+   "rollouts": 256,
+   "rank_total": 91019292,
+   "rank_denominator": 181504,
+   "cache_key": "2c58dc1e3109b06866e35ad70cfe037a"
+  }
+ }
+}

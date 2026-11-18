@@ -1,0 +1,540 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet; aah aahed aahing aahs aal aalii aaliis",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine pet; aals aardvark aardvarks aardwolf aas",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "pup",
+    "puppies",
+    "puppy",
+    "pups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered animal; aardwolves aargh aarrgh aarrghh",
+   "blocklist": [
+    "avian",
+    "bird",
+    "birds",
+    "chicken",
+    "duck",
+    "eagle",
+    "fowl",
+    "owl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Aquatic pet; aasvogel aasvogels aba abaca abacas",
+   "blocklist": [
+    "aquarium",
+    "betta",
+    "fish",
+    "goldfish",
+    "guppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Bunny; abaci aback abacterial abacus abacuses",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "hare",
+    "hares",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Equine mount; abaft abaka abakas abalone abalones",
+   "blocklist": [
+    "bronco",
+    "colt",
+    "filly",
+    "gelding",
+    "horse",
+    "horses",
+    "mare",
+    "mustang",
+    "nag",
+    "pony",
+    "stallion",
+    "steed",
+    "stud"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "King of jungle; abamp abampere abamperes abamps",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Our star; sab sabadilla sabadillas sabaton",
+   "blocklist": [
+    "sol",
+    "solar",
+    "star",
+    "stars",
+    "sun",
+    "sunlight",
+    "sunny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Slithering reptile; sabatons sabayon sabayons",
+   "blocklist": [
+    "adder",
+    "asp",
+    "boa",
+    "cobra",
+    "lizard",
+    "python",
+    "reptile",
+    "serpent",
+    "slither",
+    "snail",
+    "snake",
+    "snakes",
+    "viper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Woolly farm animal; sabbat sabbath sabbaths sabbed",
+   "blocklist": [
+    "ewe",
+    "goat",
+    "lamb",
+    "lambs",
+    "ram",
+    "sheep",
+    "sheepish",
+    "wool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Web spinner; sabbatic sabbatical sabbaticals",
+   "blocklist": [
+    "arachnid",
+    "cobweb",
+    "spider",
+    "spiders",
+    "spiderweb",
+    "spinneret",
+    "tarantula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Frozen precipitation; sabbatics sabbats sabbing",
+   "blocklist": [
+    "blizzard",
+    "flurry",
+    "frost",
+    "hail",
+    "ice",
+    "rain",
+    "sleet",
+    "snow",
+    "snowfall",
+    "snowflake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Ocean predator; sabe sabed sabeing saber sabers",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shark"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sweetener; suable suably suasion suasions suasive",
+   "blocklist": [
+    "sucrose",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Underwater vessel; suave suavely suaver suavest",
+   "blocklist": [
+    "boat",
+    "ship",
+    "sub",
+    "submarine",
+    "submariner",
+    "submarines",
+    "submersible",
+    "submersibles",
+    "subs",
+    "vessel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Hot season; suabilities suability suasively",
+   "blocklist": [
+    "summer",
+    "summers",
+    "summertime",
+    "summery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Evening meal; suasory suaveness suavities suavity",
+   "blocklist": [
+    "dine",
+    "dinner",
+    "dinners",
+    "meal",
+    "sup",
+    "supper",
+    "suppers",
+    "suppertime",
+    "sups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Dawn; suba subabbot subabbots subacid subacidly",
+   "blocklist": [
+    "sunbeam",
+    "sunburst",
+    "sunrise",
+    "sunrises",
+    "sunup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Travel luggage; subacrid subacute subacutely",
+   "blocklist": [
+    "suitcase",
+    "suitcases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Comic book hero; subadar subadars subadult subah",
+   "blocklist": [
+    "super",
+    "superhero",
+    "superman"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Yellow flower; subagent subagents subahdar subahs",
+   "blocklist": [
+    "buttercup",
+    "daffodil",
+    "dandelion",
+    "marigold",
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ride waves; subacidness subadults subaerial subas",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "surf"
+    },
+    {
+     "seat": "guesser2",
+     "word": "surf"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Excellent; supe superable superably superabound",
+   "blocklist": [
+    "superb",
+    "superior",
+    "supreme"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Help; superableness superablenesses superabounded",
+   "blocklist": [
+    "supply",
+    "supporter",
+    "supportive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "support"
+    },
+    {
+     "seat": "guesser2",
+     "word": "support"
+    }
+   ],
+   "prefix_after": "supi",
+   "result": "prefix_extended"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 31.43359375,
+  "cost_numerator": 8047,
+  "cost_denominator": 256,
+  "cost_exact": false,
+  "cost_mcse": 0.031033834158735715,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 367,
+   "denominator": 256,
+   "value": 1.43359375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:1,7:1,8:2,9:3,10:4,11:1,12:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.031033834158735715,
+   "rollouts": 256,
+   "rank_total": 367,
+   "rank_denominator": 256,
+   "cache_key": "4f19b8e01cca74c55394c9238e8215c8"
+  }
+ }
+}

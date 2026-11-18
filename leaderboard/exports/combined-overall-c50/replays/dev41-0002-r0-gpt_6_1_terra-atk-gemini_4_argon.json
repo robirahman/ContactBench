@@ -1,0 +1,626 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "cat dog sun moon star sky sea; largest land animal",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "water fire earth air king queen; tallest mammal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "love life time man world; black and white bear",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "the you are for not one all day; striped horse",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "red blue green home good bad; jungle monarch",
+   "blocklist": [
+    "lion",
+    "lioness",
+    "lions",
+    "tarzan",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "house tree car book light hand food; bees make it",
+   "blocklist": [
+    "beeswax",
+    "hive",
+    "honey",
+    "honeycomb",
+    "honeys",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "new old big small long short; frozen water",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "ices",
+    "icicle",
+    "snow",
+    "snows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "war peace work play night; yellow curved fruit",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "people place thing year way; oinks on a farm",
+   "blocklist": [
+    "boar",
+    "boars",
+    "hog",
+    "hogs",
+    "pig",
+    "piglet",
+    "piglets",
+    "pigs",
+    "porker",
+    "sow",
+    "sows",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "have said this that with from; howling wild canine",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "dingo",
+    "dingoes",
+    "jackal",
+    "jackals",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "was his her but had out who; hopping marsupial",
+   "blocklist": [
+    "joey",
+    "joeys",
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "your what when where how why; desert ship",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "get got can did see now two; quacking pond bird",
+   "blocklist": [
+    "drake",
+    "drakes",
+    "duck",
+    "duckling",
+    "ducklings",
+    "ducks",
+    "mallard",
+    "mallards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "day of our lives; mooing dairy livestock",
+   "blocklist": [
+    "bovine",
+    "bovines",
+    "bull",
+    "bulls",
+    "calf",
+    "calves",
+    "cattle",
+    "cow",
+    "cows",
+    "heifer",
+    "heifers",
+    "oxen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "first last right left up down; clucking farm bird",
+   "blocklist": [
+    "chicken",
+    "chickens",
+    "fowl",
+    "hen",
+    "hens",
+    "poultry",
+    "rooster",
+    "roosters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "run put say use go; eight armed ocean mollusk",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid",
+    "squids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "money power music happy sad; caterpillar becomes",
+   "blocklist": [
+    "butterflies",
+    "butterfly",
+    "chrysalis",
+    "cocoon",
+    "moth",
+    "moths",
+    "pupa",
+    "pupae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "set end part mind head face; web spinning arachnid",
+   "blocklist": [
+    "arachnids",
+    "arthropod",
+    "arthropods",
+    "spider",
+    "spiders",
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "school family friend child father; forbidden fruit",
+   "blocklist": [
+    "apple",
+    "apples",
+    "fig",
+    "figs",
+    "pomegranate",
+    "pomegranates",
+    "quince",
+    "quinces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "hope truth dream heart soul; tuxedo Antarctic bird",
+   "blocklist": [
+    "albatross",
+    "albatrosses",
+    "auk",
+    "auks",
+    "penguin",
+    "penguins",
+    "puffin",
+    "puffins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "god sex art job law; ocean predator with fins",
+   "blocklist": [
+    "barracuda",
+    "barracudas",
+    "dolphin",
+    "dolphins",
+    "fish",
+    "fishes",
+    "orca",
+    "orcas",
+    "shark",
+    "sharks",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "story mother sister brother; long eared bunny",
+   "blocklist": [
+    "cottontail",
+    "cottontails",
+    "hare",
+    "hares",
+    "jackrabbit",
+    "jackrabbits",
+    "lapin",
+    "leveret",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "great little more over under; croaking amphibian",
+   "blocklist": [
+    "anuran",
+    "bullfrog",
+    "frog",
+    "frogs",
+    "newt",
+    "salamander",
+    "tadpole",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "brown pink gray gold silver; giant African ape",
+   "blocklist": [
+    "chimp",
+    "chimpanzee",
+    "chimpanzees",
+    "chimps",
+    "gorilla",
+    "gorillas",
+    "primate",
+    "primates",
+    "silverback",
+    "silverbacks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "bread milk egg salt road rain; hissing reptile",
+   "blocklist": [
+    "cobra",
+    "cobras",
+    "lizard",
+    "lizards",
+    "python",
+    "pythons",
+    "serpent",
+    "serpents",
+    "snake",
+    "snakes",
+    "viper",
+    "vipers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "computer phone news game; mythical horned equine",
+   "blocklist": [
+    "centaur",
+    "centaurs",
+    "stallion",
+    "steed",
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "think know take come want need; nocturnal flier",
+   "blocklist": [
+    "bat",
+    "bats",
+    "fireflies",
+    "firefly",
+    "nighthawk",
+    "nighthawks",
+    "owl",
+    "owlet",
+    "owlets",
+    "owls",
+    "vampire",
+    "vampires",
+    "whippoorwill"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "beautiful woman young man; colony picnic insect",
+   "blocklist": [
+    "ant",
+    "ants",
+    "bee",
+    "hornet",
+    "termite",
+    "termites",
+    "wasp",
+    "wasps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "boy girl city country river; massive river beast",
+   "blocklist": [
+    "alligator",
+    "crocodile",
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos",
+    "manatee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11754.67515090366,
+  "cost_numerator": 34694534951,
+  "cost_denominator": 2951552,
+  "cost_exact": false,
+  "cost_mcse": 2.5943836558139446,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 34605988391,
+   "denominator": 2951552,
+   "value": 11724.67515090366,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:902,4:3807,5:8553,6:15169,7:23059,8:28391,9:24844,10:20292,11:15493,12:11355,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5943836558139446,
+   "rollouts": 256,
+   "rank_total": 69211976782,
+   "rank_denominator": 5903104,
+   "cache_key": "bb7c5c7ee4bf8cd1d06583633362f151"
+  }
+ }
+}

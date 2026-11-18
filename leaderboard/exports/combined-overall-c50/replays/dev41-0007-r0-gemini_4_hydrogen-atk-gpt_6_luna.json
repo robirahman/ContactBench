@@ -1,0 +1,564 @@
+{
+ "game_id": "dev41-0007-r0-gemini_4_hydrogen-atk-gpt_6_luna",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gpt_6_luna",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "gray mammal with a trunk and tusks",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "flightless black and white antarctic bird",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "bellows musical instrument with keys",
+   "blocklist": [
+    "accordion",
+    "concertina",
+    "harmonium",
+    "keyboard",
+    "melodeon",
+    "organ",
+    "piano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "australian hopping marsupial with pouch",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "lizard that changes color",
+   "blocklist": [
+    "anole",
+    "camouflage",
+    "chameleon",
+    "gecko",
+    "iguana",
+    "lizard",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "tube with mirrors showing shifting patterns",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "mirror",
+    "optical",
+    "toy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "doctor tool for listening to heartbeat",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "folding canopy held to keep off rain",
+   "blocklist": [
+    "bumbershoot",
+    "parasol",
+    "parasols",
+    "raincoat",
+    "sunshade",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "mountain that erupts molten lava",
+   "blocklist": [
+    "eruption",
+    "lava",
+    "magma",
+    "mountain",
+    "volcanic",
+    "volcanism",
+    "volcano",
+    "volcanology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "magnetic needle device for finding north",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "egg laying mammal with a duck bill",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "instrument that measures temperature",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "therm",
+     "thermostat"
+    ]
+   ],
+   "blocked_word_count": 118,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "sand timer with two glass bulbs",
+   "blocklist": [
+    "bulb",
+    "clepsydra",
+    "clock",
+    "hourglass",
+    "sandglass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "yellow weed with fluffy white seed head",
+   "blocklist": [
+    "blowball",
+    "dandelion",
+    "dandelions",
+    "pappus",
+    "puffball",
+    "thistle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "wooden percussion instrument played with mallets",
+   "blocklist": [
+    "glockenspiel",
+    "mallet",
+    "marimba",
+    "vibraphone",
+    "xylophone",
+    "xylophonist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "wet sand that swallows things",
+   "blocklist": [
+    "bog",
+    "mire",
+    "mudslide",
+    "quicksand",
+    "quicksands",
+    "sinkhole",
+    "swamp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "group of stars forming a pattern",
+   "blocklist": [
+    "asterism",
+    "asterisms",
+    "constellate",
+    "constellation",
+    "constellations",
+    "zodiac"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "submarine optical tube for seeing above water",
+   "blocklist": [
+    "periscope",
+    "periscopes",
+    "periscopic",
+    "snorkel",
+    "spyglass",
+    "spyglasses",
+    "telescope",
+    "telescopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "cloth dome that slows a skydiver falling",
+   "blocklist": [
+    "chute",
+    "parachute",
+    "parachutes",
+    "parachuting",
+    "parachutist",
+    "parachutists",
+    "skydiver",
+    "skydiving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "japanese art of paper folding",
+   "blocklist": [
+    "kirigami",
+    "origami",
+    "origamis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "greek maze built for minotaur",
+   "blocklist": [
+    "labyrinth",
+    "labyrinthine",
+    "labyrinths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "ancient counting frame with sliding beads",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "bead"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "dark outline against bright background",
+   "blocklist": [
+    "backlight",
+    "contour",
+    "contrast",
+    "outline",
+    "profile",
+    "shadow",
+    "shape",
+    "silhouette"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "word spelled same forwards and backwards",
+   "blocklist": [
+    "civic",
+    "kayak",
+    "level",
+    "madam",
+    "palindrome",
+    "radar",
+    "rotor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "plant process converting sunlight into energy",
+   "blocklist": [
+    "chlorophyll",
+    "photosynthesis",
+    "photosynthesize",
+    "photosynthesized",
+    "photosynthesizes",
+    "photosynthesizing",
+    "photosynthetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "chain or group of many islands",
+   "blocklist": [
+    "archipelago",
+    "archipelagos",
+    "atoll",
+    "chain",
+    "island",
+    "islands",
+    "isle",
+    "isles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "caterpillar changing into a butterfly",
+   "blocklist": [
+    "chrysalis",
+    "cocoon",
+    "metamorphosis",
+    "morph",
+    "pupa",
+    "transformation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "tall coastal tower with warning beacon for ships",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "light",
+     "lightwood"
+    ]
+   ],
+   "blocked_word_count": 55,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "tallest african mammal with very long neck",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11979.128662157576,
+  "cost_numerator": 31065234777,
+  "cost_denominator": 2593280,
+  "cost_exact": false,
+  "cost_mcse": 2.7382947357717615,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 30987436377,
+   "denominator": 2593280,
+   "value": 11949.128662157576,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:963,4:3869,5:8589,6:15202,7:23061,8:28376,9:24826,10:20260,11:15470,12:11335,13:7808,14:5107,15:3178,16:1930,17:1117,18:591,19:326,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 2.7382947357717615,
+   "rollouts": 256,
+   "rank_total": 61974872754,
+   "rank_denominator": 5186560,
+   "cache_key": "f75d95e1364f3e5ad919a6a0d1e130cd"
+  }
+ }
+}

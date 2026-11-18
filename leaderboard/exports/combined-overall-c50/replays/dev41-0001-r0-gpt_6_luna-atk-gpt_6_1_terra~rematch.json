@@ -1,0 +1,434 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_luna-atk-gpt_6_1_terra~rematch",
+ "attacker": "gpt_6_luna",
+ "defender": "gpt_6_1_terra",
+ "secret": "supine",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "The central star of our solar system",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A vessel used for ocean travel",
+   "blocklist": [
+    "sailboat",
+    "schooner",
+    "ship",
+    "steamer",
+    "steamship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A person who performs music using their voice",
+   "blocklist": [
+    "serenader",
+    "singer",
+    "soloist",
+    "songster",
+    "songstress",
+    "soprano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A hard piece of rock",
+   "blocklist": [
+    "sandstone",
+    "schist",
+    "shard",
+    "silex",
+    "slab",
+    "slate",
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A sweet crystalline ingredient often added to tea",
+   "blocklist": [
+    "saccharin",
+    "sucrose",
+    "sugar",
+    "sweetener"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Mythical creature with a human head and lion body",
+   "blocklist": [
+    "sphinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Large fish with a long snout and bony plates",
+   "blocklist": [
+    "shovelnose",
+    "sterlet",
+    "sturgeon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A timekeeping device that uses the sun's shadow",
+   "blocklist": [
+    "sundial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A weekly day of religious rest",
+   "blocklist": [
+    "sabbath"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "A rapid eye movement between fixation points",
+   "blocklist": [
+    "saccade"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Some artists paint pretty homes; idiots rarely eat",
+   "blocklist": [
+    "sapphire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "News media club became stranger",
+   "blocklist": [
+    "scoop",
+    "screwier",
+    "sensation",
+    "spookier",
+    "strangest",
+    "surreal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "saber"
+    },
+    {
+     "seat": "guesser2",
+     "word": "saber"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Business? You: taxi outfit",
+   "blocklist": [
+    "subway",
+    "suit",
+    "suitcase",
+    "suiting",
+    "suits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Some unusual recipes are legendary",
+   "blocklist": [
+    "sural"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "This menu can afford sugar daily",
+   "blocklist": [
+    "sundry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Sincere uncles make many excellent recipes",
+   "blocklist": [
+    "summer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Silly uncles prefer pastries every Ramadan",
+   "blocklist": [
+    "supper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Some unkind neighbors despise all elephants",
+   "blocklist": [
+    "sundae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Silly uncles bake",
+   "blocklist": [
+    "sub"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "News menu tastes fresh kiwi",
+   "blocklist": [
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "As outwardly, slightly stately, can once",
+   "blocklist": [
+    "sultan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Some undergrads rarely visit; explorers yawn.",
+   "blocklist": [
+    "survey"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Some Uncles Prefer Pastries, Like Yesterday",
+   "blocklist": [
+    "supply"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Some unusual liquids fluoresce under radiation",
+   "blocklist": [
+    "sulfur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "sunshine",
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 240.83541666666667,
+  "cost_numerator": 115601,
+  "cost_denominator": 480,
+  "cost_exact": false,
+  "cost_mcse": 0.742371050162101,
+  "baseline": {
+   "numerator": 584312895,
+   "denominator": 461056,
+   "value": 1267.3360611292337,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.0104841613344107,
+   "rollouts": 256,
+   "rank_total": 584312895,
+   "rank_denominator": 461056,
+   "cache_key": "10eda2845647c2d879e72c58a227e264"
+  },
+  "fallback": {
+   "numerator": 101201,
+   "denominator": 480,
+   "value": 210.83541666666667,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:28,5:47,6:105,7:235,8:388,9:412,10:428,11:362,12:276,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.742371050162101,
+   "rollouts": 256,
+   "rank_total": 5667256,
+   "rank_denominator": 26880,
+   "cache_key": "0d72410fd8565f57199b97926454b396"
+  }
+ }
+}

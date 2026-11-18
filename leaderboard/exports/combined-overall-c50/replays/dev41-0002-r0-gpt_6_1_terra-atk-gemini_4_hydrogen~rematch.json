@@ -1,0 +1,476 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "collard",
+ "initial_prefix": "c",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 16216,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet; car can cap cup cut cot cow cub cob",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Taxi; cake call calm came camp card care case cash",
+   "blocklist": [
+    "cab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Sweet confection; cast cave cell chat chef city",
+   "blocklist": [
+    "candy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Dairy product; cold come cook cool copy corn cost",
+   "blocklist": [
+    "cheese",
+    "cream",
+    "curd",
+    "custard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Seat; coat code coin cola comb cone cord cork crab",
+   "blocklist": [
+    "chair",
+    "couch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Timepiece; crow crop crew cute cure curl curb clay",
+   "blocklist": [
+    "chronometer",
+    "clock"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Royal headwear; cars cats club coal coast color",
+   "blocklist": [
+    "coronet",
+    "crown"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Morning brew; chicken child church cause court",
+   "blocklist": [
+    "cocoa",
+    "coffee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Wax wick; country control company computer change",
+   "blocklist": [
+    "candle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Fastest land animal; catch cross close clear class",
+   "blocklist": [
+    "cheetah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Cacao bar; could course cover create crash craft",
+   "blocklist": [
+    "carob",
+    "chocolate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Humped desert beast; cancer castle carbon camera",
+   "blocklist": [
+    "camel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Long snouted reptile; climb cloud clean count cage",
+   "blocklist": [
+    "caiman",
+    "cayman",
+    "crocodile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Spiny desert plant; century central capital carry",
+   "blocklist": [
+    "cacti",
+    "cactus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Witch's pot; culture current common concern crime",
+   "blocklist": [
+    "caldron",
+    "cauldron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Orange root vegetable; circle chance charm chase",
+   "blocklist": [
+    "carrot",
+    "carrots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Mountain lion; credit coffeehouse concert context",
+   "blocklist": [
+    "catamount",
+    "cougar",
+    "cougars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Fizzy cola drink; check chest chief cheap cheer",
+   "blocklist": [
+    "coke",
+    "cokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Red fruit atop sundae; copper cabin cable cider",
+   "blocklist": [
+    "cherries",
+    "cherry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Chirping insect; callous camping captain carbonic",
+   "blocklist": [
+    "cicada",
+    "cicadas",
+    "cricket",
+    "crickets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Dog tooth; civil claim cliff cycle cloth crazy",
+   "blocklist": [
+    "canine",
+    "canines",
+    "cuspid",
+    "cuspids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Baked biscuit; cousin couple courage curious crush",
+   "blocklist": [
+    "cookie",
+    "cookies",
+    "cracker",
+    "crackers",
+    "croissant",
+    "croissants",
+    "crumpet",
+    "crumpets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Navigation needle; clever comic cargo cabin boy",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Color changing lizard; carpet cattle career campus",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Salad gourd; coming choose congress citizen cowboy",
+   "blocklist": [
+    "calabash",
+    "courgette",
+    "cucumber",
+    "cucumbers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Bowed string instrument; car cabin cabin fever",
+   "blocklist": [
+    "cello",
+    "cellos",
+    "contrabass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Bivalve shellfish; clap clip clan clot chip chop",
+   "blocklist": [
+    "clam",
+    "clams",
+    "cockle",
+    "cockles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Leafy vegetable; cabal cabala cabalas cabaletta",
+   "blocklist": [
+    "cabbage",
+    "cabbages",
+    "chard",
+    "chards",
+    "chicory",
+    "cilantro",
+    "cress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "constitution"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1145.479830955335,
+  "cost_numerator": 147721079,
+  "cost_denominator": 128960,
+  "cost_exact": false,
+  "cost_mcse": 0.8718442876129913,
+  "baseline": {
+   "numerator": 591354457,
+   "denominator": 525056,
+   "value": 1126.2693065120673,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:37,4:230,5:665,6:1294,7:2051,8:2649,9:2351,10:1996,11:1602,12:1206,13:813,14:527,15:320,16:204,17:147,18:59,19:48,20:17",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.8873775489817478,
+   "rollouts": 256,
+   "rank_total": 591354457,
+   "rank_denominator": 525056,
+   "cache_key": "bbad3181da25b57d67f792025af1f47c"
+  },
+  "fallback": {
+   "numerator": 143852279,
+   "denominator": 128960,
+   "value": 1115.479830955335,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:26,4:177,5:609,6:1254,7:2015,8:2635,9:2342,10:1992,11:1600,12:1205,13:813,14:527,15:320,16:204,17:147,18:59,19:48,20:17",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.8718442876129913,
+   "rollouts": 256,
+   "rank_total": 575409116,
+   "rank_denominator": 515840,
+   "cache_key": "fdb8b47f7d3f5d5f3bebabfd25efb959"
+  }
+ }
+}

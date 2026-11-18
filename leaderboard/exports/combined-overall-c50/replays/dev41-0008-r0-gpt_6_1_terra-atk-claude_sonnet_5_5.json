@@ -1,0 +1,565 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. the and for are was you",
+   "blocklist": [
+    "and",
+    "are",
+    "cat",
+    "feline",
+    "for",
+    "kitten",
+    "pet",
+    "the",
+    "was",
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine bark. not but all one out her his had",
+   "blocklist": [
+    "all",
+    "bark",
+    "but",
+    "canine",
+    "dog",
+    "had",
+    "her",
+    "his",
+    "not",
+    "one",
+    "out"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Oink animal. with from this have they will she him",
+   "blocklist": [
+    "animal",
+    "boar",
+    "from",
+    "have",
+    "him",
+    "hog",
+    "oink",
+    "pig",
+    "piglet",
+    "pigs",
+    "pork",
+    "she",
+    "sow",
+    "swine",
+    "they",
+    "this",
+    "will",
+    "with"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Moo. that what when your into some them then who",
+   "blocklist": [
+    "bull",
+    "cattle",
+    "cow",
+    "cows",
+    "into",
+    "moo",
+    "some",
+    "that",
+    "them",
+    "then",
+    "what",
+    "when",
+    "who",
+    "your"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of cold. would there about which their",
+   "blocklist": [
+    "about",
+    "heat",
+    "heated",
+    "hot",
+    "hotter",
+    "hottest",
+    "their",
+    "there",
+    "warm",
+    "which",
+    "would"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "King of jungle. said were been more time only",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Largest land mammal. even each ever else east easy",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Bald bird of prey. every end enough earth eat egg",
+   "blocklist": [
+    "eagle",
+    "eagles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Flightless Australian bird. either enter event eye",
+   "blocklist": [
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Snake-shaped fish. early enjoy equal extra exit",
+   "blocklist": [
+    "eel",
+    "eels",
+    "elver",
+    "elvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Green gemstone. example experience effect effort",
+   "blocklist": [
+    "emerald",
+    "emeralds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Hearing organ. education energy entire especially",
+   "blocklist": [
+    "ear",
+    "ears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Mail container. environment evidence economic",
+   "blocklist": [
+    "envelope",
+    "envelopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Car motor. establish essential employee everybody",
+   "blocklist": [
+    "engine",
+    "engineer",
+    "engineers",
+    "engines",
+    "motor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Solar or lunar darkening. example except escape",
+   "blocklist": [
+    "eclipse",
+    "eclipses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Line at zero latitude. employ emerge emotion empty",
+   "blocklist": [
+    "equator",
+    "equatorial",
+    "equators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Number after seven. enough evidence expert express",
+   "blocklist": [
+    "eight",
+    "eighth",
+    "eighty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Power from outlets. everyone everything expect",
+   "blocklist": [
+    "electric",
+    "electrical",
+    "electrician",
+    "electricities",
+    "electricity",
+    "energy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Arm joint. exactly exist explain exercise evening",
+   "blocklist": [
+    "elbow",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Ground shaking. estimate enough excuse enormous",
+   "blocklist": [
+    "earthquake",
+    "earthquakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Purple vegetable. eager earn earl earlier earned",
+   "blocklist": [
+    "eggplant",
+    "eggplants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Painter's canvas stand. edge exact existence evil",
+   "blocklist": [
+    "easel",
+    "easels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Pencil mark remover. easily embrace empire essay",
+   "blocklist": [
+    "erase",
+    "erased",
+    "eraser",
+    "erasers",
+    "rubber"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "School test. enemy error english equipment",
+   "blocklist": [
+    "exam",
+    "examination",
+    "examinations",
+    "exams",
+    "test",
+    "tests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Lift between floors. ebb ecu edh eft ego eke elm",
+   "blocklist": [
+    "elevate",
+    "elevated",
+    "elevator",
+    "elevators",
+    "escalator",
+    "escalators",
+    "lift"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Jewelry on lobe. eagre eagers earls earns eared",
+   "blocklist": [
+    "earring",
+    "earrings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ruler above king. elk elf era ere ewe erg",
+   "blocklist": [
+    "elf",
+    "elk",
+    "emperor",
+    "emperors",
+    "emperorship",
+    "empress",
+    "era",
+    "ere",
+    "erg",
+    "ewe",
+    "king",
+    "kings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Early developing fetus. ebbed ebbet ebbets ebbing",
+   "blocklist": [
+    "embryo",
+    "embryos",
+    "fetus",
+    "fetuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Strong coffee. ecarte ecartes ecaudate ecbolic",
+   "blocklist": [
+    "espresso"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Spiny anteater. ecocide ecology ecologic ecocidal",
+   "blocklist": [
+    "echidna",
+    "echidnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 528.6581283244681,
+  "cost_numerator": 31804073,
+  "cost_denominator": 60160,
+  "cost_exact": false,
+  "cost_mcse": 0.6529391027067127,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 29999273,
+   "denominator": 60160,
+   "value": 498.65812832446807,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:19,4:87,5:164,6:423,7:781,8:1105,9:1118,10:968,11:705,12:558,13:378,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6529391027067127,
+   "rollouts": 256,
+   "rank_total": 89997819,
+   "rank_denominator": 180480,
+   "cache_key": "46468d501fee1b1a13a5365b13f0aec6"
+  }
+ }
+}

@@ -1,0 +1,569 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_argon-atk-gpt_6_1_terra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "1.lu4, 2.3x, 3.3s, 4.19, 5.1c? #86001",
+   "blocklist": [
+    "lotting",
+    "lotto",
+    "lottos",
+    "lotus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "model or exemplar of a type #50002",
+   "blocklist": [
+    "archetype",
+    "epitome",
+    "example",
+    "paradigm",
+    "pattern",
+    "prototype"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "C11N L2:118207 20591 128067 45880 120711",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "canaille",
+     "canakin"
+    ],
+    [
+     "dwarfing",
+     "dwarfishly"
+    ],
+    [
+     "prismoids",
+     "prison"
+    ],
+    [
+     "purins",
+     "purism"
+    ],
+    [
+     "repunctuations",
+     "repurchased"
+    ]
+   ],
+   "blocked_word_count": 15,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "conga"
+    },
+    {
+     "seat": "guesser2",
+     "word": "calculation"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "1=anagram(tigers+z+e+i), 2=anagram(sq+u+a+r+t+z)",
+   "blocklist": [
+    "quartz",
+    "quartzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zeitgeist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zeitgeist"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "1=anagram(a+g+a+i+n+u), 2=anagram(s+m+i+t+h+s+u)",
+   "blocklist": [
+    "iguana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1=anagram(p+o+e+t+i+s+o), 2=anagram(b+e+g+r+i+c+e)",
+   "blocklist": [
+    "iceberg",
+    "isotope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "narrow strip of land connecting two larger areas",
+   "blocklist": [
+    "isthmi",
+    "isthmus",
+    "isthmuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1=anagram(b+e+i+x), 2=anagram(p+a+l+a+m+i)",
+   "blocklist": [
+    "ibex",
+    "impala"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1.snow dome, 2.land in sea, 3.tusk, 4.blue-violet",
+   "blocklist": [
+    "icecap",
+    "igloo",
+    "indigo",
+    "island",
+    "isle",
+    "islet",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "hanging ice spike, or Dante's hell",
+   "blocklist": [
+    "icicle",
+    "icicles",
+    "inferno",
+    "infernos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "1.sleeplessness, 2.in disguise, 3.entangled mess",
+   "blocklist": [
+    "imbroglio",
+    "imbroglios",
+    "incognito",
+    "insomnia",
+    "insomniac",
+    "insomnias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "1.colored eye part, 2.six-legged bug, 3.foot army",
+   "blocklist": [
+    "infantry",
+    "infantryman",
+    "infantrymen",
+    "insect",
+    "insects",
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1.newborn baby, 2.bodily harm, 3.money earned",
+   "blocklist": [
+    "income",
+    "incomes",
+    "infant",
+    "infants",
+    "injuries",
+    "injury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "1.fragrant smoke stick, 2.sudden urge, 3.quill pot",
+   "blocklist": [
+    "impulse",
+    "impulses",
+    "incense",
+    "incenses",
+    "inkpot",
+    "inkpots",
+    "inkwell",
+    "inkwells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "1.diabetes hormone, 2.magic trick, 3.false god",
+   "blocklist": [
+    "idol",
+    "idols",
+    "illusion",
+    "illusions",
+    "insulin",
+    "insulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1.itemized bill, 2.gut reflex, 3.wry twist of fate",
+   "blocklist": [
+    "instinct",
+    "instincts",
+    "invoice",
+    "invoices",
+    "ironies",
+    "irony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "1.travel route plan, 2.secret plot, 3.book pointer",
+   "blocklist": [
+    "index",
+    "indexes",
+    "indices",
+    "intrigue",
+    "intrigues",
+    "itineraries",
+    "itinerary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "1.car starter switch, 2.physics resistance to move",
+   "blocklist": [
+    "ignition",
+    "ignitions",
+    "inertia",
+    "inertiae",
+    "inertias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "1.slanted font, 2.vomit syrup, 3.thick paint",
+   "blocklist": [
+    "impasto",
+    "impastos",
+    "ipecac",
+    "ipecacs",
+    "ipecacuanha",
+    "ipecacuanhas",
+    "italic",
+    "italics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "1.figurative phrase, 2.desktop symbol, 3.evil fame",
+   "blocklist": [
+    "icon",
+    "icones",
+    "icons",
+    "idiom",
+    "idioms",
+    "infamies",
+    "infamy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "1.element 53, 2.tiny Greek letter, 3.thumb dino",
+   "blocklist": [
+    "iguanodon",
+    "iguanodons",
+    "iodine",
+    "iodines",
+    "iota",
+    "iotas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "1.mirror picture, 2.crash force, 3.list object",
+   "blocklist": [
+    "image",
+    "images",
+    "impact",
+    "impacts",
+    "item",
+    "items"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "1.front tooth, 2.coroner inquiry, 3.pressure line",
+   "blocklist": [
+    "incisor",
+    "incisors",
+    "inquest",
+    "inquests",
+    "isobar",
+    "isobare",
+    "isobares",
+    "isobars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "1.verbal slight, 2.mental thought, 3.Element 26",
+   "blocklist": [
+    "idea",
+    "ideas",
+    "insult",
+    "insults",
+    "iron",
+    "irons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "1.magazine edition, 2.utter fool, 3.data entry",
+   "blocklist": [
+    "idiot",
+    "idiots",
+    "input",
+    "inputs",
+    "issue",
+    "issues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "1.stock list, 2.foot arch top, 3.tree lizards",
+   "blocklist": [
+    "iguanas",
+    "instep",
+    "insteps",
+    "inventories",
+    "inventory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "1.skin tingle, 2.prison convict, 3.climbing vine",
+   "blocklist": [
+    "inmate",
+    "inmates",
+    "itch",
+    "itches",
+    "itching",
+    "ivies",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 556.9245457416765,
+  "cost_numerator": 119903627,
+  "cost_denominator": 215296,
+  "cost_exact": false,
+  "cost_mcse": 0.6027273737207657,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 113444747,
+   "denominator": 215296,
+   "value": 526.9245457416765,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:17,4:48,5:101,6:256,7:471,8:711,9:841,10:938,11:854,12:766,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.6027273737207657,
+   "rollouts": 256,
+   "rank_total": 113444747,
+   "rank_denominator": 215296,
+   "cache_key": "3986c265f074b3792071b36afa15d513"
+  }
+ }
+}

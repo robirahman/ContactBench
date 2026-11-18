@@ -1,0 +1,531 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_hydrogen-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_haiku_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "egg-laying mammal with a duck bill",
+   "blocklist": [
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "alignment of three celestial bodies",
+   "blocklist": [
+    "conjunction",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "lowest point, opposite of zenith",
+   "blocklist": [
+    "nadir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "idealistic like Cervantes' knight",
+   "blocklist": [
+    "idealistic",
+    "quixotic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "present everywhere at the same time",
+   "blocklist": [
+    "omnipresent",
+    "ubiquitous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "sweet-sounding, pleasant to hear",
+   "blocklist": [
+    "dulcet",
+    "euphonious",
+    "harmonious",
+    "honeyed",
+    "mellifluous",
+    "melodious",
+    "musical",
+    "sweet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "finding something good without looking for it",
+   "blocklist": [
+    "fortuitous",
+    "serendipitous",
+    "serendipity",
+    "windfall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "figure of speech with contradictory terms",
+   "blocklist": [
+    "antithesis",
+    "hyperbole",
+    "irony",
+    "metaphor",
+    "oxymoron",
+    "paradox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "excessively talkative, fond of talking",
+   "blocklist": [
+    "chatty",
+    "gabby",
+    "garrulous",
+    "loquacious",
+    "talkative",
+    "verbose",
+    "voluble"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "manuscript reused after erasing earlier text",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palimpsest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palimpsest"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "pleasure derived from another's misfortune",
+   "blocklist": [
+    "sadism",
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "custom or word distinguishing a group",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sad",
+     "sum"
+    ]
+   ],
+   "blocked_word_count": 16316,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "person who flatters to gain favor",
+   "blocklist": [
+    "flatterer",
+    "sycophant",
+    "toady"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "mutually beneficial biological relationship",
+   "blocklist": [
+    "symbiosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "excessively sweet or sentimental",
+   "blocklist": [
+    "saccharine",
+    "sappy",
+    "schmaltzy",
+    "sentimental",
+    "slushy",
+    "soppy",
+    "sugary",
+    "syrupy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Jewish house of worship",
+   "blocklist": [
+    "sanctuary",
+    "sanctum",
+    "shul",
+    "synagogue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "deliberate destruction of equipment or property",
+   "blocklist": [
+    "sabotage",
+    "sabotaged",
+    "sabotages",
+    "sabotaging",
+    "saboteur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "outline of topics in a course of study",
+   "blocklist": [
+    "syllabi",
+    "syllabus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "exploding star that outshines a galaxy",
+   "blocklist": [
+    "star",
+    "stellar",
+    "sun",
+    "supernova",
+    "supernovae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "balanced proportion on both sides of a line",
+   "blocklist": [
+    "symmetric",
+    "symmetrical",
+    "symmetry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "large orchestral composition in several movements",
+   "blocklist": [
+    "serenade",
+    "sinfonia",
+    "sonata",
+    "sonatas",
+    "suite",
+    "suites",
+    "symphonies",
+    "symphony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "ocean fish with a long sharp beak",
+   "blocklist": [
+    "sailfish",
+    "sawfish",
+    "snook",
+    "spearfish",
+    "swordfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "rules for sentence structure in grammar",
+   "blocklist": [
+    "semantics",
+    "sentence",
+    "sentences",
+    "sentential",
+    "sentient",
+    "structure",
+    "structures",
+    "syntactic",
+    "syntactical",
+    "syntagma",
+    "syntax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "junction between two nerve cells",
+   "blocklist": [
+    "synapse",
+    "synapses",
+    "synaptic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "physical sign of an illness or disease",
+   "blocklist": [
+    "sign",
+    "signs",
+    "sneeze",
+    "sore",
+    "sores",
+    "spasm",
+    "stigma",
+    "swelling",
+    "symptom",
+    "symptoms",
+    "syndrome",
+    "syndromes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "medical tube with needle for injections",
+   "blocklist": [
+    "scalpel",
+    "suture",
+    "syringe",
+    "syringes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "ancient timepiece using a shadow",
+   "blocklist": [
+    "sundial",
+    "sundials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "maple or plane tree with mottled bark",
+   "blocklist": [
+    "sycamore",
+    "sycamores"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 216.60410897943038,
+  "cost_numerator": 8761203,
+  "cost_denominator": 40448,
+  "cost_exact": false,
+  "cost_mcse": 0.5231595639303266,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 7547763,
+   "denominator": 40448,
+   "value": 186.60410897943038,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:5,4:39,5:102,6:158,7:255,8:367,9:342,10:355,11:295,12:229,13:165,14:113,15:83,16:64,17:34,18:12,19:4,20:2",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.5231595639303266,
+   "rollouts": 256,
+   "rank_total": 7547763,
+   "rank_denominator": 40448,
+   "cache_key": "f73c8ad912ac548a9d08d26bf66a65df"
+  }
+ }
+}

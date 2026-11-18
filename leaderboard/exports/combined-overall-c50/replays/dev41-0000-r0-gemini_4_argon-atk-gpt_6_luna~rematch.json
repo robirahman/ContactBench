@@ -1,0 +1,516 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_argon-atk-gpt_6_luna~rematch",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_luna",
+ "secret": "wert",
+ "initial_prefix": "w",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 3692,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "wab wabble wabs wack wacke spin water appliance",
+   "blocklist": [
+    "washboard",
+    "washer",
+    "washing",
+    "washtub",
+    "whirlpool",
+    "wringer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "wacks wacky wad wadded waddings cube poop animal",
+   "blocklist": [
+    "wacko",
+    "wallaby",
+    "warthog",
+    "waste",
+    "wax",
+    "weasel",
+    "wedge",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "waddle waddles wade wadi tusk arctic pinniped",
+   "blocklist": [
+    "walrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "wadding waddy waded wader green sushi condiment",
+   "blocklist": [
+    "wasabi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "wades wadies wabble wabbled alice carroll rabbit",
+   "blocklist": [
+    "waistcoat",
+    "warren",
+    "white",
+    "wonder",
+    "wonderland",
+    "wool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "wabbler wabbles wabbly wackes tree beak bird",
+   "blocklist": [
+    "wagtail",
+    "warbler",
+    "waxwing",
+    "woodpecker",
+    "woodpeckers",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "wads wady wae waes waddled full moon lycanthrope",
+   "blocklist": [
+    "werewolf",
+    "werwolf",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "waddler waddlers waddling pink rind seed fruit",
+   "blocklist": [
+    "watermelon",
+    "watermelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "waff waft wackos wadders car wiper front glass",
+   "blocklist": [
+    "window",
+    "windows",
+    "windscreen",
+    "windscreens",
+    "windshield",
+    "windshields",
+    "wipers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "waders wading wadis wafer garden push one wheel",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wheelbarrow",
+     "wheelbarrows"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "wadder waddie waddied waddies grid syrup breakfast",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "waffle",
+     "waffling"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "wafers wafery waffed waffie aquatic peppery salad",
+   "blocklist": [
+    "watercress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "waffs wafted wafts wag wage logan xmen adamantium",
+   "blocklist": [
+    "wolverine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "waged wager wages wags wahoo desire to travel",
+   "blocklist": [
+    "wander",
+    "wanderer",
+    "wanderers",
+    "wandering",
+    "wanderlust",
+    "wayfarer",
+    "wayfarers",
+    "wayfaring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "wagers wagged wagger waggers space time tunnel",
+   "blocklist": [
+    "warp",
+    "wormhole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "wail wails wain wains waist rolling seat ramp",
+   "blocklist": [
+    "wheelchair",
+    "wheelchairs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "wafter wafters waggery wagging dutch blades grind",
+   "blocklist": [
+    "whetstone",
+    "whetstones",
+    "windmill",
+    "windmills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "waggon waging wagon wahoos waif shy party dancer",
+   "blocklist": [
+    "wallflower"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "wair waired wairing wairs waifs chuck wood marmot",
+   "blocklist": [
+    "woodchuck",
+    "woodchucks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "waggle waggled waggles waggly african gnu antelope",
+   "blocklist": [
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "wait waited waiter waiting airport wind cone tube",
+   "blocklist": [
+    "windsock"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "waggons wagons waifed wailed trachea throat airway",
+   "blocklist": [
+    "weasand",
+    "weasands",
+    "windpipe",
+    "windpipes",
+    "windway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "wafting wageless wagered lookout guard turret",
+   "blocklist": [
+    "watch",
+    "watchdog",
+    "watcher",
+    "watchful",
+    "watchman",
+    "watchmen",
+    "watchtower",
+    "watchword"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "waftage wafture wagerer wahine native domed hut",
+   "blocklist": [
+    "wampum",
+    "wickiup",
+    "wickiups",
+    "wigwam",
+    "wigwams"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "wailer wailers wailful wailing cascade cataract",
+   "blocklist": [
+    "waterfall",
+    "waterfalls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "waiters waists waits waive wave crest distance",
+   "blocklist": [
+    "wavelength"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "waifing waiflike wailsome wagsome wicca magic hex",
+   "blocklist": [
+    "warlock",
+    "warlocks",
+    "weird",
+    "witch",
+    "witchcraft",
+    "witchery",
+    "witches",
+    "wizard",
+    "wizardry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "waived waiver waivers waives scotch bourbon liquor",
+   "blocklist": [
+    "whiskey",
+    "whiskeys",
+    "whiskies",
+    "whisky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "wake waked waken waker wakes sweat band on wrist",
+   "blocklist": [
+    "wristband",
+    "wristbands",
+    "wristlet",
+    "wristlets",
+    "wristwatch",
+    "wristwatches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 244.59253961267606,
+  "cost_numerator": 2222857,
+  "cost_denominator": 9088,
+  "cost_exact": false,
+  "cost_mcse": 0.661683908854243,
+  "baseline": {
+   "numerator": 4868709,
+   "denominator": 21248,
+   "value": 229.13728350903614,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:38,4:166,5:296,6:453,7:687,8:729,9:507,10:328,11:227,12:117,13:65,14:43,15:22,16:10,17:3,18:1",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.6631306484601079,
+   "rollouts": 256,
+   "rank_total": 9737418,
+   "rank_denominator": 42496,
+   "cache_key": "fcc913e9567df2443946998471eeaaad"
+  },
+  "fallback": {
+   "numerator": 1950217,
+   "denominator": 9088,
+   "value": 214.59253961267606,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:33,4:142,5:258,6:401,7:635,8:702,9:491,10:310,11:220,12:115,13:63,14:41,15:22,16:10,17:3,18:1",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.661683908854243,
+   "rollouts": 256,
+   "rank_total": 7800868,
+   "rank_denominator": 36352,
+   "cache_key": "76a704a46b9afa2f299b82e5fbbcb5db"
+  }
+ }
+}

@@ -1,0 +1,292 @@
+{
+ "game_id": "dev41-0006-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "1st letters: Look Up Game Givers Every Round Soon",
+   "blocklist": [
+    "lugger",
+    "luggers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Last singular noun in dictionary (tropical weevil)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zyzzyva"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zyzzyva"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Last E word alphabetically (eagle's nest, 4 ltrs)",
+   "blocklist": [
+    "eyas",
+    "eyrie",
+    "eyrir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "eyry"
+    },
+    {
+     "seat": "guesser2",
+     "word": "eyry"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "eff efs eft efts eftsoon (next in list, 8 letters)",
+   "blocklist": [
+    "eftsoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Plural of eff (4 letters, at offset 105 in list)",
+   "blocklist": [
+    "effs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "ef+ shiny radiance noun (not plural) effort effuse",
+   "blocklist": [
+    "effulgence",
+    "effulgent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "efface effect effete effuse efflux; burned dummy?",
+   "blocklist": [
+    "effigies",
+    "effigy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "effable effaced effacer effaces; idx 102 in ef",
+   "blocklist": [
+    "effable",
+    "effaced",
+    "effacer",
+    "effaces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "efforts"
+    },
+    {
+     "seat": "guesser2",
+     "word": "efforts"
+    }
+   ],
+   "prefix_after": "eff",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "effendi efferent effigial effluvia; last in eff",
+   "blocklist": [
+    "effusion",
+    "effusions",
+    "effusive",
+    "effusively",
+    "effusiveness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effusivenesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effusivenesses"
+    }
+   ],
+   "prefix_after": "effe",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "effected effecter effecters effects; last in effe",
+   "blocklist": [
+    "effetely",
+    "effeteness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effetenesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effetenesses"
+    }
+   ],
+   "prefix_after": "effec",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "effector effectors effectual effectuate; last word",
+   "blocklist": [
+    "effectually",
+    "effectuates",
+    "effectuating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effectuations"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effectuations"
+    }
+   ],
+   "prefix_after": "effect",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "effecting effective effectively effectives; idx 20",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effectualnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effectualnesses"
+    }
+   ],
+   "prefix_after": "effectu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "effectualities effectuality effectualness",
+   "blocklist": [
+    "effectuation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "effectu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "effectuated",
+   "prefix_after": "effectu",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 14.0,
+  "cost_numerator": 14,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

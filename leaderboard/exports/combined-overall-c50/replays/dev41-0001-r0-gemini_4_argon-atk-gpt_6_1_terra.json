@@ -1,0 +1,544 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-gpt_6_1_terra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Suitcases and bags for travel",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "How plants make food from sunlight",
+   "blocklist": [
+    "chlorophyll"
+   ],
+   "blocked_ranges": [
+    [
+     "photosynthate",
+     "photosynthetically"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Australian mammal with a duck bill",
+   "blocklist": [
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Doctor tool to listen to heartbeat",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Word formed by rearranging letters of another",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "anagram",
+     "anagrams"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Percussion instrument with wooden bars and mallets",
+   "blocklist": [
+    "glockenspiel",
+    "glockenspiels",
+    "marimba",
+    "marimbas",
+    "vibraphone",
+    "vibraphones",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Magician magic word starting with a",
+   "blocklist": [
+    "abracadabra",
+    "abracadabras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Tube with mirrors and colored glass",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "kaleidoscope",
+     "kaleidoscopically"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Throwing voice into a puppet without moving lips",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ventriloquial",
+     "ventriloquy"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Lizard that changes skin color to blend in",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "chameleon",
+     "chameleons"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "French Revolution beheading device",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "guillotine",
+     "guillotining"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Word that imitates a sound like buzz or meow",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "onomatopoeia",
+     "onomatopoetically"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Word spelled the same backward as kayak or radar",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "palindrome",
+     "palindromists"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Large African river mammal or water horse",
+   "blocklist": [
+    "hippo",
+    "hippos"
+   ],
+   "blocked_ranges": [
+    [
+     "hippopotami",
+     "hippopotamuses"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Thick-skinned horned mammal starting with r",
+   "blocklist": [
+    "rhino",
+    "rhinos"
+   ],
+   "blocked_ranges": [
+    [
+     "rhinoceri",
+     "rhinoceroses"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Curved Australian throwing stick that returns",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "boomerang",
+     "boomerangs"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Yellow lawn weed with fluffy puffball seeds",
+   "blocklist": [
+    "dandelion",
+    "dandelions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bouncy mat with springs for acrobatics",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "trampoline",
+     "trampolinists"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Squeezebox musical instrument with bellows",
+   "blocklist": [
+    "concertina",
+    "concertinas"
+   ],
+   "blocked_ranges": [
+    [
+     "accordion",
+     "accordions"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Japanese art of folding paper into shapes",
+   "blocklist": [
+    "origami",
+    "origamis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Irish fairy cobbler with a pot of gold",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "leprechaun",
+     "leprechauns"
+    ]
+   ],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Caterpillar transformation into a butterfly",
+   "blocklist": [
+    "chrysalis",
+    "cocoon",
+    "pupa"
+   ],
+   "blocked_ranges": [
+    [
+     "metamorphic",
+     "metamorphosis"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Ancient Egyptian picture writing system",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "hieroglyph",
+     "hieroglyphs"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Fear of enclosed or tight spaces",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "claustrophobe",
+     "claustrophobically"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Group or chain of islands starting with a",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "archipelagic",
+     "archipelagos"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Medical term for sleepwalking starting with s",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "somnambulant",
+     "somnambulists"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with a pouch",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby",
+    "wallaroo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Spiky rodent with sharp quills starting with p",
+   "blocklist": [
+    "porcupine",
+    "porcupines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Armored mammal that rolls into a ball",
+   "blocklist": [
+    "armadillo",
+    "armadillos",
+    "hedgehog",
+    "hedgehogs",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Large hairy spider starting with t",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tarantula",
+     "tarantulas"
+    ]
+   ],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11671.340482375379,
+  "cost_numerator": 1419795227,
+  "cost_denominator": 121648,
+  "cost_exact": false,
+  "cost_mcse": 3.1910559877359637,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1416145787,
+   "denominator": 121648,
+   "value": 11641.340482375379,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:965,4:3876,5:8609,6:15206,7:23080,8:28401,9:24854,10:20279,11:15482,12:11331,13:7798,14:5106,15:3184,16:1938,17:1123,18:590,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.1910559877359637,
+   "rollouts": 256,
+   "rank_total": 45316665184,
+   "rank_denominator": 3892736,
+   "cache_key": "6596a6dbf96c36332bd7d806d668a911"
+  }
+ }
+}

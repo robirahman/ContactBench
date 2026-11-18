@@ -1,0 +1,574 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_argon-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_sonnet_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Airport suitcases and bags",
+   "blocklist": [
+    "baggage",
+    "luggage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Rainy day canopy held overhead",
+   "blocklist": [
+    "canopy",
+    "parasol",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Egg-laying duck-billed Australian mammal",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Rotating tube of mirrors showing colorful patterns",
+   "blocklist": [
+    "colorful",
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "mirrors",
+    "pattern",
+    "patterns",
+    "rotating",
+    "showing",
+    "tube"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Doctor wears this around neck to hear heartbeats",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with swiveling eyes",
+   "blocklist": [
+    "chameleon",
+    "chameleons",
+    "changing",
+    "color",
+    "eyes",
+    "lizard",
+    "swiveling",
+    "with"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "French Revolution beheading machine with blade",
+   "blocklist": [
+    "beheading",
+    "blade",
+    "french",
+    "guillotine",
+    "guillotined",
+    "guillotines",
+    "guillotining",
+    "machine",
+    "revolution"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Wooden percussion instrument played with mallets",
+   "blocklist": [
+    "glockenspiel",
+    "instrument",
+    "mallet",
+    "mallets",
+    "marimba",
+    "marimbas",
+    "percussion",
+    "played",
+    "vibraphone",
+    "wooden",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Curved Australian throwing stick that returns",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "boomerang"
+    },
+    {
+     "seat": "guesser2",
+     "word": "boomerang"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Small four-stringed Hawaiian guitar",
+   "blocklist": [
+    "ukelele",
+    "ukeleles",
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Mythical horse with a single spiral horn",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unicorn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unicorn"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "One-wheeled circus cycle with pedals",
+   "blocklist": [
+    "unicycle",
+    "unicycles",
+    "unicyclist",
+    "unicyclists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Clothing worn beneath outer clothes",
+   "blocklist": [
+    "underclothes",
+    "underclothing",
+    "undergarment",
+    "undergarments",
+    "undershirt",
+    "undershirts",
+    "undershorts",
+    "underwear",
+    "undies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Mortician who prepares bodies for burial",
+   "blocklist": [
+    "embalmer",
+    "embalmers",
+    "mortician",
+    "undertaker",
+    "undertakers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Competitor expected to lose in a match",
+   "blocklist": [
+    "underdog",
+    "underdogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Seaward current beneath breaking ocean waves",
+   "blocklist": [
+    "current",
+    "rip",
+    "riptide",
+    "undercurrent",
+    "undertow",
+    "undertows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Backup actor who learns the lead role",
+   "blocklist": [
+    "understudied",
+    "understudies",
+    "understudy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "The cosmos of all space, matter, and galaxies",
+   "blocklist": [
+    "universal",
+    "universally",
+    "universals",
+    "universe",
+    "universes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Higher education institution granting degrees",
+   "blocklist": [
+    "college",
+    "colleges",
+    "universities",
+    "university"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Brother of your mother or father",
+   "blocklist": [
+    "uncle",
+    "uncles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Matching outfit worn by soldiers or students",
+   "blocklist": [
+    "uniform",
+    "uniformed",
+    "uniformly",
+    "uniforms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Agreed upon by everyone with zero dissenting votes",
+   "blocklist": [
+    "unanimity",
+    "unanimous",
+    "unanimously"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Realm of the dead ruled by Hades or criminal mob",
+   "blocklist": [
+    "underworld",
+    "underworlds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Soft vulnerable lower abdomen of an animal",
+   "blocklist": [
+    "underbellies",
+    "underbelly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Labor association of workers or marriage bond",
+   "blocklist": [
+    "association",
+    "bond",
+    "labor",
+    "marriage",
+    "union",
+    "unionise",
+    "unionised",
+    "unionises",
+    "unionising",
+    "unionism",
+    "unionisms",
+    "unionist",
+    "unionists",
+    "unionization",
+    "unionizations",
+    "unionize",
+    "unionized",
+    "unionizes",
+    "unionizing",
+    "unions",
+    "wedlock",
+    "workers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Subterranean subway system or secret resistance",
+   "blocklist": [
+    "underground",
+    "undergrounds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "One of a kind, unlike anything else",
+   "blocklist": [
+    "unequaled",
+    "unequalled",
+    "unique",
+    "uniquely",
+    "uniqueness",
+    "uniquenesses",
+    "unmatched",
+    "unparalleled",
+    "unrivaled",
+    "unrivalled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "College student pursuing a bachelor's degree",
+   "blocklist": [
+    "undergraduate",
+    "undergraduates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Road or tunnel passing beneath a bridge or highway",
+   "blocklist": [
+    "underpass",
+    "underpasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Dense brush and shrubs beneath forest trees",
+   "blocklist": [
+    "underbrush",
+    "undergrowth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 311.46263363486844,
+  "cost_numerator": 6059817,
+  "cost_denominator": 19456,
+  "cost_exact": false,
+  "cost_mcse": 0.4438386201297996,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 5476137,
+   "denominator": 19456,
+   "value": 281.46263363486844,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:10,5:52,6:192,7:335,8:601,9:532,10:529,11:439,12:365,13:265,14:176,15:106,16:81,17:42,18:23,19:16,20:7",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4438386201297996,
+   "rollouts": 256,
+   "rank_total": 38332959,
+   "rank_denominator": 136192,
+   "cache_key": "12d69845189765c34232dace383c04dc"
+  }
+ }
+}

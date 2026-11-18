@@ -1,0 +1,622 @@
+{
+ "game_id": "dev41-0007-r0-gpt_6_1_terra-atk-gemini_4_argon",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet. the and for you are but not all any",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "pussycat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Canine companion. was his her she had one out use",
+   "blocklist": [
+    "cur",
+    "dog",
+    "doggie",
+    "doggy",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Daytime sky star. have has who what when where how",
+   "blocklist": [
+    "daystar",
+    "helios",
+    "sol",
+    "solar",
+    "sun",
+    "sunlight",
+    "sunny",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite. this that with from say",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "moon",
+    "moonbeam",
+    "moonlight",
+    "moony",
+    "orbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Frozen water. there their they them then than into",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icicle",
+    "sleet",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Flames burn. would could should about which these",
+   "blocklist": [
+    "blaze",
+    "bonfire",
+    "conflagration",
+    "fire",
+    "flame",
+    "heat",
+    "inferno",
+    "pyre"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Tall woody plant. its our your can may new old now",
+   "blocklist": [
+    "bush",
+    "oak",
+    "pine",
+    "sapling",
+    "shrub",
+    "timber",
+    "tree"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Reading material. like just time know take make",
+   "blocklist": [
+    "article",
+    "book",
+    "books",
+    "journal",
+    "literature",
+    "magazine",
+    "newspaper",
+    "novel",
+    "page",
+    "pamphlet",
+    "paper",
+    "periodical",
+    "scroll",
+    "story",
+    "text",
+    "tome",
+    "volume"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Opposite of black. good bad big small long more",
+   "blocklist": [
+    "blank",
+    "bright",
+    "clear",
+    "cream",
+    "fair",
+    "ivory",
+    "light",
+    "milk",
+    "pale",
+    "pearl",
+    "snowy",
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Royal male monarch. people other first last man",
+   "blocklist": [
+    "baron",
+    "count",
+    "czar",
+    "duke",
+    "earl",
+    "emperor",
+    "kaiser",
+    "king",
+    "lord",
+    "pharaoh",
+    "prince",
+    "rex",
+    "ruler",
+    "shah",
+    "sovereign",
+    "sultan",
+    "tsar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Organ pumping blood. world life love hand head eye",
+   "blocklist": [
+    "aorta",
+    "atrium",
+    "auricle",
+    "cor",
+    "heart",
+    "pump",
+    "ticker",
+    "ventricle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Forbidden fruit. house home work school night day",
+   "blocklist": [
+    "apple",
+    "apples",
+    "citron",
+    "fig",
+    "grapefruit",
+    "grapes",
+    "pear",
+    "pomegranate",
+    "quince"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Eight legged web spinner. said get did well back",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "spider"
+    },
+    {
+     "seat": "guesser2",
+     "word": "spider"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit. boy bed blue best both brown",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Honey making insect. bear bird ball bank body born",
+   "blocklist": [
+    "bee",
+    "bees",
+    "bumblebee",
+    "bumblebees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Loaf staple. baby been before being below beside",
+   "blocklist": [
+    "baguette",
+    "baguettes",
+    "bread",
+    "breads",
+    "breadstuff",
+    "brioche"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Winged caterpillar adult. bit box bus buy bye bar",
+   "blocklist": [
+    "butterflies",
+    "butterfly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Flying mammal. brother bring built business beach",
+   "blocklist": [
+    "bat",
+    "bats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Structure spanning river. backroom basic basis by",
+   "blocklist": [
+    "bridge",
+    "bridged",
+    "bridges",
+    "bridging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Two wheeled pedal vehicle. because become better",
+   "blocklist": [
+    "bicycle",
+    "bicycles",
+    "bike",
+    "bikes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Male bovine. boat brain break began begin blood",
+   "blocklist": [
+    "bull",
+    "bullock",
+    "bullocks",
+    "bulls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Milk container. beautiful between beyond build",
+   "blocklist": [
+    "bottle",
+    "bottles",
+    "bowl",
+    "bowls",
+    "breast",
+    "breasts",
+    "bucket",
+    "buckets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Inflatable party decoration. bone book blood boss",
+   "blocklist": [
+    "balloon",
+    "ballooned",
+    "ballooning",
+    "balloons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Ringing church instrument. blackbird blaze blame",
+   "blocklist": [
+    "belfries",
+    "belfry",
+    "bell",
+    "belled",
+    "belling",
+    "bells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Crispy pork strips. bag base battle bold blonde",
+   "blocklist": [
+    "bacon",
+    "bacons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Churned dairy spread. band bang bare bark barn bid",
+   "blocklist": [
+    "butter",
+    "buttered",
+    "butterfat",
+    "butterfats",
+    "butterier",
+    "butteriest",
+    "buttering",
+    "buttermilk",
+    "butters",
+    "buttery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Baked clay building block. brave broad busy burst",
+   "blocklist": [
+    "brick",
+    "brickbat",
+    "brickbats",
+    "bricked",
+    "brickfield",
+    "brickfields",
+    "brickier",
+    "brickiest",
+    "bricking",
+    "bricklayer",
+    "bricklayers",
+    "bricklaying",
+    "bricklayings",
+    "bricks",
+    "brickwork",
+    "brickworks",
+    "bricky",
+    "brickyard",
+    "brickyards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Dam building rodent. brave born border boring bow",
+   "blocklist": [
+    "beaver",
+    "beaverboard",
+    "beaverboards",
+    "beavered",
+    "beavering",
+    "beavers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Humped wild cattle. bottom branch breakfast bronze",
+   "blocklist": [
+    "beefalo",
+    "beefaloes",
+    "beefalos",
+    "bison",
+    "bisons",
+    "bisontine",
+    "brahma",
+    "brahmas",
+    "buffalo",
+    "buffaloed",
+    "buffaloes",
+    "buffaloing",
+    "buffalos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 635.5183158818938,
+  "cost_numerator": 78173837,
+  "cost_denominator": 123008,
+  "cost_exact": false,
+  "cost_mcse": 0.6407959893076254,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 74483597,
+   "denominator": 123008,
+   "value": 605.5183158818938,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:36,4:219,5:556,6:1039,7:1565,8:1810,9:1406,10:961,11:649,12:383,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.6407959893076254,
+   "rollouts": 256,
+   "rank_total": 148967194,
+   "rank_denominator": 246016,
+   "cache_key": "b09196a5587e49dce07eba0078baa36f"
+  }
+ }
+}

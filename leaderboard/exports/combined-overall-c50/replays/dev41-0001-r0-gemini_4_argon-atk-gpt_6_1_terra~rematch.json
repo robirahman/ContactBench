@@ -1,0 +1,594 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-gpt_6_1_terra~rematch",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_1_terra",
+ "secret": "supine",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "sab 2nd word in dictionary",
+   "blocklist": [
+    "sabadilla",
+    "sabadillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "sabbagh sabbath sabbat sabbaths sabbatic",
+   "blocklist": [
+    "sabaton",
+    "sabatons",
+    "sabayon",
+    "sabayons",
+    "sabbatical",
+    "sabbaticals",
+    "sabbatics",
+    "sabbats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "schadenfreude"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "sabbed sabbing sabe sabed sabeing",
+   "blocklist": [
+    "saber",
+    "sabers",
+    "sable",
+    "sabre"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "sabes sabin sabine sabins sabir sabirs sables",
+   "blocklist": [
+    "sabering",
+    "sabines",
+    "sablefish",
+    "sablefishes",
+    "sabot",
+    "sabotage",
+    "saboteur",
+    "sabots",
+    "sabred",
+    "sabres"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "sabered sabra sabras sabring sabs sac artificial",
+   "blocklist": [
+    "saccharin",
+    "saccharine",
+    "sham",
+    "simulated",
+    "synthetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "sabotaged sabotages sabotaging saboteurs made sad",
+   "blocklist": [
+    "depressed",
+    "sadden",
+    "saddened",
+    "saddening",
+    "saddens",
+    "sorrowed",
+    "sorrowful"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "sabermetrics sabulose sabulous horse seat",
+   "blocklist": [
+    "saddle",
+    "saddlery",
+    "saddles",
+    "stirrup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "sabermetrician sabermetricians holy",
+   "blocklist": [
+    "hallowed",
+    "sacral",
+    "sacred",
+    "sacrosanct",
+    "saint",
+    "saintly",
+    "sanctified",
+    "sanctity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "sacahuista sacahuistas sacaton african trip",
+   "blocklist": [
+    "expedition",
+    "safari",
+    "safaried",
+    "safariing",
+    "safaris",
+    "trek"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "sacatons sacbut sacbuts saccade vault or pin",
+   "blocklist": [
+    "bank",
+    "safe",
+    "safeguard",
+    "safes",
+    "safeties",
+    "safety",
+    "secure",
+    "spring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "sacahuiste sacahuistes saccades yellow spice",
+   "blocklist": [
+    "mustard",
+    "safflower",
+    "safflowers",
+    "saffron",
+    "saffrons",
+    "turmeric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "saccadic saccate saccharase saccharases wind boat",
+   "blocklist": [
+    "sail",
+    "sailboard",
+    "sailboat",
+    "sailboats",
+    "sailer",
+    "sailing",
+    "schooner",
+    "ship",
+    "sloop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "saccharide saccharides saccharify desert cactus",
+   "blocklist": [
+    "saguaro",
+    "saguaros",
+    "sahuaro",
+    "sahuaros",
+    "succulent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "saccharified saccharifies saccharins leafy bowl",
+   "blocklist": [
+    "greens",
+    "salad",
+    "salads",
+    "slaw",
+    "spinach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "saccharifying saccharimeter pink swimming fish",
+   "blocklist": [
+    "salmon",
+    "salmonid",
+    "salmonids",
+    "salmons",
+    "shrimp",
+    "sockeye",
+    "sockeyes",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "saccharimeters saccharinity cured sausage",
+   "blocklist": [
+    "chorizo",
+    "pepperoni",
+    "salami",
+    "salamis",
+    "summer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "saccharoidal saccharometer japanese warrior",
+   "blocklist": [
+    "ninja",
+    "samurai",
+    "samurais",
+    "shogun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "saccharometers saccharomyces bread lunch",
+   "blocklist": [
+    "sandwich",
+    "sandwiched",
+    "sandwiches",
+    "sandwiching",
+    "sub",
+    "submarine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "saccular sacculate sacculated brass jazz horn",
+   "blocklist": [
+    "cornet",
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones",
+    "sousaphone",
+    "trombone",
+    "trumpet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "sacculation sacculations saccule blue gem",
+   "blocklist": [
+    "aquamarine",
+    "lapis",
+    "lazuli",
+    "sapphire",
+    "sapphires",
+    "sapphirine",
+    "sodalite",
+    "tanzanite",
+    "topaz",
+    "turquoise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "saccules sacculi sacculus orbiting space probe",
+   "blocklist": [
+    "satellite",
+    "satellites",
+    "spacecraft",
+    "spaceship",
+    "sputnik",
+    "sputniks",
+    "surveyor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "sacerdotal sacerdotalism sachem straw bird dummy",
+   "blocklist": [
+    "effigy",
+    "scarecrow",
+    "scarecrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "sacerdotalisms sacerdotalist acorn tree rodent",
+   "blocklist": [
+    "chipmunk",
+    "sciurid",
+    "squirrel",
+    "squirrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sacerdotalists sacerdotally sachemic bone frame",
+   "blocklist": [
+    "skeletal",
+    "skeleton",
+    "skeletons",
+    "skull"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "sachems sachet sacheted sachets rock paper blades",
+   "blocklist": [
+    "scissor",
+    "scissoring",
+    "scissors",
+    "shear",
+    "shears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "sack sackbut sackbuts sacked red seedy fruit",
+   "blocklist": [
+    "pomegranate",
+    "raspberry",
+    "strawberries",
+    "strawberry",
+    "tomato",
+    "watermelon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "sacker sackers sackful sackfuls winter ice figure",
+   "blocklist": [
+    "sculpture",
+    "skater",
+    "skaters",
+    "snowflake",
+    "snowman",
+    "snowmen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "sackcloth sackcloths sacking italian pasta noodles",
+   "blocklist": [
+    "fettuccine",
+    "linguine",
+    "spaghetti",
+    "spaghettini",
+    "spaghettis",
+    "vermicelli"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "sackings sacklike sacks sacksful tall solar flower",
+   "blocklist": [
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "saclike sacque sacques sacra sacrals orchestra",
+   "blocklist": [
+    "sinfonia",
+    "string",
+    "strings",
+    "symphonic",
+    "symphonies",
+    "symphonist",
+    "symphony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1283.4275308783974,
+  "cost_numerator": 580232453,
+  "cost_denominator": 452096,
+  "cost_exact": false,
+  "cost_mcse": 1.0447714296664885,
+  "baseline": {
+   "numerator": 584312895,
+   "denominator": 461056,
+   "value": 1267.3360611292337,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.0104841613344107,
+   "rollouts": 256,
+   "rank_total": 584312895,
+   "rank_denominator": 461056,
+   "cache_key": "10eda2845647c2d879e72c58a227e264"
+  },
+  "fallback": {
+   "numerator": 566669573,
+   "denominator": 452096,
+   "value": 1253.4275308783974,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:57,4:344,5:1033,6:1766,7:2605,8:3418,9:2874,10:2217,11:1554,12:1124,13:707,14:466,15:253,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.0447714296664885,
+   "rollouts": 256,
+   "rank_total": 566669573,
+   "rank_denominator": 452096,
+   "cache_key": "d075511059a45e956a7cc4f7b6ff4f0c"
+  }
+ }
+}

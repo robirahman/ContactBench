@@ -1,0 +1,215 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-claude_haiku_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Suitcases and bags for travel",
+   "blocklist": [
+    "baggage",
+    "duffel",
+    "grip",
+    "knapsack",
+    "luggage",
+    "portmanteau",
+    "satchel",
+    "suitcase",
+    "trunk",
+    "valise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Australian monotreme with a ducklike bill",
+   "blocklist": [
+    "echidna",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardwolf",
+    "anteater",
+    "mongoose",
+    "pangolin",
+    "termite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "First 3-letter word in dictionary",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aah"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aah"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "First word starting with c in dictionary",
+   "blocklist": [
+    "cabbage",
+    "car",
+    "carrot",
+    "cat",
+    "celery",
+    "corn",
+    "cow",
+    "cress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cab"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cab"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "First word starting with co in dictionary",
+   "blocklist": [
+    "cocoa",
+    "coconut",
+    "code",
+    "coffee",
+    "cold",
+    "collar",
+    "color",
+    "come",
+    "cook",
+    "cool",
+    "copy",
+    "cost",
+    "couch",
+    "could",
+    "count",
+    "cover"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coacervate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coacervate"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "First word strictly longer than col in dictionary",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cola",
+     "collar"
+    ],
+    [
+     "collards",
+     "collards"
+    ]
+   ],
+   "blocked_word_count": 122,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "collarbone collarbones collard; next unused",
+   "blocklist": [
+    "collarbone",
+    "collarbones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 8.0,
+  "cost_numerator": 8,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

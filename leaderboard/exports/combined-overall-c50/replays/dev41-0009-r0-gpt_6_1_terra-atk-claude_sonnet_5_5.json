@@ -1,0 +1,517 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "dog pig cow hen fox rat bat ant bee; feline pet",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "red sun sky sea tree car bus; opposite of cold",
+   "blocklist": [
+    "heat",
+    "hot",
+    "hotter",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "man boy girl day night moon star; frozen water",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ice"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ice"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "sand salt ship shop song snow; legless reptile",
+   "blocklist": [
+    "serpent",
+    "snake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "see she say set sit six; eight-legged web maker",
+   "blocklist": [
+    "arachnid",
+    "cobweb",
+    "spider",
+    "spiders",
+    "spinner",
+    "tarantula",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "sad sap sat saw sax sex shy sin; soup utensil",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "spoon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "spoon"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "shoe shut shot show shed shin; woolly farm animal",
+   "blocklist": [
+    "ewe",
+    "lamb",
+    "ram",
+    "sheep",
+    "wool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "shack shade shadow shaft; jaws ocean predator",
+   "blocklist": [
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "shall shape share sharp; hard outer egg covering",
+   "blocklist": [
+    "shell",
+    "shelled",
+    "sheller",
+    "shells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "shave shine shout shake; garment worn on torso",
+   "blocklist": [
+    "blouse",
+    "jersey",
+    "shirt",
+    "shirts",
+    "top",
+    "tunic",
+    "vest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "shore short shoes shone; standing bath under spray",
+   "blocklist": [
+    "shower",
+    "showered",
+    "showers",
+    "showery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "shrub shrug shrink shiver; tool for digging",
+   "blocklist": [
+    "shovel",
+    "shoveler",
+    "shovelers",
+    "shovels",
+    "spade",
+    "spades",
+    "trowel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "shag shah shad shady shabby; small pink crustacean",
+   "blocklist": [
+    "krill",
+    "prawn",
+    "prawns",
+    "shrimp",
+    "shrimps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "shale shank shanty shawl; protective arm guard",
+   "blocklist": [
+    "bracer",
+    "gauntlet",
+    "guard",
+    "shield",
+    "shields",
+    "sleeve"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "shaky shame shamble shatter; hair cleaning liquid",
+   "blocklist": [
+    "conditioner",
+    "shampoo",
+    "shampooed",
+    "shampooing",
+    "shampoos",
+    "soap"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "shoot shook shiny shaven; overlapping roof tile",
+   "blocklist": [
+    "shingle",
+    "shingled",
+    "shingles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "shove shred shroud shock shift; tiny mouse mammal",
+   "blocklist": [
+    "mole",
+    "shrew",
+    "shrewish",
+    "shrews",
+    "vole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "shaggy shades shadows shakes; window slat cover",
+   "blocklist": [
+    "awning",
+    "blind",
+    "blinds",
+    "curtain",
+    "curtains",
+    "drape",
+    "drapes",
+    "louver",
+    "louvers",
+    "screen",
+    "shutter",
+    "shutters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "should shoulder shooting shopkeeper; sunken vessel",
+   "blocklist": [
+    "boat",
+    "galleon",
+    "ship",
+    "shipwreck",
+    "shipwrecks",
+    "sub",
+    "submarine",
+    "sunken",
+    "vessel",
+    "wreck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "shopping shopped shelf shelves; Irish clover",
+   "blocklist": [
+    "shamrock",
+    "shamrocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "shoo shooed shoon shoos; quicker route",
+   "blocklist": [
+    "shifter",
+    "shortcut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "shard shards shared shores shorn; social timidity",
+   "blocklist": [
+    "bashfulness",
+    "diffidence",
+    "shy",
+    "shyness",
+    "timidity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "shallow shackle shanties shuffling; county lawman",
+   "blocklist": [
+    "constable",
+    "deputy",
+    "marshal",
+    "sheriff",
+    "sheriffs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "shining shooter shorter shortly; large scissors",
+   "blocklist": [
+    "clippers",
+    "loppers",
+    "scissors",
+    "shear",
+    "sheared",
+    "shearer",
+    "shearers",
+    "shearing",
+    "shears",
+    "shredder",
+    "snips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "shaman shambles shamed shames; wrist restraints",
+   "blocklist": [
+    "cuff",
+    "cuffs",
+    "fetters",
+    "handcuff",
+    "handcuffs",
+    "manacle",
+    "manacles",
+    "shackles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 117.92349697231833,
+  "cost_numerator": 2181113,
+  "cost_denominator": 18496,
+  "cost_exact": false,
+  "cost_mcse": 0.1735528859839724,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1626233,
+   "denominator": 18496,
+   "value": 87.92349697231833,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:16,5:73,6:158,7:230,8:289,9:243,10:138,11:86,12:51,13:20,14:11,15:3,16:2,18:1",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.1735528859839724,
+   "rollouts": 256,
+   "rank_total": 6504932,
+   "rank_denominator": 73984,
+   "cache_key": "c9435258200fcec0017b5a560db85c21"
+  }
+ }
+}

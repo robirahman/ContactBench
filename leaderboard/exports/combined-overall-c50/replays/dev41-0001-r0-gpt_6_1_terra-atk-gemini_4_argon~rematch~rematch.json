@@ -1,0 +1,561 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_1_terra-atk-gemini_4_argon~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_argon",
+ "secret": "supine",
+ "initial_prefix": "su",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 2886,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Our solar system's star; sum sue sub sup suet suit",
+   "blocklist": [
+    "sun",
+    "sunlight",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Sweetener; such suck suds sued suer sues sufi surf",
+   "blocklist": [
+    "sucre",
+    "sucres",
+    "sucrose",
+    "sucroses",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Hottest season; suave sulk sung sunk sups sulu",
+   "blocklist": [
+    "summer",
+    "summers",
+    "summertime",
+    "summertimes",
+    "summery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Japanese rice and raw fish; sure sums suits surge",
+   "blocklist": [
+    "sushi",
+    "sushis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of failure; suable suably suasion suba",
+   "blocklist": [
+    "success",
+    "successes",
+    "successful",
+    "successfully",
+    "successfulness",
+    "successfulnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Underwater warship; subas subah subahs subatom",
+   "blocklist": [
+    "submarine",
+    "submarines",
+    "submersible",
+    "submersibles",
+    "subs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Unexpected event; suaver suavest subacid subacute",
+   "blocklist": [
+    "surprisal",
+    "surprisals",
+    "surprise",
+    "surprises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Person thought guilty; subabbot subacrid subadar",
+   "blocklist": [
+    "suspect",
+    "suspected",
+    "suspects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Evening meal; super superman superb supply support",
+   "blocklist": [
+    "supper",
+    "suppers",
+    "suppertime",
+    "suppertimes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Large yellow seed flower; sudden suffer suggest",
+   "blocklist": [
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Sundown; surface suddenly sustain suitcase suffix",
+   "blocklist": [
+    "sunset",
+    "sunsets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Dawn; subject substance subway suburb sulfur",
+   "blocklist": [
+    "sunrise",
+    "sunrises",
+    "sunup",
+    "sunups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Bright rays; surgery surrender survival superior",
+   "blocklist": [
+    "sunbeam",
+    "sunbeams",
+    "sunburst",
+    "sunbursts",
+    "sunshine",
+    "sunshines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Wave rider; suicide suspicious supernatural sundae",
+   "blocklist": [
+    "surfboard",
+    "surfboarder",
+    "surfboarders",
+    "surfboards",
+    "surfer",
+    "surfers",
+    "surfing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Brief overview; supermarket suppose suggestion",
+   "blocklist": [
+    "summaries",
+    "summarization",
+    "summarizations",
+    "summarize",
+    "summary",
+    "summation",
+    "summations",
+    "survey",
+    "surveys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Batman is one; succulent subsequent substitute",
+   "blocklist": [
+    "superhero",
+    "superheroes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Skin damage from UV; summon supreme subtle suction",
+   "blocklist": [
+    "sunburn",
+    "sunburned",
+    "sunburning",
+    "sunburns",
+    "sunburnt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Stay alive; surplus sulphur surely sundry surly",
+   "blocklist": [
+    "subsist",
+    "subsistence",
+    "survive",
+    "survived",
+    "survives",
+    "surviving",
+    "survivor",
+    "survivors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Temporarily stop; suitable suspense sunglasses",
+   "blocklist": [
+    "suspend",
+    "suspended",
+    "suspending",
+    "suspends",
+    "suspension",
+    "suspensions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Ottoman ruler; sunny suitor superstition suburbia",
+   "blocklist": [
+    "sultan",
+    "sultana",
+    "sultanas",
+    "sultans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Pouting; supervise surname surreal sundaes",
+   "blocklist": [
+    "sulked",
+    "sulker",
+    "sulkers",
+    "sulkier",
+    "sulkies",
+    "sulkiest",
+    "sulkily",
+    "sulkiness",
+    "sulkinesses",
+    "sulking",
+    "sulks",
+    "sulky",
+    "sullen",
+    "sullener",
+    "sullenest",
+    "sullenly",
+    "sullenness",
+    "sullennesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Government aid; subconscious sumptuous suffocate",
+   "blocklist": [
+    "subsidies",
+    "subsidize",
+    "subsidized",
+    "subsidizer",
+    "subsidizers",
+    "subsidizes",
+    "subsidizing",
+    "subsidy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Right to vote; succeed sufficient suffering",
+   "blocklist": [
+    "suffrage",
+    "suffrages",
+    "suffragette",
+    "suffragettes",
+    "suffragist",
+    "suffragists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Boss at work; supplies supposed surround suffered",
+   "blocklist": [
+    "superintendent",
+    "superintendents",
+    "superiors",
+    "supervision",
+    "supervisions",
+    "supervisor",
+    "supervisors",
+    "supervisory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "UV cream; suburbs submerge submit subtlety suing",
+   "blocklist": [
+    "sunblock",
+    "sunblocks",
+    "sunscreen",
+    "sunscreening",
+    "sunscreens",
+    "suntan",
+    "suntanned",
+    "suntans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Take away in arithmetic; subbed subbing subatoms",
+   "blocklist": [
+    "subtract",
+    "subtracted",
+    "subtracter",
+    "subtracters",
+    "subtracting",
+    "subtraction",
+    "subtractions",
+    "subtractive",
+    "subtracts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "One who follows in office; supplement superbly sue",
+   "blocklist": [
+    "succedent",
+    "succeeder",
+    "succeeders",
+    "succession",
+    "successions",
+    "successor",
+    "successors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Spread through; succeeds sustainable supposedly",
+   "blocklist": [
+    "suffuse",
+    "suffused",
+    "suffuses",
+    "suffusing",
+    "suffusion",
+    "suffusions",
+    "suffusive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 224.870849609375,
+  "cost_numerator": 921071,
+  "cost_denominator": 4096,
+  "cost_exact": false,
+  "cost_mcse": 0.8014918651412256,
+  "baseline": {
+   "numerator": 6185251,
+   "denominator": 29184,
+   "value": 211.93979577850877,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:29,5:51,6:114,7:239,8:390,9:412,10:428,11:362,12:276,13:206,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.7110131584385982,
+   "rollouts": 256,
+   "rank_total": 6185251,
+   "rank_denominator": 29184,
+   "cache_key": "bc2ce00d3681a3716c6da68221e23b13"
+  },
+  "fallback": {
+   "numerator": 798191,
+   "denominator": 4096,
+   "value": 194.870849609375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:10,5:36,6:80,7:188,8:347,9:372,10:396,11:340,12:265,13:205,14:159,15:83,16:72,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.8014918651412256,
+   "rollouts": 256,
+   "rank_total": 3990955,
+   "rank_denominator": 20480,
+   "cache_key": "4489bce3c1868065f68ca44130a027f9"
+  }
+ }
+}

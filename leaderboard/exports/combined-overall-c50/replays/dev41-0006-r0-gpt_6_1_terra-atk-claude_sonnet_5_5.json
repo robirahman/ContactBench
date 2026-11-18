@@ -1,0 +1,608 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_1_terra-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_1_terra",
+ "defender": "claude_sonnet_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Opposite of cold: cat dog sun run big red car sky",
+   "blocklist": [
+    "hot",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen water: the and for you man all can day new",
+   "blocklist": [
+    "ice",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite: one two out her was not",
+   "blocklist": [
+    "her",
+    "moon",
+    "not",
+    "one",
+    "out",
+    "two",
+    "was"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Striped feline: are but had has him his how its",
+   "blocklist": [
+    "are",
+    "but",
+    "cat",
+    "had",
+    "has",
+    "him",
+    "his",
+    "how",
+    "its",
+    "stripe",
+    "striped",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "King of jungle: she who any now way may use war",
+   "blocklist": [
+    "any",
+    "lion",
+    "may",
+    "now",
+    "she",
+    "use",
+    "war",
+    "way",
+    "who"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest land mammal: get did let put say too old",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "giant",
+    "hippo",
+    "mammoth",
+    "rhino",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit: our own off far few ago air",
+   "blocklist": [
+    "ago",
+    "air",
+    "banana",
+    "bananas",
+    "far",
+    "few",
+    "off",
+    "our",
+    "own"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Web spinning arachnid: boy girl bad sea eat eye",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders",
+    "spin",
+    "spinning",
+    "web",
+    "webs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Canine sound: love life time good home work play",
+   "blocklist": [
+    "bark",
+    "dog",
+    "good",
+    "home",
+    "life",
+    "love",
+    "play",
+    "time",
+    "woof",
+    "work"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Fourth planet: blue black white green house first",
+   "blocklist": [
+    "black",
+    "blue",
+    "first",
+    "green",
+    "house",
+    "mars",
+    "red",
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Feline cry: just like know take come made over",
+   "blocklist": [
+    "cat",
+    "lion",
+    "meow",
+    "purr",
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Not up: see yes yet end top low set got lot try",
+   "blocklist": [
+    "end",
+    "low",
+    "top"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "down"
+    },
+    {
+     "seat": "guesser2",
+     "word": "down"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hen lays: each eager eagle ear easy east edge ever",
+   "blocklist": [
+    "egg",
+    "eggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Repeated sound: eight else empty enter equal error",
+   "blocklist": [
+    "echo",
+    "eight",
+    "else",
+    "empty",
+    "enter",
+    "equal",
+    "error"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Soil wriggler: energy enough every early either",
+   "blocklist": [
+    "early",
+    "earthworm",
+    "either",
+    "energy",
+    "enough",
+    "every",
+    "worm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Sun or moon obscured: exit evil even event exact",
+   "blocklist": [
+    "dark",
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "ecliptic",
+    "shadow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pencil mark remover: example economic escape enjoy",
+   "blocklist": [
+    "economic",
+    "economy",
+    "effect",
+    "eject",
+    "enjoy",
+    "erase",
+    "erased",
+    "eraser",
+    "erasers",
+    "erasure",
+    "escape",
+    "example"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Australian flightless bird: entire estate evidence",
+   "blocklist": [
+    "emu",
+    "emus",
+    "entire",
+    "estate",
+    "evidence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Number after ten: elite emit epic envy ethics",
+   "blocklist": [
+    "eleven",
+    "eleventh",
+    "twelve"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Arm joint: extra expert engine english exist eyes",
+   "blocklist": [
+    "elbow",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Breathe out: education electric exercise express",
+   "blocklist": [
+    "exhalation",
+    "exhale",
+    "exhaled",
+    "exhales",
+    "exhaling",
+    "expel",
+    "expelled",
+    "expiration",
+    "expire",
+    "expired",
+    "expires"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Lobe jewelry: excellent essential easily eagerly",
+   "blocklist": [
+    "eagerly",
+    "earlier",
+    "earring",
+    "earrings",
+    "easily",
+    "essential",
+    "excellent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Green gemstone: essay estate evade erect erupt",
+   "blocklist": [
+    "emerald",
+    "emeralds",
+    "erect",
+    "erupt",
+    "essay",
+    "evade",
+    "jade"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Ground shaking: era eel elk elm ego eve eon etch",
+   "blocklist": [
+    "earthquake",
+    "earthquakes",
+    "eel",
+    "ego",
+    "elk",
+    "elm",
+    "eon",
+    "era",
+    "etch",
+    "eve",
+    "quake",
+    "seismic",
+    "tremor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Building lift: enjoyable elaborate employ empathy",
+   "blocklist": [
+    "elaborate",
+    "elevator",
+    "empathy",
+    "employ",
+    "enjoyable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Letter enclosure: enemy ensure ethnic endow entry",
+   "blocklist": [
+    "enclose",
+    "enclosure",
+    "envelope",
+    "envelopes",
+    "letter",
+    "mail"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Hearing membrane: earn ears earl eared eagles",
+   "blocklist": [
+    "eagles",
+    "eared",
+    "earl",
+    "earn",
+    "ears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "eardrum"
+    },
+    {
+     "seat": "guesser2",
+     "word": "eardrum"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "eff efface effaced effaces effigy effort effects",
+   "blocklist": [
+    "effective",
+    "effectively",
+    "effectual",
+    "effectuate",
+    "effectuates",
+    "effectuating",
+    "effeminate",
+    "effete",
+    "efficiency",
+    "efficient",
+    "effluent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 38.77433894230769,
+  "cost_numerator": 129041,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.07921035650004461,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 29201,
+   "denominator": 3328,
+   "value": 8.774338942307692,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:2,6:2,7:8,8:19,9:12,10:17,11:13,12:14,13:8,14:6,15:4,16:1,17:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.07921035650004461,
+   "rollouts": 256,
+   "rank_total": 29201,
+   "rank_denominator": 3328,
+   "cache_key": "539ad0d01bc8170e379f82803c4c76c8"
+  }
+ }
+}

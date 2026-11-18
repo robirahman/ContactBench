@@ -1,0 +1,600 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_luna-atk-gemini_4_argon",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_4_argon",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [
+    "azure",
+    "blue",
+    "cerulean",
+    "cyan"
+   ],
+   "blocked_ranges": [
+    [
+     "aah",
+     "weaken"
+    ]
+   ],
+   "blocked_word_count": 168715,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Rain, wind, and temperature outdoors",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "weather",
+     "weatherworn"
+    ]
+   ],
+   "blocked_word_count": 38,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Striped African equine",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "zebra",
+     "zebroid"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large ocean mammal",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "whale",
+     "whales"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Color of ripe bananas",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "yellow",
+     "yellowy"
+    ]
+   ],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Glass opening in a wall that lets in daylight",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "window",
+     "windowsills"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Animal park:water world woman work year young west",
+   "blocklist": [
+    "wildlife",
+    "zoo",
+    "zookeeper",
+    "zookeepers",
+    "zoological",
+    "zoology",
+    "zoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The integer immediately before one",
+   "blocklist": [
+    "zero",
+    "zeroed",
+    "zeroes",
+    "zeroing",
+    "zeros",
+    "zeroth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Castrated ram; what wheel white wife wild wish",
+   "blocklist": [
+    "wether",
+    "wethers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Percussion instrument with wooden bars",
+   "blocklist": [
+    "xylophone",
+    "xylophones",
+    "xylophonist",
+    "xylophonists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Season that follows autumn and precedes spring",
+   "blocklist": [
+    "winter",
+    "winters",
+    "wintertide",
+    "wintertides",
+    "wintertime",
+    "wintertimes",
+    "wintery",
+    "wintry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Bourbon spirit; when where while which who why",
+   "blocklist": [
+    "whiskey",
+    "whiskeys",
+    "whiskies",
+    "whisky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Zn",
+   "blocklist": [
+    "zinc",
+    "zincate",
+    "zincates",
+    "zinced",
+    "zincic",
+    "zincified",
+    "zincifies",
+    "zincify",
+    "zincifying",
+    "zincing",
+    "zincite",
+    "zincites",
+    "zincked",
+    "zincking",
+    "zincky",
+    "zincoid",
+    "zincous",
+    "zincs",
+    "zincy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Triangular doorstop; wealth wean wear weasel weave",
+   "blocklist": [
+    "wedge",
+    "wedged",
+    "wedges",
+    "wedging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Crosswise yarn carried through a loom",
+   "blocklist": [
+    "weft",
+    "wefts",
+    "weftwise",
+    "woof",
+    "woofs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "A quay or landing place beside navigable water",
+   "blocklist": [
+    "wharf",
+    "wharfage",
+    "wharfs",
+    "wharves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Stocky burrowing Australian marsupial",
+   "blocklist": [
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Poetic term for the firmament",
+   "blocklist": [
+    "welkin",
+    "welkins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Sailing vessel, usually with a mast and sails",
+   "blocklist": [
+    "whaler",
+    "whalers",
+    "wherry",
+    "wherrying",
+    "windjammer",
+    "windjammers",
+    "xebec",
+    "xebecs",
+    "yacht",
+    "yachted",
+    "yachter",
+    "yachters",
+    "yachting",
+    "yachtings",
+    "yachtman",
+    "yachtmen",
+    "yachts",
+    "yachtsman",
+    "yachtsmen",
+    "yawl",
+    "yawled",
+    "yawling",
+    "yawls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Large, powerful North American mustelid",
+   "blocklist": [
+    "wolver",
+    "wolverine",
+    "wolverines",
+    "wolvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Noble gas with atomic number 54",
+   "blocklist": [
+    "xenon",
+    "xenons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "wheat wheeze whether whey wolf wine worm worth",
+   "blocklist": [
+    "weakened",
+    "weakly",
+    "weakness",
+    "weal",
+    "wealthy",
+    "weapon",
+    "weary",
+    "web",
+    "wed",
+    "wedding",
+    "wee",
+    "weed",
+    "week",
+    "weep",
+    "weigh",
+    "weight",
+    "weird",
+    "welcome",
+    "weld",
+    "welfare",
+    "well",
+    "went",
+    "were",
+    "wet",
+    "whack",
+    "whine",
+    "whip",
+    "whirl",
+    "whisper",
+    "whistle",
+    "whole",
+    "wicked",
+    "wide",
+    "widow",
+    "width",
+    "win",
+    "wing",
+    "wink",
+    "wipe",
+    "wire",
+    "wisdom",
+    "wise",
+    "wit",
+    "witch",
+    "without",
+    "witness",
+    "wizard",
+    "woe",
+    "woke",
+    "wonder",
+    "wood",
+    "wool",
+    "word",
+    "wore",
+    "world",
+    "worry",
+    "worse",
+    "worship",
+    "worst",
+    "would",
+    "wound",
+    "woven",
+    "wrap",
+    "wrath",
+    "wreck",
+    "wrestle",
+    "wretched",
+    "wring",
+    "wrinkle",
+    "wrist",
+    "write",
+    "wrong",
+    "wrote",
+    "wrought"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 74,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "whisk"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "To shrivel or dry up",
+   "blocklist": [
+    "wilt",
+    "wilted",
+    "wilting",
+    "wilts",
+    "wither",
+    "withered",
+    "witherer",
+    "witherers",
+    "withering",
+    "witheringly",
+    "withers",
+    "wizen",
+    "wizened",
+    "wizening",
+    "wizens",
+    "wizzen",
+    "wizzens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A person's overall physical and mental health",
+   "blocklist": [
+    "welfares",
+    "wellness",
+    "wellnesses",
+    "wholeness",
+    "wholenesses",
+    "wholesomeness",
+    "wholesomenesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "zombie",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 248.15350877192984,
+  "cost_numerator": 56579,
+  "cost_denominator": 228,
+  "cost_exact": false,
+  "cost_mcse": 0.6136363796171953,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 49739,
+   "denominator": 228,
+   "value": 218.15350877192984,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:56,4:171,5:330,6:470,7:672,8:700,9:482,10:283,11:188,12:106,13:56,14:34,15:17,16:5,17:3",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.6136363796171953,
+   "rollouts": 256,
+   "rank_total": 9549888,
+   "rank_denominator": 43776,
+   "cache_key": "c75e5b16524e1ce307980413ac947748"
+  }
+ }
+}

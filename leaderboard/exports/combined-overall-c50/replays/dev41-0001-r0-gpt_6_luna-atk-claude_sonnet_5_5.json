@@ -1,0 +1,505 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_luna-atk-claude_sonnet_5_5",
+ "attacker": "gpt_6_luna",
+ "defender": "claude_sonnet_5_5",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "An affirmative answer to a question",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "yes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "yes"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Compass direction opposite north",
+   "blocklist": [
+    "south"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A curve of the lips that signals happiness",
+   "blocklist": [
+    "smile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Oedipus solved this mythical creature's riddle",
+   "blocklist": [
+    "sphinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A famous performer or celebrity",
+   "blocklist": [
+    "celebrity",
+    "star",
+    "starlet",
+    "superstar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "sac sad sag sap sat; pink fish that swims upstream",
+   "blocklist": [
+    "salmon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "sea seal seat seed seek seem self; icy rain",
+   "blocklist": [
+    "sleet",
+    "slush",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Wound mark; she see say set sit six son sun saw",
+   "blocklist": [
+    "scab",
+    "scar",
+    "scars",
+    "sore",
+    "stitch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "ill: sin sip sir ski sky sew shy sly sob sub sue",
+   "blocklist": [
+    "sick",
+    "sickly",
+    "sickness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "salt sand sale same save; curved cavalry sword",
+   "blocklist": [
+    "saber",
+    "sabers",
+    "sabre",
+    "sabres",
+    "sale",
+    "salt",
+    "same",
+    "sand",
+    "save",
+    "scimitar",
+    "scimitars",
+    "sword"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Black fur; school stone state start small sound",
+   "blocklist": [
+    "sable",
+    "school",
+    "sleek",
+    "small",
+    "soot",
+    "sooty",
+    "sound",
+    "start",
+    "state",
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "ship shop show shut sing song seek seed; fine mesh",
+   "blocklist": [
+    "net",
+    "netting",
+    "screen",
+    "ship",
+    "shop",
+    "show",
+    "shut",
+    "sieve",
+    "sift",
+    "silk",
+    "sing",
+    "song",
+    "strainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "scale scare scene scent score screw; pasta topping",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sauce"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sauce"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Sweetener often stirred into coffee",
+   "blocklist": [
+    "sucrose",
+    "sugar",
+    "sugared",
+    "sugaring",
+    "sugars",
+    "sugary",
+    "sweetener"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Matching jacket-and-trousers outfit for work",
+   "blocklist": [
+    "suit",
+    "suited",
+    "suiting",
+    "suits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "sunny sunset super supper; board riding on waves",
+   "blocklist": [
+    "surf",
+    "surfboard",
+    "surfed",
+    "surfer",
+    "surfing",
+    "surfs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "support surprise surface survey; ice cream dessert",
+   "blocklist": [
+    "sundae",
+    "sundaes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Japanese dish of vinegared rice, often with fish",
+   "blocklist": [
+    "sushi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "suffari sulcal sumac; a shaft of sunlight",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sunbeam"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sunbeam"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "limber, bendable, pliant; not stiff",
+   "blocklist": [
+    "supple",
+    "suppleness",
+    "suppler",
+    "supplest",
+    "supply"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Excellent; exceptionally good",
+   "blocklist": [
+    "superb",
+    "superior",
+    "superlative",
+    "supreme"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "superman superhero superpower supermarket; manager",
+   "blocklist": [
+    "superintendent",
+    "supervise",
+    "supervisor",
+    "supervisors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "superstitious superstructure; ghostly, paranormal",
+   "blocklist": [
+    "supernatural",
+    "supernaturally",
+    "supernormal",
+    "superstitions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Showing arrogant disdain or contempt for others",
+   "blocklist": [
+    "supercilious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "superficial superfluous superhuman supernova",
+   "blocklist": [
+    "superficial",
+    "superfluous",
+    "superhuman",
+    "supernova"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "supergroup"
+    },
+    {
+     "seat": "guesser2",
+     "word": "superfluity"
+    }
+   ],
+   "prefix_after": "sup",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 97.41796875,
+  "cost_numerator": 24939,
+  "cost_denominator": 256,
+  "cost_exact": false,
+  "cost_mcse": 1.5267152217592153,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 17259,
+   "denominator": 256,
+   "value": 67.41796875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:2,6:3,7:8,8:38,9:75,10:122,11:122,12:108,13:99,14:77,15:56,16:46,17:26,18:11,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.5267152217592153,
+   "rollouts": 256,
+   "rank_total": 51777,
+   "rank_denominator": 768,
+   "cache_key": "6fdee435e30a85f7d0749d99c6a05093"
+  }
+ }
+}
