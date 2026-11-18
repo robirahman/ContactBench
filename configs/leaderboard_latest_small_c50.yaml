@@ -1,5 +1,6 @@
 # C=50 format: 10-secret round robin of the latest small tier (Haiku 5.5, GPT-6 Luna, Gemini 4 Hydrogen).
-# Identical to leaderboard_latest_small_10.yaml except clue_max_characters (a separate leaderboard condition).
+# Identical to leaderboard_latest_small_10.yaml except clue_max_characters (a separate leaderboard condition)
+# and Gemini 4 Hydrogen via generateContent (implicit prompt caching; same model and thinking level).
 # Turn cap 30; prompts-v4 cache-friendly layout; cache prices included for spend estimates.
 name: leaderboard-latest-small-c50
 fixture_data: false
@@ -52,10 +53,11 @@ models:
     cached_input_per_mtok: 0.01
 - id: gemini_4_hydrogen
   provider: google
-  api_family: interactions
+  api_family: generate_content
   model: gemini-4-hydrogen
   parameters:
-    thinking_level: low
+    thinking_config:
+      thinking_level: low
   credential_env: GEMINI_API_KEY
   max_output_tokens: 8000
   context_window_tokens: 1000000

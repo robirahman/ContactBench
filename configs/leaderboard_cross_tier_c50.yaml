@@ -1,0 +1,145 @@
+# C=50 format (main leaderboard format from 2026-11-18): copy of leaderboard_cross_tier.yaml with
+# clue_max_characters: 50 and Gemini 4 Hydrogen via generateContent. Same task seed, so the same secrets.
+# Cross-tier matchups: every mid-tier model vs every small-tier model on the first 3 secrets of the same
+# task sequence (generation seed 41). Small-tier model entries are identical to leaderboard_latest_small_10.yaml.
+name: leaderboard-cross-tier-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 3
+  generation_seed: 41
+tournament:
+  schedule: pairs
+  pairs:
+  - - claude_sonnet_5_5
+    - claude_haiku_5_5
+  - - claude_sonnet_5_5
+    - gpt_6_luna
+  - - claude_sonnet_5_5
+    - gemini_4_hydrogen
+  - - gpt_6_1_terra
+    - claude_haiku_5_5
+  - - gpt_6_1_terra
+    - gpt_6_luna
+  - - gpt_6_1_terra
+    - gemini_4_hydrogen
+  - - gemini_4_argon
+    - claude_haiku_5_5
+  - - gemini_4_argon
+    - gpt_6_luna
+  - - gemini_4_argon
+    - gemini_4_hydrogen
+models:
+- id: claude_sonnet_5_5
+  provider: anthropic
+  model: claude-sonnet-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+- id: gpt_6_1_terra
+  provider: openai
+  api_family: responses
+  model: gpt-6.1-terra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: OpenAI launch page via trackers; model ID verified via models.list
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cached_input_per_mtok: 0.05
+- id: gemini_4_argon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-argon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: 'third-party trackers: intro $2/$10, reportedly $4/$20 from ~2026-12-01
+      (update before runs after that date); cached rate set conservatively at 25%
+      of input'
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.5
+- id: claude_haiku_5_5
+  provider: anthropic
+  model: claude-haiku-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+    cache_write_per_mtok: 0.125
+- id: gpt_6_luna
+  provider: openai
+  api_family: responses
+  model: gpt-6-luna
+  parameters: {}
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1050000
+  prices:
+    as_of: '2026-11-17'
+    source: third-party trackers; model ID verified via OpenAI models.list 2026-11-17
+    input_per_mtok: 0.1
+    output_per_mtok: 0.5
+    cached_input_per_mtok: 0.01
+- id: gemini_4_hydrogen
+  provider: google
+  api_family: generate_content
+  model: gemini-4-hydrogen
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: Google announcement via third-party trackers; model ID verified via models.list;
+      cached rate set conservatively at 25% of input (trackers list $0.075)
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+    cached_input_per_mtok: 0.375
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500
