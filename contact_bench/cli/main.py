@@ -219,7 +219,7 @@ def cmd_export(args) -> int:
     records = asyncio.run(_replayed_records(run_dir))
     out = Path(args.out) if args.out else Path("exports") / args.run_id
     export_public(run_dir, out, analysis, records, include_audit=args.include_audit, max_replays=args.max_replays,
-                  release_label=args.label)
+                  release_label=args.label, headline=args.headline)
     print(f"public export written to {out}")
     return 0
 
@@ -504,6 +504,7 @@ def build_parser() -> argparse.ArgumentParser:
     s.add_argument("--out"); s.add_argument("--include-audit", action="store_true")
     s.add_argument("--max-replays", type=int)
     s.add_argument("--label", help="release notice shown on the site, e.g. 'Pilot: 5 secrets, not confirmatory'")
+    s.add_argument("--headline", action="store_true", help="list this export first on the site (main format)")
     s.set_defaults(fn=cmd_export)
     s = sub.add_parser("build-site"); s.add_argument("export_dirs", nargs="+"); s.add_argument("--out", default="site_build")
     s.set_defaults(fn=cmd_build_site)

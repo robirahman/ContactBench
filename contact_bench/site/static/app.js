@@ -101,7 +101,7 @@
         var access = { closed_book: "closed-book", lookup_tools: "dictionary-assisted",
                        full_candidate_lists: "full lists" }[c.condition.dictionary_access] || "full lists";
         var hc = c.condition.human_challenge;
-        var label = (c.fixture_data ? "[DEMO] " : "") +
+        var label = (c.headline ? "★ Main format — " : "") + (c.fixture_data ? "[DEMO] " : "") +
           (hc ? "Human challenge: " + hc.display_name + " — " : "") + access + ", prefix " +
           (c.condition.initial_prefix_length == null ? 1 : c.condition.initial_prefix_length) +
           ", C=" + c.condition.clue_max_characters +
@@ -112,7 +112,64 @@
       sel.addEventListener("change", function () { load(Number(sel.value)); });
       if (idx.conditions.length) load(0);
       else showError("No conditions in this site build.");
+      renderFormatComparison();
     }).catch(function (e) { showError("Could not load data: " + e.message); });
+  }
+
+  // ---------------------------------------------------- format comparison
+  // One model-only leaderboard per clue budget C (headline first, then a
+  // combined run, then the first listed); shown only when two formats exist.
+  function formatEntries() {
+    var byC = {};
+    index.conditions.forEach(function (c, i) {
+      var k = c.condition.clue_max_characters;
+      if (c.fixture_data || c.condition.human_challenge || c.condition.homogeneous_attackers === false) return;
+      var score = (c.headline ? 2 : 0) + (c.combined ? 1 : 0);
+      if (!(k in byC) || score > byC[k].score) byC[k] = { score: score, i: i, c: c };
+    });
+    return Object.keys(byC).sort(function (a, b) { return Number(a) - Number(b); }).map(function (k) { return byC[k]; });
+  }
+
+  function renderFormatComparison() {
+    var picks = formatEntries();
+    if (picks.length < 2) return;
+    Promise.all(picks.map(function (p) { return fetchJSON("data/" + p.c.entry_id + "/leaderboard.json"); }))
+      .then(function (lbs) {
+        var cols = picks.map(function (p, j) {
+          var elo = (lbs[j].rating && lbs[j].rating.elo) || {};
+          var order = Object.keys(elo).filter(function (m) { return elo[m] != null; })
+            .sort(function (a, b) { return elo[b] - elo[a]; });
+          var rank = {};
+          order.forEach(function (m, r) { rank[m] = r + 1; });
+          return { c: p.c, elo: elo, rank: rank, n: order.length };
+        });
+        var models = {};
+        cols.forEach(function (col) { Object.keys(col.rank).forEach(function (m) { models[m] = 1; }); });
+        var table = clear($("format-table"));
+        var head = el("tr", null, el("th", { text: "Model" }));
+        cols.forEach(function (col) {
+          head.appendChild(el("th", { text: "C=" + col.c.condition.clue_max_characters + " rank" }));
+          head.appendChild(el("th", { text: "C=" + col.c.condition.clue_max_characters + " Elo" }));
+        });
+        table.appendChild(el("thead", null, head));
+        var body = el("tbody");
+        Object.keys(models).sort(function (a, b) {
+          return (cols[0].rank[a] || 1e9) - (cols[0].rank[b] || 1e9) || a.localeCompare(b);
+        }).forEach(function (m) {
+          var tr = el("tr", null, el("td", { text: m }));
+          cols.forEach(function (col) {
+            tr.appendChild(el("td", { text: col.rank[m] ? col.rank[m] + " of " + col.n : "—" }));
+            tr.appendChild(el("td", { text: num(col.elo[m], 0) }));
+          });
+          body.appendChild(tr);
+        });
+        table.appendChild(body);
+        $("format-notes").textContent = "Sources: " + cols.map(function (col) {
+          return "C=" + col.c.condition.clue_max_characters + ": run " + col.c.run_id +
+            (col.c.release_label ? " (" + col.c.release_label + ")" : "");
+        }).join("; ") + ".";
+        $("format-comparison").hidden = false;
+      }).catch(function () { /* optional view */ });
   }
 
   function showError(msg) { var p = $("load-error"); p.hidden = false; p.textContent = msg; }
