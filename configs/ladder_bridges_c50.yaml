@@ -1,0 +1,212 @@
+# Low-effort ladder (C=50, empty starting prefix), 2026-11-18. Inter-group links (5 secrets each, seed 44): top-upper (same-provider pairs plus Fable-Sol, Astra-Argon), upper-mid (Opus-Sonnet, Sol-Terra, Opus-Hydrogen), small-mid (Flash-Hydrogen, Flash-Terra). Existing runs already link Argon-Sonnet/Terra and the small and mid tiers.
+# Model ids without an effort suffix are the low-effort entries; other effort levels get their own ids (e.g. _max).
+name: ladder-bridges-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 5
+  generation_seed: 44
+tournament:
+  schedule: pairs
+  pairs:
+  - - claude_fable_5_2
+    - claude_opus_5_5
+  - - gpt_6_2_astra
+    - gpt_6_2_sol
+  - - gemini_4_carbon
+    - gemini_4_argon
+  - - claude_fable_5_2
+    - gpt_6_2_sol
+  - - gpt_6_2_astra
+    - gemini_4_argon
+  - - claude_opus_5_5
+    - claude_sonnet_5_5
+  - - gpt_6_2_sol
+    - gpt_6_1_terra
+  - - claude_opus_5_5
+    - gemini_4_hydrogen
+  - - gemini_3_8_flash
+    - gemini_4_hydrogen
+  - - gemini_3_8_flash
+    - gpt_6_1_terra
+models:
+- id: claude_fable_5_2
+  provider: anthropic
+  model: claude-fable-5-2
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: Anthropic model table (claude-api skill, cached 2026-11-03)
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 10.0
+- id: gpt_6_2_astra
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-astra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.4
+- id: gemini_4_carbon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-carbon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: third-party trackers; conservative (post-2026-12-01 / higher reported)
+      rates; model ID verified via models.list
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 1.0
+- id: claude_opus_5_5
+  provider: anthropic
+  model: claude-opus-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: Anthropic model table (claude-api skill, cached 2026-11-03)
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 5.0
+- id: gpt_6_2_sol
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-sol
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.1
+- id: gemini_4_argon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-argon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: 'third-party trackers: intro $2/$10, reportedly $4/$20 from ~2026-12-01
+      (update before runs after that date); cached rate set conservatively at 25%
+      of input'
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.5
+- id: claude_sonnet_5_5
+  provider: anthropic
+  model: claude-sonnet-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-03'
+    source: Anthropic model table (claude-api skill)
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 2.5
+- id: gpt_6_1_terra
+  provider: openai
+  api_family: responses
+  model: gpt-6.1-terra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: OpenAI launch page via trackers; model ID verified via models.list
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cached_input_per_mtok: 0.05
+- id: gemini_4_hydrogen
+  provider: google
+  api_family: generate_content
+  model: gemini-4-hydrogen
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: Google announcement via third-party trackers; model ID verified via models.list;
+      cached rate set conservatively at 25% of input (trackers list $0.075)
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+    cached_input_per_mtok: 0.375
+- id: gemini_3_8_flash
+  provider: google
+  api_family: generate_content
+  model: gemini-3.8-flash
+  parameters: {}
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: third-party trackers; conservative (post-2026-12-01 / higher reported)
+      rates; model ID verified via models.list
+    input_per_mtok: 1.5
+    output_per_mtok: 7.5
+    cached_input_per_mtok: 0.375
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

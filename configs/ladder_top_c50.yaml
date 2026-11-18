@@ -1,0 +1,78 @@
+# Low-effort ladder (C=50, empty starting prefix), 2026-11-18. Top group round robin: Claude Fable 5.2, GPT-6.2 Astra, Gemini 4 Carbon (all low effort).
+# Model ids without an effort suffix are the low-effort entries; other effort levels get their own ids (e.g. _max).
+name: ladder-top-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 10
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_fable_5_2
+  provider: anthropic
+  model: claude-fable-5-2
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: Anthropic model table (claude-api skill, cached 2026-11-03)
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 10.0
+- id: gpt_6_2_astra
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-astra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.4
+- id: gemini_4_carbon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-carbon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: third-party trackers; conservative (post-2026-12-01 / higher reported)
+      rates; model ID verified via models.list
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 1.0
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500

@@ -1,0 +1,79 @@
+# Low-effort ladder (C=50, empty starting prefix), 2026-11-18. Upper group round robin: Claude Opus 5.5, GPT-6.2 Sol, Gemini 4 Argon (all low effort).
+# Model ids without an effort suffix are the low-effort entries; other effort levels get their own ids (e.g. _max).
+name: ladder-upper-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 10
+  generation_seed: 41
+tournament:
+  schedule: balanced_round_robin
+models:
+- id: claude_opus_5_5
+  provider: anthropic
+  model: claude-opus-5-5
+  parameters:
+    effort: low
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: Anthropic model table (claude-api skill, cached 2026-11-03)
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 5.0
+- id: gpt_6_2_sol
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-sol
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.1
+- id: gemini_4_argon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-argon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: 'third-party trackers: intro $2/$10, reportedly $4/$20 from ~2026-12-01
+      (update before runs after that date); cached rate set conservatively at 25%
+      of input'
+    input_per_mtok: 2.0
+    output_per_mtok: 10.0
+    cached_input_per_mtok: 0.5
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500
