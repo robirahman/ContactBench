@@ -15,6 +15,9 @@ from ._util import get, int_or_none, to_plain
 from .base import AdapterResponse, DecisionRequest, NormalizedUsage, ProviderAdapter, ToolCall
 
 
+REQUEST_TIMEOUT_S = 3600.0
+
+
 class OpenAIResponsesAdapter(ProviderAdapter):
     provider = "openai"
     api_family = "responses"
@@ -32,7 +35,10 @@ class OpenAIResponsesAdapter(ProviderAdapter):
         if self._client is None:
             import openai
 
-            self._client = openai.AsyncOpenAI(api_key=self.credentials.require(self.credential_env), max_retries=0)
+            # Max-effort reasoning calls can run past the SDK's 10-minute default
+            # (observed: GPT-6.2 Astra at reasoning effort max), so allow an hour.
+            self._client = openai.AsyncOpenAI(api_key=self.credentials.require(self.credential_env), max_retries=0,
+                                              timeout=REQUEST_TIMEOUT_S)
         return self._client
 
     def build_request(self, request: DecisionRequest, input_items: Any = None) -> dict:
