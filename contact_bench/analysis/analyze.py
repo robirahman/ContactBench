@@ -310,6 +310,8 @@ def _lookup_discipline(requests: list[dict]) -> dict[str, dict]:
                 final = json.loads(resp.get("output_text") or "null")
             except ValueError:
                 final = resp.get("output_text") or ""
+        if isinstance(final, dict) and isinstance(final.get("gameplay"), dict):
+            final = final["gameplay"]  # joint_live: ignore the private forecast entries
         out[q.get("model_id")]["n"] += 1
         out[q.get("model_id")]["ok"] += not (rejected & _strings(final))
     return {m: {"lookup_discipline": c["ok"] / c["n"], "lookup_discipline_n": c["n"]} for m, c in out.items() if c["n"]}
@@ -396,7 +398,7 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None, v_secret
             retire(t, used, ranges)
             if fw:
                 sg1["forced_win_turns"] += 1
-                sg1["forced_win_converted"] += t.get("result") == "won"
+                sg1["forced_win_converted"] += str(t.get("result") or "").startswith("won")  # incl. won_prefix_completed
             g1act = (g1.get("canonical") or {}).get("action")
             if g1.get("valid", True) and g1act == "clue":
                 sg1["intended_attempts"] += 1
