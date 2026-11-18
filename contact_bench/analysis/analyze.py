@@ -260,7 +260,8 @@ def _role_diagnostics(rows: list[GameRow], clue_max: int | None = None) -> dict[
                 a["direct_turns"] += 1
                 continue
             a["clue_turns"] += 1
-            dd["clue_turns_faced"] += 1
+            if t.get("defender") is not None:
+                dd["clue_turns_faced"] += 1  # only turns where the defender was asked to block
             if t.get("clue") is not None:
                 clue_chars[seat_m["guesser1"]].append(len(t["clue"]))
             g2 = t.get("guesser2")
