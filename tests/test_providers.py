@@ -363,6 +363,23 @@ def test_anthropic_request_and_parse():
     assert r.usage.reasoning_tokens == 12 and r.usage.billable_output_tokens() == 40
 
 
+def test_anthropic_task_budget_uses_beta_endpoint():
+    rec = Recorder(result=anthropic_message(thinking=12))
+    plain = Recorder(result=anthropic_message())
+    client = SimpleNamespace(messages=SimpleNamespace(create=plain), beta=SimpleNamespace(messages=SimpleNamespace(create=rec)))
+    a = AnthropicMessagesAdapter(
+        mc("anthropic", parameters={"effort": "max", "task_budget": 120000}), client=client, credentials=creds(),
+    )
+    a.preflight()
+    r = run(a.decide(req()))
+    assert not plain.calls and len(rec.calls) == 1
+    kw = rec.calls[0]
+    assert kw["betas"] == ["task-budgets-2026-03-13"]
+    assert kw["output_config"]["task_budget"] == {"type": "tokens", "total": 120000}
+    assert kw["output_config"]["effort"] == "max" and "task_budget" not in kw
+    assert r.output_text == '{"action":"x"}'
+
+
 def test_anthropic_refusal_and_max_tokens():
     for stop, attr in (("refusal", "refusal"), ("max_tokens", "incomplete")):
         a = AnthropicMessagesAdapter(mc("anthropic"), client=anthropic_client(Recorder(result=anthropic_message(stop))), credentials=creds())

@@ -1,0 +1,87 @@
+# Max-effort Fable, second rerun (C=50, prefix 0, same secret as ladder_max_pilot_c50: seed 45).
+# The 64k pilot and the first 128k rerun lost Fable Guesser 1 turns to max_tokens (thinking used the
+# whole allowance, no answer). This run adds an advisory task budget of 120000 tokens (beta
+# task-budgets-2026-03-13), shown to the model as a countdown, under the 128000 max_tokens cap.
+# Astra and Carbon configs are unchanged; the Astra-Carbon pair is played in ladder_max_pilot_c50.
+name: ladder-max-fable-tb-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 1
+  generation_seed: 45
+tournament:
+  schedule: pairs
+  pairs:
+  - - claude_fable_5_2_max
+    - gpt_6_2_astra_max
+  - - claude_fable_5_2_max
+    - gemini_4_carbon_max
+models:
+- id: claude_fable_5_2_max
+  provider: anthropic
+  model: claude-fable-5-2
+  parameters:
+    effort: max
+    task_budget: 120000
+  credential_env: ANTHROPIC_API_KEY
+  max_output_tokens: 128000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: Anthropic model table (claude-api skill, cached 2026-11-03)
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.2
+    cache_write_per_mtok: 10.0
+- id: gpt_6_2_astra_max
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-astra
+  parameters:
+    reasoning:
+      effort: max
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 64000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.4
+- id: gemini_4_carbon_max
+  provider: google
+  api_family: generate_content
+  model: gemini-4-carbon
+  parameters:
+    thinking_config:
+      thinking_level: high
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 64000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: third-party trackers; conservative (post-2026-12-01 / higher reported)
+      rates; model ID verified via models.list
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 1.0
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500
