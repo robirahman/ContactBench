@@ -1,0 +1,150 @@
+{
+ "game_id": "dev972856679-0001-r0-human_robirahman-atk-claude_haiku_5_5",
+ "attacker": "human_robirahman",
+ "defender": "claude_haiku_5_5",
+ "secret": "hurtle",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "resistant to fading; can tak nam sig shh law wex sen saw fro foe odd pht gap gif suk led ick sun utu",
+   "blocklist": [
+    "hurt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fast"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fast"
+    }
+   ],
+   "prefix_after": "h",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "period of enlistment; hew het hex hag hah haw hey hyp hid hin hoi hut huh hub hay hog hip him hit",
+   "blocklist": [
+    "hurl",
+    "hurry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hitch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hitch"
+    }
+   ],
+   "prefix_after": "hu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "pluck calyx off strawberry; hue hub huh hup hut hun hug hui hum husk hued hurl hunt hula hues huts",
+   "blocklist": [
+    "human",
+    "humor",
+    "hurdle",
+    "hustle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hull"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hull"
+    }
+   ],
+   "prefix_after": "hur",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "coarsefiber refuse. hurl hurt hurds hurls hurly hurra hurry hurts hurden hurdle hurled hurler hurley",
+   "blocklist": [
+    "hurrah",
+    "hurray",
+    "hurtled",
+    "hurtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hurst"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hurricane"
+    }
+   ],
+   "prefix_after": "hur",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "causing pain. hurra hurden hurras hursts hurtle hurdens hurdies hurdled hurdler hurdles hurlbat",
+   "blocklist": [
+    "hurtful",
+    "hurting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "hur",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 5.0,
+  "cost_numerator": 5,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 26766197163,
+   "denominator": 3899392,
+   "value": 6864.197588495847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 100,
+   "mcse": 1.9094425034443114,
+   "rollouts": 256,
+   "rank_total": 26766197163,
+   "rank_denominator": 3899392,
+   "cache_key": "5c84d458a8ba0f40ddea35443664e520"
+  },
+  "fallback": null
+ }
+}
