@@ -23,22 +23,17 @@
   "recorded_games": 602,
   "scored_games": 601,
   "planned_fixtures": 301,
-  "complete_fixtures": 300,
+  "complete_fixtures": 301,
   "rematch_fixtures": 65,
   "no_progress_draw_rule": true,
   "no_progress_draws": 65,
-  "balanced_complete": false,
+  "balanced_complete": true,
   "game_status_counts": {
     "capped/complete": 496,
     "solved/complete": 105,
     "infrastructure_incomplete/incomplete": 1
   },
-  "missing_model_pairs": [
-    [
-      "claude_fable_5_2_max",
-      "gemini_4_carbon_max"
-    ]
-  ],
+  "missing_model_pairs": [],
   "rating": {
     "method": "batch Elo-style rating with half-point draws",
     "models": [
@@ -59,43 +54,43 @@
       "claude_fable_5_2_max"
     ],
     "strengths_logit": {
-      "claude_haiku_5_5": -2.9091490158217326,
-      "gpt_6_luna": 0.6597107289018665,
-      "gemini_4_hydrogen": 1.2862839523148377,
-      "claude_sonnet_5_5": -3.216915137709885,
-      "gpt_6_1_terra": 1.6618230755037409,
-      "gemini_4_argon": 1.2040294975461552,
-      "claude_fable_5_2": -2.897645154117954,
-      "gpt_6_2_astra": 1.6716287313762843,
-      "gemini_4_carbon": 2.6733662225059747,
-      "claude_opus_5_5": -2.709511290335886,
-      "gpt_6_2_sol": -0.8014314464683161,
-      "gemini_3_8_flash": 0.8183381150114791,
-      "gpt_6_2_astra_max": 3.0235522880713233,
-      "gemini_4_carbon_max": -0.23204028338894392,
-      "claude_fable_5_2_max": -0.23204028338894322
+      "claude_haiku_5_5": -2.904890525502305,
+      "gpt_6_luna": 0.6649435899603763,
+      "gemini_4_hydrogen": 1.2916740947658558,
+      "claude_sonnet_5_5": -3.2127405635077895,
+      "gpt_6_1_terra": 1.667441959998773,
+      "gemini_4_argon": 1.209505481199057,
+      "claude_fable_5_2": -2.89339464157208,
+      "gpt_6_2_astra": 1.6782983468714774,
+      "gemini_4_carbon": 2.679373558758359,
+      "claude_opus_5_5": -2.7052080134256498,
+      "gpt_6_2_sol": -0.7966093846742288,
+      "gemini_3_8_flash": 0.8235502896825898,
+      "gpt_6_2_astra_max": 3.060145738649228,
+      "gemini_4_carbon_max": -1.104734511322871,
+      "claude_fable_5_2_max": 0.5426445801192069
     },
     "elo": {
-      "claude_haiku_5_5": 994.6290541577382,
-      "gpt_6_luna": 1614.6034916857811,
-      "gemini_4_hydrogen": 1723.4504090604157,
-      "claude_sonnet_5_5": 941.164602776623,
-      "gpt_6_1_terra": 1788.6882366363063,
-      "gemini_4_argon": 1709.161346733216,
-      "claude_fable_5_2": 996.6274796211499,
-      "gpt_6_2_astra": 1790.3916535310614,
-      "gemini_4_carbon": 1964.4112794163543,
-      "claude_opus_5_5": 1029.309679181026,
-      "gpt_6_2_sol": 1360.7770980700275,
-      "gemini_3_8_flash": 1642.1598910722375,
-      "gpt_6_2_astra_max": 2025.2448297821306,
-      "gemini_4_carbon_max": 1459.690474137966,
-      "claude_fable_5_2_max": 1459.690474137966
+      "claude_haiku_5_5": 995.3688296965246,
+      "gpt_6_luna": 1615.512532758692,
+      "gemini_4_hydrogen": 1724.3867727096756,
+      "claude_sonnet_5_5": 941.8898005927293,
+      "gpt_6_1_terra": 1789.6643368485638,
+      "gemini_4_argon": 1710.112622526595,
+      "claude_fable_5_2": 997.3658692787234,
+      "gpt_6_2_astra": 1791.550284413453,
+      "gemini_4_carbon": 1965.4548606104934,
+      "claude_opus_5_5": 1030.0572349475128,
+      "gpt_6_2_sol": 1361.614776001455,
+      "gemini_3_8_flash": 1643.0653385515893,
+      "gpt_6_2_astra_max": 2031.6017632460441,
+      "gemini_4_carbon_max": 1308.0879591057567,
+      "claude_fable_5_2_max": 1594.2670187121914
     },
     "converged": true,
     "iterations": 8,
-    "gradient_norm": 6.560176500716546e-15,
-    "loss": 118.28710914463758,
+    "gradient_norm": 7.14673734777933e-15,
+    "loss": 118.59610677536735,
     "penalty_scale": 2.5,
     "connected_components": [
       [
@@ -119,55 +114,55 @@
   },
   "rating_penalty_sensitivity": {
     "1.0": {
-      "claude_haiku_5_5": 1161.9883074674117,
-      "gpt_6_luna": 1574.1867927483804,
-      "gemini_4_hydrogen": 1673.870243988172,
-      "claude_sonnet_5_5": 1145.5813799739412,
-      "gpt_6_1_terra": 1732.160121596969,
-      "gemini_4_argon": 1658.866366727939,
-      "claude_fable_5_2": 1186.3534873418496,
-      "gpt_6_2_astra": 1675.4500789004094,
-      "gemini_4_carbon": 1807.4376450295197,
-      "claude_opus_5_5": 1202.3820031731927,
-      "gpt_6_2_sol": 1421.4029309699436,
-      "gemini_3_8_flash": 1597.8491762009533,
-      "gpt_6_2_astra_max": 1726.4793991724177,
-      "gemini_4_carbon_max": 1467.9960333544504,
-      "claude_fable_5_2_max": 1467.9960333544504
+      "claude_haiku_5_5": 1162.0078860031165,
+      "gpt_6_luna": 1574.2134447086642,
+      "gemini_4_hydrogen": 1673.90132915501,
+      "claude_sonnet_5_5": 1145.6011030164134,
+      "gpt_6_1_terra": 1732.1988280635771,
+      "gemini_4_argon": 1658.8984710518555,
+      "claude_fable_5_2": 1186.3766685637308,
+      "gpt_6_2_astra": 1675.5064835224837,
+      "gemini_4_carbon": 1807.474764342167,
+      "claude_opus_5_5": 1202.4029565296241,
+      "gpt_6_2_sol": 1421.4295291298524,
+      "gemini_3_8_flash": 1597.875327487561,
+      "gpt_6_2_astra_max": 1727.2512684880949,
+      "gemini_4_carbon_max": 1414.2984837792494,
+      "claude_fable_5_2_max": 1520.5634561586
     },
     "2.5": {
-      "claude_haiku_5_5": 994.6290541577382,
-      "gpt_6_luna": 1614.6034916857811,
-      "gemini_4_hydrogen": 1723.4504090604157,
-      "claude_sonnet_5_5": 941.164602776623,
-      "gpt_6_1_terra": 1788.6882366363063,
-      "gemini_4_argon": 1709.161346733216,
-      "claude_fable_5_2": 996.6274796211499,
-      "gpt_6_2_astra": 1790.3916535310614,
-      "gemini_4_carbon": 1964.4112794163543,
-      "claude_opus_5_5": 1029.309679181026,
-      "gpt_6_2_sol": 1360.7770980700275,
-      "gemini_3_8_flash": 1642.1598910722375,
-      "gpt_6_2_astra_max": 2025.2448297821306,
-      "gemini_4_carbon_max": 1459.690474137966,
-      "claude_fable_5_2_max": 1459.690474137966
+      "claude_haiku_5_5": 995.3688296965246,
+      "gpt_6_luna": 1615.512532758692,
+      "gemini_4_hydrogen": 1724.3867727096756,
+      "claude_sonnet_5_5": 941.8898005927293,
+      "gpt_6_1_terra": 1789.6643368485638,
+      "gemini_4_argon": 1710.112622526595,
+      "claude_fable_5_2": 997.3658692787234,
+      "gpt_6_2_astra": 1791.550284413453,
+      "gemini_4_carbon": 1965.4548606104934,
+      "claude_opus_5_5": 1030.0572349475128,
+      "gpt_6_2_sol": 1361.614776001455,
+      "gemini_3_8_flash": 1643.0653385515893,
+      "gpt_6_2_astra_max": 2031.6017632460441,
+      "gemini_4_carbon_max": 1308.0879591057567,
+      "claude_fable_5_2_max": 1594.2670187121914
     },
     "5.0": {
-      "claude_haiku_5_5": 891.4014572825771,
-      "gpt_6_luna": 1635.4487938027014,
-      "gemini_4_hydrogen": 1746.3750134085362,
-      "claude_sonnet_5_5": 826.3801076453208,
-      "gpt_6_1_terra": 1813.230570168729,
-      "gemini_4_argon": 1732.6431506628048,
-      "claude_fable_5_2": 889.4237312201152,
-      "gpt_6_2_astra": 1844.773780539024,
-      "gemini_4_carbon": 2028.3902752425631,
-      "claude_opus_5_5": 931.3925137087768,
-      "gpt_6_2_sol": 1322.3141842690452,
-      "gemini_3_8_flash": 1663.7436001996819,
-      "gpt_6_2_astra_max": 2259.501610663484,
-      "gemini_4_carbon_max": 1457.4906055933202,
-      "claude_fable_5_2_max": 1457.4906055933202
+      "claude_haiku_5_5": 894.1506750289087,
+      "gpt_6_luna": 1638.5170601234477,
+      "gemini_4_hydrogen": 1749.466543515407,
+      "claude_sonnet_5_5": 829.1190691710569,
+      "gpt_6_1_terra": 1816.3541160898153,
+      "gemini_4_argon": 1735.7551143585397,
+      "claude_fable_5_2": 892.1840146903897,
+      "gpt_6_2_astra": 1848.1341668416367,
+      "gemini_4_carbon": 2031.642241093365,
+      "claude_opus_5_5": 934.1686355198675,
+      "gpt_6_2_sol": 1325.2366478135777,
+      "gemini_3_8_flash": 1666.8081112661757,
+      "gpt_6_2_astra_max": 2273.0718646730493,
+      "gemini_4_carbon_max": 1202.9455991005657,
+      "claude_fable_5_2_max": 1662.4461407141973
     }
   },
   "bootstrap": {
@@ -179,8 +174,8 @@
     "intervals_95": {
       "claude_haiku_5_5": {
         "elo": {
-          "lo": 798.0287091757474,
-          "hi": 1111.1193503673987,
+          "lo": 798.2822368024946,
+          "hi": 1111.6935562392023,
           "n": 500
         },
         "rank": {
@@ -221,13 +216,13 @@
       },
       "gpt_6_luna": {
         "elo": {
-          "lo": 1496.0093120922256,
-          "hi": 1730.1013770053555,
+          "lo": 1496.846375461638,
+          "hi": 1730.5620205541163,
           "n": 500
         },
         "rank": {
           "lo": 6.0,
-          "hi": 8.0,
+          "hi": 9.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -263,8 +258,8 @@
       },
       "gemini_4_hydrogen": {
         "elo": {
-          "lo": 1658.8605220633244,
-          "hi": 1842.265693344871,
+          "lo": 1660.4662335810306,
+          "hi": 1842.2739913814196,
           "n": 500
         },
         "rank": {
@@ -305,7 +300,7 @@
       },
       "claude_sonnet_5_5": {
         "elo": {
-          "lo": 718.4487660387459,
+          "lo": 719.7053189248192,
           "hi": 1105.687778554339,
           "n": 500
         },
@@ -347,7 +342,7 @@
       },
       "gpt_6_1_terra": {
         "elo": {
-          "lo": 1715.5415322000247,
+          "lo": 1716.2372553385924,
           "hi": 1905.5840006231267,
           "n": 500
         },
@@ -389,13 +384,13 @@
       },
       "gemini_4_argon": {
         "elo": {
-          "lo": 1609.1651362206405,
+          "lo": 1609.571260010938,
           "hi": 1841.930027410353,
           "n": 500
         },
         "rank": {
           "lo": 3.0,
-          "hi": 7.0,
+          "hi": 8.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -431,7 +426,7 @@
       },
       "claude_fable_5_2": {
         "elo": {
-          "lo": 787.1209620388227,
+          "lo": 787.9407022431324,
           "hi": 1212.9767817830366,
           "n": 500
         },
@@ -473,7 +468,7 @@
       },
       "gpt_6_2_astra": {
         "elo": {
-          "lo": 1608.8170806154312,
+          "lo": 1609.3416278052096,
           "hi": 2040.604055972836,
           "n": 500
         },
@@ -515,13 +510,13 @@
       },
       "gemini_4_carbon": {
         "elo": {
-          "lo": 1781.1046507031394,
+          "lo": 1782.4363421327228,
           "hi": 2250.613448444179,
           "n": 500
         },
         "rank": {
           "lo": 1.0,
-          "hi": 4.524999999999977,
+          "hi": 5.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -557,8 +552,8 @@
       },
       "claude_opus_5_5": {
         "elo": {
-          "lo": 813.1015158161068,
-          "hi": 1209.6204822925088,
+          "lo": 813.3722825851837,
+          "hi": 1210.3759835568494,
           "n": 500
         },
         "rank": {
@@ -599,12 +594,12 @@
       },
       "gpt_6_2_sol": {
         "elo": {
-          "lo": 1292.3688720318619,
-          "hi": 1448.0330512335663,
+          "lo": 1292.7677368202399,
+          "hi": 1448.4344928045261,
           "n": 500
         },
         "rank": {
-          "lo": 9.0,
+          "lo": 10.0,
           "hi": 11.0,
           "n": 500
         },
@@ -641,13 +636,13 @@
       },
       "gemini_3_8_flash": {
         "elo": {
-          "lo": 1494.9318836086115,
+          "lo": 1495.9000458649011,
           "hi": 1777.6396552638225,
           "n": 500
         },
         "rank": {
           "lo": 4.0,
-          "hi": 8.0,
+          "hi": 9.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -684,7 +679,7 @@
       "gpt_6_2_astra_max": {
         "elo": {
           "lo": 1500.0,
-          "hi": 2195.0408702416858,
+          "hi": 2198.0859017957932,
           "n": 500
         },
         "rank": {
@@ -725,13 +720,13 @@
       },
       "gemini_4_carbon_max": {
         "elo": {
-          "lo": 1340.1119720746142,
+          "lo": 1135.46727698319,
           "hi": 1500.0000000000002,
           "n": 500
         },
         "rank": {
           "lo": 9.0,
-          "hi": 11.0,
+          "hi": 12.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -767,13 +762,13 @@
       },
       "claude_fable_5_2_max": {
         "elo": {
-          "lo": 1340.1119720746142,
-          "hi": 1500.0000000000002,
+          "lo": 1499.9999999999998,
+          "hi": 1632.3651422046391,
           "n": 500
         },
         "rank": {
-          "lo": 9.0,
-          "hi": 11.0,
+          "lo": 7.0,
+          "hi": 10.0,
           "n": 500
         },
         "offense_aggregate_speedup": {
@@ -1478,7 +1473,7 @@
       "opponents": [
         "gpt_6_2_astra_max"
       ],
-      "fixtures": 1,
+      "fixtures": 2,
       "match_points": 0.0,
       "match_point_share": 0.0,
       "wins": 0,
@@ -1522,9 +1517,9 @@
       "opponents": [
         "gpt_6_2_astra_max"
       ],
-      "fixtures": 1,
-      "match_points": 0.0,
-      "match_point_share": 0.0,
+      "fixtures": 2,
+      "match_points": 1.0,
+      "match_point_share": 0.5,
       "wins": 0,
       "draws": 0,
       "losses": 1
@@ -3366,11 +3361,19 @@
       "gpt_6_2_astra_max": {
         "mean_points": 0.0,
         "fixtures": 1
+      },
+      "claude_fable_5_2_max": {
+        "mean_points": 0.0,
+        "fixtures": 1
       }
     },
     "claude_fable_5_2_max": {
       "gpt_6_2_astra_max": {
         "mean_points": 0.0,
+        "fixtures": 1
+      },
+      "gemini_4_carbon_max": {
+        "mean_points": 1.0,
         "fixtures": 1
       }
     }
