@@ -1,0 +1,360 @@
+{
+ "game_id": "dev45-0000-r0-gpt_6_2_astra_max-atk-gemini_4_carbon_max",
+ "attacker": "gpt_6_2_astra_max",
+ "defender": "gemini_4_carbon_max",
+ "secret": "coprahs",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "w=cat or mouse; 6x w=dict0[999*sumASCII(w)%170000]",
+   "blocklist": [
+    "construction",
+    "rubbernecked"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "transited"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "8 random k=1..16;dict0[3300+10000*k] sumASCII=1095",
+   "blocklist": [
+    "gorgonizes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Probe random 8 k=0..16: dict0[7080+10000*k]=??m??t",
+   "blocklist": [
+    "remixt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "p=lo|lu;4x{w=dict0[100*count(p)%170000];p=w[:2]}",
+   "blocklist": [
+    "hoteldom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "phthises"
+    },
+    {
+     "seat": "guesser2",
+     "word": "phthises"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "k=7|935;3x k=cnt(D[100*k%17e4][:2]);c0[27*k%15515]",
+   "blocklist": [
+    "cerebella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "T7key=c0[7136+i%13];ca0[i]=cabby|captan|calcine|?",
+   "blocklist": [
+    "clumber",
+    "clumbers",
+    "clump",
+    "clumped",
+    "clumpier",
+    "clumpiest",
+    "clumping",
+    "clumpish",
+    "clumps",
+    "clumpy",
+    "clumsier",
+    "clumsiest",
+    "clumsily",
+    "clumsiness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A=sumASCII;k=s=A(T7key);7x s=A(D[50*(k+s)]);c[7*s]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "chain",
+     "class"
+    ]
+   ],
+   "blocked_word_count": 2815,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "DH p10007;2^A(D[A(my7)])=4219;c[15514-2^A(last)%p]",
+   "blocklist": [
+    "contrastively",
+    "contrasts",
+    "contrasty",
+    "credential",
+    "credentialed",
+    "credentialing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "DHp100043 b=int(own7|6,36)++til B=2^b%p<7k;c[8k+B]",
+   "blocklist": [
+    "compacter",
+    "compacters",
+    "compactest",
+    "copulatives",
+    "copulatory",
+    "copurified"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "confinements"
+    },
+    {
+     "seat": "guesser2",
+     "word": "confinements"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "k=initial_T9_b%100042;3x{k=67*A(D[k])};co[k%6422]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coach",
+     "cold"
+    ],
+    [
+     "colon",
+     "compose"
+    ],
+    [
+     "concede",
+     "convoy"
+    ],
+    [
+     "cord",
+     "cotton"
+    ],
+    [
+     "couple",
+     "cozy"
+    ]
+   ],
+   "blocked_word_count": 4958,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "compute k=A(my10);3x k=67*A(D[k]);co[(k+700)%6422]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collapse",
+     "colon"
+    ],
+    [
+     "composites",
+     "concede"
+    ],
+    [
+     "convoy",
+     "coops"
+    ],
+    [
+     "council",
+     "couple"
+    ]
+   ],
+   "blocked_word_count": 994,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "copyboys"
+    },
+    {
+     "seat": "guesser2",
+     "word": "copyboys"
+    }
+   ],
+   "prefix_after": "cop",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "k=int(my10,36)%1e5;4x k=67*A(D[k]);cop[k%208]#copy",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "copartner",
+     "coppering"
+    ],
+    [
+     "coproprietor",
+     "copydesks"
+    ]
+   ],
+   "blocked_word_count": 116,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coproduced"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coproduced"
+    }
+   ],
+   "prefix_after": "copr",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "copr[b36(my10)%52]coprophagy coprophilia coproduct",
+   "blocklist": [
+    "copra",
+    "copremia",
+    "copremias",
+    "copremic",
+    "copresented",
+    "copresidents",
+    "coprince",
+    "coprinces",
+    "coprincipals",
+    "coprocessings",
+    "coprocessor",
+    "coprocessors",
+    "coproducing",
+    "coproduction",
+    "coproducts",
+    "copromoter",
+    "copromoters",
+    "coprophagies",
+    "coprophilias",
+    "coprophilous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coproducer"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coproducer"
+    }
+   ],
+   "prefix_after": "copra",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "coprahs copras; drop the final s from the first",
+   "blocklist": [
+    "coprah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "copra",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 14.0,
+  "cost_numerator": 14,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

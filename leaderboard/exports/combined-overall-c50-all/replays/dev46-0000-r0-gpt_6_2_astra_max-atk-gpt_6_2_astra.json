@@ -1,0 +1,243 @@
+{
+ "game_id": "dev46-0000-r0-gpt_6_2_astra_max-atk-gpt_6_2_astra",
+ "attacker": "gpt_6_2_astra_max",
+ "defender": "gpt_6_2_astra",
+ "secret": "flamens",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "0idx;p=do OR ca;n=2,3,20:p=W[100*#(p*)%170000][:n]",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ctenophorans"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cicoree"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Your T1 path. Last 100 -> (1918+#(W[#(p*)%254]*))",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "baa",
+     "ether"
+    ],
+    [
+     "sprain",
+     "underwrite"
+    ]
+   ],
+   "blocked_word_count": 58018,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "p=G2T2[5:9];n=2,3,2,20:p=W[782*n*#(p*)%172608][:n]",
+   "blocklist": [
+    "restart"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "readopted"
+    },
+    {
+     "seat": "guesser2",
+     "word": "readopted"
+    }
+   ],
+   "prefix_after": "f",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "F=f*;p=G2T2[5:9];n=4,3,20:p=F[89*n*#(p*)%6766][:n]",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fogyism"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fogyism"
+    }
+   ],
+   "prefix_after": "fl",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "T4 thru n=3;fl*[#(p*)*(int(G2T2[6:8],36)-5)%1210]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "flea",
+     "flywheels"
+    ]
+   ],
+   "blocked_word_count": 820,
+   "opened_guesses": [],
+   "prefix_after": "fl",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "p=G2T5;fla*[(#(flare*)*#(p[4:6]*)+#(p[6:8]*))%390]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "flan",
+     "flea"
+    ]
+   ],
+   "blocked_word_count": 236,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "flamingo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "flamingo"
+    }
+   ],
+   "prefix_after": "fla",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "p=G2T2[2:4];n=2,3:p=W[8*#(p*)][:n];fla*[#(p*)%155]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "flab",
+     "flakily"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "flams"
+    },
+    {
+     "seat": "guesser2",
+     "word": "flams"
+    }
+   ],
+   "prefix_after": "flam",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "flame flaming flamboyant flammable;flamy-T6mid#%51",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "flamingoes",
+     "flamy"
+    ]
+   ],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "flamethrower"
+    },
+    {
+     "seat": "guesser2",
+     "word": "flamethrower"
+    }
+   ],
+   "prefix_after": "flame",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "@|T5|flamed flamen flamer flames flamenco flameout",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "flameouts",
+     "flameproofs"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "flame",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "flamencos flamens flamers; plural of T8 guess",
+   "blocklist": [
+    "flamethrowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "flame",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

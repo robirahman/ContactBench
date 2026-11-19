@@ -1,0 +1,414 @@
+{
+ "game_id": "dev45-0000-r0-gpt_6_2_astra_max-atk-claude_fable_5_2_max",
+ "attacker": "gpt_6_2_astra_max",
+ "defender": "claude_fable_5_2_max",
+ "secret": "coprahs",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "p=ma OR ca;4x{w=D[100*count(p)%172608];p=w[:2]}=>w",
+   "blocklist": [
+    "acceding",
+    "accelerando",
+    "ctenophoran",
+    "ctenophorans",
+    "ginny",
+    "gins",
+    "massasauga",
+    "massasaugas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bheestie"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "w=D[5636*|G2/G1 last|];2x w=D[(49498-42*#w[:2])%N]",
+   "blocklist": [
+    "aphorizing",
+    "aphotic",
+    "aphrodisiac",
+    "cafeterias",
+    "cafetorium",
+    "cafetoriums",
+    "drivelers",
+    "driveline",
+    "drivelines",
+    "intercorporate",
+    "intercorrelate",
+    "intercorrelated",
+    "mutinousnesses",
+    "mutiny",
+    "mutinying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bitartrates"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bitartrates"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "p=c+(G2t1||G1t1)[1];4x{w=Dc[133*#p%13500];p=w[:3]}",
+   "blocklist": [
+    "cleanlinesses",
+    "cleanly",
+    "cleanness",
+    "cleannesses",
+    "cleans",
+    "cleveite",
+    "cleveites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chumminesses"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "w=G2t1;k in|w|%9,2,3,3:w=Dc[(34*#w[:k]+3964)%7564]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "cocking"
+    ]
+   ],
+   "blocked_word_count": 7565,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "w=G2t4;i=1,0,0,3:w=Dc[7484+i+(3*|w|+38*#w)%67*131]",
+   "blocklist": [
+    "containments",
+    "contains",
+    "contaminant",
+    "conventiclers",
+    "conventicles",
+    "conventing",
+    "coppersmiths",
+    "coppery",
+    "coppice",
+    "cornucopias",
+    "cornus",
+    "cornuses",
+    "cosmopolitan",
+    "cosmopolitanism",
+    "cosmopolitanisms",
+    "counterinfluences",
+    "counterinfluencing",
+    "countering"
+   ],
+   "blocked_ranges": [
+    [
+     "cocking",
+     "compurgations"
+    ],
+    [
+     "crusily",
+     "czars"
+    ]
+   ],
+   "blocked_word_count": 3436,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "w=G2t5;5x w=Dc[9452+(107*int(w[-2:],36)*#w%4955)]",
+   "blocklist": [
+    "comradery",
+    "concatenates",
+    "concealment",
+    "conceding",
+    "confers",
+    "confidant",
+    "confirmedness",
+    "confirmednesses",
+    "confits",
+    "conflates",
+    "conformers",
+    "confounds",
+    "confraternities",
+    "connoisseurships",
+    "connotation",
+    "conns",
+    "consecratory",
+    "consensually",
+    "coopered",
+    "coordinates",
+    "copatrons",
+    "copier",
+    "coprisoners",
+    "coprolites",
+    "copromoter",
+    "cops",
+    "copse",
+    "copublishes",
+    "corresponding",
+    "corrodies",
+    "corrupt",
+    "corrupted",
+    "corruptnesses",
+    "counterfeited",
+    "counterguerilla"
+   ],
+   "blocked_ranges": [
+    [
+     "concentrate",
+     "concerts"
+    ],
+    [
+     "crab",
+     "crusily"
+    ]
+   ],
+   "blocked_word_count": 1319,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "counteroffer"
+    },
+    {
+     "seat": "guesser2",
+     "word": "counteroffer"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "w=G2t5;4x w=Dc[9453+17*int(w[-2:],36)*#w[:6]%4337]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "compurgations",
+     "coordinates"
+    ],
+    [
+     "cosmopolitan",
+     "crab"
+    ]
+   ],
+   "blocked_word_count": 3144,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "w=G2t7;i=6,5,5,58:w=Dc[11707+i*int(w[::4],36)%887]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coordinates",
+     "coots"
+    ],
+    [
+     "coquet",
+     "cosmopolitan"
+    ]
+   ],
+   "blocked_word_count": 678,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "w=G2t5;P=D,D,D,cop:w=P[7*int(w[2:5],36)%|P|];copy",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "copacetic",
+     "coplotting"
+    ],
+    [
+     "copybook",
+     "coquet"
+    ]
+   ],
+   "blocked_word_count": 99,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "cop[69+(G2t9+G2t7)[::4]_36%97];copper copra copula",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coprocessor"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coprocessor"
+    }
+   ],
+   "prefix_after": "cop",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "cop[G2t7[::3]_36%201];copulate coprolite coproduce",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "copolymer",
+     "coppras"
+    ],
+    [
+     "cops",
+     "copy"
+    ]
+   ],
+   "blocked_word_count": 61,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coproducing"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coproducing"
+    }
+   ],
+   "prefix_after": "copr",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "copr[G2t7_36%50];coproprietor coproducer coproduct",
+   "blocklist": [
+    "copremia",
+    "copremias",
+    "copremic",
+    "copresented",
+    "copresenting",
+    "copresents",
+    "copresidents",
+    "coprinces",
+    "coprincipals",
+    "coprocessings",
+    "coprocessors",
+    "coproduced",
+    "coproducers",
+    "coproduces",
+    "coproduction",
+    "coproducts",
+    "coprophagies",
+    "coprophagy",
+    "coprophiliac",
+    "coprophiliacs",
+    "coprophilias",
+    "coprophilous",
+    "coproprietors",
+    "coproprietorship",
+    "coproprietorships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "copr",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "G2t7%35+7;coprah coprahs copras coprince copresent",
+   "blocklist": [
+    "copresident",
+    "coprincipal",
+    "coprisoner",
+    "coprocessing",
+    "coproduction",
+    "coproductions",
+    "coprolitic",
+    "copromoters",
+    "coprophagous",
+    "coprophilia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "copr",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 13.0,
+  "cost_numerator": 13,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

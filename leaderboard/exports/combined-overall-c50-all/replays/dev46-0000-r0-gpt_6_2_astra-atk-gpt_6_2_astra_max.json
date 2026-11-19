@@ -1,0 +1,3355 @@
+{
+ "game_id": "dev46-0000-r0-gpt_6_2_astra-atk-gpt_6_2_astra_max",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_astra_max",
+ "secret": "flamens",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Flightless tuxedo wearer on Antarctic ice",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Name something on a messy office desk",
+   "blocklist": [
+    "ballpoint",
+    "bill",
+    "bills",
+    "binder",
+    "binders",
+    "blotter",
+    "book",
+    "books",
+    "calculator",
+    "calendar",
+    "clip",
+    "clipboard",
+    "clips",
+    "clutter",
+    "coffee",
+    "computer",
+    "crumbs",
+    "cup",
+    "cups",
+    "document",
+    "documents",
+    "dust",
+    "envelope",
+    "envelopes",
+    "eraser",
+    "file",
+    "files",
+    "folder",
+    "folders",
+    "highlighter",
+    "invoice",
+    "invoices",
+    "junk",
+    "keyboard",
+    "lamp",
+    "laptop",
+    "letter",
+    "letters",
+    "mail",
+    "marker",
+    "markers",
+    "memo",
+    "memos",
+    "mess",
+    "monitor",
+    "mouse",
+    "mug",
+    "mugs",
+    "note",
+    "notebook",
+    "notebooks",
+    "notepad",
+    "notepads",
+    "notepaper",
+    "notes",
+    "pad",
+    "pads",
+    "paper",
+    "papers",
+    "paperweight",
+    "paperweights",
+    "paperwork",
+    "pen",
+    "pencil",
+    "pencils",
+    "pens",
+    "phone",
+    "pile",
+    "piles",
+    "planner",
+    "printout",
+    "printouts",
+    "receipt",
+    "receipts",
+    "report",
+    "reports",
+    "ruler",
+    "scissors",
+    "scrap",
+    "scraps",
+    "sharpener",
+    "sheet",
+    "sheets",
+    "stack",
+    "stacks",
+    "staple",
+    "stapler",
+    "staplers",
+    "staples",
+    "stationery",
+    "sticky",
+    "tape",
+    "telephone",
+    "thumbtack",
+    "trash",
+    "wrapper",
+    "wrappers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 97,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "qu offset atomic number of tantalum (zero-based)",
+   "blocklist": [
+    "quadrivium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Independently pick any common English noun",
+   "blocklist": [
+    "aah",
+    "aardvark",
+    "abacus",
+    "acorn",
+    "air",
+    "anchor",
+    "animal",
+    "ant",
+    "anvil",
+    "apple",
+    "bag",
+    "ball",
+    "balloon",
+    "banana",
+    "bank",
+    "basket",
+    "bat",
+    "beach",
+    "bear",
+    "bed",
+    "bee",
+    "bell",
+    "bicycle",
+    "bike",
+    "bird",
+    "blanket",
+    "boat",
+    "bottle",
+    "bowl",
+    "box",
+    "boy",
+    "bread",
+    "brick",
+    "bridge",
+    "broom",
+    "bucket",
+    "building",
+    "bus",
+    "butterfly",
+    "cactus",
+    "cake",
+    "camera",
+    "candle",
+    "car",
+    "carrot",
+    "castle",
+    "cat",
+    "chair",
+    "cheese",
+    "chicken",
+    "child",
+    "city",
+    "clock",
+    "cloud",
+    "coin",
+    "cookie",
+    "cow",
+    "day",
+    "dictionary",
+    "dog",
+    "dolphin",
+    "door",
+    "duck",
+    "earth",
+    "egg",
+    "elephant",
+    "eye",
+    "family",
+    "fire",
+    "fish",
+    "flower",
+    "food",
+    "forest",
+    "fork",
+    "fox",
+    "frog",
+    "fruit",
+    "garden",
+    "giraffe",
+    "glass",
+    "goat",
+    "grape",
+    "grass",
+    "guitar",
+    "hammer",
+    "hand",
+    "hat",
+    "heart",
+    "home",
+    "horse",
+    "house",
+    "idea",
+    "island",
+    "kettle",
+    "key",
+    "kite",
+    "knife",
+    "ladder",
+    "lake",
+    "lantern",
+    "leaf",
+    "lemon",
+    "life",
+    "light",
+    "lighthouse",
+    "lion",
+    "man",
+    "map",
+    "milk",
+    "mirror",
+    "money",
+    "monkey",
+    "moon",
+    "mountain",
+    "music",
+    "night",
+    "object",
+    "ocean",
+    "octopus",
+    "orange",
+    "otter",
+    "owl",
+    "pear",
+    "pebble",
+    "people",
+    "person",
+    "piano",
+    "pig",
+    "pillow",
+    "pizza",
+    "place",
+    "plane",
+    "plant",
+    "plate",
+    "potato",
+    "rabbit",
+    "rain",
+    "rainbow",
+    "river",
+    "road",
+    "rock",
+    "room",
+    "rose",
+    "sand",
+    "sandwich",
+    "school",
+    "sea",
+    "sheep",
+    "ship",
+    "shirt",
+    "shoe",
+    "sky",
+    "snake",
+    "snow",
+    "sock",
+    "sofa",
+    "spoon",
+    "squirrel",
+    "star",
+    "stick",
+    "stone",
+    "street",
+    "sun",
+    "table",
+    "tea",
+    "teacher",
+    "teapot",
+    "thing",
+    "tiger",
+    "time",
+    "toaster",
+    "toy",
+    "train",
+    "tree",
+    "truck",
+    "turtle",
+    "umbrella",
+    "wall",
+    "watch",
+    "water",
+    "way",
+    "wind",
+    "window",
+    "woman",
+    "wood",
+    "word",
+    "world",
+    "xylophone",
+    "year",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 190,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "watermelon"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Empty prefix offset: reverse 2584's digits.",
+   "blocklist": [
+    "anaclitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Zero-based index: 241 squared plus 238.",
+   "blocklist": [
+    "fourths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "br[0x2C8], counting from nought",
+   "blocklist": [
+    "brims"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "s offset 4280 + parity of your turn 4 word length",
+   "blocklist": [
+    "separator",
+    "separators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Global offset=100*sum(ASCII of your turn 4 guess)",
+   "blocklist": [
+    "converts",
+    "cooping",
+    "distensibilities",
+    "executrices",
+    "exhaustlessly",
+    "exuviation",
+    "gavotte",
+    "pastinas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Near dictionary midpoint, pick a travel necessity",
+   "blocklist": [
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Choose a private random global index; look it up.",
+   "blocklist": [
+    "aahed",
+    "aals",
+    "aasvogels",
+    "abandoner",
+    "abandonments",
+    "abandons",
+    "abates",
+    "abator",
+    "beardtongue",
+    "beardtongues",
+    "coordinating",
+    "coordination",
+    "dishonor",
+    "feijoa",
+    "lugers",
+    "luges",
+    "nonunanimous",
+    "nonuniform",
+    "reaginic",
+    "reagins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "salpians"
+    },
+    {
+     "seat": "guesser2",
+     "word": "incommunicability"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "tr[4*482]; zero-based. Where storms brew.",
+   "blocklist": [
+    "troposphere"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Global offset 777xy; choose two lucky prime digits",
+   "blocklist": [
+    "inverity",
+    "inverness",
+    "inverse",
+    "inverses",
+    "invertase",
+    "invertases",
+    "invertebrates",
+    "inverter",
+    "investigational",
+    "investigations",
+    "investigator",
+    "investigatory",
+    "inviable",
+    "inviably",
+    "invidiously",
+    "invidiousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Index 172608/2 minus the sum of 1,4,9,...,49 +10",
+   "blocklist": [
+    "lowers",
+    "lowery",
+    "lowliheads",
+    "lowliness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Pick any plural beginning zy; genetics preferred.",
+   "blocklist": [
+    "zydecos",
+    "zygapophyses",
+    "zygomas",
+    "zygomata",
+    "zygomorphies",
+    "zygoses",
+    "zygosities",
+    "zygospores",
+    "zygotenes",
+    "zygotes",
+    "zymases",
+    "zymes",
+    "zymogenes",
+    "zymogens",
+    "zymograms",
+    "zymologies",
+    "zymosans",
+    "zymoses",
+    "zymurgies",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Global offset 86xyz; pick three nonzero digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "lovely",
+     "lovesickness"
+    ],
+    [
+     "lovesome",
+     "lowball"
+    ],
+    [
+     "lowballing",
+     "lowdown"
+    ],
+    [
+     "lowe",
+     "lowerclassmen"
+    ],
+    [
+     "lowering",
+     "lowish"
+    ],
+    [
+     "lowlander",
+     "lowlifes"
+    ],
+    [
+     "lowlights",
+     "lowness"
+    ],
+    [
+     "lowrider",
+     "loxodrome"
+    ],
+    [
+     "loyal",
+     "loyalties"
+    ],
+    [
+     "lubes",
+     "lubricating"
+    ],
+    [
+     "lubrications",
+     "lubricous"
+    ],
+    [
+     "lucarnes",
+     "lucern"
+    ],
+    [
+     "lucernes",
+     "lucidnesses"
+    ],
+    [
+     "luciferase",
+     "luckie"
+    ],
+    [
+     "luckies",
+     "lucky"
+    ],
+    [
+     "lucratively",
+     "luculently"
+    ],
+    [
+     "ludes",
+     "luetics"
+    ],
+    [
+     "luffa",
+     "luge"
+    ],
+    [
+     "luggies",
+     "lugubriousnesses"
+    ],
+    [
+     "lugworms",
+     "lullaby"
+    ],
+    [
+     "lulled",
+     "lumbar"
+    ],
+    [
+     "lumber",
+     "lumbermen"
+    ],
+    [
+     "lumberyard",
+     "luminaires"
+    ],
+    [
+     "luminance",
+     "luminescence"
+    ],
+    [
+     "luminescent",
+     "luminosities"
+    ],
+    [
+     "luminous",
+     "lumpectomy"
+    ],
+    [
+     "lumpen",
+     "lumpier"
+    ],
+    [
+     "lums",
+     "lunas"
+    ],
+    [
+     "lunated",
+     "luncheon"
+    ],
+    [
+     "luncheonettes",
+     "lunchroom"
+    ],
+    [
+     "lunchtime",
+     "lung"
+    ],
+    [
+     "lungans",
+     "lungfish"
+    ],
+    [
+     "lungful",
+     "lungwort"
+    ],
+    [
+     "lungyi",
+     "lunkers"
+    ],
+    [
+     "lunkheaded",
+     "lunulae"
+    ],
+    [
+     "lunulate",
+     "lupines"
+    ],
+    [
+     "lurching",
+     "lurers"
+    ],
+    [
+     "lurid",
+     "lurkers"
+    ],
+    [
+     "lurks",
+     "lushes"
+    ],
+    [
+     "lushing",
+     "lustering"
+    ],
+    [
+     "lusters",
+     "lustiest"
+    ],
+    [
+     "lustihoods",
+     "lustrated"
+    ],
+    [
+     "lustrating",
+     "lustrous"
+    ],
+    [
+     "lustrousness",
+     "lutanist"
+    ],
+    [
+     "lute",
+     "lutein"
+    ],
+    [
+     "luteotrophic",
+     "lutestring"
+    ],
+    [
+     "lutetium",
+     "lutings"
+    ],
+    [
+     "lutists",
+     "luxates"
+    ],
+    [
+     "luxation",
+     "luxuriate"
+    ],
+    [
+     "luxuriates",
+     "lwei"
+    ],
+    [
+     "lyard",
+     "lycanthropy"
+    ],
+    [
+     "lycee",
+     "lycopene"
+    ],
+    [
+     "lycopod",
+     "lying"
+    ],
+    [
+     "lyings",
+     "lymphangiographic"
+    ],
+    [
+     "lymphocytoses",
+     "lymphogranulomatoses"
+    ],
+    [
+     "lymphographic",
+     "lymphomata"
+    ],
+    [
+     "lymphomatosis",
+     "lynched"
+    ],
+    [
+     "lynchers",
+     "lyonnaise"
+    ],
+    [
+     "lyophiled",
+     "lyophilize"
+    ],
+    [
+     "lyophilizer",
+     "lyre"
+    ],
+    [
+     "lyrebirds",
+     "lyricised"
+    ],
+    [
+     "lyricising",
+     "lyricizing"
+    ],
+    [
+     "lyriform",
+     "lysed"
+    ],
+    [
+     "lysogen",
+     "machinabilities"
+    ],
+    [
+     "machine",
+     "machines"
+    ],
+    [
+     "machinist",
+     "machs"
+    ],
+    [
+     "machzorim",
+     "mackinaw"
+    ],
+    [
+     "mackintosh",
+     "macled"
+    ],
+    [
+     "macon",
+     "macrobiotic"
+    ],
+    [
+     "macrocosmic",
+     "macrocytosis"
+    ],
+    [
+     "macroeconomics",
+     "macroglobulin"
+    ],
+    [
+     "macroglobulinemias",
+     "macromolecular"
+    ],
+    [
+     "macromolecules",
+     "macronutrients"
+    ]
+   ],
+   "blocked_word_count": 739,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Random global offset 4xxxx. Choose freely.",
+   "blocklist": [
+    "deucedly",
+    "diluvium",
+    "discord",
+    "disillusion",
+    "dribble",
+    "dunning"
+   ],
+   "blocked_ranges": [
+    [
+     "detonated",
+     "detour"
+    ],
+    [
+     "detraining",
+     "detrains"
+    ],
+    [
+     "dilutions",
+     "diluvia"
+    ],
+    [
+     "discombobulation",
+     "discomfit"
+    ],
+    [
+     "discompose",
+     "disconcerted"
+    ],
+    [
+     "disconnectedly",
+     "disconnecting"
+    ],
+    [
+     "discontinue",
+     "discontinuing"
+    ],
+    [
+     "dishonest",
+     "dishonored"
+    ],
+    [
+     "dishware",
+     "dishwater"
+    ],
+    [
+     "distensibilities",
+     "distillate"
+    ],
+    [
+     "dourer",
+     "douse"
+    ],
+    [
+     "dressmakers",
+     "drew"
+    ],
+    [
+     "dunlin",
+     "dunned"
+    ]
+   ],
+   "blocked_word_count": 93,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "enteropathy"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Zero-based global index: shuffle digits 12378.",
+   "blocklist": [
+    "beatifically",
+    "beatitude",
+    "cordon",
+    "corgi",
+    "corncakes",
+    "decidua",
+    "deckels",
+    "declasse",
+    "deionized",
+    "delaines",
+    "delegates",
+    "imponderability",
+    "imposter",
+    "impowers",
+    "incoherent",
+    "incomes",
+    "irradiations",
+    "irrationalist",
+    "irreparably",
+    "magnetometry",
+    "mahonias",
+    "maiden"
+   ],
+   "blocked_ranges": [
+    [
+     "convolutions",
+     "convulsion"
+    ],
+    [
+     "cornet",
+     "cornfield"
+    ],
+    [
+     "decode",
+     "decolletage"
+    ],
+    [
+     "deliberately",
+     "delicate"
+    ],
+    [
+     "impresses",
+     "impressionism"
+    ],
+    [
+     "irrepressible",
+     "irreproducible"
+    ],
+    [
+     "irritably",
+     "irruption"
+    ],
+    [
+     "maggot",
+     "magicians"
+    ],
+    [
+     "magnetize",
+     "magnetofluiddynamics"
+    ]
+   ],
+   "blocked_word_count": 135,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "imblazes"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Global index 12abcd; shuffle four distinct digits",
+   "blocklist": [
+    "pterin",
+    "pterygium",
+    "pucks",
+    "quacking",
+    "quadrangles",
+    "quadrilaterals",
+    "quadriphonics",
+    "quadrumvirate",
+    "quadruplicity",
+    "quadrupoles",
+    "rattlebrains",
+    "rattles",
+    "raucities",
+    "raucously",
+    "rauwolfias",
+    "ravelins",
+    "ravellers",
+    "ravener",
+    "ravin",
+    "ravioli",
+    "ravisher",
+    "readmits",
+    "readorning",
+    "reads",
+    "reaggregation",
+    "realigned",
+    "realist",
+    "realize",
+    "recombinational",
+    "recommencing",
+    "recompile",
+    "recompose",
+    "recomputed",
+    "reconcentrations",
+    "reconcilabilities",
+    "refluxes",
+    "refocusses",
+    "refolding",
+    "reformatting",
+    "reforming",
+    "reformulating",
+    "reiver",
+    "rejecters",
+    "rejudge",
+    "rejuggle",
+    "rejuvenations",
+    "rewakes",
+    "reward"
+   ],
+   "blocked_ranges": [
+    [
+     "quacks",
+     "quadded"
+    ],
+    [
+     "rattletrap",
+     "rattletraps"
+    ],
+    [
+     "real",
+     "reales"
+    ],
+    [
+     "recommence",
+     "recommenced"
+    ],
+    [
+     "reject",
+     "rejected"
+    ],
+    [
+     "rewarding",
+     "rewardingly"
+    ]
+   ],
+   "blocked_word_count": 64,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "refutals"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Global index 5abcd, a random permutation of 2368",
+   "blocklist": [
+    "experts",
+    "expires",
+    "extraembryonic",
+    "extraordinarinesses",
+    "fader",
+    "faery",
+    "fasciculate",
+    "fashionablenesses",
+    "flaxier",
+    "fledgling",
+    "flenching",
+    "fluidics",
+    "fluidize",
+    "fossilizes",
+    "fouling",
+    "foveola",
+    "frecklier",
+    "freebases"
+   ],
+   "blocked_ranges": [
+    [
+     "exsect",
+     "extent"
+    ],
+    [
+     "fanny",
+     "fantasy"
+    ],
+    [
+     "far",
+     "farcical"
+    ],
+    [
+     "flex",
+     "flexor"
+    ],
+    [
+     "foxglove",
+     "foxtail"
+    ]
+   ],
+   "blocked_word_count": 217,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "73xyz global offset: pick three distinct digits",
+   "blocklist": [
+    "impetuous",
+    "implications",
+    "impolitely",
+    "impone",
+    "impound",
+    "improbable",
+    "inactions",
+    "inane",
+    "inattentiveness",
+    "inbuilt",
+    "inched",
+    "inclusivenesses",
+    "incompletenesses",
+    "inconceivability",
+    "inconsequential",
+    "incorporate"
+   ],
+   "blocked_ranges": [
+    [
+     "impetigos",
+     "impetuosities"
+    ],
+    [
+     "impetuousness",
+     "impi"
+    ],
+    [
+     "impiety",
+     "imping"
+    ],
+    [
+     "impinged",
+     "impinges"
+    ],
+    [
+     "impings",
+     "impiously"
+    ],
+    [
+     "impish",
+     "implacabilities"
+    ],
+    [
+     "implacable",
+     "implantable"
+    ],
+    [
+     "implantations",
+     "implanters"
+    ],
+    [
+     "implants",
+     "implausibly"
+    ],
+    [
+     "impleaded",
+     "impleads"
+    ],
+    [
+     "impledged",
+     "implementations"
+    ],
+    [
+     "implementer",
+     "implementers"
+    ],
+    [
+     "implementor",
+     "implicating"
+    ],
+    [
+     "implicatively",
+     "implied"
+    ],
+    [
+     "implodes",
+     "imploring"
+    ],
+    [
+     "impolitic",
+     "imponderables"
+    ],
+    [
+     "impones",
+     "importances"
+    ],
+    [
+     "importancy",
+     "important"
+    ],
+    [
+     "importation",
+     "importing"
+    ],
+    [
+     "importunate",
+     "importunateness"
+    ],
+    [
+     "importune",
+     "importuners"
+    ],
+    [
+     "importuning",
+     "impose"
+    ],
+    [
+     "imposer",
+     "imposing"
+    ],
+    [
+     "imposition",
+     "impossible"
+    ],
+    [
+     "impossiblenesses",
+     "impostor"
+    ],
+    [
+     "imposts",
+     "impostume"
+    ],
+    [
+     "imposture",
+     "impotent"
+    ],
+    [
+     "impounding",
+     "impoverishers"
+    ],
+    [
+     "impoverishment",
+     "impregnates"
+    ],
+    [
+     "impregnation",
+     "impregnations"
+    ],
+    [
+     "impregnators",
+     "impresario"
+    ],
+    [
+     "impresas",
+     "impreses"
+    ],
+    [
+     "impressed",
+     "impressionistically"
+    ],
+    [
+     "impressions",
+     "impressivenesses"
+    ],
+    [
+     "impressments",
+     "impressures"
+    ],
+    [
+     "imprests",
+     "imprinted"
+    ],
+    [
+     "imprinting",
+     "imprintings"
+    ],
+    [
+     "imprison",
+     "improbabilities"
+    ],
+    [
+     "impromptu",
+     "impropriety"
+    ],
+    [
+     "improvability",
+     "improvements"
+    ],
+    [
+     "improvisationally",
+     "improvisator"
+    ],
+    [
+     "improvisatori",
+     "impunity"
+    ],
+    [
+     "impurely",
+     "impurity"
+    ],
+    [
+     "imputable",
+     "imputations"
+    ],
+    [
+     "imputatively",
+     "imputes"
+    ],
+    [
+     "inabilities",
+     "inability"
+    ],
+    [
+     "inaccessibility",
+     "inaccurately"
+    ],
+    [
+     "inactivated",
+     "inactivities"
+    ],
+    [
+     "inadequacy",
+     "inadequatenesses"
+    ],
+    [
+     "inadvisabilities",
+     "inalienabilities"
+    ],
+    [
+     "inalienably",
+     "inamorata"
+    ],
+    [
+     "inaneness",
+     "inanimately"
+    ],
+    [
+     "inanimatenesses",
+     "inanities"
+    ],
+    [
+     "inanitions",
+     "inappetence"
+    ],
+    [
+     "inapplicabilities",
+     "inarticulacies"
+    ],
+    [
+     "inarticulate",
+     "inarticulately"
+    ],
+    [
+     "inarticulatenesses",
+     "inattentive"
+    ],
+    [
+     "inaudibilities",
+     "inaugurated"
+    ],
+    [
+     "inauguration",
+     "inaugurators"
+    ],
+    [
+     "inboards",
+     "inbounding"
+    ],
+    [
+     "inbreathed",
+     "inbreedings"
+    ],
+    [
+     "inbursts",
+     "incaging"
+    ],
+    [
+     "incalculability",
+     "incalculable"
+    ],
+    [
+     "incalescence",
+     "incandescence"
+    ],
+    [
+     "incandescent",
+     "incandescents"
+    ],
+    [
+     "incant",
+     "incantatory"
+    ],
+    [
+     "incanting",
+     "incapability"
+    ],
+    [
+     "incapableness",
+     "incapacitate"
+    ],
+    [
+     "incapacitates",
+     "incaution"
+    ],
+    [
+     "incautious",
+     "incendiary"
+    ],
+    [
+     "incenses",
+     "incenter"
+    ],
+    [
+     "inceptives",
+     "incertitudes"
+    ],
+    [
+     "incessant",
+     "incestuousnesses"
+    ],
+    [
+     "inching",
+     "inchoative"
+    ],
+    [
+     "inchoatives",
+     "inchworm"
+    ],
+    [
+     "incidences",
+     "incidents"
+    ],
+    [
+     "incinerated",
+     "incinerating"
+    ],
+    [
+     "incinerations",
+     "incipiences"
+    ],
+    [
+     "incipiency",
+     "incipit"
+    ],
+    [
+     "incisal",
+     "incises"
+    ],
+    [
+     "incision",
+     "incisiveness"
+    ],
+    [
+     "incisor",
+     "incisory"
+    ],
+    [
+     "incisures",
+     "inclosures"
+    ],
+    [
+     "included",
+     "inclusively"
+    ],
+    [
+     "incogitant",
+     "incognizances"
+    ],
+    [
+     "incogs",
+     "incombustibles"
+    ],
+    [
+     "incomer",
+     "incommensurables"
+    ],
+    [
+     "incommensurate",
+     "incommodes"
+    ],
+    [
+     "incommodious",
+     "incommodiousnesses"
+    ],
+    [
+     "incommodity",
+     "incommunicably"
+    ],
+    [
+     "incommunicative",
+     "incommutably"
+    ],
+    [
+     "incomparability",
+     "incompatible"
+    ],
+    [
+     "incompatibly",
+     "incompetence"
+    ],
+    [
+     "incompetencies",
+     "incompletely"
+    ],
+    [
+     "incomprehensibility",
+     "incomputable"
+    ],
+    [
+     "inconceivably",
+     "inconsequences"
+    ],
+    [
+     "inconsequentiality",
+     "inconsiderably"
+    ],
+    [
+     "inconsiderately",
+     "inconsiderateness"
+    ],
+    [
+     "inconsideration",
+     "inconsistency"
+    ],
+    [
+     "inconsistently",
+     "inconsolableness"
+    ],
+    [
+     "inconsolably",
+     "inconspicuous"
+    ],
+    [
+     "inconspicuousness",
+     "inconstancy"
+    ],
+    [
+     "inconstantly",
+     "incontestabilities"
+    ],
+    [
+     "incontestable",
+     "incontinencies"
+    ],
+    [
+     "incontinent",
+     "incontrollable"
+    ],
+    [
+     "incontrovertibly",
+     "inconveniencing"
+    ],
+    [
+     "inconvenient",
+     "inconveniently"
+    ],
+    [
+     "inconvertibility",
+     "incoordinations"
+    ],
+    [
+     "incorporates",
+     "incorporeal"
+    ]
+   ],
+   "blocked_word_count": 785,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "s offset: privately permute 1368 into four digits",
+   "blocklist": [
+    "saucer",
+    "saugers",
+    "scarph",
+    "scatological",
+    "seawater",
+    "secalose",
+    "semiconductor",
+    "semifinished",
+    "shrewlike",
+    "shrining",
+    "silvered",
+    "silversmiths",
+    "slivered",
+    "sloganeered",
+    "smoldering",
+    "smoothers"
+   ],
+   "blocked_ranges": [
+    [
+     "scalable",
+     "scandalize"
+    ],
+    [
+     "seismograph",
+     "selfsame"
+    ],
+    [
+     "shunt",
+     "sickness"
+    ],
+    [
+     "slug",
+     "slushy"
+    ]
+   ],
+   "blocked_word_count": 451,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Index 14abcd; freely shuffle four distinct digits",
+   "blocklist": [
+    "sleeveless",
+    "sleevelets",
+    "sleigh",
+    "sleight",
+    "snooting",
+    "snorkels",
+    "snottinesses",
+    "snoutiest",
+    "snowbank",
+    "snowblower",
+    "snowboarding",
+    "snowcaps",
+    "snowdrops",
+    "speedier",
+    "speedinesses",
+    "speedo",
+    "speedometer",
+    "speer",
+    "speering",
+    "speises",
+    "speleology",
+    "spelts",
+    "spendable",
+    "spent",
+    "spermagonia",
+    "spermatheca",
+    "spurries",
+    "spurring",
+    "spurts",
+    "sputnik",
+    "sputum",
+    "spy",
+    "stilts",
+    "stimulus",
+    "stinger",
+    "stingers",
+    "stinging",
+    "stingingly",
+    "stingo",
+    "stingos",
+    "stinkards",
+    "stinkbugs",
+    "stinker",
+    "stinkpot",
+    "stinkpots",
+    "stinkweed",
+    "stipels",
+    "stippler",
+    "stipplers",
+    "subchapter",
+    "subclassification",
+    "subclassified",
+    "subclassify",
+    "subclassing",
+    "subclavian",
+    "subclerk",
+    "subclinical",
+    "subclusters",
+    "subcode",
+    "subcommunities",
+    "subcontracting",
+    "subcontracts",
+    "subcooling",
+    "subculture",
+    "subcultured",
+    "subcuratives",
+    "subcutises",
+    "subdeacon"
+   ],
+   "blocked_ranges": [
+    [
+     "sleepyheads",
+     "sleeted"
+    ],
+    [
+     "snorter",
+     "snots"
+    ],
+    [
+     "snub",
+     "snuffle"
+    ],
+    [
+     "spatial",
+     "speak"
+    ],
+    [
+     "speedy",
+     "speeled"
+    ],
+    [
+     "stimying",
+     "stingaree"
+    ],
+    [
+     "stingiest",
+     "stinginess"
+    ],
+    [
+     "stingrays",
+     "stink"
+    ],
+    [
+     "stinkhorn",
+     "stinking"
+    ]
+   ],
+   "blocked_word_count": 159,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "splinters"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Index 9abcd; choose distinct nonzero digits",
+   "blocklist": [
+    "microwave",
+    "midlegs",
+    "midrashim",
+    "midship",
+    "midsts",
+    "misdeed",
+    "misdescribed",
+    "misdevelop",
+    "misdevelops",
+    "misguiders",
+    "misinterpreted",
+    "misjoining",
+    "misjudge",
+    "miskicks",
+    "mislabeling",
+    "misspent",
+    "misstopped",
+    "monostely",
+    "monotheist",
+    "monotheistical",
+    "monotone",
+    "monotonicity",
+    "multure",
+    "mumped",
+    "mumping",
+    "mungooses",
+    "munis",
+    "noncash",
+    "noncentral",
+    "noncharismatic",
+    "noncircular"
+   ],
+   "blocked_ranges": [
+    [
+     "microseisms",
+     "microspherical"
+    ],
+    [
+     "microsporangium",
+     "microsporophyll"
+    ],
+    [
+     "microstates",
+     "microsurgery"
+    ],
+    [
+     "microtechnics",
+     "microtonal"
+    ],
+    [
+     "microtones",
+     "microvasculatures"
+    ],
+    [
+     "microvillus",
+     "microwatts"
+    ],
+    [
+     "micrurgy",
+     "micturate"
+    ],
+    [
+     "middler",
+     "middlingly"
+    ],
+    [
+     "midgut",
+     "midguts"
+    ],
+    [
+     "midirons",
+     "midlatitude"
+    ],
+    [
+     "midlives",
+     "midmost"
+    ],
+    [
+     "midpoints",
+     "midranges"
+    ],
+    [
+     "midrib",
+     "midsagittal"
+    ],
+    [
+     "midshipmen",
+     "midsized"
+    ],
+    [
+     "mischief",
+     "miscommunication"
+    ],
+    [
+     "misconnection",
+     "misconstrued"
+    ],
+    [
+     "miscorrelations",
+     "miscount"
+    ],
+    [
+     "miscreant",
+     "miscreated"
+    ],
+    [
+     "misdefined",
+     "misdemeanants"
+    ],
+    [
+     "misdiagnosed",
+     "misdial"
+    ],
+    [
+     "misguidedly",
+     "misguidednesses"
+    ],
+    [
+     "misidentify",
+     "misinferring"
+    ],
+    [
+     "misinterred",
+     "misjoinders"
+    ],
+    [
+     "misjudges",
+     "misjudgments"
+    ],
+    [
+     "missises",
+     "missorting"
+    ],
+    [
+     "misspeaking",
+     "misspend"
+    ],
+    [
+     "misstarted",
+     "misstate"
+    ],
+    [
+     "missteering",
+     "missteers"
+    ],
+    [
+     "misstops",
+     "misstruck"
+    ],
+    [
+     "missuited",
+     "missuits"
+    ],
+    [
+     "mistermed",
+     "misthink"
+    ],
+    [
+     "monopsonies",
+     "monopsonistic"
+    ],
+    [
+     "monorchid",
+     "monorchids"
+    ],
+    [
+     "monoterpene",
+     "monotheism"
+    ],
+    [
+     "monotonous",
+     "monotonousness"
+    ],
+    [
+     "monsoonal",
+     "monsoons"
+    ],
+    [
+     "monsteras",
+     "monstrous"
+    ],
+    [
+     "montadale",
+     "montaged"
+    ],
+    [
+     "multivalences",
+     "multivalents"
+    ],
+    [
+     "multiversities",
+     "multivitamin"
+    ],
+    [
+     "multivoltine",
+     "multiwarhead"
+    ],
+    [
+     "mummifying",
+     "mumms"
+    ],
+    [
+     "munched",
+     "muncher"
+    ],
+    [
+     "munches",
+     "mundanenesses"
+    ],
+    [
+     "mundanity",
+     "mundungos"
+    ],
+    [
+     "nonbank",
+     "nonbeliever"
+    ],
+    [
+     "nonbiodegradables",
+     "nonbiologist"
+    ],
+    [
+     "noncandidate",
+     "noncapitalist"
+    ],
+    [
+     "noncelebrations",
+     "noncelebrities"
+    ],
+    [
+     "nonchalances",
+     "nonchalantly"
+    ],
+    [
+     "nonchromosomal",
+     "nonchurchgoer"
+    ],
+    [
+     "nonclass",
+     "nonclassroom"
+    ]
+   ],
+   "blocked_word_count": 315,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mulishness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "neocolonial"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Uniform random index from 30000 through 39999.",
+   "blocklist": [
+    "confuters",
+    "conger",
+    "congested",
+    "cooker",
+    "cookshop"
+   ],
+   "blocked_ranges": [
+    [
+     "confusional",
+     "confutations"
+    ],
+    [
+     "cooktop",
+     "cookwares"
+    ],
+    [
+     "coordinates",
+     "coos"
+    ],
+    [
+     "counterplay",
+     "counterplays"
+    ],
+    [
+     "crabby",
+     "crabs"
+    ],
+    [
+     "cryobiologists",
+     "cryogenically"
+    ],
+    [
+     "cunningest",
+     "cunnings"
+    ],
+    [
+     "detonatable",
+     "detonate"
+    ]
+   ],
+   "blocked_word_count": 43,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coquets"
+    },
+    {
+     "seat": "guesser2",
+     "word": "defecate"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Global index 16abcd; choose four distinct digits.",
+   "blocklist": [
+    "ultraparadoxical",
+    "ultrawide",
+    "undeceived",
+    "undeclared",
+    "undefeated",
+    "undercharge",
+    "unpromising",
+    "unpunctualities",
+    "unquestionable",
+    "unreasoning",
+    "unreclaimable",
+    "upgradeable",
+    "upheaps",
+    "uphill",
+    "upholsteries",
+    "usages",
+    "usances",
+    "used",
+    "uselessnesses",
+    "users",
+    "usque",
+    "usuriousness",
+    "vodouns",
+    "vogue",
+    "voguing",
+    "voicefulness",
+    "voiles",
+    "volatile",
+    "volatilises",
+    "volitions",
+    "widget"
+   ],
+   "blocked_ranges": [
+    [
+     "ultramontane",
+     "ultramontanism"
+    ],
+    [
+     "undecidabilities",
+     "undecidable"
+    ],
+    [
+     "unlimited",
+     "unlined"
+    ],
+    [
+     "unloading",
+     "unloads"
+    ],
+    [
+     "unloosen",
+     "unloosened"
+    ],
+    [
+     "unpuckered",
+     "unpuckering"
+    ],
+    [
+     "upgrow",
+     "upgrows"
+    ],
+    [
+     "upkeeps",
+     "upland"
+    ],
+    [
+     "usaunces",
+     "useable"
+    ],
+    [
+     "usefully",
+     "usefulness"
+    ],
+    [
+     "voice",
+     "voiced"
+    ],
+    [
+     "voiceprints",
+     "voicer"
+    ],
+    [
+     "voiders",
+     "voiding"
+    ],
+    [
+     "volcanologist",
+     "vole"
+    ],
+    [
+     "volitant",
+     "volition"
+    ],
+    [
+     "widowers",
+     "widowhood"
+    ]
+   ],
+   "blocked_word_count": 72,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "urology"
+    },
+    {
+     "seat": "guesser2",
+     "word": "viability"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Index 63xyz; freely choose three different digits.",
+   "blocklist": [
+    "goitre",
+    "gollywogs",
+    "gonfanon",
+    "goof",
+    "goosander",
+    "gossiper",
+    "governing",
+    "graal",
+    "graham",
+    "grants",
+    "gratings",
+    "gravitation"
+   ],
+   "blocked_ranges": [
+    [
+     "goggling",
+     "goiter"
+    ],
+    [
+     "goitrogen",
+     "golconda"
+    ],
+    [
+     "gold",
+     "goldarn"
+    ],
+    [
+     "goldbrick",
+     "goldbugs"
+    ],
+    [
+     "goldener",
+     "goldeneye"
+    ],
+    [
+     "goldenly",
+     "goldenrods"
+    ],
+    [
+     "goldenseals",
+     "goldeye"
+    ],
+    [
+     "goldfield",
+     "goldfinches"
+    ],
+    [
+     "goldfishes",
+     "goldstone"
+    ],
+    [
+     "goldurn",
+     "golem"
+    ],
+    [
+     "golf",
+     "golfings"
+    ],
+    [
+     "golgotha",
+     "golgothas"
+    ],
+    [
+     "goliardic",
+     "golly"
+    ],
+    [
+     "goloshe",
+     "gomerals"
+    ],
+    [
+     "gomeril",
+     "gonadectomy"
+    ],
+    [
+     "gondola",
+     "gondolas"
+    ],
+    [
+     "gondoliers",
+     "gonfalon"
+    ],
+    [
+     "gong",
+     "gonia"
+    ],
+    [
+     "gonidial",
+     "gonidic"
+    ],
+    [
+     "gonif",
+     "goniometers"
+    ],
+    [
+     "goniometries",
+     "gonion"
+    ],
+    [
+     "gonococcal",
+     "gonocytes"
+    ],
+    [
+     "gonofs",
+     "gonophores"
+    ],
+    [
+     "gonopore",
+     "gonorrheal"
+    ],
+    [
+     "gonzo",
+     "good"
+    ],
+    [
+     "goodbye",
+     "goodbys"
+    ],
+    [
+     "goodies",
+     "goodman"
+    ],
+    [
+     "goodness",
+     "goodnesses"
+    ],
+    [
+     "goodwife",
+     "gooey"
+    ],
+    [
+     "goofballs",
+     "goofing"
+    ],
+    [
+     "googlies",
+     "gooier"
+    ],
+    [
+     "gooneys",
+     "goonie"
+    ],
+    [
+     "goons",
+     "goorals"
+    ],
+    [
+     "goose",
+     "gooseflesh"
+    ],
+    [
+     "goosefoot",
+     "goosefoots"
+    ],
+    [
+     "goosegrasses",
+     "goosey"
+    ],
+    [
+     "goosiest",
+     "goosy"
+    ],
+    [
+     "gophers",
+     "gorbellies"
+    ],
+    [
+     "gorblimy",
+     "gore"
+    ],
+    [
+     "gores",
+     "gorgedly"
+    ],
+    [
+     "gorgeously",
+     "gorgerin"
+    ],
+    [
+     "gorgers",
+     "gorget"
+    ],
+    [
+     "gorgets",
+     "gormandizers"
+    ],
+    [
+     "gormands",
+     "gorses"
+    ],
+    [
+     "gospeler",
+     "gospeller"
+    ],
+    [
+     "gospels",
+     "gossip"
+    ],
+    [
+     "gossiping",
+     "gossipry"
+    ],
+    [
+     "gossipy",
+     "gossoon"
+    ],
+    [
+     "gossypol",
+     "gothicize"
+    ],
+    [
+     "gothicizes",
+     "gothics"
+    ],
+    [
+     "gothites",
+     "gouge"
+    ],
+    [
+     "gouger",
+     "gouging"
+    ],
+    [
+     "goulashes",
+     "gouramis"
+    ],
+    [
+     "gourde",
+     "gourmandise"
+    ],
+    [
+     "gourmandisms",
+     "gourmandized"
+    ],
+    [
+     "gourmandizing",
+     "goutier"
+    ],
+    [
+     "goutily",
+     "governesses"
+    ],
+    [
+     "governmental",
+     "governmentalizes"
+    ],
+    [
+     "governmentese",
+     "governorate"
+    ],
+    [
+     "gowds",
+     "gown"
+    ],
+    [
+     "gowning",
+     "goyish"
+    ],
+    [
+     "grab",
+     "grabbing"
+    ],
+    [
+     "grabbled",
+     "grabbler"
+    ],
+    [
+     "grabbles",
+     "grabs"
+    ],
+    [
+     "graced",
+     "gracefuller"
+    ],
+    [
+     "gracefully",
+     "gracelessly"
+    ],
+    [
+     "gracelessnesses",
+     "gracileness"
+    ],
+    [
+     "gracilis",
+     "gracing"
+    ],
+    [
+     "graciosos",
+     "graciousnesses"
+    ],
+    [
+     "grackles",
+     "gradable"
+    ],
+    [
+     "gradated",
+     "gradualists"
+    ],
+    [
+     "gradualnesses",
+     "graduands"
+    ],
+    [
+     "graecize",
+     "graffiti"
+    ],
+    [
+     "graffitists",
+     "grafting"
+    ],
+    [
+     "grail",
+     "grainfield"
+    ],
+    [
+     "grainier",
+     "grainiest"
+    ],
+    [
+     "graininesses",
+     "grama"
+    ],
+    [
+     "gramary",
+     "gramaryes"
+    ],
+    [
+     "gramercy",
+     "graminivorous"
+    ],
+    [
+     "grammarian",
+     "grammatical"
+    ],
+    [
+     "grammaticality",
+     "grammaticalnesses"
+    ],
+    [
+     "grammes",
+     "gramps"
+    ],
+    [
+     "grampuses",
+     "gran"
+    ],
+    [
+     "granadilla",
+     "grandad"
+    ],
+    [
+     "grandaddy",
+     "grandads"
+    ],
+    [
+     "grandame",
+     "grandsirs"
+    ],
+    [
+     "grandsons",
+     "grandstanded"
+    ],
+    [
+     "grandstanders",
+     "grangers"
+    ],
+    [
+     "granita",
+     "granitelike"
+    ],
+    [
+     "graniteware",
+     "granivorous"
+    ],
+    [
+     "grannies",
+     "granodiorite"
+    ],
+    [
+     "granodioritic",
+     "granophyres"
+    ],
+    [
+     "grans",
+     "grant"
+    ],
+    [
+     "granted",
+     "grantor"
+    ],
+    [
+     "grantsmanship",
+     "granulated"
+    ],
+    [
+     "granulation",
+     "granulations"
+    ],
+    [
+     "granulocytopoieses",
+     "granulose"
+    ],
+    [
+     "granulosis",
+     "grapes"
+    ],
+    [
+     "grapevine",
+     "gratified"
+    ],
+    [
+     "gratifyingly",
+     "grating"
+    ],
+    [
+     "gratis",
+     "gratuitousness"
+    ],
+    [
+     "gratuity",
+     "gratulate"
+    ],
+    [
+     "gratulates",
+     "graupel"
+    ],
+    [
+     "gravamen",
+     "gravamina"
+    ],
+    [
+     "graved",
+     "graveling"
+    ],
+    [
+     "gravelling",
+     "gravely"
+    ],
+    [
+     "graveness",
+     "gravers"
+    ],
+    [
+     "graveside",
+     "gravestones"
+    ],
+    [
+     "graveyards",
+     "gravida"
+    ],
+    [
+     "gravidas",
+     "gravimeter"
+    ],
+    [
+     "gravimetric",
+     "gravimetrically"
+    ],
+    [
+     "gravimetry",
+     "gravitates"
+    ],
+    [
+     "gravitationally",
+     "gravlaks"
+    ]
+   ],
+   "blocked_word_count": 788,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Global index 108xyz; choose three distinct digits.",
+   "blocklist": [
+    "parchisis",
+    "paresis",
+    "parging",
+    "parians",
+    "parodied",
+    "parr",
+    "parthenocarpy",
+    "particularistic",
+    "parure",
+    "pasquinades",
+    "passivists",
+    "pasteurize",
+    "pasturing",
+    "patentabilities",
+    "patienter",
+    "pause",
+    "pawns"
+   ],
+   "blocked_ranges": [
+    [
+     "parcener",
+     "parching"
+    ],
+    [
+     "parchments",
+     "pardie"
+    ],
+    [
+     "pardner",
+     "pardners"
+    ],
+    [
+     "pardonable",
+     "pardoner"
+    ],
+    [
+     "pardoning",
+     "pards"
+    ],
+    [
+     "pare",
+     "paregoric"
+    ],
+    [
+     "pareira",
+     "parenchymal"
+    ],
+    [
+     "parenchymata",
+     "parentage"
+    ],
+    [
+     "parental",
+     "parenterally"
+    ],
+    [
+     "parenthesis",
+     "parenthesized"
+    ],
+    [
+     "parenthesizing",
+     "parenthoods"
+    ],
+    [
+     "parentings",
+     "parentless"
+    ],
+    [
+     "pareo",
+     "pares"
+    ],
+    [
+     "paresthesias",
+     "parfait"
+    ],
+    [
+     "parflesh",
+     "parfocalizes"
+    ],
+    [
+     "pargos",
+     "pariahs"
+    ],
+    [
+     "parietal",
+     "paris"
+    ],
+    [
+     "parish",
+     "parishes"
+    ],
+    [
+     "parishioners",
+     "parkas"
+    ],
+    [
+     "parker",
+     "parking"
+    ],
+    [
+     "parkinsonian",
+     "parklands"
+    ],
+    [
+     "parks",
+     "parlance"
+    ],
+    [
+     "parlando",
+     "parlayed"
+    ],
+    [
+     "parlays",
+     "parley"
+    ],
+    [
+     "parleyer",
+     "parleying"
+    ],
+    [
+     "parliament",
+     "parling"
+    ],
+    [
+     "parlors",
+     "parlour"
+    ],
+    [
+     "parlous",
+     "parochialisms"
+    ],
+    [
+     "parodist",
+     "parol"
+    ],
+    [
+     "parolee",
+     "paronomasias"
+    ],
+    [
+     "parotitises",
+     "parotoid"
+    ],
+    [
+     "paroxysm",
+     "parquetry"
+    ],
+    [
+     "parrakeets",
+     "parricidal"
+    ],
+    [
+     "parricides",
+     "parridge"
+    ],
+    [
+     "parried",
+     "parroket"
+    ],
+    [
+     "parrot",
+     "parroter"
+    ],
+    [
+     "parroting",
+     "parry"
+    ],
+    [
+     "pars",
+     "parsec"
+    ],
+    [
+     "parsed",
+     "parses"
+    ],
+    [
+     "parsimonious",
+     "parsley"
+    ],
+    [
+     "parsleys",
+     "parsnip"
+    ],
+    [
+     "parson",
+     "part"
+    ],
+    [
+     "partaker",
+     "partakers"
+    ],
+    [
+     "partaking",
+     "parthenocarpic"
+    ],
+    [
+     "parthenogenesis",
+     "partials"
+    ],
+    [
+     "partible",
+     "participates"
+    ],
+    [
+     "participle",
+     "particle"
+    ],
+    [
+     "particles",
+     "particularisms"
+    ],
+    [
+     "particularities",
+     "particularizes"
+    ],
+    [
+     "particularly",
+     "particulars"
+    ],
+    [
+     "particulates",
+     "parting"
+    ],
+    [
+     "partisan",
+     "partisans"
+    ],
+    [
+     "partisanships",
+     "partition"
+    ],
+    [
+     "partitioner",
+     "partitionist"
+    ],
+    [
+     "partitions",
+     "partizan"
+    ],
+    [
+     "partlet",
+     "partnered"
+    ],
+    [
+     "partners",
+     "partnerships"
+    ],
+    [
+     "partons",
+     "partridges"
+    ],
+    [
+     "parturient",
+     "parturients"
+    ],
+    [
+     "parturitions",
+     "parura"
+    ],
+    [
+     "parve",
+     "parvo"
+    ],
+    [
+     "parvos",
+     "pascal"
+    ],
+    [
+     "pashadoms",
+     "pashalik"
+    ],
+    [
+     "pashed",
+     "pasquinade"
+    ],
+    [
+     "pass",
+     "passades"
+    ],
+    [
+     "passadoes",
+     "passados"
+    ],
+    [
+     "passaged",
+     "passageworks"
+    ],
+    [
+     "passant",
+     "passbands"
+    ],
+    [
+     "passbooks",
+     "passel"
+    ],
+    [
+     "passementerie",
+     "passengers"
+    ],
+    [
+     "passerine",
+     "passersby"
+    ],
+    [
+     "passible",
+     "passion"
+    ],
+    [
+     "passionate",
+     "passionateness"
+    ],
+    [
+     "passionflower",
+     "passivated"
+    ],
+    [
+     "passivating",
+     "passivation"
+    ],
+    [
+     "passive",
+     "passivisms"
+    ],
+    [
+     "passivity",
+     "passports"
+    ],
+    [
+     "password",
+     "pasta"
+    ],
+    [
+     "pastellist",
+     "pastern"
+    ],
+    [
+     "pastes",
+     "pasteurization"
+    ],
+    [
+     "pasteurizer",
+     "pasticcios"
+    ],
+    [
+     "pastiches",
+     "pasticheur"
+    ],
+    [
+     "pastie",
+     "pastille"
+    ],
+    [
+     "pastils",
+     "pastimes"
+    ],
+    [
+     "pastiness",
+     "pastises"
+    ],
+    [
+     "pastness",
+     "pastoral"
+    ],
+    [
+     "pastorales",
+     "pastoralist"
+    ],
+    [
+     "pastorally",
+     "pastorate"
+    ],
+    [
+     "pastored",
+     "pastors"
+    ],
+    [
+     "pastorships",
+     "pastromis"
+    ],
+    [
+     "pasts",
+     "pasturage"
+    ],
+    [
+     "pastural",
+     "pasturers"
+    ],
+    [
+     "pat",
+     "patamars"
+    ],
+    [
+     "patchboards",
+     "patcher"
+    ],
+    [
+     "patchoulis",
+     "pate"
+    ],
+    [
+     "patellae",
+     "patens"
+    ],
+    [
+     "patentable",
+     "patentor"
+    ],
+    [
+     "patents",
+     "pater"
+    ],
+    [
+     "paternalism",
+     "paternalists"
+    ],
+    [
+     "paternities",
+     "paternoster"
+    ],
+    [
+     "paters",
+     "pathetic"
+    ],
+    [
+     "pathetically",
+     "pathfinding"
+    ],
+    [
+     "pathless",
+     "pathobiologies"
+    ],
+    [
+     "pathogen",
+     "pathogenic"
+    ],
+    [
+     "pathogenicity",
+     "pathognomonic"
+    ],
+    [
+     "pathological",
+     "pathology"
+    ],
+    [
+     "pathophysiological",
+     "pathophysiologies"
+    ],
+    [
+     "pathos",
+     "patiences"
+    ],
+    [
+     "patiently",
+     "patinated"
+    ],
+    [
+     "patination",
+     "pauper"
+    ],
+    [
+     "pauperisms",
+     "paupiettes"
+    ],
+    [
+     "pauser",
+     "pavanes"
+    ],
+    [
+     "pave",
+     "paved"
+    ],
+    [
+     "pavement",
+     "pavid"
+    ],
+    [
+     "pavilioned",
+     "pavilions"
+    ],
+    [
+     "pavillons",
+     "pavins"
+    ],
+    [
+     "paviors",
+     "pavis"
+    ],
+    [
+     "paviser",
+     "pavlova"
+    ],
+    [
+     "pavonine",
+     "pawers"
+    ],
+    [
+     "pawkier",
+     "pawkily"
+    ],
+    [
+     "pawl",
+     "pawnages"
+    ],
+    [
+     "pawnbrokers",
+     "pawnbroking"
+    ],
+    [
+     "pawned",
+     "pawnor"
+    ],
+    [
+     "pawnshops",
+     "paxwaxes"
+    ]
+   ],
+   "blocked_word_count": 760,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Global index 15abcd; pick four distinct digits.",
+   "blocklist": [
+    "swallow",
+    "tabloid",
+    "taborin",
+    "tacker",
+    "tealike",
+    "teamsters",
+    "technically",
+    "technique",
+    "thwack",
+    "thymy",
+    "thyratrons",
+    "thyroid",
+    "tibias",
+    "tragacanths",
+    "trailerites",
+    "trainability",
+    "trainbearers",
+    "traineeships",
+    "traitresses",
+    "transshapes",
+    "transshipping",
+    "transudation",
+    "transuranic",
+    "transversely",
+    "transvestism",
+    "transvestites",
+    "trapans",
+    "trapballs",
+    "trapdoors",
+    "trapezohedron",
+    "trapnesting",
+    "trapshooting",
+    "tyrosinases"
+   ],
+   "blocked_ranges": [
+    [
+     "teacupfuls",
+     "teacups"
+    ],
+    [
+     "trailing",
+     "trailless"
+    ],
+    [
+     "transversal",
+     "transversals"
+    ],
+    [
+     "trapan",
+     "trapanned"
+    ],
+    [
+     "trappers",
+     "trapping"
+    ]
+   ],
+   "blocked_word_count": 43,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "textural"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11438.25666364388,
+  "cost_numerator": 65740876891,
+  "cost_denominator": 5747456,
+  "cost_exact": false,
+  "cost_mcse": 2.47508905485159,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 65568453211,
+   "denominator": 5747456,
+   "value": 11408.25666364388,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:909,4:3722,5:8321,6:14753,7:22451,8:27658,9:24223,10:19767,11:15041,12:11009,13:7598,14:4966,15:3092,16:1879,17:1089,18:572,19:319,20:152",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.47508905485159,
+   "rollouts": 256,
+   "rank_total": 65568453211,
+   "rank_denominator": 5747456,
+   "cache_key": "4d39abeef4804606124474a30bbaabbd"
+  }
+ }
+}

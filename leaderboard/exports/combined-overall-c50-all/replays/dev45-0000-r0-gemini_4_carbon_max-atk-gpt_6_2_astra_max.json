@@ -1,0 +1,650 @@
+{
+ "game_id": "dev45-0000-r0-gemini_4_carbon_max-atk-gpt_6_2_astra_max",
+ "attacker": "gemini_4_carbon_max",
+ "defender": "gpt_6_2_astra_max",
+ "secret": "coprahs",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "9-letter singular noun, 1st!=9th: mid 7 palindrome",
+   "blocklist": [
+    "footstool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "possessor"
+    },
+    {
+     "seat": "guesser2",
+     "word": "possessor"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "8-letter word, one C: mid 6 & mid 4 are words",
+   "blocklist": [
+    "cleavers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "7 letters, all unique, no S: mid 5 reversed = word",
+   "blocklist": [
+    "climate",
+    "cognate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "'c' offset=1000*k (k=1..16) len=9,6,8,7,6 -> 1st",
+   "blocklist": [
+    "condoning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "cordial"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "'c' offset=500,1500..15500 len=10,10,8,9,10 ->1st",
+   "blocklist": [
+    "calibrates",
+    "certitudes",
+    "conveyance"
+   ],
+   "blocked_ranges": [
+    [
+     "cant",
+     "carat"
+    ],
+    [
+     "castor",
+     "catmint"
+    ],
+    [
+     "check",
+     "cherub"
+    ],
+    [
+     "chop",
+     "church"
+    ],
+    [
+     "clap",
+     "clever"
+    ],
+    [
+     "collar",
+     "colour"
+    ],
+    [
+     "cricket",
+     "cross"
+    ],
+    [
+     "cull",
+     "curriculum"
+    ]
+   ],
+   "blocked_word_count": 2776,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "8-letter singular noun, 7 unique: 1357&2468=words",
+   "blocklist": [
+    "calliope",
+    "countess"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "c off=700*k(0..19) lim=100 last=y,r,s,e,s,p,t->1st",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "commuting",
+     "compact"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "c off=8600+300*k(0..15) lim=100 last=yyynssn->1st",
+   "blocklist": [
+    "compulsivity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "courtesy"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "c off=300*k(29..44) lim=7 last=g,s,n,s,e,t,e->1st",
+   "blocklist": [
+    "corralling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "c off=9250+300*k(0..15) lim=7 last=dsgnlsl -> 1st",
+   "blocklist": [
+    "consociated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "c off=9531+200*k(0..15) lim=7 last=stsrdgs->1st",
+   "blocklist": [
+    "coparceners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "c off=3930+620*k(0..19) lim=7 last=grsedsg->1st",
+   "blocklist": [
+    "cocreating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "coinciding"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "c off=4900+750*k(0..15) lim=7 last=drstsgs->1st",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "chill",
+     "chop"
+    ],
+    [
+     "church",
+     "circuit"
+    ],
+    [
+     "clamp",
+     "clap"
+    ],
+    [
+     "clown",
+     "coagulate"
+    ],
+    [
+     "crab",
+     "crayon"
+    ],
+    [
+     "cross",
+     "crucial"
+    ],
+    [
+     "crystal",
+     "cull"
+    ],
+    [
+     "cutworm",
+     "cymbal"
+    ]
+   ],
+   "blocked_word_count": 1790,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "'co' off=350*k(1..18) lim=8 last=esaesdsw -> 1st",
+   "blocklist": [
+    "coleoptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "'co' off=14+300*k(1..20) lim=8 last=systetsn->1st",
+   "blocklist": [
+    "conterminous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "'co' off=54+250*k(8..25) lim=8 last=ynysdrse->1st",
+   "blocklist": [
+    "cottony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "10 letters, all unique, no A: 2-4,4-6 & 7-10=words",
+   "blocklist": [
+    "clothespin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "'co' off=270*k(6..23) lim=8 last=ntsdrsgy->1st",
+   "blocklist": [
+    "complain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "s@900*k(0..15) last6=sdrssy->c@1000*len1+100*len6",
+   "blocklist": [
+    "concelebration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "co off=1448+190*k(0..26) lim=8 last=ssysesrs->1st",
+   "blocklist": [
+    "coproprietorships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "concerto"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "m@600*k(0..15) last6=nsscyc->co@350*len1+30*len6",
+   "blocklist": [
+    "consequentiality"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "p@670*k(0..15) last6=xscmss->co@500*len1+20*len6",
+   "blocklist": [
+    "constituency"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "b@630*k(0..14) last6=tssdls->co@360*len1+70*len6",
+   "blocklist": [
+    "conscript"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "mid2(T5)@130*k(0..6) last6=rtessg->c@150*len1*len6",
+   "blocklist": [
+    "computereses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "d@620*k(0..14) last6=tdesgs->c@1500*len1+700*len6",
+   "blocklist": [
+    "composure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "s@950*k(0..13) w1=..ler,w8=..er->co@60*len1*len8",
+   "blocklist": [
+    "conned"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "t@390*k(0..18) last6=sasmsa->c@790*len1+220*len6",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "combination",
+     "comeback"
+    ],
+    [
+     "commander",
+     "commercial"
+    ],
+    [
+     "communion",
+     "commuting"
+    ],
+    [
+     "compartment",
+     "compatriot"
+    ],
+    [
+     "competence",
+     "complain"
+    ],
+    [
+     "complication",
+     "comport"
+    ],
+    [
+     "compound",
+     "compression"
+    ],
+    [
+     "comprise",
+     "compunction"
+    ],
+    [
+     "conation",
+     "concede"
+    ],
+    [
+     "concentrate",
+     "concert"
+    ],
+    [
+     "concrete",
+     "condemn"
+    ],
+    [
+     "condone",
+     "conduct"
+    ],
+    [
+     "confab",
+     "confer"
+    ],
+    [
+     "confess",
+     "confiscate"
+    ],
+    [
+     "conflict",
+     "confront"
+    ],
+    [
+     "congeal",
+     "congratulate"
+    ],
+    [
+     "conifer",
+     "conjugation"
+    ],
+    [
+     "connate",
+     "conquer"
+    ],
+    [
+     "conscientious",
+     "consecrate"
+    ],
+    [
+     "consider",
+     "consortium"
+    ]
+   ],
+   "blocked_word_count": 936,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "r@400*k(0..13) last6=srtgsy->c@302*(len1%5)*len6",
+   "blocklist": [
+    "cedarbirds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "s@960*k(0..17) last6=rsclyr->c@7*len1*len2*len5",
+   "blocklist": [
+    "calibrator"
+   ],
+   "blocked_ranges": [
+    [
+     "caviar",
+     "cavity"
+    ],
+    [
+     "cedar",
+     "cede"
+    ],
+    [
+     "cenobite",
+     "censorship"
+    ],
+    [
+     "cerumen",
+     "cervix"
+    ],
+    [
+     "cockle",
+     "cockscomb"
+    ],
+    [
+     "convoke",
+     "convolution"
+    ],
+    [
+     "correction",
+     "correctness"
+    ]
+   ],
+   "blocked_word_count": 131,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "construes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cokehead"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 765.8887360341864,
+  "cost_numerator": 256652379,
+  "cost_denominator": 335104,
+  "cost_exact": false,
+  "cost_mcse": 0.6914422167830615,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 246599259,
+   "denominator": 335104,
+   "value": 735.8887360341864,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:27,4:167,5:436,6:857,7:1309,8:1661,9:1533,10:1294,11:1051,12:789,13:539,14:349,15:209,16:140,17:107,18:43,19:35,20:12",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.6914422167830615,
+   "rollouts": 256,
+   "rank_total": 246599259,
+   "rank_denominator": 335104,
+   "cache_key": "28bd64df9ff009ef8c63ded1c01772f0"
+  }
+ }
+}

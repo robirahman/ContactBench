@@ -1,0 +1,623 @@
+{
+ "game_id": "dev45-0000-r0-claude_fable_5_2_max-atk-gpt_6_2_astra_max",
+ "attacker": "claude_fable_5_2_max",
+ "defender": "gpt_6_2_astra_max",
+ "secret": "coprahs",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Solfege syllable",
+   "blocklist": [
+    "ray",
+    "sol"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "w='contact'; 8x: w=list_words(w[-1],len(w)**2)[0]",
+   "blocklist": [
+    "dactylology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Meow pet. ElGamal: G2 register RANDOM word, CANCEL",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "w=coin?'c':'b';7x w=list_words(w[-1],len(w)**2)[0]",
+   "blocklist": [
+    "early",
+    "gabbers",
+    "gaddi",
+    "sabbing",
+    "sabermetrics",
+    "sablefishes",
+    "sabred",
+    "saccade",
+    "saccharine",
+    "sacroiliacs",
+    "saddler"
+   ],
+   "blocked_ranges": [
+    [
+     "fable",
+     "fabulous"
+    ],
+    [
+     "juxtaposition",
+     "kabuki"
+    ],
+    [
+     "nag",
+     "nanny"
+    ],
+    [
+     "rabbi",
+     "rabies"
+    ],
+    [
+     "yachts",
+     "yahoo"
+    ]
+   ],
+   "blocked_word_count": 223,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ibises"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ibises"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "n=coin?1:999;7x n+=len(w:=list_words('c',n)[0])**3",
+   "blocklist": [
+    "cabal",
+    "caching",
+    "calefactories",
+    "candlewicks",
+    "cashews",
+    "cater",
+    "caterers"
+   ],
+   "blocked_ranges": [
+    [
+     "catoptric",
+     "cattle"
+    ],
+    [
+     "cave",
+     "cobweb"
+    ]
+   ],
+   "blocked_word_count": 4552,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "n=coin+7;6x n=n*len(w:=list_words('c',n)[0])%16001",
+   "blocklist": [
+    "collapsed",
+    "contentiousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "cause caught caution caused causes causal causing?",
+   "blocklist": [
+    "casual",
+    "catch",
+    "caucus",
+    "caucuses",
+    "caudal",
+    "caudate",
+    "caul",
+    "cauldron",
+    "cauliflower",
+    "caulk",
+    "caulking",
+    "causable",
+    "causeless",
+    "causer",
+    "causeway",
+    "caustic",
+    "cauterize",
+    "consequence"
+   ],
+   "blocked_ranges": [
+    [
+     "causalities",
+     "causatives"
+    ],
+    [
+     "cautionary",
+     "cautiousnesses"
+    ]
+   ],
+   "blocked_word_count": 35,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "n=99**coin;7x n*=len(w:=list_words('co',n%5e3)[0])",
+   "blocklist": [
+    "coffing",
+    "control"
+   ],
+   "blocked_ranges": [
+    [
+     "cobweb",
+     "coccus"
+    ],
+    [
+     "contour",
+     "contracting"
+    ]
+   ],
+   "blocked_word_count": 75,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "n=9+coin;7x n=n*len(w:=list_words('co',n)[0])%6421",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collect",
+     "collocate"
+    ],
+    [
+     "coos",
+     "copolymer"
+    ]
+   ],
+   "blocked_word_count": 181,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "T6 clue but n=len(your T9 word)**3, not coin+7",
+   "blocklist": [
+    "calicle",
+    "caterwauled",
+    "cote"
+   ],
+   "blocked_ranges": [
+    [
+     "camouflage",
+     "cancel"
+    ],
+    [
+     "coccus",
+     "coccyx"
+    ],
+    [
+     "companion",
+     "complex"
+    ],
+    [
+     "copy",
+     "corky"
+    ],
+    [
+     "cowgirl",
+     "cowpox"
+    ],
+    [
+     "crib",
+     "crossword"
+    ]
+   ],
+   "blocked_word_count": 971,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "x=count_words(yourT3word[0]); REVEAL co[7**x%6047]",
+   "blocklist": [
+    "coleopteran",
+    "collyrium",
+    "colons",
+    "colorimetric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "country"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cantala"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "n=62+coin;7x n*=len(w:=list_words('co',n%6421)[0])",
+   "blocklist": [
+    "concocters",
+    "coolant",
+    "coopts"
+   ],
+   "blocked_ranges": [
+    [
+     "cofound",
+     "cohabit"
+    ],
+    [
+     "commemorate",
+     "communion"
+    ],
+    [
+     "consist",
+     "constructive"
+    ],
+    [
+     "covenant",
+     "cozy"
+    ]
+   ],
+   "blocked_word_count": 707,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "T12 clue but 5x not 7x, n=len(your T12 word)**3",
+   "blocklist": [
+    "cochineals",
+    "colessor",
+    "colorizations"
+   ],
+   "blocked_ranges": [
+    [
+     "coelom",
+     "coexist"
+    ],
+    [
+     "colonize",
+     "colorant"
+    ],
+    [
+     "comic",
+     "commemorate"
+    ],
+    [
+     "compact",
+     "companion"
+    ],
+    [
+     "concuss",
+     "condense"
+    ],
+    [
+     "congregate",
+     "conjuncture"
+    ],
+    [
+     "contemplation",
+     "contemptuous"
+    ],
+    [
+     "convent",
+     "converse"
+    ],
+    [
+     "corundum",
+     "cos"
+    ],
+    [
+     "cotton",
+     "counterclaim"
+    ],
+    [
+     "coup",
+     "courier"
+    ]
+   ],
+   "blocked_word_count": 663,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coiffeuse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coiffeuse"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "T12 clue but 3x, n=count_words(yourT12word[5:8])",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coccyxes",
+     "colza"
+    ],
+    [
+     "computer",
+     "configuration"
+    ],
+    [
+     "congest",
+     "conjurer"
+    ],
+    [
+     "consul",
+     "coos"
+    ],
+    [
+     "copolymer",
+     "copper"
+    ],
+    [
+     "corky",
+     "correction"
+    ],
+    [
+     "cos",
+     "coterie"
+    ],
+    [
+     "counterclaim",
+     "countermeasure"
+    ]
+   ],
+   "blocked_word_count": 3245,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "T12 clue, 1x, n=5038*count_words(yourT12word[:5])",
+   "blocklist": [
+    "colzas",
+    "communions",
+    "conjurers",
+    "constructively",
+    "correctional",
+    "coteries",
+    "countermeasures",
+    "cozying"
+   ],
+   "blocked_ranges": [
+    [
+     "configuration",
+     "congest"
+    ],
+    [
+     "consent",
+     "consider"
+    ],
+    [
+     "copper",
+     "coppered"
+    ]
+   ],
+   "blocked_word_count": 242,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "T12 clue, 1x, n=56*count_words(yourT12word[5:9])",
+   "blocklist": [
+    "coma"
+   ],
+   "blocked_ranges": [
+    [
+     "complex",
+     "component"
+    ]
+   ],
+   "blocked_word_count": 68,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "T12 clue,5x,n=len(yourT14word)**3;then n+=4048,1x",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coma",
+     "comb"
+    ],
+    [
+     "communions",
+     "communist"
+    ],
+    [
+     "component",
+     "compose"
+    ],
+    [
+     "conjurer",
+     "consul"
+    ],
+    [
+     "coppered",
+     "copperheads"
+    ],
+    [
+     "correctional",
+     "corrective"
+    ],
+    [
+     "coteries",
+     "cottage"
+    ],
+    [
+     "countermeasures",
+     "countermemos"
+    ],
+    [
+     "courier",
+     "covenant"
+    ]
+   ],
+   "blocked_word_count": 618,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "counterspy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "counterspy"
+    }
+   ],
+   "prefix_after": "cop",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "list_words('cop',count_words(yourT14word[3:6]))[0]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coppering",
+     "coppersmiths"
+    ],
+    [
+     "copresident",
+     "coprisoners"
+    ],
+    [
+     "copter",
+     "copurifying"
+    ]
+   ],
+   "blocked_word_count": 39,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coprophagous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coprophagous"
+    }
+   ],
+   "prefix_after": "copr",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "T18 clue,'copr',[3:7]; copra coprah coprahs copras",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "copr",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 19.0,
+  "cost_numerator": 19,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

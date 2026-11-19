@@ -1,0 +1,226 @@
+{
+ "game_id": "dev45-0000-r0-gemini_4_carbon_max-atk-claude_fable_5_2_max",
+ "attacker": "gemini_4_carbon_max",
+ "defender": "claude_fable_5_2_max",
+ "secret": "coprahs",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "infrastructure_incomplete",
+ "terminal_reason": null,
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Exact 15-letter anagram: aeeiilnnopprtty",
+   "blocklist": [
+    "plenipotentiary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "w in {fox,dog};3x:w=list(\"\",20*count(w[:2]),1)[0]",
+   "blocklist": [
+    "gaingiving"
+   ],
+   "blocked_ranges": [
+    [
+     "cab",
+     "clerk"
+    ]
+   ],
+   "blocked_word_count": 6695,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "n in{2,9};8x{w=list(\"\",n)[0];n+=20*int(w[-2:],36)}",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "immunotherapies",
+     "rotaviruses"
+    ]
+   ],
+   "blocked_word_count": 58654,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "c:3,8;4x{w=list(\"ads\"[c%3],c)[0];c+=count(w[1:3])}",
+   "blocklist": [
+    "dabsters",
+    "deductibles",
+    "scannable",
+    "scanned",
+    "scanner",
+    "scanners",
+    "scanning"
+   ],
+   "blocked_ranges": [
+    [
+     "abuse",
+     "accept"
+    ],
+    [
+     "daydreaming",
+     "dead"
+    ],
+    [
+     "sale",
+     "sand"
+    ]
+   ],
+   "blocked_word_count": 571,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "n:74,89;8x:n=(2*n+901*len(w:=list('',n)[0]))%50000",
+   "blocklist": [
+    "abators",
+    "abstrusenesses",
+    "anneals",
+    "antipleasures",
+    "braillist",
+    "disreputable",
+    "eelpouts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "baldric"
+    },
+    {
+     "seat": "guesser2",
+     "word": "baldric"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "n:4,9;7x:n=31*(n+len(w:=list('c',6700+n)[0]))%9000",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "cony"
+    ],
+    [
+     "core",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 172150,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "n:3,8;7x{n=5*n+len(list('',n)[0])}list('cop',n%99)",
+   "blocklist": [
+    "aardvark",
+    "abasement",
+    "ablush",
+    "acquaintance",
+    "antihunting",
+    "copalms",
+    "tradecraft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "copatron"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "n:5,9;6x{n=6*n+len(list('',n)[0])}list('coo',n%99)",
+   "blocklist": [
+    "cook"
+   ],
+   "blocked_ranges": [
+    [
+     "cookhouse",
+     "cooktops"
+    ]
+   ],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "n:3,15;4x{n=count('co%c'%(97+n))%22}list(cor,n+1)",
+   "blocklist": [
+    "coracle"
+   ],
+   "blocked_ranges": [
+    [
+     "coracoid",
+     "coralline"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "n:98,111;5x{n=97+(7*n+count('co%c'%n))%20};cop[n]",
+   "blocklist": [
+    "copremia",
+    "copresenting",
+    "coprincipal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  }
+ ],
+ "score": null
+}

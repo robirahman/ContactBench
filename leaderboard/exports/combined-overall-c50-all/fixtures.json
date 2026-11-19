@@ -7990,5 +7990,136 @@
   "initial_prefix_length": 4,
   "kind": "model_pair",
   "defender_model": ""
+ },
+ {
+  "fixture_id": "dev45-0000-r0-gpt_6_2_astra_max~gemini_4_carbon_max",
+  "task_id": "dev45-0000",
+  "repetition": 0,
+  "model_a": "gpt_6_2_astra_max",
+  "model_b": "gemini_4_carbon_max",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 14,
+   "denominator": 1,
+   "value": 14.0
+  },
+  "cost_ba": {
+   "numerator": 256652379,
+   "denominator": 335104,
+   "value": 765.8887360341864
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 0.6914422167830615,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "model_pair",
+  "defender_model": ""
+ },
+ {
+  "fixture_id": "dev45-0000-r0-claude_fable_5_2_max~gpt_6_2_astra_max",
+  "task_id": "dev45-0000",
+  "repetition": 0,
+  "model_a": "claude_fable_5_2_max",
+  "model_b": "gpt_6_2_astra_max",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 19,
+   "denominator": 1,
+   "value": 19.0
+  },
+  "cost_ba": {
+   "numerator": 13,
+   "denominator": 1,
+   "value": 13.0
+  },
+  "points_a": 0.0,
+  "points_b": 1.0,
+  "cost_difference_mcse": 0.0,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "model_pair",
+  "defender_model": ""
+ },
+ {
+  "fixture_id": "dev45-0000-r0-claude_fable_5_2_max~gemini_4_carbon_max",
+  "task_id": "dev45-0000",
+  "repetition": 0,
+  "model_a": "claude_fable_5_2_max",
+  "model_b": "gemini_4_carbon_max",
+  "complete": false,
+  "cost_ab": {
+   "numerator": 10,
+   "denominator": 1,
+   "value": 10.0
+  },
+  "cost_ba": null,
+  "points_a": null,
+  "points_b": null,
+  "cost_difference_mcse": null,
+  "numerically_close": null,
+  "no_progress_draw": null,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "model_pair",
+  "defender_model": ""
+ },
+ {
+  "fixture_id": "dev46-0000-r0-gpt_6_2_astra_max~gpt_6_1_terra",
+  "task_id": "dev46-0000",
+  "repetition": 0,
+  "model_a": "gpt_6_2_astra_max",
+  "model_b": "gpt_6_1_terra",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 8,
+   "denominator": 1,
+   "value": 8.0
+  },
+  "cost_ba": {
+   "numerator": 69500035295,
+   "denominator": 5912064,
+   "value": 11755.629725084167
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 2.799194498045538,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "model_pair",
+  "defender_model": ""
+ },
+ {
+  "fixture_id": "dev46-0000-r0-gpt_6_2_astra_max~gpt_6_2_astra",
+  "task_id": "dev46-0000",
+  "repetition": 0,
+  "model_a": "gpt_6_2_astra_max",
+  "model_b": "gpt_6_2_astra",
+  "complete": true,
+  "cost_ab": {
+   "numerator": 10,
+   "denominator": 1,
+   "value": 10.0
+  },
+  "cost_ba": {
+   "numerator": 65740876891,
+   "denominator": 5747456,
+   "value": 11438.25666364388
+  },
+  "points_a": 1.0,
+  "points_b": 0.0,
+  "cost_difference_mcse": 2.47508905485159,
+  "numerically_close": false,
+  "no_progress_draw": false,
+  "rematch_of": "",
+  "initial_prefix_length": null,
+  "kind": "model_pair",
+  "defender_model": ""
  }
 ]
