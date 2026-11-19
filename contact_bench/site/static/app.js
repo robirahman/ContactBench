@@ -120,7 +120,7 @@
     if (id == null) return "—";
     id = String(id);
     if (id.indexOf("+") >= 0) return id.split("+").map(function (x) { return modelLabel(x, profiles); }).join(" + ");  // mixed teams
-    var profs = profiles || (current && current.manifest && current.manifest.models) || [];
+    var profs = Array.isArray(profiles) ? profiles : ((current && current.manifest && current.manifest.models) || []);
     var p = null;
     for (var i = 0; i < profs.length; i++) if (profs[i] && profs[i].id === id) { p = profs[i]; break; }
     if (!p) return id;
@@ -401,11 +401,11 @@
     colsK = Object.keys(colsK).sort();
     var head = el("tr");
     head.appendChild(el("th", { text: "G1 \\ G2" }));
-    colsK.forEach(function (g2) { head.appendChild(el("th", { text: g2 })); });
+    colsK.forEach(function (g2) { head.appendChild(el("th", { text: modelLabel(g2) })); });
     table.appendChild(head);
     rowsK.forEach(function (g1) {
       var tr = el("tr");
-      tr.appendChild(el("th", { text: g1 }));
+      tr.appendChild(el("th", { text: modelLabel(g1) }));
       colsK.forEach(function (g2) {
         var c = mat[g1][g2];
         tr.appendChild(el("td", { text: c ? num(c.median_cost, 1) + " (n=" + c.games + ")" : "—" }));
@@ -414,10 +414,10 @@
     });
     var gaps = t.self_vs_cross_play || {}, parts = ["Partner disclosure: " + t.partner_disclosure + "."];
     var om = t.omitted_unidentified || {};
-    if (Object.keys(om).length) parts.push("Not identified by the fixture design (shown as —): " + Object.keys(om).sort().map(function (m) { return m + ": " + om[m].join(", "); }).join("; ") + ".");
+    if (Object.keys(om).length) parts.push("Not identified by the fixture design (shown as —): " + Object.keys(om).sort().map(function (m) { return modelLabel(m) + ": " + om[m].join(", "); }).join("; ") + ".");
     Object.keys(gaps).sort().forEach(function (m) {
       var g = gaps[m];
-      parts.push(m + ": median cost " + num(g.self_play_median_cost, 1) + " with itself (n=" + g.self_play_games +
+      parts.push(modelLabel(m) + ": median cost " + num(g.self_play_median_cost, 1) + " with itself (n=" + g.self_play_games +
         ") vs " + num(g.cross_play_median_cost, 1) + " with another partner (n=" + g.cross_play_games + ").");
     });
     $("teams-notes").textContent = parts.join(" ");
