@@ -28,7 +28,9 @@ def estimate_cost(prices: PriceTable, usage: NormalizedUsage) -> float | None:
         rate = prices.cached_input_per_mtok if prices.cached_input_per_mtok is not None else prices.input_per_mtok
         c += cached * rate / 1e6
     if usage.cache_write_tokens and prices.cache_write_per_mtok is not None:
-        c += usage.cache_write_tokens * prices.cache_write_per_mtok / 1e6
+        long = min(usage.cache_write_1h_tokens or 0, usage.cache_write_tokens)
+        c += (usage.cache_write_tokens - long) * prices.cache_write_per_mtok / 1e6
+        c += long * 2 * prices.input_per_mtok / 1e6  # 1-hour cache writes: 2x base input
     out = usage.billable_output_tokens() or 0
     c += out * prices.output_per_mtok / 1e6
     return c
