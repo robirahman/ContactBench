@@ -102,6 +102,9 @@ def test_one_hour_cache_writes_are_priced_at_twice_base_input():
                            cache_write_1h_tokens=1_000_000)
     assert abs(estimate_cost(p, five) - 10.0) < 1e-9
     assert abs(estimate_cost(p, hour) - 16.0) < 1e-9
+    no_write_rate = PriceTable(as_of="2026-11-19", source="t", input_per_mtok=8.0, output_per_mtok=40.0)
+    assert abs(estimate_cost(no_write_rate, hour) - 16.0) < 1e-9  # still 2x without a 5-minute rate
+    assert abs(estimate_cost(no_write_rate, five) - 8.0) < 1e-9  # unchanged: writes at base input
 
 
 def test_parse_reports_one_hour_cache_writes():
