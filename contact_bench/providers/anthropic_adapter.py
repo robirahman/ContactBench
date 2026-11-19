@@ -56,7 +56,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         """Cache breakpoint marker.  Max-effort decisions are 10-25 minutes apart,
         longer than the default 5-minute cache lifetime, so they use the 1-hour
         cache (written at 2x the base input price instead of 1.25x)."""
-        if self.config.parameters.get("effort") == "max":
+        if self.config.long_prompt_cache:
             return {"type": "ephemeral", "ttl": "1h"}
         return {"type": "ephemeral"}
 

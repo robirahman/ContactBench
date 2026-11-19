@@ -116,3 +116,18 @@ def test_parse_reports_one_hour_cache_writes():
                      "cache_creation": {"ephemeral_5m_input_tokens": 0, "ephemeral_1h_input_tokens": 50}}}
     r = AnthropicMessagesAdapter(mc).parse_response(msg, {"max_tokens": 100})
     assert r.usage.input_tokens == 160 and r.usage.cache_write_tokens == 50 and r.usage.cache_write_1h_tokens == 50
+
+
+def test_reservation_covers_cache_write_premiums():
+    from contact_bench.config import PriceTable
+    from contact_bench.runner.budget import worst_case_cost
+
+    p = PriceTable(as_of="2026-11-19", source="t", input_per_mtok=8.0, output_per_mtok=40.0,
+                   cached_input_per_mtok=0.2, cache_write_per_mtok=10.0)
+    assert abs(worst_case_cost(p, 1_000_000, 0) - 10.0) < 1e-9  # 5-minute writes: 1.25x
+    assert abs(worst_case_cost(p, 1_000_000, 0, long_cache=True) - 16.0) < 1e-9  # 1-hour writes: 2x
+    max_fable = ModelConfig(id="f", provider="anthropic", model="m", max_output_tokens=10,
+                            credential_env="ANTHROPIC_API_KEY", parameters={"effort": "max"})
+    low_fable = ModelConfig(id="g", provider="anthropic", model="m", max_output_tokens=10,
+                            credential_env="ANTHROPIC_API_KEY", parameters={"effort": "low"})
+    assert max_fable.long_prompt_cache and not low_fable.long_prompt_cache

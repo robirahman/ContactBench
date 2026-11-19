@@ -40,8 +40,13 @@ def estimate_cost(prices: PriceTable, usage: NormalizedUsage) -> float | None:
     return c
 
 
-def worst_case_cost(prices: PriceTable, input_tokens: int, max_output_tokens: int) -> float:
-    return input_tokens * prices.input_per_mtok / 1e6 + max_output_tokens * prices.output_per_mtok / 1e6
+def worst_case_cost(prices: PriceTable, input_tokens: int, max_output_tokens: int,
+                    long_cache: bool = False) -> float:
+    """Upper bound before sending: every input token may be a cache write, which costs
+    more than base input (``cache_write_per_mtok``, or 2x base for the 1-hour cache)."""
+    rate = max(prices.input_per_mtok, prices.cache_write_per_mtok or 0.0,
+               2 * prices.input_per_mtok if long_cache else 0.0)
+    return input_tokens * rate / 1e6 + max_output_tokens * prices.output_per_mtok / 1e6
 
 
 @dataclass
@@ -68,7 +73,8 @@ class Budget:
             if self.max_usd is not None or pcap is not None:
                 if model.prices is None:
                     raise BudgetExhausted(f"monetary cap requires a price table for {model.id}")
-                res = worst_case_cost(model.prices, est_input_tokens, model.max_output_tokens or 0)
+                res = worst_case_cost(model.prices, est_input_tokens, model.max_output_tokens or 0,
+                                      long_cache=model.long_prompt_cache)
                 if self.max_usd is not None and self.usd_spent + self.usd_reserved + res > self.max_usd:
                     raise BudgetExhausted("monetary budget would be exceeded by in-flight reservation")
                 p = model.provider
