@@ -66,6 +66,10 @@ def map_google_error(e: BaseException, secrets: tuple[str, ...]) -> Infrastructu
         return mk("unknown", fatal=True)
     if "connect" in name or "network" in name or "transport" in name:
         return mk("transient", retryable=True)
+    if isinstance(e, AttributeError) and "__pydantic" in str(e):
+        # Observed live with gemini-4-carbon after 10+ minute calls: the SDK fails while
+        # building its pydantic response model.  Retry instead of halting the model.
+        return mk("transient", retryable=True, billed=True)
     return mk("unknown", fatal=True)
 
 
