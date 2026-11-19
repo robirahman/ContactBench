@@ -89,6 +89,42 @@
     draw();
   }
 
+  // ------------------------------------------------------------- model names
+  // Natural-language name plus effort setting from the exported model profile,
+  // e.g. claude_opus_5_5 -> "Claude Opus 5.5 (Low)". Ids stay the sort/filter keys.
+  var BRANDS = { claude: "Claude", gpt: "GPT", gemini: "Gemini", grok: "Grok", llama: "Llama" };
+  function prettyModel(model) {
+    var t = String(model).toLowerCase().split(/[-_ ]+/).filter(Boolean);
+    var brand = BRANDS[t[0]] || (t[0] ? t[0].charAt(0).toUpperCase() + t[0].slice(1) : "");
+    var words = [], nums = [];
+    t.slice(1).forEach(function (x) { if (/^[0-9.]+$/.test(x)) nums.push(x); else words.push(x.charAt(0).toUpperCase() + x.slice(1)); });
+    var ver = nums.join(".");
+    if (brand === "GPT") return "GPT" + (ver ? "-" + ver : "") + (words.length ? " " + words.join(" ") : "");
+    if (brand === "Claude") return ["Claude"].concat(words).concat(ver ? [ver] : []).join(" ");
+    return [brand].concat(ver ? [ver] : []).concat(words).join(" ");
+  }
+  function effortOf(p) {
+    var par = p.parameters || {};
+    var e = par.effort || (par.reasoning || {}).effort || (par.thinking_config || {}).thinking_level ||
+      (par.output_config || {}).effort;
+    if (!e) return p.provider && p.provider !== "scripted" && p.provider !== "human" ? "Default" : null;
+    e = String(e).toLowerCase();
+    return e === "xhigh" ? "XHigh" : e.charAt(0).toUpperCase() + e.slice(1);
+  }
+  function modelLabel(id) {
+    if (id == null) return "—";
+    id = String(id);
+    if (id.indexOf("+") >= 0) return id.split("+").map(modelLabel).join(" + ");  // mixed teams
+    var profs = (current && current.manifest && current.manifest.models) || [];
+    var p = null;
+    for (var i = 0; i < profs.length; i++) if (profs[i] && profs[i].id === id) { p = profs[i]; break; }
+    if (!p) return id;
+    if (p.display_name) return p.display_name;
+    if (!p.model) return id;  // scripted policies keep their ids
+    var e = effortOf(p);
+    return prettyModel(p.model) + (e ? " (" + e + ")" : "");
+  }
+
   // ------------------------------------------------------------- app state
   var index = null;
   var current = null; // {entry, manifest, lb, games, fixtures}
@@ -173,7 +209,7 @@
         Object.keys(models).sort(function (a, b) {
           return (cols[0].rank[a] || 1e9) - (cols[0].rank[b] || 1e9) || a.localeCompare(b);
         }).forEach(function (m) {
-          var tr = el("tr", null, el("td", { text: m }));
+          var tr = el("tr", null, el("td", { text: modelLabel(m) }));
           cols.forEach(function (col) {
             tr.appendChild(el("td", { text: col.rank[m] ? col.rank[m] + " of " + col.n : "—" }));
             tr.appendChild(el("td", { text: num(col.elo[m], 0) }));
@@ -271,7 +307,7 @@
         w: s.wins, d: s.draws, l: s.losses, fixtures: s.fixtures, pts: s.match_points };
     });
     renderTable($("rating-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m + ((rating.fixed || []).indexOf(r.m) >= 0 ? " (fixed)" : ""); } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m) + ((rating.fixed || []).indexOf(r.m) >= 0 ? " (fixed)" : ""); } },
       { label: "Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0); } },
       { label: "Elo 95% CI", get: function (r) { return r.eloCI ? r.eloCI.lo : null; }, fmt: function (r) { return ci(r.eloCI, 0); } },
       { label: "Rank 95% CI", get: function (r) { return r.rankCI ? r.rankCI.lo : null; }, fmt: function (r) { return ci(r.rankCI, 0); } },
@@ -345,7 +381,7 @@
         fmt: function (r) { return sgn(r[k]) + " " + ci(r[k + "CI"], 0); } };
     }
     renderTable($("role-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       { label: "Composite Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0) + " " + ci(r.eloCI, 0); } },
       col("Clue-giver (G1)", "g1"), col("Receiver (G2)", "g2"), col("Defender", "d")
     ], rows, { sortCol: 1 });
@@ -391,7 +427,7 @@
         geo: s.offense_geometric_mean_cost, dmed: s.defense_median_cost_imposed };
     });
     renderTable($("efficiency-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       { label: "Offense speedup ΣB/ΣC", get: function (r) { return r.sp; }, fmt: function (r) { return num(r.sp); } },
       { label: "Speedup 95% CI", get: function (r) { return r.spCI ? r.spCI.lo : null; }, fmt: function (r) { return ci(r.spCI); } },
       { label: "Median effective cost (turns)", get: function (r) { return r.med; }, fmt: function (r) { return num(r.med); } },
@@ -416,11 +452,11 @@
     var ms = models();
     cols = cols || ms;
     var head = el("tr", null, el("th", { text: "row \\ column" }));
-    cols.forEach(function (m) { head.appendChild(el("th", { text: m })); });
+    cols.forEach(function (m) { head.appendChild(el("th", { text: modelLabel(m) })); });
     table.appendChild(el("thead", null, head));
     var body = el("tbody");
     ms.forEach(function (a) {
-      var tr = el("tr", null, el("th", { text: a }));
+      var tr = el("tr", null, el("th", { text: modelLabel(a) }));
       cols.forEach(function (b) {
         var cell = data && data[a] && data[a][b];
         var n = cell ? (cell.fixtures != null ? cell.fixtures : cell.games) : null;
@@ -444,17 +480,17 @@
     var notes = clear($("pairwise-notes"));
     var comps = (lb.rating && lb.rating.connected_components) || [];
     notes.appendChild(el("p", null, "Schedule connectivity: " + comps.length + " component(s): " +
-      comps.map(function (c) { return "{" + c.join(", ") + "}"; }).join(" ") +
+      comps.map(function (c) { return "{" + c.map(modelLabel).join(", ") + "}"; }).join(" ") +
       (comps.length > 1 ? " — ratings in different components are not comparable." : "")));
     var missing = lb.missing_model_pairs || [];
     notes.appendChild(el("p", null, "Missing or incomplete model pairs: " +
-      (missing.length ? missing.map(function (p) { return p.join(" vs "); }).join("; ") : "none")));
+      (missing.length ? missing.map(function (p) { return p.map(modelLabel).join(" vs "); }).join("; ") : "none")));
     var sens = lb.rating_penalty_sensitivity || {};
     var keys = Object.keys(sens);
     if (keys.length) {
       var t = el("table");
       var hr = el("tr", null, el("th", { text: "Penalty scale" }));
-      models().forEach(function (m) { hr.appendChild(el("th", { text: m })); });
+      models().forEach(function (m) { hr.appendChild(el("th", { text: modelLabel(m) })); });
       t.appendChild(el("thead", null, hr));
       var tb = el("tbody");
       keys.forEach(function (k) {
@@ -474,7 +510,8 @@
   function renderSettings() {
     var profiles = (current.manifest.models || []).map(function (m) { return m || {}; });
     renderTable($("profiles-table"), [
-      { label: "Model", get: function (r) { return r.id; }, fmt: function (r) { return r.id; } },
+      { label: "Model", get: function (r) { return r.id; }, fmt: function (r) { return modelLabel(r.id); } },
+      { label: "Id", get: function (r) { return r.id; }, fmt: function (r) { return r.id; } },
       { label: "Provider", get: function (r) { return r.provider; }, fmt: function (r) { return r.provider || "—"; } },
       { label: "API family", get: function (r) { return r.api_family; }, fmt: function (r) { return r.api_family || "—"; } },
       { label: "Model id / policy", get: function (r) { return r.model || r.policy; }, fmt: function (r) {
@@ -491,7 +528,7 @@
     });
     function n0(k) { return { label: k.replace(/_/g, " "), get: function (r) { return r[k]; }, fmt: function (r) { return r[k] == null ? "—" : String(Math.round(r[k] * 1000) / 1000); } }; }
     renderTable($("resources-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       { label: "Seat", get: function (r) { return r.seat; }, fmt: function (r) { return r.seat; } },
       n0("requests"), n0("errors"), n0("input_tokens"), n0("output_tokens"), n0("reasoning_tokens"),
       n0("cached_input_tokens"), n0("transport_attempts"), n0("latency_s"), n0("cost_estimate"), n0("refusals"), n0("incomplete")
@@ -517,7 +554,7 @@
     function cnt(k, label) { return { label: label, get: function (r) { return r[k]; }, fmt: function (r) { return r[k] == null ? "0" : String(r[k]); } }; }
     function rate(k, label) { return { label: label, get: function (r) { return r[k]; }, fmt: function (r) { return pct(r[k]); } }; }
     renderTable($("roles-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       cnt("clue", "Clue turns"), cnt("direct", "Direct turns"), cnt("matches", "Registered matches"),
       cnt("contacts", "Contacts awarded"), rate("cpc", "Contacts per clue turn"), cnt("prevented", "Contacts prevented (as attacker)"),
       cnt("opp", "Reveal/cancel opportunities"), cnt("rev", "Reveals"), cnt("can", "Cancels"), cnt("reused", "Preserved words later reused"),
@@ -528,7 +565,7 @@
 
     // Objective gameplay metrics from the referee log (no extra games).
     renderTable($("gameplay-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       { label: "Median clue length (chars)", title: "Median characters per clue as Guesser 1", get: function (r) { return r.clen; }, fmt: function (r) { return num(r.clen, 0); } },
       rate("cbud", "Clue budget used"),
       rate("cpc", "Contacts per clue turn (attack)"),
@@ -546,7 +583,7 @@
       return { label: label, title: title, get: function (r) { return r.sc[k]; }, fmt: function (r) { return pct(r.sc[k]); } };
     }
     renderTable($("selfcontained-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return r.m; } },
+      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m); } },
       sc("self_coordination", "Self-coordination", "Its Guesser 2 named its Guesser 1's intended word (both seats this model; sealed, so the defender cannot affect it)"),
       sc("action_validity", "Action validity", "Legal decisions in every seat"),
       sc("clue_length_compliance", "Clue-length compliance", "Guesser 1 decisions not rejected for exceeding the character budget"),
@@ -582,18 +619,18 @@
   }
 
   // ---------------------------------------------------------------- games
-  function fillSelect(sel, values) {
+  function fillSelect(sel, values, label) {
     clear(sel);
     sel.appendChild(el("option", { value: "", text: "(all)" }));
-    values.forEach(function (v) { sel.appendChild(el("option", { value: v, text: v })); });
+    values.forEach(function (v) { sel.appendChild(el("option", { value: v, text: label ? label(v) : v })); });
   }
 
   function uniq(xs) { return xs.filter(function (x, i) { return x != null && xs.indexOf(x) === i; }).sort(); }
 
   function renderGames() {
     var games = current.games || [];
-    fillSelect($("f-attacker"), uniq(games.map(function (g) { return g.attacker; })));
-    fillSelect($("f-defender"), uniq(games.map(function (g) { return g.defender; })));
+    fillSelect($("f-attacker"), uniq(games.map(function (g) { return g.attacker; })), modelLabel);
+    fillSelect($("f-defender"), uniq(games.map(function (g) { return g.defender; })), modelLabel);
     fillSelect($("f-outcome"), uniq(games.map(function (g) { return g.outcome_status; })));
     ["f-attacker", "f-defender", "f-outcome"].forEach(function (id) { $(id).onchange = drawGames; });
     $("replay").hidden = true;
@@ -607,8 +644,8 @@
     });
     renderTable($("games-table"), [
       { label: "Game", get: function (r) { return r.game_id; }, fmt: function (r) { return r.game_id; } },
-      { label: "Attacker", get: function (r) { return r.attacker; }, fmt: function (r) { return r.attacker; } },
-      { label: "Defender", get: function (r) { return r.defender; }, fmt: function (r) { return r.defender; } },
+      { label: "Attacker", get: function (r) { return r.attacker; }, fmt: function (r) { return modelLabel(r.attacker); } },
+      { label: "Defender", get: function (r) { return r.defender; }, fmt: function (r) { return modelLabel(r.defender); } },
       { label: "Outcome", get: function (r) { return r.outcome_status; }, fmt: function (r) { return r.outcome_status + (r.terminal_reason ? " (" + r.terminal_reason + ")" : ""); } },
       { label: "Turns", get: function (r) { return r.turns_used; }, fmt: function (r) { return String(r.turns_used); } },
       { label: "Initial candidates", get: function (r) { return r.initial_secret_candidate_count; }, fmt: function (r) { return String(r.initial_secret_candidate_count); } },
@@ -624,7 +661,7 @@
     fetchJSON(current.base + "replays/" + encodeURIComponent(g.game_id) + ".json").then(function (r) {
       replay = r;
       $("replay").hidden = false;
-      $("replay-title").textContent = "Replay " + r.game_id + " — " + r.attacker + " attacking, " + r.defender + " defending";
+      $("replay-title").textContent = "Replay " + r.game_id + " — " + modelLabel(r.attacker) + " attacking, " + modelLabel(r.defender) + " defending";
       var sel = clear($("replay-view"));
       sel.appendChild(el("option", { value: "public", text: "Public / defender view" }));
       if (r.seat_private_histories) {
