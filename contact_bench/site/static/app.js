@@ -316,15 +316,18 @@
       return { m: m, elo: elo[m], eloCI: b.elo, rankCI: b.rank, share: s.match_point_share,
         w: s.wins, d: s.draws, l: s.losses, fixtures: s.fixtures, pts: s.match_points };
     });
-    renderTable($("rating-table"), [
-      { label: "Model", get: function (r) { return r.m; }, fmt: function (r) { return modelLabel(r.m) + ((rating.fixed || []).indexOf(r.m) >= 0 ? " (fixed)" : ""); } },
+    var ratingCols = [
+      { label: "Model", get: function (r) { return r.label || r.m; }, fmt: function (r) {
+        return r.label || (modelLabel(r.m) + ((rating.fixed || []).indexOf(r.m) >= 0 ? " (fixed)" : "")); } },
       { label: "Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0); } },
       { label: "Elo 95% CI", get: function (r) { return r.eloCI ? r.eloCI.lo : null; }, fmt: function (r) { return ci(r.eloCI, 0); } },
       { label: "Rank 95% CI", get: function (r) { return r.rankCI ? r.rankCI.lo : null; }, fmt: function (r) { return ci(r.rankCI, 0); } },
       { label: "Match-point share (per fixture)", get: function (r) { return r.share; }, fmt: function (r) { return num(r.share); } },
       { label: "W / D / L", get: function (r) { return r.w; }, fmt: function (r) { return (r.w == null ? "—" : r.w + " / " + r.d + " / " + r.l); } },
       { label: "Fixtures (n)", get: function (r) { return r.fixtures; }, fmt: function (r) { return r.fixtures == null ? "—" : String(r.fixtures); } }
-    ], rows, { sortCol: 1 });
+    ];
+    renderTable($("rating-table"), ratingCols, rows, { sortCol: 1 });
+    addAnchoredHumans(ratingCols, rows);
     var notes = clear($("rating-notes"));
     var parts = [];
     parts.push("Fit converged: " + (rating.converged ? "yes" : "no") + " (iterations " + (rating.iterations == null ? "—" : rating.iterations) +
@@ -338,6 +341,37 @@
         " (marked fixed below); opponents' ratings here are not re-estimated.");
     notes.textContent = parts.join(" ");
     renderHuman();
+  }
+
+  // Human players whose anchored rating was fitted against this board's fixed model
+  // ratings are listed in its table, marked as such. They never enter the model fit.
+  function addAnchoredHumans(cols, rows) {
+    var runId = current.manifest.run_id, shown = current;
+    var humans = ((index && index.conditions) || []).filter(function (c) { return c.condition && c.condition.human_challenge; });
+    if (!humans.length || (current.manifest.condition || {}).human_challenge) return;
+    Promise.all(humans.map(function (c) {
+      return fetchJSON("data/" + c.entry_id + "/leaderboard.json").then(function (lb) { return { c: c, lb: lb }; })
+        .catch(function () { return null; });
+    })).then(function (res) {
+      if (current !== shown) return;  // the user switched boards meanwhile
+      var extra = [];
+      res.forEach(function (x) {
+        var ar = x && x.lb.anchored_rating;
+        if (!ar || ar.anchor_run_id !== runId) return;
+        var hc = x.c.condition.human_challenge, st = (x.lb.model_stats || {});
+        (ar.free || []).forEach(function (h) {
+          var e = ar.elo[h], se = (ar.elo_se_approx || {})[h], s2 = st[h] || {};
+          extra.push({ m: h, label: (h === hc.player && hc.display_name ? hc.display_name : h) + " (human, anchored)",
+            elo: e, eloCI: se != null ? { lo: e - 1.96 * se, hi: e + 1.96 * se } : null, share: s2.match_point_share,
+            w: s2.wins, d: s2.draws, l: s2.losses, fixtures: s2.fixtures });
+        });
+      });
+      if (!extra.length) return;
+      renderTable($("rating-table"), cols, rows.concat(extra), { sortCol: 1 });
+      $("rating-notes").appendChild(el("p", null, "Rows marked (human, anchored) are human players rated with these " +
+        "models' Elo held fixed (normal-approximation 95% CI). They are separate human-challenge conditions and never " +
+        "affect the model ratings."));
+    });
   }
 
   // Human challenge entries: a human player vs. models, rated against fixed
