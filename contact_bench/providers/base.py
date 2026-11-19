@@ -376,9 +376,17 @@ class ProviderAdapter(ABC):
     def conversation_append_user(self, state: Any, text: str) -> Any:
         raise AdapterConfigError(f"{self.provider}/{self.api_family}: transcript forking is not supported")
 
-    async def _with_retries(self, fn: Callable[[], Any], gate: AttemptGate | None) -> tuple[Any, list[TransportAttempt]]:
+    async def _with_retries(self, fn: Callable[[], Any], gate: AttemptGate | None,
+                            slow: dict | None = None) -> tuple[Any, list[TransportAttempt]]:
+        """``slow`` carries the one-extra-attempt allowance across every model turn of
+        one decision (tool loops call this once per turn)."""
+        slow = {"used": False} if slow is None else slow
         attempts: list[TransportAttempt] = []
         start = self._clock()
+        # Overall wall-clock deadline, with one exception: if the *first* attempt
+        # alone outlasted the deadline (max-effort calls legitimately run 10+
+        # minutes), one more attempt is allowed so a single late failure does not
+        # leave the decision unavailable.  At most two long attempts per decision.
         last: InfrastructureError | None = None
         limit = self.retry.max_attempts
         i = 0
@@ -408,7 +416,10 @@ class ProviderAdapter(ABC):
                     delay = min(self.retry.max_seconds, self.retry.base_seconds * 2 ** (i - 1))
                     delay *= 0.5 + self._jitter.random()
                 if self._clock() - start + delay > self.retry.deadline_seconds:
-                    break
+                    slow_first = i == 1 and attempts[-1].latency_s > self.retry.deadline_seconds
+                    if not slow_first or slow["used"]:
+                        break
+                    slow["used"] = True
                 await self._sleep(delay)
                 continue
             except BaseException:
@@ -446,6 +457,7 @@ class ProviderAdapter(ABC):
         assert request.tool_executor is not None or not request.tools, "tools require an executor"
         limit = max(0, request.max_tool_calls) if request.tools else 0
         state = initial_state if initial_state is not None else self.tool_conversation_start(request)
+        slow = {"used": False}  # one extra long attempt per decision, not per tool turn
         trace: list[dict] = []
         attempts: list[TransportAttempt] = []
         usages: list[NormalizedUsage] = []
@@ -456,7 +468,7 @@ class ProviderAdapter(ABC):
             turns += 1
             allow = n_calls < limit and not force_final
             (resp, calls, state), att = await self._with_retries(
-                lambda s=state, a=allow: self.send_tool_turn(request, s, a), gate
+                lambda s=state, a=allow: self.send_tool_turn(request, s, a), gate, slow
             )
             attempts.extend(att)
             usages.append(resp.usage)

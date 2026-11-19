@@ -479,3 +479,12 @@ def test_google_client_disables_sdk_retries():
     a = GeminiInteractionsAdapter(mc("google"), credentials=creds())
     client = a._get_client()  # constructing the client makes no network call
     assert client.aio.interactions.sdk_configuration.retry_config.max_retries == 0
+
+
+def test_google_sdk_pydantic_attribute_error_is_retryable():
+    from contact_bench.providers.google_adapter import map_google_error
+
+    err = map_google_error(AttributeError("__pydantic_generic_metadata__"), ())
+    assert err.retryable and not err.fatal and err.category == "transient"
+    other = map_google_error(AttributeError("'NoneType' object has no attribute 'text'"), ())
+    assert other.fatal

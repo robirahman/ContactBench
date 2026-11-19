@@ -237,3 +237,74 @@ def test_ambiguous_transport_failures_are_charged_conservatively():
     a.config = m
     asyncio.run(a.decide(_req(), gate=BudgetGate(b, m, 1000)))
     assert b.usd_uncertain == 1
+
+
+def test_failure_after_a_long_attempt_is_still_retried():
+    # A max-effort call that fails after 700 s (longer than the 300 s deadline)
+    # gets one more attempt.
+    now = [0.0]
+
+    class Slow(Flaky):
+        async def send_once(self, request):
+            now[0] += 700.0
+            return await super().send_once(request)
+
+    a = Slow(fails=1)
+    a.retry = RetryPolicy(max_attempts=3, base_seconds=1, deadline_seconds=300)
+    a._clock = lambda: now[0]
+
+    async def no_sleep(d):
+        now[0] += d
+
+    a._sleep = no_sleep
+    resp = asyncio.run(a.decide(_req()))
+    assert a.sent == 2 and resp.output_text == "{}"
+
+
+def test_slow_failures_get_only_one_extra_attempt():
+    now = [0.0]
+
+    class Slow(Flaky):
+        async def send_once(self, request):
+            now[0] += 700.0
+            return await super().send_once(request)
+
+    a = Slow(fails=5)
+    a.retry = RetryPolicy(max_attempts=3, base_seconds=1, deadline_seconds=300)
+    a._clock = lambda: now[0]
+
+    async def no_sleep(d):
+        now[0] += d
+
+    a._sleep = no_sleep
+    with pytest.raises(Exception):
+        asyncio.run(a.decide(_req()))
+    assert a.sent == 2  # not 3: the overall deadline still applies after the one exception
+
+
+def test_slow_retry_allowance_is_shared_across_tool_turns():
+    # _tool_loop calls _with_retries once per model turn with one shared allowance.
+    now = [0.0]
+    calls = [0]
+
+    async def slow_fail_then_ok():
+        calls[0] += 1
+        now[0] += 700.0
+        if calls[0] % 2 == 1:
+            raise InfrastructureError("dropped", category="transient", retryable=True)
+        return AdapterResponse(output_text="{}", usage=NormalizedUsage(input_tokens=1, output_tokens=1))
+
+    a = Flaky(fails=0)
+    a.retry = RetryPolicy(max_attempts=3, base_seconds=1, deadline_seconds=300)
+    a._clock = lambda: now[0]
+
+    async def no_sleep(d):
+        now[0] += d
+
+    a._sleep = no_sleep
+    slow = {"used": False}
+    asyncio.run(a._with_retries(slow_fail_then_ok, None, slow))  # turn 1: uses the allowance
+    assert calls[0] == 2 and slow["used"]
+    with pytest.raises(Exception):
+        asyncio.run(a._with_retries(slow_fail_then_ok, None, slow))  # turn 2: no second allowance
+    assert calls[0] == 3
