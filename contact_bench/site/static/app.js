@@ -364,7 +364,7 @@
     }).concat(Object.keys(ar.fixed_elo || {}).map(function (m) { return { m: m, elo: ar.fixed_elo[m], se: null, fixed: true }; }));
     var t = el("table");
     renderTable(t, [
-      { label: "Player", get: function (r) { return r.m; }, fmt: function (r) { return r.m + (r.fixed ? " (fixed)" : ""); } },
+      { label: "Player", get: function (r) { return r.m; }, fmt: function (r) { return (r.fixed ? modelLabel(r.m) : r.m) + (r.fixed ? " (fixed)" : ""); } },
       { label: "Elo", get: function (r) { return r.elo; }, fmt: function (r) { return num(r.elo, 0); } },
       { label: "± approx. s.e.", get: function (r) { return r.se; }, fmt: function (r) { return r.se == null ? "—" : num(r.se, 0); } }
     ], rows, { sortCol: 1 });
@@ -615,7 +615,7 @@
     var rbody = el("tbody");
     drows.forEach(function (row) {
       Object.keys(row.reasons).forEach(function (k) {
-        rbody.appendChild(el("tr", null, el("td", { text: row.m }), el("td", { text: k }), el("td", { text: String(row.reasons[k]) })));
+        rbody.appendChild(el("tr", null, el("td", { text: modelLabel(row.m) }), el("td", { text: k }), el("td", { text: String(row.reasons[k]) })));
       });
     });
     rtab.appendChild(rbody);
