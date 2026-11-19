@@ -103,19 +103,24 @@
     if (brand === "Claude") return ["Claude"].concat(words).concat(ver ? [ver] : []).join(" ");
     return [brand].concat(ver ? [ver] : []).concat(words).join(" ");
   }
+  // Provider defaults for models run without an effort parameter, so every name
+  // shows the level actually used. gpt-6-luna: the Responses API echoes
+  // reasoning.effort = "medium" when none is sent (checked 2026-11-19).
+  // gemini-3.8-flash: Gemini API docs list thinking_level MEDIUM as its default.
+  var DEFAULT_EFFORT = { "gpt-6-luna": "medium", "gemini-3.8-flash": "medium" };
   function effortOf(p) {
     var par = p.parameters || {};
     var e = par.effort || (par.reasoning || {}).effort || (par.thinking_config || {}).thinking_level ||
-      (par.output_config || {}).effort;
+      par.thinking_level || (par.output_config || {}).effort || DEFAULT_EFFORT[p.model];
     if (!e) return p.provider && p.provider !== "scripted" && p.provider !== "human" ? "Default" : null;
     e = String(e).toLowerCase();
     return e === "xhigh" ? "XHigh" : e.charAt(0).toUpperCase() + e.slice(1);
   }
-  function modelLabel(id) {
+  function modelLabel(id, profiles) {
     if (id == null) return "—";
     id = String(id);
-    if (id.indexOf("+") >= 0) return id.split("+").map(modelLabel).join(" + ");  // mixed teams
-    var profs = (current && current.manifest && current.manifest.models) || [];
+    if (id.indexOf("+") >= 0) return id.split("+").map(function (x) { return modelLabel(x, profiles); }).join(" + ");  // mixed teams
+    var profs = profiles || (current && current.manifest && current.manifest.models) || [];
     var p = null;
     for (var i = 0; i < profs.length; i++) if (profs[i] && profs[i].id === id) { p = profs[i]; break; }
     if (!p) return id;
@@ -182,8 +187,13 @@
   function renderFormatComparison() {
     var picks = formatEntries();
     if (picks.length < 2) return;
-    Promise.all(picks.map(function (p) { return fetchJSON("data/" + p.c.entry_id + "/leaderboard.json"); }))
-      .then(function (lbs) {
+    Promise.all(picks.map(function (p) { return fetchJSON("data/" + p.c.entry_id + "/leaderboard.json"); })
+      .concat(picks.map(function (p) { return fetchJSON("data/" + p.c.entry_id + "/manifest.json").catch(function () { return {}; }); })))
+      .then(function (all) {
+        var lbs = all.slice(0, picks.length), mans = all.slice(picks.length);
+        // Label each row from the comparison's own exports, not the selected condition.
+        var profiles = [];
+        mans.forEach(function (m) { (m.models || []).forEach(function (x) { profiles.push(x); }); });
         var cols = picks.map(function (p, j) {
           var elo = (lbs[j].rating && lbs[j].rating.elo) || {};
           var order = Object.keys(elo).filter(function (m) { return elo[m] != null; })
@@ -209,7 +219,7 @@
         Object.keys(models).sort(function (a, b) {
           return (cols[0].rank[a] || 1e9) - (cols[0].rank[b] || 1e9) || a.localeCompare(b);
         }).forEach(function (m) {
-          var tr = el("tr", null, el("td", { text: modelLabel(m) }));
+          var tr = el("tr", null, el("td", { text: modelLabel(m, profiles) }));
           cols.forEach(function (col) {
             tr.appendChild(el("td", { text: col.rank[m] ? col.rank[m] + " of " + col.n : "—" }));
             tr.appendChild(el("td", { text: num(col.elo[m], 0) }));
