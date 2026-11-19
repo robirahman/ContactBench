@@ -52,8 +52,15 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             )
         return self._client
 
-    @staticmethod
-    def user_content(request: DecisionRequest) -> Any:
+    def cache_control(self) -> dict[str, str]:
+        """Cache breakpoint marker.  Max-effort decisions are 10-25 minutes apart,
+        longer than the default 5-minute cache lifetime, so they use the 1-hour
+        cache (written at 2x the base input price instead of 1.25x)."""
+        if self.config.long_prompt_cache:
+            return {"type": "ephemeral", "ttl": "1h"}
+        return {"type": "ephemeral"}
+
+    def user_content(self, request: DecisionRequest) -> Any:
         """User message content.  With prompt parts, each part is its own block
         and a cache breakpoint ends the append-only prefix (game header plus
         public history), so the next turn's request hits that cache entry."""
@@ -61,7 +68,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             return request.user_prompt
         blocks: list[dict[str, Any]] = [{"type": "text", "text": p} for p in request.user_prompt_parts]
         if request.cache_prefix_parts > 0:
-            blocks[request.cache_prefix_parts - 1]["cache_control"] = {"type": "ephemeral"}
+            blocks[request.cache_prefix_parts - 1]["cache_control"] = self.cache_control()
         return blocks
 
     def build_request(self, request: DecisionRequest) -> dict:
@@ -69,7 +76,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         system: Any = request.system_prompt
         if request.user_prompt_parts:
             # The rules text is identical for every call in a condition.
-            system = [{"type": "text", "text": request.system_prompt, "cache_control": {"type": "ephemeral"}}]
+            system = [{"type": "text", "text": request.system_prompt, "cache_control": self.cache_control()}]
         kwargs: dict[str, Any] = {
             "model": self.config.model,
             "max_tokens": request.max_output_tokens or self.config.max_output_tokens,
@@ -132,7 +139,7 @@ class AnthropicMessagesAdapter(ProviderAdapter):
             # Third breakpoint: cache the growing tool-loop conversation.
             last = dict(msgs[-1])
             content = [dict(b) for b in last["content"]]
-            content[-1]["cache_control"] = {"type": "ephemeral"}
+            content[-1]["cache_control"] = self.cache_control()
             last["content"] = content
             msgs[-1] = last
         kwargs["messages"] = msgs
@@ -176,12 +183,14 @@ class AnthropicMessagesAdapter(ProviderAdapter):
         base_in = int_or_none(get(u, "input_tokens"))
         c_read = int_or_none(get(u, "cache_read_input_tokens"))
         c_write = int_or_none(get(u, "cache_creation_input_tokens"))
+        c_write_1h = int_or_none(get(get(u, "cache_creation"), "ephemeral_1h_input_tokens"))
         usage = NormalizedUsage(
             input_tokens=None if base_in is None else base_in + (c_read or 0) + (c_write or 0),
             output_tokens=int_or_none(get(u, "output_tokens")),
             total_tokens=None,  # not reported by the Messages API
             cached_input_tokens=int_or_none(get(u, "cache_read_input_tokens")),
             cache_write_tokens=int_or_none(get(u, "cache_creation_input_tokens")),
+            cache_write_1h_tokens=c_write_1h,
             reasoning_tokens=thinking,
             # Thinking tokens are billed as output and reported within output_tokens.
             reasoning_included_in_output=True if thinking is not None else None,

@@ -52,3 +52,82 @@ def test_anthropic_cache_breakpoints():
     blocks = kw["messages"][0]["content"]
     marked = [i for i, b in enumerate(blocks) if "cache_control" in b]
     assert marked == [n - 1] and len(blocks) == len(parts)
+
+
+def test_max_effort_uses_one_hour_cache_on_every_breakpoint():
+    import asyncio
+
+    s2, _ = _two_turns()
+    parts, n = user_prompt_parts(s2.obs(2, "guesser2", "respond"))
+    mc = ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=100,
+                     credential_env="ANTHROPIC_API_KEY", parameters={"effort": "max"})
+    ad = AnthropicMessagesAdapter(mc)
+    req = DecisionRequest("d", "guesser2", "respond", "SYSTEM", "\n\n".join(parts), "s", {},
+                          user_prompt_parts=parts, cache_prefix_parts=n)
+    kw = ad.build_request(req)
+    one_hour = {"type": "ephemeral", "ttl": "1h"}
+    assert kw["system"][0]["cache_control"] == one_hour
+    assert kw["messages"][0]["content"][n - 1]["cache_control"] == one_hour
+    # tool-loop breakpoint on the growing conversation
+    state = ad.tool_conversation_start(req) + [
+        {"role": "assistant", "content": [{"type": "text", "text": "x"}]},
+        {"role": "user", "content": [{"type": "tool_result", "tool_use_id": "t", "content": "ok"}]}]
+    sent = {}
+
+    class C:
+        class messages:
+            @staticmethod
+            async def create(**k):
+                sent.update(k)
+                raise RuntimeError("stop")
+
+    ad._client = C
+    ad._call = lambda k: C.messages.create(**k)
+    try:
+        asyncio.run(ad.send_tool_turn(req, state, False))
+    except RuntimeError:
+        pass
+    assert sent["messages"][-1]["content"][-1]["cache_control"] == one_hour
+
+
+def test_one_hour_cache_writes_are_priced_at_twice_base_input():
+    from contact_bench.config import PriceTable
+    from contact_bench.providers.base import NormalizedUsage
+    from contact_bench.runner.budget import estimate_cost
+
+    p = PriceTable(as_of="2026-11-19", source="t", input_per_mtok=8.0, output_per_mtok=40.0,
+                   cached_input_per_mtok=0.2, cache_write_per_mtok=10.0)
+    five = NormalizedUsage(input_tokens=1_000_000, output_tokens=0, cache_write_tokens=1_000_000)
+    hour = NormalizedUsage(input_tokens=1_000_000, output_tokens=0, cache_write_tokens=1_000_000,
+                           cache_write_1h_tokens=1_000_000)
+    assert abs(estimate_cost(p, five) - 10.0) < 1e-9
+    assert abs(estimate_cost(p, hour) - 16.0) < 1e-9
+    no_write_rate = PriceTable(as_of="2026-11-19", source="t", input_per_mtok=8.0, output_per_mtok=40.0)
+    assert abs(estimate_cost(no_write_rate, hour) - 16.0) < 1e-9  # still 2x without a 5-minute rate
+    assert abs(estimate_cost(no_write_rate, five) - 8.0) < 1e-9  # unchanged: writes at base input
+
+
+def test_parse_reports_one_hour_cache_writes():
+    mc = ModelConfig(id="a", provider="anthropic", model="m", max_output_tokens=100,
+                     credential_env="ANTHROPIC_API_KEY", parameters={"effort": "max"})
+    msg = {"id": "m1", "model": "m", "stop_reason": "end_turn", "content": [{"type": "text", "text": "{}"}],
+           "usage": {"input_tokens": 10, "output_tokens": 5, "cache_read_input_tokens": 100,
+                     "cache_creation_input_tokens": 50,
+                     "cache_creation": {"ephemeral_5m_input_tokens": 0, "ephemeral_1h_input_tokens": 50}}}
+    r = AnthropicMessagesAdapter(mc).parse_response(msg, {"max_tokens": 100})
+    assert r.usage.input_tokens == 160 and r.usage.cache_write_tokens == 50 and r.usage.cache_write_1h_tokens == 50
+
+
+def test_reservation_covers_cache_write_premiums():
+    from contact_bench.config import PriceTable
+    from contact_bench.runner.budget import worst_case_cost
+
+    p = PriceTable(as_of="2026-11-19", source="t", input_per_mtok=8.0, output_per_mtok=40.0,
+                   cached_input_per_mtok=0.2, cache_write_per_mtok=10.0)
+    assert abs(worst_case_cost(p, 1_000_000, 0) - 10.0) < 1e-9  # 5-minute writes: 1.25x
+    assert abs(worst_case_cost(p, 1_000_000, 0, long_cache=True) - 16.0) < 1e-9  # 1-hour writes: 2x
+    max_fable = ModelConfig(id="f", provider="anthropic", model="m", max_output_tokens=10,
+                            credential_env="ANTHROPIC_API_KEY", parameters={"effort": "max"})
+    low_fable = ModelConfig(id="g", provider="anthropic", model="m", max_output_tokens=10,
+                            credential_env="ANTHROPIC_API_KEY", parameters={"effort": "low"})
+    assert max_fable.long_prompt_cache and not low_fable.long_prompt_cache

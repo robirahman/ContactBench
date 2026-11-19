@@ -21,21 +21,32 @@ def estimate_cost(prices: PriceTable, usage: NormalizedUsage) -> float | None:
         return None
     # Normalized convention: input_tokens includes cache reads and writes.
     cached = usage.cached_input_tokens or 0
-    written = (usage.cache_write_tokens or 0) if prices.cache_write_per_mtok is not None else 0
-    uncached = max(0, usage.input_tokens - cached - written)
+    # 1-hour cache writes (a subset of cache_write_tokens) cost 2x base input whether
+    # or not the table has a 5-minute write rate.
+    long = usage.cache_write_1h_tokens or 0
+    if usage.cache_write_tokens is not None:
+        long = min(long, usage.cache_write_tokens)
+    short = max(0, (usage.cache_write_tokens or 0) - long) if prices.cache_write_per_mtok is not None else 0
+    uncached = max(0, usage.input_tokens - cached - short - long)
     c = uncached * prices.input_per_mtok / 1e6
     if cached:
         rate = prices.cached_input_per_mtok if prices.cached_input_per_mtok is not None else prices.input_per_mtok
         c += cached * rate / 1e6
-    if usage.cache_write_tokens and prices.cache_write_per_mtok is not None:
-        c += usage.cache_write_tokens * prices.cache_write_per_mtok / 1e6
+    if short:
+        c += short * prices.cache_write_per_mtok / 1e6
+    c += long * 2 * prices.input_per_mtok / 1e6
     out = usage.billable_output_tokens() or 0
     c += out * prices.output_per_mtok / 1e6
     return c
 
 
-def worst_case_cost(prices: PriceTable, input_tokens: int, max_output_tokens: int) -> float:
-    return input_tokens * prices.input_per_mtok / 1e6 + max_output_tokens * prices.output_per_mtok / 1e6
+def worst_case_cost(prices: PriceTable, input_tokens: int, max_output_tokens: int,
+                    long_cache: bool = False) -> float:
+    """Upper bound before sending: every input token may be a cache write, which costs
+    more than base input (``cache_write_per_mtok``, or 2x base for the 1-hour cache)."""
+    rate = max(prices.input_per_mtok, prices.cache_write_per_mtok or 0.0,
+               2 * prices.input_per_mtok if long_cache else 0.0)
+    return input_tokens * rate / 1e6 + max_output_tokens * prices.output_per_mtok / 1e6
 
 
 @dataclass
@@ -62,7 +73,8 @@ class Budget:
             if self.max_usd is not None or pcap is not None:
                 if model.prices is None:
                     raise BudgetExhausted(f"monetary cap requires a price table for {model.id}")
-                res = worst_case_cost(model.prices, est_input_tokens, model.max_output_tokens or 0)
+                res = worst_case_cost(model.prices, est_input_tokens, model.max_output_tokens or 0,
+                                      long_cache=model.long_prompt_cache)
                 if self.max_usd is not None and self.usd_spent + self.usd_reserved + res > self.max_usd:
                     raise BudgetExhausted("monetary budget would be exceeded by in-flight reservation")
                 p = model.provider

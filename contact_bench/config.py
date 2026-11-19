@@ -324,6 +324,12 @@ class ModelConfig(_Strict):
         return self
 
     @property
+    def long_prompt_cache(self) -> bool:
+        """Anthropic models run at effort max use the 1-hour prompt cache (their
+        decisions are 10-25 minutes apart); its writes cost 2x base input."""
+        return self.provider == "anthropic" and self.parameters.get("effort") == "max"
+
+    @property
     def is_llm(self) -> bool:
         return self.provider in ("openai", "anthropic", "google", "fake")
 

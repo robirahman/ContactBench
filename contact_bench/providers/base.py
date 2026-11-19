@@ -101,6 +101,9 @@ class NormalizedUsage:
     total_tokens: int | None = None
     cached_input_tokens: int | None = None
     cache_write_tokens: int | None = None
+    # Subset of cache_write_tokens written with the 1-hour lifetime (Anthropic),
+    # billed at 2x the base input price instead of cache_write_per_mtok.
+    cache_write_1h_tokens: int | None = None
     reasoning_tokens: int | None = None
     # True when reasoning tokens are already counted within output_tokens
     # (OpenAI); False when billed as a separate category; None if unknown.
@@ -191,7 +194,7 @@ def sum_usage(usages: list["NormalizedUsage"]) -> "NormalizedUsage":
         return usages[0]
     out = NormalizedUsage()
     for f in ("input_tokens", "output_tokens", "total_tokens", "cached_input_tokens",
-              "cache_write_tokens", "reasoning_tokens"):
+              "cache_write_tokens", "cache_write_1h_tokens", "reasoning_tokens"):
         vals = [getattr(u, f) for u in usages]
         setattr(out, f, None if any(v is None for v in vals) else sum(vals))
     flags = {u.reasoning_included_in_output for u in usages}

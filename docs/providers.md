@@ -125,6 +125,14 @@ original object. `reasoning_included_in_output` records the convention, and
 Anthropic does not report a total. The adapter computes one as input + output + cache read + cache
 write.
 
+Anthropic prompt caching uses up to three breakpoints: the system prompt, the end of the append-only
+prefix (game header plus public history) and, inside a lookup-tool decision, the growing conversation.
+They use the default 5-minute lifetime, except for models run at `effort: max`, whose decisions are 10-25
+minutes apart (the lifetime runs from the start of the request, so a long generation alone outlasts it):
+those use `"ttl": "1h"` on every breakpoint. 1-hour writes are reported in
+`usage.cache_creation.ephemeral_1h_input_tokens` (normalized as `cache_write_1h_tokens`) and priced at
+2x the base input price instead of `cache_write_per_mtok`. Caching never changes what the model sees.
+
 ## Official documentation (checked 16 November 2026; recheck before live runs)
 
 - OpenAI Structured outputs: https://developers.openai.com/api/docs/guides/structured-outputs
