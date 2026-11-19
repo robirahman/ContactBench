@@ -1,0 +1,243 @@
+{
+ "game_id": "dev42-0004-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "upbeat",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "large grey mammal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "australian hopping marsupial",
+   "blocklist": [
+    "joey",
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "exceedingly idealistic like don",
+   "blocklist": [
+    "quixotic",
+    "ultra",
+    "utopian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "cretan maze for minotaur",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "labyrinth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "labyrinth"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "handheld folding rain canopy",
+   "blocklist": [
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "mythical horse with a single horn",
+   "blocklist": [
+    "unicorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "small four stringed hawaiian guitar",
+   "blocklist": [
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "element 92 in nuclear reactors",
+   "blocklist": [
+    "uranium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "present everywhere at once",
+   "blocklist": [
+    "ubiquitous",
+    "ubiquity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "fork spoon or knife",
+   "blocklist": [
+    "cutlery",
+    "utensil",
+    "utensils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "singing together in one voice",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unison"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unison"
+    }
+   ],
+   "prefix_after": "up",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "against the current of a river",
+   "blocklist": [
+    "upstream"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "up",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "cheerful and optimistic",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "upbeat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "upbeat"
+    }
+   ],
+   "prefix_after": "up",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 13.0,
+  "cost_numerator": 13,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

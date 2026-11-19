@@ -1,0 +1,503 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "First animal in many dictionaries; eats ants",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "anteater"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "bat rat dog pig hen cow fox owl ant bee; meow",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "felines",
+    "kitten",
+    "kittens",
+    "kitties",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "emu yak elk ape ram sow doe; duck-billed mammal",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "lion wolf bear hare mole deer; striped equine",
+   "blocklist": [
+    "zebra",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "red blue green pink black white; citrus color",
+   "blocklist": [
+    "amber",
+    "apricot",
+    "citron",
+    "citrons",
+    "coral",
+    "lemon",
+    "lemons",
+    "lime",
+    "limes",
+    "orange",
+    "oranges",
+    "orangey",
+    "orangy",
+    "peach",
+    "saffron",
+    "tangelo",
+    "tangerine",
+    "tangerines",
+    "yellow",
+    "yellows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "ace act add age air all arm art ash; river horse",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "one two six ten sun sky sea ice; tuxedo bird",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "88 keys; the 10th prime, spelled out",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "piano"
+    },
+    {
+     "seat": "guesser2",
+     "word": "piano"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "use urn urge undo unit upon; handheld rain shield",
+   "blocklist": [
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "One-horned horse; 9 x 9",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unicorn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unicorn"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "All spacetime; under uncle union until unique",
+   "blocklist": [
+    "universal",
+    "universals",
+    "universe",
+    "universes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Standard outfit for soldiers; 12 x 12",
+   "blocklist": [
+    "uniform",
+    "uniformed",
+    "uniforms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "united unknown unusual unable; one-wheeled bike",
+   "blocklist": [
+    "unicycle",
+    "unicycles",
+    "unicyclist",
+    "unicyclists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "unfit uncut undue unwed unlit; expected loser",
+   "blocklist": [
+    "underdog",
+    "underdogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "unfair unrest unseen unlock untrue; open a zipper",
+   "blocklist": [
+    "unfasten",
+    "unzip",
+    "unzipped",
+    "unzipping",
+    "unzips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "All in agreement; 37 x 43",
+   "blocklist": [
+    "unanimities",
+    "unanimity",
+    "unanimous",
+    "unanimously",
+    "unison",
+    "unisons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Dig up; unfairly unsure undone unfair untied",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unearth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unearth"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Twist off; unstable unsaid unsung unsound unsent",
+   "blocklist": [
+    "unscrew",
+    "unscrewed",
+    "unscrewing",
+    "unscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Titanic's billing; unsafe unsaved unshod unspun",
+   "blocklist": [
+    "unsinkable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "No added NaCl; unset unsold unsown unshed unsnap",
+   "blocklist": [
+    "unsalted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "No sugar; unsung unsociable unsightly unscathed",
+   "blocklist": [
+    "unsweetened"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Altruistic; unsaid unsized unsent unsold unswept",
+   "blocklist": [
+    "unselfish",
+    "unselfishly",
+    "unselfishness",
+    "unselfishnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Cold case status; unsalted unspoiled unstuck",
+   "blocklist": [
+    "unsolvable",
+    "unsolved"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Untangle an anagram; unspoken unsung unsteady",
+   "blocklist": [
+    "unscramble",
+    "unscrambled",
+    "unscrambler",
+    "unscramblers",
+    "unscrambles",
+    "unscrambling",
+    "unsnarl",
+    "unsnarled",
+    "unsnarling",
+    "unsnarls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Failed; unsay unsew unseal unseat unstick unsold",
+   "blocklist": [
+    "unsuccessful",
+    "unsuccessfully"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 57.37379807692308,
+  "cost_numerator": 47735,
+  "cost_denominator": 832,
+  "cost_exact": false,
+  "cost_mcse": 0.13159601077647737,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22775,
+   "denominator": 832,
+   "value": 27.373798076923077,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:1,6:13,7:40,8:73,9:52,10:59,11:37,12:30,13:23,14:12,15:10,16:9,17:2,18:4,20:1",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.13159601077647737,
+   "rollouts": 256,
+   "rank_total": 364400,
+   "rank_denominator": 13312,
+   "cache_key": "ae1cc30517da115634a085d1573c1e55"
+  }
+ }
+}

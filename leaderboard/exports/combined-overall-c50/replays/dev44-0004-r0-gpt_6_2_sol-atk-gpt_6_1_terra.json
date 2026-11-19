@@ -1,0 +1,468 @@
+{
+ "game_id": "dev44-0004-r0-gpt_6_2_sol-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_1_terra",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Tallest living land animal",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Q followed by four silent letters",
+   "blocklist": [
+    "queue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird in a tuxedo",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "What bees collect: orchid, lavender, or clover?",
+   "blocklist": [
+    "honey",
+    "nectar",
+    "pollen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Piano violin drum flute harp: wooden-bar cousin?",
+   "blocklist": [
+    "marimba",
+    "xylophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Eight-armed sea creature that squirts ink",
+   "blocklist": [
+    "octopus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "First animal in many dictionaries; eats ants",
+   "blocklist": [
+    "aardvark",
+    "anteater"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hippo elephant zebra lion: horned tank of Africa?",
+   "blocklist": [
+    "rhino",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "cat dog bat rat fox cow pig hen fly ant bee owl",
+   "blocklist": [
+    "ape",
+    "eel",
+    "emu",
+    "yak"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "gnu gnat new knew blue clue glue true igloo emus",
+   "blocklist": [
+    "crew",
+    "dew",
+    "shoe",
+    "sue",
+    "two",
+    "you",
+    "zoo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Duck-billed mammal? Otter beaver mole seal squid",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "EXTENSIBILITY minus EXTENS, prepend FLEX",
+   "blocklist": [
+    "flexibility"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Smiling marsupial: kangaroo koala wombat wallaby",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "sleeping sickness vector; repeat T,S,E twice",
+   "blocklist": [
+    "tsetse"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Mexican salamander with feathery external gills",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Hex C; baker adds one. one six ten egg bun pie",
+   "blocklist": [
+    "dozen",
+    "thirteen",
+    "twelve"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Glowing coal: read R E B M E from right to left.",
+   "blocklist": [
+    "ember"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "our star: art car sky red run sit ice jam box mug",
+   "blocklist": [
+    "sol",
+    "solar",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Riddler of Thebes? the and for are but not all",
+   "blocklist": [
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Sly nocturnal animals in leafy shadows",
+   "blocklist": [
+    "bats",
+    "cats",
+    "coyotes",
+    "foxes",
+    "owls",
+    "raccoon",
+    "raccoons",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "snails"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Tick-tock. air bed bus cup dig ear fan gem hat key",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "metronome",
+    "pendulum",
+    "time",
+    "timer",
+    "watch",
+    "wristwatch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sapphire ruby emerald topaz jade onyx pearl garnet",
+   "blocklist": [
+    "amethyst",
+    "diamond",
+    "diamonds",
+    "gemstone",
+    "jewel",
+    "jewels",
+    "opal",
+    "turquoise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Oak seed? ace act add ado aft age ago aid aim ale",
+   "blocklist": [
+    "acorn",
+    "acorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Yellow fruit; spell B-A-N-A-N-A",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "JAG + UAR; ash axe bad bag bay bid bit bog bow",
+   "blocklist": [
+    "jaguar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Ants Carry Rice Over Sand To Impress Crows",
+   "blocklist": [
+    "acrostic",
+    "acrostics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12078.092001697742,
+  "cost_numerator": 35115748061,
+  "cost_denominator": 2907392,
+  "cost_exact": false,
+  "cost_mcse": 3.890287438590039,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 35028526301,
+   "denominator": 2907392,
+   "value": 12048.092001697742,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:887,4:3857,5:8601,6:15201,7:23086,8:28397,9:24865,10:20297,11:15503,12:11357,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.890287438590039,
+   "rollouts": 256,
+   "rank_total": 35028526301,
+   "rank_denominator": 2907392,
+   "cache_key": "a0c48d762366bc671e8bc09a28eb84d4"
+  }
+ }
+}

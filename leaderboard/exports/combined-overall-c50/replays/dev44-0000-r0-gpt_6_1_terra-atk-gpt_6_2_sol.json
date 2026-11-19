@@ -1,0 +1,549 @@
+{
+ "game_id": "dev44-0000-r0-gpt_6_1_terra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_2_sol",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet? the and for are but not you can all",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "tabby",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Man's best friend? was his her she him out one two",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggie",
+    "doggy",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of cold? with that have this from they",
+   "blocklist": [
+    "balmy",
+    "boiling",
+    "burning",
+    "heat",
+    "heated",
+    "hot",
+    "hotter",
+    "scorching",
+    "sweltering",
+    "torrid",
+    "warm",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite? what when who how",
+   "blocklist": [
+    "luna",
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Star at center of solar system? had has its more",
+   "blocklist": [
+    "sol",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "H2O? said use each which their time will about",
+   "blocklist": [
+    "aqua",
+    "ice",
+    "steam",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Jungle king? there would could people into just",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lion"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fe metal? information important interest include",
+   "blocklist": [
+    "iron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Not outside? international individual idea image",
+   "blocklist": [
+    "indoors",
+    "inside",
+    "interior",
+    "internal",
+    "inward",
+    "within"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Inuit snow house? issue impact industry increase",
+   "blocklist": [
+    "igloo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Need to scratch? imagine instead impossible itself",
+   "blocklist": [
+    "itch",
+    "itches",
+    "itching",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Writing fluid? internet investment involved island",
+   "blocklist": [
+    "ink"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Six-legged bug? identity illness impact income",
+   "blocklist": [
+    "ant",
+    "ants",
+    "bug",
+    "bugs",
+    "insect",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Elephant tusk material? indeed initial indicate",
+   "blocklist": [
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Floating ice mountain? influence improve identify",
+   "blocklist": [
+    "berg",
+    "bergs",
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Tropical green lizard? industry immediate indicate",
+   "blocklist": [
+    "iguana",
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Endlessness? incredible independent invention",
+   "blocklist": [
+    "boundlessness",
+    "endlessness",
+    "eternity",
+    "infinite",
+    "infiniteness",
+    "infinitude",
+    "infinity",
+    "limitlessness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Fool? intelligence intelligent imagination",
+   "blocklist": [
+    "buffoon",
+    "dunce",
+    "dupe",
+    "fool",
+    "idiot",
+    "idiots",
+    "ignoramus",
+    "ignoramuses",
+    "imbecile",
+    "imbeciles",
+    "incompetent",
+    "innocent",
+    "jester",
+    "moron",
+    "nitwit",
+    "simpleton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Opposite of export? including interesting informed",
+   "blocklist": [
+    "import",
+    "importation",
+    "imported",
+    "importing",
+    "imports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Optical deception? inspect install intent intend",
+   "blocklist": [
+    "illusion",
+    "illusions",
+    "mirage",
+    "mirages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Separate from others? innovation insurance",
+   "blocklist": [
+    "alone",
+    "apart",
+    "detach",
+    "detached",
+    "insulate",
+    "insulated",
+    "isolate",
+    "isolated",
+    "isolates",
+    "isolating",
+    "isolation",
+    "quarantine",
+    "seclude",
+    "secluded",
+    "segregate",
+    "segregated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Hanging frozen spike? ignore imply impose indoor",
+   "blocklist": [
+    "icicle",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Germ invasion? irony integrity instruction insist",
+   "blocklist": [
+    "contagion",
+    "contamination",
+    "disease",
+    "infect",
+    "infected",
+    "infecting",
+    "infection",
+    "infections",
+    "infestation",
+    "infestations",
+    "sepsis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Musical tool? involve invite index inch impact",
+   "blocklist": [
+    "instrument",
+    "instruments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Charged atom? item items ideal ideas icon icons",
+   "blocklist": [
+    "anion",
+    "anions",
+    "cation",
+    "cations",
+    "ion",
+    "ions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Against the law? investigate instance instant",
+   "blocklist": [
+    "criminal",
+    "forbidden",
+    "illegal",
+    "illegality",
+    "illegally",
+    "illicit",
+    "illicitly",
+    "outlawed",
+    "prohibited",
+    "unlawful",
+    "unlawfully"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Narrow land bridge? immunity imperial impact",
+   "blocklist": [
+    "isthmus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Eye color part? individuals indicated interests",
+   "blocklist": [
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 568.0224609375,
+  "cost_numerator": 581655,
+  "cost_denominator": 1024,
+  "cost_exact": false,
+  "cost_mcse": 1.0648190541972635,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 550935,
+   "denominator": 1024,
+   "value": 538.0224609375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:15,4:49,5:105,6:263,7:483,8:707,9:833,10:931,11:846,12:764,13:605,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 1.0648190541972635,
+   "rollouts": 256,
+   "rank_total": 42421995,
+   "rank_denominator": 78848,
+   "cache_key": "430d5aae1a6459ec676b64237af81ea7"
+  }
+ }
+}

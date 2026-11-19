@@ -1,0 +1,653 @@
+{
+ "game_id": "dev41-0009-r0-claude_fable_5_2-atk-gemini_4_carbon",
+ "attacker": "claude_fable_5_2",
+ "defender": "gemini_4_carbon",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mammoths",
+    "pachyderm",
+    "pachyderms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit that monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Reverse THGIN; when the stars come out",
+   "blocklist": [
+    "darkness",
+    "dusk",
+    "evening",
+    "midnight",
+    "night",
+    "nights",
+    "nighttime",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Frozen water, three letters, rhymes with mice",
+   "blocklist": [
+    "frost",
+    "hail",
+    "ice",
+    "iced",
+    "ices",
+    "icy",
+    "rime",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Alphabetically the very last dictionary word",
+   "blocklist": [
+    "zymurgies",
+    "zymurgy",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Anagram of LISTEN meaning small bays or coves",
+   "blocklist": [
+    "elints",
+    "enlist",
+    "inlet",
+    "inlets",
+    "silent",
+    "tinsel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words(prefix='tr', offset=123, limit=1)",
+   "blocklist": [
+    "traditionalism",
+    "traditionalisms",
+    "traditionalist",
+    "traditionalistic",
+    "traditionalists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Any color; pick the shortest, most common one",
+   "blocklist": [
+    "black",
+    "blue",
+    "gold",
+    "green",
+    "pink",
+    "red",
+    "tan",
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Fortnight equals two of these (plural form)",
+   "blocklist": [
+    "hebdomad",
+    "hebdomads",
+    "sennight",
+    "sennights",
+    "week",
+    "weeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Number of days in a single calendar week, spelled",
+   "blocklist": [
+    "heptad",
+    "heptads",
+    "septet",
+    "seven",
+    "sevenfold",
+    "sevens",
+    "seventh",
+    "sevenths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Atlantic or Pacific, e.g.; five letters, not sea",
+   "blocklist": [
+    "abyss",
+    "basin",
+    "brine",
+    "coast",
+    "fleet",
+    "liner",
+    "ocean",
+    "oceans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Opposite of happy; 3 letters, starts with S",
+   "blocklist": [
+    "sad",
+    "sadder",
+    "saddest",
+    "sadness",
+    "shy",
+    "sly",
+    "sob",
+    "sore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Opposite of cold; 3 letters, begins with H",
+   "blocklist": [
+    "heat",
+    "het",
+    "hot",
+    "hots",
+    "hotter",
+    "hottest",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Feline pet who purrs; 3 letters, begins with C",
+   "blocklist": [
+    "cat",
+    "cats",
+    "cub",
+    "kit",
+    "kitten",
+    "kitty",
+    "tom"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "list_words(prefix='', offset=99999, limit=1)",
+   "blocklist": [
+    "nontypical",
+    "nonunanimous",
+    "nonuniform"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Barking pet, canine; 3 letters, begins with D",
+   "blocklist": [
+    "cur",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "hound",
+    "mutt",
+    "pup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Alphabetically first entry of all, 3 letters",
+   "blocklist": [
+    "aah",
+    "aahs",
+    "aal",
+    "aals",
+    "aardvark",
+    "aas",
+    "aba"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Fifth month, between April and June; also 'might'",
+   "blocklist": [
+    "may",
+    "maybe",
+    "mayed",
+    "mayest",
+    "mayhap",
+    "maying",
+    "mays",
+    "mayst"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Opposite of up; 4 letters, begins with D",
+   "blocklist": [
+    "dank",
+    "deep",
+    "dive",
+    "down",
+    "downed",
+    "downer",
+    "downs",
+    "downy",
+    "drop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of left; 5 letters, begins with R",
+   "blocklist": [
+    "recto",
+    "remain",
+    "right",
+    "righted",
+    "righter",
+    "rightly",
+    "righto",
+    "rights",
+    "righty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Chess piece wed to a king; 5 letters, begins Q",
+   "blocklist": [
+    "quean",
+    "queen",
+    "queened",
+    "queening",
+    "queenly",
+    "queens",
+    "queenside"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Third planet from our sun; 5 letters, begins E",
+   "blocklist": [
+    "earth",
+    "earthed",
+    "earthen",
+    "earthing",
+    "earthling",
+    "earthly",
+    "earths",
+    "earthy",
+    "terra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Opposite of wet; 3 letters, begins with D",
+   "blocklist": [
+    "dried",
+    "drier",
+    "driers",
+    "dries",
+    "driest",
+    "dry",
+    "dryer",
+    "dryers",
+    "dryest",
+    "drying",
+    "drys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite; 4 letters, begins M",
+   "blocklist": [
+    "luna",
+    "moon",
+    "mooned",
+    "mooning",
+    "moonlet",
+    "moonlight",
+    "moons",
+    "moony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Opposite of young; 3 letters, begins with O",
+   "blocklist": [
+    "aged",
+    "eld",
+    "elder",
+    "old",
+    "olden",
+    "older",
+    "oldest",
+    "oldie",
+    "oldies",
+    "oldish",
+    "olds",
+    "oldster",
+    "oldy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Opposite of little; 3 letters, begins with B",
+   "blocklist": [
+    "big",
+    "bigger",
+    "biggest",
+    "biggie",
+    "biggies",
+    "biggish",
+    "bigly",
+    "bigness",
+    "bigs",
+    "great",
+    "huge",
+    "large",
+    "vast"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Opposite of bad; 4 letters, begins with G",
+   "blocklist": [
+    "fine",
+    "gain",
+    "gala",
+    "game",
+    "gilt",
+    "glad",
+    "good",
+    "goodie",
+    "goodies",
+    "goodish",
+    "goodly",
+    "goodness",
+    "goods",
+    "goodwill",
+    "goody",
+    "nice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Opposite of fast; 4 letters, begins with S",
+   "blocklist": [
+    "slob",
+    "sloe",
+    "slop",
+    "slow",
+    "slowdown",
+    "slowdowns",
+    "slowed",
+    "slower",
+    "slowest",
+    "slowing",
+    "slowish",
+    "slowly",
+    "slowness",
+    "slownesses",
+    "slowpoke",
+    "slowpokes",
+    "slows",
+    "slowworm",
+    "slowworms",
+    "slug",
+    "slut",
+    "stay",
+    "stop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Opposite of short in height; 4 letters, begins T",
+   "blocklist": [
+    "high",
+    "lofty",
+    "long",
+    "tall",
+    "tallboy",
+    "tallboys",
+    "taller",
+    "tallest",
+    "tallish",
+    "tallness",
+    "tallnesses",
+    "taut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11844.577814656994,
+  "cost_numerator": 2690709053,
+  "cost_denominator": 227168,
+  "cost_exact": false,
+  "cost_mcse": 2.3732995700710493,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 2683894013,
+   "denominator": 227168,
+   "value": 11814.577814656994,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:930,4:3826,5:8567,6:15168,7:23065,8:28396,9:24857,10:20296,11:15504,12:11357,13:7827,14:5124,15:3190,16:1942,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.3732995700710493,
+   "rollouts": 256,
+   "rank_total": 85884608416,
+   "rank_denominator": 7269376,
+   "cache_key": "706c58c271028784ffab03fabf60f844"
+  }
+ }
+}

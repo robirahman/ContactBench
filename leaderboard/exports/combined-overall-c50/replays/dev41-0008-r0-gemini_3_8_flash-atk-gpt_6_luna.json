@@ -1,0 +1,434 @@
+{
+ "game_id": "dev41-0008-r0-gemini_3_8_flash-atk-gpt_6_luna",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_luna",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "frozen water",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "has many fine teeth but never bites",
+   "blocklist": [
+    "comb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "mythological bird rising from its own ashes",
+   "blocklist": [
+    "firebird",
+    "phoenix"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "the ship of the desert",
+   "blocklist": [
+    "camel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "may the force be with",
+   "blocklist": [
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "tallest living terrestrial animal",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "the third planet from the sun",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "instrument with eighty-eight keys",
+   "blocklist": [
+    "keyboard",
+    "organ",
+    "piano",
+    "pianoforte"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "glass building where plants are grown",
+   "blocklist": [
+    "conservatory",
+    "glasshouse",
+    "greenhouse",
+    "hothouse",
+    "nursery",
+    "orangery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "theatrical good luck idiom break a",
+   "blocklist": [
+    "leg"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "humpty dumpty sat on a",
+   "blocklist": [
+    "wall"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "a rolling stone gathers no",
+   "blocklist": [
+    "moss"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "the early bird catches the",
+   "blocklist": [
+    "worm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "sunroom or glass room for plants and light",
+   "blocklist": [
+    "atrium",
+    "solarium",
+    "sunporch",
+    "terrarium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "third month or walking in a rhythm",
+   "blocklist": [
+    "cadence",
+    "gait",
+    "march",
+    "marching",
+    "meter",
+    "pace",
+    "parade",
+    "step"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "every cloud has a silver",
+   "blocklist": [
+    "blessing",
+    "hope",
+    "lining",
+    "optimism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "deep hoarse sound made by a frog or raven",
+   "blocklist": [
+    "caw",
+    "croak",
+    "croaked",
+    "croaker",
+    "croaking",
+    "croaks",
+    "growl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "staple food made from flour and baked",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bread"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bread"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "large mammal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephantine",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "joint connecting the upper and lower arm",
+   "blocklist": [
+    "elbow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "sound that reflects back off a canyon wall",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "bright green precious gemstone",
+   "blocklist": [
+    "emerald",
+    "emeralds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "large bird of prey national symbol of the usa",
+   "blocklist": [
+    "eagle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "organ of hearing",
+   "blocklist": [
+    "ear"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 536.8480688820423,
+  "cost_numerator": 19515501,
+  "cost_denominator": 36352,
+  "cost_exact": false,
+  "cost_mcse": 0.6891330956478395,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 18424941,
+   "denominator": 36352,
+   "value": 506.84806888204224,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:38,4:101,5:186,6:450,7:803,8:1127,9:1129,10:975,11:710,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6891330956478395,
+   "rollouts": 256,
+   "rank_total": 92124705,
+   "rank_denominator": 181760,
+   "cache_key": "9db00cdf626407b18c18843890a72de0"
+  }
+ }
+}

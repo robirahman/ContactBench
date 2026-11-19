@@ -1,0 +1,535 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Eight-armed cephalopod with three hearts",
+   "blocklist": [
+    "cuttlefish",
+    "nautilus",
+    "octopi",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A--DV-RK | cat dog bat rat owl fox ant bee yak",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "anteater",
+    "anteaters",
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "PL-TYP-S | eagle tiger lion wolf bear zebra lynx",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Wildebeest (3) | run set get put fly red sun cow",
+   "blocklist": [
+    "antelope",
+    "eland",
+    "gnu",
+    "gnus",
+    "hartebeest",
+    "impala",
+    "kudu",
+    "oryx",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Smiling marsupial | the and for not you all can",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Llama cousin | able acid acre acme atom apex aqua",
+   "blocklist": [
+    "alpaca",
+    "alpacas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Mexican salamander with feathery external gills",
+   "blocklist": [
+    "amphibian",
+    "amphibians",
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Giant South American constrictor | an-cond-",
+   "blocklist": [
+    "anaconda",
+    "anacondas",
+    "boa",
+    "boas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Crocodile kin | act add ado aft age ago aid aim",
+   "blocklist": [
+    "alligator",
+    "alligators",
+    "caiman",
+    "caimans",
+    "cayman",
+    "caymans",
+    "crocodilian",
+    "crocodilians",
+    "gavial",
+    "gharial",
+    "reptile",
+    "reptiles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Flightless great ___ | air ale ape arc ark art ash",
+   "blocklist": [
+    "auk",
+    "auks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Ear-shaped shellfish | ace ado adz ale alt amp any",
+   "blocklist": [
+    "abalone",
+    "abalones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Clownfish host | antler amber apple acorn acacia",
+   "blocklist": [
+    "actinia",
+    "actiniae",
+    "actinian",
+    "actinians",
+    "actinias",
+    "anemone",
+    "anemones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Mariner's burden | asp adder avocet agouti auklet",
+   "blocklist": [
+    "albatross",
+    "albatrosses",
+    "anchor",
+    "anchors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Guac base | ask ate awe awl awn axe aye ads ass",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "avocado"
+    },
+    {
+     "seat": "guesser2",
+     "word": "avocado"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bow shooter | area arid aria are arm arms army",
+   "blocklist": [
+    "arbalest",
+    "arbalests",
+    "arbalist",
+    "arbalists",
+    "archer",
+    "archers",
+    "archery",
+    "armiger",
+    "arrow",
+    "arrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Joint inflammation | arson argue armor arena",
+   "blocklist": [
+    "arthritic",
+    "arthritics",
+    "arthritides",
+    "arthritis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Island chain | artist arrest arrive arctic arose",
+   "blocklist": [
+    "archipelago",
+    "archipelagoes",
+    "archipelagos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Joint-legged invertebrate | arcane arctic arsenal",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "arthropod",
+    "arthropods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "11/11 truce | armadillos arugula arsenic arcade",
+   "blocklist": [
+    "arcade",
+    "arcades",
+    "armadillos",
+    "armistice",
+    "armistices",
+    "arsenic",
+    "arugula",
+    "arugulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Edible thistle | arts arch arks arty aryl aril",
+   "blocklist": [
+    "artichoke",
+    "artichokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "UK spelling: knight's suit | aroma array article",
+   "blocklist": [
+    "armour",
+    "armoured",
+    "armourer",
+    "armourers",
+    "armouries",
+    "armouring",
+    "armours",
+    "armoury",
+    "aroma",
+    "array",
+    "article"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Study of ancient artifacts | artful aur? armpit",
+   "blocklist": [
+    "archaeological",
+    "archaeologies",
+    "archaeologist",
+    "archaeologists",
+    "archaeology",
+    "archeological",
+    "archeologies",
+    "archeologist",
+    "archeologists",
+    "archeology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Motor winding core | artifice ardor argue arbour",
+   "blocklist": [
+    "arbor",
+    "arbors",
+    "armature",
+    "armatured",
+    "armatures",
+    "armaturing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Jason's shipmate | arose arose arise arson arak",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "argonaut"
+    },
+    {
+     "seat": "guesser2",
+     "word": "argonaut"
+    }
+   ],
+   "prefix_after": "arb",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "arbiter arbitrary arbitration arboreal arboretum",
+   "blocklist": [
+    "arboreta",
+    "arboretums",
+    "arborist",
+    "arborists",
+    "arborvitae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arbitrator"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arbitrage"
+    }
+   ],
+   "prefix_after": "arb",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 34.5546875,
+  "cost_numerator": 4423,
+  "cost_denominator": 128,
+  "cost_exact": false,
+  "cost_mcse": 0.06251891564248971,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 583,
+   "denominator": 128,
+   "value": 4.5546875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:1,6:1,7:5,8:8,9:8,10:8,11:11,12:5,13:5,14:2,15:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.06251891564248971,
+   "rollouts": 256,
+   "rank_total": 5830,
+   "rank_denominator": 1280,
+   "cache_key": "4ca4692d6ff216cb3010c15b44dfc076"
+  }
+ }
+}

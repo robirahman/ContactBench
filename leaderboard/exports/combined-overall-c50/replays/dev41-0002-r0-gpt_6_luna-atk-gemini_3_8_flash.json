@@ -1,0 +1,551 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_luna-atk-gemini_3_8_flash",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_3_8_flash",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "British name for the alphabet's final letter",
+   "blocklist": [
+    "izzard",
+    "izzards",
+    "zed",
+    "zeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "cat dog sun pen cup; element 27, blue pigment",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cobalt",
+     "cobalts"
+    ],
+    [
+     "smalt",
+     "smalts"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The small cap on the end of a shoelace",
+   "blocklist": [
+    "aglet",
+    "aglets",
+    "aiglet",
+    "aiglets",
+    "ferrule"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Crocus stigma threads, a costly golden seasoning",
+   "blocklist": [
+    "safflower",
+    "safflowers",
+    "saffron",
+    "saffrons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Ancient counting frame with sliding beads",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Quietly under old ivy, nightingales nest.",
+   "blocklist": [
+    "quoin",
+    "quoins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Some towns offer night classes everywhere.",
+   "blocklist": [
+    "sconce",
+    "sconces",
+    "scone",
+    "scones",
+    "stone",
+    "stones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Northern sea duck prized for its insulating down",
+   "blocklist": [
+    "eider",
+    "eiderdown",
+    "eiderdowns",
+    "eiders",
+    "scoter",
+    "scoters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Early leaves veil evergreen ridges.",
+   "blocklist": [
+    "elver",
+    "elvers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Patient artists visit icy deserts.",
+   "blocklist": [
+    "pavid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Wild horses engulf low meadows.",
+   "blocklist": [
+    "whelm",
+    "whelms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Tired hikers often leave early.",
+   "blocklist": [
+    "thole",
+    "tholes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Young explorers gather gear.",
+   "blocklist": [
+    "yegg",
+    "yeggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Sly queens use a map; under low oak, some eagles.",
+   "blocklist": [
+    "squamulose"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A clever enigma",
+   "blocklist": [
+    "ace",
+    "aces",
+    "charade",
+    "charades",
+    "conundrum",
+    "conundrums",
+    "poser",
+    "posers",
+    "puzzle",
+    "puzzles",
+    "rebus",
+    "rebuses",
+    "riddle",
+    "riddles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Many artists need great opportunities.",
+   "blocklist": [
+    "grant",
+    "grants",
+    "mango",
+    "mangoes",
+    "mangos",
+    "patron",
+    "patronage",
+    "patronages",
+    "patrons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "X-rays attract newts; tigers hunt iguanas, chase.",
+   "blocklist": [
+    "xanthic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Folkloric elf, youthful and magical.",
+   "blocklist": [
+    "brownie",
+    "brownies",
+    "faerie",
+    "faeries",
+    "fairies",
+    "fairy",
+    "fay",
+    "fays",
+    "fey",
+    "gnome",
+    "gnomes",
+    "imp",
+    "imps",
+    "leprechaun",
+    "leprechauns",
+    "nixie",
+    "nixies",
+    "peri",
+    "peris",
+    "pixie",
+    "pixies",
+    "pixy",
+    "puck",
+    "pucks",
+    "sprite",
+    "sprites",
+    "sylph",
+    "sylphs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Mythic offspring, tiny enchantress.",
+   "blocklist": [
+    "changeling",
+    "changelings",
+    "dryad",
+    "dryads",
+    "kelpie",
+    "kelpies",
+    "mote",
+    "motes",
+    "naiad",
+    "naiads",
+    "nereid",
+    "nereids",
+    "nymph",
+    "nymphs",
+    "oread",
+    "oreads",
+    "siren",
+    "sirens",
+    "sylphid",
+    "sylphids",
+    "undine",
+    "undines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "nymphet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Very independent rabbits enjoy olives.",
+   "blocklist": [
+    "vireo",
+    "vireos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Xylophones yield lovely, youthful laughter.",
+   "blocklist": [
+    "xylyl",
+    "xylyls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Backtrack: Every clever artist reads texts.",
+   "blocklist": [
+    "retrace",
+    "retraces",
+    "trace",
+    "tracer",
+    "tracers",
+    "traces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Jolly actors craft amusing limericks.",
+   "blocklist": [
+    "jacal",
+    "jacales",
+    "jacals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Artists bake small eclairs in lavender.",
+   "blocklist": [
+    "abseil",
+    "abseils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sailors admire tranquil islands nightly.",
+   "blocklist": [
+    "satin",
+    "satins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Zealous youths mix unusual recipes; gourmets yawn.",
+   "blocklist": [
+    "zymurgies",
+    "zymurgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Players improvise and navigate octaves.",
+   "blocklist": [
+    "piano",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Little elephants march over noodles.",
+   "blocklist": [
+    "lemon",
+    "lemons",
+    "lemony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "apple",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11759.788276132938,
+  "cost_numerator": 69404200683,
+  "cost_denominator": 5901824,
+  "cost_exact": false,
+  "cost_mcse": 2.78039343342444,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 69227145963,
+   "denominator": 5901824,
+   "value": 11729.788276132938,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:945,4:3875,5:8574,6:15160,7:23054,8:28401,9:24854,10:20290,11:15500,12:11357,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.78039343342444,
+   "rollouts": 256,
+   "rank_total": 69227145963,
+   "rank_denominator": 5901824,
+   "cache_key": "fd0b132845bef6c542b42fb0e0e890f7"
+  }
+ }
+}

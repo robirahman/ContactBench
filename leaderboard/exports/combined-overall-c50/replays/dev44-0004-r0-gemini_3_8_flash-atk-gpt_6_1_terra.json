@@ -1,0 +1,514 @@
+{
+ "game_id": "dev44-0004-r0-gemini_3_8_flash-atk-gpt_6_1_terra",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_1_terra",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "center of our solar system",
+   "blocklist": [
+    "star",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "sound made by a dog",
+   "blocklist": [
+    "arf",
+    "bark",
+    "bowwow",
+    "growl",
+    "howl",
+    "ruff",
+    "woof",
+    "yap"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "keeps the doctor at bay or far",
+   "blocklist": [
+    "apple",
+    "apples",
+    "day",
+    "fruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "away"
+    },
+    {
+     "seat": "guesser2",
+     "word": "away"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "enumerate before hatching or fledging",
+   "blocklist": [
+    "chicken",
+    "chickens",
+    "chicks",
+    "count",
+    "eggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Catholic prelate or bright red songbird",
+   "blocklist": [
+    "cardinal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "throw valuable pearls before pigs or swine",
+   "blocklist": [
+    "cast",
+    "casting",
+    "casts",
+    "scatter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "silky protective case spun by moth larvae",
+   "blocklist": [
+    "chrysalis",
+    "cocoon",
+    "cocoons",
+    "pupa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "log shelter or passenger area on an airplane",
+   "blocklist": [
+    "cabin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "cannot assess a reading volume by its wrapper",
+   "blocklist": [
+    "book",
+    "cover",
+    "covers",
+    "judge",
+    "judging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "wax cylinder with an ignited wick for illumination",
+   "blocklist": [
+    "candle",
+    "candles",
+    "taper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "navigational instrument with a magnetic needle",
+   "blocklist": [
+    "compass",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "fortified medieval residence with stone towers",
+   "blocklist": [
+    "castle",
+    "castles",
+    "citadel",
+    "fort",
+    "fortress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "desert animal with humps",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "vertical counterpart to a row in a spreadsheet",
+   "blocklist": [
+    "column",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "famously commences within one's own household",
+   "blocklist": [
+    "begins",
+    "charities",
+    "charity",
+    "home"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "take on more food or work than one can masticate",
+   "blocklist": [
+    "bit",
+    "bite",
+    "bites",
+    "biting",
+    "bitten",
+    "chew",
+    "chewing",
+    "chews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "small round red stone fruit with a stem",
+   "blocklist": [
+    "cherries",
+    "cherry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "device that measures and displays the time",
+   "blocklist": [
+    "chronometer",
+    "clock",
+    "clocks",
+    "timepiece",
+    "timer",
+    "watch",
+    "watches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "aromatic spice obtained from inner tree bark",
+   "blocklist": [
+    "cassia",
+    "cassias",
+    "cinnamon",
+    "cinnamons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "infant rocker rocked by the hand ruling the world",
+   "blocklist": [
+    "bassinet",
+    "cradle",
+    "cradled",
+    "cradles",
+    "cradling",
+    "rock",
+    "rocking",
+    "rocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "disguise worn by a predatory wolf among sheep",
+   "blocklist": [
+    "cloak",
+    "cloth",
+    "clothes",
+    "clothing",
+    "costume"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "lizard known for changing skin color",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "place the wagon ahead of the equine",
+   "blocklist": [
+    "cart",
+    "carts",
+    "horse",
+    "horses",
+    "put",
+    "putting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "amphibious reptile shedding disingenuous tears",
+   "blocklist": [
+    "croc",
+    "crocodile",
+    "crocodiles",
+    "crocs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "prevention is famously better than this remedy",
+   "blocklist": [
+    "cure",
+    "cured",
+    "cures",
+    "curing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "feline domestic pet that meows and catches mice",
+   "blocklist": [
+    "cat",
+    "cats",
+    "catty",
+    "kitten",
+    "kittens",
+    "kitty",
+    "puss",
+    "pussy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "a leopard cannot alter or modify its spots",
+   "blocklist": [
+    "change",
+    "changed",
+    "changes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1184.9075034981342,
+  "cost_numerator": 40647067,
+  "cost_denominator": 34304,
+  "cost_exact": false,
+  "cost_mcse": 1.092489209952273,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 39617947,
+   "denominator": 34304,
+   "value": 1154.9075034981342,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:35,4:223,5:650,6:1279,7:2033,8:2640,9:2344,10:1994,11:1600,12:1206,13:813,14:527,15:320,16:204,17:147,18:59,19:48,20:17",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 1.092489209952273,
+   "rollouts": 256,
+   "rank_total": 356561523,
+   "rank_denominator": 308736,
+   "cache_key": "f78dad02af29ae6213dedfc9a15c42e7"
+  }
+ }
+}

@@ -1,0 +1,639 @@
+{
+ "game_id": "dev41-0003-r0-claude_haiku_5_5-atk-gemini_3_8_flash",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gemini_3_8_flash",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A common household pet that meows",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kittens",
+    "kitty",
+    "tabby",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Loyal barking companion that wags its tail",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Feathered animal that flies and sings in trees",
+   "blocklist": [
+    "avian",
+    "bird",
+    "birds",
+    "blackbird",
+    "bluebird",
+    "canary",
+    "finch",
+    "mockingbird",
+    "nightingale",
+    "oriole",
+    "robin",
+    "songbird",
+    "songbirds",
+    "sparrow",
+    "starling",
+    "thrush",
+    "warbler",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Swims in water with gills and fins",
+   "blocklist": [
+    "bass",
+    "carp",
+    "catfish",
+    "cod",
+    "eel",
+    "eels",
+    "fish",
+    "fishes",
+    "goldfish",
+    "guppy",
+    "herring",
+    "minnow",
+    "minnows",
+    "salmon",
+    "sardine",
+    "shark",
+    "sharks",
+    "trout",
+    "tuna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large animal you ride with a saddle and reins",
+   "blocklist": [
+    "bronco",
+    "broncos",
+    "camel",
+    "camels",
+    "charger",
+    "chargers",
+    "colt",
+    "colts",
+    "donkey",
+    "donkeys",
+    "equine",
+    "equines",
+    "fillies",
+    "filly",
+    "gelding",
+    "geldings",
+    "horse",
+    "horses",
+    "mare",
+    "mares",
+    "mount",
+    "mounts",
+    "mule",
+    "mules",
+    "mustang",
+    "mustangs",
+    "ponies",
+    "pony",
+    "stallion",
+    "stallions",
+    "steed",
+    "steeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Long-eared hopping creature that nibbles carrots",
+   "blocklist": [
+    "bunnies",
+    "bunny",
+    "cottontail",
+    "hare",
+    "hares",
+    "jackrabbit",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Scaly reptile that basks on sunny rocks",
+   "blocklist": [
+    "agama",
+    "agamas",
+    "alligator",
+    "alligators",
+    "anole",
+    "anoles",
+    "chameleon",
+    "chameleons",
+    "crocodile",
+    "crocodiles",
+    "gecko",
+    "geckos",
+    "iguana",
+    "iguanas",
+    "lizard",
+    "lizards",
+    "monitor",
+    "monitors",
+    "saurian",
+    "saurians",
+    "serpent",
+    "serpents",
+    "skink",
+    "skinks",
+    "snake",
+    "snakes",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles",
+    "viper",
+    "vipers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Amphibian that croaks and hops near ponds at night",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "frog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "frog"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Spiny sea creature found on ocean reefs",
+   "blocklist": [
+    "univalve",
+    "urchin",
+    "urchins",
+    "urochord",
+    "urochordate",
+    "urochordates",
+    "urochords"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Not attractive to look at",
+   "blocklist": [
+    "ugly",
+    "unappealing",
+    "unattractive",
+    "uncomely",
+    "ungainly",
+    "unlovely",
+    "unpretty",
+    "unsightly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Beneath something, the opposite of over",
+   "blocklist": [
+    "under",
+    "underbelly",
+    "underfoot",
+    "underneath",
+    "underpart",
+    "underparts",
+    "underside",
+    "undersides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Milk-producing sac on a cow or goat",
+   "blocklist": [
+    "udder",
+    "udders",
+    "utricle",
+    "utricles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Canopy you open when it rains",
+   "blocklist": [
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Single standard measure or one part of a whole",
+   "blocklist": [
+    "unary",
+    "unit",
+    "unite",
+    "unities",
+    "units",
+    "unity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Preposition meaning on top of or resting on",
+   "blocklist": [
+    "unto",
+    "upon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Forearm bone on the pinky side",
+   "blocklist": [
+    "ulna",
+    "ulnad",
+    "ulnae",
+    "ulnar",
+    "ulnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Painful open sore on the skin or stomach lining",
+   "blocklist": [
+    "ulcer",
+    "ulcerate",
+    "ulcerated",
+    "ulcerates",
+    "ulcerating",
+    "ulceration",
+    "ulcerations",
+    "ulcerative",
+    "ulcered",
+    "ulcering",
+    "ulcerogenic",
+    "ulcerous",
+    "ulcers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Mythical beast with one spiral horn on its brow",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Final, highest, or most extreme in degree",
+   "blocklist": [
+    "ultimacy",
+    "ultimate",
+    "ultimately",
+    "ultimates",
+    "ultra",
+    "ultras",
+    "upmost",
+    "uppermost",
+    "utmost",
+    "utmosts",
+    "uttermost",
+    "uttermosts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Father's or mother's brother",
+   "blocklist": [
+    "uncle",
+    "uncles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Baseball official who calls balls and strikes",
+   "blocklist": [
+    "ump",
+    "umpire",
+    "umpires",
+    "umps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Higher in position, the opposite of lower",
+   "blocklist": [
+    "uphill",
+    "upper",
+    "upperpart",
+    "upperparts",
+    "uppers",
+    "upward",
+    "upwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Small Hawaiian guitar with four strings",
+   "blocklist": [
+    "uke",
+    "ukelele",
+    "ukeleles",
+    "ukes",
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "udo ugh ughs ukase ulan ulama ulpan ulster ulema",
+   "blocklist": [
+    "udo",
+    "udos",
+    "ukase",
+    "ukases",
+    "ulama",
+    "ulamas",
+    "ulan",
+    "ulans",
+    "ulema",
+    "ulemas",
+    "ulpan",
+    "ulpanim",
+    "ulster",
+    "ulsters",
+    "uncanny",
+    "uncommon",
+    "unfamiliar",
+    "unknown",
+    "unusual"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "until"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "uhlan ubique ultima uglify ulexite ullage ulterior",
+   "blocklist": [
+    "ubique",
+    "uglify",
+    "uhlan",
+    "uhlans",
+    "ulexite",
+    "ulexites",
+    "ullage",
+    "ullages",
+    "ulterior",
+    "ultima",
+    "ultimas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "undo"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 389.7916447829132,
+  "cost_numerator": 17811919,
+  "cost_denominator": 45696,
+  "cost_exact": false,
+  "cost_mcse": 0.4525008054161191,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 16441039,
+   "denominator": 45696,
+   "value": 359.7916447829132,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:11,4:26,5:96,6:328,7:514,8:806,9:714,10:653,11:493,12:427,13:310,14:217,15:126,16:103,17:54,18:30,19:19,20:11",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4525008054161191,
+   "rollouts": 256,
+   "rank_total": 65764156,
+   "rank_denominator": 182784,
+   "cache_key": "69dc4da5ba1d7b768c0012a2fad7705c"
+  }
+ }
+}

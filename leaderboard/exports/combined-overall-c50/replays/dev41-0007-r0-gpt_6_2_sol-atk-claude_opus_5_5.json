@@ -1,0 +1,557 @@
+{
+ "game_id": "dev41-0007-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Eight-armed sea creature that squirts ink",
+   "blocklist": [
+    "cuttlefish",
+    "octopi",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "First animal in many alphabetical animal lists",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "adder",
+    "albatross",
+    "alligator",
+    "alpaca",
+    "ant",
+    "anteater",
+    "antelope",
+    "ape",
+    "asp",
+    "ass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Mercury Venus Earth Mars Jupiter Saturn Uranus: 3",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "syzygy"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "1=apple 2=banana 3=orange 4=pear 5=plum; 1+1",
+   "blocklist": [
+    "bananas",
+    "fruit",
+    "plantain",
+    "plantains",
+    "two",
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Mohs 7; SiO2; common watch crystal",
+   "blocklist": [
+    "amethyst",
+    "glass",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "silica"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Tijoyy; shift each letter back one.",
+   "blocklist": [
+    "shin",
+    "shinny",
+    "shiny",
+    "sphinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "ainomuenp <-; cat dog bat rat fox owl hen elk yak",
+   "blocklist": [
+    "pneumonia",
+    "pneumonias",
+    "pneumonic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "10 1 26 26; A=1",
+   "blocklist": [
+    "jazz",
+    "jazzed",
+    "jazzer",
+    "jazzers",
+    "jazzes",
+    "jazzier",
+    "jazziest",
+    "jazzily",
+    "jazziness",
+    "jazzing",
+    "jazzlike",
+    "jazzman",
+    "jazzmen",
+    "jazzy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "of to in is it as at be by or an; 20-8-5 (A=1)",
+   "blocklist": [
+    "than",
+    "that",
+    "the",
+    "thee",
+    "them",
+    "then",
+    "there",
+    "these",
+    "they",
+    "this",
+    "tho",
+    "those",
+    "thou",
+    "thy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Musical instrument with struck wooden bars",
+   "blocklist": [
+    "glockenspiel",
+    "marimba",
+    "marimbas",
+    "vibraphone",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Australian runner: 3 letters; last vowel is U",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "emu"
+    },
+    {
+     "seat": "guesser2",
+     "word": "emu"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "b; reverse buthtab. bear bread blue beach bottle",
+   "blocklist": [
+    "bath",
+    "bathe",
+    "bathroom",
+    "baths",
+    "bathtub",
+    "bathtubs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "buffalo beetle butterfly badger; nosib backwards",
+   "blocklist": [
+    "badgers",
+    "beetles",
+    "bison",
+    "bisons",
+    "buffaloes",
+    "buffalos",
+    "butterflies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "b be bee? No: wasp's honey-making cousin",
+   "blocklist": [
+    "beehive",
+    "beehives",
+    "beekeeper",
+    "bees",
+    "beeswax",
+    "bumble",
+    "bumblebee",
+    "bumblebees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bee"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "bar bass bark bank ball band bell belt bone; AOB<-",
+   "blocklist": [
+    "boa",
+    "boar",
+    "boas",
+    "boat",
+    "bob"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pedaled two-wheeler; 2-9-3-25-3-12-5 (A=1)",
+   "blocklist": [
+    "bicycle",
+    "bicycled",
+    "bicycler",
+    "bicyclers",
+    "bicycles",
+    "bicycling",
+    "bicyclist",
+    "bike",
+    "bikes",
+    "cycle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "YPC minus 1 each; bun bud bug bus but buy bay bit",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "box"
+    },
+    {
+     "seat": "guesser2",
+     "word": "box"
+    }
+   ],
+   "prefix_after": "bu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Cream churned into a spread; rettub reversed",
+   "blocklist": [
+    "butter",
+    "buttered",
+    "buttering",
+    "buttermilk",
+    "butters",
+    "buttery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "CVOOZ -1; buck bulk bulb bull bulkhead bully burp",
+   "blocklist": [
+    "bunk",
+    "bunko",
+    "bunnies",
+    "bunny",
+    "bunt",
+    "rabbit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "build burger business burst bust; ur with B,R ends",
+   "blocklist": [
+    "bur",
+    "burl",
+    "burly",
+    "burr",
+    "burro",
+    "burrs",
+    "burs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "bubble bundle bumper bunker; pail with a handle",
+   "blocklist": [
+    "bucket",
+    "bucketed",
+    "bucketful",
+    "bucketfuls",
+    "bucketing",
+    "buckets",
+    "bucketsful",
+    "pail",
+    "pails"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "CVAA -1; busker bustle bustle bustard button",
+   "blocklist": [
+    "buzz",
+    "buzzard",
+    "buzzards",
+    "buzzed",
+    "buzzer",
+    "buzzers",
+    "buzzes",
+    "buzzing",
+    "buzzwig",
+    "buzzword",
+    "buzzwords"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "bugle buckle buffet bulldog bullet; wor rub <-",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "burrow",
+     "burrows"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "bus bum bugged bugs bunnyhug buntings bunbury",
+   "blocklist": [
+    "bugger",
+    "bugles",
+    "bums",
+    "bundles",
+    "bunting",
+    "buses",
+    "bushel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bulldozer"
+    }
+   ],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 95.0075743140244,
+  "cost_numerator": 1994399,
+  "cost_denominator": 20992,
+  "cost_exact": false,
+  "cost_mcse": 0.2387929997857696,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1364639,
+   "denominator": 20992,
+   "value": 65.0075743140244,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:26,5:67,6:131,7:233,8:182,9:135,10:82,11:61,12:34,13:16,14:14,15:4,16:2,17:1,18:1,20:1",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.2387929997857696,
+   "rollouts": 256,
+   "rank_total": 1364639,
+   "rank_denominator": 20992,
+   "cache_key": "3c8859fe06a842220ced1607cdf364d1"
+  }
+ }
+}

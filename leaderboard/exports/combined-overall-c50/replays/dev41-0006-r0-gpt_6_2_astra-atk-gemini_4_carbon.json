@@ -1,0 +1,714 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A tuxedo at the South Pole",
+   "blocklist": [
+    "emperor",
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Welsh bowl carved by a glacier; no AEIOU",
+   "blocklist": [
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "br* offset 413 (zero-based), then five later",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "breakages",
+     "breakneck"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A fruit whose name is also a paint color",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tangerine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "orange"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A pastel shade you might find in a cobbler",
+   "blocklist": [
+    "apricot",
+    "cream",
+    "lemon",
+    "peach",
+    "peaches",
+    "plum",
+    "vanilla"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Something silver that moves quickly",
+   "blocklist": [
+    "airplane",
+    "arrow",
+    "barracuda",
+    "bicycle",
+    "blade",
+    "bolt",
+    "bullet",
+    "car",
+    "coin",
+    "comet",
+    "dart",
+    "dime",
+    "dolphin",
+    "flash",
+    "greyhound",
+    "herring",
+    "jet",
+    "lightning",
+    "mackerel",
+    "mercury",
+    "meteor",
+    "minnow",
+    "motorcycle",
+    "needle",
+    "nickel",
+    "plane",
+    "quarter",
+    "quicksilver",
+    "rocket",
+    "salmon",
+    "shark",
+    "silverfish",
+    "skate",
+    "swordfish",
+    "train",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 36,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Something yellow you might pack for lunch",
+   "blocklist": [
+    "apple",
+    "banana",
+    "bananas",
+    "butter",
+    "cake",
+    "cheddar",
+    "cheese",
+    "chip",
+    "chips",
+    "corn",
+    "cornbread",
+    "cracker",
+    "crackers",
+    "custard",
+    "egg",
+    "eggs",
+    "grapefruit",
+    "hummus",
+    "juice",
+    "lemonade",
+    "mango",
+    "melon",
+    "muffin",
+    "mustard",
+    "napkin",
+    "noodle",
+    "noodles",
+    "omelet",
+    "omelette",
+    "pasta",
+    "pear",
+    "pears",
+    "pepper",
+    "pickle",
+    "pickles",
+    "pineapple",
+    "plantain",
+    "popcorn",
+    "pretzel",
+    "pretzels",
+    "pudding",
+    "quince",
+    "roll",
+    "sandwich",
+    "squash",
+    "tart",
+    "thermos",
+    "tortilla",
+    "waffle",
+    "wrap",
+    "yogurt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 51,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A fruit whose name is also a drab paint color",
+   "blocklist": [
+    "avocado",
+    "chestnut",
+    "fig",
+    "lime",
+    "mulberry",
+    "olive",
+    "olives",
+    "sloe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Full ENABLE zero-based index: 77400 minus nine.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "intradoses",
+     "intravascular"
+    ]
+   ],
+   "blocked_word_count": 50,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "ENABLE[34567 + len(your T7 guess) - 7], 0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "crustless",
+     "cryosurgeons"
+    ]
+   ],
+   "blocked_word_count": 60,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "list_words(your T7 word's first 2 letters,456,1)",
+   "blocklist": [
+    "bunching",
+    "cocoyam",
+    "limacine",
+    "melanistic",
+    "microtones",
+    "questionably",
+    "siloxane",
+    "transfixt"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "list_words(last letter of your T7 guess,734,1)",
+   "blocklist": [
+    "efforts",
+    "garotters",
+    "handpress",
+    "negatived",
+    "ranges",
+    "tapes",
+    "watchdog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "list_words(yourT8[:2],base26(yourT7[:3],a=0),1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chillness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "baize"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "ENABLE[base26(yourT7[:4],a=0)%172608], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coolie",
+     "copastors"
+    ],
+    [
+     "radioing",
+     "raffishly"
+    ]
+   ],
+   "blocked_word_count": 200,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "ENABLE[base26(yourT7[-4:],a=0)%172608], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "backwater",
+     "bacterially"
+    ],
+    [
+     "chiaroscurists",
+     "chibouks"
+    ]
+   ],
+   "blocked_word_count": 38,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colorably"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cupreous"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "ENABLE[count_words(your T7 guess)^3], 0-based",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "accentuation"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aardvark"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "ENABLE[count_words(your T6 guess)^5 % 172608]",
+   "blocklist": [
+    "abamp",
+    "abampere",
+    "abamperes",
+    "frogs",
+    "frolic",
+    "frolicked"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "list_words(yourT7[:3],ord(yourT7[5]),1)",
+   "blocklist": [
+    "meristem",
+    "meristematic",
+    "quinidine",
+    "quinidines",
+    "quiniela",
+    "siltstones",
+    "silty",
+    "silurid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "ENABLE[ord(your T7 guess[0])], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "aberrant"
+    ]
+   ],
+   "blocked_word_count": 150,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "ENABLE[271 squared minus 150], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "impregn",
+     "improvisational"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "list_words(your T7 guess[-3:],217,1)",
+   "blocklist": [
+    "territory",
+    "territs",
+    "terror",
+    "verser",
+    "versers",
+    "verses",
+    "verset",
+    "versets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "ENABLE[ord(yourT7[0])*ord(yourT7[-1])],0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "abo",
+     "abomasus"
+    ],
+    [
+     "bedmates",
+     "beleaguerment"
+    ]
+   ],
+   "blocked_word_count": 499,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "ENABLE[sum(map(ord,yourT7))**2%172608], 0-based",
+   "blocklist": [
+    "ensanguined",
+    "leafworms",
+    "murmuring",
+    "prismoids",
+    "pullups",
+    "signorina",
+    "vermillion",
+    "winesop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gravelling"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inelegance"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "ENABLE[count_words(yourT7[:2])**2%172608]",
+   "blocklist": [
+    "bandying",
+    "bane",
+    "baneberries",
+    "compering",
+    "compete",
+    "competed",
+    "fiasco",
+    "fiascoes",
+    "fiascos",
+    "rialtos",
+    "riant",
+    "riantly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ribaldry"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ribaldry"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "list_words(e,base26(yourT7[-4:],a=0)%5000,1)",
+   "blocklist": [
+    "electromyographic",
+    "electromyographies",
+    "electromyographs",
+    "enshrinement",
+    "enshrinements",
+    "enshrines",
+    "episcopal",
+    "episcopally",
+    "episcopate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "energids"
+    },
+    {
+     "seat": "guesser2",
+     "word": "energids"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "effect effort effigy efface effete efficacy eff",
+   "blocklist": [
+    "effable",
+    "effeminate",
+    "effervesce",
+    "effervescent",
+    "efficient",
+    "effluence",
+    "effluent",
+    "effluvium",
+    "efflux",
+    "effrontery",
+    "effulgent",
+    "effuse",
+    "effusion",
+    "effusive",
+    "eft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "effects effective efficiency effortless effervesce",
+   "blocklist": [
+    "effectively",
+    "effectiveness",
+    "effervescence",
+    "efficiently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "efs efts effs eftsoon eftsoons effendi effigies",
+   "blocklist": [
+    "effaced",
+    "effected",
+    "effendis",
+    "efficacious",
+    "effortlessly",
+    "effulgence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "effacer effaces effacing effluvia effluxes effing",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effectual"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effacement"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 36.7421875,
+  "cost_numerator": 4703,
+  "cost_denominator": 128,
+  "cost_exact": false,
+  "cost_mcse": 0.058584955313106375,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 863,
+   "denominator": 128,
+   "value": 6.7421875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "7:3,8:9,9:9,10:13,11:12,12:13,13:6,14:6,15:4,16:1,17:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.058584955313106375,
+   "rollouts": 256,
+   "rank_total": 20712,
+   "rank_denominator": 3072,
+   "cache_key": "db6530a93ccb1bc916041c320b5d06d8"
+  }
+ }
+}

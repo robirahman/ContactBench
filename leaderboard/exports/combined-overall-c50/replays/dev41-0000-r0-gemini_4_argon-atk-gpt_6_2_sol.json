@@ -1,0 +1,513 @@
+{
+ "game_id": "dev41-0000-r0-gemini_4_argon-atk-gpt_6_2_sol",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_sol",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Travel suitcases and bags",
+   "blocklist": [
+    "baggage",
+    "carryon",
+    "luggage",
+    "suitcase",
+    "valise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Red tomato condiment for fries",
+   "blocklist": [
+    "catchup",
+    "catsup",
+    "ketchup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Flightless black and white Antarctic bird",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "1st word alphabetically in dictionary",
+   "blocklist": [
+    "aah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "anteater",
+    "anteaters",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Australian duck-billed egg-laying mammal",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "platypus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "platypus"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Tusked Arctic marine mammal",
+   "blocklist": [
+    "narwhal",
+    "narwhals",
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Burrowing Australian marsupial with cube poop",
+   "blocklist": [
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "H2O liquid we drink",
+   "blocklist": [
+    "water",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st word in dictionary starting with w",
+   "blocklist": [
+    "wab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Two-legged winged heraldic dragon",
+   "blocklist": [
+    "wivern",
+    "wiverns",
+    "wyvern",
+    "wyverns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Spicy green Japanese paste served with sushi",
+   "blocklist": [
+    "wasabi",
+    "wasabis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Tree-pecking bird that drills into bark",
+   "blocklist": [
+    "woodpecker",
+    "woodpeckers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Fierce weasel mammal or Marvel claw mutant",
+   "blocklist": [
+    "wolverine",
+    "wolverines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Man who transforms into a wolf under a full moon",
+   "blocklist": [
+    "werewolf",
+    "werewolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Single-wheeled garden cart pushed by two handles",
+   "blocklist": [
+    "wheelbarrow",
+    "wheelbarrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Large green-rinded summer melon with pink flesh",
+   "blocklist": [
+    "watermelon",
+    "watermelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "How much wood could this groundhog chuck",
+   "blocklist": [
+    "woodchuck",
+    "woodchucks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "African horned antelope also called a gnu",
+   "blocklist": [
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Front car window glass that wipers clean",
+   "blocklist": [
+    "windscreen",
+    "windscreens",
+    "windshield",
+    "windshields"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Small Australian hopping marsupial like a kangaroo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wallaby"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wallaby"
+    }
+   ],
+   "prefix_after": "we",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Bride and groom marriage ceremony",
+   "blocklist": [
+    "nuptial",
+    "nuptials",
+    "wedding",
+    "weddings",
+    "wedlock"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Daily forecast of rain, sun, wind and temperature",
+   "blocklist": [
+    "weather",
+    "weathers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Long-snouted beetle pest that infests cotton bolls",
+   "blocklist": [
+    "weevil",
+    "weevils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Saturday and Sunday two-day break from work",
+   "blocklist": [
+    "weekend",
+    "weekends"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sword, gun or dagger used in combat",
+   "blocklist": [
+    "weapon",
+    "weapons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Friendly greeting mat placed at the front door",
+   "blocklist": [
+    "doormat",
+    "doormats",
+    "welcome",
+    "welcomes",
+    "welcoming"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Cowboy movie genre set in the wild west",
+   "blocklist": [
+    "western",
+    "westerns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "we",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Olympic sport of raising heavy barbell weights",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "weightlifting"
+    },
+    {
+     "seat": "guesser2",
+     "word": "weightlifting"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "were weregild wergeld wergelt wergild werwolf",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "wergild"
+    ],
+    [
+     "werwolf",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 172606,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wert"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wert"
+    }
+   ],
+   "prefix_after": "wer",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 30.0,
+  "cost_numerator": 30,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,502 @@
+{
+ "game_id": "dev41-0003-r0-claude_opus_5_5-atk-gpt_6_2_sol",
+ "attacker": "claude_opus_5_5",
+ "defender": "gpt_6_2_sol",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love to peel",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Color of grass and emeralds",
+   "blocklist": [
+    "green"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Huge body of salt water, not sea",
+   "blocklist": [
+    "ocean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of night",
+   "blocklist": [
+    "day",
+    "daylight",
+    "daytime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Frozen water cubes in a drink",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Common pet that purrs and meows",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Color of blood and ripe strawberries",
+   "blocklist": [
+    "red"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Spell it: z e b r a",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Third planet from the Sun, our home",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Number after nine, written as a word",
+   "blocklist": [
+    "ten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Alphabetically first 3-letter Q word in ENABLE",
+   "blocklist": [
+    "qat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Primary color of the sky on a clear day",
+   "blocklist": [
+    "blue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Opposite of small, three letters",
+   "blocklist": [
+    "big"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Canine pet that barks",
+   "blocklist": [
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "hound",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Red fruit; Newton; tech company logo",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Citrus fruit that shares its name with a color",
+   "blocklist": [
+    "orange"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Happy, 4 letters, starts with g",
+   "blocklist": [
+    "glad"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Bird that says quack",
+   "blocklist": [
+    "drake",
+    "duck",
+    "duckling",
+    "ducks",
+    "mallard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Building where a family lives; rhymes with mouse",
+   "blocklist": [
+    "house"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Shines in the night sky, has phases",
+   "blocklist": [
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Shape with exactly three sides",
+   "blocklist": [
+    "triangle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Twinkle twinkle little ___",
+   "blocklist": [
+    "star"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Toasted loaf food for sandwiches",
+   "blocklist": [
+    "bread",
+    "toast"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "cow pig hen fox owl bee ant rat bat elk yak emu",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tree"
+    },
+    {
+     "seat": "guesser2",
+     "word": "animals"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "car bus van map pen cup hat bed box egg toy sun",
+   "blocklist": [
+    "noun",
+    "nouns",
+    "objects",
+    "things",
+    "transport",
+    "vehicle",
+    "vehicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fish"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "man boy run sit eat hot top cut set get put win",
+   "blocklist": [
+    "action",
+    "actions",
+    "syllable",
+    "syllables",
+    "trigram",
+    "trigrams",
+    "verb",
+    "verbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "book"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "one two six job law war gun oil gas tea key leg",
+   "blocklist": [
+    "digit",
+    "digits",
+    "number",
+    "numbers",
+    "numeral",
+    "numerals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "rain"
+    },
+    {
+     "seat": "guesser2",
+     "word": "words"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "way eye age air art arm ear fun joy lip mud nut",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "heart"
+    },
+    {
+     "seat": "guesser2",
+     "word": "nose"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11935.432215387651,
+  "cost_numerator": 75992610465,
+  "cost_denominator": 6366976,
+  "cost_exact": false,
+  "cost_mcse": 2.571469664745958,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 75801601185,
+   "denominator": 6366976,
+   "value": 11905.432215387651,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:893,4:3869,5:8589,6:15206,7:23092,8:28409,9:24871,10:20301,11:15504,12:11357,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.571469664745958,
+   "rollouts": 256,
+   "rank_total": 75801601185,
+   "rank_denominator": 6366976,
+   "cache_key": "6e29fb5bdc573c70aca8e73912de26ef"
+  }
+ }
+}

@@ -1,0 +1,651 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_2_astra-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_argon",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a mammal you might see at a zoo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "otter"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elephant"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest living land animal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Think of an oddball egg-layer; not a bird",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnae",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "ENABLE su offset 843 limit 1",
+   "blocklist": [
+    "substantiveness",
+    "substantivenesses",
+    "substantives",
+    "substantivize",
+    "substantivized"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "list_words prefix tr offset (23*31), first entry",
+   "blocklist": [
+    "transship",
+    "transshipment",
+    "transshipments",
+    "transshipped",
+    "transshipping",
+    "transships",
+    "transsonic",
+    "transthoracic",
+    "transthoracically",
+    "transubstantial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Pick a chemical element, not a common one",
+   "blocklist": [
+    "astatine",
+    "francium",
+    "molybdenum",
+    "praseodymium",
+    "xenon",
+    "ytterbium",
+    "yttrium",
+    "zirconium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cobalt"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words re offset 64*len(your turn6 word)",
+   "blocklist": [
+    "rearm",
+    "rearmament",
+    "reassembly",
+    "reassert",
+    "reauthorize",
+    "reauthorized",
+    "rebegins",
+    "rebegun",
+    "rebottled",
+    "rebottles",
+    "recalcitrance",
+    "recalcitrances",
+    "recapture",
+    "recaptured",
+    "recertifications",
+    "recertified"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "list_words(ca,count_words(your T6 word[:2]),1)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "caziques"
+    ]
+   ],
+   "blocked_word_count": 3000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "list_words('',1000*atomic_number(your T6 pick),1)",
+   "blocklist": [
+    "depaint",
+    "depainted",
+    "detonates",
+    "detonating",
+    "discombobulations",
+    "discomfit",
+    "fatuousnesses",
+    "fatwa",
+    "frizes",
+    "frizette",
+    "horticultures",
+    "horticulturist",
+    "lister",
+    "listerioses",
+    "macrophage",
+    "macrophages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "list_words('',1001*Z(your T6 element),1)",
+   "blocklist": [
+    "dependency",
+    "dependent",
+    "detrain",
+    "detrained",
+    "disconnectedly",
+    "disconnectedness",
+    "fava",
+    "favas",
+    "fromenties",
+    "fromenty",
+    "hostilities",
+    "hostility",
+    "litho",
+    "lithoed",
+    "madrigalist",
+    "madrigalists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "list_words('',100*count_words(your T6 pick[:2]),1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "antinovelist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ace"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "list_words('',1003*Z(your T6 element),1)",
+   "blocklist": [
+    "depolarized",
+    "depolarizer",
+    "devastative",
+    "devastator",
+    "discoverer",
+    "discoverers",
+    "featherbrain",
+    "featherbrained",
+    "frozenness",
+    "frozennesses",
+    "houseless",
+    "houselessness",
+    "lixiviated",
+    "lixiviates",
+    "magnifico",
+    "magnificoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "list_words('',123*count_words(your T6 pick[:3]),1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "allegorizes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "acnodes"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Choose any dictionary entry from maa to zyzzyvas",
+   "blocklist": [
+    "maar",
+    "maars",
+    "zyzzyva"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "serendipity"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Empty prefix, index 2^(len(your T11 word)+13)-15",
+   "blocklist": [
+    "hachuring",
+    "hacienda",
+    "haciendado"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "list_words('',count_words('sk')**2,1)",
+   "blocklist": [
+    "vicariously",
+    "vicariousness",
+    "vicariousnesses",
+    "vicarly",
+    "vicars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Any six-letter word; let your intuition decide",
+   "blocklist": [
+    "chance",
+    "feeling",
+    "future",
+    "instinct",
+    "random",
+    "secret",
+    "sense",
+    "sixth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "banana"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "list_words('',1007*count_words(your T6[-2:]),1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "innermosts"
+    },
+    {
+     "seat": "guesser2",
+     "word": "innermosts"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "list_words('t',93*count_words(your T6[-2:]),1)",
+   "blocklist": [
+    "tab",
+    "tabanid",
+    "trimness",
+    "trimnesses",
+    "trimonthly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "T-list offset 43*count(your T6[-2:])+51",
+   "blocklist": [
+    "tablespoon",
+    "tablespoonful",
+    "tablespoonfuls",
+    "thoughts",
+    "thoughtway",
+    "thoughtways"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "list_words('t',137*count_words(your T20[-3:]),1)",
+   "blocklist": [
+    "tabanids",
+    "tabard",
+    "tachometer",
+    "tachometers",
+    "tachs",
+    "tachyarrhythmia",
+    "tachyarrhythmias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thirls"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thirls"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "list_words('th',37*count_words(your T20[-3:]),1)",
+   "blocklist": [
+    "thack",
+    "thacked",
+    "thanages",
+    "thanatological",
+    "threshing",
+    "threshold",
+    "thresholds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "list_words('th',113*count_words(your T22[-4:]),1)",
+   "blocklist": [
+    "thacking",
+    "thacks",
+    "theca",
+    "thecae",
+    "thecal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thoracal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thoracal"
+    }
+   ],
+   "prefix_after": "tha",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "that than thank thanks thaw thaws thatch thawing",
+   "blocklist": [
+    "thalamus",
+    "thallium",
+    "thane",
+    "thanes",
+    "thanked",
+    "thankful",
+    "thankfully",
+    "thanking",
+    "thankless",
+    "thanksgiving",
+    "thatched",
+    "thatches",
+    "thawed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "thatcher thatching thaler thallus thalami thalli",
+   "blocklist": [
+    "thae",
+    "thalamic",
+    "thalassemia",
+    "thalassemias",
+    "thalassic",
+    "thalers",
+    "thalidomide",
+    "thallic",
+    "thalliums",
+    "thalloid",
+    "thallophyte",
+    "thallophytes",
+    "thallous",
+    "thalluses",
+    "thanatology",
+    "thanatos",
+    "thanker",
+    "thankers",
+    "thankfulness",
+    "thanklessly",
+    "thanklessness",
+    "thanksgivings",
+    "thatchers",
+    "thatchy",
+    "thaumaturge",
+    "thaumaturges",
+    "thaumaturgist",
+    "thaumaturgists",
+    "thaumaturgy",
+    "thawer",
+    "thawers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 31,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "thairm thairms tharm tharms thanage thataway",
+   "blocklist": [
+    "thalassaemia",
+    "thalassaemias",
+    "thalassemic",
+    "thalassemics",
+    "thalassocracies",
+    "thalassocracy",
+    "thalassocrat",
+    "thalassocrats",
+    "thalidomides",
+    "thallophytic",
+    "thanatologies",
+    "thanatologist",
+    "thanatologists",
+    "thaneship",
+    "thaneships",
+    "thankfuller",
+    "thankfullest",
+    "thankfulnesses",
+    "thanklessnesses",
+    "thankworthy",
+    "thatchier",
+    "thatchiest",
+    "thaumaturgic",
+    "thaumaturgies",
+    "thawless"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "thanatoses",
+   "prefix_after": "tha",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 27.0,
+  "cost_numerator": 27,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

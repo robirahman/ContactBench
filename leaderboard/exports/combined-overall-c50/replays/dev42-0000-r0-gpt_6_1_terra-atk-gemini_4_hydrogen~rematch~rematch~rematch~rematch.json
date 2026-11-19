@@ -1,0 +1,95 @@
+{
+ "game_id": "dev42-0000-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "misidentify",
+ "initial_prefix": "misi",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 28,
+ "initial_secret_candidates": [
+  "misidentification",
+  "misidentifications",
+  "misidentified",
+  "misidentifies",
+  "misidentify",
+  "misidentifying",
+  "misimpression",
+  "misimpressions",
+  "misinfer",
+  "misinferred",
+  "misinferring",
+  "misinfers",
+  "misinform",
+  "misinformation",
+  "misinformations",
+  "misinformed",
+  "misinforming",
+  "misinforms",
+  "misinter",
+  "misinterpret",
+  "misinterpretation",
+  "misinterpretations",
+  "misinterpreted",
+  "misinterpreting",
+  "misinterprets",
+  "misinterred",
+  "misinterring",
+  "misinters"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "misinfer misinform misinter; misunderstand",
+   "blocklist": [
+    "misinterpret"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "misi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "misinformation misidentify; false impression",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "misi",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 2.0,
+  "cost_numerator": 2,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2999,
+   "denominator": 1024,
+   "value": 2.9287109375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "8:2,9:3,10:1,11:4,12:4,13:4,14:4,15:2,17:2,18:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.042585423559898576,
+   "rollouts": 256,
+   "rank_total": 2999,
+   "rank_denominator": 1024,
+   "cache_key": "271c80f9640ba133d7e6e63158bd52da"
+  },
+  "fallback": null
+ }
+}

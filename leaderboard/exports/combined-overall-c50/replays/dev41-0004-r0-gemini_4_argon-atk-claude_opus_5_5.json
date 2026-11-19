@@ -1,0 +1,538 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "suitcases and bags carried by a traveler",
+   "blocklist": [
+    "baggage",
+    "bags",
+    "gear",
+    "luggage",
+    "suitcases",
+    "trunks",
+    "valises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "large African river mammal known as a river horse",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "duck-billed egg-laying mammal of Australia",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "hopping marsupial of Australia with a pouch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "green fruit used to make guacamole",
+   "blocklist": [
+    "avocado",
+    "avocados"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "seabird around the Mariner's neck in Coleridge",
+   "blocklist": [
+    "albatross",
+    "albatrosses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "burrowing African mammal known as an earth pig",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "mammal with a bony shell that rolls into a ball",
+   "blocklist": [
+    "armadillo",
+    "armadillos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "reptile with a broad snout found in the Everglades",
+   "blocklist": [
+    "alligator",
+    "alligators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "counting frame with beads sliding on wires",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "musical instrument with bellows and keys",
+   "blocklist": [
+    "accordion",
+    "accordionist",
+    "accordions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "chain or group of islands in a sea",
+   "blocklist": [
+    "archipelagic",
+    "archipelago",
+    "archipelagoes",
+    "archipelagos",
+    "atoll",
+    "atolls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "thistle-like vegetable with an edible heart",
+   "blocklist": [
+    "artichoke",
+    "artichokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "spring vegetable with green spears",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "asparagus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "asparagus"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "toxic chemical element with symbol As",
+   "blocklist": [
+    "arsenic",
+    "arsenical",
+    "arsenicals",
+    "arsenics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "inert noble gas with atomic number 18",
+   "blocklist": [
+    "argon",
+    "argons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "truce ending WWI on November 11, 1918",
+   "blocklist": [
+    "armistice",
+    "armistices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "eight-legged creature like a spider or scorpion",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "arachnoid",
+    "arachnoids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Spanish fleet sent against England in 1588",
+   "blocklist": [
+    "armada",
+    "armadas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "sport of shooting arrows with a bow at a target",
+   "blocklist": [
+    "archer",
+    "archeries",
+    "archers",
+    "archery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "study of ancient human history via artifacts",
+   "blocklist": [
+    "archaeological",
+    "archaeologies",
+    "archaeologist",
+    "archaeologists",
+    "archaeology",
+    "archeological",
+    "archeologies",
+    "archeologist",
+    "archeologists",
+    "archeology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "painful inflammation and stiffness of the joints",
+   "blocklist": [
+    "arthritic",
+    "arthritically",
+    "arthritics",
+    "arthritides",
+    "arthritis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "peppery salad green also called rocket",
+   "blocklist": [
+    "arugula",
+    "arugulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "elementary math of addition and subtraction",
+   "blocklist": [
+    "arithmetic",
+    "arithmetics"
+   ],
+   "blocked_ranges": [
+    [
+     "arithmetic",
+     "arithmetics"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "irregular heartbeat condition",
+   "blocklist": [
+    "arrhythmia",
+    "arrhythmias",
+    "arrhythmic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "art and science of designing buildings",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "architect",
+     "architectures"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "holistic treatment using fragrant essential oils",
+   "blocklist": [
+    "aromatherapies",
+    "aromatherapist",
+    "aromatherapists",
+    "aromatherapy",
+    "aromatic",
+    "aromatics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "chord whose notes are played in rapid succession",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "arpeggiate",
+     "arpeggios"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "feathered Jurassic dinosaur-like fossil bird",
+   "blocklist": [
+    "archaeopteryx",
+    "archaeopteryxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "invertebrate phylum with exoskeleton and joints",
+   "blocklist": [
+    "arthropod",
+    "arthropods"
+   ],
+   "blocked_ranges": [
+    [
+     "arthropod",
+     "arthropods"
+    ]
+   ],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 83.81624615778688,
+  "cost_numerator": 2617749,
+  "cost_denominator": 31232,
+  "cost_exact": false,
+  "cost_mcse": 0.15695881192902938,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1680789,
+   "denominator": 31232,
+   "value": 53.816246157786885,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:20,5:48,6:95,7:122,8:141,9:118,10:82,11:63,12:45,13:28,14:14,15:10,16:11,17:3,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.15695881192902938,
+   "rollouts": 256,
+   "rank_total": 1680789,
+   "rank_denominator": 31232,
+   "cache_key": "aa8e3f33d120b40a6124cdf092cddc42"
+  }
+ }
+}

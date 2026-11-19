@@ -1,0 +1,377 @@
+{
+ "game_id": "dev42-0000-r0-claude_sonnet_5_5-atk-gemini_4_hydrogen",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_hydrogen",
+ "secret": "misidentify",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "the",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "and",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "feline pet that meows",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "canine pet that barks",
+   "blocklist": [
+    "dog",
+    "hound",
+    "mutt",
+    "pooch",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "star at center of our solar system, shines daily",
+   "blocklist": [
+    "sol",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "opposite of night, 24 hours long",
+   "blocklist": [
+    "day",
+    "daylight",
+    "daytime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "clear liquid we drink; H2O; rain, rivers, oceans",
+   "blocklist": [
+    "aqua",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "tall woody plant with leaves and branches",
+   "blocklist": [
+    "tree",
+    "trees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "building where a family lives, with roof and door",
+   "blocklist": [
+    "abode",
+    "dwelling",
+    "home",
+    "house",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Earth's natural satellite that glows in the sky",
+   "blocklist": [
+    "luna",
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "frozen water cube in a drink; melts when warm",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "pages bound together for reading",
+   "blocklist": [
+    "book",
+    "books",
+    "novel",
+    "tome",
+    "volume"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "fruit that keeps the doctor away",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "baked loaf staple, sliced and toasted for toast",
+   "blocklist": [
+    "bread",
+    "breads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "yellow curved fruit monkeys peel and eat",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "six-string instrument strummed by rock musicians",
+   "blocklist": [
+    "guitar",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pacific or Atlantic, vast salt water body",
+   "blocklist": [
+    "ocean",
+    "sea",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "time",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "man",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "red",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "one",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "ten",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "year",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "people",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "love",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12051.654298638658,
+  "cost_numerator": 47833305151,
+  "cost_denominator": 3969024,
+  "cost_exact": false,
+  "cost_mcse": 3.1551609260713667,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 47714234431,
+   "denominator": 3969024,
+   "value": 12021.654298638658,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:953,4:3873,5:8602,6:15208,7:23101,8:28413,9:24870,10:20301,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.1551609260713667,
+   "rollouts": 256,
+   "rank_total": 47714234431,
+   "rank_denominator": 3969024,
+   "cache_key": "41ee54a8736b144185209dfc2631bb4f"
+  }
+ }
+}

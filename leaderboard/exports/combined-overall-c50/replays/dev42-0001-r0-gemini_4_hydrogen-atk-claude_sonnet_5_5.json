@@ -1,0 +1,516 @@
+{
+ "game_id": "dev42-0001-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "phonemic",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "device for viewing distant stars",
+   "blocklist": [
+    "scope",
+    "spyglass",
+    "star",
+    "stars",
+    "telescope",
+    "telescopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "yellow curved fruit",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "fruit",
+    "plantain",
+    "plantains",
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill",
+   "blocklist": [
+    "bill",
+    "duck",
+    "echidna",
+    "egg",
+    "laying",
+    "mammal",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "color changing lizard",
+   "blocklist": [
+    "anole",
+    "camouflage",
+    "chameleon",
+    "chameleons",
+    "changing",
+    "color",
+    "gecko",
+    "iguana",
+    "lizard",
+    "reptile"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "magnetic navigation instrument",
+   "blocklist": [
+    "binnacle",
+    "compass",
+    "gyrocompass",
+    "instrument",
+    "lodestone",
+    "magnet",
+    "magnetic",
+    "navigation",
+    "needle",
+    "north"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "pleated bellows instrument",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "accordion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "accordion"
+    }
+   ],
+   "prefix_after": "p",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "flightless black and white antarctic bird",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ancient egyptian tomb",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pyramid"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pyramid"
+    }
+   ],
+   "prefix_after": "ph",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "mythical creature reborn from ashes",
+   "blocklist": [
+    "phoenix"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ph",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "ghostly apparition or spirit",
+   "blocklist": [
+    "phantasm",
+    "phantasmal",
+    "phantasms",
+    "phantom",
+    "phantoms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ph",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "ancient egyptian ruler",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pharaoh"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pharaoh"
+    }
+   ],
+   "prefix_after": "pho",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "irrational fear",
+   "blocklist": [
+    "phobia",
+    "phobias",
+    "phobic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "antique record player",
+   "blocklist": [
+    "phonograph",
+    "phonographic",
+    "phonographically",
+    "phonographies",
+    "phonographs",
+    "phonography"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "particle of light",
+   "blocklist": [
+    "photon",
+    "photons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "handheld calling device",
+   "blocklist": [
+    "phone",
+    "phoned",
+    "phones",
+    "phoney",
+    "phonier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "picture taken with a camera",
+   "blocklist": [
+    "photo",
+    "photograph",
+    "photographed",
+    "photographer",
+    "photographs",
+    "photos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "small north american flycatcher bird",
+   "blocklist": [
+    "phoebe",
+    "phoebes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "glowing chemical element fifteen",
+   "blocklist": [
+    "phosphor",
+    "phosphorus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "plant process converting sunlight into energy",
+   "blocklist": [
+    "photosynthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "relating to speech sounds",
+   "blocklist": [
+    "phoneme",
+    "phonemes",
+    "phonetic",
+    "phonetics",
+    "phonic",
+    "phonics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "xeroxed document duplicate",
+   "blocklist": [
+    "photocopied",
+    "photocopier",
+    "photocopiers",
+    "photocopies",
+    "photocopy",
+    "photocopying",
+    "photostat",
+    "photostats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "looking attractive on camera",
+   "blocklist": [
+    "photogenic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "luminous outer layer of the sun",
+   "blocklist": [
+    "photosphere",
+    "photospheres"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "fake or counterfeit",
+   "blocklist": [
+    "phonies",
+    "phoniest",
+    "phony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "chemical salt used in fertilizer",
+   "blocklist": [
+    "phosphatase",
+    "phosphate",
+    "phosphates",
+    "phosphatic",
+    "phosphide",
+    "phosphine",
+    "phosphite",
+    "phosphonium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "study of speech sounds",
+   "blocklist": [
+    "phonemics",
+    "phonologic",
+    "phonological",
+    "phonologies",
+    "phonologist",
+    "phonology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "pho",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 69.295166015625,
+  "cost_numerator": 283833,
+  "cost_denominator": 4096,
+  "cost_exact": false,
+  "cost_mcse": 0.35325261877512226,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 160953,
+   "denominator": 4096,
+   "value": 39.295166015625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:3,6:6,7:13,8:16,9:25,10:34,11:34,12:62,13:51,14:48,15:48,16:42,17:29,18:17,19:14,20:9",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.35325261877512226,
+   "rollouts": 256,
+   "rank_total": 160953,
+   "rank_denominator": 4096,
+   "cache_key": "8686543f39eba3c64be8d29394df5c3a"
+  }
+ }
+}

@@ -1,0 +1,789 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "First in many dictionaries; African ant eater",
+   "blocklist": [
+    "aah",
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "echidna",
+    "echidnae",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "cat dog sun moon tree book time love red blue",
+   "blocklist": [
+    "basic",
+    "common",
+    "list",
+    "noun",
+    "nouns",
+    "simple",
+    "word",
+    "words"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quartz"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Reverse this: enohpolyx",
+   "blocklist": [
+    "xylophone",
+    "xylophones",
+    "xylophonist",
+    "xylophonists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "aaa aab aac aad aae aaf aag aai aaj aak aaz",
+   "blocklist": [
+    "aahed",
+    "aahing",
+    "aahs",
+    "aal",
+    "aalii",
+    "aaliis",
+    "aals",
+    "aargh",
+    "aarrgh",
+    "aarrghh",
+    "aas",
+    "aasvogel",
+    "aasvogels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zebra"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "cat dog sun 3+1; music of Duke Ellington",
+   "blocklist": [
+    "bebop",
+    "bebops",
+    "blues",
+    "bop",
+    "bops",
+    "four",
+    "fours",
+    "fourth",
+    "fourths",
+    "jazz",
+    "jazzed",
+    "jazzer",
+    "jazzers",
+    "jazzes",
+    "jazzier",
+    "jazziest",
+    "jazzily",
+    "jazziness",
+    "jazzinesses",
+    "jazzing",
+    "jazzlike",
+    "jazzman",
+    "jazzmen",
+    "jazzy",
+    "ragtime",
+    "ragtimes",
+    "swing",
+    "swinging",
+    "swings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 29,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Eight-armed sea creature that squirts ink",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "cuttlefish",
+    "cuttlefishes",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid",
+    "squids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Tux: Linux's mascot, named for its kind",
+   "blocklist": [
+    "bird",
+    "birds",
+    "penguin",
+    "penguins",
+    "seabird",
+    "seabirds",
+    "tuxedo",
+    "tuxedoed",
+    "tuxedoes",
+    "tuxedos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "alinauuq; shift each letter back by six",
+   "blocklist": [
+    "quanta",
+    "quantile",
+    "quantiles",
+    "quantities",
+    "quantity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "umbrella"
+    },
+    {
+     "seat": "guesser2",
+     "word": "fishhook"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "str_ngths | area arise raise irate later stare",
+   "blocklist": [
+    "alert",
+    "alter",
+    "aster",
+    "rates",
+    "strength",
+    "strengthen",
+    "strengthened",
+    "strengthener",
+    "strengtheners",
+    "strengthening",
+    "strengthens",
+    "strengths",
+    "tears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Yellow fruit; also the answer to b_n_n_.",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "lemon",
+    "lemons",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "7: P0m3gr4n4t3; 0=o, 3=e, 4=a",
+   "blocklist": [
+    "pomegranate",
+    "pomegranates",
+    "seven",
+    "sevens",
+    "seventh",
+    "sevenths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "ace act add age air ale ape apt arc ark arm art",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abyss"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ash"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "bcd=abc; cqrmf? bqqmf. bat bar bad ban bag bay bee",
+   "blocklist": [
+    "apple",
+    "apples",
+    "bed",
+    "beg",
+    "bet",
+    "big",
+    "bit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "za ad ax ay be bi bo by de do em en er es et ex fa",
+   "blocklist": [
+    "scrabble",
+    "scrabbles",
+    "two",
+    "twos",
+    "zag",
+    "zany",
+    "zap",
+    "zarf",
+    "zax",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sphinx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pizza"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "g_r_ff_ | aba abb abd abo abs abt abu abw abx",
+   "blocklist": [
+    "aba",
+    "abas",
+    "abba",
+    "abbe",
+    "abbey",
+    "abbot",
+    "aby",
+    "giraffe",
+    "giraffes",
+    "giraffish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "one man can run out and get you her all day now",
+   "blocklist": [
+    "monolith",
+    "third",
+    "thirds",
+    "three",
+    "threes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "rhinoceros"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zucchini"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "M31 is one; owl cow fox elk ant bee yak emu ram",
+   "blocklist": [
+    "andromeda",
+    "andromedas",
+    "animal",
+    "animals",
+    "fauna",
+    "faunas",
+    "galaxies",
+    "galaxy",
+    "messier",
+    "nebula",
+    "nebulae",
+    "nebulas",
+    "spiral",
+    "spirals",
+    "zoo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Q followed by two U-E pairs; a waiting line",
+   "blocklist": [
+    "queue",
+    "queued",
+    "queueing",
+    "queuer",
+    "queuers",
+    "queues",
+    "queuing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "r h y t h m | antidisestablishmentarianism",
+   "blocklist": [
+    "rhythm",
+    "rhythmic",
+    "rhythmical",
+    "rhythmically",
+    "rhythmicities",
+    "rhythmicity",
+    "rhythmics",
+    "rhythmist",
+    "rhythmists",
+    "rhythmization",
+    "rhythmizations",
+    "rhythmize",
+    "rhythmized",
+    "rhythmizes",
+    "rhythmizing",
+    "rhythms",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "aba abacus? No: ace ice oak elm fir ash yew box",
+   "blocklist": [
+    "abaca",
+    "abacas",
+    "abaci",
+    "aback",
+    "abacuses",
+    "bay",
+    "bays",
+    "fig",
+    "figs",
+    "forest",
+    "forests",
+    "maple",
+    "maples",
+    "pine",
+    "pines",
+    "tree",
+    "trees",
+    "wood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abacus"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "lyn lin lnx | ape rat bat pig hen doe ewe sow",
+   "blocklist": [
+    "bitch",
+    "female",
+    "females",
+    "lioness",
+    "lyncean",
+    "lynch",
+    "lynched",
+    "lyncher",
+    "lynchers",
+    "lynches",
+    "lynching",
+    "lynchings",
+    "lynchpin",
+    "lynchpins",
+    "lynx",
+    "lynxes",
+    "mare",
+    "vixen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "j-gu-r | ant bear lion tiger wolf hare mole toad",
+   "blocklist": [
+    "cheetah",
+    "cougar",
+    "feline",
+    "jaguar",
+    "jaguarondi",
+    "jaguarondis",
+    "jaguars",
+    "jaguarundi",
+    "jaguarundis",
+    "leopard",
+    "mammals",
+    "panther",
+    "puma"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Six strings: aa ad ae ag ah ai al am an as at aw",
+   "blocklist": [
+    "arb",
+    "axe",
+    "axes",
+    "aye",
+    "ayes",
+    "ays",
+    "digraph",
+    "digraphs",
+    "guitar",
+    "guitarfish",
+    "guitarfishes",
+    "guitarist",
+    "guitarists",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "88 keys; aah ab aba cat dog sun moon ant bee oak",
+   "blocklist": [
+    "abaft",
+    "abaka",
+    "abalone",
+    "abandon",
+    "abase",
+    "abash",
+    "abate",
+    "abbas",
+    "abbes",
+    "abbess",
+    "abbeys",
+    "abbots",
+    "harpsichord",
+    "harpsichordist",
+    "harpsichordists",
+    "harpsichords",
+    "keyboard",
+    "keyboarded",
+    "keyboarder",
+    "keyboarders",
+    "keyboarding",
+    "keyboardist",
+    "keyboardists",
+    "keyboards",
+    "pianist",
+    "pianistic",
+    "pianistically",
+    "pianists",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Four-string instrument between viola and bass",
+   "blocklist": [
+    "banjo",
+    "celli",
+    "cellist",
+    "cellists",
+    "cello",
+    "cellos",
+    "fiddle",
+    "mandolin",
+    "ukulele",
+    "violin",
+    "violoncelli",
+    "violoncellist",
+    "violoncellists",
+    "violoncello",
+    "violoncellos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "akkordion | oboe flute harp tuba trombone piccolo",
+   "blocklist": [
+    "accordion",
+    "accordionist",
+    "accordionists",
+    "accordions",
+    "brass",
+    "brasses",
+    "clarinet",
+    "clarinetist",
+    "clarinetists",
+    "clarinets",
+    "clarinettist",
+    "clarinettists",
+    "instrumental",
+    "instrumentalist",
+    "instrumentalists",
+    "instrumentals",
+    "instrumentation",
+    "instrumentations",
+    "instruments",
+    "orchestra",
+    "orchestral",
+    "orchestras",
+    "trumpet",
+    "trumpeter",
+    "trumpeters",
+    "trumpets",
+    "woodwind",
+    "woodwinds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Pipe keyboard; ail aim alb ale amp ana ani axe ads",
+   "blocklist": [
+    "calliope",
+    "calliopes",
+    "harmonium",
+    "harmoniums",
+    "organ",
+    "organa",
+    "organist",
+    "organists",
+    "organon",
+    "organons",
+    "organs",
+    "organum",
+    "organums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11916.25752398089,
+  "cost_numerator": 75788160493,
+  "cost_denominator": 6360064,
+  "cost_exact": false,
+  "cost_mcse": 2.4557696544138494,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 75597358573,
+   "denominator": 6360064,
+   "value": 11886.25752398089,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:877,4:3850,5:8567,6:15172,7:23052,8:28371,9:24844,10:20275,11:15486,12:11343,13:7818,14:5124,15:3189,16:1941,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.4557696544138494,
+   "rollouts": 256,
+   "rank_total": 75597358573,
+   "rank_denominator": 6360064,
+   "cache_key": "7f7c5e4846ff31adfc542aa5f01da991"
+  }
+ }
+}

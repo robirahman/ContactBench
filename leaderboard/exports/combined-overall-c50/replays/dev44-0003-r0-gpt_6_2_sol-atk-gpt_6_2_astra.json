@@ -1,0 +1,456 @@
+{
+ "game_id": "dev44-0003-r0-gpt_6_2_sol-atk-gpt_6_2_astra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_2_astra",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Color-changing lizard: gecko iguana skink anole?",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Feline pet: dog fox bat rat elk hen cow owl ape",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Trunked giant: ant bee emu pig yak ram doe eel",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A is for this long-snouted African termite eater",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "anteater",
+    "anteaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Mexican walking fish: cod gar koi ray dab sole",
+   "blocklist": [
+    "axolotl",
+    "axolotls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Duck-billed mammal: pug boar hare mole vole lynx",
+   "blocklist": [
+    "monotreme",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Most frequent English word; definite article",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped equid? zebra? lion wolf bear seal tuna",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebras",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Eight arms; squid shark perch clam crab newt toad",
+   "blocklist": [
+    "cephalopod",
+    "octopi",
+    "octopod",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Rikki-Tikki-Tavi: cobra viper asp boa python adder",
+   "blocklist": [
+    "ichneumon",
+    "ichneumons",
+    "mongoose",
+    "mongooses",
+    "snake",
+    "snakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Tuxedo bird: auk ibis tern gull kiwi rhea swan oil",
+   "blocklist": [
+    "penguin",
+    "penguins",
+    "puffin",
+    "puffins",
+    "razorbill",
+    "razorbills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Tallest land animal: ape? no. bat? no. gnu ox emu",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Horned pachyderm: rhino bison moose tapir hippo",
+   "blocklist": [
+    "rhinoceros",
+    "rhinoceroses",
+    "rhinos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Tusked whale: and you are was not but all can had",
+   "blocklist": [
+    "narwal",
+    "narwals",
+    "narwhal",
+    "narwhale",
+    "narwhales",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Joey carrier; koala panda sloth horse tiger",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Inuit snow house: ice ion imp ink ill ivy inn itch",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Alpine wild goat (impala ibis iris iron idea item)",
+   "blocklist": [
+    "ibex",
+    "ibexes",
+    "ibices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Thumb-spiked dinosaur: iodine insect island ivory",
+   "blocklist": [
+    "iguanodon",
+    "iguanodons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Plural of the green arboreal pet reptile",
+   "blocklist": [
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Titanic's obstacle; ibis? iguanian iguanid",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Frozen drip hanging from a roof",
+   "blocklist": [
+    "icicle",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Rock formed by cooling magma or lava",
+   "blocklist": [
+    "igneous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Endlessness: is it in its if into islet isles?",
+   "blocklist": [
+    "infiniteness",
+    "infinities",
+    "infinitude",
+    "infinitudes",
+    "infinity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Blue dye? ire icy ick ids ins ism ilk ilk ibis",
+   "blocklist": [
+    "indigo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 565.1968065571581,
+  "cost_numerator": 67715099,
+  "cost_denominator": 119808,
+  "cost_exact": false,
+  "cost_mcse": 0.5916974805837365,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 64120859,
+   "denominator": 119808,
+   "value": 535.1968065571581,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:49,5:113,6:275,7:500,8:729,9:851,10:936,11:858,12:766,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.5916974805837365,
+   "rollouts": 256,
+   "rank_total": 128241718,
+   "rank_denominator": 239616,
+   "cache_key": "48716cdb3770f8003a5996f2018d91a7"
+  }
+ }
+}

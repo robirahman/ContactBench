@@ -1,0 +1,539 @@
+{
+ "game_id": "dev44-0004-r0-gemini_4_hydrogen-atk-claude_opus_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_opus_5_5",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "rain shield you hold over your head",
+   "blocklist": [
+    "brolly",
+    "parasol",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "hum into this buzzing toy instrument",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kazoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kazoo"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "crescent-shaped flaky french pastry",
+   "blocklist": [
+    "crescent",
+    "croissant",
+    "croissants",
+    "cruller"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "spiky desert plant",
+   "blocklist": [
+    "cacti",
+    "cactus",
+    "cactuses",
+    "century",
+    "cereus",
+    "cholla"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "color-changing lizard",
+   "blocklist": [
+    "chameleon",
+    "chameleonic",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "one-eyed giant from greek myth",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cyclops"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cyclops"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "hairy tropical nut with milk inside",
+   "blocklist": [
+    "coco",
+    "cocoanut",
+    "cocoanuts",
+    "coconut",
+    "coconuts",
+    "cocos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "howling wild dog of north america",
+   "blocklist": [
+    "coydog",
+    "coydogs",
+    "coyote",
+    "coyotes",
+    "coyotillo",
+    "coyotillos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "deep blue pigment or element 27",
+   "blocklist": [
+    "cobalt",
+    "cobaltic",
+    "cobaltine",
+    "cobaltines",
+    "cobaltite",
+    "cobaltites",
+    "cobaltous",
+    "cobalts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "hooded venomous snake",
+   "blocklist": [
+    "cobra",
+    "cobras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "icy space object with a bright tail",
+   "blocklist": [
+    "comet",
+    "cometary",
+    "cometic",
+    "comets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "morning caffeinated brew from roasted beans",
+   "blocklist": [
+    "cocoa",
+    "cocoas",
+    "coffee",
+    "coffees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "magnetic north-pointing navigation tool",
+   "blocklist": [
+    "compass",
+    "compassed",
+    "compasses",
+    "compassing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "rodeo rider herding cattle on horseback",
+   "blocklist": [
+    "cowboy",
+    "cowboys",
+    "cowgirl",
+    "cowgirls",
+    "cowhand",
+    "cowhands",
+    "cowherd",
+    "cowherds",
+    "cowman",
+    "cowmen",
+    "cowpoke",
+    "cowpokes",
+    "cowpuncher",
+    "cowpunchers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "spiral tool for pulling wine bottle stoppers",
+   "blocklist": [
+    "cork",
+    "corker",
+    "corkscrew",
+    "corkscrewed",
+    "corkscrewing",
+    "corkscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "scuttling kitchen pest with antennae",
+   "blocklist": [
+    "cockroach",
+    "cockroaches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "clear front part of the eye",
+   "blocklist": [
+    "cornea",
+    "corneal",
+    "corneas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "reef-building marine organism",
+   "blocklist": [
+    "coral",
+    "coralline",
+    "corals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "dusty spider web in an attic corner",
+   "blocklist": [
+    "cobweb",
+    "cobwebbed",
+    "cobwebbier",
+    "cobwebbiest",
+    "cobwebbing",
+    "cobwebby",
+    "cobwebs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "wooden burial box for a corpse",
+   "blocklist": [
+    "coffer",
+    "coffers",
+    "coffin",
+    "coffined",
+    "coffining",
+    "coffins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "bowl with holes for draining pasta",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "cullender",
+    "cullenders",
+    "sieve",
+    "sieves",
+    "strainer",
+    "strainers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "tiny paper scraps thrown at parades",
+   "blocklist": [
+    "confetti",
+    "confetto"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "silken case spun by a caterpillar",
+   "blocklist": [
+    "cocoon",
+    "cocooned",
+    "cocooning",
+    "cocoonings",
+    "cocoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "reddish-brown metal used for pennies and wires",
+   "blocklist": [
+    "copper",
+    "coppered",
+    "coppers",
+    "coppery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "large bald-headed vulture of the andes",
+   "blocklist": [
+    "condor",
+    "condors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "sweet baked chocolate chip treat",
+   "blocklist": [
+    "cookie",
+    "cookies",
+    "cooky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "spiral sea shell you hold to your ear",
+   "blocklist": [
+    "cockle",
+    "cockles",
+    "conch",
+    "conches",
+    "conchs",
+    "cowrie",
+    "cowries",
+    "cowry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "mountain lion or puma",
+   "blocklist": [
+    "cougar",
+    "cougars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 508.81028846153845,
+  "cost_numerator": 5291627,
+  "cost_denominator": 10400,
+  "cost_exact": false,
+  "cost_mcse": 0.6824723678865716,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 4979627,
+   "denominator": 10400,
+   "value": 478.81028846153845,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:14,4:66,5:158,6:309,7:546,8:771,9:856,10:857,11:783,12:650,13:472,14:312,15:202,16:119,17:106,18:47,19:35,20:13",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.6824723678865716,
+   "rollouts": 256,
+   "rank_total": 79674032,
+   "rank_denominator": 166400,
+   "cache_key": "c2c1eee290e48d3e898736ea5cd2b1fe"
+  }
+ }
+}

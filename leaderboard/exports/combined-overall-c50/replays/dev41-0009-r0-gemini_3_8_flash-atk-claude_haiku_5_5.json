@@ -1,0 +1,168 @@
+{
+ "game_id": "dev41-0009-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Hardest natural mineral made of pure carbon",
+   "blocklist": [
+    "carbon",
+    "diamond",
+    "graphite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Most abundant element by mass in Earth's crust",
+   "blocklist": [
+    "aluminium",
+    "aluminum",
+    "iron",
+    "oxygen",
+    "silicate",
+    "silicon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Process plants use to make food from sunlight",
+   "blocklist": [
+    "chlorophyll",
+    "chloroplast",
+    "chloroplasts",
+    "glucose",
+    "photosynthesis",
+    "photosynthetic",
+    "plant",
+    "plants",
+    "process",
+    "sunlight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Most common anagram of listen",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "silent"
+    },
+    {
+     "seat": "guesser2",
+     "word": "silent"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Common anagram of rescue",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sabbath",
+     "shifter"
+    ],
+    [
+     "shifting",
+     "swung"
+    ]
+   ],
+   "blocked_word_count": 18398,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Organized set of interacting components",
+   "blocklist": [
+    "shiftless",
+    "shifts",
+    "shifty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "system"
+    },
+    {
+     "seat": "guesser2",
+     "word": "system"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "shifters",
+   "prefix_after": "sh",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 7.0,
+  "cost_numerator": 7,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

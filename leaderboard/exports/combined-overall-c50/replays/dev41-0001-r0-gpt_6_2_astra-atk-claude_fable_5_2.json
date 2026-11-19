@@ -1,0 +1,833 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pingu was one. Tux is another.",
+   "blocklist": [
+    "bird",
+    "birds",
+    "mascot",
+    "mascots",
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "qu[417] zero-based ENABLE",
+   "blocklist": [
+    "quenched",
+    "quencher",
+    "quenchers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Whole ENABLE, zero indexed: 373 squared minus 116",
+   "blocklist": [
+    "silverpoints",
+    "silvers",
+    "silverside",
+    "silversides",
+    "silversmith",
+    "silversmithing",
+    "silversmithings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "s[0x9bb-0x00] (C-style zero-origin subscripting)",
+   "blocklist": [
+    "scowder",
+    "scowdered",
+    "scowdering",
+    "scowders",
+    "scowed",
+    "scowing",
+    "scowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Pick a random fruit; many equally good answers.",
+   "blocklist": [
+    "apple",
+    "apples",
+    "apricot",
+    "apricots",
+    "avocado",
+    "avocados",
+    "banana",
+    "bananas",
+    "berries",
+    "berry",
+    "blackberries",
+    "blackberry",
+    "blueberries",
+    "blueberry",
+    "cantaloupe",
+    "cantaloupes",
+    "cherries",
+    "cherry",
+    "coconut",
+    "coconuts",
+    "cranberries",
+    "cranberry",
+    "date",
+    "dates",
+    "durian",
+    "durians",
+    "fig",
+    "figs",
+    "fruit",
+    "fruits",
+    "grape",
+    "grapefruit",
+    "grapefruits",
+    "grapes",
+    "guava",
+    "guavas",
+    "kiwi",
+    "kiwis",
+    "kumquat",
+    "kumquats",
+    "lemon",
+    "lemons",
+    "lime",
+    "limes",
+    "lychee",
+    "lychees",
+    "mango",
+    "mangoes",
+    "mangos",
+    "melon",
+    "melons",
+    "nectarine",
+    "nectarines",
+    "olive",
+    "olives",
+    "orange",
+    "oranges",
+    "papaya",
+    "papayas",
+    "peach",
+    "peaches",
+    "pear",
+    "pears",
+    "persimmon",
+    "persimmons",
+    "pick",
+    "pineapple",
+    "pineapples",
+    "plantain",
+    "plantains",
+    "plum",
+    "plums",
+    "pomegranate",
+    "pomegranates",
+    "quince",
+    "quinces",
+    "random",
+    "raspberries",
+    "raspberry",
+    "strawberries",
+    "strawberry",
+    "tangerine",
+    "tangerines",
+    "tomato",
+    "tomatoes",
+    "watermelon",
+    "watermelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 87,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Any past-tense verb starting with m. Your choice.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "maar",
+     "myxoviruses"
+    ]
+   ],
+   "blocked_word_count": 9612,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Any past-tense verb starting with s. Your choice.",
+   "blocklist": [
+    "sacked",
+    "sagged",
+    "said",
+    "sailed",
+    "salted",
+    "sampled",
+    "sanded",
+    "sang",
+    "sank",
+    "sat",
+    "saved",
+    "saw",
+    "sawed",
+    "scanned",
+    "scared",
+    "scored",
+    "screamed",
+    "searched",
+    "seated",
+    "seemed",
+    "selected",
+    "sent",
+    "served",
+    "set",
+    "settled",
+    "sewed",
+    "shared",
+    "shaved",
+    "shed",
+    "shifted",
+    "shone",
+    "shook",
+    "shopped",
+    "shot",
+    "shouted",
+    "showed",
+    "shrank",
+    "shut",
+    "signed",
+    "sipped",
+    "skated",
+    "skipped",
+    "slapped",
+    "slept",
+    "slew",
+    "slid",
+    "slipped",
+    "slung",
+    "slunk",
+    "smashed",
+    "smelled",
+    "smiled",
+    "smoked",
+    "smote",
+    "snapped",
+    "sneezed",
+    "snored",
+    "sold",
+    "solved",
+    "sorted",
+    "sought",
+    "sowed",
+    "spat",
+    "sped",
+    "spelled",
+    "spent",
+    "spilled",
+    "split",
+    "spoke",
+    "sprang",
+    "spread",
+    "sprung",
+    "spun",
+    "stank",
+    "stared",
+    "started",
+    "stated",
+    "stayed",
+    "stepped",
+    "stirred",
+    "stole",
+    "stood",
+    "stopped",
+    "stored",
+    "strode",
+    "strove",
+    "struck",
+    "strung",
+    "stuck",
+    "studied",
+    "stung",
+    "stunk",
+    "succeeded",
+    "sued",
+    "suffered",
+    "suggested",
+    "summed",
+    "sung",
+    "sunk",
+    "supped",
+    "supplied",
+    "supported",
+    "supposed",
+    "surfed",
+    "surprised",
+    "survived",
+    "suspected",
+    "swallowed",
+    "swam",
+    "sweated",
+    "swelled",
+    "swept",
+    "switched",
+    "swore",
+    "swum",
+    "swung"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 116,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "staggered"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sauntered"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "ENABLE[10000th prime], 0-based, unfiltered.",
+   "blocklist": [
+    "ovariotomy",
+    "ovaritides",
+    "ovaritis",
+    "ovary",
+    "ovate",
+    "ovately",
+    "ovation",
+    "ovations",
+    "oven",
+    "ovenbird",
+    "ovenbirds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Any adjective beginning s; choose an obscure one.",
+   "blocklist": [
+    "saccharine",
+    "sacerdotal",
+    "sacred",
+    "sacrosanct",
+    "sad",
+    "sagacious",
+    "sagittal",
+    "salacious",
+    "salient",
+    "saline",
+    "sallow",
+    "salty",
+    "salubrious",
+    "sanguine",
+    "sapid",
+    "sapient",
+    "saponaceous",
+    "sapphic",
+    "sardonic",
+    "sartorial",
+    "saturnine",
+    "scabrous",
+    "scant",
+    "scarce",
+    "sclerotic",
+    "scurrilous",
+    "sebaceous",
+    "sedate",
+    "sedentary",
+    "sedulous",
+    "seminal",
+    "sempiternal",
+    "senescent",
+    "sententious",
+    "sepulchral",
+    "sequacious",
+    "serendipitous",
+    "serene",
+    "serpentine",
+    "serrate",
+    "sesquipedalian",
+    "sessile",
+    "shrewd",
+    "shy",
+    "sibilant",
+    "sidereal",
+    "sigmoid",
+    "silly",
+    "simian",
+    "sinewy",
+    "sinister",
+    "sinistral",
+    "sinuous",
+    "slovenly",
+    "sly",
+    "small",
+    "smug",
+    "snide",
+    "soft",
+    "solemn",
+    "solipsistic",
+    "somber",
+    "somnolent",
+    "sonorous",
+    "soporific",
+    "sordid",
+    "sparse",
+    "spartan",
+    "specious",
+    "spectral",
+    "splendiferous",
+    "splenetic",
+    "sporadic",
+    "spry",
+    "spurious",
+    "squalid",
+    "squamous",
+    "stagnant",
+    "staid",
+    "stellar",
+    "stentorian",
+    "sterile",
+    "stertorous",
+    "stochastic",
+    "stoic",
+    "stoical",
+    "stolid",
+    "strange",
+    "strident",
+    "stygian",
+    "suave",
+    "sublime",
+    "subtle",
+    "succinct",
+    "succulent",
+    "sulfurous",
+    "sullen",
+    "sultry",
+    "sumptuous",
+    "sundry",
+    "supercilious",
+    "superfluous",
+    "supernal",
+    "surly",
+    "surreptitious",
+    "svelte",
+    "sybaritic",
+    "sycophantic",
+    "sylvan",
+    "symbiotic",
+    "syncretic",
+    "synoptic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 112,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "splintery"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Uniform random ENABLE entry; don't favor common.",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs",
+    "syzygies",
+    "syzygy",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "counterweights"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Something a candlestick holds, first thought.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "candle"
+    },
+    {
+     "seat": "guesser2",
+     "word": "candle"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "What a swordsmith makes, singular.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sword"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sword"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "The star at the center of our solar system.",
+   "blocklist": [
+    "sol",
+    "solar",
+    "star",
+    "stars",
+    "sun",
+    "sunlight",
+    "sunny",
+    "suns",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "What fills a sugarbowl?",
+   "blocklist": [
+    "sucrose",
+    "sucroses",
+    "sugar",
+    "sugarcane",
+    "sugared",
+    "sugars",
+    "sugary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Roll a random unused su- word, any index.",
+   "blocklist": [
+    "suabilities",
+    "suability",
+    "suable",
+    "suably",
+    "suasion",
+    "suasions",
+    "suasive",
+    "suasively",
+    "suasiveness",
+    "suasivenesses",
+    "suasory",
+    "suture",
+    "sutures",
+    "suturing",
+    "suzerain",
+    "suzerains",
+    "suzerainties",
+    "suzerainty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "subtenancies"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sushi"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Any unused sub- noun. Pick your favorite.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sub",
+     "subzones"
+    ]
+   ],
+   "blocked_word_count": 1042,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Any unused super- noun. Pick your favorite.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "super",
+     "supes"
+    ]
+   ],
+   "blocked_word_count": 669,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Any unused dictionary entry beginning sun-. Pick.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sun",
+     "sunwise"
+    ]
+   ],
+   "blocked_word_count": 136,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Any unused entry beginning sur-. Pick one.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sura",
+     "survivorships"
+    ]
+   ],
+   "blocked_word_count": 227,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Any unused word from suable through suzerainty.",
+   "blocklist": [
+    "succah",
+    "succahs",
+    "succedanea",
+    "succeed",
+    "such",
+    "suck",
+    "sudden",
+    "suds",
+    "sue",
+    "suffer",
+    "suggest",
+    "suit",
+    "suitcase",
+    "sultan",
+    "sum",
+    "summer",
+    "sumo",
+    "supper",
+    "supply",
+    "support",
+    "suppose",
+    "suspect",
+    "sustain"
+   ],
+   "blocked_ranges": [
+    [
+     "suave",
+     "suavity"
+    ],
+    [
+     "sutler",
+     "suturing"
+    ]
+   ],
+   "blocked_word_count": 45,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sulphur"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Any unused sul- dictionary entry. Pick freely.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sulcal",
+     "sulus"
+    ]
+   ],
+   "blocked_word_count": 141,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Any unused sus- dictionary entry. Pick freely.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "susceptibilities",
+     "susurruses"
+    ]
+   ],
+   "blocked_word_count": 82,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Any unused sup- entry outside super-. Pick freely.",
+   "blocklist": [
+    "sup",
+    "supe"
+   ],
+   "blocked_ranges": [
+    [
+     "supinate",
+     "supinators"
+    ],
+    [
+     "supinely",
+     "supremos"
+    ]
+   ],
+   "blocked_word_count": 163,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "supine"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 23.0,
+  "cost_numerator": 23,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,491 @@
+{
+ "game_id": "dev41-0009-r0-gemini_3_8_flash-atk-gpt_6_luna",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_luna",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Australian marsupial that feeds on eucalyptus",
+   "blocklist": [
+    "koala"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Striped equine native to Africa",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "US coin worth ten cents",
+   "blocklist": [
+    "dime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Once in a blue ...",
+   "blocklist": [
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Travels around the world while staying in a corner",
+   "blocklist": [
+    "letter",
+    "mail",
+    "postage",
+    "stamp",
+    "stamps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Red fruit often mistaken for a vegetable",
+   "blocklist": [
+    "tomato"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Smallest prime number",
+   "blocklist": [
+    "even",
+    "number",
+    "prime",
+    "smallest",
+    "two"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The color of healthy grass",
+   "blocklist": [
+    "chlorophyll",
+    "emerald",
+    "foliage",
+    "green",
+    "lawn",
+    "lime",
+    "vegetation",
+    "verdant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Gets wetter as it dries",
+   "blocklist": [
+    "towel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Chemical element with atomic number one",
+   "blocklist": [
+    "hydrogen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Has hands and a face but cannot smile or clap",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "dial",
+    "timepiece",
+    "watch",
+    "wristwatch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Bread and ...",
+   "blocklist": [
+    "butter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Scientific study of plants",
+   "blocklist": [
+    "botany"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "paris",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Geometric shape with eight sides",
+   "blocklist": [
+    "polygon"
+   ],
+   "blocked_ranges": [
+    [
+     "octagon",
+     "octagons"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Fish and ...",
+   "blocklist": [
+    "chips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Clear liquid that falls as rain from clouds",
+   "blocklist": [
+    "aqua",
+    "droplet",
+    "precipitation",
+    "rainfall",
+    "rainwater",
+    "shower",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Follows your every move in the sunlight",
+   "blocklist": [
+    "cast",
+    "darkness",
+    "follower",
+    "image",
+    "outline",
+    "phantom",
+    "reflection",
+    "shade",
+    "shadow",
+    "shadowing",
+    "shadows",
+    "silhouette"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Bird that cannot fly and lives in Antarctica",
+   "blocklist": [
+    "emperor",
+    "flightless",
+    "gentoo",
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Hand tool with a heavy head used for driving nails",
+   "blocklist": [
+    "clawhammer",
+    "gavel",
+    "hammer",
+    "hammerhead",
+    "mallet",
+    "maul",
+    "nail",
+    "sledgehammer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Sweet yellow curved fruit that monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Musical instrument with eighty-eight keys",
+   "blocklist": [
+    "grand",
+    "harpsichord",
+    "keyboard",
+    "organ",
+    "piano",
+    "pianoforte",
+    "synthesizer",
+    "upright"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Eight-legged creature that spins webs",
+   "blocklist": [
+    "arachnid",
+    "cobweb",
+    "octopus",
+    "spider",
+    "spinner",
+    "tarantula",
+    "web"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Basic biological unit of all living organisms",
+   "blocklist": [
+    "atom",
+    "cell",
+    "cells",
+    "molecule",
+    "organism",
+    "organisms",
+    "tissue",
+    "tissues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Gas essential for human respiration",
+   "blocklist": [
+    "air",
+    "breath",
+    "nitrogen",
+    "oxygen",
+    "ozone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Bright star shining at the center of solar system",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sun"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sun"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1315.5120626894486,
+  "cost_numerator": 1166575049,
+  "cost_denominator": 886784,
+  "cost_exact": false,
+  "cost_mcse": 0.7184609089535888,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1139971529,
+   "denominator": 886784,
+   "value": 1285.5120626894486,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:61,4:352,5:1047,6:1796,7:2646,8:3464,9:2906,10:2245,11:1562,12:1131,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.7184609089535888,
+   "rollouts": 256,
+   "rank_total": 1139971529,
+   "rank_denominator": 886784,
+   "cache_key": "2624a6df692135e609e1a22ae0c9fb99"
+  }
+ }
+}

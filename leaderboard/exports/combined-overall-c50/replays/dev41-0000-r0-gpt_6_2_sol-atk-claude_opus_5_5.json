@@ -1,0 +1,509 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Poe's 14-letter word for the ringing of bells",
+   "blocklist": [
+    "tintinnabulation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Coffee or tea? If both blocked: orchid. Minus last",
+   "blocklist": [
+    "coffee",
+    "orchid",
+    "tea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "beverage"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Q + 4 vowels; sounds like its first character",
+   "blocklist": [
+    "queue",
+    "queues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Painter's dramatic contrast of light and dark",
+   "blocklist": [
+    "chiaroscurist",
+    "chiaroscuro",
+    "chiaroscuros",
+    "tenebrism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Most definitions in OED 2nd ed.: 3-letter verb",
+   "blocklist": [
+    "get",
+    "put",
+    "run",
+    "set"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Fruit: 1st unspent of a-pple, b-anana, p-ear",
+   "blocklist": [
+    "apple",
+    "apples",
+    "banana",
+    "bananas",
+    "pear",
+    "pears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Alphabetically first unused ENABLE word",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aah"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Past tense of aah",
+   "blocklist": [
+    "aahed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "aahs aalii aaliis aardvarks aardwolf; aah + ing",
+   "blocklist": [
+    "aahing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "aardwolves aarrgh aarrghh aas abaca; Taken ___",
+   "blocklist": [
+    "abacas",
+    "abaci",
+    "aback",
+    "abacus",
+    "abaft"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "abaka abakas abalone abalones; desert or forsake",
+   "blocklist": [
+    "abampere",
+    "abamperes",
+    "abandon",
+    "abandoned",
+    "abandoner",
+    "abandoners",
+    "abandoning",
+    "abandonment",
+    "abandonments",
+    "abandons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Away from the apex, in botanical terminology",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abapical"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abapical"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Australian marsupial that poops cubes",
+   "blocklist": [
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Largest animal: blue ___",
+   "blocklist": [
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "water world work write winter woman; African gnu",
+   "blocklist": [
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Tusked seal; wolf witch wind wood white watch",
+   "blocklist": [
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "wax web wet win war way who why; Logan of X-Men",
+   "blocklist": [
+    "wolverine",
+    "wolverines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Counterclockwise, in old Scots; wag wig woe wow",
+   "blocklist": [
+    "widdershins",
+    "withershins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "wren wasp weasel worm; nocturnal namesake call",
+   "blocklist": [
+    "nightjar",
+    "nightjars",
+    "owl",
+    "owls",
+    "whippoorwill",
+    "whippoorwills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Humor: dry - d + w (place it first)",
+   "blocklist": [
+    "wry",
+    "wryer",
+    "wryest",
+    "wryly",
+    "wryness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Viennese dance in 3/4; warm walk wall well want",
+   "blocklist": [
+    "waltz",
+    "waltzed",
+    "waltzer",
+    "waltzers",
+    "waltzes",
+    "waltzing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Pumbaa's species; waist waste wash wish wise won",
+   "blocklist": [
+    "warthog",
+    "warthogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "we were when what where which would; cat's feeler",
+   "blocklist": [
+    "whisker",
+    "whiskered",
+    "whiskers",
+    "whiskery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Wood paneling on the lower half of a room",
+   "blocklist": [
+    "dado",
+    "dadoes",
+    "dados",
+    "paneling",
+    "panelling",
+    "wainscot",
+    "wainscoted",
+    "wainscoting",
+    "wainscotings",
+    "wainscots",
+    "wainscotted",
+    "wainscotting",
+    "wainscottings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "23rd letter + 25th letter + 5th letter",
+   "blocklist": [
+    "wye",
+    "wyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "week west wide wire wing wild wake wave; Merlin",
+   "blocklist": [
+    "warlock",
+    "warlocks",
+    "wizard",
+    "wizardry",
+    "wizards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "war bet? wheat wheel while whole wound worth; Bet",
+   "blocklist": [
+    "wager",
+    "wagered",
+    "wagerer",
+    "wagerers",
+    "wagering",
+    "wagers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 253.37115036231884,
+  "cost_numerator": 1118887,
+  "cost_denominator": 4416,
+  "cost_exact": false,
+  "cost_mcse": 0.7205707662876554,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 986407,
+   "denominator": 4416,
+   "value": 223.37115036231884,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:23,4:138,5:273,6:445,7:676,8:718,9:504,10:325,11:222,12:114,13:63,14:43,15:22,16:10,17:3,18:1",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.7205707662876554,
+   "rollouts": 256,
+   "rank_total": 7891256,
+   "rank_denominator": 35328,
+   "cache_key": "9eb2269284582177dcccb3bdb9341e3e"
+  }
+ }
+}

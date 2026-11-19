@@ -1,0 +1,706 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_carbon-atk-claude_fable_5_2",
+ "attacker": "gemini_4_carbon",
+ "defender": "claude_fable_5_2",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "lasting for a very short time",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ephemeral"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ephemeral"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "extreme fear of confined spaces",
+   "blocklist": [
+    "claustrophobe",
+    "claustrophobes",
+    "claustrophobia",
+    "claustrophobias",
+    "claustrophobic",
+    "claustrophobically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "practice of drawing maps",
+   "blocklist": [
+    "cartographer",
+    "cartographers",
+    "cartographic",
+    "cartographical",
+    "cartographically",
+    "cartographies",
+    "cartography",
+    "chorographies",
+    "chorography"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "NASA Mars rover or what killed the cat",
+   "blocklist": [
+    "curiosities",
+    "curiosity",
+    "curious",
+    "curiously"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Italian term for light-dark contrast in art",
+   "blocklist": [
+    "chiaroscurist",
+    "chiaroscurists",
+    "chiaroscuro",
+    "chiaroscuros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "green pigment or spicy bark or color lizard",
+   "blocklist": [
+    "cassia",
+    "cassias",
+    "chameleon",
+    "chameleonic",
+    "chameleonlike",
+    "chameleons",
+    "chlorophyll",
+    "chlorophyllous",
+    "chlorophylls",
+    "cinnamic",
+    "cinnamon",
+    "cinnamons",
+    "cinnamyl",
+    "cinnamyls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "anagram of capcupcion",
+   "blocklist": [
+    "cappuccino",
+    "cappuccinos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "caesar salad crouton crumpet croissant calligraphy",
+   "blocklist": [
+    "caesarean",
+    "caesareans",
+    "caesarian",
+    "caesarians",
+    "caesars",
+    "calligrapher",
+    "calligraphers",
+    "calligraphic",
+    "calligraphically",
+    "calligraphies",
+    "calligraphist",
+    "calligraphists",
+    "croissants",
+    "croutons",
+    "crumpets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "camaraderie connoisseur curmudgeon autumn flower",
+   "blocklist": [
+    "camaraderies",
+    "chrysanthemum",
+    "chrysanthemums",
+    "colchicum",
+    "colchicums",
+    "connoisseurs",
+    "connoisseurship",
+    "connoisseurships",
+    "cosmos",
+    "cosmoses",
+    "croci",
+    "crocus",
+    "crocuses",
+    "curmudgeonliness",
+    "curmudgeonlinesses",
+    "curmudgeonly",
+    "curmudgeons",
+    "cyclamen",
+    "cyclamens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "chutzpah cliche corps culpa ___ ergo sum",
+   "blocklist": [
+    "chutzpa",
+    "chutzpahs",
+    "chutzpas",
+    "cliched",
+    "cliches",
+    "cogitate",
+    "cogitated",
+    "cogitates",
+    "cogitating",
+    "cogitation",
+    "cogitations",
+    "cogitative",
+    "cogito",
+    "corpse",
+    "corpses",
+    "corpsman",
+    "corpsmen",
+    "culpability",
+    "culpable",
+    "culpably",
+    "culpae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "cacophony conundrum clandestine verbose talk",
+   "blocklist": [
+    "cacophonies",
+    "cacophonous",
+    "cacophonously",
+    "chatter",
+    "chatterbox",
+    "chatterboxes",
+    "chattered",
+    "chatterer",
+    "chatterers",
+    "chattering",
+    "chatters",
+    "chattery",
+    "chitchat",
+    "chitchats",
+    "circumlocution",
+    "circumlocutions",
+    "circumlocutory",
+    "clandestinely",
+    "clandestineness",
+    "clandestinenesses",
+    "clandestinities",
+    "clandestinity",
+    "confabulate",
+    "confabulation",
+    "confabulations",
+    "conundrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "caesura cataclysm chicanery contretemps desert inn",
+   "blocklist": [
+    "caesurae",
+    "caesural",
+    "caesuras",
+    "caesuric",
+    "caravans",
+    "caravansaries",
+    "caravansary",
+    "caravanserai",
+    "caravanserais",
+    "casino",
+    "casinos",
+    "cataclysmal",
+    "cataclysmic",
+    "cataclysmically",
+    "cataclysms",
+    "chicane",
+    "chicaned",
+    "chicaner",
+    "chicaneries",
+    "chicaners",
+    "chicanes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "candelabra cyberspace camouflaged living fossil",
+   "blocklist": [
+    "camouflage",
+    "camouflages",
+    "camouflaging",
+    "candelabras",
+    "candelabrum",
+    "cockroach",
+    "cockroaches",
+    "coelacanth",
+    "coelacanths",
+    "crinoid",
+    "crinoids",
+    "crocodile",
+    "crocodiles",
+    "cycad",
+    "cycads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "cyberspaces catastrophe catamaran study of bells",
+   "blocklist": [
+    "campanile",
+    "campaniles",
+    "campanili",
+    "campanologies",
+    "campanologist",
+    "campanologists",
+    "campanology",
+    "campanula",
+    "campanulas",
+    "campanulate",
+    "carillon",
+    "carillonned",
+    "carillonneur",
+    "carillonneurs",
+    "carillonning",
+    "carillons",
+    "catamarans",
+    "catastrophes",
+    "catastrophic",
+    "catastrophically",
+    "catastrophism",
+    "catastrophisms",
+    "catastrophist",
+    "catastrophists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "candelabrums camouflageable anagram: travelnice",
+   "blocklist": [
+    "cantilever",
+    "cantilevered",
+    "cantilevering",
+    "cantilevers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "chandelier chimpanzee concierge horn of plenty",
+   "blocklist": [
+    "chandeliers",
+    "chimpanzees",
+    "concierges",
+    "cornucopia",
+    "cornucopian",
+    "cornucopias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "centrifuge clairvoyance conquistador movie filming",
+   "blocklist": [
+    "clairvoyances",
+    "clairvoyant",
+    "clairvoyantly",
+    "clairvoyants",
+    "conquistadores",
+    "conquistadors"
+   ],
+   "blocked_ranges": [
+    [
+     "camera",
+     "camerawomen"
+    ],
+    [
+     "centrifugal",
+     "centrifuging"
+    ],
+    [
+     "cinema",
+     "cinematography"
+    ]
+   ],
+   "blocked_word_count": 45,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "caribou cavalcade charlatan cormorant dance design",
+   "blocklist": [
+    "caribous",
+    "cavalcades",
+    "charlatanism",
+    "charlatanisms",
+    "charlatanries",
+    "charlatanry",
+    "charlatans",
+    "cormorants"
+   ],
+   "blocked_ranges": [
+    [
+     "choreograph",
+     "choreography"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "chronology counterfeit cryptography star pattern",
+   "blocklist": [
+    "chronological",
+    "chronologies",
+    "counterfeiter",
+    "counterfeits",
+    "cryptographer",
+    "cryptographic",
+    "cryptographies"
+   ],
+   "blocked_ranges": [
+    [
+     "constellate",
+     "constellatory"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "catechism conflagration cerebellum octopus class",
+   "blocklist": [
+    "catechismal",
+    "catechisms",
+    "catechist",
+    "catechists",
+    "catechize",
+    "cephalopod",
+    "cephalopods",
+    "cerebella",
+    "cerebellar",
+    "cerebellums",
+    "conflagrant",
+    "conflagrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "calisthenics cardamom chinchilla butterfly larva",
+   "blocklist": [
+    "calisthenic",
+    "cankerworm",
+    "cankerworms",
+    "cardamoms",
+    "cardamon",
+    "cardamons",
+    "cardamum",
+    "cardamums",
+    "caterpillar",
+    "caterpillars",
+    "chinchillas",
+    "chrysalid",
+    "chrysalides",
+    "chrysalids",
+    "chrysalis",
+    "chrysalises",
+    "cocoon",
+    "cocoons",
+    "cutworm",
+    "cutworms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "cantaloupe capybara chamomile corkscrew Roma arena",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colosseum"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colosseum"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "contraband condominium confetti colossus pinkeye",
+   "blocklist": [
+    "conjunctiva",
+    "conjunctivae",
+    "conjunctival",
+    "conjunctivas",
+    "conjunctivites",
+    "conjunctivitides",
+    "conjunctivitis",
+    "conjunctivitises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "cobalt compass corduroy coriander pasta strainer",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "columbine comedian colloquialism water moccasin",
+   "blocklist": [
+    "copperhead",
+    "copperheads",
+    "cottonmouth",
+    "cottonmouths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "coliseum concussion cornflower twisty acrobat",
+   "blocklist": [
+    "contort",
+    "contorted",
+    "contorting",
+    "contortion",
+    "contortionist",
+    "contortionistic",
+    "contortionists",
+    "contortions",
+    "contortive",
+    "contorts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "cobweb codger colic coma comet Brit nonsense",
+   "blocklist": [
+    "cobbler",
+    "cobblers",
+    "cock",
+    "cockamamie",
+    "cockamamy",
+    "cocks",
+    "cockup",
+    "cockups",
+    "codswallop",
+    "codswallops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 491.9800339553887,
+  "cost_numerator": 71285939,
+  "cost_denominator": 144896,
+  "cost_exact": false,
+  "cost_mcse": 0.6257046568532445,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 66939059,
+   "denominator": 144896,
+   "value": 461.9800339553887,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:14,4:66,5:162,6:327,7:566,8:772,9:856,10:848,11:770,12:642,13:463,14:305,15:200,16:116,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.6257046568532445,
+   "rollouts": 256,
+   "rank_total": 66939059,
+   "rank_denominator": 144896,
+   "cache_key": "75ba76726963e546838a9c3001bdb088"
+  }
+ }
+}

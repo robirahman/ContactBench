@@ -1,0 +1,572 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "1st word in dict alphabetically after lugger",
+   "blocklist": [
+    "lugger",
+    "luggers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Australian egg laying duck billed mammal",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Soothing song to put a baby to sleep",
+   "blocklist": [
+    "berceuse",
+    "berceuses",
+    "cradlesong",
+    "cradlesongs",
+    "hushaby",
+    "lullabied",
+    "lullabies",
+    "lullaby",
+    "lullabying",
+    "lulling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Optical tube with mirrors and colorful glass",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "periscope",
+    "periscopes",
+    "telescope",
+    "telescopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Counting frame with sliding beads on rods",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abacus"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abacus"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Small four stringed Hawaiian guitar",
+   "blocklist": [
+    "ukelele",
+    "ukeleles",
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "One wheeled pedal vehicle ridden in circuses",
+   "blocklist": [
+    "unicycle",
+    "unicycles",
+    "unicyclist",
+    "unicyclists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Collapsible canopy held overhead to block rain",
+   "blocklist": [
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Mythical horse with a single spiral horn",
+   "blocklist": [
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Radioactive element with atomic number 92",
+   "blocklist": [
+    "uranium",
+    "uraniums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Baseball official who calls balls and strikes",
+   "blocklist": [
+    "ump",
+    "umped",
+    "umping",
+    "umpire",
+    "umpired",
+    "umpires",
+    "umpiring",
+    "umps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Forearm bone on the pinky side opposite the radius",
+   "blocklist": [
+    "ulna",
+    "ulnae",
+    "ulnar",
+    "ulnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Milk gland of a cow or goat",
+   "blocklist": [
+    "udder",
+    "udders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Spiny spherical marine creature or street child",
+   "blocklist": [
+    "urchin",
+    "urchins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Imaginary ideal society of Thomas More",
+   "blocklist": [
+    "utopia",
+    "utopian",
+    "utopianism",
+    "utopianisms",
+    "utopians",
+    "utopias",
+    "utopism",
+    "utopisms",
+    "utopist",
+    "utopists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Painful open sore in the stomach lining",
+   "blocklist": [
+    "ulcer",
+    "ulcerate",
+    "ulcerated",
+    "ulcerates",
+    "ulcerating",
+    "ulceration",
+    "ulcerations",
+    "ulcerative",
+    "ulcerous",
+    "ulcers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Kitchen tool or eating implement like a fork",
+   "blocklist": [
+    "utensil",
+    "utensils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Fleshy lobe hanging at the back of the soft palate",
+   "blocklist": [
+    "uvula",
+    "uvulae",
+    "uvular",
+    "uvularly",
+    "uvulars",
+    "uvulas",
+    "uvulitis",
+    "uvulitises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Womb where a fetus develops before birth",
+   "blocklist": [
+    "uteri",
+    "uterine",
+    "uterus",
+    "uteruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Duct that carries urine from the bladder outside",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ureter",
+     "urethras"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Vase used to hold the ashes of the cremated dead",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "urn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "urn"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Brother of your mother or father",
+   "blocklist": [
+    "uncle",
+    "uncles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Funeral director who prepares bodies for burial",
+   "blocklist": [
+    "undertaker",
+    "undertakers",
+    "undertaking",
+    "undertakings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Matching outfit worn by soldiers or students",
+   "blocklist": [
+    "uniform",
+    "uniformed",
+    "uniformer",
+    "uniformest",
+    "uniforming",
+    "uniformly",
+    "uniforms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Competitor expected to lose in a match or contest",
+   "blocklist": [
+    "underdog",
+    "underdogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Hoofed mammal such as a horse or deer",
+   "blocklist": [
+    "ungual",
+    "ungula",
+    "ungulae",
+    "ungular",
+    "ungulate",
+    "ungulates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Clothing worn beneath outer garments like briefs",
+   "blocklist": [
+    "underwear",
+    "undies",
+    "unmentionable",
+    "unmentionables"
+   ],
+   "blocked_ranges": [
+    [
+     "underclothes",
+     "underwear"
+    ]
+   ],
+   "blocked_word_count": 323,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "All of space time matter and galaxies combined",
+   "blocklist": [
+    "cosmos",
+    "cosmoses",
+    "universal",
+    "universally",
+    "universals",
+    "universe",
+    "universes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Higher education college granting degrees",
+   "blocklist": [
+    "college",
+    "colleges",
+    "universities",
+    "university"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 288.9099815802846,
+  "cost_numerator": 18194395,
+  "cost_denominator": 62976,
+  "cost_exact": false,
+  "cost_mcse": 0.37755402244436037,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 16305115,
+   "denominator": 62976,
+   "value": 258.9099815802846,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:10,5:53,6:193,7:331,8:583,9:492,10:483,11:400,12:331,13:231,14:150,15:91,16:71,17:37,18:23,19:14,20:6",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.37755402244436037,
+   "rollouts": 256,
+   "rank_total": 32610230,
+   "rank_denominator": 125952,
+   "cache_key": "9b8a6d9819c1264ddb33938b4884003d"
+  }
+ }
+}

@@ -1,0 +1,579 @@
+{
+ "game_id": "dev41-0005-r0-claude_haiku_5_5-atk-gemini_3_8_flash",
+ "attacker": "claude_haiku_5_5",
+ "defender": "gemini_3_8_flash",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline pet that often purrs",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Frozen water cube for chilling drinks",
+   "blocklist": [
+    "ice",
+    "icicle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Thought or notion in the mind",
+   "blocklist": [
+    "idea",
+    "ideas",
+    "ideation",
+    "impression",
+    "inkling",
+    "insight",
+    "intuition"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Preposition showing movement toward the inside",
+   "blocklist": [
+    "into",
+    "inward",
+    "inwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Strong metal used in tools and building frames",
+   "blocklist": [
+    "invar",
+    "iridium",
+    "iron",
+    "irons",
+    "ironwork",
+    "ironworks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Land surrounded by sea on all sides",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Unit of length, a twelfth of a foot",
+   "blocklist": [
+    "inch",
+    "inches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Black fluid used for writing with a pen",
+   "blocklist": [
+    "ink",
+    "inks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Small lodge offering food and lodging to travelers",
+   "blocklist": [
+    "inn",
+    "inns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Picture or likeness of a person or thing",
+   "blocklist": [
+    "icon",
+    "icons",
+    "idol",
+    "idols",
+    "illustration",
+    "illustrations",
+    "image",
+    "imagery",
+    "images"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Single article in a list or inventory",
+   "blocklist": [
+    "item",
+    "items"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Climbing plant with glossy evergreen leaves",
+   "blocklist": [
+    "ivies",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Lazy, not working or busy",
+   "blocklist": [
+    "idle",
+    "idler",
+    "idlers",
+    "idles",
+    "inactive",
+    "indolent",
+    "inert"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Colored part of the eye around the pupil",
+   "blocklist": [
+    "irid",
+    "irides",
+    "irids",
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Charged atom or molecule in electrolysis",
+   "blocklist": [
+    "ion",
+    "ions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sick, unwell, not healthy",
+   "blocklist": [
+    "ill",
+    "ills",
+    "indisposed",
+    "infirm",
+    "infirmed",
+    "infirms",
+    "invalid",
+    "invalids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Narrow bay or passage of water into land",
+   "blocklist": [
+    "inlet",
+    "inlets",
+    "isthmi",
+    "isthmus",
+    "isthmuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Dome-shaped snow house built by Inuit people",
+   "blocklist": [
+    "icehouse",
+    "icehouses",
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Data entered into a computer system",
+   "blocklist": [
+    "information",
+    "input",
+    "inputs",
+    "inputted",
+    "inputting",
+    "intake",
+    "intakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Greek letter, or a tiny amount",
+   "blocklist": [
+    "iota",
+    "iotas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Huge floating mass of frozen water drifting at sea",
+   "blocklist": [
+    "iceberg",
+    "icebergs",
+    "icecap",
+    "icecaps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Perfect, the best possible example of something",
+   "blocklist": [
+    "ideal",
+    "ideality",
+    "ideals",
+    "immaculate",
+    "impeccable",
+    "incomparable",
+    "infallible",
+    "inimitable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Put money into a business hoping for profit",
+   "blocklist": [
+    "infuse",
+    "infuses",
+    "inject",
+    "injects",
+    "invest",
+    "invested",
+    "investing",
+    "investment",
+    "investments",
+    "investor",
+    "investors",
+    "invests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Six-legged bug with antennae",
+   "blocklist": [
+    "imago",
+    "imagoes",
+    "imagos",
+    "inchworm",
+    "inchworms",
+    "insect",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Located toward the center, not outside",
+   "blocklist": [
+    "inmost",
+    "inner",
+    "innermost",
+    "inners",
+    "interior",
+    "interiors",
+    "internal",
+    "internals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Frosty, covered with ice and very cold",
+   "blocklist": [
+    "icebound",
+    "iced",
+    "icelike",
+    "icicled",
+    "icier",
+    "iciest",
+    "icily",
+    "iciness",
+    "icinesses",
+    "icing",
+    "icings",
+    "icy",
+    "inclement"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Creamy white material from elephant tusks",
+   "blocklist": [
+    "incisor",
+    "incisors",
+    "ivories",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Cast bar of gold or silver metal",
+   "blocklist": [
+    "ingot",
+    "ingots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Irritation on the skin that makes you scratch",
+   "blocklist": [
+    "impetigo",
+    "impetigos",
+    "inflammation",
+    "inflammations",
+    "itch",
+    "itched",
+    "itches",
+    "itchier",
+    "itchiest",
+    "itchiness",
+    "itchinesses",
+    "itching",
+    "itchings",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Wading bird with a long curved bill",
+   "blocklist": [
+    "ibices",
+    "ibis",
+    "ibises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 555.6504396281362,
+  "cost_numerator": 39686777,
+  "cost_denominator": 71424,
+  "cost_exact": false,
+  "cost_mcse": 0.6609438998175275,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 37544057,
+   "denominator": 71424,
+   "value": 525.6504396281362,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:38,5:90,6:253,7:480,8:712,9:837,10:932,11:856,12:764,13:604,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.6609438998175275,
+   "rollouts": 256,
+   "rank_total": 112632171,
+   "rank_denominator": 214272,
+   "cache_key": "9121aa90f83546130e5bae9c23bef873"
+  }
+ }
+}

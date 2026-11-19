@@ -1,0 +1,522 @@
+{
+ "game_id": "dev42-0006-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "balletomanes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "duck billed egg laying mammal",
+   "blocklist": [
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "chain or group of islands",
+   "blocklist": [
+    "archipelago",
+    "archipelagoes",
+    "archipelagos",
+    "chain",
+    "group",
+    "island",
+    "islands",
+    "isles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "german word for joy at others misfortune",
+   "blocklist": [
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "act of throwing someone out a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "happy accidental discovery",
+   "blocklist": [
+    "serendipities",
+    "serendipitous",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "figure of speech like jumbo shrimp",
+   "blocklist": [
+    "oxymora",
+    "oxymoron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "lizard that changes color",
+   "blocklist": [
+    "chameleon",
+    "chameleons",
+    "gecko",
+    "iguana",
+    "lizard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "present appearing or found everywhere",
+   "blocklist": [
+    "everywhere",
+    "omnipresent",
+    "pervasive",
+    "prevalent",
+    "ubiquitous",
+    "ubiquity",
+    "universal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "she sells seashells by the",
+   "blocklist": [
+    "seashell",
+    "seashells",
+    "seashore",
+    "seashores"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "idealistic and unrealistic like don",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quixotic"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quixotic"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "person who loves or collects books",
+   "blocklist": [
+    "bibliophile",
+    "bibliophiles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "light produced by living organisms like fireflies",
+   "blocklist": [
+    "bioluminescence",
+    "bioluminescences",
+    "bioluminescent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "sheep wearing a bell that leads the flock",
+   "blocklist": [
+    "bellwether",
+    "bellwethers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "ancient writing alternating direction each line",
+   "blocklist": [
+    "boustrophedon",
+    "boustrophedonic",
+    "boustrophedons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "uproar or noisy hubbub",
+   "blocklist": [
+    "babel",
+    "ballyhoo",
+    "bedlam",
+    "brouhaha",
+    "bustle",
+    "commotion",
+    "din",
+    "hubbub",
+    "pandemonium",
+    "racket",
+    "tumult",
+    "uproar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "ski mask covering whole head",
+   "blocklist": [
+    "balaclava",
+    "balaclavas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "wasteful or pointless project",
+   "blocklist": [
+    "boondoggle",
+    "boondoggles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "wailing female spirit in irish folklore",
+   "blocklist": [
+    "banshee",
+    "banshees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "irish stone kissed for eloquence",
+   "blocklist": [
+    "blarney"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "board game with doubling cube and checkers",
+   "blocklist": [
+    "backgammon",
+    "backgammons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "predatory ray finned fish with sharp teeth",
+   "blocklist": [
+    "barracouta",
+    "barracuda",
+    "barracudas",
+    "barramundi",
+    "bass",
+    "bluefish",
+    "bowfin",
+    "bowfins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "middle class in marxist theory",
+   "blocklist": [
+    "bourgeois",
+    "bourgeoisie"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "small corner grocery store in nyc",
+   "blocklist": [
+    "bodega",
+    "bodegas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "miniature japanese potted tree",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bonsai"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bonsai"
+    }
+   ],
+   "prefix_after": "ba",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "sweet layered pastry with nuts and honey",
+   "blocklist": [
+    "baklava",
+    "baklavas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ba",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "racquet sport with a shuttlecock",
+   "blocklist": [
+    "badminton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ba",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "russian triangular stringed instrument",
+   "blocklist": [
+    "balalaika",
+    "balalaikas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ba",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "to trick or deceive someone",
+   "blocklist": [
+    "balletomane",
+    "bamboozle",
+    "bamboozled",
+    "bamboozles",
+    "bamboozling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ba",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 148.8380681818182,
+  "cost_numerator": 52391,
+  "cost_denominator": 352,
+  "cost_exact": false,
+  "cost_mcse": 0.4381080638963925,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 41831,
+   "denominator": 352,
+   "value": 118.83806818181819,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:50,5:105,6:203,7:280,8:345,9:292,10:203,11:137,12:77,13:40,14:17,15:9,16:1,17:3,18:1,19:1,20:1",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.4381080638963925,
+   "rollouts": 256,
+   "rank_total": 2342536,
+   "rank_denominator": 19712,
+   "cache_key": "e43b3240f31e6fa7b491eabb91f64af9"
+  }
+ }
+}

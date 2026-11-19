@@ -1,0 +1,551 @@
+{
+ "game_id": "dev44-0002-r0-gemini_4_hydrogen-atk-claude_opus_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_opus_5_5",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "mountain that erupts lava",
+   "blocklist": [
+    "volcanic",
+    "volcano",
+    "volcanoes",
+    "volcanos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "optical instrument for viewing distant stars",
+   "blocklist": [
+    "binoculars",
+    "observatory",
+    "reflector",
+    "refractor",
+    "spyglass",
+    "telescope",
+    "telescopes",
+    "telescopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "boomerang"
+    },
+    {
+     "seat": "guesser2",
+     "word": "boomerang"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "tall african mammal with very long neck",
+   "blocklist": [
+    "gerenuk",
+    "gerenuks",
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "narrow venetian canal boat",
+   "blocklist": [
+    "gondola",
+    "gondolas",
+    "gondolier",
+    "gondoliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "carved stone waterspout on gothic roof",
+   "blocklist": [
+    "gargoyle",
+    "gargoyled",
+    "gargoyles",
+    "grotesque",
+    "grotesques"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "french execution device with falling blade",
+   "blocklist": [
+    "guillotine",
+    "guillotined",
+    "guillotines",
+    "guillotining"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "small wooden mallet used by judge",
+   "blocklist": [
+    "gavel",
+    "gaveled",
+    "gaveling",
+    "gavelled",
+    "gavelling",
+    "gavels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "slow moving river of ice",
+   "blocklist": [
+    "glacial",
+    "glaciate",
+    "glaciated",
+    "glacier",
+    "glaciers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "octagonal open sided garden pavilion",
+   "blocklist": [
+    "belvedere",
+    "belvederes",
+    "gazebo",
+    "gazeboes",
+    "gazebos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "hungarian meat stew with paprika",
+   "blocklist": [
+    "goulash",
+    "goulashes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "hot spring shooting steam and water",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "geyser"
+    },
+    {
+     "seat": "guesser2",
+     "word": "geyser"
+    }
+   ],
+   "prefix_after": "ga",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "pungent white bulb used in cooking",
+   "blocklist": [
+    "garlic",
+    "garlicked",
+    "garlicky",
+    "garlics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "milky way is one",
+   "blocklist": [
+    "galactic",
+    "galaxies",
+    "galaxy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "liquid fuel for cars",
+   "blocklist": [
+    "gas",
+    "gases",
+    "gasolene",
+    "gasolenes",
+    "gasoline",
+    "gasolines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "building where you park a car",
+   "blocklist": [
+    "garage",
+    "garaged",
+    "garages",
+    "garaging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "swift graceful african antelope",
+   "blocklist": [
+    "gazelle",
+    "gazelles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "household trash or waste",
+   "blocklist": [
+    "garbage",
+    "garbages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "medieval armored glove",
+   "blocklist": [
+    "gauntlet",
+    "gauntleted",
+    "gauntlets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "fastest running gait of a horse",
+   "blocklist": [
+    "gallop",
+    "gallopade",
+    "gallopades",
+    "galloped",
+    "galloper",
+    "gallopers",
+    "galloping",
+    "gallops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "male goose",
+   "blocklist": [
+    "gander",
+    "gandered",
+    "gandering",
+    "ganders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "cold spanish tomato soup",
+   "blocklist": [
+    "gazpacho",
+    "gazpachos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "rinse mouth with liquid noisily",
+   "blocklist": [
+    "gargle",
+    "gargled",
+    "gargler",
+    "garglers",
+    "gargles",
+    "gargling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "chess opening sacrifice",
+   "blocklist": [
+    "gambir",
+    "gambirs",
+    "gambit",
+    "gambits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "thin woven medical bandage fabric",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gauze",
+     "gauzy"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "large spanish sailing ship",
+   "blocklist": [
+    "galleass",
+    "galleasses",
+    "galleon",
+    "galleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "four quarts equal this volume",
+   "blocklist": [
+    "gallon",
+    "gallonage",
+    "gallonages",
+    "gallons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "small mechanical or electronic device",
+   "blocklist": [
+    "gadget",
+    "gadgeteer",
+    "gadgeteers",
+    "gadgetries",
+    "gadgetry",
+    "gadgets",
+    "gadgety"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "wager money in a casino",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gamble",
+     "gambling"
+    ],
+    [
+     "game",
+     "gaming"
+    ]
+   ],
+   "blocked_word_count": 60,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "kitchen on a ship",
+   "blocklist": [
+    "galley",
+    "galleys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 93.04788773148148,
+  "cost_numerator": 643147,
+  "cost_denominator": 6912,
+  "cost_exact": false,
+  "cost_mcse": 0.29638484484942274,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 435787,
+   "denominator": 6912,
+   "value": 63.04788773148148,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:11,4:43,5:69,6:139,7:181,8:171,9:140,10:81,11:54,12:33,13:24,14:8,15:3,16:3,17:2,18:2,19:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.29638484484942274,
+   "rollouts": 256,
+   "rank_total": 871574,
+   "rank_denominator": 13824,
+   "cache_key": "66caadaabba05742f029702ec6dbd504"
+  }
+ }
+}

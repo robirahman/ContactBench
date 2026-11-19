@@ -1,0 +1,967 @@
+{
+ "game_id": "dev41-0007-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A mariner's wearable regret",
+   "blocklist": [
+    "albatross",
+    "albatrosses",
+    "anchor",
+    "tattoo",
+    "tattoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Name a fruit a comedian would find funny.",
+   "blocklist": [
+    "apple",
+    "apples",
+    "apricot",
+    "apricots",
+    "avocado",
+    "avocados",
+    "banana",
+    "bananas",
+    "berries",
+    "berry",
+    "blackberries",
+    "blackberry",
+    "blueberries",
+    "blueberry",
+    "cantaloupe",
+    "cantaloupes",
+    "cherries",
+    "cherry",
+    "coconut",
+    "coconuts",
+    "cranberries",
+    "cranberry",
+    "date",
+    "dates",
+    "fig",
+    "figs",
+    "grape",
+    "grapefruit",
+    "grapefruits",
+    "grapes",
+    "guava",
+    "guavas",
+    "kiwi",
+    "kiwis",
+    "kumquat",
+    "kumquats",
+    "lemon",
+    "lemons",
+    "lime",
+    "limes",
+    "mango",
+    "melon",
+    "melons",
+    "nectarine",
+    "nectarines",
+    "orange",
+    "oranges",
+    "papaya",
+    "papayas",
+    "peach",
+    "peaches",
+    "pear",
+    "pears",
+    "persimmon",
+    "persimmons",
+    "pineapple",
+    "pineapples",
+    "plantain",
+    "plantains",
+    "plum",
+    "plums",
+    "pomegranate",
+    "pomegranates",
+    "prune",
+    "prunes",
+    "pumpkin",
+    "pumpkins",
+    "quince",
+    "raisin",
+    "raisins",
+    "raspberries",
+    "raspberry",
+    "strawberries",
+    "strawberry",
+    "tangerine",
+    "tangerines",
+    "tomato",
+    "tomatoes",
+    "watermelon",
+    "watermelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 80,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "What random five- or six-letter word feels plush?",
+   "blocklist": [
+    "alpaca",
+    "angora",
+    "blanket",
+    "boucle",
+    "bunny",
+    "butter",
+    "canopy",
+    "carpet",
+    "cloud",
+    "clouds",
+    "cloudy",
+    "cotton",
+    "couch",
+    "creamy",
+    "cuddle",
+    "cuddly",
+    "cushion",
+    "cushy",
+    "damask",
+    "deluxe",
+    "divan",
+    "dough",
+    "doughy",
+    "downy",
+    "duvet",
+    "duvets",
+    "fleece",
+    "fleecy",
+    "fluff",
+    "fluffy",
+    "furry",
+    "futon",
+    "fuzzy",
+    "jersey",
+    "kitten",
+    "kitty",
+    "koala",
+    "lavish",
+    "linen",
+    "llama",
+    "lounge",
+    "luxury",
+    "mallow",
+    "mitten",
+    "mohair",
+    "mousse",
+    "muffin",
+    "mushy",
+    "padded",
+    "palace",
+    "panda",
+    "pillow",
+    "pillows",
+    "plump",
+    "plushy",
+    "poodle",
+    "puffy",
+    "puppy",
+    "quilt",
+    "quilts",
+    "rabbit",
+    "ritzy",
+    "sateen",
+    "satin",
+    "satiny",
+    "scarf",
+    "shaggy",
+    "shawl",
+    "sheep",
+    "sherpa",
+    "silken",
+    "silky",
+    "smooth",
+    "sponge",
+    "spongy",
+    "squish",
+    "suede",
+    "swank",
+    "swanky",
+    "teddy",
+    "throne",
+    "tissue",
+    "towel",
+    "towels",
+    "tufted",
+    "tweed",
+    "velour",
+    "velvet",
+    "velvety",
+    "warmth",
+    "woolen",
+    "woolly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 92,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Any ENABLE entry. My zero-based index: 83527.",
+   "blocklist": [
+    "legislators",
+    "legislatorship",
+    "legislatorships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Pick an s-entry at offset 7000-7999; I like 391.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sinfulness",
+     "slickrocks"
+    ]
+   ],
+   "blocked_word_count": 1000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words('', 327*327-577, 1)",
+   "blocklist": [
+    "overwear",
+    "overwearing",
+    "overwears",
+    "overweary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Uniform random offset 0..172607. Trust your luck!",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs",
+    "aal",
+    "interglacials",
+    "intergovernmental",
+    "intergradation",
+    "intergradational",
+    "intergradations",
+    "invidiousness",
+    "invidiousnesses",
+    "invigilate",
+    "invigilated",
+    "invigilates",
+    "lucked",
+    "luckie",
+    "luckier",
+    "luckies",
+    "luckiest",
+    "luckily",
+    "luckiness",
+    "luckinesses",
+    "lucking",
+    "luger",
+    "lugers",
+    "luges",
+    "luggage",
+    "luggages",
+    "nonunanimous",
+    "nonuniform",
+    "nonuniformities",
+    "nonuniformity",
+    "nonunion",
+    "reaginic",
+    "reagins",
+    "real",
+    "realer",
+    "reales",
+    "zymotic",
+    "zymurgies",
+    "zymurgy",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 44,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "paradox"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Index 70000 + your favorite integer from 0..9999.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "horticulturally",
+     "juristic"
+    ]
+   ],
+   "blocked_word_count": 10005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Index 0..69999. Choose via private randomness.",
+   "blocklist": [
+    "abandons",
+    "abapical",
+    "beardtongues",
+    "cunningest",
+    "cunningly",
+    "cunningness",
+    "cunningnesses",
+    "cunnings",
+    "hortatively",
+    "hortatory",
+    "horticultural"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "debonairly"
+    },
+    {
+     "seat": "guesser2",
+     "word": "decker"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Global index: 122000 + count_words('str').",
+   "blocklist": [
+    "ramentum",
+    "ramequin",
+    "ramequins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "ASCII hex: 706c617479707573",
+   "blocklist": [
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Use global index 30000..39999, chosen at random.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "confusion",
+     "detonation"
+    ]
+   ],
+   "blocked_word_count": 10005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Sample global index 40000..59999 uniformly.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "detonates",
+     "gaining"
+    ]
+   ],
+   "blocked_word_count": 20003,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Sample global index 80000..109999 uniformly.",
+   "blocklist": [
+    "jurisprudents",
+    "jurist",
+    "juristically",
+    "mentor",
+    "mountainside",
+    "nonunionized",
+    "perch",
+    "perchance"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mashy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "nephritic"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sample global index 110000..138999 uniformly.",
+   "blocklist": [
+    "perched",
+    "percher",
+    "psycholinguistic",
+    "recontextualizing",
+    "recontour",
+    "recontoured",
+    "redivision",
+    "rhapsodizes",
+    "silvered",
+    "silverer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scrappages"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Sample global index 139000..172607 uniformly.",
+   "blocklist": [
+    "silverers",
+    "silverfish",
+    "silverfishes",
+    "slatterns",
+    "slatting",
+    "suspenseless",
+    "suspenser",
+    "tigerishnesses",
+    "tombed",
+    "tombing",
+    "tombless",
+    "tomblike",
+    "tombola",
+    "ulterior",
+    "ulteriorly",
+    "wiles",
+    "wilful",
+    "zymology",
+    "zymosan",
+    "zymosans",
+    "zymoses",
+    "zymosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "twistings"
+    },
+    {
+     "seat": "guesser2",
+     "word": "transportee"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Sample global index 15000..24999 uniformly.",
+   "blocklist": [
+    "bistoury",
+    "bistre",
+    "branchy",
+    "brand",
+    "brilliantine",
+    "bumptious",
+    "caginesses",
+    "caging",
+    "cagy",
+    "casein",
+    "chored",
+    "choregi",
+    "choregus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "buzzard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "canescent"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Sample global index 60000..69999 uniformly.",
+   "blocklist": [
+    "gaingiving",
+    "gaingivings",
+    "gainless",
+    "genip",
+    "genipap",
+    "gory",
+    "gosh",
+    "guitarfishes",
+    "guitarist",
+    "guitarists",
+    "hamal",
+    "harvest",
+    "harvestable",
+    "hemodialyses",
+    "hemodialysis",
+    "horticulture",
+    "horticultures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "glycerin"
+    },
+    {
+     "seat": "guesser2",
+     "word": "granolithic"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Uniform global index 0..14999; block whole range?",
+   "blocklist": [
+    "acold",
+    "anaphases",
+    "anaphasic",
+    "aquaplaners",
+    "autunite",
+    "bearer",
+    "bisters",
+    "bistort",
+    "bistorts",
+    "bistouries"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "anemometer"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apyrase"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Uniform global index 25000..29999. Block interval?",
+   "blocklist": [
+    "choreguses",
+    "choreic",
+    "choreiform",
+    "clambered",
+    "coalsacks",
+    "coeducational",
+    "coeducationally",
+    "coeducations",
+    "collaboratively",
+    "compendiousness",
+    "confuses",
+    "confusing",
+    "confusingly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "clavicles"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coalesce"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Random index 90000..99999. Mine ends in 627.",
+   "blocklist": [
+    "methicillin",
+    "millepeds",
+    "misfocuses",
+    "modus",
+    "morphemes",
+    "multisensory",
+    "naphthol",
+    "neuroendocrinology"
+   ],
+   "blocked_ranges": [
+    [
+     "neurofibrillary",
+     "nonunanimous"
+    ]
+   ],
+   "blocked_word_count": 2379,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Let's meet somewhere in the middle of B. B...?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "backstitch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "bitting"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "B...? Think of a spelling bee's favorite.",
+   "blocklist": [
+    "baccalaureate",
+    "ballyhoo",
+    "beehive",
+    "beehives",
+    "beekeeper",
+    "beekeepers",
+    "beekeeping",
+    "beeswax",
+    "begonia",
+    "beleaguer",
+    "bellwether",
+    "benevolence",
+    "benevolent",
+    "bergamot",
+    "bibliophile",
+    "bizarre",
+    "bloom",
+    "blooms",
+    "blossom",
+    "blossoms",
+    "bluebell",
+    "borage",
+    "bougainvillea",
+    "bouquet",
+    "bourgeois",
+    "bourgeoisie",
+    "boutique",
+    "broccoli",
+    "brouhaha",
+    "buckwheat",
+    "bumblebee",
+    "bumblebees",
+    "buoyancy",
+    "buoyant",
+    "bureaucracy",
+    "burlesque",
+    "buttercup",
+    "clover",
+    "honey",
+    "nectar",
+    "pollen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 41,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "bookkeeper"
+    },
+    {
+     "seat": "guesser2",
+     "word": "buzz"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Uniform global index 112000..121999.",
+   "blocklist": [
+    "physiographies",
+    "physiography",
+    "portents",
+    "prelature",
+    "prelatures",
+    "programmabilities",
+    "quokka",
+    "quokkas",
+    "quomodo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "prebind"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sample global index 122000..138999 uniformly.",
+   "blocklist": [
+    "quomodos",
+    "quondam",
+    "redivisions",
+    "reimagines",
+    "rhapsodizing",
+    "riley",
+    "rilievi",
+    "scrappily",
+    "scrupulosities",
+    "silverberries",
+    "silverberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "retrospective"
+    },
+    {
+     "seat": "guesser2",
+     "word": "rosinol"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Index 150000 + your favorite four-digit number.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "suspenseless",
+     "ulsters"
+    ]
+   ],
+   "blocked_word_count": 10000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Index 160000 + your favorite four-digit number.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ulterior",
+     "wiles"
+    ]
+   ],
+   "blocked_word_count": 10001,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "windmill"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Index 140000 + your favorite four-digit number.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "slatterns",
+     "suspensefulnesses"
+    ]
+   ],
+   "blocked_word_count": 10000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Index 100000 + your favorite four-digit number.",
+   "blocklist": [
+    "nonunions",
+    "oblasti",
+    "obtrusive",
+    "occupying",
+    "ogham",
+    "perceptually",
+    "perch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "overassertive"
+    },
+    {
+     "seat": "guesser2",
+     "word": "osmiridium"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 6842.349966459284,
+  "cost_numerator": 20359330217,
+  "cost_denominator": 2975488,
+  "cost_exact": false,
+  "cost_mcse": 2.129137397399234,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 20270065577,
+   "denominator": 2975488,
+   "value": 6812.349966459284,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:601,4:2367,5:5200,6:9120,7:13825,8:16686,9:14548,10:11623,11:8731,12:6057,13:4105,14:2650,15:1627,16:919,17:504,18:257,19:141,20:76",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 2.129137397399234,
+   "rollouts": 256,
+   "rank_total": 20270065577,
+   "rank_denominator": 2975488,
+   "cache_key": "a90389a7c25fe569a0cbef9cbdc1e6bc"
+  }
+ }
+}

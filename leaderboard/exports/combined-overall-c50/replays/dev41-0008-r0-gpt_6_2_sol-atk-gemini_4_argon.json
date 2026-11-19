@@ -1,0 +1,719 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Man's best friend",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A horse wearing prison pajamas",
+   "blocklist": [
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "First unused entry from the dictionary's midpoint",
+   "blocklist": [
+    "luge",
+    "luged",
+    "luges"
+   ],
+   "blocked_ranges": [
+    [
+     "listers",
+     "lupuses"
+    ]
+   ],
+   "blocked_word_count": 1503,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "encyclopedia"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "First dictionary word not yet used",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs",
+    "aal",
+    "aalii",
+    "aardvark",
+    "glossary",
+    "lexicon",
+    "thesaurus",
+    "vocabulary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "ENABLE list_words: prefix='', offset=999, limit=1",
+   "blocklist": [
+    "accustomed",
+    "accustomedness",
+    "accustomednesses",
+    "accustoming",
+    "accustoms",
+    "ace",
+    "aced",
+    "acedia",
+    "acedias",
+    "aceldama"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Four silent letters waiting behind one sound",
+   "blocklist": [
+    "aitch",
+    "aye",
+    "eau",
+    "eaux",
+    "ewe",
+    "eye",
+    "queue",
+    "queued",
+    "queueing",
+    "queuer",
+    "queuers",
+    "queues",
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Three consecutive doubled letters; ledger job",
+   "blocklist": [
+    "bookkeeper",
+    "bookkeepers",
+    "bookkeeping",
+    "bookkeepings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Sun-Earth-Moon alignment; six letters, three Ys",
+   "blocklist": [
+    "syzygal",
+    "syzygial",
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Egyptian riddle guardian: pyramid pharaoh mummy",
+   "blocklist": [
+    "sphinges",
+    "sphinx",
+    "sphinxes",
+    "sphinxlike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Chemical element with atomic number 1",
+   "blocklist": [
+    "hydrogen",
+    "hydrogenase",
+    "hydrogenases",
+    "hydrogenate",
+    "hydrogenated",
+    "hydrogenates",
+    "hydrogenating",
+    "hydrogenation",
+    "hydrogenations",
+    "hydrogenous",
+    "hydrogens",
+    "protium",
+    "protiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Eight-armed cephalopod; common singular",
+   "blocklist": [
+    "devilfish",
+    "devilfishes",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "What might crawl across a picnic blanket?",
+   "blocklist": [
+    "ant",
+    "ants",
+    "beetle",
+    "bug",
+    "bugs",
+    "insect",
+    "insects",
+    "spider"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "run set get put take make have give go see say",
+   "blocklist": [
+    "action",
+    "actions",
+    "come",
+    "keep",
+    "let",
+    "monosyllabic",
+    "monosyllable",
+    "monosyllables",
+    "polysemies",
+    "polysemous",
+    "polysemy",
+    "turn",
+    "verb",
+    "verbal",
+    "verbals",
+    "verbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Unrealistically idealistic, like Don Quixote",
+   "blocklist": [
+    "quixotic",
+    "quixotical",
+    "quixotically",
+    "quixotism",
+    "quixotisms",
+    "quixotries",
+    "quixotry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Pattern of beats in music",
+   "blocklist": [
+    "cadence",
+    "meter",
+    "meters",
+    "metre",
+    "metres",
+    "rhythm",
+    "rhythmic",
+    "rhythmical",
+    "rhythmically",
+    "rhythmicities",
+    "rhythmicity",
+    "rhythmics",
+    "rhythmist",
+    "rhythmists",
+    "rhythmization",
+    "rhythmizations",
+    "rhythmize",
+    "rhythmized",
+    "rhythmizes",
+    "rhythmizing",
+    "rhythms",
+    "tempo",
+    "tempos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab ab",
+   "blocklist": [
+    "aaliis",
+    "aals",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "aargh",
+    "aarrgh",
+    "aarrghh",
+    "aas",
+    "aasvogel",
+    "aasvogels",
+    "aba",
+    "abaca",
+    "abacas",
+    "abaci",
+    "aback",
+    "abacus",
+    "abacuses",
+    "abaft",
+    "abalone",
+    "abalones",
+    "abandon",
+    "abandoned",
+    "abandoning",
+    "abandonment",
+    "abandons",
+    "abas",
+    "abase",
+    "abased",
+    "abasement",
+    "abate",
+    "abated",
+    "abatement",
+    "abdomen",
+    "abdominal",
+    "abs",
+    "repetition"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 37,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aceldamas"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Present everywhere; starts U, ends OUS",
+   "blocklist": [
+    "ubique",
+    "ubiquinone",
+    "ubiquinones",
+    "ubiquities",
+    "ubiquitous",
+    "ubiquitously",
+    "ubiquitousness",
+    "ubiquitousnesses",
+    "ubiquity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Fruit that supposedly fell on Newton's head",
+   "blocklist": [
+    "apple",
+    "applecart",
+    "applecarts",
+    "applejack",
+    "applejacks",
+    "apples",
+    "applesauce",
+    "applesauces",
+    "pome",
+    "pomes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "88 keys. cat bat rat cow pig fox hen owl bee elk",
+   "blocklist": [
+    "animal",
+    "animals",
+    "constellation",
+    "constellations",
+    "fauna",
+    "faunas",
+    "keyboard",
+    "keyboards",
+    "mammals",
+    "pianist",
+    "pianists",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos",
+    "zoo",
+    "zoology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "A gentle west wind",
+   "blocklist": [
+    "breeze",
+    "breezes",
+    "favonian",
+    "westerlies",
+    "westerly",
+    "zephyr",
+    "zephyrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Six-letter word for space devoid of matter",
+   "blocklist": [
+    "aether",
+    "plenum",
+    "vacua",
+    "vacuities",
+    "vacuity",
+    "vacuole",
+    "vacuoles",
+    "vacuous",
+    "vacuum",
+    "vacuumed",
+    "vacuuming",
+    "vacuums",
+    "void",
+    "voided",
+    "voider",
+    "voids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "abates abating abatis abatises abator abators",
+   "blocklist": [
+    "abacterial",
+    "abaka",
+    "abakas",
+    "abamp",
+    "abampere",
+    "abamperes",
+    "abamps",
+    "abandoner",
+    "abandoners",
+    "abandonments",
+    "abapical",
+    "abasedly",
+    "abasements",
+    "abaser",
+    "abasers",
+    "abases",
+    "abash",
+    "abashed",
+    "abashes",
+    "abashing",
+    "abashment",
+    "abashments",
+    "abasia",
+    "abasias",
+    "abasing",
+    "abatable",
+    "abatements",
+    "abater",
+    "abaters",
+    "abattis",
+    "abattises",
+    "abattoir",
+    "abattoirs",
+    "abaxial",
+    "abaxile",
+    "abba",
+    "abbacies",
+    "abbacy",
+    "abbas",
+    "abbatial",
+    "abbe",
+    "abbes",
+    "abbess",
+    "abbesses",
+    "abbey",
+    "abbeys",
+    "abbot",
+    "abbotcies",
+    "abbotcy",
+    "abbots",
+    "abbreviate",
+    "abbreviated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 52,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "jigsaw"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "abb abo aby acey ach ack act add ado ads aft age",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abbreviation"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ago"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "aid ail aim ain air ais ait ala alb ale all alp",
+   "blocklist": [
+    "abbreviates",
+    "abbreviating",
+    "abbreviations",
+    "abbreviator",
+    "abbreviators",
+    "acacia",
+    "adage",
+    "aga",
+    "again",
+    "against",
+    "aiblins",
+    "aide",
+    "alarm",
+    "alas",
+    "albeit",
+    "album",
+    "ama",
+    "amateur",
+    "ana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "air"
+    },
+    {
+     "seat": "guesser2",
+     "word": "alt"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11938.23876892863,
+  "cost_numerator": 47050031577,
+  "cost_denominator": 3941120,
+  "cost_exact": false,
+  "cost_mcse": 2.9951754396697265,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 46931797977,
+   "denominator": 3941120,
+   "value": 11908.23876892863,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:894,4:3790,5:8444,6:14962,7:22807,8:28122,9:24637,10:20115,11:15395,12:11275,13:7791,14:5098,15:3182,16:1936,17:1125,18:593,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 2.9951754396697265,
+   "rollouts": 256,
+   "rank_total": 46931797977,
+   "rank_denominator": 3941120,
+   "cache_key": "d0c6505387a06a1064fbe5b24853c523"
+  }
+ }
+}

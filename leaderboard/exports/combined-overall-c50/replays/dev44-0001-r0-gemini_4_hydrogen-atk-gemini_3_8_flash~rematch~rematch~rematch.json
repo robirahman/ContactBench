@@ -1,0 +1,405 @@
+{
+ "game_id": "dev44-0001-r0-gemini_4_hydrogen-atk-gemini_3_8_flash~rematch~rematch~rematch",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "gemini_3_8_flash",
+ "secret": "thanatoses",
+ "initial_prefix": "tha",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 96,
+ "initial_secret_candidates": [
+  "thack",
+  "thacked",
+  "thacking",
+  "thacks",
+  "thae",
+  "thairm",
+  "thairms",
+  "thalami",
+  "thalamic",
+  "thalamus",
+  "thalassaemia",
+  "thalassaemias",
+  "thalassemia",
+  "thalassemias",
+  "thalassemic",
+  "thalassemics",
+  "thalassic",
+  "thalassocracies",
+  "thalassocracy",
+  "thalassocrat",
+  "thalassocrats",
+  "thaler",
+  "thalers",
+  "thalidomide",
+  "thalidomides",
+  "thalli",
+  "thallic",
+  "thallium",
+  "thalliums",
+  "thalloid",
+  "thallophyte",
+  "thallophytes",
+  "thallophytic",
+  "thallous",
+  "thallus",
+  "thalluses",
+  "than",
+  "thanage",
+  "thanages",
+  "thanatological",
+  "thanatologies",
+  "thanatologist",
+  "thanatologists",
+  "thanatology",
+  "thanatos",
+  "thanatoses",
+  "thane",
+  "thanes",
+  "thaneship",
+  "thaneships",
+  "thank",
+  "thanked",
+  "thanker",
+  "thankers",
+  "thankful",
+  "thankfuller",
+  "thankfullest",
+  "thankfully",
+  "thankfulness",
+  "thankfulnesses",
+  "thanking",
+  "thankless",
+  "thanklessly",
+  "thanklessness",
+  "thanklessnesses",
+  "thanks",
+  "thanksgiving",
+  "thanksgivings",
+  "thankworthy",
+  "tharm",
+  "tharms",
+  "that",
+  "thataway",
+  "thatch",
+  "thatched",
+  "thatcher",
+  "thatchers",
+  "thatches",
+  "thatchier",
+  "thatchiest",
+  "thatching",
+  "thatchy",
+  "thaumaturge",
+  "thaumaturges",
+  "thaumaturgic",
+  "thaumaturgies",
+  "thaumaturgist",
+  "thaumaturgists",
+  "thaumaturgy",
+  "thaw",
+  "thawed",
+  "thawer",
+  "thawers",
+  "thawing",
+  "thawless",
+  "thaws"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "melt ice",
+   "blocklist": [
+    "thaw",
+    "thawed",
+    "thawer",
+    "thawers",
+    "thawing",
+    "thaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "express gratitude",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thank",
+     "thankworthy"
+    ]
+   ],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "straw roof",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thack",
+     "thacks"
+    ],
+    [
+     "thatch",
+     "thatchy"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "this and",
+   "blocklist": [
+    "that",
+    "thataway"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "better ___",
+   "blocklist": [
+    "than"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Macbeth title",
+   "blocklist": [
+    "thanage",
+    "thanages",
+    "thane",
+    "thanes",
+    "thaneship",
+    "thaneships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "brain part",
+   "blocklist": [
+    "thalami",
+    "thalamic",
+    "thalamus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "toxic metal element Tl",
+   "blocklist": [
+    "thallium",
+    "thalliums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "morning sickness drug",
+   "blocklist": [
+    "thalidomide",
+    "thalidomides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "study of death",
+   "blocklist": [
+    "thanatological",
+    "thanatologies",
+    "thanatologist",
+    "thanatologists",
+    "thanatology",
+    "thanatos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "miracle working or magic",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thaumaturge",
+     "thaumaturgy"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "old German silver coin, origin of dollar",
+   "blocklist": [
+    "thaler",
+    "thalers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "singular undifferentiated body of algae",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thalli",
+     "thalluses"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Mediterranean anemia",
+   "blocklist": [
+    "thalassaemia",
+    "thalassaemias",
+    "thalassemia",
+    "thalassemias",
+    "thalassemic",
+    "thalassemics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "maritime empire",
+   "blocklist": [
+    "thalassic",
+    "thalassocracies",
+    "thalassocracy",
+    "thalassocrat",
+    "thalassocrats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "thawless",
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "thae thairm thairms thanatoses tharm tharms",
+   "blocklist": [
+    "thae",
+    "thairm",
+    "thairms",
+    "tharm",
+    "tharms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 17.0,
+  "cost_numerator": 17,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 1849,
+   "denominator": 256,
+   "value": 7.22265625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:4,5:5,6:10,7:12,8:16,9:8,10:4,11:10,12:12,13:9,14:4,15:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.12358628218558343,
+   "rollouts": 256,
+   "rank_total": 7396,
+   "rank_denominator": 1024,
+   "cache_key": "a4e16f4d3c94ee2bfd19fc799c14745a"
+  },
+  "fallback": null
+ }
+}

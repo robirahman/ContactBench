@@ -1,0 +1,612 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_2_sol-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_fable_5_2",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Amethyst, citrine, and rose are all forms of what?",
+   "blocklist": [
+    "crystal",
+    "crystals",
+    "gem",
+    "gems",
+    "gemstone",
+    "gemstones",
+    "mineral",
+    "minerals",
+    "quartz",
+    "quartzes",
+    "silica",
+    "stone",
+    "stones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long-snouted African mammal, genus Orycteropus.",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "antbear",
+    "antbears",
+    "anteater",
+    "anteaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "duck beaver otter echidna / 1+2+3, not 4",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "S_Z_G_ (each blank is the same letter)",
+   "blocklist": [
+    "syzygal",
+    "syzygial",
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Beat pattern: _ H Y T H M",
+   "blocklist": [
+    "cadence",
+    "cadences",
+    "meter",
+    "meters",
+    "rhythm",
+    "rhythmic",
+    "rhythmical",
+    "rhythmically",
+    "rhythmics",
+    "rhythmist",
+    "rhythmists",
+    "rhythmization",
+    "rhythmizations",
+    "rhythmize",
+    "rhythmized",
+    "rhythmizes",
+    "rhythmizing",
+    "rhythms",
+    "tempo",
+    "tempos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "red ___ yellow green blue indigo violet",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "orange"
+    },
+    {
+     "seat": "guesser2",
+     "word": "orange"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "3-sided polygon; tiger table tree time train tooth",
+   "blocklist": [
+    "triangle",
+    "triangles",
+    "triangular",
+    "triangularities",
+    "triangularity",
+    "triangularly",
+    "triangulate",
+    "triangulated",
+    "triangulates",
+    "triangulating",
+    "triangulation",
+    "triangulations",
+    "trigon",
+    "trigonal",
+    "trigons",
+    "trilateral"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "T0MAT0; turtle tulip thunder toast tunnel",
+   "blocklist": [
+    "tomatillo",
+    "tomatillos",
+    "tomato",
+    "tomatoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "11 < ? < 13; taxi tent thumb toast trap tall",
+   "blocklist": [
+    "dozen",
+    "dozens",
+    "twelfth",
+    "twelfths",
+    "twelve",
+    "twelvemo",
+    "twelvemonth",
+    "twelvemonths",
+    "twelvemos",
+    "twelves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "12+1? tack tarp teal trio trot tuna tube twin",
+   "blocklist": [
+    "thirteen",
+    "thirteens",
+    "thirteenth",
+    "thirteenths",
+    "triskaidekaphobia",
+    "triskaidekaphobias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Mandarin citrus; top toy tap tip tie toe tan tin",
+   "blocklist": [
+    "tangelo",
+    "tangelos",
+    "tangerine",
+    "tangerines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Formal suit; two tea ten tax tar tag tug ton too",
+   "blocklist": [
+    "tailcoat",
+    "tailcoated",
+    "tailcoats",
+    "tails",
+    "tux",
+    "tuxedo",
+    "tuxedoed",
+    "tuxedos",
+    "tuxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Twister; thy tis tee tab tub try tat tatty",
+   "blocklist": [
+    "tempest",
+    "tempests",
+    "tornadic",
+    "tornado",
+    "tornadoes",
+    "tornados",
+    "tourbillion",
+    "tourbillon",
+    "twist",
+    "twisters",
+    "twists",
+    "typhoon",
+    "typhoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1912 iceberg ship; that this then them than true",
+   "blocklist": [
+    "liner",
+    "liners",
+    "steamship",
+    "tanker",
+    "titan",
+    "titaness",
+    "titanesses",
+    "titanic",
+    "titanically",
+    "titanism",
+    "titanisms",
+    "titanium",
+    "titaniums",
+    "titans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Brass with slide; touch track trade trick trust",
+   "blocklist": [
+    "sackbut",
+    "sackbuts",
+    "trombone",
+    "trombones",
+    "trombonist",
+    "trombonists",
+    "trumpet",
+    "trumpeter",
+    "trumpeters",
+    "trumpets",
+    "tuba",
+    "tubae",
+    "tubas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Bell's invention; thea there their these those",
+   "blocklist": [
+    "phone",
+    "phones",
+    "telephone",
+    "telephoned",
+    "telephoner",
+    "telephoners",
+    "telephones",
+    "telephonic",
+    "telephonically",
+    "telephonies",
+    "telephoning",
+    "telephonist",
+    "telephonists",
+    "telephony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Corn wrap; teak tart toll tame team tank tack",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tortilla"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tortilla"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Measures fever; three think thing thought through",
+   "blocklist": [
+    "thermometer",
+    "thermometers",
+    "thermometric",
+    "thermometrically",
+    "thermometries",
+    "thermometry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Synonym book; thermos thrift thread throat throne",
+   "blocklist": [
+    "thesaural",
+    "thesauri",
+    "thesaurus",
+    "thesauruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Sewing finger cap; thank thick thin third thorn",
+   "blocklist": [
+    "thimble",
+    "thimbleberries",
+    "thimbleberry",
+    "thimbleful",
+    "thimblefuls",
+    "thimblerig",
+    "thimblerigged",
+    "thimblerigger",
+    "thimbleriggers",
+    "thimblerigging",
+    "thimblerigs",
+    "thimbles",
+    "thimbleweed",
+    "thimbleweeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "10^3; thug thus thaw thud thump thrush throw thick",
+   "blocklist": [
+    "thousand",
+    "thousandfold",
+    "thousands",
+    "thousandth",
+    "thousandths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "One who steals; thesis thermal thistle thunderous",
+   "blocklist": [
+    "theft",
+    "thefts",
+    "thief",
+    "thieve",
+    "thieved",
+    "thieveries",
+    "thievery",
+    "thieves",
+    "thieving",
+    "thievish",
+    "thievishly",
+    "thievishness",
+    "thievishnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Herb that sounds like a clock's measure",
+   "blocklist": [
+    "thyme",
+    "thymes",
+    "thymey",
+    "thymier",
+    "thymiest",
+    "thymol",
+    "thymols",
+    "thymy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Engine speed control; throb thrum thence thrice",
+   "blocklist": [
+    "throttle",
+    "throttleable",
+    "throttled",
+    "throttlehold",
+    "throttleholds",
+    "throttler",
+    "throttlers",
+    "throttles",
+    "throttling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Lightning storm; thigh thong threw thrash thwart",
+   "blocklist": [
+    "tempestuous"
+   ],
+   "blocked_ranges": [
+    [
+     "thunder",
+     "thundery"
+    ]
+   ],
+   "blocked_word_count": 34,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 105.10714775219299,
+  "cost_numerator": 3067447,
+  "cost_denominator": 29184,
+  "cost_exact": false,
+  "cost_mcse": 0.21742012996963805,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 2191927,
+   "denominator": 29184,
+   "value": 75.10714775219299,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:9,5:33,6:89,7:114,8:168,9:154,10:114,11:103,12:79,13:62,14:45,15:22,16:20,17:12,18:4,19:3",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.21742012996963805,
+   "rollouts": 256,
+   "rank_total": 2191927,
+   "rank_denominator": 29184,
+   "cache_key": "dfdd162b9bad5266e76538d2e8402c08"
+  }
+ }
+}

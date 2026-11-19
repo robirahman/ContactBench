@@ -1,0 +1,527 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Suitcases and bags for travel",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages",
+    "portmanteau",
+    "suitcase",
+    "trunk",
+    "trunks",
+    "valise",
+    "valises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Swinging weight in a grandfather clock",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pendulum"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pendulum"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Twin-hulled sailboat",
+   "blocklist": [
+    "cat",
+    "catamaran",
+    "catamarans",
+    "catboat",
+    "cats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Lizard that changes color to blend in",
+   "blocklist": [
+    "chameleon",
+    "chameleonic",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Red mineral ore that is the chief source of Hg",
+   "blocklist": [
+    "cinnabar",
+    "cinnabarine",
+    "cinnabars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Volatile liquid CHCl3 once used as an anesthetic",
+   "blocklist": [
+    "chloroform",
+    "chloroformed",
+    "chloroforming",
+    "chloroforms",
+    "ether",
+    "ethers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Steam-whistle organ at a circus",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "calliope"
+    },
+    {
+     "seat": "guesser2",
+     "word": "calliope"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Lobe-finned living fossil fish of genus Latimeria",
+   "blocklist": [
+    "coelacanth",
+    "coelacanths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Snail-shaped spiral cavity of the inner ear",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cochlea"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cochlea"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Perforated kitchen bowl used to drain pasta",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Scottish sheepdog breed made famous by Lassie",
+   "blocklist": [
+    "collie",
+    "collies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Gout drug derived from the autumn crocus",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "colchicine",
+     "colchicums"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Shredded cabbage salad dressed with mayonnaise",
+   "blocklist": [
+    "coleslaw",
+    "coleslaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Antibody-rich first milk produced after birth",
+   "blocklist": [
+    "colostrum",
+    "colostrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Clavicle connecting sternum and shoulder blade",
+   "blocklist": [
+    "collarbone",
+    "collarbones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Fibrous structural protein in skin and tendons",
+   "blocklist": [
+    "collagen",
+    "collagenase",
+    "collagenases",
+    "collagenous",
+    "collagens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Publisher's emblem or inscription at book's end",
+   "blocklist": [
+    "colophon",
+    "colophonies",
+    "colophons",
+    "colophony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Spurred wildflower of genus Aquilegia",
+   "blocklist": [
+    "columbine",
+    "columbines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Operatic soprano performing ornate trills and runs",
+   "blocklist": [
+    "coloratura",
+    "coloraturas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Row of columns supporting a roof or entablature",
+   "blocklist": [
+    "colonnade",
+    "colonnaded",
+    "colonnades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Vault of recessed niches for cinerary urns",
+   "blocklist": [
+    "columbaria",
+    "columbarium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Yellow-flowered perennial herb Tussilago farfara",
+   "blocklist": [
+    "coltsfoot",
+    "coltsfoots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "African leaf-eating monkey that lacks a thumb",
+   "blocklist": [
+    "colobi",
+    "coloboma",
+    "colobomata",
+    "colobus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Nitrocellulose solution used for wet-plate photos",
+   "blocklist": [
+    "collodion",
+    "collodions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Giant bronze statue of Helios at Rhodes harbor",
+   "blocklist": [
+    "colossal",
+    "colossally",
+    "colossi",
+    "colossus",
+    "colossuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Irish dish of mashed potatoes and kale",
+   "blocklist": [
+    "colcannon",
+    "colcannons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Former chemical name for element 41, niobium",
+   "blocklist": [
+    "columbium",
+    "columbiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Ancient Roman amphitheater where gladiators fought",
+   "blocklist": [
+    "coliseum",
+    "coliseums",
+    "colosseum",
+    "colosseums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Inflammation of the large intestine lining",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colitis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colitis"
+    }
+   ],
+   "prefix_after": "coll",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Young Irish girl or woman",
+   "blocklist": [
+    "colleen",
+    "colleens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "coll",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.509207589285715,
+  "cost_numerator": 166689,
+  "cost_denominator": 3584,
+  "cost_exact": false,
+  "cost_mcse": 0.15020877840332097,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 59169,
+   "denominator": 3584,
+   "value": 16.509207589285715,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:1,6:3,7:14,8:28,9:37,10:31,11:26,12:23,13:21,14:15,15:6,16:4,17:3,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.15020877840332097,
+   "rollouts": 256,
+   "rank_total": 59169,
+   "rank_denominator": 3584,
+   "cache_key": "81c0c48ea89ac204a144ad388c9f3005"
+  }
+ }
+}

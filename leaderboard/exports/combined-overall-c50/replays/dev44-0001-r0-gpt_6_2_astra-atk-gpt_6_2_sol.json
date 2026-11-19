@@ -1,0 +1,755 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_2_astra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_sol",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "One sea creature, your pick; think tidal pool",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "starfish"
+    },
+    {
+     "seat": "guesser2",
+     "word": "starfish"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Striped big cat",
+   "blocklist": [
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Another animal, your pick; back to the water",
+   "blocklist": [
+    "tadpole",
+    "tang",
+    "tarpon",
+    "terrapin",
+    "tetra",
+    "tilapia",
+    "toad",
+    "trout",
+    "tuna",
+    "turbot",
+    "turtle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Free associate: first abstract noun that occurs",
+   "blocklist": [
+    "tact",
+    "talent",
+    "taste",
+    "teamwork",
+    "temptation",
+    "tenacity",
+    "tenderness",
+    "tension",
+    "terror",
+    "thankfulness",
+    "theory",
+    "thirst",
+    "thought",
+    "threat",
+    "thrill",
+    "time",
+    "timidity",
+    "togetherness",
+    "tolerance",
+    "tradition",
+    "tragedy",
+    "tranquility",
+    "transcendence",
+    "transparency",
+    "trauma",
+    "treachery",
+    "triumph",
+    "trouble",
+    "trust",
+    "truth",
+    "turmoil",
+    "tyranny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Picture a small object in a cluttered drawer.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thimble"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thumbtack"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Imagine rummaging in that drawer again. Pinch.",
+   "blocklist": [
+    "tack",
+    "tacks",
+    "tong",
+    "tongs",
+    "tweezer",
+    "tweezers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "What does a nervous conductor accidentally raise?",
+   "blocklist": [
+    "tact",
+    "tariff",
+    "temperature",
+    "tempi",
+    "tempo",
+    "tempos",
+    "tension",
+    "threshold",
+    "throttle",
+    "throttles",
+    "thumb",
+    "thumbs",
+    "ticket",
+    "tickets",
+    "timbre",
+    "time",
+    "timing",
+    "tolerance",
+    "tonality",
+    "tone",
+    "tones",
+    "train",
+    "trains",
+    "treble",
+    "tremolo",
+    "triangle",
+    "trolley",
+    "trombone",
+    "trouble",
+    "trumpet",
+    "tune",
+    "tunes",
+    "tuning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 33,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A millennial's age, give or take?",
+   "blocklist": [
+    "thirties",
+    "thirtieth",
+    "thirty",
+    "thirtyish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pick something sitting on a kitchen counter.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "teapot"
+    },
+    {
+     "seat": "guesser2",
+     "word": "toaster"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Quick: picture something outdoors.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tree"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tree"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Quick: picture something outdoors.",
+   "blocklist": [
+    "thatch",
+    "thicket",
+    "thistle",
+    "thorn",
+    "thrush",
+    "thunder",
+    "thunderbolt",
+    "thundercloud",
+    "thunderhead",
+    "thunderstorm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Name whatever springs to mind. Anything at all.",
+   "blocklist": [
+    "thank",
+    "thankful",
+    "thanks",
+    "thanksgiving",
+    "thaw",
+    "theater",
+    "theatre",
+    "their",
+    "them",
+    "theme",
+    "then",
+    "theorem",
+    "therapist",
+    "therapy",
+    "there",
+    "thermometer",
+    "thermos",
+    "thermostat",
+    "thesaurus",
+    "thesauruses",
+    "these",
+    "they",
+    "thick",
+    "thicket",
+    "thief",
+    "thieves",
+    "thigh",
+    "thimbleful",
+    "thin",
+    "thine",
+    "thing",
+    "things",
+    "thinker",
+    "thinking",
+    "thirsty",
+    "this",
+    "thistles",
+    "thong",
+    "thorns",
+    "thorny",
+    "thorough",
+    "thoroughbred",
+    "thoroughfare",
+    "those",
+    "thoughts",
+    "thousand",
+    "thread",
+    "threads",
+    "three",
+    "threw",
+    "thrift",
+    "thrifty",
+    "thrive",
+    "throat",
+    "throb",
+    "thrombosis",
+    "thrombus",
+    "throne",
+    "throng",
+    "through",
+    "throw",
+    "thrushes",
+    "thrust",
+    "thud",
+    "thug",
+    "thump",
+    "thunderbird",
+    "thunderclap",
+    "thunderous",
+    "thunderstorms",
+    "thus",
+    "thwart",
+    "thyme",
+    "thyroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 74,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pick a longish academic term. Any discipline.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thalassemia",
+     "thalassemia"
+    ],
+    [
+     "theocracy",
+     "theoretical"
+    ],
+    [
+     "theology",
+     "theology"
+    ],
+    [
+     "therapeutic",
+     "thermodynamics"
+    ],
+    [
+     "thermoelectric",
+     "thermoplastics"
+    ],
+    [
+     "thrombocyte",
+     "thrombocytopenia"
+    ],
+    [
+     "thromboembolism",
+     "thromboembolism"
+    ],
+    [
+     "thyroglobulin",
+     "thyroxine"
+    ]
+   ],
+   "blocked_word_count": 206,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Any surviving thr- word; favor a vivid adjective.",
+   "blocklist": [
+    "threadbare",
+    "threatening",
+    "thrilling",
+    "thriving",
+    "throaty",
+    "throbbing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Browse the whole prefix. Pick an obscure entry.",
+   "blocklist": [
+    "thack",
+    "thae",
+    "thairm",
+    "thalassic",
+    "thalassocracy",
+    "thalassocrat",
+    "thallophyte",
+    "thanage",
+    "thanatology",
+    "thanatos",
+    "thaneship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sample a random offset in TH. Pick a familiar hit.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thickset"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thievery"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Random thunder- compound. Prefer an AC/DC vibe.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thunderbirds",
+     "thundery"
+    ]
+   ],
+   "blocked_word_count": 31,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Random offset 0-1000. Nearest unused simple verb.",
+   "blocklist": [
+    "thank",
+    "thaw",
+    "theorize",
+    "thicken",
+    "thieve",
+    "thin",
+    "think",
+    "thirst",
+    "thrash",
+    "thread",
+    "threaten",
+    "thresh",
+    "thrill",
+    "thrive",
+    "throb",
+    "throng",
+    "throttle",
+    "throw",
+    "thrust",
+    "thud",
+    "thumb",
+    "thump",
+    "thunder",
+    "thwart"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Middle-ish TH offset, round number, first unused.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thick",
+     "thousand"
+    ]
+   ],
+   "blocked_word_count": 276,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Something a grad student might lose sleep over.",
+   "blocklist": [
+    "theses",
+    "thesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Choose a past tense anywhere in TH. Go by ear.",
+   "blocklist": [
+    "thanked",
+    "thatched",
+    "thawed",
+    "thieved",
+    "thought",
+    "thrashed",
+    "threaded",
+    "threatened",
+    "threshed",
+    "thrilled",
+    "thrived",
+    "throbbed",
+    "thronged",
+    "throttled",
+    "thrown",
+    "thudded",
+    "thumbed",
+    "thumped",
+    "thundered",
+    "thwarted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Random surviving entry starting THEA. Use lookup.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "theaters",
+     "theatrics"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "thearchy"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "thou thy thee than thawed thrice: plural shark?",
+   "blocklist": [
+    "thresher",
+    "threshers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Random surviving throw- entry, favor nostalgia.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "throwback"
+    },
+    {
+     "seat": "guesser2",
+     "word": "throwback"
+    }
+   ],
+   "prefix_after": "tha",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "thalamus thallium thankless thane thaler: plural?",
+   "blocklist": [
+    "thalami",
+    "thalers",
+    "thalliums",
+    "thanes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "thalli thallus tharm thawer thaws: miracle magic?",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thaumaturge",
+     "thaumaturgy"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "tha",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "thataway thawing thankfully thalidomide: roofer?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thatcher"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thatcher"
+    }
+   ],
+   "prefix_after": "than",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "thanker thanking thankers thanages: death expert?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thanatologist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thanatologist"
+    }
+   ],
+   "prefix_after": "thana",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "thanatological thanatologies thanatologists",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thanatoses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thanatoses"
+    }
+   ],
+   "prefix_after": "thana",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

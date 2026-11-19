@@ -1,0 +1,70 @@
+{
+ "game_id": "dev42-0002-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "thwarts",
+ "initial_prefix": "thw",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 14,
+ "initial_secret_candidates": [
+  "thwack",
+  "thwacked",
+  "thwacker",
+  "thwackers",
+  "thwacking",
+  "thwacks",
+  "thwart",
+  "thwarted",
+  "thwarter",
+  "thwarters",
+  "thwarting",
+  "thwartly",
+  "thwarts",
+  "thwartwise"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "thwart thwarted thwarting thwarts; a sharp blow",
+   "blocklist": [
+    "thwack"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "thw",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1.0,
+  "cost_numerator": 1,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 185,
+   "denominator": 128,
+   "value": 1.4453125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:2,7:2,8:5,9:4,10:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.02169812066893641,
+   "rollouts": 256,
+   "rank_total": 740,
+   "rank_denominator": 512,
+   "cache_key": "9fb31fc74d3fbbae52012d14ab45a32f"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,503 @@
+{
+ "game_id": "dev41-0005-r0-gemini_3_8_flash-atk-gpt_6_luna",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_luna",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "largest living land animal with trunk and tusks",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "natural satellite orbiting earth",
+   "blocklist": [
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "footwear lost by cinderella at midnight",
+   "blocklist": [
+    "glass",
+    "shoe",
+    "slipper",
+    "slippers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "japanese art of paper folding",
+   "blocklist": [
+    "origami"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "canopy protecting against rain or sunshine",
+   "blocklist": [
+    "awning",
+    "cover",
+    "parasol",
+    "raincoat",
+    "shade",
+    "sunshade",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "opposite of always",
+   "blocklist": [
+    "never"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "instrument used to navigate showing magnetic north",
+   "blocklist": [
+    "compass",
+    "compasses",
+    "direction",
+    "magnet",
+    "navigation",
+    "navigator",
+    "needle",
+    "north"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "process by which plants convert sunlight to energy",
+   "blocklist": [
+    "chlorophyll",
+    "chloroplast",
+    "glucose",
+    "oxygen",
+    "photosynthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "has a head and a tail but no body",
+   "blocklist": [
+    "coin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "tallest living terrestrial animal with long neck",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "giraffe",
+    "giraffes",
+    "giraffish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "transparent odorless tasteless liquid forming seas",
+   "blocklist": [
+    "aqua",
+    "fluid",
+    "freshwater",
+    "ocean",
+    "sea",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "building where books are kept for borrowing",
+   "blocklist": [
+    "archive",
+    "athenaeum",
+    "bookmobile",
+    "bookshop",
+    "bookstore",
+    "library"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "twelve in the middle of the day",
+   "blocklist": [
+    "meridian",
+    "midday",
+    "noon",
+    "noontime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "fruit said to keep the doctor away if eaten daily",
+   "blocklist": [
+    "apple",
+    "applejack",
+    "applejacks",
+    "apples",
+    "applesauce",
+    "cider",
+    "orchard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "australian marsupial with powerful hind legs",
+   "blocklist": [
+    "kangaroo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "color between blue and violet in the rainbow",
+   "blocklist": [
+    "hue",
+    "indigo",
+    "purple",
+    "spectrum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "triangular transparent glass splitting white light",
+   "blocklist": [
+    "crystal",
+    "disperses",
+    "dispersion",
+    "lens",
+    "prism",
+    "refraction",
+    "refractor",
+    "wedge"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "mythical fire breathing reptile",
+   "blocklist": [
+    "basilisk",
+    "dragon",
+    "drake",
+    "lizard",
+    "serpent",
+    "wyvern"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "element with chemical symbol au",
+   "blocklist": [
+    "atomic",
+    "aurum",
+    "metal",
+    "periodic"
+   ],
+   "blocked_ranges": [
+    [
+     "gold",
+     "goldsmith"
+    ]
+   ],
+   "blocked_word_count": 37,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "egyptian tomb shaped like a triangle",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pyramid"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pyramid"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "dome shaped shelter made of blocks of snow",
+   "blocklist": [
+    "icehouse",
+    "icehouses",
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "element with chemical symbol fe",
+   "blocklist": [
+    "iron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "body of land completely surrounded by water",
+   "blocklist": [
+    "atoll",
+    "island",
+    "islander",
+    "islands",
+    "isle",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "colored part of the eye surrounding the pupil",
+   "blocklist": [
+    "cornea",
+    "irid",
+    "irides",
+    "iridology",
+    "iris",
+    "sclera",
+    "uvea"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "hard white material from elephant tusks",
+   "blocklist": [
+    "ivories",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "small arthropod with six legs",
+   "blocklist": [
+    "insect",
+    "insectile",
+    "insects",
+    "invertebrate",
+    "invertebrates",
+    "isopod"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 562.8888878676471,
+  "cost_numerator": 61242311,
+  "cost_denominator": 108800,
+  "cost_exact": false,
+  "cost_mcse": 0.6436037951957413,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 57978311,
+   "denominator": 108800,
+   "value": 532.8888878676471,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:19,4:54,5:115,6:278,7:501,8:730,9:850,10:939,11:859,12:766,13:605,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.6436037951957413,
+   "rollouts": 256,
+   "rank_total": 115956622,
+   "rank_denominator": 217600,
+   "cache_key": "827ff585e130d2efabf263e13cd8f072"
+  }
+ }
+}

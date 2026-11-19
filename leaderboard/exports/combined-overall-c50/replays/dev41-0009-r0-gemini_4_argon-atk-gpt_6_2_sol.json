@@ -1,0 +1,501 @@
+{
+ "game_id": "dev41-0009-r0-gemini_4_argon-atk-gpt_6_2_sol",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_sol",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Suitcases and bags for travel",
+   "blocklist": [
+    "baggage",
+    "bags",
+    "luggage",
+    "portmanteaus",
+    "suitcases",
+    "valises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Hopping marsupial with a pouch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Tall yellow plant whose seeds are eaten",
+   "blocklist": [
+    "sunflower",
+    "sunflowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Straw-filled figure keeping birds off crops",
+   "blocklist": [
+    "scarecrow",
+    "scarecrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Dinosaur with back plates and spiked tail",
+   "blocklist": [
+    "stegosaur",
+    "stegosaurs",
+    "stegosaurus",
+    "stegosauruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Doctor's chest-listening tool with earpieces",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Red summer fruit with tiny outside seeds",
+   "blocklist": [
+    "strawberries",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Curved brass woodwind horn played in jazz",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Long thin cylindrical Italian pasta strings",
+   "blocklist": [
+    "spaghetti",
+    "spaghettini",
+    "spaghettinis",
+    "spaghettis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Four-wheeled wooden deck ridden for kickflips",
+   "blocklist": [
+    "skateboard",
+    "skateboards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Motorized winter sled on skis and a track",
+   "blocklist": [
+    "snowmobile",
+    "snowmobiles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Heavy two-handed mallet for smashing concrete",
+   "blocklist": [
+    "sledge",
+    "sledgehammer",
+    "sledgehammers",
+    "sledges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Very tall multistory city building or tower",
+   "blocklist": [
+    "skyscraper",
+    "skyscrapers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Underwater naval vessel with a periscope",
+   "blocklist": [
+    "sub",
+    "submarine",
+    "submarines",
+    "submersible",
+    "submersibles",
+    "subs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Hand tool for turning slotted or Phillips screws",
+   "blocklist": [
+    "screwdriver",
+    "screwdrivers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Dashboard dial showing a car's velocity in mph",
+   "blocklist": [
+    "speedo",
+    "speedometer",
+    "speedometers",
+    "speedos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Horse-drawn Old West passenger wagon",
+   "blocklist": [
+    "stagecoach",
+    "stagecoaches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Carved stone coffin for an Egyptian mummy",
+   "blocklist": [
+    "sarcophagi",
+    "sarcophagus",
+    "sarcophaguses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Device that records earthquake tremors on a drum",
+   "blocklist": [
+    "seismograph",
+    "seismographs",
+    "seismometer",
+    "seismometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Wide-brimmed Mexican hat worn by mariachis",
+   "blocklist": [
+    "sombrero",
+    "sombreros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Wicked woman who married Cinderella's father",
+   "blocklist": [
+    "stepmother",
+    "stepmothers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Venomous desert arachnid with pincers and stinger",
+   "blocklist": [
+    "scorpion",
+    "scorpions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Six-sided ice crystal falling in a blizzard",
+   "blocklist": [
+    "snowflake",
+    "snowflakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Large ocean game fish with a flat slashing bill",
+   "blocklist": [
+    "swordfish",
+    "swordfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Heavy road-paving vehicle with a giant steel drum",
+   "blocklist": [
+    "steamroller",
+    "steamrollers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Tailed amphibian that can regrow lost limbs",
+   "blocklist": [
+    "salamander",
+    "salamanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Spring-loaded pocketknife that snaps open",
+   "blocklist": [
+    "switchblade",
+    "switchblades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Pivoting spotlight projecting a beam into the sky",
+   "blocklist": [
+    "searchlight",
+    "searchlights",
+    "spotlights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Dark shadow outline of a face in profile",
+   "blocklist": [
+    "silhouette",
+    "silhouettes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1311.1592163579578,
+  "cost_numerator": 1162043701,
+  "cost_denominator": 886272,
+  "cost_exact": false,
+  "cost_mcse": 0.7760533622121398,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1135455541,
+   "denominator": 886272,
+   "value": 1281.1592163579578,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:58,4:350,5:1049,6:1794,7:2645,8:3462,9:2895,10:2230,11:1544,12:1119,13:711,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.7760533622121398,
+   "rollouts": 256,
+   "rank_total": 1135455541,
+   "rank_denominator": 886272,
+   "cache_key": "9876e9758ee402110971ee8831c61bf5"
+  }
+ }
+}

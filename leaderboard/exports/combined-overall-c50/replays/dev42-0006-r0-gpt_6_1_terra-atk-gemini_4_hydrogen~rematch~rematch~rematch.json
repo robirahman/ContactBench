@@ -1,0 +1,673 @@
+{
+ "game_id": "dev42-0006-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "balletomanes",
+ "initial_prefix": "bal",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 200,
+ "initial_secret_candidates": [
+  "balaclava",
+  "balaclavas",
+  "balalaika",
+  "balalaikas",
+  "balance",
+  "balanced",
+  "balancer",
+  "balancers",
+  "balances",
+  "balancing",
+  "balas",
+  "balases",
+  "balata",
+  "balatas",
+  "balboa",
+  "balboas",
+  "balbriggan",
+  "balbriggans",
+  "balconied",
+  "balconies",
+  "balcony",
+  "bald",
+  "baldachin",
+  "baldachino",
+  "baldachinos",
+  "baldachins",
+  "balded",
+  "balder",
+  "balderdash",
+  "balderdashes",
+  "baldest",
+  "baldhead",
+  "baldheaded",
+  "baldheads",
+  "baldies",
+  "balding",
+  "baldish",
+  "baldly",
+  "baldness",
+  "baldnesses",
+  "baldpate",
+  "baldpates",
+  "baldric",
+  "baldrick",
+  "baldricks",
+  "baldrics",
+  "balds",
+  "baldy",
+  "bale",
+  "baled",
+  "baleen",
+  "baleens",
+  "balefire",
+  "balefires",
+  "baleful",
+  "balefully",
+  "balefulness",
+  "balefulnesses",
+  "baler",
+  "balers",
+  "bales",
+  "baling",
+  "balisaur",
+  "balisaurs",
+  "balk",
+  "balkanization",
+  "balkanizations",
+  "balkanize",
+  "balkanized",
+  "balkanizes",
+  "balkanizing",
+  "balked",
+  "balker",
+  "balkers",
+  "balkier",
+  "balkiest",
+  "balkily",
+  "balkiness",
+  "balkinesses",
+  "balking",
+  "balkline",
+  "balklines",
+  "balks",
+  "balky",
+  "ball",
+  "ballad",
+  "ballade",
+  "balladeer",
+  "balladeers",
+  "ballades",
+  "balladic",
+  "balladist",
+  "balladists",
+  "balladries",
+  "balladry",
+  "ballads",
+  "ballast",
+  "ballasted",
+  "ballasting",
+  "ballasts",
+  "ballcarrier",
+  "ballcarriers",
+  "balled",
+  "baller",
+  "ballerina",
+  "ballerinas",
+  "ballers",
+  "ballet",
+  "balletic",
+  "balletomane",
+  "balletomanes",
+  "balletomania",
+  "balletomanias",
+  "ballets",
+  "ballgame",
+  "ballgames",
+  "ballhandling",
+  "ballhandlings",
+  "ballhawk",
+  "ballhawks",
+  "ballies",
+  "balling",
+  "ballista",
+  "ballistae",
+  "ballistic",
+  "ballistically",
+  "ballistics",
+  "ballon",
+  "ballonet",
+  "ballonets",
+  "ballonne",
+  "ballonnes",
+  "ballons",
+  "balloon",
+  "ballooned",
+  "ballooning",
+  "balloonings",
+  "balloonist",
+  "balloonists",
+  "balloons",
+  "ballot",
+  "balloted",
+  "balloter",
+  "balloters",
+  "balloting",
+  "ballots",
+  "ballpark",
+  "ballparks",
+  "ballplayer",
+  "ballplayers",
+  "ballpoint",
+  "ballpoints",
+  "ballroom",
+  "ballrooms",
+  "balls",
+  "ballsier",
+  "ballsiest",
+  "ballsy",
+  "ballute",
+  "ballutes",
+  "bally",
+  "ballyhoo",
+  "ballyhooed",
+  "ballyhooing",
+  "ballyhoos",
+  "ballyrag",
+  "ballyragged",
+  "ballyragging",
+  "ballyrags",
+  "balm",
+  "balmacaan",
+  "balmacaans",
+  "balmier",
+  "balmiest",
+  "balmily",
+  "balminess",
+  "balminesses",
+  "balmlike",
+  "balmoral",
+  "balmorals",
+  "balms",
+  "balmy",
+  "balneal",
+  "balneologies",
+  "balneology",
+  "baloney",
+  "baloneys",
+  "bals",
+  "balsa",
+  "balsam",
+  "balsamed",
+  "balsamic",
+  "balsaming",
+  "balsams",
+  "balsas",
+  "baluster",
+  "balusters",
+  "balustrade",
+  "balustraded",
+  "balustrades"
+ ],
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Round toy; balance balcony bald bale balk ballot",
+   "blocklist": [
+    "ball",
+    "balloon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pointe dance; ballad ballast balm balsam balmy",
+   "blocklist": [
+    "ballet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Ski mask; baloney balding baleen baleful balboa",
+   "blocklist": [
+    "balaclava"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Nonsense; balanced balancing balances baler balky",
+   "blocklist": [
+    "balderdash",
+    "ballyhoo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Russian lute; bales baled baling balked balks",
+   "blocklist": [
+    "balalaika",
+    "balalaikas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Baseball stadium; balconies balancers balaclavas",
+   "blocklist": [
+    "ballpark",
+    "ballparks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ballad singer; baldy balds balder baldest balas",
+   "blocklist": [
+    "balladeer",
+    "balladist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Female ballet dancer; balancer balatas balboas",
+   "blocklist": [
+    "ballerina",
+    "ballerinas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Dance hall; ballots balloons balsa balsamic balms",
+   "blocklist": [
+    "ballroom",
+    "ballrooms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Hair loss; balata balases baldly baldies baldish",
+   "blocklist": [
+    "baldness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Sporting contest; ballads balers balking ballades",
+   "blocklist": [
+    "ballgame",
+    "ballgames"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Projectile trajectory; balded baldrics baleens",
+   "blocklist": [
+    "ballistic",
+    "ballistics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pen type; balls balling balloted ballasts balsas",
+   "blocklist": [
+    "ballpoint",
+    "ballpoints"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Stair rail; baluster ballplayer balloting ballsy",
+   "blocklist": [
+    "balustrade",
+    "balustrades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Hot air pilot; balled baller ballets balmier bals",
+   "blocklist": [
+    "balloonist",
+    "balloonists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Rapidly expanding; balusters ballplayers balmiest",
+   "blocklist": [
+    "ballooning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Hairless pate; baldric baldrick balker balkers",
+   "blocklist": [
+    "baldhead",
+    "baldheads",
+    "baldpate",
+    "baldpates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Ancient siege engine; ballooned ballers baloneys",
+   "blocklist": [
+    "ballista",
+    "ballistae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Divide region; balkier balkiest balkily balkline",
+   "blocklist": [
+    "balkanize",
+    "balkanized",
+    "balkanizes",
+    "balkanizing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Vote counter; bally balletic ballade balsams",
+   "blocklist": [
+    "balloter",
+    "balloters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Funeral pyre; balbriggan balconied baldachin",
+   "blocklist": [
+    "balefire",
+    "balefires"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Scottish castle; ballasted ballasting ballyhoos",
+   "blocklist": [
+    "balmoral",
+    "balmorals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Football runner; ballon ballons ballies ballutes",
+   "blocklist": [
+    "ballcarrier",
+    "ballcarriers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Bath science; ballute balneal balisaur balisaurs",
+   "blocklist": [
+    "balneologies",
+    "balneology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Hairless head; baldricks baldachins balladeers",
+   "blocklist": [
+    "baldheaded",
+    "baldnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Bully; balladic balladry balklines balsamed",
+   "blocklist": [
+    "ballyrag",
+    "ballyragged",
+    "ballyragging",
+    "ballyrags"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ballet fanatic; ballsier ballsiest balefully",
+   "blocklist": [
+    "balletomane"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Hoops thief; balladries ballonets balminess",
+   "blocklist": [
+    "ballhawk",
+    "ballhawks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Ballet mania; balmily ballonet ballonne balmlike",
+   "blocklist": [
+    "balletomania",
+    "balletomanias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Dribbling; balbriggans baldachino balderdashes",
+   "blocklist": [
+    "ballhandling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "bal",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 32.17578125,
+  "cost_numerator": 8237,
+  "cost_denominator": 256,
+  "cost_exact": false,
+  "cost_mcse": 0.06491532047178583,
+  "baseline": {
+   "numerator": 6203,
+   "denominator": 448,
+   "value": 13.845982142857142,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:6,5:13,6:19,7:32,8:38,9:40,10:24,11:15,12:7,13:5,14:1",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.1820755950908333,
+   "rollouts": 256,
+   "rank_total": 24812,
+   "rank_denominator": 1792,
+   "cache_key": "637205e2aa20c05e0a80a2941595476d"
+  },
+  "fallback": {
+   "numerator": 557,
+   "denominator": 256,
+   "value": 2.17578125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "9:4,10:3,11:7,12:1,13:4,14:1",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.06491532047178583,
+   "rollouts": 256,
+   "rank_total": 557,
+   "rank_denominator": 256,
+   "cache_key": "134092d0fbc8019bbc3350ba8ba2eb8c"
+  }
+ }
+}

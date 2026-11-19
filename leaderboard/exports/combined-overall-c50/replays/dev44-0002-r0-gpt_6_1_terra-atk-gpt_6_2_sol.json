@@ -1,0 +1,447 @@
+{
+ "game_id": "dev44-0002-r0-gpt_6_1_terra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_2_sol",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "the and for are but not you all; feline pet",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "get got good game gold girl; bearded farm animal",
+   "blocklist": [
+    "goat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "give goes gone great group; color of grass",
+   "blocklist": [
+    "green"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "god gas gun guy gap gay gym gum; wine fruit",
+   "blocklist": [
+    "grape"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "ground glass guard guess ghost; long neck animal",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "going gave garden giant; six-string instrument",
+   "blocklist": [
+    "guitar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "general government grow glad; king kong ape",
+   "blocklist": [
+    "gorilla"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "glory grace grand grade grant grave; honking bird",
+   "blocklist": [
+    "goose"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "garlic ginger gravy grain; hand covering",
+   "blocklist": [
+    "glove"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "golden globe global growth guest; fence entrance",
+   "blocklist": [
+    "gate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "gather gentle genius germ guilt; plural of goose",
+   "blocklist": [
+    "geese"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "gag gal gel gem gig gin gob; orange aquarium pet",
+   "blocklist": [
+    "goldfish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "gab gad gaffe gable gadget; earth's pulling force",
+   "blocklist": [
+    "gravity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "guide guilty gamble gossip grocery; milky way",
+   "blocklist": [
+    "galaxy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "growing girls groups games gifts; sport with clubs",
+   "blocklist": [
+    "golf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "go grab grin grit grey grim; large citrus fruit",
+   "blocklist": [
+    "grapefruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "garage garbage goddess; slow moving river of ice",
+   "blocklist": [
+    "glacier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "governor gasoline gorgeous generous; sticky paste",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "glue"
+    },
+    {
+     "seat": "guesser2",
+     "word": "glue"
+    }
+   ],
+   "prefix_after": "ga",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "gain gang gait gasp gash gala gamut; four quarts",
+   "blocklist": [
+    "gallon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "gallery gaming garment garnish; judge's hammer",
+   "blocklist": [
+    "gavel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "gaze gage gaga gaff gabby; swift african antelope",
+   "blocklist": [
+    "gazelle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "gardener gardens garland garnet; horse's fast gait",
+   "blocklist": [
+    "gallop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "gambling gambler garrison gathered; engine seal",
+   "blocklist": [
+    "gasket"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "garb gargle gargoyle galvanize; stocking band",
+   "blocklist": [
+    "garter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "gains gamer gales gases gaily; alligator, briefly",
+   "blocklist": [
+    "gator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "galactic gallant galaxies gall; fragrant flower",
+   "blocklist": [
+    "gardenia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "gauge gambit gallons gathering gateway; wound mesh",
+   "blocklist": [
+    "gauze"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "gabardine gabardines gabbard gabbards; biting fly",
+   "blocklist": [
+    "gadfly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "gargantuan galvanic gallows gallstone; geese flock",
+   "blocklist": [
+    "gaggle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 97.63569415983606,
+  "cost_numerator": 1524679,
+  "cost_denominator": 15616,
+  "cost_exact": false,
+  "cost_mcse": 0.28817728286782407,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1056199,
+   "denominator": 15616,
+   "value": 67.63569415983606,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:5,4:30,5:65,6:146,7:197,8:194,9:153,10:91,11:61,12:39,13:27,14:9,15:3,16:3,17:2,18:2,19:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.28817728286782407,
+   "rollouts": 256,
+   "rank_total": 1056199,
+   "rank_denominator": 15616,
+   "cache_key": "b5b751e848aa84e993949ee0d0f8d4f1"
+  }
+ }
+}

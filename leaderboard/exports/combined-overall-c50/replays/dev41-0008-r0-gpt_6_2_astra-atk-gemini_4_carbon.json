@@ -1,0 +1,709 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a fruit that shares its name with a bird.",
+   "blocklist": [
+    "kiwi",
+    "kiwis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Any word at empty-prefix offset 83000 to 83999.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "lavender",
+     "lewises"
+    ]
+   ],
+   "blocked_word_count": 1000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Pick any five-digit offset. Trust your instinct.",
+   "blocklist": [
+    "autunite",
+    "beardtongues",
+    "discombobulations",
+    "epithetical",
+    "feijoa",
+    "invidiousnesses",
+    "luges",
+    "nonunanimous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Empty-prefix index 54321 + lucky single digit.",
+   "blocklist": [
+    "feijoas",
+    "feint",
+    "feinted",
+    "feinting",
+    "feints",
+    "feirie",
+    "feist",
+    "feistier",
+    "feistiest",
+    "feistiness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Use a favorite constant's first 5 digits as offset",
+   "blocklist": [
+    "biconvexities",
+    "biconvexity",
+    "bodily",
+    "boding",
+    "coccic",
+    "coccid",
+    "confrontals",
+    "confrontation",
+    "coordination",
+    "coordinations",
+    "galvanic",
+    "galvanically",
+    "gnawn",
+    "gnaws",
+    "hangers",
+    "hangfire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Any empty-prefix offset from 40000 through 79999.",
+   "blocklist": [
+    "detonates",
+    "epithets",
+    "firebricks",
+    "gainfulnesses",
+    "gaingiving",
+    "horticultures",
+    "jurisprudentially"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ghostwrites"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Read 'banquet's final sweets' backwards (plural).",
+   "blocklist": [
+    "dessert",
+    "desserts",
+    "stress",
+    "stressed",
+    "stresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Choose a random empty-prefix offset 10000..29999.",
+   "blocklist": [
+    "autunites",
+    "bearer",
+    "bistoury",
+    "caginesses",
+    "caging",
+    "catalysts",
+    "choregus",
+    "confusional"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "byelaw"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chamfron"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Six-digit offset, all digits distinct, ascending.",
+   "blocklist": [
+    "reagins",
+    "real",
+    "realer",
+    "reales",
+    "realignment",
+    "reappointing",
+    "recoupling",
+    "scoped",
+    "stickinesses",
+    "tragacanths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Offset 70000..79999, alternating two numerals.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "huskers",
+     "lavender"
+    ]
+   ],
+   "blocked_word_count": 12295,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Imagine a secret integer in 84000..119999. Index.",
+   "blocklist": [
+    "lewisite",
+    "maternally",
+    "nonclassroom",
+    "nonuniform",
+    "obligate",
+    "phenates",
+    "psycholinguist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "nielloed"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "s-list, offset 7810 + your favorite digit (1..9).",
+   "blocklist": [
+    "slattern",
+    "slatternliness",
+    "slatternlinesses",
+    "slatternly",
+    "slatterns",
+    "slatting",
+    "slattings",
+    "slaty",
+    "slaughter",
+    "slaughtered",
+    "slaughterer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Index 100000 plus a spontaneous 5-digit integer.",
+   "blocklist": [
+    "perchance",
+    "pierrot",
+    "realest",
+    "rotte",
+    "rotten",
+    "son",
+    "suspenseless",
+    "thirsted",
+    "vasodilations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "skites"
+    },
+    {
+     "seat": "guesser2",
+     "word": "spathic"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Index 1abcba, abc odd and strictly increasing.",
+   "blocklist": [
+    "plated",
+    "pleasurableness",
+    "ploidy",
+    "posttests",
+    "poulardes",
+    "pricklinesses",
+    "seigniories",
+    "sememe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sheepshearing"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Offset 139403 +/- a personally meaningful year.",
+   "blocklist": [
+    "sits",
+    "situation",
+    "situations",
+    "situp",
+    "situps",
+    "sixes",
+    "sixfold",
+    "sixmo",
+    "sixte",
+    "sixteen"
+   ],
+   "blocked_ranges": [
+    [
+     "sharp",
+     "sheepish"
+    ],
+    [
+     "snowmold",
+     "sobs"
+    ]
+   ],
+   "blocked_word_count": 310,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Index 10abcd: invent four nonrepeating digits.",
+   "blocklist": [
+    "obtrusive",
+    "operatorless",
+    "outbegged",
+    "outscolds",
+    "overgoverns",
+    "peperonis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "panchax"
+    },
+    {
+     "seat": "guesser2",
+     "word": "paneled"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Index 151000..151999; roll three dice marked 0-9.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "synergists",
+     "tarnations"
+    ]
+   ],
+   "blocked_word_count": 1000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Index 3abcd, abcd a descending row of even digits.",
+   "blocklist": [
+    "dassies",
+    "dastard",
+    "demagogueries",
+    "demagoguery",
+    "demoniacs",
+    "demonologist",
+    "demonologists",
+    "demonology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "defecate"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Choose any meteorite-related term at whim.",
+   "blocklist": [
+    "achondrite",
+    "achondrites",
+    "achondritic",
+    "aerolite",
+    "aerolites",
+    "aerolith",
+    "aeroliths",
+    "bolide",
+    "bolides",
+    "chondrite",
+    "chondrites",
+    "chondritic",
+    "chondrule",
+    "chondrules",
+    "meteor",
+    "meteoric",
+    "meteorically",
+    "meteorites",
+    "meteoritic",
+    "meteoritical",
+    "meteoriticist",
+    "meteoriticists",
+    "meteoritics",
+    "meteoroid",
+    "meteoroidal",
+    "meteoroids",
+    "meteors",
+    "siderite",
+    "siderites",
+    "tektite",
+    "tektites",
+    "tektitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Use index 10000 + a four-digit prime you like.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "bakshished",
+     "caginesses"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Offset 90000 + a four-digit square you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "microfilmers",
+     "nonreturnable"
+    ]
+   ],
+   "blocked_word_count": 8778,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Index 60000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gaingiving",
+     "horticulture"
+    ]
+   ],
+   "blocked_word_count": 10000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Index 120000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "psycholinguistic",
+     "rhapsodized"
+    ]
+   ],
+   "blocked_word_count": 10000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Index 40000 + a four-digit number you fancy.",
+   "blocklist": [
+    "detonates",
+    "detonating",
+    "diffidently",
+    "dilutive",
+    "dourly",
+    "dressmakings",
+    "embowers",
+    "engrossment",
+    "epithetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "encouraged"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dot"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Index 160000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "uncommitted",
+     "wiled"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Index 20000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "capaciousness",
+     "confusional"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Index 110000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "phanerogams",
+     "psycholinguist"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Index 40000 + a four-digit number you fancy.",
+   "blocklist": [
+    "dilutor",
+    "discomfit",
+    "distichs",
+    "distil",
+    "dourness",
+    "dressy",
+    "dunnage",
+    "dunnages",
+    "embowing",
+    "engrossments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "divorced"
+    },
+    {
+     "seat": "guesser2",
+     "word": "encouragement"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Index 50000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ethynyl",
+     "gainfulnesses"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Index 140000 + a four-digit number you fancy.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sneak",
+     "suspensefulnesses"
+    ]
+   ],
+   "blocked_word_count": 9000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 5255.986783951193,
+  "cost_numerator": 4514261929,
+  "cost_denominator": 858880,
+  "cost_exact": false,
+  "cost_mcse": 2.0909021311673865,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 4488495529,
+   "denominator": 858880,
+   "value": 5225.986783951193,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:476,4:1792,5:3935,6:6754,7:10123,8:12397,9:10953,10:8803,11:6710,12:4836,13:3232,14:2137,15:1351,16:795,17:473,18:245,19:151,20:67",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 2.0909021311673865,
+   "rollouts": 256,
+   "rank_total": 8976991058,
+   "rank_denominator": 1717760,
+   "cache_key": "2e2f81e1623ad004b54a8b2386d29305"
+  }
+ }
+}

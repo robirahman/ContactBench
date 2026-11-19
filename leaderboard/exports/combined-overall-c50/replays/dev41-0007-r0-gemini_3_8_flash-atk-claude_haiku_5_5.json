@@ -1,0 +1,236 @@
+{
+ "game_id": "dev41-0007-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "the natural satellite of the earth",
+   "blocklist": [
+    "luna",
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "a stitch in time saves",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "nine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "nine"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "beauty is in the eye of the",
+   "blocklist": [
+    "beauty",
+    "eye"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "beholder"
+    },
+    {
+     "seat": "guesser2",
+     "word": "beholder"
+    }
+   ],
+   "prefix_after": "bu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "nip it in the",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "bub",
+     "butadiene"
+    ]
+   ],
+   "blocked_word_count": 918,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "a caterpillar turns into a",
+   "blocklist": [
+    "butterfly",
+    "chrysalis",
+    "pupa"
+   ],
+   "blocked_ranges": [
+    [
+     "butter",
+     "butyl"
+    ]
+   ],
+   "blocked_word_count": 80,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "the chief male servant of a household",
+   "blocklist": [
+    "butler",
+    "butlers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "bu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "the baker and the candlestick maker",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "butcher"
+    },
+    {
+     "seat": "guesser2",
+     "word": "butcher"
+    }
+   ],
+   "prefix_after": "but",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "gas commonly used in cigarette lighters",
+   "blocklist": [
+    "butane",
+    "butene",
+    "butylene"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "but",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "target of a joke",
+   "blocklist": [
+    "butt",
+    "butts"
+   ],
+   "blocked_ranges": [
+    [
+     "butt",
+     "butyl"
+    ]
+   ],
+   "blocked_word_count": 82,
+   "opened_guesses": [],
+   "prefix_after": "but",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "partner of the sundance kid",
+   "blocklist": [
+    "butanes",
+    "butenes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "butch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "butch"
+    }
+   ],
+   "prefix_after": "buta",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "butadienes butanol butanols butanone butanones",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "buta",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11.0,
+  "cost_numerator": 11,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

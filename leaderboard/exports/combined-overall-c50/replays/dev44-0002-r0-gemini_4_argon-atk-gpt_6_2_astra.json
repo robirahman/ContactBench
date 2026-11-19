@@ -1,0 +1,548 @@
+{
+ "game_id": "dev44-0002-r0-gemini_4_argon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_astra",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "list_words offset 86301",
+   "blocklist": [
+    "lugeing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "study of fermentation last word in many dicts",
+   "blocklist": [
+    "zymology",
+    "zymurgy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window 14 letters",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "happy accident or fortunate discovery 11 letters",
+   "blocklist": [
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "plastic or metal sheath at the tip of a shoelace",
+   "blocklist": [
+    "aglet",
+    "aiglet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "1st letter is a and 3rd is r",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "acre",
+    "acrid",
+    "across",
+    "aerial",
+    "aerie",
+    "air",
+    "apron",
+    "arc",
+    "arm",
+    "array",
+    "arrow",
+    "art",
+    "aura"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "1st letter is a and 3rd is r",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardwolves"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aardwolves"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is b",
+   "blocklist": [
+    "gubernatorial"
+   ],
+   "blocked_ranges": [
+    [
+     "gab",
+     "gaby"
+    ],
+    [
+     "gib",
+     "gibsons"
+    ],
+    [
+     "gob",
+     "goby"
+    ],
+    [
+     "gybe",
+     "gybing"
+    ]
+   ],
+   "blocked_word_count": 117,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is d",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gad",
+     "gadzooks"
+    ],
+    [
+     "ged",
+     "geds"
+    ],
+    [
+     "gid",
+     "gids"
+    ],
+    [
+     "god",
+     "godwits"
+    ],
+    [
+     "gude",
+     "gudgeons"
+    ]
+   ],
+   "blocked_word_count": 123,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is g",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gag",
+     "gagsters"
+    ],
+    [
+     "gegenschein",
+     "gegenscheins"
+    ],
+    [
+     "gig",
+     "gigues"
+    ],
+    [
+     "goggle",
+     "gogos"
+    ],
+    [
+     "guggle",
+     "guglets"
+    ]
+   ],
+   "blocked_word_count": 85,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is f",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gaff",
+     "gaffs"
+    ],
+    [
+     "gift",
+     "giftwares"
+    ],
+    [
+     "gofer",
+     "goffers"
+    ],
+    [
+     "guff",
+     "guffs"
+    ]
+   ],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is h",
+   "blocklist": [
+    "gahnite",
+    "gahnites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "1st letters are gh",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gharial",
+     "ghylls"
+    ]
+   ],
+   "blocked_word_count": 77,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1st letter is g and 3rd is l",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gal"
+    }
+   ],
+   "prefix_after": "ga",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "1st letters are gal",
+   "blocklist": [
+    "gala"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "1st letters are gal",
+   "blocklist": [
+    "galabia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1st letters are gam",
+   "blocklist": [
+    "gama"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "1st letters are gam",
+   "blocklist": [
+    "gamas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "British spelling of jail 4 letters",
+   "blocklist": [
+    "gaol"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "plural of British spelling of jail 5 letters",
+   "blocklist": [
+    "gaols"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "British spelling of jailer 6 letters",
+   "blocklist": [
+    "gaoler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "1st letters are gar",
+   "blocklist": [
+    "garage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "1st letters are gar",
+   "blocklist": [
+    "garaged"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "stare with open mouth 4 letters starts with ga",
+   "blocklist": [
+    "gape",
+    "gawk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "1st letters are gas",
+   "blocklist": [
+    "gasalier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "1st letters are gas",
+   "blocklist": [
+    "gasaliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "1st letters are gat 4 letters",
+   "blocklist": [
+    "gate",
+    "gats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "1st letters are gau",
+   "blocklist": [
+    "gauche"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "1st letters are gau",
+   "blocklist": [
+    "gauchely"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "judge hammer 5 letters starts with gav",
+   "blocklist": [
+    "gavel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 94.63436153017241,
+  "cost_numerator": 1405131,
+  "cost_denominator": 14848,
+  "cost_exact": false,
+  "cost_mcse": 0.27155016483086125,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 959691,
+   "denominator": 14848,
+   "value": 64.63436153017241,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:4,4:30,5:66,6:133,7:178,8:183,9:151,10:85,11:58,12:38,13:27,14:9,15:3,16:3,17:2,18:2,19:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.27155016483086125,
+   "rollouts": 256,
+   "rank_total": 959691,
+   "rank_denominator": 14848,
+   "cache_key": "5106cab76dd85bb154568dfe2d194826"
+  }
+ }
+}

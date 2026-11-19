@@ -1,0 +1,490 @@
+{
+ "game_id": "dev44-0000-r0-gpt_6_2_sol-atk-gpt_6_2_astra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_2_astra",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Striped animal: tiger, skunk, okapi, badger",
+   "blocklist": [
+    "chipmunk",
+    "quagga",
+    "raccoon",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Penguin suit; formalwear with satin lapels",
+   "blocklist": [
+    "tailcoat",
+    "tails",
+    "tux",
+    "tuxedo",
+    "tuxedoes",
+    "tuxedos",
+    "tuxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Vast saltwater body; apple orange banana pear plum",
+   "blocklist": [
+    "brine",
+    "deep",
+    "fruit",
+    "fruits",
+    "ocean",
+    "oceans",
+    "sea",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Andean pack camelid; alpaca vicuna guanaco",
+   "blocklist": [
+    "llama",
+    "llamas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tallest mammal; elephant rhino hippo lion leopard",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Full name of the animal nicknamed river horse",
+   "blocklist": [
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "First animal in many dictionaries; eats ants",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "anteater",
+    "anteaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Duck bill, beaver tail; bat cat dog fox rat elk",
+   "blocklist": [
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Giant redwood; oak ash elm fir yew pine cedar",
+   "blocklist": [
+    "sequoia",
+    "sequoias",
+    "tree",
+    "trees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Largest Australian bird; moa kiwi rhea ostrich",
+   "blocklist": [
+    "cassowary",
+    "emu",
+    "emus",
+    "ratite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Lucky number: one two three four five six eight",
+   "blocklist": [
+    "seven",
+    "sevens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Color-changing lizard; gecko iguana monitor anole",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Smiling marsupial native to Rottnest Island",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Wildebeest: ant cow pig hen bee ape yak cod fly",
+   "blocklist": [
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bead calculator; sun moon star sky air ice fire",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Extinct Mauritian bird; auk owl jay tit emmer",
+   "blocklist": [
+    "dodo",
+    "dodoes",
+    "dodos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Tusked Arctic whale; red blue green black white",
+   "blocklist": [
+    "narwhal",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "SiO2 mineral; jazz lynx sphinx crypt glyph waltz",
+   "blocklist": [
+    "quartz",
+    "quartzes",
+    "silica",
+    "silicas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "88 keys; set get put run can may not all use out",
+   "blocklist": [
+    "keyboard",
+    "keyboards",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Small sofa; jam gum nut oil wax ink dye tar mud",
+   "blocklist": [
+    "canape",
+    "couch",
+    "divan",
+    "settee",
+    "settees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk; squid clam snail slug limpet",
+   "blocklist": [
+    "cephalopod",
+    "octopi",
+    "octopod",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Deafening silence; and are but had has you was",
+   "blocklist": [
+    "contradiction",
+    "oxymora",
+    "oxymoron",
+    "oxymorons",
+    "paradox"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Dozen; ten nine zero ace bar car day ear far gap",
+   "blocklist": [
+    "twelve",
+    "twelves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Joey carrier; cut hit let sit fit bit pit lit wit",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Sacred Egyptian wader; ion ire its imp ill inn",
+   "blocklist": [
+    "ibis",
+    "ibises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Snow house; irk ivy ire ick ids ilk imp ion iota",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Titanic's bane; idea item iron idol idle itch inch",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 576.423726663961,
+  "cost_numerator": 22724929,
+  "cost_denominator": 39424,
+  "cost_exact": false,
+  "cost_mcse": 1.0997110628585214,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 21542209,
+   "denominator": 39424,
+   "value": 546.423726663961,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:48,5:116,6:281,7:503,8:731,9:853,10:940,11:859,12:767,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 1.0997110628585214,
+   "rollouts": 256,
+   "rank_total": 43084418,
+   "rank_denominator": 78848,
+   "cache_key": "995c2fbd15c1d05661db42e940ef49be"
+  }
+ }
+}

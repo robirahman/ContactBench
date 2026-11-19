@@ -1,0 +1,501 @@
+{
+ "game_id": "dev42-0003-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "guesstimating",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "element atomic number 8",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "tallest living land animal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "mountain that erupts lava and ash",
+   "blocklist": [
+    "volcanic",
+    "volcano",
+    "volcanoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "handheld canopy used to keep off rain",
+   "blocklist": [
+    "parasol",
+    "parasols",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "loose wet sand that pulls things down",
+   "blocklist": [
+    "bog",
+    "mire",
+    "quicksand",
+    "quicksands",
+    "sand",
+    "sands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "device that measures temperature",
+   "blocklist": [
+    "thermograph",
+    "thermometer",
+    "thermometers",
+    "thermometric",
+    "thermostat",
+    "thermostats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "musical instrument with bellows",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "accordion"
+    },
+    {
+     "seat": "guesser2",
+     "word": "accordion"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Venetian canal boat",
+   "blocklist": [
+    "gondola",
+    "gondolas",
+    "gondolier",
+    "gondoliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "carved stone monster on cathedral roof",
+   "blocklist": [
+    "gargoyle",
+    "gargoyles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "slow-moving river of ice",
+   "blocklist": [
+    "glacial",
+    "glacier",
+    "glaciers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "French Revolution beheading device",
+   "blocklist": [
+    "guillotine",
+    "guillotined",
+    "guillotines",
+    "guillotining"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "largest living primate",
+   "blocklist": [
+    "gorilla",
+    "gorillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "hot spring that shoots water into air",
+   "blocklist": [
+    "geyser",
+    "geysers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "six-stringed plucked musical instrument",
+   "blocklist": [
+    "guitar",
+    "guitarist",
+    "guitarists",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "mashed avocado dip",
+   "blocklist": [
+    "guacamole"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "ancient Roman arena fighter",
+   "blocklist": [
+    "gladiator",
+    "gladiators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "large sour citrus fruit with pink flesh",
+   "blocklist": [
+    "grapefruit",
+    "grapefruits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "octagonal roofed garden pavilion",
+   "blocklist": [
+    "gazebo",
+    "gazebos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "spinning wheel used for orientation",
+   "blocklist": [
+    "gyroscope",
+    "gyroscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "swift slender horned antelope",
+   "blocklist": [
+    "gazelle",
+    "gazelles",
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "judge's small wooden mallet",
+   "blocklist": [
+    "gavel",
+    "gavels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "old record player with horn",
+   "blocklist": [
+    "gramophone",
+    "gramophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "lizard that clings to walls",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gecko"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gecko"
+    }
+   ],
+   "prefix_after": "gu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Hindu or Sikh spiritual teacher",
+   "blocklist": [
+    "guru",
+    "gurus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "small colorful freshwater aquarium fish",
+   "blocklist": [
+    "guppies",
+    "guppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "tropical fruit with pink flesh",
+   "blocklist": [
+    "guava",
+    "guavas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "roof channel for rainwater",
+   "blocklist": [
+    "gutter",
+    "gutters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "easily fooled or tricked",
+   "blocklist": [
+    "gull",
+    "gulled",
+    "gullible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Louisiana stew with okra",
+   "blocklist": [
+    "gumbo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "gu",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 62.901171875,
+  "cost_numerator": 161027,
+  "cost_denominator": 2560,
+  "cost_exact": false,
+  "cost_mcse": 0.3752068393707976,
+  "baseline": {
+   "numerator": 4031067487,
+   "denominator": 333952,
+   "value": 12070.799057948449,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 13,
+   "C": 50,
+   "mcse": 4.561796902836699,
+   "rollouts": 256,
+   "rank_total": 24186404922,
+   "rank_denominator": 2003712,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 84227,
+   "denominator": 2560,
+   "value": 32.901171875,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:17,5:45,6:62,7:111,8:96,9:77,10:44,11:22,12:12,13:10,14:1,15:2",
+   "target_length": 13,
+   "C": 50,
+   "mcse": 0.3752068393707976,
+   "rollouts": 256,
+   "rank_total": 84227,
+   "rank_denominator": 2560,
+   "cache_key": "d0a43a479d73188e46cd65dc9d4c069b"
+  }
+ }
+}

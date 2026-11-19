@@ -1,0 +1,425 @@
+{
+ "game_id": "dev44-0003-r0-gpt_6_2_sol-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_1_terra",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "dog pig cow hen fox rat bat owl ant bee fly yak ox",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Largest living land animal",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Egyptian riddler? zzz hint: t-rex lion tiger zebra",
+   "blocklist": [
+    "sphinx"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tallest mammal; ape emu elk eel cod asp gnu boa",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk; bat? no: ram doe sow koi gar",
+   "blocklist": [
+    "octopus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "African anteater; mus oxen ibis mole vole hare",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Tuxedo bird; zoo cub kit pup pet fur fin roe fry",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "River horse; ace act add ado aft age aid aim air",
+   "blocklist": [
+    "hippo",
+    "hippopotamus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Horned pachyderm; all am an as at be by if in is",
+   "blocklist": [
+    "rhino",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Unicorn of the sea; and any are arm art ash ask",
+   "blocklist": [
+    "narwal",
+    "narwhal",
+    "narwhale"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hopping marsupial; bad bag ban bar bay bed bet bid",
+   "blocklist": [
+    "kangaroo",
+    "wallaby",
+    "wallaroo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Fastest land cat; big bin bit bog boo bow box boy",
+   "blocklist": [
+    "cheetah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Bro bud bum bun bus but buy cab cad cam can cap",
+   "blocklist": [
+    "brother",
+    "car"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "crocodile"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Color-changing lizard; capybara cavy cobra camel",
+   "blocklist": [
+    "chameleon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Mexican walking fish; cougar puma lynx jaguar wolf",
+   "blocklist": [
+    "axolotl",
+    "salamander"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Burrower, cube poop; bat? no; bear koala sloth",
+   "blocklist": [
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Flipper's species; seal orca whale shark squid",
+   "blocklist": [
+    "dolphin",
+    "porpoise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Armored mammal; otter ferret skunk mink badger",
+   "blocklist": [
+    "armadillo",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Timon in The Lion King; hyena lemur tapir bison",
+   "blocklist": [
+    "meerkat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Metal melting in your palm; gem get gel gin gum",
+   "blocklist": [
+    "caesium",
+    "cesium",
+    "gallium",
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Broad-snouted reptile; yak? no: hog ewe ems eft",
+   "blocklist": [
+    "alligator",
+    "caiman",
+    "cayman",
+    "gator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Humped cattle; yak? no. las lax lay lea led lee",
+   "blocklist": [
+    "brahma",
+    "zebu",
+    "zebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Spiny monotreme; elk? no: ems? no: elk? no",
+   "blocklist": [
+    "echidna"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Lesser ape; lip lit lob log loo lop lot low lug",
+   "blocklist": [
+    "gibbon",
+    "siamang"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12000.697859644397,
+  "cost_numerator": 8909318091,
+  "cost_denominator": 742400,
+  "cost_exact": false,
+  "cost_mcse": 2.9286997891465467,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 8887046091,
+   "denominator": 742400,
+   "value": 11970.697859644397,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:862,4:3878,5:8609,6:15209,7:23080,8:28407,9:24866,10:20300,11:15504,12:11357,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 2.9286997891465467,
+   "rollouts": 256,
+   "rank_total": 62209322637,
+   "rank_denominator": 5196800,
+   "cache_key": "3cf1710bb9e20664d89174ee956d1434"
+  }
+ }
+}

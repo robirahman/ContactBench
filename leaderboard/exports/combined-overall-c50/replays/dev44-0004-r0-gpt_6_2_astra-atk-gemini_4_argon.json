@@ -1,0 +1,322 @@
+{
+ "game_id": "dev44-0004-r0-gpt_6_2_astra-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_argon",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A texture you can almost hear in a singer's voice",
+   "blocklist": [
+    "gravel",
+    "gravelly",
+    "rasp",
+    "raspy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "velvet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Another fabric a crooner might sound like",
+   "blocklist": [
+    "cashmere",
+    "satin",
+    "satiny",
+    "silk",
+    "silken",
+    "silky",
+    "suede",
+    "velour"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Chivalrous, or every evening to the ear",
+   "blocklist": [
+    "knightly",
+    "nightly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "str / zero-based offset 17*31",
+   "blocklist": [
+    "strongyles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Your private turn-one pick as an -ing verb",
+   "blocklist": [
+    "graveling",
+    "gravelling",
+    "rasping"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "First 3 of your T1 word, list_words offset 103",
+   "blocklist": [
+    "graffito",
+    "graft",
+    "graftage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words('',concat(your T1,T2,T6 lengths),1)",
+   "blocklist": [
+    "academic",
+    "academician",
+    "academisms",
+    "acajous",
+    "acanthocephalan",
+    "acanthuses",
+    "acarus",
+    "acaudal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "absenteeisms"
+    },
+    {
+     "seat": "guesser2",
+     "word": "absented"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Green fairy? No, '', 450+10, one result.",
+   "blocklist": [
+    "absinthe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Empty prefix,index concat(your T7 index,T1 T2 len)",
+   "blocklist": [
+    "downhillers",
+    "downlinks",
+    "downplaying",
+    "downrightness",
+    "downscale",
+    "downshifted",
+    "downsizes",
+    "downstate",
+    "downstaters",
+    "drapabilities",
+    "drapery",
+    "draughted",
+    "drawbacks",
+    "drawbridges",
+    "drawdowns",
+    "drawers",
+    "drawling",
+    "drawplate",
+    "drawshave"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "downing"
+    },
+    {
+     "seat": "guesser2",
+     "word": "downing"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "c offset: your T7 index * count_words(your T1)",
+   "blocklist": [
+    "calculated",
+    "calculatedness",
+    "cichlid",
+    "cichlids",
+    "cicisbei"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "c offset=sum(count(first 3 of your T1,T2,T6))",
+   "blocklist": [
+    "capacities",
+    "cape",
+    "capeskin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "camisa"
+    },
+    {
+     "seat": "guesser2",
+     "word": "camisa"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "co offset=601+sum(count(first 3 of your T1,T2,T6))",
+   "blocklist": [
+    "colonnade"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "co offset=sum(count(first 2 of your T1,T2,T6))",
+   "blocklist": [
+    "consecrator",
+    "contraoctave"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "conservers"
+    },
+    {
+     "seat": "guesser2",
+     "word": "conservers"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "col offset=sum(count_words(w) for w in T1,T2,T6)",
+   "blocklist": [
+    "cole",
+    "colead"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coleopterist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleopterist"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 14.0,
+  "cost_numerator": 14,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

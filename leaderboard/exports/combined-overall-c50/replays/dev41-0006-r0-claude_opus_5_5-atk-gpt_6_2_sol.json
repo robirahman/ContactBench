@@ -1,0 +1,511 @@
+{
+ "game_id": "dev41-0006-r0-claude_opus_5_5-atk-gpt_6_2_sol",
+ "attacker": "claude_opus_5_5",
+ "defender": "gpt_6_2_sol",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Common pet that purrs and meows",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cat"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Direction where the sun rises",
+   "blocklist": [
+    "east"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Chickens lay this, oval breakfast food",
+   "blocklist": [
+    "egg",
+    "eggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Our home planet, third from Sol",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Bald bird on the US seal",
+   "blocklist": [
+    "eagle",
+    "eagles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Number of legs on a spider",
+   "blocklist": [
+    "eight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Not hard; simple (starts with E)",
+   "blocklist": [
+    "easier",
+    "easiest",
+    "easy",
+    "effortless",
+    "elementary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Joint in the middle of your arm",
+   "blocklist": [
+    "elbow",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Green-eyed monster, a deadly sin",
+   "blocklist": [
+    "envy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Opposite of full, like a drained glass",
+   "blocklist": [
+    "emptied",
+    "empty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Way out of a building, sign over door",
+   "blocklist": [
+    "egress",
+    "exit",
+    "exits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "eel elk emu ear end era ebb ego: organ to see",
+   "blocklist": [
+    "eye",
+    "eyeball",
+    "eyeballs",
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "echo edge epic exam evil: negative particle",
+   "blocklist": [
+    "nay",
+    "neither",
+    "never",
+    "noes",
+    "none",
+    "nor",
+    "not"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "electron"
+    },
+    {
+     "seat": "guesser2",
+     "word": "electron"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "effect effort effigy efface effete efflux effendi",
+   "blocklist": [
+    "effective",
+    "efficacy",
+    "efficiency",
+    "efficient"
+   ],
+   "blocked_ranges": [
+    [
+     "aah",
+     "eery"
+    ],
+    [
+     "egalitarian",
+     "zymurgy"
+    ]
+   ],
+   "blocked_word_count": 172479,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Bubbly and fizzy, like soda or champagne",
+   "blocklist": [
+    "effervesce",
+    "effervescence",
+    "effervescent",
+    "effervescing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Unmanly, girlish (of a man)",
+   "blocklist": [
+    "effeminate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Liquid waste discharged into a river",
+   "blocklist": [
+    "effluent",
+    "effluents"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "eff effable efferent effluvia effluence effector",
+   "blocklist": [
+    "effable",
+    "effector",
+    "efferent",
+    "effluence",
+    "effluvia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "efficiently"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effectively"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Shameless nerve, audacity, gall (11 letters)",
+   "blocklist": [
+    "effrontery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "To burst into flower; crystallize as powder (verb)",
+   "blocklist": [
+    "effloresce"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Producing the desired result; adequate (9 letters)",
+   "blocklist": [
+    "effectual"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "effects efforts effusive effulgent effusion eft",
+   "blocklist": [
+    "effaced",
+    "effected",
+    "effecting",
+    "effortful",
+    "effusions",
+    "effusively",
+    "efts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effuse"
+    },
+    {
+     "seat": "guesser2",
+     "word": "efficacious"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "effigies effaces effendis effluxes efferents",
+   "blocklist": [
+    "effaces",
+    "effendis",
+    "efferents",
+    "effigies",
+    "effluxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effectuate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effectiveness"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "effs effused effuses effulge effacer effacing",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effectors"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effacement"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "effigial effecter effetely effluvium effacers",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "efficacies"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effectives"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "effaceable effecters effeminacy effectuated",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 28.0,
+  "cost_numerator": 28,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

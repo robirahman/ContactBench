@@ -1,0 +1,656 @@
+{
+ "game_id": "dev44-0004-r0-claude_fable_5_2-atk-claude_opus_5_5",
+ "attacker": "claude_fable_5_2",
+ "defender": "claude_opus_5_5",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "largest land animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "the planet we all live on",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "earth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "earth"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "feline pet that meows",
+   "blocklist": [
+    "cat",
+    "catlike",
+    "cats",
+    "feline",
+    "kitten",
+    "kitties",
+    "kitty",
+    "puss",
+    "pussy",
+    "pussycat",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "element 17, smells like a swimming pool",
+   "blocklist": [
+    "bleach",
+    "chloric",
+    "chloride",
+    "chlorides",
+    "chlorinate",
+    "chlorine",
+    "chlorines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "period of one hundred years",
+   "blocklist": [
+    "centenarian",
+    "centenarians",
+    "centenaries",
+    "centenary",
+    "centennial",
+    "centennials",
+    "centum",
+    "centuries",
+    "century",
+    "chronology",
+    "cycle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "mice love it; say it for a photo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cheese"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cheese"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "hot caffeinated morning drink brewed from beans",
+   "blocklist": [
+    "cocoa",
+    "cocoas",
+    "espresso",
+    "java",
+    "latte",
+    "mocha"
+   ],
+   "blocked_ranges": [
+    [
+     "coffee",
+     "coffees"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "farm animal that moos and gives milk",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "opposite of hot; low temperature",
+   "blocklist": [
+    "chill",
+    "chilly",
+    "cool",
+    "cooler",
+    "freezing",
+    "frigid",
+    "icy"
+   ],
+   "blocked_ranges": [
+    [
+     "cold",
+     "colds"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "punctuation mark made of two stacked dots",
+   "blocklist": [
+    "dieresis",
+    "semicolon",
+    "umlaut"
+   ],
+   "blocked_ranges": [
+    [
+     "colon",
+     "colons"
+    ]
+   ],
+   "blocked_word_count": 50,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "school you attend after high school for a degree",
+   "blocklist": [
+    "academy",
+    "universities",
+    "university"
+   ],
+   "blocked_ranges": [
+    [
+     "college",
+     "collegiums"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "red, blue or green is one; hue",
+   "blocklist": [
+    "hue",
+    "hues",
+    "shade",
+    "tint"
+   ],
+   "blocked_ranges": [
+    [
+     "color",
+     "colours"
+    ]
+   ],
+   "blocked_word_count": 80,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "band around a dog's neck; part of a shirt",
+   "blocklist": [
+    "choker",
+    "neckband"
+   ],
+   "blocked_ranges": [
+    [
+     "collar",
+     "collars"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "vertical pillar; spreadsheet has rows and these",
+   "blocklist": [
+    "pier",
+    "pilaster",
+    "pilasters",
+    "pillars",
+    "pylon",
+    "stanchion"
+   ],
+   "blocked_ranges": [
+    [
+     "column",
+     "columns"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "gather stamps or coins as a hobby",
+   "blocklist": [
+    "accumulate",
+    "amass",
+    "hoard",
+    "numismatist",
+    "philatelist",
+    "stockpile"
+   ],
+   "blocked_ranges": [
+    [
+     "collect",
+     "collects"
+    ]
+   ],
+   "blocked_word_count": 45,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "fall down suddenly, as a building or a lung might",
+   "blocklist": [
+    "crumble",
+    "implode",
+    "topple"
+   ],
+   "blocked_ranges": [
+    [
+     "collapse",
+     "collapsing"
+    ]
+   ],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "work jointly with others on a shared project",
+   "blocklist": [
+    "cooperate",
+    "cooperated"
+   ],
+   "blocked_ranges": [
+    [
+     "collaborate",
+     "collaborators"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "young male horse; Indianapolis football player",
+   "blocklist": [
+    "foal",
+    "foals",
+    "pony",
+    "stallion"
+   ],
+   "blocked_ranges": [
+    [
+     "colt",
+     "colts"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "cola cole colic collie collide cologne colossal",
+   "blocklist": [
+    "colander",
+    "colas",
+    "coleslaw",
+    "colics",
+    "coliseum",
+    "colleague",
+    "collies",
+    "collision",
+    "colonies",
+    "colony",
+    "colossus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "collage collagen collate collude colloid colitis",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "collage",
+     "collagens"
+    ],
+    [
+     "collate",
+     "collating"
+    ],
+    [
+     "colloid",
+     "colloids"
+    ],
+    [
+     "collude",
+     "colluding"
+    ]
+   ],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "colloquial collusion collier collided columbine",
+   "blocklist": [
+    "collides",
+    "colliding"
+   ],
+   "blocked_ranges": [
+    [
+     "collied",
+     "collieshangies"
+    ],
+    [
+     "colloquia",
+     "colloquy"
+    ],
+    [
+     "collusion",
+     "collusively"
+    ],
+    [
+     "columbaria",
+     "columbiums"
+    ]
+   ],
+   "blocked_word_count": 37,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "colophon"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collider",
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "colostrum colostomy colleen colicky coleus colly",
+   "blocklist": [
+    "coleuses",
+    "colicin",
+    "colicine",
+    "colicins",
+    "colleens",
+    "collies",
+    "colostomies",
+    "colostrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colleagues"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "coly coled coles colin colog colza collet collop",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "colin",
+     "colins"
+    ],
+    [
+     "collet",
+     "collets"
+    ],
+    [
+     "collop",
+     "collops"
+    ],
+    [
+     "colog",
+     "cologs"
+    ],
+    [
+     "colza",
+     "colzas"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collisions"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "cols colies colobi colugo colure colossi collins",
+   "blocklist": [
+    "colies",
+    "collins",
+    "collinses",
+    "colobi",
+    "colobus",
+    "colossal",
+    "colossally",
+    "colossi",
+    "cols",
+    "colugo",
+    "colugos",
+    "colure",
+    "colures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colanders"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colanders"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "colead coleads coleseed colessee colessor colewort",
+   "blocklist": [
+    "coleader",
+    "coleaders",
+    "coleading",
+    "coleoptera",
+    "coleopteran",
+    "coleopterans",
+    "coleopterists",
+    "coleopterous",
+    "coleoptile",
+    "coleoptiles",
+    "coleorhiza",
+    "coleorhizae"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coleslaws"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleslaws"
+    }
+   ],
+   "prefix_after": "coleo",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "coleopterist",
+   "prefix_after": "coleo",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

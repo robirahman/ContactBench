@@ -1,0 +1,616 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_luna-atk-gemini_3_8_flash",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_3_8_flash",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "temperature opposite of cold",
+   "blocklist": [
+    "heat",
+    "heated",
+    "hot",
+    "hotness",
+    "warm",
+    "warmness",
+    "warmth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "small pool left on the ground after rain",
+   "blocklist": [
+    "mudhole",
+    "plash",
+    "puddle",
+    "puddles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "darkest central part of an eclipse shadow",
+   "blocklist": [
+    "core",
+    "penumbra",
+    "totality",
+    "umbra",
+    "umbrae",
+    "umbral",
+    "umbras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "metal peg; cat dog sun man day car sea run red old",
+   "blocklist": [
+    "bolt",
+    "bolts",
+    "brad",
+    "brads",
+    "clevis",
+    "cotter",
+    "cotters",
+    "dowel",
+    "dowels",
+    "nail",
+    "nails",
+    "pin",
+    "pins",
+    "pintle",
+    "pintles",
+    "piton",
+    "pitons",
+    "rivet",
+    "rivets",
+    "screw",
+    "screws",
+    "spike",
+    "spikes",
+    "spile",
+    "spiles",
+    "stake",
+    "stakes",
+    "stud",
+    "studs",
+    "tack",
+    "tacks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 31,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Antarctic tuxedo-wearing flightless bird",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "gentoos",
+    "penguin",
+    "penguins",
+    "rockhopper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "male sheep",
+   "blocklist": [
+    "bellwether",
+    "bellwethers",
+    "buck",
+    "bucks",
+    "ram",
+    "rams",
+    "tup",
+    "tups",
+    "wether",
+    "wethers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "ice crystals formed in turbulent supercooled water",
+   "blocklist": [
+    "frazil",
+    "frazils",
+    "graupel",
+    "graupels",
+    "sludge",
+    "sludges",
+    "slush",
+    "slushes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "hail"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "archaic word for a young dog",
+   "blocklist": [
+    "brach",
+    "brachet",
+    "brachets",
+    "cur",
+    "curs",
+    "pup",
+    "puppies",
+    "puppy",
+    "pups",
+    "whelp",
+    "whelps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "male swan",
+   "blocklist": [
+    "cob",
+    "cobs",
+    "cock",
+    "cocks",
+    "cygnet",
+    "cygnets",
+    "drake",
+    "drakes",
+    "gander",
+    "ganders",
+    "pen",
+    "pens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Oak tree's small nut",
+   "blocklist": [
+    "acorn",
+    "acorns",
+    "mast",
+    "masts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Young hawk or falcon before its first flight",
+   "blocklist": [
+    "eyas",
+    "eyases",
+    "nestling",
+    "nestlings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "female fox",
+   "blocklist": [
+    "bitch",
+    "bitches",
+    "vixen",
+    "vixens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "young deer",
+   "blocklist": [
+    "brocket",
+    "brockets",
+    "calf",
+    "calves",
+    "fawn",
+    "fawns",
+    "kid",
+    "kids",
+    "pricket",
+    "prickets",
+    "yearling",
+    "yearlings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "a baby kangaroo carried in its mother's pouch",
+   "blocklist": [
+    "joey",
+    "joeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "a young horse",
+   "blocklist": [
+    "colt",
+    "colts",
+    "fillies",
+    "filly",
+    "foal",
+    "foals",
+    "ponies",
+    "pony",
+    "weanling",
+    "weanlings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "young sheep",
+   "blocklist": [
+    "hogget",
+    "hoggets",
+    "lamb",
+    "lambkin",
+    "lambkins",
+    "lambs",
+    "teg",
+    "tegs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Partly melted snow falling as icy precipitation",
+   "blocklist": [
+    "firn",
+    "firns",
+    "glaze",
+    "glazes",
+    "rime",
+    "rimes",
+    "sleet",
+    "sleets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Very light rain of tiny drops",
+   "blocklist": [
+    "drizzle",
+    "drizzles",
+    "mist",
+    "mists",
+    "mizzle",
+    "mizzles",
+    "sprinkle",
+    "sprinkles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Tibetan beast: ace act age air all ant any ape arm",
+   "blocklist": [
+    "kiang",
+    "kiangs",
+    "takin",
+    "takins",
+    "yak",
+    "yaks",
+    "yeti",
+    "yetis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Showy collective noun for pink wading birds",
+   "blocklist": [
+    "colonies",
+    "colony",
+    "flamboyance",
+    "flamboyances",
+    "flamboyancies",
+    "flamboyancy",
+    "flamingo",
+    "flamingoes",
+    "flamingos",
+    "regiment",
+    "regiments",
+    "stand",
+    "stands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Initials: Old Trees Turn East Riverward",
+   "blocklist": [
+    "otter",
+    "otters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Initials: Quaint Urchins Admire Rare Toads, Zebras",
+   "blocklist": [
+    "quartz",
+    "quartzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Playful leap or frolic; also a pickled flower bud",
+   "blocklist": [
+    "caper",
+    "capered",
+    "caperer",
+    "caperers",
+    "capering",
+    "capers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Initials: Xylophones Yield Lanterns, Evenly Marked",
+   "blocklist": [
+    "xylem",
+    "xylems"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Ornate stemmed cup used for ceremonial drinking",
+   "blocklist": [
+    "chalice",
+    "chalices",
+    "ciboria",
+    "ciborium",
+    "goblet",
+    "goblets",
+    "grail",
+    "grails",
+    "kylix",
+    "tazza",
+    "tazzas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Initials: Can Ape Tin End Rat; and are but not you",
+   "blocklist": [
+    "cater",
+    "cateran",
+    "caterans",
+    "catered",
+    "caterer",
+    "caterers",
+    "catering",
+    "caters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Nocturnal mammal whose musk is used in perfume",
+   "blocklist": [
+    "beaver",
+    "beavers",
+    "civet",
+    "civets",
+    "genet",
+    "genets",
+    "muskrat",
+    "muskrats",
+    "skunk",
+    "skunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "apple",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12044.653789407785,
+  "cost_numerator": 47790102805,
+  "cost_denominator": 3967744,
+  "cost_exact": false,
+  "cost_mcse": 3.276142091932914,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 47671070485,
+   "denominator": 3967744,
+   "value": 12014.653789407785,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:922,4:3844,5:8567,6:15162,7:23062,8:28388,9:24863,10:20295,11:15499,12:11357,13:7825,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.276142091932914,
+   "rollouts": 256,
+   "rank_total": 47671070485,
+   "rank_denominator": 3967744,
+   "cache_key": "ea8675450be450eacd2fbabc878c8e8a"
+  }
+ }
+}

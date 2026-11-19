@@ -1,0 +1,426 @@
+{
+ "game_id": "dev44-0002-r0-gpt_6_2_sol-atk-gpt_6_2_astra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_2_astra",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "African ant eater; famously first in dictionaries",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "zebra apple orange banana grape | SiO2, Mohs 7",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quartz"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quartz"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "go get got gut gem gym gum | tallest land animal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "gas gap gag gal gay | orchestral metal-bar chimes",
+   "blocklist": [
+    "glockenspiel",
+    "glockenspiels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "god goo gob gig gab gee gel gin | eagle-lion beast",
+   "blocklist": [
+    "griffin",
+    "griffins",
+    "griffon",
+    "griffons",
+    "gryphon",
+    "gryphons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "gaggle gawk gaze gear goat gold | Venetian boat",
+   "blocklist": [
+    "gondola",
+    "gondolas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "golf glue glow good gone | sundial shadow caster",
+   "blocklist": [
+    "gnomon",
+    "gnomons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "guy gun gut gush gust gild gilt | swift antelope",
+   "blocklist": [
+    "gazelle",
+    "gazelles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "grin grit grow grub gray | French beheading device",
+   "blocklist": [
+    "guillotine",
+    "guillotines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "gagged game gate gave gift girl | Ga on table",
+   "blocklist": [
+    "gallium",
+    "galliums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "gabble gale gash gent gnat | Wildebeest",
+   "blocklist": [
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "germ goose giant green grain gravy | gr33n g0bl1n",
+   "blocklist": [
+    "goblin",
+    "goblins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "gap? no: gag? no. gas? Ornate roof spout monster",
+   "blocklist": [
+    "gargoyle",
+    "gargoyles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "gar giggle gave glum gild | spinning stabilizer",
+   "blocklist": [
+    "gyro",
+    "gyros",
+    "gyroscope",
+    "gyroscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "garlic ginger guava guano gourd | Panax root",
+   "blocklist": [
+    "ginseng",
+    "ginsengs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "grace grand grass glass | g + echo with k sound",
+   "blocklist": [
+    "gecko",
+    "geckoes",
+    "geckos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "gobble goblet gown gross | Largest living primate",
+   "blocklist": [
+    "gorilla",
+    "gorillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "gaggle gander ghost glee | slow river of ice",
+   "blocklist": [
+    "glacier",
+    "glaciers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "gaggle grim graft gulp | six-string instrument",
+   "blocklist": [
+    "guitar",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "gob gas germ jazz | manner of walking",
+   "blocklist": [
+    "gait",
+    "gaits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "garb glib glob glug gobs gains | coarse basalt",
+   "blocklist": [
+    "gabbro",
+    "gabbros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "gaggle gable glen glee | red pomegranate syrup",
+   "blocklist": [
+    "grenadine",
+    "grenadines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "gaggle gable glen | Like an awkward teen moves",
+   "blocklist": [
+    "gangling",
+    "gangly",
+    "gauchely",
+    "gawkily",
+    "gawkishly",
+    "gawky",
+    "gracelessly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 392.1832562990838,
+  "cost_numerator": 38352385,
+  "cost_denominator": 97792,
+  "cost_exact": false,
+  "cost_mcse": 0.5861055245783229,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 35418625,
+   "denominator": 97792,
+   "value": 362.1832562990838,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:21,4:147,5:393,6:664,7:943,8:984,9:746,10:547,11:382,12:257,13:169,14:96,15:45,16:25,17:9,18:11,19:5,20:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.5861055245783229,
+   "rollouts": 256,
+   "rank_total": 35418625,
+   "rank_denominator": 97792,
+   "cache_key": "3417fcfe568dbc47812457616a2d215a"
+  }
+ }
+}

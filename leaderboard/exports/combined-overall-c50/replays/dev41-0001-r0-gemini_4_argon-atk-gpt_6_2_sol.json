@@ -1,0 +1,467 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_argon-atk-gpt_6_2_sol",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_sol",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "MID86309 Plural of lugger (boats)",
+   "blocklist": [
+    "luggers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Marimba-like percussion instrument (9 letters)",
+   "blocklist": [
+    "xylophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats ants (8)",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Italian custard dessert with marsala (10)",
+   "blocklist": [
+    "zabaglione"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Plural of Italian custard dessert (9 letters, z-)",
+   "blocklist": [
+    "zabagliones",
+    "zabajones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zabaiones"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zabaiones"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Having or showing great wisdom or sound judgment",
+   "blocklist": [
+    "sagacious",
+    "sage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Having or showing great wisdom (7 letters, sa-)",
+   "blocklist": [
+    "sapient"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Adverb form of sapient (9 letters, sapi-)",
+   "blocklist": [
+    "sapiently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Having or showing great wisdom, in a general sense",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sapience"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sensible"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Plural of celestial body alignment (8 letters)",
+   "blocklist": [
+    "syzygies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Adjective relating to celestial alignment (8)",
+   "blocklist": [
+    "syzygial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Adjective relating to celestial alignment (7)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "syzygal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "syzygal"
+    }
+   ],
+   "prefix_after": "su",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Plural of corn and lima bean dish (11 letters)",
+   "blocklist": [
+    "succotashes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Plurals of Japanese beef and tofu hot pot dish (9)",
+   "blocklist": [
+    "sukiyakis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Plurals of feudal overlordship or sovereignty (12)",
+   "blocklist": [
+    "suzerainties"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Plurals of whispering or rustling sound (10, su-)",
+   "blocklist": [
+    "susurrations",
+    "susurruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Plurals of legal reply to a rejoinder (13 letters)",
+   "blocklist": [
+    "surrejoinders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Plurals of a man's long close-fitting overcoat (8)",
+   "blocklist": [
+    "surtouts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Adjective: whispering or rustling (9, susurr-)",
+   "blocklist": [
+    "susurrous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Adjective: whispering or rustling (9, susurra-)",
+   "blocklist": [
+    "susurrant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Plurals of Middle Eastern marketplace/souk (4, su)",
+   "blocklist": [
+    "suqs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "A whispering or rustling sound (11, susurrat-)",
+   "blocklist": [
+    "susurration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A whispering or rustling sound (8, susurr-)",
+   "blocklist": [
+    "susurrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "A Middle Eastern marketplace or souk (3, su-)",
+   "blocklist": [
+    "suq"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "A man's long close-fitting overcoat (7, su-)",
+   "blocklist": [
+    "surtout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Feudal overlordship or sovereignty (10, su-)",
+   "blocklist": [
+    "suzerainty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "A feudal overlord or sovereign ruler (8, su-)",
+   "blocklist": [
+    "suzerain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Plurals of feudal overlord or sovereign ruler (9)",
+   "blocklist": [
+    "suzerains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A corn and lima bean dish (9 letters, su-)",
+   "blocklist": [
+    "succotash"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Japanese beef and tofu hot pot dish (8 letters)",
+   "blocklist": [
+    "sukiyaki"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "su",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 240.53272341008773,
+  "cost_numerator": 7019707,
+  "cost_denominator": 29184,
+  "cost_exact": false,
+  "cost_mcse": 0.6549862937975345,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 6144187,
+   "denominator": 29184,
+   "value": 210.53272341008773,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:5,4:28,5:51,6:114,7:238,8:386,9:407,10:426,11:360,12:274,13:205,14:162,15:84,16:73,17:34,18:16,19:3,20:1",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 0.6549862937975345,
+   "rollouts": 256,
+   "rank_total": 6144187,
+   "rank_denominator": 29184,
+   "cache_key": "a54f2cfa36fbe8ac79565aab9e9210da"
+  }
+ }
+}

@@ -1,0 +1,595 @@
+{
+ "game_id": "dev44-0001-r0-gemini_4_hydrogen-atk-claude_opus_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_opus_5_5",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "breathable element number 8",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "tallest spotted mammal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "ancient egyptian tomb",
+   "blocklist": [
+    "crypt",
+    "mastaba",
+    "mastabas",
+    "mausoleum",
+    "pyramid",
+    "pyramids",
+    "sarcophagus",
+    "tomb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "australian returning throwing stick",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "boomerang"
+    },
+    {
+     "seat": "guesser2",
+     "word": "boomerang"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "three-sided polygon",
+   "blocklist": [
+    "triangle",
+    "triangles",
+    "triangular",
+    "trigon",
+    "trigons",
+    "trilateral"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "spinning funnel cloud storm",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tornado"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tornado"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "device used to measure temperature",
+   "blocklist": [
+    "thermocouple",
+    "thermograph",
+    "thermometer",
+    "thermometers",
+    "thermoscope",
+    "thermostat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "royal chair for a king or queen",
+   "blocklist": [
+    "throne",
+    "throned",
+    "thrones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "metal cap worn on finger when sewing",
+   "blocklist": [
+    "thimble",
+    "thimbleful",
+    "thimblefuls",
+    "thimbles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "short thick first digit of the hand",
+   "blocklist": [
+    "thumb",
+    "thumbed",
+    "thumbing",
+    "thumbkin",
+    "thumbkins",
+    "thumbnail",
+    "thumbnails",
+    "thumbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "loud booming sound after lightning",
+   "blocklist": [
+    "thunder",
+    "thunderbolt",
+    "thunderclap",
+    "thunderclaps",
+    "thundered",
+    "thundering",
+    "thunderous",
+    "thunders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "book of synonyms and antonyms",
+   "blocklist": [
+    "thesauri",
+    "thesaurus",
+    "thesauruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "sharp point on a rose stem",
+   "blocklist": [
+    "thorn",
+    "thorned",
+    "thornier",
+    "thorniest",
+    "thornless",
+    "thornlike",
+    "thorns",
+    "thorny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "national flower of scotland",
+   "blocklist": [
+    "thistle",
+    "thistledown",
+    "thistles",
+    "thistly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "front part of the neck",
+   "blocklist": [
+    "throat",
+    "throated",
+    "throatier",
+    "throatiest",
+    "throating",
+    "throats",
+    "throaty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "ten times one hundred",
+   "blocklist": [
+    "thousand",
+    "thousandfold",
+    "thousands",
+    "thousandth",
+    "thousandths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "aromatic herb used in cooking",
+   "blocklist": [
+    "thyme",
+    "thymes",
+    "thymey",
+    "thymol",
+    "thymols",
+    "thymy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "person who steals",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thief",
+     "thievish"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "thin strand put through a needle eye",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thread",
+     "thready"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "american november turkey holiday",
+   "blocklist": [
+    "thanksgiving",
+    "thanksgivings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "upper leg between hip and knee",
+   "blocklist": [
+    "thigh",
+    "thighbone",
+    "thighbones",
+    "thighed",
+    "thighs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "insect middle body section",
+   "blocklist": [
+    "thoraces",
+    "thoracic",
+    "thorax",
+    "thoraxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "building where plays or movies are shown",
+   "blocklist": [
+    "cinema",
+    "cinemas",
+    "playhouse"
+   ],
+   "blocked_ranges": [
+    [
+     "theater",
+     "theatrics"
+    ]
+   ],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "insulated bottle keeping drinks hot",
+   "blocklist": [
+    "flask",
+    "flasks",
+    "thermos",
+    "thermoses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "melt ice or snow",
+   "blocklist": [
+    "defrost",
+    "defrosted",
+    "melting",
+    "thaw",
+    "thawed",
+    "thawer",
+    "thawers",
+    "thawing",
+    "thawless",
+    "thaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "unlucky number after twelve",
+   "blocklist": [
+    "thirteen",
+    "thirteens",
+    "thirteenth",
+    "thirteenths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "strong desire to drink water",
+   "blocklist": [
+    "dehydration",
+    "thirst",
+    "thirsted",
+    "thirster",
+    "thirsters",
+    "thirstier",
+    "thirstiest",
+    "thirstily",
+    "thirstiness",
+    "thirsting",
+    "thirsts",
+    "thirsty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "medical treatment for illness or injury",
+   "blocklist": [
+    "cure",
+    "medication",
+    "medicine",
+    "remedy",
+    "treatment",
+    "treatments"
+   ],
+   "blocked_ranges": [
+    [
+     "therapeuses",
+     "therapy"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "sudden feeling of excitement",
+   "blocklist": [
+    "adrenaline",
+    "buzz",
+    "frisson",
+    "jolt",
+    "kick",
+    "rush",
+    "throb",
+    "thrum",
+    "tingle"
+   ],
+   "blocked_ranges": [
+    [
+     "thrill",
+     "thrills"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "study of religion and god",
+   "blocklist": [
+    "divinity",
+    "religion"
+   ],
+   "blocked_ranges": [
+    [
+     "theolog",
+     "theology"
+    ]
+   ],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 100.4437890625,
+  "cost_numerator": 2571361,
+  "cost_denominator": 25600,
+  "cost_exact": false,
+  "cost_mcse": 0.23269855086153904,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1803361,
+   "denominator": 25600,
+   "value": 70.4437890625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:17,5:45,6:88,7:98,8:150,9:134,10:100,11:89,12:84,13:66,14:48,15:21,16:20,17:11,18:3,19:3",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.23269855086153904,
+   "rollouts": 256,
+   "rank_total": 1803361,
+   "rank_denominator": 25600,
+   "cache_key": "ec9a78590025e9d8f81443591cb2f233"
+  }
+ }
+}

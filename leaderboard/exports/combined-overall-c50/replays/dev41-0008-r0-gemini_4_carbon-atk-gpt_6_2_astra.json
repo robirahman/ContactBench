@@ -1,0 +1,540 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_carbon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_carbon",
+ "defender": "gpt_6_2_astra",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Winter sledders on feet-first tracks",
+   "blocklist": [
+    "luger",
+    "lugers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Arctic muskox underwool yarn",
+   "blocklist": [
+    "qiviut",
+    "qiviuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Mona Lisa smoky edge-blending technique",
+   "blocklist": [
+    "sfumato",
+    "sfumatos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Big animal living wild in nature",
+   "blocklist": [
+    "bear",
+    "beast",
+    "beasts",
+    "bison",
+    "brute",
+    "buffalo",
+    "creature",
+    "elephant",
+    "elk",
+    "megafauna",
+    "moose",
+    "wildlife"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Carefree prank and sudden incentive: garden bloom",
+   "blocklist": [
+    "larkspur",
+    "larkspurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Single exact seven-letter anagram of blmacie",
+   "blocklist": [
+    "alembic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Primary color hue",
+   "blocklist": [
+    "blue",
+    "cyan",
+    "green",
+    "magenta",
+    "red",
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Common forest tree species",
+   "blocklist": [
+    "acacia",
+    "alder",
+    "ash",
+    "aspen",
+    "beech",
+    "birch",
+    "cedar",
+    "elm",
+    "fir",
+    "hemlock",
+    "hickory",
+    "larch",
+    "maple",
+    "oak",
+    "pine",
+    "poplar",
+    "redwood",
+    "spruce",
+    "sycamore",
+    "willow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Popular household pet animal",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dog"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Large bird of prey",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets",
+    "ern",
+    "erne",
+    "ernes",
+    "erns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Human sensory organ on the head",
+   "blocklist": [
+    "ear",
+    "eardrum",
+    "eardrums",
+    "ears",
+    "eye",
+    "eyeball",
+    "eyeballs",
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Human feeling like joy, anger, or sadness",
+   "blocklist": [
+    "emotion",
+    "emotions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Popular restaurant or garden vegetable",
+   "blocklist": [
+    "eggplant",
+    "eggplants",
+    "endive",
+    "endives",
+    "escarole",
+    "escaroles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Precious jewel or gemstone mineral",
+   "blocklist": [
+    "emerald",
+    "emeralds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Main compass point or direction",
+   "blocklist": [
+    "east",
+    "easterly",
+    "eastern",
+    "easts",
+    "eastward",
+    "eastwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Solar system planet or ground soil",
+   "blocklist": [
+    "earth",
+    "earths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Vehicle motor or machine power unit",
+   "blocklist": [
+    "engine",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Arm joint between upper arm and forearm",
+   "blocklist": [
+    "elbow",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Breakfast food laid in a shell",
+   "blocklist": [
+    "egg",
+    "eggs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Slippery snakelike swimming fish",
+   "blocklist": [
+    "eel",
+    "eels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Shorter dash with tilt: engage",
+   "blocklist": [
+    "enlist",
+    "enlisted",
+    "enlisting",
+    "enlists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Everyday job, occupation, or career profession",
+   "blocklist": [
+    "educator",
+    "electrician",
+    "employ",
+    "employee",
+    "employment",
+    "employments",
+    "engineer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Whole counting number or integer",
+   "blocklist": [
+    "eight",
+    "eighteen",
+    "eighteens",
+    "eighties",
+    "eights",
+    "eighty",
+    "eleven",
+    "elevens",
+    "even"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "World money or foreign currency unit",
+   "blocklist": [
+    "ecu",
+    "ecus",
+    "escudo",
+    "escudos",
+    "euro",
+    "euros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Time of day such as morning, noon, or night",
+   "blocklist": [
+    "eve",
+    "evening",
+    "evenings",
+    "eventide",
+    "eventides",
+    "eves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Everyday office desk or school supply item",
+   "blocklist": [
+    "elastic",
+    "elastics",
+    "envelope",
+    "envelopes",
+    "eraser",
+    "erasers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Popular hot beverage or brewed drink",
+   "blocklist": [
+    "espresso",
+    "espressos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Dark black tropical hardwood used for piano keys",
+   "blocklist": [
+    "ebony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 533.8298770275035,
+  "cost_numerator": 48446129,
+  "cost_denominator": 90752,
+  "cost_exact": false,
+  "cost_mcse": 0.6273593879024257,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 45723569,
+   "denominator": 90752,
+   "value": 503.8298770275035,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:30,4:90,5:183,6:439,7:791,8:1108,9:1122,10:974,11:709,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6273593879024257,
+   "rollouts": 256,
+   "rank_total": 91447138,
+   "rank_denominator": 181504,
+   "cache_key": "f1a5a16b6d6747e20fd59904f7081dcc"
+  }
+ }
+}

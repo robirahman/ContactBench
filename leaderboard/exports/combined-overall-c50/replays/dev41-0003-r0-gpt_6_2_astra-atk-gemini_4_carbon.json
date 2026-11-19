@@ -1,0 +1,713 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a black-and-white animal.",
+   "blocklist": [
+    "badger",
+    "cow",
+    "dalmatian",
+    "lemur",
+    "magpie",
+    "orca",
+    "ostrich",
+    "panda",
+    "pandas",
+    "penguin",
+    "penguins",
+    "puffin",
+    "raccoon",
+    "skunk",
+    "skunks",
+    "tapir",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Your favorite beautiful English word, intuitively.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "serendipity"
+    },
+    {
+     "seat": "guesser2",
+     "word": "serendipity"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Most satisfying fancy adjective with this initial?",
+   "blocklist": [
+    "ubiquitous",
+    "ulterior",
+    "uncanny",
+    "unctuous",
+    "urbane",
+    "uxorious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "First UN- adjective that pops into your head?",
+   "blocklist": [
+    "unbelievable",
+    "uncommon",
+    "unexpected",
+    "unfair",
+    "unfortunate",
+    "unhappy",
+    "unique",
+    "unknown",
+    "unlikely",
+    "unlucky",
+    "unnatural",
+    "unnecessary",
+    "unpleasant",
+    "unreal",
+    "unsafe",
+    "unseen",
+    "unsure",
+    "untidy",
+    "untrue",
+    "unusual",
+    "unwanted",
+    "unwell",
+    "unworthy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "UN list zero-based offset: 43 squared minus two.",
+   "blocklist": [
+    "ungirding",
+    "ungirds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "No category. Just think of a U noun. Trust vibe.",
+   "blocklist": [
+    "ukulele",
+    "umbrella",
+    "umpire",
+    "uncle",
+    "unicorn",
+    "uniform",
+    "union",
+    "unit",
+    "universe",
+    "university",
+    "uranium",
+    "urchin",
+    "urn",
+    "utensil",
+    "utopia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Dreamily choose a U verb. Go by sound.",
+   "blocklist": [
+    "ululate",
+    "undulate",
+    "unfold",
+    "unravel",
+    "unveil",
+    "unwind",
+    "uplift"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Paint a mental picture in one lovely U-word.",
+   "blocklist": [
+    "ultramarine",
+    "umber",
+    "umbra",
+    "umbral",
+    "underwater",
+    "unison",
+    "updraft",
+    "upland"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Which used answer wants a change of form most?",
+   "blocklist": [
+    "ubiquity",
+    "ululation",
+    "undulation",
+    "ungird",
+    "ungirded",
+    "universal",
+    "universality",
+    "urban",
+    "utopian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A random UN adjective ending in -able. Gut pick.",
+   "blocklist": [
+    "unable",
+    "unacceptable",
+    "unavoidable",
+    "unbearable",
+    "unbreakable",
+    "uncomfortable",
+    "undeniable",
+    "understandable",
+    "unforgettable",
+    "unimaginable",
+    "unmistakable",
+    "unpredictable",
+    "unreasonable",
+    "unreliable",
+    "unspeakable",
+    "unstable",
+    "unstoppable",
+    "unsuitable",
+    "unthinkable",
+    "untouchable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "What ordinary action would you most like to undo?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unbutton"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unsay"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "What would you do next after the last two answers?",
+   "blocklist": [
+    "unbuckle",
+    "unburden",
+    "unclothe",
+    "undress",
+    "unfasten",
+    "unlace",
+    "untie",
+    "unzip"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "How do you feel about this game so far?",
+   "blocklist": [
+    "uncertain",
+    "underwhelmed",
+    "undeterred",
+    "uneasy",
+    "unimpressed",
+    "unsatisfied",
+    "upset"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Complete the phrase intuitively: down ___",
+   "blocklist": [
+    "under",
+    "undercover",
+    "underground",
+    "underneath",
+    "upstairs",
+    "upstream",
+    "uptown",
+    "upward"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "What ordinary action would you most like to redo?",
+   "blocklist": [
+    "unlearn",
+    "unlive",
+    "unmake",
+    "unpack",
+    "update",
+    "upgrade"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unplug"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unwrap"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Imagine yesterday's gift, but describe its state.",
+   "blocklist": [
+    "unboxed",
+    "unclaimed",
+    "unopened",
+    "unpacked",
+    "untouched",
+    "unused",
+    "unwrapped"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "How will historians describe our era? U adjective.",
+   "blocklist": [
+    "uncharted",
+    "unforgiving",
+    "unhinged",
+    "unmoored",
+    "unprecedented",
+    "unruly",
+    "unsettled",
+    "unsustainable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "ugh uke ulu urd urns urp ute uts use usurp utter?",
+   "blocklist": [
+    "uta",
+    "uvea",
+    "uvula",
+    "uvular",
+    "uxorial",
+    "uxoricide"
+   ],
+   "blocked_ranges": [
+    [
+     "utter",
+     "utters"
+    ]
+   ],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "My reaction to the size of the ocean. One U word.",
+   "blocklist": [
+    "unbounded",
+    "uncomprehending",
+    "unease",
+    "unending",
+    "unfathomable",
+    "unlimited",
+    "unmeasurable",
+    "unmoved",
+    "unnerved",
+    "uplifted",
+    "uplifting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "A thirst for something. Describe it intuitively.",
+   "blocklist": [
+    "unbridled",
+    "undying",
+    "unquenchable",
+    "unrelenting",
+    "unsated",
+    "unsatisfying",
+    "unslakable",
+    "unslaked",
+    "unyielding",
+    "urge",
+    "urgency",
+    "urgent",
+    "urging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "How might a poet remember their first love?",
+   "blocklist": [
+    "unblemished",
+    "unconditional",
+    "undimmed",
+    "unendingly",
+    "unrequited",
+    "unspoiled",
+    "untainted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A word with hidden depth. Follow your intuition.",
+   "blocklist": [
+    "unconscious",
+    "undercurrent",
+    "undercurrents",
+    "undertone",
+    "undertones",
+    "unplumbed",
+    "unsaid",
+    "unsounded",
+    "unspoken"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Any UN adjective. Pick one with personality.",
+   "blocklist": [
+    "unabashed",
+    "unafraid",
+    "unapologetic",
+    "unashamed",
+    "unassuming",
+    "unbending",
+    "unbiased",
+    "unconventional",
+    "uncouth",
+    "undaunted",
+    "unfiltered",
+    "unflappable",
+    "unflinching",
+    "unfriendly",
+    "unguarded",
+    "uninhibited",
+    "unkempt",
+    "unkind",
+    "unorthodox",
+    "unpretentious",
+    "unrepentant",
+    "unreserved",
+    "unrestrained",
+    "unruffled",
+    "unscrupulous",
+    "unselfish",
+    "unshakable",
+    "untamed",
+    "unwavering",
+    "unwise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Which long U word would win a spelling bee?",
+   "blocklist": [
+    "unconscionable",
+    "unintelligibility",
+    "unpronounceable",
+    "unquestionable",
+    "unrighteousness",
+    "unsophisticated",
+    "utilitarianism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "uncharacteristically"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "A long UN adverb. What sounds good to you?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unaccountably"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unequivocally"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "What other long adverb comes naturally to mind?",
+   "blocklist": [
+    "unanimously",
+    "unapologetically",
+    "unbelievably",
+    "unconditionally",
+    "undoubtedly",
+    "unfortunately",
+    "unquestionably",
+    "unreservedly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Describe the northern lights. A U adjective.",
+   "blocklist": [
+    "ultraviolet",
+    "uncapturable",
+    "undulant",
+    "undulating",
+    "unearthly",
+    "untamable",
+    "unworldly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A guest arrives. Describe them, intuitively.",
+   "blocklist": [
+    "unannounced",
+    "unbidden",
+    "unforeseen",
+    "unheralded",
+    "uninvited",
+    "unscheduled",
+    "unwelcome"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "udon undoer ulna upon user uses ugly: cracked? No.",
+   "blocklist": [
+    "unbroke",
+    "unbroken",
+    "unbruised",
+    "uncracked",
+    "uncrazy",
+    "undamaged",
+    "unharmed",
+    "unhurt",
+    "unscathed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 378.3682905749636,
+  "cost_numerator": 16636097,
+  "cost_denominator": 43968,
+  "cost_exact": false,
+  "cost_mcse": 0.47561058621319235,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 15317057,
+   "denominator": 43968,
+   "value": 348.3682905749636,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:7,4:26,5:104,6:304,7:500,8:787,9:687,10:634,11:472,12:411,13:299,14:211,15:121,16:102,17:53,18:30,19:19,20:10",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.47561058621319235,
+   "rollouts": 256,
+   "rank_total": 61268228,
+   "rank_denominator": 175872,
+   "cache_key": "d30f8249c2d369f07c195c1585d7f114"
+  }
+ }
+}

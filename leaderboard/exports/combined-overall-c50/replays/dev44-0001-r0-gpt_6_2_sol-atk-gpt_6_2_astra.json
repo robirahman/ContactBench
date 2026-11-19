@@ -1,0 +1,454 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_2_sol-atk-gpt_6_2_astra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_2_astra",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Smiling Rottnest marsupial; cat dog bat rat ox yak",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "First animal in many English dictionaries",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Striped horse; ant ape bee cow eel emu fox owl pig",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Wildebeest, but shorter; I you he she we it they",
+   "blocklist": [
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Duck-billed monotreme; ace act add ado age aid air",
+   "blocklist": [
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Unicorn whale; the and for are not one all can",
+   "blocklist": [
+    "narwal",
+    "narwals",
+    "narwhal",
+    "narwhale",
+    "narwhales",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Eight arms; out was had his her new day who how",
+   "blocklist": [
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Scaly anteater; get set run put let see say use",
+   "blocklist": [
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Color-changing lizard; red blue green brown black",
+   "blocklist": [
+    "anole",
+    "anoles",
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Joey carrier; ask buy cry die eat fly go hop jump",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Largest living cat; tap tax tea ten tie toe ton",
+   "blocklist": [
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Fruit eater with huge bill; tar tan tat tug tub",
+   "blocklist": [
+    "toucan",
+    "toucans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Land turtle that raced the hare; tip tin top tot",
+   "blocklist": [
+    "tortoise",
+    "tortoises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Snouted mammal; try two too toy tugged trunk tree",
+   "blocklist": [
+    "tapir",
+    "tapirs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Thanksgiving bird; time take tell talk team test",
+   "blocklist": [
+    "turkey",
+    "turkeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Fish in a classic melt; true turn town tail tall",
+   "blocklist": [
+    "tuna",
+    "tunas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Wood-eating insect; tag tug tab tad tic tut tux",
+   "blocklist": [
+    "termite",
+    "termites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Big hairy spider; titan tango tangoed tangoes",
+   "blocklist": [
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Brass with slide; toad tern trout troutlets trot",
+   "blocklist": [
+    "trombone",
+    "trombones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Measures temperature; this then them than thus",
+   "blocklist": [
+    "thermometer",
+    "thermometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Seismic sea wave; tryout truck trust truth tract",
+   "blocklist": [
+    "tsunami",
+    "tsunamis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "3-sided polygon; the and for are not one all had",
+   "blocklist": [
+    "triangle",
+    "triangles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Distant viewing; tandem tattoo tempo toxin tulip",
+   "blocklist": [
+    "telescope",
+    "telescopes",
+    "telescopic",
+    "television",
+    "televisions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Folded Mexican tortilla; tenet task tank tart text",
+   "blocklist": [
+    "taco",
+    "tacos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Dozen; thews thy thyself tho thru thud thug thaw",
+   "blocklist": [
+    "twelve",
+    "twelves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Treeless Arctic biome; the man thy thy thine thaw",
+   "blocklist": [
+    "tundra",
+    "tundras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 614.545047463969,
+  "cost_numerator": 70952913,
+  "cost_denominator": 115456,
+  "cost_exact": false,
+  "cost_mcse": 0.6650340090558479,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 67489233,
+   "denominator": 115456,
+   "value": 584.545047463969,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:28,4:216,5:530,6:891,7:1347,8:1518,9:1195,10:902,11:682,12:490,13:321,14:220,15:122,16:74,17:55,18:21,19:10,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.6650340090558479,
+   "rollouts": 256,
+   "rank_total": 134978466,
+   "rank_denominator": 230912,
+   "cache_key": "9f997b0d99510ede7dccfef9b75c94c4"
+  }
+ }
+}

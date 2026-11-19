@@ -1,0 +1,580 @@
+{
+ "game_id": "dev44-0003-r0-claude_opus_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Number after nine",
+   "blocklist": [
+    "ten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Third planet from the sun",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Color of a ripe banana",
+   "blocklist": [
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of night",
+   "blocklist": [
+    "day",
+    "daylight",
+    "daytime",
+    "light"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Frozen water in cubes",
+   "blocklist": [
+    "cold",
+    "cube",
+    "cubes",
+    "freeze",
+    "frozen",
+    "ice",
+    "icy",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pet that says meow",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pet that barks and wags its tail",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Alphabetically first word in the game dictionary",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aah"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aah"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Alphabetically first dictionary word with prefix",
+   "blocklist": [
+    "iamb"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Alphabetically last dictionary word with prefix",
+   "blocklist": [
+    "izar",
+    "izars",
+    "izzard",
+    "izzards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Opposite of outside",
+   "blocklist": [
+    "indoors",
+    "inner",
+    "inside",
+    "interior",
+    "internal",
+    "inward",
+    "within"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Inuit snow house",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Fifth dictionary word with prefix, alphabetically",
+   "blocklist": [
+    "iambi",
+    "iambic",
+    "iambics",
+    "iambs",
+    "iambuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Land surrounded by sea, e.g. Hawaii's Maui",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Opposite of output",
+   "blocklist": [
+    "input",
+    "inputs",
+    "inputted",
+    "inputting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Can't be done; opposite of possible",
+   "blocklist": [
+    "impossibilities",
+    "impossibility",
+    "impossible",
+    "impossibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Breathe in; opposite of exhale",
+   "blocklist": [
+    "inhale",
+    "inhaled",
+    "inhaler",
+    "inhales",
+    "inhaling",
+    "inspire",
+    "inspired",
+    "inspires",
+    "inspiring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Element Fe; also used to press shirts",
+   "blocklist": [
+    "iron",
+    "ironed",
+    "ironer",
+    "ironing",
+    "irons",
+    "ironware"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Opposite of outdoor (adjective)",
+   "blocklist": [
+    "indoor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Six-legged bug like an ant or beetle",
+   "blocklist": [
+    "insect",
+    "insectary",
+    "insecticide",
+    "insecticides",
+    "insectile",
+    "insectivore",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Opposite of exclude",
+   "blocklist": [
+    "include",
+    "included",
+    "includes",
+    "including",
+    "inclusion",
+    "inclusive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Opposite of export",
+   "blocklist": [
+    "import",
+    "importation",
+    "imported",
+    "importer",
+    "importers",
+    "importing",
+    "imports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Casual; opposite of formal",
+   "blocklist": [
+    "casual",
+    "informal",
+    "informality",
+    "informally"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Not guilty in court; pure and blameless",
+   "blocklist": [
+    "immaculate",
+    "innocent",
+    "invalid",
+    "invalided",
+    "invalids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Opposite of decrease",
+   "blocklist": [
+    "increase",
+    "increased",
+    "increases",
+    "increasing",
+    "increasingly",
+    "increment",
+    "incremental",
+    "inflate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Lightbulb over head moment; a notion",
+   "blocklist": [
+    "idea",
+    "ideas",
+    "ideation",
+    "inkling",
+    "insight",
+    "inspiration",
+    "intuition",
+    "notion",
+    "thought"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "image item ideal index issue ivory idle iris ink",
+   "blocklist": [
+    "invalidate",
+    "invalidated",
+    "invalidates",
+    "invalidating",
+    "invalidity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "insane"
+    },
+    {
+     "seat": "guesser2",
+     "word": "information"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "icon inch iced idol inn ion ire irk itch ivy imp",
+   "blocklist": [
+    "invalidism",
+    "invalidly",
+    "invaluable",
+    "invariant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "interest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "important"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ill into inky iffy ibis iota ibex ilk inks isms",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "idiot"
+    },
+    {
+     "seat": "guesser2",
+     "word": "industry"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 559.6765952269066,
+  "cost_numerator": 133391081,
+  "cost_denominator": 238336,
+  "cost_exact": false,
+  "cost_mcse": 0.5799006283878331,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 126241001,
+   "denominator": 238336,
+   "value": 529.6765952269066,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:7,4:37,5:102,6:270,7:488,8:713,9:836,10:931,11:850,12:764,13:605,14:372,15:307,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.5799006283878331,
+   "rollouts": 256,
+   "rank_total": 126241001,
+   "rank_denominator": 238336,
+   "cache_key": "52406f9f82c418bdb82bcbfddb4fd607"
+  }
+ }
+}

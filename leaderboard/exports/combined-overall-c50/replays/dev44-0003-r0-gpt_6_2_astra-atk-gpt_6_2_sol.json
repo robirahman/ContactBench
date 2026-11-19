@@ -1,0 +1,611 @@
+{
+ "game_id": "dev44-0003-r0-gpt_6_2_astra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_sol",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "What a penguin never needs to rent for prom",
+   "blocklist": [
+    "tux",
+    "tuxedo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "The sunset still there behind your eyelids",
+   "blocklist": [
+    "afterglow",
+    "afterglows",
+    "afterimage",
+    "afterimages",
+    "imprint",
+    "persistence",
+    "phosphene"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "One of the 2000 earliest S words; choose freely",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "schismatize"
+    ]
+   ],
+   "blocked_word_count": 2000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Any P word whatsoever. My favorite has 88 keys.",
+   "blocklist": [
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Random pick among ALL C-words, no other hint.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "czars"
+    ]
+   ],
+   "blocked_word_count": 16216,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining S-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "schismatized",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 16982,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining P-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "pac",
+     "pyxis"
+    ]
+   ],
+   "blocked_word_count": 14545,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining B-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "baa",
+     "bywords"
+    ]
+   ],
+   "blocked_word_count": 9268,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining R-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "pyxis",
+     "sab"
+    ]
+   ],
+   "blocked_word_count": 10980,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining D-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "czars",
+     "each"
+    ]
+   ],
+   "blocked_word_count": 10141,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining M-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "mac",
+     "mythos"
+    ]
+   ],
+   "blocked_word_count": 9588,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining A-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "baa"
+    ]
+   ],
+   "blocked_word_count": 10435,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining T-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tab",
+     "tzars"
+    ]
+   ],
+   "blocked_word_count": 8733,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining F-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ewe",
+     "gab"
+    ]
+   ],
+   "blocked_word_count": 8340,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining U-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tzars",
+     "vac"
+    ]
+   ],
+   "blocked_word_count": 5072,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining G-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gab",
+     "gym"
+    ],
+    [
+     "gym",
+     "had"
+    ]
+   ],
+   "blocked_word_count": 5698,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining L-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "lab",
+     "mac"
+    ]
+   ],
+   "blocked_word_count": 5052,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining H-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "had",
+     "hyssops"
+    ]
+   ],
+   "blocked_word_count": 6169,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining E-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "each",
+     "ewe"
+    ]
+   ],
+   "blocked_word_count": 5465,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining I-words.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "igloo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "igloo"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining IN-words.",
+   "blocklist": [
+    "inch",
+    "index",
+    "indigo",
+    "infant",
+    "inferno",
+    "infinity",
+    "ink",
+    "inlet",
+    "inn",
+    "input",
+    "insect",
+    "inside",
+    "invalid",
+    "invoice",
+    "inward"
+   ],
+   "blocked_ranges": [
+    [
+     "inabilities",
+     "inadequate"
+    ]
+   ],
+   "blocked_word_count": 40,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining IN-words.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "intuition"
+    },
+    {
+     "seat": "guesser2",
+     "word": "into"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining I-words.",
+   "blocklist": [
+    "ice",
+    "iceberg",
+    "icicle",
+    "icon",
+    "idea",
+    "ideal",
+    "identity",
+    "idiom",
+    "idiot",
+    "idol",
+    "iguana",
+    "ill",
+    "illusion",
+    "image",
+    "imagination",
+    "impossible",
+    "iron",
+    "irony",
+    "island",
+    "isle",
+    "item",
+    "ivory",
+    "ivy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Random remaining IN-word. Start just after into.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "into",
+     "intoxication"
+    ]
+   ],
+   "blocked_word_count": 43,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Random pick among ALL remaining IM-words.",
+   "blocklist": [
+    "imagine",
+    "imitate",
+    "immune",
+    "impact",
+    "impala",
+    "impatient",
+    "imperial",
+    "implement",
+    "imply",
+    "import",
+    "important",
+    "impress",
+    "improve",
+    "impulse"
+   ],
+   "blocked_ranges": [
+    [
+     "imaged",
+     "imagines"
+    ]
+   ],
+   "blocked_word_count": 40,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "imp"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Pick freely among remaining IND-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "indebted",
+     "industriousnesses"
+    ]
+   ],
+   "blocked_word_count": 467,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "industry"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Pick freely among remaining INTER-words.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inter",
+     "into"
+    ]
+   ],
+   "blocked_word_count": 961,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Pick freely among remaining INS-words.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inspiration"
+    },
+    {
+     "seat": "guesser2",
+     "word": "insight"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Pick freely among remaining IL-words.",
+   "blocklist": [
+    "illegal",
+    "illegible",
+    "illicit",
+    "illiterate",
+    "illness",
+    "illogical",
+    "illuminate",
+    "illustrate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Pick freely among remaining INS-words. Bug spray?",
+   "blocklist": [
+    "insecticidal",
+    "insecticide",
+    "insecticides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 437.68272857261275,
+  "cost_numerator": 84483271,
+  "cost_denominator": 193024,
+  "cost_exact": false,
+  "cost_mcse": 0.4977176703104036,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 78692551,
+   "denominator": 193024,
+   "value": 407.68272857261275,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:49,5:100,6:243,7:443,8:635,9:711,10:754,11:649,12:520,13:436,14:243,15:213,16:149,17:108,18:61,19:27,20:12",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.4977176703104036,
+   "rollouts": 256,
+   "rank_total": 78692551,
+   "rank_denominator": 193024,
+   "cache_key": "a10bc740b507d2e9c1343b3070acf2bf"
+  }
+ }
+}

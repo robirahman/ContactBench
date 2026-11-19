@@ -1,0 +1,325 @@
+{
+ "game_id": "dev44-0000-r0-gpt_6_2_astra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_sol",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "The gray part that does the homework",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "graphite"
+    },
+    {
+     "seat": "guesser2",
+     "word": "brain"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "What held my first intended answer inside wood?",
+   "blocklist": [
+    "casing",
+    "cedar",
+    "lead",
+    "pencil",
+    "sheath"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "BR shelf, skip 319 entries, take next",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "braw"
+    },
+    {
+     "seat": "guesser2",
+     "word": "braw"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "IN shelf, skip 719 entries, take next",
+   "blocklist": [
+    "incurvating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "I shelf, offset (47 squared + 108), limit 1",
+   "blocklist": [
+    "incrusts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "I[Hardy-Ramanujan number], 0-based. ice ion ink if",
+   "blocklist": [
+    "inanities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words('i', int(pi*1000), 6)[3]",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ins",
+     "intuitions"
+    ]
+   ],
+   "blocked_word_count": 1892,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "infectivities"
+    },
+    {
+     "seat": "guesser2",
+     "word": "infectivities"
+    }
+   ],
+   "prefix_after": "il",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "ilea ileac ileal ilk ilka ilks ill ilex iliad pl.",
+   "blocklist": [
+    "iliads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ilia iliac ilial ilium ileum ileus IL[8^2] 0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "illegalize",
+     "illogical"
+    ]
+   ],
+   "blocked_word_count": 52,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "ileitides ileitis ileuses illy ills holly genus pl",
+   "blocklist": [
+    "ilexes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "ilmenite ilmenites illegal illume secret society",
+   "blocklist": [
+    "illuminati"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "illusion illusive illusory illusionist first pl.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illusions"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illusions"
+    }
+   ],
+   "prefix_after": "ill",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "illative illatives illaudable illation plural",
+   "blocklist": [
+    "illations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ill",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "illatively illaudably illegality illumed #3 pl.",
+   "blocklist": [
+    "illegalities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ill",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "illuvia illuvial illuviated illuvium #4 add s",
+   "blocklist": [
+    "illuviums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ill",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "illuminate illuminated illuminating illumination+s",
+   "blocklist": [
+    "illuminations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ill",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "illumine illumed illumes illegalization pl.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illegalizations"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illegalizations"
+    }
+   ],
+   "prefix_after": "ill",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 20.0,
+  "cost_numerator": 20,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,579 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Sea unicorn; reply with its name spelled backward",
+   "blocklist": [
+    "narwhal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest living land animal",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Unique positive integer x satisfying 3x=24",
+   "blocklist": [
+    "eight",
+    "eights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "octopus"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Name a fruit: first one that comes to mind",
+   "blocklist": [
+    "apple",
+    "apples",
+    "banana",
+    "bananas",
+    "orange",
+    "oranges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "First dictionary entry among zebra, quartz, lynx",
+   "blocklist": [
+    "lynx",
+    "lynxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zebra"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Emperor, gentoo, or chinstrap",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Keep QUAR from turn 5; add REL. A dispute.",
+   "blocklist": [
+    "argument",
+    "dispute",
+    "disputes",
+    "feud",
+    "quarrel",
+    "quarreled",
+    "quarreling",
+    "quarrelled",
+    "quarrelling",
+    "quarrels",
+    "row",
+    "spat",
+    "squabble",
+    "tiff"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Giza riddle: crypt, glyph, pharaoh, pyramid, tomb",
+   "blocklist": [
+    "hieroglyph",
+    "hieroglyphs",
+    "mummies",
+    "mummy",
+    "obelisk",
+    "sphinges",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Alphabet, aardvark, abacus, xenon. Element #8.",
+   "blocklist": [
+    "oxygen",
+    "oxygenate",
+    "oxygenic",
+    "oxygens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "quartzite sphinxlike oxymoron; planet or metal",
+   "blocklist": [
+    "mercurial",
+    "mercuric",
+    "mercuries",
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Puzzled and mildly amused, as a raised eyebrow",
+   "blocklist": [
+    "amused",
+    "arch",
+    "bemused",
+    "perplexed",
+    "puzzled",
+    "quizzical",
+    "skeptical",
+    "wry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Andean rodent prized for its very soft fur",
+   "blocklist": [
+    "chinchilla",
+    "chinchillas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Marimba cousin with wooden bars struck by mallets",
+   "blocklist": [
+    "glockenspiel",
+    "glockenspiels",
+    "vibraphone",
+    "vibraphones",
+    "xylophone",
+    "xylophones",
+    "xylophonist",
+    "xylophonists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Crocodile rhino elephant; river horse",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Axolotl quokka pangolin. Color-changing lizard?",
+   "blocklist": [
+    "anole",
+    "anoles",
+    "chameleon",
+    "chameleonic",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Portable canopy that folds up after rain",
+   "blocklist": [
+    "brollies",
+    "brolly",
+    "parasol",
+    "parasols",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Shark tuna cod trout bass: group of fish?",
+   "blocklist": [
+    "fish",
+    "fishes",
+    "school",
+    "schooled",
+    "schools",
+    "shoal",
+    "shoaled",
+    "shoals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Q-A-S-A-R plus U after Q; luminous galactic core",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quasar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quasar"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "E-M-U; elk eel elf era err ear eat ebb ego egg end",
+   "blocklist": [
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "E-C-L-I-P-S-E; Moon hides Sun. elk elf? equinox",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "ecliptic",
+    "ecliptics",
+    "occultation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Prime between X and XII; E-L-E-V-E-N",
+   "blocklist": [
+    "eleven",
+    "elevens",
+    "eleventh"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "E-A-R-T-H; our home. echo edge exit epic easy each",
+   "blocklist": [
+    "earth",
+    "earthen",
+    "earthling",
+    "earthlings",
+    "earthly",
+    "earths",
+    "globe",
+    "terra",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Like Dumbo. energy engine enough essay event every",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "elephantine"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elephantine"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Mail wrapper. enigma entropy entente enhance",
+   "blocklist": [
+    "envelop",
+    "envelope",
+    "enveloped",
+    "envelopes",
+    "envelops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Like Britannica; ens ent eon engage enjoy enter",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "encyclopaedia",
+     "encyclopedists"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "French word for listless boredom",
+   "blocklist": [
+    "acedia",
+    "apathy",
+    "boredom",
+    "ennui",
+    "ennuis",
+    "ennuye",
+    "ennuyee",
+    "languor",
+    "malaise",
+    "tedium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Cast a spell on; entomb enlist enact entail ensue",
+   "blocklist": [
+    "bewitch",
+    "charm",
+    "enchant",
+    "enchanted",
+    "enchanting",
+    "enchants",
+    "ensorcel",
+    "ensorcell",
+    "enthral",
+    "enthrall",
+    "hex",
+    "jinx",
+    "spellbind"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Final phase in chess. envy enterprising endurance",
+   "blocklist": [
+    "endgame",
+    "endgames",
+    "ending",
+    "endings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 130.98324769295303,
+  "cost_numerator": 4996225,
+  "cost_denominator": 38144,
+  "cost_exact": false,
+  "cost_mcse": 0.27548749777354925,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 3851905,
+   "denominator": 38144,
+   "value": 100.98324769295301,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:4,5:18,6:78,7:166,8:251,9:248,10:211,11:149,12:107,13:66,14:32,15:22,16:15,17:6,18:1,19:2,20:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.27548749777354925,
+   "rollouts": 256,
+   "rank_total": 3851905,
+   "rank_denominator": 38144,
+   "cache_key": "8a64f3cbfe2541671e829a16b42a49fb"
+  }
+ }
+}

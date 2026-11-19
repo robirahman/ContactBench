@@ -1,0 +1,519 @@
+{
+ "game_id": "dev42-0006-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "balletomanes",
+ "initial_prefix": "b",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 9273,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit; bat bee boy bus bed big box",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of white; bad bag bar bay bet bib bid bin",
+   "blocklist": [
+    "black"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Sky color; baby back ball band bank bass bath bear",
+   "blocklist": [
+    "blue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Baked loaf; bit bog bow bra bud bug bun buy bye",
+   "blocklist": [
+    "bread"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Toast spread; baa babe babel babble baboon babu",
+   "blocklist": [
+    "butter"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Two wheeled pedal vehicle; baba babas babes babies",
+   "blocklist": [
+    "bicycle",
+    "bike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Feathered animal; bach bached baches bacca baccae",
+   "blocklist": [
+    "bird"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pages bound to read; bacalao bacalaos baccara",
+   "blocklist": [
+    "book",
+    "books"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Earth color; baccaras baccarat baccarats baccate",
+   "blocklist": [
+    "brown"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "River crossing; baccated bacchanal bacchanalia",
+   "blocklist": [
+    "bridge",
+    "bridges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Vein fluid; bacchanalian bacchanals bacchant",
+   "blocklist": [
+    "blood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Ocean shore; beauty began begin being below brain",
+   "blocklist": [
+    "beach",
+    "beaches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Dog sound; beautiful because become before best",
+   "blocklist": [
+    "bark",
+    "barks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Winter snowstorm; bring brought brother business",
+   "blocklist": [
+    "blizzard",
+    "blizzards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Liquid container; better between beyond building",
+   "blocklist": [
+    "barrel",
+    "bottle",
+    "bottles",
+    "bowl",
+    "bucket"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Winged insect; born both break bright broad broke",
+   "blocklist": [
+    "beetle",
+    "beetles",
+    "bumblebee",
+    "bumblebees",
+    "butterflies",
+    "butterfly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Humped bovine; built burn burst busy brave brush",
+   "blocklist": [
+    "bison",
+    "bisons",
+    "brahma",
+    "buffalo",
+    "buffaloes",
+    "buffalos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Chin hair; believe birthday behind blanket",
+   "blocklist": [
+    "beard",
+    "beards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Metal alloy; bacon battle bishop burger boat bliss",
+   "blocklist": [
+    "brass",
+    "brasses",
+    "bronze",
+    "bronzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Explosive weapon; blossom border borrow bottom",
+   "blocklist": [
+    "bazooka",
+    "bazookas",
+    "bomb",
+    "bombs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Breakfast baked food; bedroom beside blaze bloom",
+   "blocklist": [
+    "bagel",
+    "bagels",
+    "biscuit",
+    "biscuits",
+    "brioche",
+    "brioches",
+    "buns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Musical instrument; breeze birth blame blast blind",
+   "blocklist": [
+    "bagpipe",
+    "bagpipes",
+    "banjo",
+    "banjos",
+    "bassoon",
+    "bell",
+    "bongo",
+    "bugle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Inflatable party toy; base basic basis bake baker",
+   "blocklist": [
+    "balloon",
+    "balloons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Tree species; brilliant brief balance balcony bold",
+   "blocklist": [
+    "bamboo",
+    "banyan",
+    "baobab",
+    "beech",
+    "beeches",
+    "birch",
+    "birches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Body part; basket boss bother bounce bought",
+   "blocklist": [
+    "belly",
+    "biceps",
+    "bone",
+    "bones",
+    "breast",
+    "brow",
+    "buttocks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Dog breed; bookcase boom boost booth boot border",
+   "blocklist": [
+    "basenji",
+    "basset",
+    "beagle",
+    "beagles",
+    "bloodhound",
+    "borzoi",
+    "boxer",
+    "bulldog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Occupations; boyfriend boring backbone barefoot",
+   "blocklist": [
+    "banker",
+    "barber",
+    "bartender",
+    "blacksmith",
+    "botanist",
+    "builder",
+    "butcher",
+    "butler"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Fruit; button billion blink blush barrelhouse",
+   "blocklist": [
+    "bergamot",
+    "berries",
+    "berry",
+    "bilberry",
+    "blackberry",
+    "blueberry",
+    "boysenberry",
+    "breadfruit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Clothing; beautifully breadth battlefield bravery",
+   "blocklist": [
+    "beanie",
+    "belt",
+    "beret",
+    "bikini",
+    "blazer",
+    "blouse",
+    "bonnet",
+    "breeches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "bandanna"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 634.7914021809896,
+  "cost_numerator": 31201267,
+  "cost_denominator": 49152,
+  "cost_exact": false,
+  "cost_mcse": 1.0822186100407158,
+  "baseline": {
+   "numerator": 12156517,
+   "denominator": 19712,
+   "value": 616.7064224837662,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:52,4:251,5:589,6:1068,7:1587,8:1826,9:1425,10:972,11:654,12:385,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 1.1250147725158475,
+   "rollouts": 256,
+   "rank_total": 60782585,
+   "rank_denominator": 98560,
+   "cache_key": "2b4c63deb370e890d5873491dc1653fe"
+  },
+  "fallback": {
+   "numerator": 29726707,
+   "denominator": 49152,
+   "value": 604.7914021809896,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:27,4:214,5:531,6:1011,7:1549,8:1802,9:1413,10:966,11:648,12:384,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 1.0822186100407158,
+   "rollouts": 256,
+   "rank_total": 59453414,
+   "rank_denominator": 98304,
+   "cache_key": "71f5889b4e6e0096ff7ee6ceab96c2bb"
+  }
+ }
+}

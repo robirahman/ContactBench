@@ -1,0 +1,600 @@
+{
+ "game_id": "dev44-0001-r0-claude_opus_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large grey animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love to peel",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Opposite of night",
+   "blocklist": [
+    "day",
+    "daylight",
+    "daytime",
+    "light"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Third planet from the sun, our home",
+   "blocklist": [
+    "earth",
+    "earths",
+    "globe",
+    "home",
+    "planet",
+    "sun",
+    "terra",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Number after two",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "three"
+    },
+    {
+     "seat": "guesser2",
+     "word": "three"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Number after nine",
+   "blocklist": [
+    "ten",
+    "tens",
+    "tenth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Hot drink, Earl Grey or chamomile, steeped leaves",
+   "blocklist": [
+    "tea",
+    "teacup",
+    "teapot",
+    "teas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Striped big cat of Asian jungles",
+   "blocklist": [
+    "tiger",
+    "tigerish",
+    "tigers",
+    "tigon",
+    "tigons",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Red fruit used in ketchup",
+   "blocklist": [
+    "tomato",
+    "tomatoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Slow shelled reptile, not a tortoise",
+   "blocklist": [
+    "terrapin",
+    "terrapins",
+    "turtle",
+    "turtleneck",
+    "turtlenecks",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Opposite of false",
+   "blocklist": [
+    "true",
+    "truer",
+    "trues",
+    "truest",
+    "truly",
+    "truth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Digit on your foot",
+   "blocklist": [
+    "toe",
+    "toed",
+    "toenail",
+    "toenails",
+    "toes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Furniture you eat dinner at, with four legs",
+   "blocklist": [
+    "table",
+    "tables",
+    "tabletop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Shortest, thickest finger on the hand",
+   "blocklist": [
+    "thumb",
+    "thumbed",
+    "thumbing",
+    "thumbnail",
+    "thumbnails",
+    "thumbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Oak or pine, e.g.",
+   "blocklist": [
+    "conifer",
+    "evergreen",
+    "oak",
+    "pine",
+    "tall",
+    "timber",
+    "tree",
+    "trees",
+    "wood",
+    "woods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Number after eleven, a dozen",
+   "blocklist": [
+    "dozen",
+    "dozens",
+    "twelfth",
+    "twelfths",
+    "twelve",
+    "twelves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Single one of these in a mouth, dentist pulls it",
+   "blocklist": [
+    "molar",
+    "molars",
+    "teeth",
+    "tooth",
+    "toothache",
+    "toothed",
+    "tooths",
+    "toothy",
+    "tusk",
+    "tusks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Locomotive pulling carriages on rails",
+   "blocklist": [
+    "train",
+    "trains",
+    "tram",
+    "trolley"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Racket sport played at Wimbledon",
+   "blocklist": [
+    "tennis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of bottom",
+   "blocklist": [
+    "top",
+    "topmost",
+    "topped",
+    "tops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "What clocks measure; hours and minutes",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "hour",
+    "hours",
+    "minute",
+    "minutes",
+    "second",
+    "seconds",
+    "time",
+    "timed",
+    "timeless",
+    "timely",
+    "timer",
+    "timers",
+    "times"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Cloth you dry off with after a bath or shower",
+   "blocklist": [
+    "bath",
+    "shower",
+    "towel",
+    "towelette",
+    "towelettes",
+    "toweling",
+    "towelings",
+    "towelling",
+    "towellings",
+    "towels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Loud rumble heard after a lightning flash",
+   "blocklist": [
+    "thunder",
+    "thunderclap",
+    "thunderclaps",
+    "thundered",
+    "thundering",
+    "thunderous",
+    "thunders",
+    "thunderstorm",
+    "thunderstorms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Muscle in your mouth used for tasting and licking",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tongue"
+    },
+    {
+     "seat": "guesser2",
+     "word": "tongue"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Number after twenty-nine",
+   "blocklist": [
+    "thirties",
+    "thirtieth",
+    "thirty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Robber who steals things",
+   "blocklist": [
+    "thief",
+    "thieve",
+    "thieved",
+    "thievery",
+    "thieves",
+    "thieving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "throat thread theory thorn thick thin thing think",
+   "blocklist": [
+    "theory",
+    "thick",
+    "thin",
+    "thing",
+    "think",
+    "thorn",
+    "thread",
+    "throat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "throne"
+    },
+    {
+     "seat": "guesser2",
+     "word": "thank"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "thaw thud thug thigh theft thyme theme throw thee",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thirst"
+    },
+    {
+     "seat": "guesser2",
+     "word": "there"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "this that them then they than thus thou their thy",
+   "blocklist": [
+    "than",
+    "that",
+    "their",
+    "them",
+    "then",
+    "they",
+    "this",
+    "thou",
+    "thus",
+    "thy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thermometer"
+    },
+    {
+     "seat": "guesser2",
+     "word": "those"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 110.76860271516394,
+  "cost_numerator": 3459525,
+  "cost_denominator": 31232,
+  "cost_exact": false,
+  "cost_mcse": 0.2359130536748548,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 2522565,
+   "denominator": 31232,
+   "value": 80.76860271516394,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:6,5:38,6:95,7:121,8:173,9:160,10:122,11:113,12:94,13:72,14:52,15:24,16:21,17:12,18:4,19:3",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.2359130536748548,
+   "rollouts": 256,
+   "rank_total": 2522565,
+   "rank_denominator": 31232,
+   "cache_key": "763eb4c28d9db685ec12388bc789e440"
+  }
+ }
+}

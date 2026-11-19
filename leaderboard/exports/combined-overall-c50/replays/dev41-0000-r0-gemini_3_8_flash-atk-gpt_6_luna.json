@@ -1,0 +1,514 @@
+{
+ "game_id": "dev41-0000-r0-gemini_3_8_flash-atk-gpt_6_luna",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_luna",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "musical instrument with eighty eight keys",
+   "blocklist": [
+    "piano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "hot molten rock erupting from a volcano",
+   "blocklist": [
+    "lava",
+    "magma"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "god of music and prophecy in greek myth",
+   "blocklist": [
+    "apollo",
+    "phoebus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "planet closest to the sun",
+   "blocklist": [
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "tall when young short when old blown out on cake",
+   "blocklist": [
+    "candle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "famous ship that sank after hitting an iceberg",
+   "blocklist": [
+    "liner",
+    "titanic",
+    "unsinkable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "egg laying mammal with duck bill and beaver tail",
+   "blocklist": [
+    "duckbill",
+    "echidna",
+    "monotreme",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "homophone of flour that blooms in a garden",
+   "blocklist": [
+    "flower"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "vast body of salt water covering most of earth",
+   "blocklist": [
+    "ocean",
+    "pacific",
+    "sea",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "third month of the year or walking in rhythm",
+   "blocklist": [
+    "march"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "reddish metal used in pennies and electrical wire",
+   "blocklist": [
+    "brass",
+    "bronze",
+    "cent",
+    "coin",
+    "copper",
+    "coppery",
+    "nickel",
+    "penny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "large gray mammal with a trunk and ivory tusks",
+   "blocklist": [
+    "elephant",
+    "jumbo",
+    "mammoth",
+    "pachyderm",
+    "tusker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "season between summer and winter when leaves fall",
+   "blocklist": [
+    "autumn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "striped orange feline predator",
+   "blocklist": [
+    "cat",
+    "leopard",
+    "lion",
+    "panther",
+    "tiger",
+    "tigers",
+    "tigress"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "flightless bird native to antarctica",
+   "blocklist": [
+    "antarctic",
+    "emperor",
+    "penguin",
+    "rookery",
+    "waddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "city of light and capital of france",
+   "blocklist": [
+    "paris"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "element with atomic number one",
+   "blocklist": [
+    "atom",
+    "deuterium",
+    "gas",
+    "helium",
+    "hydride",
+    "hydrogen",
+    "isotope",
+    "proton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "what has a thumb and four fingers but is not alive",
+   "blocklist": [
+    "glove",
+    "hand",
+    "mitten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "the more you take the more you leave behind",
+   "blocklist": [
+    "footfall",
+    "footprint",
+    "footprints",
+    "footsteps",
+    "prints",
+    "step",
+    "steps",
+    "tracks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "timepiece worn around the wrist",
+   "blocklist": [
+    "chronometer",
+    "clock",
+    "ticker",
+    "timepiece",
+    "watch",
+    "watches",
+    "wristwatch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "dark shape cast when an object blocks light",
+   "blocklist": [
+    "darkness",
+    "outline",
+    "penumbra",
+    "shade",
+    "shadow",
+    "shadows",
+    "silhouette",
+    "umbra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "to be or not to be that is the blank",
+   "blocklist": [
+    "answer",
+    "blank",
+    "dilemma",
+    "existence",
+    "hamlet",
+    "problem",
+    "query",
+    "question",
+    "quote",
+    "soliloquy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "sweet liquid made by bees",
+   "blocklist": [
+    "honey",
+    "mead",
+    "nectar",
+    "syrup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "seven colored arc in the sky after rain",
+   "blocklist": [
+    "arc",
+    "bow",
+    "colors",
+    "prism",
+    "rainbow",
+    "rainbows",
+    "spectrum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "tallest living animal with a long neck",
+   "blocklist": [
+    "camel",
+    "giraffe",
+    "giraffes",
+    "okapi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "instrument used to measure temperature",
+   "blocklist": [
+    "pyrometer",
+    "temperature",
+    "thermocouple",
+    "thermograph",
+    "thermometer",
+    "thermometers",
+    "thermometry",
+    "thermostat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "the dark time between sunset and sunrise",
+   "blocklist": [
+    "dusk",
+    "evening",
+    "nocturnal",
+    "nocturne",
+    "sundown"
+   ],
+   "blocked_ranges": [
+    [
+     "night",
+     "nighty"
+    ]
+   ],
+   "blocked_word_count": 60,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11504.324434525739,
+  "cost_numerator": 11356332805,
+  "cost_denominator": 987136,
+  "cost_exact": false,
+  "cost_mcse": 7.100570841868794,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 11326718725,
+   "denominator": 987136,
+   "value": 11474.324434525739,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:953,4:3856,5:8586,6:15182,7:23066,8:28401,9:24847,10:20278,11:15491,12:11350,13:7824,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 7.100570841868794,
+   "rollouts": 256,
+   "rank_total": 11326718725,
+   "rank_denominator": 987136,
+   "cache_key": "f1223da4661ff7775c7e7ff949762602"
+  }
+ }
+}

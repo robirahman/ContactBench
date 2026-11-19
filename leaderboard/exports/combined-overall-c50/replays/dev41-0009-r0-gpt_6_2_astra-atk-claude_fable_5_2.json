@@ -1,0 +1,761 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Something a bank might have on either side",
+   "blocklist": [
+    "branch",
+    "canal",
+    "creek",
+    "door",
+    "doors",
+    "levee",
+    "money",
+    "river",
+    "rivers",
+    "shore",
+    "stream",
+    "teller",
+    "vault",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "current"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pick any dictionary entry beginning with q",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "qaid",
+     "qwertys"
+    ]
+   ],
+   "blocked_word_count": 822,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Random s-initial word; favor a lucky discovery",
+   "blocklist": [
+    "serendipities",
+    "serendipitous",
+    "serendipitously",
+    "serendipity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Your first association: any animal whatsoever",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elephant"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A flightless bird. Trust your first impulse.",
+   "blocklist": [
+    "cassowary",
+    "dodo",
+    "dodoes",
+    "emu",
+    "kakapo",
+    "kiwi",
+    "moa",
+    "ostrich",
+    "penguin",
+    "rhea",
+    "weka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Choose freely among all entries starting with s.",
+   "blocklist": [
+    "sad",
+    "salt",
+    "same",
+    "sand",
+    "sat",
+    "say",
+    "sea",
+    "secret",
+    "see",
+    "select",
+    "selection",
+    "serene",
+    "she",
+    "simple",
+    "sit",
+    "six",
+    "sky",
+    "sly",
+    "smile",
+    "snake",
+    "son",
+    "song",
+    "spy",
+    "star",
+    "start",
+    "stone",
+    "storm",
+    "sugar",
+    "sum",
+    "summer",
+    "sun",
+    "swan",
+    "sweet",
+    "sword"
+   ],
+   "blocked_ranges": [
+    [
+     "sab",
+     "sabbatical"
+    ],
+    [
+     "syzygal",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 50,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sunflower"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "m-list offset (turn 1's blocked count * 46) - 5",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "makimono",
+     "maladaptive"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Uniformly sample a noun beginning A through M.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "butterscotch"
+    },
+    {
+     "seat": "guesser2",
+     "word": "giraffe"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Free choice from entire re- prefix of dictionary",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "reabsorb",
+     "rezoning"
+    ]
+   ],
+   "blocked_word_count": 6678,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "What beautiful English adjective comes to mind?",
+   "blocklist": [
+    "alluring",
+    "angelic",
+    "attractive",
+    "beauteous",
+    "beautiful",
+    "blue",
+    "bonny",
+    "bright",
+    "brilliant",
+    "charming",
+    "comely",
+    "cute",
+    "dazzling",
+    "delicate",
+    "delightful",
+    "divine",
+    "effervescent",
+    "elegant",
+    "eloquent",
+    "enchanting",
+    "ephemeral",
+    "ethereal",
+    "exquisite",
+    "fabulous",
+    "fair",
+    "fetching",
+    "fine",
+    "gentle",
+    "glorious",
+    "golden",
+    "good",
+    "gorgeous",
+    "graceful",
+    "great",
+    "green",
+    "halcyon",
+    "handsome",
+    "happy",
+    "incandescent",
+    "iridescent",
+    "kind",
+    "lovely",
+    "luminescent",
+    "luminous",
+    "lush",
+    "magnificent",
+    "majestic",
+    "marvelous",
+    "mellifluous",
+    "nice",
+    "picturesque",
+    "pleasant",
+    "pretty",
+    "pulchritudinous",
+    "radiant",
+    "ravishing",
+    "red",
+    "resplendent",
+    "scenic",
+    "shiny",
+    "sparkling",
+    "splendid",
+    "stunning",
+    "sublime",
+    "sunny",
+    "superb",
+    "tranquil",
+    "vivid",
+    "wonderful",
+    "wondrous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 70,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all p-initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "pablum",
+     "pyxis"
+    ]
+   ],
+   "blocked_word_count": 14550,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all s-initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "scything"
+    ],
+    [
+     "slab",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 14292,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "skateboard"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all c-initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "czars"
+    ]
+   ],
+   "blocked_word_count": 16216,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily among remaining s entries.",
+   "blocklist": [
+    "seabags",
+    "seabeach",
+    "seed",
+    "seven",
+    "shark",
+    "sheep",
+    "shell",
+    "ship",
+    "shoe",
+    "sick",
+    "sign",
+    "silk",
+    "silly",
+    "silver",
+    "sing",
+    "sister",
+    "skate",
+    "skateboards",
+    "ski",
+    "skill",
+    "skin",
+    "skull",
+    "skunk",
+    "skylark",
+    "skyline",
+    "skyscraper",
+    "skywritten",
+    "skywrote"
+   ],
+   "blocked_ranges": [
+    [
+     "seabag",
+     "seabag"
+    ]
+   ],
+   "blocked_word_count": 29,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "semaphore"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all a-m initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "myxoviruses"
+    ]
+   ],
+   "blocked_word_count": 96453,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all t-z initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tab",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 21440,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all n-o initial entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "naan",
+     "ozonous"
+    ]
+   ],
+   "blocked_word_count": 10205,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all remaining r entries.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "rabat",
+     "ryots"
+    ]
+   ],
+   "blocked_word_count": 10156,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all remaining sh entries.",
+   "blocklist": [
+    "shiatsus",
+    "shiatzu",
+    "shibboleth",
+    "shield",
+    "shields",
+    "shift",
+    "shifts",
+    "shifty",
+    "shiitake",
+    "shill",
+    "shilling",
+    "shimmer",
+    "shimmy",
+    "shin",
+    "shindig",
+    "shine",
+    "shiner",
+    "shingle",
+    "shining",
+    "shipment",
+    "shipping",
+    "ships",
+    "shipwreck",
+    "shipyard",
+    "shire",
+    "shirk",
+    "shirt",
+    "shiver"
+   ],
+   "blocked_ranges": [
+    [
+     "sha",
+     "shiatsu"
+    ],
+    [
+     "shlemiehl",
+     "shysters"
+    ]
+   ],
+   "blocked_word_count": 1226,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all remaining se entries.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "seashell"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all remaining si entries.",
+   "blocklist": [
+    "sib",
+    "sibling",
+    "siege",
+    "sieve",
+    "sight",
+    "sigma",
+    "silence",
+    "silent",
+    "silhouette",
+    "similar",
+    "sin",
+    "since",
+    "single",
+    "sink",
+    "sip",
+    "sir",
+    "siren",
+    "site",
+    "size"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily among all remaining shi words.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shipmate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shillelagh"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Choose any entry from se through sk inclusive.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sextant"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from all remaining sk entries.",
+   "blocklist": [
+    "skater",
+    "skating",
+    "skeet",
+    "skein",
+    "skeleton",
+    "skeptic",
+    "sketch",
+    "skew",
+    "skewer",
+    "skid",
+    "skier",
+    "skies",
+    "skiff",
+    "skiing",
+    "skillet",
+    "skim",
+    "skimp",
+    "skink",
+    "skinny",
+    "skip",
+    "skipper",
+    "skirmish",
+    "skirt",
+    "skis",
+    "skit",
+    "skua",
+    "skulk",
+    "skydive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Choose arbitrarily from sea- through sen- entries.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "seabird"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "shinier shins shire shires shirr shiv shivs ships",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shipwrecked"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "shies shied shier shiest shies shite shit shits",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shingles"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shitting"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 256.1864962663666,
+  "cost_numerator": 40071667,
+  "cost_denominator": 156416,
+  "cost_exact": false,
+  "cost_mcse": 0.31393272277502565,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 35379187,
+   "denominator": 156416,
+   "value": 226.18649626636662,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:70,5:179,6:343,7:504,8:611,9:515,10:362,11:256,12:186,13:125,14:82,15:59,16:27,17:10,18:9,19:2,20:1",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.31393272277502565,
+   "rollouts": 256,
+   "rank_total": 35379187,
+   "rank_denominator": 156416,
+   "cache_key": "9c3a1fce1cc066973c9c67d82988f201"
+  }
+ }
+}

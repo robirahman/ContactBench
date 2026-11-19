@@ -1,0 +1,680 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_carbon-atk-claude_fable_5_2",
+ "attacker": "gemini_4_carbon",
+ "defender": "claude_fable_5_2",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "1st word in dictionary; doctor says say ___",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "english noun with three consecutive double letters",
+   "blocklist": [
+    "bookkeeper",
+    "bookkeepers",
+    "bookkeeping",
+    "bookkeepings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "celestial trio in a line; no a-e-i-o-u",
+   "blocklist": [
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "common fruit",
+   "blocklist": [
+    "apple",
+    "apples",
+    "apricot",
+    "apricots",
+    "avocado",
+    "avocados",
+    "banana",
+    "bananas",
+    "berries",
+    "berry",
+    "blueberries",
+    "blueberry",
+    "cantaloupe",
+    "cantaloupes",
+    "cherries",
+    "cherry",
+    "coconut",
+    "coconuts",
+    "date",
+    "dates",
+    "fig",
+    "figs",
+    "grape",
+    "grapefruit",
+    "grapefruits",
+    "grapes",
+    "guava",
+    "guavas",
+    "kiwi",
+    "kiwis",
+    "lemon",
+    "lemons",
+    "lime",
+    "limes",
+    "mango",
+    "mangoes",
+    "mangos",
+    "melon",
+    "melons",
+    "nectarine",
+    "nectarines",
+    "orange",
+    "oranges",
+    "papaya",
+    "papayas",
+    "peach",
+    "peaches",
+    "pear",
+    "pears",
+    "pineapple",
+    "pineapples",
+    "plum",
+    "plums",
+    "pomegranate",
+    "pomegranates",
+    "prune",
+    "prunes",
+    "raspberries",
+    "raspberry",
+    "strawberries",
+    "strawberry",
+    "tangerine",
+    "tangerines",
+    "tomato",
+    "tomatoes",
+    "watermelon",
+    "watermelons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 67,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "riddle: starts with u-n-d and ends with u-n-d",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "underground"
+    },
+    {
+     "seat": "guesser2",
+     "word": "underground"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "riddle: only word spelled wrong in dictionary",
+   "blocklist": [
+    "improper",
+    "improperly",
+    "inaccurate",
+    "inaccurately",
+    "incorrect",
+    "incorrectly",
+    "incorrectness",
+    "incorrectnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "common animal",
+   "blocklist": [
+    "ibex",
+    "ibexes",
+    "ibices",
+    "ibis",
+    "ibises",
+    "iguana",
+    "iguanas",
+    "iguanian",
+    "iguanians",
+    "iguanodon",
+    "iguanodons",
+    "impala",
+    "impalas",
+    "inchworm",
+    "inchworms",
+    "indri",
+    "indris",
+    "insect",
+    "insects",
+    "isopod",
+    "isopods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "common color",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indigo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indigo"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "chemical element",
+   "blocklist": [
+    "indium",
+    "indiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "human body part",
+   "blocklist": [
+    "incisor",
+    "incisors",
+    "incudes",
+    "incus",
+    "index",
+    "inion",
+    "innards",
+    "instep",
+    "insteps",
+    "integument",
+    "intestine",
+    "intestines",
+    "intima"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "hormone",
+   "blocklist": [
+    "inhibin",
+    "inhibins",
+    "insulin",
+    "insulins",
+    "interferon",
+    "interferons",
+    "intermedin",
+    "intermedins",
+    "inulin",
+    "inulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "common contagious viral respiratory illness",
+   "blocklist": [
+    "infection",
+    "infections",
+    "infectious",
+    "influenza",
+    "influenzal",
+    "influenzas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "one twelfth of a foot",
+   "blocklist": [
+    "inch",
+    "inched",
+    "inches",
+    "inching"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "writing or office supply",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ink"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ink"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "inside a building; opposite of outdoor",
+   "blocklist": [
+    "indoor",
+    "indoors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "single person; one distinct entity",
+   "blocklist": [
+    "individual",
+    "individualism",
+    "individualisms",
+    "individualist",
+    "individualists",
+    "individualities",
+    "individuality",
+    "individually",
+    "individuals",
+    "individuate",
+    "individuated",
+    "individuates",
+    "individuating",
+    "individuation",
+    "individuations",
+    "indivisible",
+    "indivisibles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "noun: manufacturing sector, or diligence",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "industrial",
+     "industry"
+    ]
+   ],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "july 4 holiday; self-rule or freedom",
+   "blocklist": [
+    "independence",
+    "independences",
+    "independencies",
+    "independency",
+    "independent",
+    "independently",
+    "independents"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "formal criminal charge by a grand jury",
+   "blocklist": [
+    "indict",
+    "indictable",
+    "indicted",
+    "indictee",
+    "indictees",
+    "indicter",
+    "indicters",
+    "indicting",
+    "indictment",
+    "indictments",
+    "indictor",
+    "indictors",
+    "indicts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "heartburn; stomach upset after eating",
+   "blocklist": [
+    "indigested",
+    "indigestibilities",
+    "indigestibility",
+    "indigestible",
+    "indigestibles",
+    "indigestion",
+    "indigestions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "verb: bring on labor, persuade, or cause",
+   "blocklist": [
+    "induce",
+    "induced",
+    "inducement",
+    "inducements",
+    "inducer",
+    "inducers",
+    "induces",
+    "inducibilities",
+    "inducibility",
+    "inducible",
+    "inducing",
+    "induct",
+    "inducted",
+    "inducting",
+    "induction",
+    "inductions",
+    "inducts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "permanent; unable to be erased or washed away",
+   "blocklist": [
+    "indelibilities",
+    "indelibility",
+    "indelible",
+    "indelibly",
+    "indestructibility",
+    "indestructible",
+    "indestructibly",
+    "indissoluble",
+    "indissolubly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "verb: point out, show, or signal with turn light",
+   "blocklist": [
+    "indicant",
+    "indicants",
+    "indicate",
+    "indicated",
+    "indicates",
+    "indicating",
+    "indication",
+    "indicational",
+    "indications",
+    "indicative",
+    "indicatively",
+    "indicatives",
+    "indicator",
+    "indicators",
+    "indicatory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "native to a region; aboriginal",
+   "blocklist": [
+    "indigen",
+    "indigene",
+    "indigenes",
+    "indigenization",
+    "indigenizations",
+    "indigenize",
+    "indigenized",
+    "indigenizes",
+    "indigenizing",
+    "indigenous",
+    "indigenously",
+    "indigenousness",
+    "indigenousnesses",
+    "indigens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "ind",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "in truth; friend in need is a friend ___",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indeed"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indeed"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "indult indusia indusial indusium; pamper or spoil",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "indulge",
+     "indulging"
+    ]
+   ],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "indue indued indues induing indults; not doubtable",
+   "blocklist": [
+    "indubitabilities",
+    "indubitability",
+    "indubitable",
+    "indubitableness",
+    "indubitablenesses",
+    "indubitably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "indulin induline indulines indulins; coil part",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inductance",
+     "inductors"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "indurate indurated indurates indurating induration",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

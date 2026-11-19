@@ -1,0 +1,587 @@
+{
+ "game_id": "dev41-0009-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "bags and suitcases for travel",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "court writ commanding appearance",
+   "blocklist": [
+    "citation",
+    "subpena",
+    "subpoena",
+    "subpoenas",
+    "summons",
+    "summonses",
+    "warrant",
+    "writ"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations",
+    "ejection",
+    "ejections",
+    "eviction",
+    "evictions",
+    "expulsion",
+    "expulsions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "to formally renounce a throne",
+   "blocklist": [
+    "abdicable",
+    "abdicate",
+    "abdicated",
+    "abdicates",
+    "abdicating",
+    "abdication",
+    "abdications",
+    "abdicator",
+    "abdicators",
+    "abjure",
+    "abjured",
+    "abjures",
+    "abjuring",
+    "abnegate",
+    "renounced",
+    "renounces",
+    "renouncing",
+    "renunciation",
+    "resign",
+    "resigned",
+    "resigns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "word reading the same backward and forward",
+   "blocklist": [
+    "palindrome",
+    "palindromes",
+    "palindromic",
+    "palindromist",
+    "palindromists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "process by which green plants use sunlight",
+   "blocklist": [
+    "chlorophyll",
+    "chlorophylls",
+    "photosyntheses",
+    "photosynthesis",
+    "photosynthesize",
+    "photosynthesized",
+    "photosynthesizes",
+    "photosynthesizing",
+    "photosynthetic",
+    "photosynthetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "chain or group of islands",
+   "blocklist": [
+    "archipelagic",
+    "archipelago",
+    "archipelagoes",
+    "archipelagos",
+    "atoll",
+    "atolls",
+    "chain",
+    "group",
+    "islands",
+    "isles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "optical toy tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic",
+    "kaleidoscopically",
+    "periscope",
+    "periscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "medical term for sleepwalking",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "somnambulism"
+    },
+    {
+     "seat": "guesser2",
+     "word": "somnambulism"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "medical instrument for listening to heartbeats",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "having many syllables or using very long words",
+   "blocklist": [
+    "sesquipedalian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "carved stone coffin of ancient Egypt",
+   "blocklist": [
+    "sarcophagi",
+    "sarcophagus",
+    "sarcophaguses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "pleasure derived from another person's misfortune",
+   "blocklist": [
+    "schadenfreude",
+    "schadenfreudes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "icicle-shaped mineral deposit hanging in a cave",
+   "blocklist": [
+    "dripstone",
+    "dripstones",
+    "stalactite",
+    "stalactites",
+    "stalactitic",
+    "stalagmite",
+    "stalagmites",
+    "stalagmitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "happy accident or finding good things by chance",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "serendipities",
+     "serendipity"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "restaurant wine steward and expert",
+   "blocklist": [
+    "sommelier",
+    "sommeliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "dramatic speech spoken aloud to oneself on stage",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "soliloquy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "soliloquy"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "biblical password or test word of a group",
+   "blocklist": [
+    "shibboleth",
+    "shibboleths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "flying metal fragments from an exploding shell",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shrapnel"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shrapnel"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "edible Japanese mushroom grown on oak logs",
+   "blocklist": [
+    "shiitake",
+    "shiitakes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Irish wooden cudgel or club made of blackthorn",
+   "blocklist": [
+    "shillala",
+    "shillalah",
+    "shillalahs",
+    "shillalas",
+    "shillelagh",
+    "shillelaghs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Japanese massage therapy using finger pressure",
+   "blocklist": [
+    "acupressure",
+    "shiatsu",
+    "shiatsus",
+    "shiatzu",
+    "shiatzus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "former British coin worth twelve pence",
+   "blocklist": [
+    "shilling",
+    "shillings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "sunken vessel or maritime disaster at sea",
+   "blocklist": [
+    "ship",
+    "shipload",
+    "shiploads",
+    "ships",
+    "shipwreck",
+    "shipwrecked",
+    "shipwrecking",
+    "shipwrecks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "viral rash with painful blisters or roof tiles",
+   "blocklist": [
+    "shingle",
+    "shingled",
+    "shingler",
+    "shinglers",
+    "shingles",
+    "shingling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "knight's defensive armor held on the arm",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shield",
+     "shields"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "to tremble or shake from cold or fear",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shiver",
+     "shivery"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "to shine with a soft tremulous or wavering light",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shimmer",
+     "shimmery"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "buttoned garment worn on the upper body with a tie",
+   "blocklist": [
+    "shirtwaist"
+   ],
+   "blocked_ranges": [
+    [
+     "shirt",
+     "shirts"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "shirtwaists shirtsleeve shirttail shirttails",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "shirtsleeve",
+     "shirttails"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 42.64113451086956,
+  "cost_numerator": 251071,
+  "cost_denominator": 5888,
+  "cost_exact": false,
+  "cost_mcse": 0.05850545126314672,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 74431,
+   "denominator": 5888,
+   "value": 12.641134510869565,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:4,5:18,6:25,7:38,8:46,9:30,10:10,11:12,12:5,13:2,15:1",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.05850545126314672,
+   "rollouts": 256,
+   "rank_total": 148862,
+   "rank_denominator": 11776,
+   "cache_key": "0d8c02252cd7bda295848a8c766fa62f"
+  }
+ }
+}

@@ -1,0 +1,585 @@
+{
+ "game_id": "dev44-0003-r0-gemini_4_hydrogen-atk-claude_opus_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_opus_5_5",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "duck-billed egg-laying mammal",
+   "blocklist": [
+    "echidna",
+    "monotreme",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "plants making food from sunlight",
+   "blocklist": [
+    "autotroph",
+    "autotrophic",
+    "autotrophs",
+    "chlorophyll",
+    "chloroplast",
+    "chloroplasts",
+    "photosynthate",
+    "photosyntheses",
+    "photosynthesis",
+    "photosynthesize",
+    "photosynthesized",
+    "photosynthesizes",
+    "photosynthesizing",
+    "photosynthetic",
+    "photosynthetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "boomerang"
+    },
+    {
+     "seat": "guesser2",
+     "word": "boomerang"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "dome-shaped house made of snow blocks",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "hanging spike of frozen water",
+   "blocklist": [
+    "icicle",
+    "icicled",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "large tropical American lizard",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "iguana"
+    },
+    {
+     "seat": "guesser2",
+     "word": "iguana"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "deep blue-violet color or dye",
+   "blocklist": [
+    "indigo",
+    "indigoes",
+    "indigoid",
+    "indigoids",
+    "indigos",
+    "indigotin",
+    "indigotins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "six-legged bug like an ant or beetle",
+   "blocklist": [
+    "insect",
+    "insectan",
+    "insectile",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "small jar for holding writing fluid",
+   "blocklist": [
+    "inkhorn",
+    "inkhorns",
+    "inkpot",
+    "inkpots",
+    "inkstand",
+    "inkstands",
+    "inkwell",
+    "inkwells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "newborn human baby",
+   "blocklist": [
+    "infancy",
+    "infant",
+    "infantile",
+    "infants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "sharp front tooth for biting or cutting",
+   "blocklist": [
+    "incisal",
+    "incise",
+    "incised",
+    "incision",
+    "incisive",
+    "incisor",
+    "incisors",
+    "incisory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "hormone regulating blood sugar",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insulin",
+     "insulins"
+    ]
+   ],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "sideways figure-eight math symbol",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "infinite",
+     "infinity"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "one of nine periods in a baseball game",
+   "blocklist": [
+    "inning",
+    "innings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Newton's first law: resistance to motion change",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inert",
+     "inerts"
+    ]
+   ],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "inability to fall or stay asleep",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insomnia",
+     "insomnias"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "fragrant stick burned for aroma",
+   "blocklist": [
+    "incense",
+    "incensed",
+    "incenses",
+    "incensing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "one twelfth of a foot",
+   "blocklist": [
+    "inch",
+    "inched",
+    "inches",
+    "inching"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "alphabetical list at back of a book",
+   "blocklist": [
+    "indices",
+    "indicia"
+   ],
+   "blocked_ranges": [
+    [
+     "index",
+     "indexings"
+    ]
+   ],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "breathe air into the lungs",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inhalant",
+     "inhaling"
+    ],
+    [
+     "inspiration",
+     "inspiring"
+    ]
+   ],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "itemized bill for goods or services",
+   "blocklist": [
+    "invoice",
+    "invoiced",
+    "invoices",
+    "invoicing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "black liquid inside a pen",
+   "blocklist": [
+    "ink",
+    "inked",
+    "inker",
+    "inkers",
+    "inkier",
+    "inkiest",
+    "inking",
+    "inkjet",
+    "inkling",
+    "inklings",
+    "inks",
+    "inky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "whole number, positive negative or zero",
+   "blocklist": [
+    "integer",
+    "integers",
+    "integral",
+    "integrals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "bar of cast gold or silver",
+   "blocklist": [
+    "ingot",
+    "ingoted",
+    "ingoting",
+    "ingots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Dante's hell or a raging fire",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "infernal",
+     "infernos"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "prisoner in a jail or penitentiary",
+   "blocklist": [
+    "inmate",
+    "inmates",
+    "internee",
+    "internees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "digestive organ between stomach and colon",
+   "blocklist": [
+    "intestinal",
+    "intestinally",
+    "intestine",
+    "intestines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "narrow coastal waterway or bay",
+   "blocklist": [
+    "inlet",
+    "inlets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "small hotel or tavern for travelers",
+   "blocklist": [
+    "hostel",
+    "hostelry",
+    "inn",
+    "innkeeper",
+    "innkeepers",
+    "inns",
+    "motel",
+    "tavern"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "physical harm or damage to the body",
+   "blocklist": [
+    "damage",
+    "harm",
+    "injure",
+    "injured",
+    "injurer",
+    "injurers",
+    "injures",
+    "injuries",
+    "injuring",
+    "injurious",
+    "injury",
+    "trauma",
+    "wound"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 377.7737469059406,
+  "cost_numerator": 4883859,
+  "cost_denominator": 12928,
+  "cost_exact": false,
+  "cost_mcse": 0.4465309846521671,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 4496019,
+   "denominator": 12928,
+   "value": 347.7737469059406,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:6,5:31,6:120,7:240,8:367,9:499,10:606,11:573,12:564,13:443,14:270,15:229,16:173,17:110,18:58,19:29,20:14",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.4465309846521671,
+   "rollouts": 256,
+   "rank_total": 53952228,
+   "rank_denominator": 155136,
+   "cache_key": "5494e09df072ea6e875fc7f9feb60481"
+  }
+ }
+}

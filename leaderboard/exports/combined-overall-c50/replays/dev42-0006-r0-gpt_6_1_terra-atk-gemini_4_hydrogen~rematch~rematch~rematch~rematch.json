@@ -1,0 +1,361 @@
+{
+ "game_id": "dev42-0006-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "balletomanes",
+ "initial_prefix": "ball",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 84,
+ "initial_secret_candidates": [
+  "ballad",
+  "ballade",
+  "balladeer",
+  "balladeers",
+  "ballades",
+  "balladic",
+  "balladist",
+  "balladists",
+  "balladries",
+  "balladry",
+  "ballads",
+  "ballast",
+  "ballasted",
+  "ballasting",
+  "ballasts",
+  "ballcarrier",
+  "ballcarriers",
+  "balled",
+  "baller",
+  "ballerina",
+  "ballerinas",
+  "ballers",
+  "ballet",
+  "balletic",
+  "balletomane",
+  "balletomanes",
+  "balletomania",
+  "balletomanias",
+  "ballets",
+  "ballgame",
+  "ballgames",
+  "ballhandling",
+  "ballhandlings",
+  "ballhawk",
+  "ballhawks",
+  "ballies",
+  "balling",
+  "ballista",
+  "ballistae",
+  "ballistic",
+  "ballistically",
+  "ballistics",
+  "ballon",
+  "ballonet",
+  "ballonets",
+  "ballonne",
+  "ballonnes",
+  "ballons",
+  "balloon",
+  "ballooned",
+  "ballooning",
+  "balloonings",
+  "balloonist",
+  "balloonists",
+  "balloons",
+  "ballot",
+  "balloted",
+  "balloter",
+  "balloters",
+  "balloting",
+  "ballots",
+  "ballpark",
+  "ballparks",
+  "ballplayer",
+  "ballplayers",
+  "ballpoint",
+  "ballpoints",
+  "ballroom",
+  "ballrooms",
+  "balls",
+  "ballsier",
+  "ballsiest",
+  "ballsy",
+  "ballute",
+  "ballutes",
+  "bally",
+  "ballyhoo",
+  "ballyhooed",
+  "ballyhooing",
+  "ballyhoos",
+  "ballyrag",
+  "ballyragged",
+  "ballyragging",
+  "ballyrags"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Dance on pointe; ballad ballast balloon ballot",
+   "blocklist": [
+    "ballet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tutu dancer; ballpark ballpoint ballroom ballistic",
+   "blocklist": [
+    "ballerina"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Tutu dancers, plural; ballgame ballplayer ballyhoo",
+   "blocklist": [
+    "ballerinas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Swan Lake shows; balloons ballots ballads balls",
+   "blocklist": [
+    "ballets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Singer of ballads; ballgames ballparks ballplayers",
+   "blocklist": [
+    "balladeer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Singers of ballads; balling balled ballsy ballers",
+   "blocklist": [
+    "balladeers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Ancient giant crossbow; baller ballade ballasts",
+   "blocklist": [
+    "ballista"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Science of projectiles; balloted balloting ballute",
+   "blocklist": [
+    "ballistics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Hot air pilot; ballades balladic balladist bally",
+   "blocklist": [
+    "balloonist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Hot air pilots; ballcarrier ballhandling ballhawk",
+   "blocklist": [
+    "balloonists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Dance halls; ballpoints ballutes balloters ballies",
+   "blocklist": [
+    "ballrooms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Hot air flight; balladry balloter ballistae",
+   "blocklist": [
+    "ballooning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Like ballet; ballasted ballasting ballon ballonet",
+   "blocklist": [
+    "balletic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Inflated; ballons ballonets ballyhoos ballhawks",
+   "blocklist": [
+    "ballooned"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "More gutsy; ballcarriers ballyhooed ballyhooing",
+   "blocklist": [
+    "ballsier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Ballet enthusiast; ballsiest ballyrag ballonne",
+   "blocklist": [
+    "balletomane"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ball",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Ballet fans; balladists balladries ballonnes",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "balletomanes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "balletomanes"
+    }
+   ],
+   "prefix_after": "ball",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 18.0,
+  "cost_numerator": 18,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 8267,
+   "denominator": 1280,
+   "value": 6.45859375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:2,6:7,7:11,8:19,9:19,10:11,11:7,12:5,13:3",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.09285447231694646,
+   "rollouts": 256,
+   "rank_total": 8267,
+   "rank_denominator": 1280,
+   "cache_key": "3731cfd87ccb6b743554606a5888ebb0"
+  },
+  "fallback": null
+ }
+}

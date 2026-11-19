@@ -1,0 +1,660 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "African anteater; first animal in many word lists",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Duck-billed mammal that lays eggs",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Forbidden fruit? Answer: bqqmf shifted back one.",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "cat dog bat rat ant bee cow pig fox hen emu yak",
+   "blocklist": [
+    "animals",
+    "ape",
+    "cod",
+    "elk",
+    "ewe",
+    "owl",
+    "ram",
+    "zoo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Tux: Linux mascot species",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Wooden bars played with mallets; starts xy",
+   "blocklist": [
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Wildebeest; also the FSF's operating system",
+   "blocklist": [
+    "gnu",
+    "gnus",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Astronomical alignment; six letters, three Ys",
+   "blocklist": [
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "a b c d e f; Gort's middle command to Klaatu?",
+   "blocklist": [
+    "alphabet",
+    "gee",
+    "gees",
+    "letter",
+    "seventh"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quartz"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Creature that asked Oedipus a riddle",
+   "blocklist": [
+    "sphinges",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "j azz; a genre born in New Orleans",
+   "blocklist": [
+    "jazz",
+    "jazzes",
+    "jazzy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "mer the and for are but not you all can had was",
+   "blocklist": [
+    "day",
+    "get",
+    "has",
+    "her",
+    "him",
+    "our",
+    "out"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sun"
+    },
+    {
+     "seat": "guesser2",
+     "word": "mercury"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit; Ba-na-na without hyphens",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Beat in music; six chars, no A E I O U",
+   "blocklist": [
+    "rhythm",
+    "rhythms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Panther or veiled; a color-changing pet lizard",
+   "blocklist": [
+    "chameleon",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "MERCURIA_ (L); capricious",
+   "blocklist": [
+    "mercurial",
+    "mercurially",
+    "mercurialness",
+    "mercurialnesses",
+    "mercurials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "mercuric mercurous mercurism mercurify mercury",
+   "blocklist": [
+    "cinnabar",
+    "element",
+    "mercurate",
+    "mercuration",
+    "mercuries",
+    "planet",
+    "quicksilver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mercer"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "mercurialize mercurialism mercaptan mercenary",
+   "blocklist": [
+    "mercantile",
+    "mercantilism",
+    "mercaptans",
+    "mercenaries",
+    "merchandise",
+    "merchant",
+    "mercurated",
+    "mercurates",
+    "mercurating",
+    "mercurations",
+    "mercy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "mercuriality merciful merciless merits des-merit",
+   "blocklist": [
+    "demerit",
+    "demerits",
+    "mercantilist",
+    "mercantilists",
+    "mercers",
+    "mercery",
+    "merchants",
+    "mercies",
+    "mercifully",
+    "mercifulness",
+    "mercilessly",
+    "mercilessness",
+    "merde",
+    "mere",
+    "merely",
+    "merge",
+    "merged",
+    "merger",
+    "mergers",
+    "merges",
+    "merging",
+    "meridian",
+    "merino",
+    "merited",
+    "meriting",
+    "meritocracy",
+    "meritorious",
+    "mermaid",
+    "mermaids",
+    "merrily",
+    "merriment",
+    "merry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "merit"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Arthur's wizard; merle merlot merman merfolk",
+   "blocklist": [
+    "enchanter",
+    "magician",
+    "merbromin",
+    "mercerize",
+    "merengue",
+    "merganser",
+    "meringue",
+    "meristem",
+    "merk",
+    "merks",
+    "merl",
+    "merles",
+    "merlin",
+    "merlins",
+    "merlon",
+    "merlons",
+    "merlots",
+    "merls",
+    "mermen",
+    "merrier",
+    "merriest",
+    "merriness",
+    "merrymaker",
+    "merrymaking",
+    "sorcerer",
+    "wizard"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "mercerized meritoriously meridians meringues",
+   "blocklist": [
+    "merbromins",
+    "mercantilisms",
+    "mercantilistic",
+    "mercapto",
+    "mercaptopurine",
+    "mercaptopurines",
+    "mercenarily",
+    "mercenariness",
+    "mercenarinesses",
+    "merceries",
+    "mercerise",
+    "mercerised",
+    "mercerises",
+    "mercerising",
+    "mercerization",
+    "mercerizations",
+    "mercerizes",
+    "mercerizing",
+    "merchandised",
+    "merchandiser",
+    "merchandisers",
+    "merchandises",
+    "merchandising",
+    "merchandisings",
+    "merchandize",
+    "merchandized",
+    "merchandizes",
+    "merchandizing",
+    "merchandizings",
+    "merchantabilities",
+    "merchantability",
+    "merchantable",
+    "merchanted",
+    "merchanting",
+    "merchantman",
+    "merchantmen",
+    "mercifulnesses",
+    "mercilessnesses",
+    "merdes",
+    "merengues",
+    "merer",
+    "meres",
+    "merest",
+    "meretricious",
+    "meretriciously",
+    "meretriciousness",
+    "meretriciousnesses",
+    "mergansers",
+    "mergence",
+    "mergences",
+    "meridional",
+    "meridionally",
+    "meridionals",
+    "merinos",
+    "merises",
+    "merisis",
+    "meristematic",
+    "meristematically",
+    "meristems",
+    "meristic",
+    "meristically",
+    "meritocracies",
+    "meritocrat",
+    "meritocratic",
+    "meritocrats",
+    "meritoriousness",
+    "meritoriousnesses",
+    "meroblastic",
+    "meroblastically",
+    "merocrine",
+    "meromorphic",
+    "meromyosin",
+    "meromyosins",
+    "meropia",
+    "meropias",
+    "meropic",
+    "merozoite",
+    "merozoites",
+    "merriments",
+    "merrinesses",
+    "merrymakers",
+    "merrymakings",
+    "merrythought",
+    "merrythoughts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 84,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mercerized"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "merrymake merrymakes merrymade meronym meronyms",
+   "blocklist": [
+    "carousal",
+    "carouse",
+    "carouses",
+    "festivities",
+    "festivity",
+    "metonym",
+    "metonyms",
+    "metonymy",
+    "revel",
+    "revelry",
+    "revels",
+    "synecdoche",
+    "synecdoches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ocean"
+    },
+    {
+     "seat": "guesser2",
+     "word": "part"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "88-key instrument (meritless merogony merpeople)",
+   "blocklist": [
+    "harpsichord",
+    "harpsichords",
+    "keyboard",
+    "keyboards",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "moon earth mars venus saturn pluto star space",
+   "blocklist": [
+    "asteroid",
+    "astronomy",
+    "comet",
+    "cosmos",
+    "galaxy",
+    "moons",
+    "orbit",
+    "planets",
+    "sky",
+    "solar",
+    "stars",
+    "universe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "water"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11921.466470253372,
+  "cost_numerator": 75809082143,
+  "cost_denominator": 6359040,
+  "cost_exact": false,
+  "cost_mcse": 2.471490080978218,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 75618310943,
+   "denominator": 6359040,
+   "value": 11891.466470253372,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:925,4:3881,5:8604,6:15188,7:23071,8:28385,9:24840,10:20274,11:15475,12:11339,13:7815,14:5120,15:3185,16:1941,17:1125,18:593,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.471490080978218,
+   "rollouts": 256,
+   "rank_total": 75618310943,
+   "rank_denominator": 6359040,
+   "cache_key": "b20c19d61ac55e71d89dbcb0d10f1b78"
+  }
+ }
+}

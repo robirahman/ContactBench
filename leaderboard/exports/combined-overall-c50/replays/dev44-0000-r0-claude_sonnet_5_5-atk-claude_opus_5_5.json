@@ -1,0 +1,559 @@
+{
+ "game_id": "dev44-0000-r0-claude_sonnet_5_5-atk-claude_opus_5_5",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "claude_opus_5_5",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "most common English article",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Conjunction joining words; rhymes with sand, hand",
+   "blocklist": [
+    "and"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Preposition: gift ___ you; opposite of against",
+   "blocklist": [
+    "for"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "to possess; I ___ a dream; has, having, had",
+   "blocklist": [
+    "have"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Not this, but ___; demonstrative pronoun",
+   "blocklist": [
+    "that"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "H2O liquid you drink; rain, rivers, oceans hold it",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "where you live; White ___; home sweet home",
+   "blocklist": [
+    "abode",
+    "dwelling",
+    "home",
+    "house"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "clock measures it; ___ flies when having fun",
+   "blocklist": [
+    "duration",
+    "hour",
+    "hours",
+    "minutes",
+    "seconds",
+    "time",
+    "times"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "humans in general; persons; folks; the public",
+   "blocklist": [
+    "folk",
+    "folks",
+    "humanity",
+    "humankind",
+    "humans",
+    "mankind",
+    "men",
+    "people",
+    "person",
+    "persons",
+    "populace",
+    "public"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "past tense of is; I ___ there yesterday",
+   "blocklist": [
+    "was",
+    "were"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Origin word; a letter ___ a friend; to and ___",
+   "blocklist": [
+    "fro",
+    "from",
+    "origin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "yellow curved fruit that monkeys peel and eat",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "large gray animal with a trunk and tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mammoths",
+    "mastodon",
+    "mastodons",
+    "pachyderm",
+    "pachyderms",
+    "tusker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "furniture with four legs where dinner is served",
+   "blocklist": [
+    "board",
+    "counter",
+    "desk",
+    "desks",
+    "dinette",
+    "table",
+    "tables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Pacific or Atlantic, vast salty expanse of blue",
+   "blocklist": [
+    "brine",
+    "briny",
+    "deep",
+    "main",
+    "ocean",
+    "oceanic",
+    "sea",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "he, she, it, ___ (plural third person pronoun)",
+   "blocklist": [
+    "plural",
+    "she",
+    "their",
+    "theirs",
+    "them",
+    "themselves",
+    "they"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "striped African equine, black and white stripes ok",
+   "blocklist": [
+    "equine",
+    "horse",
+    "quagga",
+    "quaggas",
+    "stripe",
+    "striped",
+    "stripes",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "opposite of dark; a lamp gives it; sun ray",
+   "blocklist": [
+    "beam",
+    "bright",
+    "brightness",
+    "daylight",
+    "glow",
+    "illumination",
+    "lamplight",
+    "light",
+    "lighting",
+    "lightness",
+    "lights",
+    "luminosity",
+    "radiance",
+    "shine",
+    "sunlight",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "melody and rhythm; songs; notes on a staff",
+   "blocklist": [
+    "harmony",
+    "melodies",
+    "melody",
+    "music",
+    "musical",
+    "musics",
+    "notation",
+    "notes",
+    "rhythm",
+    "rhythms",
+    "score",
+    "song",
+    "songs",
+    "tune",
+    "tunes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "canine pet that barks and wags its tail",
+   "blocklist": [
+    "bark",
+    "barks",
+    "canines",
+    "cur",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "hound",
+    "hounds",
+    "mutt",
+    "pet",
+    "pets",
+    "pooch",
+    "pup",
+    "puppies",
+    "puppy",
+    "pups",
+    "tail",
+    "wag"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "color of grass and leaves; mix of blue and yellow",
+   "blocklist": [
+    "aqua",
+    "chartreuse",
+    "color",
+    "colour",
+    "cyan",
+    "emerald",
+    "foliage",
+    "forest",
+    "grass",
+    "green",
+    "greener",
+    "greenery",
+    "greenest",
+    "greenish",
+    "greens",
+    "jade",
+    "kelly",
+    "leaf",
+    "leaves",
+    "lime",
+    "mint",
+    "olive",
+    "sage",
+    "teal",
+    "turquoise",
+    "verdant",
+    "verdure",
+    "viridian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "above us; the limit; Sky ___ 'cloudy' vs clear day",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sky"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "planet Earth; Hello ___; globe; all nations on it",
+   "blocklist": [
+    "earth",
+    "globe",
+    "globes",
+    "orb",
+    "planet",
+    "planets",
+    "sphere",
+    "world",
+    "worlds",
+    "worldwide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "number after zero; first counting numeral; uno",
+   "blocklist": [
+    "ace",
+    "first",
+    "lone",
+    "monad",
+    "one",
+    "ones",
+    "single",
+    "solo",
+    "unit",
+    "unity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "good",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "state",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "business",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12106.307693060777,
+  "cost_numerator": 1236586693,
+  "cost_denominator": 102144,
+  "cost_exact": false,
+  "cost_mcse": 7.038720722719614,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1233522373,
+   "denominator": 102144,
+   "value": 12076.307693060777,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:942,4:3844,5:8573,6:15186,7:23074,8:28397,9:24862,10:20297,11:15502,12:11357,13:7826,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.038720722719614,
+   "rollouts": 256,
+   "rank_total": 9868178984,
+   "rank_denominator": 817152,
+   "cache_key": "7a13d7cf4d1f86af7c902116cdde98b4"
+  }
+ }
+}

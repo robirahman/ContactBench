@@ -1,0 +1,435 @@
+{
+ "game_id": "dev41-0004-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Eighty-eight keys but cannot open any door",
+   "blocklist": [
+    "door",
+    "key",
+    "keyboard",
+    "keyboards",
+    "lock",
+    "locks",
+    "organ",
+    "organs",
+    "piano",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Rhymes with honey and means humorous",
+   "blocklist": [
+    "amusing",
+    "bunny",
+    "comic",
+    "comical",
+    "droll",
+    "funny",
+    "honey",
+    "merry",
+    "money",
+    "sunny",
+    "witty",
+    "zany"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Scientific study of plant life",
+   "blocklist": [
+    "biology",
+    "botanic",
+    "botanical",
+    "botany",
+    "ecology",
+    "flora",
+    "plant",
+    "plants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Geometric shape of a standard stop sign",
+   "blocklist": [
+    "geometric",
+    "octagon",
+    "octagonal",
+    "octagons",
+    "shape",
+    "sign",
+    "stop"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Protects you from rain and opens like a canopy",
+   "blocklist": [
+    "awning",
+    "awnings",
+    "brollies",
+    "brolly",
+    "canopies",
+    "canopy",
+    "parasol",
+    "parasols",
+    "rain",
+    "raincoat",
+    "raincoats",
+    "shade",
+    "shades",
+    "tent",
+    "tents",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The only mammal naturally capable of true flight",
+   "blocklist": [
+    "bat",
+    "bats",
+    "bird",
+    "birds",
+    "flight",
+    "flights",
+    "fly",
+    "flying",
+    "mammal",
+    "mammals",
+    "vampire",
+    "vampires",
+    "wing",
+    "wings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "SI unit of electrical resistance named for Georg",
+   "blocklist": [
+    "ohm",
+    "ohms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Espresso drink topped with steamed milk foam",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cappuccino"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cappuccino"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Heavy iron block on which metal is hammered",
+   "blocklist": [
+    "anvil",
+    "anvils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Nut produced by an oak tree",
+   "blocklist": [
+    "acorn",
+    "acorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Ancient counting tool with sliding beads",
+   "blocklist": [
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Keeps the doctor away if eaten once a day",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Digital icon or figure representing a user online",
+   "blocklist": [
+    "avatar",
+    "avatars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Green fruit used to make guacamole",
+   "blocklist": [
+    "avocado",
+    "avocados"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Burrowing nocturnal African anteater",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aardvark",
+     "arboreal"
+    ]
+   ],
+   "blocked_word_count": 7620,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Season between summer and winter",
+   "blocklist": [
+    "autumn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Person trained to travel in outer space",
+   "blocklist": [
+    "astronaut",
+    "astronauts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Sharp projectile shot from a bow",
+   "blocklist": [
+    "arbor",
+    "arbors",
+    "arbour",
+    "arbours",
+    "arrow",
+    "arrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Mass of snow sliding rapidly down a mountain",
+   "blocklist": [
+    "avalanche",
+    "avalanches",
+    "slide",
+    "slides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "A book of maps",
+   "blocklist": [
+    "almanac",
+    "almanacs",
+    "atlas",
+    "atlases"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Venomous snake that bit Cleopatra",
+   "blocklist": [
+    "adder",
+    "adders",
+    "asp",
+    "aspic",
+    "aspics",
+    "asps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "A famous person's signature",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "arboreous",
+     "arboreta"
+    ],
+    [
+     "arbutus",
+     "arbutuses"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "blocklist"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 23.0,
+  "cost_numerator": 23,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

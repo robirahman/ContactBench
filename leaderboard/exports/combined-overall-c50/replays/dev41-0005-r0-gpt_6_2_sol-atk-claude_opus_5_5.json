@@ -1,0 +1,423 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Aard! Vark! ant bat cat dog emu fox gnu hen jay",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Striped equid; cow pig rat owl elk ape yak bee cod",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Smiling Rottnest marsupial; ax ox ad ah ai am an",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-layer; asp boa doe ewe gar hog koi",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Unicorn whale; the and you are not but all can her",
+   "blocklist": [
+    "narwal",
+    "narwals",
+    "narwhal",
+    "narwhale",
+    "narwhales",
+    "narwhals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk; for was his she who how had",
+   "blocklist": [
+    "octopi",
+    "octopod",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Scaly anteater; man new one out day get see now",
+   "blocklist": [
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Alpine wild goat; yes red big old two six ten use",
+   "blocklist": [
+    "chamois",
+    "ibex",
+    "ibexes",
+    "ibices",
+    "steinbok",
+    "steinboks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Mexican salamander with feathery external gills",
+   "blocklist": [
+    "axolotl",
+    "axolotls",
+    "mudpuppies",
+    "mudpuppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Spiny egg-laying mammal; war air tie put set run",
+   "blocklist": [
+    "echidna",
+    "echidnae",
+    "echidnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Instrument doctors peer through to inspect eardrum",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "otoscope"
+    },
+    {
+     "seat": "guesser2",
+     "word": "otoscope"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Inuit snow house; ice ink inn ion ivy ire imp ill",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Green lizard with a dewlap and spiny crest",
+   "blocklist": [
+    "iguana",
+    "iguanas",
+    "iguanian",
+    "iguanians",
+    "iguanodon",
+    "iguanodons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Frozen drip; ich ids iff ilk icy ism its ire",
+   "blocklist": [
+    "icicle",
+    "icicled",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sacred Egyptian wading bird of Thoth",
+   "blocklist": [
+    "ibis",
+    "ibises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Land surrounded by water; inch idea idol item into",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "island",
+     "islets"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Atom variant with differing neutron count",
+   "blocklist": [
+    "isotope",
+    "isotopes",
+    "isotopic",
+    "isotopically",
+    "isotopies",
+    "isotopy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Rock from cooled magma; iron iris isle inch itch",
+   "blocklist": [
+    "igneous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Titanic hazard; iced ices ick ilk ills imps inks",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Reciprocal; ides ions iota ibis ices ilea idem ifs",
+   "blocklist": [
+    "inverse",
+    "inversely",
+    "inverses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 561.5582755312869,
+  "cost_numerator": 30440951,
+  "cost_denominator": 54208,
+  "cost_exact": false,
+  "cost_mcse": 0.6435503230928644,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 28814711,
+   "denominator": 54208,
+   "value": 531.5582755312869,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:36,5:113,6:277,7:494,8:724,9:847,10:938,11:859,12:766,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.6435503230928644,
+   "rollouts": 256,
+   "rank_total": 115258844,
+   "rank_denominator": 216832,
+   "cache_key": "17d15f887a7e3cfe12ab2cca3b8d1ec4"
+  }
+ }
+}

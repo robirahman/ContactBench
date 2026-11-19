@@ -1,0 +1,641 @@
+{
+ "game_id": "dev41-0004-r0-gemini_4_carbon-atk-claude_fable_5_2",
+ "attacker": "gemini_4_carbon",
+ "defender": "claude_fable_5_2",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "small winter sleds",
+   "blocklist": [
+    "bobsled",
+    "bobsleds",
+    "coaster",
+    "coasters",
+    "cutter",
+    "cutters",
+    "dogsled",
+    "dogsleds",
+    "luge",
+    "luges",
+    "pung",
+    "pungs",
+    "skeleton",
+    "skeletons",
+    "sled",
+    "sledge",
+    "sledges",
+    "sleds",
+    "sleigh",
+    "sleighs",
+    "toboggan",
+    "toboggans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "plastic tip on a shoelace end",
+   "blocklist": [
+    "aglet",
+    "aglets",
+    "aiglet",
+    "aiglets",
+    "aiguillette",
+    "aiguillettes",
+    "ferrule",
+    "ferrules",
+    "lace",
+    "laces",
+    "shoelace",
+    "shoelaces",
+    "tag",
+    "tags",
+    "tip",
+    "tips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "rearrange silent to make listen",
+   "blocklist": [
+    "anagram",
+    "anagrammatic",
+    "anagrammatize",
+    "anagrammed",
+    "anagramming",
+    "anagrams",
+    "elint",
+    "elints",
+    "enlist",
+    "enlists",
+    "inlet",
+    "inlets",
+    "jumble",
+    "jumbles",
+    "letters",
+    "permutation",
+    "permutations",
+    "permute",
+    "puzzle",
+    "rearrangement",
+    "scramble",
+    "scrambles",
+    "shuffle",
+    "tinsel",
+    "tinsels",
+    "transpose",
+    "transposition",
+    "unscramble",
+    "wordplay"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 29,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "first entry or last entry in dictionary",
+   "blocklist": [
+    "alpha",
+    "headword",
+    "omega",
+    "zebra",
+    "zoo"
+   ],
+   "blocked_ranges": [
+    [
+     "aah",
+     "abacuses"
+    ],
+    [
+     "zydeco",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 78,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "throwing someone out of a window",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "defenestration"
+    },
+    {
+     "seat": "guesser2",
+     "word": "defenestration"
+    }
+   ],
+   "prefix_after": "a",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "surgical removal of the vermiform appendix",
+   "blocklist": [
+    "ablation",
+    "amputation",
+    "appendage",
+    "appendectomies",
+    "appendectomy",
+    "appendicectomies",
+    "appendicectomy",
+    "appendices",
+    "appendicites",
+    "appendicitides",
+    "appendicitis",
+    "appendicitises",
+    "appendixes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "feathered Jurassic transitional fossil bird",
+   "blocklist": [
+    "archaeopteryx",
+    "archaeopteryxes",
+    "archosaur",
+    "archosaurian",
+    "archosaurs",
+    "avian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "rhetorical figure of suddenly breaking off speech",
+   "blocklist": [
+    "anacolutha",
+    "anacoluthic",
+    "anacoluthon",
+    "anacoluthons",
+    "apocope",
+    "apocopes",
+    "aposiopeses",
+    "aposiopesis",
+    "aposiopetic",
+    "apostrophe",
+    "apostrophes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "prenatal needle test sampling amniotic fluid",
+   "blocklist": [
+    "amnia",
+    "amnic",
+    "amniocenteses",
+    "amniocentesis",
+    "amnion",
+    "amnionic",
+    "amnions",
+    "amniote",
+    "amniotes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "morbid irrational fear of domestic cats",
+   "blocklist": [
+    "agoraphobia",
+    "agoraphobias",
+    "ailurophile",
+    "ailurophiles",
+    "ailurophobe",
+    "ailurophobes",
+    "ailurophobia",
+    "ailurophobias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "a",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "tragic hero moment of critical discovery",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "anagnorisis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "anagnorisis"
+    }
+   ],
+   "prefix_after": "ar",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "containing or resembling clay in geology",
+   "blocklist": [
+    "arenaceous",
+    "argil",
+    "argillaceous",
+    "argillite",
+    "argillites",
+    "argils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "eastern orthodox monastic superior below bishop",
+   "blocklist": [
+    "archdeacon",
+    "archdeacons",
+    "archimandrite",
+    "archimandrites",
+    "archpriest",
+    "archpriests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "scientific study of the planet mars",
+   "blocklist": [
+    "areocentric",
+    "areologies",
+    "areology",
+    "ares"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "numbered spiral district on the seine",
+   "blocklist": [
+    "arrondissement",
+    "arrondissements"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "feldspathic sandstone rock with >=25% feldspar",
+   "blocklist": [
+    "arenite",
+    "arenites",
+    "arkose",
+    "arkoses",
+    "arkosic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "paired ladle-shaped cartilage of human larynx",
+   "blocklist": [
+    "arytenoid",
+    "arytenoids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "artificial surgical ankylosis fusing joint bones",
+   "blocklist": [
+    "arthritis",
+    "arthrodeses",
+    "arthrodesis",
+    "arthropathies",
+    "arthropathy",
+    "arthroscopies",
+    "arthroscopy",
+    "arthroses",
+    "arthrosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "heraldic adjective: entitled to bear coats of arms",
+   "blocklist": [
+    "armiger",
+    "armigeral",
+    "armigero",
+    "armigeros",
+    "armigerous",
+    "armigers",
+    "armorial",
+    "armorially",
+    "armorials",
+    "armories",
+    "armory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "organoarsenic salvarsan drug for syphilis",
+   "blocklist": [
+    "arsenate",
+    "arsenates",
+    "arsenic",
+    "arsenical",
+    "arsenicals",
+    "arsenics",
+    "arsenide",
+    "arsenides",
+    "arsenious",
+    "arsenite",
+    "arsenites",
+    "arseno",
+    "arsenous",
+    "arsine",
+    "arsines",
+    "arsino",
+    "arsphenamine",
+    "arsphenamines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "even-toed ungulate mammal order like deer or pigs",
+   "blocklist": [
+    "artiodactyl",
+    "artiodactyls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "lowest entablature beam resting on column capitals",
+   "blocklist": [
+    "architrave",
+    "architraves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "musical chord notes played one after another",
+   "blocklist": [
+    "arpeggiate",
+    "arpeggiated",
+    "arpeggiates",
+    "arpeggiating",
+    "arpeggio",
+    "arpeggios"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "cultivation and management of trees and shrubs",
+   "blocklist": [
+    "arboretum",
+    "arboretums",
+    "arboricultural",
+    "arboriculture",
+    "arboricultures",
+    "arborist",
+    "arborists",
+    "forestry",
+    "horticulture",
+    "silviculture"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "orthorhombic polymorph of calcium carbonate",
+   "blocklist": [
+    "aragonite",
+    "aragonites",
+    "aragonitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "monkey-puzzle conifer genus of Norfolk pine",
+   "blocklist": [
+    "araucaria",
+    "araucarian",
+    "araucarias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "clinical deficiency of vitamin B2",
+   "blocklist": [
+    "ariboflavinoses",
+    "ariboflavinosis",
+    "ariboflavinosises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "ar",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "arb arcs are area arf ark arm art giant pirarucu",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arapaima"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arapaima"
+    }
+   ],
+   "prefix_after": "arb",
+   "result": "prefix_extended"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 35.430989583333336,
+  "cost_numerator": 27211,
+  "cost_denominator": 768,
+  "cost_exact": false,
+  "cost_mcse": 0.06762771525007223,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 4171,
+   "denominator": 768,
+   "value": 5.430989583333333,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:1,5:1,6:3,7:6,8:12,9:12,10:10,11:12,12:5,13:4,15:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.06762771525007223,
+   "rollouts": 256,
+   "rank_total": 8342,
+   "rank_denominator": 1536,
+   "cache_key": "473c9be5f8072ed3d5db75ad92c1d7e1"
+  }
+ }
+}

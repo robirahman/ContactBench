@@ -1,0 +1,514 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick any furry mammal; obscure is fine.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quokka"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quokka"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pick a chill semiaquatic rodent.",
+   "blocklist": [
+    "capybara",
+    "capybaras",
+    "castor",
+    "coypu",
+    "coypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Think of a colorful creature; go with instinct.",
+   "blocklist": [
+    "canaries",
+    "canary",
+    "cardinal",
+    "cardinals",
+    "caterpillar",
+    "caterpillars",
+    "chameleon",
+    "chameleons",
+    "cichlid",
+    "cichlids",
+    "cock",
+    "cockatiel",
+    "cockatiels",
+    "cockatoo",
+    "cockatoos",
+    "coral",
+    "corals",
+    "crab",
+    "cuckoo",
+    "cuttlefish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "What word sounds fun to say? Trust your gut.",
+   "blocklist": [
+    "cabbage",
+    "caboose",
+    "cacophony",
+    "cahoots",
+    "calliope",
+    "canoodle",
+    "cantaloupe",
+    "cantankerous",
+    "caterwaul",
+    "chimichanga",
+    "chinchilla",
+    "chipmunk",
+    "chitchat",
+    "chortle",
+    "claptrap",
+    "clodhopper",
+    "coccyx",
+    "cockamamie",
+    "codswallop",
+    "collywobbles",
+    "conundrum",
+    "cornucopia",
+    "crackerjack",
+    "crinkle",
+    "crisscross",
+    "crumpet",
+    "cucumber",
+    "cuddle",
+    "cummerbund",
+    "curmudgeon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "list_words(cr, offset=67, limit=1)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cradlesong",
+     "craft"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "A striking mineral, not necessarily a gemstone.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cinnabar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cinnabar"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "New prefix, same theme as our successful last turn",
+   "blocklist": [
+    "coal",
+    "cobalt",
+    "cobaltite",
+    "coesite",
+    "colemanite",
+    "columbite",
+    "copper",
+    "coquina",
+    "cordierite",
+    "corundum",
+    "covellite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "What are we playing? Also code cone cope core cost",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "contact"
+    },
+    {
+     "seat": "guesser2",
+     "word": "contact"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Shredded BBQ side? cold cola color collar column",
+   "blocklist": [
+    "cole",
+    "coles",
+    "coleslaw",
+    "coleslaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Ant home? colon colt college collect collide colic",
+   "blocklist": [
+    "colonial",
+    "colonials",
+    "colonies",
+    "colonist",
+    "colonists",
+    "colonize",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Drain pasta? collage collapse colonel colossal",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "cullender",
+    "cullenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Lassie? cologne colitis colossus collab collateral",
+   "blocklist": [
+    "collie",
+    "collied",
+    "collies",
+    "colly",
+    "collying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Milk dispersion? collagen collide collider collide",
+   "blocklist": [
+    "colloid",
+    "colloidal",
+    "colloidally",
+    "colloids",
+    "colostral",
+    "colostrum",
+    "colostrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Coworker? collide collision collector collection",
+   "blocklist": [
+    "collaborate",
+    "collaboration",
+    "collaborator",
+    "collaborators",
+    "colleague",
+    "colleagues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Colorado flower? colossally collude colour colicky",
+   "blocklist": [
+    "columbaria",
+    "columbarium",
+    "columbine",
+    "columbines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pillar row? colas colds colts cols colas colorman",
+   "blocklist": [
+    "colonnade",
+    "colonnaded",
+    "colonnades",
+    "columnal",
+    "columnar",
+    "columned",
+    "columniation",
+    "columniations",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Informal? colder coldest colder colors coliseum",
+   "blocklist": [
+    "colloquia",
+    "colloquial",
+    "colloquialism",
+    "colloquialisms",
+    "colloquialities",
+    "colloquiality",
+    "colloquially",
+    "colloquials",
+    "colloquies",
+    "colloquist",
+    "colloquists",
+    "colloquium",
+    "colloquiums",
+    "colloquy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Hue-related adjective? colugo colobus coleus colza",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "color",
+     "colors"
+    ],
+    [
+     "colour",
+     "colours"
+    ]
+   ],
+   "blocked_word_count": 62,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Past tense starting coll-? colter collet collate",
+   "blocklist": [
+    "collaborated",
+    "collaged",
+    "collapsed",
+    "collared",
+    "collated",
+    "collateralized",
+    "collected",
+    "collectivised",
+    "collectivized",
+    "colleted",
+    "collided",
+    "colligated",
+    "collimated",
+    "collocated",
+    "collogued",
+    "colluded"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Any coll- gerund? colicin colins cologs colons",
+   "blocklist": [
+    "collaborating",
+    "collaging",
+    "collapsing",
+    "collaring",
+    "collateralizing",
+    "collating",
+    "collecting",
+    "collectivising",
+    "collectivizing",
+    "colleting",
+    "colliding",
+    "colligating",
+    "collimating",
+    "collocating",
+    "colloguing",
+    "colluding"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Plural of any coll- noun? colicky collard colophon",
+   "blocklist": [
+    "collagens",
+    "collages",
+    "collapses",
+    "collards",
+    "collars",
+    "collaterals",
+    "collections",
+    "collectors",
+    "colleges",
+    "collets",
+    "colliders",
+    "collisions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 24.0,
+  "cost_numerator": 24,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

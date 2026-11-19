@@ -1,0 +1,621 @@
+{
+ "game_id": "dev41-0003-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "What midnight might feel like to the touch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "velvet"
+    },
+    {
+     "seat": "guesser2",
+     "word": "velvety"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A cousin of our last noun, with parallel ridges",
+   "blocklist": [
+    "cord",
+    "cords",
+    "corduroy",
+    "corduroys",
+    "plush",
+    "velour",
+    "velours",
+    "velveteen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A mirror's restless ancestor, one compound noun",
+   "blocklist": [
+    "millpond",
+    "quicksilver",
+    "quicksilvers",
+    "rainwater",
+    "seawater",
+    "waterfall",
+    "whirlpool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A ghost you carry away from a bright window",
+   "blocklist": [
+    "afterglow",
+    "afterglows",
+    "afterimage",
+    "afterimages",
+    "apparition",
+    "blur",
+    "burn",
+    "dazzle",
+    "floater",
+    "floaters",
+    "glare",
+    "glares",
+    "glow",
+    "halo",
+    "halos",
+    "image",
+    "images",
+    "impression",
+    "impressions",
+    "imprint",
+    "imprints",
+    "memory",
+    "phantom",
+    "phantoms",
+    "phosphene",
+    "phosphenes",
+    "reflection",
+    "reflections",
+    "shadow",
+    "shadows",
+    "silhouette",
+    "silhouettes",
+    "specter",
+    "spectre",
+    "spot",
+    "spots",
+    "sunburn",
+    "sunburns",
+    "sunspot",
+    "sunspots",
+    "suntan",
+    "suntans",
+    "tan",
+    "tans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 44,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Yesterday still whispers beneath today's ink",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "palimpsest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "palimpsest"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "The beach quietly asks for its swimmers back",
+   "blocklist": [
+    "undercurrent",
+    "undercurrents",
+    "undertone",
+    "undertones",
+    "undertow",
+    "undertows",
+    "undulation",
+    "upwelling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Where our first two fabrics might find work",
+   "blocklist": [
+    "uniform",
+    "uniforms",
+    "upholster",
+    "upholstered",
+    "upholsterer",
+    "upholsterers",
+    "upholsteries",
+    "upholstering",
+    "upholsters",
+    "upholstery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "What both a sweater and an alibi can do",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unravel"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unravel"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "What both a map and a drama can do",
+   "blocklist": [
+    "unfold",
+    "unfolded",
+    "unfolding",
+    "unfolds",
+    "unfurl",
+    "unfurls",
+    "unroll",
+    "unrolls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Tonight the spare becomes Hamlet",
+   "blocklist": [
+    "understudied",
+    "understudies",
+    "understudy",
+    "understudying"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "What an archive and a jacket invite you to do",
+   "blocklist": [
+    "unbutton",
+    "unbuttons",
+    "uncover",
+    "undo",
+    "unfasten",
+    "unlock",
+    "unpack",
+    "unpacked",
+    "unpacking",
+    "unpacks",
+    "unzip",
+    "unzipped",
+    "unzipping",
+    "unzips"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "How contempt appears when it wears no costume",
+   "blocklist": [
+    "uncloak",
+    "uncloaked",
+    "uncloaking",
+    "uncloaks",
+    "unconcealed",
+    "undisguised",
+    "undisguisedly",
+    "unfeigned",
+    "unfeignedly",
+    "unmask",
+    "unmasked",
+    "unmasking",
+    "unmasks",
+    "unvarnished",
+    "unveil",
+    "unveiled",
+    "unveiling",
+    "unveils"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "A valley measured in almost-human faces",
+   "blocklist": [
+    "uncannier",
+    "uncanniest",
+    "uncannily",
+    "uncanniness",
+    "uncanninesses",
+    "uncanny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Only one heart checks the mailbox",
+   "blocklist": [
+    "unanswerable",
+    "unanswered",
+    "unilateral",
+    "unilaterally",
+    "unloved",
+    "unloving",
+    "unrequited",
+    "unshared"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "What Nat King Cole called you",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unforgettable"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unforgettable"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Molly Brown's Broadway billing",
+   "blocklist": [
+    "unsinkable",
+    "unsunk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "No bard bothered with this hero",
+   "blocklist": [
+    "unsaid",
+    "unspoken",
+    "unsung"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Restore order to LEBMARCS",
+   "blocklist": [
+    "unscramble",
+    "unscrambled",
+    "unscrambler",
+    "unscramblers",
+    "unscrambles",
+    "unscrambling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Billy Pilgrim has come ___ in time.",
+   "blocklist": [
+    "unstable",
+    "unsteady",
+    "unstick",
+    "unsticking",
+    "unsticks",
+    "unstitch",
+    "unstitched",
+    "unstrap",
+    "unstrung",
+    "unstuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Achilles, everywhere except that heel.",
+   "blocklist": [
+    "unscarred",
+    "unscathed",
+    "unshakable",
+    "unstoppable",
+    "unsurpassable",
+    "unsusceptible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "unsavory unsafe unsound unsure | butter option",
+   "blocklist": [
+    "unsalted",
+    "unsaturated",
+    "unsweetened"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "unscrew unsheathe unseat unseal | sight ___",
+   "blocklist": [
+    "unseen",
+    "unsight",
+    "unsighted",
+    "unsighting",
+    "unsightly",
+    "unsights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "unsurely unsold unsungly unsent | cold case status",
+   "blocklist": [
+    "unsettled",
+    "unsolvable",
+    "unsolved"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Every actor came prepared. The best line wasn't.",
+   "blocklist": [
+    "unscheduled",
+    "unscripted",
+    "unsolicited",
+    "unstudied"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Equally true of a rookie and a bland stew",
+   "blocklist": [
+    "unsatisfying",
+    "unschooled",
+    "unseasoned",
+    "unskilled",
+    "unsophisticated",
+    "unspectacular"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "What happened to the passenger after landing?",
+   "blocklist": [
+    "unsaddle",
+    "unsaddled",
+    "unseated",
+    "unseating",
+    "unseats",
+    "unshackle",
+    "unshackled",
+    "unshaken",
+    "unship",
+    "unshipped",
+    "unshipping",
+    "unships",
+    "unsnap",
+    "unsnapped",
+    "unsnapping",
+    "unsnaps",
+    "unstrained",
+    "unstrapped",
+    "unstrapping",
+    "unstraps",
+    "unstress",
+    "unstressed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 55.43524305555555,
+  "cost_numerator": 319307,
+  "cost_denominator": 5760,
+  "cost_exact": false,
+  "cost_mcse": 0.134148744314129,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 146507,
+   "denominator": 5760,
+   "value": 25.435243055555556,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:4,6:15,7:39,8:63,9:45,10:49,11:33,12:30,13:21,14:13,15:10,16:9,17:2,18:4,20:1",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.134148744314129,
+   "rollouts": 256,
+   "rank_total": 293014,
+   "rank_denominator": 11520,
+   "cache_key": "5ef77fe1f31a0aa93a10ea808e0c6083"
+  }
+ }
+}

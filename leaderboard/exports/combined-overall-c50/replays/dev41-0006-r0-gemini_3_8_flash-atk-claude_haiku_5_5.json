@@ -1,0 +1,73 @@
+{
+ "game_id": "dev41-0006-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Keeps the doctor away if eaten daily",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Instrument with eighty eight black and white keys",
+   "blocklist": [
+    "effectuated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "blocklist"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 3.0,
+  "cost_numerator": 3,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

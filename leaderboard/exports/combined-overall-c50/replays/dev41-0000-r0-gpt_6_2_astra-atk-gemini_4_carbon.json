@@ -1,0 +1,634 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "What would a lost cartographer wish for?",
+   "blocklist": [
+    "atlas",
+    "compass",
+    "map"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "What lingers once the last light has slipped away?",
+   "blocklist": [
+    "afterglow",
+    "dark",
+    "darkness",
+    "dusk",
+    "gloom",
+    "night",
+    "shadows",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Name a slightly obscure mammal, not the obvious.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pangolin"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pangolin"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Another somewhat unusual furry critter?",
+   "blocklist": [
+    "wallaby",
+    "wallaroo",
+    "walrus",
+    "wapiti",
+    "warthog",
+    "weasel",
+    "wildcat",
+    "wildebeest",
+    "wolf",
+    "wolverine",
+    "wombat",
+    "woodchuck"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A compound about H2O, more metaphor than object?",
+   "blocklist": [
+    "washout",
+    "washouts",
+    "waterfall",
+    "waterfront",
+    "waterline",
+    "waterloo",
+    "waterloos",
+    "watermark",
+    "watermarks",
+    "waterproof",
+    "watershed",
+    "watersheds",
+    "watertight",
+    "waterworks",
+    "wavelength",
+    "wellhead",
+    "wellspring",
+    "wellsprings",
+    "whirlpool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Damp adverb, not an adjective.",
+   "blocklist": [
+    "waterily",
+    "wetly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pick a familiar short bird name; trust instinct.",
+   "blocklist": [
+    "wagtail",
+    "warbler",
+    "weaver",
+    "whippoorwill",
+    "widgeon",
+    "wigeon",
+    "woodpecker",
+    "wren"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "wax.whey.wok.wine.wort.wheat: kitchen drawer?",
+   "blocklist": [
+    "wedge",
+    "whetstone",
+    "whipper",
+    "whisk",
+    "whisks",
+    "wire",
+    "wooden",
+    "wrap"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "w offset US independence year, zero-based",
+   "blocklist": [
+    "whined",
+    "whiner",
+    "whiners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Low doglike speaker? Use whichever form feels apt.",
+   "blocklist": [
+    "woof",
+    "woofer",
+    "woofers",
+    "woofs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Past tense: decorated a room somehow.",
+   "blocklist": [
+    "wainscoted",
+    "wainscotted",
+    "walled",
+    "wallpapered",
+    "warmed",
+    "whitewashed",
+    "windowed",
+    "wreathed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Which adjective feels like its own example?",
+   "blocklist": [
+    "wee",
+    "weird",
+    "whimsical",
+    "whispery",
+    "wobbly",
+    "woozy",
+    "wordy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Something you'd hate to forget before leaving home",
+   "blocklist": [
+    "wallet",
+    "wallets",
+    "watch",
+    "watches",
+    "water",
+    "wheelchair",
+    "windbreaker",
+    "wristwatch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Dreamy word you'd put on a vintage postcard?",
+   "blocklist": [
+    "wanderlust",
+    "welcome",
+    "whimsy",
+    "wishes",
+    "wishful",
+    "wistful",
+    "wonderful",
+    "wonderland"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "war.wars.wary.warm.warn.ward.warp.wart: fought?",
+   "blocklist": [
+    "waged",
+    "warred",
+    "withstood",
+    "wrangled",
+    "wrestled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "wag.wad.wig.win.wit.woo.woe.wry: tiny purse?",
+   "blocklist": [
+    "wampum",
+    "workbag",
+    "workbags",
+    "wrinkle",
+    "wristlet",
+    "wristlets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Animal compound that sounds like a relic?",
+   "blocklist": [
+    "warhorse",
+    "warhorses",
+    "werewolf",
+    "werewolves",
+    "whaleback",
+    "whaleboat",
+    "whalebone",
+    "whalebones",
+    "wildfowl",
+    "wishbone",
+    "wishbones",
+    "woodworm",
+    "woodworms",
+    "woolsack",
+    "woolskin",
+    "workhorse",
+    "workhorses",
+    "wormwood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "wan.waggle.way.web.wed.wet.who.why: cedar bird?",
+   "blocklist": [
+    "waxwing",
+    "waxwings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "wind.wave.wand.weld.well.wilt.will: Dutch icon?",
+   "blocklist": [
+    "waffle",
+    "waffles",
+    "waterway",
+    "waterways",
+    "waterwheel",
+    "waterwheels",
+    "windmill",
+    "windmills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "wiz.wizened.wizening.wizard.wizards: sunwise NOT?",
+   "blocklist": [
+    "widdershins",
+    "withershins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "was.warble.won.wow.wanly.waxen: ballroom?",
+   "blocklist": [
+    "wallflower",
+    "wallflowers",
+    "waltz",
+    "waltzed",
+    "waltzer",
+    "waltzers",
+    "waltzes",
+    "waltzing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "wheyface.whelp.waif.wain.wagging: impudent youth?",
+   "blocklist": [
+    "wastrel",
+    "wastrels",
+    "whelps",
+    "whippersnapper",
+    "whippersnappers",
+    "wiseacre",
+    "wiseacres",
+    "wiseass",
+    "wiseasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "wheel.wheels.whale.whales.wand.wandless: yard cart",
+   "blocklist": [
+    "wagon",
+    "wagonette",
+    "wagonettes",
+    "wagons",
+    "wains",
+    "wheelbarrow",
+    "wheelbarrows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "wetland.weft.wefts.weave.weaves.wove: sheep fiber?",
+   "blocklist": [
+    "wool",
+    "woolen",
+    "woolens",
+    "woollen",
+    "woollens",
+    "woolly",
+    "wools",
+    "wooly",
+    "worsted",
+    "worsteds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "wood.woods.windy.windup.wing.wink: oboe family?",
+   "blocklist": [
+    "whistle",
+    "whistles",
+    "winds",
+    "woodwind",
+    "woodwinds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "walk.walks.walker.walkers.walking: went on foot?",
+   "blocklist": [
+    "waddled",
+    "waded",
+    "walkabout",
+    "walked",
+    "walkings",
+    "wandered",
+    "wended"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "wetlands.willow.warbles.wings.warbler: birds?",
+   "blocklist": [
+    "wader",
+    "waders",
+    "wagtails",
+    "warblers",
+    "waterbird",
+    "waterbirds",
+    "waterfowl",
+    "waterfowls",
+    "weavers",
+    "whimbrel",
+    "whimbrels",
+    "wildfowls",
+    "woodchat",
+    "woodchats",
+    "woodcock",
+    "woodcocks",
+    "woodpeckers",
+    "wrens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "woe.wok.won.woad.weal.wean.weep.wept: specter?",
+   "blocklist": [
+    "wendigo",
+    "wendigos",
+    "wight",
+    "wights",
+    "wisp",
+    "wisps",
+    "wraith",
+    "wraithlike",
+    "wraiths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "warms.wags.ways.wads.weds.wets.wigs: stinger?",
+   "blocklist": [
+    "wasp",
+    "wasps",
+    "weever",
+    "weevers",
+    "whipray",
+    "whiprays",
+    "whiptail",
+    "whiptails",
+    "witticism",
+    "witticisms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 242.00549523305085,
+  "cost_numerator": 3655251,
+  "cost_denominator": 15104,
+  "cost_exact": false,
+  "cost_mcse": 0.7240432091229824,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 3202131,
+   "denominator": 15104,
+   "value": 212.00549523305085,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:15,4:118,5:259,6:414,7:646,8:685,9:471,10:303,11:216,12:115,13:65,14:42,15:21,16:10,17:3,18:1",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 0.7240432091229824,
+   "rollouts": 256,
+   "rank_total": 6404262,
+   "rank_denominator": 30208,
+   "cache_key": "1375383558d585b5138ccc37fb14d8f8"
+  }
+ }
+}

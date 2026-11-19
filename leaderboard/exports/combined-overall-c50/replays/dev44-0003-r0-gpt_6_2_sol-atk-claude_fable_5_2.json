@@ -1,0 +1,546 @@
+{
+ "game_id": "dev44-0003-r0-gpt_6_2_sol-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_fable_5_2",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Aardwolf, abacus: African ant eater, double A",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Squid, cuttlefish, nautilus: eight-armed mollusk",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Smiling marsupial native to Rottnest Island",
+   "blocklist": [
+    "quokka",
+    "quokkas",
+    "wallabies",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Echidna, kiwi, otter, beaver: duck-billed mammal",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "and for are but not you all any can had her was",
+   "blocklist": [
+    "boy",
+    "common",
+    "day",
+    "did",
+    "get",
+    "has",
+    "him",
+    "his",
+    "how",
+    "its",
+    "let",
+    "letter",
+    "letters",
+    "man",
+    "new",
+    "now",
+    "old",
+    "one",
+    "our",
+    "out",
+    "put",
+    "say",
+    "see",
+    "she",
+    "the",
+    "three",
+    "too",
+    "two",
+    "use",
+    "way",
+    "who",
+    "word",
+    "words"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 33,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Beat pattern; no A, E, I, O, or U",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "rhythm"
+    },
+    {
+     "seat": "guesser2",
+     "word": "rhythm"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "One vowel, flanked by five consonants total",
+   "blocklist": [
+    "imply",
+    "inch",
+    "itch",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "isthmus"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Frozen drip hanging from a roof",
+   "blocklist": [
+    "ice",
+    "iced",
+    "ices",
+    "icicle",
+    "icicled",
+    "icicles",
+    "icing",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Four-letter Alpine goat with curved horns",
+   "blocklist": [
+    "ibex",
+    "ibexes",
+    "ibices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Advil's active ingredient",
+   "blocklist": [
+    "ibuprofen",
+    "ibuprofens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Metrical foot: unstressed then stressed; 4 chars",
+   "blocklist": [
+    "iamb",
+    "iambi",
+    "iambic",
+    "iambics",
+    "iambs",
+    "iambus",
+    "iambuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "if in id ill imp ink inn ion ire irk ivy ism its",
+   "blocklist": [
+    "ibis",
+    "ich",
+    "icon",
+    "idea",
+    "ides",
+    "idle",
+    "idol",
+    "ids",
+    "idyl",
+    "iffy",
+    "ifs",
+    "ikon",
+    "ilex",
+    "ilk",
+    "ilks",
+    "ills",
+    "imam",
+    "imps",
+    "info",
+    "inked",
+    "inks",
+    "inky",
+    "inns",
+    "ins",
+    "into",
+    "ions",
+    "iota",
+    "ires",
+    "iris",
+    "irked",
+    "irks",
+    "iron",
+    "isle",
+    "isms",
+    "item",
+    "ivies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 36,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "ire"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Inuit snow house? idea: iron ice idol",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Thumb-spiked dinosaur; iguana indigo insect ivory",
+   "blocklist": [
+    "ichthyosaur",
+    "ichthyosaurs",
+    "iguanas",
+    "iguanian",
+    "iguanians",
+    "iguanodon",
+    "iguanodons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Same proton count, different neutron count",
+   "blocklist": [
+    "isotone",
+    "isotones",
+    "isotope",
+    "isotopes",
+    "isotopic",
+    "isotopically",
+    "isotopies",
+    "isotopy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Syrup once used to induce vomiting",
+   "blocklist": [
+    "ipecac",
+    "ipecacs",
+    "ipecacuanha",
+    "ipecacuanhas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Halogen with atomic number 53",
+   "blocklist": [
+    "iodate",
+    "iodic",
+    "iodid",
+    "iodide",
+    "iodides",
+    "iodids",
+    "iodin",
+    "iodinate",
+    "iodine",
+    "iodines",
+    "iodins",
+    "iodise",
+    "iodism",
+    "iodize",
+    "iodous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Rock formed from cooled magma",
+   "blocklist": [
+    "igneous",
+    "ignimbrite",
+    "ignimbrites",
+    "intrusion",
+    "intrusions",
+    "intrusive",
+    "intrusives"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "im in imposs ible | opposite of possible",
+   "blocklist": [
+    "impossibilities",
+    "impossibility",
+    "impossible",
+    "impossibleness",
+    "impossiblenesses",
+    "impossibly",
+    "infeasible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Titanic's undoing; idolize, illusion, infamy",
+   "blocklist": [
+    "berg",
+    "bergs",
+    "collision",
+    "collisions",
+    "floe",
+    "floes",
+    "hubris",
+    "hubrises",
+    "iceberg",
+    "icebergs",
+    "icebound",
+    "icebreaker",
+    "icebreakers",
+    "icecap",
+    "icecaps",
+    "icefall",
+    "icefalls",
+    "iciness",
+    "ignorance",
+    "impact",
+    "impacts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 559.8224840389785,
+  "cost_numerator": 133282537,
+  "cost_denominator": 238080,
+  "cost_exact": false,
+  "cost_mcse": 0.560322104799623,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 126140137,
+   "denominator": 238080,
+   "value": 529.8224840389785,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:23,5:104,6:261,7:486,8:722,9:846,10:930,11:855,12:764,13:605,14:371,15:307,16:225,17:158,18:86,19:44,20:19",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.560322104799623,
+   "rollouts": 256,
+   "rank_total": 126140137,
+   "rank_denominator": 238080,
+   "cache_key": "7d5b1ad140f43120d8deee6804e3b325"
+  }
+ }
+}

@@ -1,0 +1,272 @@
+{
+ "game_id": "dev44-0004-r0-gpt_6_2_astra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_sol",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Name an animal you rarely see in a crossword.",
+   "blocklist": [
+    "aardvark",
+    "axolotl",
+    "narwhal",
+    "okapi",
+    "pangolin",
+    "platypus",
+    "quokka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Lookup offset 82960, pick one of next 100.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "laureateship",
+     "laws"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Which word best describes its own length?",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sesquipedalian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "four"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Offset of your choice, 0..172607. Try 97463?",
+   "blocklist": [
+    "nerdish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Empty prefix index: reverse 19237 (zero based).",
+   "blocklist": [
+    "terrains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "impressures"
+    },
+    {
+     "seat": "guesser2",
+     "word": "impressures"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "c list, reverse 2834 (as last round).",
+   "blocklist": [
+    "covellines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cheero"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cheero"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "co list, reverse 2731 (as last round).",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "con",
+     "coz"
+    ]
+   ],
+   "blocked_word_count": 3950,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colonizations"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colonizations"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "col list, reverse 412 (as last round).",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coleopterists",
+     "collies"
+    ]
+   ],
+   "blocked_word_count": 190,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "col list, reverse 223 (as last round).",
+   "blocklist": [
+    "collie",
+    "collies",
+    "colligate",
+    "colligated",
+    "colligates",
+    "colligating",
+    "colligation",
+    "colligations",
+    "collimate",
+    "collimated",
+    "collimates",
+    "collimating",
+    "collimation",
+    "collimations",
+    "collimator",
+    "collimators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colocynth"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colocynth"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "colead coled coleads coleader coleaders coleading",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colemanite"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colemanites"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "coleoptera coleopteran coleopterans",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coleopterist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleopterist"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened",
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11.0,
+  "cost_numerator": 11,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

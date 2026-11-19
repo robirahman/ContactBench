@@ -1,0 +1,571 @@
+{
+ "game_id": "dev41-0001-r0-gpt_6_luna-atk-gemini_3_8_flash",
+ "attacker": "gpt_6_luna",
+ "defender": "gemini_3_8_flash",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "the and you that was for are not but all young dog",
+   "blocklist": [
+    "pup",
+    "puppy",
+    "whelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "feline pet that purrs and catches mice",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "mouser",
+    "puss",
+    "pussycat",
+    "tabby",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Collective noun for flamingos; it's flamboyant",
+   "blocklist": [
+    "colony",
+    "flamboyance",
+    "flamboyances",
+    "flamboyancy",
+    "flock",
+    "pat",
+    "regiment",
+    "stand"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Wild cat with tufted ears and a short tail",
+   "blocklist": [
+    "bobcat",
+    "bobcats",
+    "caracal",
+    "caracals",
+    "lynx",
+    "lynxes",
+    "serval",
+    "wildcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Initials: Quiet Umbrellas Often Keep Kittens Alone",
+   "blocklist": [
+    "acronym",
+    "acronyms",
+    "acrostic",
+    "acrostics",
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pearlescent lining of a mollusk shell",
+   "blocklist": [
+    "aragonite",
+    "nacre",
+    "nacred",
+    "nacreous",
+    "nacres",
+    "pearl",
+    "pearls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Zealous explorers praise history; young readers",
+   "blocklist": [
+    "zephyr",
+    "zephyrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Oedipus faced this lion-bodied interrogator",
+   "blocklist": [
+    "manticore",
+    "manticores",
+    "riddler",
+    "riddlers",
+    "sphinges",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Under lanterns, nocturnal artists.",
+   "blocklist": [
+    "fireflies",
+    "firefly",
+    "glowworm",
+    "glowworms",
+    "moth",
+    "moths",
+    "tagger",
+    "taggers",
+    "ulna",
+    "ulnae",
+    "ulnar",
+    "ulnas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Gardeners admire many blooms; roses enjoy lilacs.",
+   "blocklist": [
+    "gambrel",
+    "gambrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "flowers"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Farm tower used to store grain",
+   "blocklist": [
+    "corncrib",
+    "corncribs",
+    "elevator",
+    "elevators",
+    "granaries",
+    "granary",
+    "silo",
+    "silos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Instrument that measures atmospheric pressure",
+   "blocklist": [
+    "aneroid",
+    "aneroids",
+    "barograph",
+    "barographs",
+    "barometer",
+    "barometers",
+    "manometer",
+    "manometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Icy traveler circles sun, trailing a bright tail",
+   "blocklist": [
+    "asteroid",
+    "asteroids",
+    "bolide",
+    "bolides",
+    "comet",
+    "comets",
+    "meteor",
+    "meteorite",
+    "meteorites",
+    "meteoroid",
+    "meteoroids",
+    "meteors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Merry Artists Notice Green Oranges",
+   "blocklist": [
+    "citrus",
+    "citruses",
+    "fruit",
+    "fruits",
+    "mango",
+    "mangoes",
+    "mangos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Bending rays in droplets reveal a colored arc",
+   "blocklist": [
+    "diffraction",
+    "diffractions",
+    "dispersion",
+    "dispersions",
+    "halo",
+    "haloes",
+    "halos",
+    "iris",
+    "irises",
+    "prism",
+    "prisms",
+    "rainbow",
+    "rainbows",
+    "refraction",
+    "refractions",
+    "spectra",
+    "spectrum",
+    "spectrums",
+    "sundog",
+    "sundogs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Aged artists rarely draw; wild owls love forests",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Bald national bird of the United States",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets",
+    "emblem",
+    "emblems",
+    "raptor",
+    "raptors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Reverse, then ROT13: fhboovt",
+   "blocklist": [
+    "gibbose",
+    "gibbosities",
+    "gibbosity",
+    "gibbous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Bright autumn days grow ever restful",
+   "blocklist": [
+    "badger",
+    "badgered",
+    "badgering",
+    "badgers",
+    "equinox",
+    "equinoxes",
+    "foliage",
+    "foliages",
+    "harvest",
+    "harvests",
+    "hibernate",
+    "hibernated",
+    "hibernates",
+    "hibernating",
+    "hibernation",
+    "hibernations",
+    "slumber",
+    "slumbered",
+    "slumbering",
+    "slumbers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Bright artists notice another new arrangement.",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Turn 20 cipher, skip reversal: jny ehf",
+   "blocklist": [
+    "walrus",
+    "walruses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Only travelers take eastern routes.",
+   "blocklist": [
+    "otter",
+    "otters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Turn 23 cipher, skip reversal: mvgure",
+   "blocklist": [
+    "zither",
+    "zithers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Turn 25 cipher, skip reversal: kraba",
+   "blocklist": [
+    "xenon",
+    "xenons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Inventive sailors locate a new destination",
+   "blocklist": [
+    "island",
+    "islands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Ciphertext: tylcu",
+   "blocklist": [
+    "glyph",
+    "glyphic",
+    "glyphs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Jolly infants find fun yearly",
+   "blocklist": [
+    "jiff",
+    "jiffies",
+    "jiffs",
+    "jiffy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "water",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11674.226409101766,
+  "cost_numerator": 22679005979,
+  "cost_denominator": 1942656,
+  "cost_exact": false,
+  "cost_mcse": 3.2878517413993067,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22620726299,
+   "denominator": 1942656,
+   "value": 11644.226409101766,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:952,4:3866,5:8594,6:15177,7:23057,8:28386,9:24845,10:20286,11:15492,12:11354,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.2878517413993067,
+   "rollouts": 256,
+   "rank_total": 45241452598,
+   "rank_denominator": 3885312,
+   "cache_key": "50b4fb7a92d74c9c6de4adab67a2d17b"
+  }
+ }
+}

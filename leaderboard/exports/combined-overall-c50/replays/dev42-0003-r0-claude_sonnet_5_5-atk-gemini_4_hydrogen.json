@@ -1,0 +1,360 @@
+{
+ "game_id": "dev42-0003-r0-claude_sonnet_5_5-atk-gemini_4_hydrogen",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_hydrogen",
+ "secret": "guesstimating",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "most common English article, three letters",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "conjunction joining words; plus; also",
+   "blocklist": [
+    "and"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "preposition; opposite of against; 'in favor of'",
+   "blocklist": [
+    "for"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "accompanied by; preposition meaning along side of",
+   "blocklist": [
+    "with"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "pronoun pointing to something over there; not this",
+   "blocklist": [
+    "that"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "clear liquid, H2O, oceans are made of it",
+   "blocklist": [
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "second person pronoun, not me or him",
+   "blocklist": [
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "to possess; auxiliary verb, as in 'I ___ a dog'",
+   "blocklist": [
+    "have"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "home; building where people live; not apartment",
+   "blocklist": [
+    "house"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "clock measures it; hours and minutes; ticking away",
+   "blocklist": [
+    "time"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "planet we live on; globe; all of humanity",
+   "blocklist": [
+    "earth",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "mind product; idea; 'second ___s'; past of think",
+   "blocklist": [
+    "thought"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "small; not big; wee; tiny",
+   "blocklist": [
+    "little"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "bright star our planet orbits, shines by day",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "natural satellite that lights the night sky",
+   "blocklist": [
+    "moon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "what you eat; meal; nourishment",
+   "blocklist": [
+    "food"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "pages bound together to read; library item",
+   "blocklist": [
+    "book"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "cash; coins and bills; what banks hold",
+   "blocklist": [
+    "money"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "feline pet that purrs and meows",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "state",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "about",
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12100.52291696611,
+  "cost_numerator": 24245962975,
+  "cost_denominator": 2003712,
+  "cost_exact": false,
+  "cost_mcse": 4.877589646844548,
+  "baseline": {
+   "numerator": 4031067487,
+   "denominator": 333952,
+   "value": 12070.799057948449,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 13,
+   "C": 50,
+   "mcse": 4.561796902836699,
+   "rollouts": 256,
+   "rank_total": 24186404922,
+   "rank_denominator": 2003712,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 24185851615,
+   "denominator": 2003712,
+   "value": 12070.52291696611,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:954,4:3874,5:8609,6:15219,7:23095,8:28414,9:24869,10:20302,11:15500,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 13,
+   "C": 50,
+   "mcse": 4.877589646844548,
+   "rollouts": 256,
+   "rank_total": 24185851615,
+   "rank_denominator": 2003712,
+   "cache_key": "b43bbb349f2eeebfd9e9faf74a4b9492"
+  }
+ }
+}

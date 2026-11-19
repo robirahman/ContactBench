@@ -1,0 +1,339 @@
+{
+ "game_id": "dev44-0000-r0-claude_fable_5_2-atk-claude_opus_5_5",
+ "attacker": "claude_fable_5_2",
+ "defender": "claude_opus_5_5",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk and tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Striped African equine, black and white",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zebra"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zebra"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Inuit dome house built of snow blocks",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Large green tropical lizard kept as a pet",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "iguana"
+    },
+    {
+     "seat": "guesser2",
+     "word": "iguana"
+    }
+   ],
+   "prefix_after": "il",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Against the law, not permitted",
+   "blocklist": [
+    "illegal",
+    "illegality",
+    "illegally",
+    "illegals",
+    "illicit",
+    "illicitly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Optical trick; what a magician creates on stage",
+   "blocklist": [
+    "illusion",
+    "illusionist",
+    "illusionists",
+    "illusions",
+    "illusory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Homer's epic poem about the Trojan War",
+   "blocklist": [
+    "iliad",
+    "iliads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Handwriting so messy it cannot be read",
+   "blocklist": [
+    "illegibilities",
+    "illegibility",
+    "illegible",
+    "illegibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Person unable to read or write",
+   "blocklist": [
+    "illiteracy",
+    "illiterate",
+    "illiterates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "illness illustrate illuminate illogical ilk ill",
+   "blocklist": [
+    "ilka",
+    "illative",
+    "illnesses",
+    "illogic",
+    "illogically",
+    "ills",
+    "illume",
+    "illuminated",
+    "illuminates",
+    "illumination",
+    "illumine",
+    "illusive",
+    "illustrated",
+    "illustrates",
+    "illustration",
+    "illustrations",
+    "illustrator",
+    "illy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "illegitimate"
+    }
+   ],
+   "prefix_after": "il",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "illustrious illiquid illiberal ilex ileum ilium",
+   "blocklist": [
+    "ilea",
+    "ileac",
+    "ileal",
+    "ileitis",
+    "ileus",
+    "ilexes",
+    "ilia",
+    "iliac",
+    "ilial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illuminating"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illuminating"
+    }
+   ],
+   "prefix_after": "ill",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Secret society said to rule the world; enlightened",
+   "blocklist": [
+    "illuminati",
+    "illuminatingly",
+    "illuminative",
+    "illuminator",
+    "illumined",
+    "illuminism",
+    "illuminisms",
+    "illuminist",
+    "illuminists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "ill",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "illation illaudable illegalize iller illest illite",
+   "blocklist": [
+    "illations",
+    "illatively",
+    "illatives",
+    "illaudably",
+    "illegalities",
+    "illegalization",
+    "illegalized",
+    "illegalizes",
+    "illegalizing",
+    "illiteracies",
+    "illiterately",
+    "illites",
+    "illitic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illustrative"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illustrative"
+    }
+   ],
+   "prefix_after": "ille",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "illegalizations illegitimacies illegitimacy",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "ille",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 15.0,
+  "cost_numerator": 15,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

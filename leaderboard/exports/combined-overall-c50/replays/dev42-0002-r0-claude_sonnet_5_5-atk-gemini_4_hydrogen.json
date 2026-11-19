@@ -1,0 +1,459 @@
+{
+ "game_id": "dev42-0002-r0-claude_sonnet_5_5-atk-gemini_4_hydrogen",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "gemini_4_hydrogen",
+ "secret": "thwarts",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "furniture for dining, or a chart of data",
+   "blocklist": [
+    "table",
+    "tables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "seat with four legs and a back, found at a desk",
+   "blocklist": [
+    "chair",
+    "chairs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "home, residence, or a building where people live",
+   "blocklist": [
+    "abode",
+    "dwelling",
+    "house",
+    "houses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "clear liquid you drink; H2O",
+   "blocklist": [
+    "water",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "melodies and rhythms you listen to on the radio",
+   "blocklist": [
+    "music",
+    "song",
+    "songs",
+    "tune",
+    "tunes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "pages bound together that you read",
+   "blocklist": [
+    "book",
+    "books"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "red fruit that keeps the doctor away",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "striped African animal, black and white horse-like",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "small purring pet that chases mice",
+   "blocklist": [
+    "cat",
+    "cats",
+    "kitten",
+    "kittens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "loyal barking pet, man's best friend",
+   "blocklist": [
+    "canine",
+    "dog",
+    "dogs",
+    "hound",
+    "hounds",
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "star at the center of our solar system",
+   "blocklist": [
+    "sol",
+    "sun",
+    "suns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "two-wheeled pedal vehicle ridden by cyclists",
+   "blocklist": [
+    "bicycle",
+    "bicycles",
+    "bike",
+    "bikes",
+    "cycle",
+    "cycles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "earth's natural satellite, seen at night",
+   "blocklist": [
+    "luna",
+    "moon",
+    "moons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "tall plant with trunk, branches and leaves",
+   "blocklist": [
+    "tree",
+    "trees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "short test of knowledge, often a pop one",
+   "blocklist": [
+    "exam",
+    "exams",
+    "quiz",
+    "quizzes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "light source with a shade, sits on a desk",
+   "blocklist": [
+    "lamp",
+    "lamps",
+    "lantern",
+    "lanterns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "white fluffy thing in the sky that brings rain",
+   "blocklist": [
+    "cloud",
+    "clouds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "vast salt water body; Atlantic or Pacific",
+   "blocklist": [
+    "ocean",
+    "oceans",
+    "sea",
+    "seas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "baked loaf staple food, sliced for toast",
+   "blocklist": [
+    "bread",
+    "breads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "six-string instrument strummed by rock players",
+   "blocklist": [
+    "guitar",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "keyboard instrument with hammers and pedals",
+   "blocklist": [
+    "piano",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "rose or tulip, blooms in a garden",
+   "blocklist": [
+    "flower",
+    "flowers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "feathered flyer that sings in the morning",
+   "blocklist": [
+    "bird",
+    "birds",
+    "lark",
+    "robin",
+    "rooster"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "automobile with four wheels, driven on roads",
+   "blocklist": [
+    "auto",
+    "autos",
+    "car",
+    "cars",
+    "sedan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "large antlered deer of North America",
+   "blocklist": [
+    "caribou",
+    "elk",
+    "moose",
+    "reindeer",
+    "wapiti"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11765.17868407981,
+  "cost_numerator": 69541429923,
+  "cost_denominator": 5910784,
+  "cost_exact": false,
+  "cost_mcse": 2.912425189545911,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 69364106403,
+   "denominator": 5910784,
+   "value": 11735.17868407981,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:952,4:3856,5:8574,6:15192,7:23089,8:28408,9:24868,10:20300,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.912425189545911,
+   "rollouts": 256,
+   "rank_total": 69364106403,
+   "rank_denominator": 5910784,
+   "cache_key": "7338aca1e5fecff0a140e8cdc1fbfa40"
+  }
+ }
+}

@@ -1,0 +1,462 @@
+{
+ "game_id": "dev41-0007-r0-gemini_4_carbon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_carbon",
+ "defender": "gpt_6_2_astra",
+ "secret": "butadienes",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "first four-legged burrowing african ant-eater",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "defenestrate",
+     "defenestrations"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "having shapely buttocks, from Venus statue",
+   "blocklist": [
+    "callipygian",
+    "callipygous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "5th unused ENABLE word alphabetically",
+   "blocklist": [
+    "aal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abacus"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "dictionary index 50000 (0-based, raw ENABLE)",
+   "blocklist": [
+    "epithetical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Escapade to goad a bloomer (8)",
+   "blocklist": [
+    "larkspur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "offset 11000*k (1<=k<=15): len 14, 3rd=e, ends es",
+   "blocklist": [
+    "speciousnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "1st@10000*k+5000 (0<=k<=16): len 8, ends ka",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "moussaka"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "1st@12000*k+73000 (0<=k<=8): len 8, ends go",
+   "blocklist": [
+    "impetigo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "list_words(offset=30000*k,limit=100)[99]: ends ki",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kabuki"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Oddly, spy Ozzy ugly union (6)",
+   "blocklist": [
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "list_words(\"\",7000*k,1)[0] (8<=k<=22): ends phies",
+   "blocklist": [
+    "petrographies",
+    "photographies",
+    "pornographies",
+    "radiographies",
+    "serigraphies",
+    "sonographies",
+    "spectrographies",
+    "stenographies",
+    "stratigraphies",
+    "telegraphies",
+    "tomographies",
+    "topographies",
+    "typographies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "physiographies"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "offset 9500*k-4800 (1<=k<=14)[0]: len6 _e__et",
+   "blocklist": [
+    "keyset"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "velvet"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Idealistic & impractical, from Cervantes hero (8)",
+   "blocklist": [
+    "quixotic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "offset=11000*k+3333 k=0..14: len7 1st=7th 2nd=5th",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "seaters"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elegise"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "@20000*k+1000 (k=0..6), lim 50: len 18",
+   "blocklist": [
+    "gedankenexperiment"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "@10000*k+4200 (k=2..15)[0]: len12 pos 1=9 4=6=12",
+   "blocklist": [
+    "indefensible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Card, a primate's cheeky fellow (10)",
+   "blocklist": [
+    "jackanapes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Foot-and-a-half long; given to using big words(14)",
+   "blocklist": [
+    "sesquipedalian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Narrow-bladed surgical knife, from French (8)",
+   "blocklist": [
+    "bistoury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "@30000*k (k=1..5), lim 50: [49] len 8 ends us",
+   "blocklist": [
+    "susurrus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Medical term for stomach rumbling (11)",
+   "blocklist": [
+    "borborygmus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "9200*k+677 (k=1..18)[0]: len13 1st=9th 4th=6th",
+   "blocklist": [
+    "indeterminacy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Poe's ringing or tinkling of bells (16)",
+   "blocklist": [
+    "tintinnabulation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Physical beauty, comeliness, from Latin (11)",
+   "blocklist": [
+    "pulchritude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Pleasure at another's misfortune, from German (13)",
+   "blocklist": [
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "last word in ENABLE plural tropical weevil (8)",
+   "blocklist": [
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12000.218837181912,
+  "cost_numerator": 62353521085,
+  "cost_denominator": 5196032,
+  "cost_exact": false,
+  "cost_mcse": 2.9097369974013816,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 62197640125,
+   "denominator": 5196032,
+   "value": 11970.218837181912,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:963,4:3889,5:8624,6:15211,7:23099,8:28403,9:24871,10:20297,11:15498,12:11350,13:7818,14:5120,15:3190,16:1942,17:1127,18:593,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 2.9097369974013816,
+   "rollouts": 256,
+   "rank_total": 62197640125,
+   "rank_denominator": 5196032,
+   "cache_key": "f6d7fac150caf16f785c98abb3fad318"
+  }
+ }
+}

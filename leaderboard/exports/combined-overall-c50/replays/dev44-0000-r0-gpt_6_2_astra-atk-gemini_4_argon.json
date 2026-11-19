@@ -1,0 +1,302 @@
+{
+ "game_id": "dev44-0000-r0-gpt_6_2_astra-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_argon",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Name a fruit from a smoothie menu.",
+   "blocklist": [
+    "apple",
+    "apricot",
+    "avocado",
+    "banana",
+    "blackberry",
+    "blueberry",
+    "boysenberry",
+    "cantaloupe",
+    "cherry",
+    "coconut",
+    "cranberry",
+    "date",
+    "elderberry",
+    "fig",
+    "grape",
+    "grapefruit",
+    "guava",
+    "honeydew",
+    "huckleberry",
+    "kiwi",
+    "lemon",
+    "lime",
+    "lychee",
+    "mango",
+    "melon",
+    "mulberry",
+    "nectarine",
+    "orange",
+    "papaya",
+    "peach",
+    "pear",
+    "persimmon",
+    "pineapple",
+    "plum",
+    "pomegranate",
+    "raspberry",
+    "starfruit",
+    "strawberry",
+    "tangerine",
+    "watermelon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 40,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pick any ENABLE entry at offset 71300-71399.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "hyperkinetic",
+     "hyperresponsive"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Choose any 5-digit offset from digits of pi.",
+   "blocklist": [
+    "bicyclic",
+    "blueshifts",
+    "clippers",
+    "coordination",
+    "coordinations",
+    "dipterous",
+    "fubbed",
+    "misgives"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Use a random permutation of 12345 as ENABLE index.",
+   "blocklist": [
+    "beardtongues",
+    "bearishness",
+    "bebopper",
+    "bechalked",
+    "becudgelled",
+    "bedabble",
+    "cooties",
+    "feijoa"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "ENABLE[prime nearest 75000 minus 38] (0-based)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "infantilized",
+     "informant"
+    ]
+   ],
+   "blocked_word_count": 250,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "ENABLE[(2^32) mod 172608], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "demineralizations",
+     "denitrify"
+    ]
+   ],
+   "blocked_word_count": 300,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scuffs"
+    },
+    {
+     "seat": "guesser2",
+     "word": "scuffs"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "i-prefix ENABLE[(2^32) mod 4093], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ineloquently",
+     "infrequently"
+    ]
+   ],
+   "blocked_word_count": 450,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "incriminating"
+    },
+    {
+     "seat": "guesser2",
+     "word": "incriminating"
+    }
+   ],
+   "prefix_after": "il",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "il-list[(2^32)%161], 0-based. ilk ill ilea ilex",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "illume",
+     "ilmenites"
+    ]
+   ],
+   "blocked_word_count": 71,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illocutionary"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illocutionary"
+    }
+   ],
+   "prefix_after": "ill",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "ill-list[(2^32)%71] 0-based; ills illest iller",
+   "blocklist": [
+    "illogic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illegalities"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illegalities"
+    }
+   ],
+   "prefix_after": "ille",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "illegal illegally illegals illegible illegibly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illegality"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illegitimate"
+    }
+   ],
+   "prefix_after": "ille",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "illegalize illegalized illegalizes illegalizing",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illegitimacy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illegalizations"
+    }
+   ],
+   "prefix_after": "ille",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser2_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11.0,
+  "cost_numerator": 11,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

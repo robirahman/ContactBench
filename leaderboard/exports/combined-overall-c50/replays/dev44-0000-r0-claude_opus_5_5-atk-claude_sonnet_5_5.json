@@ -1,0 +1,538 @@
+{
+ "game_id": "dev44-0000-r0-claude_opus_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "illegalizations",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest animal, long neck, African savanna",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [
+    "blue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Number of days in a week",
+   "blocklist": [
+    "seven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Fruit that keeps the doctor away",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Frozen water",
+   "blocklist": [
+    "freeze",
+    "frozen",
+    "ice",
+    "icy",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Man's best friend, barks",
+   "blocklist": [
+    "bark",
+    "barks",
+    "canine",
+    "dog",
+    "dogs",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Third planet from the sun, our home",
+   "blocklist": [
+    "earth",
+    "globe",
+    "planet",
+    "terra",
+    "world"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Opposite of night",
+   "blocklist": [
+    "dark",
+    "day",
+    "light",
+    "morning",
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Feline pet that meows and purrs",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty",
+    "meow",
+    "pet",
+    "purr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Danish prince in Shakespeare's famous tragedy",
+   "blocklist": [
+    "hamlet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Capital city of France, home of Eiffel Tower",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "paris"
+    },
+    {
+     "seat": "guesser2",
+     "word": "paris"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Dome-shaped Inuit snow house",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Six-legged bug like an ant or beetle",
+   "blocklist": [
+    "ant",
+    "beetle",
+    "bug",
+    "bugs",
+    "insect",
+    "insecticide",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Land surrounded by sea, e.g. Hawaii or Crete",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Pen fluid; octopus squirts it",
+   "blocklist": [
+    "ink",
+    "inks",
+    "octopus",
+    "pen",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Metal element Fe; also press clothes with it",
+   "blocklist": [
+    "iron",
+    "ironed",
+    "ironing",
+    "irons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "A thought or plan; lightbulb moment",
+   "blocklist": [
+    "concept",
+    "idea",
+    "ideas",
+    "notion",
+    "plan",
+    "thought"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Green tropical lizard, pet store reptile",
+   "blocklist": [
+    "gecko",
+    "geckos",
+    "iguana",
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Rainbow color between blue and violet",
+   "blocklist": [
+    "indigo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "One twelfth of a foot",
+   "blocklist": [
+    "inch",
+    "inches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Crazy, out of one's mind, mad",
+   "blocklist": [
+    "crazy",
+    "demented",
+    "insane",
+    "insanely",
+    "insanity",
+    "mad",
+    "nuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Opposite of output",
+   "blocklist": [
+    "input",
+    "inputs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Opposite of outside",
+   "blocklist": [
+    "indoor",
+    "indoors",
+    "inner",
+    "inside",
+    "interior",
+    "internal",
+    "inward",
+    "within"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Mission: ___ (Tom Cruise film series)",
+   "blocklist": [
+    "impossible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Opposite of exclude",
+   "blocklist": [
+    "include",
+    "included",
+    "includes",
+    "including",
+    "inclusion",
+    "inclusive",
+    "involve"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Elephant tusk material; off-white shade",
+   "blocklist": [
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "icon idol item itch ivy imp inn image index inform",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "invent"
+    },
+    {
+     "seat": "guesser2",
+     "word": "issue"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "ill imply into iris itself ideal irony icing inert",
+   "blocklist": [
+    "illegal",
+    "illegally",
+    "illicit",
+    "illness",
+    "illusion",
+    "image",
+    "imagine",
+    "important",
+    "increase",
+    "indeed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "invite"
+    },
+    {
+     "seat": "guesser2",
+     "word": "interest"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 573.8622539569806,
+  "cost_numerator": 45247891,
+  "cost_denominator": 78848,
+  "cost_exact": false,
+  "cost_mcse": 1.1117276474365716,
+  "baseline": {
+   "numerator": 9875003179,
+   "denominator": 817152,
+   "value": 12084.658887208256,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 7.635964263425844,
+   "rollouts": 256,
+   "rank_total": 9875003179,
+   "rank_denominator": 817152,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 42882451,
+   "denominator": 78848,
+   "value": 543.8622539569806,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:12,4:47,5:102,6:267,7:493,8:723,9:848,10:939,11:858,12:767,13:606,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 15,
+   "C": 50,
+   "mcse": 1.1117276474365716,
+   "rollouts": 256,
+   "rank_total": 42882451,
+   "rank_denominator": 78848,
+   "cache_key": "eb5589ed26809658837a72fdca7649f9"
+  }
+ }
+}

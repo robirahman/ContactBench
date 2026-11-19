@@ -1,0 +1,526 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_carbon-atk-claude_fable_5_2",
+ "attacker": "gemini_4_carbon",
+ "defender": "claude_fable_5_2",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "word at 86303 (0-indexed)",
+   "blocklist": [
+    "luger",
+    "lugers",
+    "luges",
+    "luggage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "common anagram of crates",
+   "blocklist": [
+    "carets",
+    "cartes",
+    "caster",
+    "caters",
+    "reacts",
+    "recast",
+    "traces"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "first animal in the dictionary",
+   "blocklist": [
+    "aal",
+    "aalii",
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "abalone",
+    "addax",
+    "adder",
+    "animal",
+    "ant",
+    "ape",
+    "asp",
+    "ass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "not in one's usual manner (20 letters)",
+   "blocklist": [
+    "uncharacteristically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "celestial alignment, or an astronomical 6-letter",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "syzygy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "syzygy"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "dolphin navigation via sonar (12-let noun)",
+   "blocklist": [
+    "echolocation",
+    "echolocations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "kidney hormone stimulating RBCs (14 letters)",
+   "blocklist": [
+    "erythropoieses",
+    "erythropoiesis",
+    "erythropoietic",
+    "erythropoietin",
+    "erythropoietins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "white alpine flower in Sound of Music (9 letters)",
+   "blocklist": [
+    "edelweiss",
+    "edelweisses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "myth-as-history theory, 5 vowels in first 7 (10L)",
+   "blocklist": [
+    "euhemerism",
+    "euhemerisms",
+    "euhemerist",
+    "euhemeristic",
+    "euhemerists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Cute chosen keyhole plate",
+   "blocklist": [
+    "escutcheon",
+    "escutcheons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Welsh bardic gathering (10L)",
+   "blocklist": [
+    "eisteddfod",
+    "eisteddfodau",
+    "eisteddfodic",
+    "eisteddfods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Lone mayor's eye: charitable (12L)",
+   "blocklist": [
+    "eleemosynary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "tube measuring gas volume after a spark (10L)",
+   "blocklist": [
+    "eudiometer",
+    "eudiometers",
+    "eudiometric",
+    "eudiometrically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Skin rash: St. Anthony's fire (10L)",
+   "blocklist": [
+    "ergotism",
+    "ergotisms",
+    "erysipelas",
+    "erysipelases",
+    "erythema",
+    "erythemas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Exact anagram: mail the piano (12L)",
+   "blocklist": [
+    "epithalamia",
+    "epithalamic",
+    "epithalamion",
+    "epithalamium",
+    "epithalamiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "To set free: pace inmate (10)",
+   "blocklist": [
+    "emancipate",
+    "emancipated",
+    "emancipates",
+    "emancipating",
+    "emancipation",
+    "emancipations",
+    "emancipator",
+    "emancipators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Parisian who holds grace in counterweight",
+   "blocklist": [
+    "equilibrant",
+    "equilibrants",
+    "equilibria",
+    "equilibrium",
+    "equilibriums",
+    "equipoise",
+    "equipoised",
+    "equipoises",
+    "equipoising",
+    "equiponderant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Sweetbrier rose: gentile + an (9)",
+   "blocklist": [
+    "eglantine",
+    "eglantines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "bubbly fizzing quality, five e's (13)",
+   "blocklist": [
+    "effervesce",
+    "effervesced",
+    "effervescence",
+    "effervescences",
+    "effervescent",
+    "effervescently",
+    "effervesces",
+    "effervescing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Early, eager editors echo Stan's upward motto",
+   "blocklist": [
+    "excelsior",
+    "excelsiors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "End era event: elders examine final destiny (11)",
+   "blocklist": [
+    "eschatological",
+    "eschatologically",
+    "eschatologies",
+    "eschatology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "ewe ewer ewes eyas: EEG brainwave record (20)",
+   "blocklist": [
+    "electroencephalogram"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "ear eat ebb eel egg ego elk: flat wall fruit tree",
+   "blocklist": [
+    "espalier",
+    "espaliered",
+    "espaliering",
+    "espaliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "eyra eyre eyry eyed eyen eyer eyes: bug study (10)",
+   "blocklist": [
+    "entomological",
+    "entomologically",
+    "entomologies",
+    "entomologist",
+    "entomologists",
+    "entomology",
+    "etymologies",
+    "etymology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "elm emu eon erg err eta eve:medical bruise(10)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ecchymosis"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ecchymosis"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "ends engird engirds engirt envy: chiral twin (10)",
+   "blocklist": [
+    "enantiomer",
+    "enantiomeric",
+    "enantiomers",
+    "enantiomorph",
+    "enantiomorphic",
+    "enantiomorphism",
+    "enantiomorphisms",
+    "enantiomorphous",
+    "enantiomorphs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "eng enact enate ended endow endue:chili tortilla 9",
+   "blocklist": [
+    "enchilada",
+    "enchiladas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 132.19401921452703,
+  "cost_numerator": 5008567,
+  "cost_denominator": 37888,
+  "cost_exact": false,
+  "cost_mcse": 0.27453201820369244,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 3871927,
+   "denominator": 37888,
+   "value": 102.19401921452703,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:3,5:19,6:87,7:174,8:257,9:252,10:209,11:148,12:106,13:68,14:34,15:19,16:15,17:6,18:1,19:2,20:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.27453201820369244,
+   "rollouts": 256,
+   "rank_total": 3871927,
+   "rank_denominator": 37888,
+   "cache_key": "e32e07037ed4643a88a386795c0614e8"
+  }
+ }
+}

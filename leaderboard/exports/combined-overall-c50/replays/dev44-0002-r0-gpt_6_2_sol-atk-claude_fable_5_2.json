@@ -1,0 +1,651 @@
+{
+ "game_id": "dev44-0002-r0-gpt_6_2_sol-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_fable_5_2",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A tubular-snouted African ant eater",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "anteater",
+    "anteaters",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "dog pig cow hen fox bat rat owl emu yak eel cod",
+   "blocklist": [
+    "animal",
+    "animals",
+    "ape",
+    "ark",
+    "asp",
+    "ass",
+    "auk",
+    "bear",
+    "beast",
+    "beasts",
+    "bee",
+    "bird",
+    "boa",
+    "bug",
+    "cat",
+    "cats",
+    "creature",
+    "creatures",
+    "critter",
+    "critters",
+    "cub",
+    "cur",
+    "daw",
+    "deer",
+    "doe",
+    "duck",
+    "eft",
+    "elk",
+    "ewe",
+    "farm",
+    "fauna",
+    "faunas",
+    "fish",
+    "fly",
+    "gar",
+    "gnu",
+    "goat",
+    "goose",
+    "hart",
+    "hog",
+    "horse",
+    "jay",
+    "kea",
+    "kid",
+    "kit",
+    "koi",
+    "lion",
+    "mammal",
+    "mammals",
+    "menagerie",
+    "moa",
+    "mouse",
+    "mule",
+    "nag",
+    "nit",
+    "pet",
+    "pets",
+    "pug",
+    "pup",
+    "ram",
+    "ray",
+    "roe",
+    "seal",
+    "sheep",
+    "sow",
+    "stag",
+    "tit",
+    "tom",
+    "wolf",
+    "zoo",
+    "zoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 71,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "SiO2, Mohs 7; common in watches",
+   "blocklist": [
+    "agate",
+    "agates",
+    "amethyst",
+    "amethysts",
+    "chalcedony",
+    "chert",
+    "citrine",
+    "citrines",
+    "clock",
+    "crystal",
+    "crystals",
+    "dioxide",
+    "flint",
+    "flints",
+    "gem",
+    "gems",
+    "glass",
+    "jasper",
+    "jewel",
+    "jewels",
+    "mineral",
+    "minerals",
+    "onyx",
+    "opal",
+    "opals",
+    "oxide",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "quartzites",
+    "quartzose",
+    "rock",
+    "sand",
+    "sands",
+    "sapphire",
+    "silex",
+    "silica",
+    "silicas",
+    "silicate",
+    "silicates",
+    "silicon",
+    "silicons",
+    "stone",
+    "timepiece"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 44,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "pneumonia: lung infection",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "pneumonia"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pneumonitis"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest living land animal, with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephantine",
+    "elephants",
+    "giraffe",
+    "hippopotamus",
+    "ivory",
+    "jumbo",
+    "jumbos",
+    "mammoth",
+    "mammoths",
+    "mastodon",
+    "mastodons",
+    "pachyderm",
+    "pachyderms",
+    "proboscidean",
+    "proboscideans",
+    "rhinoceros",
+    "trunk",
+    "tusk",
+    "tusker",
+    "tuskers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "t/e/n",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "the"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ten"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "b/a/n/a/n/a",
+   "blocklist": [
+    "ban",
+    "banal",
+    "banana",
+    "bananas",
+    "nab"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "a an in on of to is it at as be by or so up ox",
+   "blocklist": [
+    "all",
+    "and",
+    "any",
+    "are",
+    "article",
+    "articles",
+    "brief",
+    "but",
+    "can",
+    "conjunction",
+    "conjunctions",
+    "couple",
+    "day",
+    "deuce",
+    "dictionary",
+    "did",
+    "double",
+    "duo",
+    "english",
+    "for",
+    "get",
+    "grammar",
+    "had",
+    "has",
+    "her",
+    "him",
+    "his",
+    "how",
+    "its",
+    "language",
+    "letter",
+    "letters",
+    "lexicon",
+    "little",
+    "may",
+    "new",
+    "not",
+    "now",
+    "off",
+    "one",
+    "our",
+    "out",
+    "pair",
+    "particle",
+    "particles",
+    "preposition",
+    "prepositions",
+    "scrabble",
+    "she",
+    "short",
+    "shortest",
+    "small",
+    "smallest",
+    "tiny",
+    "too",
+    "twain",
+    "two",
+    "twos",
+    "use",
+    "vocabulary",
+    "was",
+    "way",
+    "wee",
+    "who",
+    "word",
+    "words",
+    "yes",
+    "you"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 68,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "oxygen"
+    },
+    {
+     "seat": "guesser2",
+     "word": "oxen"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "a/p/p/l/e; orange lemon lime peach pear plum grape",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "g/u/i/t/a/r; gold green grass grain ginger garlic",
+   "blocklist": [
+    "guitar",
+    "guitarist",
+    "guitarists",
+    "guitars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "g/h/o/s/t; gas gap gag gal guy gum gut gym god",
+   "blocklist": [
+    "ghost",
+    "ghosted",
+    "ghosting",
+    "ghostly",
+    "ghosts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "g/o/b/l/i/n; gel gig gin git gob goo got gam gab",
+   "blocklist": [
+    "goblin",
+    "goblins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "g/e/c/k/o; game gate gaze gear gene gift gild goad",
+   "blocklist": [
+    "gecko",
+    "geckoes",
+    "geckos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "gob/let; good gone give gave gray grew grow great",
+   "blocklist": [
+    "goblet",
+    "goblets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "g/i/r/a/f/f/e/s; gun gnu gawk gulp grub gala gust",
+   "blocklist": [
+    "giraffes",
+    "giraffish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "gal/lon; galaxy gadget garden giant glory gravity",
+   "blocklist": [
+    "gallon",
+    "gallonage",
+    "gallonages",
+    "gallons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "g/l/a/c/i/e/r; glaciered glacial glaciation glade",
+   "blocklist": [
+    "glaciate",
+    "glaciated",
+    "glacier",
+    "glaciers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "g/o/b/b/l/e; goldfish geese gloves globe gravel",
+   "blocklist": [
+    "gobble",
+    "gobbled",
+    "gobbledegook",
+    "gobbledygook",
+    "gobbler",
+    "gobblers",
+    "gobbles",
+    "gobbling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Swift African antelope; g/a/z/e/l/l/e",
+   "blocklist": [
+    "gazelle",
+    "gazelles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "18-hole sport; garage gallonage gravy gorilla",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "golf",
+     "golfs"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Grotesque stone waterspout; g/a/r/g/o/y/l/e",
+   "blocklist": [
+    "gargoyle",
+    "gargoyled",
+    "gargoyles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "g/a/z/e/b/o; gooey gilded glum grit grog gill gash",
+   "blocklist": [
+    "gazebo",
+    "gazeboes",
+    "gazebos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 392.62925211588544,
+  "cost_numerator": 19298513,
+  "cost_denominator": 49152,
+  "cost_exact": false,
+  "cost_mcse": 0.6164996333072232,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 17823953,
+   "denominator": 49152,
+   "value": 362.62925211588544,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:21,4:161,5:398,6:660,7:939,8:986,9:743,10:547,11:384,12:256,13:170,14:96,15:45,16:25,17:9,18:11,19:5,20:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6164996333072232,
+   "rollouts": 256,
+   "rank_total": 35647906,
+   "rank_denominator": 98304,
+   "cache_key": "0c8d3031c7481426bd38e7d5fe54c129"
+  }
+ }
+}

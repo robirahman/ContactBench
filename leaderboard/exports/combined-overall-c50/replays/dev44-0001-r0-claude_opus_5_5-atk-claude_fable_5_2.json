@@ -1,0 +1,595 @@
+{
+ "game_id": "dev44-0001-r0-claude_opus_5_5-atk-claude_fable_5_2",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_fable_5_2",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mammoths",
+    "mastodon",
+    "mastodons",
+    "pachyderm",
+    "pachyderms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Striped African horse",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "blue"
+    },
+    {
+     "seat": "guesser2",
+     "word": "blue"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Big striped Asian cat",
+   "blocklist": [
+    "tiger",
+    "tigereye",
+    "tigereyes",
+    "tigerish",
+    "tigerlike",
+    "tigers",
+    "tiglon",
+    "tiglons",
+    "tigon",
+    "tigons",
+    "tigress",
+    "tigresses",
+    "tigrish"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Furniture with four legs you eat dinner on",
+   "blocklist": [
+    "table",
+    "tabled",
+    "tables",
+    "tabling",
+    "trestle",
+    "trestles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Number after two",
+   "blocklist": [
+    "third",
+    "thirds",
+    "three",
+    "threefold",
+    "threes",
+    "threesome",
+    "thrice",
+    "triad",
+    "trio",
+    "trios",
+    "triple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Thanksgiving bird",
+   "blocklist": [
+    "tom",
+    "toms",
+    "turkey",
+    "turkeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Opposite of bottom",
+   "blocklist": [
+    "tip",
+    "tips",
+    "top",
+    "topmost",
+    "topped",
+    "topping",
+    "tops",
+    "topside",
+    "topsides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Opposite of false",
+   "blocklist": [
+    "true",
+    "trued",
+    "trueing",
+    "trueness",
+    "truer",
+    "trues",
+    "truest",
+    "truing",
+    "truly",
+    "truth",
+    "truthful",
+    "truths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Red fruit used in ketchup",
+   "blocklist": [
+    "tomatillo",
+    "tomatillos",
+    "tomato",
+    "tomatoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Hot leafy drink the British love",
+   "blocklist": [
+    "tea",
+    "teacup",
+    "teacups",
+    "teakettle",
+    "tealike",
+    "teapot",
+    "teapots",
+    "teas",
+    "teatime",
+    "tisane",
+    "tisanes",
+    "toddy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Number after nine",
+   "blocklist": [
+    "teen",
+    "teens",
+    "ten",
+    "tenfold",
+    "tenner",
+    "tenners",
+    "tenpence",
+    "tenpenny",
+    "tens",
+    "tenth",
+    "tenths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Choo-choo on rails",
+   "blocklist": [
+    "tram",
+    "tramcar",
+    "tramcars",
+    "tramline",
+    "tramlines",
+    "tramroad",
+    "tramroads",
+    "trams",
+    "tramway",
+    "tramways",
+    "trolley",
+    "trolleys"
+   ],
+   "blocked_ranges": [
+    [
+     "train",
+     "trainways"
+    ]
+   ],
+   "blocked_word_count": 38,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Tall woody plant in a forest",
+   "blocklist": [
+    "teak",
+    "teaks",
+    "timber",
+    "timbers",
+    "tree",
+    "treed",
+    "treeing",
+    "treeless",
+    "treelike",
+    "trees",
+    "treetop",
+    "treetops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Ocean rise and fall caused by the moon",
+   "blocklist": [
+    "tidal",
+    "tidally",
+    "tsunami",
+    "tsunamis"
+   ],
+   "blocked_ranges": [
+    [
+     "tide",
+     "tideways"
+    ],
+    [
+     "tiding",
+     "tidings"
+    ]
+   ],
+   "blocked_word_count": 21,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tic-tac-___",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "toe"
+    },
+    {
+     "seat": "guesser2",
+     "word": "toe"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposable digit on your hand",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thumb",
+     "thumbwheels"
+    ]
+   ],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Loud boom that follows lightning",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thunder",
+     "thundery"
+    ]
+   ],
+   "blocked_word_count": 33,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Robber who steals",
+   "blocklist": [
+    "theft",
+    "thefts",
+    "thug",
+    "thugs"
+   ],
+   "blocked_ranges": [
+    [
+     "thief",
+     "thievishnesses"
+    ]
+   ],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Royal seat for a king",
+   "blocklist": [
+    "throne",
+    "throned",
+    "thrones",
+    "throning"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Little metal cap protecting a sewing finger",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thimble",
+     "thimbleweeds"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Opposite of thin",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thick",
+     "thicksets"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Sharp prickle on a rose stem",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thorn",
+     "thorny"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Craving for water when your mouth is dry",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thirst",
+     "thirsty"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Fine strand you put through a needle's eye",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "thread",
+     "thready"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "than thaw then they this thus thy thee thou them",
+   "blocklist": [
+    "thank",
+    "their",
+    "theirs",
+    "there",
+    "these",
+    "thine",
+    "thing",
+    "think",
+    "those",
+    "though"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "theme"
+    }
+   ],
+   "prefix_after": "th",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 101.1203125,
+  "cost_numerator": 64717,
+  "cost_denominator": 640,
+  "cost_exact": false,
+  "cost_mcse": 0.25384426600130283,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 45517,
+   "denominator": 640,
+   "value": 71.1203125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:7,5:39,6:90,7:108,8:156,9:135,10:100,11:97,12:81,13:62,14:44,15:22,16:20,17:12,18:4,19:3",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.25384426600130283,
+   "rollouts": 256,
+   "rank_total": 1820680,
+   "rank_denominator": 25600,
+   "cache_key": "fc8db8545765244d4c0eda37132b4ca1"
+  }
+ }
+}

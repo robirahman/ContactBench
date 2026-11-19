@@ -1,0 +1,532 @@
+{
+ "game_id": "dev41-0008-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "airport bags and suitcases",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "German loanword for pleasure at others misfortune",
+   "blocklist": [
+    "schadenfreude",
+    "schadenfreudes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "anteater",
+    "anteaters",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "generic name for Tylenol pain reliever",
+   "blocklist": [
+    "acetaminophen",
+    "acetaminophens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "longest word using only top QWERTY row letters",
+   "blocklist": [
+    "perpetuity",
+    "proprietor",
+    "proprietors",
+    "repertoire",
+    "repertoires",
+    "typewriter",
+    "typewriters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "15-letter isogram meaning unable to be copyrighted",
+   "blocklist": [
+    "dermatoglyphics",
+    "uncopyrightable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Australian egg-laying mammal with duck bill",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "process by which green plants convert sunlight",
+   "blocklist": [
+    "chlorophyll",
+    "chlorophylls",
+    "photosyntheses",
+    "photosynthesis",
+    "photosynthesize",
+    "photosynthesized",
+    "photosynthesizes",
+    "photosynthesizing",
+    "photosynthetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "figure of speech where a word imitates a sound",
+   "blocklist": [
+    "onomatopoeia",
+    "onomatopoeias",
+    "onomatopoeic",
+    "onomatopoetic",
+    "onomatopoetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "having many syllables or using very long words",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sesquipedalian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sesquipedalian"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "philosophical study of nature of knowledge",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "epistemic",
+     "epistemology"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "theological doctrine of death and end of the world",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "eschatological",
+     "eschatology"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "medical record of brain wave electrical activity",
+   "blocklist": [
+    "electroencephalogram"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "scientific study of insects",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "entomological",
+     "entomology"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "philosophical movement of Sartre and Camus",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "existential",
+     "existentially"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "alien being originating from beyond planet Earth",
+   "blocklist": [
+    "extraterrestrial",
+    "extraterrestrials"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "biological sonar used by bats and dolphins",
+   "blocklist": [
+    "echolocation",
+    "echolocations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "red blood cell that carries oxygen",
+   "blocklist": [
+    "erythrocyte",
+    "erythrocytes",
+    "erythrocytic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "political belief in equal rights for all people",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "egalitarian",
+     "egalitarians"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "secretly listening to others private conversation",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "eavesdrop",
+     "eavesdrops"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "person who starts a business taking financial risk",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "entrepreneur",
+     "entrepreneurships"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "reference book of articles on many subjects A to Z",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "encyclopaedia",
+     "encyclopedists"
+    ]
+   ],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "mild word substituted for a harsh or offensive one",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "euphemise",
+     "euphemizing"
+    ]
+   ],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "study of word origins and historical development",
+   "blocklist": [
+    "etyma",
+    "etymon",
+    "etymons"
+   ],
+   "blocked_ranges": [
+    [
+     "etymological",
+     "etymology"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "official exclusion from church sacraments",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "excommunicate",
+     "excommunicators"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "hard external skeleton of an arthropod",
+   "blocklist": [
+    "exoskeletal",
+    "exoskeleton",
+    "exoskeletons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "physics force combining electric and magnetic",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "electromagnet",
+     "electromagnets"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "mineral ion in body fluids needed for hydration",
+   "blocklist": [
+    "electrolyte",
+    "electrolytes",
+    "electrolytic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 527.9033090876437,
+  "cost_numerator": 23514925,
+  "cost_denominator": 44544,
+  "cost_exact": false,
+  "cost_mcse": 0.6505796791122309,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22178605,
+   "denominator": 44544,
+   "value": 497.90330908764366,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:37,4:101,5:189,6:452,7:803,8:1126,9:1122,10:965,11:696,12:538,13:361,14:195,15:144,16:78,17:38,18:29,19:25,20:10",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6505796791122309,
+   "rollouts": 256,
+   "rank_total": 88714420,
+   "rank_denominator": 178176,
+   "cache_key": "103eedf1e64d02398028653feff6a499"
+  }
+ }
+}

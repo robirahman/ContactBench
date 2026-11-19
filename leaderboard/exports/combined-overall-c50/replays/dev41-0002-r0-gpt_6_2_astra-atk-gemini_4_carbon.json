@@ -1,0 +1,509 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Name an animal that seems made of spare parts.",
+   "blocklist": [
+    "aardvark",
+    "chimera",
+    "duckbill",
+    "okapi",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Reverse the chunks, keep letters: go|min|fla",
+   "blocklist": [
+    "flamingo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "list_words('sy',offset=19*23+2,limit=1)",
+   "blocklist": [
+    "synonymizes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Paella's answer to vanilla's price tag",
+   "blocklist": [
+    "saffron"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "35's room-temperature state sets it apart in 17",
+   "blocklist": [
+    "bromine",
+    "halogen",
+    "halogens",
+    "liquid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Where the idiom's tenants hang upside down",
+   "blocklist": [
+    "attic",
+    "belfries",
+    "belfry",
+    "campanile",
+    "garret",
+    "rafters",
+    "roost",
+    "steeple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Four-letter crossword answer for a gemstone",
+   "blocklist": [
+    "gems",
+    "jade",
+    "mica",
+    "onyx",
+    "opal",
+    "ruby",
+    "sard",
+    "spar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Scrabble rack A Q R T U Z plus a blank: play 6",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quartz"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quartz"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Scrabble rack A C H P T U Z + blank: use all 8",
+   "blocklist": [
+    "chutzpa",
+    "chutzpah",
+    "chutzpahs",
+    "chutzpas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "What both diamonds and a fizzy drink have been?",
+   "blocklist": [
+    "canned",
+    "carbon",
+    "carbonate",
+    "carbonated",
+    "carbonation",
+    "carbonize",
+    "carbonized",
+    "chilled",
+    "clarified",
+    "compressed",
+    "crushed",
+    "crystallized",
+    "cut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Welsh glacial hollow; no A E I O U or Y",
+   "blocklist": [
+    "crwth",
+    "crwths",
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Scrabble rack A C E J L O X: play 6",
+   "blocklist": [
+    "cajole",
+    "calxes",
+    "coaxal",
+    "coaxes",
+    "coxae",
+    "coxal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Twisted opener, or a roller coaster inversion",
+   "blocklist": [
+    "corkscrew",
+    "corkscrewed",
+    "corkscrewing",
+    "corkscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Anagram: ONE MALE + symbol for element seventeen",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chameleon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chameleon"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Anagram: COUNT + chemical symbol for cobalt",
+   "blocklist": [
+    "coconut"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Rearrange: PIANO + symbol for copper + ORC",
+   "blocklist": [
+    "cornucopia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Scramble LAND + CORE; pasta knows the result",
+   "blocklist": [
+    "colander"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Anagram: CRICKET + cocoa minus one C",
+   "blocklist": [
+    "cockatrice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Mix what a mute is + base eight + NOT off",
+   "blocklist": [
+    "constellation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Unscramble ALCHEMY - MY + OCTAN + H",
+   "blocklist": [
+    "coelacanth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Mix FEET + one Roman + what Dracula is called",
+   "blocklist": [
+    "coefficient",
+    "coefficients",
+    "confetti",
+    "confetto",
+    "confiture",
+    "counterfeit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "co[ floor(1000*e) ], zero indexed",
+   "blocklist": [
+    "concupiscible"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Mix M + the square root of 81 in Roman + ORCA + NT",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cormorant"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cormorant"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Shake WALL + the 3-letter trig function + E",
+   "blocklist": [
+    "coleslaw"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Mix NOBLE + symbols for 29,53 + a Roman thousand",
+   "blocklist": [
+    "columbine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Mix LYRIC with the vowels of OLE and its consonant",
+   "blocklist": [
+    "colliery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "cold color colony collar college colon: milk is a?",
+   "blocklist": [
+    "colloid",
+    "colloidal",
+    "colloids",
+    "colostrum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Mix the plural of mouse with an immortal essence",
+   "blocklist": [
+    "coliseum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Mix a geometric point set + Titanic's distress cry",
+   "blocklist": [
+    "colossus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 66.44541807432432,
+  "cost_numerator": 629371,
+  "cost_denominator": 9472,
+  "cost_exact": false,
+  "cost_mcse": 0.2307394631669848,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 345211,
+   "denominator": 9472,
+   "value": 36.44541807432432,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:5,5:10,6:22,7:37,8:75,9:96,10:78,11:56,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.2307394631669848,
+   "rollouts": 256,
+   "rank_total": 345211,
+   "rank_denominator": 9472,
+   "cache_key": "a8637231d23c01fd745f52df6ecdc59c"
+  }
+ }
+}

@@ -1,0 +1,544 @@
+{
+ "game_id": "dev41-0001-r0-gemini_3_8_flash-atk-gpt_6_luna",
+ "attacker": "gemini_3_8_flash",
+ "defender": "gpt_6_luna",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "the yellow part of an egg",
+   "blocklist": [
+    "yolk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "protective headgear worn by cyclists and soldiers",
+   "blocklist": [
+    "hardhat",
+    "hat",
+    "headgear",
+    "helm",
+    "helmet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "a picture is worth a thousand",
+   "blocklist": [
+    "words"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "element with atomic number one",
+   "blocklist": [
+    "hydrogen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "scientific branch devoted to the study of birds",
+   "blocklist": [
+    "ornithine",
+    "ornithological",
+    "ornithologist",
+    "ornithology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "triangular glass that splits light into a rainbow",
+   "blocklist": [
+    "prism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "heavy metal object dropped to stop a ship",
+   "blocklist": [
+    "anchor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "instrument used to measure atmospheric pressure",
+   "blocklist": [
+    "altimeter",
+    "aneroid",
+    "barograph",
+    "barometer",
+    "barometric",
+    "barometry",
+    "manometer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "sound reflection that repeats back to you",
+   "blocklist": [
+    "echo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "toothed grooming tool used to untangle hair",
+   "blocklist": [
+    "brush",
+    "comb",
+    "combs",
+    "hairbrush",
+    "pick",
+    "rake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "crystalline water ice with six fold symmetry",
+   "blocklist": [
+    "hexagon",
+    "hexagonal",
+    "snow",
+    "snowflake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "first letter of the greek alphabet",
+   "blocklist": [
+    "aleph"
+   ],
+   "blocked_ranges": [
+    [
+     "alpha",
+     "alphas"
+    ]
+   ],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "instrument used to detect and record earthquakes",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "seism",
+     "seisms"
+    ]
+   ],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "australian marsupial that hops with a pouch",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "koala",
+    "marsupial",
+    "wallaby",
+    "wombat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "something that goes up but never comes down",
+   "blocklist": [
+    "age"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "wax cylinder with a wick that provides light",
+   "blocklist": [
+    "candle",
+    "candles",
+    "candlestick",
+    "candlesticks",
+    "lantern",
+    "tallow",
+    "taper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "went up the hill to fetch a pail of water",
+   "blocklist": [
+    "after",
+    "broke",
+    "crown",
+    "fell",
+    "jack",
+    "jill",
+    "tumbling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "mythical bird that rises from its own ashes",
+   "blocklist": [
+    "firebird",
+    "phoenix",
+    "phoenixes",
+    "rebirth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "small wax light burned as a religious offering",
+   "blocklist": [
+    "altar",
+    "devotional",
+    "incense",
+    "votary",
+    "votive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "element with atomic number eight",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "the number of colors in a traditional rainbow",
+   "blocklist": [
+    "heptad",
+    "heptagon",
+    "septet",
+    "seven",
+    "sevenfold"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "official currency of japan",
+   "blocklist": [
+    "cash",
+    "coin",
+    "currency",
+    "japan",
+    "money",
+    "yen",
+    "yens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "state of matter that is neither solid nor liquid",
+   "blocklist": [
+    "aerosol",
+    "air",
+    "fluid",
+    "gas",
+    "gaseous",
+    "gases",
+    "plasma",
+    "steam",
+    "vapor",
+    "vapors",
+    "vapour",
+    "vapours"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "natural satellite that orbits planet earth",
+   "blocklist": [
+    "luna",
+    "moon",
+    "moonbeam",
+    "moonlight",
+    "moonrise",
+    "moonset",
+    "moonshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "sound made by a cow",
+   "blocklist": [
+    "bawling",
+    "bellow",
+    "low",
+    "moo",
+    "mooed",
+    "mooing",
+    "moos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "barking up the wrong",
+   "blocklist": [
+    "bark",
+    "branch",
+    "bush",
+    "canine",
+    "dog",
+    "forest",
+    "hound",
+    "limb",
+    "tree",
+    "trunk",
+    "wood",
+    "woods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "every cloud has a silver",
+   "blocklist": [
+    "bright",
+    "cloudy",
+    "hope",
+    "lining",
+    "optimism",
+    "rain",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "the force that pulls objects toward earth",
+   "blocklist": [
+    "attraction",
+    "gravitas",
+    "pull",
+    "weight"
+   ],
+   "blocked_ranges": [
+    [
+     "gravitate",
+     "gravity"
+    ]
+   ],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "a stitch in time saves",
+   "blocklist": [
+    "nine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11666.420749487772,
+  "cost_numerator": 45369496987,
+  "cost_denominator": 3888896,
+  "cost_exact": false,
+  "cost_mcse": 3.3851066505933405,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 45252830107,
+   "denominator": 3888896,
+   "value": 11636.420749487772,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:950,4:3855,5:8584,6:15191,7:23080,8:28393,9:24850,10:20286,11:15488,12:11344,13:7817,14:5122,15:3190,16:1941,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.3851066505933405,
+   "rollouts": 256,
+   "rank_total": 45252830107,
+   "rank_denominator": 3888896,
+   "cache_key": "bf3f71e86e1781337e5e70f21d263cdd"
+  }
+ }
+}

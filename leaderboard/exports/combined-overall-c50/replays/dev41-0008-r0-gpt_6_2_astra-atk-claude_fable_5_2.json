@@ -1,0 +1,679 @@
+{
+ "game_id": "dev41-0008-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Something a painter might put beside a skull",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "hourglass"
+    },
+    {
+     "seat": "guesser2",
+     "word": "hourglass"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A canyon's second opinion",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The silent third leg in a portrait session",
+   "blocklist": [
+    "easel",
+    "easels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "The souvenir Baby Shark leaves behind",
+   "blocklist": [
+    "earworm",
+    "earworms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "An addition you could measure in old cloth units",
+   "blocklist": [
+    "ell",
+    "ells",
+    "extension",
+    "extensions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A place for a tongue before a journey",
+   "blocklist": [
+    "envelop",
+    "envelope",
+    "enveloped",
+    "envelopes",
+    "envelops",
+    "eyelet",
+    "eyelets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "What grows shorter correcting a short story?",
+   "blocklist": [
+    "edit",
+    "edited",
+    "editing",
+    "edition",
+    "editions",
+    "editor",
+    "editors",
+    "edits",
+    "erase",
+    "erased",
+    "eraser",
+    "erasers",
+    "erases",
+    "erasing",
+    "erasure",
+    "erasures",
+    "errata",
+    "erratum",
+    "essay",
+    "essays"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Humpty's original packaging",
+   "blocklist": [
+    "egg",
+    "eggcup",
+    "eggcups",
+    "eggs",
+    "eggshell",
+    "eggshells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "evade exert exalt exult exact excel: Oz's color",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "emerald"
+    },
+    {
+     "seat": "guesser2",
+     "word": "emerald"
+    }
+   ],
+   "prefix_after": "en",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "enact endow ensue enjoy entry envy: one more song!",
+   "blocklist": [
+    "encore",
+    "encored",
+    "encores",
+    "encoring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "energy engine entity enigma enemy: heat death stat",
+   "blocklist": [
+    "enthalpies",
+    "enthalpy",
+    "entropic",
+    "entropically",
+    "entropies",
+    "entropy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "enlist entail enter ensign: Thanos finale",
+   "blocklist": [
+    "end",
+    "ended",
+    "endgame",
+    "endgames",
+    "ending",
+    "endings",
+    "ends"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "enable enact enforce engage engulf: Vatican City",
+   "blocklist": [
+    "enclave",
+    "enclaves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "endure endear enough enrich entire: pepsin is one",
+   "blocklist": [
+    "endopeptidase",
+    "endopeptidases",
+    "enzymatic",
+    "enzymatically",
+    "enzyme",
+    "enzymes",
+    "enzymic",
+    "enzymically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "enrage enrich enrobe ensnare: bugs are my field",
+   "blocklist": [
+    "entomofauna",
+    "entomofaunae",
+    "entomofaunas",
+    "entomological",
+    "entomologically",
+    "entomologies",
+    "entomologist",
+    "entomologists",
+    "entomology",
+    "entomophagous",
+    "entomophilies",
+    "entomophilous",
+    "entomophily"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "enjoys endive entrust enlistment: molar armor",
+   "blocklist": [
+    "enamel",
+    "enameled",
+    "enameler",
+    "enamelers",
+    "enameling",
+    "enamelist",
+    "enamelists",
+    "enamelled",
+    "enamelling",
+    "enamels",
+    "enamelware",
+    "enamelwares"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "encode endue ensoul enmesh enrol: Parisian blahs",
+   "blocklist": [
+    "ennui",
+    "ennuis",
+    "ennuye",
+    "ennuyee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "encyclopedia enchantment entrepreneur: star's crew",
+   "blocklist": [
+    "ensemble",
+    "ensembles",
+    "enterprise",
+    "enterprises",
+    "entertainer",
+    "entertainers",
+    "entertainment",
+    "entertainments",
+    "entourage",
+    "entourages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "entice entail encase endow: en offset 643 (0-base)",
+   "blocklist": [
+    "engarlands",
+    "engender",
+    "engendered",
+    "engendering",
+    "engenders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "enactment envious enriches entrap: Buddha attained",
+   "blocklist": [
+    "enlighten",
+    "enlightened",
+    "enlightening",
+    "enlightenment",
+    "enlightenments",
+    "enlightens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "enfold enrichers enplane: pitch tents as a verb",
+   "blocklist": [
+    "encamp",
+    "encamped",
+    "encamping",
+    "encampment",
+    "encampments",
+    "encamps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "enabler enactments encircle: Harvard nest egg",
+   "blocklist": [
+    "endowed",
+    "endower",
+    "endowers",
+    "endowing",
+    "endowment",
+    "endowments",
+    "endows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "envoy ensues ender entailment: green movement",
+   "blocklist": [
+    "environ",
+    "environed",
+    "environing",
+    "environment",
+    "environmental",
+    "environmentalism",
+    "environmentalisms",
+    "environmentalist",
+    "environmentalists",
+    "environmentally",
+    "environments",
+    "environs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "entomb endues encash enacts: what a pep talk gives",
+   "blocklist": [
+    "encourage",
+    "encouraged",
+    "encouragement",
+    "encouragements",
+    "encourager",
+    "encouragers",
+    "encourages",
+    "encouraging",
+    "encouragingly",
+    "energetic",
+    "energetically",
+    "energetics",
+    "energies",
+    "energise",
+    "energised",
+    "energises",
+    "energising",
+    "energization",
+    "energizations",
+    "energize",
+    "energized",
+    "energizer",
+    "energizers",
+    "energizes",
+    "energizing",
+    "enliven",
+    "enlivened",
+    "enlivening",
+    "enlivens",
+    "enthuse",
+    "enthused",
+    "enthuses",
+    "enthusiasm",
+    "enthusiasms",
+    "enthusiast",
+    "enthusiastic",
+    "enthusiastically",
+    "enthusiasts",
+    "enthusing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 39,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "enroll entailments engulfed: thyroid specialist",
+   "blocklist": [
+    "endocrine",
+    "endocrines",
+    "endocrinologic",
+    "endocrinological",
+    "endocrinologies",
+    "endocrinologist",
+    "endocrinologists",
+    "endocrinology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "envoys enacts enigma encrypt: spooky at a distance",
+   "blocklist": [
+    "entangle",
+    "entangled",
+    "entanglement",
+    "entanglements",
+    "entangler",
+    "entanglers",
+    "entangles",
+    "entangling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "endcap endnote endureth: bigger photo print",
+   "blocklist": [
+    "enlarge",
+    "enlarged",
+    "enlargement",
+    "enlargements",
+    "enlarger",
+    "enlargers",
+    "enlarges",
+    "enlarging"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "enigma enmity endearment enabler: Durer's medium",
+   "blocklist": [
+    "engrave",
+    "engraved",
+    "engraver",
+    "engravers",
+    "engraves",
+    "engraving",
+    "engravings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "enact entreat entwine: what soldiers do to a camp",
+   "blocklist": [
+    "enclose",
+    "enclosed",
+    "encloser",
+    "enclosers",
+    "encloses",
+    "enclosing",
+    "enclosure",
+    "enclosures",
+    "encompass",
+    "encompassed",
+    "encompasses",
+    "encompassing",
+    "encompassment",
+    "encompassments",
+    "enfilade",
+    "enfiladed",
+    "enfilades",
+    "enfilading",
+    "engird",
+    "engirded",
+    "engirding",
+    "engirdle",
+    "engirdled",
+    "engirdles",
+    "engirdling",
+    "engirds",
+    "entrench",
+    "entrenched",
+    "entrenches",
+    "entrenching",
+    "entrenchment",
+    "entrenchments"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "enactments enjoyer enabler: who runs a locomotive?",
+   "blocklist": [
+    "engineer",
+    "engineered",
+    "engineers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "en",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 114.6828972868217,
+  "cost_numerator": 473411,
+  "cost_denominator": 4128,
+  "cost_exact": false,
+  "cost_mcse": 0.2556315254350518,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 349571,
+   "denominator": 4128,
+   "value": 84.6828972868217,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:2,4:3,5:11,6:46,7:143,8:218,9:209,10:175,11:129,12:94,13:53,14:29,15:18,16:11,17:4,18:1,19:2,20:1",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.2556315254350518,
+   "rollouts": 256,
+   "rank_total": 2796568,
+   "rank_denominator": 33024,
+   "cache_key": "0054aea3cb831e7a9771550d5fc1ed24"
+  }
+ }
+}

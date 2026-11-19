@@ -1,0 +1,363 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_2_astra-atk-claude_fable_5_2~rematch",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "shifters",
+ "initial_prefix": "s",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 18982,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A handless face that takes cloudy days off",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sundial"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sundial"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Your silent twin on a sunlit sidewalk",
+   "blocklist": [
+    "shade",
+    "shades",
+    "shadow",
+    "shadows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The password that betrayed an Ephraimite",
+   "blocklist": [
+    "shibboleth",
+    "shibboleths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "wolf : pack :: ? : flock; shy she shed shin ship",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sheep"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sheep"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "sword : attack :: ? : defend; shirt shift shiver",
+   "blocklist": [
+    "shield",
+    "shielded",
+    "shielder",
+    "shielders",
+    "shielding",
+    "shields"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "one roof scale; shine shiny shirk shill shire shim",
+   "blocklist": [
+    "shingle",
+    "shingled",
+    "shingler",
+    "shinglers",
+    "shingles",
+    "shingling",
+    "shingly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Titanic today; shiatsu shiitake shimmer shindig",
+   "blocklist": [
+    "shipwreck",
+    "shipwrecked",
+    "shipwrecking",
+    "shipwrecks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "3rd raw dictionary entry for shi; shimmy shilling",
+   "blocklist": [
+    "shiatsus",
+    "shiatzu",
+    "shiatzus",
+    "shibah",
+    "shibahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Irish cudgel; shifty shiksa shinbone shied shiest",
+   "blocklist": [
+    "shillala",
+    "shillalah",
+    "shillalahs",
+    "shillalas",
+    "shillelagh",
+    "shillelaghs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Lazy; shiv shivs shirely shiner shiners shifty",
+   "blocklist": [
+    "shiftless",
+    "shiftlessly",
+    "shiftlessness",
+    "shiftlessnesses",
+    "shirked",
+    "shirker",
+    "shirkers",
+    "shirking",
+    "shirks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "fellow sailor; shipshape shiplap shipyard shipment",
+   "blocklist": [
+    "shipmate",
+    "shipmates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Kubrick's The ___; ships shins shirr shires shies",
+   "blocklist": [
+    "shining"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "1st unused shi; shier shifts shims shily shills",
+   "blocklist": [
+    "shicker",
+    "shickers",
+    "shicksa",
+    "shicksas",
+    "shiel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "boat carpenter; shipping shirts shivery shininess",
+   "blocklist": [
+    "shipbuilder",
+    "shipbuilders",
+    "shipfitter",
+    "shipfitters",
+    "shipwright",
+    "shipwrights"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Hull-boring clam; shit shits shirty shist shitake",
+   "blocklist": [
+    "shipworm",
+    "shipworms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "1st unused shi; shifted shifter shifting shiftily",
+   "blocklist": [
+    "shieling",
+    "shielings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Bacillary dysentery; shindy shined shikar shikse",
+   "blocklist": [
+    "shigella",
+    "shigellae",
+    "shigellas",
+    "shigelloses",
+    "shigellosis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "shi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "bare-chested; shiva shitty shive shivers shivas",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shirtless"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shirtless"
+    }
+   ],
+   "prefix_after": "shif",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "shiftable shifters shiftier shiftiest shiftiness",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "shif",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 20.0,
+  "cost_numerator": 20,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 571786837,
+   "denominator": 443648,
+   "value": 1288.8299665500576,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:353,5:1056,6:1801,7:2651,8:3466,9:2907,10:2247,11:1563,12:1132,13:714,14:471,15:254,16:158,17:78,18:47,19:16,20:6",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.7461319278073901,
+   "rollouts": 256,
+   "rank_total": 1143573674,
+   "rank_denominator": 887296,
+   "cache_key": "10eda2845647c2d879e72c58a227e264"
+  },
+  "fallback": null
+ }
+}

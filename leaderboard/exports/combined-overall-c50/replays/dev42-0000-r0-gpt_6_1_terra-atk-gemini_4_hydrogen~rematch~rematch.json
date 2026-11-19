@@ -1,0 +1,471 @@
+{
+ "game_id": "dev42-0000-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "misidentify",
+ "initial_prefix": "mi",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 2621,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Sound pickup; milk mind mine mint miss mice mile",
+   "blocklist": [
+    "microphone",
+    "mike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Reflective glass; mist mild midi mica mick micro",
+   "blocklist": [
+    "mirror"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Lab magnifier; might minor minus mixed miser mirth",
+   "blocklist": [
+    "microscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Winter handwear; mimic misery mixer midst militia",
+   "blocklist": [
+    "mitt",
+    "mitten",
+    "mittens",
+    "mitts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Lowest possible; million minute missile mission",
+   "blocklist": [
+    "minimal",
+    "minimum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Seasonal animal movement; miracle midnight midget",
+   "blocklist": [
+    "migrate",
+    "migration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Armed forces; miles minds mines mints miserly",
+   "blocklist": [
+    "military"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Tiny organism; missing mislead mischief mixture",
+   "blocklist": [
+    "microbe",
+    "microbes",
+    "microorganism",
+    "midge",
+    "mite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Inorganic natural solid; misfit midway mildew",
+   "blocklist": [
+    "mineral",
+    "minerals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Kitchen reheating oven; mistake misplace misprint",
+   "blocklist": [
+    "microwave",
+    "microwaves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Small scale model; mining minted misfire mired",
+   "blocklist": [
+    "mini",
+    "miniature",
+    "miniatures"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Thousand years; mills miller mingle mistaken",
+   "blocklist": [
+    "millennia",
+    "millennium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Coal digging worker; midwife mirage miserable milt",
+   "blocklist": [
+    "miner",
+    "miners"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bad luck; milestone misuse misread misconduct",
+   "blocklist": [
+    "misfortune",
+    "misfortunes",
+    "mishap",
+    "mishaps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Minor crime; mislead misjudge misquote mischief",
+   "blocklist": [
+    "misdeed",
+    "misdeeds",
+    "misdemeanor",
+    "misdemeanors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "False information; middle midair ministry misty",
+   "blocklist": [
+    "misinformation",
+    "misinformations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Christmas kissing plant; mightier migrant misnomer",
+   "blocklist": [
+    "mistletoe",
+    "mistletoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Fail to comprehend; midsection mischievous",
+   "blocklist": [
+    "misapprehend",
+    "misconceive",
+    "misinterpret",
+    "misinterprets",
+    "misunderstand",
+    "misunderstands",
+    "misunderstood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Very powerful; mister mistress miso misstep mislay",
+   "blocklist": [
+    "mightiest",
+    "mighty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Rich person; mistreat misdial mismanage misalign",
+   "blocklist": [
+    "millionaire",
+    "millionaires"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Orange juice champagne; miasma mickey microbial",
+   "blocklist": [
+    "mimosa",
+    "mimosas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Soccer central player; midlife miscount misdirect",
+   "blocklist": [
+    "midfielder",
+    "midfielders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Center of a line; midterm mischiefs misfits mixer",
+   "blocklist": [
+    "midpoint",
+    "midpoints"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Act badly; milky milks mined mimes mimicry",
+   "blocklist": [
+    "misbehave",
+    "misbehaved",
+    "misbehaves",
+    "misbehaving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Birth helpers; misled miscast misrule misstate",
+   "blocklist": [
+    "midwives"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Hatred of women; missiles missions miracles mists",
+   "blocklist": [
+    "misogynies",
+    "misogynist",
+    "misogynists",
+    "misogyny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Toothpaste flavor; mix mixes mixing mixed-up miff",
+   "blocklist": [
+    "mintier",
+    "mintiest",
+    "minty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Silent actor; miaou miaow miasm miaul mib mibs",
+   "blocklist": [
+    "mime",
+    "mimed",
+    "mimer",
+    "mimers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "mi",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 212.18800584532374,
+  "cost_numerator": 3775249,
+  "cost_denominator": 17792,
+  "cost_exact": false,
+  "cost_mcse": 0.34883916100711315,
+  "baseline": {
+   "numerator": 14135879,
+   "denominator": 73216,
+   "value": 193.07089980332168,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:8,4:39,5:80,6:139,7:289,8:389,9:365,10:381,11:286,12:194,13:147,14:94,15:77,16:49,17:43,18:23,19:9,20:9",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.3776468791200505,
+   "rollouts": 256,
+   "rank_total": 14135879,
+   "rank_denominator": 73216,
+   "cache_key": "3d98153d251236bd2fc56ade96f5d0d4"
+  },
+  "fallback": {
+   "numerator": 3241489,
+   "denominator": 17792,
+   "value": 182.18800584532374,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:6,4:18,5:47,6:112,7:257,8:363,9:351,10:367,11:278,12:190,13:143,14:92,15:76,16:49,17:43,18:23,19:9,20:9",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.34883916100711315,
+   "rollouts": 256,
+   "rank_total": 12965956,
+   "rank_denominator": 71168,
+   "cache_key": "f37867668230f607b116fcd6548af9b7"
+  }
+ }
+}

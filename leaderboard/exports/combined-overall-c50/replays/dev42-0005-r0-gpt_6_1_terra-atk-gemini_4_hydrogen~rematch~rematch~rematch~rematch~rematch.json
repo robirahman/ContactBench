@@ -1,0 +1,190 @@
+{
+ "game_id": "dev42-0005-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "paradisaically",
+ "initial_prefix": "parad",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 42,
+ "initial_secret_candidates": [
+  "parade",
+  "paraded",
+  "parader",
+  "paraders",
+  "parades",
+  "paradichlorobenzene",
+  "paradichlorobenzenes",
+  "paradiddle",
+  "paradiddles",
+  "paradigm",
+  "paradigmatic",
+  "paradigmatically",
+  "paradigms",
+  "parading",
+  "paradisaic",
+  "paradisaical",
+  "paradisaically",
+  "paradisal",
+  "paradise",
+  "paradises",
+  "paradisiac",
+  "paradisiacal",
+  "paradisiacally",
+  "paradisial",
+  "paradisical",
+  "parador",
+  "paradores",
+  "paradors",
+  "parados",
+  "paradoses",
+  "paradox",
+  "paradoxes",
+  "paradoxical",
+  "paradoxicalities",
+  "paradoxicality",
+  "paradoxically",
+  "paradoxicalness",
+  "paradoxicalnesses",
+  "paradrop",
+  "paradropped",
+  "paradropping",
+  "paradrops"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "parade paradise paradox paradigm; drum rudiment",
+   "blocklist": [
+    "paradiddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "paraded parades parading; seemingly contradictory",
+   "blocklist": [
+    "paradoxical"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "paradigms paradoxes paradises; parachute delivery",
+   "blocklist": [
+    "paradrop",
+    "paradrops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "parader paraders parador parados; drum patterns",
+   "blocklist": [
+    "paradiddles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "paradors paradores paradoses paradisal; model-like",
+   "blocklist": [
+    "paradigmatic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "paradisaic paradisaical paradisial; paradox adverb",
+   "blocklist": [
+    "paradoxically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "paradisiac paradisiacal paradisiacally; airdropped",
+   "blocklist": [
+    "paradropped"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "paradoxicalnesses paradisaically; airdrop ongoing",
+   "blocklist": [
+    "paradropping"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "parad",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 8.0,
+  "cost_numerator": 8,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 2881,
+   "denominator": 768,
+   "value": 3.7513020833333335,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:1,7:6,8:6,9:7,10:4,11:4,12:4,13:1,14:3,15:1,16:2,17:1,19:1,20:1",
+   "target_length": 14,
+   "C": 50,
+   "mcse": 0.06650429693133793,
+   "rollouts": 256,
+   "rank_total": 2881,
+   "rank_denominator": 768,
+   "cache_key": "d2df84469a152b04602556c362d2b243"
+  },
+  "fallback": null
+ }
+}

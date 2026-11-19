@@ -1,0 +1,481 @@
+{
+ "game_id": "dev44-0001-r0-gemini_4_argon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_astra",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Checked suitcases and bags when traveling",
+   "blocklist": [
+    "baggage",
+    "luggage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest African mammal with a very long neck",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with a pouch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "kangaroo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "kangaroo"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Mercury glass tube for measuring temperature",
+   "blocklist": [
+    "thermometer",
+    "thermometers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Bouncy backyard mat with springs for jumping",
+   "blocklist": [
+    "trampoline",
+    "trampolines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Bristled stick used with paste to clean teeth",
+   "blocklist": [
+    "toothbrush",
+    "toothbrushes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Old keyboard machine with ink ribbon and paper",
+   "blocklist": [
+    "typewriter",
+    "typewriters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Hand drum with jingling metal disks around the rim",
+   "blocklist": [
+    "tambourine",
+    "tambourines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Tight strap tied around a limb to stop bleeding",
+   "blocklist": [
+    "tourniquet",
+    "tourniquets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Dry desert plant ball that rolls in the wind",
+   "blocklist": [
+    "tumbleweed",
+    "tumbleweeds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Small sweet orange citrus fruit easy to peel",
+   "blocklist": [
+    "tangerine",
+    "tangerines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Four-sided polygon with one pair of parallel sides",
+   "blocklist": [
+    "trapezium",
+    "trapezoid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Large hairy spider often kept as an exotic pet",
+   "blocklist": [
+    "tarantula",
+    "tarantulas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Gym exercise belt for running or walking in place",
+   "blocklist": [
+    "treadmill",
+    "treadmills"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Rotating subway entrance gate that lets one pass",
+   "blocklist": [
+    "turnstile",
+    "turnstiles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Sweater with a high fold-over collar covering neck",
+   "blocklist": [
+    "turtleneck",
+    "turtlenecks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Flat-headed pin pushed into a corkboard",
+   "blocklist": [
+    "tack",
+    "tacks",
+    "thumbtack",
+    "thumbtacks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Stuffing and mounting animal skins for display",
+   "blocklist": [
+    "taxidermy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "High circus wire walked by an acrobat for balance",
+   "blocklist": [
+    "tightrope",
+    "tightropes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Minty gel or cream squeezed from a tube onto brush",
+   "blocklist": [
+    "toothpaste",
+    "toothpastes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Engraved stone slab marking a grave in a cemetery",
+   "blocklist": [
+    "tombstone",
+    "tombstones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Long runnerless wooden sled with a curled front",
+   "blocklist": [
+    "toboggan",
+    "toboggans"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Thin pointed wood sliver for removing food in gums",
+   "blocklist": [
+    "toothpick",
+    "toothpicks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Linen or cloth sheet draped over a dining surface",
+   "blocklist": [
+    "tablecloth",
+    "tablecloths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Cooking measure equal to three teaspoons",
+   "blocklist": [
+    "tablespoon",
+    "tablespoonful",
+    "tablespoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Spinning platter on a record player for vinyl LPs",
+   "blocklist": [
+    "turntable",
+    "turntables"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Small powerful harbor vessel that pushes big ships",
+   "blocklist": [
+    "towboat",
+    "tug",
+    "tugboat",
+    "tugboats",
+    "tugs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Brass instrument played by sliding a long U-tube",
+   "blocklist": [
+    "trombone",
+    "trombones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Rainy weather event with lightning and loud booms",
+   "blocklist": [
+    "thunderstorm",
+    "thunderstorms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Semiconductor switch with base emitter collector",
+   "blocklist": [
+    "transistor"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 615.4960717056998,
+  "cost_numerator": 139604357,
+  "cost_denominator": 226816,
+  "cost_exact": false,
+  "cost_mcse": 0.6754884984663461,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 132799877,
+   "denominator": 226816,
+   "value": 585.4960717056998,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:55,4:242,5:544,6:902,7:1352,8:1522,9:1184,10:886,11:674,12:489,13:319,14:220,15:122,16:74,17:55,18:21,19:10,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.6754884984663461,
+   "rollouts": 256,
+   "rank_total": 132799877,
+   "rank_denominator": 226816,
+   "cache_key": "02728a99ceefceea471a43838028af6c"
+  }
+ }
+}

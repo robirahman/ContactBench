@@ -1,0 +1,464 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "What color is a basketball?",
+   "blocklist": [
+    "brown",
+    "orange",
+    "tan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A_dvark? Missing chunk: ar. What animal?",
+   "blocklist": [
+    "aardvark",
+    "aardvarks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "A canyon repeats: hello, hello, hello...",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoic",
+    "echoing",
+    "resound",
+    "reverberation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "SiO2, Mohs 7; amethyst is a variety.",
+   "blocklist": [
+    "crystal",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "silica",
+    "silicon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "88 keys, 52 white and 36 black.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "piano"
+    },
+    {
+     "seat": "guesser2",
+     "word": "piano"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest land animal, with a trunk.",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Moon blocks Sun; Sun or Moon disappears.",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "ecliptic",
+    "ecliptics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A female sheep. Earth? Energy? Engine? Empire?",
+   "blocklist": [
+    "ewe",
+    "ewes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Hen's breakfast output. elf elk elm era end eel",
+   "blocklist": [
+    "egg",
+    "egged",
+    "eggs",
+    "eggshell",
+    "eggy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "May birthstone. ear eat eve exit east easy evil",
+   "blocklist": [
+    "emerald",
+    "emeralds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Aussie ratite. era? error event essay entry enjoy",
+   "blocklist": [
+    "emeu",
+    "emeus",
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Bald raptor. ed en es eff eft eke ell ems ere err",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "eaglet",
+    "eaglets",
+    "ern",
+    "erne",
+    "ernes",
+    "erns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Era of note. Initials of the first 3 words.",
+   "blocklist": [
+    "eon",
+    "eons",
+    "epoch",
+    "epochal",
+    "epochs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Pian0 had 88 keys. Repeat that answer, but e-.",
+   "blocklist": [
+    "ebonies",
+    "ebony",
+    "eight",
+    "eighteen",
+    "eighteens",
+    "eighth",
+    "eighties",
+    "eightieth",
+    "eights",
+    "eighty",
+    "electric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "espresso"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Lift. e-levator? Space: entropy ether electron",
+   "blocklist": [
+    "elevate",
+    "elevated",
+    "elevates",
+    "elevation",
+    "elevator",
+    "elevators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Koala food. earthworm elastic enzyme economy",
+   "blocklist": [
+    "eucalypt",
+    "eucalypti",
+    "eucalyptol",
+    "eucalyptole",
+    "eucalyptoles",
+    "eucalyptols",
+    "eucalypts",
+    "eucalyptus",
+    "eucalyptuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Moving staircase. ex ego elk edit epic emit earn",
+   "blocklist": [
+    "escalate",
+    "escalated",
+    "escalates",
+    "escalator",
+    "escalators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Equal day/night. eureka erode erupt evade excel",
+   "blocklist": [
+    "equal",
+    "equality",
+    "equator",
+    "equinoctial",
+    "equinoctials",
+    "equinox",
+    "equinoxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Mail wrapper. expert effect effort escape estate",
+   "blocklist": [
+    "envelop",
+    "envelope",
+    "enveloped",
+    "envelopes",
+    "enveloping",
+    "envelops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Arm hinge. emu? ebb eke ell elm elk elf era err",
+   "blocklist": [
+    "elbow",
+    "elbowed",
+    "elbowing",
+    "elbowroom",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Stoat in winter. excellent exercise evidence",
+   "blocklist": [
+    "ermine",
+    "ermines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 530.1825399452683,
+  "cost_numerator": 96094525,
+  "cost_denominator": 181248,
+  "cost_exact": false,
+  "cost_mcse": 0.6062194703255065,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 90657085,
+   "denominator": 181248,
+   "value": 500.1825399452684,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:16,4:85,5:172,6:432,7:790,8:1107,9:1112,10:971,11:708,12:556,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6062194703255065,
+   "rollouts": 256,
+   "rank_total": 90657085,
+   "rank_denominator": 181248,
+   "cache_key": "5d46192d5e5bb795994be9f012828387"
+  }
+ }
+}

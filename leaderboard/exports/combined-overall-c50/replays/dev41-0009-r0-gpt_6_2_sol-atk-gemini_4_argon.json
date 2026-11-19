@@ -1,0 +1,564 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Percussion instrument with tuned wooden bars",
+   "blocklist": [
+    "marimba",
+    "marimbas",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "First animal in most English dictionaries",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "aasvogel",
+    "aasvogels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Most frequent word; definite article",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Mohs hardness 7; SiO2. apple orange banana cat dog",
+   "blocklist": [
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "quartzites",
+    "silica",
+    "silicas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Tennis unit of games; run bat bank spring light",
+   "blocklist": [
+    "match",
+    "matches",
+    "set",
+    "sets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Wildebeest; ant bee cow fox hen owl pig rat yak",
+   "blocklist": [
+    "antelope",
+    "antelopes",
+    "gnu",
+    "gnus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Riddle poser; ace act add ado aft age ago aid ail",
+   "blocklist": [
+    "riddler",
+    "riddlers",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Plants turn sunlight into sugar",
+   "blocklist": [
+    "photosyntheses",
+    "photosynthesis",
+    "photosynthesize",
+    "photosynthesized",
+    "photosynthesizes",
+    "photosynthesizing",
+    "photosynthetic",
+    "photosynthetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "88 keys; zap zip zoo zen zed zit zag zig tan tap",
+   "blocklist": [
+    "keyboard",
+    "keyboards",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Complaints investigator; sun sea sky air earth",
+   "blocklist": [
+    "ombudsman",
+    "ombudsmanship",
+    "ombudsmanships",
+    "ombudsmen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying mammal",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Naming by sound; book love time life work man day",
+   "blocklist": [
+    "echoism",
+    "echoisms",
+    "onomatopoeia",
+    "onomatopoeias",
+    "onomatopoeic",
+    "onomatopoeically",
+    "onomatopoetic",
+    "onomatopoetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Bead calculator; get got had has was are can use",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Vocabulary inventory; cup pen ink red blue green",
+   "blocklist": [
+    "dictionary",
+    "glossaries",
+    "glossary",
+    "lexica",
+    "lexicon",
+    "lexicons",
+    "lexis",
+    "thesauri",
+    "thesaurus",
+    "thesauruses",
+    "wordbook",
+    "wordbooks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "British waiting line; one two six ten yes not all",
+   "blocklist": [
+    "queue",
+    "queued",
+    "queueing",
+    "queuer",
+    "queuers",
+    "queues",
+    "queuing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Color-changing lizard; ice tea jam pie gum ham dew",
+   "blocklist": [
+    "anole",
+    "anoles",
+    "chameleon",
+    "chameleonic",
+    "chameleonlike",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Adolphe's jazz horn; oak elm ash fir rye oat pea",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxhorn",
+    "saxhorns",
+    "saxophone",
+    "saxophones",
+    "saxophonic",
+    "saxophonist",
+    "saxophonists",
+    "saxtuba",
+    "saxtubas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk; car bus van cab jet ship boat",
+   "blocklist": [
+    "cephalopod",
+    "cephalopods",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Largest living marsupial; joy ill low sit bid nod",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Portable rain shield; bed big box boy bug bun buy",
+   "blocklist": [
+    "brollies",
+    "brolly",
+    "bumbershoot",
+    "bumbershoots",
+    "parasol",
+    "parasols",
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "River horse; bathe bear bull calf colt crow crab",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Extinct Mauritian bird; emu auk jay tit moa ratite",
+   "blocklist": [
+    "dodo",
+    "dodoes",
+    "dodoism",
+    "dodoisms",
+    "dodos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Stinging sea drifter; new old hot dry wet fat fit",
+   "blocklist": [
+    "cnidarian",
+    "cnidarians",
+    "jellies",
+    "jellyfish",
+    "jellyfishes",
+    "medusa",
+    "medusae",
+    "medusas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Flying reptile; ace? arc ark arm art axe bag ban",
+   "blocklist": [
+    "dragon",
+    "dragons",
+    "pteranodon",
+    "pteranodons",
+    "pterodactyl",
+    "pterodactyls",
+    "pterosaur",
+    "pterosaurs",
+    "wyvern",
+    "wyverns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Mexican salamander; bathe? ado? why who how any",
+   "blocklist": [
+    "amphibian",
+    "amphibians",
+    "axolotl",
+    "axolotls",
+    "eft",
+    "efts",
+    "newt",
+    "newts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Vanilla's flower family; out put see way try few",
+   "blocklist": [
+    "orchid",
+    "orchidaceous",
+    "orchidlike",
+    "orchids",
+    "orchis",
+    "orchises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Striped equid; ace asp ate awe awl awn aye bad bar",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebraic",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11836.501940533071,
+  "cost_numerator": 86010651541,
+  "cost_denominator": 7266560,
+  "cost_exact": false,
+  "cost_mcse": 2.5136479988510447,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 85792654741,
+   "denominator": 7266560,
+   "value": 11806.501940533071,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:841,4:3868,5:8608,6:15192,7:23071,8:28385,9:24847,10:20277,11:15493,12:11349,13:7823,14:5122,15:3191,16:1940,17:1125,18:593,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.5136479988510447,
+   "rollouts": 256,
+   "rank_total": 85792654741,
+   "rank_denominator": 7266560,
+   "cache_key": "b316debee92bbaf429c058c8dc2f1247"
+  }
+ }
+}

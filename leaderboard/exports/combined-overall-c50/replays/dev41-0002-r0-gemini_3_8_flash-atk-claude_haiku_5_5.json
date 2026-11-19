@@ -1,0 +1,260 @@
+{
+ "game_id": "dev41-0002-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Dark shape cast by an object blocking light",
+   "blocklist": [
+    "shade",
+    "shadow",
+    "silhouette",
+    "umbra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Building where books are kept for public reading",
+   "blocklist": [
+    "archive",
+    "archives",
+    "book",
+    "books",
+    "building",
+    "librarian",
+    "libraries",
+    "library",
+    "public",
+    "reading"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "The opposite of begin",
+   "blocklist": [
+    "cease",
+    "close",
+    "conclude",
+    "end",
+    "ends",
+    "finale",
+    "finish",
+    "halt",
+    "stop",
+    "terminate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "The sound a cow makes",
+   "blocklist": [
+    "bellow",
+    "bellows",
+    "low",
+    "lowed",
+    "lowing",
+    "lows",
+    "moan",
+    "moans",
+    "moo",
+    "mooed",
+    "mooing",
+    "moos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Every cloud has a silver",
+   "blocklist": [
+    "cloud",
+    "clouds",
+    "lining",
+    "linings",
+    "silver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ordered set of letters from a to z",
+   "blocklist": [
+    "alphabet",
+    "alphabets",
+    "letter",
+    "letters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Frozen water",
+   "blocklist": [
+    "freeze",
+    "frost",
+    "frozen",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "icebergs",
+    "ices",
+    "icicle",
+    "icicles",
+    "icy",
+    "rime",
+    "sleet",
+    "slush",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Most abundant element in human body by mass",
+   "blocklist": [
+    "carbon",
+    "hydrogen",
+    "nitrogen",
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "An eight-legged creature such as a spider or tick",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "arachnid"
+    },
+    {
+     "seat": "guesser2",
+     "word": "arachnid"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A desert animal known for its humps",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "collarbones"
+    ],
+    [
+     "collards",
+     "czar"
+    ]
+   ],
+   "blocked_word_count": 16198,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "collard",
+   "prefix_after": "c",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 13.0,
+  "cost_numerator": 13,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

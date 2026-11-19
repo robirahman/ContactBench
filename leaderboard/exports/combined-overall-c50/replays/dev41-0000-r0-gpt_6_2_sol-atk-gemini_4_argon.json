@@ -1,0 +1,635 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Nth dictionary entry overall; N=1, zero-indexed.",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Bead-frame calculator (aardvarks abaci abalone)",
+   "blocklist": [
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Desert or give up (the verb).",
+   "blocklist": [
+    "abandon",
+    "abandoned",
+    "abandoning",
+    "abandons",
+    "abdicate",
+    "cede",
+    "forsake",
+    "quit",
+    "relinquish",
+    "renounce",
+    "surrender"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Purring pet (zoo, zip, zap, yak, yam, wax, web)",
+   "blocklist": [
+    "cat",
+    "cats",
+    "feline",
+    "kitten",
+    "kitty",
+    "puss",
+    "pussycat",
+    "tabby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk",
+   "blocklist": [
+    "argonaut",
+    "cephalopod",
+    "cuttlefish",
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses",
+    "squid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Move fast, manage, or flow (one verb).",
+   "blocklist": [
+    "course",
+    "direct",
+    "lead",
+    "ran",
+    "run",
+    "running",
+    "runs",
+    "stream"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Element 8 (set get put let got hat bat rat mat)",
+   "blocklist": [
+    "oxygen",
+    "oxygens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Granny Smith (dog sun moon tree book water time)",
+   "blocklist": [
+    "apple",
+    "apples",
+    "fruit",
+    "pippin",
+    "pome"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Honey maker (ace act add ado aft age aid ail aim)",
+   "blocklist": [
+    "apiarist",
+    "apiary",
+    "bee",
+    "beekeeper",
+    "bees",
+    "bumblebee",
+    "drone",
+    "honeybee",
+    "honeybees",
+    "worker"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Manila hemp variant (aba abac abacas abakas abamp)",
+   "blocklist": [
+    "abaca",
+    "abaka",
+    "hemp",
+    "hemps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Mallet instrument with tuned wooden bars.",
+   "blocklist": [
+    "marimba",
+    "marimbas",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Riddle poser (abamps abased abases abash abase)",
+   "blocklist": [
+    "enigma",
+    "enigmas",
+    "puzzler",
+    "puzzlers",
+    "riddler",
+    "riddlers",
+    "sphinx",
+    "sphinxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Tallest mammal (ant, cow, pig, fox, owl, hen, elk)",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "First unused alphabetical entry; check list.",
+   "blocklist": [
+    "aal",
+    "aalii",
+    "aback",
+    "abashed",
+    "abate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Wildebeest (abates abating abater abaters abatis)",
+   "blocklist": [
+    "antelope",
+    "antelopes",
+    "bovid",
+    "bovids",
+    "gnu",
+    "gnus",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Giraffe's striped cousin (abatement abatises)",
+   "blocklist": [
+    "okapi",
+    "okapis",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Smiling marsupial native to Rottnest Island",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "marsupials",
+    "quokka",
+    "quokkas",
+    "wallabies",
+    "wallaby",
+    "wombat",
+    "wombats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "flowdraa (aardwolves abator abattoir abattoirs)",
+   "blocklist": [
+    "aaliis",
+    "aals",
+    "aardwolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Solar or lunar darkening by celestial alignment",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "eclipsis",
+    "eclipsises",
+    "occultation",
+    "occultations",
+    "penumbra",
+    "penumbrae",
+    "penumbras",
+    "syzygies",
+    "syzygy",
+    "umbra",
+    "umbrae",
+    "umbras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Toward stern (ate bad bag ban bar bay bed bet bid)",
+   "blocklist": [
+    "abaft",
+    "afterward",
+    "afterwards",
+    "astern",
+    "backward",
+    "backwards",
+    "rearward",
+    "rearwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Flightless Aussie bird (egg ink ice jam jar jet)",
+   "blocklist": [
+    "cassowaries",
+    "cassowary",
+    "emu",
+    "emus",
+    "kiwi",
+    "kiwis",
+    "ratite",
+    "ratites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Sea ears (abbreviate abbreviation abdomen abbot)",
+   "blocklist": [
+    "abalones",
+    "gastropod",
+    "gastropods",
+    "molluscs",
+    "mollusks",
+    "ormer",
+    "ormers",
+    "shellfish",
+    "shellfishes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "SiO2 mineral (lid lip lit lob log lop lot low lug)",
+   "blocklist": [
+    "agate",
+    "agates",
+    "chert",
+    "cherts",
+    "flint",
+    "flints",
+    "jasper",
+    "jaspers",
+    "opal",
+    "opals",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "quartzites",
+    "silica",
+    "silicas",
+    "silicate",
+    "silicates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Duck-billed monotreme (ace? air arm art ash ask)",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnae",
+    "echidnas",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Largest living feline (ace? no: ace is used)",
+   "blocklist": [
+    "cheetah",
+    "cheetahs",
+    "cougar",
+    "cougars",
+    "jaguar",
+    "jaguars",
+    "leopard",
+    "leopards",
+    "liger",
+    "ligers",
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions",
+    "panther",
+    "panthers",
+    "puma",
+    "pumas",
+    "tiger",
+    "tigers",
+    "tigon",
+    "tigons",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Gentle breeze (abo ace? aced aces ache acid acme)",
+   "blocklist": [
+    "breeze",
+    "breezes",
+    "waft",
+    "wafts",
+    "wind",
+    "winds",
+    "zephyr",
+    "zephyrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Make a mistake (abs ads ado? adz aga aha ale all)",
+   "blocklist": [
+    "blunder",
+    "blundered",
+    "blundering",
+    "blunders",
+    "botch",
+    "botched",
+    "botches",
+    "botching",
+    "err",
+    "erred",
+    "erring",
+    "error",
+    "errors",
+    "errs",
+    "flub",
+    "flubbed",
+    "flubbing",
+    "flubs",
+    "goof",
+    "goofed",
+    "goofing",
+    "goofs",
+    "miscalculate",
+    "miscalculated",
+    "miscalculates",
+    "miscalculating",
+    "misstep",
+    "missteps",
+    "slip",
+    "slipped",
+    "slipping",
+    "slips",
+    "slipup",
+    "slipups"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 34,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11501.131695126101,
+  "cost_numerator": 11353181137,
+  "cost_denominator": 987136,
+  "cost_exact": false,
+  "cost_mcse": 6.800380753809186,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 11323567057,
+   "denominator": 987136,
+   "value": 11471.131695126101,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:886,4:3856,5:8579,6:15163,7:23055,8:28376,9:24839,10:20282,11:15500,12:11354,13:7825,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.800380753809186,
+   "rollouts": 256,
+   "rank_total": 11323567057,
+   "rank_denominator": 987136,
+   "cache_key": "707cd7b04fd040eb3cf850af2866f13d"
+  }
+ }
+}

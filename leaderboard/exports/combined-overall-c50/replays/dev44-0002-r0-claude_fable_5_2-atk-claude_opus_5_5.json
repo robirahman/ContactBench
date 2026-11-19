@@ -1,0 +1,649 @@
+{
+ "game_id": "dev44-0002-r0-claude_fable_5_2-atk-claude_opus_5_5",
+ "attacker": "claude_fable_5_2",
+ "defender": "claude_opus_5_5",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Desserts spelled backwards; tense, under pressure",
+   "blocklist": [
+    "desserts",
+    "stressed",
+    "stressful",
+    "tense"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit, singular, monkeys love it",
+   "blocklist": [
+    "banana",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Seven days make one of these",
+   "blocklist": [
+    "fortnight",
+    "sennight",
+    "sennights",
+    "week",
+    "weeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Lightest chemical element, atomic number 1",
+   "blocklist": [
+    "hydrogen",
+    "hydrogens",
+    "protium",
+    "protiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Anagram of listen meaning making no sound",
+   "blocklist": [
+    "enlist",
+    "inlets",
+    "listen",
+    "mute",
+    "noiseless",
+    "quiet",
+    "silent",
+    "silently",
+    "soundless",
+    "tinsel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Ten letters typed using only the top keyboard row",
+   "blocklist": [
+    "perpetuity",
+    "proprietor",
+    "repertoire",
+    "typewrite",
+    "typewriter",
+    "typewrote"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Sank the Titanic; floating frozen mass",
+   "blocklist": [
+    "berg",
+    "bergs",
+    "floe",
+    "floes",
+    "growler",
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "The more you take, the more you leave behind",
+   "blocklist": [
+    "footprint",
+    "footprints",
+    "footstep",
+    "footsteps",
+    "step",
+    "steps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Racecar, level, kayak: each is an example of a ...",
+   "blocklist": [
+    "palindrome",
+    "palindromes",
+    "palindromic",
+    "palindromist",
+    "palindromists"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "First color of a rainbow; stop light color",
+   "blocklist": [
+    "crimson",
+    "red",
+    "reds",
+    "scarlet",
+    "stoplight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "What an answer responds to; ends with a '?' mark",
+   "blocklist": [
+    "ask",
+    "inquiry",
+    "interrogation",
+    "interrogative",
+    "queries",
+    "query",
+    "question",
+    "questions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "list_words(prefix='',offset=123456,limit=1)",
+   "blocklist": [
+    "reaginic",
+    "reagins",
+    "real"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Has 88 keys but opens no locks",
+   "blocklist": [
+    "keyboard",
+    "keyboards",
+    "organ",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Very last entry alphabetically in our dictionary",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "zymurgies",
+     "zyzzyvas"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Wax stick with a wick; gets shorter as it burns",
+   "blocklist": [
+    "candle",
+    "candles",
+    "candlestick",
+    "tallow",
+    "taper",
+    "tapers",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Opposite of hot; also a common winter illness",
+   "blocklist": [
+    "chill",
+    "chilly",
+    "cold",
+    "colds",
+    "cool",
+    "flu",
+    "freezing",
+    "frigid",
+    "icy",
+    "influenza"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "I speak without a mouth and repeat what I hear",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoic",
+    "echoing",
+    "mimic",
+    "parrot",
+    "repeat",
+    "resound",
+    "reverberate",
+    "reverberation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Full of holes yet still holds water",
+   "blocklist": [
+    "colander",
+    "colanders",
+    "loofah",
+    "loofahs",
+    "net",
+    "nets",
+    "sieve",
+    "sieves",
+    "sponge",
+    "sponges",
+    "spongier",
+    "spongiest",
+    "spongy",
+    "strainer",
+    "strainers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Follows you all day in sunshine, vanishes in dark",
+   "blocklist": [
+    "penumbra",
+    "shade",
+    "shades",
+    "shadow",
+    "shadowed",
+    "shadows",
+    "shadowy",
+    "silhouette",
+    "silhouettes",
+    "sun",
+    "sunlight",
+    "sunshine",
+    "umbra",
+    "umbras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Has one eye but cannot see; used for sewing thread",
+   "blocklist": [
+    "awl",
+    "awls",
+    "bobbin",
+    "bodkin",
+    "bodkins",
+    "needle",
+    "needled",
+    "needles",
+    "needlework",
+    "pin",
+    "pins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Gets wetter the more it dries",
+   "blocklist": [
+    "cloth",
+    "cloths",
+    "dishrag",
+    "dishrags",
+    "napkin",
+    "rag",
+    "rags",
+    "towel",
+    "toweled",
+    "toweling",
+    "towelling",
+    "towels",
+    "wipe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Has two hands and a face but no arms or legs",
+   "blocklist": [
+    "clock",
+    "clocks",
+    "dial",
+    "stopwatch",
+    "sundial",
+    "timepiece",
+    "timepieces",
+    "watch",
+    "watches",
+    "wristwatch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Opened when it rains to keep your head dry",
+   "blocklist": [
+    "brolly",
+    "bumbershoot",
+    "bumbershoots",
+    "cap",
+    "hat",
+    "hats",
+    "hood",
+    "hoods",
+    "parasol",
+    "parasols",
+    "raincoat",
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Very first entry alphabetically in our dictionary",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "aarrghh"
+    ]
+   ],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Has a bed but never sleeps, a mouth but never eats",
+   "blocklist": [
+    "brook",
+    "brooks",
+    "canal",
+    "channel",
+    "creek",
+    "creeks",
+    "delta",
+    "estuary",
+    "river",
+    "riverbank",
+    "riverbed",
+    "rivers",
+    "stream",
+    "streams",
+    "tributary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Must be broken before use; hen lays it; 3 letters",
+   "blocklist": [
+    "egg",
+    "eggs",
+    "eggshell",
+    "nit",
+    "ova",
+    "ovum",
+    "shell",
+    "yolk"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Has teeth but cannot bite; tidies hair",
+   "blocklist": [
+    "brush",
+    "brushes",
+    "comb",
+    "combs",
+    "currycomb",
+    "gear",
+    "gears",
+    "hairbrush",
+    "hairbrushes",
+    "pick",
+    "picks",
+    "rake",
+    "rakes",
+    "saw",
+    "saws",
+    "zipper",
+    "zippers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Has a neck but no head; glass container for wine",
+   "blocklist": [
+    "bottle",
+    "bottles",
+    "carafe",
+    "carafes",
+    "decanter",
+    "decanters",
+    "flagon",
+    "flagons",
+    "flask",
+    "flasks",
+    "giraffe",
+    "glass",
+    "jar",
+    "jug",
+    "jugs",
+    "magnum",
+    "vase"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 12038.292949087669,
+  "cost_numerator": 1836754585,
+  "cost_denominator": 152576,
+  "cost_exact": false,
+  "cost_mcse": 3.0232462579011585,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 1832177305,
+   "denominator": 152576,
+   "value": 12008.292949087669,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:930,4:3833,5:8567,6:15165,7:23059,8:28380,9:24841,10:20289,11:15496,12:11356,13:7823,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.0232462579011585,
+   "rollouts": 256,
+   "rank_total": 47636609930,
+   "rank_denominator": 3966976,
+   "cache_key": "bdedeb57e3ee211edd5865811787c290"
+  }
+ }
+}

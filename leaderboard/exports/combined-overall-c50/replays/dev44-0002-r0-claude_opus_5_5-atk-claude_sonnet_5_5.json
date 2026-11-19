@@ -1,0 +1,542 @@
+{
+ "game_id": "dev44-0002-r0-claude_opus_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest animal, long neck, African savanna",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [
+    "blue"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Common household pet that purrs and meows",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Number after one",
+   "blocklist": [
+    "two"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Red fruit a day keeps the doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pacific or Atlantic, big body of salt water",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ocean"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ocean"
+    }
+   ],
+   "prefix_after": "g",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Small round fruit used to make wine",
+   "blocklist": [
+    "grape",
+    "grapes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Precious yellow metal, Au, Olympic first place",
+   "blocklist": [
+    "gold",
+    "golden",
+    "medal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Green stuff you mow on a lawn",
+   "blocklist": [
+    "grass",
+    "grasses",
+    "grassy",
+    "green",
+    "greens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Friendly one named Casper",
+   "blocklist": [
+    "ghost"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Six-string instrument Hendrix played",
+   "blocklist": [
+    "guitar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Biggest ape, silverback",
+   "blocklist": [
+    "gorilla"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Pungent bulb that repels vampires",
+   "blocklist": [
+    "garlic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bearded barnyard creature that bleats, kid's mom",
+   "blocklist": [
+    "billy",
+    "goat",
+    "goatee",
+    "goats",
+    "nanny"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Milky Way or Andromeda, e.g.",
+   "blocklist": [
+    "galaxies",
+    "galaxy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Baseball mitt, or hand warmer with fingers",
+   "blocklist": [
+    "glove",
+    "gloves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Spicy root in gingerbread snaps, also a redhead",
+   "blocklist": [
+    "ginger",
+    "gingerbread",
+    "gingersnap",
+    "gingersnaps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Transparent window pane material",
+   "blocklist": [
+    "glass",
+    "glasses",
+    "glassy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Force Newton described when an apple fell",
+   "blocklist": [
+    "gravitation",
+    "gravitational",
+    "gravities",
+    "graviton",
+    "gravity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Honking bird; gander's mate",
+   "blocklist": [
+    "gander",
+    "ganders",
+    "geese",
+    "goose",
+    "gosling",
+    "goslings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Huge slow-moving river of ice",
+   "blocklist": [
+    "glacial",
+    "glaciated",
+    "glacier",
+    "glaciers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "g",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "gun gap gas gem gin gut gum get got gym god gal",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "game"
+    },
+    {
+     "seat": "guesser2",
+     "word": "game"
+    }
+   ],
+   "prefix_after": "ga",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "gab gad gag gam gar gat gay gain gait gala gale",
+   "blocklist": [
+    "gall",
+    "gang",
+    "gape",
+    "garb",
+    "gash",
+    "gasp",
+    "gate",
+    "gave",
+    "gaze"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "garden"
+    }
+   ],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "gaff gage gaga gamy gams gaol gaps gars gats gaud",
+   "blocklist": [
+    "gadget",
+    "gallery",
+    "galley",
+    "gallon",
+    "gamble",
+    "gaming",
+    "gamut",
+    "garage",
+    "garbage",
+    "gasoline",
+    "gather",
+    "gazelle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "ga",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "gauge gauze gaunt gamma gable gaffe gamer gavel",
+   "blocklist": [
+    "gable",
+    "gaffe",
+    "gamma",
+    "gauge",
+    "gaunt",
+    "gauze",
+    "gavel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gallop"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gallop"
+    }
+   ],
+   "prefix_after": "gas",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "gasket gases gassy gaseous gasped gasping gastric",
+   "blocklist": [
+    "gaseous",
+    "gases",
+    "gasket",
+    "gaslight",
+    "gasped",
+    "gasping",
+    "gassed",
+    "gasses",
+    "gassing",
+    "gastric"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "gasps"
+    }
+   ],
+   "prefix_after": "gas",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "gasbag gashed gashes gaskets gasman gaslit gasmen",
+   "blocklist": [
+    "gasbag",
+    "gashed",
+    "gashes",
+    "gashing",
+    "gasholder",
+    "gasify",
+    "gaskets",
+    "gaslit",
+    "gasman",
+    "gasmen",
+    "gassier",
+    "gassiest",
+    "gassily",
+    "gasworks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gastronomy"
+    }
+   ],
+   "prefix_after": "gas",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 39.406529017857146,
+  "cost_numerator": 141233,
+  "cost_denominator": 3584,
+  "cost_exact": false,
+  "cost_mcse": 0.07993910730862673,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 33713,
+   "denominator": 3584,
+   "value": 9.406529017857142,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:1,5:1,6:7,7:14,8:19,9:20,10:10,11:14,12:10,13:9,14:4,15:2,16:3,17:2,18:2,19:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.07993910730862673,
+   "rollouts": 256,
+   "rank_total": 33713,
+   "rank_denominator": 3584,
+   "cache_key": "2d041c20b489d54687d7a72246a6c96f"
+  }
+ }
+}

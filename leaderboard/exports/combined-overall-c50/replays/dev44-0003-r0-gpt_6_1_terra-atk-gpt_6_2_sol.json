@@ -1,0 +1,481 @@
+{
+ "game_id": "dev44-0003-r0-gpt_6_1_terra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_2_sol",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Striped African equine; cat dog sun sea sky red",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Largest land mammal; the love man war art car ice",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Tallest animal; you are not one for all can get",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Australian jumping marsupial; and was his her day",
+   "blocklist": [
+    "kangaroo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Black white bamboo bear; time life world good new",
+   "blocklist": [
+    "panda"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Eight armed ocean creature; house water people big",
+   "blocklist": [
+    "octopus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "King of the jungle; old first last long great way",
+   "blocklist": [
+    "lion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird; men women child home go",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Honey making insect; food money work family school",
+   "blocklist": [
+    "bee",
+    "honeybee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Orange striped big feline; see now two year hand",
+   "blocklist": [
+    "tiger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Howling wild canine; night light heart blue green",
+   "blocklist": [
+    "coyote",
+    "wolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Flipper marine swimmer; book tree fire earth air",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dolphin"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dolphin"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Titanic hazard; into its ill ink inn ion ivy iron",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Snow block dwelling; idea image item issue input",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Land surrounded by water; ibis ibex icon inch iamb",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Tropical lizard; impact income initial include",
+   "blocklist": [
+    "iguana",
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Hanging frozen water spike; interest industry info",
+   "blocklist": [
+    "icicle",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Mathematical concept without end; important inside",
+   "blocklist": [
+    "infinite",
+    "infinities",
+    "infinity"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Opposite of export; information internet invest",
+   "blocklist": [
+    "import",
+    "importation",
+    "importations",
+    "imported",
+    "importing",
+    "imports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Bacterial invasion; invention illness increase",
+   "blocklist": [
+    "infect",
+    "infected",
+    "infecting",
+    "infection",
+    "infections",
+    "infectious",
+    "infects",
+    "infestation",
+    "invasion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Elephant tusk material; icebox idle idol inching",
+   "blocklist": [
+    "ivories",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Rising prices; identify identity ideal index imply",
+   "blocklist": [
+    "inflation",
+    "inflationary",
+    "inflations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Blood sugar hormone; imagine improve indeed",
+   "blocklist": [
+    "insulin",
+    "insulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "African antelope; imagination impossible immense",
+   "blocklist": [
+    "impala",
+    "impalas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Colored part of eye; ironed intact interior invite",
+   "blocklist": [
+    "irides",
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Scratch sensation; imp icy ire idiot iconic infirm",
+   "blocklist": [
+    "itch",
+    "itches",
+    "itching",
+    "itchy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Lack of knowledge; injury institute influence",
+   "blocklist": [
+    "ignorance",
+    "ignorant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Cannot be seen; immunity isolation invitation",
+   "blocklist": [
+    "imperceptible",
+    "indiscernible",
+    "invisibility",
+    "invisible",
+    "invisibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Musical device; individual internal itself ironic",
+   "blocklist": [
+    "instrument"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 560.7974282457081,
+  "cost_numerator": 33450445,
+  "cost_denominator": 59648,
+  "cost_exact": false,
+  "cost_mcse": 0.6003840989532139,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 31661005,
+   "denominator": 59648,
+   "value": 530.7974282457081,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:9,4:43,5:106,6:259,7:487,8:716,9:841,10:932,11:855,12:764,13:604,14:372,15:308,16:226,17:158,18:86,19:44,20:19",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.6003840989532139,
+   "rollouts": 256,
+   "rank_total": 126644020,
+   "rank_denominator": 238592,
+   "cache_key": "261cef892b100d1343f595a31eff8a89"
+  }
+ }
+}

@@ -1,0 +1,609 @@
+{
+ "game_id": "dev41-0006-r0-claude_opus_5_5-atk-gemini_4_argon",
+ "attacker": "claude_opus_5_5",
+ "defender": "gemini_4_argon",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Fruit a day keeps the doctor away",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Striped African horse",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebrass",
+    "zebrasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Alphabetically first word in dictionary",
+   "blocklist": [
+    "aah",
+    "aardvark",
+    "abacus",
+    "abandon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of hot",
+   "blocklist": [
+    "chilly",
+    "cold",
+    "cool",
+    "freezing",
+    "icy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Number between four and six",
+   "blocklist": [
+    "five",
+    "fives"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Opposite of up",
+   "blocklist": [
+    "below",
+    "beneath",
+    "down",
+    "downs",
+    "downward",
+    "downwards",
+    "low",
+    "under"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [
+    "azure",
+    "blue",
+    "blues",
+    "cerulean",
+    "cyan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Cat in the ___ (Seuss)",
+   "blocklist": [
+    "hat",
+    "hats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Primary color not yet said",
+   "blocklist": [
+    "green",
+    "greens",
+    "magenta",
+    "magentas",
+    "red",
+    "reds",
+    "yellows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Reverse the letters of g-o-d",
+   "blocklist": [
+    "dog",
+    "dogs",
+    "god",
+    "gods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Oink: run sit top map pen cup box key sun car bed",
+   "blocklist": [
+    "boar",
+    "hog",
+    "hogs",
+    "pig",
+    "piggy",
+    "piglet",
+    "pigs",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Hot drink: art ant act age air arm ask bag bat bee",
+   "blocklist": [
+    "cider",
+    "ciders",
+    "cocoa",
+    "cocoas",
+    "coffee",
+    "coffees",
+    "espresso",
+    "espressos",
+    "latte",
+    "lattes",
+    "mocha",
+    "mochas",
+    "tea",
+    "teas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Spot: cow ear egg fan fox gum ink jam kit leg mud",
+   "blocklist": [
+    "blemish",
+    "blemishes",
+    "blot",
+    "canine",
+    "dalmatian",
+    "detect",
+    "dot",
+    "dots",
+    "fido",
+    "find",
+    "fleck",
+    "freckle",
+    "hound",
+    "location",
+    "mark",
+    "marks",
+    "mutt",
+    "notice",
+    "patch",
+    "pimple",
+    "place",
+    "places",
+    "polka",
+    "pooch",
+    "pup",
+    "puppy",
+    "rover",
+    "see",
+    "site",
+    "smudge",
+    "speck",
+    "specks",
+    "stain",
+    "stains",
+    "zit"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 35,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Not no: cab dam elk fig gap hen ice jar kid lab",
+   "blocklist": [
+    "affirmative",
+    "aye",
+    "yea",
+    "yeah",
+    "yep",
+    "yes",
+    "yeses",
+    "yup"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Night orb: one two man men can way new now old saw",
+   "blocklist": [
+    "luna",
+    "lunar",
+    "moon",
+    "moons",
+    "planet",
+    "planets",
+    "star",
+    "stars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Red fruit on a sundae: bun tin rod lid mop jug pot",
+   "blocklist": [
+    "cherries",
+    "cherry",
+    "maraschino",
+    "maraschinos",
+    "strawberries",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Meow: bug cot den fur gas hip jaw lap nut oak pie",
+   "blocklist": [
+    "cats",
+    "feline",
+    "felines",
+    "kitten",
+    "kittens",
+    "kitties",
+    "kitty",
+    "pussycat",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Moo: ace bow cry dye ego fit gem hay inn joy kin",
+   "blocklist": [
+    "bovine",
+    "bovines",
+    "bull",
+    "bulls",
+    "calf",
+    "calves",
+    "cattle",
+    "cows",
+    "heifer",
+    "heifers",
+    "oxen",
+    "steer",
+    "steers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Bark: ox add aim all arc awe axe bay bin boa bud",
+   "blocklist": [
+    "arf",
+    "canines",
+    "doggie",
+    "doggies",
+    "doggy",
+    "hounds",
+    "howl",
+    "puppies",
+    "pups",
+    "tree",
+    "trees",
+    "woof",
+    "woofs",
+    "yap",
+    "yaps",
+    "yelp",
+    "yelps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Big striped cat: gin hut ivy jet kettle lamp nest",
+   "blocklist": [
+    "liger",
+    "ligers",
+    "ocelot",
+    "ocelots",
+    "tabbies",
+    "tabby",
+    "tiger",
+    "tigerish",
+    "tigerlike",
+    "tigers",
+    "tiglon",
+    "tiglons",
+    "tigon",
+    "tigons",
+    "tigress",
+    "tigresses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Fish: oar rug van web wig zoo tub yak toe ham pan",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "salmon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "salmon"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Bird: eat end era eve eye ebb eke elf elm ewe eon",
+   "blocklist": [
+    "eagle",
+    "eagles",
+    "egret",
+    "egrets",
+    "eider",
+    "eiders",
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Opposite of morning: eel ego ell ems era ends",
+   "blocklist": [
+    "afternoon",
+    "dusk",
+    "evenfall",
+    "evenfalls",
+    "evening",
+    "evenings",
+    "evensong",
+    "evensongs",
+    "eventide",
+    "eventides",
+    "eves",
+    "nights",
+    "nighttime",
+    "sunset",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "each east easy edge else even ever evil exam exit",
+   "blocklist": [
+    "eager",
+    "earl",
+    "early",
+    "earn",
+    "earth",
+    "echo",
+    "edit",
+    "emit",
+    "envy",
+    "epic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 535.3764229518284,
+  "cost_numerator": 97447075,
+  "cost_denominator": 182016,
+  "cost_exact": false,
+  "cost_mcse": 0.6160763130047212,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 91986595,
+   "denominator": 182016,
+   "value": 505.37642295182843,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:20,4:82,5:186,6:450,7:804,8:1123,9:1125,10:975,11:711,12:559,13:379,14:209,15:157,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6160763130047212,
+   "rollouts": 256,
+   "rank_total": 91986595,
+   "rank_denominator": 182016,
+   "cache_key": "3264e35d197816263b2ca38185b3b64a"
+  }
+ }
+}

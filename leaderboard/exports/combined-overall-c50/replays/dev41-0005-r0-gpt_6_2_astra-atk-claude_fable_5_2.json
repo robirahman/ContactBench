@@ -1,0 +1,771 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "What the sun leaves behind when you blink",
+   "blocklist": [
+    "afterglow",
+    "afterglows",
+    "afterimage",
+    "afterimages",
+    "aura",
+    "blindness",
+    "blur",
+    "burn",
+    "dark",
+    "darkness",
+    "dazzle",
+    "dot",
+    "dots",
+    "dusk",
+    "echo",
+    "flare",
+    "flash",
+    "ghost",
+    "glare",
+    "glint",
+    "glow",
+    "halo",
+    "image",
+    "impression",
+    "imprint",
+    "light",
+    "mark",
+    "memory",
+    "night",
+    "phosphene",
+    "phosphenes",
+    "residue",
+    "scotoma",
+    "shade",
+    "shadow",
+    "shimmer",
+    "silhouette",
+    "spark",
+    "spot",
+    "spots",
+    "stain",
+    "star",
+    "stars",
+    "streak",
+    "sunset",
+    "sunspot",
+    "sunspots",
+    "trace",
+    "twilight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 49,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A beetle whose name looks like a keyboard nap",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "zyzzyva"
+    },
+    {
+     "seat": "guesser2",
+     "word": "zyzzyva"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Syrup once kept for sending dinner into reverse",
+   "blocklist": [
+    "ipecac",
+    "ipecacs",
+    "ipecacuanha",
+    "ipecacuanhas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Agave fiber that sounds like X plus a tail",
+   "blocklist": [
+    "istle",
+    "istles",
+    "ixtle",
+    "ixtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Among i entries, zero-based slot 81*17",
+   "blocklist": [
+    "impolitic",
+    "impolitical",
+    "impolitically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "I saw owls taking old pencils east.",
+   "blocklist": [
+    "isotope",
+    "isotopes",
+    "isotopic",
+    "isotopically",
+    "isotopies",
+    "isotopy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "A Gutenberg baby, singular, still in its cradle",
+   "blocklist": [
+    "incunable",
+    "incunables",
+    "incunabula",
+    "incunabulum"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Two dictionary steps after your last sealed guess",
+   "blocklist": [
+    "incumbering",
+    "incumbers",
+    "incur",
+    "incurable",
+    "incurables",
+    "incurably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "How a ghost might sign a guestbook",
+   "blocklist": [
+    "illegible",
+    "illegibly",
+    "imperceptibly",
+    "incognito",
+    "incognitos",
+    "incorporeal",
+    "incorporeally",
+    "initial",
+    "initials",
+    "ink",
+    "inkless",
+    "inks",
+    "intangible",
+    "intangibly",
+    "invisible",
+    "invisibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "i offset 2020 + length of our matched beetle",
+   "blocklist": [
+    "inclines",
+    "inclining",
+    "inclinings",
+    "inclinometer",
+    "inclinometers",
+    "inclip",
+    "inclipped",
+    "inclipping",
+    "inclips",
+    "inclose",
+    "inclosed",
+    "incloser"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Panama wears this geographical belt, not a canal.",
+   "blocklist": [
+    "isthmi",
+    "isthmian",
+    "isthmians",
+    "isthmic",
+    "isthmus",
+    "isthmuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "inter* lucky dip: pick any participle",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inter",
+     "interzone"
+    ]
+   ],
+   "blocked_word_count": 898,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "in* lucky dip: pick any plural",
+   "blocklist": [
+    "incentives",
+    "inches",
+    "incidents",
+    "incomes",
+    "indexes",
+    "indices",
+    "individuals",
+    "industries",
+    "infants",
+    "ingots",
+    "ingredients",
+    "inhabitants",
+    "injuries",
+    "inlets",
+    "inmates",
+    "innings",
+    "inns",
+    "inputs",
+    "ins",
+    "insects",
+    "insides",
+    "insights",
+    "instances",
+    "instincts",
+    "institutions",
+    "insults",
+    "inventions",
+    "investors",
+    "invites",
+    "invoices"
+   ],
+   "blocked_ranges": [
+    [
+     "inabilities",
+     "inadvisability"
+    ],
+    [
+     "inwall",
+     "inwraps"
+    ]
+   ],
+   "blocked_word_count": 93,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Where a Victorian rainbow hides a paperback chain",
+   "blocklist": [
+    "indie",
+    "indies",
+    "indigo",
+    "indigoes",
+    "indigoid",
+    "indigoids",
+    "indigos",
+    "indigotin",
+    "indigotins",
+    "irid",
+    "irides",
+    "iridescence",
+    "iridescent",
+    "irids",
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Red alert beneath the skin, not infection itself",
+   "blocklist": [
+    "immunity",
+    "irritant",
+    "irritants",
+    "irritation",
+    "irritations",
+    "itch",
+    "itches"
+   ],
+   "blocked_ranges": [
+    [
+     "inflame",
+     "inflammatory"
+    ]
+   ],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Uniform random im* noun; sample whole range.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "image",
+     "inabilities"
+    ]
+   ],
+   "blocked_word_count": 1117,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Draw freely from remaining in* plurals, not edges",
+   "blocklist": [
+    "incisions",
+    "inclusions",
+    "inconveniences",
+    "increases",
+    "indentations",
+    "indications",
+    "indicators",
+    "inductions",
+    "indulgences",
+    "inequalities",
+    "infections",
+    "inferences",
+    "infernos",
+    "infinities",
+    "influences",
+    "informants",
+    "infusions",
+    "inheritances",
+    "inhibitions",
+    "initiatives",
+    "injections",
+    "injustices",
+    "inklings",
+    "innocents",
+    "innovations",
+    "inquests",
+    "inquiries",
+    "inscriptions",
+    "insertions",
+    "inspections",
+    "inspectors",
+    "installations",
+    "instructions",
+    "instructors",
+    "instruments",
+    "intakes",
+    "integers",
+    "intellects",
+    "intentions",
+    "intestines",
+    "intrigues",
+    "introductions",
+    "intruders",
+    "intuitions",
+    "invaders",
+    "invalids",
+    "invasions",
+    "inventories",
+    "investments",
+    "invitations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 50,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "insufficiencies"
+    },
+    {
+     "seat": "guesser2",
+     "word": "inkwells"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Plural critters; no spines, from squid to slugs",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "invertebrates"
+    },
+    {
+     "seat": "guesser2",
+     "word": "invertebrates"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "One member of our last matched group",
+   "blocklist": [
+    "inchworm",
+    "inchworms",
+    "insect",
+    "invertebrate",
+    "invertebrates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "A baby squid? No, just a hunch.",
+   "blocklist": [
+    "inkling",
+    "insight",
+    "instinct",
+    "intuit",
+    "intuition"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Lottery: choose anywhere in ind*, all forms fair.",
+   "blocklist": [
+    "indecent",
+    "indeed",
+    "indefinite",
+    "indent",
+    "independence",
+    "independent",
+    "index",
+    "indexed",
+    "indexing",
+    "indicate",
+    "indicated",
+    "indicating",
+    "indication",
+    "indicator",
+    "indifferent",
+    "indignant",
+    "indirect",
+    "individual",
+    "indoor",
+    "indoors",
+    "induce",
+    "induction",
+    "indulge",
+    "industrial",
+    "industry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indistinguishably"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indeterminate"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Singularize seat two's opened noun on turn 18.",
+   "blocklist": [
+    "inkwell"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "What seat one lacked on eighteen, singularly.",
+   "blocklist": [
+    "insufficiency",
+    "insufficient"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "ins* lucky dip: any surviving verb ending in -ing",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ins",
+     "inswept"
+    ]
+   ],
+   "blocked_word_count": 523,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Sample any unused ind* abstract noun at random.",
+   "blocklist": [
+    "indebtedness",
+    "indecency",
+    "indecision",
+    "indecorum",
+    "indefiniteness",
+    "indelicacy",
+    "indemnity",
+    "indenture",
+    "independency",
+    "indeterminacy",
+    "indictment",
+    "indifference",
+    "indigence",
+    "indigestion",
+    "indignation",
+    "indignity",
+    "indirection",
+    "indiscipline",
+    "indiscretion",
+    "indispensability",
+    "indisposition",
+    "individualism",
+    "individuality",
+    "indivisibility",
+    "indoctrination",
+    "indolence",
+    "inducement",
+    "indulgence",
+    "industrialism",
+    "industrialization"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 30,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indefatigability"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Draw anywhere in inde*, including obscure forms.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "indebted",
+     "indexings"
+    ]
+   ],
+   "blocked_word_count": 142,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Lottery across inc*; every unused form eligible.",
+   "blocklist": [
+    "incense",
+    "incentive",
+    "inch",
+    "incident",
+    "incline",
+    "include",
+    "included",
+    "income",
+    "incorrect",
+    "increase",
+    "incredible",
+    "incubate",
+    "incubus"
+   ],
+   "blocked_ranges": [
+    [
+     "incage",
+     "incaging"
+    ],
+    [
+     "incus",
+     "incusing"
+    ]
+   ],
+   "blocked_word_count": 22,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inconspicuously"
+    },
+    {
+     "seat": "guesser2",
+     "word": "incontrovertibly"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 237.2117498088685,
+  "cost_numerator": 9928735,
+  "cost_denominator": 41856,
+  "cost_exact": false,
+  "cost_mcse": 0.4253538894633551,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 8673055,
+   "denominator": 41856,
+   "value": 207.2117498088685,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:7,5:31,6:101,7:199,8:285,9:327,10:377,11:330,12:297,13:248,14:150,15:125,16:88,17:55,18:35,19:13,20:8",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4253538894633551,
+   "rollouts": 256,
+   "rank_total": 17346110,
+   "rank_denominator": 83712,
+   "cache_key": "ac40b051394ef2324f1ee749ed4de753"
+  }
+ }
+}

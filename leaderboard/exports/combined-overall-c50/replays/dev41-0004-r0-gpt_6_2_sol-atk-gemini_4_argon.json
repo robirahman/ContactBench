@@ -1,0 +1,502 @@
+{
+ "game_id": "dev41-0004-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "arbores",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "iPhone maker; banana orange planet secret contact",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Striped African equine",
+   "blocklist": [
+    "okapi",
+    "quagga",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "88 keys",
+   "blocklist": [
+    "clavier",
+    "harpsichord",
+    "keyboard",
+    "keyboards",
+    "piano",
+    "pianoforte",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Eight-armed cephalopod with three hearts",
+   "blocklist": [
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Smaug, for one",
+   "blocklist": [
+    "dragon",
+    "dragons",
+    "drake",
+    "drakes",
+    "serpent",
+    "serpents",
+    "worm",
+    "worms",
+    "wyvern",
+    "wyverns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Cat dog bat rat cow pig fox elk ape yak ant bee",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mammal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "animal"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Largest living land animal",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "pachyderm",
+    "pachyderms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "7 Mohs; timepiece crystal. sun moon star sky sea",
+   "blocklist": [
+    "mineral",
+    "nature",
+    "quartz",
+    "quartzes",
+    "quartzite",
+    "quartzites",
+    "silica"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Tubulidentata's sole surviving species",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "anteater",
+    "anteaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A line of people; four silent letters",
+   "blocklist": [
+    "queue",
+    "queues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Flightless Antarctic bird; music water light dream",
+   "blocklist": [
+    "emperor",
+    "gentoo",
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "O2",
+   "blocklist": [
+    "air",
+    "gas",
+    "oxygen",
+    "oxygens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "rh_th_ (fill both blanks with y and m, in order)",
+   "blocklist": [
+    "rhythm",
+    "rhythms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "jam hat pen cup red box ink; A magnetic navigator",
+   "blocklist": [
+    "compass",
+    "compasses",
+    "magnet",
+    "needle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Opposite of here; the was have not you all can",
+   "blocklist": [
+    "absent",
+    "away",
+    "elsewhere",
+    "gone",
+    "there",
+    "theres",
+    "yonder"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Tuft-eared wildcat; aeiou: amber cider frost raven",
+   "blocklist": [
+    "bobcat",
+    "bobcats",
+    "caracal",
+    "caracals",
+    "crow",
+    "feline",
+    "felines",
+    "lynx",
+    "lynxes",
+    "serval",
+    "servals",
+    "vowel",
+    "vowels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Tallest mammal; socks jazz sphinx book tree house",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "doublet",
+    "doublets",
+    "giraffe",
+    "giraffes",
+    "word"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Percussion instrument with wooden bars",
+   "blocklist": [
+    "marimba",
+    "marimbas",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Duck-billed monotreme; love life time world work",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnas",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "What bees make; river fire earth stone cloud rain",
+   "blocklist": [
+    "beeswax",
+    "hive",
+    "hives",
+    "honey",
+    "honeycomb",
+    "honeycombs",
+    "honeys",
+    "wax"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Hg; a tin lead gold iron silver copper alloy",
+   "blocklist": [
+    "amalgam",
+    "bronze",
+    "element",
+    "elements",
+    "mercury",
+    "metal",
+    "metals",
+    "quicksilver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Flipper; wolf bear lion seal shark whale tuna eel",
+   "blocklist": [
+    "cetacean",
+    "cetaceans",
+    "dolphin",
+    "dolphins",
+    "fin",
+    "fins",
+    "pinball",
+    "pinniped",
+    "pinnipeds",
+    "porpoise",
+    "porpoises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Blue corundum; ace ash oak gem ice jet oil salt",
+   "blocklist": [
+    "gemstone",
+    "gemstones",
+    "jewel",
+    "jewels",
+    "rubies",
+    "ruby",
+    "sapphire",
+    "sapphires"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11757.209035249534,
+  "cost_numerator": 34723082761,
+  "cost_denominator": 2953344,
+  "cost_exact": false,
+  "cost_mcse": 2.692579677826348,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 34634482441,
+   "denominator": 2953344,
+   "value": 11727.209035249534,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:928,4:3856,5:8599,6:15187,7:23073,8:28395,9:24850,10:20290,11:15501,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.692579677826348,
+   "rollouts": 256,
+   "rank_total": 69268964882,
+   "rank_denominator": 5906688,
+   "cache_key": "fbc74ffb333eaad927e4d86519018d12"
+  }
+ }
+}

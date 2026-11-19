@@ -1,0 +1,568 @@
+{
+ "game_id": "dev44-0004-r0-gpt_6_1_terra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gpt_6_2_sol",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Feline; the and for are but not you all can had",
+   "blocklist": [
+    "bobcat",
+    "cat",
+    "cheetah",
+    "cougar",
+    "felid",
+    "jaguar",
+    "kitten",
+    "kitty",
+    "leopard",
+    "lion",
+    "lynx",
+    "ocelot",
+    "panther",
+    "puma",
+    "tiger",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Opposite of cold; was his her one out day get use",
+   "blocklist": [
+    "boiling",
+    "burning",
+    "fiery",
+    "heat",
+    "heated",
+    "hot",
+    "scalding",
+    "sultry",
+    "sweltering",
+    "warm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Barks; see how its may new now old way who did",
+   "blocklist": [
+    "arf",
+    "bark",
+    "bay",
+    "beagle",
+    "bowwow",
+    "canine",
+    "corgi",
+    "coyote",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "fox",
+    "growl",
+    "hound",
+    "howl",
+    "mutt",
+    "pooch",
+    "puppy",
+    "seal",
+    "terrier",
+    "tree",
+    "trees",
+    "wolf",
+    "woof",
+    "yap",
+    "yelp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 27,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Our daytime star; man has him any too she big end",
+   "blocklist": [
+    "sol",
+    "sun",
+    "sunlight",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Earth satellite; two why let put say try own far",
+   "blocklist": [
+    "luna",
+    "moon",
+    "orbiter",
+    "satellite",
+    "sputnik"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Liquid we drink; ago air boy car cut eat eye few",
+   "blocklist": [
+    "ale",
+    "aqua",
+    "beer",
+    "beverage",
+    "broth",
+    "cider",
+    "cocktail",
+    "coffee",
+    "cola",
+    "fluid",
+    "juice",
+    "lemonade",
+    "liquor",
+    "milk",
+    "nectar",
+    "smoothie",
+    "soda",
+    "tea",
+    "water",
+    "wine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Frozen water; time year good some them make like",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ice"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ice"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Mooing animal; city came come call case care child",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Metal money; could company country color common",
+   "blocklist": [
+    "coin",
+    "coinage",
+    "coins",
+    "copper",
+    "coppers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Yellow kernels; control cost court course cover",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "corn"
+    },
+    {
+     "seat": "guesser2",
+     "word": "corn"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "University; column collect colony colon cologne",
+   "blocklist": [
+    "college",
+    "colleges",
+    "collegiate",
+    "collegium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pasta strainer; colder coldest colic coleslaw cole",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Lassie breed; colonel colonial colonies collapse",
+   "blocklist": [
+    "collie",
+    "collies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Dog neck strap; colleague collage colitis coldly",
+   "blocklist": [
+    "collar",
+    "collars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Roman arena; colorful colored colors coloring",
+   "blocklist": [
+    "colosseum",
+    "colosseums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coliseum"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Neck to shoulder bone; collection collector colds",
+   "blocklist": [
+    "clavicle",
+    "clavicles",
+    "collarbone",
+    "collarbones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Cars crashing; collaborate colorblind coldness",
+   "blocklist": [
+    "collide",
+    "collided",
+    "collides",
+    "colliding",
+    "collision",
+    "collisions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Rhodes giant; collagen collective collateral",
+   "blocklist": [
+    "colossus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Ornamental foliage plant; colt colts colas colicky",
+   "blocklist": [
+    "coleus",
+    "coleuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Enormous; collaboration colonization coldhearted",
+   "blocklist": [
+    "colossal",
+    "colossally"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Settler; colour colours colloquial colonnade",
+   "blocklist": [
+    "colonist",
+    "colonists",
+    "colonizer",
+    "colonizers",
+    "settler",
+    "settlers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Leafy green; collapsed collapses collectible",
+   "blocklist": [
+    "collard",
+    "collards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Punch unconscious; coldish colics coles colitic",
+   "blocklist": [
+    "cocktail",
+    "knockout",
+    "knockouts",
+    "stun",
+    "stunned",
+    "stunning",
+    "stuns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coldcock"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coldcock"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Cabbage salads; colead coled coleads coleader",
+   "blocklist": [
+    "coleslaws"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "cole",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Beetle order; coleaders coleading colemanite",
+   "blocklist": [
+    "coleoptera"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "cole",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "colemanites coleopteran coleseed colessee colessor",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colewort"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleopterans"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "cabbages; coleseeds colessees colessors coleoptile",
+   "blocklist": [
+    "coleworts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "cole",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "coleoptiles coleorhiza coleorhizae coleopterous",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coleopterist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coleopterists"
+    }
+   ],
+   "prefix_after": "cole",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

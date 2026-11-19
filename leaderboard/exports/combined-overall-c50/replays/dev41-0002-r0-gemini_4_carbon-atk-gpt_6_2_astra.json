@@ -1,0 +1,506 @@
+{
+ "game_id": "dev41-0002-r0-gemini_4_carbon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_carbon",
+ "defender": "gpt_6_2_astra",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Checked bags and suitcases for travel",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages",
+    "valise",
+    "valises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "9th entry alphabetically in this dictionary",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Tilting at windmills idealistic adj from Cervantes",
+   "blocklist": [
+    "quixotic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "offset 9999 under letter s",
+   "blocklist": [
+    "soothfast"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "14-letter noun for throwing someone out a window",
+   "blocklist": [
+    "defenestration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "2nd char of each: apple bread light user omen",
+   "blocklist": [
+    "prism"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pleasure in bad luck of others (one word)",
+   "blocklist": [
+    "schadenfreude"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "11-letter adj: having shapely buttocks",
+   "blocklist": [
+    "callipygian",
+    "callipygous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Common tree species",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "oak"
+    },
+    {
+     "seat": "guesser2",
+     "word": "oak"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Common house pet animal",
+   "blocklist": [
+    "canary",
+    "canine",
+    "cat",
+    "cats",
+    "chinchilla",
+    "cockatiel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Common tree type",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cedar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cedar"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Common metal element",
+   "blocklist": [
+    "cobalt",
+    "copper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Common edible fish",
+   "blocklist": [
+    "cobia",
+    "cod",
+    "codfish",
+    "coho"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Common tree type",
+   "blocklist": [
+    "coconut",
+    "conifer",
+    "conifers",
+    "cork",
+    "corkwood",
+    "cottonwood",
+    "cottonwoods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Common hot beverage",
+   "blocklist": [
+    "cocoa",
+    "coffee"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Common living room furniture piece",
+   "blocklist": [
+    "console",
+    "couch",
+    "couches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Common farm animal",
+   "blocklist": [
+    "cock",
+    "cockerel",
+    "colt",
+    "cow",
+    "cows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Common winter garment",
+   "blocklist": [
+    "coat",
+    "coats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Common cereal crop",
+   "blocklist": [
+    "corn",
+    "corns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Common venomous snake",
+   "blocklist": [
+    "cobra",
+    "cobras",
+    "copperhead",
+    "copperheads",
+    "cottonmouth",
+    "cottonmouths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Wild mammal species of North America",
+   "blocklist": [
+    "coati",
+    "coatimundi",
+    "coatimundis",
+    "coatis",
+    "coon",
+    "coons",
+    "cottontail",
+    "cottontails",
+    "cougar",
+    "cougars",
+    "coyote",
+    "coyotes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Wild bird species of the Americas",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "condor"
+    },
+    {
+     "seat": "guesser2",
+     "word": "condor"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Shredded cabbage salad is coleslaw; clavicle is:",
+   "blocklist": [
+    "collarbone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Scottish herding dog breed (like Lassie)",
+   "blocklist": [
+    "collie"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "cola cold cole coly cols colas; kitchen strainer",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "colds coled coles colic colin colly colog; perfume",
+   "blocklist": [
+    "cologne"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "colon color colza colts colony; US army eagle rank",
+   "blocklist": [
+    "colonel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "collar column collet collop colter; high school ->",
+   "blocklist": [
+    "college"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colosseum"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "colies colins colobi colone coloni; inflamed colon",
+   "blocklist": [
+    "colitis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 65.28359375,
+  "cost_numerator": 83563,
+  "cost_denominator": 1280,
+  "cost_exact": false,
+  "cost_mcse": 0.21672709365996998,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 45163,
+   "denominator": 1280,
+   "value": 35.28359375,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:12,7:35,8:79,9:97,10:77,11:56,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.21672709365996998,
+   "rollouts": 256,
+   "rank_total": 316141,
+   "rank_denominator": 8960,
+   "cache_key": "3609e0e385187bddb62e2dc669666bbb"
+  }
+ }
+}

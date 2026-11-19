@@ -1,0 +1,131 @@
+{
+ "game_id": "dev42-0003-r0-gpt_6_1_terra-atk-gemini_4_hydrogen~rematch~rematch~rematch",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "guesstimating",
+ "initial_prefix": "gue",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 33,
+ "initial_secret_candidates": [
+  "guenon",
+  "guenons",
+  "guerdon",
+  "guerdoned",
+  "guerdoning",
+  "guerdons",
+  "gueridon",
+  "gueridons",
+  "guerilla",
+  "guerillas",
+  "guernsey",
+  "guernseys",
+  "guerrilla",
+  "guerrillas",
+  "guess",
+  "guessable",
+  "guessed",
+  "guesser",
+  "guessers",
+  "guesses",
+  "guessing",
+  "guesstimate",
+  "guesstimated",
+  "guesstimates",
+  "guesstimating",
+  "guesswork",
+  "guessworks",
+  "guest",
+  "guested",
+  "guesthouse",
+  "guesthouses",
+  "guesting",
+  "guests"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "visitor; guenon guerdon gueridon guerilla guernsey",
+   "blocklist": [
+    "guest",
+    "guests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gue",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "conjecture; guerrillas guesthouse guesstimates",
+   "blocklist": [
+    "guess",
+    "guesstimate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gue",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "one who guesses; guerrilla guessing guesswork",
+   "blocklist": [
+    "guesser",
+    "guessers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "gue",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "past guess; guesstimating guesstimated guesthouses",
+   "blocklist": [
+    "guessed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "gue",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 4.0,
+  "cost_numerator": 4,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 329,
+   "denominator": 128,
+   "value": 2.5703125,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:2,6:2,7:6,8:7,9:7,10:4,11:2,12:2,13:1",
+   "target_length": 13,
+   "C": 50,
+   "mcse": 0.08104086725877212,
+   "rollouts": 256,
+   "rank_total": 658,
+   "rank_denominator": 256,
+   "cache_key": "f8c8370e8f20d61ab4456c2e1c2291fd"
+  },
+  "fallback": null
+ }
+}

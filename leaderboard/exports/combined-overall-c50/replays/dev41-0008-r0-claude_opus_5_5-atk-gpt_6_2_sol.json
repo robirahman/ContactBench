@@ -1,0 +1,674 @@
+{
+ "game_id": "dev41-0008-r0-claude_opus_5_5-atk-gpt_6_2_sol",
+ "attacker": "claude_opus_5_5",
+ "defender": "gpt_6_2_sol",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray African animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest animal, long neck, spotted savanna grazer",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Yellow curved fruit monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Common household pet that meows, three letters",
+   "blocklist": [
+    "cat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Color of a clear daytime sky",
+   "blocklist": [
+    "azure",
+    "blue",
+    "cerulean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Reverse the letters of g-o-d",
+   "blocklist": [
+    "dog"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Opposite of day",
+   "blocklist": [
+    "darkness",
+    "night",
+    "nighttime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Number after six, before eight",
+   "blocklist": [
+    "seven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Frozen water, three letters",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Red fruit, keeps the doctor away",
+   "blocklist": [
+    "apple",
+    "apples"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Citrus fruit and color, not lemon or lime",
+   "blocklist": [
+    "orange",
+    "oranges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Animal park; tree fish bird book milk star moon",
+   "blocklist": [
+    "aquarium",
+    "arboretum",
+    "aviary",
+    "menagerie",
+    "menageries",
+    "safari",
+    "safaris",
+    "zoo",
+    "zoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Furniture with four legs you sit on, has a back",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chair"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chair"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Hens lay it; breakfast food, 3 letters",
+   "blocklist": [
+    "egg"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Our home planet, third from the sun",
+   "blocklist": [
+    "earth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Bald national bird of the USA, soaring raptor",
+   "blocklist": [
+    "eagle",
+    "eagles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Motor in a car or train locomotive",
+   "blocklist": [
+    "engine",
+    "engines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Direction where the sun rises, opposite of west",
+   "blocklist": [
+    "east"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Arm joint between shoulder and wrist",
+   "blocklist": [
+    "elbow",
+    "elbows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Opposite of full; nothing inside",
+   "blocklist": [
+    "empty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Time of day after afternoon, before night falls",
+   "blocklist": [
+    "eve",
+    "evening",
+    "evenings",
+    "eventide"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Divisible by two; not odd",
+   "blocklist": [
+    "even"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "each ear edge else end enemy energy enter error",
+   "blocklist": [
+    "ease",
+    "easy",
+    "eat",
+    "echo",
+    "eel",
+    "effort",
+    "eight",
+    "either",
+    "electric",
+    "electricity",
+    "element",
+    "emerald",
+    "emotion",
+    "emperor",
+    "encore",
+    "ending",
+    "enemy",
+    "energy",
+    "enigma",
+    "entry",
+    "envelope",
+    "equal",
+    "erase",
+    "escape",
+    "essay",
+    "event",
+    "every",
+    "exam",
+    "example",
+    "exit",
+    "eye"
+   ],
+   "blocked_ranges": [
+    [
+     "each",
+     "eats"
+    ]
+   ],
+   "blocked_word_count": 224,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Physical workout at the gym, jogging or lifting",
+   "blocklist": [
+    "endurance",
+    "exercise",
+    "exercises",
+    "exercising",
+    "exert",
+    "exerting",
+    "exertion",
+    "exertions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "elk elf emu ego era ebb eon elm epic envy evil",
+   "blocklist": [
+    "aeon",
+    "ebbs",
+    "egos",
+    "egotism",
+    "egotist",
+    "elder",
+    "eldest",
+    "elegant",
+    "elegy",
+    "elfin",
+    "elite",
+    "elks",
+    "ellipse",
+    "ellipsis",
+    "elms",
+    "elves",
+    "embargo",
+    "embassy",
+    "emblem",
+    "embrace",
+    "embryo",
+    "emit",
+    "empathy",
+    "empire",
+    "employ",
+    "emulator",
+    "emus",
+    "enable",
+    "enact",
+    "enamel",
+    "encounter",
+    "endless",
+    "endow",
+    "enforce",
+    "engage",
+    "engineer",
+    "engineered",
+    "engineers",
+    "enhance",
+    "enjoy",
+    "enormous",
+    "enough",
+    "ensure",
+    "entire",
+    "entity",
+    "entropy",
+    "envies",
+    "envious",
+    "eons",
+    "epical",
+    "epics",
+    "epidemic",
+    "episode",
+    "epitaph",
+    "epitome",
+    "epoch",
+    "epochs",
+    "equation",
+    "equator",
+    "era",
+    "eras",
+    "erect",
+    "erosion",
+    "errand",
+    "erupt",
+    "eruption",
+    "esteem",
+    "eternal",
+    "ethic",
+    "ethics",
+    "evade",
+    "evaluate",
+    "evidence",
+    "evilness",
+    "evils",
+    "evolution",
+    "evolve",
+    "exact",
+    "excellent",
+    "exchange",
+    "excite",
+    "excuse",
+    "exist",
+    "expand",
+    "expect",
+    "expert",
+    "explain",
+    "explore",
+    "express",
+    "extra",
+    "extreme",
+    "eyebrow",
+    "eyelid",
+    "eyes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 94,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Number after ten, before twelve",
+   "blocklist": [
+    "eleven"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "ebony eclipse economy effect elect enzyme epoxy",
+   "blocklist": [
+    "ebonies",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "economic",
+    "economical",
+    "economics",
+    "economies",
+    "economist",
+    "economists",
+    "economize",
+    "effected",
+    "effecting",
+    "effective",
+    "effects",
+    "elected",
+    "electing",
+    "election",
+    "elections",
+    "elective",
+    "elector",
+    "electors",
+    "elects",
+    "enzymatic",
+    "enzymes",
+    "epoxies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "exile"
+    },
+    {
+     "seat": "guesser2",
+     "word": "education"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "edit ember envoy equip erode evict excel exotic",
+   "blocklist": [
+    "edited",
+    "editing",
+    "edition",
+    "editions",
+    "editor",
+    "editorial",
+    "editors",
+    "edits",
+    "embers",
+    "envoys",
+    "equipment",
+    "equipped",
+    "equipping",
+    "equips",
+    "eroded",
+    "erodes",
+    "eroding",
+    "evicted",
+    "evicting",
+    "eviction",
+    "evictions",
+    "evicts",
+    "excelled",
+    "excellence",
+    "excelling",
+    "excels",
+    "exoticism",
+    "exotics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "eject"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "evoke etch eerie emir exhale exult expo edgy ewe",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "exhaust"
+    },
+    {
+     "seat": "guesser2",
+     "word": "evoked"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 512.2978879387535,
+  "cost_numerator": 91541485,
+  "cost_denominator": 178688,
+  "cost_exact": false,
+  "cost_mcse": 0.6708152323189688,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 86180845,
+   "denominator": 178688,
+   "value": 482.2978879387536,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:23,4:70,5:132,6:381,7:723,8:1059,9:1075,10:950,11:698,12:552,13:376,14:208,15:156,16:85,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6708152323189688,
+   "rollouts": 256,
+   "rank_total": 86180845,
+   "rank_denominator": 178688,
+   "cache_key": "0571741c1fef3644a92f91812dacab4e"
+  }
+ }
+}

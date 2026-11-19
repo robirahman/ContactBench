@@ -1,0 +1,321 @@
+{
+ "game_id": "dev44-0002-r0-gpt_6_2_astra-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gpt_6_2_sol",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Three consecutive doubled letters, keeps accounts",
+   "blocklist": [
+    "bookkeeper"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "list_words(prefix='qu',offset=19*17-6,limit=1)",
+   "blocklist": [
+    "quashed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Egg-shaped, in what manner?",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ova",
+     "ovum"
+    ]
+   ],
+   "blocked_word_count": 1758,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Pick any unused s-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "sab",
+     "syzygy"
+    ]
+   ],
+   "blocked_word_count": 18982,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pick any unused c-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "czars"
+    ]
+   ],
+   "blocked_word_count": 16216,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pick any unused p-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "pac",
+     "qua"
+    ]
+   ],
+   "blocked_word_count": 14561,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pick any unused b-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "baa",
+     "cab"
+    ]
+   ],
+   "blocked_word_count": 9274,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pick any unused d-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "dab",
+     "each"
+    ]
+   ],
+   "blocked_word_count": 10140,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Pick any unused t-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tab",
+     "udder"
+    ]
+   ],
+   "blocked_word_count": 8755,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Pick any unused m-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "mac",
+     "nab"
+    ]
+   ],
+   "blocked_word_count": 9611,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pick any unused a-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "baa"
+    ]
+   ],
+   "blocked_word_count": 10435,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Pick any unused r-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "rabbet",
+     "sab"
+    ]
+   ],
+   "blocked_word_count": 10153,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Pick any unused i-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ice",
+     "jab"
+    ]
+   ],
+   "blocked_word_count": 6934,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Pick any unused e-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "each",
+     "fable"
+    ]
+   ],
+   "blocked_word_count": 7038,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Pick any unused f-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "fable",
+     "fuzes"
+    ]
+   ],
+   "blocked_word_count": 6745,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Pick any unused h-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "haaf",
+     "ice"
+    ]
+   ],
+   "blocked_word_count": 6316,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pick any unused g-word; vary it unpredictably.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "gab",
+     "gas"
+    ],
+    [
+     "gasp",
+     "haaf"
+    ]
+   ],
+   "blocked_word_count": 5527,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "blocklist"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 19.0,
+  "cost_numerator": 19,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,1029 @@
+{
+ "game_id": "dev44-0002-r0-gpt_6_2_astra-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_argon",
+ "secret": "gassinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a fruit you might find in a summer market.",
+   "blocklist": [
+    "apple",
+    "apricot",
+    "banana",
+    "berry",
+    "blackberry",
+    "blueberry",
+    "cantaloupe",
+    "cherry",
+    "fig",
+    "grape",
+    "honeydew",
+    "kiwi",
+    "lemon",
+    "lime",
+    "mango",
+    "melon",
+    "nectarine",
+    "orange",
+    "papaya",
+    "peach",
+    "pear",
+    "pineapple",
+    "plum",
+    "raspberry",
+    "strawberry",
+    "watermelon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pick a comparative adjective ending in -er.",
+   "blocklist": [
+    "better",
+    "bigger",
+    "blacker",
+    "bluer",
+    "bolder",
+    "brighter",
+    "broader",
+    "calmer",
+    "cheaper",
+    "cleaner",
+    "clearer",
+    "cleverer",
+    "closer",
+    "colder",
+    "cooler",
+    "cuter",
+    "darker",
+    "dearer",
+    "deeper",
+    "drier",
+    "earlier",
+    "easier",
+    "elder",
+    "fairer",
+    "faster",
+    "fatter",
+    "fewer",
+    "finer",
+    "firmer",
+    "flatter",
+    "fresher",
+    "fuller",
+    "funnier",
+    "further",
+    "gentler",
+    "greater",
+    "greener",
+    "happier",
+    "harder",
+    "healthier",
+    "heavier",
+    "higher",
+    "hotter",
+    "inner",
+    "kinder",
+    "larger",
+    "later",
+    "lesser",
+    "lighter",
+    "longer",
+    "louder",
+    "lower",
+    "luckier",
+    "meaner",
+    "merrier",
+    "milder",
+    "narrower",
+    "nearer",
+    "neater",
+    "newer",
+    "nicer",
+    "nobler",
+    "older",
+    "outer",
+    "paler",
+    "plainer",
+    "politer",
+    "poorer",
+    "prettier",
+    "prouder",
+    "purer",
+    "quicker",
+    "quieter",
+    "rarer",
+    "redder",
+    "richer",
+    "riper",
+    "rougher",
+    "ruder",
+    "sadder",
+    "safer",
+    "shallower",
+    "sharper",
+    "shorter",
+    "simpler",
+    "slower",
+    "smaller",
+    "smarter",
+    "smoother",
+    "softer",
+    "sooner",
+    "sourer",
+    "steeper",
+    "stranger",
+    "stricter",
+    "stronger",
+    "sweeter",
+    "taller",
+    "thicker",
+    "thinner",
+    "tighter",
+    "tinier",
+    "tougher",
+    "truer",
+    "uglier",
+    "upper",
+    "warmer",
+    "weaker",
+    "wealthier",
+    "wider",
+    "wilder",
+    "wiser",
+    "younger"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 113,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quainter"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Any blank-prefix lookup offset from 0 to 172607.",
+   "blocklist": [
+    "aah",
+    "aahed",
+    "aahing",
+    "aahs",
+    "aal",
+    "aalii",
+    "aaliis",
+    "aals",
+    "aardvark",
+    "aardvarks",
+    "abbreviation",
+    "ace",
+    "autunite",
+    "beardtongues",
+    "luged",
+    "luggage",
+    "nonuniform",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "milos"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "ab list: zero-based offset (19 squared minus 14)",
+   "blocklist": [
+    "abos",
+    "abought",
+    "aboulia",
+    "aboulias",
+    "aboulic",
+    "abound",
+    "abounded",
+    "aboves",
+    "abracadabra",
+    "abracadabras",
+    "abrachia",
+    "abrachias",
+    "abradable",
+    "abradant",
+    "abradants",
+    "abrade",
+    "abraded",
+    "abrader",
+    "abraders",
+    "abrades",
+    "abrading",
+    "abrasion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Yelled, as across an Appalachian valley (8).",
+   "blocklist": [
+    "bellowed",
+    "echoed",
+    "holler",
+    "hollered",
+    "screamed",
+    "shrieked",
+    "yodeled",
+    "yodelled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Vigenere decrypt UECDBEV; key KA repeated.",
+   "blocklist": [
+    "keddah",
+    "keddahs",
+    "kedge",
+    "kedged",
+    "kedgeree",
+    "kedgerees",
+    "kedges",
+    "kedging",
+    "kestrel",
+    "kestrels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "s table, one-based row: number of 13-bit strings",
+   "blocklist": [
+    "sloped",
+    "sloper",
+    "slopers",
+    "slopes",
+    "sloping",
+    "slopped",
+    "sloppier",
+    "sloppiest",
+    "sloppily",
+    "sloppiness",
+    "sloppinesses",
+    "slopping",
+    "sloppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Global index (0-origin): reverse digits of 21937.",
+   "blocklist": [
+    "caruncle",
+    "caruncles",
+    "carvacrol",
+    "carvacrols",
+    "inconscient",
+    "inconsecutive",
+    "inconsequence",
+    "inconsequences",
+    "inconsequent",
+    "inconsequential",
+    "inconsequentialities",
+    "inconsequentiality",
+    "inconsequentially",
+    "inconsequently",
+    "inconsiderable",
+    "inconsiderableness",
+    "inconsiderablenesses",
+    "inconsiderably",
+    "inconsiderate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "mo page: choose any zero-based row 100 to 999.",
+   "blocklist": [
+    "moderators",
+    "moderatorship",
+    "moderatorships",
+    "moderatos",
+    "modern",
+    "moonshiner",
+    "moonshiners",
+    "moonshines",
+    "moonshot",
+    "moonshots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "moisturizes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "monitorship"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "fl[17*31], C convention. Return entry verbatim.",
+   "blocklist": [
+    "flexographies",
+    "flexography",
+    "flexor",
+    "flexors",
+    "flextime",
+    "flextimes",
+    "flexuose",
+    "flexuous",
+    "flexural",
+    "flexure",
+    "flexures",
+    "fley",
+    "fleyed",
+    "fleying",
+    "fleys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "g[count(gal)+92], indexing starts at 0",
+   "blocklist": [
+    "gaffe",
+    "gaffed",
+    "gaffer",
+    "gaffers",
+    "gallonages",
+    "gallons",
+    "galloon",
+    "galloons",
+    "galloot",
+    "galloots",
+    "gallop",
+    "gallopade",
+    "gallopades",
+    "galloped",
+    "galloper",
+    "gallopers",
+    "galloping",
+    "gallops",
+    "gallous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "z[count_words(reverse(\"tar\"))], 0-indexed",
+   "blocklist": [
+    "zemindar",
+    "zemindaries",
+    "zemindars",
+    "zemindary",
+    "zeroes",
+    "zeroing",
+    "zeros",
+    "zeroth",
+    "zest",
+    "zested",
+    "zester",
+    "zesters",
+    "zestful",
+    "zestfully",
+    "zestfulness",
+    "zestfulnesses",
+    "zestier",
+    "zestiest",
+    "zesting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "tr offsets 0..299. Choose randomly near middle.",
+   "blocklist": [
+    "trabeate",
+    "trabeated",
+    "traduces",
+    "traducing",
+    "traffic",
+    "trafficabilities",
+    "trafficability",
+    "trafficable",
+    "trafficked",
+    "trafficker",
+    "traffickers",
+    "trafficking",
+    "traffics",
+    "tragacanth",
+    "tragacanths",
+    "tragedian",
+    "tragedians",
+    "tramways",
+    "trance"
+   ],
+   "blocked_ranges": [
+    [
+     "trabeate",
+     "trance"
+    ]
+   ],
+   "blocked_word_count": 300,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Global rows 50000..70000, pick a palindrome index.",
+   "blocklist": [
+    "epitomic",
+    "epitomical",
+    "epitomise",
+    "epitomised",
+    "epitomises",
+    "euhemeristic",
+    "euhemerists",
+    "eukaryote",
+    "eukaryotes",
+    "eukaryotic",
+    "firebreaks",
+    "firebrick",
+    "firebricks",
+    "firebug",
+    "firebugs",
+    "gained",
+    "gainer",
+    "gainers",
+    "gainful",
+    "gainfully",
+    "gainlier",
+    "gainliest",
+    "gainly",
+    "gains",
+    "gainsaid",
+    "gemmology",
+    "gemmule",
+    "gemmules",
+    "gemmy",
+    "gemological",
+    "hackneyed",
+    "hackneying",
+    "hackneys",
+    "hacks",
+    "hacksaw",
+    "haruspication",
+    "haruspications",
+    "haruspices",
+    "harvest",
+    "harvestable"
+   ],
+   "blocked_ranges": [
+    [
+     "epitomic",
+     "gainfully"
+    ]
+   ],
+   "blocked_word_count": 10014,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "garrets"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Random unused entry with repeated trigram anywhere",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "whirligig"
+    },
+    {
+     "seat": "guesser2",
+     "word": "entente"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Any word from your own first 8 tool results.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "abbreviating"
+    ],
+    [
+     "baa",
+     "baases"
+    ],
+    [
+     "cab",
+     "cabalistic"
+    ],
+    [
+     "dab",
+     "dabbles"
+    ],
+    [
+     "haaf",
+     "haberdasheries"
+    ],
+    [
+     "iamb",
+     "iatrogenic"
+    ],
+    [
+     "jab",
+     "jabberwocky"
+    ],
+    [
+     "zabaglione",
+     "zaddik"
+    ]
+   ],
+   "blocked_word_count": 170,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "umbrella"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Global row 867xx. Last 2 digits: prime near 50.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "lymphangiographies",
+     "lysed"
+    ]
+   ],
+   "blocked_word_count": 100,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "What word did you almost choose on turn sixteen?",
+   "blocklist": [
+    "alfalfa",
+    "beriberi",
+    "bonbon",
+    "cancan",
+    "couscous",
+    "murmur",
+    "pompom",
+    "tartar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quincunx"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ententes"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Global row 10000..49999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "autunite",
+     "epithetic"
+    ]
+   ],
+   "blocked_word_count": 40000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Global row 100000..169999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "nonuniform",
+     "wiled"
+    ]
+   ],
+   "blocked_word_count": 70000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Global row 60000..99999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "jackrabbit"
+    },
+    {
+     "seat": "guesser2",
+     "word": "invidiousnesses"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Row after G2's last opened guess, same table.",
+   "blocklist": [
+    "invidiously",
+    "invidiousness",
+    "invigilate",
+    "invigilated",
+    "invigilates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Global rows 60000..79999. Pick memorable digits.",
+   "blocklist": [
+    "gaingiving",
+    "gaingivings",
+    "gaining",
+    "gainless"
+   ],
+   "blocked_ranges": [
+    [
+     "guitarfishes",
+     "jurisprudentially"
+    ]
+   ],
+   "blocked_word_count": 15004,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Global rows 80000..99999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "jurisprudents",
+     "nonunanimous"
+    ]
+   ],
+   "blocked_word_count": 20000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Global rows 100..9999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "abbreviation",
+     "autumns"
+    ]
+   ],
+   "blocked_word_count": 9900,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Global rows 60000..64999. Pick memorable digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "geckos",
+     "guitarfish"
+    ]
+   ],
+   "blocked_word_count": 4000,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Global rows 60000..60999. Pick memorable digits.",
+   "blocklist": [
+    "garbages",
+    "garish",
+    "garishness",
+    "garottes",
+    "gasconades",
+    "gash",
+    "gasifier",
+    "gaslit",
+    "gasometer",
+    "gasped",
+    "gassed",
+    "gasser",
+    "gassers",
+    "gasses",
+    "gassier",
+    "gassiest",
+    "gassily",
+    "gassiness",
+    "gassing",
+    "gassings",
+    "gassy",
+    "gast",
+    "gastrectomies",
+    "gastroenterologies",
+    "gastrolith",
+    "gastronomical",
+    "gastronomy",
+    "gastroscopies",
+    "gastrulating",
+    "gastrulations",
+    "gatekeepers",
+    "gaucho",
+    "gaud",
+    "gauges",
+    "gauzily",
+    "gavotte",
+    "gawkiness",
+    "gawky",
+    "gayest",
+    "gazebo",
+    "gazette",
+    "gazpachos",
+    "gearchanges",
+    "geckoes"
+   ],
+   "blocked_ranges": [
+    [
+     "gainsay",
+     "garbagemen"
+    ]
+   ],
+   "blocked_word_count": 535,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "gazelle"
+    },
+    {
+     "seat": "guesser2",
+     "word": "gashouse"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Global rows 170000..172607. Pick memorable digits.",
+   "blocklist": [
+    "wiles",
+    "wilful",
+    "wiliness",
+    "will",
+    "willets",
+    "willies",
+    "williwaws",
+    "willows",
+    "willowy",
+    "worsts",
+    "worth",
+    "worthily",
+    "worthiness",
+    "worthless",
+    "worthwhile",
+    "would",
+    "wove",
+    "wows",
+    "wrack",
+    "yawpers",
+    "yay",
+    "yealing",
+    "year",
+    "yearbook",
+    "yearlong",
+    "yearns",
+    "yeastier",
+    "yeasts",
+    "youthens",
+    "youthful",
+    "youthquakes",
+    "yowed",
+    "yowling",
+    "yows",
+    "ytterbium",
+    "yttrium",
+    "yuans",
+    "yuccas",
+    "yucky",
+    "zemstva",
+    "zemstvos",
+    "zenaida",
+    "zenith",
+    "zeolites",
+    "zeppelins",
+    "zerks",
+    "zero",
+    "zeroes",
+    "zest",
+    "zested",
+    "zesters",
+    "zestful",
+    "zestfulnesses",
+    "zestier",
+    "zesting",
+    "zests",
+    "zetas",
+    "zibeline",
+    "zibeths",
+    "zwitterion",
+    "zygapophyses",
+    "zygomata",
+    "zygomorphic",
+    "zygosities",
+    "zygote",
+    "zymase",
+    "zymogenes",
+    "zymologies",
+    "zymosis",
+    "zymurgies",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 71,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wombat"
+    },
+    {
+     "seat": "guesser2",
+     "word": "yeanlings"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 216.06527217741936,
+  "cost_numerator": 857347,
+  "cost_denominator": 3968,
+  "cost_exact": false,
+  "cost_mcse": 0.5010855791363655,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 738307,
+   "denominator": 3968,
+   "value": 186.06527217741936,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:58,4:166,5:292,6:396,7:532,8:524,9:414,10:242,11:155,12:86,13:47,14:25,15:12,16:5,17:5,18:1,19:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.5010855791363655,
+   "rollouts": 256,
+   "rank_total": 7383070,
+   "rank_denominator": 39680,
+   "cache_key": "ba66569367d082b24d369e2b55dc646a"
+  }
+ }
+}

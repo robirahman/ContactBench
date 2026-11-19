@@ -1,0 +1,585 @@
+{
+ "game_id": "dev41-0003-r0-claude_fable_5_2-atk-gemini_4_carbon",
+ "attacker": "claude_fable_5_2",
+ "defender": "gemini_4_carbon",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "largest land animal with a trunk and tusks",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "pachyderm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "seven days make one of these",
+   "blocklist": [
+    "hebdomad",
+    "hebdomads",
+    "sennight",
+    "sennights",
+    "weak",
+    "week",
+    "weeks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "color of clear daytime sky",
+   "blocklist": [
+    "azure",
+    "blew",
+    "blue",
+    "blues",
+    "cerulean",
+    "cobalt",
+    "cyan"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "frozen water",
+   "blocklist": [
+    "frost",
+    "glacier",
+    "hail",
+    "ice",
+    "iceberg",
+    "ices",
+    "icicle",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "opposite of never",
+   "blocklist": [
+    "alway",
+    "always",
+    "constantly",
+    "eternally",
+    "ever",
+    "evermore",
+    "forever",
+    "perpetually"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "alphabetically final entry of our dictionary",
+   "blocklist": [
+    "zymurgies",
+    "zymurgy",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "striped African equine",
+   "blocklist": [
+    "okapi",
+    "okapis",
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebraic",
+    "zebras",
+    "zebrass",
+    "zebrasses",
+    "zebrine",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Australian hopping marsupial with a pouch",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "quokka",
+    "quokkas",
+    "wallabies",
+    "wallaby",
+    "wallaroo",
+    "wallaroos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "list_words prefix qu offset 99 limit 1",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quadruply"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quadruply"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "list_words prefix u offset 777 limit 1",
+   "blocklist": [
+    "unbridles",
+    "unbridling",
+    "unbriefed"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "list_words prefix u offset 1234 limit 1",
+   "blocklist": [
+    "uncovenanted",
+    "uncover",
+    "uncovered"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "list_words u offset=count_words(up) limit 1",
+   "blocklist": [
+    "unadulteratedly",
+    "unadventurous",
+    "unadvertised"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "list_words prefix u offset 2000 limit 1",
+   "blocklist": [
+    "uneventfully",
+    "uneventfulness",
+    "uneventfulnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "list_words prefix u offset 3000 limit 1",
+   "blocklist": [
+    "unnail",
+    "unnailed",
+    "unnailing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "list_words prefix u offset 4321 limit 1",
+   "blocklist": [
+    "updried",
+    "updries",
+    "updry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "handheld canopy that keeps rain off you",
+   "blocklist": [
+    "brollies",
+    "brolly",
+    "bumbershoot",
+    "gamp",
+    "parasol",
+    "parasols",
+    "umbrella",
+    "umbrellaed",
+    "umbrellaing",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "list_words u offset=count_words(us) limit 1",
+   "blocklist": [
+    "ulcering",
+    "ulcerogenic",
+    "ulcerous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "list_words u offset=count(un)-count(up) limit 1",
+   "blocklist": [
+    "unridable",
+    "unriddle",
+    "unriddled"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "mythical horse bearing a single horn",
+   "blocklist": [
+    "narwhal",
+    "unicorn",
+    "unicorns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "the duckling who became a swan was called this",
+   "blocklist": [
+    "cygnet",
+    "uglier",
+    "uglies",
+    "ugliest",
+    "ugly",
+    "unattractive",
+    "uncomely",
+    "unlovely",
+    "unsightly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "usual utter urban upset unite uncle under until",
+   "blocklist": [
+    "udder",
+    "ulcer",
+    "union",
+    "unity",
+    "upper",
+    "usage"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "ugh uke ulu umm ump uns upo ups urb urd urn use",
+   "blocklist": [
+    "udo",
+    "uta",
+    "uts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "utas"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "undo unit unto upon urge used user ulna urea uvea",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "uses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "uses"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "unai unau unbe unci unco unde undy unapt unarm",
+   "blocklist": [
+    "unabashed",
+    "unable",
+    "unais",
+    "unaptly",
+    "unarmed",
+    "unarms",
+    "unary",
+    "unban",
+    "unbans",
+    "unbar",
+    "unbars",
+    "unbear",
+    "unbelt",
+    "unbend",
+    "unbent",
+    "unbid",
+    "unbind",
+    "unblest",
+    "undee"
+   ],
+   "blocked_ranges": [
+    [
+     "unattractively",
+     "unbacked"
+    ]
+   ],
+   "blocked_word_count": 53,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "list_words prefix un offset 2500 limit 1",
+   "blocklist": [
+    "unmarked",
+    "unmarketable",
+    "unmarred"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "list_words prefix un offset 1500 limit 1",
+   "blocklist": [
+    "undulatory",
+    "undulled",
+    "unduly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "list_words prefix un offset 600 limit 8, last one",
+   "blocklist": [
+    "unclean",
+    "uncleaned",
+    "uncleaner",
+    "uncleanest"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "uncap uncut undid undue unfed unfit unfix unhat",
+   "blocklist": [
+    "unhatched",
+    "unhats",
+    "unhatted",
+    "unhatting",
+    "unhip",
+    "unify",
+    "unlay",
+    "unled",
+    "unlet",
+    "unlit",
+    "unman",
+    "unmet",
+    "unmew",
+    "unpeg",
+    "unpen",
+    "unpin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "uncaps"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 309.05217111423224,
+  "cost_numerator": 10562167,
+  "cost_denominator": 34176,
+  "cost_exact": false,
+  "cost_mcse": 0.4063358873785194,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 9536887,
+   "denominator": 34176,
+   "value": 279.05217111423224,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:19,6:183,7:330,8:598,9:534,10:538,11:443,12:368,13:267,14:172,15:105,16:77,17:42,18:22,19:16,20:7",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.4063358873785194,
+   "rollouts": 256,
+   "rank_total": 38147548,
+   "rank_denominator": 136704,
+   "cache_key": "210e7652e1dc6f721830e9e63f70f77f"
+  }
+ }
+}

@@ -1,0 +1,576 @@
+{
+ "game_id": "dev44-0004-r0-claude_opus_5_5-atk-claude_sonnet_5_5",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_sonnet_5_5",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Common red fruit, keeps doctor away",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love",
+   "blocklist": [
+    "banana"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Striped African horse-like animal",
+   "blocklist": [
+    "donkey",
+    "okapi",
+    "quagga",
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Number after six, before eight",
+   "blocklist": [
+    "eight",
+    "seven",
+    "sevens",
+    "sixth"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Huge body of salt water, e.g. Pacific",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ocean"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ocean"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Four-legged seat you sit on at a table",
+   "blocklist": [
+    "chair",
+    "chairs",
+    "chaise",
+    "couch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Feline pet that purrs and meows",
+   "blocklist": [
+    "cat",
+    "catlike",
+    "cats",
+    "cattery",
+    "catty",
+    "feline",
+    "felines",
+    "kitten",
+    "kitty",
+    "meow",
+    "meows",
+    "pet",
+    "pets",
+    "purr",
+    "purrs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Farm animal that moos and gives milk",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cow"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cow"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Hot brown morning drink brewed from beans",
+   "blocklist": [
+    "cocoa",
+    "coffee",
+    "coffees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Soft fluffy plant fiber used for t-shirts",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cotton"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cotton"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Red, blue or green is one (American spelling)",
+   "blocklist": [
+    "color",
+    "colors",
+    "colour",
+    "colours"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Tall vertical pillar holding up a Greek temple",
+   "blocklist": [
+    "colonnade",
+    "colonnades",
+    "colossus",
+    "column",
+    "columnar",
+    "columned",
+    "columns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Neck part of a shirt, or a dog's neckband",
+   "blocklist": [
+    "collar",
+    "collared",
+    "collars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Chilly, freezing; opposite of warm",
+   "blocklist": [
+    "cold",
+    "colder",
+    "coldest",
+    "coldly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "School after high school; university",
+   "blocklist": [
+    "college",
+    "colleges",
+    "collegiate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Settlement ruled by a distant country; ant group",
+   "blocklist": [
+    "colonial",
+    "colonies",
+    "colonist",
+    "colonists",
+    "colonize",
+    "colony"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Young male horse",
+   "blocklist": [
+    "colt",
+    "coltish",
+    "colts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Gather items as a hobby, e.g. stamps or coins",
+   "blocklist": [
+    "collect",
+    "collected",
+    "collectible",
+    "collectibles",
+    "collecting",
+    "collection",
+    "collections",
+    "collector",
+    "collectors",
+    "collects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Fall down suddenly, like a building or tent",
+   "blocklist": [
+    "cave",
+    "caved",
+    "collapse",
+    "collapsed",
+    "collapses",
+    "collapsible",
+    "collapsing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Kitchen bowl with holes for draining pasta",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Coworker at your office or job",
+   "blocklist": [
+    "colleague",
+    "colleagues",
+    "coworker",
+    "coworkers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Lassie's dog breed, Scottish sheepdog",
+   "blocklist": [
+    "collie",
+    "collies"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Men's perfume; eau de ___; German city Koln",
+   "blocklist": [
+    "cologne",
+    "colognes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "colon colonel collide collision colossal coleslaw",
+   "blocklist": [
+    "coleslaw",
+    "collide",
+    "collision",
+    "colon",
+    "colonel",
+    "colossal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collage"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colorful"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "colored colorless collateral colloquial cola colic",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collaborate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "colitis"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "coliseum collusion colloid collate coldness cole",
+   "blocklist": [
+    "colas",
+    "colds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "collard"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collagen"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "collarbone colleen collude colliery colorfast",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colonized"
+    },
+    {
+     "seat": "guesser2",
+     "word": "collective"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "collins colonic colostomy colostrum colorist",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colorize"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coloration"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "coloring colons colonels collier colobus colza",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "colonials"
+    },
+    {
+     "seat": "guesser2",
+     "word": "columnist"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 61.85066105769231,
+  "cost_numerator": 205839,
+  "cost_denominator": 3328,
+  "cost_exact": false,
+  "cost_mcse": 0.17469061713114822,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 105999,
+   "denominator": 3328,
+   "value": 31.850661057692307,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:5,6:15,7:16,8:57,9:82,10:66,11:52,12:39,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.17469061713114822,
+   "rollouts": 256,
+   "rank_total": 317997,
+   "rank_denominator": 9984,
+   "cache_key": "a5fb409a2c7b25390963befc0778fb81"
+  }
+ }
+}

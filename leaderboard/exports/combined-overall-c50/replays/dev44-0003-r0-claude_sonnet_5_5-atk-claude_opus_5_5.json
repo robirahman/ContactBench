@@ -1,0 +1,549 @@
+{
+ "game_id": "dev44-0003-r0-claude_sonnet_5_5-atk-claude_opus_5_5",
+ "attacker": "claude_sonnet_5_5",
+ "defender": "claude_opus_5_5",
+ "secret": "invaliding",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "most common english article",
+   "blocklist": [
+    "the"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "conjunction joining words; plus; also",
+   "blocklist": [
+    "and"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "feline pet that purrs and chases mice",
+   "blocklist": [
+    "cat",
+    "feline",
+    "kitten",
+    "kitty",
+    "tomcat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "man's best friend that barks and wags its tail",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggie",
+    "doggy",
+    "hound",
+    "mutt",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "vast salty water; Pacific or Atlantic, e.g.RYX",
+   "blocklist": [
+    "brine",
+    "deep",
+    "main",
+    "ocean",
+    "oceans",
+    "sea",
+    "seas",
+    "waters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "star at the center of our solar system, daytime",
+   "blocklist": [
+    "day",
+    "daylight",
+    "daystar",
+    "helios",
+    "sol",
+    "star",
+    "sun",
+    "sunlight",
+    "sunny",
+    "sunshine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "yellow curved fruit monkeys love to peel and eat",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "building where a family lives; residence",
+   "blocklist": [
+    "abode",
+    "cottage",
+    "domicile",
+    "dwelling",
+    "dwellings",
+    "habitation",
+    "home",
+    "homes",
+    "homestead",
+    "house",
+    "household",
+    "houses",
+    "lodging",
+    "manor",
+    "mansion",
+    "residence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "tall woody plant with trunk and leaves",
+   "blocklist": [
+    "arbor",
+    "ash",
+    "beech",
+    "birch",
+    "cedar",
+    "elm",
+    "fir",
+    "maple",
+    "oak",
+    "palm",
+    "pine",
+    "plant",
+    "sapling",
+    "shrub",
+    "spruce",
+    "timber",
+    "tree",
+    "trees",
+    "willow",
+    "wood"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "small four-stringed Hawaiian instrument, strummed",
+   "blocklist": [
+    "banjo",
+    "guitar",
+    "lute",
+    "mandolin",
+    "string",
+    "strings",
+    "uke",
+    "ukes",
+    "ukulele",
+    "ukuleles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "earth's natural satellite, full or crescent",
+   "blocklist": [
+    "crescent",
+    "luna",
+    "lunar",
+    "moon",
+    "moonbeam",
+    "moonlight",
+    "moons",
+    "satellite"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "pages bound together to read, a novel or text",
+   "blocklist": [
+    "book",
+    "booklet",
+    "books",
+    "codex",
+    "hardcover",
+    "manuscript",
+    "novel",
+    "pamphlet",
+    "paperback",
+    "text",
+    "textbook",
+    "tome",
+    "volume"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "red fruit that keeps the doctor away, cider source",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "frozen H2O cubes for a cold drink, melts when warm",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "ice",
+     "icy"
+    ]
+   ],
+   "blocked_word_count": 116,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Hawaii or Iceland is one; land ringed by sea",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "island"
+    },
+    {
+     "seat": "guesser2",
+     "word": "island"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "twelfth of a foot; unit of length on a ruler",
+   "blocklist": [
+    "inch",
+    "inched",
+    "inches",
+    "inching",
+    "inchworm"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "opposite of outside; within",
+   "blocklist": [
+    "indoor",
+    "indoors",
+    "innards",
+    "inner",
+    "innermost",
+    "inside",
+    "insides",
+    "interior",
+    "internal",
+    "into",
+    "inward",
+    "inwards"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "six-legged bug like an ant or beetle",
+   "blocklist": [
+    "infestation",
+    "insect",
+    "insectan",
+    "insectary",
+    "insecticide",
+    "insectile",
+    "insectivore",
+    "insects",
+    "invertebrate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "opposite of output; data fed to a computer",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "input"
+    },
+    {
+     "seat": "guesser2",
+     "word": "input"
+    }
+   ],
+   "prefix_after": "inv",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "to create a brand new device, as Edison did",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "invent",
+     "invents"
+    ]
+   ],
+   "blocked_word_count": 22,
+   "opened_guesses": [],
+   "prefix_after": "inv",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "enter a country with an army to conquer it",
+   "blocklist": [
+    "invade",
+    "invaded",
+    "invader",
+    "invaders",
+    "invades",
+    "invading",
+    "invasion",
+    "invasions",
+    "invasive"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "inv",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "ask to a party; send a request to attend",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "invitation",
+     "inviting"
+    ]
+   ],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "inv",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "not valid; null and void; sickly person (noun)",
+   "blocklist": [
+    "invalid",
+    "invalidate",
+    "invalidated",
+    "invalidates",
+    "invalidating",
+    "invalidation",
+    "invalided",
+    "invalidism",
+    "invalidity",
+    "invalidly",
+    "invalids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "inv",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.388721955128204,
+  "cost_numerator": 463145,
+  "cost_denominator": 9984,
+  "cost_exact": false,
+  "cost_mcse": 0.08578243306980879,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 163625,
+   "denominator": 9984,
+   "value": 16.388721955128204,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "5:1,6:4,7:10,8:23,9:31,10:39,11:26,12:24,13:20,14:7,15:10,16:4,17:2,18:1",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.08578243306980879,
+   "rollouts": 256,
+   "rank_total": 163625,
+   "rank_denominator": 9984,
+   "cache_key": "69bbf7d308bc333374a78122147f9dbf"
+  }
+ }
+}

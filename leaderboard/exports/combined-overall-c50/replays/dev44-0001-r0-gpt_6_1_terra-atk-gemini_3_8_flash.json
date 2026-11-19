@@ -1,0 +1,549 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_1_terra-atk-gemini_3_8_flash",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_3_8_flash",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Black-and-white striped African equine; cat dog",
+   "blocklist": [
+    "quagga",
+    "quaggas",
+    "zebra",
+    "zebras",
+    "zebroid"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "King of the jungle; man woman car house sun moon",
+   "blocklist": [
+    "gorilla",
+    "gorillas",
+    "lion",
+    "lioness",
+    "lionesses",
+    "lions",
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Largest land animal; water fire earth air love sky",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "mammoth",
+    "mammoths",
+    "rhinoceros"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Tallest animal; time day year people life world",
+   "blocklist": [
+    "camelopard",
+    "camelopards",
+    "giraffe",
+    "giraffes",
+    "okapi",
+    "okapis",
+    "ostrich",
+    "ostriches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Biggest ocean mammal; good bad new old one two",
+   "blocklist": [
+    "cetacean",
+    "cetaceans",
+    "leviathan",
+    "rorqual",
+    "rorquals",
+    "whale",
+    "whales"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Winnie the Pooh; book hand eye head red blue green",
+   "blocklist": [
+    "bear",
+    "bears",
+    "bruin",
+    "bruins",
+    "cub",
+    "cubs",
+    "honey",
+    "honeys",
+    "piglet",
+    "piglets",
+    "teddies",
+    "teddy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Howling canine; war peace light dark big small",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "wolf"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wolf"
+    }
+   ],
+   "prefix_after": "t",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Slow shelled reptile; that this they then there",
+   "blocklist": [
+    "terrapin",
+    "terrapins",
+    "testudines",
+    "testudo",
+    "testudos",
+    "tortoise",
+    "tortoises",
+    "turtle",
+    "turtles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Locomotive on rails; their them than these those",
+   "blocklist": [
+    "train",
+    "trains",
+    "tram",
+    "tramcar",
+    "tramcars",
+    "trams",
+    "trolley",
+    "trolleys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Ketchup fruit; take talk tell ten test text thank",
+   "blocklist": [
+    "tamarillo",
+    "tamarillos",
+    "tamarind",
+    "tamarinds",
+    "tomatillo",
+    "tomatillos",
+    "tomato",
+    "tomatoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Woody perennial plant; thing think three through",
+   "blocklist": [
+    "tamarack",
+    "tamaracks",
+    "thicket",
+    "tree",
+    "trees",
+    "tupelo",
+    "tupelos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Large hairy spider; too top toy try true turn type",
+   "blocklist": [
+    "tarantula",
+    "tarantulae",
+    "tarantulas",
+    "trapdoor",
+    "trapdoors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Huge seismic sea wave; table today together town",
+   "blocklist": [
+    "tidal",
+    "tide",
+    "tides",
+    "tsunami",
+    "tsunamic",
+    "tsunamis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Brewed leaf drink; thought told took toward touch",
+   "blocklist": [
+    "tea",
+    "teas",
+    "tisane",
+    "tisanes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Device for calling; team term tend trade travel",
+   "blocklist": [
+    "telegraph",
+    "telegraphs",
+    "telephone",
+    "telephones",
+    "telex",
+    "telexes",
+    "transceiver",
+    "transceivers",
+    "transmitter",
+    "transmitters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Brass instrument; total trust truth tough task",
+   "blocklist": [
+    "trombone",
+    "trombones",
+    "trump",
+    "trumpet",
+    "trumpets",
+    "trumps",
+    "tuba",
+    "tubae",
+    "tubas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Molar or incisor; tired tiredness tip trip truck",
+   "blocklist": [
+    "teeth",
+    "tooth",
+    "tooths",
+    "tusk",
+    "tusks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Violent funnel cloud; tall thin tomorrow tonight",
+   "blocklist": [
+    "tornado",
+    "tornadoes",
+    "tornados",
+    "twister",
+    "twisters",
+    "typhoon",
+    "typhoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Thanksgiving bird; technology television teacher",
+   "blocklist": [
+    "tom",
+    "toms",
+    "turkey",
+    "turkeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Striped domestic cat; torso tongue tongue tied",
+   "blocklist": [
+    "tabbies",
+    "tabby",
+    "tomcat",
+    "tomcats",
+    "tortoiseshell",
+    "tortoiseshells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Orange citrus fruit; third thousand tower trouble",
+   "blocklist": [
+    "tangelo",
+    "tangelos",
+    "tangerine",
+    "tangerines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Three-wheeled cycle; turnip tunnel twin twice twig",
+   "blocklist": [
+    "tricycle",
+    "tricycles",
+    "trike",
+    "trikes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Keyboard indentation key; title track treat tribal",
+   "blocklist": [
+    "tab",
+    "tabs",
+    "tabulate",
+    "tabulates",
+    "tabulation",
+    "tabulations",
+    "tabulator",
+    "tabulators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Bloodsucking parasite; tennis taxi tiny trap tent",
+   "blocklist": [
+    "tabanid",
+    "tabanids",
+    "tapeworm",
+    "tapeworms",
+    "tick",
+    "ticks",
+    "tsetse",
+    "tsetses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Measures fever; torch timber theory theatre theme",
+   "blocklist": [
+    "thermistor",
+    "thermistors",
+    "thermometer",
+    "thermometers",
+    "thermoscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "t",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 608.7243097354424,
+  "cost_numerator": 139159247,
+  "cost_denominator": 228608,
+  "cost_exact": false,
+  "cost_mcse": 0.6294702389611658,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 132301007,
+   "denominator": 228608,
+   "value": 578.7243097354424,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:46,4:207,5:504,6:881,7:1328,8:1501,9:1182,10:893,11:679,12:488,13:320,14:219,15:122,16:74,17:55,18:21,19:10,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.6294702389611658,
+   "rollouts": 256,
+   "rank_total": 132301007,
+   "rank_denominator": 228608,
+   "cache_key": "6f53318bcb9dd7f44011dd9a711a026e"
+  }
+ }
+}

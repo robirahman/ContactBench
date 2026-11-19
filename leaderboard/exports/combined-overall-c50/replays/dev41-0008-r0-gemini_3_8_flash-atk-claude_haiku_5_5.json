@@ -1,0 +1,223 @@
+{
+ "game_id": "dev41-0008-r0-gemini_3_8_flash-atk-claude_haiku_5_5",
+ "attacker": "gemini_3_8_flash",
+ "defender": "claude_haiku_5_5",
+ "secret": "engineering",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "polygon with three sides",
+   "blocklist": [
+    "triangle",
+    "trigon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "process by which plants make food using sunlight",
+   "blocklist": [
+    "biology",
+    "botany",
+    "chlorophyll",
+    "energy",
+    "food",
+    "photosynthesis",
+    "photosynthesize",
+    "plant",
+    "plants",
+    "process",
+    "sunlight"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "black and white flightless bird",
+   "blocklist": [
+    "auk",
+    "cassowary",
+    "dodo",
+    "emu",
+    "kakapo",
+    "kiwi",
+    "moa",
+    "ostrich",
+    "penguin",
+    "rhea",
+    "takahe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "word with all five vowels in alphabetical order",
+   "blocklist": [
+    "abstemious",
+    "facetious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "scientific study of earthquakes",
+   "blocklist": [
+    "earthquake",
+    "earthquakes",
+    "geology",
+    "geophysics",
+    "science",
+    "scientific",
+    "seismography",
+    "seismologist",
+    "seismology",
+    "study"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "light amplification by stimulated emission",
+   "blocklist": [
+    "amplification",
+    "device",
+    "electronics",
+    "emission",
+    "laser",
+    "lasers",
+    "light",
+    "machine",
+    "optical",
+    "optics",
+    "photon",
+    "photons",
+    "physicist",
+    "physics",
+    "stimulated",
+    "technology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "repetition of sound by reflection of waves",
+   "blocklist": [
+    "echo",
+    "echoed",
+    "echoes",
+    "echoing",
+    "reflection",
+    "repetition",
+    "resonance",
+    "reverberation",
+    "reverberations",
+    "sonar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "first letter of the greek alphabet",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "engine"
+    ],
+    [
+     "engineers",
+     "zyzzyva"
+    ]
+   ],
+   "blocked_word_count": 172602,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "engineer",
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "engineering",
+   "prefix_after": "",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "direct"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 10.0,
+  "cost_numerator": 10,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

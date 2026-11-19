@@ -1,0 +1,673 @@
+{
+ "game_id": "dev44-0004-r0-claude_opus_5_5-atk-claude_fable_5_2",
+ "attacker": "claude_opus_5_5",
+ "defender": "claude_fable_5_2",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephants",
+    "mammoth",
+    "mastodon",
+    "pachyderm",
+    "rhinoceros",
+    "tapir"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long curved yellow fruit monkeys love",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain",
+    "plantains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Frozen water, three letters",
+   "blocklist": [
+    "berg",
+    "floe",
+    "frost",
+    "gel",
+    "hail",
+    "ice",
+    "iced",
+    "ices",
+    "icing",
+    "icy",
+    "rime",
+    "sleet",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Number after six",
+   "blocklist": [
+    "eight",
+    "five",
+    "heptad",
+    "septet",
+    "seven",
+    "sevens",
+    "seventeen",
+    "seventh",
+    "sevenths",
+    "seventy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Color of grass",
+   "blocklist": [
+    "blue",
+    "chartreuse",
+    "emerald",
+    "emeralds",
+    "green",
+    "greened",
+    "greener",
+    "greenery",
+    "greenest",
+    "greening",
+    "greenish",
+    "greenly",
+    "greenness",
+    "greens",
+    "jade",
+    "lawn",
+    "lime",
+    "olive",
+    "teal",
+    "turf",
+    "verdant",
+    "verdure",
+    "viridian",
+    "yellow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Man's best friend, three letters",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dog"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dog"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pet that meows, three letters",
+   "blocklist": [
+    "cat",
+    "cats",
+    "cub",
+    "cur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Opposite of hot, four letters",
+   "blocklist": [
+    "calm",
+    "chill",
+    "chills",
+    "chilly",
+    "cold",
+    "colder",
+    "coldest",
+    "coldish",
+    "coldly",
+    "coldness",
+    "colds",
+    "cool",
+    "cooled",
+    "cooler",
+    "coolish",
+    "coolly",
+    "cools",
+    "crisp"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Dairy food made from milk curds, on pizza",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cheese"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cheese"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Morning brew from roasted beans, java",
+   "blocklist": [
+    "cocoa",
+    "coffee",
+    "coffeecake",
+    "coffeehouse",
+    "coffeemaker",
+    "coffeepot",
+    "coffeepots",
+    "coffees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Reddish metal in pennies and electrical wires",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "copper",
+     "coppery"
+    ]
+   ],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Yellow grain eaten on the cob",
+   "blocklist": [
+    "corn",
+    "corncob",
+    "corncobs",
+    "cornmeal",
+    "corns"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Farm animal that says moo",
+   "blocklist": [
+    "cow",
+    "cowbell",
+    "cowboy",
+    "cowherd",
+    "cowhide",
+    "cows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Round metal money piece, like a quarter",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coin",
+     "coins"
+    ]
+   ],
+   "blocked_word_count": 29,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Electronic machine with keyboard and mouse, PC",
+   "blocklist": [
+    "compute",
+    "computed",
+    "computes",
+    "computing"
+   ],
+   "blocked_ranges": [
+    [
+     "computer",
+     "computers"
+    ]
+   ],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Fluffy white plant fiber used in t-shirts",
+   "blocklist": [
+    "cottonseed",
+    "cottontail",
+    "cottonwood"
+   ],
+   "blocked_ranges": [
+    [
+     "cotton",
+     "cottons"
+    ]
+   ],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Chef, or to prepare food with heat",
+   "blocklist": [
+    "coddle",
+    "concoct",
+    "cook",
+    "cookbook",
+    "cooked",
+    "cooker",
+    "cookers",
+    "cookery",
+    "cookie",
+    "cooking",
+    "cookout",
+    "cooks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Tool with teeth for tidying your hair",
+   "blocklist": [
+    "coif",
+    "coiffure",
+    "coifs",
+    "comb",
+    "combe",
+    "combed",
+    "comber",
+    "combers",
+    "combing",
+    "combings",
+    "comblike",
+    "combs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pink reef material built by tiny sea polyps",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "coral",
+     "corals"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Venomous hooded snake from India",
+   "blocklist": [
+    "cobra",
+    "cobras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Hairy brown tropical palm fruit",
+   "blocklist": [
+    "coco",
+    "cocoanut",
+    "cocoanuts",
+    "cocomat",
+    "coconut",
+    "coconuts",
+    "cocos",
+    "coir",
+    "coirs",
+    "copra",
+    "copras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Dusty spider web in an old attic",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cobweb",
+     "cobwebs"
+    ]
+   ],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Warm outer garment worn in winter",
+   "blocklist": [
+    "coat",
+    "coated",
+    "coating",
+    "coatings",
+    "coatless",
+    "coatrack",
+    "coatroom",
+    "coats",
+    "coattail",
+    "cope",
+    "copes",
+    "cover",
+    "covering",
+    "covers",
+    "cowl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Wine bottle stopper",
+   "blocklist": [
+    "cork",
+    "corkage",
+    "corked",
+    "corker",
+    "corkers",
+    "corking",
+    "corks",
+    "corkscrew",
+    "corkscrews",
+    "corkwood",
+    "corky"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Sofa you sit on in the living room",
+   "blocklist": [
+    "comfy",
+    "cosy",
+    "cot",
+    "cots",
+    "couch",
+    "couchant",
+    "couched",
+    "coucher",
+    "couchers",
+    "couches",
+    "couching",
+    "couchings",
+    "cozy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "cod cog col con coo cop cox coy coup cove code",
+   "blocklist": [
+    "coax",
+    "coda",
+    "coed",
+    "coil",
+    "coke",
+    "cola",
+    "colt",
+    "coma",
+    "come",
+    "cone",
+    "coop",
+    "coot",
+    "copy",
+    "cord",
+    "core",
+    "cos",
+    "cost",
+    "cote",
+    "coz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 19,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Where two walls meet in a room's edge",
+   "blocklist": [
+    "coign",
+    "coigne",
+    "coignes",
+    "coigns",
+    "conjunction",
+    "convergence",
+    "corner",
+    "cornered",
+    "cornering",
+    "corners",
+    "cornerstone",
+    "cornerwise",
+    "cornice",
+    "cornices",
+    "coving",
+    "covings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 16,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "coal coach coast court count cousin comic colony",
+   "blocklist": [
+    "coaches",
+    "coasts",
+    "college",
+    "colonies",
+    "comics",
+    "common",
+    "company",
+    "control",
+    "country",
+    "couple",
+    "course",
+    "cousins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "costume"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 499.5954258675079,
+  "cost_numerator": 633487,
+  "cost_denominator": 1268,
+  "cost_exact": false,
+  "cost_mcse": 0.5901061358684384,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 595447,
+   "denominator": 1268,
+   "value": 469.5954258675079,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:30,5:139,6:299,7:528,8:750,9:852,10:848,11:769,12:634,13:469,14:307,15:200,16:118,17:106,18:47,19:35,20:13",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.5901061358684384,
+   "rollouts": 256,
+   "rank_total": 76217216,
+   "rank_denominator": 162304,
+   "cache_key": "4f5cf070712e723f344996c86dd82838"
+  }
+ }
+}

@@ -1,0 +1,543 @@
+{
+ "game_id": "dev41-0001-r0-gemini_4_carbon-atk-claude_fable_5_2",
+ "attacker": "gemini_4_carbon",
+ "defender": "claude_fable_5_2",
+ "secret": "supine",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "very last word in dictionary",
+   "blocklist": [
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "sharp fool in rhetoric",
+   "blocklist": [
+    "oxymora",
+    "oxymoron",
+    "oxymoronic",
+    "oxymoronically",
+    "oxymorons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "first 8 letter mammal in dictionary",
+   "blocklist": [
+    "aardvark",
+    "aardwolf",
+    "anteater",
+    "antelope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "person: anagram of unknot beam",
+   "blocklist": [
+    "mountebank",
+    "mountebanks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "anagram: realigned me",
+   "blocklist": [
+    "legerdemain",
+    "legerdemains"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "list_words('', 86346, 1)",
+   "blocklist": [
+    "lumbering",
+    "lumberjack",
+    "lumberjacks",
+    "lumberman"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "11 letters: medical stomach rumbling sound",
+   "blocklist": [
+    "borborygmi",
+    "borborygmus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "having shapely buttocks",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "callipygian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "callipygian"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "14-letter adjective: using long words",
+   "blocklist": [
+    "sesquipedalian"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "11 letters: condition of fat on the buttocks",
+   "blocklist": [
+    "steatopygia",
+    "steatopygias",
+    "steatopygic",
+    "steatopygous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "alternating single-line dialogue in Greek drama",
+   "blocklist": [
+    "stich",
+    "stichic",
+    "stichomythia",
+    "stichomythias",
+    "stichomythic",
+    "stichomythies",
+    "stichomythy",
+    "stichs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "11-letter formal noun for a substitute",
+   "blocklist": [
+    "substituent",
+    "substituents",
+    "succedanea",
+    "succedaneous",
+    "succedaneum",
+    "succedaneums",
+    "supplanters",
+    "surrogate",
+    "surrogates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "resembling or relating to ostriches",
+   "blocklist": [
+    "struthious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "agent that promotes the flow of saliva",
+   "blocklist": [
+    "salivator",
+    "salivators",
+    "secretagogue",
+    "sialagogue",
+    "sialagogues",
+    "sialic",
+    "stimulant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "consisting of or relating to dung or feces",
+   "blocklist": [
+    "scat",
+    "scatological",
+    "scatologies",
+    "scatology",
+    "scats",
+    "stercoraceous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "of transmuting base metals (8)",
+   "blocklist": [
+    "sorcerer",
+    "sorcerous",
+    "sorcery",
+    "spagyric",
+    "spagyrics"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "adjective like the color of Oz's city (10)",
+   "blocklist": [
+    "smaragd",
+    "smaragde",
+    "smaragdes",
+    "smaragdine",
+    "smaragdite",
+    "smaragdites",
+    "smaragds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "medical condition of misalignment of eyes (10)",
+   "blocklist": [
+    "squint",
+    "squintiest",
+    "squinting",
+    "strabismic",
+    "strabismus",
+    "strabismuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "dark formal attire for Bodleian exams (7)",
+   "blocklist": [
+    "subfusc"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "visceral, as nerves to the gut (10)",
+   "blocklist": [
+    "splanchnic",
+    "sympathetic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "instrument measuring arterial pressure (16)",
+   "blocklist": [
+    "sphygmic",
+    "sphygmograph",
+    "sphygmographs",
+    "sphygmomanometer",
+    "sphygmomanometers",
+    "sphygmomanometries",
+    "sphygmomanometry",
+    "sphygmus",
+    "sphygmuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "resembling a squirrel or its bushy tail (8)",
+   "blocklist": [
+    "sciurid",
+    "sciurids",
+    "sciurine",
+    "sciurines",
+    "sciuroid",
+    "squirrelly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Biblical Gileadite test word for Ephraimites (10)",
+   "blocklist": [
+    "shibboleth",
+    "shibboleths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "pretentious display of superficial knowledge (8)",
+   "blocklist": [
+    "sciolism",
+    "sciolisms",
+    "sciolist",
+    "sciolistic",
+    "sciolists",
+    "sophism",
+    "sophistry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "of the Great Bear's seven plow oxen (13)",
+   "blocklist": [
+    "septenarii",
+    "septenarius",
+    "septennial",
+    "septentrion",
+    "septentrional",
+    "septentrions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "viewer of decay flashes on zinc sulfide (14)",
+   "blocklist": [
+    "scintillation",
+    "scintillations",
+    "scintillator",
+    "scintillators",
+    "scintillometer",
+    "scintillometers",
+    "spinthariscope",
+    "spinthariscopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Russian plural: wind-sculpted snow ridges (8)",
+   "blocklist": [
+    "sastruga",
+    "sastrugi",
+    "zastruga",
+    "zastrugi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "toastmaster at an ancient Greek banquet (11)",
+   "blocklist": [
+    "symposia",
+    "symposiarch",
+    "symposiarchs",
+    "symposiast",
+    "symposiasts",
+    "symposium",
+    "symposiums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "celestial alignment of three bodies (6)",
+   "blocklist": [
+    "syzygal",
+    "syzygial",
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1291.3621148154596,
+  "cost_numerator": 593406719,
+  "cost_denominator": 459520,
+  "cost_exact": false,
+  "cost_mcse": 1.004547692898596,
+  "baseline": {
+   "numerator": 45452627945,
+   "denominator": 3899392,
+   "value": 11656.337178975595,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 3.792532849729623,
+   "rollouts": 256,
+   "rank_total": 45452627945,
+   "rank_denominator": 3899392,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 579621119,
+   "denominator": 459520,
+   "value": 1261.3621148154596,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:62,4:351,5:1051,6:1795,7:2641,8:3448,9:2894,10:2227,11:1547,12:1118,13:707,14:467,15:252,16:156,17:77,18:46,19:16,20:6",
+   "target_length": 6,
+   "C": 50,
+   "mcse": 1.004547692898596,
+   "rollouts": 256,
+   "rank_total": 579621119,
+   "rank_denominator": 459520,
+   "cache_key": "01dd628e15033bde575379ff97d78972"
+  }
+ }
+}

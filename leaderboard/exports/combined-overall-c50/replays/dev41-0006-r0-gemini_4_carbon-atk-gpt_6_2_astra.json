@@ -1,0 +1,385 @@
+{
+ "game_id": "dev41-0006-r0-gemini_4_carbon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_carbon",
+ "defender": "gpt_6_2_astra",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "celestial alignment of three bodies, only vowel y",
+   "blocklist": [
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "exact mid dict word (0-based idx 86303)",
+   "blocklist": [
+    "lugers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "pick 1 common 4-letter animal",
+   "blocklist": [
+    "bass",
+    "bear",
+    "bird",
+    "boar",
+    "buck",
+    "bull",
+    "calf",
+    "carp",
+    "chub",
+    "clam",
+    "colt",
+    "coot",
+    "crab",
+    "crow",
+    "deer",
+    "dodo",
+    "dove",
+    "duck",
+    "fawn",
+    "fish",
+    "flea",
+    "foal",
+    "frog",
+    "gnat",
+    "goat",
+    "gull",
+    "hare",
+    "hawk",
+    "ibis",
+    "joey",
+    "kite",
+    "kiwi",
+    "kudu",
+    "lamb",
+    "lark",
+    "lion",
+    "loon",
+    "lynx",
+    "mink",
+    "mite",
+    "mole",
+    "moth",
+    "mule",
+    "newt",
+    "orca",
+    "oryx",
+    "pika",
+    "pike",
+    "pony",
+    "puma",
+    "rail",
+    "ram",
+    "rhea",
+    "seal",
+    "shad",
+    "slug",
+    "sole",
+    "sow",
+    "stag",
+    "swan",
+    "tern",
+    "tick",
+    "toad",
+    "tuna",
+    "vole",
+    "wasp",
+    "wolf",
+    "worm",
+    "wren",
+    "zebu"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 70,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "a common fruit (4-6 letters)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "apple"
+    },
+    {
+     "seat": "guesser2",
+     "word": "apple"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "a common animal (6-9 letters)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "elephant"
+    },
+    {
+     "seat": "guesser2",
+     "word": "elephant"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "eff efs eft efts eftsoon eftsoons + exertion",
+   "blocklist": [
+    "effort"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "effs effable effendi effendis; common, 6-9 letters",
+   "blocklist": [
+    "effect",
+    "effective",
+    "effects",
+    "efficacy",
+    "efficient",
+    "effigy",
+    "efforts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "efface effaced effaces effete efflux effuse; 10ch",
+   "blocklist": [
+    "effaceable",
+    "effacement",
+    "effectuate",
+    "effeminate",
+    "effervesce",
+    "efficiency",
+    "effortless",
+    "effrontery"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "effacer effused effulge effulged effulges; 12ch",
+   "blocklist": [
+    "effectuality",
+    "effectuating",
+    "effectuation",
+    "effervescent",
+    "efficiencies",
+    "effortlessly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "effuses effecter effector effusive effusion; 11ch",
+   "blocklist": [
+    "effectively",
+    "effectually",
+    "efficacious",
+    "efficiently"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "effacers effacing effected effusing effigial; 13ch",
+   "blocklist": [
+    "effectiveness",
+    "effervescence",
+    "efficaciously",
+    "efflorescence"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "efferent effetely effigies effluent effluvia; 9ch",
+   "blocklist": [
+    "effecters",
+    "effecting",
+    "effectors",
+    "effectual",
+    "efferents",
+    "effluence",
+    "effluents",
+    "effluvium",
+    "effluxion",
+    "effortful",
+    "effulgent",
+    "effulging",
+    "effusions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "effluxes effloresce effloresces effluences; 10ch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effulgence"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effusively"
+    }
+   ],
+   "prefix_after": "ef",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "effectives effeteness efficacies efficacity; 10ch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "effeminacy"
+    },
+    {
+     "seat": "guesser2",
+     "word": "effeminacy"
+    }
+   ],
+   "prefix_after": "eff",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "efferently effluviums effacements effectivity 10ch",
+   "blocklist": [
+    "effluxions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "eff",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "effectuated effectuates effeminates 11ch",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "eff",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 16.0,
+  "cost_numerator": 16,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

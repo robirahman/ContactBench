@@ -1,0 +1,570 @@
+{
+ "game_id": "dev41-0003-r0-gemini_4_carbon-atk-gpt_6_2_astra",
+ "attacker": "gemini_4_carbon",
+ "defender": "gpt_6_2_astra",
+ "secret": "unsealing",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Short-lived, fleeting, transitory",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ephemeral"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ephemeral"
+    }
+   ],
+   "prefix_after": "u",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Present everywhere at once, omnipresent",
+   "blocklist": [
+    "ubiquitous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Excessively doting on one's wife",
+   "blocklist": [
+    "uxorious"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Six letters; drop first to get a mammal",
+   "blocklist": [
+    "usable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "1st alphabetical u-word in ENABLE dict",
+   "blocklist": [
+    "ubieties"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pick a very common u-word noun",
+   "blocklist": [
+    "ukulele",
+    "ulcer",
+    "umbrella",
+    "umpire",
+    "uncle",
+    "underwear",
+    "unicorn",
+    "uniform",
+    "union",
+    "unit",
+    "unity",
+    "universe",
+    "university",
+    "update",
+    "urine",
+    "urn",
+    "use",
+    "user",
+    "utensil",
+    "utility"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "u",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pick a 4-letter common u-word",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ugly"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ugly"
+    }
+   ],
+   "prefix_after": "un",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Pick a 5-letter common un-word",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "under"
+    },
+    {
+     "seat": "guesser2",
+     "word": "under"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pick a 6-letter common uns-word",
+   "blocklist": [
+    "unsafe",
+    "unsaid",
+    "unseal",
+    "unseat",
+    "unseen",
+    "unsent",
+    "unsold",
+    "unsung",
+    "unsure"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "5-letter uns-word; not fixed",
+   "blocklist": [
+    "unset"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Pick a 5-letter uns-word",
+   "blocklist": [
+    "unsay",
+    "unsew",
+    "unsex"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "unstop unsunk unsawn unship unshut unspun; 6-let",
+   "blocklist": [
+    "unsays",
+    "unseam",
+    "unsell",
+    "unsets",
+    "unsewn",
+    "unsews",
+    "unsexy",
+    "unshed",
+    "unshod",
+    "unsnap",
+    "unsown",
+    "unstep"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "unstuck unsound unspent unshorn unsworn; 7-let",
+   "blocklist": [
+    "unsated",
+    "unsaved",
+    "unsawed",
+    "unscrew",
+    "unseals",
+    "unseats",
+    "unsharp",
+    "unships",
+    "unsized",
+    "unsling",
+    "unslung",
+    "unsnaps",
+    "unsnarl",
+    "unspent",
+    "unspilt",
+    "unsplit",
+    "unstack",
+    "unstick",
+    "unstrap",
+    "unstung",
+    "unswear",
+    "unswept",
+    "unswore"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "unsettle unshaken unsigned unspoken unsteady; 8",
+   "blocklist": [
+    "unsaddle",
+    "unsafely",
+    "unsafety",
+    "unsalted",
+    "unsavory",
+    "unsaying",
+    "unscaled",
+    "unscrews",
+    "unsealed",
+    "unseamed",
+    "unseared",
+    "unseated",
+    "unseeded",
+    "unseeing",
+    "unseemly",
+    "unseized",
+    "unserved",
+    "unsewing",
+    "unsexing",
+    "unsexual",
+    "unshaded",
+    "unshamed",
+    "unshaped",
+    "unshapen",
+    "unshared",
+    "unshaved",
+    "unshaven",
+    "unshells",
+    "unshifts",
+    "unshrunk",
+    "unsicker",
+    "unsifted",
+    "unsights",
+    "unsilent",
+    "unsinful",
+    "unslaked",
+    "unsliced",
+    "unslings",
+    "unsmoked",
+    "unsnarls",
+    "unsoaked",
+    "unsocial",
+    "unsoiled",
+    "unsolder",
+    "unsolved",
+    "unsonsie",
+    "unsorted",
+    "unsought",
+    "unsoured",
+    "unspeaks",
+    "unsphere",
+    "unspoilt",
+    "unsprung",
+    "unstable",
+    "unstably",
+    "unstacks",
+    "unstated",
+    "unstates",
+    "unstayed",
+    "unsteels",
+    "unsticks",
+    "unstitch",
+    "unstoned",
+    "unstraps",
+    "unstress",
+    "unstring",
+    "unstrung",
+    "unstuffy",
+    "unsubtle",
+    "unsubtly",
+    "unsuited",
+    "unsurely",
+    "unswathe",
+    "unswayed",
+    "unswears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 75,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "unsells unsewed unsexed unsexes unsteps unstops; 7",
+   "blocklist": [
+    "unseams",
+    "unshell",
+    "unshift",
+    "unshowy",
+    "unsight",
+    "unsmart",
+    "unsober",
+    "unsolid",
+    "unsoncy",
+    "unsonsy",
+    "unsowed",
+    "unspeak",
+    "unspoke",
+    "unstate",
+    "unsteel"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "unscathed unsightly unskilled unspoiled; 9-let",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "unselfish"
+    },
+    {
+     "seat": "guesser2",
+     "word": "unsettled"
+    }
+   ],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "unsullied unsmiling unspotted unscarred; odorless",
+   "blocklist": [
+    "unscented"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "unstained unstudied unshackle unsheathe; Titanic",
+   "blocklist": [
+    "unsinkable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "unsanitary unsecured unseasoned unsolvable;amoral",
+   "blocklist": [
+    "unscrupulous"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "unserious unshapely unsparing unstylish;sugarless",
+   "blocklist": [
+    "unsweetened"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "unsalable unsayable unsuccess unsterile; unasked",
+   "blocklist": [
+    "unsolicited"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "unsubdued unstopped unshelled unscrewed;NFL foul",
+   "blocklist": [
+    "unsportsmanlike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "unscripted unsuitable unstoppable; unjumble words",
+   "blocklist": [
+    "unscramble"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "unscheduled unschooled unscreened; too bad to say",
+   "blocklist": [
+    "unspeakable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "unsatisfied unscientific unshakable; healthy fat",
+   "blocklist": [
+    "unsaturated"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "unsaddled unsettles unsealing unseating;asymmetric",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "uns",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,511 @@
+{
+ "game_id": "dev44-0004-r0-gpt_6_2_sol-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_fable_5_2",
+ "secret": "coleopterist",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Nocturnal African mammal with a tubular snout",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "anteater",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Word that imitates its sound: buzz hiss clang pop",
+   "blocklist": [
+    "echoic",
+    "imitative",
+    "onomatopoeia",
+    "onomatopoeias",
+    "onomatopoeic",
+    "onomatopoeically",
+    "onomatopoetic",
+    "onomatopoetically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "q?okka; apple zebra stalactite zephyr serendipity",
+   "blocklist": [
+    "quokka",
+    "quokkas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "s?z?g?; eclipse alignment; xylophone quartz jazz",
+   "blocklist": [
+    "alignment",
+    "conjunction",
+    "eclipse",
+    "syzygal",
+    "syzygial",
+    "syzygies",
+    "syzygy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "rh?thm; orange banana python sphinx crypt queue",
+   "blocklist": [
+    "beat",
+    "cadence",
+    "meter",
+    "rhythm",
+    "rhythmic",
+    "rhythmical",
+    "rhythmically",
+    "rhythmicities",
+    "rhythmicity",
+    "rhythmics",
+    "rhythmist",
+    "rhythmists",
+    "rhythmize",
+    "rhythmized",
+    "rhythmizes",
+    "rhythmizing",
+    "rhythms",
+    "tempo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 18,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "w?ldebeest; cat dog bat rat ant bee fly elk yak ox",
+   "blocklist": [
+    "antelope",
+    "antelopes",
+    "gnu",
+    "gnus",
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Duck-billed egg-laying Australian mammal",
+   "blocklist": [
+    "duckbill",
+    "duckbills",
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Loose rock fragments on a mountain slope",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scree"
+    },
+    {
+     "seat": "guesser2",
+     "word": "scree"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with a projectile tongue",
+   "blocklist": [
+    "chameleon",
+    "chameleonic",
+    "chameleonlike",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Welsh valley: c_w_m. cat cow car cap cab can cup",
+   "blocklist": [
+    "cirque",
+    "cirques",
+    "combe",
+    "combes",
+    "coomb",
+    "coombe",
+    "coombes",
+    "coombs",
+    "corrie",
+    "corries",
+    "cwm",
+    "cwms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Nile reptile with a V-shaped snout",
+   "blocklist": [
+    "caiman",
+    "caimans",
+    "cayman",
+    "caymans",
+    "croc",
+    "crocodile",
+    "crocodiles",
+    "crocodilian",
+    "crocodilians",
+    "crocs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Butterfly's pupal stage, not its silk wrapping",
+   "blocklist": [
+    "chrysalid",
+    "chrysalides",
+    "chrysalids",
+    "chrysalis",
+    "chrysalises",
+    "cocoon",
+    "cocoons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Point where two arcs meet; cat? cut cot cod cog",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cusp"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cusp"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Magnetic north finder; cobalt copper coral comet",
+   "blocklist": [
+    "compass",
+    "compassed",
+    "compasses",
+    "compassing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Pasta drainer; cotton coffee cookie cobra comet",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Spider silk: c*bw*b. con cop conch coral comet",
+   "blocklist": [
+    "cobweb",
+    "cobwebbed",
+    "cobwebbier",
+    "cobwebbiest",
+    "cobwebbing",
+    "cobwebby",
+    "cobwebs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Living fossil fish: coel?canth; conifer coal coat",
+   "blocklist": [
+    "coelacanth",
+    "coelacanths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "co.bble.stone; con com cor cos cou col cog coy cop",
+   "blocklist": [
+    "cobble",
+    "cobbled",
+    "cobbler",
+    "cobblers",
+    "cobbles",
+    "cobblestone",
+    "cobblestoned",
+    "cobblestones",
+    "cobbling"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Wile E.; co?ote. cods cogs cots cops cows cobs",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "coyotillo",
+    "coyotillos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Horn of plenty; corn cork core cone coal colt coma",
+   "blocklist": [
+    "cornucopia",
+    "cornucopian",
+    "cornucopias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Tricky riddle: con_ndrum; cogent covert convex",
+   "blocklist": [
+    "conundrum",
+    "conundrums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Crested parrot; codex comic couch count court coin",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cockatoo"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cockatoo"
+    }
+   ],
+   "prefix_after": "col",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Rome's arena; cold cola cole collie colon color",
+   "blocklist": [
+    "coliseum",
+    "coliseums",
+    "colosseum",
+    "colosseums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "col",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 67.9384765625,
+  "cost_numerator": 69569,
+  "cost_denominator": 1024,
+  "cost_exact": false,
+  "cost_mcse": 0.1924238496032395,
+  "baseline": {
+   "numerator": 11698665607,
+   "denominator": 969216,
+   "value": 12070.235744147847,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 3.6367979732034668,
+   "rollouts": 256,
+   "rank_total": 35095996821,
+   "rank_denominator": 2907648,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 38849,
+   "denominator": 1024,
+   "value": 37.9384765625,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:2,5:10,6:23,7:39,8:79,9:96,10:77,11:56,12:40,13:34,14:19,15:10,16:7,17:4,18:1",
+   "target_length": 12,
+   "C": 50,
+   "mcse": 0.1924238496032395,
+   "rollouts": 256,
+   "rank_total": 388490,
+   "rank_denominator": 10240,
+   "cache_key": "641e1a409e6ca760fbc16e6e7c4977e9"
+  }
+ }
+}

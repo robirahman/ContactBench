@@ -1,0 +1,749 @@
+{
+ "game_id": "dev41-0009-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a cute animal you might see at a zoo",
+   "blocklist": [
+    "alpaca",
+    "anteater",
+    "armadillo",
+    "axolotl",
+    "bear",
+    "beaver",
+    "bunny",
+    "camel",
+    "capybara",
+    "cheetah",
+    "chimp",
+    "chimpanzee",
+    "chinchilla",
+    "cub",
+    "deer",
+    "dolphin",
+    "elephant",
+    "fawn",
+    "fennec",
+    "ferret",
+    "flamingo",
+    "fox",
+    "frog",
+    "gecko",
+    "gibbon",
+    "giraffe",
+    "gorilla",
+    "hedgehog",
+    "hippo",
+    "kangaroo",
+    "koala",
+    "lemur",
+    "leopard",
+    "lion",
+    "llama",
+    "macaw",
+    "manatee",
+    "meerkat",
+    "monkey",
+    "okapi",
+    "orangutan",
+    "otter",
+    "panda",
+    "pangolin",
+    "parrot",
+    "peacock",
+    "penguin",
+    "platypus",
+    "porcupine",
+    "puffin",
+    "quokka",
+    "rabbit",
+    "raccoon",
+    "seal",
+    "sloth",
+    "tapir",
+    "tiger",
+    "tortoise",
+    "toucan",
+    "turtle",
+    "wallaby",
+    "walrus",
+    "wombat",
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 64,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Any S-list offset 0-20000; trust your intuition.",
+   "blocklist": [
+    "sab",
+    "shakoes",
+    "shifter",
+    "slappers",
+    "soothing",
+    "squire"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "subserve"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Global offset XY000. Pick X=1..9 and Y=0..9.",
+   "blocklist": [
+    "autunite",
+    "choregus",
+    "decarburize",
+    "discombobulations",
+    "epithetical",
+    "impertinent",
+    "interpolations",
+    "nondeliveries"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "DH p=1009 g=11 A=322. Open offset B=11^b mod p.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "acequia"
+    ]
+   ],
+   "blocked_word_count": 1010,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "imponderable"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Reverse countdown even digits as global offset.",
+   "blocklist": [
+    "abscessing",
+    "antiparasitics",
+    "asphalt",
+    "lunate",
+    "pasturer",
+    "sexism",
+    "sexisms",
+    "sexist",
+    "sexists",
+    "sexless",
+    "smorgasbord"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "afflux"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Zero-based index: 19*4000 minus 19.",
+   "blocklist": [
+    "inpoured",
+    "inpouring",
+    "inpourings",
+    "installation",
+    "installations",
+    "installed",
+    "installer",
+    "installers",
+    "installing",
+    "installment",
+    "installments",
+    "installs",
+    "instalment",
+    "instating",
+    "instauration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 15,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Global index: your favorite multiple of 1009.",
+   "blocklist": [
+    "apophyllite",
+    "armlocks",
+    "averts",
+    "dishabille",
+    "honorand",
+    "incenses",
+    "obeahs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mentor"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "list_words(prefix='re',offset=9**3-1,limit=1)",
+   "blocklist": [
+    "receivable",
+    "receivables",
+    "receive",
+    "received",
+    "receiver",
+    "receivers",
+    "receivership"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "DH p=100003 g=13 A=28561. Open index B=13^b mod p",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "nonunionized"
+    ]
+   ],
+   "blocked_word_count": 100005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "DH p=65537 g=3 A=81. Open global index 100005+B.",
+   "blocklist": [
+    "noodging",
+    "nosologically",
+    "nutcrackers",
+    "oxtongues"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "tabloid"
+    },
+    {
+     "seat": "guesser2",
+     "word": "provoke"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Global index 142000 + your favorite 3-digit prime.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "songful",
+     "speck"
+    ]
+   ],
+   "blocked_word_count": 904,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Global index 100005 + random integer 0..72602.",
+   "blocklist": [
+    "nonunions",
+    "nonunique",
+    "nonviral",
+    "obtunded",
+    "perching",
+    "sensationally",
+    "suspensions",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "thankfullest"
+    },
+    {
+     "seat": "guesser2",
+     "word": "rottenly"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Uniformly sample global offsets 100010..145000.",
+   "blocklist": [
+    "nonuniversals",
+    "perchance",
+    "psycholinguistic",
+    "railway",
+    "reagins",
+    "rhapsodizes",
+    "slatterns",
+    "starlike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "reattained"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Index 158000 + days in leap year + insect legs.",
+   "blocklist": [
+    "triumph",
+    "triumphal",
+    "triumphalism",
+    "triumphalisms",
+    "triumphalist",
+    "triumphalists",
+    "triumphant",
+    "triumphantly",
+    "triumphed",
+    "triumphing",
+    "triumphs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Pick global index 100010..172606 ending in 618.",
+   "blocklist": [
+    "numbles",
+    "photofinisher",
+    "rearousing",
+    "sycophancies",
+    "undertaking",
+    "undutiful",
+    "waveband"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scorpion"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Global index 114000 + 3 random decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "plucker",
+     "pomologists"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Global index 130000 + four random decimal digits.",
+   "blocklist": [
+    "rhapsodizes",
+    "rhapsodizing",
+    "rooting",
+    "sanitised",
+    "schoolbooks",
+    "scrupulosities",
+    "shimmery",
+    "slatternly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "satyriases"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Global index 155000 + any three decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "tigerishly",
+     "toothsomenesses"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Global index 120000 + any four decimal digits.",
+   "blocklist": [
+    "psycholinguistics",
+    "quacks",
+    "radicalise",
+    "redivision",
+    "refitting",
+    "reported",
+    "restoked",
+    "rhapsodized"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quester"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ratty"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Global index 163000 + any three decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "unpaved",
+     "unverbalized"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Global index 105000 + any three decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "overcommit",
+     "overseer"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Global index 110000 + any three decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "perceptually",
+     "phanerophytes"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Global index 150000 + any three decimal digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "suspensefulness",
+     "synesis"
+    ]
+   ],
+   "blocked_word_count": 1005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Global index 121000 + random integer 0..4999.",
+   "blocklist": [
+    "pyes",
+    "pygidia",
+    "radicalizing",
+    "radically",
+    "radicalness",
+    "rateable",
+    "reallot",
+    "reallots",
+    "reallotted",
+    "recces",
+    "reconsideration",
+    "regna",
+    "regnal"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "realised"
+    },
+    {
+     "seat": "guesser2",
+     "word": "reciprocal"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Use global offset 168000 + any three digits.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "walleye",
+     "weightlessnesses"
+    ]
+   ],
+   "blocked_word_count": 1004,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Global index 143000 + any four digits 0000..2999.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "specked",
+     "stodged"
+    ]
+   ],
+   "blocked_word_count": 2998,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Global index 115100 + any four digits 0000..3999.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "pood",
+     "proportion"
+    ]
+   ],
+   "blocked_word_count": 4005,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Global index 132000 + any four digits 0000..3999.",
+   "blocklist": [
+    "rune",
+    "runes",
+    "rung",
+    "semicoma",
+    "semicomas",
+    "semicommercial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "scoliomas"
+    },
+    {
+     "seat": "guesser2",
+     "word": "scrambler"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Global index 146000 + any four digits 0000..3999.",
+   "blocklist": [
+    "stodges",
+    "stuffier",
+    "suballocation",
+    "suballocations",
+    "subalpine",
+    "subaltern",
+    "subalterns",
+    "submiss",
+    "submission",
+    "submissions",
+    "submissive",
+    "subspecies",
+    "suicidal",
+    "suicidally",
+    "suicide",
+    "supercharges",
+    "suspensefulnesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sulkily"
+    },
+    {
+     "seat": "guesser2",
+     "word": "submits"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 3941.3822389350585,
+  "cost_numerator": 9970877257,
+  "cost_denominator": 2529792,
+  "cost_exact": false,
+  "cost_mcse": 1.288334397629588,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 9894983497,
+   "denominator": 2529792,
+   "value": 3911.3822389350585,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:348,4:1307,5:2978,6:5355,7:8005,8:9882,9:8422,10:6612,11:4846,12:3453,13:2449,14:1637,15:987,16:595,17:330,18:162,19:91,20:45",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 1.288334397629588,
+   "rollouts": 256,
+   "rank_total": 9894983497,
+   "rank_denominator": 2529792,
+   "cache_key": "66d502fa438356627d4937cd97eda775"
+  }
+ }
+}

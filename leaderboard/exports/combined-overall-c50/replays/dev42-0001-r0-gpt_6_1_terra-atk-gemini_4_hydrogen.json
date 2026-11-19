@@ -1,0 +1,526 @@
+{
+ "game_id": "dev42-0001-r0-gpt_6_1_terra-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_1_terra",
+ "defender": "gemini_4_hydrogen",
+ "secret": "phonemic",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Largest land mammal; the and for are was you not",
+   "blocklist": [
+    "elephant",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Tallest animal; that have with this from they one",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "King of jungle; all can had her his but out day",
+   "blocklist": [
+    "lion",
+    "lions"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Striped horse; who what when where there their use",
+   "blocklist": [
+    "zebra",
+    "zebras"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Bamboo eater; your more some than then them into",
+   "blocklist": [
+    "panda",
+    "pandas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Hopping Australian marsupial; said each she which",
+   "blocklist": [
+    "kangaroo",
+    "kangaroos",
+    "wallabies",
+    "wallaby"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Big striped cat; will would could about after",
+   "blocklist": [
+    "tiger",
+    "tigers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Antarctic flightless bird; people time good new",
+   "blocklist": [
+    "penguin",
+    "penguins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Eight-armed sea creature; water other many first",
+   "blocklist": [
+    "octopi",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Ocean predator; make like just know take year",
+   "blocklist": [
+    "orca",
+    "orcas",
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Flipper species; man get now way may two our see",
+   "blocklist": [
+    "dolphin",
+    "dolphins",
+    "porpoise",
+    "porpoises",
+    "seal",
+    "seals"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Honey-making insect; only come over such also back",
+   "blocklist": [
+    "bee",
+    "bees",
+    "honeybee",
+    "honeybees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Canine pet; best friend house work life part long",
+   "blocklist": [
+    "dog",
+    "dogs",
+    "hound",
+    "hounds",
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Nocturnal hooter; its how any did has love world",
+   "blocklist": [
+    "owl",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Grizzly; very much even most must well were been",
+   "blocklist": [
+    "bear",
+    "bears"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Baby feline; right think old look great little own",
+   "blocklist": [
+    "cub",
+    "cubs",
+    "kitten",
+    "kittens",
+    "kitties",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Caterpillar becomes; through another because three",
+   "blocklist": [
+    "butterflies",
+    "butterfly",
+    "moth",
+    "moths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Croaking amphibian; green say new us go made find",
+   "blocklist": [
+    "frog",
+    "frogs",
+    "toad",
+    "toads"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Farm bovine that moos; there is no need to ask",
+   "blocklist": [
+    "bull",
+    "bulls",
+    "cattle",
+    "cow",
+    "cows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Egg laying barnyard bird; give want call hand high",
+   "blocklist": [
+    "chicken",
+    "chickens",
+    "hen",
+    "hens",
+    "rooster",
+    "roosters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Eight legged web spinner; put end does set why",
+   "blocklist": [
+    "arachnid",
+    "arachnids",
+    "spider",
+    "spiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Bunny; air ago age act add bad boy car far few",
+   "blocklist": [
+    "hare",
+    "hares",
+    "rabbit",
+    "rabbits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Desert ship; red run sun top ten got let off big",
+   "blocklist": [
+    "camel",
+    "camels",
+    "dromedaries",
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Oinking farm animal; ice ink iron job joy key law",
+   "blocklist": [
+    "boar",
+    "boars",
+    "hog",
+    "hogs",
+    "pig",
+    "piglet",
+    "pigs",
+    "swine"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Howling wild canine; night moon stars sky blue",
+   "blocklist": [
+    "coyote",
+    "coyotes",
+    "wolf",
+    "wolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "River horse; school family mother father child",
+   "blocklist": [
+    "hippo",
+    "hippopotami",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Horned African beast; yes yet top war win six sit",
+   "blocklist": [
+    "buffalo",
+    "buffaloes",
+    "gnu",
+    "gnus",
+    "rhino",
+    "rhinoceri",
+    "rhinoceros",
+    "rhinoceroses",
+    "rhinos",
+    "wildebeest",
+    "wildebeests"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Stinky striped mammal; ace ale aim aid ail apt arm",
+   "blocklist": [
+    "polecat",
+    "polecats",
+    "skunk",
+    "skunks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Banana eating primate; ant ape bat bed bit box bus",
+   "blocklist": [
+    "baboon",
+    "baboons",
+    "chimp",
+    "chimps",
+    "gorilla",
+    "gorillas",
+    "monkey",
+    "monkeys"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11843.437647426419,
+  "cost_numerator": 5382416047,
+  "cost_denominator": 454464,
+  "cost_exact": false,
+  "cost_mcse": 2.3831721724776056,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 5368782127,
+   "denominator": 454464,
+   "value": 11813.437647426419,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:871,4:3815,5:8583,6:15188,7:23076,8:28404,9:24858,10:20299,11:15499,12:11356,13:7827,14:5126,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.3831721724776056,
+   "rollouts": 256,
+   "rank_total": 85900514032,
+   "rank_denominator": 7271424,
+   "cache_key": "765201f6d85b037a18788a626c60cf1d"
+  }
+ }
+}

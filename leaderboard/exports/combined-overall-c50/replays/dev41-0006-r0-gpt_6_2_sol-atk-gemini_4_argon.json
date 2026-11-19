@@ -1,0 +1,529 @@
+{
+ "game_id": "dev41-0006-r0-gpt_6_2_sol-atk-gemini_4_argon",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_argon",
+ "secret": "effectuated",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "African termite eater with a tubular snout",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "anteater",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Literally foot and a half long; fond of big words",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sesquipedalian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sesquipedalian"
+    }
+   ],
+   "prefix_after": "e",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "When day and night are about equally long",
+   "blocklist": [
+    "equinoctial",
+    "equinoctials",
+    "equinox",
+    "equinoxes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Largest land animal, with a trunk",
+   "blocklist": [
+    "elephant",
+    "elephantine",
+    "elephants"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Moon hides sun. earth echo energy emerald engine",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "eclipsis",
+    "eclipsises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Aussie ostrich? egg eel elf ear era end elk ego",
+   "blocklist": [
+    "echidna",
+    "echidnas",
+    "emu",
+    "emus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Olympic fencing sword: whole body is target",
+   "blocklist": [
+    "epee",
+    "epeeist",
+    "epeeists",
+    "epees"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Quintessence? epic exit envy evil ever even edge",
+   "blocklist": [
+    "embodiment",
+    "embodiments",
+    "epitome",
+    "epitomes",
+    "essence",
+    "essences",
+    "essential",
+    "essentials",
+    "ether",
+    "ethers",
+    "exemplar",
+    "exemplars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Tide going out. eat eke ell err eta ewe eye ext",
+   "blocklist": [
+    "ebb",
+    "ebbed",
+    "ebbing",
+    "ebbs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Funeral speech. easy east earn envy edit emit etch",
+   "blocklist": [
+    "elegies",
+    "elegy",
+    "epicedia",
+    "epicedium",
+    "epitaph",
+    "epitaphs",
+    "eulogies",
+    "eulogium",
+    "eulogiums",
+    "eulogy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Throat-to-stomach tube. era excel exert expo ex",
+   "blocklist": [
+    "esophageal",
+    "esophagi",
+    "esophagus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Study of insects. elk? ems ens ers ess eth eur",
+   "blocklist": [
+    "entomological",
+    "entomologically",
+    "entomologies",
+    "entomologist",
+    "entomologists",
+    "entomology"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Fleeting (9 letters). eon era errand event exact",
+   "blocklist": [
+    "ephemera",
+    "ephemerae",
+    "ephemeral",
+    "ephemeralities",
+    "ephemerality",
+    "ephemerally",
+    "ephemerals",
+    "ephemeras",
+    "ephemerid",
+    "ephemerides",
+    "ephemerids",
+    "ephemeris",
+    "ephemeron",
+    "evanesce",
+    "evanesced",
+    "evanescence",
+    "evanescences",
+    "evanescent",
+    "evanesces",
+    "evanescing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Italian coffee shot. exam exes euro envy east",
+   "blocklist": [
+    "espresso",
+    "espressos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Archimedes' cry. erode erase erect ebony elder",
+   "blocklist": [
+    "eureka"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Secretly listen in. elk? elf? ebb? ecu eft eke",
+   "blocklist": [
+    "eavesdrop",
+    "eavesdropped",
+    "eavesdropper",
+    "eavesdroppers",
+    "eavesdropping",
+    "eavesdrops"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Atone for sin. eau edh ell els emes erne erns",
+   "blocklist": [
+    "expiate",
+    "expiated",
+    "expiates",
+    "expiating",
+    "expiation",
+    "expiations",
+    "expiator",
+    "expiators",
+    "expiatory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Koala's diet. escape estate effect effort enough",
+   "blocklist": [
+    "eucalypt",
+    "eucalypti",
+    "eucalyptol",
+    "eucalyptole",
+    "eucalyptoles",
+    "eucalyptols",
+    "eucalypts",
+    "eucalyptus",
+    "eucalyptuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Word origins. ember envoy elope epoch earthworm",
+   "blocklist": [
+    "etyma",
+    "etymological",
+    "etymologically",
+    "etymologies",
+    "etymologise",
+    "etymologised",
+    "etymologises",
+    "etymologising",
+    "etymologist",
+    "etymologists",
+    "etymologize",
+    "etymologized",
+    "etymologizes",
+    "etymologizing",
+    "etymology",
+    "etymon",
+    "etymons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 17,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Expel from church. emu? eat? erg erf ers erw",
+   "blocklist": [
+    "excommunicate",
+    "excommunicated",
+    "excommunicates",
+    "excommunicating",
+    "excommunication",
+    "excommunications",
+    "excommunicative",
+    "excommunicator",
+    "excommunicators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "0 degrees latitude. elk? elm ell? elf? eke? eke?",
+   "blocklist": [
+    "equator",
+    "equatorial",
+    "equators",
+    "equatorward"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Jewelry hung from a pierced lobe",
+   "blocklist": [
+    "eardrop",
+    "eardrops",
+    "earring",
+    "earrings"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Outer skeleton? encyclopedia enigma entropy eczema",
+   "blocklist": [
+    "epicuticle",
+    "epicuticles",
+    "epicuticular",
+    "exoskeletal",
+    "exoskeleton",
+    "exoskeletons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Down duck. eds eddy eff efs eek ell elks elms eon",
+   "blocklist": [
+    "eider",
+    "eiderdown",
+    "eiderdowns",
+    "eiders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "e",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 525.4837904676259,
+  "cost_numerator": 23373519,
+  "cost_denominator": 44480,
+  "cost_exact": false,
+  "cost_mcse": 0.6161770018093288,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 22039119,
+   "denominator": 44480,
+   "value": 495.4837904676259,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:7,4:75,5:170,6:437,7:789,8:1105,9:1103,10:959,11:695,12:541,13:372,14:204,15:152,16:84,17:43,18:30,19:27,20:12",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.6161770018093288,
+   "rollouts": 256,
+   "rank_total": 88156476,
+   "rank_denominator": 177920,
+   "cache_key": "1b9cb862054b6a78e3b60f17db33348c"
+  }
+ }
+}

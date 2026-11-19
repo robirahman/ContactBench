@@ -1,0 +1,551 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_argon-atk-claude_opus_5_5",
+ "attacker": "gemini_4_argon",
+ "defender": "claude_opus_5_5",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Airport suitcases and travel bags",
+   "blocklist": [
+    "baggage",
+    "baggages",
+    "luggage",
+    "luggages"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Wimbledon red fruit served with cream",
+   "blocklist": [
+    "raspberries",
+    "raspberry",
+    "strawberries",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Dark heavy German sourdough rye bread",
+   "blocklist": [
+    "pumpernickel",
+    "pumpernickels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Autumn flower often called a mum",
+   "blocklist": [
+    "aster",
+    "asters",
+    "chrysanthemum",
+    "chrysanthemums",
+    "mum",
+    "mums"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Rotating tube toy with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "kaleidoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Performer who speaks for a dummy without moving",
+   "blocklist": [
+    "ventriloquial",
+    "ventriloquies",
+    "ventriloquism",
+    "ventriloquisms",
+    "ventriloquist",
+    "ventriloquists",
+    "ventriloquize",
+    "ventriloquy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Mexican avocado dip for tortilla chips",
+   "blocklist": [
+    "guacamole",
+    "guacamoles",
+    "salsa",
+    "salsas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Jazz curved brass woodwind instrument by Adolphe",
+   "blocklist": [
+    "sax",
+    "saxes",
+    "saxophone",
+    "saxophones",
+    "saxophonist"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Last word in many dictionaries, tropical weevil",
+   "blocklist": [
+    "zymurgies",
+    "zymurgy",
+    "zyzzyva",
+    "zyzzyvas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Act of throwing someone out of a window",
+   "blocklist": [
+    "defenestrate",
+    "defenestrated",
+    "defenestrates",
+    "defenestrating",
+    "defenestration",
+    "defenestrations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Sleight of hand magic tricks, 16-letter noun",
+   "blocklist": [
+    "legerdemain",
+    "legerdemains",
+    "prestidigitation",
+    "prestidigitations",
+    "prestidigitator",
+    "prestidigitators"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Adjective meaning having many syllables, foot-long",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sesquipedalian"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sesquipedalian"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Extinct marine reptile resembling a dolphin",
+   "blocklist": [
+    "ichthyosaur",
+    "ichthyosaurian",
+    "ichthyosaurians",
+    "ichthyosaurs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Unable to be reached or contacted, isolated",
+   "blocklist": [
+    "inaccessible",
+    "inaccessibly",
+    "incommunicado",
+    "insular",
+    "insulated",
+    "isolate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Extremely small, calculus quantity near zero",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "infinitesimal"
+    },
+    {
+     "seat": "guesser2",
+     "word": "infinitesimal"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Glowing with heat, traditional tungsten light bulb",
+   "blocklist": [
+    "incandesce",
+    "incandesced",
+    "incandescence",
+    "incandescences",
+    "incandescent",
+    "incandescently",
+    "incandescents",
+    "incandesces",
+    "incandescing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Tireless and unyielding, incapable of fatigue",
+   "blocklist": [
+    "indefatigabilities",
+    "indefatigability",
+    "indefatigable",
+    "indefatigableness",
+    "indefatigablenesses",
+    "indefatigably",
+    "indomitable",
+    "indomitably",
+    "inexhaustible",
+    "inexhaustibly",
+    "inflexible",
+    "inflexibly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Defiance of authority, refusal to obey orders",
+   "blocklist": [
+    "indiscipline",
+    "insolence",
+    "insolent",
+    "insubordinate",
+    "insubordinately",
+    "insubordinates",
+    "insubordination",
+    "insubordinations",
+    "insurgence",
+    "insurgency",
+    "insurrection",
+    "insurrections",
+    "intransigence",
+    "intransigent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 14,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Chemical spray used for killing bugs and pests",
+   "blocklist": [
+    "insecticidal",
+    "insecticidally",
+    "insecticide",
+    "insecticides"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Not important or significant, trivial, 15 letters",
+   "blocklist": [
+    "inconsequence",
+    "inconsequences",
+    "inconsequential",
+    "inconsequentially",
+    "inconsiderable",
+    "inconsiderably",
+    "insignificance",
+    "insignificances",
+    "insignificancies",
+    "insignificancy",
+    "insignificant",
+    "insignificantly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Impossible to understand, baffling, 16 letters",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "incomprehensible"
+    },
+    {
+     "seat": "guesser2",
+     "word": "incomprehensible"
+    }
+   ],
+   "prefix_after": "ind",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Impossible to tell apart, identical, 17 letters",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indistinguishable"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indistinguishable"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Development of factories, 17-letter noun",
+   "blocklist": [
+    "industries",
+    "industrious",
+    "industry"
+   ],
+   "blocked_ranges": [
+    [
+     "industrial",
+     "industrials"
+    ]
+   ],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "industriously industriousness industriousnesses",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indubitably"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indubitabilities"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "indubitability indubitableness indubitablenesses",
+   "blocklist": [
+    "indubitable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "induce induced inducement inducements inducer",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "inducers",
+     "inducing"
+    ]
+   ],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "indulgences"
+    }
+   ],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "induct inducted inductee inductees inducting",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "induct",
+     "indults"
+    ]
+   ],
+   "blocked_word_count": 34,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "indurate indurated indurates indurating induration",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "indu",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 28.0,
+  "cost_numerator": 28,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

@@ -1,0 +1,508 @@
+{
+ "game_id": "dev41-0000-r0-gpt_6_2_astra-atk-claude_fable_5_2",
+ "attacker": "gpt_6_2_astra",
+ "defender": "claude_fable_5_2",
+ "secret": "wert",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Pick a delightfully improbable animal.",
+   "blocklist": [
+    "aardvark",
+    "axolotl",
+    "capybara",
+    "giraffe",
+    "narwhal",
+    "okapi",
+    "pangolin",
+    "platypus",
+    "quokka",
+    "unicorn"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 10,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "ENABLE[295^2 + 316], zero-based.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "maigre",
+     "mailabilities"
+    ]
+   ],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "First spice that comes to mind. Trust your gut.",
+   "blocklist": [
+    "allspice",
+    "anise",
+    "basil",
+    "caraway",
+    "cardamom",
+    "cardamon",
+    "cassia",
+    "cayenne",
+    "chile",
+    "chili",
+    "chilli",
+    "cilantro",
+    "cinnamon",
+    "clove",
+    "cloves",
+    "coriander",
+    "cumin",
+    "curry",
+    "dill",
+    "fennel",
+    "fenugreek",
+    "garlic",
+    "ginger",
+    "horseradish",
+    "juniper",
+    "mace",
+    "marjoram",
+    "mint",
+    "mustard",
+    "nutmeg",
+    "nutmegs",
+    "oregano",
+    "paprika",
+    "parsley",
+    "pepper",
+    "peppercorn",
+    "peppers",
+    "rosemary",
+    "saffron",
+    "sage",
+    "salt",
+    "salts",
+    "sesame",
+    "spice",
+    "sumac",
+    "tarragon",
+    "thyme",
+    "turmeric",
+    "vanilla",
+    "wasabi"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 50,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Pluralize your own private pick from last round.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cinnamons"
+    },
+    {
+     "seat": "guesser2",
+     "word": "cinnamons"
+    }
+   ],
+   "prefix_after": "w",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "w offset 100*len(turn1 pick)+initial(A=1), 0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wallop",
+     "waltzed"
+    ],
+    [
+     "wannigan",
+     "wapiti"
+    ],
+    [
+     "warlord",
+     "warmouths"
+    ],
+    [
+     "wart",
+     "washaterias"
+    ],
+    [
+     "wastepaper",
+     "watchable"
+    ],
+    [
+     "waterfronts",
+     "watermanship"
+    ],
+    [
+     "waughts",
+     "waveoff"
+    ],
+    [
+     "waysides",
+     "weakly"
+    ]
+   ],
+   "blocked_word_count": 208,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "w[3*sum(ASCII of your turn1 animal)], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wheelbarrowed",
+     "wheelbarrows"
+    ],
+    [
+     "whitewasher",
+     "whitewashes"
+    ],
+    [
+     "widowhoods",
+     "widows"
+    ],
+    [
+     "wigwams",
+     "wikiups"
+    ],
+    [
+     "wilier",
+     "wilily"
+    ],
+    [
+     "willful",
+     "willfulness"
+    ],
+    [
+     "winery",
+     "wineshop"
+    ],
+    [
+     "winglet",
+     "wingman"
+    ],
+    [
+     "winnings",
+     "winnow"
+    ],
+    [
+     "wiselier",
+     "wisely"
+    ]
+   ],
+   "blocked_word_count": 32,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "w[17*count_words(turn6_pick[:4])], zero-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wab",
+     "weldor"
+    ]
+   ],
+   "blocked_word_count": 1351,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Shift your turn7 answer 1351 entries forward.",
+   "blocklist": [
+    "wellcurbs",
+    "wellsprings",
+    "welterweight",
+    "wendigos",
+    "wergeld",
+    "westering",
+    "westernizing",
+    "wetly",
+    "whacked",
+    "whaled",
+    "whang",
+    "wharfinger",
+    "whatsises",
+    "wheedler",
+    "wheelhorses",
+    "wheen",
+    "wheezily",
+    "whelps",
+    "wherefrom",
+    "wherry",
+    "wheyface",
+    "whids",
+    "whig",
+    "whims",
+    "whiner",
+    "whinny",
+    "whippet",
+    "whipsawn",
+    "whirlers",
+    "whirried",
+    "whisker",
+    "whispers",
+    "whists",
+    "whiteheads",
+    "whitest",
+    "whitewoods",
+    "whitter",
+    "whizzbangs",
+    "wholenesses",
+    "whomever",
+    "whooping",
+    "whored",
+    "whort",
+    "why",
+    "wickerwork",
+    "widdies",
+    "widenesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 47,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "w[5*sum(ASCII of your turn8 word)], zero-based",
+   "blocklist": [
+    "whid",
+    "wider"
+   ],
+   "blocked_ranges": [
+    [
+     "wirework",
+     "witlessness"
+    ],
+    [
+     "wooing",
+     "wyverns"
+    ]
+   ],
+   "blocked_word_count": 710,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "wh[sum(ASCII of your turn9 word) mod 601], 0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wha",
+     "whys"
+    ]
+   ],
+   "blocked_word_count": 601,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "wi[sum(ASCII of your turn10 word) mod 499],0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "wich",
+     "winterizing"
+    ]
+   ],
+   "blocked_word_count": 499,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "wo[sum(ASCII of your turn11 word) mod 300],0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "woad",
+     "wooing"
+    ]
+   ],
+   "blocked_word_count": 273,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "wi[499+(sum(ASCII of turn12 word) mod 63)],0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "winterkill",
+     "wireways"
+    ]
+   ],
+   "blocked_word_count": 63,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "wi[730+(sum(ASCII of turn13 word) mod 40)],0-based",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "witnesses",
+     "wizzens"
+    ]
+   ],
+   "blocked_word_count": 40,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "we[315+(sum(ASCII of turn14 word) mod 180)],0-base",
+   "blocklist": [
+    "welkin",
+    "welkins",
+    "wellhole",
+    "wellie",
+    "welling",
+    "wellspring",
+    "welsher",
+    "welshing",
+    "weltanschauungs",
+    "weltings",
+    "wenched",
+    "wended",
+    "wennish",
+    "wenny",
+    "wergelts",
+    "west",
+    "westerlies",
+    "westerner",
+    "westernisations",
+    "westernise",
+    "wests",
+    "wetness",
+    "wets",
+    "wettable",
+    "wetted"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 25,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "we[344+(ASCII sum of turn15 word mod 100)],0-base",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "weldors",
+     "wergilds"
+    ],
+    [
+     "werwolf",
+     "westbound"
+    ]
+   ],
+   "blocked_word_count": 99,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "wert witness witnessed witnessing witlessnesses",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "w",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 18.0,
+  "cost_numerator": 18,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 11475139301,
+   "denominator": 999168,
+   "value": 11484.694566879643,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 4,
+   "C": 50,
+   "mcse": 6.866633736207895,
+   "rollouts": 256,
+   "rank_total": 11475139301,
+   "rank_denominator": 999168,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}

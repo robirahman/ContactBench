@@ -1,0 +1,519 @@
+{
+ "game_id": "dev44-0001-r0-gpt_6_2_sol-atk-gpt_6_1_terra",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_1_terra",
+ "secret": "thanatoses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Fear of 13. cat dog bat rat pig cow ant bee fox",
+   "blocklist": [
+    "triskaidekaphobia"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Plants make sugar via light. sun sky air red oak",
+   "blocklist": [
+    "photosynthesis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Sound that comes back. ace act age aim ale ape arc",
+   "blocklist": [
+    "echo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Nadir's opposite. one two six ten pro con yes no",
+   "blocklist": [
+    "zenith"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A baffling mystery. ax ox go do be am is at in up",
+   "blocklist": [
+    "conundrum",
+    "enigma",
+    "puzzle",
+    "riddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Word mimics noise. buzz hiss moo pop bang click",
+   "blocklist": [
+    "onomatopoeia",
+    "onomatopoeic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Any fruit; think of the most common example.",
+   "blocklist": [
+    "apple",
+    "banana",
+    "grape",
+    "mango",
+    "orange",
+    "pear",
+    "strawberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Reads same both ways. car bus jet van cab ski",
+   "blocklist": [
+    "palindrome",
+    "palindromes",
+    "palindromic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "QSO: brilliant active galactic nucleus",
+   "blocklist": [
+    "quasar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Sockeye or coho. abs add ado aft aid ail ale all",
+   "blocklist": [
+    "salmon",
+    "salmons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Flag signaling. bed box boy can cup day ear egg",
+   "blocklist": [
+    "semaphore",
+    "semaphores",
+    "semaphoring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Ant-eating mammal. aba abb abo aby abs ace ace",
+   "blocklist": [
+    "aardvark",
+    "antbear",
+    "anteater",
+    "armadillo",
+    "echidna",
+    "numbat",
+    "pangolin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "H2O is one. bio dna ion atom acid salt gas ice",
+   "blocklist": [
+    "chemical",
+    "compound",
+    "liquid",
+    "molecule",
+    "substance",
+    "water"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Portable rain shield. bad bag bah ban bap bar bas",
+   "blocklist": [
+    "brolly",
+    "parasol",
+    "raincoat",
+    "umbrella"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "A to Z. aah aal aas aba abbe abet ably abut abys",
+   "blocklist": [
+    "alphabet",
+    "alphabetic",
+    "alphabetical",
+    "alphabetically",
+    "alphabetize",
+    "alphabets",
+    "letters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Five-dot dice pattern. aaa aed aff aga agee agin",
+   "blocklist": [
+    "pip",
+    "pips",
+    "quincuncial",
+    "quincunx",
+    "quincunxes",
+    "quincunxial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Moon hides Sol. hat mat fan pan pen pin tin win",
+   "blocklist": [
+    "eclipse",
+    "eclipsed",
+    "eclipses",
+    "eclipsing",
+    "eclipsis",
+    "eclipsises",
+    "occultation",
+    "occultations",
+    "totality"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Mallet instrument: wooden bars. jazz zebra quartz",
+   "blocklist": [
+    "glockenspiel",
+    "marimba",
+    "vibraphone",
+    "xylophone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Duck-billed monotreme. yak elk owl emu ape doe",
+   "blocklist": [
+    "platypi",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "FIFO lineup. run set get put sit hit cut let bet",
+   "blocklist": [
+    "line",
+    "queue",
+    "queueing",
+    "queuing"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "88 keys. ace act add red rye tea toe toy tug tub",
+   "blocklist": [
+    "keyboard",
+    "keyboards",
+    "organ",
+    "piano",
+    "pianoforte",
+    "pianofortes",
+    "pianos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Two bad choices. aa ab ad ae ag ah ai al an ar as",
+   "blocklist": [
+    "dilemma",
+    "dilemmas",
+    "dilemmatic",
+    "dilemmic",
+    "predicament",
+    "quandaries",
+    "quandary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Termite-eating hyena. aaa aahs aals aaronic aard",
+   "blocklist": [
+    "aardwolf",
+    "aardwolves"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Eight-armed mollusk. abaft abacus abacuses abalone",
+   "blocklist": [
+    "octopi",
+    "octopod",
+    "octopodes",
+    "octopods",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Color-changing lizard. antidisestablishmentarian",
+   "blocklist": [
+    "anole",
+    "anoles",
+    "chameleon",
+    "chameleonic",
+    "chameleonlike",
+    "chameleons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Giza lion statue. gem fox elf imp urn orb ink ivy",
+   "blocklist": [
+    "sphinx",
+    "sphinxes",
+    "sphinxlike"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Shortened form. act: apt ant art ash ask asp ass",
+   "blocklist": [
+    "abbreviated",
+    "abbreviation",
+    "abbreviations",
+    "abridgment",
+    "acronym",
+    "contraction",
+    "initialism",
+    "shortening"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Burial chamber. ace aces ache acme acne acre aced",
+   "blocklist": [
+    "crypt",
+    "grave",
+    "mausoleum",
+    "sepulcher",
+    "sepulchre",
+    "tomb",
+    "vault"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 11999.628156544259,
+  "cost_numerator": 62310517127,
+  "cost_denominator": 5192704,
+  "cost_exact": false,
+  "cost_mcse": 3.1093804223209527,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 62154736007,
+   "denominator": 5192704,
+   "value": 11969.628156544259,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:855,4:3856,5:8608,6:15201,7:23086,8:28391,9:24855,10:20284,11:15492,12:11352,13:7825,14:5125,15:3192,16:1943,17:1126,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.1093804223209527,
+   "rollouts": 256,
+   "rank_total": 62154736007,
+   "rank_denominator": 5192704,
+   "cache_key": "e3b3a9b1c7f43edf8f87d438d4f4677c"
+  }
+ }
+}

@@ -1,0 +1,538 @@
+{
+ "game_id": "dev41-0009-r0-claude_opus_5_5-atk-gpt_6_2_sol",
+ "attacker": "claude_opus_5_5",
+ "defender": "gpt_6_2_sol",
+ "secret": "shifters",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Long yellow fruit monkeys love to peel",
+   "blocklist": [
+    "banana",
+    "bananas",
+    "plantain"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Number after nine",
+   "blocklist": [
+    "ten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Color of snow",
+   "blocklist": [
+    "white"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Opposite of hot",
+   "blocklist": [
+    "chilly",
+    "cold",
+    "cool"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Frozen water in a cube",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Opposite of up",
+   "blocklist": [
+    "down"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Salt and ___",
+   "blocklist": [
+    "pepper",
+    "vinegar"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Man's best friend, barks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggie",
+    "doggy",
+    "dogs",
+    "pooch"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Fourth planet from the sun, the red one",
+   "blocklist": [
+    "mars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Kitty cat pet meow purr fur paw tail mouse lion",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "feline"
+    },
+    {
+     "seat": "guesser2",
+     "word": "feline"
+    }
+   ],
+   "prefix_after": "s",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Sweet white crystals from cane, in coffee or tea",
+   "blocklist": [
+    "sucrose",
+    "sugar",
+    "sugars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Utensil for soup, not fork or knife; ladle cousin",
+   "blocklist": [
+    "soupspoon",
+    "spoon",
+    "spoons",
+    "tablespoon"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Opposite of fast; like a snail or a turtle",
+   "blocklist": [
+    "leisurely",
+    "slothful",
+    "slow",
+    "slower",
+    "slowest",
+    "slowly",
+    "sluggish",
+    "sluggishly",
+    "unhurried"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Hottest season of the year, before autumn",
+   "blocklist": [
+    "summer",
+    "summers",
+    "summertime"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Twinkle twinkle little ___ (s word)",
+   "blocklist": [
+    "star",
+    "stars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "s",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Cobra viper python adder asp boa mamba, not snake!",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "serpent"
+    },
+    {
+     "seat": "guesser2",
+     "word": "serpent"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Boat yacht liner tanker frigate vessel, sh-word",
+   "blocklist": [
+    "schooner",
+    "ship",
+    "ships",
+    "steamship",
+    "warship"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Clam oyster mussel lobster crab prawn, sh-word",
+   "blocklist": [
+    "seafood",
+    "seafoods",
+    "shellfish",
+    "shellfishes",
+    "shrimp",
+    "shrimps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Jaws! Great white hammerhead predator fish, sh-",
+   "blocklist": [
+    "shark",
+    "sharks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Spade scoop trowel for digging dirt",
+   "blocklist": [
+    "shovel",
+    "shovelful",
+    "shovels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Flock keeper with crook, tends ewes, not sheep!",
+   "blocklist": [
+    "herder",
+    "sheepherder",
+    "shepherd",
+    "shepherdess",
+    "shepherds"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Dark shape cast on the ground by you in sunlight",
+   "blocklist": [
+    "shade",
+    "shadow",
+    "shadows",
+    "silhouette"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Sneaker boot loafer sandal heel; one footwear",
+   "blocklist": [
+    "clog",
+    "footwear",
+    "moccasin",
+    "pump",
+    "shoe",
+    "shoes",
+    "slipper",
+    "trainer"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Button-up top with collar and sleeves, sh-word",
+   "blocklist": [
+    "blouse",
+    "shirt",
+    "shirts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Small onion-like bulb, cousin of garlic & leek",
+   "blocklist": [
+    "shallot",
+    "shallots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "shy she shed shop shot shut show shin shell shift",
+   "blocklist": [
+    "shake",
+    "shame",
+    "shape",
+    "share",
+    "sharp",
+    "shave",
+    "shawl",
+    "shear",
+    "sheer",
+    "sheet",
+    "shelf",
+    "shield",
+    "shifted",
+    "shifter",
+    "shifting",
+    "shifts",
+    "shimmer",
+    "shine",
+    "shiny",
+    "shiver",
+    "shock",
+    "shoot",
+    "shore",
+    "short",
+    "shout",
+    "shred",
+    "shrink",
+    "shrub",
+    "shrug",
+    "shudder",
+    "shun",
+    "shush",
+    "shy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 33,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shower"
+    }
+   ],
+   "prefix_after": "sh",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "should shrine shelter sheriff shuttle shampoo",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "shoulder"
+    },
+    {
+     "seat": "guesser2",
+     "word": "shoulder"
+    }
+   ],
+   "prefix_after": "shi",
+   "result": "prefix_extended"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 46.716166834677416,
+  "cost_numerator": 741479,
+  "cost_denominator": 15872,
+  "cost_exact": false,
+  "cost_mcse": 0.06547852001905742,
+  "baseline": {
+   "numerator": 8603996393,
+   "denominator": 727552,
+   "value": 11825.95387408735,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 2.387380780604421,
+   "rollouts": 256,
+   "rank_total": 86039963930,
+   "rank_denominator": 7275520,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 265319,
+   "denominator": 15872,
+   "value": 16.71616683467742,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "4:3,5:16,6:24,7:42,8:62,9:47,10:20,11:19,12:9,13:2,15:1",
+   "target_length": 8,
+   "C": 50,
+   "mcse": 0.06547852001905742,
+   "rollouts": 256,
+   "rank_total": 265319,
+   "rank_denominator": 15872,
+   "cache_key": "2888e679e380fb2f4e4612f714e3315a"
+  }
+ }
+}

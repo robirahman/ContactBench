@@ -1,0 +1,542 @@
+{
+ "game_id": "dev41-0002-r0-claude_opus_5_5-atk-gpt_6_2_sol",
+ "attacker": "claude_opus_5_5",
+ "defender": "gpt_6_2_sol",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Large gray animal with a trunk",
+   "blocklist": [
+    "elephant"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Red fruit used in ketchup and salsa",
+   "blocklist": [
+    "tomato"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Frozen water",
+   "blocklist": [
+    "ice",
+    "snow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Opposite of no",
+   "blocklist": [
+    "yes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Pet that meows",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Color of a clear sky",
+   "blocklist": [
+    "azure",
+    "blue",
+    "cerulean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Pet that barks",
+   "blocklist": [
+    "canine",
+    "dog",
+    "doggie",
+    "doggy",
+    "hound",
+    "pooch",
+    "pup",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Number after nine",
+   "blocklist": [
+    "ten"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Opposite of up",
+   "blocklist": [
+    "down"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Star at the center of our solar system",
+   "blocklist": [
+    "sun"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Reverse these letters: lraep",
+   "blocklist": [
+    "pearl"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Fruit that fell on Newton's head",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "First word in the dictionary alphabetically",
+   "blocklist": [
+    "aah"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Striped African horse",
+   "blocklist": [
+    "zebra"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Color of milk, chalk, bone, ivory, cream, salt",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "white"
+    },
+    {
+     "seat": "guesser2",
+     "word": "white"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Opposite of hot, like winter, frost and ice",
+   "blocklist": [
+    "chill",
+    "chilled",
+    "chilly",
+    "cold",
+    "colder",
+    "coldest",
+    "coldness",
+    "cool",
+    "coolness"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Orange root vegetable that rabbits love",
+   "blocklist": [
+    "carrot",
+    "carrots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Sideways-walking beach creature with pincers",
+   "blocklist": [
+    "crab",
+    "crabs",
+    "crustacean"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Machine with keyboard, mouse and monitor",
+   "blocklist": [
+    "computer",
+    "computers",
+    "desktop",
+    "workstation"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Dairy food made from curds, e.g. cheddar",
+   "blocklist": [
+    "cheese",
+    "cheeses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Four-wheeled vehicle you drive, 3 letters",
+   "blocklist": [
+    "car"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Seat with four legs and a back",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chair"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chair"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Hot morning drink brewed from roasted beans",
+   "blocklist": [
+    "coffee",
+    "coffees",
+    "espresso",
+    "java",
+    "joe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Soft fiber from a plant boll, used for T-shirts",
+   "blocklist": [
+    "cotton"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Farm animal that moos and gives milk, 3 letters",
+   "blocklist": [
+    "cow"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Metal money piece like a penny or dime",
+   "blocklist": [
+    "coin",
+    "coins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "coat code cook corn cost couch coal copy core cone",
+   "blocklist": [
+    "cob",
+    "cobra",
+    "cocoa",
+    "coconut",
+    "cod",
+    "codfish",
+    "cola",
+    "collar",
+    "comb",
+    "comet",
+    "cone",
+    "cookie",
+    "copper",
+    "coral",
+    "cork",
+    "cot",
+    "cougar",
+    "cough",
+    "court",
+    "coyote"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "count"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "cop con cog coy coo come cope coke cove cozy coup",
+   "blocklist": [
+    "coast",
+    "cock",
+    "coco",
+    "cocoon",
+    "coif",
+    "cole",
+    "colt",
+    "coma",
+    "come",
+    "comic",
+    "conch",
+    "coney",
+    "conk",
+    "coo",
+    "coop",
+    "coot",
+    "cops",
+    "cord",
+    "corm",
+    "cosy",
+    "coup",
+    "cove",
+    "cowl",
+    "cozy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 24,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coach"
+    },
+    {
+     "seat": "guesser2",
+     "word": "corner"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "cover cousin colony comedy common course coward",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cover"
+    },
+    {
+     "seat": "guesser2",
+     "word": "country"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 497.901420579806,
+  "cost_numerator": 72271387,
+  "cost_denominator": 145152,
+  "cost_exact": false,
+  "cost_mcse": 0.6621443696179171,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 67916827,
+   "denominator": 145152,
+   "value": 467.901420579806,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:5,4:33,5:151,6:319,7:567,8:783,9:869,10:866,11:787,12:651,13:472,14:312,15:202,16:119,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.6621443696179171,
+   "rollouts": 256,
+   "rank_total": 67916827,
+   "rank_denominator": 145152,
+   "cache_key": "24330c76768b6a538b482432a5f85049"
+  }
+ }
+}

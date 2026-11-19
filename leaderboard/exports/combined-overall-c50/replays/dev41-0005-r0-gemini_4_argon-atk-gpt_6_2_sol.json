@@ -1,0 +1,541 @@
+{
+ "game_id": "dev41-0005-r0-gemini_4_argon-atk-gpt_6_2_sol",
+ "attacker": "gemini_4_argon",
+ "defender": "gpt_6_2_sol",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "to slide on a small sled in the winter olympics",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "luged"
+    },
+    {
+     "seat": "guesser2",
+     "word": "luge"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "tallest living mammal with a very long neck",
+   "blocklist": [
+    "giraffe",
+    "giraffes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "egg laying Australian mammal with a duck bill",
+   "blocklist": [
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "large rodent covered with sharp defensive quills",
+   "blocklist": [
+    "porcupine",
+    "porcupines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "African burrowing mammal that eats termites",
+   "blocklist": [
+    "aardvark",
+    "aardvarks",
+    "aardwolf",
+    "aardwolves",
+    "anteater",
+    "anteaters",
+    "pangolin",
+    "pangolins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "great ape species closest genetically to humans",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chimpanzee"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chimpanzee"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "dome shaped house built from blocks of snow",
+   "blocklist": [
+    "igloo",
+    "igloos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "large tropical herbivorous lizard with a dewlap",
+   "blocklist": [
+    "iguana",
+    "iguanas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "African antelope known for high graceful leaps",
+   "blocklist": [
+    "impala",
+    "impalas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "narrow strip of land connecting two larger areas",
+   "blocklist": [
+    "isthmus",
+    "isthmuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "hanging tapering spike of frozen dripping water",
+   "blocklist": [
+    "icicle",
+    "icicles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "massive floating glacier chunk that sank Titanic",
+   "blocklist": [
+    "iceberg",
+    "icebergs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "pancreatic hormone that regulates blood sugar",
+   "blocklist": [
+    "insulin",
+    "insulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "narrow edged front tooth used for cutting food",
+   "blocklist": [
+    "incisor",
+    "incisors"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "atom of the same element with different neutrons",
+   "blocklist": [
+    "isotope",
+    "isotopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "common over the counter NSAID pain reliever drug",
+   "blocklist": [
+    "ibuprofen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "chronic inability to fall or stay asleep at night",
+   "blocklist": [
+    "insomnia",
+    "insomniac",
+    "insomniacs",
+    "insomnias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "contagious respiratory illness caused by flu virus",
+   "blocklist": [
+    "influenza",
+    "influenzas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "colored ring of the eye surrounding the pupil",
+   "blocklist": [
+    "iris",
+    "irises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "military soldiers who march and fight on foot",
+   "blocklist": [
+    "infantries",
+    "infantry",
+    "infantryman",
+    "infantrymen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "hard white material from elephant tusks",
+   "blocklist": [
+    "ivories",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "planned route or schedule of a journey or trip",
+   "blocklist": [
+    "itineraries",
+    "itinerary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "weather map line connecting equal pressure points",
+   "blocklist": [
+    "isobar",
+    "isobars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "aromatic resin burned for a fragrant smell",
+   "blocklist": [
+    "incense",
+    "incenses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "deep blue purple color between blue and violet",
+   "blocklist": [
+    "indigo",
+    "indigoes",
+    "indigos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "piece of ground completely surrounded by a sea",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "triangle having at least two sides of equal length",
+   "blocklist": [
+    "isosceles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "imperial ignoble impish irenic inanition ironic",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "illicit"
+    },
+    {
+     "seat": "guesser2",
+     "word": "illicit"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "infallible insatiable incorrigible inexorable",
+   "blocklist": [
+    "incredible",
+    "indefatigable",
+    "indelible",
+    "indestructible",
+    "indomitable",
+    "ineffable",
+    "inevitable",
+    "inimitable",
+    "inscrutable",
+    "insuperable",
+    "intolerable",
+    "invincible",
+    "invulnerable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "indigent insolent indolent inclement insolvent",
+   "blocklist": [
+    "inadvertent",
+    "incoherent",
+    "incompetent",
+    "incongruent",
+    "inconsistent",
+    "incontinent",
+    "inconvenient",
+    "indecent",
+    "independent",
+    "indifferent",
+    "indignant",
+    "indulgent",
+    "inefficient",
+    "inelegant",
+    "ineloquent",
+    "inexistent",
+    "inexpedient",
+    "infrequent",
+    "inherent",
+    "innocent",
+    "insentient",
+    "insistent",
+    "insufficient",
+    "intelligent",
+    "intermittent",
+    "intolerant",
+    "intransigent",
+    "irreverent"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 28,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 380.2415198305501,
+  "cost_numerator": 49546991,
+  "cost_denominator": 130304,
+  "cost_exact": false,
+  "cost_mcse": 0.5829297745615745,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 45637871,
+   "denominator": 130304,
+   "value": 350.2415198305501,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:3,4:11,5:37,6:139,7:271,8:394,9:509,10:606,11:567,12:562,13:444,14:271,15:231,16:173,17:110,18:58,19:29,20:14",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.5829297745615745,
+   "rollouts": 256,
+   "rank_total": 45637871,
+   "rank_denominator": 130304,
+   "cache_key": "019dc81a9cb3a13be5b80226ce848312"
+  }
+ }
+}

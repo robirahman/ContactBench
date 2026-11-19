@@ -1,0 +1,635 @@
+{
+ "game_id": "dev41-0005-r0-gpt_6_2_astra-atk-gemini_4_carbon",
+ "attacker": "gpt_6_2_astra",
+ "defender": "gemini_4_carbon",
+ "secret": "indurates",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A five-letter animal you might see in a river",
+   "blocklist": [
+    "crocs",
+    "gator",
+    "heron",
+    "hippo",
+    "otter",
+    "trout"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Pick a metallic element, not gold or silver.",
+   "blocklist": [
+    "aluminium",
+    "aluminum",
+    "barium",
+    "bismuth",
+    "cadmium",
+    "calcium",
+    "chromium",
+    "cobalt",
+    "copper",
+    "iron",
+    "lead",
+    "lithium",
+    "magnesium",
+    "manganese",
+    "mercury",
+    "nickel",
+    "palladium",
+    "platinum",
+    "potassium",
+    "sodium",
+    "tin",
+    "titanium",
+    "tungsten",
+    "uranium",
+    "vanadium",
+    "zinc"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 26,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Reverse the opposite of punishment.",
+   "blocklist": [
+    "drawer",
+    "reward"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Use empty-prefix offset of first 5 digits of pi.",
+   "blocklist": [
+    "bicycles",
+    "bicyclic",
+    "bicycling",
+    "coordinating",
+    "coordination",
+    "coordinations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A cool six-letter Scrabble play with a rare tile.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "quasar"
+    },
+    {
+     "seat": "guesser2",
+     "word": "quartz"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Another cool six-letter Scrabble play; airy.",
+   "blocklist": [
+    "aerial",
+    "breeze",
+    "gazebo",
+    "oxygen",
+    "ozone",
+    "sylphid",
+    "vortex",
+    "zephyr"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Choose any adverb ending in -ly, not too obvious.",
+   "blocklist": [
+    "cryptically",
+    "subtly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ovately"
+    },
+    {
+     "seat": "guesser2",
+     "word": "wryly"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pluralize your own opened guess from round 5.",
+   "blocklist": [
+    "quartzes",
+    "quasars"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "list_words(your T1[0],ord(your T2[0])-97,1)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "cab",
+     "cabbalas"
+    ],
+    [
+     "gab",
+     "gabfest"
+    ],
+    [
+     "haaf",
+     "habitably"
+    ],
+    [
+     "oaf",
+     "oarswomen"
+    ],
+    [
+     "tab",
+     "tabetics"
+    ]
+   ],
+   "blocked_word_count": 150,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "list_words('',base26(your T2[:3];a=0),1)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "aah",
+     "brats"
+    ]
+   ],
+   "blocked_word_count": 17576,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 17576 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "brattice",
+     "curetting"
+    ]
+   ],
+   "blocked_word_count": 17577,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 35152 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "curf",
+     "externalised"
+    ]
+   ],
+   "blocked_word_count": 17576,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 52728 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "externalises",
+     "howlets"
+    ]
+   ],
+   "blocked_word_count": 17576,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 70304 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lenitive"
+    },
+    {
+     "seat": "guesser2",
+     "word": "idolized"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 87880 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "maneges",
+     "overharvests"
+    ]
+   ],
+   "blocked_word_count": 17580,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 105456 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "overhasty",
+     "rating"
+    ]
+   ],
+   "blocked_word_count": 17576,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "T10 formula again but add 123032 to offset.",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sentimentalise"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sentimentalise"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "list_words('i',your T10 offset mod 3477,1)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ineligibility"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ineligibility"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "list_words('in',G1's T10 offset mod 4499,1)",
+   "blocklist": [
+    "invigoration"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "list_words('in',base26(your T1[-3:];a=0)%4499,1)",
+   "blocklist": [
+    "incontestabilities",
+    "indispensability",
+    "infights",
+    "intelligently",
+    "intrados",
+    "invagination"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "in offset 2173; next turn remember this number",
+   "blocklist": [
+    "innumerates",
+    "innumerous",
+    "inobservance",
+    "inocula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Pick a random 'in' offset from 0 through 4498.",
+   "blocklist": [
+    "inabilities",
+    "innumeracies",
+    "innumeracy",
+    "innumerate",
+    "inobservances",
+    "inobservant",
+    "inoculant",
+    "inoculants",
+    "inoculate",
+    "inoculated",
+    "inoculates",
+    "insectan",
+    "insectaries",
+    "insectary",
+    "insecticidal",
+    "interspecific",
+    "intersperse",
+    "interspersed",
+    "investigatory",
+    "investing",
+    "investiture",
+    "inwraps"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 22,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "intergraded"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "in offset 3000+(your T22 offset mod 500)",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "interceders",
+     "interneurons"
+    ]
+   ],
+   "blocked_word_count": 500,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "in offset 1000+(your private random 0..999)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inertnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "indulgers"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "in offset 1000+((your T22 offset*73+19)%1000)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "influxes"
+    },
+    {
+     "seat": "guesser2",
+     "word": "individualism"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "in offset 1000+(your private T23 offset mod 1000)",
+   "blocklist": [
+    "indris"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "inelasticities"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ineffaceabilities"
+    }
+   ],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Plural sediment animals. ink inn into inch info",
+   "blocklist": [
+    "infauna",
+    "infaunae",
+    "infaunas",
+    "infusorians",
+    "invertebrates"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "in offset 4000+previous turn number",
+   "blocklist": [
+    "intravitally",
+    "intravitam",
+    "intrazonal",
+    "intreat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "A temporary crush. infer infect infirm infest info",
+   "blocklist": [
+    "infatuate",
+    "infatuated",
+    "infatuates",
+    "infatuating",
+    "infatuation",
+    "infatuations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "Dante's hell. inert inept index input inner infra",
+   "blocklist": [
+    "infernal",
+    "infernally",
+    "inferno",
+    "infernos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "in",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 338.1777672006302,
+  "cost_numerator": 20604495,
+  "cost_denominator": 60928,
+  "cost_exact": false,
+  "cost_mcse": 0.47152321352830256,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 18776655,
+   "denominator": 60928,
+   "value": 308.1777672006302,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:8,5:30,6:135,7:268,8:385,9:476,10:555,11:498,12:463,13:370,14:231,15:194,16:138,17:93,18:46,19:22,20:11",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.47152321352830256,
+   "rollouts": 256,
+   "rank_total": 37553310,
+   "rank_denominator": 121856,
+   "cache_key": "e01997d0555b4ccb90f2c57ff3cde21e"
+  }
+ }
+}

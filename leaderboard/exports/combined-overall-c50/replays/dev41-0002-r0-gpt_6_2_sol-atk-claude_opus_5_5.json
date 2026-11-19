@@ -1,0 +1,479 @@
+{
+ "game_id": "dev41-0002-r0-gpt_6_2_sol-atk-claude_opus_5_5",
+ "attacker": "gpt_6_2_sol",
+ "defender": "claude_opus_5_5",
+ "secret": "collard",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "First 8-letter mammal in alphabetical order",
+   "blocklist": [
+    "aardvark",
+    "aardwolf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Counting frame with beads that slide on rods",
+   "blocklist": [
+    "abaci",
+    "abacus",
+    "abacuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Desert entirely; give up for good (7)",
+   "blocklist": [
+    "abandon",
+    "abandons",
+    "abjure",
+    "forsake"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Slaughterhouse (8)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "abattoir"
+    },
+    {
+     "seat": "guesser2",
+     "word": "abattoir"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Color-changing lizard with swiveling eyes (9)",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "chameleon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "chameleon"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Dusty spider silk in an attic corner (6)",
+   "blocklist": [
+    "cobweb",
+    "cobwebby",
+    "cobwebs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Tropical fruit with a hairy shell (7)",
+   "blocklist": [
+    "coconut",
+    "coconuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Magnetic needle that points north (7)",
+   "blocklist": [
+    "compass",
+    "compassed",
+    "compasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Perforated bowl for draining cooked pasta (8)",
+   "blocklist": [
+    "colander",
+    "colanders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Spiral tool for opening wine: cobalt comedy comet",
+   "blocklist": [
+    "corkscrew",
+    "corkscrewed",
+    "corkscrewing",
+    "corkscrews"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Cilantro seeds (9): coffee colony copper compass",
+   "blocklist": [
+    "coriander",
+    "corianders"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Mooer (3): code colon coral comic cough couch coat",
+   "blocklist": [
+    "cow",
+    "cows"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Nocturnal kitchen pest (9): corn cost cold coin",
+   "blocklist": [
+    "cockroach",
+    "cockroaches",
+    "roach"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "Burial box (6): come could court count cover coal",
+   "blocklist": [
+    "casket",
+    "coffin",
+    "coffins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Bald waterbird (4): cool cone cope copy core cork",
+   "blocklist": [
+    "coot",
+    "coots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "More ___! (SNL), as in cod cog cot con coo cop",
+   "blocklist": [
+    "cowbell",
+    "cowbells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Puzzling riddle (9); cob col cos coz coy cor coif",
+   "blocklist": [
+    "conundrum",
+    "conundrums",
+    "enigma"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Road Runner's pursuer (6); cog cot con cop",
+   "blocklist": [
+    "coyote",
+    "coyotes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Ranch hand (6); conch coma comb condo cocoa coed",
+   "blocklist": [
+    "cowboy",
+    "cowboys",
+    "cowhand",
+    "cowhands",
+    "cowpoke",
+    "cowpokes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Gigantic statue (8); cola colt coltish cone conk",
+   "blocklist": [
+    "colossal",
+    "colossi",
+    "colossus",
+    "colossuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Hexagonal accordion (11); con com col cos cou",
+   "blocklist": [
+    "concertina",
+    "concertinas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Rounded paving stone (11); corgi cola combs coos",
+   "blocklist": [
+    "cobblestone",
+    "cobblestones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Crested parrot (8); cook coop cord coup coco coho",
+   "blocklist": [
+    "cockatiel",
+    "cockatiels",
+    "cockatoo",
+    "cockatoos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Mythic petrifying rooster-serpent; cowry cole colt",
+   "blocklist": [
+    "basilisk",
+    "basilisks",
+    "cockatrice",
+    "cockatrices"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Pause mark (5); coot cot coz cos coy coo cob cop",
+   "blocklist": [
+    "caesura",
+    "comma",
+    "commas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Discount voucher; cou cowed cols cons cots cops",
+   "blocklist": [
+    "coupon",
+    "coupons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Pilot's seat area; co colds cogs coot cog coos",
+   "blocklist": [
+    "cabin",
+    "cabins",
+    "cockpit",
+    "cockpits"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "co",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 496.04723837209303,
+  "cost_numerator": 682561,
+  "cost_denominator": 1376,
+  "cost_exact": false,
+  "cost_mcse": 0.7077739778048338,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 641281,
+   "denominator": 1376,
+   "value": 466.04723837209303,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:32,5:146,6:322,7:559,8:775,9:861,10:859,11:782,12:649,13:472,14:312,15:202,16:119,17:106,18:47,19:35,20:13",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 0.7077739778048338,
+   "rollouts": 256,
+   "rank_total": 66693224,
+   "rank_denominator": 143104,
+   "cache_key": "a0bad4004bea9971c3816f24aa3ea84a"
+  }
+ }
+}

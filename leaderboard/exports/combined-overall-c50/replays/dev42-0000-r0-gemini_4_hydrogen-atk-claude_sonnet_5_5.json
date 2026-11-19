@@ -1,0 +1,511 @@
+{
+ "game_id": "dev42-0000-r0-gemini_4_hydrogen-atk-claude_sonnet_5_5",
+ "attacker": "gemini_4_hydrogen",
+ "defender": "claude_sonnet_5_5",
+ "secret": "misidentify",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "chemical element with atomic number eight",
+   "blocklist": [
+    "oxygen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "tallest living terrestrial animal",
+   "blocklist": [
+    "giraffe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "flightless antarctic bird",
+   "blocklist": [
+    "penguin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "mountain that erupts with lava and ash",
+   "blocklist": [
+    "volcanic",
+    "volcano",
+    "volcanoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "magnetic instrument used for navigation",
+   "blocklist": [
+    "compass"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "handheld canopy used for rain protection",
+   "blocklist": [
+    "umbrella",
+    "umbrellas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "hanging branched light fixture",
+   "blocklist": [
+    "chandelier",
+    "chandeliers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "fear of heights",
+   "blocklist": [
+    "acrophobia",
+    "phobia",
+    "vertigo"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "optical instrument for viewing distant objects",
+   "blocklist": [
+    "binoculars",
+    "spyglass",
+    "telescope",
+    "telescopes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "large african river mammal",
+   "blocklist": [
+    "hippo",
+    "hippopotamus",
+    "hippopotamuses",
+    "hippos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "optical tube with mirrors and colored glass",
+   "blocklist": [
+    "kaleidoscope",
+    "kaleidoscopes",
+    "microscope",
+    "periscope"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "curved throwing stick that returns",
+   "blocklist": [
+    "boomerang",
+    "boomerangs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "medical instrument for listening to heartbeats",
+   "blocklist": [
+    "stethoscope",
+    "stethoscopes",
+    "stethoscopic"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "musical instrument with wooden bars",
+   "blocklist": [
+    "glockenspiel",
+    "glockenspiels",
+    "marimba",
+    "marimbas",
+    "vibraphone",
+    "vibraphones",
+    "xylophone",
+    "xylophones"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "duck billed egg laying mammal",
+   "blocklist": [
+    "echidna",
+    "echidnas",
+    "monotreme",
+    "monotremes",
+    "platypus",
+    "platypuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "device that measures temperature",
+   "blocklist": [
+    "pyrometer",
+    "thermistor",
+    "thermocouple",
+    "thermograph",
+    "thermometer",
+    "thermometers",
+    "thermoscope",
+    "thermostat",
+    "thermostats"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "japanese art of paper folding",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "origami"
+    },
+    {
+     "seat": "guesser2",
+     "word": "origami"
+    }
+   ],
+   "prefix_after": "m",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "bloodsucking insect that spreads malaria",
+   "blocklist": [
+    "mosquito",
+    "mosquitoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "long distance twenty six mile foot race",
+   "blocklist": [
+    "marathon",
+    "marathoner",
+    "marathoners",
+    "marathons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "mythical half woman half fish",
+   "blocklist": [
+    "mermaid",
+    "mermaids",
+    "merman",
+    "mermen"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "edible fungus with a cap and stem",
+   "blocklist": [
+    "mushroom",
+    "mushrooms"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "wrapped ancient egyptian corpse",
+   "blocklist": [
+    "mummies",
+    "mummified",
+    "mummify",
+    "mummy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "kitchen appliance that heats food fast",
+   "blocklist": [
+    "microwavable",
+    "microwave",
+    "microwaveable",
+    "microwaved",
+    "microwaves",
+    "microwaving",
+    "oven",
+    "ovens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "facial hair above the upper lip",
+   "blocklist": [
+    "moustache",
+    "moustaches",
+    "mustache",
+    "mustaches"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "closest planet to the sun",
+   "blocklist": [
+    "mercury"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "board game with properties and hotels",
+   "blocklist": [
+    "monopolies",
+    "monopoly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "device that ticks to keep musical tempo",
+   "blocklist": [
+    "metronome",
+    "metronomes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "creamy white condiment made from eggs and oil",
+   "blocklist": [
+    "mayonnaise"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "tropical yellow fruit with a large flat pit",
+   "blocklist": [
+    "mango",
+    "mangoes",
+    "mangos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "christmas plant hung for kissing",
+   "blocklist": [
+    "mistletoe"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "m",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 705.4348728235447,
+  "cost_numerator": 173728857,
+  "cost_denominator": 246272,
+  "cost_exact": false,
+  "cost_mcse": 0.66036424839324,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 166340697,
+   "denominator": 246272,
+   "value": 675.4348728235447,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:47,4:207,5:442,6:785,7:1218,8:1461,9:1351,10:1220,11:962,12:656,13:463,14:279,15:189,16:128,17:80,18:44,19:17,20:11",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.66036424839324,
+   "rollouts": 256,
+   "rank_total": 166340697,
+   "rank_denominator": 246272,
+   "cache_key": "891b131541b91cb29f4995cc226880f6"
+  }
+ }
+}
