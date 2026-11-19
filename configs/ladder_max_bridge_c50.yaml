@@ -1,0 +1,87 @@
+# Bridge from the max-effort pool to the low-effort C=50 pool (C=50, prefix 0), 2026-11-19.
+# GPT-6.2 Astra at reasoning effort max (cheapest max-effort model) plays one secret, both directions,
+# against GPT-6.1 Terra (strong, well-measured, cheap) and GPT-6.2 Astra at low effort (same model,
+# so the pair also measures what max effort is worth). Model configs are copied verbatim from
+# ladder_max_pilot_c50 and ladder_bridges_c50 so the runs can be combined.
+name: ladder-max-bridge-c50
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 1
+  generation_seed: 46
+tournament:
+  schedule: pairs
+  pairs:
+  - - gpt_6_2_astra_max
+    - gpt_6_1_terra
+  - - gpt_6_2_astra_max
+    - gpt_6_2_astra
+models:
+- id: gpt_6_2_astra_max
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-astra
+  parameters:
+    reasoning:
+      effort: max
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 64000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.4
+- id: gpt_6_1_terra
+  provider: openai
+  api_family: responses
+  model: gpt-6.1-terra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-17'
+    source: OpenAI launch page via trackers; model ID verified via models.list
+    input_per_mtok: 1.0
+    output_per_mtok: 5.0
+    cached_input_per_mtok: 0.05
+- id: gpt_6_2_astra
+  provider: openai
+  api_family: responses
+  model: gpt-6.2-astra
+  parameters:
+    reasoning:
+      effort: low
+  credential_env: OPENAI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: GPT-6.2 launch coverage (third-party, 2026-11-17); model ID verified via
+      models.list
+    input_per_mtok: 8.0
+    output_per_mtok: 40.0
+    cached_input_per_mtok: 0.4
+execution:
+  global_concurrency: 8
+  per_provider_concurrency: 6
+  game_concurrency: 6
+analysis:
+  bootstrap_resamples: 2000
+  development_bootstrap_resamples: 500
