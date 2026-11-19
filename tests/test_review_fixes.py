@@ -241,7 +241,7 @@ def test_ambiguous_transport_failures_are_charged_conservatively():
 
 def test_failure_after_a_long_attempt_is_still_retried():
     # A max-effort call that fails after 700 s (longer than the 300 s deadline)
-    # must still be retried: the deadline bounds backoff, not time inside attempts.
+    # gets one more attempt.
     now = [0.0]
 
     class Slow(Flaky):
@@ -259,3 +259,24 @@ def test_failure_after_a_long_attempt_is_still_retried():
     a._sleep = no_sleep
     resp = asyncio.run(a.decide(_req()))
     assert a.sent == 2 and resp.output_text == "{}"
+
+
+def test_slow_failures_get_only_one_extra_attempt():
+    now = [0.0]
+
+    class Slow(Flaky):
+        async def send_once(self, request):
+            now[0] += 700.0
+            return await super().send_once(request)
+
+    a = Slow(fails=5)
+    a.retry = RetryPolicy(max_attempts=3, base_seconds=1, deadline_seconds=300)
+    a._clock = lambda: now[0]
+
+    async def no_sleep(d):
+        now[0] += d
+
+    a._sleep = no_sleep
+    with pytest.raises(Exception):
+        asyncio.run(a.decide(_req()))
+    assert a.sent == 2  # not 3: the overall deadline still applies after the one exception

@@ -60,7 +60,9 @@ Turning off a storage feature does not mean the provider keeps nothing.
 
 `ProviderAdapter.decide` owns all retries. It allows at most `max_attempts` attempts (default 3) with
 the same request. It honors `Retry-After` when present and otherwise uses exponential backoff with
-jitter, under an overall deadline. Fatal errors (auth, invalid model, unsupported or bad request,
+jitter, under an overall deadline. One exception: when the first attempt alone outlasts the deadline
+(max-effort calls can run 10+ minutes), one further attempt is allowed, so a single late failure does
+not leave the decision unavailable; a decision never makes more than two such long attempts. Fatal errors (auth, invalid model, unsupported or bad request,
 exhausted quota) are never retried. The first complete response is used. SDK-level retries are
 disabled so the two retry layers cannot multiply:
 

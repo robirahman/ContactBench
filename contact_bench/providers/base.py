@@ -378,11 +378,12 @@ class ProviderAdapter(ABC):
 
     async def _with_retries(self, fn: Callable[[], Any], gate: AttemptGate | None) -> tuple[Any, list[TransportAttempt]]:
         attempts: list[TransportAttempt] = []
-        # The deadline bounds time spent *between* attempts (backoff), not time
-        # inside them: max-effort calls legitimately run 10+ minutes, and a
-        # wall-clock deadline from the first send made any failure after that
-        # unretryable.  The attempt count still bounds the total.
-        waited = 0.0
+        start = self._clock()
+        # Overall wall-clock deadline, with one exception: if the *first* attempt
+        # alone outlasted the deadline (max-effort calls legitimately run 10+
+        # minutes), one more attempt is allowed so a single late failure does not
+        # leave the decision unavailable.  At most two long attempts per decision.
+        slow_retry_used = False
         last: InfrastructureError | None = None
         limit = self.retry.max_attempts
         i = 0
@@ -411,9 +412,11 @@ class ProviderAdapter(ABC):
                 if delay is None:
                     delay = min(self.retry.max_seconds, self.retry.base_seconds * 2 ** (i - 1))
                     delay *= 0.5 + self._jitter.random()
-                if waited + delay > self.retry.deadline_seconds:
-                    break
-                waited += delay
+                if self._clock() - start + delay > self.retry.deadline_seconds:
+                    slow_first = i == 1 and attempts[-1].latency_s > self.retry.deadline_seconds
+                    if not slow_first or slow_retry_used:
+                        break
+                    slow_retry_used = True
                 await self._sleep(delay)
                 continue
             except BaseException:
