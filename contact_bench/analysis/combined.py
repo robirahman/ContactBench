@@ -71,9 +71,17 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             raise CombineError(f"{d.name}: secret lexicon differs")
         if (m.get("contact_lexicon") or {}).get("sha256") != (ref_m.get("contact_lexicon") or {}).get("sha256"):
             raise CombineError(f"{d.name}: contact lexicon differs")
+    from ..runner.schedule import GameSpec
+
+    scheds = [json.loads((d / "schedule.json").read_text()) for d in run_dirs]
+    # A run's schedule can drop games (e.g. a model configuration that was replaced
+    # mid-pilot); only models that play a scheduled game take part in the combine.
+    played = [set().union(*(GameSpec(**g).models for g in s["games"])) if s["games"] else set() for s in scheds]
     models: dict[str, dict] = {}
-    for d, c in zip(run_dirs, cfgs):
+    for d, c, pl in zip(run_dirs, cfgs, played):
         for mc in c["models"]:
+            if mc["id"] not in pl:
+                continue
             if mc["id"] in models and models[mc["id"]] != mc:
                 raise CombineError(f"model '{mc['id']}' is configured differently in {d.name}")
             models.setdefault(mc["id"], mc)
@@ -84,13 +92,15 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             t = json.loads(line)
             if secrets.setdefault(t["task_id"], t["secret"]) != t["secret"]:
                 raise CombineError(f"task {t['task_id']} has different secrets across runs")
-        sched = json.loads((d / "schedule.json").read_text())
+    for d, sched in zip(run_dirs, scheds):
         for g in sched["games"]:
             if g["game_id"] in game_ids:
                 raise CombineError(f"game id {g['game_id']} appears in more than one run")
             game_ids.add(g["game_id"])
             games.append(g)
-        fixtures.extend(sched["fixtures"])
+        ids = {g["game_id"] for g in sched["games"]}
+        # Fixtures whose games were dropped from the schedule are not part of the run.
+        fixtures.extend(f for f in sched["fixtures"] if f["game_ab"] in ids and f["game_ba"] in ids)
     out = Path(out_root) / f"combined-{name}"
     o = out.resolve()
     for d in run_dirs:
@@ -124,10 +134,17 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     atomic_write_json(out / "schedule.json", {"fixtures": fixtures, "games": games})
     for log in ("requests.jsonl", "forecasts.jsonl"):  # resource accounting reads both
         with (out / log).open("w") as f:
-            for d in run_dirs:
+            for d, sched in zip(run_dirs, scheds):
                 p = d / log
+                own = {g["game_id"] for g in sched["games"]}  # a rerun may reuse a dropped game's id
                 if p.exists():
-                    f.write(p.read_text())
+                    for line in p.read_text().splitlines(keepends=True):
+                        try:
+                            gid = json.loads(line).get("game_id")
+                        except ValueError:
+                            continue
+                        if gid is None or gid in own:  # skip records of games this run dropped
+                            f.write(line)
     with (out / "private" / "tasks_private.jsonl").open("w") as f:
         for d in run_dirs:
             for line in (d / "private" / "tasks_private.jsonl").read_text().splitlines():

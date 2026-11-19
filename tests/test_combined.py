@@ -78,3 +78,52 @@ def test_combine_rejects_nested_source(tmp_path):
     with pytest.raises(CombineError, match="overlaps"):
         combine("n", [tmp_path / "combined-n" / "src", tmp_path / "other"], tmp_path)
     assert (tmp_path / "combined-n" / "src" / "run.json").exists()
+
+
+def test_combine_skips_games_dropped_from_a_schedule(tmp_path):
+    # Run x scheduled pairs a-b and a-c, then dropped every game with c; run y plays c
+    # with a different configuration. Only played models must match.
+    x = _cfg("x", "abc", {"schedule": "pairs", "pairs": [["a", "b"], ["a", "c"]]}, tasks=1)
+    asyncio.run(Runner(x, tmp_path / "x").run())
+    sp = tmp_path / "x" / "schedule.json"
+    s = json.loads(sp.read_text())
+    from contact_bench.runner.schedule import GameSpec
+
+    s["games"] = [g for g in s["games"] if "c" not in GameSpec(**g).models]
+    assert s["games"] and len(s["games"]) < len(json.loads(sp.read_text())["games"])
+    sp.write_text(json.dumps(s))
+    other_c = dict(M["c"], policy="combined_alphabetical")
+    y = BenchConfig.model_validate({**_cfg("y", "bc", {"schedule": "pairs", "pairs": [["b", "c"]]}, tasks=1).model_dump(),
+                                    "models": [M["b"], other_c], "base_dir": str(REPO)})
+    asyncio.run(Runner(y, tmp_path / "y").run())
+    out = combine("ok", [tmp_path / "x", tmp_path / "y"], tmp_path)
+    cfg = json.loads((out / "run.json").read_text())["config"]
+    assert {m["id"]: m for m in cfg["models"]}["c"]["policy"] == "combined_alphabetical"
+    sched = json.loads((out / "schedule.json").read_text())
+    ids = {g["game_id"] for g in sched["games"]}
+    assert all(f["game_ab"] in ids and f["game_ba"] in ids for f in sched["fixtures"])
+    for line in (out / "requests.jsonl").read_text().splitlines():
+        gid = json.loads(line).get("game_id")
+        assert gid is None or gid in ids
+
+
+def test_combine_drops_stale_logs_of_a_rerun_game_id(tmp_path):
+    from contact_bench.runner.schedule import GameSpec
+
+    # x drops its b-c games; y reruns them under the same deterministic ids.
+    x = _cfg("x", "abc", {"schedule": "pairs", "pairs": [["a", "b"], ["b", "c"]]}, tasks=1)
+    asyncio.run(Runner(x, tmp_path / "x").run())
+    sp = tmp_path / "x" / "schedule.json"
+    s = json.loads(sp.read_text())
+    dropped = {g["game_id"] for g in s["games"] if "c" in GameSpec(**g).models}
+    s["games"] = [g for g in s["games"] if g["game_id"] not in dropped]
+    sp.write_text(json.dumps(s))
+    with (tmp_path / "x" / "requests.jsonl").open("a") as f:
+        for gid in dropped:
+            f.write(json.dumps({"game_id": gid, "model_id": "c", "stale": True}) + "\n")
+    y = _cfg("y", "bc", {"schedule": "pairs", "pairs": [["b", "c"]]}, tasks=1)
+    asyncio.run(Runner(y, tmp_path / "y").run())
+    y_ids = {g["game_id"] for g in json.loads((tmp_path / "y" / "schedule.json").read_text())["games"]}
+    assert dropped & y_ids  # the rerun reuses the dropped ids
+    out = combine("ok2", [tmp_path / "x", tmp_path / "y"], tmp_path)
+    assert not any(json.loads(l).get("stale") for l in (out / "requests.jsonl").read_text().splitlines())
