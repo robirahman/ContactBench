@@ -134,15 +134,16 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     atomic_write_json(out / "schedule.json", {"fixtures": fixtures, "games": games})
     for log in ("requests.jsonl", "forecasts.jsonl"):  # resource accounting reads both
         with (out / log).open("w") as f:
-            for d in run_dirs:
+            for d, sched in zip(run_dirs, scheds):
                 p = d / log
+                own = {g["game_id"] for g in sched["games"]}  # a rerun may reuse a dropped game's id
                 if p.exists():
                     for line in p.read_text().splitlines(keepends=True):
                         try:
                             gid = json.loads(line).get("game_id")
                         except ValueError:
                             continue
-                        if gid is None or gid in game_ids:  # skip requests of dropped games
+                        if gid is None or gid in own:  # skip records of games this run dropped
                             f.write(line)
     with (out / "private" / "tasks_private.jsonl").open("w") as f:
         for d in run_dirs:
