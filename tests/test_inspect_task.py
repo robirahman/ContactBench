@@ -122,3 +122,35 @@ def test_limit_exceeded_propagates_from_the_adapter():
     _, req = _req(tools=False)
     with pytest.raises(LimitExceededError):
         asyncio.run(a.decide(req))
+
+
+def test_both_legs_unwraps_failures_and_cancels_the_sibling():
+    from inspect_ai.util import LimitExceededError
+
+    from contact_bench.inspect_task.task import _both_legs
+
+    cancelled = []
+
+    async def slow():
+        try:
+            await asyncio.sleep(10)
+        except asyncio.CancelledError:
+            cancelled.append(True)
+            raise
+
+    async def limit():
+        raise LimitExceededError("token", value=10, limit=5)
+
+    async def fail():
+        raise RuntimeError("infra")
+
+    with pytest.raises(LimitExceededError):
+        asyncio.run(_both_legs(slow(), limit()))
+    assert cancelled == [True]
+    with pytest.raises(RuntimeError, match="infra"):
+        asyncio.run(_both_legs(fail(), slow()))
+
+    async def ok(x):
+        return x
+
+    assert asyncio.run(_both_legs(ok(1), ok(2))) == (1, 2)

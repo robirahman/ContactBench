@@ -34,6 +34,7 @@ from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import GenerateConfig, get_model, model_roles
 from inspect_ai.scorer import Metric, SampleScore, Score, Target, metric, scorer
 from inspect_ai.solver import Generate, TaskState, solver
+from inspect_ai.util import LimitExceededError
 
 from contact_bench.analysis.rating import fit_anchored, match_points
 from contact_bench.config import BenchConfig, ModelConfig, load_config
@@ -137,6 +138,21 @@ async def _play_leg(env: _Env, game_id: str, secret: str, prefix_len: int, attac
             "public_history": game.public_history}
 
 
+async def _both_legs(ab_coro, ba_coro):
+    """Play both legs concurrently.  If one fails, the other is cancelled (no
+    orphaned leg keeps making paid calls), and the failure is re-raised as itself
+    rather than wrapped in an ExceptionGroup, so Inspect still sees control-flow
+    exceptions such as LimitExceededError."""
+    try:
+        async with asyncio.TaskGroup() as tg:
+            t_ab, t_ba = tg.create_task(ab_coro), tg.create_task(ba_coro)
+    except BaseExceptionGroup as eg:
+        excs = list(eg.exceptions)
+        lim = [e for e in excs if isinstance(e, LimitExceededError)]
+        raise (lim[0] if lim else excs[0]) from None
+    return t_ab.result(), t_ba.result()
+
+
 def _no_progress(leg: dict) -> bool:
     return leg["outcome_status"] == "capped" and leg["final_prefix"] == leg["initial_prefix"]
 
@@ -164,12 +180,8 @@ def contact_fixture(panel: dict, condition_config: str, rematches: bool = True):
         fixtures = []
         while True:
             fid = f"{state.sample_id}-p{prefix}"
-            # A TaskGroup cancels the other leg if one fails, so no orphaned leg keeps
-            # making (paid) model calls while Inspect records or retries the sample.
-            async with asyncio.TaskGroup() as tg:
-                t_ab = tg.create_task(_play_leg(env, f"{fid}-AB", secret, prefix, me, them, max_tokens))
-                t_ba = tg.create_task(_play_leg(env, f"{fid}-BA", secret, prefix, them, me, max_tokens))
-            ab, ba = t_ab.result(), t_ba.result()
+            ab, ba = await _both_legs(_play_leg(env, f"{fid}-AB", secret, prefix, me, them, max_tokens),
+                                      _play_leg(env, f"{fid}-BA", secret, prefix, them, me, max_tokens))
             draw = _no_progress(ab) and _no_progress(ba)
             pts = 0.5 if draw else match_points(ab["cost"], ba["cost"])
             fixtures.append({"fixture_id": fid, "initial_prefix_length": prefix, "points": pts,
