@@ -15,7 +15,7 @@ every fixture counts.  The engine, prompts, admission rules and cost scoring
 are the arena's own code; only the model transport is Inspect.
 
 Usage:
-    inspect eval contact_bench/inspect_task/task.py --model openai/gpt-6.2-sol \\
+    inspect eval contact_bench/contact_bench --model anthropic/claude-sonnet-5-5 \\
         -T secrets_per_opponent=3 --reasoning-effort low
 Opponents can be re-bound with --model-role (e.g. --model-role terra=...), but
 the frozen Elo then no longer applies to that opponent; the log records the

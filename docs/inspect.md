@@ -11,7 +11,7 @@ human challenges, so the result lands on the main C=50 leaderboard's scale witho
 ```bash
 pip install -e '.[inspect]'          # from a checkout of this repository (configs and lexicons are read from it)
 export ANTHROPIC_API_KEY=... OPENAI_API_KEY=... GOOGLE_API_KEY=...   # the default panel uses all three providers
-inspect eval contact_bench/contact_bench --model anthropic/claude-opus-5-5 --reasoning-effort low \
+inspect eval contact_bench/contact_bench --model anthropic/claude-sonnet-5-5 --reasoning-effort low \
     -T secrets_per_opponent=3
 ```
 
