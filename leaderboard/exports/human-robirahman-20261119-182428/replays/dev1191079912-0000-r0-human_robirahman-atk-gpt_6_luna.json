@@ -1,0 +1,423 @@
+{
+ "game_id": "dev1191079912-0000-r0-human_robirahman-atk-gpt_6_luna",
+ "attacker": "human_robirahman",
+ "defender": "gpt_6_luna",
+ "secret": "lubberlinesses",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Apothecary attendant who fills your prescription",
+   "blocklist": [
+    "apothecary",
+    "chemist",
+    "druggist",
+    "pharmacist",
+    "pharmacy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "w=your last guess;4x w=ENABLE0[100*sumASCII(w)];w",
+   "blocklist": [
+    "mahimahi",
+    "pedicle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Pick a random cardinal direction except north.",
+   "blocklist": [
+    "east",
+    "south",
+    "west"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "w=your last guess;7x w=ENABLE0[101*sumASCII(w)];w",
+   "blocklist": [
+    "discourteous",
+    "draughtsmen",
+    "fizzling",
+    "hardheartednesses",
+    "martyrdom",
+    "nook",
+    "prythee",
+    "sasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "fallaciously"
+    },
+    {
+     "seat": "guesser2",
+     "word": "vanpoolings"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "w=theotherdirection;7x w=ENABLE0[101sumASCII(w)];w",
+   "blocklist": [
+    "cyclohexanones",
+    "hangdog",
+    "irones",
+    "pyx",
+    "rhizopi",
+    "tautologically"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "insecureness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "opposite"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Randomly choose an RGB primary color, spelled out.",
+   "blocklist": [
+    "blue",
+    "green",
+    "red"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "w=your T6 guess;7x w=ENABLE0[103*sumASCII(w)];w",
+   "blocklist": [
+    "cottontails",
+    "docks",
+    "fenagling",
+    "fetor",
+    "narrative",
+    "received"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mellifluous"
+    },
+    {
+     "seat": "guesser2",
+     "word": "instars"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Pick a random Olympic medal type.",
+   "blocklist": [
+    "bronze",
+    "gold",
+    "silver"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "w=your T8 guess;7x w=ENABLE0[109*sumASCII(w)];w",
+   "blocklist": [
+    "dunked",
+    "holoenzyme",
+    "hypnagogic",
+    "idyllic",
+    "provocations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "runelike"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dyskinetic"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Pick a random card suit besides hearts (pl noun)",
+   "blocklist": [
+    "clubs",
+    "diamonds",
+    "spades"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "w=your T10;repeat 4:w=ENABLE0[100*sumASCII(w)+1];w",
+   "blocklist": [
+    "guitarist",
+    "paradiddle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "goof"
+    },
+    {
+     "seat": "guesser2",
+     "word": "noncommittal"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "w=otherT10;repeat 4:w=ENABLE0[100*sumASCII(w)+1];w",
+   "blocklist": [
+    "fellowly",
+    "immunopathologies",
+    "lippier"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "heelless"
+    },
+    {
+     "seat": "guesser2",
+     "word": "rhodamine"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Pick a random move in the classic 3-way hand game.",
+   "blocklist": [
+    "paper",
+    "rock",
+    "scissor",
+    "scissors",
+    "stone"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "w=your T13;repeat 4:w=ENABLE0[100*sumASCII(w)+8];w",
+   "blocklist": [
+    "disinterest",
+    "farcicalities",
+    "fending",
+    "implode",
+    "inflammability",
+    "lysins",
+    "psammon",
+    "sense"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "mops"
+    },
+    {
+     "seat": "guesser2",
+     "word": "mops"
+    }
+   ],
+   "prefix_after": "l",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "w=ownT13;repeat 4:w=ENABLE0[81789+3*sumASCII(w)];w",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "liftgate"
+    },
+    {
+     "seat": "guesser2",
+     "word": "liftgate"
+    }
+   ],
+   "prefix_after": "lu",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "w=ownT13;repeat 4:w=ENABLE0[100*sumASCII(w)+548];w",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "lupine",
+     "zymurgy"
+    ]
+   ],
+   "blocked_word_count": 86108,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lumberman"
+    },
+    {
+     "seat": "guesser2",
+     "word": "lucky"
+    }
+   ],
+   "prefix_after": "lu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "w=ourT13;repeat 4:w=ENABLE0[100*sumASCII(w)+990];w",
+   "blocklist": [
+    "luau",
+    "lubber",
+    "lubberliness",
+    "lubberly",
+    "lubbers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "luff"
+    },
+    {
+     "seat": "guesser2",
+     "word": "luff"
+    }
+   ],
+   "prefix_after": "lub",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "lube lubricate lubricative lubricity lubrication+s",
+   "blocklist": [
+    "lubrications"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "lubberlinesses"
+    }
+   ],
+   "prefix_after": "lub",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "guesser1_opened"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 18.0,
+  "cost_numerator": 18,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 15861222647,
+   "denominator": 1312512,
+   "value": 12084.63057632997,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 14,
+   "C": 50,
+   "mcse": 6.496930130631966,
+   "rollouts": 256,
+   "rank_total": 15861222647,
+   "rank_denominator": 1312512,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
+}
