@@ -1,0 +1,521 @@
+{
+ "game_id": "dev47-0000-r0-gpt_6_2_sol-atk-gpt_6_luna",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_luna",
+ "secret": "paganized",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "African burrower whose name means earth pig",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "Eight-armed marine mollusk",
+   "blocklist": [
+    "cephalopod",
+    "octopi",
+    "octopod",
+    "octopus",
+    "octopuses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 5,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Duck bill, beaver tail, lays eggs, makes milk",
+   "blocklist": [
+    "duckbill",
+    "monotreme",
+    "monotremes",
+    "platypus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Any animal with a three-letter common name",
+   "blocklist": [
+    "ant",
+    "ape",
+    "asp",
+    "ass",
+    "auk",
+    "bat",
+    "bee",
+    "boa",
+    "bug",
+    "cat",
+    "cod",
+    "cow",
+    "cub",
+    "doe",
+    "dog",
+    "eel",
+    "eft",
+    "elk",
+    "emu",
+    "ewe",
+    "fly",
+    "fox",
+    "gar",
+    "gnu",
+    "hen",
+    "hog",
+    "jay",
+    "kit",
+    "koi",
+    "moa",
+    "owl",
+    "pug",
+    "pup",
+    "ram",
+    "rat",
+    "roe",
+    "sow",
+    "tom",
+    "yak"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 39,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "First unused dictionary word in frequency order",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "the"
+    },
+    {
+     "seat": "guesser2",
+     "word": "the"
+    }
+   ],
+   "prefix_after": "p",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "How plants use sunlight to make sugar",
+   "blocklist": [
+    "photosynthesis",
+    "photosynthesize"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Italian dish with a crust, sauce, and cheese",
+   "blocklist": [
+    "pizza"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Penguins: penguin minus s? No; tuxedo seabird",
+   "blocklist": [
+    "polar",
+    "puffin",
+    "puffins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "penguin"
+    },
+    {
+     "seat": "guesser2",
+     "word": "penguins"
+    }
+   ],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "88 keys, 3 pedals",
+   "blocklist": [
+    "piano"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "First eligible: paradox parrot pirate panda | r1",
+   "blocklist": [
+    "pandani",
+    "pandanus",
+    "pandanuses",
+    "pandas",
+    "paradoxes",
+    "paradoxical",
+    "paradoxicalities",
+    "paradoxicality",
+    "paradoxically",
+    "paradoxicalness",
+    "paradoxicalnesses",
+    "parroted",
+    "parroter",
+    "parroters",
+    "parroting",
+    "parrots",
+    "parroty",
+    "pirated",
+    "pirates",
+    "piratic",
+    "piratical",
+    "piratically",
+    "pirating"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "paradox"
+    },
+    {
+     "seat": "guesser2",
+     "word": "paca"
+    }
+   ],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Graphite writer? python phoenix prism pollen",
+   "blocklist": [
+    "pencil"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "Persephone's fruit; peach pear plum papaya pecan",
+   "blocklist": [
+    "pomegranate"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "First unused: pot-ato, pum-pkin, pe-nny, pa-per",
+   "blocklist": [
+    "paper",
+    "penny",
+    "potato",
+    "pumpkin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "3.14159 food pun! pet pen pin pan pat put pea pit",
+   "blocklist": [
+    "pie"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "para-chute; palimpsest juxtaposed with paprika",
+   "blocklist": [
+    "parachute"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "Budgie, e.g.; power peace people place point play",
+   "blocklist": [
+    "parakeet"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "International travel ID; pact page pair palm path",
+   "blocklist": [
+    "passport",
+    "passports"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Giza tomb; plant phone price press proof prime",
+   "blocklist": [
+    "pyramid",
+    "pyramids"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "p o t p o u r r i; pearl poker puzzle pony poetry",
+   "blocklist": [
+    "potpourri"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Flat breakfast cake; peanut peachy pasta parsley",
+   "blocklist": [
+    "pancake",
+    "pancaked",
+    "pancakes",
+    "pancaking"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Land with water on three sides; piglet pod port",
+   "blocklist": [
+    "peninsula"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "Spiny rodent; post plan past pick pile pool pink",
+   "blocklist": [
+    "porcupine",
+    "porcupines"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Element 94; pro pre par pal pay per pop pad paw po",
+   "blocklist": [
+    "plutonium"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Young dog | penicillin pineapple popcorn professor",
+   "blocklist": [
+    "puppies",
+    "puppy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "clue_round",
+   "clue": "panes pants pails pains paces packs pacts | 5 down",
+   "blocklist": [
+    "pagan",
+    "paganish",
+    "paganism",
+    "paganist",
+    "paganize",
+    "pagans",
+    "pagoda"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 7,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "piston"
+    },
+    {
+     "seat": "guesser2",
+     "word": "pace"
+    }
+   ],
+   "prefix_after": "p",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 1055.6908966539138,
+  "cost_numerator": 538621941,
+  "cost_denominator": 510208,
+  "cost_exact": false,
+  "cost_mcse": 0.8323602083972843,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 523315701,
+   "denominator": 510208,
+   "value": 1025.6908966539138,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:39,4:236,5:534,6:1018,7:1744,8:2163,9:1993,10:1798,11:1495,12:1125,13:824,14:586,15:356,16:225,17:130,18:63,19:43,20:25",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.8323602083972843,
+   "rollouts": 256,
+   "rank_total": 523315701,
+   "rank_denominator": 510208,
+   "cache_key": "a1520dd9c49614a41dd4e8e2839ba27b"
+  }
+ }
+}

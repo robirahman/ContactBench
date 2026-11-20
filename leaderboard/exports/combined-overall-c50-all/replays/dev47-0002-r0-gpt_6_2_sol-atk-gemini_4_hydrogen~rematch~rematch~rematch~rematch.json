@@ -1,0 +1,357 @@
+{
+ "game_id": "dev47-0002-r0-gpt_6_2_sol-atk-gemini_4_hydrogen~rematch~rematch~rematch~rematch",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_hydrogen",
+ "secret": "insubstantialities",
+ "initial_prefix": "insu",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 89,
+ "initial_secret_candidates": [
+  "insubordinate",
+  "insubordinately",
+  "insubordinates",
+  "insubordination",
+  "insubordinations",
+  "insubstantial",
+  "insubstantialities",
+  "insubstantiality",
+  "insufferable",
+  "insufferableness",
+  "insufferablenesses",
+  "insufferably",
+  "insufficiencies",
+  "insufficiency",
+  "insufficient",
+  "insufficiently",
+  "insufflate",
+  "insufflated",
+  "insufflates",
+  "insufflating",
+  "insufflation",
+  "insufflations",
+  "insufflator",
+  "insufflators",
+  "insulant",
+  "insulants",
+  "insular",
+  "insularism",
+  "insularisms",
+  "insularities",
+  "insularity",
+  "insularly",
+  "insulars",
+  "insulate",
+  "insulated",
+  "insulates",
+  "insulating",
+  "insulation",
+  "insulations",
+  "insulator",
+  "insulators",
+  "insulin",
+  "insulins",
+  "insult",
+  "insulted",
+  "insulter",
+  "insulters",
+  "insulting",
+  "insultingly",
+  "insults",
+  "insuperable",
+  "insuperably",
+  "insupportable",
+  "insupportably",
+  "insuppressible",
+  "insurabilities",
+  "insurability",
+  "insurable",
+  "insurance",
+  "insurances",
+  "insurant",
+  "insurants",
+  "insure",
+  "insured",
+  "insureds",
+  "insurer",
+  "insurers",
+  "insures",
+  "insurgence",
+  "insurgences",
+  "insurgencies",
+  "insurgency",
+  "insurgent",
+  "insurgently",
+  "insurgents",
+  "insuring",
+  "insurmountable",
+  "insurmountably",
+  "insurrection",
+  "insurrectional",
+  "insurrectionaries",
+  "insurrectionary",
+  "insurrectionist",
+  "insurrectionists",
+  "insurrections",
+  "insusceptibilities",
+  "insusceptibility",
+  "insusceptible",
+  "insusceptibly"
+ ],
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "insult insure insurance insular; glucose hormone",
+   "blocklist": [
+    "insulin",
+    "insulins"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "insured insurer insures insults; wrap to keep heat",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insulate",
+     "insulators"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "insurgent insurgence insuperable; armed uprising",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insurgencies",
+     "insurgents"
+    ],
+    [
+     "insurrection",
+     "insurrections"
+    ]
+   ],
+   "blocked_word_count": 12,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "insufferable insubordinate insularly; not enough",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insufficiencies",
+     "insufficiently"
+    ]
+   ],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "insurable insurers insurances; defiance of orders",
+   "blocklist": [
+    "insubordination",
+    "insubordinations"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "insulted insulter insultingly; offensive or rude",
+   "blocklist": [
+    "insulters",
+    "insulting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "insularism insulars insuring; unbearably",
+   "blocklist": [
+    "insufferably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "insularity insouciant insouciance; parochialisms",
+   "blocklist": [
+    "insularisms",
+    "insularities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "insuperably insupportable insusceptible; flimsy",
+   "blocklist": [
+    "insubstantial"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "insulant insureds insurant; impossible to overcome",
+   "blocklist": [
+    "insurmountable",
+    "insurmountably"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "insurability insuppressible; blowing air into",
+   "blocklist": [],
+   "blocked_ranges": [
+    [
+     "insufflate",
+     "insufflators"
+    ]
+   ],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "insulants insurants insupportably; revolts",
+   "blocklist": [
+    "insurgences"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "insubordinates insubstantiality; disobediently",
+   "blocklist": [
+    "insubordinately"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "insubstantially insurabilities; inability to react",
+   "blocklist": [
+    "insusceptibilities",
+    "insusceptibility"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 16,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "insubstantialities insufferableness insusceptibly",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [],
+   "prefix_after": "insu",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 17.0,
+  "cost_numerator": 17,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 5999,
+   "denominator": 768,
+   "value": 7.811197916666667,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "6:2,7:6,8:10,9:11,10:10,11:10,12:10,13:9,14:7,15:5,16:5,17:1,18:3",
+   "target_length": 18,
+   "C": 50,
+   "mcse": 0.14815995994137712,
+   "rollouts": 256,
+   "rank_total": 5999,
+   "rank_denominator": 768,
+   "cache_key": "b46744e7d87aa2beca1fbffdf7a0ea68"
+  },
+  "fallback": null
+ }
+}

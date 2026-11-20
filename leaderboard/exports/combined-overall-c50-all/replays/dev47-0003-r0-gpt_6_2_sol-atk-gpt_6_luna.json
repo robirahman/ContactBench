@@ -1,0 +1,448 @@
+{
+ "game_id": "dev47-0003-r0-gpt_6_2_sol-atk-gpt_6_luna",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gpt_6_luna",
+ "secret": "dischargee",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "First animal in a typical English dictionary",
+   "blocklist": [
+    "aardvark"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "q-u-a-r-t-z; cat dog sun moon star tree book water",
+   "blocklist": [
+    "quart",
+    "quarts",
+    "quartz"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "88-key instrument; house earth light time love",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "piano"
+    },
+    {
+     "seat": "guesser2",
+     "word": "piano"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 5,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "Bottlenose mammal; dragon dream diamond door drum",
+   "blocklist": [
+    "dolphin"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Casino cubes; day dry due den dew dig dip dim dam",
+   "blocklist": [
+    "dice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "T. rex or Triceratops; desk duck dusk deer dust",
+   "blocklist": [
+    "dinosaur"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "Tile with pips; data date dawn dark dirt dish dove",
+   "blocklist": [
+    "die",
+    "domino"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "Glazed pastry ring; donut dough doubt dozen doze",
+   "blocklist": [
+    "doughnut",
+    "doughnuts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "Blow its seeds; dad damps damp dense dent dental",
+   "blocklist": [
+    "dandelion"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "Small missile thrown at a pub board",
+   "blocklist": [
+    "dart",
+    "darts"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Unable to hear; dead deep deal dear debt deck deny",
+   "blocklist": [
+    "deaf"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "One-humped camel; dot dew duo dun doe dub din dig",
+   "blocklist": [
+    "dromedary"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "White petals, yellow center; drive drop doll deer",
+   "blocklist": [
+    "daisy"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "Round handle; draw drug drag drip dune dove duty",
+   "blocklist": [
+    "doorknob"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Sausage dog; dance danger doctor dollar dinner",
+   "blocklist": [
+    "dachshund"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Fills cavities; dentist? dragonfly dogma divorce",
+   "blocklist": [
+    "dentistry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "dentist"
+    },
+    {
+     "seat": "guesser2",
+     "word": "dentists"
+    }
+   ],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "clue_round",
+   "clue": "AED; shock device; dogwood dingo dwarf ditch dodo",
+   "blocklist": [
+    "defibrillator"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Binary split; dogged duskier dozen dork dime",
+   "blocklist": [
+    "dichotomy",
+    "disjunction",
+    "division",
+    "duality"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "10-sided polygon; dog dryad disk dial diet dusk",
+   "blocklist": [
+    "decagon",
+    "decagons",
+    "dial",
+    "diet",
+    "disk",
+    "dryad"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "Flipper and his kin; dryly dug doe dos daw dap dib",
+   "blocklist": [
+    "dolphins",
+    "dugong"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "Jurassic sauropod; drys duh dui dee del dak dal",
+   "blocklist": [
+    "diplodocus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Hndhld gym wght; de dia dit dol dor dom drys dud",
+   "blocklist": [
+    "dumbbell",
+    "dumbbells"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "d",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Going down; dab dal dee dif dol don dry dyn dyad",
+   "blocklist": [
+    "decline",
+    "decrease",
+    "descend",
+    "descent",
+    "discharge",
+    "downfall",
+    "downturn",
+    "dwindle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "descending"
+    },
+    {
+     "seat": "guesser2",
+     "word": "descending"
+    }
+   ],
+   "prefix_after": "di",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Olympic sport featuring springboards and platforms",
+   "blocklist": [
+    "diving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "di",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Wild Aussie dogs; did dig dido dies diet diff digs",
+   "blocklist": [
+    "dingoes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "di",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 270.3847437779642,
+  "cost_numerator": 30940667,
+  "cost_denominator": 114432,
+  "cost_exact": false,
+  "cost_mcse": 0.39151652207167953,
+  "baseline": {
+   "numerator": 7782308819,
+   "denominator": 649664,
+   "value": 11978.975007080584,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 3.0379359685287217,
+   "rollouts": 256,
+   "rank_total": 62258470552,
+   "rank_denominator": 5197312,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 27507707,
+   "denominator": 114432,
+   "value": 240.38474377796422,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:1,4:27,5:72,6:137,7:270,8:422,9:463,10:447,11:398,12:326,13:211,14:170,15:103,16:68,17:33,18:23,19:15,20:2",
+   "target_length": 10,
+   "C": 50,
+   "mcse": 0.39151652207167953,
+   "rollouts": 256,
+   "rank_total": 27507707,
+   "rank_denominator": 114432,
+   "cache_key": "5fdcb8ef85c1dfd0c45ce6f49585878d"
+  }
+ }
+}

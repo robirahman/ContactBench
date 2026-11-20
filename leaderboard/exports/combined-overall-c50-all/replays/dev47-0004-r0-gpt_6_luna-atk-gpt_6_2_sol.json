@@ -1,0 +1,506 @@
+{
+ "game_id": "dev47-0004-r0-gpt_6_luna-atk-gpt_6_2_sol",
+ "attacker": "gpt_6_luna",
+ "defender": "gpt_6_2_sol",
+ "secret": "immortalize",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "Small feline pet that purrs",
+   "blocklist": [
+    "cat",
+    "kitten",
+    "kitty",
+    "pussycat"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "clue_round",
+   "clue": "A deep, covered dish used for serving soup",
+   "blocklist": [
+    "tureen",
+    "tureens"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Fine rain from a clear sky at sunset",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "serein"
+    },
+    {
+     "seat": "guesser2",
+     "word": "drizzle"
+    }
+   ],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "A nocturnal bird often associated with wisdom",
+   "blocklist": [
+    "owl",
+    "owls"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "A collective noun for a group of flamingos",
+   "blocklist": [
+    "colonies",
+    "colony",
+    "flamboyance",
+    "flamboyances",
+    "flock",
+    "flocks",
+    "stand",
+    "stands"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 8,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "A tall garden plant with a large yellow flower",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "sunflower"
+    },
+    {
+     "seat": "guesser2",
+     "word": "sunflower"
+    }
+   ],
+   "prefix_after": "i",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 7,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "Frozen water",
+   "blocklist": [
+    "ice"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "A traditional snow house in the Arctic",
+   "blocklist": [
+    "igloo",
+    "igloos",
+    "iglu",
+    "iglus"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "clue_round",
+   "clue": "A long-legged wading bird sacred in ancient Egypt",
+   "blocklist": [
+    "ibis",
+    "ibises"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "A body's tendency to resist changes in its motion",
+   "blocklist": [
+    "inertia",
+    "inertias"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "A six-legged creature such as an ant or beetle",
+   "blocklist": [
+    "insect",
+    "insects"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "Wild mountain goat with long curved horns",
+   "blocklist": [
+    "ibex",
+    "ibexes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "clue_round",
+   "clue": "A landform completely surrounded by water",
+   "blocklist": [
+    "island",
+    "islands",
+    "isle",
+    "isles",
+    "islet",
+    "islets"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "The ninth letter of the Greek alphabet",
+   "blocklist": [
+    "iota",
+    "iotas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "A metallic element used to make steel",
+   "blocklist": [
+    "iron",
+    "irons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "The pale color of old piano keys",
+   "blocklist": [
+    "ivories",
+    "ivory"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Become accustomed to repeated hardship",
+   "blocklist": [
+    "inure",
+    "inured",
+    "inures",
+    "inuring"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "i",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "A wasp whose larvae develop inside caterpillars",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "ichneumon"
+    },
+    {
+     "seat": "guesser2",
+     "word": "ichneumon"
+    }
+   ],
+   "prefix_after": "im",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "To make or become better in quality or condition",
+   "blocklist": [
+    "improve",
+    "improved",
+    "improves",
+    "improving"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "im",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "Adult insect stage after metamorphosis",
+   "blocklist": [
+    "imago",
+    "imagoes",
+    "imagos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "im",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "To overlap like roof tiles",
+   "blocklist": [
+    "imbricate",
+    "imbricated",
+    "imbricates",
+    "imbricating",
+    "imbrication",
+    "imbrications"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 6,
+   "opened_guesses": [],
+   "prefix_after": "im",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "A tangled, confusing situation",
+   "blocklist": [
+    "confusion",
+    "entanglement",
+    "imbroglio",
+    "imbroglios",
+    "impasse",
+    "impasses",
+    "jumble",
+    "knot",
+    "labyrinth",
+    "mare",
+    "maze",
+    "mess",
+    "mishmash",
+    "morass",
+    "muddle",
+    "predicament",
+    "quagmire",
+    "snafu",
+    "snarl",
+    "tangle"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 20,
+   "opened_guesses": [],
+   "prefix_after": "im",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "To fill or inspire with a quality or feeling",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "imbue"
+    },
+    {
+     "seat": "guesser2",
+     "word": "imbue"
+    }
+   ],
+   "prefix_after": "imm",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "Enormous, vast in scale",
+   "blocklist": [
+    "immense"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "imm",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "Unable to move or be moved",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "immobile"
+    },
+    {
+     "seat": "guesser2",
+     "word": "immobile"
+    }
+   ],
+   "prefix_after": "immo",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "The state of being unable to move",
+   "blocklist": [
+    "immobility"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "immo",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "direct",
+   "seat": "guesser1",
+   "word": "immovable",
+   "prefix_after": "immo",
+   "result": "no_prefix"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 35.892252604166664,
+  "cost_numerator": 110261,
+  "cost_denominator": 3072,
+  "cost_exact": false,
+  "cost_mcse": 0.05130238384063766,
+  "baseline": {
+   "numerator": 3978724487,
+   "denominator": 330752,
+   "value": 12029.32858153541,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 3.240184644416164,
+   "rollouts": 256,
+   "rank_total": 47744693844,
+   "rank_denominator": 3969024,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 18101,
+   "denominator": 3072,
+   "value": 5.892252604166667,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "7:1,8:4,9:7,10:14,11:12,12:13,13:6,14:3,15:3,16:2",
+   "target_length": 11,
+   "C": 50,
+   "mcse": 0.05130238384063766,
+   "rollouts": 256,
+   "rank_total": 18101,
+   "rank_denominator": 3072,
+   "cache_key": "73437f49a3d981c794d13acda0433cb9"
+  }
+ }
+}

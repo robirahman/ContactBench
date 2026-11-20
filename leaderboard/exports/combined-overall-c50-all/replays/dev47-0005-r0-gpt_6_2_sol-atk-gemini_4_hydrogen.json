@@ -1,0 +1,444 @@
+{
+ "game_id": "dev47-0005-r0-gpt_6_2_sol-atk-gemini_4_hydrogen",
+ "attacker": "gpt_6_2_sol",
+ "defender": "gemini_4_hydrogen",
+ "secret": "breakings",
+ "initial_prefix": "",
+ "turn_limit": 30,
+ "initial_secret_candidate_count": 172608,
+ "outcome_status": "capped",
+ "terminal_reason": "turn_cap",
+ "public_history": [
+  {
+   "turn": 1,
+   "type": "clue_round",
+   "clue": "A1 P16 P16 L12 E5",
+   "blocklist": [
+    "apple"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 1,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 2,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 3,
+   "type": "clue_round",
+   "clue": "Yellow fruit that monkeys famously peel",
+   "blocklist": [
+    "banana",
+    "bananas"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 4,
+   "type": "clue_round",
+   "clue": "Citrus named for its color? Or the reverse?",
+   "blocklist": [
+    "orange",
+    "oranges"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 5,
+   "type": "clue_round",
+   "clue": "Aardwolf, abacus, abandon, ability; ant-eater (8)",
+   "blocklist": [
+    "anteater",
+    "anteaters"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "aardvark"
+    },
+    {
+     "seat": "guesser2",
+     "word": "aardvark"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 6,
+   "type": "clue_round",
+   "clue": "blue black brown bear book bread; American buffalo",
+   "blocklist": [
+    "bison",
+    "bisons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 7,
+   "type": "clue_round",
+   "clue": "Dam-building rodent; bat bee bed bag ball bus box",
+   "blocklist": [
+    "beaver",
+    "beavers"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 8,
+   "type": "clue_round",
+   "clue": "batman? No: bass bell belt bird; bison plural (9)",
+   "blocklist": [
+    "buffaloes",
+    "buffalos"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser2",
+     "word": "battalion"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 9,
+   "type": "clue_round",
+   "clue": "aardvark (9); baby back bark bank barn bake bait",
+   "blocklist": [
+    "bandicoot",
+    "bandicoots"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "badger"
+    }
+   ],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 10,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 11,
+   "type": "clue_round",
+   "clue": "2-9-3-25-3-12-5; bat? boar bongo bumblebee bobcat",
+   "blocklist": [
+    "bicycle",
+    "bicycles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 12,
+   "type": "clue_round",
+   "clue": "2-18-1-19-19; boy bun bar big bit bet but bud bug",
+   "blocklist": [
+    "brass",
+    "brasses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 13,
+   "type": "clue_round",
+   "clue": "VW Bug; bathed beach beast beauty become beyond",
+   "blocklist": [
+    "beetle",
+    "beetles"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 14,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 15,
+   "type": "clue_round",
+   "clue": "You soak in it; barge barked baron basin basic",
+   "blocklist": [
+    "bath",
+    "baths",
+    "bathtub",
+    "bathtubs"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 16,
+   "type": "clue_round",
+   "clue": "yrrebeulb backwards; large hairy forest animal",
+   "blocklist": [
+    "bigfoot",
+    "blueberries",
+    "blueberry"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 17,
+   "type": "clue_round",
+   "clue": "Lego unit; bib bin bow boa bog bop boo bay bid bat",
+   "blocklist": [
+    "block",
+    "blocks",
+    "brick",
+    "bricks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 18,
+   "type": "clue_round",
+   "clue": "Witch transport; also what a witch parks at home",
+   "blocklist": [
+    "broom",
+    "brooms",
+    "broomstick",
+    "broomsticks"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 19,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 20,
+   "type": "clue_round",
+   "clue": "Fluttering insect; blue morpho, monarch, painted",
+   "blocklist": [
+    "butterflies",
+    "butterfly"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 21,
+   "type": "clue_round",
+   "clue": "Item of luggage (8); 2-9-11-9-14-9",
+   "blocklist": [
+    "backpack",
+    "backpacks",
+    "bikini",
+    "bikinis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 4,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "You sank my ___!; bat tle ship",
+   "blocklist": [
+    "battleship",
+    "battleships"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "broccol? Green florets; bring broad brush break",
+   "blocklist": [
+    "broccoli",
+    "broccolis"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "B A B O O N; be br ba bl bo bu bi by",
+   "blocklist": [
+    "baboon",
+    "baboons"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "Al ore; bob bun? buy bye bus? bit? bot bur bra",
+   "blocklist": [
+    "bauxite",
+    "bauxites"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "B0A0G0E0L; bathe bean beef beer best bomb bone",
+   "blocklist": [
+    "bagel",
+    "bagels"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 27,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "C6H6; bacon batik bard brag brat brim burr bulk",
+   "blocklist": [
+    "benzene",
+    "benzenes"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "Huge beast: bile bind bore bolt boot boom blow",
+   "blocklist": [
+    "behemoth",
+    "behemoths"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 2,
+   "opened_guesses": [],
+   "prefix_after": "b",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 30,
+   "type": "invalid_action",
+   "seat": "guesser1"
+  }
+ ],
+ "score": {
+  "status": "scored",
+  "cost": 635.6911633171378,
+  "cost_numerator": 230272767,
+  "cost_denominator": 362240,
+  "cost_exact": false,
+  "cost_mcse": 0.5213269557564559,
+  "baseline": {
+   "numerator": 75853846787,
+   "denominator": 6367488,
+   "value": 11912.679974740431,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 2.716995560114142,
+   "rollouts": 256,
+   "rank_total": 75853846787,
+   "rank_denominator": 6367488,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": {
+   "numerator": 219405567,
+   "denominator": 362240,
+   "value": 605.6911633171378,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:22,4:215,5:565,6:1050,7:1575,8:1817,9:1415,10:969,11:650,12:385,13:219,14:126,15:65,16:26,17:17,18:7,19:2,20:2",
+   "target_length": 9,
+   "C": 50,
+   "mcse": 0.5213269557564559,
+   "rollouts": 256,
+   "rank_total": 219405567,
+   "rank_denominator": 362240,
+   "cache_key": "7332dd12d00445258bc7513a00ce9f22"
+  }
+ }
+}
