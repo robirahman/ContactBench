@@ -16,7 +16,7 @@ are the arena's own code; only the model transport is Inspect.
 
 Usage:
     inspect eval contact_bench/inspect_task/task.py --model openai/gpt-6.2-sol \\
-        -T secrets_per_opponent=4 --reasoning-effort low
+        -T secrets_per_opponent=3 --reasoning-effort low
 Opponents can be re-bound with --model-role (e.g. --model-role terra=...), but
 the frozen Elo then no longer applies to that opponent; the log records the
 models actually used.
@@ -275,7 +275,7 @@ def fixture_scorer(panel: dict):
 
 
 @task
-def contact_bench(panel: str = "c50_api_v1", secrets_per_opponent: int = 4, seed: int = 20261120,
+def contact_bench(panel: str = "c50_api_v2", secrets_per_opponent: int = 3, seed: int = 20261120,
                   opponents: str | None = None, rematches: bool = True) -> Task:
     """ContactBench (C=50, lookup tools) against a fixed reference panel.
 

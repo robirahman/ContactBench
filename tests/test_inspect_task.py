@@ -59,8 +59,10 @@ def test_adapter_without_tools_is_one_call():
 
 
 def test_panel_ratings_and_dataset_are_deterministic():
-    pan = load_panel("c50_api_v1")
-    assert set(pan["opponents"]) == {"luna", "hydrogen", "terra", "carbon"}
+    pan = load_panel("c50_api_v2")
+    assert set(pan["opponents"]) == {"opus", "sol", "luna", "flash", "argon", "hydrogen", "terra", "carbon"}
+    assert {o["model"].split("/")[0] for o in pan["opponents"].values()} == {"anthropic", "openai", "google"}
+    assert all(o["config"].get("reasoning_effort") for o in pan["opponents"].values())  # never a provider default
     t1 = contact_bench(secrets_per_opponent=2, opponents="luna,terra")
     t2 = contact_bench(secrets_per_opponent=2, opponents="luna,terra")
     s1 = [(s.id, s.metadata["secret"]) for s in t1.dataset]

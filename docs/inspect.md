@@ -12,17 +12,17 @@ human challenges, so the result lands on the main C=50 leaderboard's scale witho
 pip install -e '.[inspect]'          # from a checkout of this repository (configs and lexicons are read from it)
 export OPENAI_API_KEY=... GOOGLE_API_KEY=...   # the default panel uses OpenAI and Google models
 inspect eval contact_bench/contact_bench --model anthropic/claude-opus-5-5 --reasoning-effort low \
-    -T secrets_per_opponent=4
+    -T secrets_per_opponent=3
 ```
 
 Task options (`-T`):
 
 | Option | Default | Meaning |
 |---|---|---|
-| `panel` | `c50_api_v1` | Panel name in `contact_bench/inspect_task/panels/`, or a path to a panel JSON |
-| `secrets_per_opponent` | 4 | Fixtures (fresh secrets) per panel opponent |
+| `panel` | `c50_api_v2` | Panel name in `contact_bench/inspect_task/panels/`, or a path to a panel JSON |
+| `secrets_per_opponent` | 3 | Fixtures (fresh secrets) per panel opponent (24 fixtures with the default panel, plus rematches) |
 | `seed` | 20261120 | Secret-generation seed; secrets are uniform draws from the ENABLE support |
-| `opponents` | all | Comma-separated subset of the panel |
+| `opponents` | all | Comma-separated subset of the panel (leave out the evaluated model's own entry, e.g. when evaluating Sol) |
 | `rematches` | true | Replay no-progress draws with one more letter revealed, as in the arena |
 
 The evaluated model's own settings come from Inspect (`--model`, `--reasoning-effort`, `--max-tokens`, ...).
@@ -55,14 +55,30 @@ Per-sample scores carry every fixture's points and both legs' costs in their met
 
 ## The reference panel
 
-`c50_api_v1` (frozen 2026-11-20 from the published combined C=50 board, run `combined-overall-c50-all`):
+`c50_api_v2` (frozen 2026-11-20 from the published combined C=50 board, run `combined-overall-c50-all`, 318
+fixtures): eight opponents across three providers, so no single matchup dominates an evaluated model's score.
 
 | Opponent | Model and setting | Frozen Elo | 95% CI | Board fixtures |
 |---|---|---|---|---|
-| `luna` | GPT-6 Luna (Medium, provider default) | 1615.5 | 1497–1731 | 53 |
-| `hydrogen` | Gemini 4 Hydrogen (Low) | 1724.4 | 1660–1842 | 98 |
-| `terra` | GPT-6.1 Terra (Low) | 1789.7 | 1716–1906 | 87 |
-| `carbon` | Gemini 4 Carbon (Low) | 1965.5 | 1782–2251 | 26 |
+| `opus` | Claude Opus 5.5 (Low) | 1070.2 | 853–1257 | 35 |
+| `sol` | GPT-6.2 Sol (Low) | 1456.2 | 1335–1562 | 52 |
+| `luna` | GPT-6 Luna (Medium) | 1547.1 | 1432–1671 | 60 |
+| `flash` | Gemini 3.8 Flash (Medium) | 1595.7 | 1449–1740 | 43 |
+| `hydrogen` | Gemini 4 Hydrogen (Low) | 1690.7 | 1627–1819 | 108 |
+| `argon` | Gemini 4 Argon (Low) | 1701.5 | 1605–1834 | 73 |
+| `terra` | GPT-6.1 Terra (Low) | 1763.9 | 1695–1894 | 87 |
+| `carbon` | Gemini 4 Carbon (Low) | 1972.7 | 1793–2248 | 26 |
+
+Luna and Flash ran on the board without an effort parameter, at their provider default (Medium); the panel sets
+Medium explicitly so a later change to a provider default cannot change them. `c50_api_v1` (four opponents) is
+kept for reference and superseded.
+
+**Why eight opponents.** A parity check rated GPT-6.2 Sol (Low) through this task against a four-model panel at
+1623 ± 107, against 1362 on the board at the time. Arena games against the same opponents gave 1591 ± 86, so the
+Inspect transport reproduces the arena; the gap was matchup-dependence (Sol does better against Luna and Hydrogen
+than its board opponents predicted). Adding those games moved Sol to 1456 on the board. A broader panel reduces
+how much one favourable or unfavourable matchup moves the score, but a panel score remains an approximation of
+the full arena rating; expect differences of roughly 100–250 Elo for models with unusual matchups.
 
 Caveats:
 

@@ -7,9 +7,62 @@
   "penalty_scale": 2.5,
   "elo_center": 1500.0,
   "opponents": {
-    "luna": {"board_id": "gpt_6_luna", "model": "openai/gpt-6-luna", "config": {"max_tokens": 8000}, "elo": 1615.5, "elo_ci95": [1496.8, 1730.6], "fixtures": 53},
-    "hydrogen": {"board_id": "gemini_4_hydrogen", "model": "google/gemini-4-hydrogen", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1724.4, "elo_ci95": [1660.5, 1842.3], "fixtures": 98},
-    "terra": {"board_id": "gpt_6_1_terra", "model": "openai/gpt-6.1-terra", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1789.7, "elo_ci95": [1716.2, 1905.6], "fixtures": 87},
-    "carbon": {"board_id": "gemini_4_carbon", "model": "google/gemini-4-carbon", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1965.5, "elo_ci95": [1782.4, 2250.6], "fixtures": 26}
-  }
+    "luna": {
+      "board_id": "gpt_6_luna",
+      "model": "openai/gpt-6-luna",
+      "config": {
+        "max_tokens": 8000
+      },
+      "elo": 1615.5,
+      "elo_ci95": [
+        1496.8,
+        1730.6
+      ],
+      "fixtures": 53
+    },
+    "hydrogen": {
+      "board_id": "gemini_4_hydrogen",
+      "model": "google/gemini-4-hydrogen",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1724.4,
+      "elo_ci95": [
+        1660.5,
+        1842.3
+      ],
+      "fixtures": 98
+    },
+    "terra": {
+      "board_id": "gpt_6_1_terra",
+      "model": "openai/gpt-6.1-terra",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1789.7,
+      "elo_ci95": [
+        1716.2,
+        1905.6
+      ],
+      "fixtures": 87
+    },
+    "carbon": {
+      "board_id": "gemini_4_carbon",
+      "model": "google/gemini-4-carbon",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1965.5,
+      "elo_ci95": [
+        1782.4,
+        2250.6
+      ],
+      "fixtures": 26
+    }
+  },
+  "superseded_by": "c50-api-v2",
+  "superseded_note": "Frozen before the GPT-6.2 Sol check run moved Sol, Luna and Hydrogen (2026-11-20); use c50_api_v2."
 }
