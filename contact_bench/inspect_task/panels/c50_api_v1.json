@@ -1,0 +1,15 @@
+{
+  "name": "c50-api-v1",
+  "description": "Reference panel for the main ContactBench format (C=50, lookup tools, empty prefix). Opponent Elo is frozen from the published combined C=50 board; an evaluated model's Elo is fitted with these held fixed, so it lands on that board's scale.",
+  "anchor_run_id": "combined-overall-c50-all",
+  "anchor_note": "Frozen 2026-11-20 from the combined C=50 board (12 low-effort models + 3 max-effort models, 301 fixtures). Provisional: the Fable max vs Carbon max fixture was counted ahead of completion; it does not involve any panel model.",
+  "condition_config": "configs/ladder_bridges_c50.yaml",
+  "penalty_scale": 2.5,
+  "elo_center": 1500.0,
+  "opponents": {
+    "luna": {"board_id": "gpt_6_luna", "model": "openai/gpt-6-luna", "config": {"max_tokens": 8000}, "elo": 1615.5, "elo_ci95": [1496.8, 1730.6], "fixtures": 53},
+    "hydrogen": {"board_id": "gemini_4_hydrogen", "model": "google/gemini-4-hydrogen", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1724.4, "elo_ci95": [1660.5, 1842.3], "fixtures": 98},
+    "terra": {"board_id": "gpt_6_1_terra", "model": "openai/gpt-6.1-terra", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1789.7, "elo_ci95": [1716.2, 1905.6], "fixtures": 87},
+    "carbon": {"board_id": "gemini_4_carbon", "model": "google/gemini-4-carbon", "config": {"max_tokens": 8000, "reasoning_effort": "low"}, "elo": 1965.5, "elo_ci95": [1782.4, 2250.6], "fixtures": 26}
+  }
+}

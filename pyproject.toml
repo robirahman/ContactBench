@@ -17,6 +17,10 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest==9.2.0", "hypothesis==6.170.15"]
+inspect = ["inspect_ai>=0.3.291"]
+
+[project.entry-points.inspect_ai]
+contact_bench = "contact_bench.inspect_task._registry"
 
 [project.scripts]
 contact-bench = "contact_bench.cli.main:main"
@@ -25,7 +29,7 @@ contact-bench = "contact_bench.cli.main:main"
 include = ["contact_bench*"]
 
 [tool.setuptools.package-data]
-contact_bench = ["site/static/*", "site/static/highlights/*", "site/static/play/*"]
+contact_bench = ["site/static/*", "site/static/highlights/*", "site/static/play/*", "inspect_task/panels/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
