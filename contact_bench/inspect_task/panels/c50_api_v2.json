@@ -1,0 +1,123 @@
+{
+  "name": "c50-api-v2",
+  "description": "Reference panel for the main ContactBench format (C=50, lookup tools, empty prefix): eight opponents across Anthropic, OpenAI and Google spanning about 1070-1970 Elo. Opponent Elo is frozen from the published combined C=50 board; an evaluated model's Elo is fitted with these held fixed, so it lands on that board's scale.",
+  "anchor_run_id": "combined-overall-c50-all",
+  "anchor_note": "Frozen 2026-11-20 from the combined C=50 board (13 runs incl. the GPT-6.2 Sol check run; 318 fixtures). The Fable max vs Carbon max fixture was counted ahead of completion (result already decided); it involves no panel model. GPT-6 Luna and Gemini 3.8 Flash ran on the board without an effort parameter, at their provider default (Medium: echoed by the OpenAI API for Luna; Google's docs for Flash); the panel sets Medium explicitly so a future default change cannot alter them.",
+  "condition_config": "configs/ladder_bridges_c50.yaml",
+  "penalty_scale": 2.5,
+  "elo_center": 1500.0,
+  "opponents": {
+    "opus": {
+      "board_id": "claude_opus_5_5",
+      "model": "anthropic/claude-opus-5-5",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1070.2,
+      "elo_ci95": [
+        852.8,
+        1257.0
+      ],
+      "fixtures": 35
+    },
+    "sol": {
+      "board_id": "gpt_6_2_sol",
+      "model": "openai/gpt-6.2-sol",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1456.2,
+      "elo_ci95": [
+        1334.8,
+        1562.2
+      ],
+      "fixtures": 52
+    },
+    "luna": {
+      "board_id": "gpt_6_luna",
+      "model": "openai/gpt-6-luna",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "medium"
+      },
+      "elo": 1547.1,
+      "elo_ci95": [
+        1432.2,
+        1670.8
+      ],
+      "fixtures": 60
+    },
+    "flash": {
+      "board_id": "gemini_3_8_flash",
+      "model": "google/gemini-3.8-flash",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "medium"
+      },
+      "elo": 1595.7,
+      "elo_ci95": [
+        1449.3,
+        1740.2
+      ],
+      "fixtures": 43
+    },
+    "argon": {
+      "board_id": "gemini_4_argon",
+      "model": "google/gemini-4-argon",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1701.5,
+      "elo_ci95": [
+        1605.3,
+        1833.7
+      ],
+      "fixtures": 73
+    },
+    "hydrogen": {
+      "board_id": "gemini_4_hydrogen",
+      "model": "google/gemini-4-hydrogen",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1690.7,
+      "elo_ci95": [
+        1626.6,
+        1818.6
+      ],
+      "fixtures": 108
+    },
+    "terra": {
+      "board_id": "gpt_6_1_terra",
+      "model": "openai/gpt-6.1-terra",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1763.9,
+      "elo_ci95": [
+        1694.5,
+        1893.8
+      ],
+      "fixtures": 87
+    },
+    "carbon": {
+      "board_id": "gemini_4_carbon",
+      "model": "google/gemini-4-carbon",
+      "config": {
+        "max_tokens": 8000,
+        "reasoning_effort": "low"
+      },
+      "elo": 1972.7,
+      "elo_ci95": [
+        1792.6,
+        2247.7
+      ],
+      "fixtures": 26
+    }
+  }
+}
