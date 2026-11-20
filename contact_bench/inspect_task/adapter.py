@@ -29,6 +29,7 @@ from inspect_ai.tool import ToolInfo, ToolParams
 from inspect_ai.util import JSONSchema
 
 from contact_bench.config import ModelConfig
+from contact_bench.providers.google_adapter import FINAL_ANSWER_NUDGE
 from contact_bench.providers.base import (
     AdapterResponse,
     DecisionRequest,
@@ -113,6 +114,11 @@ class InspectAdapter(ProviderAdapter):
         return [ChatMessageSystem(content=request.system_prompt), ChatMessageUser(content=request.user_prompt)]
 
     async def send_tool_turn(self, request: DecisionRequest, state: Any, allow_tools: bool):
+        state = list(state)
+        if not allow_tools and state and state[-1].role == "assistant":
+            # Same nudge as the arena's Gemini adapter: some providers reject a
+            # request that ends with a model turn.
+            state.append(ChatMessageUser(content=FINAL_ANSWER_NUDGE))
         resp, calls, msg = await self._generate(request, state, tools=self._tools(request) if allow_tools else [],
                                                 with_schema=self.structured_output_with_tools or not allow_tools)
         return resp, calls, list(state) + [msg]
