@@ -164,9 +164,12 @@ def contact_fixture(panel: dict, condition_config: str, rematches: bool = True):
         fixtures = []
         while True:
             fid = f"{state.sample_id}-p{prefix}"
-            ab, ba = await asyncio.gather(
-                _play_leg(env, f"{fid}-AB", secret, prefix, me, them, max_tokens),
-                _play_leg(env, f"{fid}-BA", secret, prefix, them, me, max_tokens))
+            # A TaskGroup cancels the other leg if one fails, so no orphaned leg keeps
+            # making (paid) model calls while Inspect records or retries the sample.
+            async with asyncio.TaskGroup() as tg:
+                t_ab = tg.create_task(_play_leg(env, f"{fid}-AB", secret, prefix, me, them, max_tokens))
+                t_ba = tg.create_task(_play_leg(env, f"{fid}-BA", secret, prefix, them, me, max_tokens))
+            ab, ba = t_ab.result(), t_ba.result()
             draw = _no_progress(ab) and _no_progress(ba)
             pts = 0.5 if draw else match_points(ab["cost"], ba["cost"])
             fixtures.append({"fixture_id": fid, "initial_prefix_length": prefix, "points": pts,

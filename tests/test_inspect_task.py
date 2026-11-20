@@ -102,3 +102,21 @@ def test_anchored_metric_uses_only_calibrated_opponents():
     mixed = draw + [_sample_score(1.0, rebound=True)]
     assert _anchored(mixed, "elo") == _anchored(draw, "elo")
     assert match_point_share()(mixed) == 0.75
+
+
+def test_limit_exceeded_propagates_from_the_adapter():
+    from inspect_ai.util import LimitExceededError
+
+    class Boom:
+        api = object()
+
+        def __str__(self):
+            return "mockllm/model"
+
+        async def generate(self, *a, **k):
+            raise LimitExceededError("token", value=10, limit=5)
+
+    a = InspectAdapter(ModelConfig(id="m", provider="fake", model="m"), Boom())
+    _, req = _req(tools=False)
+    with pytest.raises(LimitExceededError):
+        asyncio.run(a.decide(req))

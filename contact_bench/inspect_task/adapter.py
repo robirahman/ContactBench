@@ -26,7 +26,7 @@ from inspect_ai.model import (
     ResponseSchema,
 )
 from inspect_ai.tool import ToolInfo, ToolParams
-from inspect_ai.util import JSONSchema
+from inspect_ai.util import JSONSchema, LimitExceededError
 
 from contact_bench.config import ModelConfig
 from contact_bench.providers.google_adapter import FINAL_ANSWER_NUDGE
@@ -86,6 +86,8 @@ class InspectAdapter(ProviderAdapter):
         try:
             out = await self.model.generate(messages, tools=tools, tool_choice="auto" if tools else None,
                                             config=self._config(request, with_schema))
+        except LimitExceededError:
+            raise  # Inspect's sample limits (--token-limit, --cost-limit) are control flow, not failures.
         except Exception as e:  # Inspect has already applied its own retries.
             raise InfrastructureError(f"{type(e).__name__}: {e}", category="unknown", fatal=True) from e
         msg = out.message
