@@ -121,7 +121,7 @@ async def _play_leg(env: _Env, game_id: str, secret: str, prefix_len: int, attac
         return out.raw
 
     await game.play(decide)
-    if not game.terminal:
+    if errors or not game.terminal or game.collection_status != "complete":
         # Never score an infrastructure failure as play: Inspect marks the sample
         # as errored (retry with --retry-on-error).
         raise RuntimeError(f"{game_id}: game could not be completed: {'; '.join(errors) or game.pending}")
@@ -149,10 +149,16 @@ def contact_fixture(panel: dict, condition_config: str, rematches: bool = True):
         opp = md["opponent"]
         spec = panel["opponents"][opp]
         # A --model-role binding for this opponent overrides the panel default.
-        opp_model = model_roles().get(opp) or get_model(spec["model"], config=GenerateConfig(**spec["config"]))
+        bound = model_roles().get(opp)
+        opp_model = bound or get_model(spec["model"], config=GenerateConfig(**spec["config"]))
+        # A --model-role binding replaces the calibrated panel model, so its frozen
+        # Elo no longer applies: such samples are left out of the anchored metrics.
+        md["opponent_rebound"] = bound is not None
         me = (EVALUATED, get_model())
         them = (spec["board_id"], opp_model)
-        max_tokens = spec["config"].get("max_tokens")
+        # Each model keeps its own token limit: Inspect's CLI/config for the evaluated
+        # model, the panel config (or the role binding) for the opponent.
+        max_tokens = None
         secret = md["secret"]
         prefix = env.cfg.protocol.initial_prefix_length
         fixtures = []
@@ -185,10 +191,12 @@ def _public(leg: dict) -> dict:
     return out
 
 
-def _results(scores: list[SampleScore]) -> list[tuple[str, str, float]]:
+def _results(scores: list[SampleScore], anchored_only: bool = True) -> list[tuple[str, str, float]]:
     res = []
     for s in scores:
         md = s.score.metadata or {}
+        if anchored_only and md.get("opponent_rebound"):
+            continue
         for f in md.get("fixtures", []):
             res.append((EVALUATED, md["opponent_board_id"], f["points"]))
     return res
@@ -233,7 +241,7 @@ def anchored_elo_se() -> Metric:
 def match_point_share() -> Metric:
     """Bounded companion score in [0, 1]: mean fixture points against the panel."""
     def m(scores: list[SampleScore]) -> float:
-        pts = [p for _, _, p in _results(scores)]
+        pts = [p for _, _, p in _results(scores, anchored_only=False)]
         return sum(pts) / len(pts) if pts else float("nan")
     return m
 
@@ -248,9 +256,12 @@ def fixture_scorer(panel: dict):
         return Score(
             value=sum(pts) / len(pts) if pts else 0.0,
             answer=state.output.completion,
-            explanation=f"{len(fixtures)} fixture(s) vs {md['opponent']} ({md.get('opponent_model')}): points {pts}",
+            explanation=f"{len(fixtures)} fixture(s) vs {md['opponent']} ({md.get('opponent_model')}): points {pts}"
+                        + (" [opponent re-bound with --model-role: excluded from anchored_elo]"
+                           if md.get("opponent_rebound") else ""),
             metadata={"opponent": md["opponent"], "opponent_board_id": spec["board_id"],
                       "opponent_elo": spec["elo"], "opponent_model": md.get("opponent_model"),
+                      "opponent_rebound": bool(md.get("opponent_rebound")),
                       "penalty_scale": panel["penalty_scale"], "elo_center": panel["elo_center"],
                       "fixtures": [{k: f[k] for k in ("fixture_id", "initial_prefix_length", "points",
                                                        "no_progress_draw", "cost_attack", "cost_defend")}

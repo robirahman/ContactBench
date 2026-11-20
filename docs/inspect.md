@@ -72,5 +72,6 @@ Caveats:
 - **API drift.** Panel models are hosted APIs; if one is deprecated or changes, the panel must be recalibrated.
   An open-weight panel (pinned weights, any host) would remove that dependency but needs calibration games
   against the arena pool first.
-- **Overrides.** `--model-role terra=...` re-binds an opponent, but its frozen Elo then no longer applies; the
-  log records the models actually used.
+- **Overrides.** `--model-role terra=...` re-binds an opponent. Its frozen Elo then no longer applies, so those
+  samples are left out of `anchored_elo` (they still count in `match_point_share`); the log records the
+  models actually used.
