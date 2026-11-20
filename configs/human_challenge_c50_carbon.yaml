@@ -1,0 +1,54 @@
+# C=50 human challenge (main format): one fixture (attack + defend on one fresh secret) vs Gemini 4 Carbon
+# (Low). Carbon's config is copied verbatim from the main C=50 runs so the result can be anchored to the main
+# board (analyze --anchor combined-overall-c50-all).
+name: human-challenge-c50-carbon
+fixture_data: false
+protocol:
+  version: contact-v0.5
+  dictionary_access: lookup_tools
+  blocklist_encoding: words_and_ranges
+  initial_prefix_length: 0
+  max_tool_calls_per_decision: 8
+  turn_limit: 30
+  clue_max_characters: 50
+lexicon:
+  manifest: lexicons/enable_manifest.json
+scoring:
+  development_rollouts: 256
+tasks:
+  tasks_per_pair: 1
+tournament:
+  schedule: human_challenge
+  rematch_on_no_progress_draw: false
+  human_challenge:
+    player: human
+    opponents:
+    - gemini_4_carbon
+models:
+- id: human
+  provider: human
+  display_name: Human player
+- id: gemini_4_carbon
+  provider: google
+  api_family: generate_content
+  model: gemini-4-carbon
+  parameters:
+    thinking_config:
+      thinking_level: low
+  credential_env: GEMINI_API_KEY
+  max_output_tokens: 8000
+  context_window_tokens: 1000000
+  prices:
+    as_of: '2026-11-18'
+    source: third-party trackers; conservative (post-2026-12-01 / higher reported)
+      rates; model ID verified via models.list
+    input_per_mtok: 4.0
+    output_per_mtok: 20.0
+    cached_input_per_mtok: 1.0
+execution:
+  game_concurrency: 1
+  global_concurrency: 4
+  per_provider_concurrency: 2
+analysis:
+  bootstrap_resamples: 0
+  development_bootstrap_resamples: 0

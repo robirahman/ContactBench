@@ -73,7 +73,7 @@ def map_google_error(e: BaseException, secrets: tuple[str, ...]) -> Infrastructu
     return mk("unknown", fatal=True)
 
 
-GEMINI_HTTP_TIMEOUT_MS = 3_600_000  # max-effort Carbon calls ran past 10 minutes
+GEMINI_HTTP_TIMEOUT_MS = 1_800_000  # slowest successful max-effort Carbon call so far: ~26 min; hung calls waited the full hour
 
 FINAL_ANSWER_NUDGE = (
     "Lookups are finished. Reply now with only your final answer as a JSON object matching the required schema."
