@@ -6,8 +6,8 @@
  "initial_prefix": "",
  "turn_limit": 30,
  "initial_secret_candidate_count": 172608,
- "outcome_status": "infrastructure_incomplete",
- "terminal_reason": null,
+ "outcome_status": "solved",
+ "terminal_reason": "public_target_utterance",
  "public_history": [
   {
    "turn": 1,
@@ -353,7 +353,218 @@
    ],
    "prefix_after": "c",
    "result": "no_prefix"
+  },
+  {
+   "turn": 22,
+   "type": "clue_round",
+   "clue": "copies coping coplot copped copper coppra coprah",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cooperativenesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "copras"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 23,
+   "type": "clue_round",
+   "clue": "copses copter copula coquet corals corban corbel",
+   "blocklist": [
+    "cooingly",
+    "cookbooks",
+    "cookeries",
+    "copolymerizations",
+    "coproprietorships",
+    "corbeled",
+    "corbie",
+    "cordwood",
+    "cordwoods"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 9,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 24,
+   "type": "clue_round",
+   "clue": "corded corder cordon cookers cookery cookeys",
+   "blocklist": [
+    "cookware",
+    "coolant",
+    "coordinatenesses"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 3,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "cooperationists"
+    }
+   ],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 25,
+   "type": "clue_round",
+   "clue": "coolers coolest coolies cooling coolish coolths",
+   "blocklist": [
+    "cookwares",
+    "coolants",
+    "cooldown",
+    "coolness",
+    "cooperationist",
+    "cooperatively",
+    "cooperativeness",
+    "coordinateness",
+    "copartnerships",
+    "copolymerization",
+    "copolymerizing",
+    "coproprietorship",
+    "coprosperities"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 13,
+   "opened_guesses": [],
+   "prefix_after": "c",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 26,
+   "type": "clue_round",
+   "clue": "coombes cooncan coontie coopers coopery cooping",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coquettishnesses"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coquettishnesses"
+    }
+   ],
+   "prefix_after": "co",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 27,
+   "type": "clue_round",
+   "clue": "coopted cooters cooties copaiba copecks copepod",
+   "blocklist": [],
+   "blocked_ranges": [],
+   "blocked_word_count": 0,
+   "opened_guesses": [
+    {
+     "seat": "guesser1",
+     "word": "coquettishness"
+    },
+    {
+     "seat": "guesser2",
+     "word": "coquettishness"
+    }
+   ],
+   "prefix_after": "cop",
+   "result": "prefix_extended"
+  },
+  {
+   "turn": 28,
+   "type": "clue_round",
+   "clue": "copiers copihue copings copious coplots coppers",
+   "blocklist": [
+    "coparcenaries",
+    "copartnership",
+    "copiousnesses",
+    "coplanarities",
+    "copolymerized",
+    "copolymerizes",
+    "coprocessings",
+    "coproductions",
+    "coprophiliacs",
+    "coproprietors",
+    "copyrightable"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 11,
+   "opened_guesses": [],
+   "prefix_after": "cop",
+   "result": "no_prefix"
+  },
+  {
+   "turn": 29,
+   "type": "clue_round",
+   "clue": "coppery coppice copping coppras coprahs copters",
+   "blocklist": [
+    "copacetic",
+    "coparcenary",
+    "copartnering",
+    "copingstones",
+    "copolymerize",
+    "copperplates",
+    "coppersmiths",
+    "copresidents",
+    "coprincipals",
+    "coprocessing",
+    "coprocessors",
+    "coproduction",
+    "coprophagies",
+    "coprophagous",
+    "coprophiliac",
+    "coprophilias",
+    "coprophilous",
+    "coproprietor",
+    "coprosperity",
+    "copublishers",
+    "copublishing",
+    "copulae",
+    "copyrighting"
+   ],
+   "blocked_ranges": [],
+   "blocked_word_count": 23,
+   "opened_guesses": [],
+   "prefix_after": "cop",
+   "result": "won",
+   "terminal_reason": "public_target_utterance",
+   "hit_sources": [
+    "clue"
+   ]
   }
  ],
- "score": null
+ "score": {
+  "status": "scored",
+  "cost": 29.0,
+  "cost_numerator": 29,
+  "cost_denominator": 1,
+  "cost_exact": true,
+  "cost_mcse": 0.0,
+  "baseline": {
+   "numerator": 34739561615,
+   "denominator": 2957952,
+   "value": 11744.464283058007,
+   "exact": false,
+   "method": "length_class_monte_carlo",
+   "histogram": "3:972,4:3903,5:8636,6:15232,7:23109,8:28420,9:24873,10:20302,11:15504,12:11358,13:7827,14:5127,15:3192,16:1943,17:1127,18:594,19:329,20:160",
+   "target_length": 7,
+   "C": 50,
+   "mcse": 2.5315095910925924,
+   "rollouts": 256,
+   "rank_total": 69479123230,
+   "rank_denominator": 5915904,
+   "cache_key": "76e024bcfa19f6ed32639e3d5252fc6d"
+  },
+  "fallback": null
+ }
 }

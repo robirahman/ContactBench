@@ -21,7 +21,7 @@
   ],
   "planned_games": 636,
   "recorded_games": 636,
-  "scored_games": 635,
+  "scored_games": 636,
   "planned_fixtures": 318,
   "complete_fixtures": 318,
   "rematch_fixtures": 70,
@@ -30,8 +30,7 @@
   "balanced_complete": true,
   "game_status_counts": {
     "capped/complete": 527,
-    "solved/complete": 108,
-    "infrastructure_incomplete/incomplete": 1
+    "solved/complete": 109
   },
   "missing_model_pairs": [],
   "rating": {
@@ -730,13 +729,13 @@
           "n": 500
         },
         "offense_aggregate_speedup": {
-          "lo": 15.334426177712814,
-          "hi": 15.334426177712814,
+          "lo": 29.549957750446485,
+          "hi": 29.549957750446485,
           "n": 341
         },
         "mean_paired_cost_advantage": {
-          "lo": -751.8887360341864,
-          "hi": -751.8887360341864,
+          "lo": -385.4443680170932,
+          "hi": -385.4443680170932,
           "n": 341
         },
         "defensive_cost_ratio": {
@@ -745,13 +744,13 @@
           "n": 341
         },
         "offense_median_effective_cost": {
-          "lo": 765.8887360341864,
-          "hi": 765.8887360341864,
+          "lo": 397.4443680170932,
+          "hi": 397.4443680170932,
           "n": 341
         },
         "offense_geometric_mean_cost": {
-          "lo": 765.8887360341861,
-          "hi": 765.8887360341868,
+          "lo": 149.03279285107493,
+          "hi": 149.03279285107493,
           "n": 341
         },
         "defense_median_cost_imposed": {
@@ -777,13 +776,13 @@
           "n": 341
         },
         "mean_paired_cost_advantage": {
-          "lo": -6.0,
-          "hi": -6.0,
+          "lo": 6.5,
+          "hi": 6.5,
           "n": 341
         },
         "defensive_cost_ratio": {
-          "lo": 0.001106904468921002,
-          "hi": 0.001106904468921002,
+          "lo": 0.0017880764497954648,
+          "hi": 0.0017880764497954648,
           "n": 341
         },
         "offense_median_effective_cost": {
@@ -797,8 +796,8 @@
           "n": 341
         },
         "defense_median_cost_imposed": {
-          "lo": 13.0,
-          "hi": 13.0,
+          "lo": 21.0,
+          "hi": 21.0,
           "n": 341
         }
       }
@@ -1441,27 +1440,27 @@
       "losses": 0
     },
     "gemini_4_carbon_max": {
-      "offense_games": 1,
-      "offense_median_effective_cost": 765.8887360341864,
-      "offense_geometric_mean_cost": 765.8887360341861,
+      "offense_games": 2,
+      "offense_median_effective_cost": 397.4443680170932,
+      "offense_geometric_mean_cost": 149.03279285107493,
       "defense_median_cost_imposed": 12.0,
       "defense_geometric_mean_cost_imposed": 11.832159566199229,
       "offense_aggregate_speedup": {
-        "numerator": 90948172308070,
-        "denominator": 5930979826311,
-        "value": 15.334426177712814
+        "numerator": 36379268923228,
+        "denominator": 1231110691611,
+        "value": 29.549957750446485
       },
       "offense_mean_effective_cost": {
-        "numerator": 256652379,
-        "denominator": 335104,
-        "value": 765.8887360341864
+        "numerator": 266370395,
+        "denominator": 670208,
+        "value": 397.4443680170932
       },
       "offense_mean_baseline": {
         "numerator": 34739561615,
         "denominator": 2957952,
         "value": 11744.464283058007
       },
-      "offense_capped_fraction_of_offense_games": 1.0,
+      "offense_capped_fraction_of_offense_games": 0.5,
       "defense_games": 2,
       "defensive_cost_ratio": {
         "numerator": 35495424,
@@ -1470,11 +1469,12 @@
       },
       "defense_deadline_hold_rate_of_defense_games": 0.0,
       "mean_paired_cost_advantage": {
-        "numerator": -251960923,
-        "denominator": 335104,
-        "value": -751.8887360341864
+        "numerator": -258327899,
+        "denominator": 670208,
+        "value": -385.4443680170932
       },
       "opponents": [
+        "claude_fable_5_2_max",
         "gpt_6_2_astra_max"
       ],
       "fixtures": 2,
@@ -1482,14 +1482,14 @@
       "match_point_share": 0.0,
       "wins": 0,
       "draws": 0,
-      "losses": 1
+      "losses": 2
     },
     "claude_fable_5_2_max": {
       "offense_games": 2,
       "offense_median_effective_cost": 14.5,
       "offense_geometric_mean_cost": 13.784048752090222,
-      "defense_median_cost_imposed": 13.0,
-      "defense_geometric_mean_cost_imposed": 13.0,
+      "defense_median_cost_imposed": 21.0,
+      "defense_geometric_mean_cost_imposed": 19.4164878389476,
       "offense_aggregate_speedup": {
         "numerator": 34739561615,
         "denominator": 42890304,
@@ -1506,25 +1506,26 @@
         "value": 11744.464283058007
       },
       "offense_capped_fraction_of_offense_games": 0.0,
-      "defense_games": 1,
+      "defense_games": 2,
       "defensive_cost_ratio": {
-        "numerator": 38453376,
+        "numerator": 62116992,
         "denominator": 34739561615,
-        "value": 0.001106904468921002
+        "value": 0.0017880764497954648
       },
       "defense_deadline_hold_rate_of_defense_games": 0.0,
       "mean_paired_cost_advantage": {
-        "numerator": -6,
-        "denominator": 1,
-        "value": -6.0
+        "numerator": 13,
+        "denominator": 2,
+        "value": 6.5
       },
       "opponents": [
+        "gemini_4_carbon_max",
         "gpt_6_2_astra_max"
       ],
       "fixtures": 2,
       "match_points": 1.0,
       "match_point_share": 0.5,
-      "wins": 0,
+      "wins": 1,
       "draws": 0,
       "losses": 1
     }
@@ -2791,34 +2792,36 @@
     "gemini_4_carbon_max": {
       "offense": {
         "games": 2.0,
-        "letters_earned": 2.0,
-        "turns_used_total": 51.0,
-        "turns": 51.0,
-        "guesser1_decisions": 51.0,
-        "clue_turns": 47.0,
-        "guesser2_decisions": 47.0,
-        "clue_turns_defended": 47.0,
-        "registered_matches": 32.0,
-        "contacts_awarded": 2.0,
-        "registered_matches_blocked": 30.0,
-        "intended_word_covered": 40.0,
-        "contacts_prevented": 30.0,
-        "choice_opportunities": 9.0,
-        "choice_reveal": 9.0,
+        "letters_earned": 8.0,
+        "turns_used_total": 59.0,
+        "turns": 59.0,
+        "guesser1_decisions": 59.0,
+        "clue_turns": 55.0,
+        "guesser2_decisions": 55.0,
+        "clue_turns_defended": 55.0,
+        "registered_matches": 37.0,
+        "contacts_awarded": 4.0,
+        "registered_matches_blocked": 33.0,
+        "intended_word_covered": 44.0,
+        "contacts_prevented": 32.0,
+        "choice_opportunities": 10.0,
+        "choice_reveal": 10.0,
         "guesser1_invalid": 4.0,
+        "wins": 1.0,
+        "hit_source_clue": 1.0,
         "rates": {
-          "guesser1_invalid_per_guesser1_decision": 0.0784313725490196,
+          "guesser1_invalid_per_guesser1_decision": 0.06779661016949153,
           "direct_share_per_valid_turn": 0.0,
-          "registered_match_per_clue_turn": 0.6808510638297872,
-          "clue_leak_per_defended_clue_turn": 0.851063829787234,
+          "registered_match_per_clue_turn": 0.6727272727272727,
+          "clue_leak_per_defended_clue_turn": 0.8,
           "endgame_conversion": null,
-          "contact_per_clue_turn": 0.0425531914893617,
-          "contact_per_registered_match": 0.0625,
+          "contact_per_clue_turn": 0.07272727272727272,
+          "contact_per_registered_match": 0.10810810810810811,
           "guesser2_invalid_per_guesser2_decision": 0.0,
           "reveal_per_choice_opportunity": 1.0,
-          "matches_blocked_per_registered_match": 0.9375
+          "matches_blocked_per_registered_match": 0.8918918918918919
         },
-        "turns_per_letter_earned": 25.5
+        "turns_per_letter_earned": 7.375
       },
       "defense": {
         "games": 2.0,
@@ -2847,29 +2850,29 @@
         "defender: empty response": 1
       },
       "seat": {
-        "g1_decisions": 51,
-        "intended_attempts": 47,
-        "g2_decisions": 47,
-        "self_clue_turns": 47,
-        "self_matches": 32,
-        "choice_decisions": 9,
-        "choice_secret_word": 9,
-        "choice_secret_word_revealed": 9,
+        "g1_decisions": 59,
+        "intended_attempts": 55,
+        "g2_decisions": 55,
+        "self_clue_turns": 55,
+        "self_matches": 37,
+        "choice_decisions": 10,
+        "choice_secret_word": 10,
+        "choice_secret_word_revealed": 10,
         "g1_invalid": 4,
         "d_decisions": 24,
         "d_invalid": 1,
-        "mean_clue_characters": 48.319148936170215,
-        "median_clue_characters": 49.0,
-        "clue_budget_used": 0.9663829787234043,
-        "guesser1_invalid_rate": 0.0784313725490196,
+        "mean_clue_characters": 48.10909090909091,
+        "median_clue_characters": 48.0,
+        "clue_budget_used": 0.9621818181818181,
+        "guesser1_invalid_rate": 0.06779661016949153,
         "guesser2_invalid_rate": 0.0,
         "self_contained": {
-          "action_validity": 0.9618320610687023,
+          "action_validity": 0.9662162162162162,
           "clue_length_compliance": 1.0,
-          "self_coordination": 0.6808510638297872,
-          "self_coordination_clue_turns": 47,
+          "self_coordination": 0.6727272727272727,
+          "self_coordination_clue_turns": 55,
           "reveal_optimality": 1.0,
-          "reveal_optimality_n": 9,
+          "reveal_optimality_n": 10,
           "forced_win_conversion": null,
           "forced_win_n": 0,
           "intended_word_legality": 1.0,
@@ -3003,24 +3006,28 @@
       },
       "defense": {
         "games": 2.0,
-        "clue_turns_faced": 31.0,
-        "block_decisions": 31.0,
-        "empty_blocklists": 1.0,
-        "fresh_secret_candidates_blocked": 91239.0,
+        "clue_turns_faced": 39.0,
+        "block_decisions": 39.0,
+        "empty_blocklists": 4.0,
+        "fresh_secret_candidates_blocked": 91298.0,
         "blocks_overlapping_clue": 3.0,
-        "registered_matches_faced": 19.0,
-        "registered_matches_blocked": 14.0,
-        "intended_word_covered": 20.0,
-        "contacts_prevented": 14.0,
-        "contacts_conceded": 5.0,
-        "mean_blocklist_size_per_block_decision": 8209.483870967742,
+        "registered_matches_faced": 24.0,
+        "registered_matches_blocked": 17.0,
+        "intended_word_covered": 24.0,
+        "contacts_prevented": 16.0,
+        "contacts_conceded": 7.0,
+        "block_invalid": 1.0,
+        "mean_blocklist_size_per_block_decision": 6527,
         "rates": {
-          "empty_blocklist_per_block_decision": 0.03225806451612903,
-          "block_invalid_per_block_decision": 0.0,
-          "intended_word_blocked_per_clue_turn": 0.6451612903225806,
-          "matches_blocked_per_registered_match": 0.7368421052631579
+          "empty_blocklist_per_block_decision": 0.10256410256410256,
+          "block_invalid_per_block_decision": 0.02564102564102564,
+          "intended_word_blocked_per_clue_turn": 0.6153846153846154,
+          "matches_blocked_per_registered_match": 0.7083333333333334
         },
-        "blocked_words_per_contact_prevented": 18178.14285714286
+        "blocked_words_per_contact_prevented": 15909.5625
+      },
+      "invalid_reasons": {
+        "defender: empty response": 1
       },
       "seat": {
         "g1_decisions": 29,
@@ -3030,14 +3037,15 @@
         "self_matches": 25,
         "choice_decisions": 1,
         "choice_secret_word": 1,
-        "d_decisions": 31,
+        "d_decisions": 39,
+        "d_invalid": 1,
         "mean_clue_characters": 47.48275862068966,
         "median_clue_characters": 50.0,
         "clue_budget_used": 0.9496551724137932,
         "guesser1_invalid_rate": 0.0,
         "guesser2_invalid_rate": 0.0,
         "self_contained": {
-          "action_validity": 1.0,
+          "action_validity": 0.9897959183673469,
           "clue_length_compliance": 1.0,
           "self_coordination": 0.8620689655172413,
           "self_coordination_clue_turns": 29,
@@ -3721,6 +3729,10 @@
       "gpt_6_2_astra_max": {
         "mean_cost": 765.8887360341864,
         "games": 1
+      },
+      "claude_fable_5_2_max": {
+        "mean_cost": 29.0,
+        "games": 1
       }
     },
     "gpt_6_2_astra_max": {
@@ -3753,7 +3765,7 @@
     }
   },
   "capped_games": 527,
-  "capped_fraction_of_scored_games": 0.8299212598425196,
+  "capped_fraction_of_scored_games": 0.8286163522012578,
   "residual_candidate_counts_capped": [
     12,
     13,
@@ -4800,9 +4812,9 @@
       {
         "model": "gemini_4_carbon_max",
         "target_length": 7,
-        "games": 1,
-        "aggregate_speedup": 15.334426177712814,
-        "mean_cost": 765.8887360341864,
+        "games": 2,
+        "aggregate_speedup": 29.549957750446485,
+        "mean_cost": 397.4443680170932,
         "mean_baseline": 11744.464283058007
       },
       {
@@ -5290,9 +5302,9 @@
       {
         "model": "gemini_4_carbon_max",
         "bin": ">100",
-        "games": 1,
-        "aggregate_speedup": 15.334426177712814,
-        "mean_cost": 765.8887360341864,
+        "games": 2,
+        "aggregate_speedup": 29.549957750446485,
+        "mean_cost": 397.4443680170932,
         "mean_baseline": 11744.464283058007
       },
       {
@@ -5387,13 +5399,13 @@
   },
   "numerical_reference": {
     "baselines_exact": 0,
-    "baselines_estimated": 635,
+    "baselines_estimated": 636,
     "fallbacks_exact": 1,
     "fallbacks_estimated": 526,
     "max_mcse": 18.934542004845337,
-    "mean_mcse_of_estimates": 2.4929027967050157,
+    "mean_mcse_of_estimates": 2.4929360211408054,
     "methods": {
-      "baseline:length_class_monte_carlo": 635,
+      "baseline:length_class_monte_carlo": 636,
       "fallback:length_class_monte_carlo": 526,
       "fallback:exact_oracle": 1
     },
@@ -5873,28 +5885,28 @@
         "incomplete": 1.0
       },
       "guesser1": {
-        "requests": 70.0,
-        "input_tokens": 9969967.0,
-        "output_tokens": 14895.0,
-        "reasoning_tokens": 2983178.0,
-        "cached_input_tokens_unknown": 54.0,
-        "latency_s": 40931.027363844,
-        "transport_attempts": 300.0,
-        "cost_estimate": 88.981604,
+        "requests": 78.0,
+        "input_tokens": 10250817.0,
+        "output_tokens": 17035.0,
+        "reasoning_tokens": 3147486.0,
+        "cached_input_tokens_unknown": 62.0,
+        "latency_s": 46712.27929822302,
+        "transport_attempts": 329.0,
+        "cost_estimate": 94.546443,
         "incomplete": 4.0,
         "cached_input_tokens": 20438.0,
         "errors": 14.0
       },
       "guesser2": {
-        "requests": 63.0,
-        "input_tokens": 5764813.0,
-        "output_tokens": 12875.0,
-        "reasoning_tokens": 1640912.0,
-        "cached_input_tokens_unknown": 52.0,
-        "latency_s": 25376.30354443802,
-        "transport_attempts": 268.0,
-        "cost_estimate": 49.940994999999994,
-        "errors": 11.0
+        "requests": 79.0,
+        "input_tokens": 6073167.0,
+        "output_tokens": 14886.0,
+        "reasoning_tokens": 1841611.0,
+        "cached_input_tokens_unknown": 60.0,
+        "latency_s": 27812.830588540026,
+        "transport_attempts": 319.0,
+        "cost_estimate": 57.597158,
+        "errors": 19.0
       }
     },
     "claude_fable_5_2_max": {
@@ -5920,14 +5932,15 @@
         "cost_estimate": 43.933293199999994
       },
       "defender": {
-        "requests": 32.0,
-        "input_tokens": 4056359.0,
-        "output_tokens": 1694721.0,
-        "reasoning_tokens": 1678447.0,
-        "cached_input_tokens": 2399110.0,
-        "latency_s": 17752.007163930983,
-        "transport_attempts": 127.0,
-        "cost_estimate": 85.20731199999999
+        "requests": 39.0,
+        "input_tokens": 4445769.0,
+        "output_tokens": 2083328.0,
+        "reasoning_tokens": 2063524.0,
+        "cached_input_tokens": 2563180.0,
+        "latency_s": 21882.823654771975,
+        "transport_attempts": 144.0,
+        "cost_estimate": 109.46724599999997,
+        "incomplete": 1.0
       }
     }
   },
