@@ -174,6 +174,7 @@ def export_public(run_dir: Path, out_dir: Path, analysis: dict, records: list[di
             "player": hc["player"], "display_name": human.get("display_name") or hc["player"],
             "opponents": list(hc["opponents"]), "teammate": hc.get("teammate", "opponent"),
             "leg_order": hc.get("leg_order", "attack_first"),
+            "tools": hc.get("tools"),
             "team_composition": "human Guesser 1 + model Guesser 2 (attack); human Defender (defense)",
         }
     tcfg = cfg.get("tournament", {})

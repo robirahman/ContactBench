@@ -6,6 +6,10 @@ rules, task secrets for shared task ids, and the configuration of every model
 id that appears in more than one run.  Combining is how cross-tier matchups
 (an explicit "pairs" run) join tier round robins into overall ratings.
 Combined runs are never pooled with anything that differs on these fields.
+
+Human-challenge runs are never pooled with model runs.  Runs of one human
+player against different opponents (same condition, disjoint secrets) pool
+into one human-challenge run, rated against fixed model Elo with ``--anchor``.
 """
 
 from __future__ import annotations
@@ -40,7 +44,7 @@ def is_combined(run_dir: Path) -> bool:
     return p.exists() and "combined_from" in json.loads(p.read_text())
 
 
-def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
+def combine(name: str, run_dirs: list[Path], out_root: Path, human_tools: bool | None = None) -> Path:
     if len(run_dirs) < 2:
         raise CombineError("combine at least two runs")
     run_dirs = [Path(d) for d in run_dirs]
@@ -51,10 +55,31 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             raise CombineError(f"{d.name}: mixed-team runs are a separate condition and are not combined "
                                "(use tournament.teams.prior_runs to inform defender selection)")
     ref, ref_m = cfgs[0], manifests[0]
-    for d, c in zip(run_dirs, cfgs):
-        if any(mc["provider"] == "human" for mc in c["models"]):
-            # Human results are rated against fixed model ratings, never pooled.
-            raise CombineError(f"{d.name}: human-challenge runs are never pooled with model runs")
+    has_human = [any(mc["provider"] == "human" for mc in c["models"]) for c in cfgs]
+    human_pool = all(has_human)
+    if any(has_human) and not human_pool:
+        # Human results are rated against fixed model ratings, never pooled with model runs.
+        d = run_dirs[has_human.index(True)]
+        raise CombineError(f"{d.name}: human-challenge runs are never pooled with model runs")
+    if human_tools is not None and not human_pool:
+        raise CombineError("human_tools applies only to pooled human-challenge runs")
+    merged_hc = None
+    if human_pool:
+        # One player's challenges against different opponents form one anchored rating.
+        hcs = [c["tournament"]["human_challenge"] for c in cfgs]
+        same = lambda h: {k: v for k, v in h.items() if k not in ("opponents", "tools")}
+        for d, h in zip(run_dirs[1:], hcs[1:]):
+            if same(h) != same(hcs[0]):
+                raise CombineError(f"{d.name}: human_challenge settings differ from {run_dirs[0].name} "
+                                   "(only the opponents may differ)")
+        tools = {h.get("tools") for h in hcs}
+        if human_tools is None and len(tools) > 1:
+            raise CombineError("runs record different tool use for the player; pass human_tools to declare it")
+        opponents: list[str] = []
+        for h in hcs:
+            opponents += [o for o in h["opponents"] if o not in opponents]
+        merged_hc = {**hcs[0], "opponents": opponents,
+                     "tools": human_tools if human_tools is not None else tools.pop()}
     for d, c, m in zip(run_dirs[1:], cfgs[1:], manifests[1:]):
         for sec in CONDITION_SECTIONS:
             if c[sec] != ref[sec]:
@@ -92,6 +117,13 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
             t = json.loads(line)
             if secrets.setdefault(t["task_id"], t["secret"]) != t["secret"]:
                 raise CombineError(f"task {t['task_id']} has different secrets across runs")
+    if human_pool:
+        # The player has seen every secret of an earlier challenge, so no secret may recur.
+        seen: list[str] = []
+        for d in run_dirs:
+            seen += [json.loads(l)["secret"] for l in (d / "private" / "tasks_private.jsonl").read_text().splitlines()]
+        if len(set(seen)) != len(seen):
+            raise CombineError("a secret appears in more than one of the player's challenges")
     for d, sched in zip(run_dirs, scheds):
         for g in sched["games"]:
             if g["game_id"] in game_ids:
@@ -115,9 +147,12 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
     merged = dict(ref)
     merged["models"] = list(models.values())
     merged["name"] = f"combined-{name}"
-    merged["tournament"] = {**ref["tournament"], "schedule": "pairs",
-                            "pairs": sorted({tuple(sorted((f["model_a"], f["model_b"]))) for f in fixtures})}
-    merged["tournament"]["pairs"] = [list(p) for p in merged["tournament"]["pairs"]]
+    if human_pool:
+        merged["tournament"] = {**ref["tournament"], "human_challenge": merged_hc}
+    else:
+        merged["tournament"] = {**ref["tournament"], "schedule": "pairs",
+                                "pairs": sorted({tuple(sorted((f["model_a"], f["model_b"]))) for f in fixtures})}
+        merged["tournament"]["pairs"] = [list(p) for p in merged["tournament"]["pairs"]]
     manifest = {
         **{k: ref_m[k] for k in ("schema_version", "protocol_version", "engine_version", "packing_version",
                                  "rng_version", "prompt_version", "prompt_hash", "secret_lexicon",
@@ -127,6 +162,7 @@ def combine(name: str, run_dirs: list[Path], out_root: Path) -> Path:
         "code_revision": ref_m.get("code_revision"),
         "config": merged,
         "fixture_data": any(m.get("fixture_data", True) for m in manifests),
+        **({"human_tools_declared_at_combine": human_tools} if human_tools is not None else {}),
         "combined_from": [{"run_id": m["run_id"], "run_dir": str(d.resolve()), "code_revision": m.get("code_revision"),
                            "created_at": m.get("created_at")} for d, m in zip(run_dirs, manifests)],
     }

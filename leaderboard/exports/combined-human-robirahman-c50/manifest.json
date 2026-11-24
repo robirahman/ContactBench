@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0.0",
   "protocol_version": "contact-v0.5",
-  "run_id": "human-robirahman-20261119-182428",
-  "run_created_at": "2026-11-19T18:24:28Z",
-  "exported_at": "2026-11-21T00:35:51Z",
+  "run_id": "combined-human-robirahman-c50",
+  "run_created_at": "2026-11-24T23:18:06Z",
+  "exported_at": "2026-11-24T23:18:26Z",
   "code_revision": "ac9ce1568eefefb527fcd7126689763907e77b4c",
   "prompt_version": "prompts-v4",
   "prompt_hash": "f0221ebd26fe57d96d5243c8444ce370ab76bf82e84a16d5d589f55a2a055afa",
   "fixture_data": false,
-  "release_label": "Human challenge (C=50): robirahman vs GPT-6 Luna (Medium), 1 fixture (won); rated against the main C=50 board with model ratings held fixed; provisional",
+  "release_label": "Human challenge (C=50): robirahman, with tools (calculator); 2 fixtures pooled (won vs GPT-6 Luna (Medium), won vs Gemini 4 Carbon (Low)); rated against the main C=50 board with model ratings held fixed; provisional",
   "headline": false,
   "condition": {
     "protocol_version": "contact-v0.5",
@@ -78,20 +78,33 @@
         "model": "gpt-6-luna",
         "parameters": {},
         "max_output_tokens": 8000
+      },
+      "gemini_4_carbon": {
+        "provider": "google",
+        "api_family": "generate_content",
+        "model": "gemini-4-carbon",
+        "parameters": {
+          "thinking_config": {
+            "thinking_level": "low"
+          }
+        },
+        "max_output_tokens": 8000
       }
     },
     "human_challenge": {
       "player": "human_robirahman",
       "display_name": "robirahman",
       "opponents": [
-        "gpt_6_luna"
+        "gpt_6_luna",
+        "gemini_4_carbon"
       ],
       "teammate": "opponent",
       "leg_order": "attack_first",
+      "tools": true,
       "team_composition": "human Guesser 1 + model Guesser 2 (attack); human Defender (defense)"
     }
   },
-  "condition_key": "cf62da5615d216c9",
+  "condition_key": "5d100cf33a8d69cc",
   "lexicon": {
     "name": "enable",
     "word_count": 172608,
@@ -135,6 +148,25 @@
       "parameters": {},
       "max_output_tokens": 8000,
       "context_window_tokens": 1050000,
+      "prompt_version": "prompts-v1",
+      "policy": null,
+      "defender_policy": null,
+      "choice_policy": null,
+      "offense_mode": "full",
+      "display_name": null
+    },
+    {
+      "id": "gemini_4_carbon",
+      "provider": "google",
+      "api_family": "generate_content",
+      "model": "gemini-4-carbon",
+      "parameters": {
+        "thinking_config": {
+          "thinking_level": "low"
+        }
+      },
+      "max_output_tokens": 8000,
+      "context_window_tokens": 1000000,
       "prompt_version": "prompts-v1",
       "policy": null,
       "defender_policy": null,

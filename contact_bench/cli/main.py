@@ -198,7 +198,8 @@ def cmd_analyze_combined(args) -> int:
     from ..analysis.combined import combine
 
     runs = [_runs_dir(args) / r for r in args.run_ids]
-    out = combine(args.name, runs, _runs_dir(args))
+    tools = {"yes": True, "no": False}.get(getattr(args, "human_tools", None))
+    out = combine(args.name, runs, _runs_dir(args), human_tools=tools)
     print(f"combined run directory: {out}")
     args.run_id = out.name
     return cmd_analyze(args)
@@ -499,6 +500,9 @@ def build_parser() -> argparse.ArgumentParser:
     s.set_defaults(fn=cmd_play)
     s = sub.add_parser("analyze-combined", help="pool runs with an identical condition into one rating")
     s.add_argument("name"); s.add_argument("run_ids", nargs="+"); s.add_argument("--bootstrap", type=int)
+    s.add_argument("--anchor", help="pooled human-challenge runs: rate the player against this run's fixed model Elo")
+    s.add_argument("--human-tools", choices=["yes", "no"],
+                   help="pooled human-challenge runs: declare whether the player used outside tools (e.g. a calculator)")
     s.set_defaults(fn=cmd_analyze_combined)
     s = sub.add_parser("export"); s.add_argument("run_id"); s.add_argument("--public", action="store_true")
     s.add_argument("--out"); s.add_argument("--include-audit", action="store_true")

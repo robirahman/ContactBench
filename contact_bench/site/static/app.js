@@ -143,7 +143,7 @@
                        full_candidate_lists: "full lists" }[c.condition.dictionary_access] || "full lists";
         var hc = c.condition.human_challenge;
         var label = (c.headline ? "★ Main format — " : "") + (c.fixture_data ? "[DEMO] " : "") +
-          (hc ? "Human challenge: " + hc.display_name + " — " : "") + access + ", prefix " +
+          (hc ? "Human challenge: " + humanLabel(hc, hc.player) + " — " : "") + access + ", prefix " +
           (c.condition.initial_prefix_length == null ? 1 : c.condition.initial_prefix_length) +
           ", C=" + c.condition.clue_max_characters +
           ", L=" + c.condition.turn_limit + ", " + c.condition.lexicon_name + " — run " + c.run_id +
@@ -354,24 +354,36 @@
         .catch(function () { return null; });
     })).then(function (res) {
       if (current !== shown) return;  // the user switched boards meanwhile
-      var extra = [];
+      // One row per player: a pooled challenge (all of the player's fixtures)
+      // supersedes single-opponent exports, so keep the rating with the most fixtures.
+      var best = {};
       res.forEach(function (x) {
         var ar = x && x.lb.anchored_rating;
         if (!ar || ar.anchor_run_id !== runId) return;
-        var hc = x.c.condition.human_challenge, st = (x.lb.model_stats || {});
         (ar.free || []).forEach(function (h) {
-          var e = ar.elo[h], se = (ar.elo_se_approx || {})[h], s2 = st[h] || {};
-          extra.push({ m: h, label: (h === hc.player && hc.display_name ? hc.display_name : h) + " (human, anchored)",
-            elo: e, eloCI: se != null ? { lo: e - 1.96 * se, hi: e + 1.96 * se } : null, share: s2.match_point_share,
-            w: s2.wins, d: s2.draws, l: s2.losses, fixtures: s2.fixtures });
+          var prev = best[h];
+          if (!prev || (ar.results || 0) >= (prev.ar.results || 0)) best[h] = { x: x, ar: ar };
         });
+      });
+      var extra = Object.keys(best).map(function (h) {
+        var x = best[h].x, ar = best[h].ar, hc = x.c.condition.human_challenge, st = (x.lb.model_stats || {});
+        var e = ar.elo[h], se = (ar.elo_se_approx || {})[h], s2 = st[h] || {};
+        return { m: h, label: humanLabel(hc, h), elo: e, eloCI: se != null ? { lo: e - 1.96 * se, hi: e + 1.96 * se } : null,
+          share: s2.match_point_share, w: s2.wins, d: s2.draws, l: s2.losses, fixtures: s2.fixtures };
       });
       if (!extra.length) return;
       renderTable($("rating-table"), cols, rows.concat(extra), { sortCol: 1 });
-      $("rating-notes").appendChild(el("p", null, "Rows marked (human, anchored) are human players rated with these " +
-        "models' Elo held fixed (normal-approximation 95% CI). They are separate human-challenge conditions and never " +
-        "affect the model ratings."));
+      $("rating-notes").appendChild(el("p", null, "Rows marked (human…) are human players rated with these " +
+        "models' Elo held fixed (normal-approximation 95% CI), pooling all of the player's challenge fixtures. " +
+        "They are separate human-challenge conditions and never affect the model ratings."));
     });
+  }
+
+  // "NAME (human, with tools)": the player's display name plus whether they
+  // used outside tools (e.g. a calculator); "(human)" when not recorded.
+  function humanLabel(hc, id) {
+    var name = id === hc.player && hc.display_name ? hc.display_name : id;
+    return name + (hc.tools === true ? " (human, with tools)" : hc.tools === false ? " (human, no tools)" : " (human)");
   }
 
   // Human challenge entries: a human player vs. models, rated against fixed
@@ -383,7 +395,7 @@
     var lb = current.lb, hc = (current.manifest.condition || {}).human_challenge;
     box.hidden = !hc;
     if (!hc) return;
-    box.appendChild(el("h3", { text: "Human challenge: " + hc.display_name }));
+    box.appendChild(el("h3", { text: "Human challenge: " + humanLabel(hc, hc.player) }));
     box.appendChild(el("p", { cls: "note", text: "A human player attacks as Guesser 1 with the opponent model as " +
       "Guesser 2, and defends against a two-instance team of the opponent model, on the same secret (attack leg first). " +
       "This is a separate condition: these fixtures are never pooled into the model ratings above or on other boards. " +
@@ -394,7 +406,7 @@
       return;
     }
     var rows = (ar.free || []).map(function (m) {
-      return { m: hc.display_name && m === hc.player ? hc.display_name : m, elo: ar.elo[m], se: (ar.elo_se_approx || {})[m], fixed: false };
+      return { m: humanLabel(hc, m), elo: ar.elo[m], se: (ar.elo_se_approx || {})[m], fixed: false };
     }).concat(Object.keys(ar.fixed_elo || {}).map(function (m) { return { m: m, elo: ar.fixed_elo[m], se: null, fixed: true }; }));
     var t = el("table");
     renderTable(t, [
