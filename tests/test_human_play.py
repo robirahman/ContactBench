@@ -270,8 +270,43 @@ def test_end_to_end_through_http(tmp_path):
     man = json.loads((out / "manifest.json").read_text())
     assert man["condition"]["human_challenge"]["display_name"] == "Me"
     assert json.loads((out / "leaderboard.json").read_text())["anchored_rating"]["free"] == ["me"]
-    with pytest.raises(CombineError, match="human"):
-        combine("x", [tmp_path / "r", tmp_path / "r"], tmp_path / "runs")
+    d = _data()
+    d["tournament"] = {"schedule": "balanced_round_robin"}
+    d["models"] = d["models"][1:]
+    d.pop("execution")
+    asyncio.run(Runner(BenchConfig.model_validate(d), tmp_path / "models").run())
+    with pytest.raises(CombineError, match="never pooled with model runs"):
+        combine("x", [tmp_path / "r", tmp_path / "models"], tmp_path / "runs")
+
+
+def _prepared_challenge(path, opponents, seed, **hc):
+    d = _data()
+    d["tasks"] = {"tasks_per_pair": 1, "generation_seed": seed}
+    d["tournament"]["human_challenge"] = {"player": "me", "opponents": opponents, **hc}
+    d["models"] = [m for m in d["models"] if m["id"] in ["me", *opponents]]
+    Runner(BenchConfig.model_validate(d), path).prepare()
+
+
+def test_one_players_challenges_pool_into_one_run(tmp_path):
+    _prepared_challenge(tmp_path / "ra", ["bot_a"], 9)
+    _prepared_challenge(tmp_path / "rb", ["bot_b"], 11)
+    out = combine("me", [tmp_path / "ra", tmp_path / "rb"], tmp_path, human_tools=True)
+    man = json.loads((out / "run.json").read_text())
+    hc = man["config"]["tournament"]["human_challenge"]
+    assert man["config"]["tournament"]["schedule"] == "human_challenge"
+    assert hc["opponents"] == ["bot_a", "bot_b"] and hc["tools"] is True and hc["player"] == "me"
+    assert man["human_tools_declared_at_combine"] is True
+    BenchConfig.model_validate({**man["config"], "base_dir": str(REPO)})  # still a valid challenge config
+    sched = json.loads((out / "schedule.json").read_text())
+    assert len(sched["fixtures"]) == 2 and len(sched["games"]) == 4
+    # tool use recorded in the configs is carried over; disagreement must be declared
+    _prepared_challenge(tmp_path / "rt", ["bot_b"], 11, tools=True)
+    with pytest.raises(CombineError, match="tool use"):
+        combine("me2", [tmp_path / "ra", tmp_path / "rt"], tmp_path)
+    # a player who has seen a secret cannot be pooled with a challenge reusing it
+    _prepared_challenge(tmp_path / "rs", ["bot_b"], 9)
+    with pytest.raises(CombineError, match="secret|task"):
+        combine("me3", [tmp_path / "ra", tmp_path / "rs"], tmp_path)
 
 
 def test_stop_pauses_and_resume_continues(tmp_path):

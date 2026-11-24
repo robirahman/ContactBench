@@ -207,6 +207,9 @@ class HumanChallengeConfig(_Strict):
     teammate: Literal["opponent"] = "opponent"
     # The attack leg precedes the defend leg on every secret.
     leg_order: Literal["attack_first"] = "attack_first"
+    # Whether the player used outside tools (e.g. a calculator) while playing;
+    # None means not recorded.  Shown on the site next to the player's name.
+    tools: bool | None = None
 
 
 TournamentConfig.model_rebuild()

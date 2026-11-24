@@ -65,5 +65,20 @@ refuses it. Without `--anchor`, the report shows an unanchored fit, labeled as s
 
 A human-challenge export is its own condition. Its condition key includes the human player and the mixed
 team composition. On the site it appears as **Human challenge: NAME**, with a separate human board. It's
-never pooled with model runs, and `analyze-combined` rejects runs that contain a human player. To publish it,
-copy the export to `leaderboard/exports/` and push to main.
+never pooled with model runs: `analyze-combined` rejects any mix of human-challenge and model runs.
+
+Several challenges by the same player (against different opponents, on different secrets, under the same
+condition) pool into one rating, so the player appears as a single row:
+
+```bash
+contact-bench analyze-combined human-NAME-c50 RUN_ID_1 RUN_ID_2 --anchor ANCHOR --human-tools yes
+contact-bench export combined-human-NAME-c50 --public --label "Human challenge: Your Name"
+```
+
+`--human-tools yes|no` records whether the player used outside tools such as a calculator. You can also set
+`tournament.human_challenge.tools` in the config before playing. The site shows the player as
+**NAME (human, with tools)**, **NAME (human, no tools)**, or **NAME (human)** when tool use wasn't recorded.
+If several exports rate the same player against a board, the site shows only the one with the most fixtures.
+Publish only the pooled export.
+
+To publish, copy the export to `leaderboard/exports/` and push to main.

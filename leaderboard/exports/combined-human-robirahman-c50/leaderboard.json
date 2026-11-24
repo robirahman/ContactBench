@@ -1,0 +1,746 @@
+{
+  "run_id": "combined-human-robirahman-c50",
+  "protocol_version": "contact-v0.5",
+  "fixture_data": false,
+  "models": [
+    "human_robirahman",
+    "gpt_6_luna",
+    "gemini_4_carbon"
+  ],
+  "planned_games": 4,
+  "recorded_games": 4,
+  "scored_games": 4,
+  "planned_fixtures": 2,
+  "complete_fixtures": 2,
+  "rematch_fixtures": 0,
+  "no_progress_draw_rule": true,
+  "no_progress_draws": 0,
+  "balanced_complete": true,
+  "game_status_counts": {
+    "capped/complete": 3,
+    "solved/complete": 1
+  },
+  "missing_model_pairs": [],
+  "rating": {
+    "method": "anchored batch Elo-style rating (opponents fixed, same penalty)",
+    "models": [
+      "human_robirahman",
+      "gpt_6_luna",
+      "gemini_4_carbon"
+    ],
+    "elo": {
+      "human_robirahman": 2025.6550778268283,
+      "gpt_6_luna": 1547.121304365745,
+      "gemini_4_carbon": 1972.6616662189826
+    },
+    "fixed": [
+      "gemini_4_carbon",
+      "gpt_6_luna"
+    ],
+    "anchor_run_id": "combined-overall-c50-all",
+    "converged": true,
+    "iterations": 5,
+    "gradient_norm": 3.4661162828797387e-13,
+    "loss": 1.3463878097915907,
+    "penalty_scale": 2.5,
+    "connected_components": [
+      [
+        "gemini_4_carbon",
+        "gpt_6_luna",
+        "human_robirahman"
+      ]
+    ]
+  },
+  "rating_penalty_sensitivity": null,
+  "bootstrap": {
+    "resamples": 0,
+    "seed": 12345,
+    "cluster": "task (secret) \u2014 both directions and all pairings kept together",
+    "task_clusters": 2,
+    "fit_failures": 0,
+    "intervals_95": {
+      "human_robirahman": {},
+      "gpt_6_luna": {},
+      "gemini_4_carbon": {}
+    }
+  },
+  "model_stats": {
+    "human_robirahman": {
+      "offense_games": 2,
+      "offense_median_effective_cost": 27.370703125,
+      "offense_geometric_mean_cost": 25.716634937331897,
+      "defense_median_cost_imposed": 82.88630280671296,
+      "defense_geometric_mean_cost_imposed": 65.16764112211723,
+      "offense_aggregate_speedup": {
+        "numerator": 66683137504795,
+        "denominator": 151121876302,
+        "value": 441.2540337411923
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 70069,
+        "denominator": 2560,
+        "value": 27.370703125
+      },
+      "offense_mean_baseline": {
+        "numerator": 13336627500959,
+        "denominator": 1104260096,
+        "value": 12077.433160238908
+      },
+      "offense_capped_fraction_of_offense_games": 0.5,
+      "defense_games": 2,
+      "defensive_cost_ratio": {
+        "numerator": 4942513981499,
+        "denominator": 720177885051786,
+        "value": 0.0068629071845820394
+      },
+      "defense_deadline_hold_rate_of_defense_games": 1.0,
+      "mean_paired_cost_advantage": {
+        "numerator": 15348953,
+        "denominator": 276480,
+        "value": 55.51559968171296
+      },
+      "opponents": [
+        "gemini_4_carbon",
+        "gpt_6_luna"
+      ],
+      "fixtures": 2,
+      "match_points": 2.0,
+      "match_point_share": 1.0,
+      "wins": 2,
+      "draws": 0,
+      "losses": 0
+    },
+    "gpt_6_luna": {
+      "offense_games": 1,
+      "offense_median_effective_cost": 31.66796875,
+      "offense_geometric_mean_cost": 31.667968750000004,
+      "defense_median_cost_imposed": 18.0,
+      "defense_geometric_mean_cost_imposed": 17.999999999999996,
+      "offense_aggregate_speedup": {
+        "numerator": 15861222647,
+        "denominator": 41564589,
+        "value": 381.60422197366125
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 8107,
+        "denominator": 256,
+        "value": 31.66796875
+      },
+      "offense_mean_baseline": {
+        "numerator": 15861222647,
+        "denominator": 1312512,
+        "value": 12084.63057632997
+      },
+      "offense_capped_fraction_of_offense_games": 1.0,
+      "defense_games": 1,
+      "defensive_cost_ratio": {
+        "numerator": 23625216,
+        "denominator": 15861222647,
+        "value": 0.0014894952631201155
+      },
+      "defense_deadline_hold_rate_of_defense_games": 0.0,
+      "mean_paired_cost_advantage": {
+        "numerator": -3499,
+        "denominator": 256,
+        "value": -13.66796875
+      },
+      "opponents": [
+        "human_robirahman"
+      ],
+      "fixtures": 1,
+      "match_points": 0.0,
+      "match_point_share": 0.0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1
+    },
+    "gemini_4_carbon": {
+      "offense_games": 1,
+      "offense_median_effective_cost": 134.10463686342592,
+      "offense_geometric_mean_cost": 134.10463686342587,
+      "defense_median_cost_imposed": 36.74140625,
+      "defense_geometric_mean_cost_imposed": 36.74140625,
+      "offense_aggregate_speedup": {
+        "numerator": 210575980926,
+        "denominator": 2339574475,
+        "value": 90.0061028944163
+      },
+      "offense_mean_effective_cost": {
+        "numerator": 3707725,
+        "denominator": 27648,
+        "value": 134.10463686342592
+      },
+      "offense_mean_baseline": {
+        "numerator": 11698665607,
+        "denominator": 969216,
+        "value": 12070.235744147847
+      },
+      "offense_capped_fraction_of_offense_games": 1.0,
+      "defense_games": 1,
+      "defensive_cost_ratio": {
+        "numerator": 178051794,
+        "denominator": 58493328035,
+        "value": 0.0030439675768398943
+      },
+      "defense_deadline_hold_rate_of_defense_games": 1.0,
+      "mean_paired_cost_advantage": {
+        "numerator": -13459493,
+        "denominator": 138240,
+        "value": -97.36323061342593
+      },
+      "opponents": [
+        "human_robirahman"
+      ],
+      "fixtures": 1,
+      "match_points": 0.0,
+      "match_point_share": 0.0,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1
+    }
+  },
+  "role_diagnostics": {
+    "gpt_6_luna": {
+      "offense": {
+        "games": 1.0,
+        "letters_earned": 3.0,
+        "turns_used_total": 30.0,
+        "endgame_reached": 1.0,
+        "endgame_converted": 0.0,
+        "turns": 30.0,
+        "guesser1_decisions": 30.0,
+        "clue_turns": 27.0,
+        "guesser2_decisions": 27.0,
+        "clue_turns_defended": 27.0,
+        "registered_matches": 26.0,
+        "registered_matches_blocked": 23.0,
+        "intended_word_covered": 23.0,
+        "contacts_prevented": 23.0,
+        "contacts_awarded": 3.0,
+        "guesser1_invalid": 3.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.1,
+          "direct_share_per_valid_turn": 0.0,
+          "registered_match_per_clue_turn": 0.9629629629629629,
+          "clue_leak_per_defended_clue_turn": 0.8518518518518519,
+          "endgame_conversion": 0.0,
+          "contact_per_clue_turn": 0.1111111111111111,
+          "contact_per_registered_match": 0.11538461538461539,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": null,
+          "matches_blocked_per_registered_match": 0.8846153846153846
+        },
+        "turns_per_letter_earned": 10.0
+      },
+      "defense": {
+        "games": 1.0,
+        "clue_turns_faced": 18.0,
+        "block_decisions": 18.0,
+        "empty_blocklists": 1.0,
+        "fresh_secret_candidates_blocked": 229.0,
+        "blocks_overlapping_clue": 2.0,
+        "registered_matches_faced": 4.0,
+        "registered_matches_blocked": 1.0,
+        "intended_word_covered": 7.0,
+        "contacts_prevented": 1.0,
+        "contacts_conceded": 3.0,
+        "mean_blocklist_size_per_block_decision": 4787.555555555556,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.05555555555555555,
+          "block_invalid_per_block_decision": 0.0,
+          "intended_word_blocked_per_clue_turn": 0.3888888888888889,
+          "matches_blocked_per_registered_match": 0.25
+        },
+        "blocked_words_per_contact_prevented": 86176.0
+      },
+      "invalid_reasons": {
+        "guesser1: clue exceeds N characters": 3
+      },
+      "seat": {
+        "g1_decisions": 30,
+        "intended_attempts": 30,
+        "g2_decisions": 45,
+        "self_clue_turns": 27,
+        "self_matches": 26,
+        "g1_invalid": 3,
+        "g1_overlong": 3,
+        "d_decisions": 18,
+        "choice_decisions": 1,
+        "choice_secret_word": 1,
+        "mean_clue_characters": 42.77777777777778,
+        "median_clue_characters": 43.0,
+        "clue_budget_used": 0.8555555555555556,
+        "guesser1_invalid_rate": 0.1,
+        "guesser2_invalid_rate": 0.0,
+        "self_contained": {
+          "action_validity": 0.9680851063829787,
+          "clue_length_compliance": 0.9,
+          "self_coordination": 0.9629629629629629,
+          "self_coordination_clue_turns": 27,
+          "reveal_optimality": 0.0,
+          "reveal_optimality_n": 1,
+          "forced_win_conversion": null,
+          "forced_win_n": 0,
+          "intended_word_legality": 1.0,
+          "lookup_discipline": 1.0,
+          "lookup_discipline_n": 4
+        }
+      }
+    },
+    "human_robirahman": {
+      "offense": {
+        "games": 2.0,
+        "letters_earned": 18.0,
+        "turns_used_total": 48.0,
+        "wins": 1.0,
+        "hit_source_guesser1_opened": 1.0,
+        "turns": 48.0,
+        "guesser1_decisions": 48.0,
+        "clue_turns": 48.0,
+        "guesser2_decisions": 48.0,
+        "clue_turns_defended": 48.0,
+        "registered_matches": 11.0,
+        "registered_matches_blocked": 4.0,
+        "intended_word_covered": 19.0,
+        "contacts_prevented": 4.0,
+        "choice_opportunities": 6.0,
+        "choice_cancel": 1.0,
+        "contacts_awarded": 7.0,
+        "choice_reveal": 5.0,
+        "guesser2_invalid": 1.0,
+        "guesser2_pass": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.0,
+          "direct_share_per_valid_turn": 0.0,
+          "registered_match_per_clue_turn": 0.22916666666666666,
+          "clue_leak_per_defended_clue_turn": 0.3958333333333333,
+          "endgame_conversion": null,
+          "contact_per_clue_turn": 0.14583333333333334,
+          "contact_per_registered_match": 0.6363636363636364,
+          "guesser2_invalid_per_guesser2_decision": 0.020833333333333332,
+          "reveal_per_choice_opportunity": 0.8333333333333334,
+          "matches_blocked_per_registered_match": 0.36363636363636365
+        },
+        "turns_per_letter_earned": 2.6666666666666665
+      },
+      "defense": {
+        "games": 2.0,
+        "clue_turns_faced": 52.0,
+        "block_decisions": 52.0,
+        "empty_blocklists": 2.0,
+        "fresh_secret_candidates_blocked": 367.0,
+        "blocks_overlapping_clue": 1.0,
+        "registered_matches_faced": 40.0,
+        "registered_matches_blocked": 35.0,
+        "intended_word_covered": 42.0,
+        "contacts_prevented": 35.0,
+        "contacts_conceded": 5.0,
+        "mean_blocklist_size_per_block_decision": 8.48076923076923,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.038461538461538464,
+          "block_invalid_per_block_decision": 0.0,
+          "intended_word_blocked_per_clue_turn": 0.8076923076923077,
+          "matches_blocked_per_registered_match": 0.875
+        },
+        "blocked_words_per_contact_prevented": 12.6
+      },
+      "seat": {
+        "d_decisions": 52,
+        "g1_decisions": 48,
+        "intended_attempts": 48,
+        "choice_decisions": 4,
+        "choice_secret_word": 4,
+        "choice_secret_word_revealed": 4,
+        "mean_clue_characters": 46.9375,
+        "median_clue_characters": 48.5,
+        "clue_budget_used": 0.93875,
+        "guesser1_invalid_rate": 0.0,
+        "guesser2_invalid_rate": null,
+        "self_contained": {
+          "action_validity": 1.0,
+          "clue_length_compliance": 1.0,
+          "self_coordination": null,
+          "self_coordination_clue_turns": 0,
+          "reveal_optimality": 1.0,
+          "reveal_optimality_n": 4,
+          "forced_win_conversion": null,
+          "forced_win_n": 0,
+          "intended_word_legality": 1.0,
+          "lookup_discipline": null,
+          "lookup_discipline_n": 0
+        }
+      }
+    },
+    "gemini_4_carbon": {
+      "offense": {
+        "games": 1.0,
+        "letters_earned": 2.0,
+        "turns_used_total": 30.0,
+        "turns": 30.0,
+        "guesser1_decisions": 30.0,
+        "clue_turns": 25.0,
+        "guesser2_decisions": 25.0,
+        "clue_turns_defended": 25.0,
+        "registered_matches": 14.0,
+        "registered_matches_blocked": 12.0,
+        "intended_word_covered": 19.0,
+        "contacts_prevented": 12.0,
+        "guesser1_invalid": 5.0,
+        "contacts_awarded": 2.0,
+        "choice_opportunities": 6.0,
+        "choice_reveal": 5.0,
+        "choice_cancel": 1.0,
+        "rates": {
+          "guesser1_invalid_per_guesser1_decision": 0.16666666666666666,
+          "direct_share_per_valid_turn": 0.0,
+          "registered_match_per_clue_turn": 0.56,
+          "clue_leak_per_defended_clue_turn": 0.76,
+          "endgame_conversion": null,
+          "contact_per_clue_turn": 0.08,
+          "contact_per_registered_match": 0.14285714285714285,
+          "guesser2_invalid_per_guesser2_decision": 0.0,
+          "reveal_per_choice_opportunity": 0.8333333333333334,
+          "matches_blocked_per_registered_match": 0.8571428571428571
+        },
+        "turns_per_letter_earned": 15.0
+      },
+      "defense": {
+        "games": 1.0,
+        "clue_turns_faced": 30.0,
+        "block_decisions": 30.0,
+        "empty_blocklists": 7.0,
+        "fresh_secret_candidates_blocked": 76612.0,
+        "blocks_overlapping_clue": 3.0,
+        "intended_word_covered": 12.0,
+        "block_invalid": 4.0,
+        "registered_matches_faced": 7.0,
+        "registered_matches_blocked": 3.0,
+        "contacts_prevented": 3.0,
+        "contacts_conceded": 4.0,
+        "mean_blocklist_size_per_block_decision": 9985.166666666666,
+        "rates": {
+          "empty_blocklist_per_block_decision": 0.23333333333333334,
+          "block_invalid_per_block_decision": 0.13333333333333333,
+          "intended_word_blocked_per_clue_turn": 0.4,
+          "matches_blocked_per_registered_match": 0.42857142857142855
+        },
+        "blocked_words_per_contact_prevented": 99851.66666666667
+      },
+      "invalid_reasons": {
+        "guesser1: empty response": 4,
+        "defender: empty response": 3,
+        "guesser1: intended word is not a current contact candidate": 1,
+        "defender: range endpoints must be dictionary words": 1,
+        "guesser2: word is not a current contact candidate": 1
+      },
+      "seat": {
+        "g1_decisions": 30,
+        "intended_attempts": 26,
+        "g2_decisions": 55,
+        "self_clue_turns": 25,
+        "self_matches": 14,
+        "g1_invalid": 5,
+        "choice_decisions": 7,
+        "choice_secret_word": 7,
+        "choice_secret_word_revealed": 6,
+        "intended_illegal": 1,
+        "d_decisions": 30,
+        "d_invalid": 4,
+        "g2_invalid": 1,
+        "mean_clue_characters": 22.84,
+        "median_clue_characters": 21.0,
+        "clue_budget_used": 0.4568,
+        "guesser1_invalid_rate": 0.16666666666666666,
+        "guesser2_invalid_rate": 0.01818181818181818,
+        "self_contained": {
+          "action_validity": 0.9180327868852459,
+          "clue_length_compliance": 1.0,
+          "self_coordination": 0.56,
+          "self_coordination_clue_turns": 25,
+          "reveal_optimality": 0.8571428571428571,
+          "reveal_optimality_n": 7,
+          "forced_win_conversion": null,
+          "forced_win_n": 0,
+          "intended_word_legality": 0.9615384615384616,
+          "lookup_discipline": 1.0,
+          "lookup_discipline_n": 7
+        }
+      }
+    }
+  },
+  "pairwise_match_points": {
+    "human_robirahman": {
+      "gpt_6_luna": {
+        "mean_points": 1.0,
+        "fixtures": 1
+      },
+      "gemini_4_carbon": {
+        "mean_points": 1.0,
+        "fixtures": 1
+      }
+    },
+    "gpt_6_luna": {
+      "human_robirahman": {
+        "mean_points": 0.0,
+        "fixtures": 1
+      }
+    },
+    "gemini_4_carbon": {
+      "human_robirahman": {
+        "mean_points": 0.0,
+        "fixtures": 1
+      }
+    }
+  },
+  "pairwise_mean_cost": {
+    "gpt_6_luna": {
+      "human_robirahman": {
+        "mean_cost": 31.66796875,
+        "games": 1
+      }
+    },
+    "human_robirahman": {
+      "gpt_6_luna": {
+        "mean_cost": 18.0,
+        "games": 1
+      },
+      "gemini_4_carbon": {
+        "mean_cost": 36.74140625,
+        "games": 1
+      }
+    },
+    "gemini_4_carbon": {
+      "human_robirahman": {
+        "mean_cost": 134.10463686342592,
+        "games": 1
+      }
+    }
+  },
+  "capped_games": 3,
+  "capped_fraction_of_scored_games": 0.75,
+  "residual_candidate_counts_capped": [
+    13,
+    86,
+    1465
+  ],
+  "strata": {
+    "by_target_length": [
+      {
+        "model": "gemini_4_carbon",
+        "target_length": 12,
+        "games": 1,
+        "aggregate_speedup": 90.0061028944163,
+        "mean_cost": 134.10463686342592,
+        "mean_baseline": 12070.235744147847
+      },
+      {
+        "model": "gpt_6_luna",
+        "target_length": 14,
+        "games": 1,
+        "aggregate_speedup": 381.60422197366125,
+        "mean_cost": 31.66796875,
+        "mean_baseline": 12084.63057632997
+      },
+      {
+        "model": "human_robirahman",
+        "target_length": 12,
+        "games": 1,
+        "aggregate_speedup": 328.51861091048596,
+        "mean_cost": 36.74140625,
+        "mean_baseline": 12070.235744147847
+      },
+      {
+        "model": "human_robirahman",
+        "target_length": 14,
+        "games": 1,
+        "aggregate_speedup": 671.3683653516649,
+        "mean_cost": 18.0,
+        "mean_baseline": 12084.63057632997
+      }
+    ],
+    "by_initial_candidate_count": [
+      {
+        "model": "gemini_4_carbon",
+        "bin": ">100",
+        "games": 1,
+        "aggregate_speedup": 90.0061028944163,
+        "mean_cost": 134.10463686342592,
+        "mean_baseline": 12070.235744147847
+      },
+      {
+        "model": "gpt_6_luna",
+        "bin": ">100",
+        "games": 1,
+        "aggregate_speedup": 381.60422197366125,
+        "mean_cost": 31.66796875,
+        "mean_baseline": 12084.63057632997
+      },
+      {
+        "model": "human_robirahman",
+        "bin": ">100",
+        "games": 2,
+        "aggregate_speedup": 441.2540337411923,
+        "mean_cost": 27.370703125,
+        "mean_baseline": 12077.433160238908
+      }
+    ]
+  },
+  "numerical_reference": {
+    "baselines_exact": 0,
+    "baselines_estimated": 4,
+    "fallbacks_exact": 0,
+    "fallbacks_estimated": 3,
+    "max_mcse": 6.496930130631966,
+    "mean_mcse_of_estimates": 2.9619644452516605,
+    "methods": {
+      "baseline:length_class_monte_carlo": 4,
+      "fallback:length_class_monte_carlo": 3
+    },
+    "fallback_cache_entries_used": 3,
+    "fallback_cache_reuse": 0
+  },
+  "numerically_close_fixtures": 0,
+  "resources": {
+    "gpt_6_luna": {
+      "guesser2": {
+        "requests": 46.0,
+        "input_tokens": 530952.0,
+        "output_tokens": 31974.0,
+        "reasoning_tokens": 28436.0,
+        "cached_input_tokens": 411881.0,
+        "latency_s": 648.5258140059887,
+        "transport_attempts": 136.0,
+        "cost_estimate": 0.03201291000000001
+      },
+      "defender": {
+        "requests": 18.0,
+        "input_tokens": 322997.0,
+        "output_tokens": 45112.0,
+        "reasoning_tokens": 41508.0,
+        "cached_input_tokens": 248065.0,
+        "latency_s": 598.5324004650101,
+        "transport_attempts": 69.0,
+        "cost_estimate": 0.03252985
+      },
+      "guesser1": {
+        "requests": 30.0,
+        "input_tokens": 501298.0,
+        "output_tokens": 54464.0,
+        "reasoning_tokens": 50876.0,
+        "cached_input_tokens": 378431.0,
+        "latency_s": 743.8469068480335,
+        "transport_attempts": 110.0,
+        "cost_estimate": 0.04330301000000001
+      }
+    },
+    "gemini_4_carbon": {
+      "defender": {
+        "requests": 31.0,
+        "input_tokens": 569711.0,
+        "output_tokens": 8108.0,
+        "reasoning_tokens_unknown": 19.0,
+        "cached_input_tokens_unknown": 30.0,
+        "latency_s": 2618.7296132320134,
+        "transport_attempts": 102.0,
+        "cost_estimate": 3.53181,
+        "reasoning_tokens": 64723.0,
+        "errors": 1.0,
+        "incomplete": 3.0
+      },
+      "guesser2": {
+        "requests": 60.0,
+        "input_tokens": 1181905.0,
+        "output_tokens": 8119.0,
+        "reasoning_tokens_unknown": 56.0,
+        "cached_input_tokens_unknown": 58.0,
+        "latency_s": 6708.110403679979,
+        "transport_attempts": 256.0,
+        "cost_estimate": 4.555626000000001,
+        "errors": 2.0,
+        "reasoning_tokens": 3620.0
+      },
+      "guesser1": {
+        "requests": 35.0,
+        "input_tokens": 568981.0,
+        "output_tokens": 5153.0,
+        "reasoning_tokens": 76039.0,
+        "cached_input_tokens_unknown": 34.0,
+        "latency_s": 2892.4518381880634,
+        "transport_attempts": 125.0,
+        "cost_estimate": 3.599425,
+        "incomplete": 4.0,
+        "reasoning_tokens_unknown": 25.0,
+        "errors": 1.0
+      }
+    }
+  },
+  "forecast_calibration": {},
+  "human_challenge": {
+    "players": [
+      "human_robirahman"
+    ],
+    "display_names": {
+      "human_robirahman": "robirahman"
+    },
+    "note": "Human vs model fixtures; never pooled with model-only ratings."
+  },
+  "anchored_rating": {
+    "method": "anchored batch Elo-style rating (opponents fixed, same penalty)",
+    "free": [
+      "human_robirahman"
+    ],
+    "elo": {
+      "human_robirahman": 2025.6550778268283
+    },
+    "elo_se_approx": {
+      "human_robirahman": 255.98884891486992
+    },
+    "fixed_elo": {
+      "gemini_4_carbon": 1972.6616662189826,
+      "gpt_6_luna": 1547.121304365745
+    },
+    "results": 2,
+    "converged": true,
+    "iterations": 5,
+    "gradient_norm": 3.4661162828797387e-13,
+    "loss": 1.3463878097915907,
+    "penalty_scale": 2.5,
+    "anchor_run_id": "combined-overall-c50-all"
+  },
+  "rating_joint_unanchored": {
+    "method": "batch Elo-style rating with half-point draws",
+    "models": [
+      "human_robirahman",
+      "gpt_6_luna",
+      "gemini_4_carbon"
+    ],
+    "strengths_logit": {
+      "human_robirahman": 1.3872044442540996,
+      "gpt_6_luna": -0.6936022221270498,
+      "gemini_4_carbon": -0.6936022221270498
+    },
+    "elo": {
+      "human_robirahman": 1740.982094164489,
+      "gpt_6_luna": 1379.5089529177556,
+      "gemini_4_carbon": 1379.5089529177556
+    },
+    "converged": true,
+    "iterations": 6,
+    "gradient_norm": 4.079219866531555e-16,
+    "loss": 0.46618323467774697,
+    "penalty_scale": 2.5,
+    "connected_components": [
+      [
+        "gemini_4_carbon",
+        "gpt_6_luna",
+        "human_robirahman"
+      ]
+    ]
+  },
+  "teams": null,
+  "model_ids": [
+    "human_robirahman",
+    "gpt_6_luna",
+    "gemini_4_carbon"
+  ]
+}
